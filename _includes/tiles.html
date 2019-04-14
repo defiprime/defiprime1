@@ -1,0 +1,17 @@
+<section class="tiles">
+
+{% for post in site.posts limit:site.front-page-posts %}
+	<article class="style{{ forloop.index | random_number: 0, 10 }}">
+		<span class="image">
+			<img src="{{ site.url }}{{ site.baseurl }}/images/pic0{{ forloop.index | random_number: 1, 9 }}.jpg" alt="" />
+		</span>
+		<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}">
+			<h2>{{ post.title }}</h2>
+			<div class="content">
+				<p>{{ post.excerpt }}</p>
+			</div>
+		</a>
+	</article>
+{% endfor %}
+
+</section>
