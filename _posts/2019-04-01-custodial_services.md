@@ -38,6 +38,12 @@ A free, open-source, client-side interface for generating Ethereum wallets & mor
 
 An interface for blockchain-based protocols in decentralized finance applications
 
+### [InstaDApp](https://instadapp.io/)
+
+![](//image.thum.io/get/width/500/crop/600/https://instadapp.io/)
+
+A decentralized bank built on top of the MakerDAO protocol to create an easy-to-use interface
+
 ### [Argent](https://www.argent.xyz/)
 
 ![](//image.thum.io/get/width/500/crop/600/https://www.argent.xyz/)

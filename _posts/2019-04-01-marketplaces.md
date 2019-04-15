@@ -1,52 +1,52 @@
 ---
 layout: page
 title:  "Marketplaces"
-permalink: marketplaces
+permalink: decentralized_marketplaces
 h1title: Marketplaces
-pagetitle: Marketplaces
-metadescription: Prediction markets are exchange-traded markets created for the purpose of trading the outcome of events.
+pagetitle: Decentralized Marketplaces
+metadescription: An online marketplace (or online e-commerce marketplace) is a type of e-commerce site where multiple third parties provide products or services.
 ---
 
-An online marketplace (or online e-commerce marketplace) is a type of e-commerce site where product or service information is provided by multiple third parties, whereas transactions are processed by the marketplace operator. Online marketplaces are the primary type of multichannel ecommerce and can be a way to streamline the production process.
+An online marketplace (or online e-commerce marketplace) is a type of e-commerce site where multiple third parties provide products or services.
 
-### [TruSet](https://www.truset.com/)
-
-![](//image.thum.io/get/width/500/crop/600/https://www.truset.com/)
-
-Multi-sided marketplaces that collect, validate, publish, and commercialize business-critical reference data
-
-### [Gitcoin](https://gitcoin.co/)
+### [Gitcoin](https://gitcoin.co/) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://gitcoin.co/)
 
-A marketplace for open source development work
+Freelance gigs and bounties for open source projects.
 
-### [Bounties Network](https://bounties.network/)
+### [Bounties Network](https://bounties.network/) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://bounties.network/)
 
-Freelance and bounty any task, pay with Ethereum
+Bounties Network lets you create projects, collaborate, and get paid for doing freelance work in any domain.
 
-### [Ethlance](https://ethlance.com/)
-
-![](//image.thum.io/get/width/500/crop/600/https://ethlance.com/)
-
-A marketplace for freelance work in the Ethereum space
-
-### [OpenSea](https://opensea.io/)
+### [OpenSea](https://opensea.io/) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://opensea.io/)
 
-A peer to peer trading market for crypto collectibles and rare digital items
+A peer to peer marketplace for crypto collectibles.
 
-### [Origin](https://www.originprotocol.com/en)
+### [Origin](https://www.originprotocol.com/en) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://www.originprotocol.com/en)
 
 A protocol for creating peer-to-peer marketplaces utilizing Ethereum and IPFS
 
-### [District0x](https://district0x.io/)
+### [District0x](https://district0x.io/) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://district0x.io/)
 
-A network of decentralized markets on Ethereum that operate via DAOs by utilizing Aragon
+A network of decentralized markets and communities that exist as decentralized autonomous organizations.
+
+### [RareBits](https://rarebits.io/) ![](/images/ether.png)
+
+![](//image.thum.io/get/width/500/crop/600/https://rarebits.io/)
+
+Rare Bits is a marketplace dedicated to the buying and selling of crypto assets.
+
+### [OpenBazaar](https://openbazaar.org/)
+
+![](//image.thum.io/get/width/500/crop/600/https://openbazaar.org/)
+
+ OpenBazaar it’s a peer to peer application that doesn’t require middlemen, which means no fees & no restrictions.

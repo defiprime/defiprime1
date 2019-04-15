@@ -4,9 +4,9 @@ title: DeFi Curated
 ---
 
 <header>
-<h1>Projects Pioneering Decentralized Finance</h1>
+<h1>List of the best Decentralized Finance Projects</h1>
 </header>
-Decentralized Finance (DeFi) is the movement that leverages open source software and decentralized networks to transform traditional financial products into trustless and transparent protocols that operate without unnecessary intermediaries. We are committed to defining and improving DeFi's architecture, make finance benefit more from its decentralized ecosystem.
+Decentralized Finance (DeFi) is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. 
 
 
 {% include tiles.html %}

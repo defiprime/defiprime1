@@ -6,87 +6,75 @@ h1title: Stablecoins
 pagetitle: Complete Stablecoins List  
 metadescription: Stablecoins are cryptocurrencies designed to minimize the volatility of the price of the stablecoin, relative to some "stable" asset or basket of assets.
 ---
-Stablecoins are cryptocurrencies designed to minimize the volatility of the price of the stablecoin, relative to some "stable" asset or basket of assets. A stablecoin can be pegged to a currency, or to exchange traded commodities (such as precious metals or industrial metals).
+Stablecoins are cryptocurrencies created to decrease the volatility of the coin's price, relative to some "stable" asset or basket of assets. A stablecoin can be pegged to currency or exchange-traded commodities.
 
-### <i class="fab fa-ethereum"></i> [Dai](https://makerdao.com/en/dai/)
+### [Dai](https://makerdao.com/en/dai/) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://makerdao.com/en/dai/)
 
-A USD-pegged stablecoin built on the Ethereum and governed by the MakerDAO system
+A USD-backed stablecoin built on the Ethereum and governed by the MakerDAO system
 
-### <i class="fab fa-ethereum"></i> [USD Coin](https://www.circle.com/en/usdc)
+### [USD Coin](https://www.circle.com/en/usdc) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://www.circle.com/en/usdc)
 
-A US dollar-backed stablecoin as an ERC20 token, by Circle.
+A USD-backed stablecoin as an ERC20 token.
 
-### <i class="fab fa-ethereum"></i> [Gemini Dollar](https://gemini.com/dollar/)
+### [Gemini Dollar](https://gemini.com/dollar/) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://gemini.com/dollar/)
 
-A stable value coin backed 1:1 by U.S. dollars
+A stable value coin backed 1:1 by USD
 
-### <i class="fab fa-ethereum"></i> [Monerium](https://monerium.com/)
+### [StableUnit](https://stableunit.org/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://monerium.com/)
+![](//image.thum.io/get/width/500/crop/600/https://stableunit.org/)
 
-A digital money provider planning to issue asset-backed, redeemable, and regulated e-money on Ethereum
+Decentralized privacy stablecoin focused on censorship resistance.  
 
-### <i class="fab fa-ethereum"></i> [Reserve](https://reserve.org/)
-
-![](//image.thum.io/get/width/500/crop/600/https://reserve.org/)
-
-A protocol with three types of assets: reserve stablecoin, reserve share tokens, and collateral tokens
-
-### <i class="fab fa-ethereum"></i> [StableUnit](https://stableunit.org/)
-
-![](//image.thum.io/get/width/500/crop/600/https://reserve.org/)
-
-Decentralized privacy stablecoin
-
-### <i class="fab fa-ethereum"></i> [Synthetix](https://www.synthetix.io/)
+### [Synthetix](https://www.synthetix.io/) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://www.synthetix.io/)
 
 Synthetic fiat currencies collateralized by cryptoassets
 
-### <i class="fab fa-ethereum"></i> [Augmint](https://www.augmint.org/concept#how-it-works)
+### [Augmint](https://www.augmint.org/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://www.augmint.org/concept#how-it-works)
+![](//image.thum.io/get/width/500/crop/600/https://www.augmint.org/)
 
-Stablecoin backed 1:1 by Euros
+Augmint offers digital tokens targeted to a fiat currency. Stablecoin backed 1:1 by Euros
 
-### <i class="fab fa-ethereum"></i> [Digix](https://digix.global/)
+### [Digix](https://digix.global/) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://digix.global/)
 
 Physical gold with DGX tokens, where 1 DGX represents 1 gram of gold on Ethereum.
 
-### <i class="fab fa-ethereum"></i> [Paxos Standard](https://www.paxos.com/pax/)
+### [Paxos Standard](https://www.paxos.com/pax/) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://www.paxos.com/pax/)
 
-A stable value coin backed 1:1 by U.S. dollars
+PAX is a stablecoin backed 1:1 by USD, and listed on over 90 exchanges.
 
-### <i class="fab fa-ethereum"></i> [TrueUSD](https://www.trusttoken.com/trueusd/)
+### [TrueUSD](https://www.trusttoken.com/trueusd/) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://www.trusttoken.com/trueusd/)
 
 A stablecoin backed 1:1 by U.S. dollars
 
-### <i class="fab fa-ethereum"></i> [Ampleforth](https://www.ampleforth.org/)
-
-![](//image.thum.io/get/width/500/crop/600/https://www.ampleforth.org/)
-
-A digital asset protocol that decreases and increases the Ample stablecoin value to ensure stability
-
-### [AnchorUSD](https://www.anchorusd.com/)
+### [AnchorUSD](https://www.anchorusd.com/) ![](/images/stellar.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://www.anchorusd.com/)
 
 Token on Stellar blockchain that promises deposits are held 1:1 in audited, US-based bank accounts
 
-### <i class="fab fa-ethereum"></i> [WBTC](https://www.wbtc.network/)
+### [CarbonUSD](https://www.carbon.money/) ![](/images/ether.png) ![](/images/tron.png) ![](/images/eos.png)
+
+![](//image.thum.io/get/width/500/crop/600/https://www.carbon.money/)
+
+CarbonUSD is a stablecoin that is one-to-one backed with USD, compatible with Ethereum, Tron and EOS chains.  
+
+### [WBTC](https://www.wbtc.network/) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://www.wbtc.network/)
 

@@ -1,45 +1,33 @@
 ---
 layout: page
 title:  "Prediction markets"
-permalink: prediction
+permalink: decentralized_prediction_markets
 h1title: Prediction markets
-pagetitle: Prediction markets  
+pagetitle: Best prediction markets on crypto blockchains  
 metadescription: Prediction markets are exchange-traded markets created for the purpose of trading the outcome of events.
 ---
 
-Prediction markets (also known as predictive markets, information markets, decision markets, idea futures, event derivatives, or virtual markets) are exchange-traded markets created for the purpose of trading the outcome of events. The market prices can indicate what the crowd thinks the probability of the event is.
+Prediction markets are exchange-traded markets created to trade the outcome of events. The market prices can indicate what the crowd thinks the probability of the event is.
 
-### [Veil](https://veil.co/)
+### [Veil](https://veil.co/) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://veil.co/)
 
-A peer to peer trading market for derivatives and predictions on Augur, 0x, and Ethereum
+A peer to peer trading market for derivatives and predictions on Augur, 0x, and Ethereum. Not available for U.S. citizens.
 
-### [Guesser](https://www.guesser.io)
-
-![](//image.thum.io/get/width/500/crop/600/https://www.guesser.io)
-
-Peer-to-peer trading market on Augur in three easy clicks
-
-### [Bodhi](https://www.bodhi.network/)
-
-![](//image.thum.io/get/width/500/crop/600/https://www.bodhi.network/)
-
-Prediction market protocol building on Ethereum
-
-### [Augur](https://www.augur.net/)
+### [Augur](https://www.augur.net/) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://www.augur.net/)
 
-Prediction market protocol built on Ethereum
+Prediction market protocol built on Ethereum.
 
-### [Helena](https://helena.network/)
+### [Helena](https://helena.network/) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://helena.network/)
 
-Prediction markets platform for forecasting blockchain developments, events, and projects
+Prediction markets platform for forecasting blockchain developments, events, and projects.
 
-### [Gnosis](https://gnosis.io/)
+### [Gnosis](https://gnosis.io/) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://gnosis.io/)
 
