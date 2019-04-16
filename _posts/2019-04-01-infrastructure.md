@@ -50,3 +50,9 @@ The protocol powering fiat to crypto exchanges
 ![](//image.thum.io/get/width/500/crop/600/https://www.sendwyre.com/)
 
 Wyre is a secure and compliant bridge between fiat currencies and cryptocurrency.
+
+### [Uma](https://umaproject.org/) ![](/images/ether.png)
+
+![](//image.thum.io/get/width/500/crop/600/https://umaproject.org/)
+
+UMA is a decentralized financial contracts platform built to enable Universal Market Access.

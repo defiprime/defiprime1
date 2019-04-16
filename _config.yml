@@ -6,9 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Defi Curated
+title: DefiPrime.com
 #email: youremailaddress@gmail.com
-description: Projects Pioneering Decentralized Finance
+description: List of the best Decentralized Finance Projects 
 #baseurl: "/phantom-jekyll-theme" # the subpath of your site, e.g. /blog
 url: "http://localhost:4000" # the base hostname & protocol for your site
 

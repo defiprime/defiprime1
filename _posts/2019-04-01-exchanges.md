@@ -7,7 +7,7 @@ pagetitle: List of decentralized exchanges - best dex Decentralized exchanges
 metadescription: A decentralized exchange (DEX) is a cryptocurrency exchange which operates in a decentralized way, i.e., without a central authority.
 ---
 A decentralized exchange (DEX) is a cryptocurrency exchange which operates in a decentralized way, i.e., without a central authority.
-
+https://sparkswap.com/
 ### [Airswap](https://www.airswap.io/)
 
 ![](//image.thum.io/get/width/500/crop/600/https://www.airswap.io/)
