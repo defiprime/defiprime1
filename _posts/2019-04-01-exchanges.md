@@ -4,120 +4,78 @@ title:  "Decentralized exchanges"
 permalink: exchanges
 h1title: Decentralized exchanges
 pagetitle: List of decentralized exchanges - best dex Decentralized exchanges    
-metadescription: A decentralized exchange (DEX) is a cryptocurrency exchange which operates in a decentralized way, i.e., without a central authority.
+metadescription: A decentralized exchange (DEX) is a cryptocurrency exchange which operates in a decentralized way, without a central authority.
 ---
-A decentralized exchange (DEX) is a cryptocurrency exchange which operates in a decentralized way, i.e., without a central authority.
-https://sparkswap.com/
-### [Airswap](https://www.airswap.io/)
+A decentralized exchange (DEX) is a cryptocurrency exchange which operates in a decentralized way, without a central authority.
+
+### [KyberSwap](https://kyberswap.com/swap/eth-dai) ![](/images/ether.png)
+
+![](//image.thum.io/get/width/500/crop/600/https://kyberswap.com/swap/eth-dai)
+
+KyberSwap allows anyone to convert tokens directly from their wallet in an instant, convenient and secure way.
+
+### [Airswap](https://www.airswap.io/) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://www.airswap.io/)
 
-Peer-to-peer trading on Ethereum
+Peer-to-peer token trading on Ethereum, without trading fees.
 
-### [Uniswap](https://uniswap.io/)
+### [Uniswap Exchange](https://uniswap.exchange) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://uniswap.io/)
+![](//image.thum.io/get/width/500/crop/600/https://uniswap.exchange)
 
-Open source protocol for automated token swaps on Ethereum
+Peer-to-peer token trading on Ethereum, without trading fees.
 
-### [Liquality](https://liquality.io/)
-
-![](//image.thum.io/get/width/500/crop/600/https://liquality.io/)
-
-Swap cryptocurrencies without intermediaries
-
-### [Omega One](https://dark.omega.one/)
+### [Omega One](https://dark.omega.one/) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://dark.omega.one/)
 
-A decentralized, automated trade execution platform that makes crypto trading cheap and safe
+An independent, inter-broker wholesaler of dark liquidity for institutions that connects all liquidity and trading venues
 
-### [Paradex](https://paradex.io/)
-
-![](//image.thum.io/get/width/500/crop/600/https://paradex.io/)
-
-Token relay platform acquired by Coinbase
-
-### [Hydro](https://projecthydro.org/)
-
-![](//image.thum.io/get/width/500/crop/600/https://projecthydro.org/)
-
-Blockchain solutions for security, identity, payments — not sure about this one
-
-### [Ethfinex](https://www.ethfinex.com/)
-
-![](//image.thum.io/get/width/500/crop/600/https://www.ethfinex.com/)
-
-‘Hybrid decentralized exchange’ built by Bitfinex
-
-### [Kyber](https://kyber.network/)
-
-![](//image.thum.io/get/width/500/crop/600/https://kyber.network/)
-
-On-chain liquidity protocol for token swaps
-
-### [IDEX](https://auroradao.com/platform/idex/)
+### [IDEX](https://auroradao.com/platform/idex/) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://auroradao.com/platform/idex/)
 
-A decentralized, real-time, and non-custodial token exchange
+A decentralized, real-time, and non-custodial token exchange.
 
-### [Centrifuge](https://centrifuge.io/)
-
-![](//image.thum.io/get/width/500/crop/600/https://centrifuge.io/)
-
-Open, decentralized platform to connect the global financial supply chain
-
-### [Loopring](https://loopring.org/)
-
-![](//image.thum.io/get/width/500/crop/600/https://loopring.org/)
-
-A protocol for decentralized token exchange
-
-### [ForkDelta](https://forkdelta.app/)
+### [ForkDelta](https://forkdelta.app/) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://forkdelta.app/)
 
-A decentralized Ethereum token exchange
+ForkDelta is a decentralized trading platform that lets you trade Ether and Ethereum-based tokens directly with other users.
 
-### [Bancor](https://www.bancor.network/)
+### [Bancor](https://www.bancor.network/) ![](/images/ether.png) ![](/images/eos.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://www.bancor.network/)
 
 A decentralized liquidity network
 
-### [Ren](https://renproject.io/)
+### [Bamboo relay](https://bamboorelay.com/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://renproject.io/)
+![](//image.thum.io/get/width/500/crop/600/https://bamboorelay.com/)
 
-Zero-knowledge, trustless swaps between blockchains
+Bamboo Relay is a 0x and bZx relayer - trade, lend or borrow any ERC20 token from your own wallet.
 
-### [Bamboo relay](https://bamboorelay.com/)
-
-![](//image.thum.io/get/width/500/crop/600/https://renproject.io/)
-
-Decentralized exchange and lending, an 0x and bZx relayer
-
-### [DDEX](https://ddex.io/)
-
-![](//image.thum.io/get/width/500/crop/600/https://ddex.io/)
-
-DDEX is the first decentralized exchange built on Hydro Protocol technology, offering instant, real-time order matching with secure on-chain settlement.
-
-### [Fordex](https://www.fordex.co/)
+### [Fordex](https://www.fordex.co/) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://www.fordex.co/)
 
-We are a stablecoin focused DEX
+Stablecoin focused DEX exchange built on 0x.   
 
-### <i class="fab fa-bitcoin"></i> [Bisq](https://bisq.network/)
+### [Bisq](https://bisq.network/) <i class="fab fa-bitcoin"></i>
 
 ![](//image.thum.io/get/width/500/crop/600/https://bisq.network/)
 
-Bisq is an open-source, peer-to-peer application that allows you to buy and sell cryptocurrencies in exchange for national currencies.
+Bisq is an open-source, peer-to-peer desktop application that allows you to buy and sell cryptocurrencies.
 
-### [Stellarx](https://www.stellarx.com/)
+### [Stellarx](https://www.stellarx.com/) ![](/images/stellar.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://www.stellarx.com/)
 
 Decentralized exchange with global fiat gateways.
+
+### [Sparkswap](https://sparkswap.com/) <i class="fab fa-bitcoin"></i>
+
+![](//image.thum.io/get/width/500/crop/600/https://sparkswap.com/)
+
+Sparkswap is the cryptocurrency exchange built on the Lightning Network.
