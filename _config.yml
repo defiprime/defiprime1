@@ -10,7 +10,7 @@ title: DefiPrime.com
 #email: youremailaddress@gmail.com
 description: List of the best Decentralized Finance Products 
 #baseurl: "/phantom-jekyll-theme" # the subpath of your site, e.g. /blog
-url: "http://localhost:4000" # the base hostname & protocol for your site
+url: "https://defiprime.com/0" # the base hostname & protocol for your site
 
 # Logo settings
 logo-image-url: favicon.png
