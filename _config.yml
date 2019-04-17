@@ -24,5 +24,4 @@ markdown: kramdown
 # Layout settings
 home-link-in-menu: no
 plugins:
-  - jekyll-last-modified-at
   - jekyll-random
