@@ -9,7 +9,7 @@
 title: DefiPrime.com
 #email: youremailaddress@gmail.com
 description: List of the best Decentralized Finance Products
-baseurl: "https://defiprime.com" # the subpath of your site, e.g. /blog
+#baseurl: "https://defiprime.com" # the subpath of your site, e.g. /blog
 url: "https://defiprime.com" # the base hostname & protocol for your site
 
 # Logo settings
