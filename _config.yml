@@ -8,7 +8,7 @@
 # Site settings
 title: DefiPrime.com
 #email: youremailaddress@gmail.com
-description: List of the best Decentralized Finance Products 
+description: List of the best Decentralized Finance Products
 #baseurl: "/phantom-jekyll-theme" # the subpath of your site, e.g. /blog
 url: "https://defiprime.com" # the base hostname & protocol for your site
 
@@ -24,6 +24,5 @@ markdown: kramdown
 # Layout settings
 home-link-in-menu: no
 plugins:
-  - jekyll-seo-tag
   - jekyll-last-modified-at
   - jekyll-random
