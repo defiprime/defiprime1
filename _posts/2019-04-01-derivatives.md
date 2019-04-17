@@ -4,7 +4,7 @@ title:  "Derivates"
 permalink: derivates
 h1title: Derivates
 pagetitle: Decentralized Derivatives   
-metadescription: In finance, a derivative is a contract that derives its value from the performance of an underlying entity. This underlying entity can be an asset, index, or interest rate, and is often simply called the "underlying."
+metadescription: In finance, a derivative is a contract that derives its value from the performance of an underlying entity. This underlying entity can be an asset, index, or interest rate, and is often simply called the underlying.
 ---
 
 In finance, a derivative is a contract that derives its value from the performance of an underlying entity. This underlying entity can be an asset, index, or interest rate, and is often simply called the "underlying."
