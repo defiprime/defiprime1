@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "Custodian Services"
-permalink: Custodian Services
+permalink: custodian_services
 h1title: Custodian Services
 pagetitle: Best Ethereum wallets for DeFi and Custodian Services    
 metadescription: Custodian, is a specialized financial institution responsible for safeguarding a firm's or individual's financial assets and is not engaged in "traditional" commercial or consumer/retail banking.
