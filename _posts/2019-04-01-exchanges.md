@@ -97,3 +97,9 @@ WhaleEx is the EOS based dex exchange with multisignature smart contracts for de
 ![](//image.thum.io/get/width/500/crop/600/https://eosdaq.com/)
 
 EOS Native Decentralized Cryptocurrency Exchange.
+
+### [Liquid Long](https://liquid-long.keydonix.com/#/) ![](/images/ether.png)
+
+![](//image.thum.io/get/width/500/crop/600/https://liquid-long.keydonix.com/#/)
+
+This is a tool that lets you turn your existing ETH into a leveraged ETH position against USD in a single transaction for a small fee.
