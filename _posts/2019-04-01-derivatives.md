@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Derivates"
+title:  "Derivatives"
 permalink: derivatives
 h1title: Derivatives
 pagetitle: Decentralized Derivatives   
