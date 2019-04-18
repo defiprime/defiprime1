@@ -61,3 +61,21 @@ Number of trades and profits on Augur by ethereum address.
 ![](//image.thum.io/get/width/500/crop/600/https://stablecoinindex.com/)
 
 Tracks and monitors the price, volume, and volatility of stablecoins.
+
+### [Santiment](https://santiment.net/)
+
+![](//image.thum.io/get/width/500/crop/600/https://santiment.net/)
+
+Santiment is a platform for accessing social & curated crypto data, on-chain crypto metrics and market insights.
+
+### [Bloxy](https://bloxy.info/analytics) ![](/images/ether.png)
+
+![](//image.thum.io/get/width/500/crop/600/https://bloxy.info/analytics)
+
+Reports based on the blockchain realtime data: DEX Trades Analysis, DEX Arbitrage Analysis, Margin Trade Positions.  
+
+### [Dai in DeFi](http://dai-in-defi.com/) ![](/images/ether.png)
+
+![](//image.thum.io/get/width/500/crop/600/http://dai-in-defi.com/)
+
+Deep analytics on DAI current state.   
