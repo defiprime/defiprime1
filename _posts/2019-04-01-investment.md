@@ -55,3 +55,9 @@ The compliance platform for digitizing securities on the blockchain
 ![](//image.thum.io/get/width/500/crop/600/https://templuminc.com/)
 
 Templum provides a regulated, end-to-end solution for raising capital and secondary trading in the private market.
+
+### [OpenFinance](https://openfinance.io/) ![](/images/ether.png)
+
+![](//image.thum.io/get/width/500/crop/600/https://openfinance.io/)
+
+OpenFinance Network is a U.S. regulated trading platform for digital alternative assets.
