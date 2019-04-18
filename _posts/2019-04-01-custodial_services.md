@@ -73,3 +73,9 @@ A platform for safeguarding crypto assets, with customizable smart accounts for 
 ![](//image.thum.io/get/width/500/crop/600/https://multis.co/)
 
 Multis is a multi-signature Ethereum wallet with a user-friendly interface to manage your company's crypto.
+
+### [Fetch](https://multis.co/) ![](/images/ether.png)
+
+![](//image.thum.io/get/width/500/crop/600/https://hellofetch.co/)
+
+Fetch is a self-custody wallet that allows anybody to manage tokens and transact across 20+ exchanges easily.
