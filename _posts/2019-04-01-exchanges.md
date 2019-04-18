@@ -79,3 +79,21 @@ Decentralized exchange with global fiat gateways.
 ![](//image.thum.io/get/width/500/crop/600/https://sparkswap.com/)
 
 Sparkswap is the cryptocurrency exchange built on the Lightning Network.
+
+### [TronTrade](https://trontrade.io/) ![](/images/tron.png)
+
+![](//image.thum.io/get/width/500/crop/600/https://trontrade.io/)
+
+Dex platform that facilitates the buying and selling of TRC-based tokens through simple user interface.
+
+### [WhaleEx](https://www.whaleex.com/) ![](/images/eos.png)
+
+![](//image.thum.io/get/width/500/crop/600/https://www.whaleex.com/)
+
+WhaleEx is the EOS based dex exchange with multisignature smart contracts for decentralized asset custody.
+
+### [WhaleEx](https://eosdaq.com/) ![](/images/eos.png)
+
+![](//image.thum.io/get/width/500/crop/600/https://eosdaq.com/)
+
+EOS Native Decentralized Cryptocurrency Exchange.
