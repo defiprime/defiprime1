@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: defiprime.com
-Token: 551c27e3ddaa4d4d3c4bab8d6b9048f8ff8b45f27391efc01d5ae088eb8a2e65
