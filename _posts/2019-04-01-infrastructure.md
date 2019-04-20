@@ -104,3 +104,9 @@ A suite of privacy-focused tools for dark pools and other financial applications
 ![](//image.thum.io/get/width/500/crop/600/https://b0x.network/)
 
 A decentralized margin lending protocol on Ethereum
+
+### [Zap](https://zap.org/) ![](/images/ether.png) ![](/images/eos.png)
+
+![](//image.thum.io/get/width/500/crop/600/https://zap.org/)
+
+Zap platform allows users to create, publish and subscribe to smart contract and Decentralized Application compatible data feeds.
