@@ -1,0 +1,6 @@
+<picture>
+    {% for i in resized %}
+        <source media="(min-width: {{ i.width }}px)" srcset="/{{ i.path }}">
+    {% endfor %}
+    <img src="/{{ path }}">
+</picture>

@@ -10,7 +10,7 @@ Analytics is the discovery, interpretation, and communication of meaningful patt
 
 ### [Alethio](https://aleth.io/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://aleth.io/)
+{% responsive_image path: //image.thum.io/get/width/500/crop/600/https://aleth.io/ %}
 
 Alethio is a powerful blockchain data, analytics & visualization platform.
 

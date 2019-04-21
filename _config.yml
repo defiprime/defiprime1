@@ -23,5 +23,9 @@ logo-image-url: favicon.png
 markdown: kramdown
 # Layout settings
 home-link-in-menu: no
+
+responsive_image:
+  template: _includes/responsive-image.html
 plugins:
   - jekyll-random
+  - jekyll-responsive-image
