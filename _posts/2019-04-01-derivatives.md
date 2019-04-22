@@ -26,3 +26,9 @@ Open source software for tokenized derivatives on Ethereum.
 ![](//image.thum.io/get/width/500/crop/600/https://dydx.exchange/)
 
 Open-source protocols for decentralized margin trading and derivatives
+
+### [Tokensets](https://www.tokensets.com) ![](/images/ether.png)
+
+![](//image.thum.io/get/width/500/crop/600/https://www.tokensets.com)
+
+TokenSets is the asset management platform with tokenized trading strategies facilitated by Set Protocol’s smart contract system. 
