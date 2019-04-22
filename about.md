@@ -5,7 +5,7 @@ title: About this site
 
 # What is this? 
 
-I've been researching DeFi ecosystem for several weeks, and can't find a good list of actually working products without gimmicks and bullshit. That's why I decided to make this site featuring best DeFI products.
+I've been researching DeFi ecosystem for several weeks, and can't find a good list of actually working products without gimmicks and bullshit. That's why I decided to create this site featuring best DeFI products.
 
 ## Definition of 'the best DeFi Products'
 * Are you feel comfortable to recommend this product to your IRL friends?
