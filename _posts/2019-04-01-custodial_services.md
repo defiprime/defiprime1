@@ -26,12 +26,6 @@ Open-source interface for interacting with Ethereum network.
 
 Burner wallet works in your browser so no app download and no seed phrase.
 
-### [Balance](https://balance.io/) ![](/images/ether.png)
-
-![](//image.thum.io/get/width/500/crop/600/https://balance.io/)
-
-Mobile Ethereum wallet with interfaces to the Ethereum DeFi products.
-
 ### [MyEtherWallet](https://www.myetherwallet.com/) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://www.myetherwallet.com/)
@@ -61,12 +55,6 @@ A wallet for Ethereum-based crypto-assets and apps
 ![](//image.thum.io/get/width/500/crop/600/https://trustwallet.com/)
 
 Multi cryptocurrency wallet to store your favorite ERC721 & ERC20 tokens
-
-### [ETrustology](https://www.trustology.io/) ![](/images/ether.png)
-
-![](//image.thum.io/get/width/500/crop/600/https://www.trustology.io/)
-
-A platform for safeguarding crypto assets, with customizable smart accounts for diverse client needs.
 
 ### [Multis](https://multis.co/) ![](/images/ether.png)
 
