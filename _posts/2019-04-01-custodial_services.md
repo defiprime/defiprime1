@@ -79,3 +79,9 @@ Multis is a multi-signature Ethereum wallet with a user-friendly interface to ma
 ![](//image.thum.io/get/width/500/crop/600/https://hellofetch.co/)
 
 Fetch is a self-custody wallet that allows anybody to manage tokens and transact across 20+ exchanges easily.
+
+### [Dexwallet](https://www.dexwallet.io/) ![](/images/ether.png)
+
+![](//image.thum.io/get/width/500/crop/600/https://www.dexwallet.io/)
+
+Multi currency mobile wallet supporting Ethereum, xDai, POA, with interfaces to the Ethereum DeFi products.
