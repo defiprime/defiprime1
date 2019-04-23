@@ -79,3 +79,15 @@ Reports based on the blockchain realtime data: DEX Trades Analysis, DEX Arbitrag
 ![](//image.thum.io/get/width/500/crop/600/http://dai-in-defi.com/)
 
 Deep analytics on DAI current state.   
+
+### [0xtracker](https://0xtracker.com/) ![](/images/ether.png)
+
+![](//image.thum.io/get/width/500/crop/600/https://0xtracker.com/)
+
+0xtracker is the 0xProtocol trade explorer.  
+
+### [hydroscan](https://hydroscan.io/) ![](/images/ether.png)
+
+![](//image.thum.io/get/width/500/crop/600/https://hydroscan.io/)
+
+ Hydroscan shows the data of relayers, tokens and trades on Hydro Protocol. 

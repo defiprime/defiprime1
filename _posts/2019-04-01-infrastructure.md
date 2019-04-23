@@ -57,7 +57,7 @@ Wyre is a secure and compliant bridge between fiat currencies and cryptocurrency
 
 UMA is a decentralized financial contracts platform built to enable Universal Market Access.
 
-### [Hydro Protocol](https://hydroprotocol.io/) ![](/images/ether.png)
+### [Hydro Protocol](https://hydroprotocol.io/) ![](/images/ether.png) ![](/images/tron.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://hydroprotocol.io/)
 
