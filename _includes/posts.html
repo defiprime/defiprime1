@@ -1,0 +1,18 @@
+<section >
+
+{% for post in site.categories.blog %}
+<h2>{{ post.title }}</h2>
+
+	<article >
+
+		<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}">
+			<span class="image left">
+				<img src="{{ site.url }}{{ site.baseurl }}{{ post.featured-image }}" alt="" />
+			</span>
+
+
+		</a>
+	</article>
+{% endfor %}
+
+</section>
