@@ -5,6 +5,7 @@ permalink: decentralized_prediction_markets
 h1title: Prediction markets
 pagetitle: Best prediction markets on crypto blockchains  
 metadescription: Prediction markets are exchange-traded markets created for the purpose of trading the outcome of events.
+category: products
 ---
 
 Prediction markets are exchange-traded markets created to trade the outcome of events. The market prices can indicate what the crowd thinks the probability of the event is.

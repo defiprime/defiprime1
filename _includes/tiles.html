@@ -1,6 +1,6 @@
 <section class="tiles">
 
-{% for post in site.posts limit:site.front-page-posts %}
+{% for post in site.categories.products %}
 	<article class="style{{ forloop.index | random_number: 0, 10 }}">
 		<span class="image">
 			<img src="{{ site.url }}{{ site.baseurl }}/images/pic0{{ forloop.index | random_number: 1, 9 }}.jpg" alt="" />

@@ -5,6 +5,7 @@ permalink: analytics
 h1title: Analytics
 pagetitle: DeFi Analytics - Best Tools to keep track of DeFi ecosystem    
 metadescription: Analytics is the discovery, interpretation, and communication of meaningful patterns in data; and the process of applying those patterns towards effective decision making.
+category: products
 ---
 Analytics is the discovery, interpretation, and communication of meaningful patterns in data; and the process of applying those patterns towards effective decision making.
 

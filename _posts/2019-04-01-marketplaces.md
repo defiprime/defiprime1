@@ -5,6 +5,7 @@ permalink: decentralized_marketplaces
 h1title: Marketplaces
 pagetitle: Best Decentralized Marketplaces - Crypto Marketplaces
 metadescription: An online marketplace (or online e-commerce marketplace) is a type of e-commerce site where multiple third parties provide products or services.
+category: products
 ---
 
 An online marketplace (or online e-commerce marketplace) is a type of e-commerce site where multiple third parties provide products or services.

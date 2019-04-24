@@ -5,6 +5,7 @@ permalink: decentralized_kyc_identity
 h1title: Decentralized Identity
 pagetitle: Decentralized Identity Systems
 metadescription: KYC is an abbreviation for Know Your Customer and can refer to government regulations designed to prevent money laundering, financing terrorism and other crimes involving money.
+category: products
 ---
 
 KYC is an abbreviation for Know Your Customer refers to government regulations designed to prevent money laundering, financing terrorism and other crimes involving money. It also refers to the policies, procedures, and technology used by banks and financial services companies to comply with KYC regulations.

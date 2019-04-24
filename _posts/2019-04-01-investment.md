@@ -5,6 +5,7 @@ permalink: assets-tokenization
 h1title: Assets Tokenization
 pagetitle: Best Assets Tokenization Platforms for Digital Securities
 metadescription: Through tokenization, investing is cheaper, faster, more secure and available every hour of the day.
+category: products
 ---
 Through tokenization, investing is cheaper, faster, more secure and available every hour of the day. This opens up real-world assets and the world of cryptocurrencies to people who previously may not have been able to invest due to geographic or financial restrictions, and offers an alternative to traditional and largely outdated investment methods.
 

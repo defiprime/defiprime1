@@ -5,6 +5,8 @@ permalink: derivatives
 h1title: Derivatives
 pagetitle: Decentralized Derivatives   
 metadescription: In finance, a derivative is a contract that derives its value from the performance of an underlying entity. This underlying entity can be an asset, index, or interest rate, and is often simply called the underlying.
+category: products
+
 ---
 
 In finance, a derivative is a contract that derives its value from the performance of an underlying entity. This underlying entity can be an asset, index, or interest rate, and is often simply called the "underlying."
@@ -31,4 +33,4 @@ Open-source protocols for decentralized margin trading and derivatives
 
 ![](//image.thum.io/get/width/500/crop/600/https://www.tokensets.com)
 
-TokenSets is the asset management platform with tokenized trading strategies facilitated by Set Protocol’s smart contract system. 
+TokenSets is the asset management platform with tokenized trading strategies facilitated by Set Protocol’s smart contract system.
