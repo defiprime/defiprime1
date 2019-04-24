@@ -112,3 +112,9 @@ A decentralized margin lending protocol on Ethereum
 ![](//image.thum.io/get/width/500/crop/600/https://zap.org/)
 
 Zap platform allows users to create, publish and subscribe to smart contract and Decentralized Application compatible data feeds.
+
+### [Totle](https://www.totle.com) ![](/images/ether.png) ![](/images/eos.png)
+
+![](//image.thum.io/get/width/500/crop/600/https://www.totle.com)
+
+Totle platform aggregating the top decentralized exchanges, and provides reliable infrastructure for decentralized liquidity.
