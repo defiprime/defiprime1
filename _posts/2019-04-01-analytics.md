@@ -98,3 +98,9 @@ Hydroscan shows the data of relayers, tokens and trades on Hydro Protocol.
 ![](//image.thum.io/get/width/500/crop/600/https://playground.supermax.cool/makerdao)
 
 Scout dashboard shows the Maker DAO stats and activities on mainnet.
+
+### [daicast](https://daicast.info) ![](/images/ether.png)
+
+![](//image.thum.io/get/width/500/crop/600/https://daicast.info)
+
+DAI price dashboard view TradingView charts. 
