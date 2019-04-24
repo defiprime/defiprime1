@@ -93,7 +93,7 @@ Dex platform that facilitates the buying and selling of TRC-based tokens through
 
 WhaleEx is the EOS based dex exchange with multisignature smart contracts for decentralized asset custody.
 
-### [WhaleEx](https://eosdaq.com/) ![](/images/eos.png)
+### [eosdaq](https://eosdaq.com/) ![](/images/eos.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://eosdaq.com/)
 
