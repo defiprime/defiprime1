@@ -1,0 +1,20 @@
+{% if site.navigation_footer %}
+<nav class="nav  nav--footer">
+  <ul class="list list--nav">
+    {% for item in site.navigation_footer %}
+
+      {% if item[1] contains '://' %}
+        {% assign url = item[1] %}
+      {% else %}
+        {% assign url = item[1] | relative_url %}
+      {% endif %}
+
+      <li class="item  item--nav{% if item[1] == page.url %}  item--current{% endif %}">
+        <a href="{{ url }}">{{ item[0] }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
+{% else %}
+  {% include nav-default.html %}
+{% endif %}
