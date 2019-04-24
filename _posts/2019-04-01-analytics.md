@@ -103,4 +103,4 @@ Scout dashboard shows the Maker DAO stats and activities on mainnet.
 
 ![](//image.thum.io/get/width/500/crop/600/https://daicast.info)
 
-DAI price dashboard view TradingView charts. 
+DAI price dashboard with TradingView charts. 
