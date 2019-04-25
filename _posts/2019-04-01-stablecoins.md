@@ -33,12 +33,6 @@ A stable value coin backed 1:1 by USD
 
 Decentralized privacy stablecoin focused on censorship resistance.  
 
-### [Synthetix](https://www.synthetix.io/) ![](/images/ether.png)
-
-![](//image.thum.io/get/width/500/crop/600/https://www.synthetix.io/)
-
-Synthetic fiat currencies collateralized by cryptoassets
-
 ### [Augmint](https://www.augmint.org/) ![](/images/ether.png)
 
 ![](//image.thum.io/get/width/500/crop/600/https://www.augmint.org/)
