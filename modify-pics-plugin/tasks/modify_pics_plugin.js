@@ -146,7 +146,8 @@ module.exports = function(grunt) {
           if (!fs.existsSync(f.dest + '/')) {
             fs.mkdirSync(f.dest + '/');
           }
-          const file = f.dest + '/' + encodeURIComponent((singleUrl.substr(singleUrl.indexOf('http'), singleUrl.length - 1)).replace(/\/$/,''));
+          const fName = (singleUrl.substr(singleUrl.indexOf('http'), singleUrl.length - 1)).replace(/\/\/?|\.|:/g,'')
+          const file = f.dest + '/' + encodeURIComponent(fName);
           downloadFile('http:'+singleUrl, file);
           picsUrls.push({ file, origFile: matches[0]});
         }
