@@ -103,4 +103,10 @@ Scout dashboard shows the Maker DAO stats and activities on mainnet.
 
 ![](/images/output_md/httpsdaicastinfo.png)
 
-DAI price dashboard with TradingView charts. 
+DAI price dashboard with TradingView charts.
+
+### [dexindex](https://dexindex.io/) ![](/images/ether.png)
+
+![](/images/output_md/httpsdexindexio.png)
+
+DexIndex is an open source tool that searches Ethereum decentralized exchanges to find the best token prices.
