@@ -11,8 +11,3 @@ metadescription: List of the best Decentralized Finance Products. Decentralized 
 Decentralized Finance (DeFi) is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries.
 
 {% include tiles.html %}
-
-
-<div class="inner"> <h2>Recent blog posts</h2> </div>
-
-{% include posts.html %}

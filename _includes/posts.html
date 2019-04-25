@@ -1,18 +1,15 @@
-<section >
+<section>
 
 {% for post in site.categories.blog %}
-<h2>{{ post.title }}</h2>
-
-	<article >
-
-		<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}">
-			<span class="image left">
-				<img src="{{ site.url }}{{ site.baseurl }}{{ post.featured-image }}" alt="" />
-			</span>
-
-
-		</a>
-	</article>
+<article class="style{{ forloop.index | plus:1 }}">
+		<img src="{{ site.url }}{{ site.baseurl }}{{ post.featured-image }}" alt="" class="image left"/>
+	<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}">
+		<h2>{{ post.title }}</h2>
+		<div class="content">
+			<p>{{ post.excerpt }}</p>
+		</div>
+	</a>
+</article>
 {% endfor %}
 
 </section>

@@ -33,15 +33,15 @@
     </script>
 </head>
 <body>
-
     {% include header.html %}
-
-    <h1>{{ page.h1title }}</h1>
     {% if page.featured-image %}
     <span class="image main">
       <img src="{{ page.featured-image }}" alt="">
     </span> {% endif %}
-    {{ content }} {% include footer.html %}
+    <h1>{{ page.h1title }}</h1>
+    {{ content }}
+    {% include footer.html %}
+
 
 
 </body>
