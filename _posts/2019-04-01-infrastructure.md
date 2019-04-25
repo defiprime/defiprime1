@@ -13,108 +13,108 @@ Protocols, frameworks and underlaying technologies for building decentralized fi
 
 ### [Settle](https://settle.finance/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://settle.finance/)
+![](/images/output_md/httpssettlefinance.png)
 
 A web-based operating system and dashboard for decentralized finance.
 
 ### [0x](https://0x.org/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://0x.org/)
+![](/images/output_md/https0xorg.png)
 
 0x Protocol is free, open-source infrastructure that developers and businesses utilize to build products that enable the purchasing and trading of crypto tokens.
 
 ### [DutchX](https://dutchx-rinkeby.d.exchange/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://dutchx-rinkeby.d.exchange/)
+![](/images/output_md/httpsdutchx-rinkebydexchange.png)
 
 A decentralized trading protocol for ERC20 Tokens.
 
 ### [Foam](https://foam.space/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://foam.space/)
+![](/images/output_md/httpsfoamspace.png)
 
 Protocol for Proof-of-Location and decentralized location services.
 
 ### [0xcert](https://0xcert.org/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://0xcert.org/)
+![](/images/output_md/https0xcertorg.png)
 
 Open source framework for creating, managing, and swapping NFTs and tokens
 
 ### [Ramp](https://ramp.network/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://ramp.network/)
+![](/images/output_md/httpsrampnetwork.png)
 
 The protocol powering fiat to crypto exchanges
 
 ### [Wyre](https://www.sendwyre.com/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://www.sendwyre.com/)
+![](/images/output_md/httpswwwsendwyrecom.png)
 
 Wyre is a secure and compliant bridge between fiat currencies and cryptocurrency.
 
 ### [Uma](https://umaproject.org/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://umaproject.org/)
+![](/images/output_md/httpsumaprojectorg.png)
 
 UMA is a decentralized financial contracts platform built to enable Universal Market Access.
 
 ### [Hydro Protocol](https://hydroprotocol.io/) ![](/images/ether.png) ![](/images/tron.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://hydroprotocol.io/)
+![](/images/output_md/httpshydroprotocolio.png)
 
 Hydro is an open source framework for building Decentralized Exchanges.
 
 ### [Bancor Protocol](https://about.bancor.network/protocol/) ![](/images/ether.png) ![](/images/eos.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://about.bancor.network/protocol/)
+![](/images/output_md/httpsaboutbancornetworkprotocol.png)
 
 Hydro is an open source framework for building Decentralized Exchanges.
 
 ### [Loopring](https://loopring.org/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://loopring.org/)
+![](/images/output_md/httpsloopringorg.png)
 
 A protocol for decentralized token exchange, where traders have complete and total control of their crypto-assets.
 
 ### [Kyber](https://kyber.network/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://kyber.network/)
+![](/images/output_md/httpskybernetwork.png)
 
 On-chain liquidity protocol allows decentralized token swaps to be integrated into any application.
 
 ### [Uniswap](https://uniswap.io/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://uniswap.io/)
+![](/images/output_md/httpsuniswapio.png)
 
 Uniswap is an open source protocol for automated token exchange on Ethereum.
 
 ### [Centrifuge](https://centrifuge.io/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://centrifuge.io/)
+![](/images/output_md/httpscentrifugeio.png)
 
 Open, decentralized platform to connect the global financial supply chain.
 
 ### [Ren](https://renproject.io/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://renproject.io/)
+![](/images/output_md/httpsrenprojectio.png)
 
 A suite of privacy-focused tools for dark pools and other financial applications.
 
 ### [bZx (b0x)](https://b0x.network/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://b0x.network/)
+![](/images/output_md/httpsb0xnetwork.png)
 
 A decentralized margin lending protocol on Ethereum
 
 ### [Zap](https://zap.org/) ![](/images/ether.png) ![](/images/eos.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://zap.org/)
+![](/images/output_md/httpszaporg.png)
 
 Zap platform allows users to create, publish and subscribe to smart contract and Decentralized Application compatible data feeds.
 
 ### [Totle](https://www.totle.com) ![](/images/ether.png) ![](/images/eos.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://www.totle.com)
+![](/images/output_md/httpswwwtotlecom.png)
 
 Totle platform aggregating the top decentralized exchanges, and provides reliable infrastructure for decentralized liquidity.

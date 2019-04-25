@@ -12,42 +12,42 @@ An online marketplace (or online e-commerce marketplace) is a type of e-commerce
 
 ### [Gitcoin](https://gitcoin.co/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://gitcoin.co/)
+![](/images/output_md/httpsgitcoinco.png)
 
 Freelance gigs and bounties for open source projects.
 
 ### [Bounties Network](https://bounties.network/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://bounties.network/)
+![](/images/output_md/httpsbountiesnetwork.png)
 
 Bounties Network lets you create projects, collaborate, and get paid for doing freelance work in any domain.
 
 ### [OpenSea](https://opensea.io/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://opensea.io/)
+![](/images/output_md/httpsopenseaio.png)
 
 A peer to peer marketplace for crypto collectibles.
 
 ### [Origin](https://www.originprotocol.com/en) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://www.originprotocol.com/en)
+![](/images/output_md/httpswwworiginprotocolcomen.png)
 
 A protocol for creating peer-to-peer marketplaces utilizing Ethereum and IPFS
 
 ### [District0x](https://district0x.io/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://district0x.io/)
+![](/images/output_md/httpsdistrict0xio.png)
 
 A network of decentralized markets and communities that exist as decentralized autonomous organizations.
 
 ### [RareBits](https://rarebits.io/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://rarebits.io/)
+![](/images/output_md/httpsrarebitsio.png)
 
 Rare Bits is a marketplace dedicated to the buying and selling of crypto assets.
 
 ### [OpenBazaar](https://openbazaar.org/)
 
-![](//image.thum.io/get/width/500/crop/600/https://openbazaar.org/)
+![](/images/output_md/httpsopenbazaarorg.png)
 
  OpenBazaar it’s a peer to peer application that doesn’t require middlemen, which means no fees & no restrictions.

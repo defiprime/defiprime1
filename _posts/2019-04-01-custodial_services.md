@@ -11,78 +11,78 @@ Custodian, is a specialized financial institution responsible for safeguarding a
 
 ### [MetaMask](https://metamask.io/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://metamask.io/)
+![](/images/output_md/httpsmetamaskio.png)
 
 A browser extension that allows users to run Ethereum dApps and interacting with smart contracts.
 
 ### [MyCrypto](https://mycrypto.com/account) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://mycrypto.com/account)
+![](/images/output_md/httpsmycryptocomaccount.png)
 
 Open-source interface for interacting with Ethereum network.
 
 ### [Burner Wallet](https://xdai.io/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://xdai.io/)
+![](/images/output_md/httpsxdaiio.png)
 
 Burner wallet works in your browser so no app download and no seed phrase.
 
 ### [MyEtherWallet](https://www.myetherwallet.com/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://www.myetherwallet.com/)
+![](/images/output_md/httpswwwmyetherwalletcom.png)
 
 A free, open-source, client-side interface for generating Ethereum wallets & more
 
 ### [Zerion](https://zerion.io/en) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://zerion.io/en)
+![](/images/output_md/httpszerionioen.png)
 
 An interface for blockchain-based protocols in decentralized finance applications
 
 ### [InstaDApp](https://instadapp.io/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://instadapp.io/)
+![](/images/output_md/httpsinstadappio.png)
 
 A decentralized bank built on top of the MakerDAO protocol to create an easy-to-use interface
 
 ### [Argent](https://www.argent.xyz/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://www.argent.xyz/)
+![](/images/output_md/httpswwwargentxyz.png)
 
 A wallet for Ethereum-based crypto-assets and apps
 
 ### [Trust Wallet](https://trustwallet.com/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://trustwallet.com/)
+![](/images/output_md/httpstrustwalletcom.png)
 
 Multi cryptocurrency wallet to store your favorite ERC721 & ERC20 tokens
 
 ### [Multis](https://multis.co/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://multis.co/)
+![](/images/output_md/httpsmultisco.png)
 
 Multis is a multi-signature Ethereum wallet with a user-friendly interface to manage your company's crypto.
 
 ### [Fetch](https://multis.co/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://hellofetch.co/)
+![](/images/output_md/httpshellofetchco.png)
 
 Fetch is a self-custody wallet that allows anybody to manage tokens and transact across 20+ exchanges easily.
 
 ### [Dexwallet](https://www.dexwallet.io/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://www.dexwallet.io/)
+![](/images/output_md/httpswwwdexwalletio.png)
 
 Multi currency mobile wallet supporting Ethereum, xDai, POA, with interfaces to the Ethereum DeFi products.
 
 ### [Ambo](https://ambo.io/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://ambo.io/)
+![](/images/output_md/httpsamboio.png)
 
 Ambo enables you to easily purchase, store, exchange, and otherwise manage your Ether and ERC tokens.
 
 ### [Totle Portfolio](https://app.totle.com) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://app.totle.com)
+![](/images/output_md/httpsapptotlecom.png)
 
 Totle Portfolio lets anyone manage a portfolio of ERC-20 tokens and make trades across multiple decentralized exchanges.
