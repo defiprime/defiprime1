@@ -1,33 +1,28 @@
 <!-- Wrapper -->
 <div id="wrapper">
 
-	<header id="header">
-		<div class="inner">
-
+	<header id="header" class="header">
+		<div class="container inner">
 			<!-- Logo -->
-			<a href="{{ site.baseurl }}/" class="logo">
-				<span class="symbol">
-
-					{% if site.font-awesome-icon-logo %}
-
-					<div href="#" class="{{ site.font-awesome-icon-logo }}"></div>
-
-					{% else %}
-
-					<img src="{{ site.baseurl }}/{{ site.logo-image-url }}" alt="" />
-
-					{% endif %}
-
-				</span><span class="title">{{ site.title }}</span>
-			</a>
-			<!-- Nav -->
-			<div class="image right">
-<a href="/blog" class="logo">🔥 DeFi Blog</a>
+		<div class="logo header">
+			<a href="{{ site.baseurl }}/" class="logo"><img src="{{ site.baseurl }}/{{ site.logo-image-url }}" alt="" />Defiprime.com</a></div>
+			<div class="nav  nav--header">
+			<ul class="list  list--nav">
+			<li class="item  item--nav  item--current">
+			<a href="/" class="title">Home</a>
+			</li>
+			<li class="item  item--nav title">
+				<a href="/blog" 	>🔥 DeFi Blog</a>
+			</li>
+			<li class="item  item--nav">
+			<a href="/search/">Search</a>
+			</li>
+			</ul>
 			</div>
-			<nav>
-				<ul>
-				</ul>
-			</nav>
+
+			<!-- Nav -->
+
+
 
 		</div>
 	</header>
