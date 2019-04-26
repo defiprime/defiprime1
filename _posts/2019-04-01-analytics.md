@@ -110,3 +110,9 @@ DAI price dashboard with TradingView charts.
 ![](/images/output_md/httpsdexindexio.png)
 
 DexIndex is an open source tool that searches Ethereum decentralized exchanges to find the best token prices.
+
+### [Dharmalytics](https://dharmalytics.io) ![](/images/ether.png)
+
+![](/images/output_md/httpsdharmalyticsio.png)
+
+Dharmalytics is an interactive loan explorer for Dharma.
