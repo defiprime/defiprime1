@@ -11,30 +11,30 @@ In finance, a derivative is a contract that derives its value from the performan
 
 ### [DSF Protocol](https://dsfprotocol.com/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://dsfprotocol.com/)
+![](/images/output_md/httpsdsfprotocolcom.png)
 
 The power of financial derivatives with the decentralization and transparency of blockchain.
 
 ### [Daxia](https://www.daxia.us/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://www.daxia.us/)
+![](/images/output_md/httpswwwdaxiaus.png)
 
 Open source software for tokenized derivatives on Ethereum.
 
 ### [dYdX](https://dydx.exchange/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://dydx.exchange/)
+![](/images/output_md/httpsdydxexchange.png)
 
 Open-source protocols for decentralized margin trading and derivatives
 
 ### [Tokensets](https://www.tokensets.com) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://www.tokensets.com)
+![](/images/output_md/httpswwwtokensetscom.png)
 
 TokenSets is the asset management platform with tokenized trading strategies facilitated by Set Protocol’s smart contract system.
 
 ### [Synthetix](https://www.synthetix.io/) ![](/images/ether.png)
 
-![](//image.thum.io/get/width/500/crop/600/https://www.synthetix.io/)
+![](/images/output_md/httpswwwsynthetixio.png)
 
 The Synthetix platform enables the creation of on-chain synthetic assets that track the value of assets in the real world.

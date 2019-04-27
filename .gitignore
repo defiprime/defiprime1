@@ -1,6 +1,6 @@
 *~
 .sass-cache
 _site/
-blog/Gemfile.lock
+*.lock
 node_modules
 modify-pics-plugin
