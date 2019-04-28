@@ -46,10 +46,6 @@
       <article class="article  article--post  content  typeset">
 
         <h1>{{ page.title }}</h1>
-        <small class="small  post-meta">
-          {% assign date_format = site.date_format | default: "%d %b %Y" %}
-          <time datetime="{{ post.date | date_to_xmlschema }}" class="time">{{ post.date | date: date_format }}</time>
-        </small>
         {{ content }}
 
 
