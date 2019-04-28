@@ -16,4 +16,4 @@ I've been researching DeFi ecosystem for several weeks, and can't find a good li
 
 ## Listing
 
-If you'd like to submit your project, feel free to ping me at [Twitter](https://twitter.com/defiprime), rise issue at [Github](https://github.com/sneg55/defiprime) or create a PR.
+If you'd like to submit your project, feel free to ping me at [Twitter](https://twitter.com/defiprime), raise issue at [Github](https://github.com/sneg55/defiprime) or create a PR.
