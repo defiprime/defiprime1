@@ -1,6 +1,14 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/cf5973b6-5ffd-496f-92ac-4503e60446aa/deploy-status)](https://app.netlify.com/sites/vigorous-pasteur-b56317/deploys)
-
-# Defiprime - List of the best Decentralized Finance Products
+<div align="center">
+    <h1>Defiprime<br/><sub>List of the best Decentralized Finance Products</sub></h1>
+    <p align="center">
+        <a href="#reposize">
+            <img src="https://img.shields.io/github/repo-size/sneg55/defiprime.svg" /></a>
+        <a href="https://twitter.com/intent/follow?screen_name=defiprime" alt="Follow us on twitter">
+            <img src="https://img.shields.io/twitter/follow/defiprime.svg?label=Follow&style=social&logo=twitter" alt="Follow us on twitter"></a>
+        <a href="https://app.netlify.com/sites/vigorous-pasteur-b56317/deploys" alt="netlify status">
+            <img src="https://api.netlify.com/api/v1/badges/cf5973b6-5ffd-496f-92ac-4503e60446aa/deploy-status" alt="netlify status"></a>
+    </p>
+</div>
 
 Visit: https://defiprime.com
 
