@@ -119,6 +119,6 @@ Dharmalytics is an interactive loan explorer for Dharma.
 
 ### [defi.review](https://defi.dapp.review)
 
-![](//image.thum.io/get/auth/4073-grunt/width/500/crop/600/https://defi.dapp.review)
+![](/images/output_md/httpsdefidappreview.png)
 
 defi.review is an interactive dashboard with charts tracking key metrics for DeFi projects.
