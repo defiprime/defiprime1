@@ -29,12 +29,6 @@ A web-based operating system and dashboard for decentralized finance.
 
 A decentralized trading protocol for ERC20 Tokens.
 
-### [Foam](https://foam.space/) ![](/images/ether.png)
-
-![](/images/output_md/httpsfoamspace.png)
-
-Protocol for Proof-of-Location and decentralized location services.
-
 ### [0xcert](https://0xcert.org/) ![](/images/ether.png)
 
 ![](/images/output_md/https0xcertorg.png)
