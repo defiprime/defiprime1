@@ -116,3 +116,9 @@ DexIndex is an open source tool that searches Ethereum decentralized exchanges t
 ![](/images/output_md/httpsdharmalyticsio.png)
 
 Dharmalytics is an interactive loan explorer for Dharma.
+
+### [defi.review](https://defi.dapp.review)
+
+![](//image.thum.io/get/auth/4073-grunt/width/500/crop/600/https://defi.dapp.review)
+
+defi.review is an interactive dashboard with charts tracking key metrics for DeFi projects.
