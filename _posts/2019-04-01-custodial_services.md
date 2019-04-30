@@ -7,7 +7,7 @@ pagetitle: Best Ethereum wallets for DeFi and Custodian Services
 metadescription: Custodian, is a specialized financial institution responsible for safeguarding a firm's or individual's financial assets and is not engaged in "traditional" commercial or consumer/retail banking.
 category: products
 ---
-Custodian, is a specialized financial institution responsible for safeguarding a firm's or individual's financial assets and is not engaged in "traditional" commercial or consumer/retail banking.
+In old fashioned Finance Industry, the custodian is a specialized financial institution responsible for safeguarding a firm's or individual's financial assets and is not engaged in "traditional" commercial or consumer/retail banking. Custodial services in DeFi it is wallets, apps, and dashboards for managing your cryptocurrencies and assets.
 
 ### [MetaMask](https://metamask.io/) ![](/images/ether.png)
 
