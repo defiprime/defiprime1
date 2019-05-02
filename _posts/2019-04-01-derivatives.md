@@ -25,7 +25,7 @@ Open source software for tokenized derivatives on Ethereum.
 
 ![](/images/output_md/httpsdydxexchange.png)
 
-dYdX is a crypto assets trading platform with margin trading and leverage.
+Open-source protocols for decentralized margin trading and derivatives
 
 ### [Tokensets](https://www.tokensets.com) ![](/images/ether.png)
 
