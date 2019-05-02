@@ -51,3 +51,9 @@ Rare Bits is a marketplace dedicated to the buying and selling of crypto assets.
 ![](/images/output_md/httpsopenbazaarorg.png)
 
  OpenBazaar it’s a peer to peer application that doesn’t require middlemen, which means no fees & no restrictions.
+
+### [LocalEthereum](https://localethereum.com/)
+
+![](/images/output_md/httpslocalethereumcom.png)
+
+Self-custodial peer-to-peer local ETH marketplace.
