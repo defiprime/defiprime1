@@ -7,7 +7,7 @@ pagetitle: Best Ethereum wallets for DeFi and Custodian Services
 metadescription: Custodian, is a specialized financial institution responsible for safeguarding a firm's or individual's financial assets and is not engaged in "traditional" commercial or consumer/retail banking.
 category: products
 ---
-Custodian, is a specialized financial institution responsible for safeguarding a firm's or individual's financial assets and is not engaged in "traditional" commercial or consumer/retail banking.
+In old fashioned Finance Industry, the custodian is a specialized financial institution responsible for safeguarding a firm's or individual's financial assets and is not engaged in "traditional" commercial or consumer/retail banking. Custodial services in DeFi it is wallets, apps, and dashboards for managing your cryptocurrencies and assets.
 
 ### [MetaMask](https://metamask.io/) ![](/images/ether.png)
 
@@ -86,3 +86,9 @@ Ambo enables you to easily purchase, store, exchange, and otherwise manage your 
 ![](/images/output_md/httpsapptotlecom.png)
 
 Totle Portfolio lets anyone manage a portfolio of ERC-20 tokens and make trades across multiple decentralized exchanges.
+
+### [CDP Saver](https://cdpsaver.com) ![](/images/ether.png)
+
+![](/images/output_md/httpscdpsavercom.png)
+
+CDP Saver is a fully functional CDP dashboard that aims to help users manage CDPs and protect them from liquidation.

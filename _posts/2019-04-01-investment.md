@@ -62,3 +62,9 @@ Templum provides a regulated, end-to-end solution for raising capital and second
 ![](/images/output_md/httpsopenfinanceio.png)
 
 OpenFinance Network is a U.S. regulated trading platform for digital alternative assets.
+
+### [Neufund](https://neufund.org/) ![](/images/ether.png)
+
+![](/images/output_md/httpsneufundorg.png)
+
+Neufund is a platform for blockchain-based fundraising and assets tokenization.
