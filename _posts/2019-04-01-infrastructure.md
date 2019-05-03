@@ -112,3 +112,9 @@ Zap platform allows users to create, publish and subscribe to smart contract and
 ![](/images/output_md/httpswwwtotlecom.png)
 
 Totle platform aggregating the top decentralized exchanges, and provides reliable infrastructure for decentralized liquidity.
+
+### [Fabrx](https://www.fabrx.io/) ![](/images/ether.png)
+
+![](/images/output_md/httpswwwfabrxio.png)
+
+Fabrx it's a Web3 automation and middleware platform for seamless integration of blockchain.
