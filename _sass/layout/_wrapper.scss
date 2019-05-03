@@ -15,6 +15,7 @@
 				max-width: _size(inner);
 				margin: 0 auto;
 				padding: 0 $gutter;
+				margin-bottom: (_size(element-margin) * 1.25);
 
 				@include breakpoint(small) {
 					$gutter: _size(gutter) * 0.5;
