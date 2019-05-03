@@ -114,8 +114,31 @@
 			}
 		}
 
+		#hamburger_menu {
+			display: none;
+		}
+
 		@include breakpoint(small) {
 			@include padding(3em, 0, (1em, 0, -3em, 0));
+			
+			#hamburger_menu {
+				display: inline-block;
+				max-height: 39px;
+				margin-right: 10px;
+			}
+
+			.container.inner {
+				flex-direction: column;
+			}
+
+			.nav.nav--header {
+				display: none;
+				text-align: left;
+				background: rgba(216, 216, 216, 0.2);
+				padding-top: 5px;
+				padding-bottom: 5px;
+				margin-top: 5px;
+			}
 
 			nav {
 				right: 0.5em;
