@@ -74,3 +74,9 @@ CarbonUSD is a stablecoin that is one-to-one backed with USD, compatible with Et
 ![](/images/output_md/httpswwwwbtcnetwork.png)
 
 Wrapped Bitcoin (WBTC) is the ERC20 token backed 1:1 with Bitcoin.
+
+### [EOSDT](https://eosdt.com/) ![](/images/eos.png)
+
+![](/images/output_md/httpseosdtcom.png)
+
+EOS-based stablecoin with self-service DApp to generate stablecoins against crypto collateral and to manage existing user positions.
