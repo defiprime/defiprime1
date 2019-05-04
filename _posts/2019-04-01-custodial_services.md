@@ -63,7 +63,7 @@ Multi cryptocurrency wallet to store your favorite ERC721 & ERC20 tokens
 
 Multis is a multi-signature Ethereum wallet with a user-friendly interface to manage your company's crypto.
 
-### [Fetch](https://multis.co/) ![](/images/ether.png)
+### [Fetch](https://hellofetch.co/) ![](/images/ether.png)
 
 ![](/images/output_md/httpshellofetchco.png)
 
