@@ -22,12 +22,6 @@ A decentralized insurance protocol to collectively build risk transfer solutions
 
 A risk-sharing pool that allows anyone to purchase insurance
 
-### [iXledger](https://ixtechnology.com/ixledger/) ![](/images/ether.png)
-
-![](/images/output_md/httpsixtechnologycomixledger.png)
-
-A marketplace for insurers, reinsurers and brokers
-
 ### [VouchForMe](https://vouchforme.co/) ![](/images/ether.png)
 
 ![](/images/output_md/httpsvouchformeco.png)
