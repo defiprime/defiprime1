@@ -118,3 +118,9 @@ Totle platform aggregating the top decentralized exchanges, and provides reliabl
 ![](/images/output_md/httpswwwfabrxio.png)
 
 Fabrx it's a Web3 automation and middleware platform for seamless integration of blockchain.
+
+### [Set](https://www.setprotocol.com/) ![](/images/ether.png)
+
+![](/images/output_md/httpswwwsetprotocolcom.png)
+
+Set provides a solution for building businesses utilizing tokenized baskets including: decentralized brokerages, robo-advisors, and issuance order bulletin boards.
