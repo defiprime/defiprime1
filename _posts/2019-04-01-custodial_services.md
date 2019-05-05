@@ -93,7 +93,7 @@ Totle Portfolio lets anyone manage a portfolio of ERC-20 tokens and make trades 
 
 CDP Saver is a fully functional CDP dashboard that aims to help users manage CDPs and protect them from liquidation.
 
-### [imToken](https://token.im/) ![](/images/ether.png)
+### [imToken](https://token.im/) ![](/images/ether.png) ![](/images/eos.png)
 
 ![](/images/output_md/httpstokenim.png)
 
