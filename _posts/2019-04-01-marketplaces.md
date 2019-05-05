@@ -57,3 +57,9 @@ Rare Bits is a marketplace dedicated to the buying and selling of crypto assets.
 ![](/images/output_md/httpslocalethereumcom.png)
 
 Self-custodial peer-to-peer local ETH marketplace.
+
+### [Emoon](https://www.emoon.io/)
+
+![](/images/output_md/httpswwwemoonio.png)
+
+Emoon is a Peer-To-Peer marketplace for ERC20 and ERC721 Ethereum assets using the 0x Protocol
