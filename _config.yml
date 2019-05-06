@@ -28,3 +28,5 @@ plugins:
 include: ['.htaccess']
 responsive_image:
   template: _includes/responsive-image.html
+extra_images:
+  - images/*.png
