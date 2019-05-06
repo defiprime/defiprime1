@@ -13,7 +13,7 @@ description: List of the best Decentralized Finance Products
 url: "https://defiprime.com" # the base hostname & protocol for your site
 
 # Logo settings
-logo-image-url: favicon.png
+logo-image-url: /images/logo.png
 #font-awesome-icon-logo: fas fa-dice-d20
 
 # Social settings
@@ -26,3 +26,5 @@ home-link-in-menu: no
 plugins:
   - jekyll-random
 include: ['.htaccess']
+responsive_image:
+  template: _includes/responsive-image.html
