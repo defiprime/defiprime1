@@ -130,3 +130,9 @@ Set provides a solution for building businesses utilizing tokenized baskets incl
 ![](/images/output_md/httpsopenrelayxyz.png)
 
 OpenRelay is an open order book built on a open source microservice architecture that makes finding orders and filling them via the 0x Protocol fast and efficient at any scale.
+
+### [Melonport](https://melonport.com/) ![](/images/ether.png)
+
+![](/images/output_md/httpsmelonportcom.png)
+
+Autonomous systems for crypto asset management. Protocol with frontend and backend hosted and executed on decentralized platforms.
