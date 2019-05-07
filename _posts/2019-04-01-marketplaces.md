@@ -46,19 +46,19 @@ A network of decentralized markets and communities that exist as decentralized a
 
 Rare Bits is a marketplace dedicated to the buying and selling of crypto assets.
 
-### [OpenBazaar](https://openbazaar.org/)
+### [OpenBazaar](https://openbazaar.org/) ![](/images/ether.png) ![](/images/btc.png)
 
 ![](/images/output_md/httpsopenbazaarorg.png)
 
  OpenBazaar it’s a peer to peer application that doesn’t require middlemen, which means no fees & no restrictions.
 
-### [LocalEthereum](https://localethereum.com/)
+### [LocalEthereum](https://localethereum.com/) ![](/images/ether.png)
 
 ![](/images/output_md/httpslocalethereumcom.png)
 
 Self-custodial peer-to-peer local ETH marketplace.
 
-### [Emoon](https://www.emoon.io/)
+### [Emoon](https://www.emoon.io/) ![](/images/ether.png)
 
 ![](/images/output_md/httpswwwemoonio.png)
 
