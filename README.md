@@ -1,5 +1,5 @@
+<a href="https://defiprime.com"><img src="https://defiprime.com/images/og.png" /></a>
 <div align="center">
-    <h1>Defiprime<br/><sub>List of the best Decentralized Finance Products</sub></h1>
     <p align="center">
         <a href="#reposize">
             <img src="https://img.shields.io/github/repo-size/sneg55/defiprime.svg" /></a>
