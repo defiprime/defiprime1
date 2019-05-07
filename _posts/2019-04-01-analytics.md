@@ -122,3 +122,9 @@ Dharmalytics is an interactive loan explorer for Dharma.
 ![](/images/output_md/httpsdefidappreview.png)
 
 defi.review is an interactive dashboard with charts tracking key metrics for DeFi projects.
+
+### [DeFi Tracker](https://defitracker.io) ![](/images/ether.png)
+
+![](/images/output_md/httpsdefitrackerio.png)
+
+DeFi Tracker is a watch-mode DeFi portfolio tracker across multiple protocols.
