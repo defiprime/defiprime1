@@ -46,7 +46,7 @@ A network of decentralized markets and communities that exist as decentralized a
 
 Rare Bits is a marketplace dedicated to the buying and selling of crypto assets.
 
-### [OpenBazaar](https://openbazaar.org/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem") ![](/images/btc.png "Built on Bitcoin or related to Bitcoin ecosystem")
+### [OpenBazaar](https://openbazaar.org/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem") ![](/images/btc.png "Using Bitcoin ecosystem")
 
 ![](/images/output_md/httpsopenbazaarorg.png)
 

@@ -63,7 +63,7 @@ Bamboo Relay is a 0x and bZx relayer - trade, lend or borrow any ERC20 token fro
 
 Stablecoin focused DEX exchange built on 0x.   
 
-### [Bisq](https://bisq.network/) ![](/images/btc.png "Built on Bitcoin or related to Bitcoin ecosystem") <i class="fas fa-user-lock" title="Non-custodial"></i>
+### [Bisq](https://bisq.network/) ![](/images/btc.png "Using Bitcoin ecosystem") <i class="fas fa-user-lock" title="Non-custodial"></i>
 
 ![](/images/output_md/httpsbisqnetwork.png)
 
@@ -75,7 +75,7 @@ Bisq is an open-source, peer-to-peer desktop application that allows you to buy 
 
 Decentralized exchange with global fiat gateways.
 
-### [Sparkswap](https://sparkswap.com/) ![](/images/btc.png "Built on Bitcoin or related to Bitcoin ecosystem")
+### [Sparkswap](https://sparkswap.com/) ![](/images/btc.png "Using Bitcoin ecosystem")
 
 ![](/images/output_md/httpssparkswapcom.png)
 
