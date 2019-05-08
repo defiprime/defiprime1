@@ -1,6 +1,14 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/cf5973b6-5ffd-496f-92ac-4503e60446aa/deploy-status)](https://app.netlify.com/sites/vigorous-pasteur-b56317/deploys)
-
-# Defiprime - List of the best Decentralized Finance Products
+<a href="https://defiprime.com"><img src="https://defiprime.com/images/og.png" /></a>
+<div align="center">
+    <p align="center">
+        <a href="#reposize">
+            <img src="https://img.shields.io/github/repo-size/sneg55/defiprime.svg" /></a>
+        <a href="https://twitter.com/intent/follow?screen_name=defiprime" alt="Follow us on twitter">
+            <img src="https://img.shields.io/twitter/follow/defiprime.svg?label=Follow&style=social&logo=twitter" alt="Follow us on twitter"></a>
+        <a href="https://app.netlify.com/sites/vigorous-pasteur-b56317/deploys" alt="netlify status">
+            <img src="https://api.netlify.com/api/v1/badges/cf5973b6-5ffd-496f-92ac-4503e60446aa/deploy-status" alt="netlify status"></a>
+    </p>
+</div>
 
 Visit: https://defiprime.com
 
@@ -20,4 +28,4 @@ I've been researching DeFi ecosystem for several weeks, and can't find a good li
 
 ## Listing
 
-If you'd like to submit your project, please ping me at Twitter, rise issue at Github or create a PR. You can edit/add projects directly at `_posts`
+If you'd like to submit your project, please ping me at Twitter, open an issue at Github or create a PR. You can edit/add projects directly at `_posts`

@@ -10,25 +10,25 @@ category: products
 
 Prediction markets are exchange-traded markets created to trade the outcome of events. The market prices can indicate what the crowd thinks the probability of the event is.
 
-### [Veil](https://veil.co/) ![](/images/ether.png)
+### [Veil](https://veil.co/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
 
 ![](/images/output_md/httpsveilco.png)
 
 A peer to peer trading market for derivatives and predictions on Augur, 0x, and Ethereum. Not available for U.S. citizens.
 
-### [Augur](https://www.augur.net/) ![](/images/ether.png)
+### [Augur](https://www.augur.net/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
 
 ![](/images/output_md/httpswwwaugurnet.png)
 
 Prediction market protocol built on Ethereum.
 
-### [Helena](https://helena.network/) ![](/images/ether.png)
+### [Helena](https://helena.network/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
 
 ![](/images/output_md/httpshelenanetwork.png)
 
 Prediction markets platform for forecasting blockchain developments, events, and projects.
 
-### [Gnosis](https://gnosis.io/) ![](/images/ether.png)
+### [Gnosis](https://gnosis.io/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
 
 ![](/images/output_md/httpsgnosisio.png)
 
