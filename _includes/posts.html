@@ -9,5 +9,5 @@
 			<p>{{ post.excerpt | strip_html | truncatewords:50}}</p>
 
 </div>
-<p>	<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}">Read more</a></p>
+<p>	<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}">Read more</a></p> <br>
 {% endfor %}
