@@ -33,7 +33,7 @@ A decentralized trading protocol for ERC20 Tokens.
 
 ![](/images/output_md/https0xcertorg.png)
 
-Open source framework for creating, managing, and swapping NFTs and tokens
+0xcert is an open-source framework to create, manage and swap digital assets (ERC-721) and value tokens (ERC-20) on the blockchain.
 
 ### [Ramp](https://ramp.network/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
 
