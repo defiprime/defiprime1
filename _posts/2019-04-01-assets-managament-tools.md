@@ -109,6 +109,6 @@ AlphaWallet is a mobile crypto wallet that interacts with smart contracts and dA
 
 ### [Jwallet](https://jwallet.network/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
 
-![](//image.thum.io/get/auth/4121-grunt/width/500/crop/600/https://jwallet.network/)
+![](/images/output_md/httpsjwalletnetwork.png)
 
 Jwallet is an institutional-grade wallet to manage your digital assets.
