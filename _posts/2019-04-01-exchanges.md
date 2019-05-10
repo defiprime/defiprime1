@@ -104,3 +104,9 @@ EOS-native decentralized cryptocurrency exchange.
 ![](/images/output_md/httpsliquid-longkeydonixcom.png)
 
 This is a tool that lets you turn your existing ETH into a leveraged ETH position against USD in a single transaction for a small fee.
+
+### [dex.blue](https://dex.blue/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem") <i class="fas fa-user-lock" title="Non-custodial"></i>
+
+![](/images/output_md/httpsdexblue.png)
+
+dex.blue is a platform with advanced trading technology, enabling trustless real-time trading of tokenized assets on the Ethereum blockchain.
