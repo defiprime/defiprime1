@@ -51,3 +51,9 @@ Decentralized infrastructure for self-sovereign identity.
 ![](/images/output_md/httpsprojecthydroorg.png)
 
  Hydro enables new and existing private systems to seamlessly integrate and leverage the immutable and transparent dynamics of a public blockchain, to enhance application and document security, identity management, and transactions.
+
+### [Blockpass](https://www.blockpass.org) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
+
+![](/images/output_md/httpswwwblockpassorg.png)
+
+Blockpass is a blockchain based self-sovereign identity protocol for the connected world. Blockpass offers shared regulatory compliance services for humans, companies, objects and devices. 
