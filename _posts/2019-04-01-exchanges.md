@@ -110,3 +110,9 @@ This is a tool that lets you turn your existing ETH into a leveraged ETH positio
 ![](/images/output_md/httpsdexblue.png)
 
 dex.blue is a platform with advanced trading technology, enabling trustless real-time trading of tokenized assets on the Ethereum blockchain.
+
+### [Dolomite](https://dolomite.io) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem") <i class="fas fa-user-lock" title="Non-custodial"></i>
+
+![](/images/output_md/httpsdolomiteio.png)
+
+Dolomite is a decentralized exchange for ERC-20 tokens trading with built-in portfolio management and cryptocurrency market analysis tools. 
