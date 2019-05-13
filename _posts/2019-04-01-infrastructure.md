@@ -136,3 +136,9 @@ OpenRelay is an open order book built on a open source microservice architecture
 ![](/images/output_md/httpsmelonportcom.png)
 
 Autonomous systems for crypto asset management. Protocol with frontend and backend hosted and executed on decentralized platforms.
+
+### [Blocknative](https://www.blocknative.com/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
+
+![](/images/output_md/httpswwwblocknativecom.png)
+
+Blocknative is an embeddable javascript widget that translates complex blockchain tech into simple terms for end-users.
