@@ -38,3 +38,9 @@ TokenSets is the asset management platform with tokenized trading strategies fac
 ![](/images/output_md/httpswwwsynthetixio.png)
 
 The Synthetix platform enables the creation of on-chain synthetic assets that track the value of assets in the real world.
+
+### [Expo](https://www.expotrading.com/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
+
+![](/images/output_md/httpswwwexpotradingcom.png)
+
+Expo is a trustless way to margin trade with short or leveraged exposure as easy as buying an ERC20 token.
