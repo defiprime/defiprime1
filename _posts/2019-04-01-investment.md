@@ -68,3 +68,9 @@ Neufund is a platform for blockchain-based fundraising and assets tokenization.
 ![](/images/output_md/httpswwwtokensoftio.png)
 
 TokenSoft enables issuers, financial institutions, broker-dealers, real estate companies, and funds to meet compliance requirements for digital securities on the blockchain at issuance, distribution, and transfer.
+
+### [ERC-1404](https://erc1404.org/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
+
+![](/images/output_md/httpserc1404org.png)
+
+ERC-1404 is an open source interoperable standard for issuing tokens with transfer restrictions. 
