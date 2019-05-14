@@ -1,0 +1,8 @@
+body:not(.post) .inner p {
+    color: _color(main-color);
+}
+header ~ p {
+    max-width: 34em;
+    margin: 0 auto;
+    text-align: center;
+}
