@@ -1,8 +1,7 @@
 ---
 layout: default
-title: Defi Blog
-metadescription: List of the best Decentralized Finance Products. Decentralized Finance (DeFi) is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries.
-
+title: Defi Blog - What is DeFi? Interviews with DeFi projects, analytics, and important news
+metadescription: We want to shed some light on how DeFi products build and how the ecosystem evolves over time. Our blog features interviews with DeFi projects, analytics, and important news.
 ---
 
 <header>
