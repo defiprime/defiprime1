@@ -7,15 +7,11 @@ pagetitle: DexWallet
 metadescription: DexWallet
 category: blog
 featured-image: /images/DexWallet.png
+intro: Nicola Di Marco Founder & Designer @DexWallet here. We are on a mission to build the most advanced mobile wallet for the decentralized finance with integrated borrowing, lending, exchange, and native in-wallet Staking for everyone.
 ---
-Nicola Di Marco
-Founder & Designer @DexWallet
-
-
 #### Hello! What's your background, and what are you working on?
 
-
-We are on a mission to build the most advanced mobile wallet for the decentralized finance with integrated borrowing, lending, exchange, and native in-wallet Staking for everyone.
+Nicola Di Marco Founder & Designer @DexWallet here. We are on a mission to build the most advanced mobile wallet for the decentralized finance with integrated borrowing, lending, exchange, and native in-wallet Staking for everyone.
 
 With a strong focus on UX and a handpicked selection of the best protocols, we are making passive income strategies built on staking and lending truly available at a fingertip for our customers.
 

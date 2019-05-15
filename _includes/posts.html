@@ -10,7 +10,7 @@
 		<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}">
 			<h2>{{ post.title }}</h2>
 			<div class="content">
-				<p>{{ post.excerpt | strip_html | truncatewords:50 }}</p>
+				<p>{{ post.intro | strip_html | truncatewords:50 }}</p>
 			</div>
 		</a>
 	</article>
