@@ -135,7 +135,7 @@
 					text-transform: none;
 					letter-spacing: 0;
 					@include breakpoint(medium) {
-						font-size: 30px;
+						font-size: 27px;
 					}
 				}
 
@@ -143,12 +143,11 @@
 					width: 100%;
 					line-height: 1.6;
 					margin-top: 0.35em;
-					display: -webkit-box;
 					-webkit-line-clamp: 5;
 					-webkit-box-orient: vertical;
 					overflow: hidden;
 					text-overflow: ellipsis;
-					max-height: 180px;
+					max-height: 160px;
 					@include breakpoint(medium) {
 						width: 100%;
 					}
