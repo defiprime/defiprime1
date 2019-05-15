@@ -11,6 +11,9 @@
 @function _font($keys...) {
 	@return val($font, $keys...);
 }
+@function _add-font($keys...) {
+	@return val($add-font, $keys...);
+}
 
 /// Gets a misc value.
 /// @param {string} $keys Key(s).
@@ -24,6 +27,9 @@
 /// @return {string} Value.
 @function _palette($keys...) {
 	@return val($palette, $keys...);
+}
+@function _color($keys...) {
+	@return val($color, $keys...);
 }
 
 /// Gets a size value.

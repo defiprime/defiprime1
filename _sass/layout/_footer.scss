@@ -10,7 +10,8 @@
 		$gutter: _size(gutter);
 
 		@include padding(5em, 0, (0, 0, 3em, 0));
-		background-color: _palette(bg-alt);
+		background-color: _color(main-color);
+		color: #fff;
 
 		> .inner {
 			@include vendor('display', 'flex');
@@ -20,15 +21,68 @@
 			> * > :last-child {
 				margin-bottom: 0;
 			}
-
-			section:nth-child(1) {
-				width: calc(66% - #{$gutter});
-				margin-right: $gutter;
+			.footer {
+				@include vendor('display', 'flex');
+				@include vendor('justify-content', 'space-between');
+				width: 100%;
+				@include breakpoint(medium) {
+					@include vendor('flex-direction', 'column');		
+				}
+				&-col-bottom {
+					.title {
+						display: block;
+						margin-bottom: 20px;
+					}
+					.hash-val {
+						display: block;
+						margin-bottom: 20px;
+						text-overflow: ellipsis;
+						overflow: hidden;
+					}
+					a {
+						display: block;
+						margin-bottom: 20px;
+					}
+				}
 			}
 
-			section:nth-child(2) {
-				width: calc(33% - #{$gutter});
-				margin-left: $gutter;
+			.info {
+				.link {
+					font-size: 18px;
+					display: block;
+					text-transform: none;
+					margin-bottom: 10px;
+				}
+				.product-link {
+					margin-top: 1em;
+					display: block;
+				}
+			}
+
+			.social-links {
+				margin-bottom: 2em;
+				.icon {
+					margin-right: 0.8em;
+				}
+			}
+
+			.text-made {
+				min-height: 65px;
+				@include breakpoint(medium) {
+					min-height: auto;		
+				}
+			}
+
+			a {
+				color: _color(purple-color);
+				transition: .3s;
+				&:hover {
+					color: _color(green-color);
+				}
+			}
+			
+			p {
+				color: #fff;
 			}
 
 			.copyright {
@@ -39,9 +93,7 @@
 				font-size: 0.8em;
 				color: transparentize(_palette(fg), 0.5);
 
-				a {
-					color: inherit;
-				}
+				
 
 				li {
 					display: inline-block;

@@ -3,12 +3,12 @@
 # only Main files contain this front matter, not partials.
 ---
 @import 'libs/vars';
-@import 'alembic';
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'libs/skel';
 @import 'font-awesome.min.css';
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Kanit:400,500,600" rel="stylesheet');
 
 /*
 	Phantom by HTML5 UP
@@ -48,6 +48,7 @@
 // Base.
 
 	@import 'base/page';
+	@import 'base/variables';
 	@import 'base/typography';
 
 // Component.
@@ -65,6 +66,7 @@
 // Layout.
 
 	@import 'layout/header';
+	@import 'layout/content';
 	@import 'layout/menu';
 	@import 'layout/main';
 	@import 'layout/footer';

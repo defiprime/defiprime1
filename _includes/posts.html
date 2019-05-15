@@ -1,13 +1,19 @@
+<section class="tiles">
 
 {% for post in site.categories.blog %}
-<div class="inner">
-
-	<a href="{{ post.url }}">
-	<img src="{{ post.featured-image }}" alt="" class="image left"/>
-		<h2>{{ post.title }}</h2>	</a>
-
-			<p>{{ post.excerpt | strip_html | truncatewords:50}}</p>
-
-</div>
-<p>	<a href="{{ post.url }}">Read more</a></p> <br>
+	<article class="style{{ forloop.index | random_number: 0, 10 }}">
+		<div class="article-image">
+			<div class="image">
+				<img src="{{ post.featured-image }}" alt="" />
+			</div>
+		</div>
+		<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}">
+			<h2>{{ post.title }}</h2>
+			<div class="content">
+				<p>{{ post.excerpt | strip_html | truncatewords:50 }}</p>
+			</div>
+		</a>
+	</article>
 {% endfor %}
+
+</section>
