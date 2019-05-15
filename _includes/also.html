@@ -1,10 +1,20 @@
-<h3>Next:</h3>
+<h3>Read next:</h3>
 <section class="tiles">
 {% for post in site.posts limit:site.front-page-posts %}
 	<article>
-		<section >
-	<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}" class="button special fit small">{{ post.title }}</a>
-</section>
+		<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}" class="post-link">
+			<div class="post-top">
+				<span class="image">
+					<img src="{{ site.url }}{{ site.baseurl }}/images/pic0{{ forloop.index | random_number: 1, 9 }}.jpg" alt="" />
+				</span>
+			</div>
+			<div class="descr">
+				<h4>{{ post.title }}</h4>
+				<div class="content">
+					<p>{{ post.excerpt }}</p>
+				</div>
+			</div>
+		</a>
 	</article>
 {% endfor %}
 </section>

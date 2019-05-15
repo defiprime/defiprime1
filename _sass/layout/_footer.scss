@@ -25,6 +25,9 @@
 				@include vendor('display', 'flex');
 				@include vendor('justify-content', 'space-between');
 				width: 100%;
+				@include breakpoint(medium) {
+					@include vendor('flex-direction', 'column');		
+				}
 				&-col-bottom {
 					.title {
 						display: block;
@@ -33,6 +36,8 @@
 					.hash-val {
 						display: block;
 						margin-bottom: 20px;
+						text-overflow: ellipsis;
+						overflow: hidden;
 					}
 					a {
 						display: block;
@@ -63,10 +68,17 @@
 
 			.text-made {
 				min-height: 65px;
+				@include breakpoint(medium) {
+					min-height: auto;		
+				}
 			}
 
 			a {
 				color: _color(purple-color);
+				transition: .3s;
+				&:hover {
+					color: _color(green-color);
+				}
 			}
 			
 			p {

@@ -25,4 +25,6 @@ markdown: kramdown
 home-link-in-menu: no
 plugins:
   - jekyll-random
+  - wdm
+  - jekyll-watch
 include: ['.htaccess']
