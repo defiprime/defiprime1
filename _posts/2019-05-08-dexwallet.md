@@ -1,7 +1,7 @@
 ---
 layout: blog
 title:  "DexWallet"
-permalink: DexWallet
+permalink: dexwallet
 h1title: Interview with Nicola Di Marco, Founder & Designer from DexWallet
 pagetitle: Interview with Nicola Di Marco, Founder & Designer from DexWallet   
 metadescription: Nicola Di Marco Founder & Designer from DexWallet talking about building mobile wallet for the decentralized finance with integrated borrowing, lending, exchange, and native in-wallet Staking for everyone.
