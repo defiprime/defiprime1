@@ -7,6 +7,7 @@ pagetitle: Interview with Nicola Di Marco, Founder & Designer from DexWallet
 metadescription: Nicola Di Marco Founder & Designer from DexWallet talking about building mobile wallet for the decentralized finance with integrated borrowing, lending, exchange, and native in-wallet Staking for everyone.
 category: blog
 featured-image: /images/blog/dexwallet-og.png
+quote: /images/blog/dexwallet-quote.png
 intro: Nicola Di Marco Founder & Designer from DexWallet talking about building mobile wallet for the decentralized finance with integrated borrowing, lending, exchange, and native in-wallet Staking for everyone.
 author: Defiprime
 ---
