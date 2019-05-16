@@ -4,7 +4,7 @@ title:  "Melon Protocol"
 permalink: melon-protocol
 h1title: Interview with Mona El Isa CEO and Co Founder at Melonport  
 pagetitle: Interview with Mona El Isa CEO and Co Founder at Melonport   
-metadescription: Blog post3
+metadescription: Mona El Isa, Co Founder at Melonport talking about building a new infrastructure for asset management at Melon Protocol.
 category: blog
 featured-image: /images/blog/melon-og.png
 quote: /images/blog/melon-quote.png
