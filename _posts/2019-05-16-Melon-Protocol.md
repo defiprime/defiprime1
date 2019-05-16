@@ -6,12 +6,12 @@ h1title: Interview with Mona El Isa CEO and Co Founder at Melonport
 pagetitle: Interview with Mona El Isa CEO and Co Founder at Melonport   
 metadescription: Blog post3
 category: blog
-featured-image: /images/melon-og.png
+featured-image: /images/blog/melon-og.png
 quote: /images/blog/melon-quote.png
-intro: For the first time in my life, I was faced with the operational and administrative work that goes into running a fund and I was shocked by how incredibly inefficient, expensive, wasteful and archaic it was in today’s age of technology.
+intro: Mona El Isa, Co Founder at Melonport talking about building a new infrastructure for asset management at Melon Protocol.  
 author: Defiprime
 ---
-For the first time in my life, I was faced with the operational and administrative work that goes into running a fund and I was shocked by how incredibly inefficient, expensive, wasteful and archaic it was in today’s age of technology.
+Mona El Isa, Co Founder at Melonport talking about building a new infrastructure for asset management at Melon Protocol.  
 
 ## Hello! What's your background, and what is the Melon back story?
 
