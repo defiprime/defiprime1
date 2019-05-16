@@ -20,6 +20,9 @@
 			text-transform: uppercase;
 			display: inline-block;
 			max-width: 220px;
+			@include breakpoint(xsmall) {
+				margin-bottom: 1em;
+			}
 
 			> * {
 				display: inline-block;
@@ -136,5 +139,8 @@
 		@include vendor('display', 'flex');
 		@include vendor('align-items', 'center');
 		@include vendor('justify-content', 'space-between');
+		@include breakpoint(xsmall) {
+			flex-direction: column;
+		}
 	}
 }

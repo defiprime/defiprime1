@@ -33,6 +33,10 @@
 		white-space: nowrap;
 		font-family: _font(family);
 		margin: 30px 0;
+		text-transform: uppercase;
+		font-weight: _font(weight-bold);
+		letter-spacing: _font(letter-spacing);
+		border-radius: 4px;
 
 		&.icon {
 			&:before {

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog-list
 title: Defi Blog - What is DeFi? Interviews with DeFi projects, analytics, and important news
 metadescription: We want to shed some light on how DeFi products build and how the ecosystem evolves over time. Our blog features interviews with DeFi projects, analytics, and important news.
 ---

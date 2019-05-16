@@ -35,9 +35,8 @@
 <body class="post">
     {% include header.html %}
     {% if page.featured-image %}
-    <div class="feature" style="background-image: url({{ page.featured-image }})"><div class="container  typeset">
-
-</div>
+    <div class="feature" style="background-image: url({{ page.featured-image }})">
+      <div class="container  typeset"></div>
     </div> {% endif %}
 
 
@@ -53,12 +52,11 @@
         </div>
         {{ content }}
       </article>
-            {% include author_bio.html %}
 
-      {% include blog-readmore.html %}
-
+      {% include author_bio.html %}
     </main>
-{% include footer.html %}
+    {% include blog-readmore.html %}
+    {% include footer.html %}
 </body>
 
 </html>
