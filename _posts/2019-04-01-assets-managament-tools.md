@@ -76,6 +76,7 @@ Fetch is a self-custody wallet that allows anybody to manage tokens and transact
 ![](/images/output_md/httpswwwdexwalletio.png)
 
 Multi currency mobile wallet supporting Ethereum, xDai, POA, with interfaces to the Ethereum DeFi products.
+[Interview with Dexwallet](/dexwallet)
 
 ### [Ambo](https://ambo.io/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
 
