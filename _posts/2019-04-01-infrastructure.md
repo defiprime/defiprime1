@@ -117,7 +117,8 @@ Totle platform aggregating the top decentralized exchanges, and provides reliabl
 
 ![](/images/output_md/httpswwwfabrxio.png)
 
-Fabrx it's a Web3 automation and middleware platform for seamless integration of blockchain.
+Fabrx it's a Web3 automation and middleware platform for seamless integration of blockchain. [Interview with Fabrx](/fabrx)
+
 
 ### [Set](https://www.setprotocol.com/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
 

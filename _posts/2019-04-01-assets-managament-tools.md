@@ -9,7 +9,7 @@ category: products
 redirect_from:
   - custodian_services
 ---
-In old fashioned Finance Industry, the custodian is a specialized financial institution responsible for safeguarding a firm's or individual's financial assets and is not engaged in "traditional" commercial or consumer/retail banking. Custodial services in DeFi it is wallets, apps, and dashboards for managing your cryptocurrencies and assets.
+Custodian, is a specialized financial institution responsible for safeguarding a firm's or individual's financial assets and is not engaged in "traditional" commercial or consumer/retail banking.
 
 ### [MetaMask](https://metamask.io/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
 
@@ -76,6 +76,7 @@ Fetch is a self-custody wallet that allows anybody to manage tokens and transact
 ![](/images/output_md/httpswwwdexwalletio.png)
 
 Multi currency mobile wallet supporting Ethereum, xDai, POA, with interfaces to the Ethereum DeFi products.
+[Interview with Dexwallet](/dexwallet)
 
 ### [Ambo](https://ambo.io/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
 

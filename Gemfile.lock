@@ -35,6 +35,8 @@ GEM
       sass (~> 3.4)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
+    jekyll-youtube (1.0.0)
+      jekyll
     kramdown (1.17.0)
     liquid (4.0.3)
     listen (3.1.5)
@@ -64,6 +66,7 @@ DEPENDENCIES
   jekyll
   jekyll-random
   jekyll-redirect-from
+  jekyll-youtube
 
 BUNDLED WITH
    2.0.1

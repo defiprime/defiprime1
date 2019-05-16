@@ -1,0 +1,19 @@
+<h3>The Latest:</h3>
+<section class="tiles">
+  {% for post in site.categories.blog limit:3 %}
+	<article>
+		<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}" class="post-link">
+			<div class="post-top">
+				<span class="image">
+					<img src="{{ post.quote }}" alt="" />
+				</span>
+			</div>
+			<div class="descr">
+				<div class="content">
+					<p>{{ post.intro }}</p>
+				</div>
+			</div>
+		</a>
+	</article>
+{% endfor %}
+</section>

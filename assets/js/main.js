@@ -193,7 +193,11 @@
 						if (event.keyCode == 27)
 							$menu._hide();
 
-				});
+        });
+        
+      $("#hamburger_menu").click(function (){
+        $(".nav.nav--header").slideToggle('slow');
+      })
 
 	});
 

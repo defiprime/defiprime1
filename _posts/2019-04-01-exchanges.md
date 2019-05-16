@@ -101,7 +101,7 @@ EOS-native decentralized cryptocurrency exchange.
 
 ### [Liquid Long](https://liquid-long.keydonix.com/#/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem") <i class="fas fa-user-lock" title="Non-custodial"></i>
 
-![](/images/output_md/httpsliquid-longkeydonixcom.png)
+![](/images/output_md/httpsliquid-longkeydonixcom%23.png)
 
 This is a tool that lets you turn your existing ETH into a leveraged ETH position against USD in a single transaction for a small fee.
 

@@ -1,5 +1,6 @@
 *~
 .sass-cache
 _site/
+*.lock
 node_modules
 modify-pics-plugin

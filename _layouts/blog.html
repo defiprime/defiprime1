@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page.pagetitle }} </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 160 }}">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css " | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+    <meta property="og:title" content="{{ page.h1title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
+    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:image" content="{{ page.featured-image }}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@defiprime">
+    <meta name="twitter:creator" content="@defiprime">
+    <meta name="twitter:title" content="{{ page.h1title }}">
+    <meta name="twitter:description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 300 }}">
+    <meta name="twitter:image" content="{{ page.featured-image }}">
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138327045-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-138327045-1');
+    </script>
+</head>
+<body class="post">
+    {% include header.html %}
+    {% if page.featured-image %}
+    <div class="feature" style="background-image: url({{ page.featured-image }})">
+      <div class="container  typeset"></div>
+    </div> {% endif %}
+
+
+    <main class="main  container">
+
+      <article class="article  article--post  content  typeset">
+        <h1>{{ page.h1title }}</h1>
+        <div class="container">
+
+         <div class="author-block">
+            <span class="name">{{page.author}}</span>
+            <span class="date">on {{ page.date | date_to_string }}</span>
+        </div>
+        {{ content }}
+      </article>
+
+      {% include author_bio.html %}
+    </main>
+    {% include blog-readmore.html %}
+    {% include footer.html %}
+</body>
+
+</html>

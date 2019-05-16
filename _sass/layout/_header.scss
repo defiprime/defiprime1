@@ -7,7 +7,8 @@
 /* Header */
 
 	#header {
-		@include padding(0, 0, (3em, 0, -5em, 0));
+		@include padding(0, 0, (2em, 0, -5em, 0));
+		margin-bottom: 4.6em;
 
 		.logo {
 			display: block;
@@ -15,10 +16,13 @@
 			color: inherit;
 			font-weight: _font(weight-bold);
 			letter-spacing: _font(letter-spacing);
-			margin: 0 0 (_size(element-margin) * 1.25) 0;
 			text-decoration: none;
 			text-transform: uppercase;
 			display: inline-block;
+			max-width: 220px;
+			@include breakpoint(xsmall) {
+				margin-bottom: 1em;
+			}
 
 			> * {
 				display: inline-block;
@@ -130,3 +134,13 @@
 			}
 		}
 	}
+.header {
+	&-content {
+		@include vendor('display', 'flex');
+		@include vendor('align-items', 'center');
+		@include vendor('justify-content', 'space-between');
+		@include breakpoint(xsmall) {
+			flex-direction: column;
+		}
+	}
+}
