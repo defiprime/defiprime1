@@ -143,3 +143,9 @@ Autonomous systems for crypto asset management. Protocol with frontend and backe
 ![](/images/output_md/httpswwwblocknativecom.png)
 
 Blocknative is an embeddable javascript widget that translates complex blockchain tech into simple terms for end-users.
+
+### [Matic](https://matic.network/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
+
+![](/images/output_md/httpsmaticnetwork.png)
+
+Matic Network is a blockchain scalability platform which provides secure, scalable and instant transactions powered by PoS side chains and an adapted version of Plasma.
