@@ -26,3 +26,5 @@ home-link-in-menu: no
 plugins:
   - jekyll-random
 include: ['.htaccess']
+collections:
+  - lending
