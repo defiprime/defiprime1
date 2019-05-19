@@ -135,8 +135,8 @@ DeFi Tracker is a watch-mode DeFi portfolio tracker across multiple protocols.
 
 Collateralized Debt Position (CDP) statistics and management tools for the MakerDAO platform.
 
-### [Kyber Network Tracker](https://tracker.kyber.network/#/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
+### [Kyber Network Tracker](https://tracker.kyber.network/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
 
-![](/images/output_md/httpstrackerkybernetwork%23.png)
+![](/images/output_md/httpstrackerkybernetwork.png)
 
 Tracking Kyber Network's Trades, Activities, and Burnt Fees.

@@ -99,9 +99,9 @@ WhaleEx is the EOS based dex exchange with multisignature smart contracts for de
 
 EOS-native decentralized cryptocurrency exchange.
 
-### [Liquid Long](https://liquid-long.keydonix.com/#/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem") <i class="fas fa-user-lock" title="Non-custodial"></i>
+### [Liquid Long](https://liquid-long.keydonix.com) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem") <i class="fas fa-user-lock" title="Non-custodial"></i>
 
-![](/images/output_md/httpsliquid-longkeydonixcom%23.png)
+![](/images/output_md/httpsliquid-longkeydonixcom.png)
 
 This is a tool that lets you turn your existing ETH into a leveraged ETH position against USD in a single transaction for a small fee.
 
@@ -115,4 +115,4 @@ dex.blue is a platform with advanced trading technology, enabling trustless real
 
 ![](/images/output_md/httpsdolomiteio.png)
 
-Dolomite is a decentralized exchange for ERC-20 tokens trading with built-in portfolio management and cryptocurrency market analysis tools. 
+Dolomite is a decentralized exchange for ERC-20 tokens trading with built-in portfolio management and cryptocurrency market analysis tools.
