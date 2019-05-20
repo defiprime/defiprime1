@@ -29,3 +29,13 @@ include: ['.htaccess']
 collections:
   - lending
   - derivatives
+  - analytics
+  - assets-managament-tools
+  - exchanges
+  - infrastructure
+  - insurance
+  - assets-tokenization
+  - kyc_identity
+  - marketplaces
+  - prediction_markets
+  - stablecoins
