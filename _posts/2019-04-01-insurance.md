@@ -10,20 +10,11 @@ category: products
 
 Insurance is a practice or arrangement by which a company provides a guarantee of compensation for specified loss, damage, illness, or death in return for payment of a premium.
 
-### [Etherisc](https://etherisc.com/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
+{% for insurance in site.insurance %}
+### <a href="{{ insurance.product-url }}">{{ insurance.product-title }}</a>{% if insurance.ecosystem contains 'ethereum' %} ![](images/ether.png "Built on Ethereum or related to Ethereum ecosystem"){% endif %} {% if insurance.ecosystem contains 'bitcoin' %} ![](/images/btc.png "Using Bitcoin ecosystem"){% endif %} {% if insurance.ecosystem contains 'eos' %} ![](/images/eos.png "Built on EOS or related to EOS ecosystem"){% endif %}{% if insurance.ecosystem contains 'tron' %} ![](/images/tron.png "Built on Tron or related to Tron ecosystem"){% endif %}{% if insurance.ecosystem contains 'stellar' %} ![](/images/stellar.png "Built on Stellar or related to Stellar ecosystem"){% endif %}
 
-![](/images/output_md/httpsetherisccom.png)
+![]({{ insurance.image }})
 
-A decentralized insurance protocol to collectively build risk transfer solutions
+{{ insurance.product-description }}
 
-### [Nexus Mutual](https://www.nexusmutual.io/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
-
-![](/images/output_md/httpswwwnexusmutualio.png)
-
-A risk-sharing pool that allows anyone to purchase insurance
-
-### [VouchForMe](https://vouchforme.co/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
-
-![](/images/output_md/httpsvouchformeco.png)
-
-VouchForMe is a blockchain based web tool that enables users to ask friends and family to vouch for them.
+{% endfor %}
