@@ -28,3 +28,4 @@ plugins:
 include: ['.htaccess']
 collections:
   - lending
+  - derivatives
