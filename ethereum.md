@@ -5,8 +5,8 @@ metadescription: List of the best Ethereum Defi Products. Decentralized Finance 
 permalink: ethereum
 h1title: Ethereum DeFi ecosystem
 pagetitle: Ethereum DeFi ecosystem
+featured-image: /images/og-ethereum.png
 toc: true
-  
 ---
 
 # Assets Management Tools
