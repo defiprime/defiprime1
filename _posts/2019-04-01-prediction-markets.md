@@ -10,26 +10,11 @@ category: products
 
 Prediction markets are exchange-traded markets created to trade the outcome of events. The market prices can indicate what the crowd thinks the probability of the event is.
 
-### [Veil](https://veil.co/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
+{% for prediction_markets in site.prediction_markets %}
+### <a href="{{ prediction_markets.product-url }}">{{ prediction_markets.product-title }}</a>{% if prediction_markets.ecosystem contains 'ethereum' %} ![](images/ether.png "Built on Ethereum or related to Ethereum ecosystem"){% endif %} {% if prediction_markets.ecosystem contains 'bitcoin' %} ![](/images/btc.png "Using Bitcoin ecosystem"){% endif %} {% if prediction_markets.ecosystem contains 'eos' %} ![](/images/eos.png "Built on EOS or related to EOS ecosystem"){% endif %}{% if prediction_markets.ecosystem contains 'tron' %} ![](/images/tron.png "Built on Tron or related to Tron ecosystem"){% endif %}{% if prediction_markets.ecosystem contains 'stellar' %} ![](/images/stellar.png "Built on Stellar or related to Stellar ecosystem"){% endif %}
 
-![](/images/output_md/httpsveilco.png)
+![]({{ prediction_markets.image }})
 
-A peer to peer trading market for derivatives and predictions on Augur, 0x, and Ethereum. Not available for U.S. citizens.
+{{ prediction_markets.product-description }}
 
-### [Augur](https://www.augur.net/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
-
-![](/images/output_md/httpswwwaugurnet.png)
-
-Prediction market protocol built on Ethereum.
-
-### [Helena](https://helena.network/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
-
-![](/images/output_md/httpshelenanetwork.png)
-
-Prediction markets platform for forecasting blockchain developments, events, and projects.
-
-### [Gnosis](https://gnosis.io/) ![](/images/ether.png "Built on Ethereum or related to Ethereum ecosystem")
-
-![](/images/output_md/httpsgnosisio.png)
-
-Open platform for creating prediction market applications on the Ethereum protocol
+{% endfor %}
