@@ -4,4 +4,3 @@ _site/
 *.lock
 node_modules
 modify-pics-plugin
-.jekyll-metadata
