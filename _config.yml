@@ -16,8 +16,9 @@ url: "https://defiprime.com" # the base hostname & protocol for your site
 logo-image-url: favicon.png
 #font-awesome-icon-logo: fas fa-dice-d20
 
-# Social settings
-
+toc:
+  min_level: 1 # default: 1
+  max_level: 2 # default: 6
 
 # Build settings
 markdown: kramdown
