@@ -16,8 +16,9 @@ url: "https://defiprime.com" # the base hostname & protocol for your site
 logo-image-url: favicon.png
 #font-awesome-icon-logo: fas fa-dice-d20
 
-# Social settings
-
+toc:
+  min_level: 1 # default: 1
+  max_level: 2 # default: 6
 
 # Build settings
 markdown: kramdown
@@ -26,3 +27,16 @@ home-link-in-menu: no
 plugins:
   - jekyll-random
 include: ['.htaccess']
+collections:
+  - lending
+  - derivatives
+  - analytics
+  - assets-managament-tools
+  - exchanges
+  - infrastructure
+  - insurance
+  - assets-tokenization
+  - kyc_identity
+  - marketplaces
+  - prediction_markets
+  - stablecoins
