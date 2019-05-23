@@ -1,6 +1,6 @@
 ---
 product-title: Ethfinex
-product-url: https://www.ethfinex.com/
+product-url: http://trustless.ethfinex.com 
 image: /images/output_md/www.ethfinex.com.png
 ecosystem: ethereum
 type: non-custodial
