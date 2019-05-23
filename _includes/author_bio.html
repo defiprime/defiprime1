@@ -1,8 +1,8 @@
 {% assign author = site.data.authors[page.author] %}
 
 <div class="author">
-   <span class="author-about">{{ author.bio }}</span> 
-   <div class="author-info"> 
+   <span class="author-about">{{ author.bio }}</span>
+   <div class="author-info">
       <div class="author-img">
          {% if author.image %}
             <img src="{{ author.image }}" >
@@ -15,7 +15,7 @@
          <a href="{{ author.twitter }}" class="social-link">
             <span  class="icon fa-twitter">
                <span class="label">Twitter</span>
-            </span>     
+            </span>
          </a>
       {% endif %}
       {% if author.github %}
@@ -26,3 +26,4 @@
       {% endif %}
    </div>
 </div>
+<p>Found a typo? <a href="https://github.com/sneg55/defiprime/edit/master/{{ page.path }}">Improve this page on GitHub</a></p>
