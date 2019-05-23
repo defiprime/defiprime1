@@ -4,20 +4,20 @@ title:  "Neutral"
 permalink: neutral
 h1title: Neutral Dollar the first meta-stablecoin  
 pagetitle: Neutral Dollar the first meta-stablecoin   
-metadescription: Nelson from Neutral talking about first meta-stablecoin NUSD, and use cases for basketing stablecoins.
+metadescription: Nelson from Neutral talks about the first meta-stablecoin, Neutral Dollar (NUSD), and use cases for basketing stablecoins.
 category: blog
 featured-image: /images/blog/neutral-og.png
 quote: /images/blog/neutral-quote.png
-intro: Nelson from Neutral talking about first meta-stablecoin NUSD, and use cases for basketing stablecoins.  
+intro: Nelson from Neutral talks about the first meta-stablecoin, Neutral Dollar (NUSD), and use cases for basketing stablecoins.   
 author: Defiprime
 ---
-Nelson from Neutral talking about first meta-stablecoin NUSD, and use cases for basketing stablecoins.
+Nelson from Neutral talks about the first meta-stablecoin, Neutral Dollar (NUSD), and use cases for basketing stablecoins.
 
 ## Hello! What's your background, and what are you working on?
 
-Hey there! My name is Nelson, and I’m currently working at [Neutral](http://neutralproject.com). Previously, I worked in traditional investment management, and always gone to appreciate the financial markets ever since. What got me into crypto was pretty much the same as everybody else - getting excited about a new way to redefine decision making and create applications that bring people together.
+Hey there! My name is Nelson, and I’m currently working at [Neutral](http://neutralproject.com). Previously, I worked in traditional investment management, and always gone to appreciate the financial markets ever since. What got me into crypto was pretty much the same reason as everybody else's - getting excited about a new way to redefine decision making and create applications that bring people together.
 
-Crypto as an asset class was particularly exciting for me because people actually liked to talk about it and it didn’t feel weird to be excited about it - imagine working in traditional finance and really being excited about bonds but no one else matched your enthusiasm. I became more progressively interested in crypto during my previous job since the asset class itself is very refreshing to learn about. I met the guys at Neutral and the mission really appealed to me so I decided to go for building something that would help crypto markets mature.
+Crypto as an asset class was particularly exciting for me because people actually liked to talk about it, and it didn’t feel weird to be excited about it - imagine working in traditional finance and really being excited about bonds but no one else matched your enthusiasm. I became more progressively interested in crypto during my previous job since the asset class itself is very refreshing to learn about. I met the guys at Neutral and the mission really appealed to me so I decided to go for building something that would help crypto markets mature.
 
 The goal of Neutral is really to improve market infrastructure by creating products that facilitate liquidity (thereby, growth) and repackage risk to gain better exposures to cryptocurrencies. Neutral primarily does this with blockchain-native aggregate assets. Similar to asset-backed securities or ETFs, these products make it more accessible for institutions and retail investors alike to gain exposures to different parts of the market. The mechanism design of such products is also very compelling, and has seen empirical success in traditional asset classes.
 
@@ -43,15 +43,15 @@ So by basketing assets, there is actual incentive to utilize liquidity to suppor
 
 ![](/images/blog/neutral2.png)
 
-Our team consists of people whose knowledge stems from blockchain, investments, and trading. We wanted to create something very compelling because while crypto markets are exciting, the maturity is still so so very far from traditional markets. We believe that stablecoins are developing great use cases for blockchain applications such as trading, lending, and banking facilities - though individually the market is still very fragmented.
+Our team consists of people whose knowledge stems from blockchain, investments, and trading. We wanted to create something very compelling because while crypto markets are exciting, the maturity is still so so very far from that of traditional markets. We believe that stablecoins are developing great use cases for blockchain applications such as trading, lending, and banking facilities - though individually the market is still very fragmented.
 
 We want to showcase Neutral Dollar as a way to improve financial ecosystems and help users gain exposures more safely, transparently, and efficiently. Anybody can get Neutral Dollar by collateralizing supported stablecoins directly on our platform, or currently go to partnered secondary exchanges to acquire it as well.
 
 ## What are your goals for the future?
 
-We want to create more aggregate products, as mentioned before. Thematic, factor-based, market-cap products on existing assets and other chains - possibilities are endless. The only requirements are is there going to be a demand for a product like this? And how can we encourage activity and liquidity. There’s actually a long tail of actively traded assets, but we have our eyes peeled on the progress overall. We can also explore derivatives, etc. whatever gets more people involved and improves financial activity in a safe and measured manner.
+We want to create more aggregate products, as mentioned before. Thematic, factor-based, market-cap products on existing assets and other chains - possibilities are endless. A question we ourselves have to ask, 'is there going to be a demand for a product like this?' And how can we encourage activity and liquidity? There’s actually a long tail of actively traded assets, but we have our eyes peeled on the progress overall. We can also explore derivatives, etc. whatever gets more people involved and improves financial activity in a safe and measured manner.
 
-A smaller goal for the community is that we want to standardize an index on pricing (like stablecoin pricing). We have our pricing on our underlying constituents for Neutral Dollar, but it would be helpful if this was administered in a widespread way where people can use it robustly. The oracle problem may exist for some time, and we actually think having some controls such as signed pricing allows for replication of models to be created. The goal here is to reduce systemic risk, and having a proper index is one of the ways to do this. For example, if blockchain-derivatives reference some sort of pricing, it needs to be reproducible and of good quality to actually be used and promote liquidity.
+A smaller goal for the community is that we want to standardize an index on pricing (like stablecoin pricing). We have our pricing on our underlying constituents for Neutral Dollar, but it would be helpful if this was administered in a widespread way where people can use it robustly. The oracle problem may exist for some time, and we actually think having some controls such as signed pricing allows for replication of models to be created. The goal here is to reduce systemic risk, and having a proper index is one of the ways to do this. For example, if blockchain-derivatives reference some sort of pricing, it needs to be reproducible and of good quality to actually be used for promoting liquidity.
 
 ## What are your future thoughts for the DeFi market?
 
