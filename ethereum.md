@@ -1,13 +1,161 @@
 ---
 layout: ecosystem
 title: Ethereum DeFi ecosystem
-metadescription: List of the best Ethereum Defi Products. Decentralized Finance (DeFi) is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries.
+metadescription: List of the best Ethereum Defi Products. DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries.
 permalink: ethereum
 h1title: Ethereum DeFi ecosystem
-pagetitle: Ethereum DeFi ecosystem
+pagetitle: Ethereum DeFi ecosystem - List of the best Ethereum Defi Projects
 featured-image: /images/og-ethereum.png
-toc: true
+
 ---
+
+{% assign counter = 0 %}
+{% assign counter_eth = 0 %}
+{% assign counter_btc = 0 %}
+{% assign counter_eos = 0 %}
+{% assign counter_tron = 0 %}
+{% assign counter_stellar = 0 %}
+
+{% for assets-managament-tools in site.assets-managament-tools  %}
+{% if assets-managament-tools.ecosystem contains 'ethereum' %}  {% assign counter_eth = counter_eth | plus: 1 %}
+ {% endif %}
+{% if assets-managament-tools.ecosystem contains 'bitcoin' %} {% endif %}
+{% if assets-managament-tools.ecosystem contains 'eos' %}  {% endif %}
+
+{% assign counter = counter | plus: 1 %}
+
+
+{% endfor %}
+
+
+{% for derivatives in site.derivatives %}
+{% if derivatives.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
+{% if derivatives.ecosystem contains 'bitcoin' %} {% endif %}
+{% if derivatives.ecosystem contains 'eos' %} {% endif %}
+
+{% assign counter = counter | plus: 1 %}
+
+{% endfor %}
+
+
+{% for exchanges in site.exchanges %}
+{% if exchanges.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
+{% if exchanges.ecosystem contains 'bitcoin' %} {% endif %}
+{% if exchanges.ecosystem contains 'eos' %} {% endif %}
+{% if exchanges.ecosystem contains 'tron' %} {% endif %}
+{% if exchanges.ecosystem contains 'stellar' %} {% endif %}
+
+{% assign counter = counter | plus: 1 %}
+
+{% endfor %}
+
+
+{% for infrastructure in site.infrastructure %}
+{% if infrastructure.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
+{% if infrastructure.ecosystem contains 'bitcoin' %} {% endif %}
+{% if infrastructure.ecosystem contains 'eos' %} {% endif %}
+{% if infrastructure.ecosystem contains 'tron' %} {% endif %}
+{% if infrastructure.ecosystem contains 'stellar' %} {% endif %}
+
+{% assign counter = counter | plus: 1 %}
+
+{% endfor %}
+
+
+{% for insurance in site.insurance %}
+{% if insurance.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
+{% if insurance.ecosystem contains 'bitcoin' %} {% endif %}
+{% if insurance.ecosystem contains 'eos' %} {% endif %}
+{% if insurance.ecosystem contains 'tron' %} {% endif %}
+{% if insurance.ecosystem contains 'stellar' %} {% endif %}
+
+{% assign counter = counter | plus: 1 %}
+
+{% endfor %}
+
+
+{% for assets-tokenization in site.assets-tokenization %}
+{% if assets-tokenization.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
+{% if assets-tokenization.ecosystem contains 'bitcoin' %} {% endif %}
+{% if assets-tokenization.ecosystem contains 'eos' %} {% endif %}
+{% if assets-tokenization.ecosystem contains 'tron' %} {% endif %}
+{% if assets-tokenization.ecosystem contains 'stellar' %} {% endif %}
+
+{% assign counter = counter | plus: 1 %}
+
+{% endfor %}
+
+
+{% for kyc_identity in site.kyc_identity %}
+{% if kyc_identity.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
+{% if kyc_identity.ecosystem contains 'bitcoin' %} {% endif %}
+{% if kyc_identity.ecosystem contains 'eos' %} {% endif %}
+{% if kyc_identity.ecosystem contains 'tron' %} {% endif %}
+{% if kyc_identity.ecosystem contains 'stellar' %} {% endif %}
+
+{% assign counter = counter | plus: 1 %}
+
+{% endfor %}
+
+
+
+{% for lending in site.lending %}
+{% if lending.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
+{% if lending.ecosystem contains 'bitcoin' %} {% endif %}
+{% if lending.ecosystem contains 'eos' %} {% endif %}
+
+{% assign counter = counter | plus: 1 %}
+
+{% endfor %}
+
+
+{% for marketplaces in site.marketplaces %}
+{% if marketplaces.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
+{% if marketplaces.ecosystem contains 'bitcoin' %} {% endif %}
+{% if marketplaces.ecosystem contains 'eos' %} {% endif %}
+{% if marketplaces.ecosystem contains 'tron' %} {% endif %}
+{% if marketplaces.ecosystem contains 'stellar' %} {% endif %}
+
+{% assign counter = counter | plus: 1 %}
+
+{% endfor %}
+
+
+{% for prediction_markets in site.prediction_markets %}
+{% if prediction_markets.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
+{% if prediction_markets.ecosystem contains 'bitcoin' %} {% endif %}
+{% if prediction_markets.ecosystem contains 'eos' %} {% endif %}
+{% if prediction_markets.ecosystem contains 'tron' %} {% endif %}
+{% if prediction_markets.ecosystem contains 'stellar' %} {% endif %}
+
+{% assign counter = counter | plus: 1 %}
+
+{% endfor %}
+
+
+{% for stablecoins in site.stablecoins %}
+{% if stablecoins.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
+{% if stablecoins.ecosystem contains 'bitcoin' %} {% endif %}
+{% if stablecoins.ecosystem contains 'eos' %} {% endif %}
+{% if stablecoins.ecosystem contains 'tron' %} {% endif %}
+{% if stablecoins.ecosystem contains 'stellar' %} {% endif %}
+
+{% assign counter = counter | plus: 1 %}
+
+{% endfor %}
+
+
+{% for analytics in site.analytics %}
+{% if analytics.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
+{% if analytics.ecosystem contains 'bitcoin' %} {% endif %}
+{% if analytics.ecosystem contains 'eos' %} {% endif %}
+
+{% assign counter = counter | plus: 1 %}
+
+{% endfor %}
+
+DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ counter }} DeFi projects listed and {{ counter_eth }} of them built on Ethereum.
+
 
 # Assets Management Tools
 
