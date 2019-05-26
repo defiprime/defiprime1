@@ -47,7 +47,8 @@
         <div class="container">
 
          <div class="author-block">
-            <span class="name">{{page.author}}</span>
+           {% assign author = site.data.authors[page.author] %}
+            <span class="name">{{ author.name }}</span>
             <span class="date">on {{ page.date | date_to_string }}</span>
         </div>
         {{ content }}

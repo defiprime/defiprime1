@@ -1,6 +1,12 @@
 ---
-layout: default
+layout: blog
 title: About this site
+h1title: About this site
+pagetitle: About this site   
+metadescription: I’ve been researching DeFi ecosystem for several weeks, and can’t find a good list of actually working products without gimmicks and bullshit.
+featured-image: /images/og.png
+author: sawinyh
+date: 2019-04-01
 ---
 
 # What is this?
