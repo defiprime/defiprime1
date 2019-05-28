@@ -17,7 +17,7 @@ I've been researching DeFi ecosystem for several weeks, and can't find a good li
 * Are you feel comfortable to recommend this product to your IRL friends?
 * Working product on the mainnet (Not coming soon, Not testnet)
 * Visible product traction (Not empty marketplace, Not empty order book).   
-* Decentralized first. Label 'Region is not supported' it's a spit in the face of DeFi.
+* Decentralized first. Label 'Region is not supported' it's a spit in the face of DeFi. Check our recent [twitter-poll](https://twitter.com/defiprime/status/1130890433821724672) with community sentiment on this matter. 
 * No crypto tribalism and bias. Ethereum, Tron, EOS, Bitcoin and all others are equal as long as DeFi product built on top are useful.
 
 ## Listing Products
