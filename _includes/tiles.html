@@ -1,6 +1,7 @@
 <section class="tiles">
+{% assign sorted_categories_products = site.categories.products | sort: 'title', 'last' %}
 
-{% for post in site.categories.products %}
+{% for post in sorted_categories_products %}
 	<article class="style{{ forloop.index | random_number: 0, 10 }}">
 		<span class="image">
 			<img src="{{ site.url }}{{ site.baseurl }}/images/pic0{{ forloop.index | random_number: 1, 9 }}.jpg" alt="" />
