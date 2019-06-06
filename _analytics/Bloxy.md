@@ -1,5 +1,5 @@
 ---
-product-title: Alethio
+product-title: Bloxy
 product-url: https://bloxy.info/analytics
 image: /images/output_md/httpsbloxyinfoanalytics.png
 ecosystem: ethereum
