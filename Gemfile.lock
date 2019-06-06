@@ -27,6 +27,8 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
+    jekyll-feed (0.12.1)
+      jekyll (>= 3.7, < 5.0)
     jekyll-random (0.0.3)
       jekyll (~> 3.3)
     jekyll-redirect-from (0.15.0)
@@ -71,6 +73,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
+  jekyll-feed
   jekyll-random
   jekyll-redirect-from
   jekyll-sitemap
