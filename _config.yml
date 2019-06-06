@@ -40,7 +40,3 @@ collections:
   - marketplaces
   - prediction_markets
   - stablecoins
-
-feed:
-  categories:
-    - blog
