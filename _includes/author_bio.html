@@ -1,29 +1,34 @@
 {% assign author = site.data.authors[page.author] %}
 
 <div class="author">
-   <span class="author-about">{{ author.bio }}</span>
-   <div class="author-info">
-      <div class="author-img">
-         {% if author.image %}
-            <img src="{{ author.image }}" >
+   <span class="author-about"> About the author </span>
+   <div class="author-wrap">
+      <div class="author-info">
+         <div class="author-img">
+            {% if author.image %}
+               <img src="{{ author.image }}" >
+            {% endif %}
+         </div>
+         <div class="author-descr">
+            <div class="author-title"> {{ author.name }} </div>
+            <div class="author-skills"> {{ author.bio }} </div>
+         </div>
+      </div>
+      <div class="author-social">
+         {% if author.twitter %}
+            <a href="{{ author.twitter }}" class="social-link">
+               <span  class="icon fa-twitter">
+                  <span class="label">Twitter</span>
+               </span>
+            </a>
+         {% endif %}
+         {% if author.github %}
+            <a href="{{ author.github }}" class="social-link">
+               <span class="icon fa-github">
+                  <span class="label">Github</span></a>
+               </span>
          {% endif %}
       </div>
-      <div class="author-title"> {{ author.name }} </div>
-   </div>
-   <div class="author-social">
-      {% if author.twitter %}
-         <a href="{{ author.twitter }}" class="social-link">
-            <span  class="icon fa-twitter">
-               <span class="label">Twitter</span>
-            </span>
-         </a>
-      {% endif %}
-      {% if author.github %}
-         <a href="{{ author.github }}" class="social-link">
-            <span class="icon fa-github">
-               <span class="label">Github</span></a>
-            </span>
-      {% endif %}
    </div>
 </div>
 <p>Found a typo? <a href="https://github.com/sneg55/defiprime/edit/master/{{ page.path }}">Improve this page on GitHub</a></p>

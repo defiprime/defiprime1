@@ -9,13 +9,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<div class="inner">
 			<div class="header-content">
 				<!-- Logo -->
-				<a href="{{ site.baseurl }}/" class="logo" >
-					<img src="/images/logo.png"  alt="" />
-				</a>
-				<a href="/blog" class="link" >
-					<img src="/images/vector.png" alt="" />
-					<span class="text">Defi Blog</span>
-				</a>
+				<div class="header-content-logo">
+					<a href="{{ site.baseurl }}/" class="logo hidden-mobile" >
+						<img src="/images/logo.svg"  alt="" />
+					</a>
+					<a href="{{ site.baseurl }}/" class="logo hidden-desktop" >
+						<img src="/images/logo-small.svg"  alt="" />
+					</a>
+				</div>	
+				<div class="header-content-menu">
+					<ul class="menu-list">
+						<li class="menu-list-item">
+							<a href="/blog" class="link" >
+								<img src="/images/vector.png" alt="" />
+								<span class="text">Defi Blog</span>
+							</a>
+						</li>
+						<li class="menu-list-item">
+							<a href="/" class="link" >
+								<span class="text">Events</span>
+							</a>
+						</li>
+						<li class="menu-list-item">
+							<a href="/" class="link" >
+								<span class="text">About</span>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</header>

@@ -18,10 +18,22 @@
 			letter-spacing: _font(letter-spacing);
 			text-decoration: none;
 			text-transform: uppercase;
-			display: inline-block;
 			max-width: 220px;
+			@media (min-width: 737px) {
+				&.hidden-desktop {
+					display: none;
+				}
+			}
+			@include breakpoint(small) {
+				&.hidden-mobile {
+					display: none;
+				}
+			}
 			@include breakpoint(xsmall) {
 				margin-bottom: 1em;
+			}
+			&.hidden-desktop {
+				max-width: 50px;
 			}
 
 			> * {
@@ -116,7 +128,6 @@
 		}
 
 		@include breakpoint(small) {
-			@include padding(3em, 0, (1em, 0, -3em, 0));
 
 			nav {
 				right: 0.5em;
@@ -140,7 +151,41 @@
 		@include vendor('align-items', 'center');
 		@include vendor('justify-content', 'space-between');
 		@include breakpoint(xsmall) {
-			flex-direction: column;
+			flex-wrap: wrap;
+    		justify-content: center;
+		}
+		&-logo {
+			margin-right: 20px;
+		}
+		&-menu {
+			@include vendor('display', 'flex');
+			@include vendor('align-items', 'center');
+			@include vendor('justify-content', 'flex-end');
+			flex: 1 0 auto;
+			@include breakpoint(xsmall) {
+				margin-bottom: 1em;
+				@include vendor('justify-content', 'center');
+			}
+		}
+		.menu-list {
+			@include vendor('display', 'flex');
+			@include vendor('align-items', 'center');
+			list-style: none;
+			list-style-image: none;
+			margin-bottom: 0;
+			padding: 0;
+			&-item {
+				margin: 0 10px;
+				padding-left: 0;
+			}
+			.link {
+				img {
+					margin-right: 16px;
+				}
+				.text {
+					margin-left: 0;
+				}
+			}
 		}
 	}
 }
