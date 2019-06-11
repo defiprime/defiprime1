@@ -34,5 +34,16 @@
 					@include vendor('transition', 'none !important');
 				}
 			}
-
+		.hidden-desktop {
+			display: block;
+			@media (min-width: 737px) {
+				display: none;
+			}
+		}
+		.hidden-mobile {
+			display: block;
+			@include breakpoint(small){
+				display: none;
+			}
+		}
 	}
