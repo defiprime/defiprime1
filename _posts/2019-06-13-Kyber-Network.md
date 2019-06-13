@@ -87,7 +87,7 @@ Decentralized Finance (DeFi) can be seen as the trading and transacting of digit
 
 I foresee that with DeFi, important wealth-building and business tools such as applications involving loans, insurance, investments, and other financial services, become much more accessible to people around the world. Anyone with an internet connection and a smartphone or laptop will be able to connect to the public blockchain network, use DeFi platforms, and participate in the global digital economy.
 
-For example, someone without a bank account in a remote region in the Philippines, can still access a DeFi platform and receive payment from a client in Australia in a matter of minutes for work successfully completed online, with even lower fees compared typical remittance rates. Moreover, payment can be made without trusting any financial intermediary, as transactions on the public blockchain are censorship-resistant and verifiable.
+For example, someone without a bank account in a remote region in one country, can still receive crypto payment from a client in another country thousands of miles away. This can happen in a matter of minutes, with even lower fees compared to typical remittance rates. Moreover, payment can be made without trusting any financial intermediary, as transactions on the public blockchain are censorship-resistant and verifiable.
 
 At Kyber, we are building a protocol to facilitate the conversion of cryptocurrencies in the most trustless and secure manner. Our long term goal is to process most of the financial transactions for these applications in the decentralized world.
 
