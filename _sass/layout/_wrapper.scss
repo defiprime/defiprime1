@@ -12,14 +12,12 @@
 				$gutter: _size(gutter);
 
 				width: 100%;
-				max-width: _size(inner);
+				max-width: 1150px;
 				margin: 0 auto;
-				padding: 0 $gutter;
+				padding: 0 20px;
 
 				@include breakpoint(small) {
 					$gutter: _size(gutter) * 0.5;
-
-					padding: 0 $gutter;
 				}
 			}
 		}
