@@ -49,6 +49,17 @@ featured-image: /images/og-ethereum.png
 
 {% endfor %}
 
+{% for margin-trading in site.margin-trading %}
+{% if margin-trading.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
+{% if margin-trading.ecosystem contains 'bitcoin' %} {% endif %}
+{% if margin-trading.ecosystem contains 'eos' %} {% endif %}
+{% if margin-trading.ecosystem contains 'tron' %} {% endif %}
+{% if margin-trading.ecosystem contains 'stellar' %} {% endif %}
+
+{% assign counter = counter | plus: 1 %}
+
+{% endfor %}
+
 
 {% for infrastructure in site.infrastructure %}
 {% if infrastructure.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
@@ -161,7 +172,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 
 {% for assets-managament-tools in site.assets-managament-tools  %}
 {% if assets-managament-tools.ecosystem contains 'ethereum' %}
-### <a href="{{ assets-managament-tools.product-url }}?ref=defiprime.com">{{ assets-managament-tools.product-title }}</a>{% if assets-managament-tools.ecosystem contains 'ethereum' %} ![](images/ether.png "Built on Ethereum or related to Ethereum ecosystem"){% endif %} {% if assets-managament-tools.ecosystem contains 'bitcoin' %} ![](/images/btc.png "Using Bitcoin ecosystem"){% endif %} {% if assets-managament-tools.ecosystem contains 'eos' %} ![](/images/eos.png "Built on EOS or related to EOS ecosystem"){% endif %} {% if  assets-managament-tools.platform contains 'ios' %}    <i class="fab fa-app-store-ios" title="Mobile wallet for iOS"></i> {% endif %}  {% if  assets-managament-tools.platform contains 'android' %}    <i class="fab fa-android" title="Mobile wallet for Android"></i> {% endif %} {% if  assets-managament-tools.platform contains 'web' %}    <i class="fab fa-chrome" title="Browser based wallet"></i> {% endif %} {% if  assets-managament-tools.platform contains 'win' %}    <i class="fab fa-windows" title="Desktop wallet for windows"></i> {% endif %} {% if  assets-managament-tools.platform contains 'mac' %}    <i class="fab fa-apple" title="Desktop wallet for osx"></i> {% endif %} 
+### <a href="{{ assets-managament-tools.product-url }}?ref=defiprime.com">{{ assets-managament-tools.product-title }}</a>{% if assets-managament-tools.ecosystem contains 'ethereum' %} ![](images/ether.png "Built on Ethereum or related to Ethereum ecosystem"){% endif %} {% if assets-managament-tools.ecosystem contains 'bitcoin' %} ![](/images/btc.png "Using Bitcoin ecosystem"){% endif %} {% if assets-managament-tools.ecosystem contains 'eos' %} ![](/images/eos.png "Built on EOS or related to EOS ecosystem"){% endif %} {% if  assets-managament-tools.platform contains 'ios' %}    <i class="fab fa-app-store-ios" title="Mobile wallet for iOS"></i> {% endif %}  {% if  assets-managament-tools.platform contains 'android' %}    <i class="fab fa-android" title="Mobile wallet for Android"></i> {% endif %} {% if  assets-managament-tools.platform contains 'web' %}    <i class="fab fa-chrome" title="Browser based wallet"></i> {% endif %} {% if  assets-managament-tools.platform contains 'win' %}    <i class="fab fa-windows" title="Desktop wallet for windows"></i> {% endif %} {% if  assets-managament-tools.platform contains 'mac' %}    <i class="fab fa-apple" title="Desktop wallet for osx"></i> {% endif %}
 
 
 {{ assets-managament-tools.product-description }}
@@ -190,6 +201,14 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endif %}
 {% endfor %}
 
+# Margin trading on Ethereum
+
+{% for margin-trading in site.margin-trading %}
+### <a href="{{ margin-trading.product-url }}?ref=defiprime.com">{{ margin-trading.product-title }}</a>{% if margin-trading.ecosystem contains 'ethereum' %} ![](images/ether.png "Built on Ethereum or related to Ethereum ecosystem"){% endif %} {% if margin-trading.ecosystem contains 'bitcoin' %} ![](/images/btc.png "Using Bitcoin ecosystem"){% endif %} {% if margin-trading.ecosystem contains 'eos' %} ![](/images/eos.png "Built on EOS or related to EOS ecosystem"){% endif %}
+
+{{ margin-trading.product-description }}
+
+{% endfor %}
 
 # DeFi Infrastructure
 
