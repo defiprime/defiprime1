@@ -50,6 +50,17 @@ featured-image: /images/og-eos.png
 {% endfor %}
 
 
+{% for margin-trading in site.margin-trading %}
+{% if margin-trading.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
+{% if margin-trading.ecosystem contains 'bitcoin' %} {% endif %}
+{% if margin-trading.ecosystem contains 'eos' %} {% assign counter_eos = counter_eos | plus: 1 %} {% endif %}
+{% if margin-trading.ecosystem contains 'tron' %} {% endif %}
+{% if margin-trading.ecosystem contains 'stellar' %} {% endif %}
+
+{% assign counter = counter | plus: 1 %}
+
+{% endfor %}
+
 {% for infrastructure in site.infrastructure %}
 {% if infrastructure.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
 {% if infrastructure.ecosystem contains 'bitcoin' %} {% endif %}
