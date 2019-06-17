@@ -5,7 +5,7 @@ metadescription: List of the best Defi events. Calendar with the best DeFi meetu
 permalink: events
 h1title: DeFi Meetups and Conferences
 pagetitle: DeFi Events. Defi meetups and conferences
-featured-image: /images/og-ethereum.png
+featured-image: /images/og-events.png
 
 ---
 
