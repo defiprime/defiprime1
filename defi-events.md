@@ -8,7 +8,7 @@ pagetitle: DeFi Events. Defi meetups and conferences
 featured-image: /images/og-events.png
 
 ---
-Upcoming events related to DeFi ecosystem. Do you want to add your event here? Fill [this form](https://sneg55.typeform.com/to/SPrjTk) and we'll get in touch.
+Upcoming events related to the DeFi ecosystem. Do you want to add your event here? Fill [this form](https://sneg55.typeform.com/to/SPrjTk) and we'll get in touch.
 
 
 {% for events in site.events %}
@@ -25,5 +25,3 @@ Upcoming events related to DeFi ecosystem. Do you want to add your event here? F
 {% endunless %}
 
 {% endfor %}
-
-###
