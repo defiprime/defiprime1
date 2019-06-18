@@ -27,6 +27,7 @@ home-link-in-menu: no
 plugins:
   - jekyll-random
 include: ['.htaccess']
+collections_dir: collections
 collections:
   - lending
   - derivatives
@@ -41,4 +42,4 @@ collections:
   - prediction_markets
   - stablecoins
   - margin-trading
-  - events 
+  - events
