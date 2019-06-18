@@ -28,4 +28,4 @@ I've been researching DeFi ecosystem for several weeks, and can't find a good li
 
 ## Listing
 
-If you'd like to submit your project, please ping me at Twitter, open an issue at Github or create a PR. You can edit/add projects directly at `_posts`
+If you'd like to submit your project, please ping me at Twitter, open an issue at Github or create a PR. You can edit/add projects directly at `collections`
