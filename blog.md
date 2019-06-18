@@ -2,6 +2,11 @@
 layout: blog-list
 title: Defi Blog - What is DeFi? Interviews with DeFi projects, analytics, and important news
 metadescription: We want to shed some light on how DeFi products build and how the ecosystem evolves over time. Our blog features interviews with DeFi projects, analytics, and important news.
+permalink: /blog/
+pagination:
+  enabled: true
+  category: blog
+  permalink: /:num/  
 ---
 
 <header>
@@ -11,7 +16,7 @@ We want to shed some light on how DeFi products build and how the ecosystem evol
 
 <section class="tiles">
 
-{% for post in site.categories.blog %}
+{% for post in paginator.posts %}
 	<article class="style{{ forloop.index | random_number: 0, 10 }}">
 
 
@@ -33,3 +38,17 @@ We want to shed some light on how DeFi products build and how the ecosystem evol
 {% endfor %}
 
 </section>
+{% if paginator.total_pages > 1 %}
+ <ul class="pager">
+     {% if paginator.previous_page %}
+     <li class="previous">
+         <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+     </li>
+     {% endif %}
+     {% if paginator.next_page %}
+     <li class="next">
+         <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+     </li>
+     {% endif %}
+ </ul>
+ {% endif %}

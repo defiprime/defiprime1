@@ -20,6 +20,15 @@ toc:
   min_level: 1 # default: 1
   max_level: 2 # default: 6
 
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/page/:num/'
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
 # Build settings
 markdown: kramdown
 # Layout settings
