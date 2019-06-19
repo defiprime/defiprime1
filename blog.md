@@ -38,17 +38,11 @@ We want to shed some light on how DeFi products build and how the ecosystem evol
 {% endfor %}
 
 </section>
-{% if paginator.total_pages > 1 %}
- <ul class="pager">
-     {% if paginator.previous_page %}
-     <li class="previous">
-         <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-     </li>
-     {% endif %}
-     {% if paginator.next_page %}
-     <li class="next">
-         <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-     </li>
-     {% endif %}
- </ul>
- {% endif %}
+
+{% if paginator.next_page %}
+  <a class="button" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Next</a>
+{% endif %}
+
+  {% if paginator.previous_page %}
+    <a class="button" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Previous</a>
+  {% endif %}
