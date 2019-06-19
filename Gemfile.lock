@@ -73,7 +73,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-paginate-v2
+  jekyll-paginate-v2 (~> 2.0)
   jekyll-random
   jekyll-redirect-from
   jekyll-sitemap
