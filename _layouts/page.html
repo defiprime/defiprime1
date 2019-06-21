@@ -34,9 +34,16 @@
 <body class="product-page">
 
     {% include header.html %}
+    <article class="article  article--post  content  typeset">
 
     <h1>{{ page.h1title }}</h1>
-    {{ content }} {% include also.html %}  {% include footer.html %}
+    <div class="container">
+
+    {{ content }}
+  </div>
+</article>
+
+    {% include also.html %}  {% include footer.html %}
 
 
 </body>
