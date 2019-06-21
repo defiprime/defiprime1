@@ -9,8 +9,6 @@ author: sawinyh
 date: 2019-04-01
 ---
 
-# What is this?
-
 I've been researching DeFi ecosystem for several weeks, and can't find a good list of actually working products without gimmicks and bullshit. That's why I decided to create this site featuring best DeFi products.
 
 ## Definition of 'the best DeFi Products'
