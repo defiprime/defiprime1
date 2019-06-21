@@ -1,9 +1,9 @@
 ---
 layout: page
-title:  "Assets Tokenization"
+title:  "Tokenization of Assets"
 permalink: assets-tokenization
-h1title: Assets Tokenization
-pagetitle: Best Assets Tokenization Platforms for Digital Securities
+h1title: Tokenization of Assets
+pagetitle: Best tokenization of assets Platforms for Digital Securities
 metadescription: Through tokenization, investing is cheaper, faster, more secure and available every hour of the day.
 category: products
 ---
