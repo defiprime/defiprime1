@@ -13,7 +13,8 @@
 
 	@include vendor('display', 'flex');
 	@include vendor('flex-wrap', 'wrap');
-	postiion: relative;
+	position: relative;
+	margin-left: -52px;
 
 	article {
 		@include vendor('transition', (
@@ -259,6 +260,8 @@
 // For post page
 .blog-page {
 	.tiles {
+		margin-left: 0;
+
 		article {
 			@include vendor('display', 'flex');
 			position: relative;
