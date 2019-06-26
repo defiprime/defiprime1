@@ -3,7 +3,7 @@ layout: blog
 title:  "Fortmatic"
 permalink: fortmatic
 h1title: Interview with Fortmatic co-founder Sean Li
-pagetitle: Interview with Fortmatic co-founder Sean Li. Fortmatic Review. 
+pagetitle: Interview with Fortmatic co-founder Sean Li. Fortmatic Review.
 metadescription: Fortmatic co-founder, Sean Li talks about building an SDK that enables users across the globe to interact with dApps using just their phone number.
 category: blog
 featured-image: /images/blog/fortmatic-og.png
@@ -27,7 +27,7 @@ I aspire to build a solution that strikes the right balance by adopting a pragma
 
 ![](/images/blog/fortmatic1.png)
 
-To date, some well-known integrations with the Fortmatic SDK include dApps like TokenSets, Cent, Radar Relay, Zerion, and Fulcrum - with Fortmatic enabling over 65% new interactions from users on mobile web browsers!
+To date, some well-known integrations with the Fortmatic SDK include dApps like [TokenSets](/tokensets), Cent, Radar Relay, Zerion, and Fulcrum - with Fortmatic enabling over 65% new interactions from users on mobile web browsers!
 
 ![](images/blog/fortmatic2.gif)
 
