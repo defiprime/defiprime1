@@ -6,6 +6,7 @@ h1title: Margin trading
 pagetitle: Decentralized margin trading - DeFi Short and Leveraged trading platforms    
 metadescription: Decentralized margin trading refers to the practice of using borrowed funds from a broker to trade a financial asset, which forms the collateral for the loan from the broker.
 category: products
+og: /images/og-margin-trading.png
 ---
 Decentralized margin trading refers to the practice of using borrowed funds from a broker to trade a financial asset, which forms the collateral for the loan from the broker.
 

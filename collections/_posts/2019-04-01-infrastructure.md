@@ -6,7 +6,7 @@ h1title: DeFi Infrastructure
 pagetitle: DeFi Financial Services Infrastructure  
 metadescription: Protocols, frameworks and underlaying technologies for building decentralized finance ecosystems.
 category: products
-
+og: /images/og-infrastructure.png
 ---
 Protocols, frameworks and underlaying technologies for building decentralized finance ecosystems.
 

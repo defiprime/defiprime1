@@ -12,7 +12,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
     <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-    <meta property="og:image" content="{{ site.url }}/images/og.png" />
+    <meta property="og:image" content="{% if page.og %}{{ site.url }}{{ page.og }}{% else %}{{ site.url }}/images/og.png{% endif %}"  />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image">
@@ -20,7 +20,7 @@
     <meta name="twitter:creator" content="@defiprime">
     <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
     <meta name="twitter:description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 160 }}">
-    <meta name="twitter:image" content="{{ site.url }}/images/og.png">
+    <meta name="twitter:image" content="{% if page.og %}{{ site.url }}{{ page.og }}{% else %}{{ site.url }}/images/og.png{% endif %}">
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- Google Tag Manager -->
