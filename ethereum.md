@@ -96,6 +96,16 @@ featured-image: /images/og-ethereum.png
 
 {% endfor %}
 
+{% for payments in site.payments %}
+{% if payments.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
+{% if payments.ecosystem contains 'bitcoin' %} {% endif %}
+{% if payments.ecosystem contains 'eos' %} {% endif %}
+{% if payments.ecosystem contains 'tron' %} {% endif %}
+{% if payments.ecosystem contains 'stellar' %} {% endif %}
+
+{% assign counter = counter | plus: 1 %}
+
+{% endfor %}
 
 {% for kyc_identity in site.kyc_identity %}
 {% if kyc_identity.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
@@ -264,6 +274,15 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 
 {{ lending.product-description }}
 {% endif %}
+{% endfor %}
+
+# Payments
+
+{% for payments in site.payments %}
+### <a href="{{ payments.product-url }}?ref=defiprime.com">{{ payments.product-title }}</a>{% if payments.ecosystem contains 'ethereum' %} ![](images/ether.png "Built on Ethereum or related to Ethereum ecosystem"){% endif %} {% if payments.ecosystem contains 'bitcoin' %} ![](/images/btc.png "Using Bitcoin ecosystem"){% endif %} {% if payments.ecosystem contains 'eos' %} ![](/images/eos.png "Built on EOS or related to EOS ecosystem"){% endif %}
+
+{{ payments.product-description }}
+
 {% endfor %}
 
 # Marketplaces

@@ -119,6 +119,16 @@ featured-image: /images/og-eos.png
 
 {% endfor %}
 
+{% for payments in site.payments %}
+{% if payments.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
+{% if payments.ecosystem contains 'bitcoin' %} {% assign counter_btc = counter_btc | plus: 1 %} {% endif %}
+{% if payments.ecosystem contains 'eos' %} {% assign counter_eos = counter_eos | plus: 1 %}  {% endif %}
+{% if payments.ecosystem contains 'tron' %} {% endif %}
+{% if payments.ecosystem contains 'stellar' %} {% endif %}
+
+{% assign counter = counter | plus: 1 %}
+
+{% endfor %}
 
 {% for marketplaces in site.marketplaces %}
 {% if marketplaces.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
