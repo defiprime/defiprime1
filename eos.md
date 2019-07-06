@@ -224,7 +224,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endif %}
 {% endfor %}
 
-# Stablecoins
+# EOS Stablecoins
 
 {% for stablecoins in site.stablecoins %}
 {% if stablecoins.ecosystem contains 'eos' %}
