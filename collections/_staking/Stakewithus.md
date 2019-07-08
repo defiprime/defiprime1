@@ -2,5 +2,5 @@
 product-title: StakeWithUs
 product-url: https://stakewith.us
 image: /images/output_md/stakewith.us.png
-product-description: StakeWithUs providing staking solutions to institutions.
+product-description: StakeWith.Us  is a secure Staking-as-a-Service provider for high quality, Proof-of-Stake based protocols such as Cosmos Network and Loom Network.
 ---
