@@ -213,6 +213,16 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endif %}
 {% endfor %}
 
+# DeFi Infrastructure
+
+{% for infrastructure in site.infrastructure %}
+{% if infrastructure.ecosystem contains 'bitcoin' %}
+### <a href="{{ infrastructure.product-url }}">{{ infrastructure.product-title }}</a>{% if infrastructure.ecosystem contains 'ethereum' %} ![](images/ether.png "Built on Ethereum or related to Ethereum ecosystem"){% endif %} {% if infrastructure.ecosystem contains 'bitcoin' %} ![](/images/btc.png "Using Bitcoin ecosystem"){% endif %} {% if infrastructure.ecosystem contains 'eos' %} ![](/images/eos.png "Built on EOS or related to EOS ecosystem"){% endif %}{% if infrastructure.ecosystem contains 'tron' %} ![](/images/tron.png "Built on Tron or related to Tron ecosystem"){% endif %}{% if infrastructure.ecosystem contains 'stellar' %} ![](/images/stellar.png "Built on Stellar or related to Stellar ecosystem"){% endif %}
+
+
+{{ infrastructure.product-description }}
+{% endif %}
+{% endfor %}
 
 # Payments
 {% for payments in site.payments %}
