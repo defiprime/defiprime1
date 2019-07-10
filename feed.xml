@@ -22,7 +22,7 @@
 			<item>
 				<title>{{ post.h1title | xml_escape }}</title>
 				<description>{{ post.intro  }}</description>
-        <content:encoded>{{ post.content  }}</content:encoded>
+        <content:encoded>{{ post.content | xml_escape  }}</content:encoded>
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 				<link>{{ site.url }}{{ post.url }}</link>
 				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
