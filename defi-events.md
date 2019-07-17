@@ -15,7 +15,7 @@ Upcoming events related to the DeFi ecosystem. Do you want to add your event her
 
 {% unless events.date < site.time %}
 
-### <a href="{{ events.product-url }}">{{ events.product-title }}</a>{% if events.ecosystem contains 'ethereum' %} ![](images/ether.png "Built on Ethereum or related to Ethereum ecosystem"){% endif %} {% if events.ecosystem contains 'bitcoin' %} ![](/images/btc.png "Using Bitcoin ecosystem"){% endif %} {% if events.ecosystem contains 'eos' %} ![](/images/eos.png "Built on EOS or related to EOS ecosystem"){% endif %}
+### <a href="{{ events.product-url }}">{{ events.product-title }}</a>{% if events.ecosystem contains 'ethereum' %} ![](images/ether.png "Ethereum ecosystem"){% endif %} {% if events.ecosystem contains 'bitcoin' %} ![](/images/btc.png "Bitcoin ecosystem"){% endif %} {% if events.ecosystem contains 'eos' %} ![](/images/eos.png "EOS ecosystem"){% endif %}
 
 {{ events.date | date_to_string }} - {{ events.location }}
 
