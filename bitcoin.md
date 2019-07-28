@@ -189,7 +189,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 
 
-# Decentralized exchanges
+# BTC Decentralized Exchanges
 
 {% for exchanges in site.exchanges %}
 {% if exchanges.ecosystem contains 'bitcoin' %}
@@ -202,7 +202,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 
 
 
-# Lending
+# Bitcoin Crypto Lending
 
 {% for lending in site.lending %}
 {% if lending.ecosystem contains 'bitcoin' %}
@@ -213,7 +213,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endif %}
 {% endfor %}
 
-# DeFi Infrastructure
+# DeFi Infrastructure Providers
 
 {% for infrastructure in site.infrastructure %}
 {% if infrastructure.ecosystem contains 'bitcoin' %}
@@ -224,7 +224,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endif %}
 {% endfor %}
 
-# Payments
+# BTC Payments Solutions and Service Providers
 {% for payments in site.payments %}
 {% if payments.ecosystem contains 'bitcoin' %}
 ### <a href="{{ payments.product-url }}">{{ payments.product-title }}</a>{% if payments.ecosystem contains 'ethereum' %} ![](images/ether.png "Built on Ethereum or related to Ethereum ecosystem"){% endif %} {% if payments.ecosystem contains 'bitcoin' %} ![](/images/btc.png "Using Bitcoin ecosystem"){% endif %} {% if payments.ecosystem contains 'eos' %} ![](/images/eos.png "Built on EOS or related to EOS ecosystem"){% endif %}
