@@ -24,7 +24,7 @@ Bad pitch for listing at defiprime:
 - "We are going to change the world with our super-duper AI-based smart contract platform, here is our whitepaper. We have 10000 strong community at our Telegram! We also struck a deal of the century with a big brand(but no one has heard about this brand anyway, and it's not related to Finance or Blockchain). Still working on our product launch, but you can play with this thing on testnet."
 
 Good pitch for listing at defiprime:
-- "We launched on mainnet three months ago, after two respectable auditors independently audited our smart contracts. Since our launch, we achieved this and that milestones, and XXXX users using our app regularly. We also integrated with a few well DeFi protocols."
+- "We launched on mainnet three months ago, after two respectable auditors independently audited our smart contracts. Since our launch, we achieved this and that milestones, and XXXX users using our app regularly. We also integrated with a few well known DeFi protocols."
 
 ## Listing Products
 
