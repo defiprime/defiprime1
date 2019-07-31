@@ -1,7 +1,7 @@
 ---
 layout: blog
 title:  DeFi lending returns vs. traditional asset classes
-permalink: defi-vs-traditional-assets
+permalink: defi-lending-vs-traditional-assets
 h1title: How lending with DeFi compares with traditional asset classes
 pagetitle: Comparing returns on lending with DeFi to traditional asset classes
 metadescription: Comparing returns on lending with DeFi to traditional asset classes. How lending with DeFi compares with traditional asset classes
