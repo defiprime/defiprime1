@@ -57,3 +57,5 @@ collections:
 
 exclude: [node_modules, README.md, CONTRIBUTING.md]
 keep_files: [images]
+sass:
+    style: compressed
