@@ -54,3 +54,5 @@ collections:
   - events
   - payments
   - staking
+  
+exclude: [node_modules, README.md, CONTRIBUTING.md]
