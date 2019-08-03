@@ -175,7 +175,7 @@ featured-image: /images/og-eos.png
 
 {% endfor %}
 
-DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ counter }} DeFi projects listed and {{ counter_eos }} of them built on EOS.
+DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ counter }} DeFi projects listed and {{ counter_eos }} of them using EOS.
 
 
 # Assets Management Tools
