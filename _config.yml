@@ -56,6 +56,6 @@ collections:
   - staking
 
 exclude: [node_modules, README.md, CONTRIBUTING.md]
-keep_files: [images]
+keep_files: [images, assets]
 sass:
     style: compressed
