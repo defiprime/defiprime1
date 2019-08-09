@@ -6,13 +6,15 @@ metadescription: Sorted colletions
 ---
 
 <section>
+    {% assign docArray = "" | split: "" %}
     {% for collection in site.collections %}
-        <h2>{{ collection.label }}</h2>
-        {% assign documents = collection.docs | sort: 'last-modified-date' %}
-        <ol>
-        {% for document in documents limit: 5 %}
-            <li>{{ document.title }}</li>
-        {% endfor %}
-        </ol>
+        {% assign docArray = collection.docs | concat: docArray %}
     {% endfor %}
+    {% assign documents = docArray | sort: 'last-modified-date' %}
+    <h2>Newest 5 pages</h2>
+    <ol>
+    {% for document in documents limit: 5 %}
+        <li>{{ document.title }}</li>
+    {% endfor %}
+    </ol>
 </section>
