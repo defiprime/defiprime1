@@ -45,7 +45,7 @@ metadescription: Defi Rates
 </section>
 <script>
     //window.requestURL = "{{ site.url }}".indexOf("localhost") ? "http://localhost:3000" : "<prod url>";
-    window.requestURL = "http://api-rates.defiprime.com";
+    window.requestURL = "https://api-rates.defiprime.com";
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
 <script src="/assets/js/defi_rates.js"></script>
