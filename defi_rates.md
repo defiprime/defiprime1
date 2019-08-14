@@ -18,7 +18,7 @@ metadescription: Defi Rates
     <span class="rates_annotation">Avg. interest rates</span>
     <div id="avg_interest_rates_cryptos">
         <article class="providersDAI">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/dai.svg">
+            <img src="/images/dai.svg">
             <span class="providerCryptoName">DAI</span>
             <span class="percentCrypto" data-bind="text: $root.averageDAI"></span>
             <div class="listAnnotation">Best Yields DAI</div>
@@ -30,7 +30,7 @@ metadescription: Defi Rates
             </ul>
         </article>
         <article class="providersUSDC">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/usdc.svg">
+            <img src="/images/usdc.svg">
             <span class="providerCryptoName">USDC</span>
             <span class="percentCrypto"  data-bind="text: $root.averageUSDC"></span>
             <div class="listAnnotation">Best Yields USDC</div>
@@ -48,4 +48,4 @@ metadescription: Defi Rates
     window.requestURL = "http://api-rates.defiprime.com";
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
-<script src="{{ site.url }}{{ site.baseurl }}/assets/js/defi_rates.js"></script>
+<script src="/assets/js/defi_rates.js"></script>
