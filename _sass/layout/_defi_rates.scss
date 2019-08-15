@@ -15,6 +15,7 @@
         /* identical to box height, or 24px */
         text-align: center;
         display: block;
+        margin-bottom: 67px;
     }
 }
 
@@ -104,4 +105,25 @@
     color: #8F68FC;
     display: inline-block;
     width: 45px;
+}
+
+#description {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 31px;
+    margin-bottom: 164px;
+
+    span {
+        display: inline-block;
+
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 180%;
+    }
+    img {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }

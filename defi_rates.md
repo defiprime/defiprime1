@@ -10,7 +10,16 @@ metadescription: Defi Rates
     <p>Decentralized Finance (DeFi) is the movement that leverages decentralized networks to transform old financial products into trustless</p>
     <span>lore ipsum data rase title graph</span>
     <canvas id="rate_graphs"></canvas>
-    <div id="description"></div>
+    <div id="description">
+        {% assign descriptions = "Defi lending|Interest rate on balances|Vanguard CDs|Vanguard Real Estate ETF|SPDR Bloomberg Barclays High Yield Bond ETF" | split: "|" %}
+        {% assign icons = "defi_lending|interest_rate_on_balances|vanguard_cds|vanguard_real_estate|sdpr_bloomberg" | split: "|" %}
+        {% for description in descriptions %}
+        <div>
+            <img src="/images/{{icons[forloop.index0]}}.svg">
+            <span>{{description}}</span>
+        </div>
+        {% endfor %}
+    </div>
 </section>
 
 <section>
@@ -44,8 +53,8 @@ metadescription: Defi Rates
     </div>
 </section>
 <script>
-    //window.requestURL = "{{ site.url }}".indexOf("localhost") ? "http://localhost:3000" : "<prod url>";
-    window.requestURL = "https://api-rates.defiprime.com";
+    window.requestURL = "{{ site.url }}".indexOf("localhost") ? "http://localhost:3000" : "https://api-rates.defiprime.com";
 </script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
 <script src="/assets/js/defi_rates.js"></script>
