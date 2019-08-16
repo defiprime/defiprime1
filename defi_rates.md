@@ -33,7 +33,7 @@ metadescription: Defi Rates
             <div class="listAnnotation">Best Yields DAI</div>
             <ul data-bind="foreach: providersDAI">
                 <li>
-                    <span class="cryptoListName" data-bind="text: provider"></span>
+                    <a class="cryptoListName" target="_blank" data-bind="text: provider, attr: { href: providerLink }"></a>
                     <span class="cryptoListPercent" data-bind="text: window.getPercent(providerDAI)"></span>
                 </li>
             </ul>
@@ -45,7 +45,7 @@ metadescription: Defi Rates
             <div class="listAnnotation">Best Yields USDC</div>
             <ul data-bind="foreach: providersUSDC">
                 <li>
-                    <span class="cryptoListName" data-bind="text: provider"></span>
+                    <a class="cryptoListName" target="_blank" data-bind="text: provider, attr: { href: providerLink }"></a>
                     <span class="cryptoListPercent" data-bind="text: window.getPercent(providerUSDC)"></span>
                 </li>
             </ul>
