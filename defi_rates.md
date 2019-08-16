@@ -1,15 +1,15 @@
 ---
 layout: rates
-title: DeFi lending rates | DeFiprime.com
-metadescription: Defi Rates
-h1title: Defi Rates
+title: Defi Yields Rates | DeFi Lending Rates | DeFiprime.com
+metadescription: 'Compare DeFi crypto lending products with traditional financial system offerings.
+Lending stablecoins could be an alternative to high yield CDs, ETFs, and savings accounts, with relatively higher risk.'
+h1title: Defi Yields Rates
 permalink: defi-rates
 featured-image: /images/og-rates.png
 ---
 
 <section id="defi_rates_section">
-    <p>Decentralized Finance (DeFi) is the movement that leverages decentralized networks to transform old financial products into trustless</p>
-    <span>Compare DeFi products with traditional financial system offerings</span>
+    <p>Lending stablecoins could be an alternative to high yield CDs, ETFs, and savings accounts, with relatively higher risk.</p>
     <canvas id="rate_graphs"></canvas>
     <div id="description">
         {% assign descriptions = "Defi lending|Interest rate on balances|Vanguard CDs|Vanguard Real Estate ETF|SPDR Bloomberg Barclays High Yield Bond ETF" | split: "|" %}
@@ -31,7 +31,7 @@ featured-image: /images/og-rates.png
             <img src="/images/dai.svg">
             <span class="providerCryptoName">DAI</span>
             <span class="percentCrypto" data-bind="text: $root.averageDAI"></span> 7-days avg.
-            <div class="listAnnotation">Best Yields DAI</div>
+            <div class="listAnnotation">Best Yields DAI Today</div>
             <ul data-bind="foreach: providersDAI">
                 <li>
                     <a class="cryptoListName" target="_blank" data-bind="text: provider, attr: { href: providerLink }"></a>
@@ -43,7 +43,7 @@ featured-image: /images/og-rates.png
             <img src="/images/usdc.svg">
             <span class="providerCryptoName">USDC</span>
             <span class="percentCrypto"  data-bind="text: $root.averageUSDC"></span> 7-days avg.
-            <div class="listAnnotation">Best Yields USDC</div>
+            <div class="listAnnotation">Best Yields USDC Today</div>
             <ul data-bind="foreach: providersUSDC">
                 <li>
                     <a class="cryptoListName" target="_blank" data-bind="text: provider, attr: { href: providerLink }"></a>
@@ -53,11 +53,12 @@ featured-image: /images/og-rates.png
         </article>
     </div>
 </section>
+<div class="container">
+<hr>
 
->The Content is for informational purposes only, you should not construe any such information or other material as legal, tax, investment, financial, or other advice. Nothing contained on our Site constitutes a solicitation, recommendation, endorsement, or offer by any third party service provider to buy or sell any securities or other financial instruments in this or in in any other jurisdiction in which such solicitation or offer would be unlawful under the securities laws of such jurisdiction.
+<p>DeFi lending rates data provided by: <a href="https://loanscan.io/">loanscan.io</a></p>
 
-DeFi lending rates data provided by: [loanscan.io](https://loanscan.io/)  
-
+</div>
 <script>
     window.requestURL = "https://api-rates.defiprime.com";
 </script>
