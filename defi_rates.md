@@ -1,14 +1,15 @@
 ---
 layout: rates
-title: DeFi - Best Decentralized Finance(DeFi) Products | DeFiprime.com
+title: DeFi lending rates | DeFiprime.com
 metadescription: Defi Rates
-
+h1title: Defi Rates
+permalink: defi-rates
+featured-image: /images/og-rates.png
 ---
 
 <section id="defi_rates_section">
-    <h1>DeFi Rates</h1>
     <p>Decentralized Finance (DeFi) is the movement that leverages decentralized networks to transform old financial products into trustless</p>
-    <span>lore ipsum data rase title graph</span>
+    <span>Compare DeFi products with traditional financial system offerings</span>
     <canvas id="rate_graphs"></canvas>
     <div id="description">
         {% assign descriptions = "Defi lending|Interest rate on balances|Vanguard CDs|Vanguard Real Estate ETF|SPDR Bloomberg Barclays High Yield Bond ETF" | split: "|" %}
