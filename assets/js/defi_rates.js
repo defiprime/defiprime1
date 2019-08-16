@@ -75,6 +75,7 @@ var monthNames = ["January", "February", "March", "April", "May", "June",
 ];
 
 var ctx = document.getElementById('rate_graphs').getContext('2d');
+document.getElementById('rate_graphs').style.backgroundColor = 'rgb(255,255,255)';
 
 var myChart = new Chart(ctx, {
   type: 'line',
@@ -139,6 +140,13 @@ var myChart = new Chart(ctx, {
                 beginAtZero: true
             }
         }]
+    },
+    tooltips: {
+      callbacks: {
+        label: function(tooltipItem, data) {
+          return data['labels'][tooltipItem['index']] + ': ' + data['datasets'][0]['data'][tooltipItem['index']] + '%';
+        }
+      }
     }
   }
 });
