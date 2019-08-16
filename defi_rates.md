@@ -1,6 +1,6 @@
 ---
 layout: rates
-title: Defi Yields Rates | DeFi Lending Rates | DeFiprime.com
+title: Defi Yields Rates | DeFi Lending Interest Rates | DeFiprime.com
 metadescription: 'Compare DeFi crypto lending products with traditional financial system offerings.
 Lending stablecoins could be an alternative to high yield CDs, ETFs, and savings accounts, with relatively higher risk.'
 h1title: Defi Yields Rates
