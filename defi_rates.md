@@ -24,13 +24,13 @@ featured-image: /images/og-rates.png
 </section>
 
 <section>
-    <h1>DeFi Lending</h1>
-    <span class="rates_annotation">Avg. interest rates</span>
+    <h1>DeFi Lending Rates</h1>
+    <span class="rates_annotation">What you can earn?</span>
     <div id="avg_interest_rates_cryptos">
         <article class="providersDAI">
             <img src="/images/dai.svg">
             <span class="providerCryptoName">DAI</span>
-            <span class="percentCrypto" data-bind="text: $root.averageDAI"></span>
+            <span class="percentCrypto" data-bind="text: $root.averageDAI"></span> avg. today
             <div class="listAnnotation">Best Yields DAI</div>
             <ul data-bind="foreach: providersDAI">
                 <li>
@@ -42,7 +42,7 @@ featured-image: /images/og-rates.png
         <article class="providersUSDC">
             <img src="/images/usdc.svg">
             <span class="providerCryptoName">USDC</span>
-            <span class="percentCrypto"  data-bind="text: $root.averageUSDC"></span>
+            <span class="percentCrypto"  data-bind="text: $root.averageUSDC"></span> avg. today
             <div class="listAnnotation">Best Yields USDC</div>
             <ul data-bind="foreach: providersUSDC">
                 <li>
@@ -53,6 +53,8 @@ featured-image: /images/og-rates.png
         </article>
     </div>
 </section>
+
+DeFi lending rates data provided by: [loanscan.io](https://loanscan.io/)  
 <script>
     window.requestURL = "https://api-rates.defiprime.com";
 </script>
