@@ -25,12 +25,12 @@ featured-image: /images/og-rates.png
 
 <section>
     <h1>DeFi Lending Rates</h1>
-    <span class="rates_annotation">What you can earn?</span>
+    <span class="rates_annotation">What you can earn lending your stablecoins?</span>
     <div id="avg_interest_rates_cryptos">
         <article class="providersDAI">
             <img src="/images/dai.svg">
             <span class="providerCryptoName">DAI</span>
-            <span class="percentCrypto" data-bind="text: $root.averageDAI"></span> avg. today
+            <span class="percentCrypto" data-bind="text: $root.averageDAI"></span> 7-days avg.
             <div class="listAnnotation">Best Yields DAI</div>
             <ul data-bind="foreach: providersDAI">
                 <li>
@@ -42,7 +42,7 @@ featured-image: /images/og-rates.png
         <article class="providersUSDC">
             <img src="/images/usdc.svg">
             <span class="providerCryptoName">USDC</span>
-            <span class="percentCrypto"  data-bind="text: $root.averageUSDC"></span> avg. today
+            <span class="percentCrypto"  data-bind="text: $root.averageUSDC"></span> 7-days avg.
             <div class="listAnnotation">Best Yields USDC</div>
             <ul data-bind="foreach: providersUSDC">
                 <li>
@@ -54,7 +54,10 @@ featured-image: /images/og-rates.png
     </div>
 </section>
 
+>The Content is for informational purposes only, you should not construe any such information or other material as legal, tax, investment, financial, or other advice. Nothing contained on our Site constitutes a solicitation, recommendation, endorsement, or offer by any third party service provider to buy or sell any securities or other financial instruments in this or in in any other jurisdiction in which such solicitation or offer would be unlawful under the securities laws of such jurisdiction.
+
 DeFi lending rates data provided by: [loanscan.io](https://loanscan.io/)  
+
 <script>
     window.requestURL = "https://api-rates.defiprime.com";
 </script>
