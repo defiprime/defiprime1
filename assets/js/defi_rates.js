@@ -1,17 +1,7 @@
 // Declaration of dynamic properties
 
 function getPercent(value) {
-  return Math.round( value * 100 ) + '%';
-}
-
-function computeAverage(providersArr, property) {
-  var sum = 0;
-  for(var i=0;i<providersArr.length; i++) {
-    sum += providersArr[i][property];
-  }
-  var divider = providersArr.length == 0 ? 1 : providersArr.length;
-  
-  return getPercent(sum/divider);
+  return Math.round( value * 10000 ) / 100 + '%';
 }
 
 var providersViewModel = function() {
@@ -21,13 +11,9 @@ var providersViewModel = function() {
   self.providersUSDC = ko.observableArray([]);
   self.weekData      = ko.observableArray([]);
 
-  self.averageDAI = ko.computed(function () {
-    return computeAverage(self.providersDAI(), "providerDAI")
-  })
+  self.averageDAI = ko.observable();
 
-  self.averageUSDC = ko.computed(function () {
-    return computeAverage(self.providersUSDC(), "providerUSDC")
-  })
+  self.averageUSDC = ko.observable();
 }
 
 var viewModel = new providersViewModel()
@@ -44,6 +30,8 @@ xhr.onreadystatechange = function () {
     var providers = JSON.parse(xhr.responseText);
     viewModel.providersDAI(providers.sortedProvidersDAI);
     viewModel.providersUSDC(providers.sortedProvidersUSDC);
+    viewModel.averageDAI(getPercent(providers.daiAverage));
+    viewModel.averageUSDC(getPercent(providers.usdcAverage));
   }
 }
 
@@ -59,10 +47,8 @@ xhr2.onreadystatechange = function() {
     ];
     var weekData = JSON.parse(xhr2.responseText);
     var filteredData = weekData.map(function(day) {
-      return day.sumOfDAI * 100;
+      return Math.round(day.sumOfDAI * 10000)/100;
     })
-
-    console.log(weekData)
 
     viewModel.weekData(filteredData)
 
@@ -96,7 +82,7 @@ var myChart = new Chart(ctx, {
       labels: Array(7).fill(''),
       datasets: [{
           label: 'DeFi lending',
-          data: [10,20,30,40,50,60,70],
+          data: Array(7).fill(0),
           backgroundColor: "#8F68FC",
           fill: false,
           borderColor: "#8F68FC",
