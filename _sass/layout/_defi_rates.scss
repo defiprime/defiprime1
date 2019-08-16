@@ -1,7 +1,7 @@
 #defi_rates_section {
     p {
         text-align: center;
-        width: 730px;
+        max-width: 730px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -125,5 +125,22 @@
     img {
         display: inline-block;
         vertical-align: middle;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    #description {
+        flex-direction: column;
+
+        div  {
+            height: 33px;
+        }
+    }
+}
+
+@media screen and (max-width: 816px) {
+    #avg_interest_rates_cryptos {
+        align-items: center;
+        flex-direction: column;
     }
 }
