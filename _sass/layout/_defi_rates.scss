@@ -154,3 +154,20 @@
         }
     }
 }
+
+@media screen and (max-width: 360px) {
+    .menu-list {
+        display: grid !important;
+        grid-template-columns: auto auto;
+    }
+    .header-content-menu {
+        width: 100%;
+    }
+    .link {
+        position: relative;
+        img {
+            position: absolute;
+            left: -26px;
+        }
+    }
+}
