@@ -11,7 +11,13 @@ var providersViewModel = function() {
   self.providersUSDC = ko.observableArray([]);
   self.weekData      = ko.observableArray([]);
 
-  self.averageDAI = ko.observable();
+  self.averageDAI = ko.computed(function() {
+    var sum = 0;
+    for(var i=0; i< self.weekData().length - 1; i++) {
+      sum+=self.weekData()[i];
+    }
+    return Math.round(sum * 100/ self.weekData().length) / 100 + "%";
+  });
 
   self.averageUSDC = ko.observable();
 }
@@ -30,8 +36,6 @@ xhr.onreadystatechange = function () {
     var providers = JSON.parse(xhr.responseText);
     viewModel.providersDAI(providers.sortedProvidersDAI);
     viewModel.providersUSDC(providers.sortedProvidersUSDC);
-    viewModel.averageDAI(getPercent(providers.daiAverage));
-    viewModel.averageUSDC(getPercent(providers.usdcAverage));
   }
 }
 
@@ -46,9 +50,13 @@ xhr2.onreadystatechange = function() {
       "July", "August", "September", "October", "November", "December"
     ];
     var weekData = JSON.parse(xhr2.responseText);
+    var sumOfUSDC = 0;
     var filteredData = weekData.map(function(day) {
+      sumOfUSDC += day.sumOfUSDC;
       return Math.round(day.sumOfDAI * 10000)/100;
     })
+    
+    viewModel.averageUSDC(getPercent(sumOfUSDC/weekData.length));
 
     viewModel.weekData(filteredData)
 
