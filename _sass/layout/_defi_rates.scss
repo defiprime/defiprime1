@@ -142,6 +142,7 @@
     #avg_interest_rates_cryptos {
         align-items: center;
         flex-direction: column;
+        align-items: baseline;
     }
 
 }
@@ -155,10 +156,10 @@
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
     .menu-list {
         display: grid !important;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
     }
     .header-content-menu {
         width: 100%;
