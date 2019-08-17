@@ -13,8 +13,8 @@ var providersViewModel = function() {
 
   self.averageDAI = ko.computed(function() {
     var sum = 0;
-    for(var i=0; i< self.weekData().length - 1; i++) {
-      sum+=self.weekData()[i];
+    for(var i=0; i< self.weekData().length; i++) {
+      sum+=(self.weekData()[i]);
     }
     return Math.round(sum * 100/ self.weekData().length) / 100 + "%";
   });
@@ -55,7 +55,7 @@ xhr2.onreadystatechange = function() {
       sumOfUSDC += day.sumOfUSDC;
       return Math.round(day.sumOfDAI * 10000)/100;
     })
-    
+
     viewModel.averageUSDC(getPercent(sumOfUSDC/weekData.length));
 
     viewModel.weekData(filteredData)
