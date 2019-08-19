@@ -13,7 +13,7 @@ author: Defiprime
 ---
 Brian Norton talks about building a new version of MEW and sharing his thoughts on the future of DeFi and dApps space at Ethereum.
 
-## Hello! What's your background, and what are you working on?
+### Hello! What's your background, and what are you working on?
 
 Hi! My name is Brian Norton, and I'm the COO of MyEtherWallet.
 
@@ -25,7 +25,7 @@ Since then, we've been working hard to expand our product offering so that our u
 
 ![](/images/blog/mew2.png)
 
-## What's MyEtherWallet backstory?
+### What's MyEtherWallet backstory?
 
 MyEtherWallet was started in 2015, about a month after the Ethereum blockchain launched on the mainnet. Since then, MEW has amassed an estimated 1.2 million monthly users.  
 
@@ -35,7 +35,7 @@ Over the years, MyEtherWallet grew. New features have been added - hardware wall
 
 Our aim is to make blockchain tech easier and safer to use. We've made big strides since 2015, but there are still a great many improvements to be made. As the technology and user needs evolve, so do we.
 
-## What went into building the updated MyEtherWallet?
+### What went into building the updated MyEtherWallet?
 
 MEW V5 was born out of a bit of uncertainty after MEW went through a founder's split and fork in early 2018, and we found ourselves in need of a new team and a new direction.
 
@@ -49,7 +49,7 @@ For the first time in its history, MyEtherWallet was getting the full attention 
 
 Building a new team, and reimagining an already heavily relied upon resource in the space was no easy task, but it allowed us to tap into the kinds of things that might concern a new user coming to the site. It was important for us to escape the feedback loop of the vocal Ethereum community and begin to address the immediate needs of folks entering the space and attempting to find their way.
 
-## What's your business model?
+### What's your business model?
 
 The core functions of MyEtherWallet - wallet creation, accessing the wallet, sending transactions, signing -  have no fee. The same goes for dApps that don't monetize, and instead provide a community service, like the Ethereum Name Service (ENS). We feel that if removing as many of the upfront costs as possible can create a safer and more usable experience, then we have a responsibility to the community to do just that.
 
@@ -64,7 +64,7 @@ We have begun opening up our dApps page for similar types of integrations; [DeFi
 
 A high percentage of users coming into the space are looking for alternatives to the traditional financial system, and we believe that MEW is well-positioned to onboard them onto these new solutions.
 
-## What's your position on the regulatory landscape today?
+### What's your position on the regulatory landscape today?
 
 I think in many ways regulators, at least in the US, have been biding their time to see how the industry develops and whether it warrants action.  In this sense, the Libra announcement may be a mixed blessing. Whatever you might think about Libra, Facebook has a global reach large enough to drive the level of adoption to make legislators take notice and force cryptocurrency into mainstream discourse.   
 
@@ -72,7 +72,7 @@ The downside is that regulators may regulate for Libra without considering the w
 
 Case in point, the [FATF's proposed guidelines](http://www.fatf-gafi.org/publications/fatfrecommendations/documents/guidance-rba-virtual-assets.html) that exchanges and wallets conform to the "travel rule." Such a suggestion both undercuts the benefits of the technology and undermines projects by subjecting them to impossible standards.
 
-## What are your goals for the future?
+### What are your goals for the future?
 
 Currently, we are gearing up for what we see as massive expansion in digital assets and DeFi in the very near future. This includes more swap offerings, more DeFi offerings on the platform, as well as support for collectibles. We're also working closely with existing partners to ensure their own expanding offerings are available to users through MEW.  
 
@@ -88,7 +88,7 @@ Now, I realize that sounds like a lot of buzzwords, and that users may or may no
 
 The freedom and security offered by decentralized finance empowers users and keeps them experimenting in the space, regardless of what attracted them in the first place. If a user finds their way to MEW and finds a reason to continue exploring the blockchain, we consider that a success.
 
-## What are your thoughts for the future of the DeFi market?
+### What are your thoughts for the future of the DeFi market?
 
 I think right now is an exciting time for the DeFi ecosystem because it is expanding so rapidly, and most of us in the space realize that it is still just the beginning.
 
@@ -100,7 +100,7 @@ We also see the reimagining of payment processing through projects like xdai or 
 
 I love what the folks over [Aave](https://aave.com) are doing with [Ethlend](/ethlend), and we're excited to see the launch of decentralized lending pools that they've recently announced.  I especially like that they've created a number of products with [different degrees of centralization](https://hackernoon.com/how-decentralized-is-defi-a-framework-for-classifying-lending-protocols-90981f2c007f). They have an offering for payments that serves as a crypto-fiat bridge alongside their decentralized credit offerings. These sorts of bridges allow DeFi and traditional personal finance to work side by side, so the user can onboard more easily, and utilize crypto for day-to-day tasks.
 
-## Where can we go to learn more?
+### Where can we go to learn more?
 
 - [www.myetherwallet.com](https://www.myetherwallet.com/)
 - [twitter.com/myetherwallet](https://twitter.com/myetherwallet)

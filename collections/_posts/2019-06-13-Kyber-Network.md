@@ -13,7 +13,7 @@ author: Defiprime
 ---
 Loi Luu talks about long term objectives, and how Kyber Network is going to become the transaction layer for the decentralized economy.
 
-## Hello! What's your background, and what are you working on?
+### Hello! What's your background, and what are you working on?
 
 My name is Loi Luu, CEO and co-founder of [Kyber Network](https://kyber.network).
 
@@ -32,7 +32,7 @@ To date, there are more than 55 blockchain projects that have integrated Kyber f
 
 {% youtube "https://www.youtube.com/watch?v=xggWgqU7yVM" %}
 
-## What's Kyber backstory?
+### What's Kyber backstory?
 
 My co-founders and I were initially motivated to improve the 3 foundational pillars of the blockchain world, namely decentralization, scalability and security. On security, we built [Oyente](https://github.com/melonproject/oyente), which was the first automated smart contract verification framework and one of the most used open-source auditing tools by security experts today (e.g. Melonport, Quantstamp). On decentralization, our work on [Smartpool](http://smartpool.io/) was focused on preventing over-centralization of mining pools, which made the underlying blockchain networks more secure and censorship-resistant. On scalability, our work on [Elastico](https://www.comp.nus.edu.sg/~loiluu/papers/elastico.pdf) was the first proposed sharding solution for public blockchains and directly inspired the design of Zilliqa, currently one of the most promising scalable blockchain projects.
 
@@ -42,7 +42,7 @@ It turned out that no existing solution then addressed the problem in a practica
 
 Since then, we sought to facilitate seamless decentralized token exchange between different projects and ecosystems. That we thought, might eventually lead to equalizing access to everyone, regardless of origin, location, power or background.
 
-## What went into building Kyber?
+### What went into building Kyber?
 
 Building Kyber’s liquidity protocol took my team and me many months of hard-work, but it was extremely rewarding and laid the strong technical foundations for Kyber to emerge. We launched our in-house token swap service KyberSwap on the Ethereum mainnet on February, 2018, and since then our protocol has facilitated over 827,000 ETH worth of trades, powering token swaps for over 55 applications, supporting over 70 ERC20 tokens, and has more than 24 different reserves contributing liquidity to the network.
 
@@ -50,7 +50,7 @@ Security is one of our utmost priorities when building Kyber, and we have conduc
 
 We are very grateful for the advice and support given by our various advisors since the beginning of our journey. It was also heartening to see how enthusiastic the entire community was to ideas that aimed to fundamentally change how incumbent economies worked. This enthusiasm was the key motivation to continue developing decentralized technology and solutions, despite the presence of major hurdles given the embryonic state of the technology.
 
-## What's your business model?
+### What's your business model?
 
 The Kyber Protocol aggregates liquidity from diverse sources called Reserves, supporting over 70 different ERC20 tokens. Each reserve has the ability to determine their own conversion rate and spread (difference between buy/sell price) for a digital asset pair through various methods.
 
@@ -58,7 +58,7 @@ Reserves provide liquidity for their tokens and earn from the spread in every tr
 
 Additionally, in order to operate and contribute liquidity, all reserves are required to pay fees in KNC (Kyber Network Crystals), Kyber’s native token. Some of these fees are awarded to integrated DApps as an incentive to help bring in volume and grow the ecosystem, while the remaining KNC are burnt as network fees (taken out of circulation forever).
 
-## What’s your position on the regulatory landscape today?
+### What’s your position on the regulatory landscape today?
 
 We are starting to see more countries take a positive approach towards cutting-edge technology such as blockchain and cryptocurrencies.
 
@@ -66,7 +66,7 @@ For instance, 2018’s Vietnam Crypto Dialogue, which Kyber co-organized with Re
 
 The Singapore government in general has also been very forward-looking with regards to new technologies, and has started an initiative to make Singapore a [‘Smart Nation’](https://www.smartnation.sg/). The Monetary Authority of Singapore (MAS) has even conducted their own experiments on distributed ledger technology in a project called [Project Ubin](http://www.mas.gov.sg/Singapore-Financial-Centre/Smart-Financial-Centre/Project-Ubin.aspx), which helped MAS better understand the potential benefits the technology may bring through practical experimentation.
 
-## What are your goals for the future?
+### What are your goals for the future?
 
 At Kyber, we are building our protocol to facilitate the conversion of cryptocurrencies in the most trustless and secure manner. Anyone can access Kyber’s documentation on our [Developer Portal](https://developer.kyber.network) to integrate with the protocol, or set up a Reserve to contribute liquidity. Over time, we plan to make it even more straightforward for anyone to both access and contribute liquidity on Kyber.
 
@@ -81,7 +81,7 @@ Here are our [Long Term Objectives](https://blog.kyber.network/kyber-long-term-o
 
 3. Establishing the technical, communication and governance framework to grow a community with the passion, expertise, and incentive to build Kyber together. We are expecting protocol direction, implementation, and treasury decisions to eventually be made by the community via proposals and votes on the [KyberDAO](https://blog.kyber.network/kyberdao-experiment-1-review-and-summary-of-discussions-87e1c1d8f45).
 
-## What are your future thoughts for the DeFi market?
+### What are your future thoughts for the DeFi market?
 
 Decentralized Finance (DeFi) can be seen as the trading and transacting of digital assets using blockchain technology, with the user in full control of his/her funds. I believe that DeFi has a huge potential to disrupt the traditional financial system, since financial intermediaries can now be removed, transactions are less prone to fraud and counterparty risks, and there is also an opportunity for greater financial inclusion. The impact of DeFi will be especially pronounced given the rapid increase in the use of smartphones and how people are getting more comfortable managing their finances online.
 
@@ -91,7 +91,7 @@ For example, someone without a bank account in a remote region in one country, c
 
 At Kyber, we are building a protocol to facilitate the conversion of cryptocurrencies in the most trustless and secure manner. Our long term goal is to process most of the financial transactions for these applications in the decentralized world.
 
-## Where can we go to learn more?
+### Where can we go to learn more?
 
 Please follow Kyber Network on social media to stay updated:
 - [Developer Portal](https://developer.kyber.network/docs/Start/)

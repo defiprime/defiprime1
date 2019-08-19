@@ -13,7 +13,7 @@ author: Defiprime
 ---
 Nelson from Neutral talks about the first meta-stablecoin, Neutral Dollar (NUSD), and use cases for basketing stablecoins.
 
-## Hello! What's your background, and what are you working on?
+### Hello! What's your background, and what are you working on?
 
 Hey there! My name is Nelson, and I’m currently working at [Neutral](http://neutralproject.com). Previously, I worked in traditional investment management, and always gone to appreciate the financial markets ever since. What got me into crypto was pretty much the same reason as everybody else's - getting excited about a new way to redefine decision making and create applications that bring people together.
 
@@ -33,7 +33,7 @@ The use cases are really exciting, and shows that NUSD is not only a product but
 
 So for end users, NUSD is a more [stable stablecoin](https://medium.com/@neutralproject/intro-to-neutral-dollar-98f95d1ff9f4). For traders, it’s a natural way to engage in arbitrage and unlock price discovery mechanics on underlying stablecoins. For institutions, it provides an autonomous way to rebalance stablecoin exposures due to the underlying activity and help facilitate primary and secondary market activity. Any application for stablecoins, we want it to exist for NUSD and more.
 
-## What's Neutral Dollar backstory?
+### What's Neutral Dollar backstory?
 
 Neutral Dollar’s inception actually came in many phases. Neutral wanted to create basket instruments, so it’s really more of an economic mechanism. We can take this mechanism and apply to different assets and create different products - such as a market cap weighted ERC20 basket, or group assets on different chains. We wanted to prove that our concept works in practice, and we’ve noticed some interesting use cases basketing stablecoins.
 
@@ -47,13 +47,13 @@ Our team consists of people whose knowledge stems from blockchain, investments, 
 
 We want to showcase Neutral Dollar as a way to improve financial ecosystems and help users gain exposures more safely, transparently, and efficiently. Anybody can get Neutral Dollar by collateralizing supported stablecoins directly on our platform, or currently go to partnered secondary exchanges to acquire it as well.
 
-## What are your goals for the future?
+### What are your goals for the future?
 
 We want to create more aggregate products, as mentioned before. Thematic, factor-based, market-cap products on existing assets and other chains - possibilities are endless. A question we ourselves have to ask, 'is there going to be a demand for a product like this?' And how can we encourage activity and liquidity? There’s actually a long tail of actively traded assets, but we have our eyes peeled on the progress overall. We can also explore derivatives, etc. whatever gets more people involved and improves financial activity in a safe and measured manner.
 
 A smaller goal for the community is that we want to standardize an index on pricing (like stablecoin pricing). We have our pricing on our underlying constituents for Neutral Dollar, but it would be helpful if this was administered in a widespread way where people can use it robustly. The oracle problem may exist for some time, and we actually think having some controls such as signed pricing allows for replication of models to be created. The goal here is to reduce systemic risk, and having a proper index is one of the ways to do this. For example, if blockchain-derivatives reference some sort of pricing, it needs to be reproducible and of good quality to actually be used for promoting liquidity.
 
-## What are your future thoughts for the DeFi market?
+### What are your future thoughts for the DeFi market?
 
 DeFi is really cool, it’s a tight-knit group of people wanting to make a difference. There’s actually quite a bit of overlap between projects, so it’s worth collaborating because the opportunity for decentralized finance is massive. A snag that DeFi has that Neutral also experiences is messaging. Most DeFi projects require some expert level of domain knowledge.
 
@@ -61,7 +61,7 @@ For example, I once heard a joke about people who understand DeFi as people who 
 
 All in all, much time from DeFi projects come from explaining the goal, but the intent is to talk about all the use cases. We just need to get there to a level a trust where people can begin to talk less about how it works, but what we can do with DeFi in general. We’re still very early, but banding together really helps with encouragement and shows greater opportunity to broaden crypto use cases.
 
-## Where can we go to learn more?
+### Where can we go to learn more?
 
 - Website: [neutralproject.com](http://neutralproject.com)
 - Twitter: [@neutral_project](https://twitter.com/neutral_project)

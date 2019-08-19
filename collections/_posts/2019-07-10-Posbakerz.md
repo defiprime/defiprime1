@@ -13,7 +13,7 @@ author: Defiprime
 ---
 POS Bakerz team shared their expertise as an infrastructure operator for Proof-of-stake blockchains and thoughts on defi projects.
 
-## Hello! What's your background, and what are you working on?
+### Hello! What's your background, and what are you working on?
 
 We are Edouard, David, Tiago and Lionel, a team of 4 that has been involved in Fintech and blockchain for the past couple of years. [POS Bakerz](https://posbakerz.com/) is an infrastructure operator for Proof-of-stake (PoS) public blockchain, offering node infrastructure and staking-as-a-service. We want to make it easier for token holders to stake their tokens or for developers to build products using relying blockchain infrastructure.
 
@@ -28,11 +28,11 @@ For more information on our ambitions and background, you can check: [What is PO
 
 ![](/images/blog/posbakerz1.png)
 
-## What's POS Bakerz backstory?
+### What's POS Bakerz backstory?
 
 Blockchain infrastructure is hard to master, as many protocols are now shifting towards Proof-of-Stake, we believe that any token holder or developer should be able to easily benefit from a high uptime quality infrastructure for its projects, without having to manage nodes by himself.
 
-## What went into building the POS Bakerz?
+### What went into building the POS Bakerz?
 
 We launched our first public staking infrastructure in January 2019, which was on [Tezos](https://tezos.com). Since then, we have kept expanding on new protocols and ecosystems in which we believe that they might reshape the blockchain and DeFi landscape in the future. Blockchains we operate on now include Tezos, Cosmos, Irisnet, Terra Money, Algorand, plus many in Testnet phases.
 
@@ -45,7 +45,7 @@ Since we started POS Bakerz, we noticed some developments within the industry:
 
 From our end, we keep working hard on improving our architecture, deploying on new protocols, and adding features. At the moment, we are currently exploring the opportunity to switch towards Cloud HSM, which seems like one of the best compromises in terms of security and uptime vs. physical colocation with HSM. The team is currently working on a multi-asset delegator dashboard, but we also have some nice ideas, including tax reporting tools and hedging financial products.
 
-## What's your business model?
+### What's your business model?
 
 Our business model is very simple:
 - Staking: we charge fees on the interests/dividends that we earn for our delegators
@@ -53,7 +53,7 @@ Our business model is very simple:
 
 There are hundreds of staking providers out there, but we are proud to be one of the largest staking providers in Europe, with high uptime and reasonable fees. We also produce a lot of [education materials](https://medium.com/posbakerz) in order to educate crypto and non-crypto holders about Proof-of-Stake and staking.
 
-## What's your position on the regulatory landscape today?
+### What's your position on the regulatory landscape today?
 
 It is no secret that the crypto-community overall deplores the lack of advances on the regulatory front. While we understand these frustrations, we also need to be cognisant of the substantial progress made over the past two years.
 
@@ -67,7 +67,7 @@ All this also has to be put in the context of the need for those regulators to s
 
 We are as eager as everybody else to see further much-needed developments on the regulatory front, but we equally need to be mindful that, given the complexity of the topic, those regulations can only be introduced in a gradual manner.
 
-## What are your goals for the future?
+### What are your goals for the future?
 
 We plan to develop additional features for our clients, and open source tools for the community, but also to focus on helping any new validators or developers to operate a node themselves, through our node-as-a-service offering.
 
@@ -75,7 +75,7 @@ We believe that there is still a lot of work to be achieved on the infrastructur
 
 Because of our finance background, we are also closely looking at the opportunity to repackage staking dividends into more traditional and eventually regulated financial products.
 
-## What are your future thoughts for the DeFi market?
+### What are your future thoughts for the DeFi market?
 
 The past year has been marked by the significant developments of decentralized applications built on top of blockchains - mostly [Ethereum](/ethereum). One of the most noticeable advances can be clearly seen on the financial products side of things. Some protocols (0x) have been pivotal in helping to develop and promote some interesting Decentralized Finance ("Defi") applications. There is now a plethora of such projects (mostly revolving around P2P lending): Dy/Dx, Dharma, UMA, [Set Protocol](/tokensets), MakerDAO….
 
@@ -85,7 +85,7 @@ With all that said, we believe that there are still some limits to Defi applicat
 
 All in all, there has been a lot of very exciting projects which have seen the light. Once the above concerns are addressed, those projects will become democratized and see mass adoption.
 
-## Where can we go to learn more?
+### Where can we go to learn more?
 
 - Website: [posbakerz.com](https://posbakerz.com/)
 - Twitter: [@PosBakerz](https://twitter.com/PosBakerz)
