@@ -2,7 +2,7 @@
 layout: blog
 title: Uniswap Liquidity Pools
 permalink: uniswap-liquidity-pools
-h1title: 'Are Uniswaps Liquidity Pools Right for You?'
+h1title: 'Are Uniswap‘s Liquidity Pools Right for You?'
 pagetitle: 'Uniswap Liquidity Pools: Definitive Guide'
 metadescription: 'Uniswap Liquidity Pools: Definitive Guide, how they work, and whether or not Uniswap liquidity provider is a good idea for everyone. Are Uniswap Liquidity Pools Right for You?'
 category: blog
