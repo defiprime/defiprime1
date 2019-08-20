@@ -17,5 +17,10 @@ goldfarb:
 knab:
     name: Megan Knab
     twitter: https://twitter.com/knotmegan
-    bio: Megan is the founder & CEO of <a href="https://veriledger.io/">VeriLedger</a>, an accounting system that automates reconciliation and supports cryptocurrencies. Her background is in accounting and building scalable operations systems. 
+    bio: Megan is the founder & CEO of <a href="https://veriledger.io/">VeriLedger</a>, an accounting system that automates reconciliation and supports cryptocurrencies. Her background is in accounting and building scalable operations systems.
     image: /images/knab.jpg
+chrisblec:
+    name: Chris Blec
+    twitter: https://twitter.com/chrisblec
+    bio: Chris Blec founded <a href="https://defiglobal.net">DeFi Global (DFG)</a> in 2019 after a twenty year career running growth efforts for media & tech companies including TheStreet, UFC, Impact Wrestling, and edtech startups One Month and Designlab. DFG is dedicated to providing growth and end-user educational services to projects that are genuine in their interest of furthering the cause of decentralized finance.
+    image: /images/chrisblec.jpg
