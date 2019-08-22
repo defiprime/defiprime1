@@ -53,6 +53,35 @@ featured-image: /images/og-rates.png
         </article>
     </div>
 </section>
+
+<section id="liquidityPools">
+    <h1>Best liquidity pools Yields</h1>
+    <div id="avg_interest_rates_cryptos">
+        <article class="providersDAI">
+            <img src="/images/dai_eth.svg">
+            <span class="providerCryptoName">DAI</span>
+            <div class="listAnnotation">Best Yields DAI Today</div>
+            <ul data-bind="foreach: providersETHDai">
+                <li>
+                    <a class="cryptoListName" target="_blank" data-bind="text: provider, attr: { href: providerLink }"></a>
+                    <span class="cryptoListPercent" data-bind="text: providerDAI+'%'"></span>
+                </li>
+            </ul>
+        </article>
+        <article class="providersUSDC">
+            <img src="/images/usdc.svg">
+            <span class="providerCryptoName">USDC</span>
+            <div class="listAnnotation">Best Yields USDC Today</div>
+            <ul data-bind="foreach: providersETHUsdc">
+                <li>
+                    <a class="cryptoListName" target="_blank" data-bind="text: provider, attr: { href: providerLink }"></a>
+                    <span class="cryptoListPercent" data-bind="text: providerUSDC+'%'"></span>
+                </li>
+            </ul>
+        </article>
+    </div>
+</section>
+
 <div class="container">
 <hr>
 
