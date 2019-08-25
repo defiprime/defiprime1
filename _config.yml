@@ -38,33 +38,54 @@ plugins:
 include: ['.htaccess']
 collections_dir: collections
 collections:
-  - lending
-  - derivatives
-  - analytics
-  - assets-managament-tools
-  - exchanges
-  - infrastructure
-  - insurance
-  - assets-tokenization
-  - kyc_identity
-  - marketplaces
-  - prediction_markets
-  - stablecoins
-  - margin-trading
-  - events
-  - payments
-  - staking
-collections:
-  analytics:
-    output: true
-    permalink: /product/:name
   lending:
     output: true
     permalink: /product/:name
+  derivatives:
+    output: true
+    permalink: /product/:name
+  analytics:
+    output: true
+    permalink: /product/:name
+  assets-managament-tools:
+    output: true
+    permalink: /product/:name
+  exchanges:
+    output: true
+    permalink: /product/:name
+  infrastructure:
+    output: true
+    permalink: /product/:name
+  insurance:
+    output: true
+    permalink: /product/:name
+  assets-tokenization:
+    output: true
+    permalink: /product/:name
+  kyc_identity:
+    output: true
+    permalink: /product/:name
+  marketplaces:
+    output: true
+    permalink: /product/:name
+  prediction_markets:
+    output: true
+    permalink: /product/:name
+  stablecoins:
+    output: true
+    permalink: /product/:name
+  margin-trading:
+    output: true
+    permalink: /product/:name
+  events:
+  payments:
+    output: true
+    permalink: /product/:name
+  staking:
+    output: true
+    permalink: /product/:name
+
 defaults:
   -
-    scope:
-      type: "analytics"  # a collection in your site, in plural form
     values:
       layout: "product"
-    
