@@ -1,12 +1,14 @@
 ---
 layout: page
 title:  "Analytics"
-permalink: analytics
+permalink: defi-analytics
 h1title: Analytics
 pagetitle: DeFi Analytics - Best Tools to keep track of DeFi ecosystem    
-metadescription: Analytics is the discovery, interpretation, and communication of meaningful patterns in data; and the process of applying those patterns towards effective decision making.
+metadescription: DeFi Analytics is the discovery, interpretation, and communication of meaningful patterns in data; and the process of applying those patterns towards effective decision making.
 category: products
 og: /images/og-analytics.png
+redirect_from:
+  - analytics
 ---
 Analytics is the discovery, interpretation, and communication of meaningful patterns in data; and the process of applying those patterns towards effective decision making.
 

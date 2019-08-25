@@ -1,10 +1,10 @@
 ---
 layout: ecosystem
 title: events
-metadescription: List of the best Defi events. Calendar with the best DeFi meetups and conferences around the world.
+metadescription: List of the best DeFi events. DeFi Calendar with the best meetups, conferences, and hackathons around the world.
 permalink: events
 h1title: DeFi Meetups and Conferences
-pagetitle: DeFi Events. Defi meetups and conferences
+pagetitle: DeFi Events Calendar. DeFi meetups, conferences and hackathons
 featured-image: /images/og-events.png
 
 ---

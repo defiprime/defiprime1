@@ -1,0 +1,177 @@
+#defi_rates_section {
+    p {
+        text-align: center;
+        max-width: 730px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    span {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 160%;
+
+        /* identical to box height, or 24px */
+        text-align: center;
+        display: block;
+        margin-bottom: 67px;
+    }
+}
+
+.providerCryptoName{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 120%;
+}
+
+.rates_annotation {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 180%;
+
+    text-align: center;
+    display: block;
+    margin-top: -43px;
+}
+
+#avg_interest_rates_cryptos {
+    display: flex;
+    margin-top: 101px;
+    justify-content: space-around;
+}
+
+.providersDAI, .providersUSDC {
+    position: relative;
+    padding-left: 103px;
+
+    img {
+        left: 0;
+        position: absolute;
+        top: -3px;
+        height: 56px;
+    }
+
+    ul {
+        list-style-image: none;
+        padding-left: 0; 
+        li {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+.percentCrypto {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 120%;
+
+    margin-left: 20px;
+
+    color: #8F68FC;
+}
+
+.listAnnotation {
+    margin: 40px 0 20px 0;
+}
+
+.cryptoListName {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 180%;
+    width: 200px;
+    display: inline-block;
+}
+
+.cryptoListPercent {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 180%;
+    width: 40px;
+
+    text-align: right;
+
+    color: #8F68FC;
+    display: inline-block;
+    width: 45px;
+}
+
+#description {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 31px;
+    margin-bottom: 82px;
+
+    span {
+        display: inline-block;
+
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 180%;
+    }
+    img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    #description {
+        flex-direction: column;
+
+        div  {
+            height: 33px;
+        }
+    }
+}
+
+@media screen and (max-width: 816px) {
+    #avg_interest_rates_cryptos {
+        align-items: center;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .providersDAI,.providersUSDC {
+        padding-left: 0;
+        img {
+            display: none;
+        }
+    }
+    .rates_annotation {
+        margin-top: -34px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu-list {
+        display: grid !important;
+        grid-template-columns: auto auto auto;
+    }
+    .header-content-menu {
+        width: 100%;
+    }
+    .link {
+        position: relative;
+        img {
+            position: absolute;
+            left: -26px;
+        }
+    }
+}

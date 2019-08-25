@@ -13,7 +13,7 @@ author: Defiprime
 ---
 Fortmatic co-founder, Sean Li talks about building an SDK that enables users across the globe to interact with dApps using just their phone number.
 
-## Hello! What's your background, and what are you working on?
+### Hello! What's your background, and what are you working on?
 
 Hi! I’m Sean Li, co-founder, and CEO of [Fortmatic](https://fortmatic.com/). During my years of study at the University of Waterloo, I became fascinated by the topics of HCI, security, and distributed systems - which led to me developing a knack for making sophisticated technology more comprehensible.
 
@@ -31,7 +31,7 @@ To date, some well-known integrations with the Fortmatic SDK include dApps like 
 
 ![](images/blog/fortmatic2.gif)
 
-## What's Fortmatic backstory?
+### What's Fortmatic backstory?
 
 The source of conviction to found Fortmatic came from the extreme pains felt as dApp developers ourselves early in the ecosystem, and a solution like Fortmatic was something we wish we had back then. We validated our idea by prototyping an initial solution with our key management model and shared them with developers and advisors we knew, the response was very positive, so we went ahead and raised venture capital from top firms in the valley to quickly bring this to market.
 
@@ -39,7 +39,7 @@ I’m very proud of the team we’ve built at Fortmatic. I contribute my past ex
 
 My co-founder Jaemin brings in his expertise working at Uber business payment platform and fraud prevention. We’ve formed a solid core, and almost a year later, we’ve grown to a team of over ten people, with experience working at top companies such as Docker, Google, Amazon, Apple, Yelp, Uber, and Accenture.
 
-## What went into building the Fortmatic?
+### What went into building the Fortmatic?
 
 If a dApp already works with MetaMask, it’ll only take a couple lines of code to integrate Fortmatic by swapping web3 providers. The simplicity around our developer on-boarding and user experience is a product of the team's tremendous amount of hard work. Iterating with and supporting developers, building great product experiences and key management infrastructure together are already ambitious endeavors, let alone also having to make sure Fortmatic works with every common web3/ethers.js method, versions, and browsers.
 
@@ -55,23 +55,23 @@ After on-boarding a few notable integrations, we started to invest more heavily 
 
 On top of all of this, we can’t get to where we are without our early partners. They’ve been like family, believed in us and in bringing the best possible UX to blockchain. They are patient with us and continuously helping and supporting us with invaluable advice and feedback on making Fortmatic even more successful.
 
-## What's your business model?
+### What's your business model?
 
 We’re in the business of helping dApps reach more users and encourage more engagement - bringing users from different mediums (including desktop & mobile web browsers), different demographics, and different levels of familiarity with blockchain into the Ethereum dApp ecosystem.
 
 At the moment we are not charging partners and developers for using Fortmatic but instead focused on growth, working with them to perfect our product before locking down a reasonable pricing model for both ourselves and our partners and developers as we provide even more value-add within our platform.
 
-## What are your goals for the future?
+### What are your goals for the future?
 
 We’ll be doubling down on growth, and working with our partners and developer community to provide the best possible web3 authentication experience. We have many exciting projects in the works too - to name a few: 2FA authenticator integration (address SIM porting concerns for higher stake users), fiat-onramp, gas subsidy, and L2 integrations. We’ll also soon be open sourcing our Javascript SDK and sharing more content and updates about security at Fortmatic!
 
-## What are your future thoughts for the DeFi market?
+### What are your future thoughts for the DeFi market?
 
 We are _thrilled_ by the developments around DeFi. Since earlier this year, DeFi has amassed an incredible amount of momentum and the maturation of many financial primitives, such as borrowing, lending, exchanging, sets, and more. These have been the fundamental building blocks that the more complex tradition financial systems are built on - except now, any developer can create a financial products by composing these primitives and have the digital assets accessible globally to anyone in the world!
 
 All of this is also possible without middlemen, in a fully transparent and auditable manner, compared to everything happening behind closed doors with an extremely high barrier of entry. This is a huge deal and disrupts moats around finance, which is an inevitable evolution for a more efficient, open, and versatile financial system.
 
-## Where can we go to learn more?
+### Where can we go to learn more?
 
 - [Website](https://fortmatic.com/)
 - [Developers Documentation](https://developers.fortmatic.com/docs)
