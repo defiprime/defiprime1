@@ -57,4 +57,14 @@ collections:
 collections:
   analytics:
     output: true
-    permalink: /:collection/:name
+    permalink: /product/:name
+  lending:
+    output: true
+    permalink: /product/:name
+defaults:
+  -
+    scope:
+      type: "analytics"  # a collection in your site, in plural form
+    values:
+      layout: "product"
+    

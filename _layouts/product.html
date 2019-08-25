@@ -45,8 +45,27 @@
 
 
       <p> {{ page.product-description }}</p>
-      <div class="just-comments" data-apikey="464873e6-7afb-484c-b5c8-4b316ab7b48c"></div>
-      <script async src="https://just-comments.com/w2.js"></script>  </div>
+      <div id="graphcomment"></div>
+      <script type="text/javascript">
+
+        /* - - - CONFIGURATION VARIABLES - - - */
+
+        // make sure the id is yours
+        window.gc_params = {
+          graphcomment_id: 'defiprime',
+
+          // if your website has a fixed header, indicate it's height in pixels
+          fixed_header_height: 0,
+        };
+
+        /* - - - DON'T EDIT BELOW THIS LINE - - - */
+
+        (function() {
+          var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+          gc.src = 'https://graphcomment.com/js/integration.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+        })();
+      </script>
 
   </article>
 
