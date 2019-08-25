@@ -5,5 +5,5 @@ image: /images/output_md/lendingblock.com.png
 ecosystem: ethereum
 product-description: Securities lending for the digital assets economy.
 coltitle:  "Lending"
-colpermalink: decentralized_lending
+colpermalink: decentralized-lending
 ---

@@ -6,5 +6,5 @@ ecosystem: ethereum, bitcoin
 type: cefi
 product-description: A lending and borrowing platform that allows users to leverage their crypto-assets to secure loans.
 coltitle:  "Lending"
-colpermalink: decentralized_lending
+colpermalink: decentralized-lending
 ---

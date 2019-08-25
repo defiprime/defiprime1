@@ -6,5 +6,5 @@ ecosystem: ethereum
 type: non-custodial
 product-description: MakerDAO CDP enables the generation of DAI stablecoins against the ETH that you lock up in the CDP until you pay back the DAI you generated.
 coltitle:  "Lending"
-colpermalink: decentralized_lending
+colpermalink: decentralized-lending
 ---

@@ -5,5 +5,5 @@ image: /images/output_md/httpswwwcolendicom.png
 ecosystem: ethereum, bitcoin
 product-description: A protocol for credit scoring and microcredit on Ethereum
 coltitle:  "Lending"
-colpermalink: decentralized_lending
+colpermalink: decentralized-lending
 ---
