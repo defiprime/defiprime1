@@ -5,4 +5,6 @@ image: /images/output_md/cobo.com.png
 ecosystem: ethereum, eos, tron
 platform: ios, android
 product-description: Cobo Wallet is a multi-chain cryptocurrency wallet on iOS &amp; Android, with built in dApps browser.
+coltitle:  "Asset Management Tools"
+colpermalink: assets-managament-tools
 ---

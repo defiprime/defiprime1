@@ -5,4 +5,6 @@ image: /images/output_md/www.infinitowallet.io.png
 ecosystem: ethereum, eos, bitcoin
 platform: ios, android
 product-description: Infinito Wallet is a mobile multi-currency wallet with dApps browser for interacting with the DeFi ecosystem.
+coltitle:  "Asset Management Tools"
+colpermalink: assets-managament-tools
 ---
