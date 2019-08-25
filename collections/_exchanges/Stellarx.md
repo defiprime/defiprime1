@@ -5,4 +5,6 @@ image: /images/output_md/httpswwwstellarxcom.png
 ecosystem: stellar
 type: non-custodial
 product-description: Decentralized exchange with global fiat gateways.
+coltitle:  "Decentralized exchanges"
+colpermalink: exchanges
 ---
