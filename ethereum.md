@@ -4,7 +4,7 @@ title: Ethereum DeFi ecosystem
 metadescription: List of the best Ethereum Defi Projects. DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries.
 permalink: ethereum
 h1title: Ethereum DeFi ecosystem
-pagetitle: Ethereum DeFi Ecosystem - List of the Best Ethereum Defi Projects
+pagetitle: Ethereum DeFi Ecosystem - List of the Best Ethereum DeFi dApps Projects
 featured-image: /images/og-ethereum.png
 
 ---
