@@ -36,40 +36,38 @@
 
     {% include header.html %}
     <article class="article  article--post  content  typeset">
-      <a href="/{{ page.colpermalink }}">Back to list of {{ page.coltitle }} projects</a>
+      <a href="/{{ page.colpermalink }}"><i class="fas fa-arrow-left"></i>{{ page.coltitle }} projects</a>
 
-    <h1>{{ page.product-title }}</h1>
+    <h1> <a href="{{ page.product-url }}">{{ page.product-title }}</a></h1>
 
     <div class="container">
 
-<img src="{{ page.image }}" width="100%" alt="">
-<h3> <a href="{{ page.product-url }}">{{ page.product-title }}</a> it's DeFi {{ page.coltitle }} project
-</h3>
+<a href="{{ page.product-url }}"><img src="{{ page.image }}" width="100%" alt=""></a>
 
 
       <p> {{ page.product-description }}</p>
-<h3>Would you recommend {{ page.product-title }} product?</h3>
-      <div id="graphcomment"></div>
-      <script type="text/javascript">
+<h3>What are your thoughts on  {{ page.product-title }} product?</h3>
+<div id="graphcomment"></div>
+<script type="text/javascript">
 
-        /* - - - CONFIGURATION VARIABLES - - - */
+/* - - - CONFIGURATION VARIABLES - - - */
 
-        // make sure the id is yours
-        window.gc_params = {
-          graphcomment_id: 'defiprime',
+// make sure the id is yours
+window.gc_params = {
+graphcomment_id: 'defiprime_prod',
 
-          // if your website has a fixed header, indicate it's height in pixels
-          fixed_header_height: 0,
-        };
+// if your website has a fixed header, indicate it's height in pixels
+fixed_header_height: 0,
+};
 
-        /* - - - DON'T EDIT BELOW THIS LINE - - - */
+/* - - - DON'T EDIT BELOW THIS LINE - - - */
 
-        (function() {
-          var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
-          gc.src = 'https://graphcomment.com/js/integration.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
-        })();
-      </script>
+(function() {
+var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+gc.src = 'https://graphcomment.com/js/integration.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+})();
+</script>
 
   </article>
 
