@@ -36,15 +36,16 @@
 
     {% include header.html %}
     <article class="article  article--post  content  typeset">
+      <a href="/{{ page.colpermalink }}">Back to list of {{ page.coltitle }} projects</a>
 
     <h1>{{ page.product-title }}</h1>
+
     <div class="container">
 
 <img src="{{ page.image }}" width="100%" alt="">
-<h3> <a href="{{ page.product-url }}">{{ page.product-title }}</a>
+<h3> <a href="{{ page.product-url }}">{{ page.product-title }}</a> it's DeFi {{ page.coltitle }} project
 </h3>
 
-<a href="/{{ page.collection }}">back</a>
 
       <p> {{ page.product-description }}</p>
 <h3>Would you recommend {{ page.product-title }} product?</h3>
