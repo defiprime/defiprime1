@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ page.product-title }} - Reviews</title>
+    <title>{{ page.product-title }} - Reviews. What is {{ page.product-title }}?</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="{{ page.product-description | strip_html | strip_newlines | truncate: 160 }}">
+    <meta name="description" content="What is {{ page.product-title }}? {{ page.product-description | strip_html | strip_newlines | truncate: 160 }}">
     <link rel="stylesheet" href="{{ "/assets/css/main.css " | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     <meta property="og:title" content="{{ page.product-title }} - Reviews" />
