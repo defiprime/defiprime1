@@ -59,7 +59,7 @@ featured-image: /images/og-rates.png
     <div id="avg_interest_rates_cryptos">
         <article class="providersDAI">
             <img src="/images/dai_eth.svg">
-            <span class="providerCryptoName">DAI</span>
+            <span class="providerCryptoName">DAI/ETH</span>
             <div class="listAnnotation">Best Yields DAI Today</div>
             <ul data-bind="foreach: providersETHDai">
                 <li>
@@ -69,8 +69,8 @@ featured-image: /images/og-rates.png
             </ul>
         </article>
         <article class="providersUSDC">
-            <img src="/images/usdc.svg">
-            <span class="providerCryptoName">USDC</span>
+            <img src="/images/usdc_eth.svg">
+            <span class="providerCryptoName">USDC/ETH</span>
             <div class="listAnnotation">Best Yields USDC Today</div>
             <ul data-bind="foreach: providersETHUsdc">
                 <li>
