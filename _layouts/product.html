@@ -46,8 +46,11 @@
 
 <hr>
 <h2>What is {{ page.product-title }}?</h2>
-      <blockquote> {{ page.product-description }}</blockquote>
+
+<blockquote> {{ page.product-description | markdownify }}</blockquote>
+
 <h3>What are your thoughts on {{ page.product-title }}?</h3>
+
 <div id="graphcomment"></div>
 <script type="text/javascript">
 
