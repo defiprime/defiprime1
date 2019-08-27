@@ -31,7 +31,7 @@ featured-image: /images/og-rates.png
             <img src="/images/dai.svg">
             <span class="providerCryptoName">DAI</span>
             <span class="percentCrypto" data-bind="text: $root.averageDAI"></span> 7-days avg.
-            <div class="listAnnotation">Best Yields DAI Today</div>
+            <div class="listAnnotation">Best Yields DAI Today, APR</div>
             <ul data-bind="foreach: providersDAI">
                 <li>
                     <a class="cryptoListName" target="_blank" data-bind="text: provider, attr: { href: providerLink }"></a>
@@ -43,7 +43,7 @@ featured-image: /images/og-rates.png
             <img src="/images/usdc.svg">
             <span class="providerCryptoName">USDC</span>
             <span class="percentCrypto"  data-bind="text: $root.averageUSDC"></span> 7-days avg.
-            <div class="listAnnotation">Best Yields USDC Today</div>
+            <div class="listAnnotation">Best Yields USDC Today, APR</div>
             <ul data-bind="foreach: providersUSDC">
                 <li>
                     <a class="cryptoListName" target="_blank" data-bind="text: provider, attr: { href: providerLink }"></a>
