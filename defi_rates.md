@@ -55,12 +55,13 @@ featured-image: /images/og-rates.png
 </section>
 
 <section id="liquidityPools">
-    <h1>Best liquidity pools Yields</h1>
+    <h1>Uniswap liquidity pools</h1>
+    <span class="rates_annotation"><a href="/uniswap-liquidity-pools">How liquidity pools works?</a></span>
+
     <div id="avg_interest_rates_cryptos">
         <article class="providersDAI">
             <img src="/images/dai_eth.svg">
             <span class="providerCryptoName">DAI/ETH</span>
-            <div class="listAnnotation">Best Yields DAI Today</div>
             <ul data-bind="foreach: providersETHDai">
                 <li>
                     <a class="cryptoListName" target="_blank" data-bind="text: provider, attr: { href: providerLink }"></a>
@@ -71,7 +72,6 @@ featured-image: /images/og-rates.png
         <article class="providersUSDC">
             <img src="/images/usdc_eth.svg">
             <span class="providerCryptoName">USDC/ETH</span>
-            <div class="listAnnotation">Best Yields USDC Today</div>
             <ul data-bind="foreach: providersETHUsdc">
                 <li>
                     <a class="cryptoListName" target="_blank" data-bind="text: provider, attr: { href: providerLink }"></a>
