@@ -48,7 +48,7 @@
 .providersDAI, .providersUSDC {
     position: relative;
     padding-left: 103px;
-    width: 448px;
+    width: 464px;
 
     img {
         left: 0;
@@ -91,6 +91,10 @@
     line-height: 180%;
     width: 200px;
     display: inline-block;
+}
+
+.defi-rates-heading {
+    text-align: center;
 }
 
 .cryptoListPercent {

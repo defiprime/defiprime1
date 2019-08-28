@@ -24,7 +24,7 @@ featured-image: /images/og-rates.png
 </section>
 
 <section>
-    <h1>DeFi Lending Rates</h1>
+    <h2 class="defi-rates-heading">DeFi Lending Rates</h2>
     <span class="rates_annotation">What you can earn lending your stablecoins?</span>
     <div id="avg_interest_rates_cryptos">
         <article class="providersDAI">
@@ -55,9 +55,8 @@ featured-image: /images/og-rates.png
 </section>
 
 <section id="liquidityPools">
-    <h1>Uniswap liquidity pools</h1>
+    <h2 class="defi-rates-heading">Uniswap liquidity pools</h2>
     <span class="rates_annotation"><a href="/uniswap-liquidity-pools">How liquidity pools works?</a></span>
-
     <div id="avg_interest_rates_cryptos">
         <article class="providersDAI">
             <img src="/images/dai_eth.svg">
