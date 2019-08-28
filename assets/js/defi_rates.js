@@ -20,6 +20,9 @@ var providersViewModel = function() {
   });
 
   self.averageUSDC = ko.observable();
+
+  self.providersETHDai = ko.observableArray([]);
+  self.providersETHUsdc = ko.observableArray([]);
 }
 
 var viewModel = new providersViewModel()
@@ -76,6 +79,16 @@ xhr2.onreadystatechange = function() {
 }
 xhr2.send();
 
+var liquidity_xhr = new XMLHttpRequest();
+liquidity_xhr.open("GET", window.requestURL + "/getMinInterest", true);
+liquidity_xhr.onreadystatechange = function () {
+  if(liquidity_xhr.status == 200 && liquidity_xhr.readyState == 4) {
+    var liquidityData = JSON.parse(liquidity_xhr.responseText);
+    viewModel.providersETHDai(liquidityData);
+    viewModel.providersETHUsdc(liquidityData)
+  }
+}
+liquidity_xhr.send();
 
 // chart
 var monthNames = ["January", "February", "March", "April", "May", "June",
