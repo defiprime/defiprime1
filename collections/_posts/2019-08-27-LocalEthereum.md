@@ -49,7 +49,7 @@ Today, LocalEthereum has more than 100,000 users from almost every country, and 
 
 We didn’t want to simply build a LocalBitcoins clone.
 
-With the flexibility Ethereum provides, we quickly realized we could make LocalEtheruem non-custodial by turning the escrow service into an Ethereum smart contract. What this means is that while an arbitrator has the capability to resolve payment disputes, they can only do so with explicit digital permission, and it’s impossible for them to direct ETH to anyone other than the buyer or seller.
+With the flexibility Ethereum provides, we quickly realized we could make LocalEthereum non-custodial by turning the escrow service into an Ethereum smart contract. What this means is that while an arbitrator has the capability to resolve payment disputes, they can only do so with explicit digital permission, and it’s impossible for them to direct ETH to anyone other than the buyer or seller.
 
 We also decided early-on to go a step further and make messages between users end-to-end encrypted (using a forward secret protocol derived from OTR). Users are discussing sensitive details over chat, including bank account numbers and names — information they deserve to keep private.
 
