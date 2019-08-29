@@ -1,6 +1,6 @@
 ---
 product-title: 1inch.exchange
-product-url: https://1inch.exchange/
+product-url: https://1inch.exchange/#/r/0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1
 image: /images/output_md/1inch.exchange.png
 ecosystem: ethereum
 type: non-custodial
