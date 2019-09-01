@@ -1,6 +1,6 @@
 ---
 product-title: NUO
-product-url: https://www.nuo.network/
+product-url: https://app.nuo.network/lend
 image: /images/output_md/httpswwwnuonetwork.png
 ecosystem: ethereum
 type: non-custodial
