@@ -211,7 +211,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endif %}
 {% endfor %}
 
-# Margin trading on Ethereum
+# Margin Trading on Ethereum
 
 {% for margin-trading in site.margin-trading %}
 ### <a href="{{ margin-trading.product-url }}">{{ margin-trading.product-title }}</a>{% if margin-trading.ecosystem contains 'ethereum' %} ![](images/ether.png "Built on Ethereum or related to Ethereum ecosystem"){% endif %} {% if margin-trading.ecosystem contains 'bitcoin' %} ![](/images/btc.png "Using Bitcoin ecosystem"){% endif %} {% if margin-trading.ecosystem contains 'eos' %} ![](/images/eos.png "Built on EOS or related to EOS ecosystem"){% endif %}
@@ -220,7 +220,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 
 {% endfor %}
 
-# DeFi Infrastructure
+# DeFi Infrastructure & Dev Tooling
 
 {% for infrastructure in site.infrastructure %}
 {% if infrastructure.ecosystem contains 'ethereum' %}
@@ -242,7 +242,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endif %}
 {% endfor %}
 
-# Assets Tokenization
+# Asset Tokenization
 
 {% for assets-tokenization in site.assets-tokenization %}
 {% if assets-tokenization.ecosystem contains 'ethereum' %}

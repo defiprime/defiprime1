@@ -1,8 +1,8 @@
 ---
 layout: page
-title:  "Infrastructure"
+title:  "Infrastructure & Dev Tooling"
 permalink: infrastructure
-h1title: DeFi Infrastructure
+h1title: DeFi Infrastructure & Dev Tooling
 pagetitle: DeFi Network Financial Services Infrastructure  
 metadescription: DeFi Network it is protocols, frameworks and underlaying technologies for building decentralized finance ecosystems.
 category: products

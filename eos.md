@@ -201,7 +201,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 
 
-# DeFi Infrastructure
+# DeFi Infrastructure & Dev Tooling
 
 {% for infrastructure in site.infrastructure %}
 {% if infrastructure.ecosystem contains 'eos' %}
