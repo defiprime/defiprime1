@@ -17,9 +17,9 @@ The idea is simple I had put $100 worth into various DeFi lending products, and 
 
 For this experiment, I will skip fiat on-ramp hassle, and deposit 3.02 ETH(~$515 to cover gas fees) directly to the wallet _0xa51cE0796d32e3cc932C9a9e01663F68f71D9CBf_, and then I'll exchange ETH to the stablecoins I needed at one of the DEXes.
 
-DeFi products chosen in no particular order, and I don't take any extra precautions against smart contract hacks such as Nexus Mutual insurance.
-
 Compound, Nuo, dYdX, and Fulcrum can be described as autonomous money markets. These platforms enable users to earn interest and borrow digital assets without relying on a counterparty. Digital exchanges commonly offer similar features but either the exchange or users need to provide liquidity to allow traders to borrow assets and trade on margin and users need traders to borrow funds to maintain an attractive interest rate. Idle Finance differs in that it aggregates lending protocols to allow users to automatically shift funds between protocols depending on which platform offers the best interest rate at the time.
+
+DeFi products chosen in no particular order, and I don't take any extra precautions against smart contract hacks such as Nexus Mutual insurance. The reason for choosing USDC over DAI for NUO is that I don't want to put all of my eggs in one basket, also interesting to check a long time difference between DAI and USDC.
 
 This experiment will help demonstrate the differences between lending protocols in DeFi and contribute to the development of a historical record that can be used for comparing investment opportunities in DeFi.
 
