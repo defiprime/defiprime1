@@ -1,6 +1,6 @@
 ---
 product-title: Abra
-product-url: https://www.abra.com/
+product-url: https://invite.abra.com/IjyPjeOjFZ
 image: /images/output_md/www.abra.com.png
 ecosystem: ethereum, bitcoin, tron, stellar, eos
 platform: ios, android
