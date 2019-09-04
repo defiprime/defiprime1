@@ -1,6 +1,6 @@
 ---
 product-title: Constant
-product-url: https://www.myconstant.com?r=CE2M7NF20D
+product-url: https://www.myconstant.com
 image: /images/output_md/www.myconstant.com.png
 ecosystem: ethereum, bitcoin, stellar
 type: non-custodial
