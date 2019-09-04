@@ -55,6 +55,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<script>
 		window.onload = () => {
 			$("#hamburger_menu_open").on('click', () => {
+				$("#header").css("overflow", "visible")
 				$(".header-content-menu").animate({
 					left: '0'
 				}, 200, () => {
@@ -68,6 +69,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				}, 200, () => {
 					$("#hamburger_menu_close").css('display', 'none')
 					$("#hamburger_menu_open").css('display', 'block')
+					$("#header").css("overflow", "hidden")
 				});
 			})
 		}

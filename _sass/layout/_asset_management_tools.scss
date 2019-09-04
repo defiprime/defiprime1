@@ -134,3 +134,17 @@
         }
     }
 }
+
+@media screen and (max-width:480px) {
+    #assets_cards  {
+        grid-template-columns: auto;
+    }
+    .reading_next_links {
+		padding-left: 0;
+        grid-template-columns: auto;
+        
+        a {
+            margin: 10px 0;
+        }
+	}
+}
