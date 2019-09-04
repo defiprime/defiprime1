@@ -164,23 +164,6 @@
     }
 }
 
-@media screen and (max-width: 480px) {
-    .menu-list {
-        display: grid !important;
-        grid-template-columns: auto auto auto;
-    }
-    .header-content-menu {
-        width: 100%;
-    }
-    .link {
-        position: relative;
-        img {
-            position: absolute;
-            left: -26px;
-        }
-    }
-}
-
 #liquidityPools {
     margin-top: 118px;
 }

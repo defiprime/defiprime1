@@ -189,3 +189,67 @@
 		}
 	}
 }
+
+#hamburger_menu_close {
+	display: none;
+}
+
+.header-content-logo aside {
+	display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .header-content .menu-list {
+		display: block;
+		margin-top: -91px;
+	}
+	.header-content .menu-list-item {
+		margin: 6px 10px;
+	}
+    .header-content-menu {
+		width: 100%;
+		position: absolute;
+		height: calc(100vh - 75px);
+		background: #fff;
+		top: 75px;
+		z-index: 2;
+		left: 100%;
+    }
+    .link {
+		position: relative;
+		font-size: 20px;
+        img {
+            position: absolute;
+            left: -36px;
+			top: 2px;
+        }
+	}
+	#header {
+		padding: 1em 0;
+		box-shadow: 0px 0px 6px rgba(41, 41, 132, 0.12);
+
+		.logo {
+			margin-bottom: 0;
+		}
+	}
+	.header-content-logo {
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+
+		aside {
+			position: relative;
+			display: block;
+
+			img {
+				display: block;
+				position: absolute;
+				top: 50%;
+				height: 20px;
+				min-width: 20px;
+				transform: translateY(-50%);
+			}
+		}
+	} 
+}

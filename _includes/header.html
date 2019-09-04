@@ -10,12 +10,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="header-content">
 				<!-- Logo -->
 				<div class="header-content-logo">
-					<a href="{{ site.baseurl }}/" class="logo hidden-mobile" >
+					<a href="{{ site.baseurl }}/" class="logo" >
 						<img src="/images/logo.svg"  alt="" />
 					</a>
-					<a href="{{ site.baseurl }}/" class="logo hidden-desktop" >
-						<img src="/images/logo-small.svg"  alt="" />
-					</a>
+					<aside >
+						<img id="hamburger_menu_open" src="/images/hamburger.svg" />
+						<img id="hamburger_menu_close" src="/images/close_hamburger.svg" />
+					</aside>
 				</div>
 				<div class="header-content-menu">
 					<ul class="menu-list">
@@ -50,6 +51,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 		</div>
 	</header>
+
+	<script>
+		window.onload = () => {
+			$("#hamburger_menu_open").on('click', () => {
+				$(".header-content-menu").animate({
+					left: '0'
+				}, 200, () => {
+					$("#hamburger_menu_close").css('display', 'block')
+					$("#hamburger_menu_open").css('display', 'none')
+				});
+			})
+			$("#hamburger_menu_close").on('click', () => {
+				$(".header-content-menu").animate({
+					left: '100%'
+				}, 200, () => {
+					$("#hamburger_menu_close").css('display', 'none')
+					$("#hamburger_menu_open").css('display', 'block')
+				});
+			})
+		}
+	</script>
 
 
 	<!-- Main -->
