@@ -83,6 +83,20 @@
 
 .read_next {
     margin-top: 84px;
+    &:before {
+        content: '';
+        background-image: url("/../../images/bg-fon.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 350px;
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        margin-top: 123px;
+        transform: translateX(-50%);
+        opacity: .5;
+        z-index: -1;
+    }
     h3 {
         font-family: Kanit;
         font-style: normal;
