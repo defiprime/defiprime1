@@ -4,7 +4,7 @@ product-url: https://www.deversifi.com/
 image: /images/output_md/www.deversifi.com.png
 ecosystem: ethereum
 type: non-custodial
-product-description: DeversiFi is a hybrid Ethereum exchange platform providing access to spot trading, margin trading, P2P funding & decentralized trading.
+product-description: DeversiFi is a hybrid Ethereum exchange platform providing access to spot trading, margin trading, P2P funding & decentralized trading. [DeversiFi - interview with CEO and founder, Will Harborne](/deversifi).
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
 ---
