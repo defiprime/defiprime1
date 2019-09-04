@@ -16,11 +16,11 @@ featured-image: /images/og-ethereum.png
 {% assign counter_tron = 0 %}
 {% assign counter_stellar = 0 %}
 
-{% for assets-managament-tools in site.assets-managament-tools  %}
-{% if assets-managament-tools.ecosystem contains 'ethereum' %}  {% assign counter_eth = counter_eth | plus: 1 %}
+{% for assets-management-tools in site.assets-management-tools  %}
+{% if assets-management-tools.ecosystem contains 'ethereum' %}  {% assign counter_eth = counter_eth | plus: 1 %}
  {% endif %}
-{% if assets-managament-tools.ecosystem contains 'bitcoin' %} {% endif %}
-{% if assets-managament-tools.ecosystem contains 'eos' %}  {% endif %}
+{% if assets-management-tools.ecosystem contains 'bitcoin' %} {% endif %}
+{% if assets-management-tools.ecosystem contains 'eos' %}  {% endif %}
 
 {% assign counter = counter | plus: 1 %}
 
@@ -180,12 +180,12 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 
 # Assets Management Tools
 
-{% for assets-managament-tools in site.assets-managament-tools  %}
-{% if assets-managament-tools.ecosystem contains 'ethereum' %}
-### <a href="{{ assets-managament-tools.product-url }}">{{ assets-managament-tools.product-title }}</a>{% if assets-managament-tools.ecosystem contains 'ethereum' %} ![](images/ether.png "Built on Ethereum or related to Ethereum ecosystem"){% endif %} {% if assets-managament-tools.ecosystem contains 'bitcoin' %} ![](/images/btc.png "Using Bitcoin ecosystem"){% endif %} {% if assets-managament-tools.ecosystem contains 'eos' %} ![](/images/eos.png "Built on EOS or related to EOS ecosystem"){% endif %} {% if  assets-managament-tools.platform contains 'ios' %}    <i class="fab fa-app-store-ios" title="Mobile wallet for iOS"></i> {% endif %}  {% if  assets-managament-tools.platform contains 'android' %}    <i class="fab fa-android" title="Mobile wallet for Android"></i> {% endif %} {% if  assets-managament-tools.platform contains 'web' %}    <i class="fab fa-chrome" title="Browser based wallet"></i> {% endif %} {% if  assets-managament-tools.platform contains 'win' %}    <i class="fab fa-windows" title="Desktop wallet for windows"></i> {% endif %} {% if  assets-managament-tools.platform contains 'mac' %}    <i class="fab fa-apple" title="Desktop wallet for osx"></i> {% endif %}
+{% for assets-management-tools in site.assets-management-tools  %}
+{% if assets-management-tools.ecosystem contains 'ethereum' %}
+### <a href="{{ assets-management-tools.product-url }}">{{ assets-management-tools.product-title }}</a>{% if assets-management-tools.ecosystem contains 'ethereum' %} ![](images/ether.png "Built on Ethereum or related to Ethereum ecosystem"){% endif %} {% if assets-management-tools.ecosystem contains 'bitcoin' %} ![](/images/btc.png "Using Bitcoin ecosystem"){% endif %} {% if assets-management-tools.ecosystem contains 'eos' %} ![](/images/eos.png "Built on EOS or related to EOS ecosystem"){% endif %} {% if  assets-management-tools.platform contains 'ios' %}    <i class="fab fa-app-store-ios" title="Mobile wallet for iOS"></i> {% endif %}  {% if  assets-management-tools.platform contains 'android' %}    <i class="fab fa-android" title="Mobile wallet for Android"></i> {% endif %} {% if  assets-management-tools.platform contains 'web' %}    <i class="fab fa-chrome" title="Browser based wallet"></i> {% endif %} {% if  assets-management-tools.platform contains 'win' %}    <i class="fab fa-windows" title="Desktop wallet for windows"></i> {% endif %} {% if  assets-management-tools.platform contains 'mac' %}    <i class="fab fa-apple" title="Desktop wallet for osx"></i> {% endif %}
 
 
-{{ assets-managament-tools.product-description }}
+{{ assets-management-tools.product-description }}
 {% endif %}
 {% endfor %}
 

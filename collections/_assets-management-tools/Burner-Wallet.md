@@ -6,5 +6,5 @@ ecosystem: ethereum
 platform: web
 product-description: Burner wallet works in your browser so no app download and no seed phrase.
 coltitle:  "Asset Management Tools"
-colpermalink: assets-managament-tools
+colpermalink: assets-management-tools
 ---

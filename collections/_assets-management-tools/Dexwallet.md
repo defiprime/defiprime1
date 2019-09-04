@@ -6,5 +6,5 @@ ecosystem: ethereum
 platform: ios
 product-description: Multi currency mobile wallet supporting Ethereum, xDai, POA, with interfaces to the Ethereum DeFi products. [Interview with Nicola Di Marco, founder of Dexwallet](/dexwallet)
 coltitle:  "Asset Management Tools"
-colpermalink: assets-managament-tools
+colpermalink: assets-management-tools
 ---

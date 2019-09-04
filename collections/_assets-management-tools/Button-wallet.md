@@ -6,5 +6,5 @@ ecosystem: ethereum, bitcoin, stellar
 platform: ios, android, web
 product-description: Button is a cross-platform Telegram based cryptocurrency wallet. [Interview with Rachael McCrary, COO of Button Wallet](/button-wallet).
 coltitle:  "Asset Management Tools"
-colpermalink: assets-managament-tools
+colpermalink: assets-management-tools
 ---

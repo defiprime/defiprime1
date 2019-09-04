@@ -6,5 +6,5 @@ ecosystem: ethereum
 platform: web
 product-description: Betoken is an open source, crowd-powered, crypto asset management protocol connecting capital and talent.[Interview with Zefram Lou, co-founder of Betoken](/betoken).
 coltitle:  "Asset Management Tools"
-colpermalink: assets-managament-tools
+colpermalink: assets-management-tools
 ---

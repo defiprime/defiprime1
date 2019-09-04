@@ -6,5 +6,5 @@ ecosystem: eos, tron, ethereum
 platform: win, mac
 product-description: Scatter is a desktop multi-blockchain wallet with signature, identity and reputation features and dApps browser.
 coltitle:  "Asset Management Tools"
-colpermalink: assets-managament-tools
+colpermalink: assets-management-tools
 ---

@@ -6,5 +6,5 @@ ecosystem: ethereum
 platform: web
 product-description: Multis is a multi-signature Ethereum wallet with a user-friendly interface to manage your company's crypto.
 coltitle:  "Asset Management Tools"
-colpermalink: assets-managament-tools
+colpermalink: assets-management-tools
 ---

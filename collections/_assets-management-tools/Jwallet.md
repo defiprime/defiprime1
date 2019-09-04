@@ -6,5 +6,5 @@ ecosystem: ethereum
 platform: ios, android, web
 product-description: Jwallet is an institutional-grade wallet to manage your digital assets.
 coltitle:  "Asset Management Tools"
-colpermalink: assets-managament-tools
+colpermalink: assets-management-tools
 ---

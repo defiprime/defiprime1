@@ -6,5 +6,5 @@ ecosystem: eos
 platform: ios, android, mac
 product-description: EOS Lynx is the cryptocurrency wallet with dApps explorer. [Interview Fred Krueger, CEO of EOS Lynx](/eos-lynx).
 coltitle:  "Asset Management Tools"
-colpermalink: assets-managament-tools
+colpermalink: assets-management-tools
 ---

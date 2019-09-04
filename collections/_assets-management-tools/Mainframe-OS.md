@@ -6,5 +6,5 @@ ecosystem: ethereum
 platform: mac, windows, linux
 product-description: Mainframe OS is an integrated development and execution platform that simplifies the creation and use of dApps.
 coltitle:  "Asset Management Tools"
-colpermalink: assets-managament-tools
+colpermalink: assets-management-tools
 ---

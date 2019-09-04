@@ -50,10 +50,10 @@ collections:
     output: true
     permalink: /product/:name
     section_url: /defi-analytics
-  assets-managament-tools:
+  assets-management-tools:
     output: true
     permalink: /product/:name
-    section_url: /assets-managament-tools
+    section_url: /assets-management-tools
   exchanges:
     output: true
     permalink: /product/:name

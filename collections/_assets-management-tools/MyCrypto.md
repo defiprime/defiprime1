@@ -6,5 +6,5 @@ ecosystem: ethereum
 platform: web
 product-description: Open-source interface for interacting with Ethereum network.
 coltitle:  "Asset Management Tools"
-colpermalink: assets-managament-tools
+colpermalink: assets-management-tools
 ---

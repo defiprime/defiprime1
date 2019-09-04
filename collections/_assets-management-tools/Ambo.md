@@ -6,5 +6,5 @@ ecosystem: ethereum
 platform: ios
 product-description: Ambo enables you to easily purchase, store, exchange, and otherwise manage your Ether and ERC tokens.
 coltitle:  "Asset Management Tools"
-colpermalink: assets-managament-tools
+colpermalink: assets-management-tools
 ---
