@@ -41,49 +41,66 @@ collections:
   lending:
     output: true
     permalink: /product/:name
+    section_url: /decentralized-lending
   derivatives:
     output: true
     permalink: /product/:name
+    section_url: /derivatives
   analytics:
     output: true
     permalink: /product/:name
+    section_url: /defi-analytics
   assets-managament-tools:
     output: true
     permalink: /product/:name
+    section_url: /asset-management-tools
   exchanges:
     output: true
     permalink: /product/:name
+    section_url: /defi-analytics
   infrastructure:
     output: true
     permalink: /product/:name
+    section_url: /infrastructure
   insurance:
     output: true
     permalink: /product/:name
+    section_url: /insurance
   assets-tokenization:
     output: true
     permalink: /product/:name
+    section_url: /assets-tokenization
   kyc_identity:
     output: true
     permalink: /product/:name
+    section_url: /decentralized_kyc_identity
   marketplaces:
     output: true
     permalink: /product/:name
+    section_url: /decentralized_marketplaces
   prediction_markets:
     output: true
     permalink: /product/:name
+    section_url: /prediction-markets
   stablecoins:
     output: true
     permalink: /product/:name
+    section_url: /stablecoins
   margin-trading:
     output: true
     permalink: /product/:name
+    section_url: /margin-trading
   events:
+    section_url: /events
   payments:
     output: true
     permalink: /product/:name
+    section_url: /payments
   staking:
     output: true
     permalink: /product/:name
+    section_url: /staking
+
 
 defaults:
   -

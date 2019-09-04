@@ -1,0 +1,122 @@
+.custodian_description {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 180%;
+    text-align: center;
+    color: #292984;
+    max-width: 803px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.asset_tool_card {
+    position: relative;
+    width: 350px;
+    height: 496px;
+
+    box-shadow: 0px 0px 6px rgba(41, 41, 132, 0.12);
+    color: #292984;
+    transition: .2s ease-in-out box-shadow;
+
+    &:hover {
+        box-shadow: 0px 0px 6px 4px rgba(41,41,132,0.12);
+    }
+
+    h4 {
+        font-family: Kanit;
+        padding: 0 15px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: 0;
+        text-transform: none;
+    }
+
+    p {
+        padding: 0 15px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 160%;
+    }
+}
+
+#assets_cards {
+    display: grid;
+    margin-top: 54px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+}
+
+.asset-tool-tags {
+    padding: 0 15px;
+}
+
+.tags_separator {
+    display: inline-block;
+    width: 17px;
+}
+
+.comments {
+    position: absolute;
+    left: 17px;
+    bottom: 20px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 180%;
+
+    img {
+        vertical-align: middle;
+        margin-right: 6px;
+    }
+
+    a:link, a:visited {
+        color: #8B8BB8;
+    }
+}
+
+.read_next {
+    margin-top: 84px;
+    h3 {
+        font-family: Kanit;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        letter-spacing: 0;
+        text-transform: none;
+        color: #292984;
+    }
+}
+
+.reading_next_links {
+    display: grid;
+    padding-left: 51px;
+    grid-template-columns: auto auto auto;
+
+    a {
+        font-family: Kanit;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 120%;
+
+        color: #8F68FC;
+
+        span {
+            color: #8B8BB8;
+
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 180%;
+            vertical-align: super;
+        }
+    }
+}
