@@ -41,11 +41,11 @@
     <div class="custodian_description">
         {{ content }}
     </div>
-    
+
     <section id='assets_cards'>
         {% for asset_tool in site[page.cards] %}
             <article class="asset_tool_card">
-                <img src="{{ asset_tool['image'] }}">
+                <a href="{{ asset_tool['product-url']}} "><img src="{{ asset_tool['image'] }}"></a>
                 <h4><a href="{{ asset_tool['product-url']}} ">{{ asset_tool["product-title"] }}</a></h4>
                 <div class="asset-tool-tags">
                     {% assign market_tags = asset_tool["ecosystem"] | split: ", " %}
