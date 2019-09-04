@@ -53,11 +53,11 @@ collections:
   assets-managament-tools:
     output: true
     permalink: /product/:name
-    section_url: /asset-management-tools
+    section_url: /assets-managament-tools
   exchanges:
     output: true
     permalink: /product/:name
-    section_url: /defi-analytics
+    section_url: /exchanges
   infrastructure:
     output: true
     permalink: /product/:name
@@ -91,7 +91,6 @@ collections:
     permalink: /product/:name
     section_url: /margin-trading
   events:
-    section_url: /events
   payments:
     output: true
     permalink: /product/:name

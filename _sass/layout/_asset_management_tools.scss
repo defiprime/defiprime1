@@ -6,11 +6,17 @@
     line-height: 180%;
     text-align: center;
     color: #292984;
-    max-width: 803px;
+    max-width: 730px;
     margin-left: auto;
     margin-right: auto;
+    p {
+        margin: 0 0 3em 0;
+    }
 }
-.asset_tool_card {
+.collection-header {
+    line-height: 1;
+}
+.product-page #main .asset_tool_card {
     position: relative;
     width: 350px;
     height: 496px;
@@ -21,9 +27,11 @@
 
     &:hover {
         box-shadow: 0px 0px 6px 4px rgba(41,41,132,0.12);
+        outline: 1px solid #8F68FC;
     }
 
-    h4 {
+    h4 a {
+        color: #292984;
         font-family: Kanit;
         padding: 0 15px;
         font-style: normal;
@@ -53,6 +61,7 @@
 
 .asset-tool-tags {
     padding: 0 15px;
+    margin: -16px 0;
 }
 
 .tags_separator {
@@ -60,24 +69,23 @@
     width: 17px;
 }
 
-.comments {
+.product-page #assets_cards .comments  {
+    span {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 180%;
+        color: #8B8BB8;
+        vertical-align: middle;
+    }
     position: absolute;
     left: 17px;
     bottom: 20px;
 
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 180%;
-
     img {
         vertical-align: middle;
         margin-right: 6px;
-    }
-
-    a:link, a:visited {
-        color: #8B8BB8;
     }
 }
 
@@ -108,31 +116,33 @@
     }
 }
 
+.product-page #main a {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 120%;
+
+    color: #8F68FC;
+    border-bottom: none;
+
+    span {
+        color: #8B8BB8;
+
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 180%;
+        vertical-align: super;
+    }
+}
+
 .reading_next_links {
     display: grid;
     padding-left: 51px;
     grid-template-columns: auto auto auto;
-
-    a {
-        font-family: Kanit;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 28px;
-        line-height: 120%;
-
-        color: #8F68FC;
-
-        span {
-            color: #8B8BB8;
-
-            font-family: Open Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 180%;
-            vertical-align: super;
-        }
-    }
+    grid-gap: 24px;
 }
 
 @media screen and (max-width:480px) {

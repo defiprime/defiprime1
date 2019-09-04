@@ -1,12 +1,14 @@
-<h3>Next:</h3>
-<section class="tiles">
-{% assign posts = site.categories.products | where_exp:"post", "post.url != page.url" | sort %}
-
-{% for post in posts %}
-	<article>
-		<section >
-	<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}" class="button special fit small">{{ post.title }}</a>
-</section>
-	</article>
-{% endfor %}
+<section class="read_next">
+    <h3>Next</h3>
+    <div class='reading_next_links'>
+        {% assign collections = site.collections | where_exp:"post", "post.section_url != page.url" | sort: 'label' %}
+		{% for collection in collections %}
+			{% if collection.label != 'events' and collection.label != 'posts' %}
+				<a href="{{ collection.section_url }}">
+					{{ collection.label | capitalize | replace: "-", " " | replace: "_", " " }}
+					<span class="articles_count">{{ collection.docs | size }}</span>
+				</a>
+			{% endif %}
+        {% endfor %}
+    </div>
 </section>
