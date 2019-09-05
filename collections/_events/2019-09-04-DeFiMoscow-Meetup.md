@@ -8,7 +8,7 @@ product-description: 'The second Meetup of the DeFi community in Moscow will tak
 
 - Renat Khasanshyn, Special Projects, ChainLink, will explain the anatomy of DeFi oracles
 
-- Igor Barinov, xDai & POA Networ, will talk on derivatives based on the Dai'  
+- Igor Barinov, xDai & POA Network, will talk on derivatives based on the Dai'  
 date: 2019-09-12
 location: 'Moscow, RU'
 ---
