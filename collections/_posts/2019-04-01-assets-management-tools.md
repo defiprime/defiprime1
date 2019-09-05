@@ -10,6 +10,7 @@ og: /images/og-assets-management-tools.png
 cards: assets-management-tools
 redirect_from:
   - custodian_services
+  - assets-managament-tools
 ---
 
-Custodian it is a specialized financial institution responsible for safeguarding a firm’s or individual’s financial assets and is not engaged in “traditional” commercial or consumer/retail banking.Custodian services in DeFi it is wallets, apps, and dashboards for managing your cryptocurrencies and assets.
+Custodian it is a specialized financial institution responsible for safeguarding a firm’s or individual’s financial assets and is not engaged in “traditional” commercial or consumer/retail banking. Custodian services in DeFi it is wallets, apps, and dashboards for managing your cryptocurrencies and assets.
