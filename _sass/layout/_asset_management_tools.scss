@@ -40,6 +40,11 @@
         line-height: 120%;
         letter-spacing: 0;
         text-transform: none;
+        transition: .2s ease-in-out color;
+        
+        &:hover {
+            color: #05D2DD;
+        }
     }
 
     p {
