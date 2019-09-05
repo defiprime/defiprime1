@@ -1,6 +1,6 @@
 ---
 layout: default
-title: DeFi - Best Decentralized Finance(DeFi) Products | What is DeFi in Crypto
+title: DeFi - Best Decentralized Finance(DeFi) Projects | What is DeFi in Crypto
 metadescription: Decentralized Finance(DeFi) is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols.
 redirect_from:
   - product
