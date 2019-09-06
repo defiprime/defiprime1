@@ -45,7 +45,7 @@ Below I will provide an overview and examples from traditional finance for each 
 Synthetics can lower funding costs.
 One example is a [Total Return Swap](https://www.investopedia.com/terms/t/totalreturnswap.asp) (TRS) that is used as a funding tool to secure financing for assets held. It allows the party to obtain funding for a pool of assets it already owns and the swap counterparty to earn interest on funds that are secured by a pool of assets. Used in this way, the TRS is similar to a secured loan because:
 - The party that sells the securities and agrees to buy them back is the party that needs financing, and
-- The party that buys the securities and agrees to sell them bank is the party that provides the financing.
+- The party that buys the securities and agrees to sell them back is the party that provides the financing.
 
 ### Liquidity creation
 
