@@ -11,5 +11,6 @@
 
 		@include breakpoint(small) {
 			@include padding(3em, 0, (-3em, 0, 3em, 0));
+			margin-top: calc(4.6em + 74px);
 		}
 	}

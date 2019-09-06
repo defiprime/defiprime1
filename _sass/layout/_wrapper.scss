@@ -15,6 +15,7 @@
 				max-width: 1150px;
 				margin: 0 auto;
 				padding: 0 20px;
+				position: relative;
 
 				@include breakpoint(small) {
 					$gutter: _size(gutter) * 0.5;

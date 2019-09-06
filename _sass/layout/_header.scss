@@ -199,6 +199,8 @@
 	display: none;
 }
 
+$topBarSize: 58px;
+
 @media screen and (max-width: 480px) {
     .header-content .menu-list {
 		display: block;
@@ -210,9 +212,9 @@
     .header-content-menu {
 		width: 100%;
 		position: absolute;
-		height: calc(100vh - 74px);
+		height: calc(100vh - #{$topBarSize});
 		background: #fff;
-		top: 74px;
+		top: $topBarSize;
 		z-index: 2;
 		left: 100%;
     }
@@ -227,9 +229,13 @@
 	}
 	#header {
 		padding: 1em 0;
-		box-shadow: 0px 0px 6px rgba(41, 41, 132, 0.12);
-		position: relative;
+		box-shadow: 0px 0px 6px rgba(41,41,132,0.12);
+		position: fixed;
 		overflow: hidden;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+		background: #fff;
 
 		.logo {
 			margin-bottom: 0;
