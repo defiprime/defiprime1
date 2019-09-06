@@ -55,6 +55,10 @@
         font-size: 14px;
         line-height: 160%;
     }
+
+    .market_icon, .platform_icon {
+        margin: 0 5px;
+    }
 }
 
 #assets_cards {
@@ -71,7 +75,7 @@
 
 .tags_separator {
     display: inline-block;
-    width: 17px;
+    width: 10px;
 }
 
 .product-page #assets_cards .comments  {
