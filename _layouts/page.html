@@ -80,9 +80,9 @@
                         {% assign type_tags = asset_tool["type"] | split: ", " %}
                         {% for type_tag in type_tags %}
                             {% if type_tag == "cefi" %}
-                                <img class="market_icon" title="Built on SeFi or related to SeFi ecosystem" src="images/sefi.svg" />
+                                <img class="market_icon" title="CeFi product. CeFi products are custodial, use centralized price feeds, initiate margin calls centrally, centrally determine interest rates, and centrally provide liquidity for their margin calls." src="images/sefi.svg" />
                             {% else %}
-                                <img class="market_icon" title="Built on Non custodial or related to Non custodial ecosystem" src="images/non_custodial.svg" />
+                                <img class="market_icon" title="Non-custodial" src="images/non_custodial.svg" />
                             {% endif %}
                         {% endfor %}
                     </div>
