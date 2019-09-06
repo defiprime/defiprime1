@@ -102,18 +102,20 @@ Founded in 2014, [Abra](https://www.abra.com/) is the O.G. of synthetics in cryp
 
 Furthermore, Abra immediately hedges away its risk so it could honor all trades at all times. When a user funds his or her wallet, they are effectively taking a short position on Bitcoin and a long position on the hedged asset, and Abra is taking a long position on Bitcoin and a short position on the hedged asset.
 
-![](images/blog/synthetics/synthetics1.png)
-
-_Purple: Real assets, Green: Synthetic assets_
+<p align="center" >
+<img src="images/blog/synthetics/synthetics1.png" />
+</p>
+Purple: Real assets, Green: Synthetic assets
 
 ### MakerDAO
 
 
 [Maker’s](https://makerdao.com/) Dai stablecoin is likely the most widely known and used synthetic in DeFi. By locking Ethereum as collateral, users are able to mint a synthetic asset, Dai, which maintains a soft peg to USD. In effect, Dai holders receive synthetic price exposure to USD. Similar to Abra’s design, this “collateral-backed synthetic asset” model has been popular among many other protocols.
 
-![](images/blog/synthetics/synthetics1.png)
-
-_Purple: Real assets, Green: Synthetic assets_
+<p align="center" >
+<img src="images/blog/synthetics/synthetics2.png" />
+</p>
+Purple: Real assets, Green: Synthetic assets
 
 ### UMA
 
@@ -121,9 +123,10 @@ _Purple: Real assets, Green: Synthetic assets_
 
 The smart contract contains the economic terms, termination terms, and margin requirements of the bilateral agreement between Alice and Bob. It also requires a price feed oracle to return the current price of the underlying reference asset.
 
-![](images/blog/synthetics/synthetics3.png)
-
-_Purple: Real assets, Green: Synthetic assets_
+<p align="center" >
+<img src="images/blog/synthetics/synthetics3.png" />
+</p>
+Purple: Real assets, Green: Synthetic assets
 
 One implementation of the protocol has been the [USStocks](https://medium.com/uma-project/announcing-us-stock-index-token-powered-by-uma-and-dai-c394586c575a) ERC20 token, which represented the U.S. S&P 500 index and traded on the Beijing-based decentralized exchange DDEX. This was done by fully collateralizing one side of a UMA contract and then tokenizing the margin account, resulting in synthetic ownership of the long side of that contract.
 
@@ -132,17 +135,19 @@ One implementation of the protocol has been the [USStocks](https://medium.com/um
 
 [MARKET Protocol](https://marketprotocol.io/) allows users to create synthetic assets that track, via an oracle, the price of any reference asset. These “Position Tokens” provide bounded long and short exposure to the underlying and, together, offer a payoff structure similar to that of a bull call spread in traditional finance. Similar to Dai, the long and short tokens represent claims to a pool of collateral.
 
-![](images/blog/synthetics/synthetics4.png)
-
-_Purple: Real assets, Green: Synthetic assets_
+<p align="center" >
+<img src="images/blog/synthetics/synthetics4.png" />
+</p>
+Purple: Real assets, Green: Synthetic assets
 
 ### Rainbow Network
 
 The [Rainbow Network](https://rainbownet.work/) is an off-chain non-custodial exchange and payment network that supports any liquid asset. It is composed of “Rainbow channels,” a variant of payment channels where settlement balances are computed based on the current prices of other assets. In other words, the protocol nests synthetics along with other assets within a payment channel.
 
-![](images/blog/synthetics/synthetics5.png)
-
-_Purple: Real assets, Green: Synthetic assets_
+<p align="center" >
+<img src="images/blog/synthetics/synthetics5.png" />
+</p>
+Purple: Real assets, Green: Synthetic assets
 
 In Rainbow channels, each state represents a [contract for difference](https://en.wikipedia.org/wiki/Contract_for_difference), which is similar to a total return swap.
 
@@ -150,9 +155,10 @@ In Rainbow channels, each state represents a [contract for difference](https://e
 
 Synthetix is an issuance platform, collateral type, and exchange that allows users to mint a range of synthetic assets. Similar to Maker, users lock up collateral to create a synthetic asset and need to repay their loan to reclaim the collateral. Users are then able to “exchange” one synthetic asset for another via an oracle. Note that there is no direct counterparty to the “exchange” — the user is effectively repricing the collateral per the oracle. That said, because of the pooled collateral mechanism, the SNX stakers collectively take on the counterparty risk of other users’ synthetic positions.
 
-![](images/blog/synthetics/synthetics6.png)
-
-_Purple: Real assets, Green: Synthetic assets_
+<p align="center" >
+<img src="images/blog/synthetics/synthetics6.png" />
+</p>
+Purple: Real assets, Green: Synthetic assets
 
 ## Crypto-native derivatives
 
