@@ -15,6 +15,8 @@
 
     {% capture listModifier %}{% if orderedList %}1.{% else %}-{% endif %}{% endcapture %}
 
+    {% assign previous_space = '' %}
+
     {% for node in nodes %}
         {% if node == "" %}
             {% continue %}
@@ -54,6 +56,15 @@
             {% assign space = space | prepend: '    ' %}
         {% endfor %}
 
+        {% assign space_indent_size = previous_space | append: previous_space | size %}
+        {% assign current_space_size = space | size %}
+
+        {% if space_indent_size == 0 and current_space_size >= 8 %}
+            {% assign space = space | remove: '    ' | prepend: '    ' %}
+        {% endif %}
+
+        {% assign previous_space = space %}
+
         {% unless include.item_class == blank %}
             {% capture listItemClass %}{:.{{ include.item_class | replace: '%level%', headerLevel }}}{% endcapture %}
         {% endunless %}
@@ -72,8 +83,7 @@
         {% capture my_toc %}{: #{{ include.id }}}
 {{ my_toc | lstrip }}{% endcapture %}
     {% endif %}
-{% endcapture %}{% assign tocWorkspace = '' %}
-{{ my_toc | markdownify | strip }}
+{% endcapture %}{% assign tocWorkspace = '' %}{{ my_toc | markdownify | strip }}
 </aside>
 <script>
     window.onload = () => {
