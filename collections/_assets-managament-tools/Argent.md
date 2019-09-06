@@ -1,10 +1,10 @@
 ---
 product-title: Argent
-product-url: https://www.argent.xyz/
+product-url: https://argent.link/defiprime
 image: /images/output_md/httpswwwargentxyz.png
 ecosystem: ethereum
 platform: ios
-product-description: A wallet for Ethereum-based crypto-assets and apps.
+product-description: Argent is a wallet for Ethereum-based crypto-assets and apps.
 coltitle:  "Asset Management Tools"
 colpermalink: assets-managament-tools
 ---
