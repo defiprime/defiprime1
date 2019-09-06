@@ -63,10 +63,6 @@
                                     <img class="market_icon" title="Built on Stellar or related to Stellar ecosystem" src="images/stellar.svg" />
                                 {% when "eos" %}
                                     <img class="market_icon" title="Built on EOS or related to EOS ecosystem" src="images/eos.svg" />
-                                {% when "sefi" %}
-                                    <img class="market_icon" title="Built on SeFi or related to SeFi ecosystem" src="images/sefi.svg" />
-                                {% when "non-custodial" %}
-                                    <img class="market_icon" title="Built on Non custodial or related to Non custodial ecosystem" src="images/non_custodial.svg" />
                             {% endcase %}
                         {% endfor %}
                         <div class="tags_separator"></div>
@@ -80,6 +76,14 @@
                                 {% when "ios" %}
                                     <img class="platform_icon" src="/images/ios.svg" title="Mobile wallet for iOS">
                             {% endcase %}
+                        {% endfor %}
+                        {% assign type_tags = asset_tool["type"] | split: ", " %}
+                        {% for type_tag in type_tags %}
+                            {% if type_tag == "cefi" %}
+                                <img class="market_icon" title="Built on SeFi or related to SeFi ecosystem" src="images/sefi.svg" />
+                            {% else %}
+                                <img class="market_icon" title="Built on Non custodial or related to Non custodial ecosystem" src="images/non_custodial.svg" />
+                            {% endif %}
                         {% endfor %}
                     </div>
                     <p>{{ asset_tool["product-description"] | markdownify | remove: '<p>' | remove: '</p>' }}</p>
