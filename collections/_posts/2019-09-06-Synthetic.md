@@ -104,7 +104,7 @@ Furthermore, Abra immediately hedges away its risk so it could honor all trades 
 
 ![](images/blog/synthetics/synthetics1.png)
 
-_Legend: Purple = Real assets, Green = Synthetic assets_
+_Purple: Real assets, Green: Synthetic assets_
 
 ### MakerDAO
 
@@ -113,7 +113,7 @@ _Legend: Purple = Real assets, Green = Synthetic assets_
 
 ![](images/blog/synthetics/synthetics1.png)
 
-_Legend: Purple = Real assets, Green = Synthetic assets_
+_Purple: Real assets, Green: Synthetic assets_
 
 ### UMA
 
@@ -123,7 +123,7 @@ The smart contract contains the economic terms, termination terms, and margin re
 
 ![](images/blog/synthetics/synthetics3.png)
 
-_Legend: Purple = Real assets, Green = Synthetic assets_
+_Purple: Real assets, Green: Synthetic assets_
 
 One implementation of the protocol has been the [USStocks](https://medium.com/uma-project/announcing-us-stock-index-token-powered-by-uma-and-dai-c394586c575a) ERC20 token, which represented the U.S. S&P 500 index and traded on the Beijing-based decentralized exchange DDEX. This was done by fully collateralizing one side of a UMA contract and then tokenizing the margin account, resulting in synthetic ownership of the long side of that contract.
 
@@ -134,7 +134,7 @@ One implementation of the protocol has been the [USStocks](https://medium.com/um
 
 ![](images/blog/synthetics/synthetics4.png)
 
-_Legend: Purple = Real assets, Green = Synthetic assets_
+_Purple: Real assets, Green: Synthetic assets_
 
 ### Rainbow Network
 
@@ -142,7 +142,7 @@ The [Rainbow Network](https://rainbownet.work/) is an off-chain non-custodial ex
 
 ![](images/blog/synthetics/synthetics5.png)
 
-_Legend: Purple = Real assets, Green = Synthetic assets_
+_Purple: Real assets, Green: Synthetic assets_
 
 In Rainbow channels, each state represents a [contract for difference](https://en.wikipedia.org/wiki/Contract_for_difference), which is similar to a total return swap.
 
@@ -152,7 +152,7 @@ Synthetix is an issuance platform, collateral type, and exchange that allows use
 
 ![](images/blog/synthetics/synthetics6.png)
 
-_Legend: Purple = Real assets, Green = Synthetic assets_
+_Purple: Real assets, Green: Synthetic assets_
 
 ## Crypto-native derivatives
 
