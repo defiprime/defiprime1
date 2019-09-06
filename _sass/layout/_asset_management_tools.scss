@@ -87,6 +87,7 @@
         line-height: 180%;
         color: #8B8BB8;
         vertical-align: middle;
+        margin-left: 29px;
     }
     position: absolute;
     left: 17px;
@@ -94,7 +95,10 @@
 
     img {
         vertical-align: middle;
-        margin-right: 6px;
+        transition: .2s ease-in-out opacity;
+        position: absolute;
+        height: 18px;
+        top: 10px;
     }
 }
 
@@ -136,12 +140,30 @@
     font-weight: 500;
     font-size: 28px;
     line-height: 120%;
+    transition: .2s ease-in-out color; 
 
     color: #8F68FC;
     border-bottom: none;
 
+    &:hover {
+        color: #05D2DD;
+
+        span {
+            color: #05D2DD;
+        }
+
+        .hovered_comment {
+            opacity: 1;
+        }
+
+        .base_comment {
+            opacity: 0;
+        }
+    } 
+
     span {
         color: #8B8BB8;
+        transition: .2s ease-in-out color;
 
         font-family: Open Sans;
         font-style: normal;
@@ -150,6 +172,10 @@
         line-height: 180%;
         vertical-align: super;
     }
+}
+
+.hovered_comment {
+    opacity: 0;
 }
 
 .reading_next_links {

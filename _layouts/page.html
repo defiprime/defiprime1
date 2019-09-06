@@ -79,7 +79,8 @@
                 <p>{{ asset_tool["product-description"] | markdownify }}</p>
                 <div title="Would you recommend this product?" class="comments">
                     <a href="/product/{{ asset_tool.product-title | slugify: 'latin'}}">
-                        <img src="/images/no_comment.svg">
+                        <img class="base_comment" src="/images/no_comment.svg">
+                        <img class="hovered_comment" src="/images/comment_hover.svg">
                         <span>0</span>
                     </a>
                 </div>
