@@ -17,6 +17,10 @@ class SidePanelGenerator < Jekyll::Generator
                 if elements.empty?
                     elements = doc.css('h2')
                     active_el = 'h2'
+                    if elements.empty?
+                      elements = doc.css('h3')
+                      active_el = 'h3'
+                    end
                 end
 
                 page.data["toc_sidepanel"] = elements.map do |h1|

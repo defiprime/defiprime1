@@ -45,7 +45,7 @@
             window.location = $this.attr('href');
         })
 
-        var firstHeading = document.querySelectorAll('.article .container h1')[0] || document.querySelectorAll('.article .container h2')[0];
+        var firstHeading = document.querySelectorAll('.article .container h1')[0] || document.querySelectorAll('.article .container h2')[0] || document.querySelectorAll('.article .container h3')[0];
         $(window).on('scroll', () => {
             console.log($(firstHeading).offset().top - $(window).scrollTop())
             if(isElementInViewport(firstHeading)) {
