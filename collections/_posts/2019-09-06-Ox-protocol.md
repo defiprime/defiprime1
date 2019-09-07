@@ -4,14 +4,14 @@ title:  0x Protocol
 permalink: 0x-protocol
 h1title: '0x: Decentralized Exchange Protocol'
 pagetitle: '0x: Decentralized Exchange Protocol'
-metadescription: 'Matt Taylor from 0x team told us how they built decentralized exchange protocol, and what comes next for DeFi dApps.'
+metadescription: 'Matt Taylor from the 0x Core Team told us how they built a decentralized exchange protocol, and what comes next for DeFi dApps.'
 category: blog
 featured-image: /images/blog/0x-og.png
 quote: /images/blog/0x-quote.png
-intro: 'Matt Taylor from 0x team told us how they built decentralized exchange protocol, and what comes next for DeFi dApps.'
+intro: 'Matt Taylor from the 0x Core Team told us how they built a decentralized exchange protocol, and what comes next for DeFi dApps.'
 author: Defiprime
 ---
-Matt Taylor from 0x team told us how they built decentralized exchange protocol, and what comes next for DeFi dApps.
+Matt Taylor from the 0x Core Team told us how they built a decentralized exchange protocol, and what comes next for DeFi dApps.
 
 ### Hello! What's your background, and what are you working on?
 
@@ -19,9 +19,9 @@ Hey DeFi Prime, thanks for reaching out! My name is [Matt Taylor](https://twitte
 
 A bit about 0x just to frame the conversation: 0x is [a pipeline of open-source smart contracts](https://www.youtube.com/playlist?list=PLN51Tjs40v5PIm4avEo1m2Uz08qj0YWPa) that serve as foundational exchange infrastructure and the networked liquidity layer for several crypto verticals including DeFi and blockchain gaming. We are building 0x protocol to be the standard for trading crypto tokens and connecting complementary protocols to bring both existing and completely new financial markets to people around the world.
 
-DeFi projects ranging from lending services to atomic trading bots can tap into [0x's networked liquidity pool](https://0x.org/asset-swapper) to give users the ability to trade a large number of tokens at competitive prices. 0x's liquidity and DEX infrastructure can be accessed by anyone, making it easy to add peer-to-peer exchange functionality in really any application. We are very excited about what we've seen so far from the DeFi businesses integrated with 0x. The rate of experimentation and innovation in financial markets has already increased dramatically now that capital can now flow freely through peer-to-peer networks, at a much lower cost.
+DeFi projects ranging from lending services to atomic trading bots can tap into [0x's networked liquidity pool](https://0x.org/asset-swapper) to give users the ability to trade a large number of tokens at competitive prices. 0x's liquidity and DEX infrastructure can be accessed by anyone, making it easy to add peer-to-peer exchange functionality in really any application. We are very excited about what we’ve seen so far from the DeFi businesses integrated with 0x, especially from those leveraging [contract-fillable liquidity (CFL)](https://blog.0xproject.com/contract-fillable-liquidity-made-simple-8b9cf1b2f2f2). The rate of experimentation and innovation in financial markets has already increased dramatically now that capital can now flow freely through peer-to-peer networks, at a much lower cost.
 
-To give your readers a sense of our progress so far, over a billion dollars in trades have flowed through the 0x protocol, 100+ projects have utilized 0x to enable p2p exchange functionality in their apps, and 0x's networked liquidity pool currently has the lowest ave. [slippage](https://www.investopedia.com/terms/s/slippage.asp) on the most popular trading pairs in the DEX space, including ETH/DAI, ETH/USDC, DAI/USDC, and more.
+To give your readers a sense of our progress so far, over a billion dollars in trades have flowed through the 0x protocol, 100+ projects have utilized 0x to enable p2p exchange functionality in their apps, and 0x’s networked liquidity pool often has the lowest slippage on the most popular trading pairs in the DeFi space, including ETH/DAI, ETH/USDC, DAI/USDC, and more.
 
 {% youtube "https://youtu.be/c04eIt3FQ5I" %}
 
