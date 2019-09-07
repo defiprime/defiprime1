@@ -4,11 +4,11 @@ title:  DeFi Accounting
 permalink: defi-accounting
 h1title: 'DeFi Accounting Series: Crypto Lending & Borrowing Platforms'
 pagetitle:  'DeFi Accounting Series: Crypto Lending & Borrowing Platforms'
-metadescription: 'In this article, we’ll look at some of the most popular crypto to crypto financing platforms in detail and discuss the bookkeeping entries and tax ramifications from the lender side and borrower side.'
+metadescription: "In this article, we'll look at some of the most popular crypto to crypto financing platforms in detail and discuss the bookkeeping entries and tax ramifications from the lender side and borrower side."
 category: blog
 featured-image: /images/blog/defiaccounting-og.png
 quote: /images/blog/defiaccounting-quote.png
-intro: 'In this article, we’ll look at some of the most popular crypto to crypto financing platforms in detail and discuss the bookkeeping entries and tax ramifications from the lender side and borrower side.'
+intro: "In this article, we'll look at some of the most popular crypto to crypto financing platforms in detail and discuss the bookkeeping entries and tax ramifications from the lender side and borrower side."
 author: knab
 ---
 <div style="text-align: right">
