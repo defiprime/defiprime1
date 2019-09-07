@@ -20,11 +20,16 @@
     </ul>
 </aside>
 <script>
+    function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document. documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document. documentElement.clientWidth)
+        );
+    }
     window.onload = () => {
-        //$(".toc-item ul").addClass('inner-list');
-        $("#sidepanel").animate({
-            opacity: 1
-        }, 200);
         $(".toc-item a").click(function(e) {
             e.preventDefault();
             var $this = $(this);
@@ -38,6 +43,16 @@
                 $this.next().slideToggle(350);
             }
             window.location = $this.attr('href');
+        })
+
+        var firstHeading = document.querySelectorAll('.article .container h1')[0] || document.querySelectorAll('.article .container h2')[0];
+        $(window).on('scroll', () => {
+            console.log($(firstHeading).offset().top - $(window).scrollTop())
+            if(isElementInViewport(firstHeading)) {
+                $("#sidepanel").animate({
+                    opacity: 1
+                }, 200);
+            }
         })
     }
 </script>
