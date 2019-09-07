@@ -31,14 +31,20 @@
     hr {
         border-color: #F2F2F2;
         width: 90%;
-        margin: 20px auto;
+        margin: 20px auto 6px auto;
     }
 
     .toc-sidepanel {
+        font-family: 'Open Sans';
         margin-left: -12px;
         margin-right: 10px;
+
+        ul {
+            margin-left: -7px;
+        }
+        
         li {
-            padding: 0.5em 0 0.5em 0.5em;
+            padding: 0.3em 0 0.3em 0.7em;
             position: relative;
 
             &:not(:last-child):after {
