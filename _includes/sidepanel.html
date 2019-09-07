@@ -45,12 +45,18 @@
             window.location = $this.attr('href');
         })
 
+        var offsetTop = (0.3 / 2) * $(window).height(); // left aside container is 70% wide. THerefore, check for  half of 30%
+
         var firstHeading = document.querySelectorAll('.article .container h1')[0] || document.querySelectorAll('.article .container h2')[0] || document.querySelectorAll('.article .container h3')[0];
         $(window).on('scroll', () => {
-            console.log($(firstHeading).offset().top - $(window).scrollTop())
-            if(isElementInViewport(firstHeading)) {
-                $("#sidepanel").animate({
+            var elementTopOffset = $(firstHeading).offset().top - $(window).scrollTop();
+            if(elementTopOffset < offsetTop) {
+                $("#sidepanel").stop(true, true).animate({
                     opacity: 1
+                }, 200);
+            } else {
+                $("#sidepanel").stop(true, true).animate({
+                    opacity: 0
                 }, 200);
             }
         })
