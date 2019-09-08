@@ -26,7 +26,7 @@ DeversiFi is the first decentralised exchange which offers traders high-liquidit
 
 ![](/images/blog/DeversiFi1.png)
 
-### What's 'DeversiFi's backstory?
+### What's DeversiFi's backstory?
 
 DeversiFi was launched in August 2019 after being successfully incubated by Bitfinex for two years, as Ethfinex Trustless. In late 2017, we saw exchanges as the gateway between the traditional financial world and the cryptocurrency world.
 
