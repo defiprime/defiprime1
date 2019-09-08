@@ -182,7 +182,7 @@ This is a product that has been available in traditional commodity markets for q
 
 This would allow validators in Proof of Stake networks to hedge their exposure to market risk of their chosen cryptoasset. Similar to a hash-power swap, a validator would sell a portion of their staking yield in exchange for cash. This would allow the validator to receive a fixed amount on their locked assets, while the buyer would gain exposure to staking income without setting up staking infrastructure.
 
-Staking Yield Swaps is live today on [Vest](https://vest.io/#/), which is a marketplace that allows users to purchase future staking rewards and stakers to reduce the variance of their staking rewards. The project implements this via “staking contracts,” which allows a user to pay X and receive rewards from staking Z tokens for duration T. X is the.
+Staking Yield Swaps is live today on [Vest](https://vest.io/#/), which is a marketplace that allows users to purchase future staking rewards and stakers to reduce the variance of their staking rewards. The project implements this via “staking contracts,” which allows a user to pay X and receive rewards from staking Z tokens for duration T.
 
 ### Slashing Penalty Swaps
 
