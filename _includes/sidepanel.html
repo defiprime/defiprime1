@@ -3,13 +3,13 @@
     <hr />
     <ul class="toc-sidepanel">
         {% for link in page.toc_sidepanel %}
-            <li class="toc-item">
+            <li class="toc-item toc--{{ link.url | split: '#' | last }}">
                 <a href='{{link.url}}'>{{link.title}}</a>
                 {% assign nested_list = link.children %}
                 {% if nested_list.size > 0 %}
                     <ul class="inner-list">
                         {% for nested_child in nested_list %}
-                            <li class="toc-item">
+                            <li class="toc-item toc--{{ link.url | split: '#' | last }}">
                                 <a href='{{nested_child.url}}'>{{nested_child.title}}</a>
                             </li>
                         {% endfor %}
@@ -29,7 +29,23 @@
             rect.right <= (window.innerWidth || document. documentElement.clientWidth)
         );
     }
+
+    function createOffsetTable(tag) {
+        var header = document.querySelectorAll('.article .container ' + tag);
+        var headers = {};
+        Array.prototype.forEach.call(header, function(e) {
+            headers[e.id] = e.offsetTop;
+        })
+        return headers;
+    }
+
     window.onload = () => {
+        var headers = {};
+
+        ['h1', 'h2', 'h3', 'h4'].map((tag) => {
+            headers = {...headers, ...createOffsetTable(tag)}
+        })
+
         $(".toc-item a").click(function(e) {
             e.preventDefault();
             var $this = $(this);
@@ -47,10 +63,26 @@
 
         var offsetTop = (0.3 / 2) * $(window).height(); // left aside container is 70% wide. THerefore, check for  half of 30%
 
+        var authorTag = document.querySelector('.author-about');
+
         var firstHeading = document.querySelectorAll('.article .container h1')[0] || document.querySelectorAll('.article .container h2')[0] || document.querySelectorAll('.article .container h3')[0];
         $(window).on('scroll', () => {
             var elementTopOffset = $(firstHeading).offset().top - $(window).scrollTop();
-            if(elementTopOffset < offsetTop) {
+            var authorOffset = $(authorTag).offset().top - $(window).scrollTop();
+
+            var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+            // for (header in headers) {
+            //     if (headers[header] <= scrollPosition - offsetTop) {
+            //         if(document.querySelector('.show')) {
+            //             $(document.querySelector('.toc--' + header + ' ul')).stop(true, true).slideToggle(350);
+            //         } else if (document.querySelector('.toc--' + header + ' ul')) {
+            //             $(document.querySelector('.toc--' + header + ' ul')).stop(true, true).slideUp(350);
+            //         }
+            //     }
+            // }
+
+            if(elementTopOffset < offsetTop && authorOffset > offsetTop + 0.7 * $(window).height()) {
                 $("#sidepanel").stop(true, true).animate({
                     opacity: 1
                 }, 200);
