@@ -54,15 +54,25 @@
                         {% for market_tag in market_tags %}
                             {% case market_tag %}
                                 {% when "ethereum" %}
-                                    <img class="market_icon" title="Built on Ethereum or related to Ethereum ecosystem" src="images/eth.svg" />
+                                    <span atitle="Built on Ethereum or related to Ethereum ecosystem">
+                                        <img class="market_icon" src="images/eth.svg" />
+                                    </span>
                                 {% when "bitcoin" %}
-                                    <img class="market_icon" title="Using Bitcoin ecosystem" src="images/btc.svg" />
+                                    <span atitle="Using Bitcoin ecosystem">
+                                        <img class="market_icon" src="images/btc.svg" />
+                                    </span>
                                 {% when "tron" %}
-                                    <img class="market_icon" title="Built on Tron or related to Tron ecosystem" src="images/tron.svg" />
+                                    <span atitle="Built on Tron or related to Tron ecosystem">
+                                        <img class="market_icon" src="images/tron.svg" />
+                                    </span>
                                 {% when "stellar" %}
-                                    <img class="market_icon" title="Built on Stellar or related to Stellar ecosystem" src="images/stellar.svg" />
+                                    <span atitle="Built on Stellar or related to Stellar ecosystem">
+                                        <img class="market_icon" src="images/stellar.svg" />
+                                    </span>
                                 {% when "eos" %}
-                                    <img class="market_icon" title="Built on EOS or related to EOS ecosystem" src="images/eos.svg" />
+                                    <span atitle="Built on EOS or related to EOS ecosystem">
+                                        <img class="market_icon" src="images/eos.svg" />
+                                    </span>
                             {% endcase %}
                         {% endfor %}
                         <div class="tags_separator"></div>
@@ -70,19 +80,29 @@
                         {% for platform_tag in platform_tags %}
                             {% case platform_tag %}
                                 {% when "android" %}
-                                    <img class="platform_icon" src="/images/android.svg" title="Mobile wallet for Android">
+                                    <span atitle="Mobile wallet for Android">
+                                        <img class="platform_icon" src="/images/android.svg" >
+                                    </span>
                                 {% when "web" %}
-                                    <img class="platform_icon" src="/images/web.svg" title="Browser based wallet">
+                                    <span atitle="Browser based wallet">
+                                        <img class="platform_icon" src="/images/web.svg" >
+                                    </span>
                                 {% when "ios" %}
-                                    <img class="platform_icon" src="/images/ios.svg" title="Mobile wallet for iOS">
+                                    <span atitle="Mobile wallet for iOS">
+                                        <img class="platform_icon" src="/images/ios.svg" >
+                                    </span>
                             {% endcase %}
                         {% endfor %}
                         {% assign type_tags = asset_tool["type"] | split: ", " %}
                         {% for type_tag in type_tags %}
                             {% if type_tag == "cefi" %}
-                                <img class="market_icon" title="CeFi product. CeFi products are custodial, use centralized price feeds, initiate margin calls centrally, centrally determine interest rates, and centrally provide liquidity for their margin calls." src="images/sefi.svg" />
+                                <span atitle="CeFi product. CeFi products are custodial, use centralized price feeds, initiate margin calls centrally, centrally determine interest rates, and centrally provide liquidity for their margin calls.">
+                                    <img class="market_icon" src="images/sefi.svg" />
+                                </span>
                             {% else %}
-                                <img class="market_icon" title="Non-custodial" src="images/non_custodial.svg" />
+                                <span atitle="Non-custodial">
+                                    <img class="market_icon" src="images/non_custodial.svg" />
+                                </span>
                             {% endif %}
                         {% endfor %}
                     </div>
