@@ -1,0 +1,56 @@
+.main-page-header {
+    background:  #E3FEFF;
+    position: absolute;
+    width: 100vw;
+    height: 600px;
+    right: 50%;
+    transform: translateX(50%);
+    top: -184px;
+    padding-top: 177px;
+    z-index: -1;
+
+    h1 {
+        color: #FF961C;
+    }
+
+    span {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 180%;
+        display: block;
+        text-align: center;
+        color: #292984;
+        max-width: 779px;
+        margin: 0 auto;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: calc(100% - 20px);
+        height: 1000px;
+        background: url("/images/bg_top.svg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 37px;
+        background-size: cover;
+    }
+}
+
+.defi_projects_annotation {
+	padding-top: 456px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0;
+    text-transform: none;
+    text-align: center;
+    color: #292984;
+    margin-bottom: -38px;
+}

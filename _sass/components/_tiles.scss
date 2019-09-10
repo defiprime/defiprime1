@@ -7,7 +7,7 @@
 /* Tiles */
 
 .tiles {
-	$gutter: _size(gutter);
+	$gutter: 30px;
 	$duration: 0.5s;
 	$ease: 'ease';
 
@@ -18,12 +18,13 @@
 
 	article {
 		@include vendor('transition', (
-			'transform #{$duration} #{$ease}',
-			'opacity #{$duration} #{$ease}'
+			'all #{$duration} #{$ease}'
 		));
-		position: relative;
 		width: calc(#{(100% / 3)} - #{$gutter * 1});
 		margin: $gutter 0 0 $gutter;
+		background: #fff;
+		box-shadow: 0px 0px 6px rgba(41, 41, 132, 0.12);
+		position: relative;
 
 		> .image {
 			@include vendor('transition', 'transform #{$duration} #{$ease}');
@@ -79,51 +80,45 @@
 		> a {
 			@include vendor('display', 'flex');
 			@include vendor('flex-direction', 'column');
-			@include vendor('align-items', 'center');
+			@include vendor('align-items', 'start');
 			@include vendor('justify-content', 'center');
 			@include vendor('transition', (
 				'background-color #{$duration} #{$ease}',
-				'transform #{$duration} #{$ease}'
+				'transform #{$duration} #{$ease}',
+				'color #{$duration} #{$ease}'
 			));
-			position: absolute;
-			top: 0;
-			left: 0;
 			width: 100%;
 			height: 100%;
-			padding: 1em;
+			padding: 7px 18px;
 			border-radius: _size(border-radius);
 			border-bottom: 0;
-			color: _palette(fg-accent);
-			text-align: center;
 			text-decoration: none;
 			z-index: 3;
+			font-family: Kanit;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 22px;
+			line-height: 120%;
+			color: #8F68FC;
+
+			span {
+				position: absolute;
+				right: 20px;
+				font-family: Open Sans;
+				font-size: 16px;
+				color: #BDBDBD;
+			}
 
 			> :last-child {
 				margin: 0;
 			}
 
-			&:hover {
-				color: _palette(fg-accent);
-			}
-
 			h2 {
 				margin: 0;
-			}
-
-			.content {
-				@include vendor('transition', (
-					'max-height #{$duration} #{$ease}',
-					'opacity #{$duration} #{$ease}'
-				));
-				width: 100%;
-				max-height: 0;
-				line-height: 1.5;
-				margin-top: 0.35em;
-				opacity: 0;
-
-				> :last-child {
-					margin-bottom: 0;
-				}
+				margin-right: auto;
+				letter-spacing: 0;
+				text-transform: none;
+				font-size: 22px;
 			}
 		}
 
@@ -182,6 +177,14 @@
 					max-height: 15em;
 					opacity: 1;
 				}
+			}
+		}
+		&:hover {
+			box-shadow: 0 0 0 1px #8F68FC, 0px 2px 12px rgba(41, 41, 132, 0.24);
+			transform: translateY(-20%);
+
+			a {
+				color: #05D2DD;
 			}
 		}
 	}
