@@ -1,6 +1,6 @@
 ---
 product-title: nexo
-product-url: https://nexo.io/?u=5bfc15c1230ab77216260231
+product-url: https://nexo.io
 image: /images/output_md/nexo.jpg
 ecosystem: ethereum, bitcoin
 type: cefi
