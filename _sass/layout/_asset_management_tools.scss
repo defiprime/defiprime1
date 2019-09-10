@@ -48,47 +48,6 @@
         height: 175px;
     }
 
-    span {
-        position: relative;
-
-        &:after, &:before {
-            content: '';
-            opacity: 0;
-            transition: .2s ease-in-out opacity;
-        }
-
-        &:hover {
-            &:after {
-                content: attr(atitle);
-                padding: 7px 10px;
-                color: #fff;
-                opacity: 1;
-                position: absolute;
-                left: calc(50% - 3px);
-                top: -51px;
-                font-family: Open Sans;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 11px;
-                line-height: 160%;
-                transform: translateX(-50%);
-                white-space: nowrap;
-                z-index: 20px;
-                background: #292984;
-            }
-            &:before {
-                content: '';
-                opacity: 1;
-                top: -32px;
-                position: absolute;
-                left: calc(50% - 3px);
-                transform: translateX(-50%);
-                border-left: 20px solid transparent;
-                border-right: 20px solid transparent;
-                border-top: 20px solid #292984;
-            }
-        }
-    }
     h4 a {
         color: #292984;
         font-family: Kanit;
@@ -133,6 +92,48 @@
 .asset-tool-tags {
     padding: 0 15px;
     margin: -16px 0 16px 0;
+
+    span {
+        position: relative;
+
+        &:after, &:before {
+            content: '';
+            opacity: 0;
+            transition: .2s ease-in-out opacity;
+        }
+
+        &:hover {
+            &:after {
+                content: attr(atitle);
+                padding: 7px 10px;
+                color: #fff;
+                opacity: 1;
+                position: absolute;
+                left: calc(50% - 3px);
+                top: -51px;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 11px;
+                line-height: 160%;
+                transform: translateX(-50%);
+                white-space: nowrap;
+                z-index: 20px;
+                background: #292984;
+            }
+            &:before {
+                content: '';
+                opacity: 1;
+                top: -32px;
+                position: absolute;
+                left: calc(50% - 3px);
+                transform: translateX(-50%);
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-top: 20px solid #292984;
+            }
+        }
+    }
 }
 
 .tags_separator {

@@ -483,10 +483,15 @@
 			}
 		}
 		.descr {
-			padding: 2em 1.5em;
 			flex-grow: 1;
+			margin-right: auto;
+			padding: 1px 18px 15px 15px;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 22px;
 			display: flex;
 			flex-direction: column;
+			
 			.content {
 				overflow: hidden;
 				flex-grow: 1;

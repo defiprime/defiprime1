@@ -33,47 +33,57 @@
     </script>
 </head>
 <body class="post">
-
     {% include header.html %}
-    <article class="article  article--post  content  typeset">
-      <a href="/{{ page.colpermalink }}"><i class="fas fa-arrow-left"></i>{{ page.coltitle }}</a>
+    <article class="article  article--post content typeset">
+        <a href="/{{ page.colpermalink }}">
+            <i class="fas fa-angle-left"></i>
+            {{ page.coltitle }}
+        </a>
 
-    <h1> <a href="{{ page.product-url }}">{{ page.product-title }}</a></h1>
+        <h1><a href="{{ page.product-url }}">{{ page.product-title }}</a></h1>
 
-    <div class="container">
+        <span class="product-url-showcase">
+            <a href="{{ page.product-url }}">{{ page.product-url }}</a>
+        </span>
 
-<a href="{{ page.product-url }}"><img src="{{ page.image }}" width="100%" alt=""></a>
+        <div class='product-description-table'>
+            <a href="{{ page.product-url }}"><img src="{{ page.image }}" width="100%" alt=""></a>
+            <div class='product-highlights'>
+                <h2>What is {{ page.product-title }}?</h2>
+                {% if page.twitter or page.github %}
+                    <div class='product-tags-icons'>
+                        <a href='{{page.twitter}}'><i class="fab fa-twitter"></i></a>
+                        <a href='{{page.github}}'><i class="fab fa-github"></i></a>
+                    </div>
+                {% endif %}
+                {% assign link_presented = page.product-description | markdownify | split: '<a' | size %}
+                <blockquote {% if link_presented == 1 %} style='flex: 0' {% endif %}> {{ page.product-description | markdownify }} </blockquote>
+            </div>
+        </div>
+        <h3 class='give-thoughts-header'>What are your thoughts on {{ page.product-title }}?</h3>
 
-<hr>
-<h2>What is {{ page.product-title }}?</h2>
-<blockquote> {{ page.product-description | markdownify }}</blockquote>
+        <div id="graphcomment"></div>
+        <script type="text/javascript">
+            /* - - - CONFIGURATION VARIABLES - - - */
 
-<h3>What are your thoughts on {{ page.product-title }}?</h3>
+            // make sure the id is yours
+            window.gc_params = {
+            graphcomment_id: 'defiprime_prod',
 
-<div id="graphcomment"></div>
-<script type="text/javascript">
+            // if your website has a fixed header, indicate it's height in pixels
+            fixed_header_height: 0,
+            };
 
-/* - - - CONFIGURATION VARIABLES - - - */
+            /* - - - DON'T EDIT BELOW THIS LINE - - - */
 
-// make sure the id is yours
-window.gc_params = {
-graphcomment_id: 'defiprime_prod',
-
-// if your website has a fixed header, indicate it's height in pixels
-fixed_header_height: 0,
-};
-
-/* - - - DON'T EDIT BELOW THIS LINE - - - */
-
-(function() {
-var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
-gc.src = 'https://graphcomment.com/js/integration.js';
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
-})();
-</script>
-
-  </article>
-  <h3>Related products in <a href="/{{ page.colpermalink }}">{{ page.coltitle }}</a>:</h3>
+            (function() {
+            var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+            gc.src = 'https://graphcomment.com/js/integration.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+            })();
+        </script>
+    </article>
+  <h3 class='related-products'>Related products in <a href="/{{ page.colpermalink }}">{{ page.coltitle }}</a>:</h3>
   <section class="tiles">
     {% assign posts = site[page.collection] | sample:3 %}
 
