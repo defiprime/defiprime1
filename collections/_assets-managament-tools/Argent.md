@@ -7,4 +7,5 @@ platform: ios
 product-description: Argent is a wallet for Ethereum-based crypto-assets and apps.
 coltitle:  "Asset Management Tools"
 colpermalink: assets-managament-tools
+twitter: https://twitter.com/argenthq
 ---

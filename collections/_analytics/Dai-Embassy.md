@@ -6,4 +6,5 @@ ecosystem: ethereum
 product-description: Collateralized Debt Position (CDP) statistics and management tools for the MakerDAO platform.
 coltitle:  "Analytics"
 colpermalink: defi-analytics
+twitter: https://twitter.com/DaiEmbassy
 ---

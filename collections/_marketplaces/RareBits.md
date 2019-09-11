@@ -6,4 +6,5 @@ ecosystem: ethereum
 product-description: Rare Bits is a marketplace dedicated to the buying and selling of crypto assets.
 coltitle:  "Marketplaces"
 colpermalink: decentralized_marketplaces
+twitter: https://twitter.com/rarebits_io
 ---

@@ -7,4 +7,6 @@ type: non-custodial
 product-description: Compound is an open-source, autonomous protocol built for developers, enable algorithmic, efficient money markets on the Ethereum.
 coltitle:  "Lending"
 colpermalink: decentralized-lending
+twitter: https://twitter.com/compoundfinance
+github: https://github.com/compound-finance/compound-protocol
 ---

@@ -6,4 +6,5 @@ ecosystem: ethereum
 product-description: Secure blockchain identity toolbox and ecosystem.
 coltitle:  "KYC & Identity"
 colpermalink: decentralized_kyc_identity
+twitter: https://twitter.com/civickey
 ---

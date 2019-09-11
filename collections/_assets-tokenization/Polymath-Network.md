@@ -6,4 +6,6 @@ ecosystem: ethereum
 product-description: A platform for the creation of tokenized securities.
 coltitle:  "Tokenization of Assets"
 colpermalink: assets-tokenization
+twitter: https://twitter.com/polymathnetwork
+github: https://github.com/PolymathNetwork
 ---

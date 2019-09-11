@@ -6,4 +6,5 @@ ecosystem: ethereum
 product-description: Tracks and monitors the price, volume, and volatility of stablecoins.
 coltitle:  "Analytics"
 colpermalink: defi-analytics
+twitter: https://twitter.com/MessariCrypto
 ---

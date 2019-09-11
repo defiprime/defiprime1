@@ -6,4 +6,5 @@ ecosystem: ethereum
 product-description: Whisp is a payroll solutions build for crypto-economy. Pay your workers in crypto and automate the record-keeping.
 coltitle:  "Payments"
 colpermalink: payments
+twitter: https://twitter.com/whisp_money
 ---

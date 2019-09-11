@@ -6,4 +6,6 @@ ecosystem: ethereum
 product-description: Neufund is a platform for blockchain-based fundraising and assets tokenization.
 coltitle:  "Tokenization of Assets"
 colpermalink: assets-tokenization
+twitter: https://twitter.com/neufundorg/
+github: https://github.com/Neufund
 ---

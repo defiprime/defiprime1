@@ -7,4 +7,5 @@ type: non-custodial
 product-description: EOS-native decentralized cryptocurrency exchange.
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
+twitter: https://twitter.com/EOSDAQ_DEX
 ---

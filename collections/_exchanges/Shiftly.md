@@ -7,4 +7,5 @@ type: non-custodial
 product-description: Shiftly enables you to search the best prices, compare and swap your cryptocurrencies instantly.
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
+twitter: https://twitter.com/shiftlyfinance
 ---

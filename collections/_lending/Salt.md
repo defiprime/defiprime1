@@ -7,4 +7,5 @@ type: cefi
 product-description: A lending and borrowing platform that allows users to leverage their crypto-assets to secure loans.
 coltitle:  "Lending"
 colpermalink: decentralized-lending
+twitter: https://twitter.com/SALTlending
 ---
