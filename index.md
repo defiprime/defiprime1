@@ -37,7 +37,8 @@ redirect_from:
     {% for collection in collections %}
         {% assign docArray = collection.docs | concat: docArray %}
     {% endfor %}
-    {% assign documents = docArray | sort: 'last-modified-date' %}
+    {% assign documents = docArray | sort: 'date' %}
+	{% comment %} The most recently __changed__ is last-modified-date. Temporarily swithing to __date__ {% endcomment %}
     {% for document in documents limit: 6 %}
 		<article>
 			<a class='recent_blog_link' href="{{ document.product-url }}">
