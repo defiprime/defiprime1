@@ -41,7 +41,7 @@ redirect_from:
 	{% comment %} The most recently __changed__ is last-modified-date. Temporarily swithing to __date__ {% endcomment %}
     {% for document in documents limit: 6 %}
 		<article>
-			<a class='recent_blog_link' href="{{ document.product-url }}">
+			<a class='recent_blog_link' href="/product/{{ document.product-title | slugify: 'latin'}}">
 				<img src="{{ document.image }}">
 				<h2>{{ document.product-title }}</h2>
 			</a>
