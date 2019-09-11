@@ -6,7 +6,7 @@ redirect_from:
   - product
 ---
 <header class='main-page-header'>
-	<h1>List of the best Decentralized Finance Products</h1>
+	<h1>DeFi and Open Finance</h1>
 	<span>
 	Decentralized Finance (DeFi) is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries.
 	</span>
@@ -43,7 +43,7 @@ redirect_from:
 		<article>
 			<a class='recent_blog_link' href="{{ document.product-url }}">
 				<img src="{{ document.image }}">
-				<h2>{{ document.title }}</h2>
+				<h2>{{ document.product-title }}</h2>
 			</a>
 		</article>
     {% endfor %}
@@ -56,7 +56,7 @@ redirect_from:
 		<article class='latest_blog_link recent-blog-color_{{ forloop.index | random_item: link_colors }}'>
 			<a  href="{{ blog_post.permalink | prepend: '/' | prepend:site.baseurl | prepend:site.url }}">
 				<h2>{{ blog_post.title }}</h2>
-				<p>{{ blog_post.excerpt | strip_html | strip_newlines }}</p>
+				<p>{{ blog_post.intro | strip_html | strip_newlines }}</p>
 			</a>
 		</article>
 	{% endfor %}
