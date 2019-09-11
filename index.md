@@ -48,7 +48,7 @@ redirect_from:
 </section>
 <h2 class='recently_added_annotation'>Latest from defi<span>blog</span></h2>
 <section class='latest_blog_sneak_peak'>
-	{% assign posts = site.categories.blog | sort: "date"  %}
+	{% assign posts = site.categories.blog | sort: "date" | reverse  %}
 	{% for blog_post in posts limit:6 %}
 	{% assign link_colors = 'violet|cyan|orange|violetgray' | split: '|' %}
 		<article class='latest_blog_link recent-blog-color_{{ forloop.index | random_item: link_colors }}'>
@@ -58,4 +58,24 @@ redirect_from:
 			</a>
 		</article>
 	{% endfor %}
+</section>
+<h2 class='recently_added_annotation'>Upcoming DeFi events</h2>
+<section class='upcoming_events_cards'>
+{% assign events = site.events | sort: 'date' | reverse %}
+{% for event in events limit: 3 %}
+<article>
+	<a href='{{event.product-url}}'>
+		<img src='{{event.image}}'>
+		<div class='event_card_info_part'>
+			<h4>{{ event.product-title }}</h4>
+			<div class='event_card_details'>
+				<date>
+					{{ event.date | date_to_string }}
+				</date>
+				<span> {{ event.location | truncate: 31 }} </span>
+			</div>
+		</div>
+	</a>
+</article>
+{% endfor%}
 </section>

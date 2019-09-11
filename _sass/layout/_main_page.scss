@@ -115,10 +115,13 @@
 
     h2 {
         margin-top: 26px;
+        margin-bottom: 10px;
     }
 
     p {
         font-family: 'Open Sans';
+        font-size: 16px;
+        margin-right: 32px;
     }
 }
 .recent-blog-color_cyan:after {
@@ -132,4 +135,98 @@
 }
 .recent-blog-color_violetgray:after {
     background: #8B8BB8;
+}
+
+.upcoming_events_cards {
+    display: grid;
+    grid-template-columns: 33.3333% 33.3333% 33.3333%;
+    grid-gap: 30px;
+    gap: 30px;
+    margin-top: 90px;
+
+    img {
+        height: 208px;
+    }
+
+    article {
+        box-shadow: 0px 0px 6px rgba(41, 41, 132, 0.12);
+    }
+
+    h4 {
+        margin-left: 15px;
+        font-family: Kanit;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 120%;
+        color: #292984;
+        text-transform: none;
+        letter-spacing: 0;
+        margin-bottom: 6px;
+    }
+
+    date {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 160%;
+
+        color: #8B8BB8;
+        position: relative;
+        padding-left: 26px;
+
+        &:before {
+            position: absolute;
+            content: '';
+            left: 0;
+            background: url("/images/location.svg");
+            height: 20px;
+            width: 19px;
+            background-repeat: no-repeat;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    a {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    span {
+        position: relative;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 160%;
+        color: #8B8BB8;
+        padding-left: 17px;
+
+        &:before {
+            content: '';
+            height: 3px;
+            width: 3px;
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            background: #FF961C;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.event_card_details {
+    margin-left: 15px;
+    margin-bottom: 22px;
+}
+
+.event_card_info_part {
+    display: flex;
+    flex: 1;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: space-between;
 }
