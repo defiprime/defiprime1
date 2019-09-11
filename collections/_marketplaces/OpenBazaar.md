@@ -6,4 +6,6 @@ ecosystem: ethereum, bitcoin
 product-description:  OpenBazaar it’s a peer to peer application that doesn’t require middlemen, which means no fees & no restrictions.
 coltitle:  "Marketplaces"
 colpermalink: decentralized_marketplaces
+twitter: https://twitter.com/openbazaar
+github: https://github.com/openbazaar
 ---

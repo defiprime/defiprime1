@@ -6,4 +6,5 @@ ecosystem: ethereum
 product-description: Tracking Kyber Network's Trades, Activities, and Burnt Fees.
 coltitle:  "Analytics"
 colpermalink: defi-analytics
+twitter: https://twitter.com/KyberNetwork
 ---

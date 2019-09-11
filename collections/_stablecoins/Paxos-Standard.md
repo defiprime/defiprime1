@@ -6,4 +6,5 @@ ecosystem: ethereum
 product-description: PAX is a stablecoin backed 1&#58;1 by USD, and listed on over 90 exchanges.
 coltitle: Stablecoins
 colpermalink: stablecoins
+twitter: https://twitter.com/paxosglobal
 ---

@@ -6,4 +6,6 @@ ecosystem: ethereum
 product-description: Celer Network is a layer-2 scaling platform that enables fast and secure off-chain transactions for not only payment transactions, but also generalized off-chain smart contract.
 coltitle:  "Payments"
 colpermalink: payments
+twitter: https://twitter.com/CelerNetwork
+github: https://github.com/celer-network
 ---

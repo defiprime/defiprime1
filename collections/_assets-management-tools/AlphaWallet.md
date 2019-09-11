@@ -7,4 +7,6 @@ platform: ios, android
 product-description: AlphaWallet is a mobile crypto wallet that interacts with smart contracts and dApps.
 coltitle:  "Asset Management Tools"
 colpermalink: assets-management-tools
+twitter: https://twitter.com/Alpha_Wallet
+github: https://github.com/AlphaWallet
 ---

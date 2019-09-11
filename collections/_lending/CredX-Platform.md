@@ -6,4 +6,5 @@ ecosystem: ethereum, bitcoin
 product-description: A decentralized lending and borrowing network
 coltitle:  "Lending"
 colpermalink: decentralized-lending
+twitter: https://twitter.com/ihavecred
 ---

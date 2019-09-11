@@ -7,4 +7,5 @@ type: non-custodial
 product-description: YOLO is a decentralized exchange aiming to provide a frictionless token swap experience on the EOS network.
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
+twitter: https://twitter.com/YoloSwap
 ---

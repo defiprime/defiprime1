@@ -5,4 +5,5 @@ image: /images/output_md/hyperblocks.pro.png
 product-description: HyperBlocks is a professional Proof-of-Stake (PoS) service for staking Tezos, Tomochain, Cosmos, WAX, Republic Protocol, Aelf.
 coltitle:  "Staking"
 colpermalink: staking
+twitter: https://twitter.com/hyper_blocks
 ---

@@ -6,4 +6,5 @@ ecosystem: ethereum
 product-description: LoanScan provides data and analytics for loans issued via open finance protocols on the Ethereum blockchain.
 coltitle:  "Analytics"
 colpermalink: defi-analytics
+twitter: https://twitter.com/LoanScan_io
 ---

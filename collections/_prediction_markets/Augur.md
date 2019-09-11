@@ -6,4 +6,6 @@ ecosystem: ethereum
 product-description: Prediction market protocol built on Ethereum.
 coltitle: "Prediction markets"
 colpermalink: prediction-markets
+twitter: https://twitter.com/AugurProject
+github: https://github.com/AugurProject
 ---

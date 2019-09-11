@@ -6,4 +6,5 @@ ecosystem: ethereum
 product-description: A platform for fractional ownership shares in real estate assets.
 coltitle:  "Tokenization of Assets"
 colpermalink: assets-tokenization
+twitter: https://twitter.com/MeridioRE
 ---

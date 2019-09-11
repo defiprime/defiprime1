@@ -6,4 +6,5 @@ ecosystem: ethereum
 product-description: Idle enables tokenizing the best interest rate among Ethereum money markets.
 coltitle:  "Derivatives"
 colpermalink: derivatives
+twitter: https://twitter.com/idlefinance
 ---

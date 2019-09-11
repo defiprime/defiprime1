@@ -7,4 +7,5 @@ platform: ios, android
 product-description: Infinito Wallet is a mobile multi-currency wallet with dApps browser for interacting with the DeFi ecosystem.
 coltitle:  "Asset Management Tools"
 colpermalink: assets-management-tools
+twitter: https://www.infinitowallet.io/about-us/
 ---

@@ -7,4 +7,5 @@ platform: web
 product-description: DeFi Saver is a fully functional CDP dashboard that aims to help users manage CDPs and protect them from liquidation. [Interview with co-founder, Nenad Palinkašević](/cdpsaver).
 coltitle:  "Asset Management Tools"
 colpermalink: assets-management-tools
+twitter: https://twitter.com/defisaver
 ---

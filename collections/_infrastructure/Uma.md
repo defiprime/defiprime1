@@ -6,4 +6,6 @@ ecosystem: ethereum
 product-description: UMA is a decentralized financial contracts platform built to enable Universal Market Access.
 coltitle:  "Infrastructure"
 colpermalink: infrastructure
+twitter: https://twitter.com/UMAprotocol
+github: https://github.com/umaprotocol
 ---

@@ -11,9 +11,9 @@ date: 2019-04-01
 
 Defiprime.com is the digital media and analytical services provider for the DeFi community. Its mandate is to inform, educate, and connect the community as the definitive source of news dedicated to decentralized finance space.
 
-# Product Listing
+## Product Listing
 
-## Definition of 'the best DeFi Product'
+### Definition of "the best DeFi Product"
 * Are you feel comfortable to recommend this product to your IRL friends?
 * Product running on the mainnet (not coming soon, not testnet)
 * Visible product traction (not empty marketplace, not empty order book, etc).   
@@ -30,11 +30,11 @@ Good pitch for listing at Defiprime:
 
 If you'd like to submit your project, please fill [this form](https://sneg55.typeform.com/to/WRFW02).
 
-## Contact Defiprime
+### Contact Defiprime
 
 DMs open [@defiprime](https://twitter.com/defiprime)
 
-## Defiprime Media Assets
+### Defiprime Media Assets
 
 When using defiprime.com logo, keep all of its proper elements intact and do not alter them in any way.  
 

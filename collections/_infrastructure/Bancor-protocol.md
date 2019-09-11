@@ -6,4 +6,5 @@ ecosystem: ethereum, eos
 product-description: The Bancor Protocol ensures continuous liquidity and real-time price discovery between blockchain-based assets, without matching buyers and sellers.
 coltitle:  "Infrastructure"
 colpermalink: infrastructure
+twitter: https://twitter.com/bancor
 ---

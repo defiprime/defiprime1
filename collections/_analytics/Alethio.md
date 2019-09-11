@@ -6,4 +6,5 @@ ecosystem: ethereum
 product-description: Alethio is a powerful blockchain data, analytics & visualization platform.
 coltitle:  "Analytics"
 colpermalink: defi-analytics
+twitter: https://twitter.com/alethioethstats
 ---

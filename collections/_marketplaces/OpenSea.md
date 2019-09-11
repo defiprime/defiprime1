@@ -6,4 +6,5 @@ ecosystem: ethereum
 product-description: A peer to peer marketplace for crypto collectibles.
 coltitle:  "Marketplaces"
 colpermalink: decentralized_marketplaces
+twitter: https://twitter.com/opensea
 ---

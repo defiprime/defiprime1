@@ -6,4 +6,6 @@ ecosystem: bitcoin
 product-description: Sparkswap is the cryptocurrency exchange built on the Lightning Network.
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
+twitter: https://twitter.com/sparkswap
+github: https://github.com/sparkswap
 ---

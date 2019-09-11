@@ -7,4 +7,5 @@ type: cefi
 product-description: Celsius Network is a P2P borrowing and lending platform that enable users to earn interest on their cryptocurrency as well as taking loans interest, using their crypto as collateral.
 coltitle:  "Lending"
 colpermalink: decentralized-lending
+twitter: https://twitter.com/celsiusnetwork
 ---

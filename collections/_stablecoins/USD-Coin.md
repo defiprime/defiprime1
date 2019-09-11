@@ -6,4 +6,5 @@ ecosystem: ethereum
 product-description: A USD-backed stablecoin as an ERC20 token.
 coltitle: Stablecoins
 colpermalink: stablecoins
+twitter: https://twitter.com/circlepay
 ---

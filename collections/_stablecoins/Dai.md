@@ -6,4 +6,5 @@ ecosystem: ethereum
 product-description: A crypto-backed stablecoin soft-pegged to USD, built on the Ethereum and governed by the MakerDAO system.
 coltitle: Stablecoins
 colpermalink: stablecoins
+twitter: https://twitter.com/MakerDAO
 ---

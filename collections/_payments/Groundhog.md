@@ -6,4 +6,5 @@ ecosystem: ethereum
 product-description: Groundhog is a suite of tools to power recurring payments on Ethereum.
 coltitle:  "Payments"
 colpermalink: payments
+twitter: https://twitter.com/groundhog
 ---

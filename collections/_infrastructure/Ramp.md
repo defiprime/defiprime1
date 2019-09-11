@@ -6,5 +6,5 @@ ecosystem: ethereum
 product-description: The protocol powering fiat to crypto exchanges
 coltitle:  "Infrastructure"
 colpermalink: infrastructure
-
+twitter: https://twitter.com/RampNetwork
 ---

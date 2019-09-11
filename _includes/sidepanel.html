@@ -1,0 +1,60 @@
+<aside id='sidepanel'>
+    <h3>Contents</h3>
+    <hr />
+    <ul class='toc-sidepanel'></ul>
+</aside>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    window.onload = () => {
+
+        tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '.toc-sidepanel',
+            // Where to grab the headings to build the table of contents.
+            contentSelector: '.article .container',
+            listItemClass: 'toc-item',
+            orderedList: false,
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3, h4',
+            // For headings inside relative or absolute positioned containers within content.
+            hasInnerContainers: true
+        });
+
+        // $(".toc-item a").click(function(e) {
+        //     e.preventDefault();
+        //     var $this = $(this);
+        //     if ($this.next().hasClass('show')) {
+        //         $this.next().slideUp(350);
+        //         $this.next().removeClass('show');
+        //     } else {
+        //         $this.parent().parent().find('li .inner-list').removeClass('show');
+        //         $this.parent().parent().find('li .inner-list').slideUp(350);
+        //         $this.next().toggleClass('show');
+        //         $this.next().slideToggle(350);
+        //     }
+        //     window.location = $this.attr('href');
+        // })
+
+        var offsetTop = 0.15 * $(window).height(); // left aside container is 70% wide. THerefore, check for  half of 30%
+
+        var authorTag = document.querySelector('.author-about');
+
+        var firstHeading = document.querySelectorAll('.article .container h1')[0] || document.querySelectorAll('.article .container h2')[0] || document.querySelectorAll('.article .container h3')[0];
+        $(window).on('scroll', () => {
+            var elementTopOffset = $(firstHeading).offset().top - $(window).scrollTop();
+            var authorOffset = $(authorTag).offset().top - $(window).scrollTop();
+
+            var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+            if(elementTopOffset < offsetTop && authorOffset > offsetTop + 0.7 * $(window).height()) {
+                $("#sidepanel").stop(true, true).animate({
+                    opacity: 1
+                }, 200);
+            } else {
+                $("#sidepanel").stop(true, true).animate({
+                    opacity: 0
+                }, 200);
+            }
+        })
+    }
+</script>
