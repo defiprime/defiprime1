@@ -12,7 +12,7 @@
 }
 
 .defi_events_introduction {
-    width: 730px;
+    max-width: 730px;
     height: 81px;
     font-family: Open Sans;
     font-style: normal;
@@ -57,3 +57,9 @@
         }
     }
 } 
+
+@media screen and (max-width: 480px) {
+    #events-body  #coming_soon{
+        margin-bottom: -79px;
+    }
+}
