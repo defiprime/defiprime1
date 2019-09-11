@@ -25,15 +25,6 @@
 }
 
 #events-body {
-    .upcoming_events_cards {
-        article {
-            transition: .2s ease-in-out all;
-        }
-        article:hover {
-            box-shadow: 0 0 0 1px #8F68FC,0px 2px 12px rgba(41,41,132,0.24);
-            transform: translateY(-3%);
-        }
-    }
     #coming_soon{
         position: relative;
         margin-top: 179px;
