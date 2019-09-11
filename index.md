@@ -33,7 +33,8 @@ redirect_from:
 <h2 class='recently_added_annotation'>Recently added</h2>
 <section class="tiles" id='recently_added_section'>
     {% assign docArray = "" | split: "" %}
-    {% for collection in site.collections %}
+	{% assign collections = site.collections | where_exp: "coll", "coll.label != 'events'" | where_exp: "coll", "coll.label != 'posts'"  %}
+    {% for collection in collections %}
         {% assign docArray = collection.docs | concat: docArray %}
     {% endfor %}
     {% assign documents = docArray | sort: 'last-modified-date' %}
