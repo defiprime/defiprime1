@@ -29,5 +29,33 @@ redirect_from:
 		{% endif %}
 	{% endfor %}
 {% endfor %}
-
+</section>
+<h2 class='recently_added_annotation'>Recently added</h2>
+<section class="tiles" id='recently_added_section'>
+	{% assign posts = site.categories.blog | sort: "date"  %}
+	{% for blog_post in posts limit:6 %}
+		{% capture blog_image %}
+			{{ blog_post.featured-image }}
+		{% endcapture %}
+		{% for collection in site.collections %}
+			{% if collection.label != 'events' and collection.label != 'posts' %}
+				{% for document in collection.docs %}
+					{% assign doc_title = document.title | upcase %}
+					{% assign blog_title = blog_post.title | upcase %}
+					{% assign doc_prod_title = document.product-title | upcase %}
+					{% if document.image and blog_title contains doc_title or blog_title contains doc_prod_title %}
+						{% capture blog_image %}
+							{{ document.image }}
+						{% endcapture %}
+					{% endif %}
+				{% endfor %}
+			{% endif %}
+		{% endfor %}
+		<article>
+			<a class='recent_blog_link' href="{{ blog_post.permalink | prepend:site.baseurl | prepend:site.url }}">
+				<img src="{{ blog_image }}">
+				<h2>{{ blog_post.title }}</h2>
+			</a>
+		</article>
+	{% endfor %}
 </section>

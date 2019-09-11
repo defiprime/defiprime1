@@ -54,3 +54,28 @@
     color: #292984;
     margin-bottom: -38px;
 }
+
+.recently_added_annotation {
+    font-family: Kanit;
+    margin-top: 60px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0;
+    text-transform: none;
+    text-align: center;
+    color: #292984;
+    margin-bottom: -38px;
+}
+.recent_blog_link {
+    padding: 0 !important;
+
+    h2 {
+        color: #292984;
+        padding: 7px 18px;
+    }
+} 
+#recently_added_section article:hover {
+    transform: translateY(-5%);
+}

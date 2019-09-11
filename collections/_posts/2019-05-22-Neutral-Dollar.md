@@ -1,6 +1,6 @@
 ---
 layout: blog
-title:  "Neutral"
+title:  "Neutral Dollar"
 permalink: neutral
 h1title: Neutral Dollar the first meta-stablecoin  
 pagetitle: Neutral Dollar the first meta-stablecoin   
