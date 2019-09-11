@@ -6,4 +6,5 @@ ecosystem: ethereum
 product-description: The compliance platform for digitizing securities on the blockchain.
 coltitle:  "Tokenization of Assets"
 colpermalink: assets-tokenization
+twitter: https://twitter.com/securitize
 ---

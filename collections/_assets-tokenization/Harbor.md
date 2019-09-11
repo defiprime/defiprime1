@@ -6,4 +6,5 @@ ecosystem: ethereum
 product-description: Harbor is an all-in-one platform for digital securities such as funds, private equity, and commercial real estate.
 coltitle:  "Tokenization of Assets"
 colpermalink: assets-tokenization
+twitter: https://twitter.com/harbor
 ---

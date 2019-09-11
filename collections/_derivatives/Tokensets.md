@@ -6,4 +6,5 @@ ecosystem: ethereum
 product-description: TokenSets is the asset management platform with tokenized trading strategies facilitated by Set Protocol’s smart contract system. [Interview with Tokensets creators](/tokensets).
 coltitle:  "Derivatives"
 colpermalink: derivatives
+twitter: https://twitter.com/SetProtocol
 ---

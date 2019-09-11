@@ -7,4 +7,5 @@ type: non-custodial
 product-description: Non-custodial digital asset lending platform for secured loans originated, settled, serviced and managed on Ethereum.
 coltitle:  "Lending"
 colpermalink: decentralized-lending
+twitter: https://twitter.com/bloqboard
 ---

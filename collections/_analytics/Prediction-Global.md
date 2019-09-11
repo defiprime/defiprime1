@@ -6,4 +6,5 @@ ecosystem: ethereum
 product-description: Shows a list of all the markets on Augur.
 coltitle:  "Analytics"
 colpermalink: defi-analytics
+twitter: https://twitter.com/PredictionsGlbl
 ---

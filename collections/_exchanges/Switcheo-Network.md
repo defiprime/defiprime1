@@ -7,4 +7,5 @@ type: non-custodial
 product-description: Switcheo Network is the first decentralized cryptocurrency exchange on the NEO blockchain allows cross-chain swapping and trading of EOS, Ethereum and NEO tokens.
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
+twitter: https://twitter.com/switcheonetwork
 ---

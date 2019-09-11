@@ -7,4 +7,5 @@ type: non-custodial
 product-description: Decentralized exchange with global fiat gateways.
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
+twitter: https://twitter.com/stellarxhq
 ---

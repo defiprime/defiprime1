@@ -6,4 +6,6 @@ ecosystem: ethereum
 product-description: Physical gold with DGX tokens, where 1 DGX represents 1 gram of gold on Ethereum.
 coltitle: Stablecoins
 colpermalink: stablecoins
+twitter: https://twitter.com/@DigixGlobal
+github: https://github.com/digixglobal
 ---

@@ -7,4 +7,5 @@ product-description: SODA is a DAO for lending and borrowing crypto-assets. You 
 type: cefi
 coltitle:  "Lending"
 colpermalink: decentralized-lending
+twitter: https://twitter.com/sodacrypto
 ---

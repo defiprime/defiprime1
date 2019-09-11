@@ -6,4 +6,6 @@ ecosystem: ethereum
 product-description: Decentralized infrastructure for self-sovereign identity.
 coltitle:  "KYC & Identity"
 colpermalink: decentralized_kyc_identity
+twitter: https://twitter.com/GETJolocom
+github: https://github.com/jolocom
 ---

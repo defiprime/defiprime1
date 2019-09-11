@@ -6,4 +6,5 @@ ecosystem: ethereum, stellar
 product-description: TokenSoft enables issuers, financial institutions, broker-dealers, real estate companies, and funds to meet compliance requirements for digital securities on the blockchain at issuance, distribution, and transfer.
 coltitle:  "Tokenization of Assets"
 colpermalink: assets-tokenization
+twitter: https://twitter.com/tokensoftinc
 ---

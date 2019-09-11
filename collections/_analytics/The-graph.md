@@ -6,4 +6,6 @@ ecosystem: ethereum
 product-description: The Graph is a decentralized protocol for indexing and querying data from blockchains.
 coltitle:  "Analytics"
 colpermalink: defi-analytics
+twitter: https://twitter.com/graphprotocol
+github: https://github.com/graphprotocol
 ---

@@ -7,4 +7,6 @@ platform: ios, android
 product-description: Multi cryptocurrency wallet to store your favorite ERC721 & ERC20 tokens.
 coltitle:  "Asset Management Tools"
 colpermalink: assets-managament-tools
+twitter: https://twitter.com/trustwalletapp
+github: https://github.com/trustwallet
 ---

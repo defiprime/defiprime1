@@ -7,4 +7,5 @@ platform: ios, android
 product-description: Bitpie is an multi-blockchain mobile wallet. Bitpie enables users to transact and use DApps while holding assets totally under their control.
 coltitle:  "Asset Management Tools"
 colpermalink: assets-managament-tools
+twitter: https://twitter.com/BitpieWallet
 ---

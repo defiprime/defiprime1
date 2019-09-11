@@ -6,4 +6,5 @@ ecosystem: ethereum
 product-description: Opyn is a noncustodial margin trading platform on top of Ethereum, Compound, Uniswap, and DAI, enabling anyone to go long or short.
 coltitle:  "Margin trading"
 colpermalink: margin-trading
+twitter: https://twitter.com/opyn_
 ---

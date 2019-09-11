@@ -6,4 +6,6 @@ ecosystem: ethereum
 product-description: The open identity system for the decentralized web.
 coltitle:  "KYC & Identity"
 colpermalink: decentralized_kyc_identity
+twitter: https://twitter.com/uport_me
+github: https://github.com/uport-project/
 ---

@@ -7,4 +7,5 @@ type: non-custodial
 product-description: A decentralized, real-time, and non-custodial token exchange.
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
+twitter: https://twitter.com/aurora_dao
 ---

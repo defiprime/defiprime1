@@ -7,4 +7,6 @@ type: non-custodial
 product-description: Open source protocol for algorithmic, efficient money markets on the Ethereum.
 coltitle:  "Lending"
 colpermalink: decentralized-lending
+twitter: https://twitter.com/compoundfinance
+github: https://github.com/compound-finance/compound-protocol
 ---

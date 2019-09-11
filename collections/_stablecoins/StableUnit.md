@@ -6,4 +6,6 @@ ecosystem: ethereum
 product-description: Decentralized privacy stablecoin focused on censorship resistance.  
 coltitle: Stablecoins
 colpermalink: stablecoins
+twitter: https://twitter.com/lebed2045
+github: https://github.com/StableUnit
 ---

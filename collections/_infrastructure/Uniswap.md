@@ -6,4 +6,6 @@ ecosystem: ethereum
 product-description: Uniswap is an open source protocol for automated token exchange on Ethereum.
 coltitle:  "Infrastructure"
 colpermalink: infrastructure
+twitter: https://twitter.com/UniswapExchange
+github: https://github.com/Uniswap
 ---

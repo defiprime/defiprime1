@@ -6,4 +6,6 @@ ecosystem: ethereum
 product-description: A decentralized margin lending protocol on Ethereum
 coltitle:  "Infrastructure"
 colpermalink: infrastructure
+twitter: https://twitter.com/b0xNet
+github: https://github.com/bZxNetwork
 ---

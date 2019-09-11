@@ -7,4 +7,5 @@ type: non-custodial
 product-description: The Constant P2P lending algorithm matches investors with borrowers glad to pay their rates.
 coltitle:  "Lending"
 colpermalink: decentralized-lending
+twitter: https://twitter.com/constantp2p
 ---
