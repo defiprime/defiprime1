@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="What is {{ page.product-title }}? {{ page.product-description | strip_html | strip_newlines | truncate: 160 }}">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ "/assets/css/main.css " | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     <meta property="og:title" content="{{ page.product-title }} - Reviews. What is {{ page.product-title }}?" />
@@ -42,21 +42,25 @@
         </a>
 
         <h1><a href="{{ page.product-url }}">{{ page.product-title }}</a></h1>
-
+<!--
         <span class="product-url-showcase">
             <a href="{{ page.product-url }}">{{ page.product-url }}</a>
         </span>
-
+-->
         <div class='product-description-table'>
             <a href="{{ page.product-url }}"><img src="{{ page.image }}" width="100%" alt=""></a>
             <div class='product-highlights'>
                 <h2>What is {{ page.product-title }}?</h2>
-                {% if page.twitter or page.github %}
-                    <div class='product-tags-icons'>
+                <div class='product-tags-icons'>
+
+                {% if page.twitter  %}
                         <a href='{{page.twitter}}'><i class="fab fa-twitter"></i></a>
+                        {% endif %}
+{% if page.github %}
                         <a href='{{page.github}}'><i class="fab fa-github"></i></a>
-                    </div>
+
                 {% endif %}
+                                    </div>
                 {% assign link_presented = page.product-description | markdownify | split: '<a' | size %}
                 <blockquote {% if link_presented == 1 %} style='flex: 0' {% endif %}> {{ page.product-description | markdownify }} </blockquote>
             </div>
