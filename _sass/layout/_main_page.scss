@@ -195,6 +195,17 @@
         height: 100%;
     }
 
+    p {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 180%;
+        margin: 0 15px;
+
+        color: #292984;
+    }
+
     span {
         position: relative;
         font-family: Open Sans;
@@ -220,7 +231,6 @@
 
 .event_card_details {
     margin-left: 15px;
-    margin-bottom: 22px;
 }
 
 .event_card_info_part {
@@ -229,4 +239,14 @@
     margin-top: 20px;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 22px;
+
+    &.prevent-card-stretching {
+        justify-content: start;
+        
+        .event_card_details {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
 }
