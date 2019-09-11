@@ -39,7 +39,7 @@ redirect_from:
     {% assign documents = docArray | sort: 'last-modified-date' %}
     {% for document in documents limit: 6 %}
 		<article>
-			<a class='recent_blog_link' href="{{ blog_post.permalink | prepend:site.baseurl | prepend:site.url }}">
+			<a class='recent_blog_link' href="{{ document.product-url }}">
 				<img src="{{ document.image }}">
 				<h2>{{ document.title }}</h2>
 			</a>
