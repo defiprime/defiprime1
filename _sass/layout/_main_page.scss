@@ -94,6 +94,14 @@
         box-shadow: 0px 0px 6px rgba(41, 41, 132, 0.12);
     }
 }
+@media screen and (max-width: 480px) {
+    .latest_blog_sneak_peak, .upcoming_events_cards {
+        grid-template-columns: auto !important;
+    }
+    .recently_added_annotation {
+        margin-bottom: 0;
+    }
+}
 .latest_blog_link {
     position: relative;
 
