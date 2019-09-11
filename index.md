@@ -21,7 +21,7 @@ redirect_from:
 	{% for collection in site.collections %}
 		{% if post.cards == collection.label %}
 			<article class="style{{ forloop.index | random_number: 0, 10 }}">
-				<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}">
+				<a href="{{ post.url }}">
 					<h2>{{ post.title }}</h2>
 					<span>{{ collection.docs | size }}</span>
 				</a>
