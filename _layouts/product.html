@@ -94,7 +94,7 @@
 
     {% for post in posts %}
   	<article>
-  		<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}" class="post-link">
+  		<a href="{{ post.url }}" class="post-link">
   			<div class="post-top">
   				<span class="image">
   					<img src="{{ post.image }}" alt="" />
