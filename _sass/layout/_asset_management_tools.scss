@@ -34,6 +34,9 @@
 
     &>a img {
         transition: .3s ease-in-out all;
+        width: 100%;
+        height: 175px;
+        object-fit: cover;
     }
 
     &:hover {
@@ -192,43 +195,50 @@
     }
 }
 
-.product-page #main a {
-    font-family: Kanit;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 120%;
-    transition: .2s ease-in-out color; 
+.product-page #main {
+    p a{
+        font-weight: 400;
+        font-size: 100%;
+    }
+        
+    a {
+        font-family: Kanit;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 120%;
+        transition: .2s ease-in-out color; 
 
-    color: #8F68FC;
-    border-bottom: none;
+        color: #8F68FC;
+        border-bottom: none;
 
-    &:hover {
-        color: #05D2DD;
+        &:hover {
+            color: #05D2DD;
+
+            span {
+                color: #05D2DD;
+            }
+
+            .hovered_comment {
+                opacity: 1;
+            }
+
+            .base_comment {
+                opacity: 0;
+            }
+        } 
 
         span {
-            color: #05D2DD;
+            color: #8B8BB8;
+            transition: .2s ease-in-out color;
+
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 180%;
+            vertical-align: super;
         }
-
-        .hovered_comment {
-            opacity: 1;
-        }
-
-        .base_comment {
-            opacity: 0;
-        }
-    } 
-
-    span {
-        color: #8B8BB8;
-        transition: .2s ease-in-out color;
-
-        font-family: Open Sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 180%;
-        vertical-align: super;
     }
 }
 

@@ -49,7 +49,11 @@
     position: relative;
     padding-left: 103px;
     width: 464px;
-
+    
+    @media(max-width: 480px){
+		width: 100%
+    }
+    
     img {
         left: 0;
         position: absolute;

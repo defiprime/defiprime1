@@ -82,13 +82,13 @@
 } 
 #recently_added_section article:hover {
     transform: translateY(-5%);
+    box-shadow: 0 0 0 1px #8F68FC, 0px 2px 12px rgba(41,41,132,0.24);
 }
 .latest_blog_sneak_peak {
     display: grid;
     grid-template-columns: auto auto;
     margin-top: 87px;
-    grid-gap: 30px;
-    gap: 30px;
+    gap: 30px 35px;
 
     article {
         box-shadow: 0px 0px 6px rgba(41, 41, 132, 0.12);
@@ -181,7 +181,6 @@
         color: #292984;
         text-transform: none;
         letter-spacing: 0;
-        margin-bottom: 6px;
     }
 
     date {
