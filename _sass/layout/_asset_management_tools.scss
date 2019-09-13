@@ -76,6 +76,7 @@
         font-size: 14px;
         line-height: 160%;
         flex: 1;
+        margin-bottom: 10px;
     }
 
     .market_icon, .platform_icon {
@@ -141,7 +142,7 @@
 .product-page #assets_cards .comments  {
     position: relative;
     left: 17px;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
 
     img {
         vertical-align: middle;
@@ -163,9 +164,16 @@
     }
 }
 
-.product-page #main .asset_tool_card p a{
+.product-page #main .asset_tool_card {
+    .comments a{
+        border-bottom: none;
+        font-size: inherit;
+    }
+
+    p a{
     font: inherit;
     font-family: 'Open Sans';
+    }
 }
 
 .read_next {
@@ -199,6 +207,9 @@
     p a{
         font-weight: 400;
         font-size: 100%;
+        font-weight: 400;
+        font-size: 100%;
+        font: inherit;
     }
         
     a {

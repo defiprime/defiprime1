@@ -12,6 +12,10 @@
     overflow-y: auto;
     top: 50%;
 
+    .product-page #main &{
+        color: #292984;
+    }
+
     h3 {
         font-family: Kanit;
         font-style: normal;
@@ -19,13 +23,15 @@
         font-size: 22px;
         line-height: 120%;
         margin: 28px 0px 0px 13px;
+        text-transform: none;
+        letter-spacing: inherit;
 
-        color: #292984;
     }
 
     ul {
         margin: 0;
         list-style-image: none;
+        list-style-type: none;
     }
 
     hr {
@@ -38,7 +44,7 @@
         font-family: 'Open Sans';
         margin-right: 10px;
         margin-left: -14px;
-
+        
         a:before {
             display: none;
         }
@@ -61,6 +67,13 @@
                 background: #F2F2F2;
                 content: '';
                 height:1px;
+            }
+
+            a.toc-link{
+                font: inherit;
+                &.is-active-link {
+                    font-weight: 700;
+                }
             }
         }
     }

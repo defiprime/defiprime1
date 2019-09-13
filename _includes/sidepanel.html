@@ -17,7 +17,8 @@
             // Which headings to grab inside of the contentSelector element.
             headingSelector: 'h1, h2, h3, h4',
             // For headings inside relative or absolute positioned containers within content.
-            hasInnerContainers: true
+            hasInnerContainers: true,
+            headingsOffset: -100
         });
 
         // $(".toc-item a").click(function(e) {
@@ -37,23 +38,28 @@
 
         var offsetTop = 0.15 * $(window).height(); // left aside container is 70% wide. THerefore, check for  half of 30%
 
-        var authorTag = document.querySelector('.author-about');
+        var comingSoonTag = document.querySelector('#coming_soon');
 
         var firstHeading = document.querySelectorAll('.article .container h1')[0] || document.querySelectorAll('.article .container h2')[0] || document.querySelectorAll('.article .container h3')[0];
         $(window).on('scroll', () => {
             var elementTopOffset = $(firstHeading).offset().top - $(window).scrollTop();
-            var authorOffset = $(authorTag).offset().top - $(window).scrollTop();
+            var comingSoonOffset = $(comingSoonTag).offset().top - $(window).scrollTop();
 
             var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
 
-            if(elementTopOffset < offsetTop && authorOffset > offsetTop + 0.7 * $(window).height()) {
+            if(elementTopOffset < offsetTop && comingSoonOffset > offsetTop + 0.7 * $(window).height()) {
                 $("#sidepanel").stop(true, true).animate({
                     opacity: 1
-                }, 200);
+                }, 200, function (){
+                    $(this).show();
+                });
+
             } else {
                 $("#sidepanel").stop(true, true).animate({
                     opacity: 0
-                }, 200);
+                }, 200, function (){
+                    $(this).hide();
+                });
             }
         })
     }
