@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 160 }}">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{{ "/assets/css/tooltipster/tooltipster.bundle.min.css " | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/assets/css/main.css " | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
@@ -54,23 +55,23 @@
                         {% for market_tag in market_tags %}
                             {% case market_tag %}
                                 {% when "ethereum" %}
-                                    <span atitle="Built on Ethereum or related to Ethereum ecosystem">
+                                    <span class="tooltip" title="Built on Ethereum or related to Ethereum ecosystem">
                                         <img class="market_icon" src="images/eth.svg" />
                                     </span>
                                 {% when "bitcoin" %}
-                                    <span atitle="Using Bitcoin ecosystem">
+                                    <span class="tooltip" title="Using Bitcoin ecosystem">
                                         <img class="market_icon" src="images/btc.svg" />
                                     </span>
                                 {% when "tron" %}
-                                    <span atitle="Built on Tron or related to Tron ecosystem">
+                                    <span class="tooltip" title="Built on Tron or related to Tron ecosystem">
                                         <img class="market_icon" src="images/tron.svg" />
                                     </span>
                                 {% when "stellar" %}
-                                    <span atitle="Built on Stellar or related to Stellar ecosystem">
+                                    <span class="tooltip" title="Built on Stellar or related to Stellar ecosystem">
                                         <img class="market_icon" src="images/stellar.svg" />
                                     </span>
                                 {% when "eos" %}
-                                    <span atitle="Built on EOS or related to EOS ecosystem">
+                                    <span class="tooltip" title="Built on EOS or related to EOS ecosystem">
                                         <img class="market_icon" src="images/eos.svg" />
                                     </span>
                             {% endcase %}
@@ -80,15 +81,15 @@
                         {% for platform_tag in platform_tags %}
                             {% case platform_tag %}
                                 {% when "android" %}
-                                    <span atitle="Mobile wallet for Android">
+                                    <span class="tooltip" title="Mobile wallet for Android">
                                         <img class="platform_icon" src="/images/android.svg" >
                                     </span>
                                 {% when "web" %}
-                                    <span atitle="Browser based wallet">
+                                    <span class="tooltip" title="Browser based wallet">
                                         <img class="platform_icon" src="/images/web.svg" >
                                     </span>
                                 {% when "ios" %}
-                                    <span atitle="Mobile wallet for iOS">
+                                    <span class="tooltip" title="Mobile wallet for iOS">
                                         <img class="platform_icon" src="/images/ios.svg" >
                                     </span>
                             {% endcase %}
@@ -96,11 +97,11 @@
                         {% assign type_tags = asset_tool["type"] | split: ", " %}
                         {% for type_tag in type_tags %}
                             {% if type_tag == "cefi" %}
-                                <span atitle="CeFi product. CeFi products are custodial, use centralized price feeds, initiate margin calls centrally, centrally determine interest rates, and centrally provide liquidity for their margin calls.">
+                                <span class="tooltip" title="CeFi product. CeFi products are custodial, use centralized price feeds, initiate margin calls centrally, centrally determine interest rates, and centrally provide liquidity for their margin calls.">
                                     <img class="market_icon" src="images/sefi.svg" />
                                 </span>
                             {% else %}
-                                <span atitle="Non-custodial">
+                                <span class="tooltip" title="Non-custodial">
                                     <img class="market_icon" src="images/non_custodial.svg" />
                                 </span>
                             {% endif %}

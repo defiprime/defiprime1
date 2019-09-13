@@ -56,9 +56,6 @@ header ~ p {
     &-wrap {
         display: flex;
         justify-content: space-between;
-        @include breakpoint(small) {
-            flex-wrap: wrap;
-        }
     }
     &-img {
         width: 90px;

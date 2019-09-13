@@ -197,8 +197,12 @@
         
       $("#hamburger_menu").click(function (){
         $(".nav.nav--header").slideToggle('slow');
-      })
-
+	  })
 	});
 
+	$(document).ready(function() {
+		$('.tooltip').tooltipster({
+			theme: ['tooltipster-customized']
+		});
+	});
 })(jQuery);

@@ -53,7 +53,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</header>
 
 	<script>
-		window.onload = () => {
+		//Add event handler with addEventListener (not window.onload)
+		window.addEventListener('load', () => {
 			$("#hamburger_menu_open").on('click', () => {
 				$("#header").css("overflow", "visible")
 				$(".header-content-menu").animate({
@@ -72,7 +73,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					$("#header").css("overflow", "hidden")
 				});
 			})
-		}
+		});
 	</script>
 
 

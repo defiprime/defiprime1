@@ -95,46 +95,40 @@
 
     span {
         position: relative;
+        display: inline-flex;
+        justify-content: center;
+    }
+}
 
-        &:after, &:before {
-            content: '';
-            opacity: 0;
-            transition: .2s ease-in-out opacity;
-        }
-
-        &:hover {
-            &:after {
-                content: attr(atitle);
-                padding: 7px 10px;
-                color: #fff;
-                opacity: 1;
-                position: absolute;
-                left: calc(50% - 3px);
-                top: -51px;
-                font-family: Open Sans;
+.tooltipster-sidetip.tooltipster-customized {
+    .tooltipster-box {
+      background: #292984;
+      border: 1px solid #292984;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    .tooltipster-content {
+        font-family: Open Sans;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 11px;
                 line-height: 160%;
-                transform: translateX(-50%);
-                white-space: nowrap;
-                z-index: 20px;
-                background: #292984;
-            }
-            &:before {
-                content: '';
-                opacity: 1;
-                top: -32px;
-                position: absolute;
-                left: calc(50% - 3px);
-                transform: translateX(-50%);
-                border-left: 20px solid transparent;
-                border-right: 20px solid transparent;
-                border-top: 20px solid #292984;
-            }
+      color: white;        
+              padding: 7px 10px;
+
+    }
+
+    .tooltipster-arrow{
+        &-border{
+            border-top-color: #292984;
+        };
+
+        &-background{
+            
+    border-top-color: #292984;
         }
     }
-}
+  }
 
 .tags_separator {
     display: inline-block;
@@ -252,6 +246,7 @@
 @media screen and (max-width:480px) {
     #assets_cards  {
         grid-template-columns: auto;
+        justify-content: space-evenly; //positioning single column to center 
     }
     .reading_next_links {
 		padding-left: 0;
