@@ -4,7 +4,7 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 180%;
-    text-align: center;
+    text-align: left;
     color: #292984;
     max-width: 730px;
     margin-left: auto;
@@ -65,7 +65,7 @@
         letter-spacing: 0;
         text-transform: none;
         transition: .2s ease-in-out color;
-        
+
         &:hover {
             color: #05D2DD;
         }
@@ -120,7 +120,7 @@
                 font-weight: normal;
                 font-size: 11px;
                 line-height: 160%;
-      color: white;        
+      color: white;
               padding: 7px 10px;
 
     }
@@ -131,7 +131,7 @@
         };
 
         &-background{
-            
+
     border-top-color: #292984;
         }
     }
@@ -214,14 +214,14 @@
         font-size: 100%;
         font: inherit;
     }
-        
+
     a {
         font-family: Kanit;
         font-style: normal;
         font-weight: 500;
         font-size: 28px;
         line-height: 120%;
-        transition: .2s ease-in-out color; 
+        transition: .2s ease-in-out color;
 
         color: #8F68FC;
         border-bottom: none;
@@ -240,7 +240,7 @@
             .base_comment {
                 opacity: 0;
             }
-        } 
+        }
 
         span {
             color: #8B8BB8;
@@ -270,12 +270,12 @@
 @media screen and (max-width:480px) {
     #assets_cards  {
         grid-template-columns: auto;
-        justify-content: space-evenly; //positioning single column to center 
+        justify-content: space-evenly; //positioning single column to center
     }
     .reading_next_links {
 		padding-left: 0;
         grid-template-columns: auto;
-        
+
         a {
             margin: 10px 0;
         }
