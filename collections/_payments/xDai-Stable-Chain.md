@@ -1,4 +1,5 @@
 ---
+git-date: 2019-07-03T13:24:38-07:00
 product-title: xDai Stable Chain
 product-url: https://poa.network/xdai
 image: /images/output_md/poa.network.png

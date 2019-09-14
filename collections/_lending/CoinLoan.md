@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: CoinLoan
 product-url: https://coinloan.io/
 image: /images/output_md/httpscoinloanio.png

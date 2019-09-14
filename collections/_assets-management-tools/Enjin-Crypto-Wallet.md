@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Enjin Crypto Wallet
 product-url: https://enjinwallet.io
 image: /images/output_md/enjinwallet.io.png

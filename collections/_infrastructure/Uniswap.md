@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Uniswap
 product-url: https://uniswap.io/
 image: /images/output_md/httpsuniswapio.png

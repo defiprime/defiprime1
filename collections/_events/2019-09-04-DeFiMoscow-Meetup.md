@@ -1,4 +1,5 @@
 ---
+git-date: 2019-09-04T15:20:39-07:00
 product-title: DeFiMoscow Meetup
 product-url: https://defimoscow.timepad.ru/event/1055632/
 image: /images/events/general-meetup.png

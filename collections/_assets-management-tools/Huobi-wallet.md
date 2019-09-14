@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Huobi Wallet
 product-url: https://www.huobiwallet.com/en/
 image: /images/output_md/www.huobiwallet.com.png

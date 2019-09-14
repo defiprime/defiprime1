@@ -1,4 +1,5 @@
 ---
+git-date: 2019-07-01T11:18:16-07:00
 product-title: Decentralised Finance - a panel discussion
 product-url: https://www.meetup.com/London-Blockchain-Meetup/events/262574793/
 image: /images/events/London-Blockchain-Meetup.png

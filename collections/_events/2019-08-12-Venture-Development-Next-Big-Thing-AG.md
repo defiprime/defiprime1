@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: 'Cryptocurrencies and Blockchain: The end of Venture Capital as we know it?'
 product-url: https://www.meetup.com/Venture-Development-Next-Big-Thing-AG/events/263161049/
 image: /images/events/highres_483409305.jpeg

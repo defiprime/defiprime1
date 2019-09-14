@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: AnchorUSD
 product-url: https://www.anchorusd.com/
 image: /images/output_md/httpswwwanchorusdcom.png

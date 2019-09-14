@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: 'DeFi and Emerging Economies'
 product-url: https://www.eventbrite.com/e/defi-and-emerging-economies-tickets-68496716523
 image: /images/events/techstars.png

@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: 'Centrifuge Tinlake - Tokenized Assets in DeFi'
 product-url: https://www.eventbrite.com/e/centrifuge-tinlake-tokenized-assets-in-defi-tickets-69268254213
 image: /images/events/centrifuge-tinlake-tokenized-assets.jpeg

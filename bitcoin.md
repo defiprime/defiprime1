@@ -1,4 +1,5 @@
 ---
+git-date: 
 layout: ecosystem
 title: Bitcoin DeFi ecosystem
 metadescription: List of the best Bitcoin Defi Products. DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries.

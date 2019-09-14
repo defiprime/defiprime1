@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Paxos Standard
 product-url: https://www.paxos.com/pax/
 image: /images/output_md/httpswwwpaxoscompax.png

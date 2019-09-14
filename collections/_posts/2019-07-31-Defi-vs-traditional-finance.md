@@ -1,4 +1,5 @@
 ---
+git-date: 
 layout: blog
 title:  DeFi lending returns vs. traditional asset classes
 permalink: defi-lending-vs-traditional-assets

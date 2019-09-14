@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Augur
 product-url: https://www.augur.net/
 image: /images/output_md/httpswwwaugurnet.png

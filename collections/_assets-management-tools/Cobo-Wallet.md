@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Cobo Wallet
 product-url: https://cobo.com/
 image: /images/output_md/cobo.com.png

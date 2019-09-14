@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Dai
 product-url: https://makerdao.com/en/dai/
 image: /images/output_md/httpsmakerdaocomendai.png

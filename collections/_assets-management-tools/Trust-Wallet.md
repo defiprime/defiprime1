@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Trust Wallet
 product-url: https://trustwallet.com/
 image: /images/output_md/httpstrustwalletcom.png

@@ -1,4 +1,5 @@
 ---
+git-date: 2019-09-02T15:37:03-07:00
 product-title: Colendi
 product-url: https://www.colendi.com/
 image: /images/output_md/www.colendi.com.png

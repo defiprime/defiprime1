@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: MetaMask
 product-url: https://metamask.io/
 image: /images/output_md/httpsmetamaskio.png

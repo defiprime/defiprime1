@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Dolomite
 product-url: https://dolomite.io
 image: /images/output_md/dolomite.jpg

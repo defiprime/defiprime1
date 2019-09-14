@@ -1,4 +1,5 @@
 ---
+git-date: 2019-06-16T21:00:28-07:00
 layout: events
 title: events
 metadescription: List of the best DeFi events. DeFi Calendar with the best meetups, conferences, and hackathons around the world.

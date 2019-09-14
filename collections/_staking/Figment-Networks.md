@@ -1,4 +1,5 @@
 ---
+git-date: 2019-07-05T09:41:17-07:00
 product-title: Figment Networks
 product-url: https://figment.network
 image: /images/output_md/figment.network.png

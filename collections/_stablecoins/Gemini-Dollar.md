@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Gemini Dollar
 product-url: https://gemini.com/dollar/
 image: /images/output_md/httpsgeminicomdollar.png

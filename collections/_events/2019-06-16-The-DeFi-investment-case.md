@@ -1,4 +1,5 @@
 ---
+git-date: 2019-06-16T21:00:28-07:00
 product-title: The DeFi investment case
 product-url: https://www.eventbrite.com/e/the-defi-investment-case-tickets-62922398588
 image: /images/events/www.eventbrite.com.png

@@ -1,4 +1,5 @@
 ---
+git-date: 2019-09-01T11:36:48-07:00
 layout: blog
 title:  Lending Stablecoins with DeFi
 permalink: stablecoins-lending-experiment

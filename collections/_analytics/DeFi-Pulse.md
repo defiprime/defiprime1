@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: DeFi Pulse
 product-url: https://defipulse.com/
 image: /images/output_md/defipulse.com.png

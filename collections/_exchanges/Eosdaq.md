@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: eosdaq
 product-url: https://eosdaq.com/
 image: /images/output_md/httpseosdaqcom.png

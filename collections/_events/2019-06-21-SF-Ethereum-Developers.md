@@ -1,4 +1,5 @@
 ---
+git-date: 2019-06-21T16:42:04-07:00
 product-title: A Technical Overview of the Compound Protocol
 product-url: https://www.meetup.com/SF-Ethereum-Developers/events/262463124/
 image: /images/events/compound-meetup.com.png

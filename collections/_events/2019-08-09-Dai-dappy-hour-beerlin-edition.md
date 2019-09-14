@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: 'DAI Dappy Hour - BEERlin Edition'
 product-url: https://www.eventbrite.com/e/dai-dappy-hour-beerlin-edition-tickets-67537617833
 image: /images/events/298255239762_1_original.jpeg

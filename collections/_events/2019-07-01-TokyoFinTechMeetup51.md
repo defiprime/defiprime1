@@ -1,4 +1,5 @@
 ---
+git-date: 2019-07-01T10:57:32-07:00
 product-title: Tokyo FinTech Meetup - MakerDAO
 product-url: https://www.meetup.com/tokyofintech/events/262658501/
 image: /images/events/TokyoFinTechMeetup51.jpeg

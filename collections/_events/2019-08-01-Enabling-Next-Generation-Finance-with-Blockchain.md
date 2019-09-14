@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: 'Enabling Next-Generation Finance with Blockchain'
 product-url: https://www.eventbrite.com/e/enabling-next-generation-finance-with-blockchain-tickets-67043014461
 image: /images/events/nextgenfin.jpeg

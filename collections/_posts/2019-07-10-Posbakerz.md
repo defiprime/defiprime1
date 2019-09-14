@@ -1,4 +1,5 @@
 ---
+git-date: 2019-07-09T19:45:20-07:00
 layout: blog
 title:  POS Bakerz
 permalink: posbakerz

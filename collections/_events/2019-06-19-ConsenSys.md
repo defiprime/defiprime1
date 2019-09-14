@@ -1,4 +1,5 @@
 ---
+git-date: 2019-06-19T12:49:30-07:00
 product-title: ConsenSys Labs Virtual Hackathon
 product-url: https://pages.consensys.net/consensys-labs-virtual-hackathon-signup-1
 image: /images/events/pages.consensys.net.png

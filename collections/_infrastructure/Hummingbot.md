@@ -1,4 +1,5 @@
 ---
+git-date: 2019-09-05T16:17:44-07:00
 product-title: Hummingbot
 product-url: https://hummingbot.io
 image: /images/output_md/hummingbot.io.png

@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Bitpie
 product-url: https://bitpie.com/
 image: /images/output_md/bitpie.com.png

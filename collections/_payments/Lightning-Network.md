@@ -1,4 +1,5 @@
 ---
+git-date: 2019-07-03T13:24:38-07:00
 product-title: Lightning Network
 product-url: https://lightning.network/
 image: /images/output_md/lightning.network.png

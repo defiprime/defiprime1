@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: District0x
 product-url: https://district0x.io/
 image: /images/output_md/httpsdistrict0xio.png

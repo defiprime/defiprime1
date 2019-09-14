@@ -1,4 +1,5 @@
 ---
+git-date: 2019-07-16T08:52:56-07:00
 product-title: Banking On Blockchain - Exploring Decentralization [Expert Panel]
 product-url: https://www.eventbrite.com/e/banking-on-blockchain-exploring-decentralization-expert-panel-july-18-tickets-63582330462
 image: /images/events/bankingpanel.png

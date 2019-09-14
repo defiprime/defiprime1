@@ -1,4 +1,5 @@
 ---
+git-date: 2019-05-29T18:32:30-07:00
 product-title: Dune Analytics
 product-url: https://www.duneanalytics.com/
 image: /images/output_md/www.duneanalytics.com.png

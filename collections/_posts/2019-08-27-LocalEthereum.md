@@ -1,4 +1,5 @@
 ---
+git-date: 2019-08-27T21:50:05-07:00
 layout: blog
 title: LocalEthereum
 permalink: localethereum

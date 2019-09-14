@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: 'Webinar: DeFi Tech Talk #9 - An overview of Synthetic Assets on Ethereum'
 product-url: https://register.gotowebinar.com/register/8700500782267442699
 image: /images/events/DeFiTechTalk9.png

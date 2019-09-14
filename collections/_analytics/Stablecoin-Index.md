@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Stablecoin Index
 product-url: https://stablecoinindex.com/
 image: /images/output_md/httpsstablecoinindexcom.png

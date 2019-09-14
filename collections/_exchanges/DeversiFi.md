@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: DeversiFi
 product-url: https://www.deversifi.com/
 image: /images/output_md/www.deversifi.com.png

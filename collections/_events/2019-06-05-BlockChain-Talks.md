@@ -1,4 +1,5 @@
 ---
+git-date: 2019-06-16T21:00:28-07:00
 product-title: BlockChain Talks [special] DEFI and tokenomics
 product-url: https://blockchaintalks.io/events/18/
 image: /images/events/blockchaintalks.io.png

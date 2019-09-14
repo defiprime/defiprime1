@@ -1,4 +1,5 @@
 ---
+git-date: 2019-06-14T15:56:54-07:00
 product-title: dYdX
 product-url: https://dydx.exchange/
 image: /images/output_md/dydx.exchange.png

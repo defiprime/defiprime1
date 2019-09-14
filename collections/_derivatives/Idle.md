@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Idle
 product-url: https://idle.finance/
 image: /images/output_md/idle.finance.png

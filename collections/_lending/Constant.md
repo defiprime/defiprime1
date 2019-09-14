@@ -1,4 +1,5 @@
 ---
+git-date: 2019-06-26T18:40:56-07:00
 product-title: Constant
 product-url: https://www.myconstant.com
 image: /images/output_md/www.myconstant.com.png

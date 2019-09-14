@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Argent
 product-url: https://argent.link/defiprime
 image: /images/output_md/httpswwwargentxyz.png

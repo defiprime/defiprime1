@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: imToken
 product-url: https://token.im/
 image: /images/output_md/token.im.png

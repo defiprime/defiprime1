@@ -1,4 +1,5 @@
 ---
+git-date: 2019-05-22T11:21:50-07:00
 product-title: BlockFi
 product-url: https://blockfi.com/
 image: /images/output_md/httpsblockficom.png

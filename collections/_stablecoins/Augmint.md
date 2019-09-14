@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Augmint
 product-url: https://www.augmint.org/
 image: /images/output_md/httpswwwaugmintorg.png

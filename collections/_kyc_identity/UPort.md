@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: uPort
 product-url: http://uport.me/
 image: /images/output_md/httpuportme.png

@@ -1,4 +1,5 @@
 ---
+git-date: 2019-07-02T18:41:34-07:00
 product-title: ParaSwap
 product-url: https://paraswap.io
 image: /images/output_md/paraswap.io.png

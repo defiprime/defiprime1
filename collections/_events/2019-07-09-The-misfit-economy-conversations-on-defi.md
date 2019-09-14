@@ -1,4 +1,5 @@
 ---
+git-date: 2019-07-09T12:53:49-07:00
 product-title: The Misfit Economy - Conversations on DeFi
 product-url: https://www.eventbrite.com/e/the-misfit-economy-conversations-on-defi-tickets-64968225712
 image: /images/events/misfit.jpeg

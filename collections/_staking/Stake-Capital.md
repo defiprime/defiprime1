@@ -1,4 +1,5 @@
 ---
+git-date: 2019-07-05T09:09:09-07:00
 product-title: Stake Capital
 product-url: https://www.stake.capital
 image: /images/output_md/www.stake.capital.png

@@ -1,4 +1,5 @@
 ---
+git-date: 2019-06-20T13:50:07-07:00
 product-title: Linum Labs Blockchain Community Call
 product-url: https://t.co/0qobgkdVAm
 image: /images/events/linumlabs.png

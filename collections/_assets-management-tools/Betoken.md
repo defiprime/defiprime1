@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Betoken
 product-url: https://betoken.fund/
 image: /images/output_md/betoken.fund.png

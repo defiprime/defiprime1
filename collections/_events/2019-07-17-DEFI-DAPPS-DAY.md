@@ -1,4 +1,5 @@
 ---
+git-date: 2019-07-17T09:43:45-07:00
 product-title: DEFI DAPPS DAY
 product-url: https://www.defidappsday.com/
 image: /images/events/www.defidappsday.com.png

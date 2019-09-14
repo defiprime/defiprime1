@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: 'FINWISE Summit'
 product-url: https://www.finwisesummit.com/index.html
 image: /images/events/FINWISESUMMIT_·_MACAO.png

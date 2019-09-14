@@ -1,4 +1,5 @@
 ---
+git-date: 2019-06-16T21:00:28-07:00
 product-title: DeFi Alliance Summer Reception in Shanghai
 product-url: https://www.fintech4good.co/events-1/defi-alliance-summer-reception-in-shanghai
 image: /images/events/www.fintech4good.co.png

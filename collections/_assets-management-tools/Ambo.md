@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Ambo
 product-url: https://ambo.io/
 image: /images/output_md/httpsamboio.png

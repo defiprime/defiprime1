@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Synthetix
 product-url: https://www.synthetix.io/
 image: /images/output_md/httpswwwsynthetixio.png

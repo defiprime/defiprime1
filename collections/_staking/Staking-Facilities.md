@@ -1,4 +1,5 @@
 ---
+git-date: 2019-07-05T09:41:17-07:00
 product-title: Staking Facilities
 product-url: https://stakingfacilities.com
 image: /images/output_md/stakingfacilities.com.png

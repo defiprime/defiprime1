@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: OpenLaw Finance
 product-url: https://finance.openlaw.io
 image: /images/output_md/finance.openlaw.io.png

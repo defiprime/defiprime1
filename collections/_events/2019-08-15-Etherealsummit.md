@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: 'Ethereal Summit Tel Aviv 2019'
 product-url: https://www.etherealsummit.com/
 image: /images/events/www.etherealsummit.com.png

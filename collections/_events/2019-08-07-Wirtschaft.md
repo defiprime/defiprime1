@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: 'Token Wirtschaft 2.0: The Evolution of DeFi from Global Perspectives'
 product-url: https://www.eventbrite.co.uk/e/token-wirtschaft-20-the-evolution-of-defi-from-global-perspectives-tickets-66802101885
 image: /images/events/Wirtschaft.jpeg

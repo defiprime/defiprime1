@@ -1,4 +1,5 @@
 ---
+git-date: 2019-09-08T19:05:07-07:00
 product-title: Rimble
 product-url: https://rimble.consensys.design/
 image: /images/output_md/rimble.consensys.design.png

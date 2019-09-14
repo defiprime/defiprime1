@@ -1,5 +1,5 @@
 ---
-git-date: 2019-04-13 21:06:27 -0700
+git-date: 2019-04-13T21:06:27-07:00
 ---
 <a href="https://defiprime.com"><img src="https://defiprime.com/images/og.png" /></a>
 <div align="center">

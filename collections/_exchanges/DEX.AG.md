@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: DEX.AG
 product-url: https://dex.ag
 image: /images/output_md/dex.ag.png

@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: SALT
 product-url: https://saltlending.com/
 image: /images/output_md/httpssaltlendingcom.png

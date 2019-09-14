@@ -1,4 +1,5 @@
 ---
+git-date: 2019-05-22T12:55:33-07:00
 product-title: Neutral Dollar
 product-url: https://neutralproject.com/
 image: /images/output_md/neutralproject.com.png

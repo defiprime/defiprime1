@@ -1,4 +1,5 @@
 ---
+git-date: 2019-06-16T21:00:28-07:00
 product-title: OKEx Institutional Talks DeFi & Crypto-Derivatives
 product-url: https://www.eventbrite.com/e/okex-institutional-talks-amsterdam-tickets-61914512975
 image: /images/events/www.eventbrite.com.png

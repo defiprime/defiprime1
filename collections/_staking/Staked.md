@@ -1,4 +1,5 @@
 ---
+git-date: 2019-07-03T14:03:48-07:00
 product-title: Staked
 product-url: https://staked.us/
 image: /images/output_md/staked.us.png

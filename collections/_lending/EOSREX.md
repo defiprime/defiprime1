@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: EOSREX
 product-url: https://eosrex.io/
 image: /images/output_md/eosrex.io.png

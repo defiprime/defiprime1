@@ -1,4 +1,5 @@
 ---
+git-date: 2019-07-05T11:16:03-07:00
 product-title: DeFi Seoul
 product-url: https://www.eventbrite.com/e/defi-seoul-tickets-64411618886
 image: /images/events/defi-seoul.jpeg

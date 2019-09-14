@@ -1,4 +1,5 @@
 ---
+git-date: 2019-06-25T10:32:41-07:00
 layout: blog
 title:  "Fortmatic"
 permalink: fortmatic

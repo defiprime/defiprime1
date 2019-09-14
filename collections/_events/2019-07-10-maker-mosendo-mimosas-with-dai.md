@@ -1,4 +1,5 @@
 ---
+git-date: 2019-07-10T08:30:39-07:00
 product-title: Maker, Mosendo & Mimosas with DAI
 product-url: https://www.eventbrite.com/e/maker-mosendo-mimosas-with-dai-tickets-64589243165
 image: /images/events/Mosendo.jpeg

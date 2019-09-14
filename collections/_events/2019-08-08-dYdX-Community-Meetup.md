@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: 'dYdX meetup: Product Overview + 2019 Roadmap'
 product-url: https://www.meetup.com/dYdX-Community-Meetup-Group/events/263839586/
 image: /images/events/highres_483834213.jpeg

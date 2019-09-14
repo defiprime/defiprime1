@@ -1,5 +1,5 @@
 ---
-git-date: 2019-04-13 21:06:27 -0700
+git-date: 2019-04-13T21:06:27-07:00
 layout: default
 title: DeFi - Best Decentralized Finance(DeFi) Projects | What is DeFi in Crypto
 metadescription: Decentralized Finance(DeFi) is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols.

@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: LoanScan
 product-url: https://loanscan.io/
 image: /images/output_md/loanscan.io.png

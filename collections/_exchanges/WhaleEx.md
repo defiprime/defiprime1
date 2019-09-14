@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: WhaleEx
 product-url: https://www.whaleex.com/
 image: /images/output_md/httpswwwwhaleexcom.png

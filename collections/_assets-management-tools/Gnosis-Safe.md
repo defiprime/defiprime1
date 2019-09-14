@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Gnosis Safe
 product-url: https://safe.gnosis.io/
 image: /images/output_md/safe.gnosis.io.png

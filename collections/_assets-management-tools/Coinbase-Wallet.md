@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Coinbase Wallet
 product-url: https://wallet.coinbase.com/
 image: /images/output_md/wallet.coinbase.com.png

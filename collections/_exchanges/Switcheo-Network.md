@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Switcheo Network
 product-url: https://switcheo.network/
 image: /images/output_md/switcheo.network.png

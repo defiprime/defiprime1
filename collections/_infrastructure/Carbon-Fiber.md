@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Carbon Fiber
 product-url: https://www.carbon.money/
 image: /images/output_md/www.carbon.money.png

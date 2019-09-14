@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Jolocom
 product-url: https://jolocom.io/
 image: /images/output_md/httpsjolocomio.png

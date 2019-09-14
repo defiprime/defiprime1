@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Fulcrum
 product-url: https://fulcrum.trade
 image: /images/output_md/fulcrum.trade.png

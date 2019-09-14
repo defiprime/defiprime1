@@ -1,4 +1,5 @@
 ---
+git-date: 2019-07-02T17:45:25-07:00
 product-title: Fairdex
 product-url: https://fairdex.net
 image: /images/output_md/fairdex.net.png

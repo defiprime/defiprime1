@@ -1,4 +1,5 @@
 ---
+git-date: 2019-05-21T09:59:57-07:00
 product-title: DDEX
 product-url: https://ddex.io/
 image: /images/output_md/ddex.io.png

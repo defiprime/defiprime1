@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Neufund
 product-url: https://neufund.org/
 image: /images/output_md/httpsneufundorg.png

@@ -1,4 +1,5 @@
 ---
+git-date: 2019-09-06T09:30:21-07:00
 layout: blog
 title:  'Synthetic Assets in DeFi: Use Cases & Opportunities'
 permalink: synthetic-assets-defi

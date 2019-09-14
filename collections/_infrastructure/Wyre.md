@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Wyre
 product-url: https://www.sendwyre.com/
 image: /images/output_md/httpswwwsendwyrecom.png

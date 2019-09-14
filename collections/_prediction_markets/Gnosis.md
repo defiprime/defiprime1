@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Gnosis
 product-url: https://gnosis.io/
 image: /images/output_md/httpsgnosisio.png

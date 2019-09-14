@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Quidli
 product-url: https://quid.li/
 image: /images/output_md/quid.li.png

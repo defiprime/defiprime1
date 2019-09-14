@@ -1,4 +1,5 @@
 ---
+git-date: 2019-05-22T19:20:55-07:00
 layout: blog
 title:  "Neutral Dollar"
 permalink: neutral

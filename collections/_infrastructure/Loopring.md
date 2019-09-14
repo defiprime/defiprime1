@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Loopring
 product-url: https://loopring.org/
 image: /images/output_md/httpsloopringorg.png

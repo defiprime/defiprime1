@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: 'Polychain Tech Talk - Challenges in Building DeFi'
 product-url: https://www.eventbrite.com/e/polychain-tech-talk-challenges-in-building-defi-tickets-66968928869
 image: /images/events/polychain.jpeg

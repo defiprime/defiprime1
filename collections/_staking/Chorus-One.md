@@ -1,4 +1,5 @@
 ---
+git-date: 2019-07-05T08:44:27-07:00
 product-title: Chorus One
 product-url: https://www.chorus.one
 image: /images/output_md/www.chorus.one.png

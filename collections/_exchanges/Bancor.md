@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Bancor
 product-url: https://www.bancor.network/
 image: /images/output_md/httpswwwbancornetwork.png

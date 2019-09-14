@@ -1,4 +1,5 @@
 ---
+git-date: 2019-07-17T10:43:22-07:00
 product-title: SFBW Epicenter 2019
 product-url: https://sfblockchainweek.io/
 image: /images/events/sfblockchainweek.io.png

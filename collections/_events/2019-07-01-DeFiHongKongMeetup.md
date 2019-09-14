@@ -1,4 +1,5 @@
 ---
+git-date: 2019-07-01T11:08:22-07:00
 product-title: DeFi Hong Kong Meetup
 product-url: https://www.eventbrite.com/e/defi-hong-kong-meetups-tickets-64345667624
 image: /images/events/defi-hong-kong-meetups.jpeg

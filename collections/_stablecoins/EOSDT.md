@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: EOSDT
 product-url: https://eosdt.com/
 image: /images/output_md/httpseosdtcom.png

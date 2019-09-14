@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Settle
 product-url: https://settle.finance/
 image: /images/output_md/httpssettlefinance.png

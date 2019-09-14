@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Templum
 product-url: https://templuminc.com/
 image: /images/output_md/httpstempluminccom.png

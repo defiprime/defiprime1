@@ -1,4 +1,5 @@
 ---
+git-date: 2019-06-14T12:42:41-07:00
 layout: page
 title:  "Margin trading"
 permalink: margin-trading

@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Etherisc
 product-url: https://etherisc.com/
 image: /images/output_md/httpsetherisccom.png

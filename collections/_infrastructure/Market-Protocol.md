@@ -1,4 +1,5 @@
 ---
+git-date: 2019-07-05T12:05:34-07:00
 product-title: MARKET Protocol
 product-url: https://marketprotocol.io/
 image: /images/output_md/marketprotocol.io.png

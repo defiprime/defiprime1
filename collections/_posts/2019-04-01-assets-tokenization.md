@@ -1,4 +1,5 @@
 ---
+git-date: 
 layout: page
 title:  "Tokenization of Assets"
 permalink: assets-tokenization

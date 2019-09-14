@@ -1,4 +1,5 @@
 ---
+git-date: 2019-09-14T12:37:37-07:00
 product-title: Margin DDEX
 product-url: https://margin.ddex.io/
 image: /images/output_md/margin.ddex.io.png

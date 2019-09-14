@@ -1,4 +1,5 @@
 ---
+git-date: 2019-05-23T18:16:23-07:00
 layout: blog
 title:  "Synthetix"
 permalink: synthetix

@@ -1,4 +1,5 @@
 ---
+git-date: 2019-08-27T08:40:48-07:00
 product-title: 'Meetup: Ethereum and #DEFI'
 product-url: https://www.meetup.com/Seattle-Ethereum-Meetup/events/264007447/
 image: /images/events/highres_484003694.jpeg

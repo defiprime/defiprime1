@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: CredX Platform
 product-url: https://www.mycred.io/
 image: /images/output_md/httpswwwmycredio.png

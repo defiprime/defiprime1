@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: EOS Lynx
 product-url: https://eoslynx.com/
 image: /images/output_md/eoslynx.com.png

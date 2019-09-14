@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Sovrin
 product-url: https://sovrin.org/
 image: /images/output_md/httpssovrinorg.png

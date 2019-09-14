@@ -1,4 +1,5 @@
 ---
+git-date: 
 layout: ecosystem
 title: EOS DeFi ecosystem
 metadescription: List of the best EOS DeFi Projects. EOS DeFi dApps leverages decentralized networks to transform old financial products into trustless and transparent protocols.

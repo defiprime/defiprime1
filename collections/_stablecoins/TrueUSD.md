@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: TrueUSD
 product-url: https://www.trusttoken.com/trueusd/
 image: /images/output_md/httpswwwtrusttokencomtrueusd.png

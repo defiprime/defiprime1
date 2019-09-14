@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Dai Embassy
 product-url: https://www.daiembassy.online/
 image: /images/output_md/httpswwwdaiembassyonline.png

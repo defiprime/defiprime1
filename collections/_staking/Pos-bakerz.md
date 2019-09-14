@@ -1,4 +1,5 @@
 ---
+git-date: 2019-07-05T09:47:35-07:00
 product-title: POS Bakerz
 product-url: https://posbakerz.com/
 image: /images/output_md/posbakerz.com.png

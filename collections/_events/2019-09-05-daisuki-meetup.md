@@ -1,4 +1,5 @@
 ---
+git-date: 2019-09-05T14:13:25-07:00
 product-title: '#DAIsuki Meetup'
 product-url: https://www.offdevcon.com/events/daisuki-meetup
 image: /images/events/www.offdevcon.com.png

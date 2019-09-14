@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: IDEX
 product-url: https://auroradao.com/platform/idex/
 image: /images/output_md/httpsauroradaocomplatformidex.png

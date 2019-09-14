@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Prediction Global
 product-url: https://predictions.global
 image: /images/output_md/httpspredictionsglobal.png

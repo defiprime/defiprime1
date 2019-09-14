@@ -1,4 +1,5 @@
 ---
+git-date: 2019-07-03T14:03:48-07:00
 product-title: stake.fish
 product-url: https://stake.fish/
 image: /images/output_md/stake.fish.png

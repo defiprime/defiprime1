@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Burner Wallet
 product-url: https://xdai.io/
 image: /images/output_md/httpsxdaiio.png

@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Redeemable Dai (rDai)
 product-url: https://redeem.money
 image: /images/output_md/redeem.money.png

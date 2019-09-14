@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: dex.blue
 product-url: https://dex.blue/
 image: /images/output_md/httpsdexblue.png

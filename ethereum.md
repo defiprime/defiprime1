@@ -1,4 +1,5 @@
 ---
+git-date: 
 layout: ecosystem
 title: Ethereum DeFi Ecosystem
 metadescription: List of the best Ethereum Defi Projects, that leverages decentralized networks to transform old financial products into trustless and transparent protocols.

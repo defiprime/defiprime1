@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: KyberSwap
 product-url: https://kyberswap.com/swap/eth-dai
 image: /images/output_md/httpskyberswapcomswapeth-dai.png

@@ -1,4 +1,5 @@
 ---
+git-date: 2019-06-16T22:26:55-07:00
 product-title: Crypto Underground - What is Defi and the road ahead for mass adoption
 product-url: https://www.eventbrite.com/e/crypto-underground-what-is-defi-and-the-road-ahead-for-mass-adoption-tickets-63176296002
 image: /images/events/underground.jpeg

@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Infinito Wallet
 product-url: https://www.infinitowallet.io/
 image: /images/output_md/www.infinitowallet.io.png

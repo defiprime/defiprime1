@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: 'ETHBoston'
 product-url: https://eth.boston/
 image: /images/events/eth.boston.png

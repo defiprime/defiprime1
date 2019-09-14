@@ -1,4 +1,5 @@
 ---
+git-date: 2019-09-02T14:24:47-07:00
 product-title: CryptoFriday - Decentralised Finance Meetup
 product-url: https://www.meetup.com/Crypto010-Rotterdam-Virtual-Currency-Blockchain-Meetup/events/264476624/
 image: /images/events/www.meetup.com.png

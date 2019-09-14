@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: 'Meter Up: The State of Decentralized Finance (DeFi)'
 product-url: https://www.meetup.com/Meter-Decentralized-Finance-Meetups-SF-Bay-Area/events/262974205/
 image: /images/events/highres_483397982.jpeg

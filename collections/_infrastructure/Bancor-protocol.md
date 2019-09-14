@@ -1,4 +1,5 @@
 ---
+git-date: 
 product-title: Bancor Protocol
 product-url: https://about.bancor.network/protocol/
 image: /images/output_md/httpsaboutbancornetworkprotocol.png
