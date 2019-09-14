@@ -36,7 +36,13 @@
 		text-transform: uppercase;
 		font-weight: _font(weight-bold);
 		letter-spacing: _font(letter-spacing);
-		border-radius: 0px;
+
+		
+		
+		text-transform: none;
+		letter-spacing: normal;
+		font-family: "Open Sans";
+		-webkit-appearance: none;
 
 		&.icon {
 			&:before {

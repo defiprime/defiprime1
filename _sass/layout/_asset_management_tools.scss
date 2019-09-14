@@ -30,7 +30,9 @@
 
     box-shadow: 0px 0px 6px rgba(41, 41, 132, 0.12);
     color: #292984;
-    transition: .2s ease-in-out box-shadow;
+    transition: .3s ease-in-out all;
+    overflow: hidden;
+
 
     &>a img {
         transition: .3s ease-in-out all;
@@ -41,6 +43,7 @@
 
     &:hover {
         box-shadow: 0 0 0 1px #8F68FC, 0px 0px 6px 4px rgba(41,41,132,0.12);
+        transform: translateY(-3%);
         &>a img {
             transform: scale(1.05);
             box-shadow: 0px 0px 6px 4px rgba(41,41,132,0.12);
