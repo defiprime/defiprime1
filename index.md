@@ -1,4 +1,5 @@
 ---
+git-date: 2019-04-13 21:06:27 -0700
 layout: default
 title: DeFi - Best Decentralized Finance(DeFi) Projects | What is DeFi in Crypto
 metadescription: Decentralized Finance(DeFi) is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols.
@@ -37,7 +38,7 @@ redirect_from:
     {% for collection in collections %}
         {% assign docArray = collection.docs | concat: docArray %}
     {% endfor %}
-    {% assign documents = docArray | sort: 'date' %}
+    {% assign documents = docArray | sort: 'git-date' | reverse %}
 	{% comment %} The most recently __changed__ is last-modified-date. Temporarily swithing to __date__ {% endcomment %}
     {% for document in documents limit: 6 %}
 		<article>
