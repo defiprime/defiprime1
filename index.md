@@ -64,7 +64,7 @@ redirect_from:
 </section>
 <h2 class='recently_added_annotation'>Upcoming DeFi events</h2>
 <section class='upcoming_events_cards'>
-{% assign events = site.events | sort: 'date' | reverse %}
+{% assign events = site.events | sort: "date" | reverse %}
 {% for event in events limit: 3 %}
 <article>
 	<a href='{{event.product-url}}'>
