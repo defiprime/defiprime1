@@ -43,16 +43,17 @@
 
         <h1><a href="{{ page.product-url }}">{{ page.product-title }}</a></h1>
 
-        <a href="{{ page.product-url }}" class="button product-url-showcase">
-            <span>Go To Website</a>
-        </span>
+        
+        
 
         <div class='product-description-table'>
             <a href="{{ page.product-url }}"><img src="{{ page.image }}" width="100%" alt=""></a>
             <div class='product-highlights'>
                 <h2>What is {{ page.product-title }}?</h2>
                 <div class='product-tags-icons'>
-
+                    <a href="{{ page.product-url }}" class="button button-transparent product-url-showcase">
+                        <span>website</span>
+                    </a>
                 {% if page.twitter  %}
                         <a href='{{page.twitter}}'><i class="fab fa-twitter"></i></a>
                         {% endif %}
