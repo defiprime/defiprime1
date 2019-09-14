@@ -1,3 +1,6 @@
+---
+git-date: 2019-04-13 21:06:27 -0700
+---
 <a href="https://defiprime.com"><img src="https://defiprime.com/images/og.png" /></a>
 <div align="center">
     <p align="center">

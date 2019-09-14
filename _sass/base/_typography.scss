@@ -216,12 +216,12 @@
 	.link {
 		font-size: 14px;
 		letter-spacing: 0.05em;
-		text-transform: uppercase;
 		color: _color(purple-color);
 		@include vendor('display', 'flex');
 		@include vendor('align-items', 'center');
 		font-weight: _font(weight-bold-alt);
 	}
 	.link .text {
+		letter-spacing: 0;
 		margin-left: 16px;
 	}

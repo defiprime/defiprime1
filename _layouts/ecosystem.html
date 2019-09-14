@@ -6,8 +6,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 160 }}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ "/assets/css/main.css " | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
     <meta property="og:title" content="{{ page.h1title }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
@@ -21,31 +23,37 @@
     <meta name="twitter:title" content="{{ page.h1title }}">
     <meta name="twitter:description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 300 }}">
     <meta name="twitter:image" content="{{ page.featured-image | prepend: site.url }}">
-    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+      integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+      crossorigin="anonymous"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138327045-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() { dataLayer.push(arguments); }
       gtag('js', new Date());
 
       gtag('config', 'UA-138327045-1');
     </script>
-</head>
-<body class="product-page">
+  </head>
 
+  <body class="product-page">
+    
     {% include header.html %}
+        
+    {% include sidepanel.html html=page.toc_sidepanel  %}
     <article class="article  article--post  content  typeset">
 
-    <h1>{{ page.h1title }}</h1>
-    <div class="container">
+      <h1>{{ page.h1title }}</h1>
+      <div class="container">
 
-    {{ content | toc }}
-  </div>
-  </article>
-  {% include folowus.html %}
+        {{ content | toc }}
+      </div>
+    </article>
 
-  {% include footer.html %}
+    {% include folowus.html %}
+
+    {% include footer.html %}
 
 </body>
 

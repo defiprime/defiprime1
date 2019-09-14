@@ -1,0 +1,299 @@
+.main-page-header {
+    //background:  #E3FEFF;
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    right: 50%;
+    transform: translateX(50%);
+    top: -184px;
+    padding-top: 177px;
+    z-index: -1;
+
+    h1 {
+        color: #FF961C;
+    }
+
+    span {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 180%;
+        display: block;
+        text-align: center;
+        color: #292984;
+        max-width: 779px;
+        margin: 0 auto;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: calc(100% - 20px);
+        height: 1000px;
+        background: url("/images/bg_top.svg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 37px;
+        background-size: cover;
+    }
+}
+
+.defi_projects_annotation {
+	padding-top: 456px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0;
+    text-transform: none;
+    text-align: center;
+    color: #292984;
+    margin-bottom: -38px;
+}
+
+.recently_added_annotation {
+    font-family: Kanit;
+    margin-top: 60px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0;
+    text-transform: none;
+    text-align: center;
+    color: #292984;
+    margin-bottom: -38px;
+
+    span {
+        color: #FF961C;
+    }
+}
+.recent_blog_link {
+    padding: 0 !important;
+
+    h2 {
+        color: #292984;
+        padding: 7px 18px;
+    }
+} 
+#recently_added_section article{
+    overflow: hidden;
+    transition: .3s ease-in-out all;
+
+    >a img{
+        transition: .3s ease-in-out all;
+        width: 100%;
+        height: 175px;
+        object-fit: cover;
+    }
+    &:hover {
+        transform: translateY(-5%);
+        box-shadow: 0 0 0 1px #8F68FC, 0px 2px 12px rgba(41,41,132,0.24);
+        
+        >a img{
+            transform: scale(1.05);
+        }
+    }
+}
+.latest_blog_sneak_peak {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 87px;
+    gap: 30px 35px;
+
+    article {
+        box-shadow: 0px 0px 6px rgba(41, 41, 132, 0.12);
+        transition: .2s ease-in-out all;
+        &:hover{
+            box-shadow: 0 0 0 1px #8F68FC,0px 2px 12px rgba(41,41,132,0.24);
+            transform: translateY(-3%);
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .latest_blog_sneak_peak, .upcoming_events_cards {
+        grid-template-columns: auto !important;
+    }
+    .defi_projects_annotation,.recently_added_annotation {
+        margin-bottom: 0;
+    }
+}
+.latest_blog_link {
+    position: relative;
+
+    &:after {
+        content: '';
+        left: 0;
+        top:0;
+        height: 100%;
+        width: 6px;
+        position: absolute;
+    }
+
+    a * {
+        margin-left: 35px;
+        color: #292984;
+        text-transform: none;
+        letter-spacing: 0;
+    }
+
+    h2 {
+        margin-top: 26px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-family: 'Open Sans';
+        font-size: 16px;
+        margin-right: 32px;
+    }
+}
+.recent-blog-color_cyan:after {
+    background: #05D2DD;
+}
+.recent-blog-color_orange:after {
+    background: #FF961C;
+}
+.recent-blog-color_violet:after {
+    background: #8F68FC;
+}
+.recent-blog-color_violetgray:after {
+    background: #8B8BB8;
+}
+
+.upcoming_events_cards {
+    display: grid;
+    grid-template-columns: 33.3333% 33.3333% 33.3333%;
+    grid-gap: 30px;
+    gap: 30px;
+    margin-top: 90px;
+
+    img {
+        height: 208px;
+    }
+
+    article {
+        box-shadow: 0px 0px 6px rgba(41, 41, 132, 0.12);
+        transition: .3s ease-in-out all;
+        overflow: hidden;
+
+
+        >a img{
+            transition: .3s ease-in-out all;
+            width: 100%;
+            height: 175px;
+            object-fit: cover;
+        }
+
+        &:hover {
+            box-shadow: 0 0 0 1px #8F68FC,0px 2px 12px rgba(41,41,132,0.24);
+            transform: translateY(-3%);
+            >a img{
+                transform: scale(1.05);
+            }
+
+        }
+    }
+
+    h4 {
+        margin-left: 15px;
+        font-family: Kanit;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 120%;
+        color: #292984;
+        text-transform: none;
+        letter-spacing: 0;
+        margin-bottom: 15px;
+    }
+
+    date {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 160%;
+
+        color: #8B8BB8;
+        position: relative;
+        padding-left: 26px;
+
+        &:before {
+            position: absolute;
+            content: '';
+            left: 0;
+            background: url("/images/location.svg");
+            height: 20px;
+            width: 19px;
+            background-repeat: no-repeat;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    a {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    p {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 180%;
+        margin: 0 15px;
+
+        color: #292984;
+    }
+
+    span {
+        position: relative;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 160%;
+        color: #8B8BB8;
+        padding-left: 17px;
+
+        &:before {
+            content: '';
+            height: 3px;
+            width: 3px;
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            background: #FF961C;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.event_card_details {
+    margin-left: 15px;
+}
+
+.event_card_info_part {
+    display: flex;
+    flex: 1;
+    margin-top: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 22px;
+
+    &.prevent-card-stretching {
+        justify-content: start;
+
+        .event_card_details {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
