@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="What is {{ page.product-title }}? {{ page.product-description | strip_html | strip_newlines | truncate: 160 }}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ "/assets/css/main.css " | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     <meta property="og:title" content="{{ page.product-title }} - Reviews. What is {{ page.product-title }}?" />
@@ -33,59 +34,73 @@
     </script>
 </head>
 <body class="post">
-
     {% include header.html %}
-    <article class="article  article--post  content  typeset">
-      <a href="/{{ page.colpermalink }}"><i class="fas fa-arrow-left"></i>{{ page.coltitle }}</a>
+    <article class="article  article--post content typeset">
+        <a href="/{{ page.colpermalink }}">
+            <i class="fas fa-angle-left"></i>
+            {{ page.coltitle }}
+        </a>
 
-    <h1> <a href="{{ page.product-url }}">{{ page.product-title }}</a></h1>
+        <h1><a href="{{ page.product-url }}">{{ page.product-title }}</a></h1>
 
-    <div class="container">
+        <a href="{{ page.product-url }}" class="button product-url-showcase">
+            <span>Go To Website</a>
+        </span>
 
-<a href="{{ page.product-url }}"><img src="{{ page.image }}" width="100%" alt=""></a>
+        <div class='product-description-table'>
+            <a href="{{ page.product-url }}"><img src="{{ page.image }}" width="100%" alt=""></a>
+            <div class='product-highlights'>
+                <h2>What is {{ page.product-title }}?</h2>
+                <div class='product-tags-icons'>
 
-<hr>
-<h2>What is {{ page.product-title }}?</h2>
-<blockquote> {{ page.product-description | markdownify }}</blockquote>
+                {% if page.twitter  %}
+                        <a href='{{page.twitter}}'><i class="fab fa-twitter"></i></a>
+                        {% endif %}
+{% if page.github %}
+                        <a href='{{page.github}}'><i class="fab fa-github"></i></a>
 
-<h3>What are your thoughts on {{ page.product-title }}?</h3>
+                {% endif %}
+                                    </div>
+                {% assign link_presented = page.product-description | markdownify | split: '<a' | size %}
+                <blockquote {% if link_presented == 1 %} style='flex: 0' {% endif %}> {{ page.product-description | markdownify }} </blockquote>
+            </div>
+        </div>
+        <h3 class='give-thoughts-header'>What are your thoughts on {{ page.product-title }}?</h3>
 
-<div id="graphcomment"></div>
-<script type="text/javascript">
+        <div id="graphcomment"></div>
+        <script type="text/javascript">
+            /* - - - CONFIGURATION VARIABLES - - - */
 
-/* - - - CONFIGURATION VARIABLES - - - */
+            // make sure the id is yours
+            window.gc_params = {
+            graphcomment_id: 'defiprime_prod',
 
-// make sure the id is yours
-window.gc_params = {
-graphcomment_id: 'defiprime_prod',
+            // if your website has a fixed header, indicate it's height in pixels
+            fixed_header_height: 0,
+            };
 
-// if your website has a fixed header, indicate it's height in pixels
-fixed_header_height: 0,
-};
+            /* - - - DON'T EDIT BELOW THIS LINE - - - */
 
-/* - - - DON'T EDIT BELOW THIS LINE - - - */
-
-(function() {
-var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
-gc.src = 'https://graphcomment.com/js/integration.js';
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
-})();
-</script>
-
-  </article>
-  <h3>Related products in <a href="/{{ page.colpermalink }}">{{ page.coltitle }}</a>:</h3>
+            (function() {
+            var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+            gc.src = 'https://graphcomment.com/js/integration.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+            })();
+        </script>
+    </article>
+  <h3 class='related-products'>Related products in <a href="/{{ page.colpermalink }}">{{ page.coltitle }}</a>:</h3>
   <section class="tiles">
     {% assign posts = site[page.collection] | sample:3 %}
 
     {% for post in posts %}
   	<article>
-  		<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}" class="post-link">
+  		<a href="{{ post.url }}" class="post-link">
   			<div class="post-top">
   				<span class="image">
   					<img src="{{ post.image }}" alt="" />
   				</span>
   			</div>
-  			<div class="descr">
+  			<div class="descr2">
   				<div class="content">
   					<h3>{{ post.product-title }}</h3>
   				</div>

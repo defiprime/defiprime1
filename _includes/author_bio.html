@@ -6,28 +6,31 @@
       <div class="author-info">
          <div class="author-img">
             {% if author.image %}
-               <img src="{{ author.image }}" >
+            <img src="{{ author.image }}">
             {% endif %}
          </div>
          <div class="author-descr">
-            <div class="author-title"> {{ author.name }} </div>
+            <div class="author-title">
+               <div class="author-name">{{ author.name }}</div>
+               <div class="author-social">
+                  {% if author.twitter %}
+                  <a href="{{ author.twitter }}" class="social-link">
+                     <span class="icon fab fa-twitter">
+                        <span class="label">Twitter</span>
+                     </span>
+                  </a>
+                  {% endif %}
+                  {% if author.github %}
+                  <a href="{{ author.github }}" class="social-link">
+                     <span class="icon fab fa-github">
+                        <span class="label">Github</span></a>
+                  </span>
+                  {% endif %}
+               </div>
+            </div>
             <div class="author-skills"> {{ author.bio }} </div>
          </div>
       </div>
-      <div class="author-social">
-         {% if author.twitter %}
-            <a href="{{ author.twitter }}" class="social-link">
-               <span  class="icon fab fa-twitter">
-                  <span class="label">Twitter</span>
-               </span>
-            </a>
-         {% endif %}
-         {% if author.github %}
-            <a href="{{ author.github }}" class="social-link">
-               <span class="icon fab fa-github">
-                  <span class="label">Github</span></a>
-               </span>
-         {% endif %}
-      </div>
+
    </div>
 </div>
