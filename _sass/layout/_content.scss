@@ -87,6 +87,11 @@ header ~ p {
     &-title {
         font-size: 24px;
         color: _color(purple-color);
+        display: flex;
+        justify-content: space-between;
+    }
+    &-name{
+        align-self: flex-end;
     }
     &-skills {
         font-size: 14px;

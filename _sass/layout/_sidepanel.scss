@@ -12,6 +12,13 @@
     overflow-y: auto;
     top: 50%;
 
+    & ~ .article .container h3 {
+        display: inline-block;
+        & + p {
+            display: inline-block;
+        }
+    }
+
     .product-page #main &{
         color: #292984;
     }
