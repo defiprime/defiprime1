@@ -1,9 +1,9 @@
 .product-url-showcase {
     text-align: center;
-    display: block;
-    margin: 0 auto;
-    max-width: 170px;
-    padding: 0 10px;
+    margin: 0;
+    padding: 0px 15px;
+    margin-right: 25px;
+    height: auto;
 
     span {
         font-family: Open Sans;
@@ -24,6 +24,7 @@
 }
 .product-description-table {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 65px;
     width: 100%;
     justify-content: space-around;
@@ -44,6 +45,7 @@
     display: flex;
     flex-direction: column;
     width: 50%;
+    min-width: 320px;
 
     blockquote {
         p{
@@ -58,6 +60,17 @@
 .product-tags-icons {
     margin-top: 30px;
     margin-bottom: 28px;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    >a{
+        
+    align-self: center;
+    display: flex;
+    }
+
     svg {
         height: 26px !important;
         width: 26px !important;

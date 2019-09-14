@@ -93,3 +93,14 @@
 			opacity: 0.25;
 		}
 	}
+
+	.button-transparent{
+		color: _color(purple-color);
+		background: transparent;
+		border: 2px solid _color(purple-color);
+		&:hover{
+			
+		border: 2px solid _color(green-color);
+		}
+	}
+
