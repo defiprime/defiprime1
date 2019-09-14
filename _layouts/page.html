@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 160 }}">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ "/assets/css/tooltipster/tooltipster.bundle.min.css " | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/assets/css/main.css " | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
@@ -47,8 +47,8 @@
     <section id='assets_cards'>
         {% for asset_tool in site[page.cards] %}
             <article class="asset_tool_card">
-                <a href="{{ asset_tool['product-url']}} "><img src="{{ asset_tool['image'] }}"></a>
-                <h4><a href="{{ asset_tool['product-url']}} ">{{ asset_tool["product-title"] }}</a></h4>
+                <a href="{{ asset_tool['product-url']}}"><img src="{{ asset_tool['image'] }}"></a>
+                <h4><a href="{{ asset_tool['product-url']}}">{{ asset_tool["product-title"] }}</a></h4>
                 <div class="card_main_details">
                     <div class="asset-tool-tags">
                         {% assign market_tags = asset_tool["ecosystem"] | split: ", " %}
