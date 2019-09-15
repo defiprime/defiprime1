@@ -99,7 +99,10 @@ collections:
     output: true
     permalink: /product/:name
     section_url: /staking
-
+  dao:
+    output: true
+    permalink: /product/:name
+    section_url: /dao
 
 defaults:
   -
