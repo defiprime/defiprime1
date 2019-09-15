@@ -1,5 +1,5 @@
 ---
-git-date: 
+git-date:
 layout: ecosystem
 title: Ethereum DeFi Ecosystem
 metadescription: List of the best Ethereum Defi Projects, that leverages decentralized networks to transform old financial products into trustless and transparent protocols.
@@ -38,6 +38,14 @@ featured-image: /images/og-ethereum.png
 
 {% endfor %}
 
+{% for daos in site.dao %}
+{% if dao.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
+{% if dao.ecosystem contains 'bitcoin' %} {% endif %}
+{% if dao.ecosystem contains 'eos' %} {% endif %}
+
+{% assign counter = counter | plus: 1 %}
+
+{% endfor %}
 
 {% for exchanges in site.exchanges %}
 {% if exchanges.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
@@ -244,6 +252,20 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 
 
 {{ infrastructure.product-description }}
+{% endif %}
+{% endfor %}
+
+# Ethereum-based DAO Platforms
+
+{% for dao in site.dao %}
+{% if dao.ecosystem contains 'ethereum' %}
+### <a href="{{ dao.product-url }}">{{ dao.product-title }}</a>
+<span>
+{% if dao.ecosystem contains 'ethereum' %} ![](images/ether.png "Built on Ethereum or related to Ethereum ecosystem"){% endif %} {% if dao.ecosystem contains 'bitcoin' %} ![](/images/btc.png "Using Bitcoin ecosystem"){% endif %} {% if dao.ecosystem contains 'eos' %} ![](/images/eos.png "Built on EOS or related to EOS ecosystem"){% endif %}{% if dao.ecosystem contains 'tron' %} ![](/images/tron.png "Built on Tron or related to Tron ecosystem"){% endif %}{% if dao.ecosystem contains 'stellar' %} ![](/images/stellar.png "Built on Stellar or related to Stellar ecosystem"){% endif %}
+</span>
+
+
+{{ dao.product-description }}
 {% endif %}
 {% endfor %}
 
