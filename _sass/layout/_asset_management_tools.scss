@@ -145,14 +145,18 @@
 .product-page #assets_cards .comments  {
     position: relative;
     left: 17px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    >a{
+        position: relative;
+    }
 
     img {
         vertical-align: middle;
         transition: .2s ease-in-out opacity;
         position: absolute;
         height: 18px;
-        top: 13px;
+        top: 50%;
+        transform: translate(0, -50%);
     }
 
     span {
@@ -162,8 +166,14 @@
         font-size: 16px;
         line-height: 180%;
         color: #8B8BB8;
-        vertical-align: middle;
-        margin-left: 29px;
+        vertical-align: text-bottom;
+        margin-left: 28px;
+
+        &.gc-counter{
+            &.gc-active-comment{
+                color: _color(purple-color);
+            }
+        }
     }
 }
 
@@ -227,10 +237,10 @@
         border-bottom: none;
 
         &:hover {
-            color: #05D2DD;
+            color: _color(purple-color);
 
             span {
-                color: #05D2DD;
+                color: _color(purple-color);
             }
 
             .hovered_comment {
@@ -259,6 +269,7 @@
 .hovered_comment {
     opacity: 0;
 }
+
 
 .reading_next_links {
     display: grid;
