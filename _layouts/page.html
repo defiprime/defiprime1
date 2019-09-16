@@ -112,7 +112,7 @@
                         <a href="/product/{{ asset_tool.product-title | slugify: 'latin'}}">
                             <img class="base_comment" src="/images/no_comment.svg">
                             <img class="hovered_comment" src="/images/comment_hover.svg">
-                            <span>0</span>
+                            <span class="gc-counter" data-url="{{ site.url }}/product/{{ asset_tool.product-title | slugify: 'latin' }}">0</span>
                         </a>
                     </div>
                 </div>
@@ -121,6 +121,58 @@
     </section>
 
 </article>
+
+<!--
+    Include this javascript code after your .gc-counters elements
+-->
+<script type="text/javascript">
+
+   /* - - - CONFIGURATION VARIABLES - - - */
+
+  var website = 'defiprime_prod';
+
+  /* - - - DON'T EDIT BELOW THIS LINE - - - */
+
+  // get all counters
+  var counters = document.querySelectorAll('.gc-counter');
+  Array.prototype.forEach.call(counters, function(counter) {
+    var url = counter.dataset.url;
+    var uid = counter.dataset.uid;
+    var req = new XMLHttpRequest();
+
+    // called when the ajax request is completed
+    req.onreadystatechange = function(){
+      if (this.readyState == 4) {
+        if (this.status === 200) {
+          try {
+            var resp = JSON.parse(this.responseText);
+          } catch (e) {
+            console.error(
+              '[gc-counter] fail to decode response "' + this.responseText + '", using url "' + url + '"'
+            );
+            return;
+          }
+          if (typeof resp.count !== 'undefined') {
+            // write count
+            counter.textContent = resp.count;
+          }
+        } else {
+          console.error(
+            '[gc-counter] invalid url "' + url + '", this url is not rattached to a GraphComment page.'
+          );
+        }
+      }
+    }
+
+    // send ajax request
+    var query = 'website=' + encodeURIComponent(website)
+      + '&url=' + encodeURIComponent(url)
+      + (uid ? '&uid=' + encodeURIComponent(uid) : '')
+    ;
+    req.open('GET', 'https://graphcomment.com/api/pub/numberOfComments?' + query, true);
+    req.send();
+  });
+</script>
 
     {% include also.html %}  {% include footer.html %}
 
