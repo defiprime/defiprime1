@@ -155,6 +155,9 @@
           if (typeof resp.count !== 'undefined') {
             // write count
             counter.textContent = resp.count;
+            if(resp.count > 0){
+                counter.className += " gc-active-comment";
+            }
           }
         } else {
           console.error(
