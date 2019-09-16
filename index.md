@@ -64,21 +64,32 @@ redirect_from:
 </section>
 <h2 class='recently_added_annotation'>Upcoming DeFi events</h2>
 <section class='upcoming_events_cards'>
-{% assign events = site.events | sort: "date" | reverse %}
-{% for event in events limit: 3 %}
-<article>
-	<a href='{{event.product-url}}'>
-		<img src='{{event.image}}'>
-		<div class='event_card_info_part'>
-			<h4>{{ event.product-title }}</h4>
-			<div class='event_card_details'>
-				<date>
-					{{ event.date | date_to_string }}
-				</date>
-				<span> {{ event.location | truncate: 31 }} </span>
-			</div>
-		</div>
-	</a>
-</article>
+{% assign today_date = 'now' | date: '%s' %}
+{% assign events = site.events | sort: "date" %}
+
+{% assign counter = 0 %}
+{% for event in events %}
+	{% assign event_date = event.date | date: '%s' %}
+	{% if counter > 2 %}
+		{% break %}
+	{% endif %}
+
+	{% if event_date > today_date %}
+		{% assign counter = counter | plus:1 %}
+		<article>
+			<a href='{{event.product-url}}'>
+				<img src='{{event.image}}'>
+				<div class='event_card_info_part'>
+					<h4>{{ event.product-title }}</h4>
+					<div class='event_card_details'>
+						<date>
+							{{ event.date | date_to_string }}
+						</date>
+						<span> {{ event.location | truncate: 31 }} </span>
+					</div>
+				</div>
+			</a>
+		</article>
+	{% endif %}
 {% endfor%}
 </section>
