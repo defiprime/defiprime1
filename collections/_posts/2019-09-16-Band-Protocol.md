@@ -50,7 +50,7 @@ We believe data oracle is a HUGE space. All dApps from all blockchains will requ
 
 Our token economic model ensures that our tokens capture the value of our decentralized network. We are not a payment token, but instead follow a 'work token' model where data providers and token holders stake tokens in order to perform work - that is, providing data to the blockchain. dApps who query data need to pay small query fee, similar to API fee. These fees are accrued within the protocol and distribute back to data providers and token holders proportionate to their staked tokens.
 
-![](/images/blog/bandprotocol2.png)
+![](/images/blog/bandprotocol4.jpg)
 
 You can think of these tokens almost as paying dividends, not from thin air but actually, from the work token holders do to secure network (similar to miners in Bitcoin). So we can value our tokens using regular discounted cash flow model. If there are more data usages, there will be more revenues flowing through the protocol. Which ultimately feeds back to data providers and token holders who stake their token. We intend to stake most of our company's tokens portion to earn part of the fee as our revenues, to ensure its sustainability. So we don't just depend on the token's price.
 
