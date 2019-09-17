@@ -24,7 +24,7 @@ So while I was at Stanford, I had a chance to study cryptography class, and I fo
 
 At a high level, Band Protocol offers decentralized data oracle. Our protocol connects off-chain real-world data to smart contracts and decentralized applications. Current dApps have no easy way to gain access to real-world information, which is outside of the blockchain. Since data input essentially dictates the behavior of smart contracts, the data input has to be decentralized. Otherwise, it defeats the whole purpose of using a smart contract in the first place. It has been a critical flaw and big security loophole for many dApps.
 
-![](/images/blog/bandprotocol1.png)
+![](/images/blog/bandprotocol1.jpg)
 
 ### What's Band Protocol backstory?
 
