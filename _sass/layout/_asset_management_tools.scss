@@ -166,7 +166,7 @@
         font-size: 16px;
         line-height: 180%;
         color: #8B8BB8;
-        vertical-align: text-bottom;
+        vertical-align: text-top;
         margin-left: 28px;
 
         &.gc-counter{
@@ -278,8 +278,14 @@
     grid-gap: 24px;
 }
 
-@media screen and (max-width:480px) {
-    #assets_cards  {
+@include breakpoint(small) {
+    #assets_cards, .reading_next_links  {
+        grid-template-columns: auto auto;
+    }
+}
+
+@include breakpoint(xsmall) {
+    #assets_cards, .reading_next_links  {
         grid-template-columns: auto;
         justify-content: space-evenly; //positioning single column to center
     }

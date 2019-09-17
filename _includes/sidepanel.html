@@ -10,7 +10,7 @@
         tocbot.init({
             // Where to render the table of contents.
             tocSelector: '.toc-sidepanel',
-            // Where to grab the headings to build the table of contents.
+            // Where to grab the headings to build the table of contents. 
             contentSelector: '.article .container',
             listItemClass: 'toc-item',
             orderedList: false,
@@ -18,49 +18,34 @@
             headingSelector: 'h1, h2, h3, h4',
             // For headings inside relative or absolute positioned containers within content.
             hasInnerContainers: true,
-            headingsOffset: -100
+            headingsOffset: 10
         });
 
-        // $(".toc-item a").click(function(e) {
-        //     e.preventDefault();
-        //     var $this = $(this);
-        //     if ($this.next().hasClass('show')) {
-        //         $this.next().slideUp(350);
-        //         $this.next().removeClass('show');
-        //     } else {
-        //         $this.parent().parent().find('li .inner-list').removeClass('show');
-        //         $this.parent().parent().find('li .inner-list').slideUp(350);
-        //         $this.next().toggleClass('show');
-        //         $this.next().slideToggle(350);
-        //     }
-        //     window.location = $this.attr('href');
-        // })
-
-        var offsetTop = 0.15 * $(window).height(); // left aside container is 70% wide. THerefore, check for  half of 30%
-
-        var comingSoonTag = document.querySelector('#coming_soon');
-
         var firstHeading = document.querySelectorAll('.article .container h1')[0] || document.querySelectorAll('.article .container h2')[0] || document.querySelectorAll('.article .container h3')[0];
+        var sidepanel =  $("#sidepanel");
+        var coming_soon = $("#coming_soon");
         $(window).on('scroll', () => {
-            var elementTopOffset = $(firstHeading).offset().top - $(window).scrollTop();
-            var comingSoonOffset = $(comingSoonTag).offset().top - $(window).scrollTop();
-
-            var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-
-            if(elementTopOffset < offsetTop && comingSoonOffset > offsetTop + 0.7 * $(window).height()) {
+            var sidepanelOffset = sidepanel.offset().top;
+            var comingsoonOffset = coming_soon.offset().top;
+            var headingOffset = $(firstHeading).offset().top;
+           
+           if (sidepanelOffset + 50 < comingsoonOffset && sidepanelOffset > headingOffset) {
                 $("#sidepanel").stop(true, true).animate({
                     opacity: 1
-                }, 200, function (){
-                    $(this).show();
+                }, 200, function () {
+                    $(this).css("visibility", "visible");
                 });
-
             } else {
                 $("#sidepanel").stop(true, true).animate({
                     opacity: 0
-                }, 200, function (){
-                    $(this).hide();
+                }, 200, function () {
+                    $(this).css("visibility", "hidden");
                 });
             }
+
+            //autoscroll for active li at Table of Contents. Not the best solution. But there is no option to fire event when class s changed 
+            var activeLi = $(".is-active-li")
+            sidepanel.animate({ scrollTop: activeLi.offset().top - sidepanel.offset().top + sidepanel.scrollTop() });
         })
     }
 </script>
