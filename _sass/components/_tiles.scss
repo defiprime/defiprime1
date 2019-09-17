@@ -13,15 +13,14 @@
 
 	@include vendor('display', 'flex');
 	@include vendor('flex-wrap', 'wrap');
-	position: relative;
-	margin-left: -52px;
+    justify-content: space-between;
 
 	article {
 		@include vendor('transition', (
 			'all #{$duration} #{$ease}'
 		));
-		width: calc(#{(100% / 3)} - #{$gutter * 1});
-		margin: $gutter 0 0 $gutter;
+		width: calc((100% - 60px) / 3);
+		margin: 15px 0;
 		background: #fff;
 		box-shadow: 0px 0px 6px rgba(41, 41, 132, 0.12);
 		position: relative;
@@ -248,8 +247,6 @@
 	@include breakpoint(large) {
 		$gutter: _size(gutter) * 0.5;
 
-		margin: ($gutter * -1) 0 0 ($gutter * -1);
-
 		article {
 			width: calc(#{(100% / 3)} - #{$gutter * 1});
 			margin: $gutter 0 0 $gutter;
@@ -259,8 +256,6 @@
 	@include breakpoint(medium) {
 		$gutter: _size(gutter);
 
-		margin: ($gutter * -1) 0 0 ($gutter * -1);
-
 		article {
 			width: calc(#{(100% / 2)} - #{$gutter * 1});
 			margin: $gutter 0 0 $gutter;
@@ -269,8 +264,6 @@
 
 	@include breakpoint(small) {
 		$gutter: _size(gutter) * 0.5;
-
-		margin: ($gutter * -1) 0 0 ($gutter * -1);
 
 		article {
 			width: calc(#{(100% / 2)} - #{$gutter * 1});
