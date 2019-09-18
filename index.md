@@ -49,7 +49,7 @@ redirect_from:
 		</article>
     {% endfor %}
 </section>
-<h2 class='recently_added_annotation'>Latest from defi<span>blog</span></h2>
+<h2 class='recently_added_annotation'>Latest from DeFi <span>blog</span></h2>
 <section class='latest_blog_sneak_peak'>
 	{% assign posts = site.categories.blog | sort: "date" | reverse  %}
 	{% for blog_post in posts limit:6 %}
