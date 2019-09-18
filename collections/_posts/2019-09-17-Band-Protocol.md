@@ -67,7 +67,7 @@ The industry is still relatively new and has the potential to grow with the smar
 
 There are a few important things that differentiate us from other solutions:
 - Speed & Ease of integration: We bring data available on-chain, thus whenever a smart contract needs access to data, it can do so as a simple function call. Simple and require no block confirmation delay. Many current solutions are asynchronous and require multiple blockchain confirmation before they can process data.
-- Economic Incentive: To provide data in Band Protocol, you need to stake tokens and your reputation as collateral. This is very crucial and very different from other solutions that may not have a proper decentralized economic incentive at a protocol level.
+- Economic Incentive: To provide data in Band Protocol, you need to stake tokens and your reputation as collateral. This is very crucial and very different from other solutions that may not have proper decentralized economic incentive at a protocol level. For example, current solutions have not implemented staking and there is no concrete plan from publicly available information. Furthermore, current solutions with smart contracts on the mainnet do not have a staking mechanism and dApps are required to choose data providers they trust themselves.
 - Cost & Scalability: Since data is published on-chain. Multiple dApps can consume the same data without incurring more costs to data providers. As the system grows, we expect the price of individual queries to go down.
 
 
