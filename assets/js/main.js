@@ -201,8 +201,39 @@
 	});
 
 	$(document).ready(function() {
-		$('.tooltip').tooltipster({
-			theme: ['tooltipster-customized']
+		$(".tooltip").tooltipster({
+			theme: ['tooltipster-customized'],
+			functionPosition: function(instance, helper, data){
+				var parent = $(helper.origin).closest(".asset_tool_card");
+				
+				//if content wider than container - put in inside
+				if (data.size.width > parent.width()) {
+					data.coord.left = parent.offset().left
+					$(helper.tooltipClone).width(parent.width())
+					var diffTop = $(helper.tooltipClone).height() - data.size.height;
+					data.size.height = $(helper.tooltipClone).height();
+					data.size.width = parent.width()
+					data.coord.top -= diffTop;
+
+					return data;
+				}
+				
+				//if content go out of the left boundary - shift it inside
+				if (data.coord.left < parent.offset().left) {
+					data.coord.left = parent.offset().left
+
+					return data;
+				}
+
+				//if content go out of the right boundary - shift it inside
+				if (data.coord.left + $(helper.tooltipClone).width() - (parent.offset().left + parent.width()) > 0) {
+					data.coord.left -= data.coord.left + $(helper.tooltipClone).width() - (parent.offset().left + parent.width());
+
+					return data;
+				}
+
+				return data;
+			}
 		});
 	});
 })(jQuery);

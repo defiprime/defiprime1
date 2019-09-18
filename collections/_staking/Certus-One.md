@@ -1,5 +1,5 @@
 ---
-git-date: 
+git-date:
 product-title: Certus One
 product-url: https://certus.one/
 image: /images/output_md/certus.one.png
