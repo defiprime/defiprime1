@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>{{ page.product-title }} - Reviews. What is {{ page.product-title }}?</title>
+    <title>{{ page.product-title }} - Crypto Project Reviews. What is {{ page.product-title }}?</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -41,18 +41,15 @@
             {{ page.coltitle }}
         </a>
 
-        <h1><a href="{{ page.product-url }}">{{ page.product-title }}</a></h1>
-
-        <a href="{{ page.product-url }}" class="button product-url-showcase">
-            <span>Go To Website</a>
-        </span>
-
+        <h1>{{ page.product-title }}</h1>
         <div class='product-description-table'>
             <a href="{{ page.product-url }}"><img src="{{ page.image }}" width="100%" alt=""></a>
             <div class='product-highlights'>
                 <h2>What is {{ page.product-title }}?</h2>
                 <div class='product-tags-icons'>
-
+                    <a href="{{ page.product-url }}" class="button button-transparent product-url-showcase">
+                        <span>website</span>
+                    </a>
                 {% if page.twitter  %}
                         <a href='{{page.twitter}}'><i class="fab fa-twitter"></i></a>
                         {% endif %}
@@ -65,7 +62,7 @@
                 <blockquote {% if link_presented == 1 %} style='flex: 0' {% endif %}> {{ page.product-description | markdownify }} </blockquote>
             </div>
         </div>
-        <h3 class='give-thoughts-header'>What are your thoughts on {{ page.product-title }}?</h3>
+        <h3 class='give-thoughts-header'>What do you think of {{ page.product-title }} product?</h3>
 
         <div id="graphcomment"></div>
         <script type="text/javascript">

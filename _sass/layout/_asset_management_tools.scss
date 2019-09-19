@@ -4,7 +4,7 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 180%;
-    text-align: center;
+    text-align: left;
     color: #292984;
     max-width: 730px;
     margin-left: auto;
@@ -33,6 +33,9 @@
     transition: .3s ease-in-out all;
     overflow: hidden;
 
+    h4{
+        margin-top: 10px;
+    }
 
     &>a img {
         transition: .3s ease-in-out all;
@@ -65,7 +68,7 @@
         letter-spacing: 0;
         text-transform: none;
         transition: .2s ease-in-out color;
-        
+
         &:hover {
             color: #05D2DD;
         }
@@ -120,7 +123,7 @@
                 font-weight: normal;
                 font-size: 11px;
                 line-height: 160%;
-      color: white;        
+      color: white;
               padding: 7px 10px;
 
     }
@@ -131,7 +134,7 @@
         };
 
         &-background{
-            
+
     border-top-color: #292984;
         }
     }
@@ -145,14 +148,18 @@
 .product-page #assets_cards .comments  {
     position: relative;
     left: 17px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    >a{
+        position: relative;
+    }
 
     img {
         vertical-align: middle;
         transition: .2s ease-in-out opacity;
         position: absolute;
         height: 18px;
-        top: 13px;
+        top: 50%;
+        transform: translate(0, -50%);
     }
 
     span {
@@ -162,8 +169,14 @@
         font-size: 16px;
         line-height: 180%;
         color: #8B8BB8;
-        vertical-align: middle;
-        margin-left: 29px;
+        vertical-align: text-top;
+        margin-left: 28px;
+
+        &.gc-counter{
+            &.gc-active-comment{
+                color: _color(purple-color);
+            }
+        }
     }
 }
 
@@ -214,23 +227,23 @@
         font-size: 100%;
         font: inherit;
     }
-        
+
     a {
         font-family: Kanit;
         font-style: normal;
         font-weight: 500;
         font-size: 28px;
         line-height: 120%;
-        transition: .2s ease-in-out color; 
+        transition: .2s ease-in-out color;
 
         color: #8F68FC;
         border-bottom: none;
 
         &:hover {
-            color: #05D2DD;
+            color: _color(purple-color);
 
             span {
-                color: #05D2DD;
+                color: _color(purple-color);
             }
 
             .hovered_comment {
@@ -240,7 +253,7 @@
             .base_comment {
                 opacity: 0;
             }
-        } 
+        }
 
         span {
             color: #8B8BB8;
@@ -260,6 +273,7 @@
     opacity: 0;
 }
 
+
 .reading_next_links {
     display: grid;
     padding-left: 51px;
@@ -267,15 +281,21 @@
     grid-gap: 24px;
 }
 
-@media screen and (max-width:480px) {
-    #assets_cards  {
+@include breakpoint(small) {
+    #assets_cards, .reading_next_links  {
+        grid-template-columns: auto auto;
+    }
+}
+
+@include breakpoint(xsmall) {
+    #assets_cards, .reading_next_links  {
         grid-template-columns: auto;
-        justify-content: space-evenly; //positioning single column to center 
+        justify-content: space-evenly; //positioning single column to center
     }
     .reading_next_links {
 		padding-left: 0;
         grid-template-columns: auto;
-        
+
         a {
             margin: 10px 0;
         }

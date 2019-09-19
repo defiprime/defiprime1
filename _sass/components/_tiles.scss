@@ -13,18 +13,27 @@
 
 	@include vendor('display', 'flex');
 	@include vendor('flex-wrap', 'wrap');
-	position: relative;
-	margin-left: -52px;
+    justify-content: space-between;
 
 	article {
 		@include vendor('transition', (
 			'all #{$duration} #{$ease}'
 		));
-		width: calc(#{(100% / 3)} - #{$gutter * 1});
-		margin: $gutter 0 0 $gutter;
+		width: calc((100% - 60px) / 3);
+		margin: 15px 0;
 		background: #fff;
 		box-shadow: 0px 0px 6px rgba(41, 41, 132, 0.12);
 		position: relative;
+		transition: .2s ease-in-out all;
+		overflow: hidden;
+
+		&:hover{
+            box-shadow: 0 0 0 1px #8F68FC,0px 2px 12px rgba(41,41,132,0.24);
+            transform: translateY(-3%);
+			>a .iamge img{
+				transform: scale(1.05);
+			}
+		}
 
 		> .image {
 			@include vendor('transition', 'transform #{$duration} #{$ease}');
@@ -35,9 +44,10 @@
 			overflow: hidden;
 
 			img {
-				display: block;
+				transition: .3s ease-in-out all;
 				width: 100%;
-				height: 100%;
+				height: 175px;
+				object-fit: cover;
 			}
 
 			&:before {
@@ -237,8 +247,6 @@
 	@include breakpoint(large) {
 		$gutter: _size(gutter) * 0.5;
 
-		margin: ($gutter * -1) 0 0 ($gutter * -1);
-
 		article {
 			width: calc(#{(100% / 3)} - #{$gutter * 1});
 			margin: $gutter 0 0 $gutter;
@@ -248,8 +256,6 @@
 	@include breakpoint(medium) {
 		$gutter: _size(gutter);
 
-		margin: ($gutter * -1) 0 0 ($gutter * -1);
-
 		article {
 			width: calc(#{(100% / 2)} - #{$gutter * 1});
 			margin: $gutter 0 0 $gutter;
@@ -258,8 +264,6 @@
 
 	@include breakpoint(small) {
 		$gutter: _size(gutter) * 0.5;
-
-		margin: ($gutter * -1) 0 0 ($gutter * -1);
 
 		article {
 			width: calc(#{(100% / 2)} - #{$gutter * 1});
@@ -322,7 +326,7 @@
 				opacity: 0;
 			}
 			&:hover {
-				box-shadow: 0px 8px 12px rgba(41, 41, 132, 0.1);
+				box-shadow: 0 0 0 1px #8F68FC,0px 2px 12px rgba(41,41,132,0.24);
 				&:before {
 					opacity: 1;
 				}
@@ -448,6 +452,10 @@
 			max-height: 100%;
 			box-shadow: 0px 2px 4px rgba(41, 41, 132, 0.06);
 			background-color: #fff;
+			overflow: hidden;
+			
+			transition: .3s ease-in-out all;
+			
 			&:before {
 				position: absolute;
 				content: '';
@@ -470,6 +478,10 @@
 			&:hover {
 				transform: translateY(-10px);
 				cursor: pointer;
+				box-shadow: 0 0 0 1px #8F68FC, 0px 2px 12px rgba(41,41,132,0.24);
+				>a img{
+					transform: scale(1.05);
+				}
 			}
 			@include breakpoint(small) {
 				width: 100%;
@@ -511,6 +523,7 @@
 				border-radius: 0;
 				width: 100%;
 				height: 100%;
+				transition: .3s ease-in-out all;
 			}
 		}
 		.descr2 {

@@ -1,12 +1,6 @@
 .main-page-header {
-    //background:  #E3FEFF;
-    position: absolute;
-    width: 100%;
-    height: 600px;
-    right: 50%;
-    transform: translateX(50%);
-    top: -184px;
-    padding-top: 177px;
+    height: 360px;
+    z-index: -1;
     z-index: -1;
 
     h1 {
@@ -36,13 +30,13 @@
         background-position: center top;
         left: 50%;
         transform: translateX(-50%);
-        top: 37px;
+        top: 0px;
         background-size: cover;
+        z-index: -1;
     }
 }
 
 .defi_projects_annotation {
-	padding-top: 456px;
     font-family: Kanit;
     font-style: normal;
     font-weight: 500;
@@ -52,7 +46,6 @@
     text-transform: none;
     text-align: center;
     color: #292984;
-    margin-bottom: -38px;
 }
 
 .recently_added_annotation {
@@ -114,14 +107,7 @@
         }
     }
 }
-@media screen and (max-width: 480px) {
-    .latest_blog_sneak_peak, .upcoming_events_cards {
-        grid-template-columns: auto !important;
-    }
-    .defi_projects_annotation,.recently_added_annotation {
-        margin-bottom: 0;
-    }
-}
+
 .latest_blog_link {
     position: relative;
 
@@ -167,10 +153,11 @@
 
 .upcoming_events_cards {
     display: grid;
-    grid-template-columns: 33.3333% 33.3333% 33.3333%;
+    grid-template-columns: auto auto auto;
     grid-gap: 30px;
     gap: 30px;
     margin-top: 90px;
+
 
     img {
         height: 208px;
@@ -273,6 +260,24 @@
             background: #FF961C;
             transform: translateY(-50%);
         }
+    }
+}
+
+@include breakpoint(small) {
+    .latest_blog_sneak_peak, .upcoming_events_cards {
+        grid-template-columns: auto auto;
+    }
+    .defi_projects_annotation,.recently_added_annotation {
+        margin-bottom: 0;
+    }
+}
+
+@include breakpoint(xsmall) {
+    .latest_blog_sneak_peak, .upcoming_events_cards {
+        grid-template-columns: auto ;
+    }
+    .defi_projects_annotation,.recently_added_annotation {
+        margin-bottom: 0;
     }
 }
 
