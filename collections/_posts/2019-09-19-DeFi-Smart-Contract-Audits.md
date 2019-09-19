@@ -37,7 +37,7 @@ Scope also matters: Request that the mechanic only diagnose problems with the al
 
 It is the mechanic's job to provide advice, but it is ultimately up to the owner to decide if, when, and how to implement the recommendations.
 
-#### Daryl Hok, Certik:
+#### Daryl Hok, CertiK:
 
 In the simplest sense, a smart contract audit is a third-party review of the source code of a smart contract. Although a completed audit means that the code was reviewed, the rigorousness of the audit may vary substantially - and this rigor is really what matters for security, not merely the presence of an audit. For instance, a dApp may flaunt that no errors were found during the audit process, but it's difficult to determine whether this means that the code quality was extremely high or whether the auditor was really bad.
 
@@ -62,7 +62,7 @@ We try to make it easy to understand what happened on a security review. If you'
 
 It's no accident that these are the top four sections in all our reports.
 
-#### Daryl Hok, Certik:
+#### Daryl Hok, CertiK:
 
 In the case of Formal Verification, the results are binary - when the mathematical model runs, it either identifies an example of the vulnerability in the code, or it does find anything, which means that it's secure. As a result, our confidence is tied to the output of these results in these instances. When it is not feasible for Formal Verification to be applied, we utilize various tools to test the security, while also performing thorough manual examination.
 
@@ -92,7 +92,7 @@ It has everything to do with development process rather than awareness, or not, 
 
 I don't think there is a step five. You'll be ahead of nearly every other project if you can do these four.
 
-#### Daryl Hok, Certik:
+#### Daryl Hok, CertiK:
 
 1. Integer overflow/underflow
 2. Not updating the balance first before further operations. (reentrancy vulnerability)
@@ -116,7 +116,7 @@ If you're judging the validity of the report, then you should see if it identifi
 
 Finally, it's a red flag when a security review includes opinionated statements like, "This code is secure", "users can trust this project", or similar effusive praise for their clients. Security vendors should be careful to speak about only objective facts. Trail of Bits has [published guidelines](https://github.com/trailofbits/publications/blob/master/reviews/citation_guidelines.pdf) to help our clients speak effectively about our work with them.
 
-#### Daryl Hok, Certik:
+#### Daryl Hok, CertiK:
 
 All of CertiK's clients are provided with a cryptographically hashed QR code that act as a badge of proof; anyone can scan the QR code, and they are redirected to a website hosted on our servers that will confirm the validity of an audit. If there is a counterfeit QR code, it will either direct the user to the verified webpage of a different project, or it just won't work. Within these webpages, along with the report itself, the audited commit hash is saved, so you can also keep track of version history. If the code version has changed, we would no longer be able to confirm that the code has been fully audited, but we do allow projects to engage in free re-auditing.
 
@@ -140,7 +140,7 @@ Here are a few recommendations for evaluating a security vendor:
 
 Once you find a good security vendor, stick with them! One large review with a qualified security vendor is worth more than two small ones. You'll get more strategic results, better integration of automated testing and verification tools, and a chance to find higher severity bugs that only come with domain knowledge.
 
-#### Daryl Hok, Certik:
+#### Daryl Hok, CertiK:
 
 Much can be learned by looking at any publicly available audit reports for an auditor's clients. Within the reports, there should be a description of the tests and workflow performed during the audit process. In these reports, you may want to look past aesthetics and dive into the content of the report to find explanations of different tools and techniques used during the auditing process, familiarity of different EIP (Ethereum Improvement Proposals) and common practices, and general transparency. In CertiK audit reports, we provide a copy of the entire source code, annotated with CertiK's Formal Verification labels, so anyone can independently check and confirm the validity of the mathematical proofs.
 
@@ -162,7 +162,7 @@ It's also important to understand that there are many ways to verify security pr
 
 No matter how you approach it, remember that formal verification is not a way to avoid making other investments in security. Every verification technique comes with limitations and, empirically, 50% of the bugs we find can only be discovered by expert review. Contacting a security vendor will help you prioritize your risk, train your staff, and apply verification techniques in the most effective manner possible.
 
-#### Daryl Hok, Certik:
+#### Daryl Hok, CertiK:
 
 Typically, Formal Verification has been associated with mission-critical hardware applications, such as NASA's Mars rovers, drones, and airplanes. Blockchain, however, is a software application that has proven to be just as mission-critical; the publicly viewable, self-executing, and permanent nature of smart contracts have become a lucrative target for malicious hackers. Because centralized "help desks" don't exist in blockchain, users must be meticulous about the security of the infrastructure, particularly if the technology holds high value.
 
