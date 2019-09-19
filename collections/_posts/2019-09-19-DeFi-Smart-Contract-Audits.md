@@ -172,10 +172,10 @@ Blockchain is global and trustless, so trust in the underlying security should a
 
 Auditing your code is a critical part of the software development lifecycle and developing smart contracts is no different. As our experts noted, there are a number of important factors to consider when selecting a security vendor for a smart contract audit. For those who aren't ready for an audit or may not be able to afford one, companies like OpenZeppelin and Trail of Bits have of free tools available for developers to make use of. Regardless of what level of the stack you're working on, smart contract security must be a top priority for those interested in securing the future of DeFi.
 
-Shout out to members of [DeFi Nation FB Group](https://joindefination.com/), who helped to shape this list of questions.
-
 And thanks to our experts:
 
-Hubert Ritzdorf, [ChainSecurity](https://chainsecurity.com/): [@hritzdorf](https://twitter.com/hritzdorf)
-Daryl Hok, [Certik](https://certik.org/): [@DarylHok](https://twitter.com/darylhok)
-Dan Guido, [Trail of Bits](https://www.trailofbits.com/): [@dguido](https://twitter.com/dguido)
+- Hubert Ritzdorf, [ChainSecurity](https://chainsecurity.com/): [@hritzdorf](https://twitter.com/hritzdorf)
+- Daryl Hok, [Certik](https://certik.org/): [@DarylHok](https://twitter.com/darylhok)
+- Dan Guido, [Trail of Bits](https://www.trailofbits.com/): [@dguido](https://twitter.com/dguido)
+
+Shout out to members of [DeFi Nation FB Group](https://joindefination.com/), who helped to shape this list of questions.
