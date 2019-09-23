@@ -7,21 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 160 }}">
     <link rel="stylesheet" href="{{ "/assets/css/main.css " | prepend: site.baseurl }}">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-    <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+    <meta property="og:title" content="{% if page.pagetitle %}{{ page.pagetitle | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ site.url }}" />
-    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-    <meta property="og:image" content="{{ site.url }}/images/og.png" />
+    <meta property="og:description" content="{% if page.metadescription %}{{ page.metadescription | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:image" content="{{ page.featured-image | prepend: site.url }}" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@defiprime">
     <meta name="twitter:creator" content="@defiprime">
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+    <meta name="twitter:title" content="{% if page.pagetitle %}{{ page.pagetitle | escape }}{% else %}{{ site.title | escape }}{% endif %}">
     <meta name="twitter:description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 160 }}">
-    <meta name="twitter:image" content="{{ site.url }}/images/og.png">
+    <meta name="twitter:image" content="{{ page.featured-image | prepend: site.url }}">
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -41,9 +41,9 @@
     </p>
     <section class='upcoming_events_cards'>
         {% for event in site.events %}
-        
+
         {% unless event.date < site.time %}
-        
+
         <article>
             <a href='{{event.product-url}}'>
                 <img src='{{event.image}}'>
@@ -60,7 +60,7 @@
             </a>
         </article>
         {% endunless %}
-        
+
         {% endfor %}
     </section>
 
