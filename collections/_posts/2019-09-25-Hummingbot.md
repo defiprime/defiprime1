@@ -32,7 +32,7 @@ There are two broad categories of users:
 1. Users motivated by trading gains.  The vast majority of Hummingbot users are private individuals, though we are also aware of and working with crypto funds which are using it. These users use Hummingbot as a tool to automate their trading.
 2. Users motivated by providing liquidity.  We are aware of some large, prominent token project/issuers who want to provide liquidity for their tokens as well as crypto exchanges (particularly new, smaller ones) that want to support their exchange's order books.
 
-In July 2019, we start an experimental "liquidity bounty" program designed to reward users for using Hummingbot to trade and make markets for specific tokens or exchanges.  Our first such program was for Harmony Protocol in July 2019.  This program introduced a third category of user: members of the Harmony community that wanted to support the project.  In addition to supporting the project, these users, of course, was also capturing bounty rewards.
+In July 2019, we start an experimental "liquidity bounty" program designed to reward users for using Hummingbot to trade and make markets for specific tokens or exchanges.  Our first such program was for Harmony Protocol in July 2019.  This program introduced a third category of user: members of the Harmony community that wanted to support the project.  In addition to supporting the project, these users, of course, were also capturing bounty rewards.
 
 ### What's Hummingbot backstory?
 
@@ -80,7 +80,7 @@ When we administer liquidity bounties, we collect and analyze user data, run mac
 
 Our first liquidity bounty program for Harmony showed us that with just a limited number of participants, we were able to provide liquidity comparable to professional market makers.
 
-Fundamentally, our main competition is market makers.  After discussing with many token issuers and exchanges, some common gripes became clear: market makers are expensive, require millions in inventory, and operate as black boxes.  In contrast, a Hummingbot liquidity bounty program takes a data-driven approach - rewarding are distributed based on tangible results provided by participants, participants use their inventory (not the issuer's), and costs and rewards are materially lower than what an issuer would pay a traditional market maker.
+Fundamentally, our main competition is market makers.  After discussing with many token issuers and exchanges, some common gripes became clear: market makers are expensive, require millions in inventory, and operate as black boxes.  In contrast, a Hummingbot liquidity bounty program takes a data-driven approach - rewards are distributed based on tangible results provided by participants, participants use their inventory (not the issuer's), and costs and rewards are materially lower than what an issuer would pay a traditional market maker.
 
 ### What's your position on the regulatory landscape today?
 
@@ -94,7 +94,7 @@ Case in point, while Facebook is all caught up in regulatory hearings, China is 
 
 Our current focus is on continuing to build our community of developers and users.  As previously mentioned, to scale and improve the capabilities of Hummingbot, we want to encourage participation from the community.  To that end, we have spent a lot of time refactoring and documenting code, making it easier to use.  We have set up a Dev Forum for discussions, and we are starting Gitcoin bounty campaigns to reward code contributors.  We are collaborating with exchanges and DeFi protocols to announce new development bounties.
 
-To drive user base growth, we are working on making Hummingbot easier to use through a GUI, and a future hosted service.  Besides, we are working with token issuers and exchanges and hope to announce several more liquidity bounty programs soon, to make additional rewards programs available for users.
+To drive user base growth, we are working on making Hummingbot easier to use through a GUI, and a future hosted service.  In addition, we are working with token issuers and exchanges and hope to announce several more liquidity bounty programs soon, to make additional rewards programs available for users.
 
 Our long-term goal is to create a self-serve, liquidity market-place, where exchanges and token issuers can sign up for different liquidity campaigns and gain access to a community of Hummingbot market makers.
 
