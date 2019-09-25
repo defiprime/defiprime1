@@ -3,16 +3,16 @@ git-date:
 layout: blog
 title:  Hummingbot
 permalink: hummingbot
-h1title: 'Hummingbot'
-pagetitle: 'Hummingbot'
-metadescription: "Wang Chun, founder of stake.fish talks about PoS staking, security-first mindset, and where is an intersection of DeFi and staking-as-a-service providers.  "
+h1title: 'Hummingbot for Crypto Market Making'
+pagetitle: 'Hummingbot - interview with co-founder Carlo Las Marias'
+metadescription: "Hummingbot - interview with co-founder Carlo Las Marias. Carlo talks about switching career from Wall Street investment banker to open-source market making bot developer."
 category: blog
-featured-image: /images/blog/stakefish-og.png
-quote: /images/blog/stakefish-quote.png
-intro: "Hummingbot"
+featured-image: /images/blog/hummingbot-og.png
+quote: /images/blog/hummingbot-quote.png
+intro: "Carlo talks about switching career from Wall Street investment banker to open-source market making bot developer."
 author: Defiprime
 ---
-Hummingbot
+Carlo talks about switching career from Wall Street investment banker to open-source market making bot developer.
 
 ### Hello! What's your background, and what are you working on?
 
@@ -81,6 +81,7 @@ When we administer liquidity bounties, we collect and analyze user data, run mac
 Our first liquidity bounty program for Harmony showed us that with just a limited number of participants, we were able to provide liquidity comparable to professional market makers.
 
 Fundamentally, our main competition is market makers.  After discussing with many token issuers and exchanges, some common gripes became clear: market makers are expensive, require millions in inventory, and operate as black boxes.  In contrast, a Hummingbot liquidity bounty program takes a data-driven approach - rewarding are distributed based on tangible results provided by participants, participants use their inventory (not the issuer's), and costs and rewards are materially lower than what an issuer would pay a traditional market maker.
+
 ### What's your position on the regulatory landscape today?
 
 Despite recent guidance from the SEC and FinCEN, many crypto-related activities still fall squarely into a gray area.  U.S.-based DeFi companies really have their hands tied; for everything we do, we're constantly consulting our lawyers and the advice we get is never clear.
@@ -102,6 +103,7 @@ Our long-term goal is to create a self-serve, liquidity market-place, where exch
 Having worked in Wall Street and structured finance, I am excited about the potential of DeFi to modernize the archaic practices in the financial industry. It's exciting to be involved in DeFi; there is such a sense of optimism, of the potential to bring about change and make an impact.  
 
 Generally, the sentiment of working in blockchain and crypto is the feeling of being involved in a once in a lifetime/career opportunity to change the world and technology, comparable to the development of the internet in the late 90s/early 2000s.  When you have so many bright, talented, visionaries working together and creating new ideas, there is no doubt that something great will happen.
+
 ### Where can we go to learn more?
 
 - [Website](https://hummingbot.io)
