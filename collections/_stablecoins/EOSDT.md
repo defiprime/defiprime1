@@ -1,10 +1,10 @@
 ---
-git-date: 
+git-date:
 product-title: EOSDT
 product-url: https://eosdt.com/
-image: /images/output_md/httpseosdtcom.png
+image: /images/output_md/eosdt.com.png
 ecosystem: eos
-product-description: EOS-based stablecoin with self-service dApp to generate stablecoins against crypto collateral and to manage existing user positions.
+product-description: EOS-based stablecoin with self-service dApp to generate stablecoins against crypto collateral and to manage existing user positions. [Equilibrium - framework for generating asset-backed EOSDT stablecoins. Interview with CEO](/equilibrium).
 coltitle: Stablecoins
 colpermalink: stablecoins
 twitter: https://twitter.com/@eosdt

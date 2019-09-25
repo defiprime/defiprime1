@@ -7,5 +7,4 @@ permalink: events
 h1title: DeFi Meetups and Conferences
 pagetitle: DeFi Events Calendar. DeFi meetups, conferences and hackathons
 featured-image: /images/og-events.png
-
 ---
