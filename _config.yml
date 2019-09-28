@@ -113,6 +113,6 @@ exclude:
     - node_modules
     - README.md
     - CONTRIBUTING.md
-keep_files: [images]
+keep_files: [images, admin]
 sass:
     style: compressed
