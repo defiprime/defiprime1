@@ -13,7 +13,7 @@ redirect_from:
 	</span>
 </header>
 
-<h2 class='defi_projects_annotation'>DeFi projects</h2>
+<h2 id="defi_projects" class='defi_projects_annotation'>DeFi projects</h2>
 
 <section class="tiles floating">
 {% assign sorted_categories_products = site.categories.products | sort: 'title', 'last' %}
