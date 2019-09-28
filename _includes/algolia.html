@@ -1,0 +1,71 @@
+<!-- Including InstantSearch.js library and styling -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+
+<script>
+// Instanciating InstantSearch.js with Algolia credentials
+const search = instantsearch({
+  appId: '{{ site.algolia.application_id }}',
+  indexName: '{{ site.algolia.index_name }}',
+  apiKey: '{{ site.algolia.search_only_api_key }}'
+});
+
+// Adding searchbar and results widgets
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '#search-searchbar',
+    placeholder: 'Search Defiprime',
+    poweredBy: true, // This is required if you're on the free Community plan
+    cssClasses: {
+      root: 'defi-searchbox-root',
+      input: 'defi-search-inputbox',
+      resetIcon: 'defi-clear-searchbox'
+    }
+  })
+);
+
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: '#search-hits',
+    templates: {
+      item: function(hit) {
+        return `
+          <div class="post-item">
+            <span class="post-meta">${hit.date}</span>
+            <h2><a class="post-link" href="{{ site.baseurl }}${hit.url}">${hit.title}</a></h2>
+            <div class="post-snippet">${hit.html}</div>
+          </div>
+        `;
+      }
+    }
+  })
+);
+
+// Starting the search
+search.start();
+
+window.onload = () => {
+    $(document).keyup(function(e) {
+     if (e.key === "Escape") { // escape key maps to keycode `27`
+            $("#defi-search-fullpage").css('display', 'none');
+            $("#search-hits").css('display', 'none');
+            $(".defi-search-inputbox").removeClass('searchbox-opened');
+            $(".ais-search-box").stop(true, true).animate({
+                maxWidth: '300px'
+            }, 200)
+          $(".ais-search-box--magnifier").removeClass("active_magnifying_icon");
+        }
+    });
+
+    $(document).on('click', '.defi-search-inputbox', () => {
+        $('.defi-search-inputbox').addClass('searchbox-opened');
+        $("#defi-search-fullpage").css('display', 'block');
+        $("#search-hits").css('display', 'block');
+        $(".ais-search-box").stop(true, true).animate({
+            maxWidth: '730px'
+        }, 200)
+        $(".ais-search-box--magnifier").addClass("active_magnifying_icon");
+    })
+};
+</script>

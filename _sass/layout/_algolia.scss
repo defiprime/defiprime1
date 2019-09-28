@@ -1,0 +1,83 @@
+#defi-search-fullpage {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    display: none;
+    z-index: 2;
+}
+#search-searchbar {
+    text-align: center;
+}
+#defi-search {
+    position: relative;
+    z-index: 2;
+    margin-top: 60px;
+}
+.defi-searchbox-root {
+    height: 48px !important;;
+}
+.defi-search-inputbox {
+    box-shadow: none !important;
+    padding-left: 40px !important;
+    padding-top: 6px !important;
+    height: 47px !important;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    border-bottom-color: #8B8BB8;
+    color: #292984 !important;
+
+    &::placeholder {
+        color: #8B8BB8 !important;
+    }
+
+    &:focus {
+        border-bottom-color: #8B8BB8 !important;
+    }
+}
+.searchbox-opened {
+    background: #fff !important;
+}
+#search-hits {
+    position: absolute;
+    display: none;
+    transform: translateX(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 730px;
+    top: 47px;
+}
+
+.ais-hits.ais-hits__empty{
+    background: #8B8BB8;
+    color: #FFFFFF;
+    font-family: Open Sans;
+    height: 58px;
+    font-size: 16px;
+    padding-top: 13px;
+    padding-left: 40px;
+}
+.ais-search-box--magnifier svg {
+    fill: #8B8BB8;
+}
+
+.active_magnifying_icon svg {
+    fill: #8F68FC !important;
+}
+
+.ais-search-box--reset {
+    top: 1px !important;
+
+    &:hover {
+        background-color: transparent;
+    }
+
+    svg {
+        fill: #8F68FC;
+    }
+}

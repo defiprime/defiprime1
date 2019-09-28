@@ -116,3 +116,8 @@ exclude:
 keep_files: [images, admin]
 sass:
     style: compressed
+
+algolia:
+  application_id: U1P9PKRFOS
+  index_name: defiprime
+  search_only_api_key: 471c4ea8d6a8d6cfce0e09c05807db0e

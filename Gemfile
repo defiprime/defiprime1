@@ -7,3 +7,7 @@ gem 'jekyll-toc', group: :jekyll_plugins
 gem 'jekyll-sitemap', group: :jekyll_plugins
 gem 'jekyll-paginate-v2', group: :jekyll_plugins
 gem "liquid-c"
+
+group :jekyll_plugins do
+    gem 'jekyll-algolia'
+end
