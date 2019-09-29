@@ -54,7 +54,8 @@
     transform: translateX(-50%);
     left: 50%;
     transform: translateX(-50%);
-    width: 730px;
+    width: 100%;
+    max-width: 730px;
     background: #fff;
     top: 47px;
 }
@@ -141,7 +142,7 @@
 }
 
 .defi-search-form {
-    width: 300px;
+    max-width: 300px;
     margin: 0 auto;
 }
 

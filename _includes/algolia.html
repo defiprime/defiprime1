@@ -5,8 +5,20 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css" integrity="sha256-HB49n/BZjuqiCtQQf49OdZn63XuKFaxcIHWf0HNKte8=" crossorigin="anonymous">
 
 <script>
+
+var emptyBox = true;
+
 // Instanciating InstantSearch.js with Algolia credentials
 const search = instantsearch({
+  searchFunction: (helper) => {
+    if (helper.state.query.length === 0) {
+        emptyBox = true;
+        return; // do not trigger search
+    }
+    emptyBox = false;
+
+    helper.search(); // trigger search
+  },
   indexName: '{{ site.algolia.index_name }}',
   searchClient: algoliasearch('{{ site.algolia.application_id }}', '{{ site.algolia.search_only_api_key }}')
 });
@@ -70,10 +82,10 @@ const capitalize = (s) => {
 
 const renderHits = (renderOptions, isFirstRender) => {
   let { hits, widgetParams } = renderOptions;
-
+  console.log(emptyBox);
   let template = `
     <div class='defi-search-no-records'>
-      ${hits.length} matching materials
+      ${ emptyBox ? 'Type to start searching' : hits.length + ' matching materials' }
     </div>
   `;
 
@@ -127,7 +139,7 @@ window.onload = () => {
             $("#search-hits").css('display', 'none');
             $(".defi-search-inputbox").removeClass('searchbox-opened');
             $(".defi-search-form").stop(true, true).animate({
-                width: '300px'
+                maxWidth: '300px'
             }, 200)
           $(".defi-search-submit").removeClass("active_magnifying_icon");
           $(".defi-clear-searchbox").hide();
@@ -139,7 +151,7 @@ window.onload = () => {
         $("#defi-search-fullpage").css('display', 'block');
         $("#search-hits").css('display', 'block');
         $(".defi-search-form").stop(true, true).animate({
-            width: '730px'
+            maxWidth: '730px'
         }, 200)
         $(".defi-search-submit").addClass("active_magnifying_icon");
         $(".defi-clear-searchbox").show();
