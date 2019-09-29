@@ -98,6 +98,7 @@
     font-size: 16px;
     padding-top: 10px;
     padding-left: 58px;
+    position: relative;
 }
 
 .defi-search-submit {
@@ -167,4 +168,15 @@
     position: absolute;
     right: calc(50% - 142px);
     top: 59px;
+    z-index: 1;
+}
+
+.inner-powered-by {
+    position: absolute;
+    right: auto !important;
+    top: 75px !important;
+    background: #fff;
+    padding: 2px;
+    border-radius: 1px;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,.2);
 }
