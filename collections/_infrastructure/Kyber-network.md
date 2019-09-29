@@ -1,6 +1,6 @@
 ---
-git-date: 
-product-title: Kyber
+git-date:
+product-title: Kyber Network
 product-url: https://kyber.network/
 image: /images/output_md/httpskybernetwork.png
 ecosystem: ethereum

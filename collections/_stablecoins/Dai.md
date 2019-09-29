@@ -1,6 +1,6 @@
 ---
-git-date: 
-product-title: Dai
+git-date:
+product-title: DAI
 product-url: https://makerdao.com/en/dai/
 image: /images/output_md/httpsmakerdaocomendai.png
 ecosystem: ethereum

@@ -5,8 +5,8 @@ product-url: https://thegraph.com/
 image: /images/output_md/thegraph.com.png
 ecosystem: ethereum
 product-description: The Graph is a decentralized protocol for indexing and querying data from blockchains.
-coltitle:  "Analytics"
-colpermalink: defi-analytics
+coltitle:  "Infrastructure"
+colpermalink: infrastructure
 twitter: https://twitter.com/graphprotocol
 github: https://github.com/graphprotocol
 ---
