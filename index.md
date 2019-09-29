@@ -16,6 +16,7 @@ redirect_from:
 	</span>
 	<div id='defi-search'>
 		<div id="search-searchbar"></div>
+		<div id='search-powered-by'></div>
 		<div class="post-list" id="search-hits">
 			{% for post in site.posts %}
 				<div class="post-item">

@@ -21,15 +21,20 @@
 }
 .defi-search-inputbox {
     box-shadow: none !important;
-    padding-left: 40px !important;
+    padding-left: 58px !important;
     padding-top: 6px !important;
     height: 47px !important;
     font-family: Open Sans;
     font-style: normal;
+    border-radius: 0 !important;
     font-weight: normal;
     font-size: 18px;
     line-height: 160%;
-    border-bottom-color: #8B8BB8;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid #8B8BB8 !important;
+    background: transparent !important;
     color: #292984 !important;
 
     &::placeholder {
@@ -50,23 +55,64 @@
     left: 50%;
     transform: translateX(-50%);
     width: 730px;
+    background: #fff;
     top: 47px;
 }
+.searchpost-link {
+    padding-left: 58px;
+    padding-right: 46px;
+    display: block;
+    transition: .2s ease-in-out background;
+    margin: 12px 0;
 
-.ais-hits.ais-hits__empty{
+    &:hover {
+        background: #05D2DD;
+    }
+
+    h2 {
+        font-family: Open Sans;
+        margin-bottom: 3px;
+        font-size: 18px;
+        line-height: 160%;
+
+        color: #292984;
+        letter-spacing: 0;
+        text-transform: none;
+    }
+}
+.searchpost-data {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+
+    color: #292984;
+}
+.defi-search-no-records{
     background: #8B8BB8;
     color: #FFFFFF;
     font-family: Open Sans;
-    height: 58px;
+    height: 52px;
     font-size: 16px;
-    padding-top: 13px;
-    padding-left: 40px;
-}
-.ais-search-box--magnifier svg {
-    fill: #8B8BB8;
+    padding-top: 10px;
+    padding-left: 58px;
 }
 
-.active_magnifying_icon svg {
+.defi-search-submit {
+    top: -5px !important;
+    left: 14px !important;
+
+    &:hover {
+        background: transparent;
+    }
+
+    path {
+        fill: #8B8BB8;
+    }
+}
+
+.active_magnifying_icon path, .defi-clear-searchbox path {
     fill: #8F68FC !important;
 }
 
@@ -80,4 +126,44 @@
     svg {
         fill: #8F68FC;
     }
+}
+
+.category_searchitem {
+    color: #FF961C;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 160%;
+    padding-left: 58px;
+    height: 58px;
+    padding-top: 18px;
+}
+
+.defi-search-form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.defi-clear-searchbox {
+    display: none;
+    top: -5px !important;
+    right: 13px !important;
+
+    &:hover {
+        background: transparent;
+    }
+}
+
+.defi-search-separator {
+    border: 1px solid #E0E0E0;
+    margin: 21px 0;
+    transform: scaleY(0.5);
+}
+
+#search-powered-by {
+    display: inline-block;
+    position: absolute;
+    right: calc(50% - 142px);
+    top: 59px;
 }
