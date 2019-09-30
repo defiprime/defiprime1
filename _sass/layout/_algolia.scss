@@ -164,14 +164,7 @@
 }
 
 #search-powered-by {
-    display: inline-block;
-    position: absolute;
-    right: calc(50% - 142px);
-    top: 59px;
     z-index: 1;
-}
-
-.inner-powered-by {
     position: absolute;
     right: auto !important;
     top: 75px !important;
@@ -179,4 +172,9 @@
     padding: 2px;
     border-radius: 1px;
     box-shadow: 0px 0px 1px 1px rgba(0,0,0,.2);
+    display: none;
+
+    &.inner-powered-by {
+        display: inline-block;
+    }
 }
