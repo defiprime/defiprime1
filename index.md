@@ -6,11 +6,32 @@ metadescription: DeFi(Decentralized Finance) is the movement that leverages dece
 redirect_from:
   - product
 ---
+
+<aside id='defi-search-fullpage'></aside>
+
 <header class='main-page-header'>
 	<h1>DeFi and Open Finance</h1>
 	<span>
 	Decentralized Finance (DeFi) is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries.
 	</span>
+	<div id='defi-search'>
+		<div id="search-searchbar"></div>
+		<div id='search-powered-by'></div>
+		<div class="post-list" id="search-hits">
+			{% for post in site.posts %}
+				<div class="post-item">
+					{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+					<span class="post-meta">{{ post.date | date: date_format }}</span>
+					<h2>
+					<a class="post-link" href="{{ post.url | relative_url }}">
+						{{ post.title | escape }}
+					</a>
+					</h2>
+					<div class="post-snippet">{{ post.excerpt }}</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
 </header>
 
 <h2 id="defi_projects" class='defi_projects_annotation'>DeFi projects</h2>
@@ -93,3 +114,5 @@ redirect_from:
 	{% endif %}
 {% endfor%}
 </section>
+
+{% include algolia.html %}

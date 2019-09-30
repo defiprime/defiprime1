@@ -116,3 +116,23 @@ exclude:
 keep_files: [images, admin]
 sass:
     style: compressed
+
+algolia:
+  application_id: U1P9PKRFOS
+  index_name: defiprime
+  search_only_api_key: 471c4ea8d6a8d6cfce0e09c05807db0e
+  #everything in md or html
+  files_to_exclude:
+    - admin/
+    - images/
+    - 404.md
+    - about.md
+    - defi_rates.md
+    - blog.md
+    - bitcoin.md
+    - collections_sort.md
+    - defi_rates.md
+    - defi-events.md
+    - eos.md
+    - ethereum.md
+    - placeholder.md
