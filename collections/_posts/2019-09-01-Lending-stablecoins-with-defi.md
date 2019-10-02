@@ -37,15 +37,54 @@ This experiment will help demonstrate the differences between lending protocols 
 
 | Product  | 09/01  | 10/01   | 11/01  | 12/01  |
 |---|---|---|---|---|
-| [Compound Finance](https://compound.finance/)  |  $100 |   |   |   |
-|  [Nuo](https://www.nuo.network/) | $100  |   |   |   |
-| [Fulcrum](https://fulcrum.trade/#/)  | $100  |   |   |   |
-| [dYdX](http://trade.dydx.exchange)  | $100  |   |   |   |
-| [Idle Finance](https://idle.finance/)  | $100  |   |   |   |
+| [Compound Finance](https://compound.finance/)  |  100 DAI | 100.77  |   |   |
+| [Nuo](https://www.nuo.network/)¹ | 100 USDC | 100.57   |   |   |
+| [Fulcrum](https://fulcrum.trade/#/)  | 100 DAI | 100.67  |   |   |
+| [dYdX](http://trade.dydx.exchange)  | 100 DAI | 100.75  |   |   |
+| [Idle Finance](https://idle.finance/)  | 100 DAI | 100.72  |   |   |
 
-I'm going to update the results in this table each 1st day of the month.
+_¹ Deposit in USDC_
+
+I'm going to update the results in this table each 1st day of the month, and provide screenshots from lending platforms dashboards to proof data.
+
+### Update: October, 1, 2019
+
+No surprises so far, no one was hacked, and money doesn't got disappear this month. DeFi rates have been in a range of 8-10% in September. Updates for each platform as follows:
+
+- #### Compound Finance
+
+Interest earned 0.7772 DAI
+
+![](/images/blog/lendingexperiment/compound-10-01.png)
+
+- #### Nuo
+
+Interest earned 0.5688 USDC
+
+![](/images/blog/lendingexperiment/nuo-10-01.png)
+
+- #### Fulcrum
+
+Interest earned 0.6709 DAI
+
+![](/images/blog/lendingexperiment/fulcrum-10-01.png)
+
+- #### dYdX
+
+ Interest earned 0.7507 DAI
+
+![](/images/blog/lendingexperiment/dYdX-10-01.png)
+
+- #### Idle
+
+Interest earned 0.7229 DAI
+
+![](/images/blog/lendingexperiment/Idle-10-01.png)
+
+
+Next update is November, 1, 2019.   
+
+---
 
 Do you like this experiment and want to support our work and future researches?
-Show some love to our TipJar below:
-- ETH: 0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1
-- ENS: defiprime.eth
+Now you can use [Gitcoin Grants](https://gitcoin.co/grants/139/defiprimecom) for that!  

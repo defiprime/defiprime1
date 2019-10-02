@@ -1,7 +1,6 @@
 .main-page-header {
     height: 360px;
-    z-index: -1;
-    z-index: -1;
+    z-index: 2;
 
     h1 {
         color: #FF961C;
@@ -38,6 +37,7 @@
 
 .defi_projects_annotation {
     font-family: Kanit;
+    margin-top: 159px;
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
