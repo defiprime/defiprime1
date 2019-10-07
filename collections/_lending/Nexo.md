@@ -1,6 +1,6 @@
 ---
-git-date: 
-product-title: nexo
+git-date:
+product-title: Nexo
 product-url: https://nexo.io
 image: /images/output_md/nexo.jpg
 ecosystem: ethereum, bitcoin
