@@ -1,7 +1,7 @@
 ---
-git-date: 
+git-date:
 product-title: Dolomite
-product-url: https://dolomite.io
+product-url: https://dolomite.io/?ref=t0g4u0
 image: /images/output_md/dolomite.jpg
 ecosystem: ethereum
 type: non-custodial
