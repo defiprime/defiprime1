@@ -1,7 +1,7 @@
 ---
 git-date: 2019-05-22T11:21:50-07:00
 product-title: BlockFi
-product-url: https://blockfi.com/
+product-url: https://blockfi.com/?ref=8193c896
 image: /images/output_md/httpsblockficom.png
 ecosystem: ethereum, bitcoin
 type: cefi
