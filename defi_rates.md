@@ -1,5 +1,5 @@
 ---
-git-date: 
+git-date:
 layout: rates
 pagetitle: Defi Yields Rates | DeFi Lending Interest Rates | DeFiprime.com
 metadescription: 'Compare DeFi crypto lending products with traditional financial system offerings.
@@ -85,7 +85,7 @@ featured-image: /images/og-rates.png
 <div class="container">
 <hr>
 
-<p>DeFi lending rates data provided by: <a href="https://loanscan.io/">loanscan.io</a></p>
+<p>DeFi lending rates pulled from on-chain data</p>
 
 </div>
 <script>
