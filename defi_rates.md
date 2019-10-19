@@ -56,7 +56,7 @@ featured-image: /images/og-rates.png
 </section>
 
 <section id="liquidityPools">
-    <h2 class="defi-rates-heading">Uniswap liquidity pools</h2>
+    <h2 class="defi-rates-heading">Uniswap Liquidity Pools</h2>
     <span class="rates_annotation"><a href="/uniswap-liquidity-pools">How liquidity pools works?</a></span>
     <div id="avg_interest_rates_cryptos">
         <article class="providersDAI">
