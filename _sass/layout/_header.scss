@@ -204,6 +204,7 @@ $topBarSize: 58px;
     .header-content .menu-list {
 		display: block;
 		margin-top: -91px;
+
 	}
 	.header-content .menu-list-item {
 		margin: 12px 10px;
@@ -216,6 +217,9 @@ $topBarSize: 58px;
 		top: $topBarSize;
 		z-index: 2;
 		left: 100%;
+		#custom-searchbox{
+			display: none;
+		}
     }
     .link {
 		position: relative;
