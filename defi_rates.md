@@ -1,7 +1,7 @@
 ---
 git-date:
 layout: rates
-pagetitle: Defi Yields Rates | DeFi Lending Interest Rates | DeFiprime.com
+pagetitle: DeFi Yields Rates | DeFi Lending Interest Rates | DeFiprime.com
 metadescription: 'Compare DeFi crypto lending products with traditional financial system offerings.
 Lending stablecoins could be an alternative to high yield CDs, ETFs, and savings accounts, with relatively higher risk. Crypto lending rates comparison.'
 h1title: DeFi Yields
