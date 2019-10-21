@@ -4,26 +4,60 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,.8);
+    background: rgba(0, 0, 0, 0.8);
     display: none;
-    z-index: 2;
+    z-index: 200;
 }
+
 #search-searchbar {
     text-align: center;
 }
+
 #defi-search {
     position: relative;
-    z-index: 2;
+    z-index: 200;
     margin-top: 60px;
+    .header-content-menu & {
+        display: none;
+        margin-top: 0;
+        position: absolute;
+        left: 50%;
+        z-index: 200;
+        transform: translate(-50%, 0);
+        width: 80%;
+        min-width: 300px;
+    }
 }
+
+#custom-searchbox {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+    >svg {
+        circle,
+        path {
+            stroke: #8f68fc;
+        }
+    }
+    &:hover>svg {
+        circle,
+        path {
+            stroke: #05d2dd;
+        }
+    }
+}
+
 .defi-searchbox-root {
-    height: 48px !important;;
+    height: 48px !important;
 }
+
 .defi-search-inputbox {
     box-shadow: none !important;
     padding-left: 58px !important;
     padding-top: 6px !important;
-    height: 47px !important;
+    height: 57px !important;
     font-family: Open Sans;
     font-style: normal;
     border-radius: 0 !important;
@@ -33,21 +67,21 @@
     border-top: none !important;
     border-left: none !important;
     border-right: none !important;
-    border-bottom: 1px solid #8B8BB8 !important;
+    border-bottom: 1px solid #8b8bb8 !important;
     background: transparent !important;
     color: #292984 !important;
-
     &::placeholder {
-        color: #8B8BB8 !important;
+        color: #8b8bb8 !important;
     }
-
     &:focus {
-        border-bottom-color: #8B8BB8 !important;
+        border-bottom-color: #8b8bb8 !important;
     }
 }
+
 .searchbox-opened {
     background: #fff !important;
 }
+
 #search-hits {
     position: absolute;
     display: none;
@@ -57,42 +91,41 @@
     width: 100%;
     max-width: 730px;
     background: #fff;
-    top: 47px;
+    top: 57px;
 }
+
 .searchpost-link {
     padding-left: 58px;
     padding-right: 46px;
     display: block;
-    transition: .2s ease-in-out background;
+    transition: 0.2s ease-in-out background;
     margin: 12px 0;
-
     &:hover {
-        background: #05D2DD;
+        background: #05d2dd;
     }
-
     h2 {
         font-family: Open Sans;
         margin-bottom: 3px;
         font-size: 18px;
         line-height: 160%;
-
         color: #292984;
         letter-spacing: 0;
         text-transform: none;
     }
 }
+
 .searchpost-data {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 160%;
-
     color: #292984;
 }
-.defi-search-no-records{
-    background: #8B8BB8;
-    color: #FFFFFF;
+
+.defi-search-no-records {
+    background: #8b8bb8;
+    color: #ffffff;
     font-family: Open Sans;
     height: 52px;
     font-size: 16px;
@@ -102,36 +135,45 @@
 }
 
 .defi-search-submit {
-    top: -5px !important;
+    top: -2px !important;
     left: 14px !important;
-
     &:hover {
         background: transparent;
     }
-
     path {
-        fill: #8B8BB8;
+        fill: #8b8bb8;
     }
 }
 
-.active_magnifying_icon path, .defi-clear-searchbox path {
-    fill: #8F68FC !important;
+.ais-SearchBox-resetIcon {
+    width: 14px !important;
+    height: 14px !important;
+}
+
+.active_magnifying_icon path,
+.defi-clear-searchbox path {
+    fill: #8f68fc !important;
+}
+
+.active_magnifying_icon svg {
+    circle,
+    path {
+        stroke: #8f68fc;
+    }
 }
 
 .ais-search-box--reset {
     top: 1px !important;
-
     &:hover {
         background-color: transparent;
     }
-
     svg {
-        fill: #8F68FC;
+        fill: #8f68fc;
     }
 }
 
 .category_searchitem {
-    color: #FF961C;
+    color: #ff961c;
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
@@ -149,16 +191,15 @@
 
 .defi-clear-searchbox {
     display: none;
-    top: -5px !important;
+    top: -2px !important;
     right: 13px !important;
-
     &:hover {
         background: transparent;
     }
 }
 
 .defi-search-separator {
-    border: 1px solid #E0E0E0;
+    border: 1px solid #e0e0e0;
     margin: 21px 0;
     transform: scaleY(0.5);
 }
@@ -171,9 +212,8 @@
     background: #fff;
     padding: 2px;
     border-radius: 1px;
-    box-shadow: 0px 0px 1px 1px rgba(0,0,0,.2);
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
     display: none;
-
     &.inner-powered-by {
         display: inline-block;
     }
