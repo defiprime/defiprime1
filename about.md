@@ -30,7 +30,7 @@ Good pitch for listing at DeFiprime:
 
 ### Advertising on DeFiprime
 
-We are the largest media focused solely on DeFi and Open Finance. The only ad format available for adverts at the moment it's native articles(interviews, use cases, explainers). Please fill this [inquiry form](https://sneg55.typeform.com/to/zAR7ZH) to get in touch.
+We are the largest media outlet focused solely on DeFi and Open Finance. The only ad format available for adverts at the moment it's native articles(interviews, use cases, explainers). Please fill this [inquiry form](https://sneg55.typeform.com/to/zAR7ZH) to get in touch.
 
 ### Events Listing
 

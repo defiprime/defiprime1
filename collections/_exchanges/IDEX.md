@@ -7,5 +7,5 @@ ecosystem: ethereum
 product-description: IDEX is a decentralized, real-time token exchange.
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
-twitter: https://twitter.com/aurora_dao
+twitter: https://twitter.com/idexio
 ---
