@@ -150,15 +150,16 @@
     height: 14px !important;
 }
 
-.active_magnifying_icon path,
-.defi-clear-searchbox path {
-    fill: #8f68fc !important;
-}
-
 .active_magnifying_icon svg {
     circle,
     path {
         stroke: #8f68fc;
+    }
+    &:hover {
+        circle,
+        path {
+            stroke: #05d2dd;
+        }
     }
 }
 
