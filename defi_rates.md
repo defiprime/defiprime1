@@ -54,7 +54,12 @@ featured-image: /images/og-rates.png
         </article>
     </div>
 </section>
+<div class="container">
+<hr>
 
+<p>DeFi lending rates pulled from on-chain data. Check complete protocols stats and APR performance history at <a href="https://portfolio.defiprime.com/opportunities">DeFi Portfolio</a>.</p>
+
+</div>
 <section id="liquidityPools">
     <h2 class="defi-rates-heading">Uniswap Liquidity Pools</h2>
     <span class="rates_annotation"><a href="/uniswap-liquidity-pools">How liquidity pools works?</a></span>
@@ -82,12 +87,7 @@ featured-image: /images/og-rates.png
     </div>
 </section>
 
-<div class="container">
-<hr>
 
-<p>DeFi lending rates pulled from on-chain data</p>
-
-</div>
 <script>
     window.requestURL = "https://api-rates.defiprime.com";
 </script>
