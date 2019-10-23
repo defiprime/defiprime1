@@ -16,7 +16,7 @@ I've been advocating for DeFi for a long enough time and tested by myself most o
 
 The idea is simple I had put $100 worth into various DeFi lending products, and going to track results over the year.  The goal is to increase my wealth in dollar values, and proof that DeFi is the thing and could be sustainable. How good could DeFi products be, comparing to a regular savings account? What would happen if one of the project's smart contracts get hacked? How DeFi lending rates changes over time? Let's figure this out.
 
-For this experiment, I will skip fiat on-ramp hassle, and deposit 3.02 ETH(~$515 to cover gas fees) directly to the wallet _0xa51cE0796d32e3cc932C9a9e01663F68f71D9CBf_, and then I'll exchange ETH to the stablecoins I needed at one of the DEXes.
+For this experiment, I will skip fiat on-ramp hassle, and deposit 3.02 ETH(~$515 to cover gas fees) directly to the wallet [0xa51cE0796d32e3cc932C9a9e01663F68f71D9CBf](https://portfolio.defiprime.com/holdings/0xa51ce0796d32e3cc932c9a9e01663f68f71d9cbf), and then I'll exchange ETH to the stablecoins I needed at one of the DEXes.
 
 Compound, Nuo, dYdX, and Fulcrum can be described as autonomous money markets. These platforms enable users to earn interest and borrow digital assets without relying on a counterparty. Digital exchanges commonly offer similar features but either the exchange or users need to provide liquidity to allow traders to borrow assets and trade on margin and users need traders to borrow funds to maintain an attractive interest rate. Idle Finance differs in that it aggregates lending protocols to allow users to automatically shift funds between protocols depending on which platform offers the best interest rate at the time.
 
@@ -45,6 +45,8 @@ This experiment will help demonstrate the differences between lending protocols 
 
 _¹ Deposit in USDC_
 
+You can track live experiment stats here: [0xa51cE0796d32e3cc932C9a9e01663F68f71D9CBf](https://portfolio.defiprime.com/holdings/0xa51ce0796d32e3cc932c9a9e01663f68f71d9cbf)
+ 
 I'm going to update the results in this table each 1st day of the month, and provide screenshots from lending platforms dashboards to proof data.
 
 ### Update: October, 1, 2019
