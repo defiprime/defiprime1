@@ -37,16 +37,16 @@ This experiment will help demonstrate the differences between lending protocols 
 
 | Product  | 09/01  | 10/01   | 11/01  | 12/01  |
 |---|---|---|---|---|
-| [Compound Finance](https://compound.finance/)  |  100 DAI | 100.77  |   |   |
-| [Nuo](https://www.nuo.network/)¹ | 100 USDC | 100.57   |   |   |
-| [Fulcrum](https://fulcrum.trade/#/)  | 100 DAI | 100.67  |   |   |
-| [dYdX](http://trade.dydx.exchange)  | 100 DAI | 100.75  |   |   |
-| [Idle Finance](https://idle.finance/)  | 100 DAI | 100.72  |   |   |
+| [Compound Finance](https://compound.finance/)  |  100 DAI | 100.77  | 101.46  |   |
+| [Nuo](https://www.nuo.network/)¹ | 100 USDC | 100.57   | 101.22  |   |
+| [Fulcrum](https://fulcrum.trade/#/)  | 100 DAI | 100.67  | 101.20  |   |
+| [dYdX](http://trade.dydx.exchange)  | 100 DAI | 100.75  | 101.39  |   |
+| [Idle Finance](https://idle.finance/)  | 100 DAI | 100.72  | 101.37  |   |
 
 _¹ Deposit in USDC_
 
 You can track live experiment stats here: [0xa51cE0796d32e3cc932C9a9e01663F68f71D9CBf](https://portfolio.defiprime.com/holdings/0xa51ce0796d32e3cc932c9a9e01663f68f71d9cbf)
- 
+
 I'm going to update the results in this table each 1st day of the month, and provide screenshots from lending platforms dashboards to proof data.
 
 ### Update: October, 1, 2019
@@ -55,36 +55,50 @@ No surprises so far, no one was hacked, and money doesn't got disappear this mon
 
 - #### Compound Finance
 
-Interest earned 0.7772 DAI
-
 ![](/images/blog/lendingexperiment/compound-10-01.png)
 
 - #### Nuo
-
-Interest earned 0.5688 USDC
 
 ![](/images/blog/lendingexperiment/nuo-10-01.png)
 
 - #### Fulcrum
 
-Interest earned 0.6709 DAI
-
 ![](/images/blog/lendingexperiment/fulcrum-10-01.png)
 
 - #### dYdX
-
- Interest earned 0.7507 DAI
 
 ![](/images/blog/lendingexperiment/dYdX-10-01.png)
 
 - #### Idle
 
-Interest earned 0.7229 DAI
-
 ![](/images/blog/lendingexperiment/Idle-10-01.png)
 
+### Update: November, 1, 2019
 
-Next update is November, 1, 2019.   
+DeFi rates have been in a range of 6-7% in October. Updates for each platform as follows:
+
+- #### Compound Finance
+
+![](/images/blog/lendingexperiment/compound-11-01.png)
+
+- #### Nuo
+
+![](/images/blog/lendingexperiment/nuo-11-01.png)
+
+- #### Fulcrum
+
+![](/images/blog/lendingexperiment/fulcrum-11-01.png)
+
+- #### dYdX
+
+![](/images/blog/lendingexperiment/dYdX-11-01.png)
+
+- #### Idle
+
+![](/images/blog/lendingexperiment/Idle-11-01.png)
+
+
+Next update is December, 1, 2019.   
 
 ---
 
