@@ -1,7 +1,7 @@
 ---
-git-date: 
+git-date:
 product-title: CoinLoan
-product-url: https://coinloan.io/
+product-url: https://coinloan.io/?ref=10278397
 image: /images/output_md/httpscoinloanio.png
 ecosystem: ethereum, bitcoin
 product-description: P2P lending platform for cryptoassets backed loans.
