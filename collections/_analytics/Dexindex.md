@@ -1,6 +1,6 @@
 ---
-git-date: 
-product-title: dexindex
+git-date:
+product-title: DexIndex
 product-url: https://dexindex.io/
 image: /images/output_md/httpsdexindexio.png
 ecosystem: ethereum

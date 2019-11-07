@@ -1,10 +1,10 @@
 ---
-git-date: 
+git-date:
 product-title: bZx (b0x)
-product-url: https://b0x.network/
+product-url: https://bzx.network/
 image: /images/output_md/httpsb0xnetwork.png
 ecosystem: ethereum
-product-description: A decentralized margin lending protocol on Ethereum
+product-description: bZx protocol is a financial primitive for shorting, leverage, borrowing, and lending that empowers decentralized blockchain applications.
 coltitle:  "Infrastructure"
 colpermalink: infrastructure
 twitter: https://twitter.com/b0xNet

@@ -1,7 +1,7 @@
 ---
 git-date: 2019-06-26T18:40:56-07:00
 product-title: Constant
-product-url: https://www.myconstant.com
+product-url: https://www.myconstant.com?r=CE2M7NF20D
 image: /images/output_md/www.myconstant.com.png
 ecosystem: ethereum, bitcoin, stellar
 type: cefi

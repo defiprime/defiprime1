@@ -1,6 +1,6 @@
 ---
-git-date: 
-product-title: daicast
+git-date:
+product-title: Daicast
 product-url: https://daicast.info
 image: /images/output_md/httpsdaicastinfo.png
 ecosystem: ethereum

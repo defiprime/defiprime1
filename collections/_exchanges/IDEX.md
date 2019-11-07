@@ -1,12 +1,11 @@
 ---
-git-date: 
+git-date:
 product-title: IDEX
 product-url: https://auroradao.com/platform/idex/
 image: /images/output_md/httpsauroradaocomplatformidex.png
 ecosystem: ethereum
-type: non-custodial
-product-description: A decentralized, real-time, and non-custodial token exchange.
+product-description: IDEX is a decentralized, real-time token exchange.
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
-twitter: https://twitter.com/aurora_dao
+twitter: https://twitter.com/idexio
 ---

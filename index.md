@@ -1,19 +1,40 @@
 ---
 git-date: 2019-04-13T21:06:27-07:00
 layout: default
-title: DeFi - Best Decentralized Finance(DeFi) Projects | What is DeFi in Crypto
-metadescription: Decentralized Finance(DeFi) is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols.
+title: DeFi - Best Decentralized Finance Projects | What is DeFi in Crypto
+metadescription: DeFi(Decentralized Finance) is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols.
 redirect_from:
   - product
 ---
+
+<aside id='defi-search-fullpage'></aside>
+
 <header class='main-page-header'>
 	<h1>DeFi and Open Finance</h1>
 	<span>
 	Decentralized Finance (DeFi) is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries.
 	</span>
+	<div id='defi-search'>
+		<div id="search-searchbar"></div>
+		<div id='search-powered-by'></div>
+		<div class="post-list" id="search-hits">
+			{% for post in site.posts %}
+				<div class="post-item">
+					{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+					<span class="post-meta">{{ post.date | date: date_format }}</span>
+					<h2>
+					<a class="post-link" href="{{ post.url | relative_url }}">
+						{{ post.title | escape }}
+					</a>
+					</h2>
+					<div class="post-snippet">{{ post.excerpt }}</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
 </header>
 
-<h2 class='defi_projects_annotation'>DeFi projects</h2>
+<h2 id="defi_projects" class='defi_projects_annotation'>DeFi projects</h2>
 
 <section class="tiles floating">
 {% assign sorted_categories_products = site.categories.products | sort: 'title', 'last' %}
@@ -49,7 +70,7 @@ redirect_from:
 		</article>
     {% endfor %}
 </section>
-<h2 class='recently_added_annotation'>Latest from defi<span>blog</span></h2>
+<h2 class='recently_added_annotation'>Latest from DeFi <span>blog</span></h2>
 <section class='latest_blog_sneak_peak'>
 	{% assign posts = site.categories.blog | sort: "date" | reverse  %}
 	{% for blog_post in posts limit:6 %}
@@ -93,3 +114,5 @@ redirect_from:
 	{% endif %}
 {% endfor%}
 </section>
+
+{% include algolia.html %}

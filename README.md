@@ -19,16 +19,21 @@ Follow: https://twitter.com/defiprime
 
 ## What is this?
 
-I've been researching DeFi ecosystem for several weeks, and can't find a good list of actually working products without gimmicks and bullshit. That's why I decided to create this site featuring best DeFI products.
+DeFiprime.com is the digital media and analytical services provider for the DeFi community. Its mandate is to inform, educate, and connect the community as the definitive source of news dedicated to decentralized finance space.
 
-## Definition of 'the best DeFi Products'
-
+### Product Listing 101: definition of "the best DeFi Product"
 * Are you feel comfortable to recommend this product to your IRL friends?
-* Working product on the mainnet (Not coming soon, not testnet, not private alpha)
-* Visible product traction (Not empty marketplace, not empty order book)
-* Decentralized first. Label 'Region is not supported' it's a spit in the face of DeFi.
-* No crypto tribalism and bias. Ethereum, Tron, EOS, Bitcoin and all others are equal as long as DeFi product built on top is useful.
+* Live product running on the mainnet (not coming soon, not testnet, not "please take a look at our whitepaper")
+* Visible product traction (not empty marketplace, not empty order book, etc).   
+* Decentralized first. Label 'Region is not supported' it's a spit in the face of DeFi. Check our recent [twitter-poll](https://twitter.com/defiprime/status/1130890433821724672) with community sentiment on this matter.
+* No crypto tribalism and bias. Ethereum, Tron, EOS, Bitcoin and the rest of blockchains are equal as long as DeFi product built on top are useful.
 
-## Listing
+So to reiterate, we’ll give you two examples below.
 
-If you'd like to submit your project, please ping me at Twitter, open an issue at Github or create a PR. You can edit/add projects directly at `collections`
+Bad pitch for listing at DeFiprime:
+- "We are going to change the world with our super-duper AI-based smart contract platform, here is our whitepaper. We have 10000 strong community at our Telegram! We also struck a deal of the century with a big brand(but no one has heard about this brand anyway, and it's not related to Finance or Blockchain). Still working on our product launch, but you can play with this thing on testnet."
+
+Good pitch for listing at DeFiprime:
+- "We launched on mainnet three months ago, after two respectable auditors independently audited our smart contracts. Since our launch, we achieved this and that milestones, and XXXX users using our app regularly. We also integrated with a few well known DeFi protocols."
+
+*If you'd like to submit your project, please fill this [product listing form](https://sneg55.typeform.com/to/WRFW02).*

@@ -59,7 +59,7 @@
                 {% endif %}
                                     </div>
                 {% assign link_presented = page.product-description | markdownify | split: '<a' | size %}
-                <blockquote {% if link_presented == 1 %} style='flex: 0' {% endif %}> {{ page.product-description | markdownify }} </blockquote>
+                <div {% if link_presented == 1 %} style='flex: 0' {% endif %}> {{ page.product-description | markdownify }} </div>
             </div>
         </div>
         <h3 class='give-thoughts-header'>What do you think of {{ page.product-title }} product?</h3>

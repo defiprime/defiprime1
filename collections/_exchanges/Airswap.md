@@ -1,11 +1,11 @@
 ---
-git-date: 
-product-title: Airswap
+git-date:
+product-title: AirSwap
 product-url: https://www.airswap.io/
-image: /images/output_md/httpswwwairswapio.png
+image: /images/output_md/photo_2019-10-25_10-04-00.jpg
 ecosystem: ethereum
 type: non-custodial
-product-description: Peer-to-peer token trading on Ethereum, without trading fees. [Interview with Airsawp team](/airswap).
+product-description: Peer-to-peer token trading on Ethereum, without trading fees. [Interview with AirSwap team](/airswap).
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/airswap

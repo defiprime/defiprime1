@@ -4,8 +4,9 @@ product-title: Margin DDEX
 product-url: https://margin.ddex.io/
 image: /images/output_md/margin.ddex.io.png
 ecosystem: ethereum
-product-description: Decentralized Margin Exchange
+product-description: DDEX is an advanced decentralized margin exchange. Users can create leveraged margin positions and earn interest through decentralized lending pools.
 coltitle:  "Margin trading"
+type: non-custodial
 colpermalink: margin-trading
 twitter: https://twitter.com/ddexio2018
 ---

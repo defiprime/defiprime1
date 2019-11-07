@@ -1,13 +1,13 @@
 Defiprime:
     name: Nick Sawinyh
     twitter: https://twitter.com/sawinyh
-    bio: Proud father, husband, and corgi-owner. I'm into crypto(since 2015), infosec, SEO and digital marketing (strange mix I know). Maker @defiprime.
+    bio: Nick Sawinyh is an LA-based crypto entrepreneur.  After having spent over four years in the blockchain industry, Nick founded DeFiprime in 2019, with the idea to provide information about emerging DeFi ecosystem. He owns modest amounts of various cryptocurrencies.
     image: /images/sawinyh.jpg
 sawinyh:
     name: Nick Sawinyh
     twitter: https://twitter.com/sawinyh
     github: https://github.com/sneg55
-    bio: Proud father, husband, and corgi-owner. I'm into crypto, infosec, SEO and digital marketing (strange mix I know). Maker @defiprime.
+    bio: Nick Sawinyh is an LA-based crypto entrepreneur.  After having spent over four years in the blockchain industry, Nick founded DeFiprime in 2019, with the idea to provide information about emerging DeFi ecosystem. He owns modest amounts of various cryptocurrencies.
     image: /images/sawinyh.jpg
 goldfarb:
     name: Seth Goldfarb
@@ -29,3 +29,8 @@ berenzon:
     twitter: https://twitter.com/dberenzon
     bio: Dmitriy is a Research Partner at <a href="https://www.zenith.ventures/">Zenith Ventures</a>, a multi-strategy venture fund for the blockchain ecosystem. Prior to this, Dmitriy worked with CoinFund, where he conducted investment due diligence and research, and co-founded a cryptoasset portfolio management platform, where he led business development and operations. Prior to this, Dmitriy was an Assistant Vice President at Deutsche Bank Labs, where he engaged with startups, investors, and academia to discover, evaluate, and adopt innovative technologies into the Bank. Dmitriy received his MBA at the University of California, Berkeley-Haas School of Business.
     image: /images/berenzon.jpg
+paddison:
+    name: Rossco Paddison
+    twitter: https://twitter.com/rosscopaddison
+    bio: Rossco Paddison is the CEO & co-founder of <a href="https://mosendo.com/">Mosendo</a>, where they’re making peer-to-peer electronic cash a reality. Also co-founder of <a href="http://www.joindefination.com">DeFi Nation</a>, a thriving DeFi community.
+    image: /images/paddison.jpg

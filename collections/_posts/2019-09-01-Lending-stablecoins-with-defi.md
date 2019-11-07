@@ -16,7 +16,7 @@ I've been advocating for DeFi for a long enough time and tested by myself most o
 
 The idea is simple I had put $100 worth into various DeFi lending products, and going to track results over the year.  The goal is to increase my wealth in dollar values, and proof that DeFi is the thing and could be sustainable. How good could DeFi products be, comparing to a regular savings account? What would happen if one of the project's smart contracts get hacked? How DeFi lending rates changes over time? Let's figure this out.
 
-For this experiment, I will skip fiat on-ramp hassle, and deposit 3.02 ETH(~$515 to cover gas fees) directly to the wallet _0xa51cE0796d32e3cc932C9a9e01663F68f71D9CBf_, and then I'll exchange ETH to the stablecoins I needed at one of the DEXes.
+For this experiment, I will skip fiat on-ramp hassle, and deposit 3.02 ETH(~$515 to cover gas fees) directly to the wallet [0xa51cE0796d32e3cc932C9a9e01663F68f71D9CBf](https://portfolio.defiprime.com/holdings/0xa51ce0796d32e3cc932c9a9e01663f68f71d9cbf), and then I'll exchange ETH to the stablecoins I needed at one of the DEXes.
 
 Compound, Nuo, dYdX, and Fulcrum can be described as autonomous money markets. These platforms enable users to earn interest and borrow digital assets without relying on a counterparty. Digital exchanges commonly offer similar features but either the exchange or users need to provide liquidity to allow traders to borrow assets and trade on margin and users need traders to borrow funds to maintain an attractive interest rate. Idle Finance differs in that it aggregates lending protocols to allow users to automatically shift funds between protocols depending on which platform offers the best interest rate at the time.
 
@@ -37,15 +37,70 @@ This experiment will help demonstrate the differences between lending protocols 
 
 | Product  | 09/01  | 10/01   | 11/01  | 12/01  |
 |---|---|---|---|---|
-| [Compound Finance](https://compound.finance/)  |  $100 |   |   |   |
-|  [Nuo](https://www.nuo.network/) | $100  |   |   |   |
-| [Fulcrum](https://fulcrum.trade/#/)  | $100  |   |   |   |
-| [dYdX](http://trade.dydx.exchange)  | $100  |   |   |   |
-| [Idle Finance](https://idle.finance/)  | $100  |   |   |   |
+| [Compound Finance](https://compound.finance/)  |  100 DAI | 100.77  | 101.46  |   |
+| [Nuo](https://www.nuo.network/)¹ | 100 USDC | 100.57   | 101.22  |   |
+| [Fulcrum](https://fulcrum.trade/#/)  | 100 DAI | 100.67  | 101.20  |   |
+| [dYdX](http://trade.dydx.exchange)  | 100 DAI | 100.75  | 101.39  |   |
+| [Idle Finance](https://idle.finance/)  | 100 DAI | 100.72  | 101.37  |   |
 
-I'm going to update the results in this table each 1st day of the month.
+_¹ Deposit in USDC_
+
+You can track live experiment stats here: [0xa51cE0796d32e3cc932C9a9e01663F68f71D9CBf](https://portfolio.defiprime.com/holdings/0xa51ce0796d32e3cc932c9a9e01663f68f71d9cbf)
+
+I'm going to update the results in this table each 1st day of the month, and provide screenshots from lending platforms dashboards to proof data.
+
+### Update: October, 1, 2019
+
+No surprises so far, no one was hacked, and money doesn't got disappear this month. DeFi rates have been in a range of 8-10% in September. Updates for each platform as follows:
+
+- #### Compound Finance
+
+![](/images/blog/lendingexperiment/compound-10-01.png)
+
+- #### Nuo
+
+![](/images/blog/lendingexperiment/nuo-10-01.png)
+
+- #### Fulcrum
+
+![](/images/blog/lendingexperiment/fulcrum-10-01.png)
+
+- #### dYdX
+
+![](/images/blog/lendingexperiment/dYdX-10-01.png)
+
+- #### Idle
+
+![](/images/blog/lendingexperiment/Idle-10-01.png)
+
+### Update: November, 1, 2019
+
+DeFi rates have been in a range of 6-7% in October. Updates for each platform as follows:
+
+- #### Compound Finance
+
+![](/images/blog/lendingexperiment/compound-11-01.png)
+
+- #### Nuo
+
+![](/images/blog/lendingexperiment/nuo-11-01.png)
+
+- #### Fulcrum
+
+![](/images/blog/lendingexperiment/fulcrum-11-01.png)
+
+- #### dYdX
+
+![](/images/blog/lendingexperiment/dYdX-11-01.png)
+
+- #### Idle
+
+![](/images/blog/lendingexperiment/Idle-11-01.png)
+
+
+Next update is December, 1, 2019.   
+
+---
 
 Do you like this experiment and want to support our work and future researches?
-Show some love to our TipJar below:
-- ETH: 0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1
-- ENS: defiprime.eth
+Now you can use [Gitcoin Grants](https://gitcoin.co/grants/139/defiprimecom) for that!  

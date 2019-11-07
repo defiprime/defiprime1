@@ -1,10 +1,11 @@
 ---
-git-date: 
-product-title: hydroscan
+git-date:
+product-title: HydroScan
 product-url: https://hydroscan.io/
 image: /images/output_md/httpshydroscanio.png
 ecosystem: ethereum
 product-description: Hydroscan shows the data of relayers, tokens and trades on Hydro Protocol.
 coltitle:  "Analytics"
 colpermalink: defi-analytics
+github: https://github.com/hydroscan
 ---
