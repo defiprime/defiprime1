@@ -31,7 +31,7 @@ We want to shed some light on how DeFi products build and how the ecosystem evol
 		<div class="article-image">
 			<div class="image">
 				<a href="{{ post.url }}">
-					<img src="{{ post.quote }}" alt="" />
+					<img class="lazyload" data-src="{{ post.quote }}" alt="" />
 				</a>
 			</div>
 		</div>
