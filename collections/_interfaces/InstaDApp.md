@@ -7,7 +7,7 @@ ecosystem: ethereum
 platform: web
 filter: native defi integration
 product-description: A decentralized bank built on top of the MakerDAO protocol to create an easy-to-use interface.
-coltitle:  "Asset Management Tools"
-colpermalink: assets-management-tools
+coltitle:  "DeFi Interfaces"
+colpermalink: interfaces
 twitter: https://twitter.com/instadapp
 ---

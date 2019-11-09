@@ -7,7 +7,7 @@ ecosystem: ethereum
 platform: web, ios
 filter: native defi integration
 product-description: An interface for blockchain-based protocols in decentralized finance applications.
-coltitle:  "Asset Management Tools"
-colpermalink: assets-management-tools
+coltitle:  "DeFi Interfaces"
+colpermalink: interfaces
 github: https://github.com/zeriontech
 ---
