@@ -36,7 +36,7 @@
     h4 {
         margin-top: 10px;
     }
-    &>a img {
+    & > a img {
         transition: 0.3s ease-in-out all;
         width: 100%;
         height: 175px;
@@ -45,7 +45,7 @@
     &:hover {
         box-shadow: 0 0 0 1px #8f68fc, 0px 0px 6px 4px rgba(41, 41, 132, 0.12);
         transform: translateY(-3%);
-        &>a img {
+        & > a img {
             transform: scale(1.05);
             box-shadow: 0px 0px 6px 4px rgba(41, 41, 132, 0.12);
         }
@@ -92,8 +92,39 @@
 #assets_cards {
     display: grid;
     margin-top: 54px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
+}
+
+
+.filters-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .button {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 180%;
+        color: #8f68fc;
+        background: none;
+        margin-bottom: 20px;
+        margin-top: 0;
+        height: auto;
+        padding: 2px 16px;
+        text-transform: capitalize;
+        &:not(:last-child) {
+            margin-right: 2px;
+        }
+        &:hover {
+            color: #05d2dd;
+        }
+        &.active {
+            color: #fff;
+            background: #292984;
+        }
+    }
 }
 
 .asset-tool-tags {
@@ -141,7 +172,7 @@
     position: relative;
     left: 17px;
     margin-bottom: 10px;
-    >a {
+    > a {
         position: relative;
     }
     img {
