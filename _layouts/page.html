@@ -55,6 +55,8 @@
         <div class="custodian_description">
             {{ content }}
         </div>
+
+        {% if page[filter-by] %}
         <section>
             <div class="button-group filters-button-group">
                 <button class="button active" data-filter="*">All</button>
@@ -69,6 +71,8 @@
                 {% endfor %}
             </div>
         </section>
+        {% endif %}
+
         <section id='assets_cards'>
             {% for asset_tool in site[page.cards] %}
             {% assign card_filters = '' | split: '' %}
