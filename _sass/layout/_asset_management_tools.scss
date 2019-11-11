@@ -43,6 +43,7 @@
         object-fit: cover;
     }
     &:hover {
+        cursor: pointer;
         box-shadow: 0 0 0 1px #8f68fc, 0px 0px 6px 4px rgba(41, 41, 132, 0.12);
         transform: translateY(-3%);
         & > a img {
@@ -97,11 +98,18 @@
     .article-wrapper {
         padding: 15px;
         background: #fff;
+        .asset_tool_card{
+            height: 100%;
+
+        }
+
+        
         &.featured-wrapper {
             padding-top: 0;
             background: #05d2dd;
             .asset_tool_card {
                 background: #fff;
+                max-height: calc(100% - 45px);
             }
             .featured-header {
                 display: flex;
@@ -114,29 +122,19 @@
                     font-weight: normal;
                     font-size: 12px;
                     line-height: 180%;
-                    /* or 22px */
-
                     display: flex;
                     align-items: center;
                     text-align: right;
-
-                    /* White */
-
                     color: #ffffff;
                 }
-                .feature-product {
+                .featured-product {
                     font-family: Open Sans;
                     font-style: normal;
                     font-weight: 600;
                     font-size: 15px;
                     line-height: 180%;
-                    /* or 27px */
-
                     display: flex;
                     align-items: center;
-
-                    /* White */
-
                     color: #ffffff;
                 }
             }

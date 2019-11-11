@@ -74,7 +74,7 @@
         {% endif %}
 
         <section id='assets_cards'>
-                {% assign page_cards = site[page.cards] | sort: "featured" %}
+            {% assign page_cards = site[page.cards] | sort: "featured", "last" %}
 
             {% for asset_tool in page_cards  %}
             {% assign card_filters = '' | split: '' %}
@@ -85,7 +85,6 @@
 
             {% endfor %}
 
-            <!-- If customer.name = "anonymous" -->
             {% if asset_tool.featured == true %}
             <div class="article-wrapper featured-wrapper">
                 <div class="featured-header">
@@ -277,11 +276,12 @@
             function filter(filterValue) {
                 var itemSelector = document.querySelectorAll('#assets_cards .asset_tool_card');
                 Array.from(itemSelector).forEach(item => {
+                    var itemWrapper = item.closest(".article-wrapper");
                     if (filterValue === "*") {
-                        item.style.display = '';
+                        itemWrapper.style.display = '';
                         return;
                     }
-                    item.style.display = item.classList.contains(filterValue) ? '' : 'none';
+                    itemWrapper.style.display = item.classList.contains(filterValue) ? '' : 'none';
                 });
 
             }
