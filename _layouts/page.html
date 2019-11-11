@@ -57,7 +57,7 @@
         </div>
         <section>
             <div class="button-group filters-button-group">
-                <button class="button is-checked" data-filter="*">show all</button>
+                <button class="button active" data-filter="*">All</button>
                 {% assign items_filters = page.filter-by | split: ", " %}
                 {% for filter in items_filters  %}
                 {% assign filter_buttons = site[page.cards] | group_by: filter | map: "name" |  join: ", " | split: ", " | uniq | where_exp: "item", "item != ''" %}
@@ -74,13 +74,13 @@
         </section>
         <section id='assets_cards' class="isotope">
             {% for asset_tool in site[page.cards] %}
-                {% assign card_filters = '' | split: '' %}
-                {% for filter in items_filters  %}
+            {% assign card_filters = '' | split: '' %}
+            {% for filter in items_filters  %}
 
-                    {% assign filter_names = asset_tool[filter] | replace: ' ', '_' | split: ",_" %}
-                    {% assign card_filters = card_filters | concat: filter_names %}
+            {% assign filter_names = asset_tool[filter] | replace: ' ', '_' | split: ",_" %}
+            {% assign card_filters = card_filters | concat: filter_names %}
 
-                {% endfor %}
+            {% endfor %}
 
             <article class="asset_tool_card isotope-item {{card_filters | join: ' '}}">
                 <a href="{{ asset_tool['product-url']}}"><img src="{{ asset_tool['image'] }}"></a>
@@ -171,9 +171,13 @@
 
 
             // filter items on button click
-            var filterButtons =  document.querySelectorAll('.filters-button-group button');
+            var filterButtons = document.querySelectorAll('.filters-button-group button');
             Array.from(filterButtons).forEach(button => {
                 button.addEventListener('click', function (e) {
+                    filterButtons.forEach(node => {
+                        node.classList.remove('active');
+                    });
+                    e.currentTarget.classList.add('active');
                     var filterValue = e.currentTarget.dataset.filter;
                     iso.arrange({ filter: filterValue });
                 });
