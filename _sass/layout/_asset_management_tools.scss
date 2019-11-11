@@ -93,48 +93,53 @@
     display: grid;
     margin-top: 54px;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-}
+    grid-gap: 5px;
+    .article-wrapper {
+        padding: 15px;
+        background: #fff;
+        &.featured-wrapper {
+            padding-top: 0;
+            background: #05d2dd;
+            .asset_tool_card {
+                background: #fff;
+            }
+            .featured-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 45px;
+                .sponsored {
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 180%;
+                    /* or 22px */
 
-.product-page #main .asset_tool_card.featured {
-    overflow: initial;
-    opacity: 1;
-    background: #fff;
-    .featured-wrapper {
-        width: calc(100% + 30px);
-        position: absolute;
-        height: calc(100% + 55px);
-        top: -38px;
-        left: -15px;
-        background: #05d2dd;
-        z-index: -10;
-        display: flex;
-        justify-content: space-around;
-        .featured-product {
-            position: absolute;
-            left: 15px;
-            color: #fff;
-            font-family: Open Sans;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 15px;
-            line-height: 180%;
-            height: 37px;
-            display: flex;
-            align-items: center;
-        }
-        .sponsored {
-            position: absolute;
-            right: 15px;
-            color: #fff;
-            font-family: Open Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 12px;
-            line-height: 180%;
-            height: 37px;
-            display: flex;
-            align-items: center;
+                    display: flex;
+                    align-items: center;
+                    text-align: right;
+
+                    /* White */
+
+                    color: #ffffff;
+                }
+                .feature-product {
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 180%;
+                    /* or 27px */
+
+                    display: flex;
+                    align-items: center;
+
+                    /* White */
+
+                    color: #ffffff;
+                }
+            }
         }
     }
 }
