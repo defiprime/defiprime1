@@ -5,5 +5,5 @@ product-url: https://www.eventbrite.com/e/2019-nyc-blockchain-gaming-defi-party-
 image: /images/events/images_79931137_176552478414_1_original.jpeg
 product-description: "The 2019 Blockchain Gaming & DeFi Party is dedicated on the topic related to the future of gaming and DeFi during the Consensus Invest, which is the largest digital asset investor outlook Conference and Exhibition held on November 13th in Manhattan, New York. During past Consensus Invest, it attracted more than thousands of industry experts from China, the United States, Europe, and the rest of the world."  
 date: 2019-11-13
-location: 'NY'
+location: 'New York City, NY'
 ---
