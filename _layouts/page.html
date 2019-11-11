@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>{{ page.pagetitle }} </title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,101 +11,138 @@
     <link rel="stylesheet" href="{{ "/assets/css/tooltipster/tooltipster.bundle.min.css " | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/assets/css/main.css " | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-    <meta property="og:title" content="{% if page.pagetitle %}{{ page.pagetitle | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+    <meta property="og:title"
+        content="{% if page.pagetitle %}{{ page.pagetitle | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
-    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-    <meta property="og:image" content="{% if page.og %}{{ site.url }}{{ page.og }}{% else %}{{ site.url }}/images/og.png{% endif %}"  />
+    <meta property="og:description"
+        content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:image"
+        content="{% if page.og %}{{ site.url }}{{ page.og }}{% else %}{{ site.url }}/images/og.png{% endif %}" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@defiprime">
     <meta name="twitter:creator" content="@defiprime">
-    <meta name="twitter:title" content="{% if page.pagetitle %}{{ page.pagetitle | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+    <meta name="twitter:title"
+        content="{% if page.pagetitle %}{{ page.pagetitle | escape }}{% else %}{{ site.title | escape }}{% endif %}">
     <meta name="twitter:description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 160 }}">
-    <meta name="twitter:image" content="{% if page.og %}{{ site.url }}{{ page.og }}{% else %}{{ site.url }}/images/og.png{% endif %}">
-    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+    <meta name="twitter:image"
+        content="{% if page.og %}{{ site.url }}{{ page.og }}{% else %}{{ site.url }}/images/og.png{% endif %}">
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+        integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+        crossorigin="anonymous"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PB9GWJD');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PB9GWJD');</script>
     <!-- End Google Tag Manager -->
 </head>
+
 <body class="product-page">
 
     {% include header.html %}
     <article class="article  article--post  content  typeset">
 
-    <h1 class="collection-header">{{ page.h1title }}</h1>
+        <h1 class="collection-header">{{ page.h1title }}</h1>
 
-    <div class="custodian_description">
-        {{ content }}
-    </div>
+        <div class="custodian_description">
+            {{ content }}
+        </div>
 
-    <section id='assets_cards'>
-        {% for asset_tool in site[page.cards] %}
-            <article class="asset_tool_card">
+        {% if page.filter-by %}
+        <section>
+            <div class="button-group filters-button-group">
+                <button class="button active" data-filter="*">All</button>
+                {% assign items_filters = page.filter-by | split: ", " %}
+                {% for filter in items_filters  %}
+                    {% assign filter_buttons = site[page.cards] | group_by: filter | map: "name" |  join: ", " | split: ", " | uniq | where_exp: "item", "item != ''" %}
+                    {% for filter_button in filter_buttons  %}
+
+                        <button class="button" data-filter="{{filter_button | replace: ' ', '_' }}">{{filter_button}}</button>
+                    {% endfor %}
+
+                {% endfor %}
+            </div>
+        </section>
+        {% endif %}
+
+        <section id='assets_cards'>
+            {% for asset_tool in site[page.cards] %}
+            {% assign card_filters = '' | split: '' %}
+            {% for filter in items_filters  %}
+
+            {% assign filter_names = asset_tool[filter] | replace: ' ', '_' | split: ",_" %}
+            {% assign card_filters = card_filters | concat: filter_names %}
+
+            {% endfor %}
+
+            <article class="asset_tool_card {{card_filters | join: ' '}}">
                 <a href="{{ asset_tool['product-url']}}"><img src="{{ asset_tool['image'] }}"></a>
                 <h4><a href="{{ asset_tool['product-url']}}">{{ asset_tool["product-title"] }}</a></h4>
                 <div class="card_main_details">
                     <div class="asset-tool-tags">
                         {% assign market_tags = asset_tool["ecosystem"] | split: ", " %}
                         {% for market_tag in market_tags %}
-                            {% case market_tag %}
-                                {% when "ethereum" %}
-                                    <span class="tooltip" title="Built on Ethereum or related to Ethereum ecosystem">
-                                        <img class="market_icon" src="images/eth.svg" />
-                                    </span>
-                                {% when "bitcoin" %}
-                                    <span class="tooltip" title="Using Bitcoin ecosystem">
-                                        <img class="market_icon" src="images/btc.svg" />
-                                    </span>
-                                {% when "tron" %}
-                                    <span class="tooltip" title="Built on Tron or related to Tron ecosystem">
-                                        <img class="market_icon" src="images/tron.svg" />
-                                    </span>
-                                {% when "stellar" %}
-                                    <span class="tooltip" title="Built on Stellar or related to Stellar ecosystem">
-                                        <img class="market_icon" src="images/stellar.svg" />
-                                    </span>
-                                {% when "eos" %}
-                                    <span class="tooltip" title="Built on EOS or related to EOS ecosystem">
-                                        <img class="market_icon" src="images/eos.svg" />
-                                    </span>
-                            {% endcase %}
+                        {% case market_tag %}
+                        {% when "ethereum" %}
+                        <span class="tooltip" title="Built on Ethereum or related to Ethereum ecosystem">
+                            <img class="market_icon" src="images/eth.svg" />
+                        </span>
+                        {% when "bitcoin" %}
+                        <span class="tooltip" title="Using Bitcoin ecosystem">
+                            <img class="market_icon" src="images/btc.svg" />
+                        </span>
+                        {% when "tron" %}
+                        <span class="tooltip" title="Built on Tron or related to Tron ecosystem">
+                            <img class="market_icon" src="images/tron.svg" />
+                        </span>
+                        {% when "stellar" %}
+                        <span class="tooltip" title="Built on Stellar or related to Stellar ecosystem">
+                            <img class="market_icon" src="images/stellar.svg" />
+                        </span>
+                        {% when "eos" %}
+                        <span class="tooltip" title="Built on EOS or related to EOS ecosystem">
+                            <img class="market_icon" src="images/eos.svg" />
+                        </span>
+                        {% endcase %}
                         {% endfor %}
                         <div class="tags_separator"></div>
                         {% assign platform_tags = asset_tool["platform"] | split: ", " %}
                         {% for platform_tag in platform_tags %}
-                            {% case platform_tag %}
-                                {% when "android" %}
-                                    <span class="tooltip" title="Mobile wallet for Android">
-                                        <img class="platform_icon" src="/images/android.svg" >
-                                    </span>
-                                {% when "web" %}
-                                    <span class="tooltip" title="Browser based wallet">
-                                        <img class="platform_icon" src="/images/web.svg" >
-                                    </span>
-                                {% when "ios" %}
-                                    <span class="tooltip" title="Mobile wallet for iOS">
-                                        <img class="platform_icon" src="/images/ios.svg" >
-                                    </span>
-                            {% endcase %}
+                        {% case platform_tag %}
+                        {% when "android" %}
+                        <span class="tooltip" title="Mobile wallet for Android">
+                            <img class="platform_icon" src="/images/android.svg">
+                        </span>
+                        {% when "web" %}
+                        <span class="tooltip" title="Browser based wallet">
+                            <img class="platform_icon" src="/images/web.svg">
+                        </span>
+                        {% when "ios" %}
+                        <span class="tooltip" title="Mobile wallet for iOS">
+                            <img class="platform_icon" src="/images/ios.svg">
+                        </span>
+                        {% endcase %}
                         {% endfor %}
                         {% assign type_tags = asset_tool["type"] | split: ", " %}
                         {% for type_tag in type_tags %}
-                            {% if type_tag == "cefi" %}
-                                <span class="tooltip" title="CeFi product. CeFi products are custodial, use centralized price feeds, initiate margin calls centrally, centrally determine interest rates, and centrally provide liquidity for their margin calls.">
-                                    <img class="market_icon" src="images/sefi.svg" />
-                                </span>
-                            {% else %}
-                                <span class="tooltip" title="Non-custodial">
-                                    <img class="market_icon" src="images/non_custodial.svg" />
-                                </span>
-                            {% endif %}
+                        {% if type_tag == "cefi" %}
+                        <span class="tooltip"
+                            title="CeFi product. CeFi products are custodial, use centralized price feeds, initiate margin calls centrally, centrally determine interest rates, and centrally provide liquidity for their margin calls.">
+                            <img class="market_icon" src="images/sefi.svg" />
+                        </span>
+                        {% else %}
+                        <span class="tooltip" title="Non-custodial">
+                            <img class="market_icon" src="images/non_custodial.svg" />
+                        </span>
+                        {% endif %}
                         {% endfor %}
                     </div>
                     <p>{{ asset_tool["product-description"] | markdownify | remove: '<p>' | remove: '</p>' }}</p>
@@ -112,73 +150,103 @@
                         <a href="/product/{{ asset_tool.product-title | slugify: 'latin'}}">
                             <img class="base_comment" src="/images/no_comment.svg">
                             <img class="hovered_comment" src="/images/comment_hover.svg">
-                            <span class="gc-counter" data-url="{{ site.url }}/product/{{ asset_tool.product-title | slugify: 'latin' }}">0</span>
+                            <span class="gc-counter"
+                                data-url="{{ site.url }}/product/{{ asset_tool.product-title | slugify: 'latin' }}">0</span>
                             <span class="tip"><span class="icon">👈</span> What do you think?</span>
                         </a>
                     </div>
                 </div>
             </article>
-        {% endfor %}
-    </section>
+            {% endfor %}
+        </section>
 
-</article>
+    </article>
 
-<!--
+    <script>
+        window.addEventListener('load', () => {
+            // filter items on button click
+            var filterButtons = document.querySelectorAll('.filters-button-group button');
+            Array.from(filterButtons).forEach(button => {
+                button.addEventListener('click', function (e) {
+                    filterButtons.forEach(node => {
+                        node.classList.remove('active');
+                    });
+                    e.currentTarget.classList.add('active');
+                    var filterValue = e.currentTarget.dataset.filter;
+                    filter(filterValue);
+                });
+            });
+
+            function filter(filterValue) {
+                var itemSelector = document.querySelectorAll('#assets_cards .asset_tool_card');
+                Array.from(itemSelector).forEach(item => {
+                    if (filterValue === "*") {
+                        item.style.display = '';
+                        return;
+                    }
+                    item.style.display = item.classList.contains(filterValue) ? '' : 'none';
+                });
+
+            }
+        });
+    </script>
+
+    <!--
     Include this javascript code after your .gc-counters elements
 -->
-<script type="text/javascript">
+    <script type="text/javascript">
 
-   /* - - - CONFIGURATION VARIABLES - - - */
+        /* - - - CONFIGURATION VARIABLES - - - */
 
-  var website = 'defiprime_prod';
+        var website = 'defiprime_prod';
 
-  /* - - - DON'T EDIT BELOW THIS LINE - - - */
+        /* - - - DON'T EDIT BELOW THIS LINE - - - */
 
-  // get all counters
-  var counters = document.querySelectorAll('.gc-counter');
-  Array.prototype.forEach.call(counters, function(counter) {
-    var url = counter.dataset.url;
-    var uid = counter.dataset.uid;
-    var req = new XMLHttpRequest();
+        // get all counters
+        var counters = document.querySelectorAll('.gc-counter');
+        Array.prototype.forEach.call(counters, function (counter) {
+            var url = counter.dataset.url;
+            var uid = counter.dataset.uid;
+            var req = new XMLHttpRequest();
 
-    // called when the ajax request is completed
-    req.onreadystatechange = function(){
-      if (this.readyState == 4) {
-        if (this.status === 200) {
-          try {
-            var resp = JSON.parse(this.responseText);
-          } catch (e) {
-            console.error(
-              '[gc-counter] fail to decode response "' + this.responseText + '", using url "' + url + '"'
-            );
-            return;
-          }
-          if (typeof resp.count !== 'undefined') {
-            // write count
-            counter.textContent = resp.count;
-            if(resp.count > 0){
-                counter.className += " gc-active-comment";
+            // called when the ajax request is completed
+            req.onreadystatechange = function () {
+                if (this.readyState == 4) {
+                    if (this.status === 200) {
+                        try {
+                            var resp = JSON.parse(this.responseText);
+                        } catch (e) {
+                            console.error(
+                                '[gc-counter] fail to decode response "' + this.responseText + '", using url "' + url + '"'
+                            );
+                            return;
+                        }
+                        if (typeof resp.count !== 'undefined') {
+                            // write count
+                            counter.textContent = resp.count;
+                            if (resp.count > 0) {
+                                counter.className += " gc-active-comment";
+                            }
+                        }
+                    } else {
+                        console.error(
+                            '[gc-counter] invalid url "' + url + '", this url is not rattached to a GraphComment page.'
+                        );
+                    }
+                }
             }
-          }
-        } else {
-          console.error(
-            '[gc-counter] invalid url "' + url + '", this url is not rattached to a GraphComment page.'
-          );
-        }
-      }
-    }
 
-    // send ajax request
-    var query = 'website=' + encodeURIComponent(website)
-      + '&url=' + encodeURIComponent(url)
-      + (uid ? '&uid=' + encodeURIComponent(uid) : '')
-    ;
-    req.open('GET', 'https://graphcomment.com/api/pub/numberOfComments?' + query, true);
-    req.send();
-  });
-</script>
+            // send ajax request
+            var query = 'website=' + encodeURIComponent(website)
+                + '&url=' + encodeURIComponent(url)
+                + (uid ? '&uid=' + encodeURIComponent(uid) : '')
+                ;
+            req.open('GET', 'https://graphcomment.com/api/pub/numberOfComments?' + query, true);
+            req.send();
+        });
+    </script>
 
-    {% include also.html %}  {% include footer.html %}
+    {% include also.html %} {% include footer.html %}
 
 
 </body>
