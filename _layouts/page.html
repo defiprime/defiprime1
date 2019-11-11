@@ -161,7 +161,7 @@
     <script>
         window.addEventListener('load', () => {
             // filter items on button click
-            var filterButtons = document.querySelectorAll('#assets_cards .asset_tool_card');
+            var filterButtons = document.querySelectorAll('.filters-button-group button');
             Array.from(filterButtons).forEach(button => {
                 button.addEventListener('click', function (e) {
                     filterButtons.forEach(node => {
@@ -174,7 +174,7 @@
             });
 
             function filter(filterValue) {
-                var itemSelector = document.querySelectorAll('#asset_cards .asset_tool_card');
+                var itemSelector = document.querySelectorAll('#assets_cards .asset_tool_card');
                 Array.from(itemSelector).forEach(item => {
                     if (filterValue === "*") {
                         item.style.display = '';
