@@ -60,19 +60,16 @@
                 <button class="button active" data-filter="*">All</button>
                 {% assign items_filters = page.filter-by | split: ", " %}
                 {% for filter in items_filters  %}
-                {% assign filter_buttons = site[page.cards] | group_by: filter | map: "name" |  join: ", " | split: ", " | uniq | where_exp: "item", "item != ''" %}
-                {% for filter_button in filter_buttons  %}
+                    {% assign filter_buttons = site[page.cards] | group_by: filter | map: "name" |  join: ", " | split: ", " | uniq | where_exp: "item", "item != ''" %}
+                    {% for filter_button in filter_buttons  %}
 
-                <button class="button"
-                    data-filter="{{filter_button | prepend: '.' | replace: ' ', '_' }}">{{filter_button}}</button>
+                        <button class="button" data-filter="{{filter_button | replace: ' ', '_' }}">{{filter_button}}</button>
+                    {% endfor %}
+
                 {% endfor %}
-
-                {% endfor %}
-
-
             </div>
         </section>
-        <section id='assets_cards' class="isotope">
+        <section id='assets_cards'>
             {% for asset_tool in site[page.cards] %}
             {% assign card_filters = '' | split: '' %}
             {% for filter in items_filters  %}
@@ -82,7 +79,7 @@
 
             {% endfor %}
 
-            <article class="asset_tool_card isotope-item {{card_filters | join: ' '}}">
+            <article class="asset_tool_card {{card_filters | join: ' '}}">
                 <a href="{{ asset_tool['product-url']}}"><img src="{{ asset_tool['image'] }}"></a>
                 <h4><a href="{{ asset_tool['product-url']}}">{{ asset_tool["product-title"] }}</a></h4>
                 <div class="card_main_details">
@@ -163,15 +160,8 @@
 
     <script>
         window.addEventListener('load', () => {
-            var iso = new Isotope('.isotope', {
-                // options
-                itemSelector: '.isotope-item',
-                layoutMode: 'fitRows'
-            });
-
-
             // filter items on button click
-            var filterButtons = document.querySelectorAll('.filters-button-group button');
+            var filterButtons = document.querySelectorAll('#assets_cards .asset_tool_card');
             Array.from(filterButtons).forEach(button => {
                 button.addEventListener('click', function (e) {
                     filterButtons.forEach(node => {
@@ -179,11 +169,21 @@
                     });
                     e.currentTarget.classList.add('active');
                     var filterValue = e.currentTarget.dataset.filter;
-                    iso.arrange({ filter: filterValue });
+                    filter(filterValue);
                 });
             });
 
+            function filter(filterValue) {
+                var itemSelector = document.querySelectorAll('#asset_cards .asset_tool_card');
+                Array.from(itemSelector).forEach(item => {
+                    if (filterValue === "*") {
+                        item.style.display = '';
+                        return;
+                    }
+                    item.style.display = item.classList.contains(filterValue) ? '' : 'none';
+                });
 
+            }
         });
     </script>
 
