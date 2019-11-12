@@ -1,5 +1,5 @@
 ---
-git-date: 
+git-date:
 product-title: Uma
 product-url: https://umaproject.org/
 image: /images/output_md/httpsumaprojectorg.png
