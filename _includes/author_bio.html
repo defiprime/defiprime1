@@ -6,7 +6,7 @@
       <div class="author-info">
          <div class="author-img">
             {% if author.image %}
-            <img src="{{ author.image }}">
+            <img class="lazyload" data-src="{{ author.image }}">
             {% endif %}
          </div>
          <div class="author-descr">

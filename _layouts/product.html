@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="What is {{ page.product-title }}? {{ page.product-description | strip_html | strip_newlines | truncate: 160 }}">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ "/assets/css/main.css " | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     <meta property="og:title" content="{{ page.product-title }} - Reviews. What is {{ page.product-title }}?" />
     <meta property="og:type" content="website" />
@@ -43,7 +43,7 @@
 
         <h1>{{ page.product-title }}</h1>
         <div class='product-description-table'>
-            <a href="{{ page.product-url }}"><img src="{{ page.image }}" width="100%" alt=""></a>
+            <a href="{{ page.product-url }}"><img class="lazyload" data-src="{{ page.image }}" width="100%" alt=""></a>
             <div class='product-highlights'>
                 <h2>What is {{ page.product-title }}?</h2>
                 <div class='product-tags-icons'>
@@ -94,7 +94,7 @@
   		<a href="{{ post.url }}" class="post-link">
   			<div class="post-top">
   				<span class="image">
-  					<img src="{{ post.image }}" alt="" />
+  					<img class="lazyload" data-src="{{ post.image }}" alt="" />
   				</span>
   			</div>
   			<div class="descr2">

@@ -140,3 +140,14 @@ algolia:
     - eos.md
     - ethereum.md
     - placeholder.md
+
+lazy_load_image:
+  src_attr_name: data-src # [required] You need to specify the attributes to be saved for lazy loading
+  #preload_image: /path/to/image # [optional] you can add a data uri or loading image as fallback src
+  class_attr_values: # [optional] if you want to add custom class value, please add values
+    - lazyload
+  # ignore_selectors: # [optional] if you want to ignore applying lazy load image, please add selector (css or xpath)
+  #   - ".ignore-lazy-image-load"
+  #   - "/*[@class='ignore-lazy-image-load']"
+  # additional_attrs: # [optional] if you want to add attributes, please add key value
+  #   "data-size": auto 

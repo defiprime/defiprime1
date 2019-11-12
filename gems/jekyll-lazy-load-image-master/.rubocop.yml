@@ -1,0 +1,74 @@
+---
+AllCops:
+  TargetRubyVersion: 2.4
+  Exclude:
+    - bin/**/*
+    - exe/**/*
+    - benchmark/**/*
+    - script/**/*
+    - vendor/**/*
+    - tmp/**/*
+
+Layout/SpaceAroundOperators:
+  Enabled: false
+
+Lint/AssignmentInCondition:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 24
+
+Metrics/BlockLength:
+  Max: 150
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 150
+  IgnoredPatterns:
+    - '\A\s*#'
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Naming/FileName:
+  Enabled: false
+
+Style/BlockDelimiters:
+  Exclude:
+    - spec/**/*
+
+Style/Documentation:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    "%q": "{}"
+    "%Q": "{}"
+    "%r": "!!"
+    "%s": "()"
+    "%w": "()"
+    "%W": "()"
+    "%x": "()"
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
