@@ -17,7 +17,7 @@ featured-image: /images/og-rates.png
         {% assign icons = "defi_lending|interest_rate_on_balances|vanguard_cds|vanguard_real_estate|sdpr_bloomberg" | split: "|" %}
         {% for description in descriptions %}
         <div>
-            <img src="/images/{{icons[forloop.index0]}}.svg">
+            <img class="lazyload" data-src="/images/{{icons[forloop.index0]}}.svg">
             <span>{{description}}</span>
         </div>
         {% endfor %}
@@ -29,7 +29,7 @@ featured-image: /images/og-rates.png
     <span class="rates_annotation">What you can earn lending your stablecoins?</span>
     <div id="avg_interest_rates_cryptos">
         <article class="providersDAI">
-            <img src="/images/dai.svg">
+            <img class="lazyload" data-src="/images/dai.svg">
             <span class="providerCryptoName">DAI</span>
             <span class="percentCrypto" data-bind="text: $root.averageDAI"></span> 7-days avg.
             <div class="listAnnotation">Best Yields DAI Today, APR</div>
@@ -41,7 +41,7 @@ featured-image: /images/og-rates.png
             </ul>
         </article>
         <article class="providersUSDC">
-            <img src="/images/usdc.svg">
+            <img class="lazyload" data-src="/images/usdc.svg">
             <span class="providerCryptoName">USDC</span>
             <span class="percentCrypto"  data-bind="text: $root.averageUSDC"></span> 7-days avg.
             <div class="listAnnotation">Best Yields USDC Today, APR</div>
@@ -65,7 +65,7 @@ featured-image: /images/og-rates.png
     <span class="rates_annotation"><a href="/uniswap-liquidity-pools">How liquidity pools works?</a></span>
     <div id="avg_interest_rates_cryptos">
         <article class="providersDAI">
-            <img src="/images/dai_eth.svg">
+            <img class="lazyload" data-src="/images/dai_eth.svg">
             <span class="providerCryptoName">DAI/ETH</span>
             <ul data-bind="foreach: providersETHDai">
                 <li>
@@ -75,7 +75,7 @@ featured-image: /images/og-rates.png
             </ul>
         </article>
         <article class="providersUSDC">
-            <img src="/images/usdc_eth.svg">
+            <img class="lazyload" data-src="/images/usdc_eth.svg">
             <span class="providerCryptoName">USDC/ETH</span>
             <ul data-bind="foreach: providersETHUsdc">
                 <li>

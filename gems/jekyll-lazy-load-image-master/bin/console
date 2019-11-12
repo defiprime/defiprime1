@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "jekyll-lazy-load-image"
+
+require "pry"
+Pry.start
+
