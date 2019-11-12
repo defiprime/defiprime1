@@ -7,7 +7,7 @@ h1title: DeFi Infrastructure & Dev Tooling
 pagetitle: DeFi Network Financial Services Infrastructure  
 metadescription: DeFi Network it is protocols, frameworks and underlaying technologies for building decentralized finance ecosystems.
 category: products
-filter-by: ecosystem
+filter-by: ecosystem, filter
 og: /images/og-infrastructure.png
 cards: infrastructure
 ---
