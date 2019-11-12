@@ -1,8 +1,8 @@
 <h3>The Latest:</h3>
 <section class="tiles">
-  {% assign posts = site.categories.blog | where_exp:"post", "post.url != page.url" | sample:3 %}
+	{% assign posts = site.categories.blog | where_exp:"post", "post.url != page.url" | sample:3 %}
 
-  {% for post in posts %}
+	{% for post in posts %}
 	<article>
 		<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}" class="post-link">
 			<div class="post-top">
@@ -17,5 +17,5 @@
 			</div>
 		</a>
 	</article>
-{% endfor %}
+	{% endfor %}
 </section>
