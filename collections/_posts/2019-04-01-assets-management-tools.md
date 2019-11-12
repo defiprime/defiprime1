@@ -1,5 +1,5 @@
 ---
-git-date: 
+git-date:
 layout: page
 title:  "Asset Management Tools"
 permalink: assets-management-tools
@@ -9,6 +9,7 @@ metadescription: Best Ethereum wallets and Asset Management Tools for DeFi. Cust
 category: products
 og: /images/og-assets-management-tools.png
 cards: assets-management-tools
+filter-by: ecosystem, platform, filter
 redirect_from:
   - custodian_services
   - assets-managament-tools

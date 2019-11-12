@@ -5,6 +5,7 @@ product-url: https://bzx.network/
 image: /images/output_md/httpsb0xnetwork.png
 ecosystem: ethereum
 product-description: bZx protocol is a financial primitive for shorting, leverage, borrowing, and lending that empowers decentralized blockchain applications.
+filter: protocols
 coltitle:  "Infrastructure"
 colpermalink: infrastructure
 twitter: https://twitter.com/b0xNet
