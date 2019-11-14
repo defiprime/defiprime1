@@ -103,11 +103,7 @@ collections:
     output: true
     permalink: /product/:name
     section_url: /dao
-  interfaces:
-    output: true
-    permalink: /product/:name
-    section_url: /interfaces
-    
+
 defaults:
   -
     values:
@@ -150,4 +146,4 @@ lazy_load_image:
   #   - ".ignore-lazy-image-load"
   #   - "/*[@class='ignore-lazy-image-load']"
   # additional_attrs: # [optional] if you want to add attributes, please add key value
-  #   "data-size": auto 
+  #   "data-size": auto
