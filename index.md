@@ -36,7 +36,7 @@ redirect_from:
 
 <h2 id="defi_projects" class='defi_projects_annotation'>DeFi projects</h2>
 
-<section class="tiles floating">
+<section class="tiles floating grid">
 {% assign sorted_categories_products = site.categories.products | sort: 'title', 'last' %}
 
 {% for post in sorted_categories_products %}
