@@ -3,11 +3,9 @@ label: test
 hide_body: false
 fields:
 - type: text
-  name: git-date
-  label: git-date
-- type: text
   name: layout
   label: layout
+  default: blog
 - type: text
   name: title
   label: title
