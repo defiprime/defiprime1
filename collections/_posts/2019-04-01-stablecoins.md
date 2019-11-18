@@ -7,7 +7,7 @@ h1title: Stablecoins
 pagetitle: Complete Stablecoins List - Decentralized Stablecoins  
 metadescription: Stablecoins are cryptocurrencies designed to minimize the volatility of the price of the stablecoin, relative to some 'stable' asset or basket of assets.
 category: products
-filter-by: ecosystem
+filter-by: ecosystem, filter
 og: /images/og-stablecoins.png
 cards: stablecoins
 ---
