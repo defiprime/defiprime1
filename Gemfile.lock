@@ -1,3 +1,10 @@
+PATH
+  remote: gems/jekyll-lazy-load-image-master
+  specs:
+    jekyll-lazy-load-image (0.3.0)
+      jekyll (>= 3.8, < 5.0)
+      nokogiri (~> 1.8)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -103,6 +110,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.0)
   jekyll-algolia
+  jekyll-lazy-load-image!
   jekyll-paginate-v2
   jekyll-random
   jekyll-redirect-from

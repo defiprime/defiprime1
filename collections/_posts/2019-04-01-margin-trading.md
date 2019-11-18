@@ -7,6 +7,7 @@ h1title: Margin trading
 pagetitle: DeFi Crypto Margin Trading - DeFi Short and Leveraged Trading Platforms    
 metadescription: DeFi crypto margin trading refers to the practice of using borrowed funds from a broker to trade a financial asset, which forms the collateral for the loan from the broker.
 category: products
+filter-by: filter, type
 og: /images/og-margin-trading.png
 cards: margin-trading
 ---

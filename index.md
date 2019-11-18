@@ -36,7 +36,7 @@ redirect_from:
 
 <h2 id="defi_projects" class='defi_projects_annotation'>DeFi projects</h2>
 
-<section class="tiles floating">
+<section class="tiles floating grid">
 {% assign sorted_categories_products = site.categories.products | sort: 'title', 'last' %}
 
 {% for post in sorted_categories_products %}
@@ -64,7 +64,7 @@ redirect_from:
     {% for document in documents limit: 6 %}
 		<article>
 			<a class='recent_blog_link' href="/product/{{ document.product-title | slugify: 'latin'}}">
-				<img src="{{ document.image }}">
+				<img class="lazyload" data-src="{{ document.image }}">
 				<h2>{{ document.product-title }}</h2>
 			</a>
 		</article>
@@ -99,7 +99,7 @@ redirect_from:
 		{% assign counter = counter | plus:1 %}
 		<article>
 			<a href='{{event.product-url}}'>
-				<img src='{{event.image}}'>
+				<img class="lazyload" data-src='{{event.image}}'>
 				<div class='event_card_info_part'>
 					<h4>{{ event.product-title }}</h4>
 					<div class='event_card_details'>
