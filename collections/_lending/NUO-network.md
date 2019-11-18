@@ -4,7 +4,7 @@ product-title: NUO Network
 product-url: https://app.nuo.network/lend
 image: /images/output_md/httpswwwnuonetwork.png
 ecosystem: ethereum
-product-description: Nuo Network enables lending and borrowing using smart contracts which are open source.
+product-description:  NUO Network is a decentralised debt marketplace that connects lenders and borrowers using smart contracts.
 coltitle:  "Lending"
 colpermalink: decentralized-lending
 twitter: https://twitter.com/getnuo
