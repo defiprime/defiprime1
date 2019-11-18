@@ -43,4 +43,4 @@ If you need our logo visit this page with [media assets](/media-assets).
 
 ### Contact DeFiprime
 
-DMs open [@defiprime](https://twitter.com/defiprime)
+DMs are open [@defiprime](https://twitter.com/defiprime)
