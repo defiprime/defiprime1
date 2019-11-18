@@ -8,4 +8,5 @@ product-description: Nuo Network enables lending and borrowing using smart contr
 coltitle:  "Lending"
 colpermalink: decentralized-lending
 twitter: https://twitter.com/getnuo
+github: https://github.com/nuonetwork
 ---
