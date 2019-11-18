@@ -8,6 +8,7 @@ product-description: dYdX is a trading platform for crypto assets, built with op
 coltitle:  "Margin trading"
 colpermalink: margin-trading
 type: non-custodial
+filter: No trading fees, Ethereum
 twitter: https://twitter.com/dydxprotocol
 github: https://github.com/dydxprotocol/
 ---

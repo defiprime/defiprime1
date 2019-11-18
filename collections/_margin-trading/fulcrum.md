@@ -8,6 +8,7 @@ product-description: Fulcrum is the platform for tokenized margin lending and tr
 coltitle:  "Margin trading"
 colpermalink: margin-trading
 type: non-custodial
+filter: No trading fees, Ethereum, ERC-20 Tokens
 twitter: https://twitter.com/b0xNet
 github: https://github.com/bZxNetwork
 ---
