@@ -13,7 +13,7 @@ featured-image: /images/og-rates.png
     <p>Lending stablecoins could be an alternative to high yield CDs, ETFs, and savings accounts, with relatively higher risk.</p>
     <canvas id="rate_graphs"></canvas>
     <div id="description">
-        {% assign descriptions = "Defi lending|Interest rate on balances|Vanguard CDs|Vanguard Real Estate ETF|SPDR Bloomberg Barclays High Yield Bond ETF" | split: "|" %}
+        {% assign descriptions = "DeFi Lending|Interest Rate On Balances|Vanguard CDs|Vanguard Real Estate ETF|SPDR Bloomberg Barclays High Yield Bond ETF" | split: "|" %}
         {% assign icons = "defi_lending|interest_rate_on_balances|vanguard_cds|vanguard_real_estate|sdpr_bloomberg" | split: "|" %}
         {% for description in descriptions %}
         <div>
@@ -32,7 +32,7 @@ featured-image: /images/og-rates.png
             <img class="lazyload" data-src="/images/dai.svg">
             <span class="providerCryptoName">SAI</span>
             <span class="percentCrypto" data-bind="text: $root.averageDAI"></span> 7-days avg.
-            <div class="listAnnotation">Best Yields SAI(Legacy DAI) Today, APR</div>
+            <div class="listAnnotation">Best yields SAI(legacy DAI) today, APR</div>
             <ul data-bind="foreach: providersDAI">
                 <li>
                     <a class="cryptoListName" target="_blank" data-bind="text: provider, attr: { href: providerLink }"></a>
@@ -44,7 +44,7 @@ featured-image: /images/og-rates.png
             <img class="lazyload" data-src="/images/usdc.svg">
             <span class="providerCryptoName">USDC</span>
             <span class="percentCrypto"  data-bind="text: $root.averageUSDC"></span> 7-days avg.
-            <div class="listAnnotation">Best Yields USDC Today, APR</div>
+            <div class="listAnnotation">Best yields USDC today, APR</div>
             <ul data-bind="foreach: providersUSDC">
                 <li>
                     <a class="cryptoListName" target="_blank" data-bind="text: provider, attr: { href: providerLink }"></a>
