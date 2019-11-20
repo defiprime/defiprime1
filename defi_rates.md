@@ -26,13 +26,13 @@ featured-image: /images/og-rates.png
 
 <section>
     <h2 class="defi-rates-heading">DeFi Lending Rates</h2>
-    <span class="rates_annotation">What you can earn lending your stablecoins?</span>
+    <span class="rates_annotation">What can you earn lending your stablecoins?</span>
     <div id="avg_interest_rates_cryptos">
         <article class="providersDAI">
             <img class="lazyload" data-src="/images/dai.svg">
-            <span class="providerCryptoName">DAI</span>
+            <span class="providerCryptoName">SAI</span>
             <span class="percentCrypto" data-bind="text: $root.averageDAI"></span> 7-days avg.
-            <div class="listAnnotation">Best Yields DAI Today, APR</div>
+            <div class="listAnnotation">Best Yields SAI(Legacy DAI) Today, APR</div>
             <ul data-bind="foreach: providersDAI">
                 <li>
                     <a class="cryptoListName" target="_blank" data-bind="text: provider, attr: { href: providerLink }"></a>
@@ -66,7 +66,7 @@ featured-image: /images/og-rates.png
     <div id="avg_interest_rates_cryptos">
         <article class="providersDAI">
             <img class="lazyload" data-src="/images/dai_eth.svg">
-            <span class="providerCryptoName">DAI/ETH</span>
+            <span class="providerCryptoName">SAI/ETH</span>
             <ul data-bind="foreach: providersETHDai">
                 <li>
                     <a class="cryptoListName" target="_blank" data-bind="text: provider, attr: { href: providerLink }"></a>
