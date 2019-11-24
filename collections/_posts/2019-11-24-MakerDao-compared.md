@@ -5,12 +5,12 @@ title:  What’s The Difference Between MakerDAO And Equilibrium?
 permalink: makerdao-compared-to-equilibrium
 h1title: "What’s The Difference Between MakerDAO And Equilibrium?"
 pagetitle: "What’s The Difference Between MakerDAO And Equilibrium?"
-metadescription: "Fredrik told us the backstory of Dune Analytics and shared plans for lowering the bar for anyone who wants to explore aggregated on-chain data insights for Ethereum smart contracts."
+metadescription: "Cryptocurrency at large has a volatility problem, and decentralized stablecoins like MakerDAO’s DAI and Equilibrium’s EOSDT each present their own compelling solutions to it."
 category: blog
 featured-image: /images/blog/dune-analytics-og.png
 quote: /images/blog/dune-analytics-quote.png
-intro: "Fredrik told us the backstory of Dune Analytics and shared plans for lowering the bar for anyone who wants to explore aggregated on-chain data insights for Ethereum smart contracts."
-author: Defiprime
+intro: "Cryptocurrency at large has a volatility problem, and decentralized stablecoins like MakerDAO’s DAI and Equilibrium’s EOSDT each present their own compelling solutions to it."
+author: melikhov
 ---
 Cryptocurrency at large has a volatility problem, and decentralized stablecoins like MakerDAO’s DAI and Equilibrium’s EOSDT each present their own compelling solutions to it.
 
