@@ -71,11 +71,11 @@ By comparison, Equilibrium brings decentralized stablecoin functionality to the 
 
 #### Transaction speeds
 
-Decentralized finance developers have a clear analog for the kinds of transaction speeds they need to hit in order to be a truly global financial product: those of major credit card companies. Visa processes an average of 100 million credit card transactions per day. Therefore a crypto product that purports to serve the world should be able to handle thousands of transactions per minute.
+Decentralized finance developers have a clear analog for the kinds of transaction speeds they need to hit in order to be a truly global financial product: those of major credit card companies. Visa processes an average of [100 million](https://www.braintreepayments.com/blog/what-is-visas-role-in-credit-card-processing/) credit card transactions per day. Therefore a crypto product that purports to serve the world should be able to handle thousands of transactions per minute.
 
 Ethereum tops out at 15 per second, which is a far cry from EOS’s 3,000 per second. Ethereum’s issues with scalability are known, and those problems with growing to serve more users are inherently MakerDAO’s problems as well. There is a hard-coded limit on computation per block that means the Ethereum blockchain (and therefore the projects that depend on) will only ever move so quickly.
 
-EOS is not without issues of its own. The network recently fell victim to a mysterious airdrop for a token called EIDOS that sent the network into congestion mode. Users “mine” new EIDOS tokens by moving EOS around on the network. In practical terms, this means EOS users are sending executing lots and lots of microtransactions with EIDOS’s smart contracts.
+EOS is not without issues of its own. The network recently fell victim to a [mysterious airdrop](https://www.coindesk.com/a-mysterious-airdrop-called-eidos-is-clogging-eos-to-make-a-point?amp=1) for a token called EIDOS that sent the network into congestion mode. Users “mine” new EIDOS tokens by moving EOS around on the network. In practical terms, this means EOS users are sending executing lots and lots of microtransactions with EIDOS’s smart contracts.
 
 When a lot of people want to do the same thing on the network, they fundamentally slow each other down.
 
