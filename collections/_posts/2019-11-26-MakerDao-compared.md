@@ -4,7 +4,7 @@ layout: blog
 title:  MakerDAO vs. Equilibrium
 permalink: makerdao-compared-to-equilibrium
 h1title: "What’s The Difference Between MakerDAO And Equilibrium?"
-pagetitle: "What’s The Difference Between MakerDAO And Equilibrium?"
+pagetitle: "What’s The Difference Between MakerDAO And Equilibrium? MakerDAO vs. Equilibrium"
 metadescription: "Cryptocurrency at large has a volatility problem, and decentralized stablecoins like MakerDAO’s DAI and Equilibrium’s EOSDT each present their own compelling solutions to it."
 category: blog
 featured-image: /images/blog/makerdao-compared-og.png
