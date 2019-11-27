@@ -59,7 +59,12 @@
                 {% endif %}
                                     </div>
                 {% assign link_presented = page.product-description | markdownify | split: '<a' | size %}
-                <div {% if link_presented == 1 %} style='flex: 0' {% endif %}> {{ page.product-description | markdownify }} </div>
+                <div {% if link_presented == 1 %} style='flex: 0' {% endif %}> {{ page.product-description | markdownify }}
+<p>
+                  {% if page.type == 'cefi'   %}
+                          {{ page.product-title }} is a custodial, CeFi product.
+                          {% endif %} </p>
+                </div>
             </div>
         </div>
         <h3 class='give-thoughts-header'>What do you think of {{ page.product-title }} product?</h3>
