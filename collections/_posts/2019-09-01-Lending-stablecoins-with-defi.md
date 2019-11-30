@@ -37,11 +37,11 @@ This experiment will help demonstrate the differences between lending protocols 
 
 | Product  | 09/01  | 10/01   | 11/01  | 12/01  |
 |---|---|---|---|---|
-| [Compound Finance](https://compound.finance/)  |  100 DAI | 100.77  | 101.46  |   |
-| [Nuo](https://www.nuo.network/)¹ | 100 USDC | 100.57   | 101.22  |   |
-| [Fulcrum](https://fulcrum.trade/#/)  | 100 DAI | 100.67  | 101.20  |   |
-| [dYdX](http://trade.dydx.exchange)  | 100 DAI | 100.75  | 101.39  |   |
-| [Idle Finance](https://idle.finance/)  | 100 DAI | 100.72  | 101.37  |   |
+| [Compound Finance](https://compound.finance/)  |  100 DAI | 100.77  | 101.46  | 101.91  |
+| [Nuo](https://www.nuo.network/)¹ | 100 USDC | 100.57   | 101.22  | 102.18  |
+| [Fulcrum](https://fulcrum.trade/#/)  | 100 DAI | 100.67  | 101.20  | 101.65 |
+| [dYdX](http://trade.dydx.exchange)  | 100 DAI | 100.75  | 101.39  | 101.82  |
+| [Idle Finance](https://idle.finance/)  | 100 DAI | 100.72  | 101.37  | 101.82  |
 
 _¹ Deposit in USDC_
 
@@ -97,8 +97,40 @@ DeFi rates have been in a range of 6-7% in October. Updates for each platform as
 
 ![](/images/blog/lendingexperiment/Idle-11-01.png)
 
+### Update: December, 1, 2019
 
-Next update is December, 1, 2019.   
+November was a fascinating month for DeFi enthusiasts, due to MakerDAO's transition to multi collateral DAI, and conversion from SAI (Legacy single collateral DAI) to a new DAI. Most of the DeFi lending protocols published their own transitions plans. Moreover, Fulcrum and Compound already launched markets for the new DAI. I'm not going to migrate from SAI to DAI just yet, because APR for SAI is better at the moment:
+
+![](/images/blog/lendingexperiment/december-apr.png)
+
+December updates for each platform as follows:
+
+- #### Compound Finance
+
+![](/images/blog/lendingexperiment/compound-12-01.png)
+
+- #### Nuo
+
+Notable breakout for Nuo this month:
+
+![](/images/blog/lendingexperiment/nuo-12-01.png)
+
+- #### Fulcrum
+
+Interesting that Fulcrum offers SAI to DAI migration right from UI:
+
+![](/images/blog/lendingexperiment/fulcrum-12-01.png)
+
+- #### dYdX
+
+![](/images/blog/lendingexperiment/dYdX-12-01.png)
+
+- #### Idle
+
+![](/images/blog/lendingexperiment/Idle-12-01.png)
+
+
+Next update is January, 1, 2020.   
 
 ---
 
