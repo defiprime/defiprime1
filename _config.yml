@@ -33,8 +33,7 @@ pagination:
 markdown: kramdown
 # Layout settings
 home-link-in-menu: no
-plugins:
-  - jekyll-random
+
 include: ['.htaccess']
 collections_dir: collections
 collections:
