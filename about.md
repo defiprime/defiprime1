@@ -18,6 +18,7 @@ DeFiprime.com is the digital media and analytical services provider for the DeFi
 * Visible product traction (not empty marketplace, not empty order book, etc).   
 * Decentralized first. Label 'Region is not supported' it's a spit in the face of DeFi. Check our recent [twitter-poll](https://twitter.com/defiprime/status/1130890433821724672) with community sentiment on this matter.
 * No crypto tribalism and bias. Ethereum, Tron, EOS, Bitcoin and the rest of blockchains are equal as long as DeFi product built on top are useful.
+* Lastly: no, you can’t buy a listing on Defiprime, don’t waste your time.
 
 So to reiterate, we’ll give you two examples below.
 
@@ -27,15 +28,17 @@ Bad pitch for listing at DeFiprime:
 Good pitch for listing at DeFiprime:
 - "We launched on mainnet three months ago, after two respectable auditors independently audited our smart contracts. Since our launch, we achieved this and that milestones, and XXXX users using our app regularly. We also integrated with a few well known DeFi protocols."
 
+
 *If you'd like to submit your project, please fill this [product listing form](https://sneg55.typeform.com/to/WRFW02).*
+
 
 ### Advertising on DeFiprime
 
-We are the largest media outlet focused solely on DeFi and Open Finance. The only ad format available for adverts at the moment it's native articles(interviews, use cases, explainers). Please fill this [inquiry form](https://sneg55.typeform.com/to/zAR7ZH) to get in touch.
+We are the largest media outlet focused solely on DeFi and Open Finance space. The only ad format available for adverts at the moment it's native articles(interviews, use cases, explainers). Fill this [inquiry form](https://sneg55.typeform.com/to/zAR7ZH) to get in touch. Please note: we don't list products on our site for a fee, this form for advertising requests only.
 
 ### Events Listing
 
-If you are running DeFi-related event we are glad to feature it on our DeFi events calendar, and share it on our social media. Please fill this [event listing form](https://sneg55.typeform.com/to/SPrjTk).
+If you are running DeFi-related event we are glad to feature it on our DeFi events calendar, and share it on our social media. Fill this [event listing form](https://sneg55.typeform.com/to/SPrjTk).
 
 ### Media Assets
 
