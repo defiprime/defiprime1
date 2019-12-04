@@ -56,6 +56,7 @@ GEM
       progressbar (~> 1.9)
       verbal_expressions (~> 0.1.5)
     jekyll-paginate-v2 (1.5.2)
+    jekyll-random (0.0.1)
     jekyll-redirect-from (0.15.0)
       jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (2.0.1)
@@ -80,9 +81,9 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.3.6)
     mini_portile2 (2.4.0)
-    nokogiri (1.10.6)
+    nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
-    nokogiri (1.10.6-x64-mingw32)
+    nokogiri (1.10.5-x64-mingw32)
       mini_portile2 (~> 2.4.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -111,6 +112,7 @@ DEPENDENCIES
   jekyll-algolia
   jekyll-lazy-load-image!
   jekyll-paginate-v2
+  jekyll-random
   jekyll-redirect-from
   jekyll-sitemap
   jekyll-toc
