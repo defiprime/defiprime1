@@ -30,9 +30,9 @@ featured-image: /images/og-rates.png
     <div id="avg_interest_rates_cryptos">
         <article class="providersDAI">
             <img class="lazyload" data-src="/images/dai.svg">
-            <span class="providerCryptoName">SAI</span>
+            <span class="providerCryptoName">DAI</span>
             <span class="percentCrypto" data-bind="text: $root.averageDAI"></span> 7-days avg.
-            <div class="listAnnotation">Best yields SAI(legacy DAI) today, APR</div>
+            <div class="listAnnotation">Best yields DAI today, APR</div>
             <ul data-bind="foreach: providersDAI">
                 <li>
                     <a class="cryptoListName" target="_blank" data-bind="text: provider, attr: { href: providerLink }"></a>
