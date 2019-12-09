@@ -1,115 +1,83 @@
 // Declaration of dynamic properties
 
 function getPercent(value) {
-  return Math.round( value * 10000 ) / 100 + '%';
+  return Math.round(value * 10000) / 100 + '%';
 }
 
-var providersViewModel = function() {
-  var self = this;
+const api = "https://defiportfolio-backend.herokuapp.com/api/v1";
+const markets = ["compound_v2", "fulcrum", "dydx"];
+const tokens = ["dai", "sai", "usdc"];
+const requestParams = markets.flatMap(market => {
+  return tokens.map(token => { market: market, token: token })
+});
 
-  self.providersDAI  = ko.observableArray([]);
-  self.providersUSDC = ko.observableArray([]);
-  self.weekData      = ko.observableArray([]);
+const timePeriods = [
+  {
+    id: 0,
+    getStartDate: () => new Date() - 1000 * 60 * 60 * 24,
+    text: "24 Hours"
+  },
+  {
+    id: 1,
+    getStartDate: () => new Date() - 1000 * 60 * 60 * 24 * 7,
+    text: "1 Week"
+  },
+  {
+    id: 2,
+    getStartDate: () => new Date() - 1000 * 60 * 60 * 24 * 30,
+    text: "1 Month"
+  },
+  {
+    id: 3,
+    getStartDate: () => new Date(0).getTime(),
+    text: "All-time"
+  }];
 
-  self.averageDAI = ko.computed(function() {
-    var sum = 0;
-    for(var i=0; i< self.weekData().length; i++) {
-      sum+=(self.weekData()[i]);
-    }
-    return Math.round(sum * 100/ self.weekData().length) / 100 + "%";
-  });
-
-  self.averageUSDC = ko.observable();
-
-  self.providersETHDai = ko.observableArray([]);
-  self.providersETHUsdc = ko.observableArray([]);
-}
-
-var viewModel = new providersViewModel()
-
-ko.applyBindings(viewModel);
-
-// Populate viewmodel
-
-var xhr = new XMLHttpRequest();
-xhr.open("GET", window.requestURL + "/getLendingData", true)
-
-xhr.onreadystatechange = function () {
-  if(xhr.status == 200 && xhr.readyState == 4) {
-    var providers = JSON.parse(xhr.responseText);
-    viewModel.providersDAI(providers.sortedProvidersDAI);
-    viewModel.providersUSDC(providers.sortedProvidersUSDC);
-  }
-}
-
-xhr.send();
-
-var xhr2 = new XMLHttpRequest();
-xhr2.open("GET", window.requestURL + "/getDataForWeek", true);
-
-xhr2.onreadystatechange = function() {
-  if(xhr2.status == 200 && xhr2.readyState == 4) {
-    var monthNames = ["January", "February", "March", "April", "May", "June",
-      "July", "August", "September", "October", "November", "December"
-    ];
-    var weekData = JSON.parse(xhr2.responseText);
-    var sumOfUSDC = 0;
-    var filteredData = weekData.map(function(day) {
-      sumOfUSDC += day.sumOfUSDC;
-      return Math.round(day.sumOfDAI * 10000)/100;
-    })
-
-    viewModel.averageUSDC(getPercent(sumOfUSDC/weekData.length));
-
-    viewModel.weekData(filteredData)
-
-    myChart.data.labels = weekData.map(function(day) {
-      var date = new Date(day.date);
-      
-      return monthNames[date.getMonth()] + " " + date.getUTCDate();
-    })
-
-    myChart.data.datasets.map(function(dataset) {
-      if(dataset.label == 'DeFi lending') {
-        dataset.data = filteredData
+function get(url) {
+  return new Promise(function (resolve, reject) {
+    var req = new XMLHttpRequest();
+    req.open('GET', url);
+    req.onload = function () {
+      if (req.status == 200) {
+        resolve(req.response);
       }
-    })
-    myChart.update();
+      else {
+        reject(Error(req.statusText));
+      }
+    };
+    req.onerror = function () {
+      reject(Error("Network Error"));
+    };
+    req.send();
+  });
+}
+
+const fromTimestampToLabel = (jsTimestamp, activePeriodButton) => {
+  jsTimestamp *= 1000;
+  switch (activePeriodButton) {
+    case 0:
+      return new Date(jsTimestamp).toLocaleTimeString('en-us', { timeStyle: "short" });
+    case 1:
+      return new Date(jsTimestamp).toLocaleDateString('en-us', { dateStyle: "short", timeStyle: "short" });
+    case 2:
+      return new Date(jsTimestamp).toLocaleString('en-us', { day: "2-digit", month: "short" });
+    case 3:
+      return new Date(jsTimestamp).toLocaleString('en-us', { day: "2-digit", month: "short" });
+    default: return new Date(jsTimestamp)
   }
 }
-xhr2.send();
 
-var liquidity_xhr = new XMLHttpRequest();
-liquidity_xhr.open("GET", window.requestURL + "/getMinInterest", true);
-liquidity_xhr.onreadystatechange = function () {
-  if(liquidity_xhr.status == 200 && liquidity_xhr.readyState == 4) {
-    var liquidityData = JSON.parse(liquidity_xhr.responseText);
-    viewModel.providersETHDai(liquidityData);
-    viewModel.providersETHUsdc(liquidityData)
-  }
-}
-liquidity_xhr.send();
+const onTimeScaleChange = (e) => {
+  e.preventDefault();
+  var timePeriodId = e.currentTarget.dataset.startDate;
+  var startDate = timePeriods.filter(period => period.id == timePeriodId)
+  GetData(startDate).then(responses => {
+    var daiDataset = GetDaiDataset(responses);
+    var saiDataset = GetSaiDataset(responses);
+    var usdcDataset = GetUsdcDataset(responses);
 
-// chart
-var monthNames = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
-];
-
-var ctx = document.getElementById('rate_graphs').getContext('2d');
-document.getElementById('rate_graphs').style.backgroundColor = 'rgb(255,255,255)';
-
-var myChart = new Chart(ctx, {
-  type: 'line',
-  data: {
-      labels: Array(7).fill(''),
-      datasets: [{
-          label: 'DeFi lending',
-          data: Array(7).fill(0),
-          backgroundColor: "#8F68FC",
-          fill: false,
-          borderColor: "#8F68FC",
-          borderWidth: 4,
-      },
+    window.myChart.labels = responses[0].data.chart.map(chartItem => fromTimestampToLabel(chartItem.timestamp, timePeriodId));
+    window.myChart.data.dataset = [daiDataset, saiDataset, usdcDataset,
       {
         label: 'Interest rate on balances',
         fill: false,
@@ -136,7 +104,7 @@ var myChart = new Chart(ctx, {
         borderColor: "#BBEE67",
         borderWidth: 4,
         borderDash: [5, 5]
-      },{
+      }, {
         label: 'SPDR Bloomberg Barclays High Yield Bond ETF',
         fill: false,
         data: Array(7).fill(5.6),
@@ -145,29 +113,195 @@ var myChart = new Chart(ctx, {
         borderWidth: 4,
         borderDash: [5, 5]
       }]
-  },
-  options: {
-    legend: {
-      display: false
-    },
-    scales: {
-        xAxes: [{
-          gridLines: {
-            display: false
-          }
-        }],
-        yAxes: [{
-            ticks: {
-                beginAtZero: true
+    window.myChart.update();
+  });
+}
+
+const init = () => {
+  var ctx = document.getElementById('rate_graphs').getContext('2d');
+  document.getElementById('rate_graphs').style.backgroundColor = 'rgb(255,255,255)';
+  
+  GetData().then(responses => {
+    var daiDataset = GetDaiDataset(responses);
+    var saiDataset = GetSaiDataset(responses);
+    var usdcDataset = GetUsdcDataset(responses);
+    var lendingRates = {
+      dai: GetLendingRates(responses, "dai"),
+      sai: GetLendingRates(responses, "sai"),
+      usdc: GetLendingRates(responses, "usdc"),
+    };
+    renderLendingRates(lendingRates)
+    var labels = responses[0].data.chart.map(chartItem => fromTimestampToLabel(chartItem.timestamp, 0));
+
+    window.myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: labels,
+        datasets: [daiDataset, saiDataset, usdcDataset,
+          {
+            label: 'Interest rate on balances',
+            fill: false,
+            data: Array(7).fill(0.03),
+            backgroundColor: "#BCBCED",
+            borderColor: "#BCBCED",
+            borderWidth: 4,
+            borderDash: [5, 5]
+          },
+          {
+            label: 'Vanguard CDs',
+            fill: false,
+            data: Array(7).fill(2.4),
+            backgroundColor: "#ADEFF2",
+            borderColor: "#ADEFF2",
+            borderWidth: 4,
+            borderDash: [5, 5]
+          },
+          {
+            label: 'Vanguard Real Estate ETF',
+            fill: false,
+            data: Array(7).fill(4.03),
+            backgroundColor: "#BBEE67",
+            borderColor: "#BBEE67",
+            borderWidth: 4,
+            borderDash: [5, 5]
+          }, {
+            label: 'SPDR Bloomberg Barclays High Yield Bond ETF',
+            fill: false,
+            data: Array(7).fill(5.6),
+            backgroundColor: "#FFDFBA",
+            borderColor: "#FFDFBA",
+            borderWidth: 4,
+            borderDash: [5, 5]
+          }]
+      },
+      options: {
+        legend: {
+          display: false
+        },
+        scales: {
+          xAxes: [{
+            gridLines: {
+              display: false
             }
-        }]
-    },
-    tooltips: {
-      callbacks: {
-        label: function(tooltipItem, data) {
-          return data['datasets'][tooltipItem['datasetIndex']].label + ': ' + data['datasets'][tooltipItem['datasetIndex']]['data'][tooltipItem['index']] + '%';
+          }],
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        },
+        tooltips: {
+          callbacks: {
+            label: function (tooltipItem, data) {
+              return data['datasets'][tooltipItem['datasetIndex']].label + ': ' + data['datasets'][tooltipItem['datasetIndex']]['data'][tooltipItem['index']] + '%';
+            }
+          }
         }
       }
-    }
+    });
+
+  });
+};
+
+const renderLendingRates = (lendingRates) => {
+
+};
+
+const GetData = (startDate) => {
+  if (!startDate) {
+    startDate = new Date() * 1000;
   }
+  startDate = parseInt((startDate / 1000).toFixed(0));
+  var requests = requestParams.map(param => get(`${api}/${market}/${token}?start_date=${startDate}`));
+  Promise.all(requests)
+    .then(values => {
+      return response = values.map((value, index) => {
+        return {
+          market: requestParams[index].market,
+          token: requestParams[index].token,
+          data: value
+        }
+      });
+    });
+}
+
+const GetLendingRates = (responses, token) => {
+  var data = responses.filter(item => item.token === token);
+  var compound_v2 = data.filter(item => item.market === "compound_v2");
+  var fulcrum = data.filter(item => item.market === "fulcrum");
+  var dydx = data.filter(item => item.market === "dydx");
+
+  return {
+    compound_v2: {
+      supply_rate: compound_v2.supply_rate,
+      supply_30d_apr: compound_v2.supply_30d_apr,
+    },
+    fulcrum: {
+      supply_rate: fulcrum.supply_rate,
+      supply_30d_apr: fulcrum.supply_30d_apr,
+    },
+    dydx: {
+      supply_rate: dydx.supply_rate,
+      supply_30d_apr: dydx.supply_30d_apr,
+    },
+    mean: (compound_v2.supply_rate + fulcrum.supply_rate + dydx.supply_rate) / 3
+  }
+
+}
+
+const GetDaiDataset = (responses) => {
+  let daiData = responses.filter(item => item.token === "dai");
+  return {
+    label: 'DAI lending',
+    data: GetArraysMean(daiData.map(item => item.data.chart.map(chartItem => chartItem.supply_rate))),
+    backgroundColor: "#8F68FC",
+    fill: false,
+    borderColor: "#8F68FC",
+    borderWidth: 4,
+  }
+};
+
+const GetSaiDataset = (responses) => {
+  let saiData = responses.filter(item => item.token === "sai");
+  return {
+    label: 'SAI lending',
+    data: GetArraysMean(saiData.map(item => item.data.chart.map(chartItem => chartItem.supply_rate))),
+    backgroundColor: "#8F68FC",
+    fill: false,
+    borderColor: "#8F68FC",
+    borderWidth: 4,
+  }
+};
+
+const GetUsdcDataset = (responses) => {
+  let usdcData = responses.filter(item => item.token === "usdc");
+  return {
+    label: 'USDC lending',
+    data: GetArraysMean(usdcData.map(item => item.data.chart.map(chartItem => chartItem.supply_rate))),
+    backgroundColor: "#8F68FC",
+    fill: false,
+    borderColor: "#8F68FC",
+    borderWidth: 4,
+  }
+};
+
+const GetArraysMean = (arrays) => {
+  let result = [];
+
+  //Rounding to nearest whole number.
+  for (var i = 0; i < arrays[0].length; i++) {
+    var num = 0;
+    //still assuming all arrays have the same amount of numbers
+    for (var j = 0; j < arrays.length; j++) {
+      num += arrays[j][i];
+    }
+    result.push(Math.round(num / arrays.length));
+  }
+
+  return result
+}
+
+window.addEventListener("load", function (e) {
+  init();
+  document.querySelectorAll(".time-period").addEventListener("click", onTimeScaleChange);
 });

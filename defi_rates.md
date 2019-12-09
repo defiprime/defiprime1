@@ -92,5 +92,5 @@ featured-image: /images/og-rates.png
     window.requestURL = "https://api-rates.defiprime.com";
 </script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+<script src="https://unpkg.com/array-flat-polyfill"></script>
 <script src="/assets/js/defi_rates.js"></script>
