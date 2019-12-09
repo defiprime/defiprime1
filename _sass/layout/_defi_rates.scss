@@ -75,7 +75,7 @@
 .pb-50 {
   padding-bottom: 50px;
 }
-.pb-135{
+.pb-135 {
   padding-bottom: 135px;
 }
 
@@ -171,18 +171,18 @@
 
 /* CHART MARK */
 .wrapper-mark {
-  max-width: 960px;
-  display: flex;
   margin: 50px auto 0;
+  @media (min-width: 1000px) {
+    max-width: 960px;
+  }
   .item-mark {
-    display: flex;
     &:not(:last-child) {
       margin-right: 30px;
     }
     img {
       margin-right: 12px;
     }
-    span{
+    span {
       font-family: "Open Sans", sans-serif;
     }
   }
@@ -201,11 +201,11 @@
     line-height: 1.2;
     display: flex;
     width: calc(100% - 65px);
-    .name-provider{
+    .name-provider {
       width: calc(100% - 170px);
-    }
-    .value-provider{
-      width: 180px;
+      @media only screen and (max-width: 1199px){
+        width: calc(100% - 110px);
+      }
     }
   }
 }
@@ -215,6 +215,9 @@
   font-size: 20px;
   line-height: 1.8;
   font-weight: 500;
+  @media only screen and (max-width: 991px){
+    font-size: 16px;
+  }
   .item-crypto {
     display: flex;
     &:first-child {
@@ -229,6 +232,9 @@
           font-size: 12px;
           line-height: 1.8;
           color: #8b8bb8;
+          @media only screen and (max-width: 991px){
+            font-size: 10px;
+          }
         }
       }
       .list-crypto-name {
@@ -252,7 +258,7 @@
     }
   }
   .list-crypto-name {
-    width: calc(100% - 180px);
+    width: calc(100% - 120px);
     position: relative;
   }
   .list-crypto-today,
@@ -263,6 +269,10 @@
     padding-right: 45px;
     justify-content: flex-end;
     color: #8f68fc;
+    @media only screen and (max-width: 1199px) {
+      width: 60px;
+      padding-right: 15px;
+    }
   }
 }
 .data-crypto {
@@ -306,10 +316,18 @@
 }
 .name-provider-liquidity {
   font-size: 42px;
+  @media(max-width: 1199px){
+    font-size: 30px;
+  }
 }
 .item-liquidity {
-  font-size: 28px;  
-  max-width: 255px;
+  font-size: 28px;
+  @media(min-width: 1200px){
+    max-width: 255px;
+  }
+  @media(max-width: 1199px){
+    font-size: 22px;
+  }
 }
 .list-liquidity-name {
   color: #292984;
@@ -319,5 +337,13 @@
   font-weight: 300;
   .value {
     font-weight: 500;
+  }
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px){
+  .mr-xl-35{
+    margin-right: 35px;
+  }
+  .mb-xl-0{
+    margin-bottom: 0;
   }
 }

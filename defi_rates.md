@@ -26,11 +26,11 @@ featured-image: /images/og-rates.png
     <div class="wrapper-graphs">
         <canvas id="rate_graphs"></canvas>
     </div>
-    <div class="wrapper-mark">
+    <div class="flex jc-sb wrapper-mark">
         {% assign descriptions = "DeFi lending|Liquidity pools|Staking|Vanguard Brokerage CDs|Interest rate on balances" | split: "|" %}
         {% assign icons = "defi_lending|sdpr_bloomberg|vanguard_real_estate|vanguard_cds|interest_rate_on_balances" | split: "|" %}
         {% for description in descriptions %}
-        <div class="item-mark">
+        <div class="flex item-mark">
             <img class="lazyload" data-src="/images/{{icons[forloop.index0]}}.svg">
             <span class="fs-16 lh-180 fw-400">{{description}}</span>
         </div>
@@ -209,7 +209,7 @@ featured-image: /images/og-rates.png
                     {% include icons/sai.html %}
                 </div>
                 <div class="data-provider">
-                    <div class="data-provider">SAI</div>
+                    <div class="name-provider">SAI</div>
                     <div class="value-provider">11<span class="fw-300">%</span></div>
                 </div>
             </div>
@@ -238,7 +238,7 @@ featured-image: /images/og-rates.png
 
 <section class="section-portfolio">
     <div class="flex ai-c">
-        <div class="mr-55 flex jc-c ai-c">
+        <div class="mr-55 mr-xl-35 flex jc-c ai-c">
             {% include icons/portfolio.html %}
         </div>
         <div class="mr-30">
@@ -254,7 +254,7 @@ featured-image: /images/og-rates.png
     </div>
     <div class="flex jc-sb col-10 mx-auto">
         <div class="flex d-column col-5">
-            <div class="flex mb-35">
+            <div class="flex mb-35 mb-xl-0">
                 <div class="icon-provider-liquidity flex">
                     {% include icons/dai-eth.html %}
                 </div>
@@ -278,7 +278,7 @@ featured-image: /images/og-rates.png
             </div>
         </div>
         <div class="flex d-column col-5">
-            <div class="flex mb-35">
+            <div class="flex mb-35 mb-xl-0">
                 <div class="icon-provider-liquidity flex">
                     {% include icons/usdc-eth.html %}
                 </div>
