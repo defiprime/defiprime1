@@ -1,173 +1,337 @@
-#defi_rates_section {
-    p {
-        text-align: center;
-        max-width: 730px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    span {
-        font-family: Open Sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 160%;
-
-        /* identical to box height, or 24px */
-        text-align: center;
-        display: block;
-        margin-bottom: 67px;
-    }
-}
-
-.providerCryptoName{
-    font-family: Kanit;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 42px;
-    line-height: 120%;
+.providerCryptoName {
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 120%;
 }
 
 .rates_annotation {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 180%;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 180%;
 
-    text-align: center;
-    display: block;
-    margin-top: -43px;
+  text-align: center;
+  display: block;
+  margin-top: -43px;
 }
 
 #avg_interest_rates_cryptos {
-    display: flex;
-    margin-top: 101px;
-    justify-content: space-around;
+  display: flex;
+  margin-top: 101px;
+  justify-content: space-around;
 }
 
-.providersDAI, .providersUSDC {
-    position: relative;
-    padding-left: 103px;
-    width: 464px;
-    
-    @media(max-width: 480px){
-		width: 100%
-    }
-    
-    img {
-        left: 0;
-        position: absolute;
-        top: -3px;
-        height: 56px;
-    }
+.providersDAI,
+.providersUSDC {
+  position: relative;
+  padding-left: 103px;
+  width: 464px;
 
-    ul {
-        list-style-image: none;
-        padding-left: 0; 
-        li {
-            padding: 0;
-            margin: 0;
-        }
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+
+  img {
+    left: 0;
+    position: absolute;
+    top: -3px;
+    height: 56px;
+  }
+
+  ul {
+    list-style-image: none;
+    padding-left: 0;
+    li {
+      padding: 0;
+      margin: 0;
     }
+  }
 }
 
 .percentCrypto {
-    font-family: Kanit;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 42px;
-    line-height: 120%;
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 120%;
 
-    margin-left: 20px;
+  margin-left: 20px;
 
-    color: #8F68FC;
+  color: #8f68fc;
 }
 
 .listAnnotation {
-    margin: 40px 0 20px 0;
+  margin: 40px 0 20px 0;
 }
 
 .cryptoListName {
-    font-family: Kanit;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 180%;
-    width: 200px;
-    display: inline-block;
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 180%;
+  width: 200px;
+  display: inline-block;
 }
 
 .defi-rates-heading {
-    text-align: center;
+  text-align: center;
 }
 
 .cryptoListPercent {
-    font-family: Kanit;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 180%;
-    width: 40px;
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 180%;
+  width: 40px;
 
-    text-align: left;
+  text-align: left;
 
-    color: #8F68FC;
-    display: inline-block;
-    width: 45px;
-}
-
-#description {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 31px;
-    margin-bottom: 82px;
-
-    span {
-        display: inline-block;
-
-        font-family: Open Sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 180%;
-    }
-    img {
-        display: inline-block;
-        vertical-align: middle;
-    }
+  color: #8f68fc;
+  display: inline-block;
+  width: 45px;
 }
 
 @media screen and (max-width: 1030px) {
-    #description {
-        flex-direction: column;
+  #description {
+    flex-direction: column;
 
-        div  {
-            height: 33px;
-        }
+    div {
+      height: 33px;
     }
+  }
 }
 
 @media screen and (max-width: 816px) {
-    #avg_interest_rates_cryptos {
-        align-items: center;
-        flex-direction: column;
-        align-items: baseline;
-    }
-
+  #avg_interest_rates_cryptos {
+    align-items: center;
+    flex-direction: column;
+    align-items: baseline;
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .providersDAI,.providersUSDC {
-        padding-left: 0;
-        img {
-            display: none;
-        }
+  .providersDAI,
+  .providersUSDC {
+    padding-left: 0;
+    img {
+      display: none;
     }
-    .rates_annotation {
-        margin-top: -34px;
-    }
+  }
+  .rates_annotation {
+    margin-top: -34px;
+  }
 }
 
 #liquidityPools {
-    margin-top: 118px;
+  margin-top: 118px;
+}
+
+/* GENERAL */
+.flex{
+  display: flex;
+}
+.d-column{
+  flex-direction: column;
+}
+.col-4 {
+  width: calc(100% / 12 * 4);
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+}
+.w-100{
+  width: 100%;
+}
+.mb-25 {
+  margin-bottom: 25px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-center {
+  text-align: center;
+}
+.mw-730 {
+  max-width: 730px;
+}
+.pt-120 {
+  padding-top: 120px;
+}
+.pt-225 {
+  padding-top: 225px;
+}
+
+/* TYPOGRAPHY */
+.defi-rates {
+  p {
+    font-family: "Open Sans", sans-serif;
+  }
+  h2 {
+    margin-bottom: 25px;
+  }
+  .fs-15 {
+    font-size: 15px;
+  }
+  .fs-20 {
+    font-size: 20px;
+  }
+  .fs-15 {
+    font-size: 15px;
+  }
+  .fs-20 {
+    font-size: 20px;
+  }
+  .lh-160 {
+    line-height: 1.6;
+  }
+  .lh-180 {
+    line-height: 1.8;
+  }
+  .fw-300 {
+    font-weight: 300;
+  }
+  .color-primary {
+    color: #292984;
+  }
+  .color-secondary {
+    color: #8f68fc;
+  }
+  .color-primary-light {
+    color: #8b8bb8;
+  }
+}
+
+/* BUTTONS */
+.wrapper-buttons {
+  margin-bottom: 15px;
+  text-align: center;
+  .period-button {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #8f68fc;
+    padding: 6px 10px;
+    display: inline-block;
+    background-color: transparent;
+    margin: 0;
+    height: auto;
+    outline: none;
+
+    &.active {
+      color: #ffffff;
+      background-color: #ff961c;
+    }
+    &:hover {
+      cursor: pointer;
+      color: #05d2dd;
+
+      &.active {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+/* CHART MARK */
+.wrapper-mark {
+  max-width: 960px;
+  display: flex;
+  margin: 50px auto 0;
+  .item-mark {
+    display: flex;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    img {
+      margin-right: 12px;
+    }
+    span {
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      font-weight: normal;
+    }
+  }
+}
+
+.provider-crypto {
+  display: flex;
+  margin-bottom: 30px;
+  .icon-provider {
+    margin-right: 20px;
+  }
+  .name-provider {
+    font-family: "Kanit", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.2;
+    display: flex;
+    width: calc(100% - 65px);
+    div {
+      width: 50%;
+    }
+  }
+}
+
+.list-crypto {
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  line-height: 1.8;
+  font-weight: 500;
+  list-style-image: none !important;
+  padding: 0;
+  margin: 0;
+  .item-crypto {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  .list-crypto-name {
+    display: inline-block;
+    width: 50%;
+  }
+  .list-crypto-today,
+  .list-crypto-month {
+    display: inline-block;
+    width: 25%;
+    color: #8f68fc;
+  }
+}
+.mark-crypto {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #8b8bb8;
+  display: flex;
+  margin-bottom: 10px;
+  .mark-crypto-name {
+    display: inline-block;
+    width: 50%;
+  }
+  .mark-crypto-today,
+  .mark-crypto-month {
+    display: inline-block;
+    width: 25%;
+  }
+}
+
+.data-crypto {
+  padding-left: 65px;
 }
