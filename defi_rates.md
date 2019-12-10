@@ -26,8 +26,8 @@ featured-image: /images/og-rates.png
         <canvas id="rate_graphs"></canvas>
     </div>
     <div class="flex jc-sb wrapper-mark">
-        {% assign descriptions = "DeFi lending|Liquidity pools|Staking|Vanguard Brokerage CDs|Interest rate on balances" | split: "|" %}
-        {% assign icons = "defi_lending|sdpr_bloomberg|vanguard_real_estate|vanguard_cds|interest_rate_on_balances" | split: "|" %}
+        {% assign descriptions = "DeFi Lending|Interest Rate On Balances|Vanguard CDs|Vanguard Real Estate ETF|SPDR Bloomberg Barclays High Yield Bond ETF" | split: "|" %}
+        {% assign icons = "defi_lending|interest_rate_on_balances|vanguard_cds|vanguard_real_estate|sdpr_bloomberg" | split: "|" %}
         {% for description in descriptions %}
         <div class="flex item-mark">
             <img class="lazyload" data-src="/images/{{icons[forloop.index0]}}.svg">
@@ -40,7 +40,7 @@ featured-image: /images/og-rates.png
 <section class="pt-225 pb-135 pt-xl-90 pb-xl-90 pt-md-45 pb-md-45">
     <div class="text-center">
         <h2 class="mb-25 mb-sm-0">DeFi Lending Rates</h2>
-        <p class="fs-20 fs-sm-16 lh-180 color-primary mb-50 mb-sm-25">Avg. interest rates</p>
+        <p class="fs-20 fs-sm-16 lh-180 color-primary mb-50 mb-sm-25">What can you earn lending your stablecoins?</p>
     </div>
     <div class="flex fd-md-c">
         <div class="flex d-column col-4 col-md-6 col-sm-12 lending-wrapper" data-token="dai">
