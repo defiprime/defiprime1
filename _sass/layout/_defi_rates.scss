@@ -50,9 +50,6 @@
 .mr-30 {
   margin-right: 30px;
 }
-.mr-55 {
-  margin-right: 55px;
-}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -72,8 +69,8 @@
 .pt-225 {
   padding-top: 225px;
 }
-.pb-50 {
-  padding-bottom: 50px;
+.pb-45 {
+  padding-bottom: 45px;
 }
 .pb-135 {
   padding-bottom: 135px;
@@ -81,8 +78,24 @@
 
 /* TYPOGRAPHY */
 .defi-rates {
+  h1{
+    font-size: 66px;
+    @media(max-width: 1199px){
+      font-size: 48px;
+    }
+    @media(max-width: 579px){
+      font-size: 36px;
+    }
+  }
   h2 {
     margin-bottom: 25px;
+    font-size: 48px;
+    @media(max-width: 1199px){
+      font-size: 36px;
+    }
+    @media(max-width: 759px){
+      font-size: 24px;
+    }
   }
   p {
     font-family: "Open Sans", sans-serif;
@@ -98,6 +111,14 @@
   }
   .fs-26 {
     font-size: 26px;
+  }
+  @media(max-width: 579px){
+    .fs-sm-16{
+      font-size: 16px;
+    }
+    .fs-sm-14{
+      font-size: 14px;
+    }
   }
   .lh-140 {
     line-height: 1.4;
@@ -172,13 +193,7 @@
 /* CHART MARK */
 .wrapper-mark {
   margin: 50px auto 0;
-  @media (min-width: 1000px) {
-    max-width: 960px;
-  }
   .item-mark {
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
     img {
       margin-right: 12px;
     }
@@ -186,25 +201,55 @@
       font-family: "Open Sans", sans-serif;
     }
   }
+  @media (min-width: 1000px) {
+    max-width: 960px;
+    .item-mark {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    flex-wrap: wrap;
+    margin: 0;
+    .item-mark {
+      width: 100%;
+      margin-top: 5px;
+    }
+  }
 }
 
 .provider-crypto {
   display: flex;
+  align-items: center;
   margin-bottom: 30px;
+  @media (max-width: 991px) {
+    margin-bottom: 10px;
+  }
   .icon-provider {
     margin-right: 20px;
+    @media (max-width: 991px) {
+      margin-right: 10px;
+      svg {
+        max-width: 35px;
+      }
+    }
   }
   .data-provider {
     font-family: "Kanit", sans-serif;
     font-size: 40px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 1.2;
     display: flex;
     width: calc(100% - 65px);
+    @media (max-width: 991px) {
+      font-size: 32px;
+      justify-content: space-between;
+    }
     .name-provider {
-      width: calc(100% - 170px);
-      @media only screen and (max-width: 1199px){
-        width: calc(100% - 110px);
+      width: calc(100% - 180px);
+      @media (max-width: 1199px) {
+        width: calc(100% - 120px);
       }
     }
   }
@@ -215,7 +260,7 @@
   font-size: 20px;
   line-height: 1.8;
   font-weight: 500;
-  @media only screen and (max-width: 991px){
+  @media (max-width: 991px) {
     font-size: 16px;
   }
   .item-crypto {
@@ -232,7 +277,7 @@
           font-size: 12px;
           line-height: 1.8;
           color: #8b8bb8;
-          @media only screen and (max-width: 991px){
+          @media (max-width: 991px) {
             font-size: 10px;
           }
         }
@@ -246,30 +291,39 @@
       .list-crypto-today {
         &:before {
           content: "Today";
-          left: 10px;
+          right: 30px;
+          @media (max-width: 1199px) {
+            right: 15px;
+          }
         }
       }
       .list-crypto-month {
         &:before {
           content: "30-days";
-          left: 0;
+          right: 30px;
+          @media (max-width: 1199px) {
+            right: 15px;
+          }
         }
       }
     }
   }
   .list-crypto-name {
-    width: calc(100% - 120px);
     position: relative;
+    width: calc(100% - 180px);
+    @media (max-width: 1199px) {
+      width: calc(100% - 120px);
+    }
   }
   .list-crypto-today,
   .list-crypto-month {
     position: relative;
     display: inline-flex;
     width: 90px;
-    padding-right: 45px;
+    padding-right: 30px;
     justify-content: flex-end;
     color: #8f68fc;
-    @media only screen and (max-width: 1199px) {
+    @media (max-width: 1199px) {
       width: 60px;
       padding-right: 15px;
     }
@@ -277,16 +331,25 @@
 }
 .data-crypto {
   padding-left: 65px;
+  @media (max-width: 991px) {
+    padding-left: 45px;
+  }
 }
-
+.lending-wrapper {
+  @media (max-width: 767px) {
+    margin: 0 auto 20px auto;
+  }
+}
 .section-portfolio {
-  font-family: "Kanit", sans-serif;
   line-height: 1.8;
   padding: 49px 55px;
   position: relative;
   background-image: url("/../../images/banner.svg");
   background-position: 50%;
   background-size: cover;
+  @media (max-width: 991px) {
+    padding: 30px;
+  }
   &:after {
     content: "";
     position: absolute;
@@ -298,6 +361,45 @@
     bottom: -10px;
     background-color: #05d2dd;
   }
+  .icon-portfolio {
+    @media (min-width: 1200px) {
+      margin-right: 55px;
+    }
+    @media (min-width: 992px) {
+      margin-right: 35px;
+    }
+    @media (max-width: 1199px) {
+      svg {
+        max-width: 180px;
+      }
+    }
+    @media (max-width: 991px) {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  .info-portfolio {
+    margin-right: 30px;
+    p {
+      font-family: "Kanit", sans-serif;
+      font-size: 26px;
+      margin-bottom: 0;
+      @media (max-width: 1199px) {
+        font-size: 22px;
+      }
+      @media (max-width: 579px) {
+        font-size: 16px;
+      }
+    }
+    @media (max-width: 991px) {
+      width: calc(100% - 190px);
+    }
+    @media (max-width: 579px) {
+      width: 100%;
+      margin: 0 auto 10px;
+      text-align: center;
+    }
+  }
   .button-portfolio {
     min-width: 178px;
     height: 64px;
@@ -306,26 +408,47 @@
     font-weight: 700;
     color: #ffffff;
     background-color: #8f68fc;
+    @media (max-width: 991px) {
+      min-width: 160px;
+      height: 58px;
+    }
+    @media (max-width: 579px) {
+      min-width: 140px;
+      height: 48px;
+      margin: auto;
+      font-size: 16px;
+    }
   }
 }
 .wrap-list-liquidity {
+  font-family: "Kanit", sans-serif;
   padding-left: 137px;
+  @media (max-width: 767px) {
+    padding-left: 85px;
+  }
 }
 .icon-provider-liquidity {
   margin-right: 25px;
+  @media (max-width: 767px) {
+    margin-right: 15px;
+    svg {
+      max-width: 70px;
+    }
+  }
 }
 .name-provider-liquidity {
+  font-family: "Kanit", sans-serif;
   font-size: 42px;
-  @media(max-width: 1199px){
+  @media (max-width: 1199px) {
     font-size: 30px;
   }
 }
 .item-liquidity {
   font-size: 28px;
-  @media(min-width: 1200px){
+  @media (min-width: 1200px) {
     max-width: 255px;
   }
-  @media(max-width: 1199px){
+  @media (max-width: 1199px) {
     font-size: 22px;
   }
 }
@@ -339,11 +462,53 @@
     font-weight: 500;
   }
 }
-@media only screen and (max-width: 1199px) and (min-width: 992px){
-  .mr-xl-35{
-    margin-right: 35px;
-  }
-  .mb-xl-0{
+@media (max-width: 1199px) {
+  .mb-xl-0 {
     margin-bottom: 0;
+  }
+  .pt-xl-90 {
+    padding-top: 90px;
+  }
+  .pb-xl-90 {
+    padding-bottom: 90px;
+  }
+}
+@media (max-width: 991px) {
+  .col-lg-12 {
+    width: 100%;
+  }
+  .f-lg-wrap {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 767px) {
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .fd-md-c {
+    flex-direction: column;
+  }
+  .f-md-wrap {
+    flex-wrap: wrap;
+  }
+  .pt-md-45 {
+    padding-top: 45px;
+  }
+  .pb-md-45 {
+    padding-bottom: 45px;
+  }
+}
+@media (max-width: 579px) {
+  .col-sm-12 {
+    width: 100%;
+  }
+  .mb-sm-0{
+    margin-bottom: 0;
+  }
+  .mb-sm-25{
+    margin-bottom: 25px;
   }
 }
