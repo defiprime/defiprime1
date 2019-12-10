@@ -244,6 +244,7 @@ const renderLendingRates = (lendingRates) => {
 };
 
 const GetData = (startDate) => {
+  document.getElementById("overlay").style.display = "block";
   if (!startDate) {
     startDate = moment() - 1000 * 60 * 60 * 24;
   }
@@ -251,6 +252,7 @@ const GetData = (startDate) => {
   var requests = requestParams.map(param => get(`${api}/markets/${param.market}/${param.token}?start_date=${startDate}`));
   return Promise.all(requests)
     .then(values => {
+      document.getElementById("overlay").style.display = "none";
       return response = values.map((value, index) => {
         return {
           market: requestParams[index].market,
