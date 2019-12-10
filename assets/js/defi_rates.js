@@ -1,45 +1,112 @@
-// Declaration of dynamic properties
-
-function getPercent(value) {
-  return Math.round(value * 10000) / 100 + '%';
-}
-
 const api = "https://defiportfolio-backend.herokuapp.com/api/v1";
-const markets = ["compound_v2", "fulcrum"];
+const old_api = "https://api-rates.defiprime.com";
+
+const markets = ["compound_v2", "fulcrum", "dydx"];
 const tokens = ["dai", "sai", "usdc"];
+
+const GetConstDatasetsWithTimescale = (period, points, startDate, endDate) => {
+  var timePeriod = timePeriods.find(item => item.id === period);
+  if (!startDate)
+    startDate = timePeriod.getStartDate(period);
+  if (!endDate)
+    endDate = moment();
+  var delta = parseInt((endDate - startDate) / (points - 1));
+  return constDatasets.map((dataset) => {
+    var value = dataset.data;
+    var result = Object.assign({}, dataset);
+    result.data = Array(points).fill(0).map((item, index) => {
+      return {
+        x: moment(startDate + (index * delta)),
+        y: value
+      }
+    })
+    return result;
+  })
+};
+
+const constDatasets = [{
+  label: 'Interest rate on balances',
+  fill: false,
+  data: 0.03,
+  backgroundColor: "#BCBCED",
+  borderColor: "#BCBCED",
+  borderWidth: 4,
+  borderDash: [5, 5]
+},
+{
+  label: 'Vanguard CDs',
+  fill: false,
+  data: 2.4,
+  backgroundColor: "#ADEFF2",
+  borderColor: "#ADEFF2",
+  borderWidth: 4,
+  borderDash: [5, 5]
+},
+{
+  label: 'Vanguard Real Estate ETF',
+  fill: false,
+  data: 4.03,
+  backgroundColor: "#BBEE67",
+  borderColor: "#BBEE67",
+  borderWidth: 4,
+  borderDash: [5, 5]
+}, {
+  label: 'SPDR Bloomberg Barclays High Yield Bond ETF',
+  fill: false,
+  data: 5.6,
+  backgroundColor: "#FFDFBA",
+  borderColor: "#FFDFBA",
+  borderWidth: 4,
+  borderDash: [5, 5]
+}];
+
+
 const requestParams = markets.flatMap(market => {
   return tokens.map(token => {
-    return {
-      market: market,
-      token: token
-    }
+    return token === "sai" && market === "dydx"
+      ? null
+      : {
+        market: market,
+        token: token
+      }
   })
-});
+}).filter(item => item !== null);
 
 const timePeriods = [
   {
     id: 0,
+    difference: 1000 * 60 * 60 * 24,
+    getStartDate: () => moment() - 1000 * 60 * 60 * 24,
+    text: "1 Day"
+  },
+  {
+    id: 1,
+    difference: 1000 * 60 * 60 * 24 * 7,
     getStartDate: () => moment() - 1000 * 60 * 60 * 24 * 7,
     text: "7 Days"
   },
   {
-    id: 1,
+    id: 2,
+    difference: 1000 * 60 * 60 * 24 * 30,
     getStartDate: () => moment() - 1000 * 60 * 60 * 24 * 30,
     text: "1 Month"
   },
   {
-    id: 2,
+    id: 3,
+    difference: 1000 * 60 * 60 * 24 * 31 * 3,
     getStartDate: () => moment() - 1000 * 60 * 60 * 24 * 31 * 3,
     text: "3 Month"
   },
   {
-    id: 3,
+    id: 4,
+    difference: 1000 * 60 * 60 * 24 * 365,
     getStartDate: () => moment() - 1000 * 60 * 60 * 24 * 365,
     text: "1 Year"
   },
   {
-    id: 4,
-    getStartDate: () => moment(0).getTime(),
+    id: 5,
+    difference: 1000 * 60 * 60 * 24 * 365,
+    getStartDate: () => moment(0),
     text: "All-time"
   }];
 
@@ -90,9 +157,9 @@ const onTimeScaleChange = (e) => {
     var saiDataset = GetSaiDataset(responses, timePeriodId);
     var usdcDataset = GetUsdcDataset(responses, timePeriodId);
     var dataX;
-    if (daiDataset.data[0].x > usdcDataset.data[0].x && daiDataset.data[0].x > saiDataset.data[0].x) {
+    if (daiDataset.data[0].x < usdcDataset.data[0].x && daiDataset.data[0].x < saiDataset.data[0].x) {
       dataX = daiDataset.data.map(item => item.x)
-    } else if (saiDataset.data[0].x > usdcDataset.data[0].x && saiDataset.data[0].x > daiDataset.data[0].x) {
+    } else if (saiDataset.data[0].x < usdcDataset.data[0].x && saiDataset.data[0].x < daiDataset.data[0].x) {
       dataX = saiDataset.data.map(item => item.x)
 
     }
@@ -100,44 +167,11 @@ const onTimeScaleChange = (e) => {
       dataX = usdcDataset.data.map(item => item.x)
 
     }
-    // window.myChart.data.labels = responses[0].data.chart.map(chartItem => fromTimestampToLabel(chartItem.timestamp, timePeriodId));
-    // window.myChart.data.labels = dataX;
-    window.myChart.data.datasets = [daiDataset, saiDataset, usdcDataset,
-      {
-        label: 'Interest rate on balances',
-        fill: false,
-        data: Array(7).fill(0.03),
-        backgroundColor: "#BCBCED",
-        borderColor: "#BCBCED",
-        borderWidth: 4,
-        borderDash: [5, 5]
-      },
-      {
-        label: 'Vanguard CDs',
-        fill: false,
-        data: Array(7).fill(2.4),
-        backgroundColor: "#ADEFF2",
-        borderColor: "#ADEFF2",
-        borderWidth: 4,
-        borderDash: [5, 5]
-      },
-      {
-        label: 'Vanguard Real Estate ETF',
-        fill: false,
-        data: Array(7).fill(4.03),
-        backgroundColor: "#BBEE67",
-        borderColor: "#BBEE67",
-        borderWidth: 4,
-        borderDash: [5, 5]
-      }, {
-        label: 'SPDR Bloomberg Barclays High Yield Bond ETF',
-        fill: false,
-        data: Array(7).fill(5.6),
-        backgroundColor: "#FFDFBA",
-        borderColor: "#FFDFBA",
-        borderWidth: 4,
-        borderDash: [5, 5]
-      }]
+
+    var staticDatasets = GetConstDatasetsWithTimescale(timePeriodId, dataX.length, dataX[0], dataX[dataX.length-1]);
+    // // window.myChart.data.labels = responses[0].data.chart.map(chartItem => fromTimestampToLabel(chartItem.timestamp, timePeriodId));
+    // // window.myChart.data.labels = dataX;
+    window.myChart.data.datasets = [daiDataset, saiDataset, usdcDataset].concat(staticDatasets);
     window.myChart.update();
   });
 }
@@ -153,47 +187,12 @@ const init = () => {
     var lendingRates = tokens.map(token => GetLendingRates(responses, token));
     renderLendingRates(lendingRates)
     var labels = responses[0].data.chart.map(chartItem => fromTimestampToLabel(chartItem.timestamp, 0));
-
+    var staticDatasets = GetConstDatasetsWithTimescale(0, labels.length);
     window.myChart = new Chart(ctx, {
       type: 'line',
       data: {
         // labels: labels,
-        datasets: [daiDataset, saiDataset, usdcDataset,
-          {
-            label: 'Interest rate on balances',
-            fill: false,
-            data: Array(7).fill(0.03),
-            backgroundColor: "#BCBCED",
-            borderColor: "#BCBCED",
-            borderWidth: 4,
-            borderDash: [5, 5]
-          },
-          {
-            label: 'Vanguard CDs',
-            fill: false,
-            data: Array(7).fill(2.4),
-            backgroundColor: "#ADEFF2",
-            borderColor: "#ADEFF2",
-            borderWidth: 4,
-            borderDash: [5, 5]
-          },
-          {
-            label: 'Vanguard Real Estate ETF',
-            fill: false,
-            data: Array(7).fill(4.03),
-            backgroundColor: "#BBEE67",
-            borderColor: "#BBEE67",
-            borderWidth: 4,
-            borderDash: [5, 5]
-          }, {
-            label: 'SPDR Bloomberg Barclays High Yield Bond ETF',
-            fill: false,
-            data: Array(7).fill(5.6),
-            backgroundColor: "#FFDFBA",
-            borderColor: "#FFDFBA",
-            borderWidth: 4,
-            borderDash: [5, 5]
-          }]
+        datasets: [daiDataset, saiDataset, usdcDataset].concat(staticDatasets),
       },
       options: {
         legend: {
@@ -204,6 +203,9 @@ const init = () => {
             type: 'time',
             gridLines: {
               display: false
+            },
+            ticks: {
+              maxTicksLimit: 7
             }
           }],
           yAxes: [{
@@ -213,11 +215,11 @@ const init = () => {
           }]
         },
         tooltips: {
-          // callbacks: {
-          //   label: function (tooltipItem, data) {
-          //     return data['datasets'][tooltipItem['datasetIndex']].label + ': ' + data['datasets'][tooltipItem['datasetIndex']]['data'][tooltipItem['index']] + '%';
-          //   }
-          // }
+          callbacks: {
+            label: function (tooltipItem, data) {
+              return data['datasets'][tooltipItem['datasetIndex']].label + ': ' + tooltipItem.value + '%';
+            }
+          }
         }
       }
     });
@@ -355,3 +357,17 @@ window.addEventListener("load", function (e) {
   init();
   document.querySelectorAll(".period-button").forEach(item => item.addEventListener("click", onTimeScaleChange));
 });
+
+
+var liquidity_xhr = new XMLHttpRequest();
+liquidity_xhr.open("GET", old_api + "/getMinInterest", true);
+liquidity_xhr.onreadystatechange = function () {
+  if (liquidity_xhr.status == 200 && liquidity_xhr.readyState == 4) {
+    var liquidityData = JSON.parse(liquidity_xhr.responseText);
+    document.querySelector(".sai-eth .list-liquidity .list-liquidity-value .value").textContent = liquidityData[0].providerDAI;
+    document.querySelector(".sai-eth .list-liquidity .list-liquidity-name").href = liquidityData[0].providerLink;
+    document.querySelector(".usdc-eth .list-liquidity .list-liquidity-name").href = liquidityData[0].providerLink;
+    document.querySelector(".usdc-eth .list-liquidity .list-liquidity-value .value").textContent = liquidityData[0].providerUSDC;
+  }
+}
+liquidity_xhr.send();

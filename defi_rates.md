@@ -15,11 +15,12 @@ featured-image: /images/og-rates.png
 </section>
 <section class="text-center">
     <div class="wrapper-buttons">
-        <button class="period-button active" data-period="0">7d</button>
-        <button class="period-button" data-period="1">1m</button>
-        <button class="period-button" data-period="2">3m</button>
-        <button class="period-button" data-period="3">1y</button>
-        <button class="period-button" data-period="4">All</button>
+        <button class="period-button active" data-period="0">1d</button>
+        <button class="period-button" data-period="1">7d</button>
+        <button class="period-button" data-period="2">1m</button>
+        <button class="period-button" data-period="3">3m</button>
+        <button class="period-button" data-period="4">1y</button>
+        <button class="period-button" data-period="5">All</button>
     </div>
     <div class="wrapper-graphs">
         <canvas id="rate_graphs"></canvas>
@@ -36,7 +37,7 @@ featured-image: /images/og-rates.png
     </div>
 </section>
 
-<section class="pt-225">
+<section class="pt-225 pb-135">
     <div class="text-center">
         <h2 class="mb-25">DeFi Lending Rates</h2>
         <p class="fs-20 lh-180 color-primary mb-50">Avg. interest rates</p>
@@ -109,16 +110,16 @@ featured-image: /images/og-rates.png
                 </div>
                 <div class="data-provider">
                     <div class="name-provider">SAI</div>
-                    <div class="value-provider"><span class="lending-mean">11</span><span class="fw-300">%</span><span class="fw-300">%</span></div>
+                    <div class="value-provider"><span class="lending-mean">11</span><span class="fw-300">%</span></div>
                 </div>
             </div>
             <div class="data-crypto">
                 <ul class="list-crypto">
-                    <li class="item-crypto">
+                    <!-- <li class="item-crypto">
                         <span class="inline-flex list-crypto-name" data-market="dydx">DyDx</span>
                         <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
                         <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
-                    </li>
+                    </li> -->
                     <li class="item-crypto">
                         <span class="inline-flex list-crypto-name"  data-market="compound_v2">Compound</span>
                         <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
@@ -135,7 +136,7 @@ featured-image: /images/og-rates.png
     </div>
 </section>
 
-<section class="pt-120 pb-135">
+<!-- <section class="pt-120 pb-135">
     <div class="text-center">
         <h2 class="mb-25">DeFi Borrowing Rates</h2>
         <p class="fs-20 lh-180 color-primary mb-50">Avg. interest rates</p>
@@ -232,7 +233,7 @@ featured-image: /images/og-rates.png
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <section class="section-portfolio">
     <div class="flex ai-c">
@@ -251,12 +252,12 @@ featured-image: /images/og-rates.png
         <h2 class="mb-75">Best liquidity pools Yields</h2>
     </div>
     <div class="flex jc-sb col-10 mx-auto">
-        <div class="flex d-column col-5">
+        <div class="flex d-column col-5  sai-eth">
             <div class="flex mb-35 mb-xl-0">
                 <div class="icon-provider-liquidity flex">
                     {% include icons/dai-eth.html %}
                 </div>
-                <div class="name-provider-liquidity lh-180">DAI/ETH</div>
+                <div class="name-provider-liquidity lh-180">SAI/ETH</div>
             </div>
             <div class="wrap-list-liquidity">
                 <ul class="list-liquidity">
@@ -264,18 +265,18 @@ featured-image: /images/og-rates.png
                         <a class="list-liquidity-name" href="#" target="_blank">Uniswap</a>
                         <span class="list-liquidity-value"><span class="value">12</span>%</span>
                     </li>
-                    <li class="item-liquidity lh-180 flex jc-sb">
+                    <!-- <li class="item-liquidity lh-180 flex jc-sb">
                         <a class="list-liquidity-name" href="#" target="_blank">Bancor</a>
                         <span class="list-liquidity-value"><span class="value">6</span>%</span>
                     </li>
                     <li class="item-liquidity lh-180 flex jc-sb">
                         <a class="list-liquidity-name" href="#" target="_blank">Kyber</a>
                         <span class="list-liquidity-value"><span class="value">9</span>%</span>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
-        <div class="flex d-column col-5">
+        <div class="flex d-column col-5 usdc-eth">
             <div class="flex mb-35 mb-xl-0">
                 <div class="icon-provider-liquidity flex">
                     {% include icons/usdc-eth.html %}
@@ -288,23 +289,20 @@ featured-image: /images/og-rates.png
                         <a class="list-liquidity-name" href="#" target="_blank">Uniswap</a>
                         <span class="list-liquidity-value"><span class="value">12</span>%</span>
                     </li>
-                    <li class="item-liquidity lh-180 flex jc-sb">
+                    <!-- <li class="item-liquidity lh-180 flex jc-sb">
                         <a class="list-liquidity-name" href="#" target="_blank">Bancor</a>
                         <span class="list-liquidity-value"><span class="value">6</span>%</span>
                     </li>
                     <li class="item-liquidity lh-180 flex jc-sb">
                         <a class="list-liquidity-name" href="#" target="_blank">Kyber</a>
                         <span class="list-liquidity-value"><span class="value">9</span>%</span>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
     </div>
 </section>
 
-<script>
-    window.requestURL = "https://api-rates.defiprime.com";
-</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <script src="https://unpkg.com/array-flat-polyfill"></script>
