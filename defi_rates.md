@@ -10,8 +10,8 @@ featured-image: /images/og-rates.png
 ---
 
 <section class="text-center">
-    <p class="fs-20 lh-180 color-primary mb-40 mw-730 mx-auto">Decentralized Finance (DeFi) is the movement that leverages decentralized networks to transform old financial products into trustless</p>
-    <p class="fs-15 lh-160 color-primary-light mb-25">Lending stablecoins could be an alternative to high yield CDs, ETFs, and savings accounts, with relatively higher risk.</p>
+    <p class="fs-20 fs-sm-16 lh-180 color-primary mb-40 mb-sm-25 mw-730 mx-auto">Decentralized Finance (DeFi) is the movement that leverages decentralized networks to transform old financial products into trustless</p>
+    <p class="fs-15 fs-sm-14 lh-160 color-primary-light mb-25">Lending stablecoins could be an alternative to high yield CDs, ETFs, and savings accounts, with relatively higher risk.</p>
 </section>
 <section class="text-center">
     <div class="wrapper-buttons">
@@ -36,13 +36,13 @@ featured-image: /images/og-rates.png
     </div>
 </section>
 
-<section class="pt-225">
+<section class="pt-225 pb-135 pt-xl-90 pb-xl-90 pt-md-45 pb-md-45">
     <div class="text-center">
-        <h2 class="mb-25">DeFi Lending Rates</h2>
-        <p class="fs-20 lh-180 color-primary mb-50">Avg. interest rates</p>
+        <h2 class="mb-25 mb-sm-0">DeFi Lending Rates</h2>
+        <p class="fs-20 fs-sm-16 lh-180 color-primary mb-50 mb-sm-25">Avg. interest rates</p>
     </div>
-    <div class="flex">
-        <div class="flex d-column col-4 lending-wrapper" data-token="dai">
+    <div class="flex fd-md-c">
+        <div class="flex d-column col-4 col-md-6 col-sm-12 lending-wrapper" data-token="dai">
             <div class="provider-crypto">
                 <div class="icon-provider flex">
                     {% include icons/dai.html %}
@@ -72,7 +72,7 @@ featured-image: /images/og-rates.png
                 </ul>
             </div>
         </div>
-        <div class="flex d-column col-4 lending-wrapper" data-token="usdc">
+        <div class="flex d-column col-4 col-md-6 col-sm-12 lending-wrapper" data-token="usdc">
             <div class="provider-crypto">
                 <div class="icon-provider flex">
                     {% include icons/usdc.html %}
@@ -102,14 +102,14 @@ featured-image: /images/og-rates.png
                 </ul>
             </div>
         </div>
-        <div class="flex d-column col-4 lending-wrapper" data-token="sai">
+        <div class="flex d-column col-4 col-md-6 col-sm-12 lending-wrapper" data-token="sai">
             <div class="provider-crypto">
                 <div class="icon-provider flex">
                     {% include icons/sai.html %}
                 </div>
                 <div class="data-provider">
                     <div class="name-provider">SAI</div>
-                    <div class="value-provider"><span class="lending-mean">11</span><span class="fw-300">%</span><span class="fw-300">%</span></div>
+                    <div class="value-provider"><span class="lending-mean">11</span><span class="fw-300">%</span></div>
                 </div>
             </div>
             <div class="data-crypto">
@@ -135,7 +135,7 @@ featured-image: /images/og-rates.png
     </div>
 </section>
 
-<section class="pt-120 pb-135">
+<!--section class="pt-120 pb-135">
     <div class="text-center">
         <h2 class="mb-25">DeFi Borrowing Rates</h2>
         <p class="fs-20 lh-180 color-primary mb-50">Avg. interest rates</p>
@@ -232,27 +232,27 @@ featured-image: /images/og-rates.png
             </div>
         </div>
     </div>
-</section>
+</section-->
 
 <section class="section-portfolio">
-    <div class="flex ai-c">
-        <div class="mr-55 mr-xl-35 flex jc-c ai-c">
+    <div class="flex ai-c f-lg-wrap">
+        <div class="icon-portfolio flex jc-c ai-c">
             {% include icons/portfolio.html %}
         </div>
-        <div class="mr-30">
-            <p class="fs-26 lh-140 color-white mb-0">Check complete protocols stats and APR performance history at DeFi <span class="color-orange">Portfolio</span></p>
+        <div class="info-portfolio">
+            <p class="lh-140 color-white">Check complete protocols stats and APR performance history at DeFi <span class="color-orange">Portfolio</span></p>
         </div>
         <a class="button-portfolio flex jc-c ai-c" href="https://portfolio.defiprime.com/opportunities">Go to</a>
     </div>
 </section>
 
-<section class="section-liquidity pt-95 pb-50">
+<section class="section-liquidity pt-95 pb-45 pt-md-45">
     <div class="text-center">
         <h2 class="mb-75">Best liquidity pools Yields</h2>
     </div>
-    <div class="flex jc-sb col-10 mx-auto">
-        <div class="flex d-column col-5">
-            <div class="flex mb-35 mb-xl-0">
+    <div class="flex jc-sb col-10 col-lg-12 mx-auto f-md-wrap">
+        <div class="flex d-column col-5 col-md-6 col-sm-12">
+            <div class="flex mb-35 mb-xl-0 ai-c">
                 <div class="icon-provider-liquidity flex">
                     {% include icons/dai-eth.html %}
                 </div>
@@ -275,8 +275,8 @@ featured-image: /images/og-rates.png
                 </ul>
             </div>
         </div>
-        <div class="flex d-column col-5">
-            <div class="flex mb-35 mb-xl-0">
+        <div class="flex d-column col-5 col-md-6 col-sm-12">
+            <div class="flex mb-35 mb-xl-0 ai-c">
                 <div class="icon-provider-liquidity flex">
                     {% include icons/usdc-eth.html %}
                 </div>
