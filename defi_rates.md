@@ -26,8 +26,8 @@ featured-image: /images/og-rates.png
         <canvas id="rate_graphs"></canvas>
     </div>
     <div class="flex jc-sb wrapper-mark">
-        {% assign descriptions = "DeFi Lending|Interest Rate On Balances|Vanguard CDs|Vanguard Real Estate ETF|SPDR Bloomberg Barclays High Yield Bond ETF" | split: "|" %}
-        {% assign icons = "defi_lending|interest_rate_on_balances|vanguard_cds|vanguard_real_estate|sdpr_bloomberg" | split: "|" %}
+        {% assign descriptions = "SAI Lending|DAI Lending|USDC Lending|Interest Rate On Balances|Vanguard CDs|Vanguard Real Estate ETF|SPDR Bloomberg Barclays High Yield Bond ETF" | split: "|" %}
+        {% assign icons = "sai_lending|dai_lending|usdc_lending|interest_rate_on_balances|vanguard_cds|vanguard_real_estate|sdpr_bloomberg" | split: "|" %}
         {% for description in descriptions %}
         <div class="flex item-mark">
             <img class="lazyload" data-src="/images/{{icons[forloop.index0]}}.svg">

@@ -168,7 +168,7 @@ const onTimeScaleChange = (e) => {
 
     }
 
-    var staticDatasets = GetConstDatasetsWithTimescale(timePeriodId, dataX.length, dataX[0], dataX[dataX.length-1]);
+    var staticDatasets = GetConstDatasetsWithTimescale(timePeriodId, dataX.length, dataX[0], dataX[dataX.length - 1]);
     // // window.myChart.data.labels = responses[0].data.chart.map(chartItem => fromTimestampToLabel(chartItem.timestamp, timePeriodId));
     // // window.myChart.data.labels = dataX;
     window.myChart.data.datasets = [daiDataset, saiDataset, usdcDataset].concat(staticDatasets);
@@ -195,8 +195,35 @@ const init = () => {
         datasets: [daiDataset, saiDataset, usdcDataset].concat(staticDatasets),
       },
       options: {
+        responsive: true,
         legend: {
           display: false
+        },
+        tooltips: {
+          mode: 'nearest',
+          intersect: false,
+          position: "average",
+          backgroundColor: "#292984",
+          titleFontColor: "#fff",
+          bodyFontColor: "#fff",
+          cornerRadius: 0,
+          titleFontFamily: "Kanit",
+          titleFontStyle: "normal",
+          bodyFontFamily: "Kanit",
+          bodyFontSize: 16,
+          bodyFontStyle: "normal",
+          bodySpacing: 5,
+          xPadding: 10,
+          yPadding: 10,
+          callbacks: {
+            label: function (tooltipItem, data) {
+              return data['datasets'][tooltipItem['datasetIndex']].label + ': ' + tooltipItem.value + '%';
+            }
+          }
+        },
+        hover: {
+          mode: 'nearest',
+          intersect: false
         },
         scales: {
           xAxes: [{
@@ -209,18 +236,31 @@ const init = () => {
             }
           }],
           yAxes: [{
+            offset: true,
+            gridLines: {
+              drawTicks: false,
+              drawBorder: false,
+              color: "#F3F5F6"
+            },
             ticks: {
-              beginAtZero: true
+              padding: 20,
+              beginAtZero: true,
+              fontSize: 12,
+              fontColor: "#8B8BB8",
+              fontFamily: "Open Sans",
+              callback: function (value, index, values) {
+                return value + '%';
+              }
             }
           }]
         },
-        tooltips: {
-          callbacks: {
-            label: function (tooltipItem, data) {
-              return data['datasets'][tooltipItem['datasetIndex']].label + ': ' + tooltipItem.value + '%';
-            }
-          }
-        }
+        // tooltips: {
+        //   callbacks: {
+        //     label: function (tooltipItem, data) {
+        //       return data['datasets'][tooltipItem['datasetIndex']].label + ': ' + tooltipItem.value + '%';
+        //     }
+        //   }
+        // }
       }
     });
 
@@ -293,9 +333,9 @@ const GetDaiDataset = (responses, timePeriodId) => {
   return {
     label: 'DAI lending',
     data: arrayY.map((item, index) => { return { y: item, x: arrayX[index] } }),
-    backgroundColor: "red",
+    backgroundColor: "#FF961C",
     fill: false,
-    borderColor: "red",
+    borderColor: "#FF961C",
     borderWidth: 4,
   }
 };
@@ -309,9 +349,9 @@ const GetSaiDataset = (responses, timePeriodId) => {
   return {
     label: 'SAI lending',
     data: arrayY.map((item, index) => { return { y: item, x: arrayX[index] } }),
-    backgroundColor: "yellow",
+    backgroundColor: "#8F68FC",
     fill: false,
-    borderColor: "yellow",
+    borderColor: "#8F68FC",
     borderWidth: 4,
   }
 };
@@ -325,9 +365,9 @@ const GetUsdcDataset = (responses, timePeriodId) => {
   return {
     label: 'USDC lending',
     data: arrayY.map((item, index) => { return { y: item, x: arrayX[index] } }),
-    backgroundColor: "green",
+    backgroundColor: "#05D2DD",
     fill: false,
-    borderColor: "green",
+    borderColor: "#05D2DD",
     borderWidth: 4,
   }
 };
