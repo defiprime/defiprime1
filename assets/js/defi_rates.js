@@ -7,7 +7,7 @@ const tokens = ["dai", "sai", "usdc"];
 const GetConstDatasetsWithTimescale = (period, points, startDate, endDate) => {
   var timePeriod = timePeriods.find(item => item.id === period);
   if (!startDate)
-    startDate = timePeriod.getStartDate(period);
+    startDate = timePeriod.getStartDate();
   if (!endDate)
     endDate = moment();
   var delta = parseInt((endDate - startDate) / (points - 1));
@@ -181,13 +181,13 @@ const init = () => {
   document.getElementById('rate_graphs').style.backgroundColor = 'rgb(255,255,255)';
 
   GetData().then(responses => {
-    var daiDataset = GetDaiDataset(responses, 0);
-    var saiDataset = GetSaiDataset(responses, 0);
-    var usdcDataset = GetUsdcDataset(responses, 0);
+    var daiDataset = GetDaiDataset(responses, 2);
+    var saiDataset = GetSaiDataset(responses, 2);
+    var usdcDataset = GetUsdcDataset(responses, 2);
     var lendingRates = tokens.map(token => GetLendingRates(responses, token));
     renderLendingRates(lendingRates)
-    var labels = responses[0].data.chart.map(chartItem => fromTimestampToLabel(chartItem.timestamp, 0));
-    var staticDatasets = GetConstDatasetsWithTimescale(0, labels.length);
+    var labels = responses[0].data.chart.map(chartItem => fromTimestampToLabel(chartItem.timestamp, 2));
+    var staticDatasets = GetConstDatasetsWithTimescale(2, labels.length);
     window.myChart = new Chart(ctx, {
       type: 'line',
       data: {
@@ -253,14 +253,7 @@ const init = () => {
               }
             }
           }]
-        },
-        // tooltips: {
-        //   callbacks: {
-        //     label: function (tooltipItem, data) {
-        //       return data['datasets'][tooltipItem['datasetIndex']].label + ': ' + tooltipItem.value + '%';
-        //     }
-        //   }
-        // }
+        }
       }
     });
 
@@ -286,7 +279,7 @@ const renderLendingRates = (lendingRates) => {
 const GetData = (startDate) => {
   document.getElementById("overlay").style.display = "block";
   if (!startDate) {
-    startDate = moment() - 1000 * 60 * 60 * 24;
+    startDate = timePeriods.find(item => item.id === 2).getStartDate();
   }
   startDate = parseInt((startDate / 1000).toFixed(0));
   var requests = requestParams.map(param => get(`${api}/markets/${param.market}/${param.token}?start_date=${startDate}`));

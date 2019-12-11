@@ -15,9 +15,9 @@ featured-image: /images/og-rates.png
 </section>
 <section class="text-center">
     <div class="wrapper-buttons">
-        <button class="period-button active" data-period="0">1d</button>
+        <button class="period-button" data-period="0">1d</button>
         <button class="period-button" data-period="1">7d</button>
-        <button class="period-button" data-period="2">1m</button>
+        <button class="period-button active" data-period="2">1m</button>
         <button class="period-button" data-period="3">3m</button>
         <button class="period-button" data-period="4">1y</button>
         <button class="period-button" data-period="5">All</button>
