@@ -6,7 +6,7 @@ image: /images/output_md/defizap.com.png
 ecosystem: ethereum
 platform: web
 filter: native defi integration
-product-description: DeFiZap is a system of smart contracts that deploys capital across multiple DeFi protocols in one transaction, saving users’ time and gas fees, and enables instant exposure across multiple DeFi protocols based on your investment goals.
+product-description: DeFiZap is a system of smart contracts that deploys capital across multiple DeFi protocols in one transaction, saving users’ time and gas fees, and enables instant exposure across multiple DeFi products.
 coltitle:  "Asset Management Tools"
 colpermalink: assets-management-tools
 ---
