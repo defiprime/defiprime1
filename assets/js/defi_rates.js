@@ -233,7 +233,7 @@ const renderLendingRates = (lendingRates) => {
     var rates = lendingRates.find(item => item.token === token)
     lendingWrapper.querySelector(".lending-mean").textContent = rates.mean;
     lendingWrapper.querySelectorAll(".list-crypto .item-crypto").forEach((itemCrypto, index) => {
-      var market = itemCrypto.querySelector(".list-crypto-name").dataset.market;
+      var market = itemCrypto.querySelector(".list-crypto-name .value").dataset.market;
       var rate = rates.marketRates.find(item => item.market === market);
       if (rate) {
         itemCrypto.querySelector(".list-crypto-today .value").textContent = rate.supply_rate;
@@ -265,9 +265,6 @@ const GetData = (startDate) => {
 
 const GetLendingRates = (responses, token) => {
   var data = responses.filter(item => item.token === token);
-  var compound_v2 = data.filter(item => item.market === "compound_v2");
-  var fulcrum = data.filter(item => item.market === "fulcrum");
-  var dydx = data.filter(item => item.market === "dydx");
 
   var marketRates = markets.flatMap(market =>
     data.filter(item => item.market === market)
