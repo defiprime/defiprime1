@@ -5,6 +5,7 @@ product-url: https://torque.loans
 image: /images/output_md/torque.loans.png
 ecosystem: ethereum
 type: non-custodial
+filter: Borrow Crypto
 product-description: Torque is the crypto borrowing platform with indefinite-term loans and fixed interest rates.
 coltitle:  "Lending"
 colpermalink: decentralized-lending
