@@ -2,4 +2,4 @@ nice: 20
 pngout: true # disable
 verbose: true
 optipng:
-  level: 6
+  level: 4
