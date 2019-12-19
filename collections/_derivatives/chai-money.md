@@ -8,4 +8,5 @@ product-description: Chai it's an ERC-20 token that lets you earn interest on Da
 coltitle:  "Derivatives"
 colpermalink: derivatives
 github: https://github.com/dapphub/chai
+twitter: https://twitter.com/dapphub
 ---
