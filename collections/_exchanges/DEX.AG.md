@@ -1,10 +1,11 @@
 ---
-git-date: 
+git-date:
 product-title: DEX.AG
 product-url: https://dex.ag
 image: /images/output_md/dex.ag.png
 ecosystem: ethereum
 type: non-custodial
+filter: Aggregators, No KYC
 product-description: DEX.AG enables you to pick token to buy and compare rates on multiple decentralized exchanges.
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
