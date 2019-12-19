@@ -17,10 +17,10 @@ featured-image: /images/og-rates.png
     <div class="wrapper-buttons">
         <button class="period-button" data-period="0">1d</button>
         <button class="period-button" data-period="1">7d</button>
-        <button class="period-button active" data-period="2">1m</button>
-        <button class="period-button" data-period="3">3m</button>
-        <button class="period-button" data-period="4">1y</button>
-        <button class="period-button" data-period="5">All</button>
+        <button class="period-button active" data-period="2">1M</button>
+        <button class="period-button" data-period="3">3M</button>
+        <button class="period-button" data-period="4">YTD</button>
+        <button class="period-button" data-period="5">All-Time</button>
     </div>
     <div class="wrapper-graphs">
         <canvas id="rate_graphs"></canvas>
