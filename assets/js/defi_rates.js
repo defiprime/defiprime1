@@ -77,37 +77,43 @@ const timePeriods = [
     id: 0,
     difference: 1000 * 60 * 60 * 24,
     getStartDate: () => moment() - 1000 * 60 * 60 * 24,
-    text: "1 Day"
+    text: "1 Day",
+    unit: "hour"
   },
   {
     id: 1,
     difference: 1000 * 60 * 60 * 24 * 7,
     getStartDate: () => moment() - 1000 * 60 * 60 * 24 * 7,
-    text: "7 Days"
+    text: "7 Days",
+    unit: "day"
   },
   {
     id: 2,
     difference: 1000 * 60 * 60 * 24 * 30,
     getStartDate: () => moment() - 1000 * 60 * 60 * 24 * 30,
-    text: "1 Month"
+    text: "1 Month",
+    unit: "day"
   },
   {
     id: 3,
     difference: 1000 * 60 * 60 * 24 * 31 * 3,
     getStartDate: () => moment() - 1000 * 60 * 60 * 24 * 31 * 3,
-    text: "3 Month"
+    text: "3 Month",
+    unit: "day"
   },
   {
     id: 4,
     difference: 1000 * 60 * 60 * 24 * 365,
     getStartDate: () => moment() - 1000 * 60 * 60 * 24 * 365,
-    text: "1 Year"
+    text: "1 Year",
+    unit: "month"
   },
   {
     id: 5,
     difference: 1000 * 60 * 60 * 24 * 365,
     getStartDate: () => moment(0),
-    text: "All-time"
+    text: "All-time",
+    unit: "month"
   }];
 
 function get(url) {
@@ -172,6 +178,7 @@ const onTimeScaleChange = (e) => {
     // // window.myChart.data.labels = responses[0].data.chart.map(chartItem => fromTimestampToLabel(chartItem.timestamp, timePeriodId));
     // // window.myChart.data.labels = dataX;
     window.myChart.data.datasets = [daiDataset, saiDataset, usdcDataset].concat(staticDatasets);
+    window.myChart.options.scales.xAxes[0].time.unit = timePeriods.find(x => x.id == timePeriodId).unit
     window.myChart.update();
   });
 }
