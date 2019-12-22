@@ -1,5 +1,5 @@
 ---
-git-date: 
+git-date:
 layout: blog
 title: Uniswap Liquidity Pools
 permalink: uniswap-liquidity-pools
@@ -84,6 +84,12 @@ I put in 10 DAI, and I put in 0.0472 ETH, and already I'm looking at a little bi
 Something that's important to realize about the liquidity pools is that you sort of lose control over the ratio you have between the token that you are in the pool of and ETH.  
 
 I could come back in a week, and I could have loads of ETH and almost no DAI, or I might have all DAI and almost no ETH. If you're okay with that, then liquidity pools are for you. If you kind of want to have a tighter control over what your ratio is between ETH and the token that you're participating with, then liquidity pools might not be the best option for you.
+
+---
+
+__You can track your Uniswap Liquidity Pools returns with [DeFi Portfolio Tracker](https://portfolio.defiprime.com/) - just connect your wallet or add watch address.__
+
+---
 
 One other thing to understand about how this works is that when you deposit liquidity, you are depositing your crypto and you're receiving back a Uniswap token. And this is a Uniswap token that's specific to the pool that you're in. When deposited 10 DAI and  0.0472 ETH, I received back 0.04147 Uniswap tokens.
 
