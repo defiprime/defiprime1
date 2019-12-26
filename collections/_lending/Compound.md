@@ -1,6 +1,6 @@
 ---
 git-date:
-product-title: Compound Finance
+product-title: Compound
 product-url: https://compound.finance/
 image: /images/output_md/httpscompoundfinance.png
 ecosystem: ethereum
