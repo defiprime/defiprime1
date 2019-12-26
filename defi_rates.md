@@ -26,7 +26,7 @@ featured-image: /images/og-rates.png
         <canvas id="rate_graphs"></canvas>
     </div>
     <div class="flex jc-sb wrapper-mark">
-        {% assign descriptions = "SAI Lending|USDC Lending|DAI Lending|Interest Rate On Balances|Vanguard CDs|Vanguard Real Estate ETF|SPDR Bloomberg Barclays High Yield Bond ETF" | split: "|" %}
+        {% assign descriptions = "SAI Lending, market avg.|USDC Lending, market avg.|DAI Lending, market avg.|Interest Rate On Balances|Vanguard CDs|Vanguard Real Estate ETF|SPDR Bloomberg Barclays High Yield Bond ETF" | split: "|" %}
         {% assign icons = "sai_lending|usdc_lending|dai_lending|interest_rate_on_balances|vanguard_cds|vanguard_real_estate|sdpr_bloomberg" | split: "|" %}
         {% for description in descriptions %}
         <div class="flex item-mark">
@@ -50,7 +50,7 @@ featured-image: /images/og-rates.png
                 </div>
                 <div class="data-provider">
                     <div class="name-provider">DAI</div>
-                    <div class="value-provider"><span class="lending-mean">11</span><span class="fw-300">%</span></div>
+                    <div class="value-provider"><span class="lending-mean" title="Market average today">11</span><span class="fw-300">%</span></div>
                 </div>
             </div>
             <div class="data-crypto">
@@ -86,7 +86,7 @@ featured-image: /images/og-rates.png
                 </div>
                 <div class="data-provider">
                     <div class="name-provider">USDC</div>
-                    <div class="value-provider"><span class="lending-mean">11</span><span class="fw-300">%</span></div>
+                    <div class="value-provider"><span class="lending-mean" title="Market average today">11</span><span class="fw-300">%</span></div>
                 </div>
             </div>
             <div class="data-crypto">
@@ -122,7 +122,7 @@ featured-image: /images/og-rates.png
                 </div>
                 <div class="data-provider">
                     <div class="name-provider">SAI</div>
-                    <div class="value-provider"><span class="lending-mean">11</span><span class="fw-300">%</span></div>
+                    <div class="value-provider"><span class="lending-mean" title="Market average today">11</span><span class="fw-300">%</span></div>
                 </div>
             </div>
             <div class="data-crypto">
