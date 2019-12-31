@@ -27,21 +27,21 @@ This experiment will help demonstrate the differences between lending protocols 
 ### Experiment conditions
 - Starting date: September 1, 2019.
 - End date: September 1, 2020.
-- $100 DAI deposited to Compound Finance, [txid](https://etherscan.io/tx/0x30842815abb2ebd65604e4600c5b8ea4a9f0ee674d5dc8bf7ea642ddbc7f6f7e)
+- $100 DAI deposited to Compound, [txid](https://etherscan.io/tx/0x30842815abb2ebd65604e4600c5b8ea4a9f0ee674d5dc8bf7ea642ddbc7f6f7e)
 - $100 USDC deposited to Nuo, [txid](https://etherscan.io/tx/0x146eee6c5e3e1e544f04a6dbb067a7949169817b9d4460b5cf06ae17b6cdb396)
 - $100 DAI deposited to Fulcrum, [txid](https://etherscan.io/tx/0xa1a8173fc76218765aa6562d4fdf728779be6b060e85bf91c7e035e33d77e79d)
 - $100 DAI deposited to dYdX, [txid](https://etherscan.io/tx/0xdc1fcc0f5942b1908ac69d958d17331354d47607d073e775cf7f388350e55624)
-- $100 DAI deposited to Idle Finance, [txid](https://etherscan.io/tx/0x0798de84c469c5446c737859d81fef90c9861469be1a5354ebab52957a02b38a)
+- $100 DAI deposited to Idle, [txid](https://etherscan.io/tx/0x0798de84c469c5446c737859d81fef90c9861469be1a5354ebab52957a02b38a)
 
 ### Results Chart
 
-| Product  | 09/01  | 10/01   | 11/01  | 12/01  | 01/20 |
-|---|---|---|---|---|---|
-| [Compound Finance](https://compound.finance/)  |  100 DAI | 100.77  | 101.46  | 101.91  |  |
+| Product  | 09/01  | 10/01   | 11/01  | 12/01  | 01/20 | 02/20 |
+|---|---|---|---|---|---|---|
+| [Compound](https://compound.finance/)  |  100 DAI | 100.77  | 101.46  | 101.91  |  |
 | [Nuo](https://www.nuo.network/)¹ | 100 USDC | 100.57   | 101.22  | 102.18  |  |
 | [Fulcrum](https://fulcrum.trade/#/)  | 100 DAI | 100.67  | 101.20  | 101.65 |  |
 | [dYdX](http://trade.dydx.exchange)  | 100 DAI | 100.75  | 101.39  | 101.82  |  |
-| [Idle Finance](https://idle.finance/)  | 100 DAI | 100.72  | 101.37  | 101.82  |  |
+| [Idle](https://idle.finance/)  | 100 DAI | 100.72  | 101.37  | 101.82  |  |
 
 _¹ Deposit in USDC_
 
@@ -53,7 +53,7 @@ I'm going to update the results in this table each 1st day of the month, and pro
 
 No surprises so far, no one was hacked, and money doesn't got disappear this month. DeFi rates have been in a range of 8-10% in September. Updates for each platform as follows:
 
-- #### Compound Finance
+- #### Compound
 
 ![](/images/blog/lendingexperiment/compound-10-01.png)
 
@@ -77,7 +77,7 @@ No surprises so far, no one was hacked, and money doesn't got disappear this mon
 
 DeFi rates have been in a range of 6-7% in October. Updates for each platform as follows:
 
-- #### Compound Finance
+- #### Compound
 
 ![](/images/blog/lendingexperiment/compound-11-01.png)
 
@@ -105,7 +105,7 @@ November was a fascinating month for DeFi enthusiasts, due to MakerDAO's transit
 
 December updates for each platform as follows:
 
-- #### Compound Finance
+- #### Compound
 
 ![](/images/blog/lendingexperiment/compound-12-01.png)
 
