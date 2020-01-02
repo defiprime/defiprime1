@@ -35,15 +35,17 @@ This experiment will help demonstrate the differences between lending protocols 
 
 ### Results Chart
 
-| Product  | 09/01  | 10/01   | 11/01  | 12/01  | 01/20 | 02/20 |
+| Product  | 09/01  | 10/01   | 11/01  | 12/01  | 01/01² | 02/01 |
 |---|---|---|---|---|---|---|
-| [Compound](https://compound.finance/)  |  100 DAI | 100.77  | 101.46  | 101.91  |  |
-| [Nuo](https://www.nuo.network/)¹ | 100 USDC | 100.57   | 101.22  | 102.18  |  |
-| [Fulcrum](https://fulcrum.trade/#/)  | 100 DAI | 100.67  | 101.20  | 101.65 |  |
-| [dYdX](http://trade.dydx.exchange)  | 100 DAI | 100.75  | 101.39  | 101.82  |  |
-| [Idle](https://idle.finance/)  | 100 DAI | 100.72  | 101.37  | 101.82  |  |
+| [Compound](https://compound.finance/)  |  100 DAI | 100.77 <sup>+0.77</sup>  | 101.46 <sup>+0.69</sup> | 101.91 <sup>+0.45</sup> | 102.10 <sup>+0.19</sup> |
+| [Nuo](https://www.nuo.network/)¹ | 100 USDC | 100.57 <sup>+0.57</sup>  | 101.22 <sup>+0.65</sup> | 102.18 <sup>+0.96</sup> | 102.52 <sup>+0.34</sup> |
+| [Fulcrum](https://fulcrum.trade/#/)  | 100 DAI | 100.67 <sup>+0.67</sup> | 101.20 <sup>+0.53</sup> | 101.65 <sup>+0.45</sup> | 102.01 <sup>+0.36</sup> |
+| [dYdX](http://trade.dydx.exchange)  | 100 DAI | 100.75 <sup>+0.75</sup>  | 101.39 <sup>+0.64</sup> | 101.82 <sup>+0.43</sup> | 101.99 <sup>+0.17</sup> |
+| [Idle](https://idle.finance/)  | 100 DAI | 100.72 <sup>+0.72</sup> | 101.37 <sup>+0.65</sup> | 101.82 <sup>+0.45</sup> | 102.19 <sup>+0.37</sup> |
 
-_¹ Deposit in USDC_
+- _¹ Deposit in USDC_
+- _² Legacy DAI converted into multicollateral DAI_
+
 
 You can track live experiment stats here: [0xa51cE0796d32e3cc932C9a9e01663F68f71D9CBf](https://portfolio.defiprime.com/holdings/0xa51ce0796d32e3cc932c9a9e01663f68f71d9cbf)
 
@@ -129,8 +131,39 @@ Interesting that Fulcrum offers SAI to DAI migration right from UI:
 
 ![](/images/blog/lendingexperiment/Idle-12-01.png)
 
+### Update: January, 1, 2020
 
-Next update is January, 1, 2020.   
+Lending APR for DAI have flipped SAI rates, so this month I'll convert SAI to DAI on Fulcrum and Compound.   
+
+January updates for each platform as follows:
+
+- #### Compound
+
+![](/images/blog/lendingexperiment/compound-20-01-01.png)
+
+- #### Nuo
+
+Notable breakout for Nuo this month:
+
+![](/images/blog/lendingexperiment/nuo-20-01-01.png)
+
+- #### Fulcrum
+
+Interesting that Fulcrum offers SAI to DAI migration right from UI:
+
+![](/images/blog/lendingexperiment/fulcrum-20-01-01.png)
+
+- #### dYdX
+
+![](/images/blog/lendingexperiment/dydx-20-01-01.png)
+
+- #### Idle
+
+![](/images/blog/lendingexperiment/idle-20-01-01.png)
+
+
+Next update is February, 1, 2020.   
+
 
 ---
 
