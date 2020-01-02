@@ -30,7 +30,7 @@ Money On Chain is a stable asset platform that issues stable currencies backed w
 
 Backed by Bitcoin, the protocol is comprised of four tokens that provide several use cases for Bitcoin holders, including leveraged Bitcoin operations. The first token is the Dollar on Chain (DOC). Users can quickly send and receive any amount of DOC - a token pegged to the value of the US Dollar. The second token is BitPRO (BPRO), and it is specifically designed for Bitcoin holders to earn passive income on their coins. BPRO holders have several streams of revenue: they receive a percentage of platform-collected fees, an interest rate, and a small leverage on the price of Bitcoin. The third token is the BTC2X, which is a token for traders wishing to go 2x long in the price of bitcoin. The Money On Chain (MoC Token) is a fourth token. It is designed to govern the decentralized autonomous organization (DAO), and can also be used to pay fees for the use of the platform at a lower rate than those to be paid with BTC.
 
-{% youtube “https://youtu.be/SM7EyR3kXz8” %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SM7EyR3kXz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 _Introduction to Money On Chain_
 
 ### What’s Money On Chain backstory?
