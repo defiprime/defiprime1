@@ -133,7 +133,7 @@ Interesting that Fulcrum offers SAI to DAI migration right from UI:
 
 ### Update: January, 1, 2020
 
-Lending APR for DAI have flipped SAI rates, so this month I'll convert SAI to DAI on Fulcrum and Compound.   
+Lending APR for DAI has flipped SAI rates, so this month I'll convert SAI to DAI on Fulcrum and Compound. The dYdX already had converted SAI to DAI in a [centralized manner](https://twitter.com/dydxprotocol/status/1201589948266229765), so no extra steps from the user required.    
 
 January updates for each platform as follows:
 
@@ -143,13 +143,9 @@ January updates for each platform as follows:
 
 - #### Nuo
 
-Notable breakout for Nuo this month:
-
 ![](/images/blog/lendingexperiment/nuo-20-01-01.png)
 
 - #### Fulcrum
-
-Interesting that Fulcrum offers SAI to DAI migration right from UI:
 
 ![](/images/blog/lendingexperiment/fulcrum-20-01-01.png)
 
