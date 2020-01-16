@@ -103,6 +103,10 @@ collections:
     output: true
     permalink: /product/:name
     section_url: /dao
+  alternative-savings:
+    output: true
+    permalink: /product/:name
+    section_url: /alternative-savings
 
 defaults:
   -
