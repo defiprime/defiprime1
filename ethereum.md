@@ -38,6 +38,15 @@ featured-image: /images/og-ethereum.png
 
 {% endfor %}
 
+{% for alternative-savings in site.alternative-savings %}
+{% if alternative-savings.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
+{% if alternative-savings.ecosystem contains 'bitcoin' %} {% assign counter_btc = counter_btc | plus: 1 %} {% endif %}
+{% if alternative-savings.ecosystem contains 'eos' %} {% assign counter_eos = counter_eos | plus: 1 %} {% endif %}
+
+{% assign counter = counter | plus: 1 %}
+
+{% endfor %}
+
 {% for daos in site.dao %}
 {% if dao.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
 {% if dao.ecosystem contains 'bitcoin' %} {% endif %}
@@ -201,6 +210,19 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endif %}
 {% endfor %}
 
+# Alternative Savings Apps
+
+{% for alternative-savings in site.alternative-savings %}
+{% if alternative-savings.ecosystem contains 'ethereum' %}
+### <a href="{{ alternative-savings.product-url }}">{{ alternative-savings.product-title }}</a>
+<span>
+{% if alternative-savings.ecosystem contains 'ethereum' %} ![](images/ether.png "Built on Ethereum or related to Ethereum ecosystem"){% endif %} {% if alternative-savings.ecosystem contains 'bitcoin' %} ![](/images/btc.png "Using Bitcoin ecosystem"){% endif %} {% if alternative-savings.ecosystem contains 'eos' %} ![](/images/eos.png "Built on EOS or related to EOS ecosystem"){% endif %}
+</span>
+
+{{ alternative-savings.product-description }}
+{% endif %}
+{% endfor %}
+
 # Derivatives
 
 {% for derivatives in site.derivatives %}
@@ -214,6 +236,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {{ derivatives.product-description }}
 {% endif %}
 {% endfor %}
+
 
 # Decentralized exchanges on Ethereum
 
