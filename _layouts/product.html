@@ -90,7 +90,7 @@
             })();
         </script>
     </article>
-  <h3 class='related-products'>Related products in <a href="/{{ page.colpermalink }}">{{ page.coltitle }}</a>:</h3>
+  <h3 class='related-products'>{{ page.product-title }} alternatives in <a href="/{{ page.colpermalink }}">{{ page.coltitle }}</a>:</h3>
   <section class="tiles">
     {% assign posts = site[page.collection] | sample:3 %}
 
