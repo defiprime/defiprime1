@@ -35,13 +35,13 @@ This experiment will help demonstrate the differences between lending protocols 
 
 ### Results Chart
 
-| Product  | 09/01  | 10/01   | 11/01  | 12/01  | 01/01² | 02/01 |
-|---|---|---|---|---|---|---|
-| [Compound](https://compound.finance/)  |  100 DAI | 100.77 <sup>+0.77</sup>  | 101.46 <sup>+0.69</sup> | 101.91 <sup>+0.45</sup> | 102.10 <sup>+0.19</sup> |
-| [Nuo](https://www.nuo.network/)¹ | 100 USDC | 100.57 <sup>+0.57</sup>  | 101.22 <sup>+0.65</sup> | 102.18 <sup>+0.96</sup> | 102.52 <sup>+0.34</sup> |
-| [Fulcrum](https://fulcrum.trade/#/)  | 100 DAI | 100.67 <sup>+0.67</sup> | 101.20 <sup>+0.53</sup> | 101.65 <sup>+0.45</sup> | 102.01 <sup>+0.36</sup> |
-| [dYdX](http://trade.dydx.exchange)  | 100 DAI | 100.75 <sup>+0.75</sup>  | 101.39 <sup>+0.64</sup> | 101.82 <sup>+0.43</sup> | 101.99 <sup>+0.17</sup> |
-| [Idle](https://idle.finance/)  | 100 DAI | 100.72 <sup>+0.72</sup> | 101.37 <sup>+0.65</sup> | 101.82 <sup>+0.45</sup> | 102.19 <sup>+0.37</sup> |
+| Product  | 09/01  | 10/01   | 11/01  | 12/01  | 01/01² | 02/01 | 03/01 |
+|---|---|---|---|---|---|---|---|
+| [Compound](https://compound.finance/)  |  100 DAI | 100.77 <sup>+0.77</sup>  | 101.46 <sup>+0.69</sup> | 101.91 <sup>+0.45</sup> | 102.10 <sup>+0.19</sup> | 102.64 <sup>+0.54</sup> |
+| [Nuo](https://www.nuo.network/)¹ | 100 USDC | 100.57 <sup>+0.57</sup>  | 101.22 <sup>+0.65</sup> | 102.18 <sup>+0.96</sup> | 102.52 <sup>+0.34</sup> |  102.87 <sup>+0.35</sup> |
+| [Fulcrum](https://fulcrum.trade/#/)  | 100 DAI | 100.67 <sup>+0.67</sup> | 101.20 <sup>+0.53</sup> | 101.65 <sup>+0.45</sup> | 102.01 <sup>+0.36</sup> | 102.84 <sup>+0.83</sup> |
+| [dYdX](http://trade.dydx.exchange)  | 100 DAI | 100.75 <sup>+0.75</sup>  | 101.39 <sup>+0.64</sup> | 101.82 <sup>+0.43</sup> | 101.99 <sup>+0.17</sup> | 102.36 <sup>+0.37</sup> |
+| [Idle](https://idle.finance/)  | 100 DAI | 100.72 <sup>+0.72</sup> | 101.37 <sup>+0.65</sup> | 101.82 <sup>+0.45</sup> | 102.19 <sup>+0.37</sup> | 102.61 <sup>+0.42</sup>
 
 - _¹ Deposit in USDC_
 - _² Legacy DAI converted into multicollateral DAI_
@@ -53,51 +53,11 @@ I'm going to update the results in this table each 1st day of the month, and pro
 
 ### Update: October, 1, 2019
 
-No surprises so far, no one was hacked, and money doesn't got disappear this month. DeFi rates have been in a range of 8-10% in September. Updates for each platform as follows:
-
-- #### Compound
-
-![](/images/blog/lendingexperiment/compound-10-01.png)
-
-- #### Nuo
-
-![](/images/blog/lendingexperiment/nuo-10-01.png)
-
-- #### Fulcrum
-
-![](/images/blog/lendingexperiment/fulcrum-10-01.png)
-
-- #### dYdX
-
-![](/images/blog/lendingexperiment/dYdX-10-01.png)
-
-- #### Idle
-
-![](/images/blog/lendingexperiment/Idle-10-01.png)
+No surprises so far, no one was hacked, and money doesn't got disappear this month. DeFi rates have been in a range of 8-10% in September.
 
 ### Update: November, 1, 2019
 
-DeFi rates have been in a range of 6-7% in October. Updates for each platform as follows:
-
-- #### Compound
-
-![](/images/blog/lendingexperiment/compound-11-01.png)
-
-- #### Nuo
-
-![](/images/blog/lendingexperiment/nuo-11-01.png)
-
-- #### Fulcrum
-
-![](/images/blog/lendingexperiment/fulcrum-11-01.png)
-
-- #### dYdX
-
-![](/images/blog/lendingexperiment/dYdX-11-01.png)
-
-- #### Idle
-
-![](/images/blog/lendingexperiment/Idle-11-01.png)
+DeFi rates have been in a range of 6-7% in October.
 
 ### Update: December, 1, 2019
 
@@ -105,60 +65,20 @@ November was a fascinating month for DeFi enthusiasts, due to MakerDAO's transit
 
 ![](/images/blog/lendingexperiment/december-apr.png)
 
-December updates for each platform as follows:
-
-- #### Compound
-
-![](/images/blog/lendingexperiment/compound-12-01.png)
-
-- #### Nuo
-
-Notable breakout for Nuo this month:
-
-![](/images/blog/lendingexperiment/nuo-12-01.png)
-
-- #### Fulcrum
-
 Interesting that Fulcrum offers SAI to DAI migration right from UI:
 
 ![](/images/blog/lendingexperiment/fulcrum-12-01.png)
-
-- #### dYdX
-
-![](/images/blog/lendingexperiment/dYdX-12-01.png)
-
-- #### Idle
-
-![](/images/blog/lendingexperiment/Idle-12-01.png)
 
 ### Update: January, 1, 2020
 
 Lending APR for DAI has flipped SAI rates, so this month I'll convert SAI to DAI on Fulcrum and Compound. The dYdX already had converted SAI to DAI in a [centralized manner](https://twitter.com/dydxprotocol/status/1201589948266229765), so no extra steps from the user required.    
 
-January updates for each platform as follows:
+### Update: February, 1, 2020
 
-- #### Compound
-
-![](/images/blog/lendingexperiment/compound-20-01-01.png)
-
-- #### Nuo
-
-![](/images/blog/lendingexperiment/nuo-20-01-01.png)
-
-- #### Fulcrum
-
-![](/images/blog/lendingexperiment/fulcrum-20-01-01.png)
-
-- #### dYdX
-
-![](/images/blog/lendingexperiment/dydx-20-01-01.png)
-
-- #### Idle
-
-![](/images/blog/lendingexperiment/idle-20-01-01.png)
+Since data verifiable on-chain I decided to get rid of the "proof" screenshots on this page and simplify reporting in a table above. Speaking of APR, looks like we are on a track to 10% APR by the end of this spring.  
 
 
-Next update is February, 1, 2020.   
+Next update is March, 1, 2020.   
 
 
 ---
