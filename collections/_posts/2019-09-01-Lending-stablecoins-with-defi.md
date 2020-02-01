@@ -75,7 +75,7 @@ Lending APR for DAI has flipped SAI rates, so this month I'll convert SAI to DAI
 
 ### Update: February, 1, 2020
 
-Since data verifiable on-chain I decided to get rid of the "proof" screenshots on this page and simplify reporting in a table above. Speaking of APR, looks like we are on a track to 10% APR by the end of this spring.  
+Since data verifiable on-chain I decided to get rid of the "proof" screenshots on this page and simplify reporting in a table above. Worth mentioning that the only Idle is still in SAI at the moment, while others are already in DAI. Speaking of APR, looks like we are on a track to 10% APR by the end of this spring.
 
 
 Next update is March, 1, 2020.   
