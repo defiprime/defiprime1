@@ -4,7 +4,7 @@ product-title: Aave
 product-url: https://aave.com/
 image: /images/output_md/aave.com.png
 ecosystem: ethereum
-product-description: "Aave is an Open Source and Non-Custodial protocol to earn interest on deposits & borrow assets."
+product-description: "Aave is an Open Source and Non-Custodial protocol to earn interest on deposits & borrow assets. [Aave Protocol - Innovative DeFi Lending, interview with the founder](/aave)"
 type: non-custodial
 filter: Borrow Crypto, Lend Crypto
 coltitle:  "Lending"
