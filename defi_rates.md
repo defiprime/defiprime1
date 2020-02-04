@@ -23,11 +23,11 @@ featured-image: /images/og-rates.png
         <button class="period-button" data-period="5">All-Time</button>
     </div>
     <div class="wrapper-graphs">
-        <canvas id="rate_graphs"></canvas>
+        <div id="tv-chart-container"></div>
     </div>
     <div class="flex jc-sb wrapper-mark">
-        {% assign descriptions = "SAI Lending, market avg.|USDC Lending, market avg.|DAI Lending, market avg.|Interest Rate On Balances|Vanguard CDs|Vanguard Real Estate ETF|SPDR Bloomberg Barclays High Yield Bond ETF" | split: "|" %}
-        {% assign icons = "sai_lending|usdc_lending|dai_lending|interest_rate_on_balances|vanguard_cds|vanguard_real_estate|sdpr_bloomberg" | split: "|" %}
+        {% assign descriptions = "SAI Lending, market avg.|USDC Lending, market avg.|DAI Lending, market avg." | split: "|" %}
+        {% assign icons = "sai_lending|usdc_lending|dai_lending" | split: "|" %}
         {% for description in descriptions %}
         <div class="flex item-mark">
             <img class="lazyload" data-src="/images/{{icons[forloop.index0]}}.svg">
@@ -326,4 +326,5 @@ featured-image: /images/og-rates.png
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <script src="https://unpkg.com/array-flat-polyfill"></script>
+<script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
 <script src="/assets/js/defi_rates.js"></script>

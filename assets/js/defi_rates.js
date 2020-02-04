@@ -163,29 +163,117 @@ const onTimeScaleChange = (e) => {
     var saiDataset = GetSaiDataset(responses, timePeriodId);
     var usdcDataset = GetUsdcDataset(responses, timePeriodId);
     var dataX;
-    if (daiDataset.data[0].x < usdcDataset.data[0].x && daiDataset.data[0].x < saiDataset.data[0].x) {
+    if (daiDataset[0].time < usdcDataset[0].time && daiDataset[0].time < saiDataset[0].time) {
       dataX = daiDataset.data.map(item => item.x)
-    } else if (saiDataset.data[0].x < usdcDataset.data[0].x && saiDataset.data[0].x < daiDataset.data[0].x) {
-      dataX = saiDataset.data.map(item => item.x)
+    } else if (saiDataset[0].time < usdcDataset[0].time && saiDataset[0].time < daiDataset[0].time) {
+      dataX = saiDataset.map(item => item.time)
 
     }
     else {
-      dataX = usdcDataset.data.map(item => item.x)
+      dataX = usdcDataset.map(item => item.time)
 
     }
 
-    var staticDatasets = GetConstDatasetsWithTimescale(timePeriodId, dataX.length, dataX[0], dataX[dataX.length - 1]);
-    // // window.myChart.data.labels = responses[0].data.chart.map(chartItem => fromTimestampToLabel(chartItem.timestamp, timePeriodId));
-    // // window.myChart.data.labels = dataX;
-    window.myChart.data.datasets = [daiDataset, saiDataset, usdcDataset].concat(staticDatasets);
-    window.myChart.options.scales.xAxes[0].time.unit = timePeriods.find(x => x.id == timePeriodId).unit
-    window.myChart.update();
+    if (window.tvWidget)
+      window.tvWidget.remove();
+
+    window.tvWidget = LightweightCharts.createChart(document.getElementById("tv-chart-container"), window.chartOptions);
+
+    window.saiSeries = window.tvWidget.addAreaSeries(saiSeriesOptions);
+    window.daiSeries = window.tvWidget.addAreaSeries(daiSeriesOptions);
+    window.usdcSeries = window.tvWidget.addAreaSeries(usdcSeriesOptions);
+    window.saiSeries.setData(saiDataset);
+    window.daiSeries.setData(daiDataset);
+    window.usdcSeries.setData(usdcDataset);
+
+
+
+    window.tvWidget.timeScale().fitContent();
   });
 }
 
+
+const saiSeriesOptions = {
+  topColor: '#B99FFF',
+  bottomColor: 'rgba(185, 159, 255, 0)',
+  lineColor: "#8F68FC",
+  lineWidth: 3,
+}
+const daiSeriesOptions = {
+  topColor: '#FFBD70',
+  bottomColor: 'rgba(255, 189, 112, 0)',
+  lineColor: "#FF961C",
+  lineWidth: 3,
+}
+const usdcSeriesOptions = {
+  topColor: '#1AF3FF',
+  bottomColor: 'rgba(26, 243, 255, 0)',
+  lineColor: "#05D2DD",
+  lineWidth: 3,
+}
+var volumeSeries = {
+  color: '#26a69a',
+  lineWidth: 2,
+  priceFormat: {
+    type: 'volume',
+  },
+  overlay: true,
+  scaleMargins: {
+    top: 0.8,
+    bottom: 0,
+  },
+};
+
+
 const init = () => {
-  var ctx = document.getElementById('rate_graphs').getContext('2d');
-  document.getElementById('rate_graphs').style.backgroundColor = 'rgb(255,255,255)';
+  // var ctx = document.getElementById('rate_graphs').getContext('2d');
+  // document.getElementById('rate_graphs').style.backgroundColor = 'rgb(255,255,255)';
+  window.chartOptions = {
+    localization: {
+      priceFormatter: function (price) {
+        return '    ' + toFixedWithoutTrailingZeros(Number(price), 2) + '%';
+      },
+    },
+    width: document.getElementById("tv-chart-container").offsetWidth,
+    height: document.getElementById("tv-chart-container").offsetHeight,
+    priceScale: {
+      scaleMargins: {
+        top: 0.1,
+        bottom: 0.1,
+      },
+      borderColor: '#E8EEF1'
+    },
+    timeScale: {
+      borderColor: '#E8EEF1',
+      fixLeftEdge: true
+    },
+    layout: {
+      backgroundColor: 'transparent',
+      textColor: '#8B8BB8',
+      fontFamily: "Open Sans",
+      fontSize: 14
+    },
+    grid: {
+      vertLines: {
+        visible: true,
+        color: "#E8EEF1"
+      },
+      horzLines: {
+        color: '#E8EEF1',
+      },
+    },
+    crosshair: {
+      vertLine: {
+        color: '#292984',
+        labelBackgroundColor: '#292984'
+      },
+      horzLine: {
+        color: '#292984',
+        labelBackgroundColor: '#292984'
+
+      }
+    }
+  };
 
   GetData().then(responses => {
     var daiDataset = GetDaiDataset(responses, 2);
@@ -195,74 +283,90 @@ const init = () => {
     renderLendingRates(lendingRates)
     var labels = responses[0].data.chart.map(chartItem => fromTimestampToLabel(chartItem.timestamp, 2));
     var staticDatasets = GetConstDatasetsWithTimescale(2, labels.length);
-    window.myChart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        // labels: labels,
-        datasets: [daiDataset, saiDataset, usdcDataset].concat(staticDatasets),
-      },
-      options: {
-        responsive: true,
-        legend: {
-          display: false
-        },
-        tooltips: {
-          mode: 'nearest',
-          intersect: false,
-          position: "average",
-          backgroundColor: "#292984",
-          titleFontColor: "#fff",
-          bodyFontColor: "#fff",
-          cornerRadius: 0,
-          titleFontFamily: "Kanit",
-          titleFontStyle: "normal",
-          bodyFontFamily: "Kanit",
-          bodyFontSize: 16,
-          bodyFontStyle: "normal",
-          bodySpacing: 5,
-          xPadding: 10,
-          yPadding: 10,
-          callbacks: {
-            label: function (tooltipItem, data) {
-              return data['datasets'][tooltipItem['datasetIndex']].label + ': ' + tooltipItem.value + '%';
-            }
-          }
-        },
-        hover: {
-          mode: 'nearest',
-          intersect: false
-        },
-        scales: {
-          xAxes: [{
-            type: 'time',
-            gridLines: {
-              display: false
-            },
-            ticks: {
-              maxTicksLimit: 7
-            }
-          }],
-          yAxes: [{
-            offset: true,
-            gridLines: {
-              drawTicks: false,
-              drawBorder: false,
-              color: "#F3F5F6"
-            },
-            ticks: {
-              padding: 20,
-              beginAtZero: true,
-              fontSize: 12,
-              fontColor: "#8B8BB8",
-              fontFamily: "Open Sans",
-              callback: function (value, index, values) {
-                return value + '%';
-              }
-            }
-          }]
-        }
-      }
-    });
+
+    window.tvWidget = LightweightCharts.createChart(document.getElementById("tv-chart-container"), window.chartOptions);
+
+    window.saiSeries = window.tvWidget.addAreaSeries(saiSeriesOptions);
+    window.daiSeries = window.tvWidget.addAreaSeries(daiSeriesOptions);
+    window.usdcSeries = window.tvWidget.addAreaSeries(usdcSeriesOptions);
+    window.saiSeries.setData(saiDataset);
+    window.daiSeries.setData(daiDataset);
+    window.usdcSeries.setData(usdcDataset);
+
+
+
+    window.tvWidget.timeScale().fitContent();
+    // var saiSeries = window.tvWidget.addAreaSeries(seriesOptions);
+
+
+    // window.myChart = new Chart(ctx, {
+    //   type: 'line',
+    //   data: {
+    //     // labels: labels,
+    //     datasets: [daiDataset, saiDataset, usdcDataset].concat(staticDatasets),
+    //   },
+    //   options: {
+    //     responsive: true,
+    //     legend: {
+    //       display: false
+    //     },
+    //     tooltips: {
+    //       mode: 'nearest',
+    //       intersect: false,
+    //       position: "average",
+    //       backgroundColor: "#292984",
+    //       titleFontColor: "#fff",
+    //       bodyFontColor: "#fff",
+    //       cornerRadius: 0,
+    //       titleFontFamily: "Kanit",
+    //       titleFontStyle: "normal",
+    //       bodyFontFamily: "Kanit",
+    //       bodyFontSize: 16,
+    //       bodyFontStyle: "normal",
+    //       bodySpacing: 5,
+    //       xPadding: 10,
+    //       yPadding: 10,
+    //       callbacks: {
+    //         label: function (tooltipItem, data) {
+    //           return data['datasets'][tooltipItem['datasetIndex']].label + ': ' + tooltipItem.value + '%';
+    //         }
+    //       }
+    //     },
+    //     hover: {
+    //       mode: 'nearest',
+    //       intersect: false
+    //     },
+    //     scales: {
+    //       xAxes: [{
+    //         type: 'time',
+    //         gridLines: {
+    //           display: false
+    //         },
+    //         ticks: {
+    //           maxTicksLimit: 7
+    //         }
+    //       }],
+    //       yAxes: [{
+    //         offset: true,
+    //         gridLines: {
+    //           drawTicks: false,
+    //           drawBorder: false,
+    //           color: "#F3F5F6"
+    //         },
+    //         ticks: {
+    //           padding: 20,
+    //           beginAtZero: true,
+    //           fontSize: 12,
+    //           fontColor: "#8B8BB8",
+    //           fontFamily: "Open Sans",
+    //           callback: function (value, index, values) {
+    //             return value + '%';
+    //           }
+    //         }
+    //       }]
+    //     }
+    //   }
+    // });
 
   });
 };
@@ -328,11 +432,12 @@ const GetLendingRates = (responses, token) => {
 const GetDaiDataset = (responses, timePeriodId) => {
   let daiData = responses.filter(item => item.token === "dai");
   var arrayY = GetArraysMean(daiData.map(item => item.data.chart.map(chartItem => chartItem.supply_rate)))
-  var arrayX = GetArraysMean(daiData.map(item => item.data.chart.map(chartItem => chartItem.timestamp)))
-    .map(item => fromTimestampToLabel(parseInt(item), timePeriodId));
+  var arrayX = daiData[0].data.chart.map(chartItem => chartItem.timestamp);
+  return arrayY.map((item, index) => { return { value: new Number(item), time: arrayX[index] } });
+
   return {
     label: 'DAI lending',
-    data: arrayY.map((item, index) => { return { y: item, x: arrayX[index] } }),
+    data: arrayY.map((item, index) => { return { value: new Number(item), time: arrayX[index] } }),
     backgroundColor: "#FF961C",
     fill: false,
     borderColor: "#FF961C",
@@ -343,9 +448,8 @@ const GetDaiDataset = (responses, timePeriodId) => {
 const GetSaiDataset = (responses, timePeriodId) => {
   let saiData = responses.filter(item => item.token === "sai");
   var arrayY = GetArraysMean(saiData.map(item => item.data.chart.map(chartItem => chartItem.supply_rate)))
-  var arrayX = GetArraysMean(saiData.map(item => item.data.chart.map(chartItem => chartItem.timestamp)))
-    .map(item => fromTimestampToLabel(parseInt(item), timePeriodId));
-
+  var arrayX = saiData[0].data.chart.map(chartItem => chartItem.timestamp);
+  return arrayY.map((item, index) => { return { value: new Number(item), time: arrayX[index] } });
   return {
     label: 'SAI lending',
     data: arrayY.map((item, index) => { return { y: item, x: arrayX[index] } }),
@@ -359,8 +463,8 @@ const GetSaiDataset = (responses, timePeriodId) => {
 const GetUsdcDataset = (responses, timePeriodId) => {
   let usdcData = responses.filter(item => item.token === "usdc");
   var arrayY = GetArraysMean(usdcData.map(item => item.data.chart.map(chartItem => chartItem.supply_rate)))
-  var arrayX = GetArraysMean(usdcData.map(item => item.data.chart.map(chartItem => chartItem.timestamp)))
-    .map(item => fromTimestampToLabel(parseInt(item), timePeriodId));
+  var arrayX = usdcData[0].data.chart.map(chartItem => chartItem.timestamp);
+  return arrayY.map((item, index) => { return { value: new Number(item), time: arrayX[index] } });
 
   return {
     label: 'USDC lending',
@@ -410,3 +514,7 @@ liquidity_xhr.onreadystatechange = function () {
   }
 }
 liquidity_xhr.send();
+
+function toFixedWithoutTrailingZeros(number, digit) {
+  return parseFloat(number.toFixed(digit));
+}
