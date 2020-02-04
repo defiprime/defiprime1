@@ -236,4 +236,11 @@
 			}
 		});
 	});
+	$(".wrapper-buttons .period-button").on("click", function (e) {
+		tablinks = document.getElementsByClassName("period-button");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		e.currentTarget.className += " active";
+	});
 })(jQuery);

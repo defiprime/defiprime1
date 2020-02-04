@@ -42,5 +42,10 @@ karp:
 melikhov:
     name: Alex Melikhov
     twitter: https://twitter.com/EOSDT
-    bio: CEO of <a href="https://eqframework.io/">Equilibrium</a>. 15 years of entrepreneurial and fintech experience and had been a cryptocurrency enthusiast since 2013. Became more pragmatic about blockchain after co-founding his first crypto business in 2016. Ethereum & EOS smart contracts specialist. Fan of DApps. Engineer in applied mathematics. 
+    bio: CEO of <a href="https://eqframework.io/">Equilibrium</a>. 15 years of entrepreneurial and fintech experience and had been a cryptocurrency enthusiast since 2013. Became more pragmatic about blockchain after co-founding his first crypto business in 2016. Ethereum & EOS smart contracts specialist. Fan of DApps. Engineer in applied mathematics.
     image: /images/Melikhov.jpg
+masmej:
+    name: Alex Masmej
+    twitter: https://twitter.com/AlexMasmej
+    bio: "Alex Masmej is doing Operations & Community at MetaCartel Ventures, Membership Lead at Marketing DAO & Communications at Stake Capital. He is also the founder of the #UndercollaterizedDeFi community with 600+ members across Telegram & Discord."
+    image: /images/masmej.jpg

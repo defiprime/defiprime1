@@ -22,7 +22,7 @@ toc:
 
 pagination:
   enabled: true
-  per_page: 8
+  per_page: 16
   permalink: '/page/:num/'
   title: 'DeFi blog - page :num'
   limit: 0
@@ -103,6 +103,10 @@ collections:
     output: true
     permalink: /product/:name
     section_url: /dao
+  alternative-savings:
+    output: true
+    permalink: /product/:name
+    section_url: /alternative-savings
 
 defaults:
   -
@@ -130,7 +134,6 @@ algolia:
     - defi_rates.md
     - blog.md
     - bitcoin.md
-    - collections_sort.md
     - defi_rates.md
     - defi-events.md
     - eos.md

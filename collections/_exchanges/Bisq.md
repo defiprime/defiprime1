@@ -1,5 +1,5 @@
 ---
-git-date: 
+git-date:
 product-title: Bisq
 product-url: https://bisq.network/
 image: /images/output_md/httpsbisqnetwork.png

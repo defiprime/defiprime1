@@ -1,5 +1,5 @@
 ---
-git-date: 
+git-date:
 layout: ecosystem
 title: Bitcoin DeFi ecosystem
 metadescription: List of the best Bitcoin Defi Products. DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries.
@@ -26,7 +26,14 @@ featured-image: /images/og-bitcoin.png
 
 
 {% endfor %}
+{% for alternative-savings in site.alternative-savings %}
+{% if alternative-savings.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
+{% if alternative-savings.ecosystem contains 'bitcoin' %} {% assign counter_btc = counter_btc | plus: 1 %} {% endif %}
+{% if alternative-savings.ecosystem contains 'eos' %} {% assign counter_eos = counter_eos | plus: 1 %} {% endif %}
 
+{% assign counter = counter | plus: 1 %}
+
+{% endfor %}
 
 {% for derivatives in site.derivatives %}
 {% if derivatives.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
@@ -183,7 +190,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% for assets-management-tools in site.assets-management-tools  %}
 {% if assets-management-tools.ecosystem contains 'bitcoin' %}
 ### <a href="{{ assets-management-tools.product-url }}">{{ assets-management-tools.product-title }}</a>
-<span> 
+<span>
 {% if assets-management-tools.ecosystem contains 'ethereum' %} ![](images/ether.png "Built on Ethereum or related to Ethereum ecosystem"){% endif %} {% if assets-management-tools.ecosystem contains 'bitcoin' %} ![](/images/btc.png "Using Bitcoin ecosystem"){% endif %} {% if assets-management-tools.ecosystem contains 'eos' %} ![](/images/eos.png "Built on EOS or related to EOS ecosystem"){% endif %} {% if  assets-management-tools.platform contains 'ios' %}    <i class="fab fa-app-store-ios" title="Mobile wallet for iOS"></i> {% endif %}  {% if  assets-management-tools.platform contains 'android' %}    <i class="fab fa-android" title="Mobile wallet for Android"></i> {% endif %} {% if  assets-management-tools.platform contains 'web' %}    <i class="fab fa-chrome" title="Browser based wallet"></i> {% endif %} {% if  assets-management-tools.platform contains 'win' %}    <i class="fab fa-windows" title="Desktop wallet for windows"></i> {% endif %} {% if  assets-management-tools.platform contains 'mac' %}    <i class="fab fa-apple" title="Desktop wallet for osx"></i> {% endif %}
 </span>
 

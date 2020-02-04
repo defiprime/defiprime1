@@ -1,5 +1,5 @@
 ---
-git-date: 
+git-date:
 layout: ecosystem
 title: EOS DeFi ecosystem
 metadescription: List of the best EOS DeFi Projects. EOS DeFi dApps leverages decentralized networks to transform old financial products into trustless and transparent protocols.
@@ -27,7 +27,14 @@ featured-image: /images/og-eos.png
 
 
 {% endfor %}
+{% for alternative-savings in site.alternative-savings %}
+{% if alternative-savings.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
+{% if alternative-savings.ecosystem contains 'bitcoin' %} {% assign counter_btc = counter_btc | plus: 1 %} {% endif %}
+{% if alternative-savings.ecosystem contains 'eos' %} {% assign counter_eos = counter_eos | plus: 1 %} {% endif %}
 
+{% assign counter = counter | plus: 1 %}
+
+{% endfor %}
 
 {% for derivatives in site.derivatives %}
 {% if derivatives.ecosystem contains 'ethereum' %} {% assign counter_eth = counter_eth | plus: 1 %} {% endif %}
