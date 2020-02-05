@@ -120,6 +120,9 @@
             font-size: 14px;
         }
     }
+    .lh-120 {
+        line-height: 1.2;
+    }
     .lh-140 {
         line-height: 1.4;
     }
@@ -266,7 +269,7 @@
     font-size: 18px;
     line-height: 1.6;
     font-weight: 500;
-    @media (max-width: 991px) {
+    @media (max-width: 1199px) {
         font-size: 16px;
     }
     .item-crypto {

@@ -328,7 +328,7 @@ featured-image: /images/og-rates.png
     </div>
     <div class="flex jc-sb col-10 col-lg-12 mx-auto f-md-wrap">
         <div class="flex d-column col-5 col-md-6 col-sm-12 sai-eth">
-            <div class="flex mb-35 mb-xl-0 ai-c">
+            <div class="flex ai-c">
                 <div class="icon-provider-liquidity flex">
                     {% include icons/dai-eth.html %}
                 </div>
@@ -336,7 +336,7 @@ featured-image: /images/og-rates.png
             </div>
             <div class="wrap-list-liquidity">
                 <ul class="list-liquidity">
-                    <li class="item-liquidity lh-180 flex jc-sb">
+                    <li class="item-liquidity lh-120 flex jc-sb">
                         <a class="list-liquidity-name" href="#" target="_blank">Uniswap</a>
                         <span class="list-liquidity-value"><span class="value">12</span>%</span>
                     </li>
@@ -352,7 +352,7 @@ featured-image: /images/og-rates.png
             </div>
         </div>
         <div class="flex d-column col-5 col-md-6 col-sm-12 usdc-eth">
-            <div class="flex mb-35 mb-xl-0 ai-c">
+            <div class="flex ai-c">
                 <div class="icon-provider-liquidity flex">
                     {% include icons/usdc-eth.html %}
                 </div>
@@ -360,7 +360,7 @@ featured-image: /images/og-rates.png
             </div>
             <div class="wrap-list-liquidity">
                 <ul class="list-liquidity">
-                    <li class="item-liquidity lh-180 flex jc-sb">
+                    <li class="item-liquidity lh-120 flex jc-sb">
                         <a class="list-liquidity-name" href="#" target="_blank">Uniswap</a>
                         <span class="list-liquidity-value"><span class="value">12</span>%</span>
                     </li>
