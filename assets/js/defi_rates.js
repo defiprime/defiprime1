@@ -1,4 +1,4 @@
-const api = "https://defiportfolio-backend-staging.herokuapp.com/api/v1";
+const api = "https://defiportfolio-backend.herokuapp.com/api/v1";
 const old_api = "https://api-rates.defiprime.com";
 
 const markets = ["compound_v2", "fulcrum", "dydx"];
