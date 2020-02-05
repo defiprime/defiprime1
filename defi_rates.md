@@ -56,15 +56,22 @@ featured-image: /images/og-rates.png
             <div class="data-crypto">
                 <ul class="list-crypto">
                     <li class="item-crypto">
-                        <a href="https://trade.dydx.exchange/balances" class="inline-flex list-crypto-name list-liquidity-name">
-                            <span class="value" data-market="dydx">DyDx</span>
+                        <a href="https://compound.finance/" class="inline-flex list-crypto-name list-liquidity-name">
+                            <span class="value" data-market="compound_v2">Compound</span>
                         </a>
                         <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
                         <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
                     </li>
                     <li class="item-crypto">
-                        <a href="https://compound.finance/" class="inline-flex list-crypto-name list-liquidity-name">
-                            <span class="value" data-market="compound_v2">Compound</span>
+                        <a href="https://oasis.app/save" class="inline-flex list-crypto-name list-liquidity-name">
+                            <span class="value" data-market="dsr">MakerDAO DSR</span>
+                        </a>
+                        <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
+                        <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
+                    </li>
+                    <li class="item-crypto">
+                        <a href="https://trade.dydx.exchange/balances" class="inline-flex list-crypto-name list-liquidity-name">
+                            <span class="value" data-market="dydx">DyDx</span>
                         </a>
                         <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
                         <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
@@ -91,16 +98,16 @@ featured-image: /images/og-rates.png
             </div>
             <div class="data-crypto">
                 <ul class="list-crypto">
-                    <li class="item-crypto">                        
-                        <a href="https://trade.dydx.exchange/balances" class="inline-flex list-crypto-name list-liquidity-name">
-                            <span class="value" data-market="dydx">DyDx</span>
+                    <li class="item-crypto">
+                        <a href="https://compound.finance/" class="inline-flex list-crypto-name list-liquidity-name">
+                            <span class="value" data-market="compound_v2">Compound</span>
                         </a>
                         <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
                         <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
                     </li>
-                    <li class="item-crypto">
-                        <a href="https://compound.finance/" class="inline-flex list-crypto-name list-liquidity-name">
-                            <span class="value" data-market="compound_v2">Compound</span>
+                    <li class="item-crypto">                        
+                        <a href="https://trade.dydx.exchange/balances" class="inline-flex list-crypto-name list-liquidity-name">
+                            <span class="value" data-market="dydx">DyDx</span>
                         </a>
                         <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
                         <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
@@ -171,8 +178,15 @@ featured-image: /images/og-rates.png
             <div class="data-crypto">
                 <ul class="list-crypto">
                     <li class="item-crypto">
-                        <a href="https://trade.dydx.exchange/balances" class="inline-flex list-crypto-name list-liquidity-name">
-                            <span class="value" data-market="dydx">DyDx</span>
+                        <a href="https://app.aave.com/" class="inline-flex list-crypto-name list-liquidity-name">
+                            <span class="value" data-market="aave">Aave</span>
+                        </a>
+                        <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
+                        <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
+                    </li>
+                    <li class="item-crypto">
+                        <a href="https://app.aave.com/" class="inline-flex list-crypto-name list-liquidity-name">
+                            <span class="value"  data-market="aave_fixed">Aave fixed*</span>
                         </a>
                         <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
                         <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
@@ -185,6 +199,13 @@ featured-image: /images/og-rates.png
                         <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
                     </li>
                     <li class="item-crypto">
+                        <a href="https://trade.dydx.exchange/balances" class="inline-flex list-crypto-name list-liquidity-name">
+                            <span class="value" data-market="dydx">DyDx</span>
+                        </a>
+                        <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
+                        <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
+                    </li>
+                    <li class="item-crypto">
                         <a href="https://fulcrum.trade/" class="inline-flex list-crypto-name list-liquidity-name">
                             <span class="value" data-market="fulcrum">Fulcrum</span>
                         </a>
@@ -192,15 +213,8 @@ featured-image: /images/og-rates.png
                         <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
                     </li>
                     <li class="item-crypto">
-                        <a href="https://app.aave.com/" class="inline-flex list-crypto-name list-liquidity-name">
-                            <span class="value" data-market="aave">Aave</span>
-                        </a>
-                        <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
-                        <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
-                    </li>
-                    <li class="item-crypto">
-                        <a href="https://app.aave.com/" class="inline-flex list-crypto-name list-liquidity-name">
-                            <span class="value"  data-market="aave_fixed">Aave fixed*</span>
+                        <a href="https://torque.loans/" class="inline-flex list-crypto-name list-liquidity-name">
+                            <span class="value" data-market="torque">Torque*</span>
                         </a>
                         <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
                         <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
@@ -221,13 +235,6 @@ featured-image: /images/og-rates.png
             <div class="data-crypto">
                 <ul class="list-crypto">
                     <li class="item-crypto">
-                        <a href="https://trade.dydx.exchange/balances" class="inline-flex list-crypto-name list-liquidity-name">
-                            <span class="value" data-market="dydx">DyDx</span>
-                        </a>
-                        <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
-                        <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
-                    </li>
-                    <li class="item-crypto">
                         <a href="https://compound.finance/" class="inline-flex list-crypto-name list-liquidity-name">
                             <span class="value" data-market="compound_v2">Compound</span>
                         </a>
@@ -235,8 +242,22 @@ featured-image: /images/og-rates.png
                         <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
                     </li>
                     <li class="item-crypto">
+                        <a href="https://trade.dydx.exchange/balances" class="inline-flex list-crypto-name list-liquidity-name">
+                            <span class="value" data-market="dydx">DyDx</span>
+                        </a>
+                        <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
+                        <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
+                    </li>
+                    <li class="item-crypto">
                         <a href="https://fulcrum.trade/" class="inline-flex list-crypto-name list-liquidity-name">
                             <span class="value" data-market="fulcrum">Fulcrum</span>
+                        </a>
+                        <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
+                        <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
+                    </li>
+                    <li class="item-crypto">
+                        <a href="https://torque.loans/" class="inline-flex list-crypto-name list-liquidity-name">
+                            <span class="value" data-market="torque">Torque*</span>
                         </a>
                         <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
                         <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
@@ -271,6 +292,13 @@ featured-image: /images/og-rates.png
                     <li class="item-crypto">
                         <a href="https://fulcrum.trade/" class="inline-flex list-crypto-name list-liquidity-name">
                             <span class="value" data-market="fulcrum">Fulcrum</span>
+                        </a>
+                        <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
+                        <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
+                    </li>
+                    <li class="item-crypto">
+                        <a href="https://torque.loans/" class="inline-flex list-crypto-name list-liquidity-name">
+                            <span class="value" data-market="torque">Torque*</span>
                         </a>
                         <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
                         <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
