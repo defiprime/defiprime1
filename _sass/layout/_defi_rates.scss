@@ -333,9 +333,13 @@
     }
 }
 .data-crypto {
-    padding-left: 65px;
+    // padding-left: 65px;
+    padding-right: 30px;
+
     @media (max-width: 991px) {
-        padding-left: 45px;
+        // padding-left: 45px;
+        padding-right: 10px;
+
     }
 }
 .lending-wrapper,
