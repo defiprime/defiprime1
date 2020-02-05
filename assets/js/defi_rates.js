@@ -126,41 +126,20 @@ const onTimeScaleChange = (e) => {
   var timePeriodId = parseInt(e.currentTarget.dataset.period);
   var startDate = timePeriods.find(period => period.id == timePeriodId).getStartDate();
   GetData(startDate).then(responses => {
-    var daiDataset = GetAssetLending("dai", responses, timePeriodId);
-    var saiDataset = GetAssetLending("sai", responses, timePeriodId);
-    var usdcDataset = GetAssetLending("usdc", responses, timePeriodId);
-    
-    if (window.tvWidget)
-      window.tvWidget.remove();
-
-    window.tvWidget = LightweightCharts.createChart(chartContainer, GetChartOptions(timePeriodId));
-
-    window.saiSeries = window.tvWidget.addAreaSeries(saiSeriesOptions);
-    window.daiSeries = window.tvWidget.addAreaSeries(daiSeriesOptions);
-    window.usdcSeries = window.tvWidget.addAreaSeries(usdcSeriesOptions);
-    window.saiSeries.setData(saiDataset);
-    window.daiSeries.setData(daiDataset);
-    window.usdcSeries.setData(usdcDataset);
-
-
-
-    window.tvWidget.timeScale().fitContent();
-
+    renderTradingViewChart(timePeriodId, responses)
   });
 }
 
 
-function renderTradingViewChart(timePeriodId, assets) {
+function renderTradingViewChart(timePeriodId, responses) {
   if (window.tvWidget)
     window.tvWidget.remove();
 
   window.tvWidget = LightweightCharts.createChart(chartContainer, GetChartOptions(timePeriodId));
+  var daiDataset = GetAssetLending("dai", responses, timePeriodId);
+  var saiDataset = GetAssetLending("sai", responses, timePeriodId);
+  var usdcDataset = GetAssetLending("usdc", responses, timePeriodId);
 
-  assets.forEach(asset => {
-    window[asset] = window.tvWidget.addAreaSeries(seriesOptions[asset]);
-    let data = GetAssetLending()
-    window[asset].setData()
-  });
   window.saiSeries = window.tvWidget.addAreaSeries(saiSeriesOptions);
   window.daiSeries = window.tvWidget.addAreaSeries(daiSeriesOptions);
   window.usdcSeries = window.tvWidget.addAreaSeries(usdcSeriesOptions);
@@ -226,25 +205,9 @@ const GetChartOptions = (timePeriodId) => ({
 
 const init = () => {
   GetData().then(responses => {
-    var daiDataset = GetAssetLending("dai", responses, 2);
-    var saiDataset = GetAssetLending("sai", responses, 2);
-    var usdcDataset = GetAssetLending("usdc", responses, 2);
     var lendingRates = tokens.map(token => GetLendingRates(responses, token));
-    renderLendingRates(lendingRates)
-
-    window.tvWidget = LightweightCharts.createChart(chartContainer, GetChartOptions(2));
-
-    window.saiSeries = window.tvWidget.addAreaSeries(saiSeriesOptions);
-    window.daiSeries = window.tvWidget.addAreaSeries(daiSeriesOptions);
-    window.usdcSeries = window.tvWidget.addAreaSeries(usdcSeriesOptions);
-    window.saiSeries.setData(saiDataset);
-    window.daiSeries.setData(daiDataset);
-    window.usdcSeries.setData(usdcDataset);
-
-
-
-    window.tvWidget.timeScale().fitContent();
-
+    renderLendingRates(lendingRates);
+    renderTradingViewChart(2, responses);
   });
 };
 
