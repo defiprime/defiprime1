@@ -152,7 +152,7 @@ featured-image: /images/og-rates.png
     </div>
 </section>
 
-<section class="pt-120 pb-45">
+<section class="pt-120 pt-md-45 pb-45">
     <div class="text-center">
         <h2 class="mb-25">DeFi Borrowing Rates</h2>
         <p class="fs-20 lh-180 color-primary mb-50">Avg. interest rates</p>
