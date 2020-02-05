@@ -222,7 +222,7 @@
 .provider-crypto {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     @media (max-width: 991px) {
         margin-bottom: 10px;
     }
@@ -247,12 +247,15 @@
         width: calc(100% - 65px);
         @media (max-width: 991px) {
             font-size: 32px;
-            justify-content: space-between;
+            // justify-content: space-between;
         }
         .name-provider {
-            width: calc(100% - 180px);
+            margin-right: 20px;  
+            // width: calc(100% - 180px);
             @media (max-width: 1199px) {
-                width: calc(100% - 120px);
+                margin-right: 10px;  
+
+                // width: calc(100% - 120px);
             }
         }
     }
@@ -260,8 +263,8 @@
 
 .list-crypto {
     font-family: "Kanit", sans-serif;
-    font-size: 20px;
-    line-height: 1.8;
+    font-size: 18px;
+    line-height: 1.6;
     font-weight: 500;
     @media (max-width: 991px) {
         font-size: 16px;
@@ -294,7 +297,7 @@
             .list-crypto-today {
                 &:before {
                     content: "Today";
-                    right: 30px;
+                    left: 25px;
                     @media (max-width: 1199px) {
                         right: 15px;
                     }
@@ -303,9 +306,9 @@
             .list-crypto-month {
                 &:before {
                     content: "30-days";
-                    right: 30px;
+                    left: 25px;
                     @media (max-width: 1199px) {
-                        right: 15px;
+                        right: 0px;
                     }
                 }
             }
@@ -315,16 +318,15 @@
         position: relative;
         width: calc(100% - 180px);
         @media (max-width: 1199px) {
-            width: calc(100% - 120px);
+            width: calc(100% - 150px);
         }
     }
     .list-crypto-today,
     .list-crypto-month {
         position: relative;
         display: inline-flex;
-        width: 90px;
-        padding-right: 30px;
-        justify-content: flex-end;
+        width: 80px;
+        padding-left: 25px;
         color: #8f68fc;
         @media (max-width: 1199px) {
             width: 60px;
@@ -333,13 +335,10 @@
     }
 }
 .data-crypto {
-    // padding-left: 65px;
-    padding-right: 30px;
-
+    padding-left: 65px;
+    
     @media (max-width: 991px) {
-        // padding-left: 45px;
-        padding-right: 10px;
-
+        padding-left: 45px;
     }
 }
 .lending-wrapper,
