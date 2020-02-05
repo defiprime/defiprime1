@@ -4,16 +4,47 @@ const old_api = "https://api-rates.defiprime.com";
 const markets = ["compound_v2", "fulcrum", "dydx"];
 const tokens = ["dai", "sai", "usdc"];
 
-const requestParams = markets.flatMap(market => {
-  return tokens.map(token => {
-    return token === "sai" && market === "dydx"
-      ? null
-      : {
-        market: market,
-        token: token
-      }
-  })
-}).filter(item => item !== null);
+const chartContainer = document.getElementById("tv-chart-container");
+
+const seriesOptions = {
+  "sai": {
+    topColor: '#B99FFF',
+    bottomColor: 'rgba(185, 159, 255, 0)',
+    lineColor: "#8F68FC",
+    lineWidth: 3,
+  },
+  "dai": {
+    topColor: '#FFBD70',
+    bottomColor: 'rgba(255, 189, 112, 0)',
+    lineColor: "#FF961C",
+    lineWidth: 3,
+  },
+  "usdc": {
+    topColor: '#1AF3FF',
+    bottomColor: 'rgba(26, 243, 255, 0)',
+    lineColor: "rgba(0, 199, 204, 1)",
+    lineWidth: 3,
+  }
+}
+
+const saiSeriesOptions = {
+  topColor: '#B99FFF',
+  bottomColor: 'rgba(185, 159, 255, 0)',
+  lineColor: "#8F68FC",
+  lineWidth: 3,
+}
+const daiSeriesOptions = {
+  topColor: '#FFBD70',
+  bottomColor: 'rgba(255, 189, 112, 0)',
+  lineColor: "#FF961C",
+  lineWidth: 3,
+}
+const usdcSeriesOptions = {
+  topColor: '#1AF3FF',
+  bottomColor: 'rgba(26, 243, 255, 0)',
+  lineColor: "rgba(0, 199, 204, 1)",
+  lineWidth: 3,
+}
 
 const timePeriods = [
   {
@@ -59,6 +90,18 @@ const timePeriods = [
     unit: "month"
   }];
 
+
+const requestParams = markets.flatMap(market => {
+  return tokens.map(token => {
+    return token === "sai" && market === "dydx"
+      ? null
+      : {
+        market: market,
+        token: token
+      }
+  })
+}).filter(item => item !== null);
+
 function get(url) {
   return new Promise(function (resolve, reject) {
     var req = new XMLHttpRequest();
@@ -78,51 +121,38 @@ function get(url) {
   });
 }
 
-const onTimeScaleChange = (e) => {
+const onTimeScaleChange = async (e) => {
   e.preventDefault();
   var timePeriodId = parseInt(e.currentTarget.dataset.period);
   var startDate = timePeriods.find(period => period.id == timePeriodId).getStartDate();
-  GetData(startDate).then(responses => {
-    var daiDataset = GetDaiDataset(responses, timePeriodId);
-    var saiDataset = GetSaiDataset(responses, timePeriodId);
-    var usdcDataset = GetUsdcDataset(responses, timePeriodId);
-    if (window.tvWidget)
-      window.tvWidget.remove();
-
-    window.tvWidget = LightweightCharts.createChart(document.getElementById("tv-chart-container"), GetChartOptions(timePeriodId));
-
-    window.saiSeries = window.tvWidget.addAreaSeries(saiSeriesOptions);
-    window.daiSeries = window.tvWidget.addAreaSeries(daiSeriesOptions);
-    window.usdcSeries = window.tvWidget.addAreaSeries(usdcSeriesOptions);
-    window.saiSeries.setData(saiDataset);
-    window.daiSeries.setData(daiDataset);
-    window.usdcSeries.setData(usdcDataset);
-
-
-
-    window.tvWidget.timeScale().fitContent();
-
+  var datasets = await GetData(startDate).then(responses => {
+    var daiDataset = GetAssetLending("dai", responses, timePeriodId);
+    var saiDataset = GetAssetLending("sai", responses, timePeriodId);
+    var usdcDataset = GetAssetLending("usdc", responses, timePeriodId);
+    return {
+      "dai": daiDataset,
+      "sai": saiDataset,
+      "usdc": usdcDataset
+    }
   });
+
+  renderTradingViewChart(timePeriodId, ["dai", "sai", "usdc"], datasets);
 }
 
 
-const saiSeriesOptions = {
-  topColor: '#B99FFF',
-  bottomColor: 'rgba(185, 159, 255, 0)',
-  lineColor: "#8F68FC",
-  lineWidth: 3,
-}
-const daiSeriesOptions = {
-  topColor: '#FFBD70',
-  bottomColor: 'rgba(255, 189, 112, 0)',
-  lineColor: "#FF961C",
-  lineWidth: 3,
-}
-const usdcSeriesOptions = {
-  topColor: '#1AF3FF',
-  bottomColor: 'rgba(26, 243, 255, 0)',
-  lineColor: "rgba(0, 199, 204, 1)",
-  lineWidth: 3,
+function renderTradingViewChart(timePeriodId, assets, datasets) {
+  if (window.tvWidget)
+    window.tvWidget.remove();
+
+  window.tvWidget = LightweightCharts.createChart(chartContainer, GetChartOptions(timePeriodId));
+
+  assets.forEach(asset => {
+    window[asset] = window.tvWidget.addAreaSeries(seriesOptions[asset]);
+    window[asset].setData(datasets[asset]);
+  });
+
+  window.tvWidget.timeScale().fitContent();
+
 }
 
 const GetChartOptions = (timePeriodId) => ({
@@ -131,8 +161,8 @@ const GetChartOptions = (timePeriodId) => ({
       return '    ' + Number(price).toFixed(2) + '%';
     },
   },
-  width: document.getElementById("tv-chart-container").offsetWidth,
-  height: document.getElementById("tv-chart-container").offsetHeight,
+  width: chartContainer.offsetWidth,
+  height: chartContainer.offsetHeight,
   priceScale: {
     scaleMargins: {
       top: 0.1,
@@ -143,9 +173,9 @@ const GetChartOptions = (timePeriodId) => ({
   timeScale: {
     borderColor: '#E8EEF1',
     fixLeftEdge: true,
-    
-    secondsVisible: timePeriodId === 0 || timePeriodId=== 1 ? false : true,
-    timeVisible: timePeriodId === 0 || timePeriodId=== 1,
+
+    secondsVisible: timePeriodId === 0 || timePeriodId === 1 ? false : true,
+    timeVisible: timePeriodId === 0 || timePeriodId === 1,
   },
   layout: {
     backgroundColor: 'transparent',
@@ -177,28 +207,21 @@ const GetChartOptions = (timePeriodId) => ({
 })
 
 
-const init = () => {
-  GetData().then(responses => {
-    var daiDataset = GetDaiDataset(responses, 2);
-    var saiDataset = GetSaiDataset(responses, 2);
-    var usdcDataset = GetUsdcDataset(responses, 2);
+const init = async () => {
+  var datasets = await GetData().then(responses => {
+    var daiDataset = GetAssetLending("dai", responses, 2);
+    var saiDataset = GetAssetLending("sai", responses, 2);
+    var usdcDataset = GetAssetLending("usdc", responses, 2);
     var lendingRates = tokens.map(token => GetLendingRates(responses, token));
     renderLendingRates(lendingRates)
-
-    window.tvWidget = LightweightCharts.createChart(document.getElementById("tv-chart-container"),  GetChartOptions(2));
-
-    window.saiSeries = window.tvWidget.addAreaSeries(saiSeriesOptions);
-    window.daiSeries = window.tvWidget.addAreaSeries(daiSeriesOptions);
-    window.usdcSeries = window.tvWidget.addAreaSeries(usdcSeriesOptions);
-    window.saiSeries.setData(saiDataset);
-    window.daiSeries.setData(daiDataset);
-    window.usdcSeries.setData(usdcDataset);
-
-
-
-    window.tvWidget.timeScale().fitContent();
-
+    return {
+      "dai": daiDataset,
+      "sai": saiDataset,
+      "usdc": usdcDataset
+    }
   });
+
+  renderTradingViewChart(2, ["dai", "sai", "usdc"], datasets);
 };
 
 const renderLendingRates = (lendingRates) => {
@@ -258,26 +281,13 @@ const GetLendingRates = (responses, token) => {
 
 }
 
-const GetDaiDataset = (responses, timePeriodId) => {
-  let daiData = responses.filter(item => item.token === "dai");
+const GetAssetLending = (asset, responses, timePeriodId) => {
+  let daiData = responses.filter(item => item.token === asset);
   var arrayY = GetArraysMean(daiData.map(item => item.data.chart.map(chartItem => chartItem.supply_rate)))
   var arrayX = daiData[0].data.chart.map(chartItem => chartItem.timestamp);
-  return arrayY.map((item, index) => { return { value: new Number(item), time: timePeriodId === 0 || timePeriodId === 1 ? arrayX[index] : formatDate(arrayX[index]*1000) } });
+  return arrayY.map((item, index) => { return { value: new Number(item), time: timePeriodId === 0 || timePeriodId === 1 ? arrayX[index] : formatDate(arrayX[index] * 1000) } });
 };
 
-const GetSaiDataset = (responses, timePeriodId) => {
-  let saiData = responses.filter(item => item.token === "sai");
-  var arrayY = GetArraysMean(saiData.map(item => item.data.chart.map(chartItem => chartItem.supply_rate)))
-  var arrayX = saiData[0].data.chart.map(chartItem => chartItem.timestamp);
-  return arrayY.map((item, index) => { return { value: new Number(item), time:  timePeriodId === 0 || timePeriodId === 1 ? arrayX[index] : formatDate(arrayX[index]*1000) } });
-};
-
-const GetUsdcDataset = (responses, timePeriodId) => {
-  let usdcData = responses.filter(item => item.token === "usdc");
-  var arrayY = GetArraysMean(usdcData.map(item => item.data.chart.map(chartItem => chartItem.supply_rate)))
-  var arrayX = usdcData[0].data.chart.map(chartItem => chartItem.timestamp);
-  return arrayY.map((item, index) => { return { value: new Number(item), time:  timePeriodId === 0 || timePeriodId === 1 ? arrayX[index] : formatDate(arrayX[index]*1000) } });
-};
 
 const GetArraysMean = (arrays) => {
   let result = [];
@@ -320,14 +330,14 @@ liquidity_xhr.send();
 
 function formatDate(date) {
   var d = new Date(date),
-      month = '' + (d.getMonth() + 1),
-      day = '' + d.getDate(),
-      year = d.getFullYear();
+    month = '' + (d.getMonth() + 1),
+    day = '' + d.getDate(),
+    year = d.getFullYear();
 
-  if (month.length < 2) 
-      month = '0' + month;
-  if (day.length < 2) 
-      day = '0' + day;
+  if (month.length < 2)
+    month = '0' + month;
+  if (day.length < 2)
+    day = '0' + day;
 
   return [year, month, day].join('-');
 }
