@@ -177,7 +177,7 @@ const onTimeScaleChange = (e) => {
     if (window.tvWidget)
       window.tvWidget.remove();
 
-    window.tvWidget = LightweightCharts.createChart(document.getElementById("tv-chart-container"), window.chartOptions);
+    window.tvWidget = LightweightCharts.createChart(document.getElementById("tv-chart-container"), GetChartOptions(timePeriodId));
 
     window.saiSeries = window.tvWidget.addAreaSeries(saiSeriesOptions);
     window.daiSeries = window.tvWidget.addAreaSeries(daiSeriesOptions);
@@ -189,6 +189,7 @@ const onTimeScaleChange = (e) => {
 
 
     window.tvWidget.timeScale().fitContent();
+    window.tvWidget.timeScale().scrollToRealTime();
   });
 }
 
@@ -211,70 +212,60 @@ const usdcSeriesOptions = {
   lineColor: "rgba(0, 199, 204, 1)",
   lineWidth: 3,
 }
-var volumeSeries = {
-  color: '#26a69a',
-  lineWidth: 2,
-  priceFormat: {
-    type: 'volume',
+
+const GetChartOptions = (timePeriodId) => ({
+  localization: {
+    priceFormatter: function (price) {
+      return '    ' + Number(price).toFixed(2) + '%';
+    },
   },
-  overlay: true,
-  scaleMargins: {
-    top: 0.8,
-    bottom: 0,
+  width: document.getElementById("tv-chart-container").offsetWidth,
+  height: document.getElementById("tv-chart-container").offsetHeight,
+  priceScale: {
+    scaleMargins: {
+      top: 0.1,
+      bottom: 0.1,
+    },
+    borderColor: '#E8EEF1'
   },
-};
+  timeScale: {
+    borderColor: '#E8EEF1',
+    fixLeftEdge: true,
+    
+    secondsVisible: timePeriodId === 0 || timePeriodId=== 1 ? false : true,
+    timeVisible: timePeriodId === 0 || timePeriodId=== 1,
+  },
+  layout: {
+    backgroundColor: 'transparent',
+    textColor: '#8B8BB8',
+    fontFamily: "Open Sans",
+    fontSize: 14
+  },
+  grid: {
+    vertLines: {
+      visible: true,
+      color: "#E8EEF1"
+    },
+    horzLines: {
+      color: '#E8EEF1',
+    },
+  },
+  crosshair: {
+    vertLine: {
+      color: '#292984',
+      labelBackgroundColor: '#292984'
+    },
+    horzLine: {
+      color: '#292984',
+      labelBackgroundColor: '#292984'
+
+    }
+  }
+
+})
 
 
 const init = () => {
-  // var ctx = document.getElementById('rate_graphs').getContext('2d');
-  // document.getElementById('rate_graphs').style.backgroundColor = 'rgb(255,255,255)';
-  window.chartOptions = {
-    localization: {
-      priceFormatter: function (price) {
-        return '    ' + toFixedWithoutTrailingZeros(Number(price), 2) + '%';
-      },
-    },
-    width: document.getElementById("tv-chart-container").offsetWidth,
-    height: document.getElementById("tv-chart-container").offsetHeight,
-    priceScale: {
-      scaleMargins: {
-        top: 0.1,
-        bottom: 0.1,
-      },
-      borderColor: '#E8EEF1'
-    },
-    timeScale: {
-      borderColor: '#E8EEF1',
-      fixLeftEdge: true
-    },
-    layout: {
-      backgroundColor: 'transparent',
-      textColor: '#8B8BB8',
-      fontFamily: "Open Sans",
-      fontSize: 14
-    },
-    grid: {
-      vertLines: {
-        visible: true,
-        color: "#E8EEF1"
-      },
-      horzLines: {
-        color: '#E8EEF1',
-      },
-    },
-    crosshair: {
-      vertLine: {
-        color: '#292984',
-        labelBackgroundColor: '#292984'
-      },
-      horzLine: {
-        color: '#292984',
-        labelBackgroundColor: '#292984'
-
-      }
-    }
-  };
-
   GetData().then(responses => {
     var daiDataset = GetDaiDataset(responses, 2);
     var saiDataset = GetSaiDataset(responses, 2);
@@ -284,7 +275,7 @@ const init = () => {
     var labels = responses[0].data.chart.map(chartItem => fromTimestampToLabel(chartItem.timestamp, 2));
     var staticDatasets = GetConstDatasetsWithTimescale(2, labels.length);
 
-    window.tvWidget = LightweightCharts.createChart(document.getElementById("tv-chart-container"), window.chartOptions);
+    window.tvWidget = LightweightCharts.createChart(document.getElementById("tv-chart-container"),  GetChartOptions(2));
 
     window.saiSeries = window.tvWidget.addAreaSeries(saiSeriesOptions);
     window.daiSeries = window.tvWidget.addAreaSeries(daiSeriesOptions);
@@ -296,6 +287,7 @@ const init = () => {
 
 
     window.tvWidget.timeScale().fitContent();
+    window.tvWidget.timeScale().scrollToRealTime();
     // var saiSeries = window.tvWidget.addAreaSeries(seriesOptions);
 
 
@@ -433,7 +425,7 @@ const GetDaiDataset = (responses, timePeriodId) => {
   let daiData = responses.filter(item => item.token === "dai");
   var arrayY = GetArraysMean(daiData.map(item => item.data.chart.map(chartItem => chartItem.supply_rate)))
   var arrayX = daiData[0].data.chart.map(chartItem => chartItem.timestamp);
-  return arrayY.map((item, index) => { return { value: new Number(item), time: arrayX[index] } });
+  return arrayY.map((item, index) => { return { value: new Number(item), time: timePeriodId === 0 || timePeriodId === 1 ? arrayX[index] : formatDate(arrayX[index]*1000) } });
 
   return {
     label: 'DAI lending',
@@ -449,7 +441,7 @@ const GetSaiDataset = (responses, timePeriodId) => {
   let saiData = responses.filter(item => item.token === "sai");
   var arrayY = GetArraysMean(saiData.map(item => item.data.chart.map(chartItem => chartItem.supply_rate)))
   var arrayX = saiData[0].data.chart.map(chartItem => chartItem.timestamp);
-  return arrayY.map((item, index) => { return { value: new Number(item), time: arrayX[index] } });
+  return arrayY.map((item, index) => { return { value: new Number(item), time:  timePeriodId === 0 || timePeriodId === 1 ? arrayX[index] : formatDate(arrayX[index]*1000) } });
   return {
     label: 'SAI lending',
     data: arrayY.map((item, index) => { return { y: item, x: arrayX[index] } }),
@@ -464,7 +456,7 @@ const GetUsdcDataset = (responses, timePeriodId) => {
   let usdcData = responses.filter(item => item.token === "usdc");
   var arrayY = GetArraysMean(usdcData.map(item => item.data.chart.map(chartItem => chartItem.supply_rate)))
   var arrayX = usdcData[0].data.chart.map(chartItem => chartItem.timestamp);
-  return arrayY.map((item, index) => { return { value: new Number(item), time: arrayX[index] } });
+  return arrayY.map((item, index) => { return { value: new Number(item), time:  timePeriodId === 0 || timePeriodId === 1 ? arrayX[index] : formatDate(arrayX[index]*1000) } });
 
   return {
     label: 'USDC lending',
@@ -517,4 +509,18 @@ liquidity_xhr.send();
 
 function toFixedWithoutTrailingZeros(number, digit) {
   return parseFloat(number.toFixed(digit));
+}
+
+function formatDate(date) {
+  var d = new Date(date),
+      month = '' + (d.getMonth() + 1),
+      day = '' + d.getDate(),
+      year = d.getFullYear();
+
+  if (month.length < 2) 
+      month = '0' + month;
+  if (day.length < 2) 
+      day = '0' + day;
+
+  return [year, month, day].join('-');
 }
