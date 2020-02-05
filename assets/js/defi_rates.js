@@ -4,63 +4,6 @@ const old_api = "https://api-rates.defiprime.com";
 const markets = ["compound_v2", "fulcrum", "dydx"];
 const tokens = ["dai", "sai", "usdc"];
 
-const GetConstDatasetsWithTimescale = (period, points, startDate, endDate) => {
-  var timePeriod = timePeriods.find(item => item.id === period);
-  if (!startDate)
-    startDate = timePeriod.getStartDate();
-  if (!endDate)
-    endDate = moment();
-  var delta = parseInt((endDate - startDate) / (points - 1));
-  return constDatasets.map((dataset) => {
-    var value = dataset.data;
-    var result = Object.assign({}, dataset);
-    result.data = Array(points).fill(0).map((item, index) => {
-      return {
-        x: moment(startDate + (index * delta)),
-        y: value
-      }
-    })
-    return result;
-  })
-};
-
-const constDatasets = [{
-  label: 'Interest rate on balances',
-  fill: false,
-  data: 0.03,
-  backgroundColor: "#BCBCED",
-  borderColor: "#BCBCED",
-  borderWidth: 4,
-  borderDash: [5, 5]
-},
-{
-  label: 'Vanguard CDs',
-  fill: false,
-  data: 2.4,
-  backgroundColor: "#ADEFF2",
-  borderColor: "#ADEFF2",
-  borderWidth: 4,
-  borderDash: [5, 5]
-},
-{
-  label: 'Vanguard Real Estate ETF',
-  fill: false,
-  data: 4.03,
-  backgroundColor: "#BBEE67",
-  borderColor: "#BBEE67",
-  borderWidth: 4,
-  borderDash: [5, 5]
-}, {
-  label: 'SPDR Bloomberg Barclays High Yield Bond ETF',
-  fill: false,
-  data: 5.6,
-  backgroundColor: "#FFDFBA",
-  borderColor: "#FFDFBA",
-  borderWidth: 4,
-  borderDash: [5, 5]
-}];
-
-
 const requestParams = markets.flatMap(market => {
   return tokens.map(token => {
     return token === "sai" && market === "dydx"
@@ -76,42 +19,42 @@ const timePeriods = [
   {
     id: 0,
     difference: 1000 * 60 * 60 * 24,
-    getStartDate: () => moment() - 1000 * 60 * 60 * 24,
+    getStartDate: () => new Date() - 1000 * 60 * 60 * 24,
     text: "1 Day",
     unit: "hour"
   },
   {
     id: 1,
     difference: 1000 * 60 * 60 * 24 * 7,
-    getStartDate: () => moment() - 1000 * 60 * 60 * 24 * 7,
+    getStartDate: () => new Date() - 1000 * 60 * 60 * 24 * 7,
     text: "7 Days",
     unit: "day"
   },
   {
     id: 2,
     difference: 1000 * 60 * 60 * 24 * 30,
-    getStartDate: () => moment() - 1000 * 60 * 60 * 24 * 30,
+    getStartDate: () => new Date() - 1000 * 60 * 60 * 24 * 30,
     text: "1 Month",
     unit: "day"
   },
   {
     id: 3,
     difference: 1000 * 60 * 60 * 24 * 31 * 3,
-    getStartDate: () => moment() - 1000 * 60 * 60 * 24 * 31 * 3,
+    getStartDate: () => new Date() - 1000 * 60 * 60 * 24 * 31 * 3,
     text: "3 Month",
     unit: "day"
   },
   {
     id: 4,
     difference: 1000 * 60 * 60 * 24 * 365,
-    getStartDate: () => moment() - 1000 * 60 * 60 * 24 * 365,
+    getStartDate: () => new Date() - 1000 * 60 * 60 * 24 * 365,
     text: "1 Year",
     unit: "month"
   },
   {
     id: 5,
     difference: 1000 * 60 * 60 * 24 * 365,
-    getStartDate: () => moment(0),
+    getStartDate: () => new Date(0),
     text: "All-time",
     unit: "month"
   }];
@@ -135,25 +78,6 @@ function get(url) {
   });
 }
 
-const fromTimestampToLabel = (jsTimestamp, activePeriodButton) => {
-  jsTimestamp *= 1000;
-  return moment(jsTimestamp)
-
-  switch (activePeriodButton) {
-    case 0:
-      return moment(jsTimestamp).toLocaleTimeString('en-us', { timeStyle: "short" });
-    case 1:
-      return moment(jsTimestamp).toLocaleDateString('en-us', { dateStyle: "short", timeStyle: "short" });
-    case 2:
-      return moment(jsTimestamp).toLocaleString('en-us', { day: "2-digit", month: "short" });
-    case 3:
-      return moment(jsTimestamp).toLocaleString('en-us', { day: "2-digit", month: "short" });
-    case 4:
-      return moment(jsTimestamp).toLocaleString('en-us', { day: "2-digit", month: "short" });
-    default: return moment(jsTimestamp)
-  }
-}
-
 const onTimeScaleChange = (e) => {
   e.preventDefault();
   var timePeriodId = parseInt(e.currentTarget.dataset.period);
@@ -162,18 +86,6 @@ const onTimeScaleChange = (e) => {
     var daiDataset = GetDaiDataset(responses, timePeriodId);
     var saiDataset = GetSaiDataset(responses, timePeriodId);
     var usdcDataset = GetUsdcDataset(responses, timePeriodId);
-    var dataX;
-    if (daiDataset[0].time < usdcDataset[0].time && daiDataset[0].time < saiDataset[0].time) {
-      dataX = daiDataset.data.map(item => item.x)
-    } else if (saiDataset[0].time < usdcDataset[0].time && saiDataset[0].time < daiDataset[0].time) {
-      dataX = saiDataset.map(item => item.time)
-
-    }
-    else {
-      dataX = usdcDataset.map(item => item.time)
-
-    }
-
     if (window.tvWidget)
       window.tvWidget.remove();
 
@@ -189,7 +101,7 @@ const onTimeScaleChange = (e) => {
 
 
     window.tvWidget.timeScale().fitContent();
-    window.tvWidget.timeScale().scrollToRealTime();
+
   });
 }
 
@@ -272,8 +184,6 @@ const init = () => {
     var usdcDataset = GetUsdcDataset(responses, 2);
     var lendingRates = tokens.map(token => GetLendingRates(responses, token));
     renderLendingRates(lendingRates)
-    var labels = responses[0].data.chart.map(chartItem => fromTimestampToLabel(chartItem.timestamp, 2));
-    var staticDatasets = GetConstDatasetsWithTimescale(2, labels.length);
 
     window.tvWidget = LightweightCharts.createChart(document.getElementById("tv-chart-container"),  GetChartOptions(2));
 
@@ -287,78 +197,6 @@ const init = () => {
 
 
     window.tvWidget.timeScale().fitContent();
-    window.tvWidget.timeScale().scrollToRealTime();
-    // var saiSeries = window.tvWidget.addAreaSeries(seriesOptions);
-
-
-    // window.myChart = new Chart(ctx, {
-    //   type: 'line',
-    //   data: {
-    //     // labels: labels,
-    //     datasets: [daiDataset, saiDataset, usdcDataset].concat(staticDatasets),
-    //   },
-    //   options: {
-    //     responsive: true,
-    //     legend: {
-    //       display: false
-    //     },
-    //     tooltips: {
-    //       mode: 'nearest',
-    //       intersect: false,
-    //       position: "average",
-    //       backgroundColor: "#292984",
-    //       titleFontColor: "#fff",
-    //       bodyFontColor: "#fff",
-    //       cornerRadius: 0,
-    //       titleFontFamily: "Kanit",
-    //       titleFontStyle: "normal",
-    //       bodyFontFamily: "Kanit",
-    //       bodyFontSize: 16,
-    //       bodyFontStyle: "normal",
-    //       bodySpacing: 5,
-    //       xPadding: 10,
-    //       yPadding: 10,
-    //       callbacks: {
-    //         label: function (tooltipItem, data) {
-    //           return data['datasets'][tooltipItem['datasetIndex']].label + ': ' + tooltipItem.value + '%';
-    //         }
-    //       }
-    //     },
-    //     hover: {
-    //       mode: 'nearest',
-    //       intersect: false
-    //     },
-    //     scales: {
-    //       xAxes: [{
-    //         type: 'time',
-    //         gridLines: {
-    //           display: false
-    //         },
-    //         ticks: {
-    //           maxTicksLimit: 7
-    //         }
-    //       }],
-    //       yAxes: [{
-    //         offset: true,
-    //         gridLines: {
-    //           drawTicks: false,
-    //           drawBorder: false,
-    //           color: "#F3F5F6"
-    //         },
-    //         ticks: {
-    //           padding: 20,
-    //           beginAtZero: true,
-    //           fontSize: 12,
-    //           fontColor: "#8B8BB8",
-    //           fontFamily: "Open Sans",
-    //           callback: function (value, index, values) {
-    //             return value + '%';
-    //           }
-    //         }
-    //       }]
-    //     }
-    //   }
-    // });
 
   });
 };
@@ -412,7 +250,6 @@ const GetLendingRates = (responses, token) => {
         }
       })
   )
-
   return {
     token: token,
     marketRates,
@@ -426,15 +263,6 @@ const GetDaiDataset = (responses, timePeriodId) => {
   var arrayY = GetArraysMean(daiData.map(item => item.data.chart.map(chartItem => chartItem.supply_rate)))
   var arrayX = daiData[0].data.chart.map(chartItem => chartItem.timestamp);
   return arrayY.map((item, index) => { return { value: new Number(item), time: timePeriodId === 0 || timePeriodId === 1 ? arrayX[index] : formatDate(arrayX[index]*1000) } });
-
-  return {
-    label: 'DAI lending',
-    data: arrayY.map((item, index) => { return { value: new Number(item), time: arrayX[index] } }),
-    backgroundColor: "#FF961C",
-    fill: false,
-    borderColor: "#FF961C",
-    borderWidth: 4,
-  }
 };
 
 const GetSaiDataset = (responses, timePeriodId) => {
@@ -442,14 +270,6 @@ const GetSaiDataset = (responses, timePeriodId) => {
   var arrayY = GetArraysMean(saiData.map(item => item.data.chart.map(chartItem => chartItem.supply_rate)))
   var arrayX = saiData[0].data.chart.map(chartItem => chartItem.timestamp);
   return arrayY.map((item, index) => { return { value: new Number(item), time:  timePeriodId === 0 || timePeriodId === 1 ? arrayX[index] : formatDate(arrayX[index]*1000) } });
-  return {
-    label: 'SAI lending',
-    data: arrayY.map((item, index) => { return { y: item, x: arrayX[index] } }),
-    backgroundColor: "#8F68FC",
-    fill: false,
-    borderColor: "#8F68FC",
-    borderWidth: 4,
-  }
 };
 
 const GetUsdcDataset = (responses, timePeriodId) => {
@@ -457,15 +277,6 @@ const GetUsdcDataset = (responses, timePeriodId) => {
   var arrayY = GetArraysMean(usdcData.map(item => item.data.chart.map(chartItem => chartItem.supply_rate)))
   var arrayX = usdcData[0].data.chart.map(chartItem => chartItem.timestamp);
   return arrayY.map((item, index) => { return { value: new Number(item), time:  timePeriodId === 0 || timePeriodId === 1 ? arrayX[index] : formatDate(arrayX[index]*1000) } });
-
-  return {
-    label: 'USDC lending',
-    data: arrayY.map((item, index) => { return { y: item, x: arrayX[index] } }),
-    backgroundColor: "#05D2DD",
-    fill: false,
-    borderColor: "#05D2DD",
-    borderWidth: 4,
-  }
 };
 
 const GetArraysMean = (arrays) => {
@@ -506,10 +317,6 @@ liquidity_xhr.onreadystatechange = function () {
   }
 }
 liquidity_xhr.send();
-
-function toFixedWithoutTrailingZeros(number, digit) {
-  return parseFloat(number.toFixed(digit));
-}
 
 function formatDate(date) {
   var d = new Date(date),

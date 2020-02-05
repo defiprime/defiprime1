@@ -323,8 +323,6 @@ featured-image: /images/og-rates.png
 <div class="spinner"></div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <script src="https://unpkg.com/array-flat-polyfill"></script>
 <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
 <script src="/assets/js/defi_rates.js"></script>
