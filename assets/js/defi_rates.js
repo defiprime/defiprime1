@@ -121,26 +121,36 @@ function get(url) {
   });
 }
 
-const onTimeScaleChange = async (e) => {
+const onTimeScaleChange = (e) => {
   e.preventDefault();
   var timePeriodId = parseInt(e.currentTarget.dataset.period);
   var startDate = timePeriods.find(period => period.id == timePeriodId).getStartDate();
-  var datasets = await GetData(startDate).then(responses => {
+  GetData(startDate).then(responses => {
     var daiDataset = GetAssetLending("dai", responses, timePeriodId);
     var saiDataset = GetAssetLending("sai", responses, timePeriodId);
     var usdcDataset = GetAssetLending("usdc", responses, timePeriodId);
-    return {
-      "dai": daiDataset,
-      "sai": saiDataset,
-      "usdc": usdcDataset
-    }
-  });
+    
+    if (window.tvWidget)
+      window.tvWidget.remove();
 
-  renderTradingViewChart(timePeriodId, ["dai", "sai", "usdc"], datasets);
+    window.tvWidget = LightweightCharts.createChart(chartContainer, GetChartOptions(timePeriodId));
+
+    window.saiSeries = window.tvWidget.addAreaSeries(saiSeriesOptions);
+    window.daiSeries = window.tvWidget.addAreaSeries(daiSeriesOptions);
+    window.usdcSeries = window.tvWidget.addAreaSeries(usdcSeriesOptions);
+    window.saiSeries.setData(saiDataset);
+    window.daiSeries.setData(daiDataset);
+    window.usdcSeries.setData(usdcDataset);
+
+
+
+    window.tvWidget.timeScale().fitContent();
+
+  });
 }
 
 
-function renderTradingViewChart(timePeriodId, assets, datasets) {
+function renderTradingViewChart(timePeriodId, assets) {
   if (window.tvWidget)
     window.tvWidget.remove();
 
@@ -148,8 +158,15 @@ function renderTradingViewChart(timePeriodId, assets, datasets) {
 
   assets.forEach(asset => {
     window[asset] = window.tvWidget.addAreaSeries(seriesOptions[asset]);
-    window[asset].setData(datasets[asset]);
+    let data = GetAssetLending()
+    window[asset].setData()
   });
+  window.saiSeries = window.tvWidget.addAreaSeries(saiSeriesOptions);
+  window.daiSeries = window.tvWidget.addAreaSeries(daiSeriesOptions);
+  window.usdcSeries = window.tvWidget.addAreaSeries(usdcSeriesOptions);
+  window.saiSeries.setData(saiDataset);
+  window.daiSeries.setData(daiDataset);
+  window.usdcSeries.setData(usdcDataset);
 
   window.tvWidget.timeScale().fitContent();
 
@@ -207,21 +224,28 @@ const GetChartOptions = (timePeriodId) => ({
 })
 
 
-const init = async () => {
-  var datasets = await GetData().then(responses => {
+const init = () => {
+  GetData().then(responses => {
     var daiDataset = GetAssetLending("dai", responses, 2);
     var saiDataset = GetAssetLending("sai", responses, 2);
     var usdcDataset = GetAssetLending("usdc", responses, 2);
     var lendingRates = tokens.map(token => GetLendingRates(responses, token));
     renderLendingRates(lendingRates)
-    return {
-      "dai": daiDataset,
-      "sai": saiDataset,
-      "usdc": usdcDataset
-    }
-  });
 
-  renderTradingViewChart(2, ["dai", "sai", "usdc"], datasets);
+    window.tvWidget = LightweightCharts.createChart(chartContainer, GetChartOptions(2));
+
+    window.saiSeries = window.tvWidget.addAreaSeries(saiSeriesOptions);
+    window.daiSeries = window.tvWidget.addAreaSeries(daiSeriesOptions);
+    window.usdcSeries = window.tvWidget.addAreaSeries(usdcSeriesOptions);
+    window.saiSeries.setData(saiDataset);
+    window.daiSeries.setData(daiDataset);
+    window.usdcSeries.setData(usdcDataset);
+
+
+
+    window.tvWidget.timeScale().fitContent();
+
+  });
 };
 
 const renderLendingRates = (lendingRates) => {
