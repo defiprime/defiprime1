@@ -154,7 +154,7 @@ function renderTradingViewChart(timePeriodId, responses) {
 const GetChartOptions = (timePeriodId) => ({
   localization: {
     priceFormatter: function (price) {
-      return '    ' + Number(price).toFixed(2) + '%';
+      return '' + Number(price).toFixed(2) + '%';
     },
   },
   width: chartContainer.offsetWidth,
@@ -352,7 +352,10 @@ window.addEventListener("load", function (e) {
   init();
   document.querySelectorAll(".period-button").forEach(item => item.addEventListener("click", onTimeScaleChange));
 });
-
+window.addEventListener("resize", function (e) {
+  if (!window.tvWidget) return;
+  window.tvWidget.resize(chartContainer.offsetHeight, chartContainer.offsetWidth);
+});
 
 var liquidity_xhr = new XMLHttpRequest();
 liquidity_xhr.open("GET", old_api + "/getMinInterest", true);

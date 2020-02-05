@@ -25,7 +25,7 @@ featured-image: /images/og-rates.png
     <div class="wrapper-graphs">
         <div id="tv-chart-container"></div>
     </div>
-    <div class="flex jc-sb wrapper-mark">
+    <div class="flex jc-c wrapper-mark">
         {% assign descriptions = "SAI Lending, market avg.|USDC Lending, market avg.|DAI Lending, market avg." | split: "|" %}
         {% assign icons = "sai_lending|usdc_lending|dai_lending" | split: "|" %}
         {% for description in descriptions %}
@@ -37,7 +37,7 @@ featured-image: /images/og-rates.png
     </div>
 </section>
 
-<section class="pt-225 pb-135 pt-xl-90 pb-xl-90 pt-md-45 pb-md-45">
+<section class="pt-120 pb-20 pt-xl-90 pb-xl-90 pt-md-45 pb-md-45">
     <div class="text-center">
         <h2 class="mb-25 mb-sm-0">DeFi Lending Rates</h2>
         <p class="fs-20 fs-sm-16 lh-180 color-primary mb-50 mb-sm-25">What can you earn lending your stablecoins?</p>
@@ -152,12 +152,12 @@ featured-image: /images/og-rates.png
     </div>
 </section>
 
-<section class="pt-120 pb-135">
+<section class="pt-120 pb-45">
     <div class="text-center">
         <h2 class="mb-25">DeFi Borrowing Rates</h2>
         <p class="fs-20 lh-180 color-primary mb-50">Avg. interest rates</p>
     </div>
-    <div class="flex">
+    <div class="flex fd-md-c">
         <div class="flex d-column col-4 col-md-6 col-sm-12 borrowing-wrapper" data-token="dai">
             <div class="provider-crypto">
                 <div class="icon-provider flex">
@@ -279,6 +279,7 @@ featured-image: /images/og-rates.png
             </div>
         </div>
     </div>
+    <div class="description">*Lorem Ipsum</div>
 </section>
 
 <section class="section-portfolio">
