@@ -1,4 +1,4 @@
-const api = "https://defiportfolio-backend.herokuapp.com/api/v1";
+const api = "https://defiportfolio-backend-staging.herokuapp.com/api/v1";
 const old_api = "https://api-rates.defiprime.com";
 
 const markets = ["compound_v2", "fulcrum", "dydx"];
@@ -204,9 +204,11 @@ const GetChartOptions = (timePeriodId) => ({
 
 
 const init = () => {
-  GetData().then(responses => {
-    var lendingRates = tokens.map(token => GetLendingRates(responses, token));
+  GetData().then(async responses => {
+    var lendingRates = await GetLendingData();
+    var borrowingRates = await GetBorrowingData();
     renderLendingRates(lendingRates);
+    renderBorrowingRates(borrowingRates)
     renderTradingViewChart(2, responses);
   });
 };
@@ -214,15 +216,26 @@ const init = () => {
 const renderLendingRates = (lendingRates) => {
   document.querySelectorAll(".lending-wrapper").forEach((lendingWrapper, index) => {
     var token = lendingWrapper.dataset.token;
-    var rates = lendingRates.find(item => item.token === token)
+    var rates = lendingRates.find(item => item.token === token);
     lendingWrapper.querySelector(".lending-mean").textContent = rates.mean;
     lendingWrapper.querySelectorAll(".list-crypto .item-crypto").forEach((itemCrypto, index) => {
       var market = itemCrypto.querySelector(".list-crypto-name .value").dataset.market;
       var rate = rates.marketRates.find(item => item.market === market);
-      if (rate) {
-        itemCrypto.querySelector(".list-crypto-today .value").textContent = rate.supply_rate;
-        itemCrypto.querySelector(".list-crypto-month .value").textContent = rate.supply_30d_apr;
-      }
+      itemCrypto.querySelector(".list-crypto-today .value").textContent = rate.supply_rate ? rate.supply_rate.toFixed(2) : "";
+      itemCrypto.querySelector(".list-crypto-month .value").textContent = rate.supply_30d_apr ? rate.supply_30d_apr.toFixed(2) : "";
+    });
+  });
+};
+const renderBorrowingRates = (borrowingRates) => {
+  document.querySelectorAll(".borrowing-wrapper").forEach((borrowingWrapper, index) => {
+    var token = borrowingWrapper.dataset.token;
+    var rates = borrowingRates.find(item => item.token === token);
+    borrowingWrapper.querySelector(".borrowing-mean").textContent = rates.mean;
+    borrowingWrapper.querySelectorAll(".list-crypto .item-crypto").forEach((itemCrypto, index) => {
+      var market = itemCrypto.querySelector(".list-crypto-name .value").dataset.market;
+      var rate = rates.marketRates.find(item => item.market === market);
+      itemCrypto.querySelector(".list-crypto-today").innerHTML = rate.borrow_rate ? `<span class="value">${rate.borrow_rate.toFixed(2)}</span><span class="fw-300">%</span>` : "";
+      itemCrypto.querySelector(".list-crypto-month").innerHTML = rate.borrow_30d_apr ? `<span class="value">${rate.borrow_30d_apr.toFixed(2)}</span><span class="fw-300">%</span>` : "";
     });
   });
 };
@@ -245,6 +258,45 @@ const GetData = (startDate) => {
         }
       });
     });
+}
+
+const GetLendingData = async () => {
+
+  var response = await fetch(`${api}/markets/supply`);
+  var data = await response.json();
+  return tokens.map(token => {
+    var marketRates = [];
+    Object.entries(data).flatMap(market => {
+      var marketName = market[0];
+      if (market[1][token])
+        marketRates.push(Object.assign({ market: marketName }, market[1][token]));
+    });
+    var mean = GetMeanBetweenArrayElements(marketRates.map(market => market.supply_rate)).toFixed(2);
+    return {
+      token,
+      marketRates,
+      mean
+    }
+  });
+}
+const GetBorrowingData = async () => {
+
+  var response = await fetch(`${api}/markets/borrow`);
+  var data = await response.json();
+  return tokens.map(token => {
+    var marketRates = [];
+    Object.entries(data).flatMap(market => {
+      var marketName = market[0];
+      if (market[1][token])
+        marketRates.push(Object.assign({ market: marketName }, market[1][token]));
+    });
+    var mean = GetMeanBetweenArrayElements(marketRates.map(market => market.borrow_rate)).toFixed(2);
+    return {
+      token,
+      marketRates,
+      mean
+    }
+  });
 }
 
 const GetLendingRates = (responses, token) => {
