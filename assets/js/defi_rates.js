@@ -208,7 +208,7 @@ const daiSeriesOptions = {
 const usdcSeriesOptions = {
   topColor: '#1AF3FF',
   bottomColor: 'rgba(26, 243, 255, 0)',
-  lineColor: "#05D2DD",
+  lineColor: "rgba(0, 199, 204, 1)",
   lineWidth: 3,
 }
 var volumeSeries = {
