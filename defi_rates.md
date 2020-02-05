@@ -26,8 +26,8 @@ featured-image: /images/og-rates.png
         <div id="tv-chart-container"></div>
     </div>
     <div class="flex jc-c wrapper-mark">
-        {% assign descriptions = "SAI Lending, market avg.|USDC Lending, market avg.|DAI Lending, market avg." | split: "|" %}
-        {% assign icons = "sai_lending|usdc_lending|dai_lending" | split: "|" %}
+        {% assign descriptions = "DAI Lending, market avg.|USDC Lending, market avg.|SAI Lending, market avg." | split: "|" %}
+        {% assign icons = "dai_lending|usdc_lending|sai_lending" | split: "|" %}
         {% for description in descriptions %}
         <div class="flex item-mark">
             <img class="lazyload" data-src="/images/{{icons[forloop.index0]}}.svg">
