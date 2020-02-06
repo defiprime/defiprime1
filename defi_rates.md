@@ -31,13 +31,13 @@ featured-image: /images/og-rates.png
         {% for description in descriptions %}
         <div class="flex item-mark">
             <img class="lazyload" data-src="/images/{{icons[forloop.index0]}}.svg">
-            <span class="fs-16 lh-180 fw-400">{{description}}</span>
+            <span>{{description}}</span>
         </div>
         {% endfor %}
     </div>
 </section>
 
-<section class="pt-120 pb-20 pt-xl-90 pb-xl-90 pt-md-45 pb-md-45">
+<section class="pt-120 pb-20 pt-xl-90 pb-xl-0 pt-md-45">
     <div class="text-center">
         <h2 class="mb-25 mb-sm-0">DeFi Lending Rates</h2>
         <p class="fs-20 fs-sm-16 lh-180 color-primary mb-50 mb-sm-25">What can you earn lending your stablecoins?</p>
@@ -83,6 +83,13 @@ featured-image: /images/og-rates.png
                         <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
                         <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
                     </li>
+                    <li class="item-crypto">
+                        <a href="https://app.aave.com/" class="inline-flex list-crypto-name list-liquidity-name">
+                            <span class="value" data-market="aave">Aave</span>
+                        </a>
+                        <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
+                        <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -115,6 +122,13 @@ featured-image: /images/og-rates.png
                     <li class="item-crypto">
                         <a href="https://fulcrum.trade/" class="inline-flex list-crypto-name list-liquidity-name">
                             <span class="value" data-market="fulcrum">Fulcrum</span>
+                        </a>
+                        <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
+                        <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
+                    </li>
+                    <li class="item-crypto">
+                        <a href="https://app.aave.com/" class="inline-flex list-crypto-name list-liquidity-name">
+                            <span class="value" data-market="aave">Aave</span>
                         </a>
                         <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
                         <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
@@ -322,7 +336,7 @@ featured-image: /images/og-rates.png
     </div>
 </section>
 
-<section class="section-liquidity pt-95 pb-45 pt-md-45">
+<section class="section-liquidity pt-95 pb-45 pt-md-45 fw-500">
     <div class="text-center">
         <h2 class="mb-75">Best liquidity pools Yields</h2>
     </div>
