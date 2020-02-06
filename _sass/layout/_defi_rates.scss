@@ -120,6 +120,9 @@
             font-size: 14px;
         }
     }
+    .lh-120 {
+        line-height: 1.2;
+    }
     .lh-140 {
         line-height: 1.4;
     }
@@ -134,6 +137,9 @@
     }
     .fw-300 {
         font-weight: 300;
+    }
+    .fw-500{
+        font-weight: 500;
     }
     .color-white {
         color: #ffffff;
@@ -199,17 +205,23 @@
         }
         span {
             font-family: "Open Sans", sans-serif;
-        }
-    }
-    @media (min-width: 1000px) {
-        // max-width: 960px;
-        .item-mark {
-            &:not(:last-child) {
-                margin-right: 30px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.8;
+            @media(max-width: 991px){
+                font-size: 14px;                
+                margin-right: 15px;
             }
         }
     }
-    @media (max-width: 991px) {
+    @media (min-width: 992px) {
+        .item-mark {
+            &:not(:last-child) {
+                margin-right: 60px;
+            }
+        }
+    }
+    @media (max-width: 767px) {
         flex-wrap: wrap;
         margin: 0;
         .item-mark {
@@ -222,7 +234,7 @@
 .provider-crypto {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     @media (max-width: 991px) {
         margin-bottom: 10px;
     }
@@ -235,6 +247,9 @@
             }
         }
     }
+    .value-provider {
+        color: #8f68fc;
+    }
     .data-provider {
         font-family: "Kanit", sans-serif;
         font-size: 40px;
@@ -244,12 +259,15 @@
         width: calc(100% - 65px);
         @media (max-width: 991px) {
             font-size: 32px;
-            justify-content: space-between;
+            // justify-content: space-between;
         }
         .name-provider {
-            width: calc(100% - 180px);
+            margin-right: 20px;  
+            // width: calc(100% - 180px);
             @media (max-width: 1199px) {
-                width: calc(100% - 120px);
+                margin-right: 10px;  
+
+                // width: calc(100% - 120px);
             }
         }
     }
@@ -257,14 +275,17 @@
 
 .list-crypto {
     font-family: "Kanit", sans-serif;
-    font-size: 20px;
-    line-height: 1.8;
+    font-size: 18px;
+    line-height: 1.6;
     font-weight: 500;
-    @media (max-width: 991px) {
+    @media (max-width: 1199px) {
         font-size: 16px;
     }
     .item-crypto {
         display: flex;
+        @media(max-width: 991px){
+            font-size: 14px;
+        }
         &:first-child {
             .list-crypto-name,
             .list-crypto-today,
@@ -291,18 +312,16 @@
             .list-crypto-today {
                 &:before {
                     content: "Today";
-                    right: 30px;
-                    @media (max-width: 1199px) {
-                        right: 15px;
+                    @media(min-width: 992px){
+                        left: 25px;
                     }
                 }
             }
             .list-crypto-month {
                 &:before {
                     content: "30-days";
-                    right: 30px;
-                    @media (max-width: 1199px) {
-                        right: 15px;
+                    @media(min-width: 992px){
+                        left: 25px;
                     }
                 }
             }
@@ -312,30 +331,38 @@
         position: relative;
         width: calc(100% - 180px);
         @media (max-width: 1199px) {
-            width: calc(100% - 120px);
+            width: calc(100% - 130px);
+        }
+        @media(max-width: 991px){
+            width: calc(100% - 90px);
         }
     }
     .list-crypto-today,
     .list-crypto-month {
         position: relative;
         display: inline-flex;
-        width: 90px;
-        padding-right: 30px;
-        justify-content: flex-end;
+        width: 80px;
+        
         color: #8f68fc;
+        @media(min-width: 992px){
+            padding-left: 25px;        }
         @media (max-width: 1199px) {
-            width: 60px;
-            padding-right: 15px;
+            width: 72px;
+        }
+        @media(max-width: 991px){
+            width: 45px;
         }
     }
 }
 .data-crypto {
     padding-left: 65px;
+    
     @media (max-width: 991px) {
         padding-left: 45px;
     }
 }
-.lending-wrapper {
+.lending-wrapper,
+.borrowing-wrapper {
     @media (max-width: 767px) {
         margin: 0 auto 20px auto;
     }
@@ -351,9 +378,7 @@
         padding: 30px 20px;
     }
     @media (max-width: 580px) {
-      background-image: url("/../../images/banner-mobile.svg");
-
-
+        background-image: url("/../../images/banner-mobile.svg");
     }
     &:after {
         content: "";
@@ -477,6 +502,9 @@
     .pb-xl-90 {
         padding-bottom: 90px;
     }
+    .pb-xl-0{
+        padding-bottom: 0;
+    }
 }
 @media (max-width: 991px) {
     .col-lg-12 {
@@ -581,4 +609,27 @@
             transform: rotate(359deg);
         }
     }
+}
+
+#tv-chart-container {
+    width: 100%;
+    height: 400px;
+    @media (max-width: 767px) {
+        height: 40vh;
+    }
+}
+
+.description {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 180%;
+    /* or 22px */
+
+    /* Main/default */
+
+    color: #8b8bb8;
+    margin-left: 60px;
+    margin-top: 20px;
 }
