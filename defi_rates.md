@@ -383,5 +383,5 @@ featured-image: /images/og-rates.png
 </div>
 
 <script src="https://unpkg.com/array-flat-polyfill"></script>
-<script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+<script src="https://unpkg.com/lightweight-charts@1.0.0/dist/lightweight-charts.standalone.production.js"></script>
 <script src="/assets/js/defi_rates.js"></script>

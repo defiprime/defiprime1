@@ -169,8 +169,6 @@ const GetChartOptions = (timePeriodId) => ({
   timeScale: {
     borderColor: '#E8EEF1',
     fixLeftEdge: true,
-
-    secondsVisible: timePeriodId === 0 || timePeriodId === 1 ? false : true,
     timeVisible: timePeriodId === 0 || timePeriodId === 1,
   },
   layout: {
