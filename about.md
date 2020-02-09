@@ -10,9 +10,11 @@ permalink: about
 author: sawinyh
 date: 2019-04-01
 ---
-DeFiprime.com is the digital media and analytical services provider for the DeFi community. Its mandate is to inform, educate, and connect the community as the definitive source of news dedicated to decentralized finance space.
+DeFiprime.com is the media outlet and analytical services provider for the DeFi community. Its mandate is to inform, educate, and connect the community as the definitive source of news dedicated to decentralized finance space.
 
 ### Product Listing 101: definition of "the best DeFi Product"
+We are a _curated list_ of DeFi products, not aiming to list every existing product, but only the best ones. The product listing could be a subjective process, and not a substitute for professional advice and independent verification. 
+
 * Are you feel comfortable to recommend this product to your IRL friends?
 * Live product functioning on mainnet (not coming soon, not testnet, not "please take a look at our whitepaper")
 * Visible product traction (not empty marketplace, not empty order book, etc).   
