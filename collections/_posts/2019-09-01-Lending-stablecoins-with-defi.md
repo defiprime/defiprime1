@@ -79,7 +79,7 @@ Since data verifiable on-chain I decided to get rid of the "proof" screenshots o
 
 ### Update: March, 1, 2020
 
-Finally, someone got hacked! Fulcrum suffered from [two attacks in February](https://unchainedpodcast.com/how-2-defi-attacks-made-almost-1-million-in-profit/), happily, DAI lenders funds wasn't affected. But need to mention that after two hacks, users ushered to withdraw funds from Fulcrum pools, and thus bank run happens. If you want to get out of the DAI lending pool, you need to look for available liquidity. Since I'm not going to pull off the money until the end of experiment, I'll keep it in Fulcrum.    
+Finally, someone got hacked! Fulcrum suffered from [two attacks in February](https://unchainedpodcast.com/how-2-defi-attacks-made-almost-1-million-in-profit/), happily, DAI lenders funds wasn't affected. But need to mention that after two hacks, users rushed to withdraw funds from Fulcrum pools, and thus bank run happens. If you want to get out of Fulcrum DAI lending pool, you need to look for available liquidity. Since I'm not going to pull off the money until the end of an experiment, I'll keep it in Fulcrum.    
 
 Next update is April, 1, 2020.   
 
