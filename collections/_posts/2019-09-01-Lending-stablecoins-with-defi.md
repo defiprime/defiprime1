@@ -35,13 +35,13 @@ This experiment will help demonstrate the differences between lending protocols 
 
 ### Results Chart
 
-| Product  | 09/01  | 10/01   | 11/01  | 12/01  | 01/01² | 02/01 | 03/01 |
-|---|---|---|---|---|---|---|---|
-| [Compound](https://compound.finance/)  |  100 DAI | 100.77 <sup>+0.77</sup>  | 101.46 <sup>+0.69</sup> | 101.91 <sup>+0.45</sup> | 102.10 <sup>+0.19</sup> | 102.64 <sup>+0.54</sup> |
-| [Nuo](https://www.nuo.network/)¹ | 100 USDC | 100.57 <sup>+0.57</sup>  | 101.22 <sup>+0.65</sup> | 102.18 <sup>+0.96</sup> | 102.52 <sup>+0.34</sup> |  102.87 <sup>+0.35</sup> |
-| [Fulcrum](https://fulcrum.trade/#/)  | 100 DAI | 100.67 <sup>+0.67</sup> | 101.20 <sup>+0.53</sup> | 101.65 <sup>+0.45</sup> | 102.01 <sup>+0.36</sup> | 102.84 <sup>+0.83</sup> |
-| [dYdX](http://trade.dydx.exchange)  | 100 DAI | 100.75 <sup>+0.75</sup>  | 101.39 <sup>+0.64</sup> | 101.82 <sup>+0.43</sup> | 101.99 <sup>+0.17</sup> | 102.36 <sup>+0.37</sup> |
-| [Idle](https://idle.finance/)  | 100 DAI | 100.72 <sup>+0.72</sup> | 101.37 <sup>+0.65</sup> | 101.82 <sup>+0.45</sup> | 102.19 <sup>+0.37</sup> | 102.61 <sup>+0.42</sup>
+| Product  | 09/01  | 10/01   | 11/01  | 12/01  | 01/01² | 02/01 | 03/01 | 04/01 |
+|---|---|---|---|---|---|---|---|---|
+| [Compound](https://compound.finance/)  |  100 DAI | 100.77 <sup>+0.77</sup>  | 101.46 <sup>+0.69</sup> | 101.91 <sup>+0.45</sup> | 102.10 <sup>+0.19</sup> | 102.64 <sup>+0.54</sup> | 103.31 <sup>+0.67</sup>
+| [Nuo](https://www.nuo.network/)¹ | 100 USDC | 100.57 <sup>+0.57</sup>  | 101.22 <sup>+0.65</sup> | 102.18 <sup>+0.96</sup> | 102.52 <sup>+0.34</sup> |  102.87 <sup>+0.35</sup> | 104.49 <sup>+1.62</sup> |
+| [Fulcrum](https://fulcrum.trade/#/)  | 100 DAI | 100.67 <sup>+0.67</sup> | 101.20 <sup>+0.53</sup> | 101.65 <sup>+0.45</sup> | 102.01 <sup>+0.36</sup> | 102.84 <sup>+0.83</sup> | 103.67 <sup>+0.83</sup> |
+| [dYdX](http://trade.dydx.exchange)  | 100 DAI | 100.75 <sup>+0.75</sup>  | 101.39 <sup>+0.64</sup> | 101.82 <sup>+0.43</sup> | 101.99 <sup>+0.17</sup> | 102.36 <sup>+0.37</sup> | 103.06 <sup>+0.7</sup> |
+| [Idle](https://idle.finance/)  | 100 DAI | 100.72 <sup>+0.72</sup> | 101.37 <sup>+0.65</sup> | 101.82 <sup>+0.45</sup> | 102.19 <sup>+0.37</sup> | 102.61 <sup>+0.42</sup> | 103.38² <sup>+0.77</sup> |
 
 - _¹ Deposit in USDC_
 - _² Legacy DAI converted into multicollateral DAI_
@@ -77,8 +77,11 @@ Lending APR for DAI has flipped SAI rates, so this month I'll convert SAI to DAI
 
 Since data verifiable on-chain I decided to get rid of the "proof" screenshots on this page and simplify reporting in a table above. Worth mentioning that the only Idle is still in SAI at the moment, while others are already in DAI. Speaking of APR, looks like we are on a track to 10% APR by the end of this spring.
 
+### Update: March, 1, 2020
 
-Next update is March, 1, 2020.   
+Finally, someone got hacked! Fulcrum suffered from [two attacks in February](https://unchainedpodcast.com/how-2-defi-attacks-made-almost-1-million-in-profit/), happily, DAI lenders funds wasn't affected. But need to mention that after two hacks, users ushered to withdraw funds from Fulcrum pools, and thus bank run happens. If you want to get out of the DAI lending pool, you need to look for available liquidity. Since I'm not going to pull off the money until the end of the experiment, I'll keep it in Fulcrum.    
+
+Next update is April, 1, 2020.   
 
 
 ---
