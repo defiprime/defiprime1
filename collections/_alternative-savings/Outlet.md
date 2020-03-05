@@ -1,7 +1,7 @@
 ---
 git-date: 2020-01-15:05:44-07:00
 product-title: Outlet
-product-url: https://outletfinance.app.link/1Ap2DMiji4
+product-url: https://outletfinance.app.link/kJNZmmbZB4
 image: /images/output_md/outlet.finance.png
 ecosystem: ethereum
 product-description: "Outlet is a high yield savings account alternative."
