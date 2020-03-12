@@ -1,7 +1,7 @@
 ---
 git-date:
 product-title: Trust Wallet
-product-url: https://share.trustwallet.com/MfgB6Y
+product-url: https://trustwallet.com/
 image: /images/output_md/httpstrustwalletcom.png
 ecosystem: ethereum, eos, tron, bitcon, stellar
 platform: ios, android
