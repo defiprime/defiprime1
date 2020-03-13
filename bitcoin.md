@@ -11,8 +11,8 @@ featured-image: /images/og-bitcoin.png
 
 {% assign all_projects = site.alternative-savings
 | concat: site.analytics
-| concat: site.assets-management-tools 
-| concat: site.assets-tokenization 
+| concat: site.assets-management-tools
+| concat: site.assets-tokenization
 | concat: site.dao
 | concat: site.derivatives
 | concat: site.exchanges
@@ -26,7 +26,7 @@ featured-image: /images/og-bitcoin.png
 | concat: site.prediction_markets
 | concat: site.stablecoins
  %}
- 
+
 {% assign counter = all_projects.size %}
 
 {% assign eos_projects = all_projects | where_exp:"item", "item.ecosystem contains 'eos'"%}

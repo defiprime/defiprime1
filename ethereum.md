@@ -12,8 +12,8 @@ featured-image: /images/og-ethereum.png
 
 {% assign all_projects = site.alternative-savings
 | concat: site.analytics
-| concat: site.assets-management-tools 
-| concat: site.assets-tokenization 
+| concat: site.assets-management-tools
+| concat: site.assets-tokenization
 | concat: site.dao
 | concat: site.derivatives
 | concat: site.exchanges
@@ -27,7 +27,7 @@ featured-image: /images/og-ethereum.png
 | concat: site.prediction_markets
 | concat: site.stablecoins
  %}
- 
+
 {% assign counter = all_projects.size %}
 
 {% assign counter = all_projects.size %}
@@ -163,7 +163,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 
 {% assign payments = site.payments | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
 {% if payments.size > 0 %}
-# BTC Payments Solutions and Service Providers
+# Payments Solutions and Service Providers
 {% for payment in payments %}
 ### <a href="{{ payment.product-url }}">{{ payment.product-title }}</a>
 {% include ecosystem-icons.html project = payment %}
