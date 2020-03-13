@@ -1,0 +1,82 @@
+{% assign project = include.project%}
+<p>
+    <span>
+        {% if project.ecosystem contains 'ethereum' %}
+        <span title="Built on Ethereum or related to Ethereum ecosystem">
+            {% include icons/ethereum.svg %}
+        </span>
+        {% endif %}
+
+        {% if project.ecosystem contains 'bitcoin' %}
+        <span title="Using Bitcoin ecosystem" title="Using Bitcoin ecosystem">
+            {% include icons/bitcoin.svg %}
+        </span>
+        {% endif %}
+
+        {% if project.ecosystem contains 'eos' %}
+        <span title="Built on EOS or related to EOS ecosystem">
+            {% include icons/eos.svg %}
+        </span>
+        {% endif %}
+
+        {% if project.ecosystem contains 'tron' %}
+        <span title="Built on Tron or related to Tron ecosystem">
+            {% include icons/tron.svg %}
+        </span>
+        {% endif %}
+
+        {% if project.ecosystem contains 'stellar' %}
+        <span title="Built on Stellar or related to Stellar ecosystem">
+            {% include icons/stellar.svg %}
+        </span>
+        {% endif %}
+
+        {% if project.type == 'non-custodial' %}
+        <span title="Non-custodial">
+            {% include icons/non-custodial.svg %}
+        </span>
+        {% endif %}
+
+        {% if  project.platform contains 'ios' %}
+        <span title="Mobile wallet for iOS">
+            {% include icons/ios.svg %}
+        </span>
+        {% endif %}
+
+        {% if  project.platform contains 'android' %}
+        <span title="Mobile wallet for Android">
+            {% include icons/android.svg %}
+        </span>
+        {% endif %}
+
+        {% if  project.platform contains 'web' %}
+        <span title="Browser based wallet">
+            {% include icons/web.svg %}
+        </span>
+        {% endif %}
+
+        {% if  project.platform contains 'win' %}
+        <span title="Desktop wallet for windows">
+            {% include icons/win.svg %}
+        </span>
+        {% endif %}
+
+        {% if  project.platform contains 'mac' %}
+        <span title="Desktop wallet for osx">
+            {% include icons/mac.svg %}
+        </span>
+        {% endif %}
+
+        {% if  project.platform contains 'linux' %}
+        <span title="Desktop wallet for linux">
+            {% include icons/linux.svg %}
+        </span>
+        {% endif %}
+
+        {% if project.type contains 'cefi' %}
+        <span title="CeFi product. CeFi products are custodial, use centralized price feeds, initiate margin calls centrally, centrally determine interest rates, and centrally provide liquidity for their margin calls.">
+            {% include icons/cefi.svg %}
+        </span>
+        {% endif %}
+    </span>
+</p>
