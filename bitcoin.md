@@ -93,3 +93,12 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% include ecosystem-icons.html project = marketplace %}
 {{ marketplace.product-description }}
 {% endfor %}
+
+# Stablecoins
+
+{% assign stablecoins = site.stablecoins | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% for stablecoin in stablecoins %}
+### <a href="{{ stablecoin.product-url }}">{{ stablecoin.product-title }}</a>
+{% include ecosystem-icons.html project = stablecoin %}
+{{ stablecoin.product-description }}
+{% endfor %}
