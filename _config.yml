@@ -42,59 +42,73 @@ collections:
     output: true
     permalink: /product/:name
     section_url: /decentralized-lending
+    display_name: Decentralized Lending
   derivatives:
     output: true
     permalink: /product/:name
     section_url: /derivatives
+    display_name: Derivatives
   analytics:
     output: true
     permalink: /product/:name
     section_url: /defi-analytics
+    display_name: Analytics
   assets-management-tools:
     output: true
     permalink: /product/:name
     section_url: /assets-management-tools
+    display_name: Assets Management Tools
   exchanges:
     output: true
     permalink: /product/:name
     section_url: /exchanges
+    display_name: Decentralized exchanges
   infrastructure:
     output: true
     permalink: /product/:name
     section_url: /infrastructure
+    display_name: DeFi Infrastructure & Dev Tooling
   insurance:
     output: true
     permalink: /product/:name
     section_url: /insurance
+    display_name: Decentralized Insurance Platforms
   assets-tokenization:
     output: true
     permalink: /product/:name
     section_url: /assets-tokenization
+    display_name: Asset Tokenization
   kyc_identity:
     output: true
     permalink: /product/:name
     section_url: /decentralized_kyc_identity
+    display_name: KYC & Identity
   marketplaces:
     output: true
     permalink: /product/:name
     section_url: /decentralized_marketplaces
+    display_name: Marketplaces
   prediction_markets:
     output: true
     permalink: /product/:name
     section_url: /prediction-markets
+    display_name: Prediction Markets
   stablecoins:
     output: true
     permalink: /product/:name
     section_url: /stablecoins
+    display_name: Stablecoins
   margin-trading:
     output: true
     permalink: /product/:name
     section_url: /margin-trading
+    display_name: Margin Trading
   events:
   payments:
     output: true
     permalink: /product/:name
     section_url: /payments
+    display_name: Payments
   staking:
     output: true
     permalink: /product/:name
@@ -103,10 +117,12 @@ collections:
     output: true
     permalink: /product/:name
     section_url: /dao
+    display_name: DAO Platforms
   alternative-savings:
     output: true
     permalink: /product/:name
     section_url: /alternative-savings
+    display_name: Alternative Savings Apps
 
 defaults:
   -
