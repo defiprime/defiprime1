@@ -9,7 +9,6 @@ pagetitle: Bitcoin DeFi ecosystem - List of the best Bitcoin Defi Projects
 featured-image: /images/og-bitcoin.png
 ---
 
-
 {% assign all_projects = site.alternative-savings
 | concat: site.analytics
 | concat: site.assets-management-tools 
@@ -107,7 +106,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endif %}
 
 {% assign stablecoins = site.stablecoins | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
-{% if alternative-savings.size > 0 %}
+{% if stablecoins.size > 0 %}
 # Stablecoins
 {% for stablecoin in stablecoins %}
 ### <a href="{{ stablecoin.product-url }}">{{ stablecoin.product-title }}</a>

@@ -179,7 +179,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endif %}
 
 {% assign stablecoins = site.stablecoins | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
-{% if alternative-savings.size > 0 %}
+{% if stablecoins.size > 0 %}
 # Stablecoins
 {% for stablecoin in stablecoins %}
 ### <a href="{{ stablecoin.product-url }}">{{ stablecoin.product-title }}</a>
