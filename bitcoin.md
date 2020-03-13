@@ -9,6 +9,7 @@ pagetitle: Bitcoin DeFi ecosystem - List of the best Bitcoin Defi Projects
 featured-image: /images/og-bitcoin.png
 ---
 
+
 {% assign all_projects = site.alternative-savings
 | concat: site.analytics
 | concat: site.assets-management-tools 
@@ -37,22 +38,179 @@ featured-image: /images/og-bitcoin.png
 DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ counter }} DeFi projects listed and {{ counter_btc }} of them using Bitcoin.
 
 
-{% for collection in site.collections %}
 
-{% assign collection_name = collection.label %}
-{% assign collection_display_name = collection.display_name %}
-
-{% assign btc_projects =  site[collection_name] | where_exp:"item", "item.ecosystem contains 'bitcoin'"%}
-
-{% if btc_projects.size > 0 and collection_display_name %}
-
-# {{collection_display_name}}
-{% for btc_project in btc_projects %}
-### <a href="{{ btc_project.product-url }}">{{ btc_project.product-title }}</a>
-{% include ecosystem-icons.html project = btc_project %}
-{{ btc_project.product-description }}
+{% assign assets-management-tools = site.assets-management-tools | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if assets-management-tools.size > 0 %}
+# Assets Management Tools
+{% for assets-management-tool in assets-management-tools %}
+### <a href="{{ assets-management-tool.product-url }}">{{ assets-management-tool.product-title }}</a>
+{% include ecosystem-icons.html project = assets-management-tool %}
+{{ assets-management-tool.product-description }}
 {% endfor %}
-
 {% endif %}
 
+
+
+
+{% assign exchanges = site.exchanges | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if exchanges.size > 0 %}
+# BTC Decentralized Exchanges
+{% for exchange in exchanges %}
+### <a href="{{ exchange.product-url }}">{{ exchange.product-title }}</a>
+{% include ecosystem-icons.html project = exchange %}
+{{ exchange.product-description }}
 {% endfor %}
+{% endif %}
+
+
+{% assign lendings = site.lending | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if lendings.size > 0 %}
+# Bitcoin Crypto Lending
+{% for lending in lendings %}
+### <a href="{{ lending.product-url }}">{{ lending.product-title }}</a>
+{% include ecosystem-icons.html project = lending %}
+{{ lending.product-description }}
+{% endfor %}
+{% endif %}
+
+
+{% assign infrastructures = site.infrastructure | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if infrastructures.size > 0 %}
+# DeFi Infrastructure & Dev Tooling
+{% for infrastructure in infrastructures %}
+### <a href="{{ infrastructure.product-url }}">{{ infrastructure.product-title }}</a>
+{% include ecosystem-icons.html project = infrastructure %}
+{{ infrastructure.product-description }}
+{% endfor %}
+{% endif %}
+
+
+{% assign payments = site.payments | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if payments.size > 0 %}
+# BTC Payments Solutions and Service Providers
+{% for payment in payments %}
+### <a href="{{ payment.product-url }}">{{ payment.product-title }}</a>
+{% include ecosystem-icons.html project = payment %}
+{{ payment.product-description }}
+{% endfor %}
+{% endif %}
+
+
+{% assign marketplaces = site.marketplaces | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if marketplaces.size > 0 %}
+# Marketplaces
+{% for marketplace in marketplaces %}
+### <a href="{{ marketplace.product-url }}">{{ marketplace.product-title }}</a>
+{% include ecosystem-icons.html project = marketplace %}
+{{ marketplace.product-description }}
+{% endfor %}
+{% endif %}
+
+{% assign stablecoins = site.stablecoins | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if alternative-savings.size > 0 %}
+# Stablecoins
+{% for stablecoin in stablecoins %}
+### <a href="{{ stablecoin.product-url }}">{{ stablecoin.product-title }}</a>
+{% include ecosystem-icons.html project = stablecoin %}
+{{ stablecoin.product-description }}
+{% endfor %}
+{% endif %}
+
+
+{% assign alternative-savings = site.alternative-savings | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if alternative-savings.size > 0 %}
+# Alternative Savings Apps
+{% for alternative-saving in alternative-savings %}
+### <a href="{{ alternative-saving.product-url }}">{{ alternative-saving.product-title }}</a>
+{% include ecosystem-icons.html project = alternative-saving %}
+{{ alternative-saving.product-description }}
+{% endfor %}
+{% endif %}
+
+
+{% assign analytics = site.analytics | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if analytics.size > 0 %}
+# Analytics
+{% for analytic in analytics %}
+### <a href="{{ analytic.product-url }}">{{ analytic.product-title }}</a>
+{% include ecosystem-icons.html project = analytic %}
+{{ analytic.product-description }}
+{% endfor %}
+{% endif %}
+
+
+{% assign assets-tokenizations = site.assets-tokenization | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if assets-tokenizations.size > 0 %}
+# Asset Tokenization
+{% for assets-tokenization in assets-tokenizations %}
+### <a href="{{ assets-tokenization.product-url }}">{{ assets-tokenization.product-title }}</a>
+{% include ecosystem-icons.html project = assets-tokenization %}
+{{ assets-tokenization.product-description }}
+{% endfor %}
+{% endif %}
+
+
+{% assign daos = site.dao | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if daos.size > 0 %}
+# Bitcoin-based DAO Platforms
+{% for dao in daos %}
+### <a href="{{ dao.product-url }}">{{ dao.product-title }}</a>
+{% include ecosystem-icons.html project = dao %}
+{{ dao.product-description }}
+{% endfor %}
+{% endif %}
+
+
+{% assign derivatives = site.derivatives | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if derivatives.size > 0 %}
+# Derivatives
+{% for derivative in derivatives %}
+### <a href="{{ derivative.product-url }}">{{ derivative.product-title }}</a>
+{% include ecosystem-icons.html project = derivative %}
+{{ derivative.product-description }}
+{% endfor %}
+{% endif %}
+
+
+{% assign insurances = site.insurance | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if insurances.size > 0 %}
+# Decentralized Insurance Platforms
+{% for insurance in insurances %}
+### <a href="{{ insurance.product-url }}">{{ insurance.product-title }}</a>
+{% include ecosystem-icons.html project = insurance %}
+{{ insurance.product-description }}
+{% endfor %}
+{% endif %}
+
+
+{% assign kyc_identities = site.kyc_identity | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if kyc_identities.size > 0 %}
+# KYC & Identity
+{% for kyc_identity in kyc_identities %}
+### <a href="{{ kyc_identity.product-url }}">{{ kyc_identity.product-title }}</a>
+{% include ecosystem-icons.html project = kyc_identity %}
+{{ kyc_identity.product-description }}
+{% endfor %}
+{% endif %}
+
+
+{% assign margin-tradings = site.margin-trading | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if margin-tradings.size > 0 %}
+# Margin Trading on Bitcoin
+{% for margin-trading in margin-tradings %}
+### <a href="{{ margin-trading.product-url }}">{{ margin-trading.product-title }}</a>
+{% include ecosystem-icons.html project = margin-trading %}
+{{ margin-trading.product-description }}
+{% endfor %}
+{% endif %}
+
+
+{% assign prediction_markets = site.prediction_markets | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if prediction_markets.size > 0 %}
+# Prediction Markets
+{% for prediction_market in prediction_markets %}
+### <a href="{{ prediction_market.product-url }}">{{ prediction_market.product-title }}</a>
+{% include ecosystem-icons.html project = prediction_market %}
+{{ prediction_market.product-description }}
+{% endfor %}
+{% endif %}
