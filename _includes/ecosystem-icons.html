@@ -2,50 +2,55 @@
 <p>
     <span>
         {% if project.ecosystem contains 'ethereum' %}
-        <img class="lazyload" src="images/ether.png" alt="Built on Ethereum or related to Ethereum ecosystem" title="Built on Ethereum or related to Ethereum ecosystem" />
+            {% include icons/ethereum.svg %}
         {% endif %}
 
         {% if project.ecosystem contains 'bitcoin' %}
-        <img class="lazyload" src="images/btc.png" alt="Using Bitcoin ecosystem" title="Using Bitcoin ecosystem" />
+            {% include icons/bitcoin.svg %}
         {% endif %}
 
         {% if project.ecosystem contains 'eos' %}
-        <img class="lazyload" src="images/eos.png" alt="Built on EOS or related to EOS ecosystem" title="Built on EOS or related to EOS ecosystem" />
+            {% include icons/eos.svg %}
         {% endif %}
 
         {% if project.ecosystem contains 'tron' %}
-        <img class="lazyload" src="images/tron.png" alt="Built on Tron or related to Tron ecosystem" title="Built on Tron or related to Tron ecosystem" />
+            {% include icons/tron.svg %}
         {% endif %}
 
         {% if project.ecosystem contains 'stellar' %}
-        <img class="lazyload" src="images/stellar.png" alt="Built on Stellar or related to Stellar ecosystem" title="Built on Stellar or related to Stellar ecosystem" />
+            {% include icons/stellar.svg %}
         {% endif %}
+
         {% if project.type == 'non-custodial' %}
-        <i class="fas fa-user-lock" title="Non-custodial"></i>
+            {% include icons/non-custodial.svg %}
         {% endif %}
 
         {% if  project.platform contains 'ios' %}
-        <i class="fab fa-app-store-ios" title="Mobile wallet for iOS"></i>
+            {% include icons/ios.svg %}
         {% endif %}
 
         {% if  project.platform contains 'android' %}
-        <i class="fab fa-android" title="Mobile wallet for Android"></i>
+            {% include icons/android.svg %}
         {% endif %}
 
         {% if  project.platform contains 'web' %}
-        <i class="fab fa-chrome" title="Browser based wallet"></i>
+            {% include icons/web.svg %}
         {% endif %}
 
         {% if  project.platform contains 'win' %}
-        <i class="fab fa-windows" title="Desktop wallet for windows"></i>
+            {% include icons/win.svg %}
         {% endif %}
 
         {% if  project.platform contains 'mac' %}
-        <i class="fab fa-apple" title="Desktop wallet for osx"></i>
+            {% include icons/mac.svg %}
+        {% endif %}
+        
+        {% if  project.platform contains 'linux' %}
+            {% include icons/linux.svg %}
         {% endif %}
 
         {% if project.type contains 'cefi' %}
-        <i class="fas fa-bullseye" title="CeFi product. CeFi products are custodial, use centralized price feeds, initiate margin calls centrally, centrally determine interest rates, and centrally provide liquidity for their margin calls."></i>
+            {% include icons/cefi.svg %}
         {% endif %}
     </span>
 </p>
