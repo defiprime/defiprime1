@@ -102,3 +102,102 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% include ecosystem-icons.html project = stablecoin %}
 {{ stablecoin.product-description }}
 {% endfor %}
+
+
+{% assign alternative-savings = site.alternative-savings | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if alternative-savings.size > 0 %}
+# Alternative Savings Apps
+{% for alternative-saving in alternative-savings %}
+### <a href="{{ alternative-saving.product-url }}">{{ alternative-saving.product-title }}</a>
+{% include ecosystem-icons.html project = alternative-saving %}
+{{ alternative-saving.product-description }}
+{% endfor %}
+{% endif %}
+
+
+{% assign analytics = site.analytics | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if analytics.size > 0 %}
+# Analytics
+{% for analytic in analytics %}
+### <a href="{{ analytic.product-url }}">{{ analytic.product-title }}</a>
+{% include ecosystem-icons.html project = analytic %}
+{{ analytic.product-description }}
+{% endfor %}
+{% endif %}
+
+
+{% assign assets-tokenizations = site.assets-tokenization | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if assets-tokenizations.size > 0 %}
+# Asset Tokenization
+{% for assets-tokenization in assets-tokenizations %}
+### <a href="{{ assets-tokenization.product-url }}">{{ assets-tokenization.product-title }}</a>
+{% include ecosystem-icons.html project = assets-tokenization %}
+{{ assets-tokenization.product-description }}
+{% endfor %}
+{% endif %}
+
+
+{% assign daos = site.dao | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if daos.size > 0 %}
+# Bitcoin-based DAO Platforms
+{% for dao in daos %}
+### <a href="{{ dao.product-url }}">{{ dao.product-title }}</a>
+{% include ecosystem-icons.html project = dao %}
+{{ dao.product-description }}
+{% endfor %}
+{% endif %}
+
+
+{% assign derivatives = site.derivatives | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if derivatives.size > 0 %}
+# Derivatives
+{% for derivative in derivatives %}
+### <a href="{{ derivative.product-url }}">{{ derivative.product-title }}</a>
+{% include ecosystem-icons.html project = derivative %}
+{{ derivative.product-description }}
+{% endfor %}
+{% endif %}
+
+
+{% assign insurances = site.insurance | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if insurances.size > 0 %}
+# Decentralized Insurance Platforms
+{% for insurance in insurances %}
+### <a href="{{ insurance.product-url }}">{{ insurance.product-title }}</a>
+{% include ecosystem-icons.html project = insurance %}
+{{ insurance.product-description }}
+{% endfor %}
+{% endif %}
+
+
+{% assign kyc_identities = site.kyc_identity | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if kyc_identities.size > 0 %}
+# KYC & Identity
+{% for kyc_identity in kyc_identities %}
+### <a href="{{ kyc_identity.product-url }}">{{ kyc_identity.product-title }}</a>
+{% include ecosystem-icons.html project = kyc_identity %}
+{{ kyc_identity.product-description }}
+{% endfor %}
+{% endif %}
+
+
+{% assign margin-tradings = site.margin-trading | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if margin-tradings.size > 0 %}
+# Margin Trading on Bitcoin
+{% for margin-trading in margin-tradings %}
+### <a href="{{ margin-trading.product-url }}">{{ margin-trading.product-title }}</a>
+{% include ecosystem-icons.html project = margin-trading %}
+{{ margin-trading.product-description }}
+{% endfor %}
+{% endif %}
+
+
+{% assign prediction_markets = site.prediction_markets | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if prediction_markets.size > 0 %}
+# Prediction Markets
+{% for prediction_market in prediction_markets %}
+### <a href="{{ prediction_market.product-url }}">{{ prediction_market.product-title }}</a>
+{% include ecosystem-icons.html project = prediction_market %}
+{{ prediction_market.product-description }}
+{% endfor %}
+{% endif %}
