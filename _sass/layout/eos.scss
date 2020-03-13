@@ -30,7 +30,7 @@
     width: 440px;
     margin-left: auto;
     @media screen and(max-width: 769px) {
-      width: 60%;
+      width: 50%;
     }
     @media screen and(max-width: 399px) {
       width: 100%;
@@ -49,7 +49,7 @@
       max-width: 290px;
       margin: 0 auto 0 0;
       @media screen and(max-width: 769px) {
-        width: 40%;
+        width: 50%;
       }
       @media screen and(max-width: 399px) {
         justify-content: flex-start;
@@ -72,6 +72,8 @@
         padding: 25px 0;
         border-bottom: 1px solid #f2f2f2;
         margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
 
         @media screen and(max-width: 399px) {
           padding: 15px 0;
