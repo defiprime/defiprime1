@@ -34,8 +34,19 @@ featured-image: /images/og-eos.png
 
 {% assign counter_eos = eos_projects.size %}
 
+{% assign btc_projects = all_projects | where_exp:"item", "item.ecosystem contains 'bitcoin'"%}
+
+{% assign counter_btc = btc_projects.size %}
+
+{% assign eth_projects = all_projects | where_exp:"item", "item.ecosystem contains 'ethereum'"%}
+
+{% assign counter_eth = eth_projects.size %}
+
 DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ counter }} DeFi projects listed and {{ counter_eos }} of them using EOS.
 
+| Ethereum <br /> DeFi | {{counter_eth}} |
+| EOS <br /> DeFi | {{ counter_eos }} |
+| Bitcoin <br /> DeFi | {{counter_btc}} |
 
 # Assets Management Tools
 
@@ -75,7 +86,6 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% include ecosystem-icons.html project = lending %}
 {{ lending.product-description }}
 {% endfor %}
-
 
 # EOS Stablecoins
 
