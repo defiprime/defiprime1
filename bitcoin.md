@@ -49,70 +49,83 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 | EOS <br /> DeFi | {{ counter_eos }} |
 | Bitcoin <br /> DeFi | {{counter_btc}} |
 
-# Assets Management Tools
 
 {% assign assets-management-tools = site.assets-management-tools | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if assets-management-tools.size > 0 %}
+# Assets Management Tools
 {% for assets-management-tool in assets-management-tools %}
 ### <a href="{{ assets-management-tool.product-url }}">{{ assets-management-tool.product-title }}</a>
 {% include ecosystem-icons.html project = assets-management-tool %}
 {{ assets-management-tool.product-description }}
 {% endfor %}
+{% endif %}
 
 
-# BTC Decentralized Exchanges
 
 
 {% assign exchanges = site.exchanges | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if exchanges.size > 0 %}
+# BTC Decentralized Exchanges
 {% for exchange in exchanges %}
 ### <a href="{{ exchange.product-url }}">{{ exchange.product-title }}</a>
 {% include ecosystem-icons.html project = exchange %}
 {{ exchange.product-description }}
 {% endfor %}
+{% endif %}
 
-# Bitcoin Crypto Lending
 
 {% assign lendings = site.lending | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if lendings.size > 0 %}
+# Bitcoin Crypto Lending
 {% for lending in lendings %}
 ### <a href="{{ lending.product-url }}">{{ lending.product-title }}</a>
 {% include ecosystem-icons.html project = lending %}
 {{ lending.product-description }}
 {% endfor %}
+{% endif %}
 
-# DeFi Infrastructure & Dev Tooling
 
 {% assign infrastructures = site.infrastructure | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if infrastructures.size > 0 %}
+# DeFi Infrastructure & Dev Tooling
 {% for infrastructure in infrastructures %}
 ### <a href="{{ infrastructure.product-url }}">{{ infrastructure.product-title }}</a>
 {% include ecosystem-icons.html project = infrastructure %}
 {{ infrastructure.product-description }}
 {% endfor %}
+{% endif %}
 
-# BTC Payments Solutions and Service Providers
 
 {% assign payments = site.payments | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if payments.size > 0 %}
+# BTC Payments Solutions and Service Providers
 {% for payment in payments %}
 ### <a href="{{ payment.product-url }}">{{ payment.product-title }}</a>
 {% include ecosystem-icons.html project = payment %}
 {{ payment.product-description }}
 {% endfor %}
+{% endif %}
 
-# Marketplaces
 
 {% assign marketplaces = site.marketplaces | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if marketplaces.size > 0 %}
+# Marketplaces
 {% for marketplace in marketplaces %}
 ### <a href="{{ marketplace.product-url }}">{{ marketplace.product-title }}</a>
 {% include ecosystem-icons.html project = marketplace %}
 {{ marketplace.product-description }}
 {% endfor %}
-
-# Stablecoins
+{% endif %}
 
 {% assign stablecoins = site.stablecoins | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if alternative-savings.size > 0 %}
+# Stablecoins
 {% for stablecoin in stablecoins %}
 ### <a href="{{ stablecoin.product-url }}">{{ stablecoin.product-title }}</a>
 {% include ecosystem-icons.html project = stablecoin %}
 {{ stablecoin.product-description }}
 {% endfor %}
+{% endif %}
 
 
 {% assign alternative-savings = site.alternative-savings | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
