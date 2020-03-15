@@ -51,7 +51,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 
 {% assign assets-management-tools = site.assets-management-tools | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
 {% if assets-management-tools.size > 0 %}
-# Assets Management Tools
+# Asset Management Tools
 {% for assets-management-tool in assets-management-tools %}
 ### <a href="{{ assets-management-tool.product-url }}">{{ assets-management-tool.product-title }}</a>
 {% include ecosystem-icons.html project = assets-management-tool %}
@@ -64,7 +64,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 
 {% assign exchanges = site.exchanges | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
 {% if exchanges.size > 0 %}
-# BTC Decentralized Exchanges
+# Bitcoin Decentralized Exchanges
 {% for exchange in exchanges %}
 ### <a href="{{ exchange.product-url }}">{{ exchange.product-title }}</a>
 {% include ecosystem-icons.html project = exchange %}

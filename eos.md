@@ -12,8 +12,8 @@ featured-image: /images/og-eos.png
 
 {% assign all_projects = site.alternative-savings
 | concat: site.analytics
-| concat: site.assets-management-tools 
-| concat: site.assets-tokenization 
+| concat: site.assets-management-tools
+| concat: site.assets-tokenization
 | concat: site.dao
 | concat: site.derivatives
 | concat: site.exchanges
@@ -27,7 +27,7 @@ featured-image: /images/og-eos.png
 | concat: site.prediction_markets
 | concat: site.stablecoins
  %}
- 
+
 {% assign counter = all_projects.size %}
 
 {% assign eos_projects = all_projects | where_exp:"item", "item.ecosystem contains 'eos'"%}
@@ -50,7 +50,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 
 {% assign assets-management-tools = site.assets-management-tools | where_exp:"item", "item.ecosystem contains 'eos'" %}
 {% if assets-management-tools.size > 0 %}
-# Assets Management Tools
+# Asset Management Tools
 {% for assets-management-tool in assets-management-tools %}
 ### <a href="{{ assets-management-tool.product-url }}">{{ assets-management-tool.product-title }}</a>
 {% include ecosystem-icons.html project = assets-management-tool %}
