@@ -6,8 +6,9 @@ image: /images/output_md/zengo.com.png
 ecosystem: ethereum, bitcoin
 platform: ios, android
 filter: native defi integration
-product-description: ZenGo is a bitcoin and cryptocurrency wallet with native UI integrations with DeFi lending protocols and staking providers.
+product-description: ZenGo is a bitcoin and cryptocurrency wallet with native UI integrations with DeFi lending protocols and staking providers. [Interview with Ouriel Ohayon, CEO, and co-founder of ZenGo](/zengo).
 coltitle:  "Asset Management Tools"
 colpermalink: assets-management-tools
-twitter: https://www.twitter.com/zengo
+twitter: https://twitter.com/zengo
+github: https://github.com/KZen-networks
 ---
