@@ -219,8 +219,8 @@ const renderLendingRates = (lendingRates) => {
     lendingWrapper.querySelectorAll(".list-crypto .item-crypto").forEach((itemCrypto, index) => {
       var market = itemCrypto.querySelector(".list-crypto-name .value").dataset.market;
       var rate = rates.marketRates.find(item => item.market === market);
-      itemCrypto.querySelector(".list-crypto-today .value").textContent = rate.supply_rate ? rate.supply_rate.toFixed(2) : "";
-      itemCrypto.querySelector(".list-crypto-month .value").textContent = rate.supply_30d_apr ? rate.supply_30d_apr.toFixed(2) : "";
+      itemCrypto.querySelector(".list-crypto-today .value").textContent = rate.supply_rate !== undefined ? rate.supply_rate.toFixed(2) : "";
+      itemCrypto.querySelector(".list-crypto-month .value").textContent = rate.supply_30d_apr !== undefined ? rate.supply_30d_apr.toFixed(2) : "";
     });
   });
 };
@@ -232,8 +232,8 @@ const renderBorrowingRates = (borrowingRates) => {
     borrowingWrapper.querySelectorAll(".list-crypto .item-crypto").forEach((itemCrypto, index) => {
       var market = itemCrypto.querySelector(".list-crypto-name .value").dataset.market;
       var rate = rates.marketRates.find(item => item.market === market);
-      itemCrypto.querySelector(".list-crypto-today").innerHTML = rate.borrow_rate ? `<span class="value">${rate.borrow_rate.toFixed(2)}</span><span class="fw-300">%</span>` : "";
-      itemCrypto.querySelector(".list-crypto-month").innerHTML = rate.borrow_30d_apr ? `<span class="value">${rate.borrow_30d_apr.toFixed(2)}</span><span class="fw-300">%</span>` : "";
+      itemCrypto.querySelector(".list-crypto-today").innerHTML = rate.borrow_rate !== undefined ? `<span class="value">${rate.borrow_rate.toFixed(2)}</span><span class="fw-300">%</span>` : "";
+      itemCrypto.querySelector(".list-crypto-month").innerHTML = rate.borrow_30d_apr !== undefined ? `<span class="value">${rate.borrow_30d_apr.toFixed(2)}</span><span class="fw-300">%</span>` : "";
     });
   });
 };
