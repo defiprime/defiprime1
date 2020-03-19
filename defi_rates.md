@@ -352,61 +352,6 @@ featured-image: /images/og-rates.png
     </div>
 </section>
 
-<section class="section-liquidity pt-95 pb-45 pt-md-45 fw-500">
-    <div class="text-center">
-        <h2 class="mb-75">Best liquidity pools Yields</h2>
-    </div>
-    <div class="flex jc-sb col-10 col-lg-12 mx-auto f-md-wrap">
-        <div class="flex d-column col-5 col-md-6 col-sm-12 sai-eth">
-            <div class="flex ai-c">
-                <div class="icon-provider-liquidity flex">
-                    {% include icons/dai-eth.html %}
-                </div>
-                <div class="name-provider-liquidity lh-180">SAI/ETH</div>
-            </div>
-            <div class="wrap-list-liquidity">
-                <ul class="list-liquidity">
-                    <li class="item-liquidity lh-120 flex jc-sb">
-                        <a class="list-liquidity-name" href="#" target="_blank">Uniswap</a>
-                        <span class="list-liquidity-value"><span class="value">12</span>%</span>
-                    </li>
-                    <!-- <li class="item-liquidity lh-180 flex jc-sb">
-                        <a class="list-liquidity-name" href="#" target="_blank">Bancor</a>
-                        <span class="list-liquidity-value"><span class="value">6</span>%</span>
-                    </li>
-                    <li class="item-liquidity lh-180 flex jc-sb">
-                        <a class="list-liquidity-name" href="#" target="_blank">Kyber</a>
-                        <span class="list-liquidity-value"><span class="value">9</span>%</span>
-                    </li> -->
-                </ul>
-            </div>
-        </div>
-        <div class="flex d-column col-5 col-md-6 col-sm-12 usdc-eth">
-            <div class="flex ai-c">
-                <div class="icon-provider-liquidity flex">
-                    {% include icons/usdc-eth.html %}
-                </div>
-                <div class="name-provider-liquidity lh-180">USDC/ETH</div>
-            </div>
-            <div class="wrap-list-liquidity">
-                <ul class="list-liquidity">
-                    <li class="item-liquidity lh-120 flex jc-sb">
-                        <a class="list-liquidity-name" href="#" target="_blank">Uniswap</a>
-                        <span class="list-liquidity-value"><span class="value">12</span>%</span>
-                    </li>
-                    <!-- <li class="item-liquidity lh-180 flex jc-sb">
-                        <a class="list-liquidity-name" href="#" target="_blank">Bancor</a>
-                        <span class="list-liquidity-value"><span class="value">6</span>%</span>
-                    </li>
-                    <li class="item-liquidity lh-180 flex jc-sb">
-                        <a class="list-liquidity-name" href="#" target="_blank">Kyber</a>
-                        <span class="list-liquidity-value"><span class="value">9</span>%</span>
-                    </li> -->
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
 
 <div id="overlay">
 <div class="spinner"></div>
