@@ -56,7 +56,7 @@ featured-image: /images/og-rates.png
             <div class="data-crypto">
                 <ul class="list-crypto">
                     <li class="item-crypto">
-                        <a href="https://app.aave.com/" class="inline-flex list-crypto-name list-liquidity-name">
+                        <a href="https://app.aave.com/?referral=28" class="inline-flex list-crypto-name list-liquidity-name">
                             <span class="value" data-market="aave">Aave</span>
                         </a>
                         <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
@@ -106,7 +106,7 @@ featured-image: /images/og-rates.png
             <div class="data-crypto">
                 <ul class="list-crypto">
                     <li class="item-crypto">
-                        <a href="https://app.aave.com/" class="inline-flex list-crypto-name list-liquidity-name">
+                        <a href="https://app.aave.com/?referral=28" class="inline-flex list-crypto-name list-liquidity-name">
                             <span class="value" data-market="aave">Aave</span>
                         </a>
                         <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
@@ -158,14 +158,14 @@ featured-image: /images/og-rates.png
             <div class="data-crypto">
                 <ul class="list-crypto">
                     <li class="item-crypto">
-                        <a href="https://app.aave.com/" class="inline-flex list-crypto-name list-liquidity-name">
+                        <a href="https://app.aave.com/?referral=28" class="inline-flex list-crypto-name list-liquidity-name">
                             <span class="value" data-market="aave">Aave</span>
                         </a>
                         <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
                         <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
                     </li>
                     <li class="item-crypto">
-                        <a href="https://app.aave.com/" class="inline-flex list-crypto-name list-liquidity-name">
+                        <a href="https://app.aave.com/?referral=28" class="inline-flex list-crypto-name list-liquidity-name">
                             <span class="value"  data-market="aave_fixed">Aave fixed*</span>
                         </a>
                         <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
@@ -215,14 +215,14 @@ featured-image: /images/og-rates.png
             <div class="data-crypto">
                 <ul class="list-crypto">
                     <li class="item-crypto">
-                        <a href="https://app.aave.com/" class="inline-flex list-crypto-name list-liquidity-name">
+                        <a href="https://app.aave.com/?referral=28" class="inline-flex list-crypto-name list-liquidity-name">
                             <span class="value" data-market="aave">Aave</span>
                         </a>
                         <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
                         <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
                     </li>
                     <li class="item-crypto">
-                        <a href="https://app.aave.com/" class="inline-flex list-crypto-name list-liquidity-name">
+                        <a href="https://app.aave.com/?referral=28" class="inline-flex list-crypto-name list-liquidity-name">
                             <span class="value"  data-market="aave_fixed">Aave fixed*</span>
                         </a>
                         <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
