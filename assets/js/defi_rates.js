@@ -2,17 +2,11 @@ const api = "https://defiportfolio-backend.herokuapp.com/api/v1";
 const old_api = "https://api-rates.defiprime.com";
 
 const markets = ["compound_v2", "fulcrum", "dydx"];
-const tokens = ["dai", "sai", "usdc"];
+const tokens = ["dai", "usdc"];
 
 const chartContainer = document.getElementById("tv-chart-container");
 
 const seriesOptions = {
-  "sai": {
-    topColor: '#B99FFF',
-    bottomColor: 'rgba(185, 159, 255, 0)',
-    lineColor: "#8F68FC",
-    lineWidth: 3,
-  },
   "dai": {
     topColor: '#FFBD70',
     bottomColor: 'rgba(255, 189, 112, 0)',
@@ -27,12 +21,6 @@ const seriesOptions = {
   }
 }
 
-const saiSeriesOptions = {
-  topColor: '#B99FFF',
-  bottomColor: 'rgba(185, 159, 255, 0)',
-  lineColor: "#8F68FC",
-  lineWidth: 3,
-}
 const daiSeriesOptions = {
   topColor: '#FFBD70',
   bottomColor: 'rgba(255, 189, 112, 0)',
@@ -137,13 +125,13 @@ function renderTradingViewChart(timePeriodId, responses) {
 
   window.tvWidget = LightweightCharts.createChart(chartContainer, GetChartOptions(timePeriodId));
   var daiDataset = GetAssetLending("dai", responses, timePeriodId);
-  var saiDataset = GetAssetLending("sai", responses, timePeriodId);
+  //var saiDataset = GetAssetLending("sai", responses, timePeriodId);
   var usdcDataset = GetAssetLending("usdc", responses, timePeriodId);
 
-  window.saiSeries = window.tvWidget.addAreaSeries(saiSeriesOptions);
+  //window.saiSeries = window.tvWidget.addAreaSeries(saiSeriesOptions);
   window.daiSeries = window.tvWidget.addAreaSeries(daiSeriesOptions);
   window.usdcSeries = window.tvWidget.addAreaSeries(usdcSeriesOptions);
-  window.saiSeries.setData(saiDataset);
+  //window.saiSeries.setData(saiDataset);
   window.daiSeries.setData(daiDataset);
   window.usdcSeries.setData(usdcDataset);
 
