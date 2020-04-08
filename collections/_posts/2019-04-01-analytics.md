@@ -12,4 +12,4 @@ cards: analytics
 redirect_from:
   - analytics
 ---
-Analytics is the discovery, interpretation, and communication of meaningful patterns in data; and the process of applying those patterns towards effective decision making.
+Analytics is the discovery, interpretation, and communication of meaningful patterns in DeFi protocols data; and the process of applying those patterns towards effective decision making. 
