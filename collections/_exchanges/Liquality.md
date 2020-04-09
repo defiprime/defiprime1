@@ -1,7 +1,7 @@
 ---
 git-date: 2019-06-24T09:29:35-07:00
 product-title: Liquality
-product-url: https://liquality.io/
+product-url: https://liquality.io/?utm_source=defiprime&utm_medium=topspot&utm_campaign=april_2020_trial
 image: /images/output_md/liquality.io.png
 ecosystem: ethereum, bitcoin
 type: non-custodial
