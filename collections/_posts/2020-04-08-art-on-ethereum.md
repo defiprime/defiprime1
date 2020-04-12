@@ -7,7 +7,7 @@ h1title: "Art on Ethereum: a Beginner's Guide to Cryptoart Platforms"
 pagetitle: "Art on Ethereum: a Beginner's Guide to Cryptoart Platforms"
 metadescription: "A brief rundown on the top cryptoart platforms so you can wrap your head around the space more quickly"
 category: blog
-featured-image: /images/blog/art-quote.png
+featured-image: /images/blog/art-og.png
 quote: /images/blog/art-quote.png
 intro: "A brief rundown on the top cryptoart platforms so you can wrap your head around the space more quickly"
 author: Peaster
