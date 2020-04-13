@@ -81,7 +81,7 @@ The orders in each order book have various parameters but common maturity in the
 
 For example, I put a swap today for the 1st of June and desired to receive a fixed rate of 5%. My signed order (meta-transaction) will be instantly stored in the “June” order book until there is a matching order (that is willing to pay 5% fixed). If the matching order comes tomorrow (and I don’t cancel my order by that time), the settlement will occur, and that moment will be the swap start date. The variable rate will be accumulated between tomorrow and the 1st of June. On maturity, it will be exchanged for the quoted fixed rate according to the agreement.
 
-![](/images/blog/swaprate/1_t9Z8hkZenQG0rGBskVtE0g.png)
+![](/images/blog/swaprate/orderbook5.jpg)
 
 ### Arbitrage using Swap Rate
 
