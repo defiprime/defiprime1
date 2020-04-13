@@ -12,7 +12,7 @@ quote: /images/blog/swaprate/quote.png
 intro: "This article explains why interest rate swaps are so important"
 author: Belyakov
 ---
-This article explains why interest rate swaps are so important, especially for Decentralizes Finance now.
+This article explains why interest rate swaps are so important, especially for Decentralized Finance now.
 
 ### Swaps rates are the market expectation of the variable rate
 
