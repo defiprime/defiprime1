@@ -9,6 +9,6 @@ filter: Borrow Crypto
 product-description: Torque is the crypto borrowing platform with indefinite-term loans and fixed interest rates.
 coltitle:  "Lending"
 colpermalink: decentralized-lending
-twitter: https://twitter.com/b0xNet
+twitter: https://twitter.com/bzxhq
 github: https://github.com/bzxnetwork
 ---
