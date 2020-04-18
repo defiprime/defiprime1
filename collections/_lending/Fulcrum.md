@@ -9,6 +9,6 @@ product-description: Fulcrum is the platform for tokenized margin trading and le
 coltitle:  "Margin trading"
 colpermalink: margin-trading
 type: non-custodial
-twitter: https://twitter.com/b0xNet
+twitter: https://twitter.com/bzxhq
 github: https://github.com/bZxNetwork
 ---
