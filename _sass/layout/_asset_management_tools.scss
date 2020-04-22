@@ -159,6 +159,7 @@
         height: auto;
         padding: 2px 16px;
         text-transform: capitalize;
+        outline: none;
         &:not(:last-child) {
             margin-right: 2px;
         }

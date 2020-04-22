@@ -65,7 +65,7 @@
                 {% assign filter_buttons = site[page.cards] | group_by: filter | map: "name" |  join: ", " | split: ", " | uniq | where_exp: "item", "item != ''" %}
                 {% for filter_button in filter_buttons  %}
 
-                <button class="button" data-filter="{{filter_button | replace: ' ', '_' }}">{{filter_button}}</button>
+                <button class="button" data-filter="{{filter_button | downcase | replace: ' ', '-' }}">{{filter_button}}</button>
                 {% endfor %}
 
                 {% endfor %}
@@ -80,7 +80,7 @@
             {% assign card_filters = '' | split: '' %}
             {% for filter in items_filters  %}
 
-            {% assign filter_names = asset_tool[filter] | replace: ' ', '_' | split: ",_" %}
+            {% assign filter_names = asset_tool[filter] | downcase | replace: ' ', '-' | split: ",-" %}
             {% assign card_filters = card_filters | concat: filter_names %}
 
             {% endfor %}
@@ -183,35 +183,7 @@
 
 </article>
 
-    <script>
-        window.addEventListener('load', () => {
-            // filter items on button click
-            var filterButtons = document.querySelectorAll('.filters-button-group button');
-            Array.from(filterButtons).forEach(button => {
-                button.addEventListener('click', function (e) {
-                    filterButtons.forEach(node => {
-                        node.classList.remove('active');
-                    });
-                    e.currentTarget.classList.add('active');
-                    var filterValue = e.currentTarget.dataset.filter;
-                    filter(filterValue);
-                });
-            });
-
-            function filter(filterValue) {
-                var itemSelector = document.querySelectorAll('#assets_cards .asset_tool_card');
-                Array.from(itemSelector).forEach(item => {
-                    var itemWrapper = item.closest(".article-wrapper");
-                    if (filterValue === "*") {
-                        itemWrapper.style.display = '';
-                        return;
-                    }
-                    itemWrapper.style.display = item.classList.contains(filterValue) ? '' : 'none';
-                });
-
-            }
-        });
-    </script>
+<script src="/assets/js/page.js"></script>
 
 <!--
     Include this javascript code after your .gc-counters elements
