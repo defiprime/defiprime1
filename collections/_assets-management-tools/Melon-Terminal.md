@@ -2,7 +2,7 @@
 git-date: 2020-04-24T08:44:25-07:00
 product-title: Melon Terminal
 product-url: https://melon.avantgarde.finance
-image: /images/output_md/betoken.fund.png
+image: /images/output_md/melon.avantgarde.finance.png
 ecosystem: ethereum
 platform: web
 filter: Asset Management Platforms
