@@ -1,5 +1,77 @@
+
+var graph = graphql("https://api.thegraph.com/subgraphs/name/graphitetools/compound", {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+  }
+});
+
+var a = graph.query(`($id_dai: ID!, $id_usdc: ID!)
+  {
+    dai: cToken(id: $id_dai) {
+      id
+      symbol
+      borrowRate
+      supplyRate
+    }
+    
+    usdc: cToken(id: $id_usdc) {
+      id
+      symbol
+      borrowRate
+      supplyRate
+    }
+}`)
+a({
+  id_dai: "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+  id_usdc: "0x39aa39c021dfbae8fac545936693ac917d5e7563"
+}).then(function (response) {
+  // response is originally response.data of query result
+  console.log(response)
+}).catch(function (error) {
+  // response is originally response.errors of query result
+  console.log(error)
+});
+fetch('https://api.thegraph.com/subgraphs/name/graphitetools/compound', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+  },
+  body: JSON.stringify({
+    query: `query Qwe($id_dai: ID!, $id_usdc: ID!)
+      {
+        dai: cToken(id: $id_dai) {
+          id
+          symbol
+          borrowRate
+          supplyRate
+        }
+        
+        usdc: cToken(id: $id_usdc) {
+          id
+          symbol
+          borrowRate
+          supplyRate
+        }
+    }`,
+    variables: {
+      id_dai: "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+      id_usdc: "0x39aa39c021dfbae8fac545936693ac917d5e7563"
+    }
+  })
+})
+  .then(r => r.json())
+  .then(data => console.log('data returned:', data));
+
 const api = "https://defiportfolio-backend.herokuapp.com/api/v1";
 const old_api = "https://api-rates.defiprime.com";
+
+const SEC_PER_DAY = 60 * 60 * 24;
+
+const SEC_PER_YEAR = SEC_PER_DAY * 365;
+const SEC_PER_BLOCK = 13;
 
 const markets = ["compound_v2", "fulcrum", "dydx"];
 const tokens = ["dai", "usdc"];
@@ -368,4 +440,9 @@ function formatDate(date) {
     day = '0' + day;
 
   return [year, month, day].join('-');
+}
+
+function blockRateToApr(rate, decimals) {
+
+  return 100 * rate * SEC_PER_YEAR / SEC_PER_BLOCK / (10 ** decimals)
 }
