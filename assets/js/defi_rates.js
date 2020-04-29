@@ -113,23 +113,90 @@ async function getDydxApr() {
   return {
     supply: {
       "dai": {
-        "supply_rate": data.data["dai"].supplyRate/10**18*100,
+        "supply_rate": data.data["dai"].supplyRate / 10 ** 18 * 100,
         "supply_30d_apr": 0
       },
       "usdc": {
-        "supply_rate": data.data["usdc"].supplyRate/10**18*100,
+        "supply_rate": data.data["usdc"].supplyRate / 10 ** 18 * 100,
         "supply_30d_apr": 0
       }
     },
     borrow: {
       "dai": {
-        "borrow_rate": data.data["dai"].borrowRate/10**18*100,
+        "borrow_rate": data.data["dai"].borrowRate / 10 ** 18 * 100,
         "borrow_30d_apr": 0
       },
       "usdc": {
-        "borrow_rate": data.data["usdc"].borrowRate/10**18*100,
+        "borrow_rate": data.data["usdc"].borrowRate / 10 ** 18 * 100,
         "borrow_30d_apr": 0
       }
+    }
+  }
+}
+async function getAaveApr() {
+  const daiAddress = "0x6b175474e89094c44da98b954eedeac495271d0f";
+  const usdcAddress = "0x57ab1ec28d129707052df4df418d58a2d46d5f51";
+  const data = await fetch('https://api.thegraph.com/subgraphs/name/aave/protocol', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
+    body: JSON.stringify({
+      query: `query ($id_dai: ID!, $id_usdc: ID!)
+        {
+          dai: reserve(id: $id_dai) {symbol
+            id
+            liquidityRate
+            variableBorrowRate
+            stableBorrowRate
+          }
+          
+          usdc: reserve(id: $id_usdc) {symbol
+            id
+            liquidityRate
+            variableBorrowRate
+            stableBorrowRate
+          }
+      }`,
+      variables: {
+        id_dai: daiAddress,
+        id_usdc: usdcAddress
+      }
+    })
+  })
+    .then(r => r.json());
+  return {
+    aave: {
+      supply: {
+        "dai": {
+          "supply_rate": data.data["dai"].liquidityRate * 100,
+          "supply_30d_apr": 0
+        },
+        "usdc": {
+          "supply_rate": data.data["usdc"].liquidityRate * 100,
+          "supply_30d_apr": 0
+        }
+      },
+      borrow: {
+        "dai": {
+          "borrow_rate": data.data["dai"].variableBorrowRate * 100,
+          "borrow_30d_apr": 0
+        },
+        "usdc": {
+          "borrow_rate": data.data["usdc"].variableBorrowRate * 100,
+          "borrow_30d_apr": 0
+        }
+      }
+    },
+    aave_fixed: {
+      "dai": {
+        "borrow_rate": data.data["dai"].stableBorrowRate * 100
+      },
+      "usdc": {
+        "borrow_rate": data.data["usdc"].stableBorrowRate * 100
+      }
+
     }
   }
 }
@@ -402,9 +469,11 @@ const GetLendingData = async () => {
   // var data = await response.json();
   const compoundData = await getCompoundApr();
   const dydxData = await getDydxApr();
+  const aaveData = await getAaveApr();
   const data = {
     "compound_v2": compoundData.supply,
-    "dydx": dydxData.supply
+    "dydx": dydxData.supply,
+    "aave": aaveData.aave.supply
   }
   return tokens.map(token => {
     var marketRates = [];
@@ -427,9 +496,12 @@ const GetBorrowingData = async () => {
   // var data = await response.json();
   const compoundData = await getCompoundApr();
   const dydxData = await getDydxApr();
+  const aaveData = await getAaveApr();
   const data = {
     "compound_v2": compoundData.borrow,
-    "dydx": dydxData.borrow
+    "dydx": dydxData.borrow,
+    "aave": aaveData.aave.borrow,
+    "aave_fixed": aaveData.aave_fixed,
   }
   return tokens.map(token => {
     var marketRates = [];
