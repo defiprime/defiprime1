@@ -268,6 +268,19 @@ async function getFulcrumApr() {
     }
   }
 }
+
+async function getTorqueApr() {
+  const data = await fetch('https://api.bzx.network/v1/torque-borrow-rate-apr').then(r => r.json());
+  return {
+      "dai": {
+        "borrow_rate": parseFloat(data.data["dai"])
+      },
+      "usdc": {
+        "borrow_rate": parseFloat(data.data["usdc"])
+      }
+  }
+}
+
 async function getAaveApr() {
   const daiAddress = "0x6b175474e89094c44da98b954eedeac495271d0f";
   const usdcAddress = "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48";
@@ -650,12 +663,14 @@ const GetBorrowingData = async () => {
   const dydxData = await getDydxApr();
   const aaveData = await getAaveApr();
   const fulcrumData = await getFulcrumApr();
+  const torqueData = await getTorqueApr();
   const data = {
     "compound_v2": compoundData.borrow,
     "dydx": dydxData.borrow,
     "aave": aaveData.aave.borrow,
     "aave_fixed": aaveData.aave_fixed,
-    "fulcrum": fulcrumData.borrow
+    "fulcrum": fulcrumData.borrow,
+    "torque": torqueData
   }
   return tokens.map(token => {
     var marketRates = [];

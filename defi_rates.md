@@ -226,7 +226,7 @@ featured-image: /images/og-rates.png
                             <span class="value"  data-market="aave_fixed">Aave fixed*</span>
                         </a>
                         <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
-                        <!-- <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span> -->
+                        <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
                     </li>
                     <li class="item-crypto">
                         <a href="https://compound.finance/" class="inline-flex list-crypto-name list-liquidity-name">
@@ -247,14 +247,14 @@ featured-image: /images/og-rates.png
                             <span class="value" data-market="fulcrum">Fulcrum**</span>
                         </a>
                         <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
-                        <!-- <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span> -->
+                        <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
                     </li>
                     <li class="item-crypto">
                         <a href="https://torque.loans/" class="inline-flex list-crypto-name list-liquidity-name">
                             <span class="value" data-market="torque">Torque*</span>
                         </a>
                         <span class="list-crypto-today"><span class="value">12</span><span class="fw-300">%</span></span>
-                        <!-- <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span> -->
+                        <span class="list-crypto-month"><span class="value">12</span><span class="fw-300">%</span></span>
                     </li>
                 </ul>
             </div>
