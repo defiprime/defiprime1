@@ -272,12 +272,12 @@ async function getFulcrumApr() {
 async function getTorqueApr() {
   const data = await fetch('https://api.bzx.network/v1/torque-borrow-rate-apr').then(r => r.json());
   return {
-      "dai": {
-        "borrow_rate": parseFloat(data.data["dai"])
-      },
-      "usdc": {
-        "borrow_rate": parseFloat(data.data["usdc"])
-      }
+    "dai": {
+      "borrow_rate": parseFloat(data.data["dai"])
+    },
+    "usdc": {
+      "borrow_rate": parseFloat(data.data["usdc"])
+    }
   }
 }
 
@@ -377,6 +377,27 @@ async function getAaveApr() {
 
 async function getAPRData() {
 
+  const compoundData = await getCompoundApr();
+  const dydxData = await getDydxApr();
+  const aaveData = await getAaveApr();
+  const fulcrumData = await getFulcrumApr();
+  const torqueData = await getTorqueApr();
+  return {
+    supply: {
+      "compound_v2": compoundData.supply,
+      "dydx": dydxData.supply,
+      "aave": aaveData.aave.supply,
+      "fulcrum": fulcrumData.supply
+    },
+    borrow: {
+      "compound_v2": compoundData.borrow,
+      "dydx": dydxData.borrow,
+      "aave": aaveData.aave.borrow,
+      "aave_fixed": aaveData.aave_fixed,
+      "fulcrum": fulcrumData.borrow,
+      "torque": torqueData
+    }
+  }
 }
 
 
@@ -491,8 +512,10 @@ const onTimeScaleChange = (e) => {
   e.preventDefault();
   var timePeriodId = parseInt(e.currentTarget.dataset.period);
   var startDate = timePeriods.find(period => period.id == timePeriodId).getStartDate();
+  document.getElementById("overlay").style.display = "block";
   GetData(startDate).then(responses => {
     renderTradingViewChart(timePeriodId, responses)
+    document.getElementById("overlay").style.display = "none";
   });
 }
 
@@ -568,12 +591,15 @@ const GetChartOptions = (timePeriodId) => ({
 
 
 const init = () => {
+  document.getElementById("overlay").style.display = "block";
   GetData().then(async responses => {
-    var lendingRates = await GetLendingData();
-    var borrowingRates = await GetBorrowingData();
+    const aprData = await getAPRData();
+    var lendingRates = await GetLendingData(aprData.supply);
+    var borrowingRates = await GetBorrowingData(aprData.borrow);
     renderLendingRates(lendingRates);
     renderBorrowingRates(borrowingRates)
     renderTradingViewChart(2, responses);
+    document.getElementById("overlay").style.display = "none";
   });
 };
 
@@ -607,7 +633,6 @@ const renderBorrowingRates = (borrowingRates) => {
 };
 
 const GetData = (startDate) => {
-  document.getElementById("overlay").style.display = "block";
   if (!startDate) {
     startDate = timePeriods.find(item => item.id === 2).getStartDate();
   }
@@ -615,7 +640,6 @@ const GetData = (startDate) => {
   var requests = requestParams.map(param => get(`${api}/markets/${param.market}/${param.token}?start_date=${startDate}`));
   return Promise.all(requests)
     .then(values => {
-      document.getElementById("overlay").style.display = "none";
       return response = values.map((value, index) => {
         return {
           market: requestParams[index].market,
@@ -626,20 +650,20 @@ const GetData = (startDate) => {
     });
 }
 
-const GetLendingData = async () => {
+const GetLendingData = async (data) => {
 
   // var response = await fetch(`${api}/markets/supply`);
   // var data = await response.json();
-  const compoundData = await getCompoundApr();
-  const dydxData = await getDydxApr();
-  const aaveData = await getAaveApr();
-  const fulcrumData = await getFulcrumApr();
-  const data = {
-    "compound_v2": compoundData.supply,
-    "dydx": dydxData.supply,
-    "aave": aaveData.aave.supply,
-    "fulcrum": fulcrumData.supply
-  }
+  // const compoundData = await getCompoundApr();
+  // const dydxData = await getDydxApr();
+  // const aaveData = await getAaveApr();
+  // const fulcrumData = await getFulcrumApr();
+  // const data = {
+  //   "compound_v2": compoundData.supply,
+  //   "dydx": dydxData.supply,
+  //   "aave": aaveData.aave.supply,
+  //   "fulcrum": fulcrumData.supply
+  // }
   return tokens.map(token => {
     var marketRates = [];
     Object.entries(data).flatMap(market => {
@@ -655,23 +679,23 @@ const GetLendingData = async () => {
     }
   });
 }
-const GetBorrowingData = async () => {
+const GetBorrowingData = async (data) => {
 
   // var response = await fetch(`${api}/markets/borrow`);
   // var data = await response.json();
-  const compoundData = await getCompoundApr();
-  const dydxData = await getDydxApr();
-  const aaveData = await getAaveApr();
-  const fulcrumData = await getFulcrumApr();
-  const torqueData = await getTorqueApr();
-  const data = {
-    "compound_v2": compoundData.borrow,
-    "dydx": dydxData.borrow,
-    "aave": aaveData.aave.borrow,
-    "aave_fixed": aaveData.aave_fixed,
-    "fulcrum": fulcrumData.borrow,
-    "torque": torqueData
-  }
+  // const compoundData = await getCompoundApr();
+  // const dydxData = await getDydxApr();
+  // const aaveData = await getAaveApr();
+  // const fulcrumData = await getFulcrumApr();
+  // const torqueData = await getTorqueApr();
+  // const data = {
+  //   "compound_v2": compoundData.borrow,
+  //   "dydx": dydxData.borrow,
+  //   "aave": aaveData.aave.borrow,
+  //   "aave_fixed": aaveData.aave_fixed,
+  //   "fulcrum": fulcrumData.borrow,
+  //   "torque": torqueData
+  // }
   return tokens.map(token => {
     var marketRates = [];
     Object.entries(data).flatMap(market => {
