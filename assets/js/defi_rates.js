@@ -1,25 +1,3 @@
-
-// var graph = graphql("https://api.thegraph.com/subgraphs/name/graphitetools/compound", {
-//   method: 'POST'
-// });
-
-// var a = graph.query(`cTokens(first: 5) {
-//     id
-//     symbol
-//     borrowRate
-//     supplyRate
-//   }`)
-// a().then(function (response) {
-//   // response is originally response.data of query result
-//   console.log(response)
-// }).catch(function (error) {
-//   // response is originally response.errors of query result
-//   console.log(error)
-// });
-const TOKEN_DECIMALS = {
-  'dai': 18,
-  'usdc': 18
-}
 const SEC_PER_DAY = 60 * 60 * 24;
 
 const SEC_PER_WEEK = SEC_PER_DAY * 7
@@ -33,7 +11,9 @@ const tokens = ["dai", "usdc"];
 
 const chartContainer = document.getElementById("tv-chart-container");
 const INFURA_API_KEY = "407161c0da4c4f1b81f3cc87ca8310a7";
+
 const web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/v3/" + INFURA_API_KEY));
+
 (async function () {
   window.currentBlock = await web3.eth.getBlock("latest")
   var oldBlockNumber = window.currentBlock.number - BLOCKS_PER_MONTH
@@ -651,19 +631,9 @@ const GetData = (startDate) => {
 }
 
 const GetLendingData = async (data) => {
-
+  //api call
   // var response = await fetch(`${api}/markets/supply`);
   // var data = await response.json();
-  // const compoundData = await getCompoundApr();
-  // const dydxData = await getDydxApr();
-  // const aaveData = await getAaveApr();
-  // const fulcrumData = await getFulcrumApr();
-  // const data = {
-  //   "compound_v2": compoundData.supply,
-  //   "dydx": dydxData.supply,
-  //   "aave": aaveData.aave.supply,
-  //   "fulcrum": fulcrumData.supply
-  // }
   return tokens.map(token => {
     var marketRates = [];
     Object.entries(data).flatMap(market => {
@@ -680,22 +650,10 @@ const GetLendingData = async (data) => {
   });
 }
 const GetBorrowingData = async (data) => {
-
+  //api call
   // var response = await fetch(`${api}/markets/borrow`);
   // var data = await response.json();
-  // const compoundData = await getCompoundApr();
-  // const dydxData = await getDydxApr();
-  // const aaveData = await getAaveApr();
-  // const fulcrumData = await getFulcrumApr();
-  // const torqueData = await getTorqueApr();
-  // const data = {
-  //   "compound_v2": compoundData.borrow,
-  //   "dydx": dydxData.borrow,
-  //   "aave": aaveData.aave.borrow,
-  //   "aave_fixed": aaveData.aave_fixed,
-  //   "fulcrum": fulcrumData.borrow,
-  //   "torque": torqueData
-  // }
+  
   return tokens.map(token => {
     var marketRates = [];
     Object.entries(data).flatMap(market => {
