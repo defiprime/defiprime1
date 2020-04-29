@@ -134,11 +134,29 @@ async function getDydxApr() {
           dai: market(id: $id_dai) {
             borrowRate
             supplyRate
+            supplyIndex
+            borrowIndex
           }
           
           usdc: market(id: $id_usdc) {
             borrowRate
             supplyRate
+            supplyIndex
+            borrowIndex
+          }
+          
+          dai_30d: market(id: $id_dai, block: { number: ${window.oldBlock.number}}) {
+            borrowRate
+            supplyRate
+            supplyIndex
+            borrowIndex
+          }
+          
+          usdc_30d: market(id: $id_usdc, block: {number: ${window.oldBlock.number}}) {
+            borrowRate
+            supplyRate
+            supplyIndex
+            borrowIndex
           }
       }`,
       variables: {
@@ -152,21 +170,21 @@ async function getDydxApr() {
     supply: {
       "dai": {
         "supply_rate": data.data["dai"].supplyRate / 10 ** 18 * 100,
-        "supply_30d_apr": 0
+        "supply_30d_apr": rateRatioToApr(data.data["dai"].supplyIndex, data.data["dai_30d"].supplyIndex, window.secPassed)
       },
       "usdc": {
         "supply_rate": data.data["usdc"].supplyRate / 10 ** 18 * 100,
-        "supply_30d_apr": 0
+        "supply_30d_apr": rateRatioToApr(data.data["usdc"].supplyIndex, data.data["usdc_30d"].supplyIndex, window.secPassed)
       }
     },
     borrow: {
       "dai": {
         "borrow_rate": data.data["dai"].borrowRate / 10 ** 18 * 100,
-        "borrow_30d_apr": 0
+        "borrow_30d_apr": rateRatioToApr(data.data["dai"].borrowIndex, data.data["dai_30d"].borrowIndex, window.secPassed)
       },
       "usdc": {
         "borrow_rate": data.data["usdc"].borrowRate / 10 ** 18 * 100,
-        "borrow_30d_apr": 0
+        "borrow_30d_apr": rateRatioToApr(data.data["usdc"].borrowIndex, data.data["usdc_30d"].borrowIndex, window.secPassed)
       }
     }
   }
