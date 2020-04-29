@@ -1,69 +1,92 @@
 
-var graph = graphql("https://api.thegraph.com/subgraphs/name/graphitetools/compound", {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-    'Accept': 'application/json',
-  }
-});
+// var graph = graphql("https://api.thegraph.com/subgraphs/name/graphitetools/compound", {
+//   method: 'POST'
+// });
 
-var a = graph.query(`($id_dai: ID!, $id_usdc: ID!)
-  {
-    dai: cToken(id: $id_dai) {
-      id
-      symbol
-      borrowRate
-      supplyRate
-    }
-    
-    usdc: cToken(id: $id_usdc) {
-      id
-      symbol
-      borrowRate
-      supplyRate
-    }
-}`)
-a({
-  id_dai: "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
-  id_usdc: "0x39aa39c021dfbae8fac545936693ac917d5e7563"
-}).then(function (response) {
-  // response is originally response.data of query result
-  console.log(response)
-}).catch(function (error) {
-  // response is originally response.errors of query result
-  console.log(error)
-});
-fetch('https://api.thegraph.com/subgraphs/name/graphitetools/compound', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-    'Accept': 'application/json',
-  },
-  body: JSON.stringify({
-    query: `query Qwe($id_dai: ID!, $id_usdc: ID!)
-      {
-        dai: cToken(id: $id_dai) {
-          id
-          symbol
-          borrowRate
-          supplyRate
-        }
-        
-        usdc: cToken(id: $id_usdc) {
-          id
-          symbol
-          borrowRate
-          supplyRate
-        }
-    }`,
-    variables: {
-      id_dai: "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
-      id_usdc: "0x39aa39c021dfbae8fac545936693ac917d5e7563"
-    }
+// var a = graph.query(`cTokens(first: 5) {
+//     id
+//     symbol
+//     borrowRate
+//     supplyRate
+//   }`)
+// a().then(function (response) {
+//   // response is originally response.data of query result
+//   console.log(response)
+// }).catch(function (error) {
+//   // response is originally response.errors of query result
+//   console.log(error)
+// });
+const TOKEN_DECIMALS = {
+  'dai': 18,
+  'usdc': 18
+}
+
+const web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
+
+
+async function getCompoundApr() {
+  const daiAddress = "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643";
+  const usdcAddress = "0x39aa39c021dfbae8fac545936693ac917d5e7563";
+  const data = await fetch('https://api.thegraph.com/subgraphs/name/graphitetools/compound', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
+    body: JSON.stringify({
+      query: `query ($id_dai: ID!, $id_usdc: ID!)
+        {
+          dai: cToken(id: $id_dai) {
+            id
+            symbol
+            borrowRate
+            supplyRate
+          }
+          
+          usdc: cToken(id: $id_usdc) {
+            id
+            symbol
+            borrowRate
+            supplyRate
+          }
+      }`,
+      variables: {
+        id_dai: daiAddress,
+        id_usdc: usdcAddress
+      }
+    })
   })
-})
-  .then(r => r.json())
-  .then(data => console.log('data returned:', data));
+    .then(r => r.json());
+  return {
+    supply: {
+      "dai": {
+        "supply_rate": blockRateToApr(data.data["dai"].supplyRate, TOKEN_DECIMALS["dai"]),
+        "supply_30d_apr": 0
+      },
+      "usdc": {
+        "supply_rate": blockRateToApr(data.data["usdc"].supplyRate, TOKEN_DECIMALS["usdc"]),
+        "supply_30d_apr": 0
+      }
+    },
+    borrow: {
+      "dai": {
+        "borrow_rate": blockRateToApr(data.data["dai"].borrowRate, TOKEN_DECIMALS["dai"]),
+        "borrow_30d_apr": 0
+      },
+      "usdc": {
+        "borrow_rate": blockRateToApr(data.data["usdc"].borrowRate, TOKEN_DECIMALS["usdc"]),
+        "borrow_30d_apr": 0
+      }
+    }
+  }
+}
+
+async function getAPRData() {
+
+  const currentBlockNumber = await web3.eth.getBlockNumber();
+
+}
+
 
 const api = "https://defiportfolio-backend.herokuapp.com/api/v1";
 const old_api = "https://api-rates.defiprime.com";
@@ -275,12 +298,13 @@ const renderLendingRates = (lendingRates) => {
   document.querySelectorAll(".lending-wrapper").forEach((lendingWrapper, index) => {
     var token = lendingWrapper.dataset.token;
     var rates = lendingRates.find(item => item.token === token);
+    if (!rates) return;
     lendingWrapper.querySelector(".lending-mean").textContent = rates.mean;
     lendingWrapper.querySelectorAll(".list-crypto .item-crypto").forEach((itemCrypto, index) => {
       var market = itemCrypto.querySelector(".list-crypto-name .value").dataset.market;
       var rate = rates.marketRates.find(item => item.market === market);
-      itemCrypto.querySelector(".list-crypto-today .value").textContent = rate.supply_rate !== undefined ? rate.supply_rate.toFixed(2) : "";
-      itemCrypto.querySelector(".list-crypto-month .value").textContent = rate.supply_30d_apr !== undefined ? rate.supply_30d_apr.toFixed(2) : "";
+      itemCrypto.querySelector(".list-crypto-today").innerHTML = rate && rate.supply_rate !== undefined ? `<span class="value">${rate.supply_rate.toFixed(2)}</span><span class="fw-300">%</span>` : "";
+      itemCrypto.querySelector(".list-crypto-month").innerHTML = rate && rate.supply_30d_apr !== undefined ? `<span class="value">${rate.supply_30d_apr.toFixed(2)}</span><span class="fw-300">%</span>` : "";
     });
   });
 };
@@ -288,12 +312,13 @@ const renderBorrowingRates = (borrowingRates) => {
   document.querySelectorAll(".borrowing-wrapper").forEach((borrowingWrapper, index) => {
     var token = borrowingWrapper.dataset.token;
     var rates = borrowingRates.find(item => item.token === token);
+    if (!rates) return;
     borrowingWrapper.querySelector(".borrowing-mean").textContent = rates.mean;
     borrowingWrapper.querySelectorAll(".list-crypto .item-crypto").forEach((itemCrypto, index) => {
       var market = itemCrypto.querySelector(".list-crypto-name .value").dataset.market;
       var rate = rates.marketRates.find(item => item.market === market);
-      itemCrypto.querySelector(".list-crypto-today").innerHTML = rate.borrow_rate !== undefined ? `<span class="value">${rate.borrow_rate.toFixed(2)}</span><span class="fw-300">%</span>` : "";
-      itemCrypto.querySelector(".list-crypto-month").innerHTML = rate.borrow_30d_apr !== undefined ? `<span class="value">${rate.borrow_30d_apr.toFixed(2)}</span><span class="fw-300">%</span>` : "";
+      itemCrypto.querySelector(".list-crypto-today").innerHTML = rate && rate.borrow_rate !== undefined ? `<span class="value">${rate.borrow_rate.toFixed(2)}</span><span class="fw-300">%</span>` : "";
+      itemCrypto.querySelector(".list-crypto-month").innerHTML = rate && rate.borrow_30d_apr !== undefined ? `<span class="value">${rate.borrow_30d_apr.toFixed(2)}</span><span class="fw-300">%</span>` : "";
     });
   });
 };
@@ -320,8 +345,10 @@ const GetData = (startDate) => {
 
 const GetLendingData = async () => {
 
-  var response = await fetch(`${api}/markets/supply`);
-  var data = await response.json();
+  // var response = await fetch(`${api}/markets/supply`);
+  // var data = await response.json();
+  const compoundData = await getCompoundApr();
+  const data = {"compound_v2": compoundData.supply}
   return tokens.map(token => {
     var marketRates = [];
     Object.entries(data).flatMap(market => {
@@ -339,8 +366,10 @@ const GetLendingData = async () => {
 }
 const GetBorrowingData = async () => {
 
-  var response = await fetch(`${api}/markets/borrow`);
-  var data = await response.json();
+  // var response = await fetch(`${api}/markets/borrow`);
+  // var data = await response.json();
+  const compoundData = await getCompoundApr();
+  const data = {"compound_v2": compoundData.borrow}
   return tokens.map(token => {
     var marketRates = [];
     Object.entries(data).flatMap(market => {

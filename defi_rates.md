@@ -284,5 +284,6 @@ featured-image: /images/og-rates.png
 
 <script src="https://unpkg.com/array-flat-polyfill"></script>
 <script src="https://unpkg.com/lightweight-charts@1.0.0/dist/lightweight-charts.standalone.production.js"></script>
-<script src="//cdn.jsdelivr.net/npm/graphql.js@0.6.6/graphql.min.js"></script>
+<!-- <script src="//cdn.jsdelivr.net/npm/graphql.js@0.6.6/graphql.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
 <script src="/assets/js/defi_rates.js"></script>
