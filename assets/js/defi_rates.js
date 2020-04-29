@@ -81,6 +81,59 @@ async function getCompoundApr() {
   }
 }
 
+async function getDydxApr() {
+  const daiAddress = "0x3";
+  const usdcAddress = "0x2";
+  const data = await fetch('https://api.thegraph.com/subgraphs/name/graphitetools/dydx', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
+    body: JSON.stringify({
+      query: `query ($id_dai: ID!, $id_usdc: ID!)
+        {
+          dai: market(id: $id_dai) {
+            borrowRate
+            supplyRate
+          }
+          
+          usdc: market(id: $id_usdc) {
+            borrowRate
+            supplyRate
+          }
+      }`,
+      variables: {
+        id_dai: daiAddress,
+        id_usdc: usdcAddress
+      }
+    })
+  })
+    .then(r => r.json());
+  return {
+    supply: {
+      "dai": {
+        "supply_rate": data.data["dai"].supplyRate/10**18*100,
+        "supply_30d_apr": 0
+      },
+      "usdc": {
+        "supply_rate": data.data["usdc"].supplyRate/10**18*100,
+        "supply_30d_apr": 0
+      }
+    },
+    borrow: {
+      "dai": {
+        "borrow_rate": data.data["dai"].borrowRate/10**18*100,
+        "borrow_30d_apr": 0
+      },
+      "usdc": {
+        "borrow_rate": data.data["usdc"].borrowRate/10**18*100,
+        "borrow_30d_apr": 0
+      }
+    }
+  }
+}
+
 async function getAPRData() {
 
   const currentBlockNumber = await web3.eth.getBlockNumber();
@@ -348,7 +401,11 @@ const GetLendingData = async () => {
   // var response = await fetch(`${api}/markets/supply`);
   // var data = await response.json();
   const compoundData = await getCompoundApr();
-  const data = {"compound_v2": compoundData.supply}
+  const dydxData = await getDydxApr();
+  const data = {
+    "compound_v2": compoundData.supply,
+    "dydx": dydxData.supply
+  }
   return tokens.map(token => {
     var marketRates = [];
     Object.entries(data).flatMap(market => {
@@ -369,7 +426,11 @@ const GetBorrowingData = async () => {
   // var response = await fetch(`${api}/markets/borrow`);
   // var data = await response.json();
   const compoundData = await getCompoundApr();
-  const data = {"compound_v2": compoundData.borrow}
+  const dydxData = await getDydxApr();
+  const data = {
+    "compound_v2": compoundData.borrow,
+    "dydx": dydxData.borrow
+  }
   return tokens.map(token => {
     var marketRates = [];
     Object.entries(data).flatMap(market => {
