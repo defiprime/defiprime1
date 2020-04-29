@@ -135,7 +135,7 @@ async function getDydxApr() {
 }
 async function getAaveApr() {
   const daiAddress = "0x6b175474e89094c44da98b954eedeac495271d0f";
-  const usdcAddress = "0x57ab1ec28d129707052df4df418d58a2d46d5f51";
+  const usdcAddress = "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48";
   const data = await fetch('https://api.thegraph.com/subgraphs/name/aave/protocol', {
     method: 'POST',
     headers: {
