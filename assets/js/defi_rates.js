@@ -20,9 +20,26 @@ const TOKEN_DECIMALS = {
   'dai': 18,
   'usdc': 18
 }
+const SEC_PER_DAY = 60 * 60 * 24;
 
-const web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
+const SEC_PER_WEEK = SEC_PER_DAY * 7
+const SEC_PER_MONTH = SEC_PER_DAY * 30
+const SEC_PER_YEAR = SEC_PER_DAY * 365;
+const SEC_PER_BLOCK = 13;
+const BLOCKS_PER_MONTH = parseInt(SEC_PER_MONTH / SEC_PER_BLOCK)
 
+const markets = ["compound_v2", "fulcrum", "dydx"];
+const tokens = ["dai", "usdc"];
+
+const chartContainer = document.getElementById("tv-chart-container");
+const INFURA_API_KEY = "407161c0da4c4f1b81f3cc87ca8310a7";
+const web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/v3/" + INFURA_API_KEY));
+(async function (){
+  window.currentBlock = await web3.eth.getBlock("latest")
+  var oldBlockNumber = window.currentBlock.number - BLOCKS_PER_MONTH
+  window.oldBlock = await web3.eth.getBlock(oldBlockNumber);
+  window.secPassed = (window.currentBlock.timestamp - window.oldBlock.timestamp);
+})()
 
 async function getCompoundApr() {
   const daiAddress = "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643";
@@ -41,6 +58,8 @@ async function getCompoundApr() {
             symbol
             borrowRate
             supplyRate
+            supplyIndex
+            borrowIndex
           }
           
           usdc: cToken(id: $id_usdc) {
@@ -48,6 +67,25 @@ async function getCompoundApr() {
             symbol
             borrowRate
             supplyRate
+            supplyIndex
+            borrowIndex
+          }
+          dai_30d: cToken(id: $id_dai, block: { number: ${window.oldBlock.number}}) {
+            id
+            symbol
+            borrowRate
+            supplyRate
+            supplyIndex
+            borrowIndex
+          }
+          
+          usdc_30d: cToken(id: $id_usdc, block: {number: ${window.oldBlock.number}}) {
+            id
+            symbol
+            borrowRate
+            supplyRate
+            supplyIndex
+            borrowIndex
           }
       }`,
       variables: {
@@ -56,26 +94,26 @@ async function getCompoundApr() {
       }
     })
   })
-    .then(r => r.json());
+    .then(r => r.json())
   return {
     supply: {
       "dai": {
-        "supply_rate": blockRateToApr(data.data["dai"].supplyRate, TOKEN_DECIMALS["dai"]),
-        "supply_30d_apr": 0
+        "supply_rate": blockRateToApr(data.data["dai"].supplyRate, 18),
+        "supply_30d_apr": rateRatioToApr(data.data["dai"].supplyIndex, data.data["dai_30d"].supplyIndex, window.secPassed)
       },
       "usdc": {
-        "supply_rate": blockRateToApr(data.data["usdc"].supplyRate, TOKEN_DECIMALS["usdc"]),
-        "supply_30d_apr": 0
+        "supply_rate": blockRateToApr(data.data["usdc"].supplyRate, 18),
+        "supply_30d_apr": rateRatioToApr(data.data["usdc"].supplyIndex, data.data["usdc_30d"].supplyIndex, window.secPassed)
       }
     },
     borrow: {
       "dai": {
-        "borrow_rate": blockRateToApr(data.data["dai"].borrowRate, TOKEN_DECIMALS["dai"]),
-        "borrow_30d_apr": 0
+        "borrow_rate": blockRateToApr(data.data["dai"].borrowRate, 18),
+        "borrow_30d_apr": rateRatioToApr(data.data["dai"].borrowIndex, data.data["dai_30d"].borrowIndex, window.secPassed)
       },
       "usdc": {
-        "borrow_rate": blockRateToApr(data.data["usdc"].borrowRate, TOKEN_DECIMALS["usdc"]),
-        "borrow_30d_apr": 0
+        "borrow_rate": blockRateToApr(data.data["usdc"].borrowRate, 18),
+        "borrow_30d_apr": rateRatioToApr(data.data["usdc"].borrowIndex, data.data["usdc_30d"].borrowIndex, window.secPassed)
       }
     }
   }
@@ -203,23 +241,12 @@ async function getAaveApr() {
 
 async function getAPRData() {
 
-  const currentBlockNumber = await web3.eth.getBlockNumber();
-
 }
 
 
 const api = "https://defiportfolio-backend.herokuapp.com/api/v1";
 const old_api = "https://api-rates.defiprime.com";
 
-const SEC_PER_DAY = 60 * 60 * 24;
-
-const SEC_PER_YEAR = SEC_PER_DAY * 365;
-const SEC_PER_BLOCK = 13;
-
-const markets = ["compound_v2", "fulcrum", "dydx"];
-const tokens = ["dai", "usdc"];
-
-const chartContainer = document.getElementById("tv-chart-container");
 
 const seriesOptions = {
   "dai": {
@@ -577,18 +604,18 @@ window.addEventListener("resize", function (e) {
   window.tvWidget.resize(chartContainer.offsetHeight, chartContainer.offsetWidth);
 });
 
-var liquidity_xhr = new XMLHttpRequest();
-liquidity_xhr.open("GET", old_api + "/getMinInterest", true);
-liquidity_xhr.onreadystatechange = function () {
-  if (liquidity_xhr.status == 200 && liquidity_xhr.readyState == 4) {
-    var liquidityData = JSON.parse(liquidity_xhr.responseText);
-    document.querySelector(".sai-eth .list-liquidity .list-liquidity-value .value").textContent = liquidityData[0].providerDAI;
-    document.querySelector(".sai-eth .list-liquidity .list-liquidity-name").href = liquidityData[0].providerLink;
-    document.querySelector(".usdc-eth .list-liquidity .list-liquidity-name").href = liquidityData[0].providerLink;
-    document.querySelector(".usdc-eth .list-liquidity .list-liquidity-value .value").textContent = liquidityData[0].providerUSDC;
-  }
-}
-liquidity_xhr.send();
+// var liquidity_xhr = new XMLHttpRequest();
+// liquidity_xhr.open("GET", old_api + "/getMinInterest", true);
+// liquidity_xhr.onreadystatechange = function () {
+//   if (liquidity_xhr.status == 200 && liquidity_xhr.readyState == 4) {
+//     var liquidityData = JSON.parse(liquidity_xhr.responseText);
+//     document.querySelector(".sai-eth .list-liquidity .list-liquidity-value .value").textContent = liquidityData[0].providerDAI;
+//     document.querySelector(".sai-eth .list-liquidity .list-liquidity-name").href = liquidityData[0].providerLink;
+//     document.querySelector(".usdc-eth .list-liquidity .list-liquidity-name").href = liquidityData[0].providerLink;
+//     document.querySelector(".usdc-eth .list-liquidity .list-liquidity-value .value").textContent = liquidityData[0].providerUSDC;
+//   }
+// }
+// liquidity_xhr.send();
 
 function formatDate(date) {
   var d = new Date(date),
@@ -607,4 +634,8 @@ function formatDate(date) {
 function blockRateToApr(rate, decimals) {
 
   return 100 * rate * SEC_PER_YEAR / SEC_PER_BLOCK / (10 ** decimals)
+}
+
+function rateRatioToApr(currentRate, oldRate, period){
+  return 100 * ((currentRate / oldRate) ** (SEC_PER_YEAR / period) - 1)
 }
