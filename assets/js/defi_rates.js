@@ -361,7 +361,7 @@ async function getAPRData() {
   const dydxData = await getDydxApr();
   const aaveData = await getAaveApr();
   const fulcrumData = await getFulcrumApr();
-  const torqueData = await getTorqueApr();
+  // const torqueData = await getTorqueApr();
   return {
     supply: {
       "compound_v2": compoundData.supply,
@@ -375,7 +375,7 @@ async function getAPRData() {
       "aave": aaveData.aave.borrow,
       "aave_fixed": aaveData.aave_fixed,
       "fulcrum": fulcrumData.borrow,
-      "torque": torqueData
+      // "torque": torqueData
     }
   }
 }
