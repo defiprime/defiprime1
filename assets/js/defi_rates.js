@@ -34,7 +34,7 @@ const tokens = ["dai", "usdc"];
 const chartContainer = document.getElementById("tv-chart-container");
 const INFURA_API_KEY = "407161c0da4c4f1b81f3cc87ca8310a7";
 const web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/v3/" + INFURA_API_KEY));
-(async function (){
+(async function () {
   window.currentBlock = await web3.eth.getBlock("latest")
   var oldBlockNumber = window.currentBlock.number - BLOCKS_PER_MONTH
   window.oldBlock = await web3.eth.getBlock(oldBlockNumber);
@@ -189,6 +189,85 @@ async function getDydxApr() {
     }
   }
 }
+
+async function getFulcrumApr() {
+  const daiAddress = "0x493c57c4763932315a328269e1adad09653b9081";
+  const usdcAddress = "0xf013406a0b1d544238083df0b93ad0d2cbe0f65f";
+  const data = await fetch('https://api.thegraph.com/subgraphs/name/graphitetools/fulcrum', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
+    body: JSON.stringify({
+      query: `query ($id_dai: ID!, $id_usdc: ID!)
+        {
+          dai: iToken(id: $id_dai) {
+            id
+            address
+            symbol
+            supplyRate
+            borrowRate
+            supplyIndex
+          }
+          
+          usdc: iToken(id: $id_usdc) {
+            id
+            address
+            symbol
+            supplyRate
+            borrowRate
+            supplyIndex
+          }
+          
+          dai_30d: iToken(id: $id_dai, block: { number: ${window.oldBlock.number}}) {
+            id
+            address
+            symbol
+            supplyRate
+            borrowRate
+            supplyIndex
+          }
+          
+          usdc_30d: iToken(id: $id_usdc, block: {number: ${window.oldBlock.number}}) {
+            id
+            address
+            symbol
+            supplyRate
+            borrowRate
+            supplyIndex
+          }
+      }`,
+      variables: {
+        id_dai: daiAddress,
+        id_usdc: usdcAddress
+      }
+    })
+  })
+    .then(r => r.json());
+  return {
+    supply: {
+      "dai": {
+        "supply_rate": data.data["dai"].supplyRate / 10 ** 18,
+        "supply_30d_apr": rateRatioToApr(data.data["dai"].supplyIndex, data.data["dai_30d"].supplyIndex, window.secPassed)
+      },
+      "usdc": {
+        "supply_rate": data.data["usdc"].supplyRate / 10 ** 18,
+        "supply_30d_apr": rateRatioToApr(data.data["usdc"].supplyIndex, data.data["usdc_30d"].supplyIndex, window.secPassed)
+      }
+    },
+    borrow: {
+      "dai": {
+        "borrow_rate": data.data["dai"].borrowRate / 10 ** 18,
+        "borrow_30d_apr": undefined
+      },
+      "usdc": {
+        "borrow_rate": data.data["usdc"].borrowRate / 10 ** 18,
+        "borrow_30d_apr": undefined
+      }
+    }
+  }
+}
 async function getAaveApr() {
   const daiAddress = "0x6b175474e89094c44da98b954eedeac495271d0f";
   const usdcAddress = "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48";
@@ -201,18 +280,44 @@ async function getAaveApr() {
     body: JSON.stringify({
       query: `query ($id_dai: ID!, $id_usdc: ID!)
         {
-          dai: reserve(id: $id_dai) {symbol
+          dai: reserve(id: $id_dai) {
+            symbol
             id
             liquidityRate
             variableBorrowRate
             stableBorrowRate
+            variableBorrowIndex
+            liquidityIndex
           }
           
-          usdc: reserve(id: $id_usdc) {symbol
+          usdc: reserve(id: $id_usdc) {
+            symbol
             id
             liquidityRate
             variableBorrowRate
             stableBorrowRate
+            variableBorrowIndex
+            liquidityIndex
+          }
+          
+          dai_30d: reserve(id: $id_dai, block: {number: ${window.oldBlock.number}}) {
+            symbol
+            id
+            liquidityRate
+            variableBorrowRate
+            stableBorrowRate
+            variableBorrowIndex
+            liquidityIndex
+          }
+          
+          usdc_30d: reserve(id: $id_usdc, block: {number: ${window.oldBlock.number}}) {
+            symbol
+            id
+            liquidityRate
+            variableBorrowRate
+            stableBorrowRate
+            variableBorrowIndex
+            liquidityIndex
           }
       }`,
       variables: {
@@ -227,21 +332,21 @@ async function getAaveApr() {
       supply: {
         "dai": {
           "supply_rate": data.data["dai"].liquidityRate * 100,
-          "supply_30d_apr": 0
+          "supply_30d_apr": rateRatioToApr(data.data["dai"].liquidityIndex, data.data["dai_30d"].liquidityIndex, window.secPassed)
         },
         "usdc": {
           "supply_rate": data.data["usdc"].liquidityRate * 100,
-          "supply_30d_apr": 0
+          "supply_30d_apr": rateRatioToApr(data.data["usdc"].liquidityIndex, data.data["usdc_30d"].liquidityIndex, window.secPassed)
         }
       },
       borrow: {
         "dai": {
           "borrow_rate": data.data["dai"].variableBorrowRate * 100,
-          "borrow_30d_apr": 0
+          "borrow_30d_apr": rateRatioToApr(data.data["dai"].variableBorrowIndex, data.data["dai_30d"].variableBorrowIndex, window.secPassed)
         },
         "usdc": {
           "borrow_rate": data.data["usdc"].variableBorrowRate * 100,
-          "borrow_30d_apr": 0
+          "borrow_30d_apr": rateRatioToApr(data.data["usdc"].variableBorrowIndex, data.data["usdc_30d"].variableBorrowIndex, window.secPassed)
         }
       }
     },
@@ -515,10 +620,12 @@ const GetLendingData = async () => {
   const compoundData = await getCompoundApr();
   const dydxData = await getDydxApr();
   const aaveData = await getAaveApr();
+  const fulcrumData = await getFulcrumApr();
   const data = {
     "compound_v2": compoundData.supply,
     "dydx": dydxData.supply,
-    "aave": aaveData.aave.supply
+    "aave": aaveData.aave.supply,
+    "fulcrum": fulcrumData.supply
   }
   return tokens.map(token => {
     var marketRates = [];
@@ -542,11 +649,13 @@ const GetBorrowingData = async () => {
   const compoundData = await getCompoundApr();
   const dydxData = await getDydxApr();
   const aaveData = await getAaveApr();
+  const fulcrumData = await getFulcrumApr();
   const data = {
     "compound_v2": compoundData.borrow,
     "dydx": dydxData.borrow,
     "aave": aaveData.aave.borrow,
     "aave_fixed": aaveData.aave_fixed,
+    "fulcrum": fulcrumData.borrow
   }
   return tokens.map(token => {
     var marketRates = [];
@@ -654,6 +763,6 @@ function blockRateToApr(rate, decimals) {
   return 100 * rate * SEC_PER_YEAR / SEC_PER_BLOCK / (10 ** decimals)
 }
 
-function rateRatioToApr(currentRate, oldRate, period){
+function rateRatioToApr(currentRate, oldRate, period) {
   return 100 * ((currentRate / oldRate) ** (SEC_PER_YEAR / period) - 1)
 }
