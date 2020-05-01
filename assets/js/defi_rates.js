@@ -571,8 +571,8 @@ const GetChartOptions = (timePeriodId) => ({
 
 
 const init = async () => {
-  await getBlocks();
   document.getElementById("overlay").style.display = "block";
+  await getBlocks();
   // GetData().then(async responses => {
     const aprData = await getAPRData();
     var lendingRates = await GetLendingData(aprData.supply);
