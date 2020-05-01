@@ -13,7 +13,7 @@ featured-image: /images/og-rates.png
     <p class="fs-20 fs-sm-16 lh-180 color-primary mb-40 mb-sm-25 mw-730 mx-auto">Lending stablecoins could be an alternative to high yield CDs, ETFs, and savings accounts, with relatively higher risk.</p>
     <p class="fs-15 fs-sm-14 lh-160 color-primary-light mb-25"></p>
 </section>
-<section class="text-center">
+<!-- <section class="text-center">
     <div class="wrapper-buttons">
         <button class="period-button" data-period="0">1d</button>
         <button class="period-button" data-period="1">7d</button>
@@ -35,7 +35,7 @@ featured-image: /images/og-rates.png
         </div>
         {% endfor %}
     </div>
-</section>
+</section> -->
 
 <section class="pt-120 pb-20 pt-xl-90 pb-xl-0 pt-md-45">
     <div class="text-center">

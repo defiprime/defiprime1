@@ -570,17 +570,17 @@ const GetChartOptions = (timePeriodId) => ({
 })
 
 
-const init = () => {
+const init = async () => {
   document.getElementById("overlay").style.display = "block";
-  GetData().then(async responses => {
+  // GetData().then(async responses => {
     const aprData = await getAPRData();
     var lendingRates = await GetLendingData(aprData.supply);
     var borrowingRates = await GetBorrowingData(aprData.borrow);
     renderLendingRates(lendingRates);
     renderBorrowingRates(borrowingRates)
-    renderTradingViewChart(2, responses);
+    // renderTradingViewChart(2, responses);
     document.getElementById("overlay").style.display = "none";
-  });
+  // });
 };
 
 const renderLendingRates = (lendingRates) => {
@@ -653,7 +653,7 @@ const GetBorrowingData = async (data) => {
   //api call
   // var response = await fetch(`${api}/markets/borrow`);
   // var data = await response.json();
-  
+
   return tokens.map(token => {
     var marketRates = [];
     Object.entries(data).flatMap(market => {
