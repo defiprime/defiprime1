@@ -5,7 +5,6 @@ product-url: https://portfolio.defiprime.com/?utm_source=defiprime&utm_medium=li
 image: /images/output_md/portfolio.defiprime.com.png
 ecosystem: ethereum
 product-description: "DeFi portfolio tracker & reporting tool for investors: decentralized finance holdings, trades, stats, APR performance, and history."
-featured: true
 coltitle:  "Analytics"
 colpermalink: defi-analytics
 twitter: https://twitter.com/defiprime
