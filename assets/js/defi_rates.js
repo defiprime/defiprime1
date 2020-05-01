@@ -14,12 +14,12 @@ const INFURA_API_KEY = "407161c0da4c4f1b81f3cc87ca8310a7";
 
 const web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/v3/" + INFURA_API_KEY));
 
-(async function () {
+async function getBlocks () {
   window.currentBlock = await web3.eth.getBlock("latest")
   var oldBlockNumber = window.currentBlock.number - BLOCKS_PER_MONTH
   window.oldBlock = await web3.eth.getBlock(oldBlockNumber);
   window.secPassed = (window.currentBlock.timestamp - window.oldBlock.timestamp);
-})()
+}
 
 async function getCompoundApr() {
   const daiAddress = "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643";
@@ -571,6 +571,7 @@ const GetChartOptions = (timePeriodId) => ({
 
 
 const init = async () => {
+  await getBlocks();
   document.getElementById("overlay").style.display = "block";
   // GetData().then(async responses => {
     const aprData = await getAPRData();
