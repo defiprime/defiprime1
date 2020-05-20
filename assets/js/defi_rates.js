@@ -14,7 +14,7 @@ const INFURA_API_KEY = "407161c0da4c4f1b81f3cc87ca8310a7";
 
 const web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/v3/" + INFURA_API_KEY));
 
-async function getBlocks () {
+async function getBlocks() {
   window.currentBlock = await web3.eth.getBlock("latest")
   var oldBlockNumber = window.currentBlock.number - BLOCKS_PER_MONTH
   window.oldBlock = await web3.eth.getBlock(oldBlockNumber);
@@ -24,7 +24,7 @@ async function getBlocks () {
 async function getCompoundApr() {
   const daiAddress = "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643";
   const usdcAddress = "0x39aa39c021dfbae8fac545936693ac917d5e7563";
-  const data = await fetch('https://api.thegraph.com/subgraphs/name/graphitetools/compound', {
+  const aprToday = await fetch('https://api.thegraph.com/subgraphs/name/graphitetools/compound', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -50,6 +50,23 @@ async function getCompoundApr() {
             supplyIndex
             borrowIndex
           }
+      }`,
+      variables: {
+        id_dai: daiAddress,
+        id_usdc: usdcAddress
+      }
+    })
+  })
+    .then(r => r.json());
+  const apr30Days = await fetch('https://api.thegraph.com/subgraphs/name/graphitetools/compound', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
+    body: JSON.stringify({
+      query: `query ($id_dai: ID!, $id_usdc: ID!)
+        {
           dai_30d: cToken(id: $id_dai, block: { number: ${window.oldBlock.number}}) {
             id
             symbol
@@ -74,26 +91,27 @@ async function getCompoundApr() {
       }
     })
   })
-    .then(r => r.json())
+    .then(r => r.json());
+
   return {
     supply: {
       "dai": {
-        "supply_rate": blockRateToApr(data.data["dai"].supplyRate, 18),
-        "supply_30d_apr": rateRatioToApr(data.data["dai"].supplyIndex, data.data["dai_30d"].supplyIndex, window.secPassed)
+        "supply_rate": blockRateToApr(aprToday.data["dai"].supplyRate, 18),
+        "supply_30d_apr": rateRatioToApr(aprToday.data["dai"].supplyIndex, apr30Days.data["dai_30d"].supplyIndex, window.secPassed)
       },
       "usdc": {
-        "supply_rate": blockRateToApr(data.data["usdc"].supplyRate, 18),
-        "supply_30d_apr": rateRatioToApr(data.data["usdc"].supplyIndex, data.data["usdc_30d"].supplyIndex, window.secPassed)
+        "supply_rate": blockRateToApr(aprToday.data["usdc"].supplyRate, 18),
+        "supply_30d_apr": rateRatioToApr(aprToday.data["usdc"].supplyIndex, apr30Days.data["usdc_30d"].supplyIndex, window.secPassed)
       }
     },
     borrow: {
       "dai": {
-        "borrow_rate": blockRateToApr(data.data["dai"].borrowRate, 18),
-        "borrow_30d_apr": rateRatioToApr(data.data["dai"].borrowIndex, data.data["dai_30d"].borrowIndex, window.secPassed)
+        "borrow_rate": blockRateToApr(aprToday.data["dai"].borrowRate, 18),
+        "borrow_30d_apr": rateRatioToApr(aprToday.data["dai"].borrowIndex, apr30Days.data["dai_30d"].borrowIndex, window.secPassed)
       },
       "usdc": {
-        "borrow_rate": blockRateToApr(data.data["usdc"].borrowRate, 18),
-        "borrow_30d_apr": rateRatioToApr(data.data["usdc"].borrowIndex, data.data["usdc_30d"].borrowIndex, window.secPassed)
+        "borrow_rate": blockRateToApr(aprToday.data["usdc"].borrowRate, 18),
+        "borrow_30d_apr": rateRatioToApr(aprToday.data["usdc"].borrowIndex, apr30Days.data["usdc_30d"].borrowIndex, window.secPassed)
       }
     }
   }
@@ -102,7 +120,7 @@ async function getCompoundApr() {
 async function getDydxApr() {
   const daiAddress = "0x3";
   const usdcAddress = "0x2";
-  const data = await fetch('https://api.thegraph.com/subgraphs/name/graphitetools/dydx', {
+  const aprToday = await fetch('https://api.thegraph.com/subgraphs/name/graphitetools/dydx', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -124,7 +142,24 @@ async function getDydxApr() {
             supplyIndex
             borrowIndex
           }
-          
+      }`,
+      variables: {
+        id_dai: daiAddress,
+        id_usdc: usdcAddress
+      }
+    })
+  })
+    .then(r => r.json());
+
+  const apr30Days = await fetch('https://api.thegraph.com/subgraphs/name/graphitetools/dydx', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
+    body: JSON.stringify({
+      query: `query ($id_dai: ID!, $id_usdc: ID!)
+        {
           dai_30d: market(id: $id_dai, block: { number: ${window.oldBlock.number}}) {
             borrowRate
             supplyRate
@@ -149,22 +184,22 @@ async function getDydxApr() {
   return {
     supply: {
       "dai": {
-        "supply_rate": data.data["dai"].supplyRate / 10 ** 18 * 100,
-        "supply_30d_apr": rateRatioToApr(data.data["dai"].supplyIndex, data.data["dai_30d"].supplyIndex, window.secPassed)
+        "supply_rate": aprToday.data["dai"].supplyRate / 10 ** 18 * 100,
+        "supply_30d_apr": rateRatioToApr(aprToday.data["dai"].supplyIndex, apr30Days.data["dai_30d"].supplyIndex, window.secPassed)
       },
       "usdc": {
-        "supply_rate": data.data["usdc"].supplyRate / 10 ** 18 * 100,
-        "supply_30d_apr": rateRatioToApr(data.data["usdc"].supplyIndex, data.data["usdc_30d"].supplyIndex, window.secPassed)
+        "supply_rate": aprToday.data["usdc"].supplyRate / 10 ** 18 * 100,
+        "supply_30d_apr": rateRatioToApr(aprToday.data["usdc"].supplyIndex, apr30Days.data["usdc_30d"].supplyIndex, window.secPassed)
       }
     },
     borrow: {
       "dai": {
-        "borrow_rate": data.data["dai"].borrowRate / 10 ** 18 * 100,
-        "borrow_30d_apr": rateRatioToApr(data.data["dai"].borrowIndex, data.data["dai_30d"].borrowIndex, window.secPassed)
+        "borrow_rate": aprToday.data["dai"].borrowRate / 10 ** 18 * 100,
+        "borrow_30d_apr": rateRatioToApr(aprToday.data["dai"].borrowIndex, apr30Days.data["dai_30d"].borrowIndex, window.secPassed)
       },
       "usdc": {
-        "borrow_rate": data.data["usdc"].borrowRate / 10 ** 18 * 100,
-        "borrow_30d_apr": rateRatioToApr(data.data["usdc"].borrowIndex, data.data["usdc_30d"].borrowIndex, window.secPassed)
+        "borrow_rate": aprToday.data["usdc"].borrowRate / 10 ** 18 * 100,
+        "borrow_30d_apr": rateRatioToApr(aprToday.data["usdc"].borrowIndex, apr30Days.data["usdc_30d"].borrowIndex, window.secPassed)
       }
     }
   }
@@ -173,7 +208,7 @@ async function getDydxApr() {
 async function getFulcrumApr() {
   const daiAddress = "0x493c57c4763932315a328269e1adad09653b9081";
   const usdcAddress = "0xf013406a0b1d544238083df0b93ad0d2cbe0f65f";
-  const data = await fetch('https://api.thegraph.com/subgraphs/name/graphitetools/fulcrum', {
+  const aprToday = await fetch('https://api.thegraph.com/subgraphs/name/graphitetools/fulcrum', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -199,7 +234,23 @@ async function getFulcrumApr() {
             borrowRate
             supplyIndex
           }
-          
+      }`,
+      variables: {
+        id_dai: daiAddress,
+        id_usdc: usdcAddress
+      }
+    })
+  })
+    .then(r => r.json());
+  const apr30Days = await fetch('https://api.thegraph.com/subgraphs/name/graphitetools/fulcrum', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
+    body: JSON.stringify({
+      query: `query ($id_dai: ID!, $id_usdc: ID!)
+        {
           dai_30d: iToken(id: $id_dai, block: { number: ${window.oldBlock.number}}) {
             id
             address
@@ -228,21 +279,21 @@ async function getFulcrumApr() {
   return {
     supply: {
       "dai": {
-        "supply_rate": data.data["dai"].supplyRate / 10 ** 18,
-        "supply_30d_apr": rateRatioToApr(data.data["dai"].supplyIndex, data.data["dai_30d"].supplyIndex, window.secPassed)
+        "supply_rate": aprToday.data["dai"].supplyRate / 10 ** 18,
+        "supply_30d_apr": rateRatioToApr(aprToday.data["dai"].supplyIndex, apr30Days.data["dai_30d"].supplyIndex, window.secPassed)
       },
       "usdc": {
-        "supply_rate": data.data["usdc"].supplyRate / 10 ** 18,
-        "supply_30d_apr": rateRatioToApr(data.data["usdc"].supplyIndex, data.data["usdc_30d"].supplyIndex, window.secPassed)
+        "supply_rate": aprToday.data["usdc"].supplyRate / 10 ** 18,
+        "supply_30d_apr": rateRatioToApr(aprToday.data["usdc"].supplyIndex, apr30Days.data["usdc_30d"].supplyIndex, window.secPassed)
       }
     },
     borrow: {
       "dai": {
-        "borrow_rate": data.data["dai"].borrowRate / 10 ** 18,
+        "borrow_rate": aprToday.data["dai"].borrowRate / 10 ** 18,
         "borrow_30d_apr": undefined
       },
       "usdc": {
-        "borrow_rate": data.data["usdc"].borrowRate / 10 ** 18,
+        "borrow_rate": aprToday.data["usdc"].borrowRate / 10 ** 18,
         "borrow_30d_apr": undefined
       }
     }
@@ -264,7 +315,7 @@ async function getTorqueApr() {
 async function getAaveApr() {
   const daiAddress = "0x6b175474e89094c44da98b954eedeac495271d0f";
   const usdcAddress = "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48";
-  const data = await fetch('https://api.thegraph.com/subgraphs/name/aave/protocol', {
+  const aprToday = await fetch('https://api.thegraph.com/subgraphs/name/aave/protocol', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -292,7 +343,23 @@ async function getAaveApr() {
             variableBorrowIndex
             liquidityIndex
           }
-          
+      }`,
+      variables: {
+        id_dai: daiAddress,
+        id_usdc: usdcAddress
+      }
+    })
+  })
+    .then(r => r.json());
+  const apr30Days = await fetch('https://api.thegraph.com/subgraphs/name/aave/protocol', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
+    body: JSON.stringify({
+      query: `query ($id_dai: ID!, $id_usdc: ID!)
+        { 
           dai_30d: reserve(id: $id_dai, block: {number: ${window.oldBlock.number}}) {
             symbol
             id
@@ -324,33 +391,32 @@ async function getAaveApr() {
     aave: {
       supply: {
         "dai": {
-          "supply_rate": data.data["dai"].liquidityRate * 100,
-          "supply_30d_apr": rateRatioToApr(data.data["dai"].liquidityIndex, data.data["dai_30d"].liquidityIndex, window.secPassed)
+          "supply_rate": aprToday.data["dai"].liquidityRate * 100,
+          "supply_30d_apr": rateRatioToApr(aprToday.data["dai"].liquidityIndex, apr30Days.data["dai_30d"].liquidityIndex, window.secPassed)
         },
         "usdc": {
-          "supply_rate": data.data["usdc"].liquidityRate * 100,
-          "supply_30d_apr": rateRatioToApr(data.data["usdc"].liquidityIndex, data.data["usdc_30d"].liquidityIndex, window.secPassed)
+          "supply_rate": aprToday.data["usdc"].liquidityRate * 100,
+          "supply_30d_apr": rateRatioToApr(aprToday.data["usdc"].liquidityIndex, apr30Days.data["usdc_30d"].liquidityIndex, window.secPassed)
         }
       },
       borrow: {
         "dai": {
-          "borrow_rate": data.data["dai"].variableBorrowRate * 100,
-          "borrow_30d_apr": rateRatioToApr(data.data["dai"].variableBorrowIndex, data.data["dai_30d"].variableBorrowIndex, window.secPassed)
+          "borrow_rate": aprToday.data["dai"].variableBorrowRate * 100,
+          "borrow_30d_apr": rateRatioToApr(aprToday.data["dai"].variableBorrowIndex, apr30Days.data["dai_30d"].variableBorrowIndex, window.secPassed)
         },
         "usdc": {
-          "borrow_rate": data.data["usdc"].variableBorrowRate * 100,
-          "borrow_30d_apr": rateRatioToApr(data.data["usdc"].variableBorrowIndex, data.data["usdc_30d"].variableBorrowIndex, window.secPassed)
+          "borrow_rate": aprToday.data["usdc"].variableBorrowRate * 100,
+          "borrow_30d_apr": rateRatioToApr(aprToday.data["usdc"].variableBorrowIndex, apr30Days.data["usdc_30d"].variableBorrowIndex, window.secPassed)
         }
       }
     },
     aave_fixed: {
       "dai": {
-        "borrow_rate": data.data["dai"].stableBorrowRate * 100
+        "borrow_rate": aprToday.data["dai"].stableBorrowRate * 100
       },
       "usdc": {
-        "borrow_rate": data.data["usdc"].stableBorrowRate * 100
+        "borrow_rate": aprToday.data["usdc"].stableBorrowRate * 100
       }
-
     }
   }
 }
@@ -574,13 +640,13 @@ const init = async () => {
   document.getElementById("overlay").style.display = "block";
   await getBlocks();
   // GetData().then(async responses => {
-    const aprData = await getAPRData();
-    var lendingRates = await GetLendingData(aprData.supply);
-    var borrowingRates = await GetBorrowingData(aprData.borrow);
-    renderLendingRates(lendingRates);
-    renderBorrowingRates(borrowingRates)
-    // renderTradingViewChart(2, responses);
-    document.getElementById("overlay").style.display = "none";
+  const aprData = await getAPRData();
+  var lendingRates = await GetLendingData(aprData.supply);
+  var borrowingRates = await GetBorrowingData(aprData.borrow);
+  renderLendingRates(lendingRates);
+  renderBorrowingRates(borrowingRates)
+  // renderTradingViewChart(2, responses);
+  document.getElementById("overlay").style.display = "none";
   // });
 };
 
