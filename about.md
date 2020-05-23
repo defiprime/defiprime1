@@ -48,3 +48,10 @@ If you need our logo visit this page with [media assets](/media-assets).
 ### Contact DeFiprime
 
 DMs are open [@defiprime](https://twitter.com/defiprime)
+
+### COI Disclosure
+
+This site runs independently. However, for the sake of transparency, and to avoid any possible future accusation of conflict of interests or unethical conduct, I should state that:
+
+- I work as a head of marketing at bZx
+- I hold ETH, BTC, and small amounts(less than $10k) of other ERC20 tokens and stablecoins
