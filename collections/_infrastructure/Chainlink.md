@@ -1,7 +1,7 @@
 ---
 git-date: 2019-06-03T18:44:25-07:00
 product-title: Chainlink
-product-url: https://chain.link/
+product-url: https://defi.chain.link/
 image: /images/output_md/chain.link.png
 ecosystem: ethereum
 product-description: Chainlink is a decentralized oracle that can provide external data to smart contracts.
