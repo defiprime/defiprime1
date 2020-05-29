@@ -9,4 +9,6 @@ filter: Aggregators, No KYC
 product-description: 1inch.exchange split the order to several decentralized exchanges like UniswapExchange, KyberNetwork, Bancor and RadarRelay to avoid high price slippage.
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
+twitter: https://twitter.com/1inchExchange
+github: https://github.com/CryptoManiacsZone
 ---
