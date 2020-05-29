@@ -15,10 +15,10 @@ DeFiprime.com is the media outlet and analytical services provider for the DeFi 
 ### Product Listing 101: definition of "the best DeFi Product"
 We are a _curated list_ of DeFi products, not aiming to list every existing product, but only the best ones. The product listing could be a subjective process, and not a substitute for professional advice and independent verification.
 
-* Are you feel comfortable to recommend this product to your IRL friends?
+* Do you feel comfortable to recommend this product to your IRL friends?
 * Live product functioning on mainnet (not coming soon, not testnet, not "please take a look at our whitepaper")
 * Visible product traction (not empty marketplace, not empty order book, etc).   
-* Decentralized first. Label 'Region is not supported' it's a spit in the face of DeFi. Check our recent [twitter-poll](https://twitter.com/defiprime/status/1130890433821724672) with community sentiment on this matter.
+* Decentralized first. Label 'Region is not supported' is a spit in the face of DeFi. Check our recent [twitter-poll](https://twitter.com/defiprime/status/1130890433821724672) with community sentiment on this matter.
 * No crypto tribalism and bias. Ethereum, Tron, EOS, Bitcoin and the rest of blockchains are equal as long as a DeFi product built on top of it is useful.
 * Lastly: no, you can’t buy a listing on Defiprime, don’t waste your time.
 
@@ -35,7 +35,7 @@ Good pitch for listing at DeFiprime:
 
 ### Advertising on DeFiprime
 
-We are the largest media outlet, focused solely on DeFi and Open Finance space. The only ad format available for adverts at the moment it's native articles(interviews, use cases, explainers). Fill this [inquiry form](https://sneg55.typeform.com/to/zAR7ZH) to get in touch. Please note: we don't list products on our site for a fee, this form for advertising requests only.
+We are the largest media outlet, focused solely on DeFi and Open Finance space. The only ad format available for adverts at the moment is native articles(interviews, use cases, explainers). Fill this [inquiry form](https://sneg55.typeform.com/to/zAR7ZH) to get in touch. Please note: we don't list products on our site for a fee, this form for advertising requests only.
 
 ### Events Listing
 
