@@ -5,11 +5,11 @@ title:  Lending Stablecoins with DeFi
 permalink: stablecoins-lending-experiment
 h1title: 'Lending Stablecoins with DeFi'
 pagetitle: 'Lending Stablecoins with DeFi: a year long experiment'
-metadescription: 'The idea is simple I will put $100 worth into various DeFi lending products, and going to track results over the year. '
+metadescription: 'The idea is simple I will put $100 worth into various DeFi lending products, and going to track results over the year.'
 category: blog
 featured-image: /images/blog/stablecoinslending-og.png
 quote: /images/blog/stablecoinslending-quote.png
-intro: 'The idea is simple I will put $100 worth into various DeFi lending products, and going to track results over the year. '
+intro: 'The idea is simple I will put $100 worth into various DeFi lending products, and going to track results over the year'
 author: Defiprime
 ---
 I've been advocating for DeFi for a long enough time and tested by myself most of the products presented at DeFiprime. But now I think it's the right time for skin in the game experiment.  
@@ -35,17 +35,17 @@ This experiment will help demonstrate the differences between lending protocols 
 
 ### Results Chart
 
-| Product  | 09/01  | 10/01   | 11/01  | 12/01  | 01/01² | 02/01 | 03/01 | 04/01 | 05/01 | 06/01 |
-|---|---|---|---|---|---|---|---|---|---|---|
-| [Compound](https://compound.finance/)  |  100 DAI | 100.77 <sup>+0.77</sup>  | 101.46 <sup>+0.69</sup> | 101.91 <sup>+0.45</sup> | 102.10 <sup>+0.19</sup> | 102.64 <sup>+0.54</sup> | 103.31 <sup>+0.67</sup> | 103.97 <sup>+0.66</sup> | 104.15 <sup>+0.18</sup> |
-| [Nuo](https://www.nuo.network/)¹ | 100 USDC | 100.57 <sup>+0.57</sup>  | 101.22 <sup>+0.65</sup> | 102.18 <sup>+0.96</sup> | 102.52 <sup>+0.34</sup> |  102.87 <sup>+0.35</sup> | 104.49 <sup>+1.62</sup> | 104.87 <sup>+0.38</sup> | 105.15 <sup>+0.28</sup> |
-| [Fulcrum](https://fulcrum.trade/)  | 100 DAI | 100.67 <sup>+0.67</sup> | 101.20 <sup>+0.53</sup> | 101.65 <sup>+0.45</sup> | 102.01 <sup>+0.36</sup> | 102.84 <sup>+0.83</sup> | 103.67 <sup>+0.83</sup> | 104.35 <sup>+0.68</sup> | 104.44 <sup>+0.09</sup> |
-| [dYdX](http://trade.dydx.exchange)  | 100 DAI | 100.75 <sup>+0.75</sup>  | 101.39 <sup>+0.64</sup> | 101.82 <sup>+0.43</sup> | 101.99 <sup>+0.17</sup> | 102.36 <sup>+0.37</sup> | 103.06 <sup>+0.70</sup> | 103.86 <sup>+0.80</sup> | 104.05 <sup>+0.19</sup> |
-| [Idle](https://idle.finance/)  | 100 DAI | 100.72 <sup>+0.72</sup> | 101.37 <sup>+0.65</sup> | 101.82 <sup>+0.45</sup> | 102.19 <sup>+0.37</sup> | 102.61 <sup>+0.42</sup> | 103.38² <sup>+0.77</sup> | 104.08 <sup>+0.70</sup> | 104.31 <sup>+0.23</sup> |
+| Product  | 09/01  | 10/01   | 11/01  | 12/01  | 01/01² | 02/01 | 03/01 | 04/01 | 05/01 | 06/01 | 07/01 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| [Compound](https://compound.finance/)  |  100 DAI | 100.77 <sup>+0.77</sup>  | 101.46 <sup>+0.69</sup> | 101.91 <sup>+0.45</sup> | 102.10 <sup>+0.19</sup> | 102.64 <sup>+0.54</sup> | 103.31 <sup>+0.67</sup> | 103.97 <sup>+0.66</sup> | 104.15 <sup>+0.18</sup> | 104.24 <sup>+0.09</sup> |
+| [Nuo](https://www.nuo.network/)¹ | 100 USDC | 100.57 <sup>+0.57</sup>  | 101.22 <sup>+0.65</sup> | 102.18 <sup>+0.96</sup> | 102.52 <sup>+0.34</sup> |  102.87 <sup>+0.35</sup> | 104.49 <sup>+1.62</sup> | 104.87 <sup>+0.38</sup> | 105.15 <sup>+0.28</sup> | 105.78 <sup>+0.63</sup> |
+| [Fulcrum](https://fulcrum.trade/)  | 100 DAI | 100.67 <sup>+0.67</sup> | 101.20 <sup>+0.53</sup> | 101.65 <sup>+0.45</sup> | 102.01 <sup>+0.36</sup> | 102.84 <sup>+0.83</sup> | 103.67 <sup>+0.83</sup> | 104.35 <sup>+0.68</sup> | 104.44 <sup>+0.09</sup> | 104.59 <sup>+0.15</sup> |
+| [dYdX](http://trade.dydx.exchange)  | 100 DAI | 100.75 <sup>+0.75</sup>  | 101.39 <sup>+0.64</sup> | 101.82 <sup>+0.43</sup> | 101.99 <sup>+0.17</sup> | 102.36 <sup>+0.37</sup> | 103.06 <sup>+0.70</sup> | 103.86 <sup>+0.80</sup> | 104.05 <sup>+0.19</sup> | 104.28 <sup>+0.23</sup> |
+| [Idle](https://idle.finance/)  | 100 DAI | 100.72 <sup>+0.72</sup> | 101.37 <sup>+0.65</sup> | 101.82 <sup>+0.45</sup> | 102.19 <sup>+0.37</sup> | 102.61 <sup>+0.42</sup> | 103.38² <sup>+0.77</sup> | 104.08 <sup>+0.70</sup> | 104.31 <sup>+0.23</sup> | 104.62³ <sup>+0.31</sup> |
 
 - _¹ Deposit in USDC_
 - _² Legacy DAI converted into multicollateral DAI_
-
+- _³ Migration to Idle V3_  
 
 You can track live experiment stats here: [0xa51cE0796d32e3cc932C9a9e01663F68f71D9CBf](https://portfolio.defiprime.com/holdings/0xa51ce0796d32e3cc932c9a9e01663f68f71d9cbf)
 
@@ -89,7 +89,11 @@ What a turn of events during March 2020! Crypto Industry's Black Thursday and is
 
 9 months of our experiment are already behind!  
 
-Next update is June, 1, 2020.   
+### Update: June, 1, 2020
+
+May was relatively calm for the DeFi lending space, despite much-awaited Bitcoin halving. Lending APR for stablecoins is in the 1-3% range. Combined with high gas fees on Ethereum it makes it economically meaningless to engage with lending protocols if your TX less than $100 in value.  
+
+Next update is July, 1, 2020.   
 
 
 ---
