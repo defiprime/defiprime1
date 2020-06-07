@@ -1,7 +1,7 @@
 ---
 git-date: 2020-03-20T10:02:11-07:00
 product-title: Loopring Exchange
-product-url: https://loopring.io/trade/LRC-ETH
+product-url: https://loopring.io/invite/2206
 image: /images/output_md/loopring.io.png
 ecosystem: ethereum
 type: non-custodial
