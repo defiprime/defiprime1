@@ -1,7 +1,7 @@
 ---
 git-date: 2019-04-13T21:06:27-07:00
 layout: page
-title: "Prediction markets"
+title: "Prediction Markets"
 permalink: prediction-markets
 h1title: Decentralized Prediction Markets
 pagetitle: Best Decentralized Prediction Markets on crypto blockchains  

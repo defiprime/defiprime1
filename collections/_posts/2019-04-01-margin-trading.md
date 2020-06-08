@@ -1,7 +1,7 @@
 ---
 git-date: 2019-06-14T12:42:41-07:00
 layout: page
-title:  "Margin trading"
+title:  "Margin Trading"
 permalink: margin-trading
 h1title: Margin trading
 pagetitle: DeFi Crypto Margin Trading - DeFi Short and Leveraged Trading Platforms    
