@@ -4,7 +4,7 @@ layout: page
 title:  "Asset Management Tools"
 permalink: assets-management-tools
 h1title: Asset Management Tools
-pagetitle: Best Ethereum wallets and Asset Management Tools for DeFi    
+pagetitle: Best Ethereum Wallets and Asset Management Tools for DeFi    
 metadescription: Best Ethereum wallets and Asset Management Tools for DeFi. Self-Custodian services in DeFi it is wallets, apps, and dashboards for managing your cryptocurrencies and assets.
 category: products
 og: /images/og-assets-management-tools.png
