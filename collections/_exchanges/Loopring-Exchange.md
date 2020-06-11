@@ -6,7 +6,7 @@ image: /images/output_md/loopring.io.png
 ecosystem: ethereum
 type: non-custodial
 filter: No KYC
-product-description: Loopring Exchange is an orderbook-based exchange on Ethereum leveraging Zero-Knowledge Proofs
+product-description: Loopring Exchange is an orderbook-based exchange on Ethereum leveraging Zero-Knowledge Proofs. [Interview with Daniel Wang](/loopring-protocol).
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/loopringorg
