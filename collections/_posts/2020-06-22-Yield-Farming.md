@@ -7,8 +7,8 @@ h1title: "Inside Yield Farming: A Beginner's Guide to the Latest Craze in DeFi"
 pagetitle: "Inside Yield Farming: A Beginner's Guide to the Latest Craze in DeFi"
 metadescription: "Here’s a non-exhaustive list of some of the companies who have made big splashes in the young but maturing DeFi arena to date"
 category: blog
-featured-image: /images/blog/defi-vcs-og.png
-quote: /images/blog/defi-vcs-quote.png
+featured-image: /images/blog/defi-yield-farming-og.png
+quote: /images/blog/defi-yield-farming-quote.png
 intro: "Inside Yield Farming: A Beginner's Guide to the Latest Craze in DeFi"
 author: Peaster
 ---
