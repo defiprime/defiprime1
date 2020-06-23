@@ -25,9 +25,11 @@ _[image credit: @sassal0x](https://twitter.com/sassal0x/status/12741745961455411
 
 ### COMP Farming
 
-For the next 4 years, Compound is offering “liquidity mining” for liquidity providers. This means that anyone that borrows or supplies assets on Compound in this span will be rewarded with a proportional allocation of COMP, of which 2,880 are distributed daily.
+For the next 4 years, [Compound](https://compound.finance/) is offering “liquidity mining” for liquidity providers. This means that anyone that [borrows or supplies assets on Compound](https://medium.com/compound-finance/expanding-compound-governance-ce13fcd4fe36) in this span will be rewarded with a proportional allocation of COMP, of which 2,880 are distributed daily.
 
-The start of this reward system caught the attention of plenty of traders. In the days since, many folks have moved their assets into Compound in order to start yield farming COMP distributions. Additionally, third-party projects are helping to facilitate COMP farming like the smart wallet project InstaDApp, which rolled out a “Maximize $COMP mining” widget to help users easily hop in on the action in just a few clicks. Essentially, it’s [mining using a leveraged position](https://twitter.com/Instadapp/status/1272610924860448769): people borrow and deposit assets simultaneously in order to get more COMP. You can perform the same actions manually without a smart wallet, but something like InstaDApp makes this yield farming much easier.
+![](/images/blog/1_i96lXZme6MHnC_oEOkQt1w.png)
+
+The start of this reward system caught the attention of plenty of traders. In the days since, many folks have moved their assets into Compound in order to start yield farming COMP distributions. Additionally, third-party projects are helping to facilitate COMP farming like the smart wallet project [InstaDApp](https://dsa.instadapp.io/compound), which rolled out a “Maximize $COMP mining” widget to help users easily hop in on the action in just a few clicks. Essentially, it’s [mining using a leveraged position](https://twitter.com/Instadapp/status/1272610924860448769): people borrow and deposit assets simultaneously in order to get more COMP. You can perform the same actions manually without a smart wallet, but something like InstaDApp makes this yield farming much easier.
 
 {% youtube "https://www.youtube.com/watch?v=lcLqPLRFfro" %}
 
@@ -35,7 +37,7 @@ InstaDApp’s made yield farming easy for Compound users.
 
 ### BAL Farming
 
-Balancer is an automated-market maker (AMM) that allows users to create liquidity pools composed of multiple ERC20 tokens in contrast to the 1:1 pools used by Uniswap. This makes Balancer a flexible protocol, but it’s also newer. Its builders want its governance to be fully decentralized and also do some bootstrapping. For these reasons, the Balancer team recently kicked off its own [liquidity mining campaign](https://defipulse.com/blog/balancer-start-liquidity-mining-and-earn-bal-tokens-today/).
+[Balancer](https://balancer.finance/) is an automated-market maker (AMM) that allows users to create liquidity pools composed of multiple ERC20 tokens in contrast to the 1:1 pools used by Uniswap. This makes Balancer a flexible protocol, but it’s also newer. Its builders want its governance to be fully decentralized and also do some bootstrapping. For these reasons, the Balancer team recently kicked off its own [liquidity mining campaign](https://defipulse.com/blog/balancer-start-liquidity-mining-and-earn-bal-tokens-today/).
 
 To that end, BAL is the governance token of Balancer. Of the 100 million BAL ever to be minted , up to 65 million have been set aside to reward liquidity providers. 145,000 BAL are now being distributed to these providers on a weekly basis, which has led to traders parking their funds in Balancer pools to yield farm the BAL awards.
 
