@@ -29,7 +29,7 @@ For the next 4 years, [Compound](https://compound.finance/) is offering “liqui
 
 ![](/images/blog/1_i96lXZme6MHnC_oEOkQt1w.png)
 
-The start of this reward system caught the attention of plenty of traders. In the days since, many folks have moved their assets into Compound in order to start yield farming COMP distributions. Additionally, third-party projects are helping to facilitate COMP farming like the smart wallet project [InstaDApp](https://dsa.instadapp.io/compound), which rolled out a “Maximize $COMP mining” widget to help users easily hop in on the action in just a few clicks. Essentially, it’s [mining using a leveraged position](https://twitter.com/Instadapp/status/1272610924860448769): people borrow and deposit assets simultaneously in order to get more COMP. You can perform the same actions manually without a smart wallet, but something like InstaDApp makes this yield farming much easier.
+The start of this reward system caught the attention of plenty of traders. In the days since, many folks have moved their assets into Compound in order to start yield farming COMP distributions. Additionally, third-party projects are helping to facilitate COMP farming like the smart wallet project [InstaDApp](https://dsa.instadapp.io/compound), which rolled out a “Maximize $COMP mining” widget to help users easily hop in on the action in just a few clicks. Essentially, it’s [mining using a leveraged position](https://twitter.com/Instadapp/status/1272610924860448769): people borrow and deposit assets simultaneously in order to get more COMP. You can perform the same actions manually without a smart wallet, but something like InstaDApp makes this yield farming much easier, in just a few clicks.
 
 {% youtube "https://www.youtube.com/watch?v=lcLqPLRFfro" %}
 
@@ -45,7 +45,7 @@ To that end, BAL is the governance token of Balancer. Of the 100 million BAL eve
 
 Back in March, Synthetix launched an incentives program for liquidity providers of sUSD, the native stablecoin of Synthetix, through the Curve and iearn exchange protocols. The 4-week test campaign was designed so that 32,000 SNX tokens would be “distributed pro-rata to liquidity providers who stake their Curve LP tokens.”
 
-The system worked as follows: users deposited sUSD and another supported stablecoin (think USDC, USDT, or Dai) into iearn, at which point they’d receive an allocation of Curve.fi sUSD/y.curve.fi tokens. Depositors could then take these tokens to Mintr, the Synthetix ecosystem’s decentralized minting hub, and stake them in order to qualify for the trial’s SNX rewards. The idea, then, was that liquidity providers would get regular pool APY and incentives for providing liquidity for the Synthetix ecosystem. Obviously, that’s a very attractive campaign for yield farmers.
+The system worked as follows: users deposited sUSD and another supported stablecoin (think USDC, USDT, or Dai) into iearn, at which point they’d receive an allocation of Curve.fi sUSD/y.curve.fi tokens. Depositors could then take these tokens to Mintr, the Synthetix ecosystem’s decentralized minting hub, and stake them in order to qualify for the trial’s SNX rewards. The idea, then, was that liquidity providers would get regular pool APY and incentives in the form of SNX, for providing liquidity  for the Synthetix ecosystem. Obviously, that’s a very attractive campaign for yield farmers, where you're earning interest on your parked digital assets as well as additional liquid digital assets you can instantly sell for profits on any DEX.
 
 ### The Curve-Ren-Synthetix Farming Meld
 
@@ -71,4 +71,8 @@ Why only 3 days? Because the demand to use Futureswap was so explosive in that s
 
 Yield farming has exploded onto the DeFi scene and captured peoples’ imaginations, and the fervor at hand makes it easy to envision this exciting meme going on to attract people to Ethereum for years to come. But remember: it’s not all fun and games, either. As Ethereum stalwart Eric Conner recently [put it](https://twitter.com/econoar/status/1274450100626976768), yield farming does have liquidation risks and smart contract risks, and as such you should never farm with money you’re not willing to lose while things are still early.
 
+![](/images/blog/yieldfarming.png)
+
 Be curious, but don’t be reckless. Yield farming is new and isn’t going anywhere, so there’s no need to rush in. And in zooming out a bit, the fact that yield farming isn’t going anywhere makes it yet another ace for Ethereum when it comes to fostering interesting things that users want.
+
+Thanks to [@DeFi_Dad](https://twitter.com/DeFi_Dad) and [Fernando Martinelli](https://twitter.com/fcmartinelli) for peer-review and input on this article!
