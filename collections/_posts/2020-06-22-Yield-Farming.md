@@ -4,8 +4,8 @@ layout: blog
 title:  "Inside Yield Farming: A Beginner's Guide to the Latest Craze in DeFi"
 permalink: defi-yield-farming
 h1title: "Inside Yield Farming: A Beginner's Guide to the Latest Craze in DeFi"
-pagetitle: "Inside Yield Farming: A Beginner's Guide to the Latest Craze in DeFi"
-metadescription: "Here’s a non-exhaustive list of some of the companies who have made big splashes in the young but maturing DeFi arena to date"
+pagetitle: "Inside DeFi Yield Farming: A Beginner's Guide to the Latest Craze in DeFi"
+metadescription: "“DeFi yield farmers” - folks who measure yield as the amount of interest that’s grown atop underlying crypto assets like Dai, USDC, and USDT when put to use in DeFi platforms like Compound"
 category: blog
 featured-image: /images/blog/defi-yield-farming-og.png
 quote: /images/blog/defi-yield-farming-quote.png
