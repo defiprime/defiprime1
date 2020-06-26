@@ -11,4 +11,4 @@ filter-by: ecosystem, filter, type
 og: /images/og-decentralized-exchanges.png
 cards: exchanges
 ---
-A decentralized exchange (DEX) is a cryptocurrency exchange which operates in a decentralized way, without a central authority.
+A decentralized exchange ([DEX](/dex-volume)) is a cryptocurrency exchange which operates in a decentralized way, without a central authority.
