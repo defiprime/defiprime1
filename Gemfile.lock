@@ -55,6 +55,8 @@ GEM
       nokogiri (~> 1.6)
       progressbar (~> 1.9)
       verbal_expressions (~> 0.1.5)
+    jekyll-feed (0.13.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-paginate-v2 (3.0.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-random (0.0.1)
@@ -114,6 +116,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.0)
   jekyll-algolia
+  jekyll-feed
   jekyll-lazy-load-image!
   jekyll-paginate-v2
   jekyll-random (~> 0.0.1)
