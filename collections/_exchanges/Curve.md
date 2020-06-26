@@ -11,4 +11,5 @@ coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/CurveFinance
 github: https://github.com/curvefi/curve-contract
+analytics: https://explore.duneanalytics.com/embed/query/4177/visualization/8129?api_key=IwmzBnSTA6LFcqLYy1f5HQRiR3iDrNhOD8895hJP
 ---

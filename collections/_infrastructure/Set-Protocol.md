@@ -10,4 +10,5 @@ coltitle:  "Infrastructure"
 colpermalink: infrastructure
 twitter: https://twitter.com/SetProtocol
 github: https://github.com/setprotocol
+analytics: https://explore.duneanalytics.com/embed/query/4173/visualization/8118?api_key=mi6UDllgF1mvTGnwwA6AZVYei7qPZo6HxYuWUVgu
 ---

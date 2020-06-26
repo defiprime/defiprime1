@@ -9,4 +9,5 @@ product-description: TokenSets is the asset management platform with tokenized t
 coltitle:  "Asset Management Tools"
 colpermalink: assets-management-tools
 twitter: https://twitter.com/SetProtocol
+analytics: https://explore.duneanalytics.com/embed/query/4173/visualization/8118?api_key=mi6UDllgF1mvTGnwwA6AZVYei7qPZo6HxYuWUVgu
 ---
