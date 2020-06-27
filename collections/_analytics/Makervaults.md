@@ -4,7 +4,7 @@ product-title: Makervaults
 product-url: http://makervaults.descipher.io/
 image: /images/output_md/makervaults.descipher.io.png
 ecosystem: ethereum
-product-description: MakerDAO multicollateral DAI Vaults system wide health dashboard.
+product-description: MakerDAO multicollateral DAI Vaults system-wide health dashboard.
 coltitle:  "Analytics"
 colpermalink: defi-analytics
 ---
