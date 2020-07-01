@@ -11,4 +11,5 @@ coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/matchaxyz
 github: https://github.com/0xProject
+analytics: https://explore.duneanalytics.com/embed/query/5352/visualization/10546?api_key=pCnt3aDnI2OHkglB2qT53cruSNmj3IrPU9bxUjny
 ---
