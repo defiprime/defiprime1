@@ -60,9 +60,8 @@
                                     </div>
                 {% assign link_presented = page.product-description | markdownify | split: '<a' | size %}
                 <div {% if link_presented == 1 %} style='flex: 0' {% endif %}> {{ page.product-description | markdownify }}
-<p>
-                  {% if page.type == 'cefi'   %}
-                          {{ page.product-title }} is a custodial, CeFi product.
+                  {% if page.ticker  %}<p>
+                          {{ page.product-title }} token: <a href="https://1inch.exchange/#/r/0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1/ETH/{{ page.ticker }}">${{ page.ticker }}</a>.
                           {% endif %} </p>
                 </div>
             </div>
@@ -72,7 +71,7 @@
         <object id="obj" data="{{page.analytics}}"  style="width:100%;    height: 564px;"  type="text/html">
           {{ page.product-title }} Stats, Daily Users
         </object>
-        
+
         {% endif %}
 
         <h3 class='give-thoughts-header'>What do you think of {{ page.product-title }} product?</h3>

@@ -9,4 +9,5 @@ coltitle:  "Infrastructure"
 colpermalink: infrastructure
 twitter: https://twitter.com/UMAprotocol
 github: https://github.com/umaprotocol
+ticker: UMA
 ---

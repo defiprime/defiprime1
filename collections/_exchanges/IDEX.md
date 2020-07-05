@@ -9,4 +9,5 @@ product-description: IDEX is a non-custodial exchange that integrates with any c
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/idexio
+ticker: IDEX
 ---

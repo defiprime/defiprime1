@@ -12,4 +12,5 @@ colpermalink: exchanges
 twitter: https://twitter.com/BalancerLabs
 github: https://github.com/balancer-labs/
 analytics: https://explore.duneanalytics.com/embed/query/4171/visualization/8115?api_key=DvVRTNM70csWdnF9jorVDUWJMo38jfTZBNGzuQmj
+ticker: BAL
 ---

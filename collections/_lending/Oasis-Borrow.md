@@ -10,4 +10,5 @@ product-description: Oasis Borrow allows you to lock your tokens as collateral t
 coltitle:  "Lending"
 colpermalink: decentralized-lending
 twitter: https://twitter.com/MakerDAO
+ticker: MKR
 ---

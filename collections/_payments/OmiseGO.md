@@ -10,4 +10,5 @@ colpermalink: payments
 filter: Layer 2
 twitter: https://twitter.com/omise_go
 github: https://github.com/omisego
+ticker: OMG
 ---

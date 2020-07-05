@@ -8,5 +8,6 @@ product-description: The Bancor Protocol ensures continuous liquidity and real-t
 filter: protocols
 coltitle:  "Infrastructure"
 colpermalink: infrastructure
-twitter: https://twitter.com/bancor
+twitter: https://twitter.com/Bancor
+github: https://github.com/bancorprotocol/
 ---

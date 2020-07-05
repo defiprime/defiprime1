@@ -8,4 +8,5 @@ product-description: Aragon allows you to create global, bureaucracy-free compan
 coltitle:  "DAO"
 colpermalink: dao
 twitter: https://twitter.com/aragonproject
+ticker: ANT
 ---

@@ -10,4 +10,5 @@ coltitle:  "Infrastructure"
 colpermalink: infrastructure
 twitter: https://twitter.com/melonprotocol
 github: https://github.com/melonproject
+ticker:  MLN
 ---

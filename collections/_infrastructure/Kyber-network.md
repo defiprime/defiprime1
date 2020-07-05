@@ -9,4 +9,5 @@ filter: protocols
 coltitle:  "Infrastructure"
 colpermalink: infrastructure
 analytics: https://explore.duneanalytics.com/embed/query/2997/visualization/5790?api_key=HHhfNvIIhiL3oc0NpRLaA7akSjHySN2a9D8tWros
+ticker: KNC
 ---

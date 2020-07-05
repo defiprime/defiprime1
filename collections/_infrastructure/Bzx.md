@@ -10,4 +10,5 @@ coltitle:  "Infrastructure"
 colpermalink: infrastructure
 twitter: https://twitter.com/b0xNet
 github: https://github.com/bZxNetwork
+ticker: BZRX
 ---

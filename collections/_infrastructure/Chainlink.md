@@ -10,4 +10,5 @@ coltitle:  "Infrastructure"
 colpermalink: infrastructure
 twitter: https://twitter.com/chainlink
 github: https://github.com/smartcontractkit/chainlink
+ticker: LINK
 ---

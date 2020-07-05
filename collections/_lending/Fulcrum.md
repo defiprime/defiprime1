@@ -12,4 +12,5 @@ type: non-custodial
 twitter: https://twitter.com/bzxhq
 github: https://github.com/bZxNetwork
 analytics: https://explore.duneanalytics.com/embed/query/3259/visualization/6292?api_key=P8W1yw4l7Woe2aHEUqXKNK6VSpUdOAvciRwt5tta
+ticker: BZRX
 ---

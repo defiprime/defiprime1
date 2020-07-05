@@ -10,4 +10,5 @@ coltitle:  "Infrastructure"
 colpermalink: infrastructure
 twitter: https://twitter.com/renprotocol
 github: https://github.com/renproject
+ticker: REN
 ---

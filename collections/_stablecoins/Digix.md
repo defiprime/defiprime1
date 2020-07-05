@@ -10,4 +10,5 @@ coltitle: Stablecoins
 colpermalink: stablecoins
 twitter: https://twitter.com/@DigixGlobal
 github: https://github.com/digixglobal
+ticker: DGX
 ---

@@ -10,4 +10,5 @@ colpermalink: payments
 filter: Layer 2
 twitter: https://twitter.com/maticnetwork
 github: https://github.com/maticnetwork
+ticker: MATIC
 ---

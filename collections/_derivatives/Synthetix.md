@@ -10,4 +10,5 @@ coltitle:  "Derivatives"
 colpermalink: derivatives
 twitter: https://twitter.com/synthetix_io
 analytics: https://explore.duneanalytics.com/embed/query/2961/visualization/5722?api_key=wfCADWmqi3i7pw6QqN3H93ZOXAx6dfshaLYoVGvH
+ticker: SNX
 ---

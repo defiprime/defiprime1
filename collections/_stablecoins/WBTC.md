@@ -8,4 +8,5 @@ product-description: Wrapped Bitcoin (WBTC) is the ERC20 token backed 1&#58;1 wi
 filter: Crypto-backed
 coltitle: Stablecoins
 colpermalink: stablecoins
+ticker: WBTC
 ---

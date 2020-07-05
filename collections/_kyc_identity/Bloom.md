@@ -8,4 +8,5 @@ product-description: Bloom is a blockchain solution for secure identity and cred
 coltitle:  "KYC & Identity"
 colpermalink: decentralized_kyc_identity
 twitter: https://twitter.com/bloom
+ticker: BLT
 ---

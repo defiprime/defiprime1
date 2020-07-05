@@ -9,4 +9,5 @@ filter: Fiat-backed
 coltitle: Stablecoins
 colpermalink: stablecoins
 twitter: https://twitter.com/circlepay
+ticker: USDC
 ---

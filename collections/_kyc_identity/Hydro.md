@@ -1,5 +1,5 @@
 ---
-git-date: 
+git-date:
 product-title: Hydro
 product-url: https://projecthydro.org/
 image: /images/output_md/httpsprojecthydroorg.png
@@ -9,4 +9,5 @@ coltitle:  "KYC & Identity"
 colpermalink: decentralized_kyc_identity
 twitter: https://twitter.com/hydroblockchain
 github: https://github.com/hydroblockchain/
+ticker: HYDRO
 ---

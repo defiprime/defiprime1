@@ -9,4 +9,5 @@ coltitle:  "Payments"
 colpermalink: payments
 twitter: https://twitter.com/xdaichain
 github: https://github.com/poanetwork
+ticker: STAKE
 ---

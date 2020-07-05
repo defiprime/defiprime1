@@ -1,5 +1,5 @@
 ---
-git-date: 
+git-date:
 product-title: Nexus Mutual
 product-url: https://www.nexusmutual.io/
 image: /images/output_md/httpswwwnexusmutualio.png
@@ -9,4 +9,5 @@ coltitle:  "Insurance"
 colpermalink: insurance
 twitter: https://twitter.com/NexusMutual
 github: https://github.com/somish/NexusMutual
+ticker: NXM
 ---

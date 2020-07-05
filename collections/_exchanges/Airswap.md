@@ -11,4 +11,5 @@ coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/airswap
 github: https://github.com/airswap/developers
+ticker: AST
 ---

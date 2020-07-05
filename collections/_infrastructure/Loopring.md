@@ -10,4 +10,5 @@ coltitle:  "Infrastructure"
 colpermalink: infrastructure
 twitter: https://twitter.com/loopringorg
 github: https://github.com/Loopring
+ticker: LRC
 ---

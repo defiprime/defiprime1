@@ -11,4 +11,5 @@ coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/loopringorg
 github: https://github.com/Loopring
+ticker: LRC
 ---

@@ -12,4 +12,6 @@ filter: No trading fees, Ethereum, ERC-20 Tokens
 twitter: https://twitter.com/b0xNet
 github: https://github.com/bZxNetwork
 analytics: https://explore.duneanalytics.com/embed/query/3259/visualization/6292?api_key=P8W1yw4l7Woe2aHEUqXKNK6VSpUdOAvciRwt5tta
+ticker: BZRX
+
 ---
