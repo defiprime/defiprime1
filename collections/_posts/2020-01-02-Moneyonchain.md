@@ -11,6 +11,8 @@ featured-image: /images/blog/moneyonchain-og.png
 quote: /images/blog/moneyonchain-quote.png
 intro: "Max, the co-founder of Money On Chain, shared the story of building a stable asset platform using RSK"
 author: Defiprime
+tags: ['Interview']
+
 ---
 Max, the co-founder of Money On Chain, shared the story of building a stable asset platform using RSK.
 

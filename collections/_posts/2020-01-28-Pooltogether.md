@@ -11,6 +11,7 @@ featured-image: /images/blog/pooltogether-og.png
 quote: /images/blog/pooltogether-quote.png
 intro: "Leighton Cusack, shared the PoolTogether backstory starting from ETHDenver 2019, and told us about the future plans"
 author: Defiprime
+tags: ['Interview', 'VC-founded' ]
 ---
 Leighton Cusack shared the PoolTogether backstory starting from ETHDenver 2019 and told us about the future plans.
 

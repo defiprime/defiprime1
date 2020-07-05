@@ -11,6 +11,7 @@ featured-image: /images/blog/defi-yield-farming-og.png
 quote: /images/blog/defi-yield-farming-quote.png
 intro: "Inside Yield Farming: A Beginner's Guide to the Latest Craze in DeFi"
 author: Peaster
+tags: ['DeFi Guides', 'Synthetix', 'Compound', 'Balancer', 'Curve', 'Ren']
 ---
 Actual farmers measure yield as the total amount of a crop that’s grown. Accordingly, DeFi proponents have now latched onto the farming metaphor and memed into existence “yield farmers,” i.e. folks who measure yield as the amount of interest that’s grown atop underlying crypto assets like Dai, USDC, and USDT when put to use in DeFi platforms like Compound.
 

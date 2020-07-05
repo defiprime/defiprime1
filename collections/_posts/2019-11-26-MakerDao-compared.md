@@ -11,6 +11,7 @@ featured-image: /images/blog/makerdao-compared-og.png
 quote: /images/blog/makerdao-compared-quote.png
 intro: "Even within the narrow niche of decentralized stablecoins, DeFi is beginning to offer you some meaningful choices. Here’s a comparison between the established MakerDAO and the upstart Equilibrium"
 author: melikhov
+tags: ['DeFi Guides']
 ---
 Cryptocurrency at large has a volatility problem, and decentralized stablecoins like MakerDAO’s DAI and Equilibrium’s EOSDT each present their own compelling solutions to it.
 

@@ -11,6 +11,7 @@ featured-image: /images/blog/comparing-insurance-og.png
 quote: /images/blog/comparing-insurance-quote.png
 intro: "Hugh Karp compared various insurance like solutions existing right now in DeFi space"
 author: karp
+tags: ['DeFi Guides']
 ---
 I regularly get questions like, could you use a prediction market for insurance instead? Or how does a financial derivative compare to what you’re doing at [Nexus Mutual](https://nexusmutual.io/)?
 

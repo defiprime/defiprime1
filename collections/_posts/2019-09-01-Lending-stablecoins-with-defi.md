@@ -11,6 +11,7 @@ featured-image: /images/blog/stablecoinslending-og.png
 quote: /images/blog/stablecoinslending-quote.png
 intro: 'The idea is simple I will put $100 worth into various DeFi lending products, and going to track results over the year'
 author: Defiprime
+tags: ['DeFi Guides']
 ---
 I've been advocating for DeFi for a long enough time and tested by myself most of the products presented at DeFiprime. But now I think it's the right time for skin in the game experiment.  
 

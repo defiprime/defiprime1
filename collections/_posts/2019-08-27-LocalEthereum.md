@@ -11,6 +11,8 @@ featured-image: /images/blog/localethereum-og.png
 quote: /images/blog/localethereum-quote.png
 intro: 'Michael Foster, talks about building decentralized fiat on-ramp for ETH and the future of decentralized finances.'
 author: Defiprime
+tags: ['Interview']
+
 ---
 Michael Foster, talks about building decentralized fiat on-ramp for ETH and the future of decentralized finances.
 

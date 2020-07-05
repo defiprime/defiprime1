@@ -11,6 +11,8 @@ featured-image: /images/blog/fortmatic-og.png
 quote: /images/blog/fortmatic-quote.png
 intro: Fortmatic co-founder, Sean Li talks about building an SDK that enables users across the globe to interact with dApps using just their phone number.
 author: Defiprime
+tags: ['Interview', 'Infrastructure']
+
 ---
 Fortmatic co-founder, Sean Li talks about building an SDK that enables users across the globe to interact with dApps using just their phone number.
 

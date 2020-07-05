@@ -11,6 +11,7 @@ featured-image: /images/blog/defi-podcasts-og.png
 quote: /images/blog/defi-podcasts-quote.png
 intro: "This list highlights our favorite podcasts for learning about DeFi"
 author: goldfarb
+tags: ['DeFi List']
 ---
 The explosion of popularity in podcasting in recent years has seen the launch of podcasts on nearly every subject imaginable and DeFi offers no exception.
 

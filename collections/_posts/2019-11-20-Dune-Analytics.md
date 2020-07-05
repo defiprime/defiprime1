@@ -11,6 +11,7 @@ featured-image: /images/blog/dune-analytics-og.png
 quote: /images/blog/dune-analytics-quote.png
 intro: "Fredrik told us the backstory of Dune Analytics and shared plans for lowering the bar for anyone who wants to explore aggregated on-chain data insights for Ethereum smart contracts."
 author: Defiprime
+tags: ['Interview']
 ---
 Fredrik told us the backstory of Dune Analytics and shared plans for lowering the bar for anyone who wants to explore aggregated on-chain data insights for Ethereum smart contracts.
 

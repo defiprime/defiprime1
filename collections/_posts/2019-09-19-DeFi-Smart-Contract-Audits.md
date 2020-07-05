@@ -11,6 +11,7 @@ featured-image: /images/blog/defi-smart-contract-audits-og.png
 quote: /images/blog/defi-smart-contract-audits-quote.png
 intro: 'When it comes to “being your own bank,” having the ability to evaluate the security of the tools at your disposal becomes a necessity.'
 author: Defiprime
+tags: ['DeFi Guides']
 ---
 When it comes to "being your own bank," having the ability to evaluate the security of the tools at your disposal becomes a necessity.
 

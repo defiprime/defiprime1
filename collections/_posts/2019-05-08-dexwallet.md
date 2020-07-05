@@ -1,5 +1,5 @@
 ---
-git-date: 
+git-date:
 layout: blog
 title:  "DexWallet"
 permalink: dexwallet
@@ -11,6 +11,8 @@ featured-image: /images/blog/dexwallet-og.png
 quote: /images/blog/dexwallet-quote.png
 intro: Nicola Di Marco Founder & Designer from DexWallet talking about building mobile wallet for the decentralized finance with integrated borrowing, lending, exchange, and native in-wallet Staking for everyone.
 author: Defiprime
+tags: ['Interview', 'Asset Management']
+
 ---
 Today we talking with Nicola Di Marco from DexWallet about building mobile wallet for the decentralized finance.
 

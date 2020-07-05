@@ -1,5 +1,5 @@
 ---
-git-date: 
+git-date:
 layout: blog
 title:  Nexus Mutual
 permalink: nexus-mutual
@@ -11,6 +11,7 @@ featured-image: /images/blog/nexus-og.png
 quote: /images/blog/nexus-quote.png
 intro: Hugh Karp talks about Nexus as a part of the best practice standard for smart contract security.
 author: Defiprime
+tags: ['Interview']
 ---
 Hugh Karp talks about Nexus as a part of the best practice standard for smart contract security.
 

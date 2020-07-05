@@ -11,6 +11,8 @@ featured-image: /images/blog/synthetix-og.png
 quote: /images/blog/synthetix-quote.png
 intro: Kain Warwick, founder of Synthetix talks about on-chain synthetic assets.   
 author: Defiprime
+tags: ['Interview', 'Synthetix', 'DAO governed', 'DEXs', 'Governance Token']
+
 ---
 Kain Warwick, founder of Synthetix talks about on-chain synthetic assets.
 

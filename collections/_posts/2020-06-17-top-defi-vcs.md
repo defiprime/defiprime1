@@ -11,6 +11,7 @@ featured-image: /images/blog/defi-vcs-og.png
 quote: /images/blog/defi-vcs-quote.png
 intro: "Here’s a non-exhaustive list of some of the companies who have made big splashes in the young but maturing DeFi arena to date"
 author: Peaster
+tags: ['DeFi List']
 ---
 As Ethereum’s DeFi ecosystem continues to heat up, the specter of DeFi VCs — and their potential profits — also grows. Here’s a non-exhaustive list of some of the companies who have made big splashes in the young but maturing DeFi arena to date.
 

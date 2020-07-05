@@ -11,6 +11,8 @@ featured-image: /images/blog/bandprotocol-og.png
 quote: /images/blog/bandprotocol-quote.png
 intro: "Soravis shared his thoughts on DeFi core values and told us how Band Protocol bring data available on-chain."
 author: Defiprime
+tags: ['Interview', 'VC-founded', 'Oracles']
+
 ---
 Soravis shared his thoughts on DeFi core values and told us how Band Protocol bring data available on-chain.
 
