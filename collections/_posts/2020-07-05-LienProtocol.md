@@ -16,7 +16,7 @@ The Lien Protocol team talks about their new stablecoin system, which doesn’t 
 
 ### Hello! What's your background, and what are you working on?
 
-Our name is Lien. Our core members include people who previously worked at crypto-related companies as engineers, traders, researchers, and strategists. Our team also includes former bankers, analysts, and quants. Everybody on our team believes in crypto as a technology and its philosophy, which we think will change the world and how we all approach identity.
+Our name is [Lien](https://lien.finance/). Our core members include people who previously worked at crypto-related companies as engineers, traders, researchers, and strategists. Our team also includes former bankers, analysts, and quants. Everybody on our team believes in crypto as a technology and its philosophy, which we think will change the world and how we all approach identity.
 
 Lien is a Protocol that can mint a crypto-backed stablecoin without over-collateralization and governance. Instead of requiring users to pledge excess collateral to produce stablecoins, the Lien Protocol enables users to mint two types of derivative tokens, which are called SBT and LBT, from ETH. Both these tokens have a strike price and a maturity date, and they allow holders to receive certain amounts of ETH according to the ETH/USD price at the maturity date.
 
@@ -38,7 +38,7 @@ Out of coincidence or pure luck, an idea struck us in early 2020. After brushing
 
 ### What went into building the Lien Protocol?
 
-According to our current plan, we will be able to release the Lien Protocol to mainnet towards the end of August. An initial round of code audit was conducted by Consensys Diligence and we have already received feedback. We are in the process of diligently addressing the feedback from the initial audit and preparing for the second round of code audit. We will be ready to release to mainnet once we finish addressing any findings from the second code audit.
+According to our current plan, we will be able to release the [Lien Protocol](https://lien.finance/) to mainnet towards the end of August. An initial round of code audit was conducted by Consensys Diligence and we have already received feedback. We are in the process of diligently addressing the feedback from the initial audit and preparing for the second round of code audit. We will be ready to release to mainnet once we finish addressing any findings from the second code audit.
 
 While we were building the Lien Protocol, a lot of DeFi products were released -- one after another it seemed. We strongly believe that our protocol will be among those that will benefit the market most. In addition to the protocol itself, we developed a DEX platform so that users can trade assets generated using the Lien Protocol without worrying about liquidity. Existing DEX platforms require LPs to provide liquidity in advance, which is disadvantageous to the LPs. We designed our DEX platform to mitigate front-running and cater to LPs. We would like users to trade assets minted from Lien using this DEX platform, which we call Lien FairSwap.
 
@@ -62,7 +62,7 @@ We call this “financial imagination” among our team. Our hope is that the re
 
 ### What are your goals for the future?
 
-Our ultimate goal is helping to lead the world into the future by providing people options to be freed from overbearing governance systems. To achieve that, we set our product goal as creating a stablecoin that could be widely used in the world. We’ve brought ideas from traditional finance to the DeFi world to create a new financial system that can only be done in DeFi. Lien Protocol is just a tiny step towards that goal.
+Our ultimate goal is helping to lead the world into the future by providing people options to be freed from overbearing governance systems. To achieve that, we set our product goal as creating a stablecoin that could be widely used in the world. We’ve brought ideas from traditional finance to the DeFi world to create a new financial system that can only be done in DeFi. [Lien Protocol](https://lien.finance/) is just a tiny step towards that goal.
 
 ### What are your future thoughts for the DeFi market?
 
