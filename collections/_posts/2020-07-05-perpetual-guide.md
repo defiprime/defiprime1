@@ -53,12 +53,7 @@ Just as dYdX’s spot markets trade separately from the platform’s perpetual m
 
 The funding rate is the periodic rate paid between BTC-USD Perpetual long positions and short positions to keep the contract’s price tethered to the bitcoin price. On dYdX, these algorithmic rates are paid by the second and are updated hourly. These payments are dispensed in proportion to traders’ positions and are only paid among traders. If BTC-USD Perpetual contracts are trading above the spot market price of BTC, then long traders pay short traders; if these contracts are trading below the spot market price, short traders pay long traders.
 
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alttext](images/image1.jpg "imagetooltip")
+![](/images/blog/dydxperp/image15.jpg)
 
 
 
@@ -91,50 +86,27 @@ With that said, you will need to have a browser-compatible Ethereum wallet to us
 
 Once your wallet is ready, you can navigate to the dYdX exchange and move your mouse to the page’s top right corner where you will find a “Connect Wallet” button.
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+![](/images/blog/dydxperp/image8.jpg)
 
-
-![alttext](images/image2.png "imagetooltip")
 
 
 Click on that button, and you’ll be given a drop down menu of compatible wallets. We’ll select “MetaMask” here.
 
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alttext](images/image3.png "imagetooltip")
+![](/images/blog/dydxperp/image3.jpg)
 
 
 After clicking on your wallet of choice, your wallet tab will show “Connected” in green. Now you’re ready to deposit funds into this address for trading.
 
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alttext](images/image4.png "imagetooltip")
-
+![](/images/blog/dydxperp/image2.jpg)
 
 Before we get to explaining the depositing process, let’s walk through the signing process you’ll undertake before you can trade perpetuals on dYdX. Since dYdX is prohibited to U.S. users, you’ll be prompted with a “Terms of Service” pop-up once you click on the “Perpetuals” tab at the top of the exchange. You will have to click through four agreements to proceed. The first two agreements deal with confirming you’re not a U.S. citizen, while the last two are trading guidances.
 
-
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alttext](images/image5.png "imagetooltip")
-
+![](/images/blog/dydxperp/image1.jpg)
 
 Once you click through these agreements and login, your browser-compatible wallet will be prompted with a signature request to confirm the login. Sign the request, and then you’re ready to start trading once it’s processed.
 
 
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alttext](images/image6.png "imagetooltip")
+![](/images/blog/dydxperp/image18.jpg)
 
 
 
@@ -145,22 +117,13 @@ You’ll need to have some ether (ETH) and USDC or USDT to trade BTC-USD Perpetu
 
 Go to MetaMask (or your wallet of choice) and copy your trading wallet’s address. On MetaMask, you can do this simply by clicking on your address a single time.
 
-
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alttext](images/image7.png "imagetooltip")
+![](/images/blog/dydxperp/image16.jpg)
 
 
 At this point, you navigate to the exchange where you’ve purchased funds. We’ll use Coinbase for this example. Go into your USDC wallet and move your mouse to the right side of the page where you’ll find the “Send / Receive” widget. Type in how much USDC you’d like to transfer, and in the address line paste in the wallet address you copied earlier. Your screen will look something like this:
 
 
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alttext](images/image8.png "imagetooltip")
+![](/images/blog/dydxperp/image12.jpg)
 
 
 Click “Send.” If you’re using Coinbase, you’ll be asked one more time to confirm the send. If everything looks good, press “Send Now” and your funds will be on their way. Repeat this same transaction process with the ETH you’ve purchased until your dYdX trading address has both ETH and USDC in it. Then, it’s time to place orders.
@@ -170,42 +133,23 @@ Click “Send.” If you’re using Coinbase, you’ll be asked one more time to
 
 Since dYdX’s margin trading accounts and perpetuals accounts must be collateralized separately, you’ll need to deposit the trading capital you want to put at stake into your perpetuals account first to make any orders. You do this by navigating to the upper left-hand corner of the exchange’s “Perpetuals” page where you’ll see the “Equity” and “Free Collateral” dashboard, which looks like so:
 
-
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alttext](images/image9.png "imagetooltip")
+![](/images/blog/dydxperp/image17.jpg)
 
 
 Here, click on the “Deposit” button, at which point you’ll be faced with this prompt:
 
 
-
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alttext](images/image10.png "imagetooltip")
+![](/images/blog/dydxperp/image13.jpg)
 
 
 You’ll have to enable your USDC for trading on dYdX, so here you’ll click “Enable USDC” to shoot off a small transaction. Once that goes through, you can start depositing funds into your perpetuals account. In the picture below, I can be seen depositing 50 USDC.
 
-
-
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alttext](images/image11.png "imagetooltip")
+![](/images/blog/dydxperp/image14.jpg)
 
 
 Once your funds arrive in your account, your Equity and Free Collateral dashboard should look something like this:
 
-
-
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alttext](images/image12.png "imagetooltip")
+![](/images/blog/dydxperp/image20.jpg)
 
 
 (Remember: there is a small fee to open a Perpetuals account, \
@@ -215,12 +159,7 @@ instead of 50 USDC)
 
 With your equity ready to go, you can start placing orders. Look directly below the Equity and Free Collateral dashboard to find the order menu, which appears like so:
 
-
-
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alttext](images/image13.png "imagetooltip")
+![](/images/blog/dydxperp/image7.jpg)
 
 
 The “Buy” menu is where you can take BTC-USD Perpetual long positions, and “Sell” is where you can take short positions.
