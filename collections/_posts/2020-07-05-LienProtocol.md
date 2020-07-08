@@ -14,6 +14,9 @@ author: Defiprime
 ---
 The Lien Protocol team talks about their new stablecoin system, which doesn’t require over-collateralization or governance.
 
+_Disclosure: This article was sponsored by Lien Protocol._
+
+
 ### Hello! What's your background, and what are you working on?
 
 Our name is [Lien](https://lien.finance/). Our core members include people who previously worked at crypto-related companies as engineers, traders, researchers, and strategists. Our team also includes former bankers, analysts, and quants. Everybody on our team believes in crypto as a technology and its philosophy, which we think will change the world and how we all approach identity.
