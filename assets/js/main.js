@@ -205,7 +205,7 @@
 			theme: ['tooltipster-customized'],
 			functionPosition: function(instance, helper, data){
 				var parent = $(helper.origin).closest(".asset_tool_card");
-				
+    
 				//if content wider than container - put in inside
 				if (data.size.width > parent.width()) {
 					data.coord.left = parent.offset().left
@@ -217,7 +217,7 @@
 
 					return data;
 				}
-				
+    
 				//if content go out of the left boundary - shift it inside
 				if (data.coord.left < parent.offset().left) {
 					data.coord.left = parent.offset().left
@@ -236,6 +236,26 @@
 			}
 		});
 	});
+	async function getTopicsAlpha() {
+		const response = await fetch('https://alpha.defiprime.com/latest.json');
+		const responseJson = await response.json();
+		const latestAlpha = $(".latest_alpha");
+		let innerHtml = ``;
+		let color = ``;
+		responseJson.topic_list.topics.forEach((item, index) => {
+			color = index % 3 == 0 ? "orange" : index % 3 == 1 ? "cyan" : "violet";
+			if (index < 6) {
+				innerHtml += `<article class="latest_alpha_link recent-blog-color_${color}">
+				<a href="https://alpha.defiprime.com/t/${item.slug}/${item.id}"  target="_blank">
+					<h2>${item.title}</h2>
+				</a>
+			</article>`;
+			}
+		});
+		latestAlpha.html(innerHtml);
+	}
+	getTopicsAlpha();
+
 	$(".wrapper-buttons .period-button").on("click", function (e) {
 		tablinks = document.getElementsByClassName("period-button");
 		for (i = 0; i < tablinks.length; i++) {
