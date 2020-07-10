@@ -74,6 +74,22 @@ In May 2020, Compound’s creators outlined a COMP token distribution scheme tha
 On the first day of trading, the associated Uniswap pool fielded +14,000 COMP and +3,750 ETH, and the COMP price spiked from $34 to over $60. In the ensuing days, buy pressure pushed that price up as high as $427, though the token has returned to earth after a Coinbase.com listing in late June. At the time of this article’s writing in early July, the COMP price was hovering around $184. The token’s Uniswap listing marked the first time investors were able to buy COMP tokens on the open market. Compound had previously held a $8.2 million seed round in 2018 and a $25 million Series A in 2019.
 
 
+## DXD
+```
+Launch date: May 20th
+DEX: dxtrust.eth.link
+Initial token price: $68
+Current token price: $105
+Current market cap: $2.59 million
+ROI to date: +54%
+```
+Kickstarted by the Gnosis team in March 2019, [DXdao](https://dxdao.eth.link/#/) is a decentralized collective that’s focused on developing DeFi products. So far, DXdao backs and owns projects like decentralized predictions marketplace Omen.eth and the permissionless DEX Mesa.eth.
+
+DXD is the native currency of the DXdao ecosystem and, per its builders, grants token holders with an “economic claim to DXdao’s revenue and … future access to a suite of services and premium features in decentralized applications, such as gasless transactions [...].”
+
+In May 2020, DXdao announced it was launching a “continuous token offering via a bonding curve” to fundraise through the DXD token. As designed, the bonding curve ensures that $300,000 worth of ETH will have been raised upon 12,000 DXD being issued. Those tokens are in addition to the 100,000 DXD pre-mint the DXDao has claimed for itself. Nearly two months into the bonding curve being public, the DXD buy price is above .51 ETH, and the DXD total supply is over 124,000. The tokens can also now be traded on Uniswap, as well.  
+
+
 ## BAL
 ```
 Launch date: June 23rd
@@ -91,24 +107,6 @@ In March 2020, Balancer Labs, the team behind the eponymous protocol, raised $3 
 Of that total supply, 25 million BAL tokens were proposed for Balancer’s founders and key contributors, while 75 million tokens were allotted to be distributed mainly to liquidity providers going forward. 145,000 BAL were slated to be distributed to Balancer liquidity providers weekly, which equates to roughly 7.5 million BAL a year in so-called liquidity mining potential. This distribution schedule will inflate the founder’s initial 25 million token supply by some 30%, but the idea is to use these funds to quickly bootstrap a teeming community of Balancer users. The protocol’s liquidity mining campaign kicked off on June 1st, and the first BAL distributions started on June 23rd.
 
 For now, the BAL token supply minted so far is over 35 million, which covers a 5 million BAL ecosystem fund and a 5 million BAL fundraising fund, i.e. tokens for future investment rounds. Upon being listed on Balancer, Uniswap, and 1inch on June 23rd, the BAL price quickly spiked up to above $15 per token. After peaking over $17, the BAL price settled down to the $10.5 range within two weeks.
-
-
-## DXD
-```
-Launch date: May 20th
-DEX: dxtrust.eth.link
-Initial token price: $68
-Current token price: $105
-Current market cap: $2.59 million
-ROI to date: +54%
-```
-Kickstarted by the Gnosis team in March 2019, [DXdao](https://dxdao.eth.link/#/) is a decentralized collective that’s focused on developing DeFi products. So far, DXdao backs and owns projects like decentralized predictions marketplace Omen.eth and the permissionless DEX Mesa.eth.
-
-DXD is the native currency of the DXdao ecosystem and, per its builders, grants token holders with an “economic claim to DXdao’s revenue and … future access to a suite of services and premium features in decentralized applications, such as gasless transactions [...].”
-
-In May 2020, DXdao announced it was launching a “continuous token offering via a bonding curve” to fundraise through the DXD token. As designed, the bonding curve ensures that $300,000 worth of ETH will have been raised upon 12,000 DXD being issued. Those tokens are in addition to the 100,000 DXD pre-mint the DXDao has claimed for itself. Nearly two months into the bonding curve being public, the DXD buy price is above .51 ETH, and the DXD total supply is over 124,000. The tokens can also now be traded on Uniswap, as well.  \
-
-
 
 ## DeFi Tokens Coming Soon
 
