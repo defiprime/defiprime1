@@ -122,4 +122,13 @@ Notable investments: Arweave, Coinbase, Numerai, OpenBazaar
 - Website: [usv.com](https://www.usv.com/)
 - Twitter: [@usv](https://twitter.com/usv)
 
+### Lemniscap
+Lemniscap, founded in 2017, is a VC firm specialising in investments in emerging cryptoassets & blockchain startups. Their investments span across the full stack with focus on DeFi, privacy and scalability protocols.
+
+Notable investments: Futureswap, KAVA, The Graph, StakerDAO, Dharma
+
+- Website: [lemniscap.com](https://lemniscap.com/ )
+- Twitter: [@lemniscap](https://twitter.com/lemniscap)
+
+
 The future of DeFi has never been more promising than it is today, and some VCs are taking notice and getting ahead of the curve. The aforementioned firms are well-positioned because they’re proven early arrivers in the arena, since DeFi’s wider enterprise possibilities are only just beginning. That said, expect many more VCs to dive into the ecosystem in the years ahead.
