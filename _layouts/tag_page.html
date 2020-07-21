@@ -36,7 +36,9 @@
 
 <body class="blog-page">
     {% include header.html %}
-
+    <!-- Main -->
+    <div id="main">
+      <div class="inner">
 
     <header>
     <h1 class="align-center"><span class="text-green">{{ page.tag }}</span> @ DeFi <span class="text-orange">Blog</span></h1>
@@ -78,7 +80,8 @@
         <a class="button" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Previous</a>
       {% endif %}
 
-
+      </div>
+    </div>
     {% include footer.html %}
 
 </body>
