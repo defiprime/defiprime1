@@ -96,19 +96,6 @@
           }
         }
       }
-      .tags {
-        display: flex;
-        .tag {
-          position: relative;
-          padding: 8px 12px;
-          color: #ffffff;
-          background-color: #ff961c;
-          margin: 0 8px 0 0;
-          right: 0;
-          font-size: 14px;
-          line-height: 1;
-        }
-      }
       h2,
       h3,
       h4,
@@ -182,6 +169,94 @@
       &:first-child {
         margin-right: 15px;
       }
+    }
+  }
+}
+
+.post {
+  h1 {
+    font-size: 66px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+  .latest {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    margin: 0 auto 75px auto;
+    padding: 0 15px;
+    article {
+      background-color: #ffffff;
+      box-shadow: 0px 0px 8px rgba(41, 41, 132, 0.12);
+      width: calc(50% - 15px);
+      position: relative;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #f2f2f2;
+      transition: all 0.3s;
+
+      &:nth-child(2n-1) {
+        margin-right: 30px;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 6px;
+        height: 100%;
+        background-color: #05d2dd;
+      }
+      &:nth-child(3) {
+        &:before {
+          background-color: #ff961c;
+        }
+      }
+      &:nth-child(4) {
+        &:before {
+          background-color: #8b8bb8;
+        }
+      }
+      &:hover {
+        border: 1px solid #8f68fc;
+        transform: translateY(-8px);
+      }
+      a {
+        display: block;
+        padding: 30px;
+        .title {
+          font-family: "Kanit", sans-serif;
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 1.2;
+          color: #292984;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  max-width: 730px;
+  margin: auto;
+  span {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  a,
+  .tag {
+    position: relative;
+    padding: 8px 12px;
+    color: #ffffff;
+    background-color: #ff961c;
+    margin: 0 8px 0 0;
+    right: 0;
+    font-size: 14px;
+    line-height: 1;
+    &:hover {
+      background-color: #05d2dd;
     }
   }
 }
