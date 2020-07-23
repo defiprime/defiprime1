@@ -189,6 +189,14 @@ header ~ p {
   }
 }
 .product-page {
+    h1 {
+      font-size: 66px;
+      line-height: 1.2;
+      margin-bottom: 30px;
+      @media screen and(max-width: 767px) {
+        font-size: 36px;
+      }
+    }
   h3 {
     font-size: 1em;
   }
