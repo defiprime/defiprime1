@@ -11,7 +11,7 @@
             // Where to render the table of contents.
             tocSelector: '.toc-sidepanel',
             // Where to grab the headings to build the table of contents. 
-            contentSelector: '.article .container-ecosystem',
+            contentSelector: '.article .container-toc',
             listItemClass: 'toc-item',
             orderedList: false,
             // Which headings to grab inside of the contentSelector element.
@@ -21,7 +21,7 @@
             headingsOffset: 10
         });
 
-        var firstHeading = document.querySelectorAll('.article .container-ecosystem h1')[0] || document.querySelectorAll('.article .container-ecosystem h2')[0] || document.querySelectorAll('.article .container-ecosystem h3')[0];
+        var firstHeading = document.querySelectorAll('.article .container-toc h1')[0] || document.querySelectorAll('.article .container-toc h2')[0] || document.querySelectorAll('.article .container-toc h3')[0];
         var sidepanel =  $("#sidepanel");
         var coming_soon = $("#coming_soon");
         $(window).on('scroll', () => {

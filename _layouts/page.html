@@ -2,243 +2,253 @@
 <html lang="en">
 
 <head>
-    <title>{{ page.pagetitle }} </title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 160 }}">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ "/assets/css/tooltipster/tooltipster.bundle.min.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-    <meta property="og:title"
-        content="{% if page.pagetitle %}{{ page.pagetitle | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
-    <meta property="og:description"
-        content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-    <meta property="og:image"
-        content="{% if page.og %}{{ site.url }}{{ page.og }}{% else %}{{ site.url }}/images/og.png{% endif %}" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@defiprime">
-    <meta name="twitter:creator" content="@defiprime">
-    <meta name="twitter:title"
-        content="{% if page.pagetitle %}{{ page.pagetitle | escape }}{% else %}{{ site.title | escape }}{% endif %}">
-    <meta name="twitter:description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 160 }}">
-    <meta name="twitter:image"
-        content="{% if page.og %}{{ site.url }}{{ page.og }}{% else %}{{ site.url }}/images/og.png{% endif %}">
-    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
-        integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
-        crossorigin="anonymous"></script>
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-PB9GWJD');</script>
-        <!-- End Google Tag Manager -->
+  <title>{{ page.pagetitle }} </title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 160 }}">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "/assets/css/tooltipster/tooltipster.bundle.min.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <meta property="og:title"
+    content="{% if page.pagetitle %}{{ page.pagetitle | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
+  <meta property="og:description"
+    content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:image"
+    content="{% if page.og %}{{ site.url }}{{ page.og }}{% else %}{{ site.url }}/images/og.png{% endif %}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@defiprime">
+  <meta name="twitter:creator" content="@defiprime">
+  <meta name="twitter:title"
+    content="{% if page.pagetitle %}{{ page.pagetitle | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+  <meta name="twitter:description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 160 }}">
+  <meta name="twitter:image"
+    content="{% if page.og %}{{ site.url }}{{ page.og }}{% else %}{{ site.url }}/images/og.png{% endif %}">
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+    integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+    crossorigin="anonymous"></script>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PB9GWJD');</script>
+  <!-- End Google Tag Manager -->
 </head>
 
 <body class="product-page">
 
-    {% include header.html %}
-    <article class="article  article--post  content  typeset">
+  {% include header.html %}
+  <!-- Main -->
+  <div id="main">
+    <div class="inner">
+      <article class="article  article--post  content  typeset">
 
-    <h1 class="collection-header">{{ page.h1title }}</h1>
+        <h1>{{ page.h1title }}</h1>
 
-    <div class="custodian_description">
-        {{ content }}
-    </div>
+        <div class="custodian_description">
+          {{ content }}
+        </div>
 
         {% if page.filter-by %}
         <section>
-            <div class="button-group filters-button-group">
-                <button class="button active" data-filter="*">All</button>
-                {% assign items_filters = page.filter-by | split: ", " %}
-                {% for filter in items_filters  %}
-                {% assign filter_buttons = site[page.cards] | group_by: filter | map: "name" |  join: ", " | split: ", " | uniq | where_exp: "item", "item != ''" %}
-                {% for filter_button in filter_buttons  %}
+          <div class="button-group filters-button-group">
+            <button class="button active" data-filter="*">All</button>
+            {% assign items_filters = page.filter-by | split: ", " %}
+            {% for filter in items_filters  %}
+            {% assign filter_buttons = site[page.cards] | group_by: filter | map: "name" |  join: ", " | split: ", " | uniq | where_exp: "item", "item != ''" %}
+            {% for filter_button in filter_buttons  %}
 
-                <button class="button" data-filter="{{filter_button | downcase | replace: ' ', '-' }}">{{filter_button}}</button>
-                {% endfor %}
+            <button class="button"
+              data-filter="{{filter_button | downcase | replace: ' ', '-' }}">{{filter_button}}</button>
+            {% endfor %}
 
-                {% endfor %}
-            </div>
+            {% endfor %}
+          </div>
         </section>
         {% endif %}
 
-    <section id='assets_cards'>
-            {% assign page_cards = site[page.cards] | sort: "featured", "last" %}
+        <section id='assets_cards'>
+          {% assign page_cards = site[page.cards] | sort: "featured", "last" %}
 
-            {% for asset_tool in page_cards  %}
-            {% assign card_filters = '' | split: '' %}
-            {% for filter in items_filters  %}
+          {% for asset_tool in page_cards  %}
+          {% assign card_filters = '' | split: '' %}
+          {% for filter in items_filters  %}
 
-            {% assign filter_names = asset_tool[filter] | downcase | replace: ' ', '-' | split: ",-" %}
-            {% assign card_filters = card_filters | concat: filter_names %}
+          {% assign filter_names = asset_tool[filter] | downcase | replace: ' ', '-' | split: ",-" %}
+          {% assign card_filters = card_filters | concat: filter_names %}
+
+          {% endfor %}
+
+          {% if asset_tool.featured == true %}
+          <div class="article-wrapper featured-wrapper">
+            <div class="featured-header">
+              <span class="featured-product">
+
+                Featured product
+              </span>
+
+              <span class="sponsored">
+                Sponsored
+              </span>
+            </div>
+            {% else %}
+            <div class="article-wrapper">
+              {% endif %}
+
+              <article class="asset_tool_card {{card_filters | join: ' '}}">
+                <a href="{{ asset_tool['product-url']}}" target="_blank" rel="noopener">
+                  <img src="{{ asset_tool['image'] }}">
+                  <button class="visit-website">Visit website</button>
+                </a>
+                <h4><a href="{{ asset_tool['product-url']}}" target="_blank"
+                    rel="noopener">{{ asset_tool["product-title"] }}</a></h4>
+                <div class="card_main_details">
+                  <div class="asset-tool-tags">
+                    {% assign market_tags = asset_tool["ecosystem"] | split: ", " %}
+                    {% for market_tag in market_tags %}
+                    {% case market_tag %}
+                    {% when "ethereum" %}
+                    <span class="tooltip" title="Built on Ethereum or related to Ethereum ecosystem">
+                      <img class="market_icon lazyload" data-src="images/eth.svg" />
+                    </span>
+                    {% when "bitcoin" %}
+                    <span class="tooltip" title="Using Bitcoin ecosystem">
+                      <img class="market_icon lazyload" data-src="images/btc.svg" />
+                    </span>
+                    {% when "tron" %}
+                    <span class="tooltip" title="Built on Tron or related to Tron ecosystem">
+                      <img class="market_icon lazyload" data-src="images/tron.svg" />
+                    </span>
+                    {% when "stellar" %}
+                    <span class="tooltip" title="Built on Stellar or related to Stellar ecosystem">
+                      <img class="market_icon lazyload" data-src="images/stellar.svg" />
+                    </span>
+                    {% when "eos" %}
+                    <span class="tooltip" title="Built on EOS or related to EOS ecosystem">
+                      <img class="market_icon lazyload" data-src="images/eos.svg" />
+                    </span>
+                    {% endcase %}
+                    {% endfor %}
+                    <div class="tags_separator"></div>
+                    {% assign platform_tags = asset_tool["platform"] | split: ", " %}
+                    {% for platform_tag in platform_tags %}
+                    {% case platform_tag %}
+                    {% when "android" %}
+                    <span class="tooltip" title="Mobile wallet for Android">
+                      <img class="platform_icon lazyload" data-src="/images/android.svg">
+                    </span>
+                    {% when "web" %}
+                    <span class="tooltip" title="Browser based wallet">
+                      <img class="platform_icon lazyload" data-src="/images/web.svg">
+                    </span>
+                    {% when "ios" %}
+                    <span class="tooltip" title="Mobile wallet for iOS">
+                      <img class="platform_icon lazyload" data-src="/images/ios.svg">
+                    </span>
+                    {% endcase %}
+                    {% endfor %}
+                    {% assign type_tags = asset_tool["type"] | split: ", " %}
+                    {% for type_tag in type_tags %}
+                    {% if type_tag == "cefi" %}
+                    <span class="tooltip"
+                      title="CeFi product. CeFi products are custodial, use centralized price feeds, initiate margin calls centrally, centrally determine interest rates, and centrally provide liquidity for their margin calls.">
+                      <img class="market_icon lazyload" data-src="images/sefi.svg" />
+                    </span>
+                    {% else %}
+                    <span class="tooltip" title="Non-custodial">
+                      <img class="market_icon lazyload" data-src="images/non_custodial.svg" />
+                    </span>
+                    {% endif %}
+                    {% endfor %}
+                  </div>
+                  <p>{{ asset_tool["product-description"] | markdownify | remove: '<p>' | remove: '</p>' }}
+                  </p>
+                  <div title="Would you recommend this product?" class="comments">
+                    <a href="/product/{{ asset_tool.product-title | slugify: 'latin'}}">
+                      {% include icons/comment.svg %}
+                      <span class="gc-counter"
+                        data-url="{{ site.url }}/product/{{ asset_tool.product-title | slugify: 'latin' }}">0</span>
+                      <span class="tip"><span class="icon">👈</span> What do you think?</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div> <!--  /div end for div.article-wrapper -->
 
             {% endfor %}
+        </section>
 
-            {% if asset_tool.featured == true %}
-                <div class="article-wrapper featured-wrapper">
-                    <div class="featured-header">
-                        <span class="featured-product">
+      </article>
 
-                            Featured product
-                        </span>
+      <script src="/assets/js/page.js"></script>
 
-                        <span class="sponsored">
-                            Sponsored
-                        </span>
-                    </div>
-            {% else %}
-                <div class="article-wrapper">
-            {% endif %}
-
-                    <article class="asset_tool_card {{card_filters | join: ' '}}">
-                <a href="{{ asset_tool['product-url']}}" target="_blank" rel="noopener"><img src="{{ asset_tool['image'] }}" ></a>
-                <h4><a href="{{ asset_tool['product-url']}}" target="_blank" rel="noopener">{{ asset_tool["product-title"] }}</a></h4>
-                <div class="card_main_details">
-                    <div class="asset-tool-tags">
-                        {% assign market_tags = asset_tool["ecosystem"] | split: ", " %}
-                        {% for market_tag in market_tags %}
-                            {% case market_tag %}
-                                {% when "ethereum" %}
-                                    <span class="tooltip" title="Built on Ethereum or related to Ethereum ecosystem">
-                                        <img class="market_icon lazyload" data-src="images/eth.svg" />
-                                    </span>
-                                {% when "bitcoin" %}
-                                    <span class="tooltip" title="Using Bitcoin ecosystem">
-                                        <img class="market_icon lazyload" data-src="images/btc.svg" />
-                                    </span>
-                                {% when "tron" %}
-                                    <span class="tooltip" title="Built on Tron or related to Tron ecosystem">
-                                        <img class="market_icon lazyload" data-src="images/tron.svg" />
-                                    </span>
-                                {% when "stellar" %}
-                                    <span class="tooltip" title="Built on Stellar or related to Stellar ecosystem">
-                                        <img class="market_icon lazyload" data-src="images/stellar.svg" />
-                                    </span>
-                                {% when "eos" %}
-                                    <span class="tooltip" title="Built on EOS or related to EOS ecosystem">
-                                        <img class="market_icon lazyload" data-src="images/eos.svg" />
-                                    </span>
-                            {% endcase %}
-                        {% endfor %}
-                        <div class="tags_separator"></div>
-                        {% assign platform_tags = asset_tool["platform"] | split: ", " %}
-                        {% for platform_tag in platform_tags %}
-                            {% case platform_tag %}
-                                {% when "android" %}
-                                    <span class="tooltip" title="Mobile wallet for Android">
-                                        <img class="platform_icon lazyload" data-src="/images/android.svg" >
-                                    </span>
-                                {% when "web" %}
-                                    <span class="tooltip" title="Browser based wallet">
-                                        <img class="platform_icon lazyload" data-src="/images/web.svg" >
-                                    </span>
-                                {% when "ios" %}
-                                    <span class="tooltip" title="Mobile wallet for iOS">
-                                        <img class="platform_icon lazyload" data-src="/images/ios.svg" >
-                                    </span>
-                            {% endcase %}
-                        {% endfor %}
-                        {% assign type_tags = asset_tool["type"] | split: ", " %}
-                        {% for type_tag in type_tags %}
-                            {% if type_tag == "cefi" %}
-                                <span class="tooltip"
-                                    title="CeFi product. CeFi products are custodial, use centralized price feeds, initiate margin calls centrally, centrally determine interest rates, and centrally provide liquidity for their margin calls.">
-                                    <img class="market_icon lazyload" data-src="images/sefi.svg" />
-                                </span>
-                            {% else %}
-                                <span class="tooltip" title="Non-custodial">
-                                    <img class="market_icon lazyload" data-src="images/non_custodial.svg" />
-                                </span>
-                            {% endif %}
-                        {% endfor %}
-                    </div>
-                            <p>{{ asset_tool["product-description"] | markdownify | remove: '<p>' | remove: '</p>' }}
-                            </p>
-                    <div title="Would you recommend this product?" class="comments">
-                        <a href="/product/{{ asset_tool.product-title | slugify: 'latin'}}">
-                            <img class="base_comment lazyload" data-src="/images/no_comment.svg">
-                            <img class="hovered_comment lazyload" data-src="/images/comment_hover.svg">
-                                    <span class="gc-counter"
-                                        data-url="{{ site.url }}/product/{{ asset_tool.product-title | slugify: 'latin' }}">0</span>
-                            <span class="tip"><span class="icon">👈</span> What do you think?</span>
-                        </a>
-                    </div>
-                </div>
-            </article>
-                </div> <!--  /div end for div.article-wrapper -->
-
-        {% endfor %}
-    </section>
-
-</article>
-
-<script src="/assets/js/page.js"></script>
-
-<!--
+      <!--
     Include this javascript code after your .gc-counters elements
 -->
-<script type="text/javascript">
+      <script type="text/javascript">
 
-   /* - - - CONFIGURATION VARIABLES - - - */
+        /* - - - CONFIGURATION VARIABLES - - - */
 
-  var website = 'defiprime_prod';
+        var website = 'defiprime_prod';
 
-  /* - - - DON'T EDIT BELOW THIS LINE - - - */
+        /* - - - DON'T EDIT BELOW THIS LINE - - - */
 
-  // get all counters
-  var counters = document.querySelectorAll('.gc-counter');
-  Array.prototype.forEach.call(counters, function(counter) {
-    var url = counter.dataset.url;
-    var uid = counter.dataset.uid;
-    var req = new XMLHttpRequest();
+        // get all counters
+        var counters = document.querySelectorAll('.gc-counter');
+        Array.prototype.forEach.call(counters, function (counter) {
+          var url = counter.dataset.url;
+          var uid = counter.dataset.uid;
+          var req = new XMLHttpRequest();
 
-    // called when the ajax request is completed
-    req.onreadystatechange = function(){
-      if (this.readyState == 4) {
-        if (this.status === 200) {
-          try {
-            var resp = JSON.parse(this.responseText);
-          } catch (e) {
-            console.error(
-              '[gc-counter] fail to decode response "' + this.responseText + '", using url "' + url + '"'
-            );
-            return;
-          }
-          if (typeof resp.count !== 'undefined') {
-            // write count
-            counter.textContent = resp.count;
-            if(resp.count > 0){
-                counter.className += " gc-active-comment";
+          // called when the ajax request is completed
+          req.onreadystatechange = function () {
+            if (this.readyState == 4) {
+              if (this.status === 200) {
+                try {
+                  var resp = JSON.parse(this.responseText);
+                } catch (e) {
+                  console.error(
+                    '[gc-counter] fail to decode response "' + this.responseText + '", using url "' + url + '"'
+                  );
+                  return;
+                }
+                if (typeof resp.count !== 'undefined') {
+                  // write count
+                  counter.textContent = resp.count;
+                  if (resp.count > 0) {
+                    counter.className += " gc-active-comment";
+                  }
+                }
+              } else {
+                console.error(
+                  '[gc-counter] invalid url "' + url + '", this url is not rattached to a GraphComment page.'
+                );
+              }
             }
           }
-        } else {
-          console.error(
-            '[gc-counter] invalid url "' + url + '", this url is not rattached to a GraphComment page.'
-          );
-        }
-      }
-    }
 
-    // send ajax request
-    var query = 'website=' + encodeURIComponent(website)
-      + '&url=' + encodeURIComponent(url)
-      + (uid ? '&uid=' + encodeURIComponent(uid) : '')
-    ;
-    req.open('GET', 'https://graphcomment.com/api/pub/numberOfComments?' + query, true);
-    req.send();
-  });
-</script>
-
-    {% include also.html %}  {% include footer.html %}
-
-
+          // send ajax request
+          var query = 'website=' + encodeURIComponent(website)
+            + '&url=' + encodeURIComponent(url)
+            + (uid ? '&uid=' + encodeURIComponent(uid) : '')
+            ;
+          req.open('GET', 'https://graphcomment.com/api/pub/numberOfComments?' + query, true);
+          req.send();
+        });
+      </script>
+    </div>
+  </div>
+  {% include also.html %}
+  {% include footer.html %}
 </body>
 
 </html>
