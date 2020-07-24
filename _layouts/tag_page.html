@@ -47,10 +47,8 @@
         <h1 class="align-center"><span class="text-green">{{ page.tag }}</span> @ DeFi <span
             class="text-orange">Blog</span></h1>
       </header>
-      tag description goes here
-      <div id="tag-cloud">
-        {{ site | tag_cloud }}
-      </div>
+
+      
       <section class="blog-articles">
         {% for post in  page.posts %}
         <article>
@@ -64,7 +62,7 @@
                   <img class="lazyload" data-src="{{ author.image }}">
                 {% endif %}
                 <div class="author-data">
-                  {% assign author = site.data.authors[post.author] %}								
+                  {% assign author = site.data.authors[post.author] %}
                   {% if author.image %}
                     <span>Author</span>
                     <span class="author">{{author.name}}</span>
@@ -79,7 +77,7 @@
                   <span class="tag">{{ tag }}</span>
                 {% endfor %}
               </div>
-            </div>				
+            </div>
           </a>
         </article>
         {% endfor %}
