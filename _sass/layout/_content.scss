@@ -65,7 +65,7 @@ header ~ p {
     img {
       border-radius: 50%;
       max-width: 130px;
-      margin-bottom: 40px;
+      margin: 0 auto 40px auto;
     }
     @include breakpoint(small) {
       width: 60px;

@@ -1,88 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>{{ page.tag }}</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 160 }}">
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="https://defiprime.com/blog/">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ site.url }}" />
-    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-    <meta property="og:image" content="{{ site.url }}/images/og-blog.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@defiprime">
-    <meta name="twitter:creator" content="@defiprime">
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
-    <meta name="twitter:description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 160 }}">
-    <meta name="twitter:image" content="{{ site.url }}/images/og-blog.png">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138327045-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-138327045-1', {'content_group1': 'blog'});
 
-    </script>
+<head>
+  <title>{{ page.tag }}</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 160 }}">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="https://defiprime.com/blog/">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <meta property="og:title"
+    content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:description"
+    content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:image" content="{{ site.url }}/images/og-blog.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@defiprime">
+  <meta name="twitter:creator" content="@defiprime">
+  <meta name="twitter:title"
+    content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+  <meta name="twitter:description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 160 }}">
+  <meta name="twitter:image" content="{{ site.url }}/images/og-blog.png">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138327045-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-138327045-1', { 'content_group1': 'blog' });
+
+  </script>
 
 </head>
 
 <body class="blog-page">
-    {% include header.html %}
-    <!-- Main -->
-    <div id="main">
-      <div class="inner">
+  {% include header.html %}
+  <!-- Main -->
+  <div id="main">
+    <div class="inner">
+      <header>
+        <h1 class="align-center"><span class="text-green">{{ page.tag }}</span> @ DeFi <span
+            class="text-orange">Blog</span></h1>
+      </header>
+      tag description goes here
+      <div id="tag-cloud">
+        {{ site | tag_cloud }}
+      </div>
+      <section class="blog-articles">
+        {% for post in  page.posts %}
+        <article>
+          <a href="{{ post.url }}">
+            <div class="date">{{ post.git-date | git-date_to_string}}</div>
+            <div class="header">
+              <h2>{{ post.title }}</h2>
+              <div class="author-item">
+                {% assign author = site.data.authors[post.author] %}
+                {% if author.image %}
+                  <img class="lazyload" data-src="{{ author.image }}">
+                {% endif %}
+                <div class="author-data">
+                  {% assign author = site.data.authors[post.author] %}								
+                  {% if author.image %}
+                    <span>Author</span>
+                    <span class="author">{{author.name}}</span>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <p>{{ post.intro | strip_html | truncatewords:50 }}</p>
+              <div class="tags">
+                {% for tag in post.tags %}
+                  <span class="tag">{{ tag }}</span>
+                {% endfor %}
+              </div>
+            </div>				
+          </a>
+        </article>
+        {% endfor %}
 
-    <header>
-    <h1 class="align-center"><span class="text-green">{{ page.tag }}</span> @ DeFi <span class="text-orange">Blog</span></h1>
-    </header>
-    tag description goes here
-    <div id="tag-cloud">
-      {{ site | tag_cloud }}
-    </div>
-    <section class="tiles">
+      </section>
 
-    {% for post in  page.posts %}
-    	<article class="style{{ forloop.index | random_number: 0, 10 }}">
-
-
-
-    		<a href="{{ post.url }}">
-    			<h2>{{ post.title }}</h2>
-    			<div class="content">
-    				<p>{{ post.intro | strip_html | truncatewords:50 }}</p>
-    			</div>
-    		</a>
-    		<div class="article-image">
-    			<div class="image">
-    				<a href="{{ post.url }}">
-    					<img class="lazyload" data-src="{{ post.quote }}" alt="" />
-    				</a>
-    			</div>
-    		</div>
-    	</article>
-    {% endfor %}
-
-    </section>
-
-    {% if paginator.next_page %}
+      {% if paginator.next_page %}
       <a class="button" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Next</a>
-    {% endif %}
-
-      {% if paginator.previous_page %}
-        <a class="button" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Previous</a>
       {% endif %}
 
-      </div>
+      {% if paginator.previous_page %}
+      <a class="button" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Previous</a>
+      {% endif %}
+
     </div>
-    {% include footer.html %}
+  </div>
+  {% include footer.html %}
 
 </body>
 
