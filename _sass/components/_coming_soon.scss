@@ -27,7 +27,7 @@
         outline: none;
       }
       button {
-        background: #000000;
+        background-color: #000000;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -39,6 +39,10 @@
         color: #ffffff;
         margin: 0;
         padding: 0;
+        outline: none;
+        &:hover {
+          background-color: #232531;
+        }
         svg {
           margin-right: 10px;
         }

@@ -234,7 +234,17 @@
 
 				return data;
 			}
-		});
+    });
+
+    function setShortHash() {
+      let element = $(".hash-val");
+      let hash = element.html();
+      let shortHash = hash.substring(0, 6) + '...' + hash.substring(hash.length - 14);
+      $(element).html(shortHash)
+    }
+
+    setShortHash();
+
 	});
 	async function getTopicsAlpha() {
 		const response = await fetch('https://alpha.defiprime.com/latest.json');
