@@ -10,16 +10,13 @@
             <div class="author-social">
               {% if author.twitter %}
               <a href="{{ author.twitter }}" class="social-link">
-                 <span class="icon fab fa-twitter">
-                    <span class="label">Twitter</span>
-                 </span>
+                {% include icons/twitter.svg %}
               </a>
               {% endif %}
               {% if author.github %}
-              <a href="{{ author.github }}" class="social-link">
-                 <span class="icon fab fa-linkedin">
-                    <span class="label">Linkedin</span></a>
-              </span>
+                <a href="{{ author.github }}" class="social-link">
+                  {% include icons/github.svg %}                
+                </a>
               {% endif %}
            </div>
          </div>
