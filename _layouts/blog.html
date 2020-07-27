@@ -64,7 +64,7 @@
           <span>Tags:</span>
         {% endif %}
         {% for tag in page.tags %}
-          <a href="/t/{{tag| downcase }}.html" rel="tag" class="tag">{{ tag }}</a>
+          <a href="/t/{{tag | downcase | replace: " ", "-" }}.html" rel="tag" class="tag">{{ tag }}</a>
         {% endfor %}
       </div>
     </main>
