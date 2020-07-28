@@ -53,7 +53,7 @@
         {% for post in  page.posts %}
         <article>
           <a href="{{ post.url }}">
-            <div class="date">{{ post.git-date | git-date_to_string}}</div>
+            <div class="date">{{ post.date | date_to_string}}</div>
             <div class="header">
               <h2>{{ post.title }}</h2>
               <div class="author-item">

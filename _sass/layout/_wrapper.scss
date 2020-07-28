@@ -6,24 +6,26 @@
 
 /* Wrapper */
 
-	#wrapper {
-		> * {
-			> .inner {
-				$gutter: _size(gutter);
+#wrapper {
+  > * {
+    > .inner {
+      $gutter: _size(gutter);
+      width: 100%;
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 0 20px;
+      position: relative;
 
-				width: 100%;
-				max-width: 1150px;
-				margin: 0 auto;
-				padding: 0 20px;
-				position: relative;
-
-				@include breakpoint(small) {
-					$gutter: _size(gutter) * 0.5;
-				}
-			}
-		}
-	}
-	.container {
-		max-width: 720px;
-		margin: 0 auto;
-	}
+      @include breakpoint(small) {
+        $gutter: _size(gutter) * 0.5;
+        .blog-page &{
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+}
