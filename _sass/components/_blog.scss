@@ -14,6 +14,8 @@
       @include breakpoint(xsmall) {
         font-size: 12px;
         margin-bottom: 60px;
+        padding-left: 15px;
+        padding-right: 15px;
       }
     }
   }
