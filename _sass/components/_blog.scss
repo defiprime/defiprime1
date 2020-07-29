@@ -145,6 +145,9 @@
         @include breakpoint(small) {
           padding: 60px 15px 45px 15px;
         }
+        &:hover {
+          color: #8f68fc;
+        }
         > :last-child {
           margin: 0;
         }
