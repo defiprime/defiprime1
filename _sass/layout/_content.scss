@@ -187,10 +187,15 @@ header ~ p {
     color: _color(main-color);
     font-weight: _add-font(weight-medium);
   }
-  h1 {
-    @include breakpoint(small) {
+  @include breakpoint(small) {
+    h1 {
       font-size: 36px;
       padding-top: 105px;
+    }
+    #main {
+      h1{
+        padding-top: 0
+      }
     }
   }
   h2 {
@@ -259,7 +264,7 @@ header ~ p {
     font-size: 66px;
     line-height: 1.2;
     margin-bottom: 30px;
-    @media screen and(max-width: 767px) {
+    @include breakpoint(small) {
       font-size: 36px;
     }
   }

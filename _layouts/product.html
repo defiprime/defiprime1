@@ -58,10 +58,10 @@
             <span>website</span>
           </a>
           {% if page.twitter  %}
-          <a href='{{page.twitter}}' target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+          <a href='{{page.twitter}}' target="_blank" rel="noopener">{% include icons/twitter.svg %}</a>
           {% endif %}
           {% if page.github %}
-          <a href='{{page.github}}' target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+          <a href='{{page.github}}' target="_blank" rel="noopener">{% include icons/github.svg %}</a>
           {% endif %}
         </div>
         <div class='product-description-table'>

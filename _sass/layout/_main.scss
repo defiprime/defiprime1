@@ -7,11 +7,11 @@
 /* Main */
 
 #main {
-  @media screen and (min-width: 768px) {
+  @include breakpoint(min-small) {
     @include padding(5em, 0, (-5em, 0, 3em, 0));
   }
-  @media screen and (max-width: 767px) {
+  @include breakpoint(small) {
     @include padding(3em, 0, (-3em, 0, 3em, 0));
-    margin-top: 105px;
+    padding-top: 105px;
   }
 }
