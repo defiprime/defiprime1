@@ -3,7 +3,7 @@ git-date:
 layout: blog
 title:  "Top DeFi Podcasts of 2020"
 permalink: defi-podcasts
-h1title: "Top DeFi Podcasts of 2020️"
+h1title: "Top DeFi Podcasts of 2020"
 pagetitle: "Blockchain, Cryptocurrency, Decentralization, and DeFi: DeFi Prime’s Top Podcasts of 2020 🎙"
 metadescription: "Whether you’re looking for a gentle introduction to the world of blockchain and decentralized finance (DeFi) or insights from the professionals building decentralized products and organizations, this list highlights our favorite podcasts for learning about DeFi"
 category: blog
