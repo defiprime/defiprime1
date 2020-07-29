@@ -18,13 +18,13 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  max-width: 350px;
   box-shadow: 0px 0px 6px rgba(41, 41, 132, 0.12);
   color: #292984;
   transition: 0.3s ease-in-out all;
   overflow: hidden;
   h4 {
     margin-top: 10px;
+    margin-bottom: 15px;
   }
   & > a {
     .visit-website {
@@ -74,7 +74,7 @@
   display: grid;
   margin-top: 60px;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 75px 5px;
+  grid-gap: 75px 30px;
   .article-wrapper {
     background-color: #ffffff;
     .asset_tool_card {
@@ -127,7 +127,6 @@
     font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
     line-height: 1;
     color: #8f68fc;
     background: none;
@@ -148,12 +147,19 @@
       color: #ffffff;
       background: #292984;
     }
+    @include breakpoint(min-small) {
+      font-size: 18px;
+    }
+    @include breakpoint(small) {
+      font-size: 12px;
+    }
   }
 }
 
 .asset-tool-tags {
   padding: 0 15px;
-  margin: -16px 0 16px 0;
+  margin-bottom: 15px;
+  display: flex;
   svg {
     width: 26px;
     height: auto;
@@ -171,6 +177,7 @@
     position: relative;
     display: inline-flex;
     justify-content: center;
+    margin-right: 6px;
   }
 }
 
@@ -264,7 +271,13 @@
 }
 
 .read_next {
-  margin-bottom: 75px;
+  @include breakpoint(min-xsmall) {
+    margin-bottom: 75px;
+  }
+  @include breakpoint(xsmall) {
+    margin-bottom: 45px;
+    margin-top: 75px;
+  }
   &:before {
     content: "";
     background-image: url("/../../images/bg-fon.png");
@@ -278,16 +291,30 @@
     transform: translateX(-50%);
     opacity: 0.5;
     z-index: -1;
+    @include breakpoint(xsmall) {
+      content: none;
+    }
   }
   .container {
     max-width: 1140px;
     padding: 0 15px;
     margin: auto;
+    .reading_next_links {
+      display: grid;
+      @include breakpoint(min-small) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 25px 30px;
+      }
+      @include breakpoint(small) {
+        grid-template-columns: auto;
+        grid-gap: 15px;
+      }
+    }
     a {
       font-family: "Kanit", sans-serif;
       font-style: normal;
       font-weight: 500;
-      font-size: 28px;
+
       line-height: 1.2;
       transition: 0.2s ease-in-out color;
       color: #8f68fc;
@@ -295,16 +322,27 @@
       &:hover {
         color: #05d2dd;
       }
+      @include breakpoint(min-small) {
+        font-size: 28px;
+      }
+      @include breakpoint(small) {
+        font-size: 22px;
+      }
     }
     .articles_count {
       font-family: "Open Sans", sans-serif;
-      font-size: 14px;
       line-height: 1.8;
       color: #8b8bb8;
       transition: 0.2s ease-in-out color;
       font-style: normal;
       font-weight: normal;
       vertical-align: super;
+      @include breakpoint(min-small) {
+        font-size: 14px;
+      }
+      @include breakpoint(small) {
+        font-size: 12px;
+      }
     }
   }
 }
@@ -339,34 +377,17 @@
   }
 }
 
-.reading_next_links {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 24px;
-}
-
 @include breakpoint(small) {
-  #assets_cards,
-  .reading_next_links {
+  #assets_cards {
     grid-template-columns: auto auto;
+    grid-gap: 15px;
   }
 }
 
 @include breakpoint(xsmall) {
-  #assets_cards,
-  .reading_next_links {
+  #assets_cards {
     grid-template-columns: auto;
     justify-content: space-evenly; //positioning single column to center
-  }
-  .reading_next_links {
-    padding-left: 0;
-    grid-template-columns: auto;
-    a {
-      margin: 10px 0;
-    }
-  }
-  .read_next:before {
-    display: none;
   }
 }
 .product-page #main .asset_tool_card {
