@@ -4,11 +4,19 @@
     ~ p {
       max-width: 730px;
       margin: auto;
-      font-size: 16px;
       line-height: 1.8;
       text-align: center;
       color: #292984;
-      margin-bottom: 75px;
+      @include breakpoint(min-xsmall) {
+        font-size: 16px;
+        margin-bottom: 75px;
+      }
+      @include breakpoint(xsmall) {
+        font-size: 12px;
+        margin-bottom: 60px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
     }
   }
   .blog-articles {
@@ -38,11 +46,17 @@
       }
       &:before {
         content: "";
-        width: 6px;
         height: 64px;
         position: absolute;
-        left: 60px;
         top: -1px;
+        @include breakpoint(min-small) {
+          width: 6px;
+          left: 60px;
+        }
+        @include breakpoint(small) {
+          width: 4px;
+          left: 0;
+        }
       }
 
       &:hover {
@@ -55,12 +69,18 @@
 
       .date {
         position: absolute;
-        font-size: 14px;
         line-height: 1.8;
-        left: 95px;
         top: 20px;
         color: #292984;
         opacity: 0.6;
+        @include breakpoint(min-small) {
+          font-size: 14px;
+          left: 95px;
+        }
+        @include breakpoint(small) {
+          font-size: 10px;
+          left: 15px;
+        }
       }
       .header {
         display: flex;
@@ -68,12 +88,21 @@
         align-items: center;
         margin-bottom: 30px;
         h2 {
-          width: 70%;
+          @include breakpoint(min-medium) {
+            width: 70%;
+          }
+          @include breakpoint(medium) {
+            width: 100%;
+            margin-bottom: 25px;
+          }
         }
         .author-item {
           display: flex;
           align-items: center;
           padding-left: 30px;
+          @include breakpoint(medium) {
+            padding-left: 0;
+          }
           span {
             font-size: 14px;
             line-height: 1.8;
@@ -108,10 +137,14 @@
       > a {
         display: block;
         width: 100%;
-        padding: 65px 95px;
         text-decoration: none;
         color: _color(main-color);
-
+        @include breakpoint(min-small) {
+          padding: 65px 95px;
+        }
+        @include breakpoint(small) {
+          padding: 60px 15px 45px 15px;
+        }
         > :last-child {
           margin: 0;
         }
@@ -123,7 +156,7 @@
           text-transform: none;
           letter-spacing: 0;
           @include breakpoint(medium) {
-            font-size: 27px;
+            font-size: 30px;
           }
           line-height: 1.2;
         }
@@ -132,9 +165,15 @@
           overflow: hidden;
           text-overflow: ellipsis;
           p {
-            font-size: 20px;
             line-height: 1.8;
-            margin-bottom: 30px;
+            @include breakpoint(min-small) {
+              font-size: 20px;
+              margin-bottom: 30px;
+            }
+            @include breakpoint(small) {
+              font-size: 16px;
+              margin-bottom: 0;
+            }
           }
 
           > :last-child {
@@ -154,24 +193,37 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 75px;
+    @include breakpoint(min-small) {
+      padding-top: 75px;
+    }
+    @include breakpoint(small) {
+      padding-top: 45px;
+    }
     .button {
-      font-size: 18px;
       font-weight: 400;
       line-height: 1.6;
       display: flex;
       align-items: center;
       justify-content: center;
       color: #ffffff;
-      min-width: 160px;
       margin: 0;
-      padding: 0;
-      &:first-child {
+      height: auto;
+      &:not(:last-child) {
         margin-right: 15px;
+      }
+      @include breakpoint(min-small) {
+        font-size: 18px;
+        min-width: 160px;
+        padding: 12px 0;
+      }
+      @include breakpoint(small) {
+        font-size: 14px;
+        min-width: 130px;
+        padding: 9px 0;
       }
     }
   }
-  #tag-cloud{
+  #tag-cloud {
     margin-bottom: 75px;
   }
 }
@@ -191,14 +243,29 @@
     article {
       background-color: #ffffff;
       box-shadow: 0px 0px 8px rgba(41, 41, 132, 0.12);
-      width: calc(50% - 15px);
       position: relative;
-      margin-bottom: 30px;
       border-bottom: 1px solid #f2f2f2;
       transition: all 0.3s;
-
-      &:nth-child(2n-1) {
-        margin-right: 30px;
+      @include breakpoint(min-medium) {
+        width: calc(50% - 15px);
+        &:nth-child(2n-1) {
+          margin-right: 30px;
+        }
+      }
+      @include breakpoint(medium) {
+        width: 100%;
+      }
+      @include breakpoint(min-small) {
+        margin-bottom: 30px;
+      }
+      @include breakpoint(small) {
+        margin-bottom: 15px;
+        p {
+          font-size: 12px;
+          & .title {
+            font-size: 22px;
+          }
+        }
       }
       &:before {
         content: "";
@@ -225,7 +292,7 @@
       }
       a {
         display: block;
-        padding: 30px;
+        padding: 30px 30px 0 30px;
         .title {
           font-family: "Kanit", sans-serif;
           font-size: 24px;
@@ -237,27 +304,68 @@
       }
     }
   }
+  .container {
+    @media screen and (min-width: 760px) {
+      max-width: 730px;
+    }
+    @media screen and (max-width: 759px) {
+      padding: 0 15px;
+    }
+  }
+  iframe {
+    display: block;
+    margin: auto;
+    @include breakpoint(small) {
+      width: 100%;
+    }
+  }
 }
 
 .tags {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  max-width: 730px;
   margin: auto;
+  @include breakpoint(small) {
+    margin-top: 25px;
+  }
+  @media screen and (min-width: 760px) {
+    max-width: 730px;
+  }
+  @media screen and (max-width: 759px) {
+    max-width: 100%;
+    padding: 0 15px;
+    .blog-page & {
+      padding: 0;
+    }
+  }
   span {
-    font-size: 16px;
     margin-right: 10px;
+    @include breakpoint(min-small) {
+      font-size: 16px;
+    }
+    @include breakpoint(small) {
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
   }
   a,
   .tag {
     position: relative;
-    padding: 8px 12px;
     color: #ffffff;
     background-color: #ff961c;
-    margin: 0 8px 0 0;
     right: 0;
-    font-size: 14px;
     line-height: 1;
+    @include breakpoint(min-small) {
+      font-size: 14px;
+      padding: 8px 12px;
+      margin: 0 8px 0 0;
+    }
+    @include breakpoint(small) {
+      font-size: 12px;
+      padding: 9px 12px;
+      margin: 0 8px 8px 0;
+    }
     &:hover {
       background-color: #05d2dd;
     }

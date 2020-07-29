@@ -58,10 +58,10 @@
             <span>website</span>
           </a>
           {% if page.twitter  %}
-          <a href='{{page.twitter}}' target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+          <a href='{{page.twitter}}' target="_blank" rel="noopener">{% include icons/twitter.svg %}</a>
           {% endif %}
           {% if page.github %}
-          <a href='{{page.github}}' target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+          <a href='{{page.github}}' target="_blank" rel="noopener">{% include icons/github.svg %}</a>
           {% endif %}
         </div>
         <div class='product-description-table'>
@@ -78,7 +78,7 @@
           </div>
         </div>
         {% if page.analytics  %}
-        <h3>{{ page.product-title }} Usage Statistics</h3>
+        <h3 class="text-center">{{ page.product-title }} Usage Statistics</h3>
         <object id="obj" data="{{page.analytics}}" style="width:100%;    height: 564px;" type="text/html">
           {{ page.product-title }} Stats, Daily Users
         </object>

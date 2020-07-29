@@ -245,6 +245,16 @@
 
     setShortHash();
 
+    $('.card_main_details p a').on('mouseover', function () {
+      $(this).closest('.asset_tool_card').addClass('is-hover-link');
+    }).on('mouseout', function () {
+      $(this).closest('.asset_tool_card').removeClass('is-hover-link');
+    });
+    $('.card_main_details').on('mouseover', function () {
+      $(this).closest('.asset_tool_card').addClass('is-hover');
+    }).on('mouseout', function () {
+      $(this).closest('.asset_tool_card').removeClass('is-hover');
+    });
 	});
 	async function getTopicsAlpha() {
 		const response = await fetch('https://alpha.defiprime.com/latest.json');

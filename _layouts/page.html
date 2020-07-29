@@ -109,32 +109,32 @@
                   <img src="{{ asset_tool['image'] }}">
                   <button class="visit-website">Visit website</button>
                 </a>
-                <h4><a href="{{ asset_tool['product-url']}}" target="_blank"
-                    rel="noopener">{{ asset_tool["product-title"] }}</a></h4>
                 <div class="card_main_details">
+                  <h4><a href="{{ asset_tool['product-url']}}" target="_blank"
+                    rel="noopener">{{ asset_tool["product-title"] }}</a></h4>
                   <div class="asset-tool-tags">
                     {% assign market_tags = asset_tool["ecosystem"] | split: ", " %}
                     {% for market_tag in market_tags %}
                     {% case market_tag %}
                     {% when "ethereum" %}
                     <span class="tooltip" title="Built on Ethereum or related to Ethereum ecosystem">
-                      <img class="market_icon lazyload" data-src="images/eth.svg" />
+                      {% include icons/ethereum.svg %}
                     </span>
                     {% when "bitcoin" %}
                     <span class="tooltip" title="Using Bitcoin ecosystem">
-                      <img class="market_icon lazyload" data-src="images/btc.svg" />
+                      {% include icons/bitcoin.svg %}
                     </span>
                     {% when "tron" %}
                     <span class="tooltip" title="Built on Tron or related to Tron ecosystem">
-                      <img class="market_icon lazyload" data-src="images/tron.svg" />
+                      {% include icons/tron.svg %}
                     </span>
                     {% when "stellar" %}
                     <span class="tooltip" title="Built on Stellar or related to Stellar ecosystem">
-                      <img class="market_icon lazyload" data-src="images/stellar.svg" />
+                      {% include icons/stellar.svg %}
                     </span>
                     {% when "eos" %}
                     <span class="tooltip" title="Built on EOS or related to EOS ecosystem">
-                      <img class="market_icon lazyload" data-src="images/eos.svg" />
+                      {% include icons/eos.svg %}
                     </span>
                     {% endcase %}
                     {% endfor %}
@@ -144,15 +144,15 @@
                     {% case platform_tag %}
                     {% when "android" %}
                     <span class="tooltip" title="Mobile wallet for Android">
-                      <img class="platform_icon lazyload" data-src="/images/android.svg">
+                      {% include icons/android.svg %}
                     </span>
                     {% when "web" %}
                     <span class="tooltip" title="Browser based wallet">
-                      <img class="platform_icon lazyload" data-src="/images/web.svg">
+                      {% include icons/web.svg %}
                     </span>
                     {% when "ios" %}
                     <span class="tooltip" title="Mobile wallet for iOS">
-                      <img class="platform_icon lazyload" data-src="/images/ios.svg">
+                      {% include icons/ios.svg %}
                     </span>
                     {% endcase %}
                     {% endfor %}
@@ -161,11 +161,11 @@
                     {% if type_tag == "cefi" %}
                     <span class="tooltip"
                       title="CeFi product. CeFi products are custodial, use centralized price feeds, initiate margin calls centrally, centrally determine interest rates, and centrally provide liquidity for their margin calls.">
-                      <img class="market_icon lazyload" data-src="images/sefi.svg" />
+                      {% include icons/cefi.svg %}
                     </span>
                     {% else %}
                     <span class="tooltip" title="Non-custodial">
-                      <img class="market_icon lazyload" data-src="images/non_custodial.svg" />
+                      {% include icons/non-custodial.svg %}
                     </span>
                     {% endif %}
                     {% endfor %}

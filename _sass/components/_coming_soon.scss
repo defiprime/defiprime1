@@ -8,20 +8,35 @@
     font-family: "Kanit", sans-serif;
     text-transform: inherit;
     letter-spacing: normal;
-    font-size: 42px;
     line-height: 1.2;
     font-weight: 500;
     text-align: center;
     color: #ffffff;
-    margin-bottom: 25px;
+    margin-bottom: 0;
+    @include breakpoint(min-small) {
+      font-size: 42px;
+    }
+    @include breakpoint(small) {
+      font-size: 30px;
+      margin: 0 0 15px 0;
+      padding: 0 60px;
+    }
   }
   .group-button {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-
+    @include breakpoint(small) {
+      flex-direction: column;
+    } 
     a {
+      @include breakpoint(small) {
+        margin: auto;
+      }
       &:not(:last-child) {
-        margin-right: 30px;
+        @include breakpoint(min-small) {
+          margin-right: 30px;
+        }
       }
       &:focus{
         outline: none;
@@ -37,11 +52,11 @@
         line-height: 1.6;
         font-weight: 400;
         color: #ffffff;
-        margin: 0;
+        margin: 15px 0 0 0;
         padding: 0;
         outline: none;
         &:hover {
-          background-color: #232531;
+          background-color: #05d2dd;
         }
         svg {
           margin-right: 10px;

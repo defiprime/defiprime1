@@ -6,11 +6,12 @@
 
 /* Main */
 
-	#main {
-		@include padding(5em, 0, (-5em, 0, 3em, 0));
-
-		@include breakpoint(small) {
-			@include padding(3em, 0, (-3em, 0, 3em, 0));
-			margin-top: calc(4.6em + 74px);
-		}
-	}
+#main {
+  @include breakpoint(min-small) {
+    @include padding(5em, 0, (-5em, 0, 3em, 0));
+  }
+  @include breakpoint(small) {
+    @include padding(3em, 0, (-3em, 0, 3em, 0));
+    padding-top: 105px;
+  }
+}

@@ -8,26 +8,41 @@
 
 #footer {
   font-family: "Open Sans", sans-serif;
-  $gutter: _size(gutter);
   padding: 45px 0 30px 0;
   background-color: _color(main-color);
   color: #ffffff;
-
+  @include breakpoint(medium) {
+    .blog-page & {
+      padding: 30px 15px;
+    }
+  }
   > .inner {
     @include vendor("display", "flex");
     @include vendor("flex-wrap", "wrap");
     @include vendor("flex-direction", "row");
     .footer-row {
       display: flex;
+      flex-wrap: wrap;
       width: 100%;
-      &:first-child{
+      &:first-child {
         margin-bottom: 40px;
       }
+
       .footer-col {
-        width: 40%;
+        @include breakpoint(min-small) {
+          width: 40%;
+        }
+        @include breakpoint(small) {
+          width: 100%;
+        }
         &:first-child,
         &:last-child {
-          width: 30%;
+          @include breakpoint(min-small) {
+            width: 30%;
+          }
+          @include breakpoint(small) {
+            width: 100%;
+          }
         }
       }
     }
@@ -44,14 +59,30 @@
       &-col-bottom {
         display: flex;
         flex-direction: column;
+        @include breakpoint(small) {
+          margin-top: 30px;
+        }
         span,
         a {
           color: #8b8bb8;
-          font-size: 16px;
           line-height: 1.6;
           margin-bottom: 10px;
+          @include breakpoint(min-medium) {
+            font-size: 16px;
+          }
+          @include breakpoint(medium) {
+            font-size: 14px;
+          }
+          @include breakpoint(small) {
+            font-size: 12px;
+          }          
         }
-        .hash-val{
+        p{
+          @include breakpoint(small) {
+            font-size: 12px;
+          }
+        }
+        .hash-val {
           color: #ffffff;
         }
       }
@@ -60,27 +91,85 @@
     .social-links {
       display: flex;
       margin-bottom: 30px;
+      a {
+        &:hover {
+          svg {
+            path {
+              fill: #05d2dd;
+            }
+          }
+        }
+        svg {
+          height: auto;
+          @include breakpoint(min-small) {
+            width: 36px;
+          }
+          @include breakpoint(small) {
+            width: 24px;
+          }
+          path {
+            fill: #8f68fc;
+          }
+        }
+      }
+
+      &.shown-small {
+        @include breakpoint(min-small) {
+          display: none;
+        }
+      }
+      &.hidden-small {
+        @include breakpoint(small) {
+          display: none;
+        }
+      }
       .icon {
         display: flex;
-        margin-right: 45px;
+        @include breakpoint(min-small) {
+          margin-right: 45px;
+        }
+        @include breakpoint(small) {
+          margin-right: 15px;
+        }
       }
     }
 
     .text-made {
-      width: 30%;
       font-family: "Open Sans", sans-serif;
       font-weight: 400;
-      font-size: 14px;
       line-height: 1.6;
       color: #ffffff;
+      @include breakpoint(min-medium) {
+        width: 30%;
+      }
+      @include breakpoint(medium) {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      @include breakpoint(min-small) {
+        font-size: 14px;
+      }
+      @include breakpoint(small) {
+        font-size: 10px;
+      }
     }
     .disclaimer {
-      width: 70%;
       font-family: "Open Sans", sans-serif;
-      font-size: 12px;
       font-weight: 400;
       line-height: 1.4;
       color: #5d5dc0;
+      @include breakpoint(min-medium) {
+        width: 70%;
+      }
+      @include breakpoint(medium) {
+        width: 100%;
+      }
+      @include breakpoint(min-small) {
+        font-size: 12px;
+      }
+      @include breakpoint(small) {
+        font-size: 8px;
+      }
       span {
         color: #8b8bb8;
       }
@@ -94,10 +183,16 @@
       &.link {
         font-family: "Open Sans", sans-serif;
         font-weight: 400;
-        font-size: 20px;
         line-height: 1.8;
-        margin-bottom: 20px;
         letter-spacing: normal;
+        @include breakpoint(min-medium) {
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+        @include breakpoint(medium) {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
       }
     }
     p {
@@ -105,84 +200,6 @@
       line-height: 1.6;
       color: #ffffff;
       margin-bottom: 10px;
-    }
-  }
-
-  @include breakpoint(large) {
-    $gutter: _size(gutter) * 0.5;
-
-    @include padding(5em, 0);
-
-    > .inner {
-      section:nth-child(1) {
-        width: calc(66% - #{$gutter});
-        margin-right: $gutter;
-      }
-
-      section:nth-child(2) {
-        width: calc(33% - #{$gutter});
-        margin-left: $gutter;
-      }
-    }
-  }
-
-  @include breakpoint(medium) {
-    $gutter: _size(gutter);
-
-    > .inner {
-      section:nth-child(1) {
-        width: 66%;
-        margin-right: 0;
-      }
-
-      section:nth-child(2) {
-        width: calc(33% - #{$gutter});
-        margin-left: $gutter;
-      }
-    }
-  }
-
-  @include breakpoint(small) {
-    @include padding(3em, 0);
-
-    > .inner {
-      @include vendor("flex-direction", "column");
-
-      section:nth-child(1) {
-        width: 100%;
-        margin-right: 0;
-        margin: 3em 0 0 0;
-      }
-
-      section:nth-child(2) {
-        @include vendor("order", "-1");
-        width: 100%;
-        margin-left: 0;
-      }
-
-      .copyright {
-        margin-top: 3em;
-      }
-    }
-  }
-
-  @include breakpoint(xsmall) {
-    > .inner {
-      .copyright {
-        margin-top: 3em;
-
-        li {
-          border-left: 0;
-          padding-left: 0;
-          margin: 0.75em 0 0 0;
-          display: block;
-          line-height: inherit;
-
-          &:first-child {
-            margin-top: 0;
-          }
-        }
-      }
     }
   }
 }
