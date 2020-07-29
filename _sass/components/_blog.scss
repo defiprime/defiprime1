@@ -243,14 +243,29 @@
     article {
       background-color: #ffffff;
       box-shadow: 0px 0px 8px rgba(41, 41, 132, 0.12);
-      width: calc(50% - 15px);
       position: relative;
-      margin-bottom: 30px;
       border-bottom: 1px solid #f2f2f2;
       transition: all 0.3s;
-
-      &:nth-child(2n-1) {
-        margin-right: 30px;
+      @include breakpoint(min-medium) {
+        width: calc(50% - 15px);
+        &:nth-child(2n-1) {
+          margin-right: 30px;
+        }
+      }
+      @include breakpoint(medium) {
+        width: 100%;
+      }
+      @include breakpoint(min-small) {
+        margin-bottom: 30px;
+      }
+      @include breakpoint(small) {
+        margin-bottom: 15px;
+        p {
+          font-size: 12px;
+          & .title {
+            font-size: 22px;
+          }
+        }
       }
       &:before {
         content: "";
@@ -289,20 +304,48 @@
       }
     }
   }
+  .container {
+    @media screen and (min-width: 760px) {
+      max-width: 730px;
+    }
+    @media screen and (max-width: 759px) {
+      padding: 0 15px;
+    }
+  }
+  iframe {
+    display: block;
+    margin: auto;
+    @include breakpoint(small) {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 .tags {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  max-width: 730px;
   margin: auto;
   @include breakpoint(small) {
     margin-top: 25px;
   }
+  @media screen and (min-width: 760px) {
+    max-width: 730px;
+  }
+  @media screen and (max-width: 759px) {
+    max-width: 100%;
+    padding: 0 15px;
+  }
   span {
-    font-size: 16px;
     margin-right: 10px;
+    @include breakpoint(min-small) {
+      font-size: 16px;
+    }
+    @include breakpoint(small) {
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
   }
   a,
   .tag {

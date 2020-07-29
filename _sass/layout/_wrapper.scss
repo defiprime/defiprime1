@@ -18,7 +18,7 @@
 
       @include breakpoint(small) {
         $gutter: _size(gutter) * 0.5;
-        .blog-page &{
+        .blog-page & {
           padding: 0;
         }
       }
@@ -26,6 +26,8 @@
   }
 }
 .container {
-  max-width: 720px;
   margin: 0 auto;
+  @media screen and (min-width: 760px) {
+    max-width: 730px;
+  }
 }

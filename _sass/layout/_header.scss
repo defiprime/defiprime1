@@ -203,7 +203,7 @@
 
 $topBarSize: 58px;
 
-@media screen and (max-width: 767px) {
+@include breakpoint(small) {
   .header-content .menu-list {
     display: block;
     margin-top: -91px;
