@@ -76,6 +76,33 @@
       }
     }
   }
+  a {
+    color: #292984;
+    font-weight: 600;
+    &:hover{
+      color: _color(green-color);
+    }
+    &.button-trade {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 400;
+      width: 255px;
+      height: 45px;
+      background-color: _color(purple-color);
+      color: #ffffff;
+      &:hover{
+        background-color: _color(green-color);
+        color: #ffffff;
+      }
+    }
+  }
+  p{
+    &:last-child{
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .product-tags-icons {
@@ -134,8 +161,13 @@ blockquote {
     margin: 75px auto 45px auto;
   }
   .arrow-back {
+    position: absolute;
+    @include breakpoint(min-small) {
+      top: -37px;
+    }
     @include breakpoint(small) {
       font-size: 14px;
+      top: -18px;
       svg {
         width: 15px;
         height: auto;
