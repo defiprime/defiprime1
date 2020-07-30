@@ -236,14 +236,6 @@
 			}
     });
 
-    function setShortHash() {
-      let element = $(".hash-val");
-      let hash = element.html();
-      let shortHash = hash.substring(0, 6) + '...' + hash.substring(hash.length - 14);
-      $(element).html(shortHash)
-    }
-
-    setShortHash();
 
     $('.card_main_details p a').on('mouseover', function () {
       $(this).closest('.asset_tool_card').addClass('is-hover-link');

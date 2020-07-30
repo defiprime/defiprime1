@@ -29,18 +29,18 @@
       }
 
       .footer-col {
-        @include breakpoint(min-small) {
+        @include breakpoint(min-medium) {
           width: 40%;
         }
-        @include breakpoint(small) {
+        @include breakpoint(medium) {
           width: 100%;
         }
         &:first-child,
         &:last-child {
-          @include breakpoint(min-small) {
+          @include breakpoint(min-medium) {
             width: 30%;
           }
-          @include breakpoint(small) {
+          @include breakpoint(medium) {
             width: 100%;
           }
         }
@@ -59,7 +59,7 @@
       &-col-bottom {
         display: flex;
         flex-direction: column;
-        @include breakpoint(small) {
+        @include breakpoint(medium) {
           margin-top: 30px;
         }
         span,
@@ -82,7 +82,8 @@
             font-size: 12px;
           }
         }
-        .hash-val {
+        .hash .value {
+          font-size: 12px;
           color: #ffffff;
         }
       }
@@ -114,12 +115,12 @@
       }
 
       &.shown-small {
-        @include breakpoint(min-small) {
+        @include breakpoint(min-medium) {
           display: none;
         }
       }
       &.hidden-small {
-        @include breakpoint(small) {
+        @include breakpoint(medium) {
           display: none;
         }
       }
