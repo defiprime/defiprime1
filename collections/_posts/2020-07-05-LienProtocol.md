@@ -11,6 +11,8 @@ featured-image: /images/blog/lien-og.png
 quote: /images/blog/lien-quote.png
 intro: "The Lien Protocol team talks about their new stablecoin system, which doesn’t require over-collateralization or governance"
 author: Defiprime
+tags: ['Interview', 'Derivatives']
+
 ---
 The Lien Protocol team talks about their new stablecoin system, which doesn’t require over-collateralization or governance.
 
