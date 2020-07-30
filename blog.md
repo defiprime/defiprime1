@@ -16,6 +16,13 @@ pagination:
 <section class="blog-articles">
 	{% for post in paginator.posts %}
 		<article>
+      {% if post.tags.size != 0 %}
+        <div class="tags">
+          {% for tag in post.tags %}
+          <a href="/t/{{tag | downcase | replace: ' ', '-' }}.html" class="tag">{{ tag }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}	
 			<a href="{{ post.url }}">
 				<div class="date">{{ post.date | date_to_string}}</div>
 				<div class="header">
@@ -36,12 +43,7 @@ pagination:
 				</div>
 				<div class="content">
 					<p>{{ post.intro | strip_html | truncatewords:50 }}</p>
-					<div class="tags">
-						{% for tag in post.tags %}
-							<span class="tag">{{ tag }}</span>
-						{% endfor %}
-					</div>
-				</div>				
+				</div>    
 			</a>
 		</article>
 	{% endfor %}

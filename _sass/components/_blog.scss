@@ -22,6 +22,7 @@
   .blog-articles {
     article {
       display: flex;
+      flex-wrap: wrap;
       position: relative;
       width: 100%;
       transition: 0.3s;
@@ -166,24 +167,36 @@
           text-overflow: ellipsis;
           p {
             line-height: 1.8;
+            margin-bottom: 0;
             @include breakpoint(min-small) {
               font-size: 20px;
-              margin-bottom: 30px;
             }
             @include breakpoint(small) {
               font-size: 16px;
-              margin-bottom: 0;
             }
-          }
-
-          > :last-child {
-            margin-bottom: 0;
-            font-size: 21px;
           }
         }
         &:hover {
           h2 {
             color: _color(purple-color);
+          }
+        }
+      }
+      .tags{
+        @include breakpoint(min-small){
+          position: absolute;
+          left: 95px;
+          bottom: 65px;
+          + a {
+            padding-bottom: 125px;
+          }
+        }
+        @include breakpoint(small){
+          order: 2;
+          margin: 0 -20px 0 15px;
+          padding-bottom: 38px;
+          + a {
+            padding-bottom: 25px;
           }
         }
       }
