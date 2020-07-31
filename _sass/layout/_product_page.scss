@@ -162,6 +162,9 @@ blockquote {
   }
   .arrow-back {
     position: absolute;
+    svg {
+      margin-right: 8px;
+    }
     @include breakpoint(min-small) {
       top: -37px;
     }
@@ -183,5 +186,25 @@ blockquote {
   img {
     display: block;
     margin: auto;
+  }
+}
+.product {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 505px;
+    background-image: url(/../../images/bg-product-page.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  #wrapper:before {
+    content: none;
   }
 }

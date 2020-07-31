@@ -11,7 +11,7 @@ featured-image: /images/blog/flahloans-og.png
 quote: /images/blog/flahloans-quote.png
 intro: "In this article, we are going to go over their pros and cons"
 author: Klepatch
-tags: ['DeFi Guides', 'Flashloans', 'Lending']
+tags: ['DeFi Guides', 'Flashloans', 'Lending', 'dYdX']
 ---
 If you follow DeFi, you probably have heard of Flashloans. With Flashloans, you can borrow massive amounts of money on the Blockchain without any collateral.
 

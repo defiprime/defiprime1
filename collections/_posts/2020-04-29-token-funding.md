@@ -11,6 +11,7 @@ featured-image: /images/blog/token-based-funding-og.png
 quote: /images/blog/token-based-funding-quote.png
 intro: "In this article, we discuss a handful of the fundraising methods implemented within the decentralized finance space"
 author: Mack
+tags: ['DeFi Guides']
 ---
 Crowdfunding is an ambitious experiment in stakeholder capitalism. While the idea of a world where individuals fund projects they find important is compelling, a number of obstacles stand in the way of such a bright future. In this article, we discuss a handful of the fundraising methods implemented within the decentralized finance space and otherwise, expounding on strengths and weaknesses therein.
 

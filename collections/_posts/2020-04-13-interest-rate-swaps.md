@@ -11,7 +11,7 @@ featured-image: /images/blog/swaprate/og.png
 quote: /images/blog/swaprate/quote.png
 intro: "This article explains why interest rate swaps are so important"
 author: Belyakov
-tags: ['DeFi Guides']
+tags: ['DeFi Guides', 'Derrivatives']
 ---
 This article explains why interest rate swaps are so important, especially for Decentralized Finance now.
 
