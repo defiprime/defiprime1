@@ -202,6 +202,7 @@ header ~ p {
     font-size: 42px;
     line-height: 1.2;
     margin: 55px 0 30px 0;
+    outline: none;
     @include breakpoint(small) {
       font-size: 30px;
       margin: 60px 0 45px 0;
