@@ -202,6 +202,7 @@ header ~ p {
     font-size: 42px;
     line-height: 1.2;
     margin: 55px 0 30px 0;
+    outline: none;
     @include breakpoint(small) {
       font-size: 30px;
       margin: 60px 0 45px 0;
@@ -235,8 +236,9 @@ header ~ p {
     font-size: 0.8em;
   }
   p {
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    color: _color(main-color);;
+    color: #000000;
     margin-bottom: 20px;
     @include breakpoint(small) {
       font-size: 14px;
@@ -244,6 +246,14 @@ header ~ p {
   }
   a {
     font-weight: _add-font(weight-bold);
+  }
+  li{
+    font-family: "Open Sans", sans-serif;
+    color: #000000;
+  }
+  strong {
+    font-weight: 700;
+    font-size: 16px;
   }
 }
 .author-block ~ p {
