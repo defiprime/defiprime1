@@ -7,7 +7,7 @@ ecosystem: ethereum
 product-description: dYdX is a trading platform for crypto assets, built with open-source protocols, enabling decentralized margin trading. [dYdX - Decentralized Platform for Advanced Financial Products, interview with  Antonio Juliano](/dydx)
 coltitle:  "Margin trading"
 colpermalink: margin-trading
-filter: Ethereum, Bitcoin
+filter: Ethereum, Bitcoin, Perpetual
 twitter: https://twitter.com/dydxprotocol
 github: https://github.com/dydxprotocol/
 analytics: https://explore.duneanalytics.com/embed/query/2873/visualization/5534?api_key=ZcYHEmH4ZQrNEKcN22tNrTn2HvYl8tNFUjVwh7WG
