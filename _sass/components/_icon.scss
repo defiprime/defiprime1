@@ -15,9 +15,6 @@
 			display: none;
 		}
 
-		&.style1 {
-		}
-
 		&.style2 {
 			@include vendor('transition', (
 				'background-color #{_duration(transition)} ease-in-out',
