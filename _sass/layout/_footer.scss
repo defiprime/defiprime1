@@ -91,8 +91,9 @@
 
     .social-links {
       display: flex;
-      margin-bottom: 30px;
+      margin-bottom: 28px;
       a {
+        padding: 6px 0;
         &:hover {
           svg {
             path {
@@ -101,12 +102,13 @@
           }
         }
         svg {
-          height: auto;
           @include breakpoint(min-small) {
             width: 36px;
+            height: 36px;
           }
           @include breakpoint(small) {
             width: 24px;
+            height: 24px;
           }
           path {
             fill: #8f68fc;
