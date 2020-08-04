@@ -11,6 +11,7 @@ featured-image: /images/blog/token-based-funding-og.png
 quote: /images/blog/token-based-funding-quote.png
 intro: "In this article, we discuss a handful of the fundraising methods implemented within the decentralized finance space"
 author: Mack
+tags: ['DeFi Guides']
 ---
 Crowdfunding is an ambitious experiment in stakeholder capitalism. While the idea of a world where individuals fund projects they find important is compelling, a number of obstacles stand in the way of such a bright future. In this article, we discuss a handful of the fundraising methods implemented within the decentralized finance space and otherwise, expounding on strengths and weaknesses therein.
 
@@ -60,4 +61,4 @@ Decentralized Autonomous Organizations are vehicles for a group to make decision
 
 ### Conclusion
 
-It’s clear that much can be gained from opening the playing field for early-stage investment. Something not discussed thus far is the issue of accessibility - while much can be gained from each model included in this paper, it could be considered unlikely that a small business or start-up founder would be willing to implement any such model. This is especially true when one considers how an angel investor or venture capitalist might respond to the prospect of incorporating cryptocurrencies into their investment model - _reluctantly._ Ultimately, all of these schemes face trial in the court of public opinion. Only proven credibility and insurmountable security will demonstrate that crypto-based fundraising really is worthwhile. 
+It’s clear that much can be gained from opening the playing field for early-stage investment. Something not discussed thus far is the issue of accessibility - while much can be gained from each model included in this paper, it could be considered unlikely that a small business or start-up founder would be willing to implement any such model. This is especially true when one considers how an angel investor or venture capitalist might respond to the prospect of incorporating cryptocurrencies into their investment model - _reluctantly._ Ultimately, all of these schemes face trial in the court of public opinion. Only proven credibility and insurmountable security will demonstrate that crypto-based fundraising really is worthwhile.

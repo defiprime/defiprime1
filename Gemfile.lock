@@ -66,6 +66,8 @@ GEM
       sassc (> 2.0.1, < 3.0)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
+    jekyll-tagging (1.1.0)
+      nuggets
     jekyll-toc (0.14.0)
       jekyll (>= 3.8)
       nokogiri (~> 1.10)
@@ -90,6 +92,7 @@ GEM
       mini_portile2 (~> 2.4.0)
     nokogiri (1.10.9-x64-mingw32)
       mini_portile2 (~> 2.4.0)
+    nuggets (1.6.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     progressbar (1.10.1)
@@ -122,6 +125,7 @@ DEPENDENCIES
   jekyll-random (~> 0.0.1)
   jekyll-redirect-from
   jekyll-sitemap
+  jekyll-tagging
   jekyll-toc
   jekyll-youtube
   liquid-c

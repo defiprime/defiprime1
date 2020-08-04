@@ -34,7 +34,14 @@
 
 <body >
 
-    {% include header.html %} {{ content }} {% include footer.html %}
+    {% include header.html %}
+    <!-- Main -->
+    <div id="main">
+      <div class="inner">
+    {{ content }} 
+      </div>
+    </div>
+    {% include footer.html %}
 
 </body>
 

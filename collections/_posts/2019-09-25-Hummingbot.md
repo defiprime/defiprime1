@@ -11,6 +11,7 @@ featured-image: /images/blog/hummingbot-og.png
 quote: /images/blog/hummingbot-quote.png
 intro: "Carlo talks about switching career from Wall Street investment banker to open-source market making bot developer."
 author: Defiprime
+tags: ['Interview'] 
 ---
 Carlo talks about switching career from Wall Street investment banker to open-source market making bot developer.
 

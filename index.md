@@ -103,4 +103,7 @@ redirect_from:
 {% endfor%}
 </section>
 
+<h2 class='recently_added_annotation'>Recent Topics at <a href="https://alpha.defiprime.com/">Alpha</a></h2>
+<section class='latest_alpha'></section>
+
 {% include algolia.html %}

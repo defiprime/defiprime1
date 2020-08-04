@@ -11,6 +11,7 @@ featured-image: /images/blog/melon-og.png
 quote: /images/blog/melon-quote.png
 intro: Mona El Isa, Co Founder at Melonport talking about building a new infrastructure for asset management at Melon Protocol.  
 author: Defiprime
+tags: ['Interview', 'Asset Management']
 ---
 Mona El Isa, Co-Founder at Melonport talking about building a new infrastructure for asset management at Melon Protocol.  
 

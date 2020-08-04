@@ -11,6 +11,8 @@ featured-image: /images/blog/neutral-og.png
 quote: /images/blog/neutral-quote.png
 intro: Nelson from Neutral talks about the first meta-stablecoin, Neutral Dollar (NUSD), and use cases for basketing stablecoins.   
 author: Defiprime
+tags: ['Interview', 'Stablecoins']
+
 ---
 Nelson from Neutral talks about the first meta-stablecoin, Neutral Dollar (NUSD), and use cases for basketing stablecoins.
 

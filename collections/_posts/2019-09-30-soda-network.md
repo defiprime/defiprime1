@@ -11,6 +11,7 @@ featured-image: /images/blog/soda-og.png
 quote: /images/blog/soda-quote.png
 intro: "Max told us about what it looks like being a managing partner with $2M AUM and what's the goals SODA see in the future."
 author: Defiprime
+tags: ['Interview']
 ---
 Max told us about what it looks like being a managing partner with $2M AUM and what's the goals SODA see in the future.
 

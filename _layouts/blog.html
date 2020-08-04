@@ -29,52 +29,48 @@
     integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
     crossorigin="anonymous"></script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138327045-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-138327045-1', {'content_group1': 'blog'});
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138327045-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-138327045-1', { 'content_group1': 'blog' });
 
-</script>
-
-
+  </script>
 </head>
-
-<body class="post">
-  {% include header.html %}
-  {% if page.featured-image %}
-  <div class="feature" style="background-image: url({{ page.featured-image }})">
-    <div class="container  typeset"></div>
-  </div> {% endif %}
-
-
-  <main class="main  container">
-
-    {% include sidepanel.html html=page.toc_sidepanel  %}
-
-    <article class="article  article--post  content  typeset">
-      <h1>{{ page.h1title }}</h1>
-      <div class="container">
-
-        <div class="author-block">
-          {% assign author = site.data.authors[page.author] %}
-          <span class="name">{{ author.name }}</span>
-          <span class="date">on {{ page.date | date_to_string }}</span>
+  <body class="post">
+    {% include header.html %}
+    {% if page.featured-image %}
+      <div class="feature" style="background-image: url({{ page.featured-image }})">
+        <div class="container  typeset"></div>
+      </div> 
+    {% endif %}
+    <h1>{{ page.h1title }}</h1>
+    <main class="main">
+      {% include sidepanel.html html=page.toc_sidepanel  %}
+      <article class="article  article--post  content  typeset">
+        <div class="container container-toc">
+          <div class="author-block">
+            {% assign author = site.data.authors[page.author] %}
+            <span class="name">{{ author.name }}</span>
+            <span class="date">on {{ page.date | date_to_string }}</span>
+          </div>
+          {{ content | toc }}
         </div>
-        {{ content }}
+      </article>
+      <div class="tags">
+        {% if page.tags %}
+          <span>Tags:</span>
+        {% endif %}
+        {% for tag in page.tags %}
+          <a href="/t/{{tag | downcase | replace: " ", "-" }}.html" rel="tag" class="tag">{{ tag }}</a>
+        {% endfor %}
       </div>
-    </article>
-
+    </main>
     {% include folowus.html %}
-
     {% include author_bio.html %}
-
-  </main>
-  {% include blog-readmore.html %}
-  {% include footer.html %}
-
-</body>
-
+    {% include blog-readmore.html %}
+    {% include footer.html %}
+  </body>
 </html>

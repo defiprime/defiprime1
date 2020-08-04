@@ -11,6 +11,7 @@ featured-image: /images/blog/loans-without-collateral-og.png
 quote: /images/blog/loans-without-collateral-quote.png
 intro: "Ethereum ecosystem is already looking to build new financial services for as many people as possible — and in DeFi, that implies unsecured loans"
 author: masmej
+tags: ['DeFi Guides', 'Lending', 'NFTs']
 ---
 
 In the past months, there’s been an uptick in interest for #DeFi beyond margin trading, popularized by Compound, Maker Vaults, and InstaDapp. To start 2020 with the same innovation speed, the Ethereum ecosystem is already looking to build new financial services for as many people as possible — and in DeFi, that implies unsecured loans.

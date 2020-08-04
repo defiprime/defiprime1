@@ -8,7 +8,7 @@
 # Site settings
 title: DefiPrime.com
 #email: youremailaddress@gmail.com
-description: All things DeFi - trustless and transparent financial products built on top of the blockchain 
+description: All things DeFi - trustless and transparent financial products built on top of the blockchain
 #baseurl: "https://defiprime.com" # the subpath of your site, e.g. /blog
 url: "https://defiprime.com" # the base hostname & protocol for your site
 
@@ -153,3 +153,7 @@ lazy_load_image:
   #   "data-size": auto
 feed:
   path: feed.xml
+
+
+tag_page_layout: tag_page
+tag_page_dir: t

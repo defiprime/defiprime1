@@ -11,6 +11,7 @@ featured-image: /images/blog/stakefish-og.png
 quote: /images/blog/stakefish-quote.png
 intro: "Wang Chun, founder of stake.fish talks about PoS staking, security-first mindset, and where is an intersection of DeFi and staking-as-a-service providers.  "
 author: Defiprime
+tags: ['Interview']
 ---
 Wang Chun, founder of stake.fish talks about PoS staking, security-first mindset, and where is an intersection of DeFi and staking-as-a-service providers.  
 

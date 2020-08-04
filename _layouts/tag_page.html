@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>{{ page.tag }} - DeFi Blog</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{{page.tag}} and all things about DeFi - trustless and transparent financial products built on top of the blockchain ">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ site.url }}{{page.url}}">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <meta property="og:title" content="{ page.tag }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ site.url }}{{page.url}}" />
+  <meta property="og:description" content="{{page.tag}} and all things about DeFi - trustless and transparent financial products built on top of the blockchain " />
+  <meta property="og:image" content="{{ site.url }}/images/og-blog.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@defiprime">
+  <meta name="twitter:creator" content="@defiprime">
+  <meta name="twitter:title" content="{{ page.tag }}">
+  <meta name="twitter:description" content="{{page.tag}} and all things about DeFi - trustless and transparent financial products built on top of the blockchain ">
+  <meta name="twitter:image" content="{{ site.url }}/images/og-blog.png">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138327045-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-138327045-1', { 'content_group3': 'tag' });
+
+  </script>
+
+</head>
+
+<body class="blog-page">
+  {% include header.html %}
+  <!-- Main -->
+  <div id="main">
+    <div class="inner">
+      <header>
+        <h1 class="align-center"><span class="text-green">{{ page.tag }}</span> @ DeFi <span
+            class="text-orange">Blog</span></h1>
+      </header>
+
+
+      <section class="blog-articles">
+        {% for post in  page.posts %}
+        <article>
+          <div class="tags">
+            {% for tag in post.tags %}
+            <a href="/t/{{tag | downcase | replace: " ", "-" }}.html" class="tag">{{ tag }}</a>
+            {% endfor %}
+          </div>
+          <a href="{{ post.url }}">
+            <div class="date">{{ post.date | date_to_string}}</div>
+            <div class="header">
+              <h2>{{ post.title }}</h2>
+              <div class="author-item">
+                {% assign author = site.data.authors[post.author] %}
+                {% if author.image %}
+                  <img class="lazyload" data-src="{{ author.image }}">
+                {% endif %}
+                <div class="author-data">
+                  {% assign author = site.data.authors[post.author] %}
+                  {% if author.image %}
+                    <span>Author</span>
+                    <span class="author">{{author.name}}</span>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <p>{{ post.intro | strip_html | truncatewords:50 }}</p>
+            </div>
+          </a>
+        </article>
+        {% endfor %}
+
+      </section>
+
+      {% if paginator.next_page %}
+      <a class="button" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Next</a>
+      {% endif %}
+
+      {% if paginator.previous_page %}
+      <a class="button" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Previous</a>
+      {% endif %}
+
+    </div>
+  </div>
+  {% include footer.html %}
+
+</body>
+
+</html>

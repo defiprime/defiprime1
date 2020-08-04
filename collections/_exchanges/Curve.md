@@ -6,7 +6,7 @@ image: /images/output_md/www.curve.fi.png
 ecosystem: ethereum
 type: non-custodial
 filter: No KYC
-product-description: Curve is an exchange liquidity pool on Ethereum designed for extremely efficient stablecoin trading.  
+product-description: Curve is an exchange liquidity pool on Ethereum designed for extremely efficient stablecoin trading. [Interview with Curve Finance founder](/curve). 
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/CurveFinance

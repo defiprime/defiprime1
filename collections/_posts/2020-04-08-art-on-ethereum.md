@@ -11,6 +11,7 @@ featured-image: /images/blog/art-og.png
 quote: /images/blog/art-quote.png
 intro: "A brief rundown on the top cryptoart platforms so you can wrap your head around the space more quickly"
 author: Peaster
+tags: ['DeFi Guides','NFTs']
 ---
 
 I’m William M. Peaster, and I’m a writer who's been tracking the Ethereum beat in recent years. Like many others, I’ve thought non-fungible tokens, or NFTs, were really interesting ever since CrypoKitties mania first kicked off in 2017. Yet it wasn’t until late 2019 that I started going deeper into the NFT sector, and since then I’ve been blown away by all the teeming activity I’ve seen across the board.

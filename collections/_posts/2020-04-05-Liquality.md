@@ -11,6 +11,7 @@ featured-image: /images/blog/liquality-quote.png
 quote: /images/blog/liquality-quote.png
 intro: "Simon told us Liquality backstory, and shared his thoughts on complexities of a cross-chain swap for end users"
 author: Defiprime
+tags: ['Interview', 'DEXs', 'Cross-chain']
 ---
 Simon told us Liquality backstory and shared his thoughts on the complexities of a cross-chain swap for end users.   
 

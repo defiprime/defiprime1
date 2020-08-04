@@ -11,6 +11,8 @@ featured-image: /images/blog/chainbeat-og.png
 quote: /images/blog/chainbeat-quote.png
 intro: "Ashok shared his thoughts on cross-platform blockchain analytics, and challenges Chainbeat team faced while building Google Analytics for the dApps world"
 author: Defiprime
+tags: ['Interview', 'VC-founded']
+
 ---
 Ashok shared his thoughts on cross-platform blockchain analytics, and challenges Chainbeat team faced while building Google Analytics for the dApps world.  
 

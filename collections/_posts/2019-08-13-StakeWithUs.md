@@ -1,5 +1,5 @@
 ---
-git-date: 
+git-date:
 layout: blog
 title:  StakeWithUs
 permalink: stakewithus
@@ -11,6 +11,7 @@ featured-image: /images/blog/stakewithus-og.png
 quote: /images/blog/stakewithus-quote.png
 intro: 'Oliver, co-founder of StakeWith.Us talks about infrastructure and scalability built around adoption driven projects, staking-as-a-service providers and the future of DeFi. '
 author: Defiprime
+tags: ['Interview']
 ---
 Oliver, co-founder of StakeWith.Us talks about infrastructure and scalability built around adoption driven projects, staking-as-a-service providers and the future of DeFi.
 

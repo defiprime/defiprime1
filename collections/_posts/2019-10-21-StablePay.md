@@ -11,6 +11,7 @@ featured-image: /images/blog/stablepay-og.png
 quote: /images/blog/stablepay-quote.png
 intro: "Doug from the StablePay team talks about building DeFi enabled payment solution for content creators."
 author: Defiprime
+tags: ['Interview']
 ---
 Doug from the StablePay team talks about building DeFi enabled payment solution for content creators.
 

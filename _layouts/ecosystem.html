@@ -38,18 +38,21 @@
   <body class="product-page">
 
     {% include header.html %}
-
+    <!-- Main -->
+    <div id="main">
+      <div class="inner">
     {% include sidepanel.html html=page.toc_sidepanel  %}
     <article class="article  article--post  content  typeset ecosystem">
 
       <h1>{{ page.h1title }}</h1>
-      <div class="container-ecosystem">
+      <div class="container-ecosystem container-toc">
         {{ content | toc }}
       </div>
     </article>
 
+      </div>
+    </div>
     {% include folowus.html %}
-
     {% include footer.html %}
 
 </body>

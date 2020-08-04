@@ -11,6 +11,7 @@ featured-image: /images/blog/equilibrium-og.png
 quote: /images/blog/equilibrium-quote.png
 intro: 'Alex Melikhov shared his thoughts on stablecoins and DeFi and told us the backstory of building the first crypto-backed stablecoin based on the EOS blockchain.'
 author: Defiprime
+tags: ['Interview']
 ---
 Alex Melikhov shared his thoughts on stablecoins and DeFi and told us the backstory of building the first crypto-backed stablecoin based on the EOS blockchain.
 

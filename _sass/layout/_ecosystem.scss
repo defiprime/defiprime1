@@ -1,13 +1,4 @@
 .ecosystem {
-  h1 {
-    font-size: 66px;
-    line-height: 1.2;
-    margin-bottom: 25px;
-    width: 100%;
-    @media screen and(max-width: 767px) {
-      font-size: 36px;
-    }
-  }
   p {
     width: 100%;
     font-size: 16px;
@@ -29,6 +20,7 @@
     text-transform: inherit;
     width: 400px;
     margin-left: auto;
+    outline: none;
     @media screen and(max-width: 769px) {
       width: 50%;
     }
@@ -224,6 +216,8 @@
       font-weight: 500;
       margin: 55px auto 30px auto;
       max-width: 730px;
+      width: 100%;
+      outline: none;
       @media screen and(max-width: 767px) {
         font-size: 28px;
       }

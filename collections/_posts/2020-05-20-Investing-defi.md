@@ -11,6 +11,7 @@ featured-image: /images/blog/investing/investing-og.png
 quote: /images/blog/investing/investing-quote.png
 intro: "Thinking about investing in DeFi? Here’s what you need to know..."
 author: goldfarb
+tags: ['DeFi Guides']
 ---
 In order to be successful, you have to do things nobody else is doing, go places nobody else is going, and say things nobody else is saying.
 

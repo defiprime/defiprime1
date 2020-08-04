@@ -11,6 +11,8 @@ featured-image: /images/blog/synthetics/synthetics-og.png
 quote: /images/blog/synthetics/synthetics-quote.png
 intro: 'Why synthetics are crucial to the maturation of the cryptoasset markets and examples of projects using synthetics today'
 author: berenzon
+tags: ['DeFi Guides', 'Derivatives']
+
 ---
 While the primary use-case for cryptoassets continues to be speculation, I don’t believe this is a bad thing. Speculation was a key driver in the development of traditional financial markets and continues to play an important role in the industry today. Most importantly, speculators provide liquidity, allowing participants to enter or exit the market more easily. This reduces transaction costs and increases access for market participants.
 

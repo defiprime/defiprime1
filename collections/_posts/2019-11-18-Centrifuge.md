@@ -11,6 +11,7 @@ featured-image: /images/blog/centrifuge-og.png
 quote: /images/blog/centrifuge-quote.png
 intro: "Philip on real-world assets tokenization, bridging the gap between traditional finance and web3, and the promise of DeFi"
 author: Defiprime
+tags: ['Interview', 'VC-founded']
 ---
 Philip on real-world assets tokenization, bridging the gap between traditional finance and web3, and the promise of DeFi.  
 
