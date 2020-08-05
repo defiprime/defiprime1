@@ -254,12 +254,11 @@
     margin: 0 auto 75px auto;
     padding: 0 15px;
     article {
-      background-color: #05d2dd;
+      background-color: #ffffff;
       box-shadow: 0px 0px 8px rgba(41, 41, 132, 0.12);
       position: relative;
       transition: all 0.3s;
       display: flex;
-      padding-left: 6px;
       @include breakpoint(min-medium) {
         width: calc(50% - 15px);
         &:nth-child(2n-1) {
@@ -281,26 +280,34 @@
           }
         }
       }
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 6px;
+        height: 100%;
+        background-color: #05d2dd;
+      }
       &:nth-child(3) {
-        background-color: #ff961c;
+        &:before {
+          background-color: #ff961c;
+        }
       }
       &:nth-child(4) {
-        background-color: #8b8bb8;
+        &:before {
+          background-color: #8b8bb8;
+        }
       }
       &:hover {
-        border: 1px solid #8f68fc;
+        outline: 1px solid #8f68fc;
         box-shadow: 0px 8px 24px rgba(41, 41, 132, 0.12);
         transform: translateY(-8px);
-        a {
-          padding-right: 30px;
-        }
       }
       a {
         background-color: #ffffff;
         display: block;
-        padding-top: 30px;
-        padding-left: 30px;
-        padding-right: 31px;
+        padding: 30px;
         width: 100%;
         .title {
           font-family: "Kanit", sans-serif;
