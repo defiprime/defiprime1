@@ -30,10 +30,21 @@ date: 2020-06-25
 | concat: site.stablecoins
  %}
 
+ <table style="width:100%">
+   <tr>
+     <th>Product</th>
+     <th>Ticker</th>
+   </tr>
 
 {% for all_project in all_projects %}
 
 {% if all_project.ticker  %}
-| {{ all_project.product-title }} | {{ all_project.ticker }} | * |
+<tr>
+ <td> {{ all_project.product-title }}</td>
+ <td>{{ all_project.ticker }} </td>
+</tr>
+
 {% endif %}
  {% endfor %}
+
+ </table>
