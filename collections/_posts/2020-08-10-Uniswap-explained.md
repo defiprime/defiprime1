@@ -7,7 +7,7 @@ h1title: "Uniswap Explained"
 pagetitle: "Uniswap Explained - In-Depth DeFi Guide"
 metadescription: "In this post, we’ll break down what exactly Uniswap is, how it works, and how to list tokens and participate in liquidity pools using the protocol"
 category: blog
-featured-image: /images/blog/post.png
+featured-image: /images/blog/uniswapexplained-og.png
 intro: "In this post, we’ll break down what exactly Uniswap is, how it works, and how to list tokens and participate in liquidity pools using the protocol"
 author: Peaster
 tags: ['DeFi Guides','DEXs']
