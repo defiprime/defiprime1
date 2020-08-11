@@ -5,14 +5,14 @@ title:  "Uniswap Explained"
 permalink: Uniswap-explained
 h1title: "Uniswap Explained"
 pagetitle: "Uniswap Explained - In-Depth DeFi Guide"
-metadescription: "Uniswap Explained - In-Depth DeFi Guide. Today we are sharing our in-depth guide on Uniswap Exchange"
+metadescription: "In this post, we’ll break down what exactly Uniswap is, how it works, and how to list tokens and participate in liquidity pools using the protocol"
 category: blog
 featured-image: /images/blog/post.png
-intro: "Our in-depth guide on Uniswap"
+intro: "In this post, we’ll break down what exactly Uniswap is, how it works, and how to list tokens and participate in liquidity pools using the protocol"
 author: Peaster
 tags: ['DeFi Guides','DEXs']
 ---
-Today we are sharing our in-depth guide on Uniswap Exchange.
+Decentralized trading protocol Uniswap is one of Ethereum’s biggest hits right now, and the breakout project has plenty more runway from here. In this post, we’ll break down what exactly Uniswap is, how it works, and how to list tokens and participate in liquidity pools using the protocol.
 
 ### What is Uniswap? How Uniswap works?
 
@@ -149,3 +149,9 @@ Notably, there was a reentrancy attack vector in Uniswap V1, wherein an attacker
 -  **Q: Why does my transaction cost X?**
 
 **A**: Every Ethereum transaction needs a payment of ether (ETH), called “gas” or a “gas payment,” to be completed. Ethereum gas prices fluctuate daily in line with demand. If many folks are trying to use Ethereum all at once, then gas prices will be higher. If activity is low, then gas prices will be lower. Your Uniswap transaction cost is the sum in ETH it takes to process your trade or liquidity provision/removal. For up to date stats on current Ethereum gas prices, check out [ethgasstation.info](https://ethgasstation.info/) or [etherscan.io/chart/gasprice](https://etherscan.io/chart/gasprice).
+
+### Conclusion
+
+Uniswap is going places, and the project’s stats are the proof. On August 10th, 2020, Uniswap powered ~$250 million in daily trading volume, making it the protocol to beat in Ethereum’s blooming DEX scene right now. 
+
+If the project can go this far this fast, then the sky’s the limit for its future. Uniswap’s great trading UI and cryptonative earning opportunities combined with protocol’s proven track record make it one of the cryptoeconomy’s brightest gems to date. As such, it’s well poised to be a dominant project for years to come.
