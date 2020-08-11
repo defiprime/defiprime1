@@ -2,7 +2,7 @@
 git-date:
 layout: blog
 title:  "Uniswap Explained"
-permalink: Uniswap-explained
+permalink: uniswap-explained
 h1title: "Uniswap Explained"
 pagetitle: "Uniswap Explained - In-Depth DeFi Guide"
 metadescription: "In this post, we’ll break down what exactly Uniswap is, how it works, and how to list tokens and participate in liquidity pools using the protocol"
@@ -152,6 +152,6 @@ Notably, there was a reentrancy attack vector in Uniswap V1, wherein an attacker
 
 ### Conclusion
 
-Uniswap is going places, and the project’s stats are the proof. On August 10th, 2020, Uniswap powered ~$250 million in daily trading volume, making it the protocol to beat in Ethereum’s blooming DEX scene right now. 
+Uniswap is going places, and the project’s stats are the proof. On August 10th, 2020, Uniswap powered ~$250 million in daily trading volume, making it the protocol to beat in Ethereum’s blooming DEX scene right now.
 
 If the project can go this far this fast, then the sky’s the limit for its future. Uniswap’s great trading UI and cryptonative earning opportunities combined with protocol’s proven track record make it one of the cryptoeconomy’s brightest gems to date. As such, it’s well poised to be a dominant project for years to come.
