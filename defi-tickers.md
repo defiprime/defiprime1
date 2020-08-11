@@ -1,9 +1,9 @@
 ---
 git-date:
-layout: stats
+layout: default
 title: tickers
 h1title: tickers
-pagetitle: tickers
+pagetitle: DeFi Tokens List
 metadescription: Decentralized Exchanges Trading Volume Tracker for Ethereum-based trading platforms. DEXs ranked by volume along with historic volume and daily market share
 featured-image: /images/og-dexs.png
 permalink: tickers
@@ -41,7 +41,7 @@ date: 2020-06-25
 {% if all_project.ticker  %}
 <tr>
  <td> {{ all_project.product-title }}</td>
- <td>{{ all_project.ticker }} </td>
+ <td>{{ all_project.ticker }} <a href="https://1inch.exchange/#/r/0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1/ETH/{{ all_project.ticker }}" class="button-trade">Trade ${{ all_project.ticker }} on 1inch.exchange</a> </td>
 </tr>
 
 {% endif %}
