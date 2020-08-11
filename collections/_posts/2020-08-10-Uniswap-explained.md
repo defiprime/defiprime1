@@ -4,14 +4,15 @@ layout: blog
 title:  "Uniswap Explained"
 permalink: Uniswap-explained
 h1title: "Uniswap Explained"
-pagetitle: "Uniswap Explained"
-metadescription: "Uniswap Explained"
+pagetitle: "Uniswap Explained - In-Depth DeFi Guide"
+metadescription: "Uniswap Explained - In-Depth DeFi Guide. Today we are sharing our in-depth guide on Uniswap Exchange"
 category: blog
 featured-image: /images/blog/post.png
-intro: "Uniswap Explained"
+intro: "Our in-depth guide on Uniswap"
 author: Peaster
-tags: ['DeFi Guides']
+tags: ['DeFi Guides','DEXs']
 ---
+Today we are sharing our in-depth guide on Uniswap Exchange.
 
 ### What is Uniswap? How Uniswap works?
 
@@ -31,8 +32,6 @@ In Ethereum’s decentralized finance sector, two genres of decentralized exchan
 Order book DEXes rely on buy and sell orders around a given token. Buy orders are called bids, and sell orders are called asks. To this end, these exchanges list bid orders and ask orders across every price point, with the “top of the book” marking whatever the lowest ask and the highest bid prices are at a particular time. The cons of order-book marketplaces, though, is that they don’t work well for illiquid markets, and they can be particularly prone to market manipulation and front-running. Some examples of this kind of DEX include 0x, IDEX, and Ethfinex.
 
 On the flip side, AMM-based DEXes like Uniswap rely on what’s called “algorithmic agents,” or “money robots,” rather than order books. Key to this DEX model is liquidity pools, in which users supply assets that a finely-tuned algorithm uses to make markets. Every AMM has its own customized algorithm with its own pros and cons. Ultimately, the algorithm’s unique formula is used to determine prices for users rather than a list of bid orders and ask orders.  
-
-
 
 ### How are prices determined?
 
@@ -96,7 +95,7 @@ Hereafter, you can go to Uniswap’s “Pool” tab to view your liquidity provi
 ![](/images/blog/uniswap/uniswap/image1.png)
 
 
-### How does Uniswap pool work?
+### How does Uniswap pools work?
 
 Liquidity pools, like Uniswap is now renowned for, are a cryptonative utility and a cryptonative earning opportunity.
 
@@ -122,7 +121,7 @@ Withdrawing liquidity from Uniswap is just as easy as adding liquidity is. Go to
 Click on “Remove,” and you’ll arrive at a liquidity removal dashboard where you can choose to remove 25%, 50%, 75%, 100%, or a more specific amount of your liquidity. Approve the transaction, submit your removal request transaction, and your assets will be returned to your wallet once the transaction confirms.
 
 
-### Uniswap how to check liquidity for token
+### How to check liquidity for token on Uniswap?
 
 If you’d like to see an expanded information dashboard on a particular Uniswap liquidity pool, go to the uniswap.info website and paste in the token address of the token you’re looking for. When I submit the B52 contract address and click on the ensuing popup, I arrive at a page like this:
 
@@ -132,7 +131,7 @@ If you’d like to see an expanded information dashboard on a particular Uniswap
 The pair dashboard will show you metrics like total liquidity, 24-hour volume, 24-hour fees, as well as all transactions involved with the selected pool.
 
 
-### Uniswap risks
+### Uniswap Risks
 
 Uniswap’s design is simple, elegant, and self-contained, meaning the protocol doesn’t have a wide attack surface. However, Uniswap isn’t totally free from risk, either. Namely, Uniswap bears the technical risk that comes with any smart contract-based project, i.e. contracts being attacked or otherwise obstructed.
 
