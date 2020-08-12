@@ -13,4 +13,6 @@ twitter: https://twitter.com/BalancerLabs
 github: https://github.com/balancer-labs/
 analytics: https://explore.duneanalytics.com/embed/query/4171/visualization/8115?api_key=DvVRTNM70csWdnF9jorVDUWJMo38jfTZBNGzuQmj
 ticker: BAL
+contract: "0xba100000625a3754423978a60c9317c58a424e3D"
+decimals: 18
 ---

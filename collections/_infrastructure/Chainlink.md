@@ -11,4 +11,6 @@ colpermalink: infrastructure
 twitter: https://twitter.com/chainlink
 github: https://github.com/smartcontractkit/chainlink
 ticker: LINK
+contract: "0x514910771AF9Ca656af840dff83E8264EcF986CA"
+decimals: 18
 ---

@@ -9,5 +9,4 @@ product-description: Switcheo is a decentralized cryptocurrency exchange that al
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/switcheonetwork
-ticker: SWTH
 ---

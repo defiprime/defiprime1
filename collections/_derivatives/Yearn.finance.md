@@ -10,4 +10,6 @@ colpermalink: derivatives
 twitter: https://twitter.com/iearnfinance
 github: https://github.com/iearn-finance
 ticker: YFI
+contract: "0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e"
+decimals: 18
 ---

@@ -11,4 +11,6 @@ colpermalink: derivatives
 twitter: https://twitter.com/synthetix_io
 analytics: https://explore.duneanalytics.com/embed/query/2961/visualization/5722?api_key=wfCADWmqi3i7pw6QqN3H93ZOXAx6dfshaLYoVGvH
 ticker: SNX
+contract: "0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F"
+decimals: 18
 ---

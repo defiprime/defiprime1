@@ -12,4 +12,6 @@ colpermalink: exchanges
 twitter: https://twitter.com/dxdao_
 github: https://github.com/dOrgTech/dex-react
 ticker: DXD
+contract: "0xa1d65e8fb6e87b60feccbc582f7f97804b725521"
+decimals: 18
 ---

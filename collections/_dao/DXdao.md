@@ -8,5 +8,7 @@ product-description: The DXdao is a decentralized organization that develops, go
 coltitle:  "DAO"
 colpermalink: dao
 twitter: https://twitter.com/dxdao_
-ticker: DXD 
+ticker: DXD
+contract: "0xa1d65e8fb6e87b60feccbc582f7f97804b725521"
+decimals: 18
 ---

@@ -11,4 +11,6 @@ colpermalink: infrastructure
 twitter: https://twitter.com/melonprotocol
 github: https://github.com/melonproject
 ticker:  MLN
+contract: "0xec67005c4e498ec7f55e092bd1d35cbc47c91892"
+decimals: 18
 ---

@@ -12,4 +12,6 @@ colpermalink: exchanges
 twitter: https://twitter.com/airswap
 github: https://github.com/airswap/developers
 ticker: AST
+contract: "0x27054b13b1B798B345b591a4d22e6562d47eA75a"
+decimals: 4
 ---

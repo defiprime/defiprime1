@@ -12,4 +12,6 @@ colpermalink: exchanges
 twitter: https://twitter.com/loopringorg
 github: https://github.com/Loopring
 ticker: LRC
+contract: "0xBBbbCA6A901c926F240b89EacB641d8Aec7AEafD"
+decimals: 18
 ---

@@ -33,15 +33,26 @@ date: 2020-06-25
  <table style="width:100%">
    <tr>
      <th>Product</th>
+     <th>Address</th>
      <th>Ticker</th>
+     <th>Price </th>
+     <th>24hr_change </th>
+     <th>24hr_vol </th>
+     <th>Market Cap</th>
+
    </tr>
 
 {% for all_project in all_projects %}
 
 {% if all_project.ticker  %}
 <tr>
- <td> {{ all_project.product-title }}</td>
+ <td> {{ all_project.product-title }} ({{ all_project.coltitle }})</td>
+ <td> {{ all_project.contract }}</td>
  <td>{{ all_project.ticker }} <a href="https://1inch.exchange/#/r/0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1/ETH/{{ all_project.ticker }}" class="button-trade">Trade ${{ all_project.ticker }} on 1inch.exchange</a> </td>
+ <td> 100 </td>
+ <td> 100 </td>
+ <td> 100 </td>
+ <td> 100 </td>
 </tr>
 
 {% endif %}

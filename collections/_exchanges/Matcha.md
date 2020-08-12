@@ -13,4 +13,6 @@ twitter: https://twitter.com/matchaxyz
 github: https://github.com/0xProject
 analytics: https://explore.duneanalytics.com/embed/query/5352/visualization/10546?api_key=pCnt3aDnI2OHkglB2qT53cruSNmj3IrPU9bxUjny
 ticker: ZRX
+contract: "0xe41d2489571d322189246dafa5ebde1f4699f498"
+decimals: 18
 ---

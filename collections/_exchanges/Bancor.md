@@ -10,4 +10,6 @@ colpermalink: exchanges
 ticker: BNT
 twitter: https://twitter.com/Bancor
 github: https://github.com/bancorprotocol
+contract: "0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C"
+decimals: 18
 ---
