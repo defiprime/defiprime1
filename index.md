@@ -55,7 +55,7 @@ redirect_from:
 
 <section>
   <h2 class='recently_added_annotation'>Recently added</h2>
-  <div class="tiles" id='recently_added_section'>
+  <div class="tiles grid" id='recently_added_section'>
     {% assign docArray = "" | split: "" %}
     {% assign collections = site.collections | where_exp: "coll", "coll.label != 'events'" | where_exp: "coll", "coll.label != 'posts'"  %}
       {% for collection in collections %}

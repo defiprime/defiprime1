@@ -7,7 +7,7 @@
     }
 
     span {
-        font-family: Open Sans;
+        font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
@@ -56,8 +56,8 @@
 
 
 .recently_added_annotation {
-    font-family: Kanit;
-    margin-top: 60px;
+    font-family: "Kanit", sans-serif;
+    margin: 96px auto 48px auto;
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
@@ -66,8 +66,6 @@
     text-transform: none;
     text-align: center;
     color: #292984;
-    margin-bottom: -38px;
-
     span {
         color: #ff961c;
     }
@@ -103,7 +101,6 @@
 .latest_blog_sneak_peak {
     display: grid;
     grid-template-columns: auto auto;
-    margin-top: 87px;
     gap: 30px 35px;
 
     article {
@@ -114,9 +111,6 @@
             transform: translateY(-3%);
         }
     }
-}
-.latest_alpha{
-    grid-template-columns: 50% 50%;
 }
 .latest_blog_link,
 .latest_alpha_link {
@@ -144,7 +138,7 @@
     }
 
     p {
-        font-family: "Open Sans";
+        font-family: "Open Sans", sans-serif;
         font-size: 16px;
         margin-right: 32px;
     }
@@ -172,8 +166,6 @@
     grid-template-columns: auto auto auto;
     grid-gap: 30px;
     gap: 30px;
-    margin-top: 90px;
-
     img {
         height: 208px;
     }
@@ -201,7 +193,7 @@
 
     h4 {
         margin-left: 15px;
-        font-family: Kanit;
+        font-family: "Kanit", sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 22px;
@@ -213,7 +205,7 @@
     }
 
     date {
-        font-family: Open Sans;
+        font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -243,7 +235,7 @@
     }
 
     p {
-        font-family: Open Sans;
+        font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -255,7 +247,7 @@
 
     span {
         position: relative;
-        font-family: Open Sans;
+        font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -283,7 +275,9 @@
         grid-template-columns: auto auto;
     }
     .recently_added_annotation {
-        margin-bottom: 0;
+        font-size: 36px;
+        margin: 48px auto 36px auto;
+
     }
 }
 
@@ -294,7 +288,7 @@
         grid-template-columns: auto;
     }
     .recently_added_annotation {
-        margin-bottom: 0;
+        font-size: 32px;
     }
 }
 
