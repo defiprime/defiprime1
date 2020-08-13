@@ -11,10 +11,20 @@
   .banner-content {
     display: flex;
     align-items: center;
+    @include breakpoint(small) {
+      flex-wrap: wrap;
+    }
     .banner-icon {
       display: flex;
-      margin-right: 30px;
       z-index: 2;
+      @include breakpoint(min-small) {
+        margin-right: 30px;
+      }
+      @include breakpoint(small) {
+        margin-bottom: 30px;
+        width: 100%;
+        justify-content: center;
+      }
     }
     .banner-description {
       font-family: "Baloo Bhai 2", cursive;
@@ -23,6 +33,18 @@
       line-height: 1.2;
       margin: 0;
       z-index: 2;
+      @include breakpoint(min-small) {        
+        .separator{
+          display: block;
+        }
+      }
+      @include breakpoint(small) {
+        font-size: 22px;
+        svg{
+          width: 22px;
+          height: auto;
+        }
+      }
       .fw-800 {
         font-weight: 800;
       }
