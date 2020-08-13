@@ -23,10 +23,11 @@ redirect_from:
 </header>
 
 <section class="banner">
+<a target="_blank" href="https://1inch.exchange/#/r/0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1" >
   <div class="banner-content">
     <div class="banner-icon">{% include icons/1inch.svg %}</div>
     <div class="banner-description"><span class="fw-800">1inch</span> gives you the best <span class="separator"></span> DEX prices for {% include icons/fire.svg %}  DeFi Tokens</div>
-  </div>
+  </div> </a>
     <div class="circle circle-1"><span class="background"></span><span class="dot"></span></div>
     <div class="circle circle-2"><span class="background"></span><span class="dot"></span></div>
     <div class="circle circle-3"><span class="background"></span><span class="dot"></span></div>
