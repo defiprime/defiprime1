@@ -22,6 +22,18 @@ redirect_from:
 	</div>
 </header>
 
+<section class="banner">
+  <div class="banner-content">
+    <div class="banner-icon">{% include icons/1inch.svg %}</div>
+    <div class="banner-description"><span class="fw-800">1inch</span> gives you the best <br /> DEX prices for {% include icons/fire.svg %}  DeFi Tokens</div>
+  </div>
+    <div class="circle circle-1"><span class="background"></span><span class="dot"></span></div>
+    <div class="circle circle-2"><span class="background"></span><span class="dot"></span></div>
+    <div class="circle circle-3"><span class="background"></span><span class="dot"></span></div>
+    <div class="circle circle-4"><span class="background"></span><span class="dot"></span></div>
+    <div class="circle circle-5"><span class="background"></span><span class="dot"></span></div>
+</section>
+
 <h2 id="defi_projects" class='defi_projects_annotation'>DeFi projects</h2>
 
 <section class="tiles floating grid">
