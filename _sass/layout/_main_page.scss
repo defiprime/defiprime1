@@ -35,19 +35,6 @@
     }
 }
 
-.defi_projects_annotation {
-    font-family: Kanit;
-    margin-top: 159px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 120%;
-    letter-spacing: 0;
-    text-transform: none;
-    text-align: center;
-    color: #292984;
-}
-
 .tiles.grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -295,7 +282,6 @@
     .upcoming_events_cards {
         grid-template-columns: auto auto;
     }
-    .defi_projects_annotation,
     .recently_added_annotation {
         margin-bottom: 0;
     }
@@ -307,7 +293,6 @@
     .upcoming_events_cards {
         grid-template-columns: auto;
     }
-    .defi_projects_annotation,
     .recently_added_annotation {
         margin-bottom: 0;
     }
