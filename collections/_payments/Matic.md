@@ -11,4 +11,6 @@ filter: Layer 2
 twitter: https://twitter.com/maticnetwork
 github: https://github.com/maticnetwork
 ticker: MATIC
+contract: "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0"
+decimals: 18
 ---

@@ -10,4 +10,6 @@ coltitle: Stablecoins
 colpermalink: stablecoins
 twitter: https://twitter.com/paxosglobal
 ticker: PAX
+contract: "0x8e870d67f660d95d5be530380d0ec0bd388289e1"
+decimals: 18
 ---

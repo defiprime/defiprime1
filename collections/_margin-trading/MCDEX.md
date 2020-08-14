@@ -11,4 +11,6 @@ filter: Ethereum, Perpetual
 twitter: https://twitter.com/MonteCarloDEX
 github: https://github.com/mcdexio
 ticker: MCB
+contract: "0x4e352cf164e64adcbad318c3a1e222e9eba4ce42"
+decimals: 18
 ---

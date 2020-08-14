@@ -10,4 +10,6 @@ colpermalink: infrastructure
 twitter: https://twitter.com/UMAprotocol
 github: https://github.com/umaprotocol
 ticker: UMA
+contract: "0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828"
+decimals: 18
 ---

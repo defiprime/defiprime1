@@ -9,4 +9,6 @@ filter: Crypto-backed
 coltitle: Stablecoins
 colpermalink: stablecoins
 ticker: WBTC
+contract: "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+decimals: 8
 ---

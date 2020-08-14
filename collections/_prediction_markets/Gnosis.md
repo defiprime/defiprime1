@@ -10,4 +10,6 @@ colpermalink: prediction-markets
 twitter: https://twitter.com/gnosisPM
 github: https://github.com/gnosis
 ticker: GNO
+contract: "0x6810e776880c02933d47db1b9fc05908e5386b96"
+decimals: 18
 ---

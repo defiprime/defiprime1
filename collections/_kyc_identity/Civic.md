@@ -9,4 +9,6 @@ coltitle:  "KYC & Identity"
 colpermalink: decentralized_kyc_identity
 twitter: https://twitter.com/civickey
 ticker: CVC
+contract: "0x41e5560054824eA6B0732E656E3Ad64E20e94E45"
+decimals: 8
 ---

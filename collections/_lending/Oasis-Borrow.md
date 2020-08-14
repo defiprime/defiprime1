@@ -11,4 +11,6 @@ coltitle:  "Lending"
 colpermalink: decentralized-lending
 twitter: https://twitter.com/MakerDAO
 ticker: MKR
+contract: "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2"
+decimals: 18
 ---

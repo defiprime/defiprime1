@@ -10,4 +10,6 @@ colpermalink: decentralized_marketplaces
 twitter: https://twitter.com/district0x
 github: https://github.com/district0x
 ticker: DNT
+contract: "0x0abdace70d3790235af448c88547603b945604ea"
+decimals: 18
 ---

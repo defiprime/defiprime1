@@ -10,4 +10,6 @@ colpermalink: prediction-markets
 twitter: https://twitter.com/dxdao_
 github: https://github.com/protofire/gnosis-conditional-exchange
 ticker: DXD
+contract: "0xa1d65e8fb6e87b60feccbc582f7f97804b725521"
+decimals: 18
 ---

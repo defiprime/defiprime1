@@ -9,5 +9,7 @@ coltitle:  "Insurance"
 colpermalink: insurance
 twitter: https://twitter.com/NexusMutual
 github: https://github.com/somish/NexusMutual
-ticker: NXM
+ticker: wNXM
+contract: "0x0d438f3b5175bebc262bf23753c1e53d03432bde"
+decimals: 18
 ---

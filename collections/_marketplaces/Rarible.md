@@ -9,4 +9,6 @@ coltitle:  "Marketplaces"
 colpermalink: decentralized_marketplaces
 twitter: https://twitter.com/rariblecom
 ticker: RARI
+contract: "0xfca59cd816ab1ead66534d82bc21e7515ce441cf"
+decimals: 18
 ---

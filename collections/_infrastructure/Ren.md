@@ -11,4 +11,6 @@ colpermalink: infrastructure
 twitter: https://twitter.com/renprotocol
 github: https://github.com/renproject
 ticker: REN
+contract: "0x408e41876cccdc0f92210600ef50372656052a38"
+decimals: 18
 ---

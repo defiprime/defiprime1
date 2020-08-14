@@ -9,4 +9,6 @@ coltitle:  "KYC & Identity"
 colpermalink: decentralized_kyc_identity
 twitter: https://twitter.com/selfkey
 ticker: KEY
+contract: "0x4cc19356f2d37338b9802aa8e8fc58b0373296e7"
+decimals: 18
 ---

@@ -11,4 +11,6 @@ filter: Layer 2
 twitter: https://twitter.com/omise_go
 github: https://github.com/omisego
 ticker: OMG
+contract: "0xd26114cd6EE289AccF82350c8d8487fedB8A0C07"
+decimals: 18
 ---

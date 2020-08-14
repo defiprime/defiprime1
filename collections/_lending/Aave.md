@@ -13,4 +13,6 @@ twitter: https://twitter.com/aaveaave
 github: https://github.com/aave/aave-protocol
 analytics: https://explore.duneanalytics.com/embed/query/2994/visualization/5785?api_key=cfEgS6JlBVrEyXOohUjIXgxJysh3lJv6nObbnnoy
 ticker: LEND
+contract: "0x80fB784B7eD66730e8b1DBd9820aFD29931aab03"
+decimals: 18
 ---

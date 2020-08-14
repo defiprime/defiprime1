@@ -13,4 +13,6 @@ twitter: https://twitter.com/compoundfinance
 github: https://github.com/compound-finance/compound-protocol
 analytics: https://explore.duneanalytics.com/embed/query/1010/visualization/5530?api_key=6872WaceF0racAdL0UDDZJSHY44mSQTIsQyBRe91
 ticker: COMP
+contract: "0xc00e94cb662c3520282e6f5717214004a7f26888"
+decimals: 18
 ---

@@ -10,4 +10,6 @@ colpermalink: decentralized_kyc_identity
 twitter: https://twitter.com/hydroblockchain
 github: https://github.com/hydroblockchain/
 ticker: HYDRO
+contract: "0xebbdf302c940c6bfd49c6b165f457fdb324649bc"
+decimals: 18
 ---

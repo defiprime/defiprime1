@@ -11,4 +11,6 @@ colpermalink: stablecoins
 twitter: https://twitter.com/@DigixGlobal
 github: https://github.com/digixglobal
 ticker: DGX
+contract: "0x4f3afec4e5a3f2a6a1a411def7d7dfe50ee057bf"
+decimals: 9
 ---
