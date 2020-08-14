@@ -7,6 +7,11 @@
   }
   .container-tickers {
     overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+  }
+  .container-tickers::-webkit-scrollbar {
+    display: none;
   }
   p {
     font-family: "Open Sans", sans-serif;
@@ -161,7 +166,14 @@
   .ticker-change-title {
     text-align: right;
   }
-  .ticker-vol-title,
+  .ticker-vol-title{
+    @media screen and (min-width: 1140px) {
+      padding-left: 60px !important;
+    }
+    @media screen and (max-width: 1139px) {
+      text-align: right;
+    }
+  }
   .ticker-market-cap-title {
     @media screen and (min-width: 1140px) {
       padding-left: 30px !important;
