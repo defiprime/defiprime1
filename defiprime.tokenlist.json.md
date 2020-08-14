@@ -1,4 +1,5 @@
 ---
+permalink: defiprime.tokenlist.json
 layout: null
 ---
 {% assign all_projects = site.alternative-savings
