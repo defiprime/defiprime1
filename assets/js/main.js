@@ -247,11 +247,13 @@
     }).on('mouseout', function () {
       $(this).closest('.asset_tool_card').removeClass('is-hover');
     });
-	});
+});
+
+  const latestAlpha = $(".latest_alpha");
 	async function getTopicsAlpha() {
 		const response = await fetch('https://alpha.defiprime.com/latest.json');
 		const responseJson = await response.json();
-		const latestAlpha = $(".latest_alpha");
+		
 		let innerHtml = ``;
 		let color = ``;
 		responseJson.topic_list.topics.forEach((item, index) => {
@@ -266,7 +268,9 @@
 		});
 		latestAlpha.html(innerHtml);
 	}
-	getTopicsAlpha();
+  if ( latestAlpha.length > 0 ) {
+    getTopicsAlpha();
+  }
 
 	$(".wrapper-buttons .period-button").on("click", function (e) {
 		tablinks = document.getElementsByClassName("period-button");
