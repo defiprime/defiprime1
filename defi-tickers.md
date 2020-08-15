@@ -1,14 +1,10 @@
 ---
 git-date:
 layout: default
-title: tickers
-h1title: tickers
 pagetitle: DeFi Tokens List
 metadescription: Decentralized Exchanges Trading Volume Tracker for Ethereum-based trading platforms. DEXs ranked by volume along with historic volume and daily market share
 featured-image: /images/og-dexs.png
 permalink: tickers
-author: sawinyh
-date: 2020-06-25
 ---
 # DeFi Tokens List
 
