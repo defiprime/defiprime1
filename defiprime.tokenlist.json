@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://uniswap.org/tokenlist.schema.json",
-  "name": "Defi Prime Token List",
+  "name": "Defiprime",
   "logoURI": "https://defiprime.com/images/defiprime-logo-hires2.png",
   "keywords": ["Defi", "defiprime", "curated"],
   "tags": {
