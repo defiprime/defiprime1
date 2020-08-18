@@ -116,22 +116,6 @@
     },
     {
       "chainId": 1,
-      "address": "0xa1d65e8fb6e87b60feccbc582f7f97804b725521",
-      "symbol": "DXD",
-      "name": "Mesa",
-      "decimals": 18,
-      "tags": ["defi"]
-    },
-    {
-      "chainId": 1,
-      "address": "0xe41d2489571d322189246dafa5ebde1f4699f498",
-      "symbol": "ZRX",
-      "name": "0x",
-      "decimals": 18,
-      "tags": ["defi"]
-    },
-    {
-      "chainId": 1,
       "address": "0x56d811088235F11C8920698a204A5010a788f4b3",
       "symbol": "BZRX",
       "name": "bZx",
@@ -143,22 +127,6 @@
       "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
       "symbol": "LINK",
       "name": "Chainlink",
-      "decimals": 18,
-      "tags": ["defi"]
-    },
-    {
-      "chainId": 1,
-      "address": "0xdd974D5C2e2928deA5F71b9825b8b646686BD200",
-      "symbol": "KNC",
-      "name": "Kyber Network",
-      "decimals": 18,
-      "tags": ["defi"]
-    },
-    {
-      "chainId": 1,
-      "address": "0xBBbbCA6A901c926F240b89EacB641d8Aec7AEafD",
-      "symbol": "LRC",
-      "name": "Loopring",
       "decimals": 18,
       "tags": ["defi"]
     },
@@ -244,14 +212,6 @@
     },
     {
       "chainId": 1,
-      "address": "0x56d811088235F11C8920698a204A5010a788f4b3",
-      "symbol": "BZRX",
-      "name": "Fulcrum",
-      "decimals": 18,
-      "tags": ["defi"]
-    },
-    {
-      "chainId": 1,
       "address": "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
       "symbol": "MKR",
       "name": "Oasis Borrow",
@@ -263,14 +223,6 @@
       "address": "0x4e352cf164e64adcbad318c3a1e222e9eba4ce42",
       "symbol": "MCB",
       "name": "MCDEX",
-      "decimals": 18,
-      "tags": ["defi"]
-    },
-    {
-      "chainId": 1,
-      "address": "0x56d811088235F11C8920698a204A5010a788f4b3",
-      "symbol": "BZRX",
-      "name": "Fulcrum",
       "decimals": 18,
       "tags": ["defi"]
     },
@@ -319,14 +271,6 @@
       "address": "0x6810e776880c02933d47db1b9fc05908e5386b96",
       "symbol": "GNO",
       "name": "Gnosis",
-      "decimals": 18,
-      "tags": ["defi"]
-    },
-    {
-      "chainId": 1,
-      "address": "0xa1d65e8fb6e87b60feccbc582f7f97804b725521",
-      "symbol": "DXD",
-      "name": "Omen.eth",
       "decimals": 18,
       "tags": ["defi"]
     },
