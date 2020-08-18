@@ -7,7 +7,7 @@ h1title: "Communications 101: Best Practices in Disclosing Software Vulnerabilit
 pagetitle: "DeFi Communications 101: Disclosing Software Vulnerabilities and Responding to Cyberattacks"
 metadescription: "How to handle communications when disclosing software vulnerabilities and responding to cyberattacks. Best Practices 2020."
 category: blog
-featured-image: /images/blog/defi-podcasts-og.png
+featured-image: /images/blog/cyberattacks-og.png
 intro: "How to handle communications when disclosing software vulnerabilities and responding to cyberattacks"
 author: goldfarb
 tags: ['For Builders']
