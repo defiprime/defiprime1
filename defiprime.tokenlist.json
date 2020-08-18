@@ -15,8 +15,8 @@
       "name": "Derivatives",
       "description": "In traditional finance, a derivative is a contract that derives its value from the performance of an underlying entity. This underlying entity can be an asset, index, or interest rate, and is often simply called the “underlying.” "
     },
-    "Decentralized exchanges": {
-      "name": "Decentralized exchanges",
+    "DEXs": {
+      "name": "DEXs",
       "description": "A decentralized exchange (DEX) is a cryptocurrency exchange which operates in a decentralized way, without a central authority."
     },
     "Infrastructure": {
@@ -101,7 +101,7 @@
   "name": "AirSwap",
   "decimals": 4,
   "tags": [
-    "Decentralized exchanges"
+    "DEXs"
   ]
 },
 {
@@ -111,7 +111,7 @@
   "name": "Balancer",
   "decimals": 18,
   "tags": [
-    "Decentralized exchanges"
+    "DEXs"
   ]
 },
 {
@@ -121,7 +121,7 @@
   "name": "Bancor",
   "decimals": 18,
   "tags": [
-    "Decentralized exchanges"
+    "DEXs"
   ]
 },
 {
@@ -131,7 +131,7 @@
   "name": "Curve",
   "decimals": 18,
   "tags": [
-    "Decentralized exchanges"
+    "DEXs"
   ]
 },
 {
@@ -141,7 +141,7 @@
   "name": "DeversiFi",
   "decimals": 18,
   "tags": [
-    "Decentralized exchanges"
+    "DEXs"
   ]
 },
 {
@@ -151,7 +151,7 @@
   "name": "IDEX",
   "decimals": 18,
   "tags": [
-    "Decentralized exchanges"
+    "DEXs"
   ]
 },
 {
@@ -161,7 +161,7 @@
   "name": "KyberSwap",
   "decimals": 18,
   "tags": [
-    "Decentralized exchanges"
+    "DEXs"
   ]
 },
 {
@@ -171,7 +171,7 @@
   "name": "Loopring Exchange",
   "decimals": 18,
   "tags": [
-    "Decentralized exchanges"
+    "DEXs"
   ]
 },
 {
@@ -181,7 +181,7 @@
   "name": "Matcha",
   "decimals": 18,
   "tags": [
-    "Decentralized exchanges"
+    "DEXs"
   ]
 },
 {
@@ -191,7 +191,7 @@
   "name": "Mesa",
   "decimals": 18,
   "tags": [
-    "Decentralized exchanges"
+    "DEXs"
   ]
 },
 {
@@ -291,7 +291,7 @@
   "name": "Bloom",
   "decimals": 18,
   "tags": [
-    "KYC &amp; Identity"
+    "KYC"
   ]
 },
 {
@@ -301,7 +301,7 @@
   "name": "Civic",
   "decimals": 8,
   "tags": [
-    "KYC &amp; Identity"
+    "KYC"
   ]
 },
 {
@@ -311,7 +311,7 @@
   "name": "Hydro",
   "decimals": 18,
   "tags": [
-    "KYC &amp; Identity"
+    "KYC"
   ]
 },
 {
@@ -321,7 +321,7 @@
   "name": "SelfKey",
   "decimals": 18,
   "tags": [
-    "KYC &amp; Identity"
+    "KYC"
   ]
 },
 {
