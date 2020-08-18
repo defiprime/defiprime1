@@ -8,7 +8,7 @@
   ],
   "tags": {
     "DAO": {
-      "name": "DAO",
+      "name": "DAOs",
       "description": "A DAO, or Decentralized Autonomous Organization, is a concept for a organization that is ruled with forced digital rules and directly controlled by shareholders without hierarchical management. DAOs involve a set of people co-operating according to a self-enforcing open-source protocol.      "
     },
     "Derivatives": {
@@ -23,7 +23,7 @@
       "name": "Infrastructure",
       "description": "Protocols, frameworks and underlaying technologies for building decentralized finance dApps with DeFi network of money legos."
     },
-    "KYC & Identity": {
+    "KYC": {
       "name": "KYC & Identity",
       "description": "KYC is an abbreviation for Know Your Customer refers to government regulations designed to prevent money laundering, financing terrorism and other crimes involving money. It also refers to the policies, procedures, and technology used by banks and financial services companies to comply with KYC regulations.      "
     },
@@ -43,7 +43,7 @@
       "name": "Payments",
       "description": "DeFi payments apps, protocols and solutions focused on creating an open finance ecosystem that caters to the needs of institutions, as well as the underbanked and unbanked populations.     "
     },
-    "Prediction markets": {
+    "Prediction": {
       "name": "Prediction markets",
       "description": "Prediction markets are exchange-traded markets created to trade the outcome of events. The market prices can indicate what the crowd thinks the probability of the event is. "
     },
@@ -441,7 +441,7 @@
   "name": "Gnosis",
   "decimals": 18,
   "tags": [
-    "Prediction markets"
+    "Prediction"
   ]
 },
 {
@@ -451,7 +451,7 @@
   "name": "Omen.eth",
   "decimals": 18,
   "tags": [
-    "Prediction markets"
+    "Prediction"
   ]
 },
 {
