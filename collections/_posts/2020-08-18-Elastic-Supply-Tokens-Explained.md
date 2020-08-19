@@ -58,7 +58,7 @@ A fork of Ampleforth, [RMPL](https://github.com/rmpldefiteam/rmpl) is a price-el
 The RMPL team, which is anonymous and has yet to release its whitepaper, conducted its pre-sale on August 2nd, 2020, and then listed RMPL on Uniswap on August 3rd. Currently, the project is working on releasing the RMPL Cradle, which is a mechanism that will incentivize RMPL liquidity provision on Uniswap via RMPL ecosystem pool rewards. At present, the RMPL price is $0.34 and the project’s circulating supply isn’t clear.
 
 
-## YAM
+### YAM
 
 ![](/images/blog/YAM_Farmer.png)
 
