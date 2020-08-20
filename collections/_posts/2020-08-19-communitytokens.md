@@ -33,6 +33,15 @@ The interesting thing about TCCs is the value they can create for and among thei
 
 ## Communities with tokens
 
+### $DFIO
+
+$DFIO is the membership token of [DeFi Omega](https://medium.com/@defiomega/introducing-defi-omega-2ebd83c4a10e), a self-described “global network, a DeFi think tank, and a group [of] policymakers with the goal of shaping future policy in decentralized finance.”
+
+![](/images/blog/0_95CDJnqKGnEqDvDX.png)
+
+The activist group has hailed $DFIO as a social experiment that has no inherent value. To join with a base membership, you must hold 100 $DFIO. For a board membership, of which there are 10 total, you must hold 10,000 $DFIO. Total members are capped at 1,000 during the project’s first month, after which 100 new members can be added every 30 days. Two board members can also be added per year according to the TCC’s rules. Additionally, DeFi Omega members will vote on new DeFi enterprises to invest 10,000 $DFIO in per quarter.
+
+At the time of this post’s writing, $DFIO cost $3.06 each on [Uniswap](https://uniswap.info/pair/0xb733771a429a053daa47a7d219e0834c57b04a87) with a total liquidity of $70,000.
 
 ### $PARTY
 
@@ -66,17 +75,6 @@ $DDIM, or the [Duck DAO Dime](https://duckdao.io/), is the community token of th
 Notably, the Duck DAO uses $DDIM as part of a tiered membership system. To join the TCC’s private Telegram chat, one must hold 200 $DDIM. Moreover, a VIP group will be accessible to holders of 2,500 $DDIM. Separate and more exclusive VVIP and Top10RichList groups will also be available, though they don’t have fixed token thresholds for now.
 
 As for trading, [$DDIM](https://uniswap.info/token/0xfbeea1c75e4c4465cb2fccc9c6d6afe984558e20) presently enjoys $162,000 in total liquidity on Uniswap and each token is going for $6.13 right now.
-
-
-### $DFIO
-
-$DFIO is the membership token of [DeFi Omega](https://medium.com/@defiomega/introducing-defi-omega-2ebd83c4a10e), a self-described “global network, a DeFi think tank, and a group [of] policymakers with the goal of shaping future policy in decentralized finance.”
-
-![](/images/blog/0_95CDJnqKGnEqDvDX.png)
-
-The activist group has hailed $DFIO as a social experiment that has no inherent value. To join with a base membership, you must hold 100 $DFIO. For a board membership, of which there are 10 total, you must hold 10,000 $DFIO. Total members are capped at 1,000 during the project’s first month, after which 100 new members can be added every 30 days. Two board members can also be added per year according to the TCC’s rules. Additionally, DeFi Omega members will vote on new DeFi enterprises to invest 10,000 $DFIO in per quarter.
-
-At the time of this post’s writing, $DFIO cost $3.06 each on [Uniswap](https://uniswap.info/pair/0xb733771a429a053daa47a7d219e0834c57b04a87) with a total liquidity of $70,000.
 
 
 ### $KARMA
