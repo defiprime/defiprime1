@@ -1,5 +1,19 @@
+.main-page{
+  #wrapper{
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 690px;
+      background: url("/images/bg_top.svg");
+      background-repeat: repeat no-repeat;
+      background-position: center top;
+      z-index: -1;
+    }
+  }
+}
 .main-page-header {
-    height: 360px;
     z-index: 2;
 
     h1 {
@@ -7,7 +21,7 @@
     }
 
     span {
-        font-family: Open Sans;
+        font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
@@ -18,34 +32,6 @@
         max-width: 779px;
         margin: 0 auto;
     }
-
-    &:after {
-        content: "";
-        position: absolute;
-        width: calc(100% - 20px);
-        height: 1000px;
-        background: url("/images/bg_top.svg");
-        background-repeat: no-repeat;
-        background-position: center top;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 0px;
-        background-size: cover;
-        z-index: -1;
-    }
-}
-
-.defi_projects_annotation {
-    font-family: Kanit;
-    margin-top: 159px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 120%;
-    letter-spacing: 0;
-    text-transform: none;
-    text-align: center;
-    color: #292984;
 }
 
 .tiles.grid {
@@ -69,8 +55,8 @@
 
 
 .recently_added_annotation {
-    font-family: Kanit;
-    margin-top: 60px;
+    font-family: "Kanit", sans-serif;
+    margin: 96px auto 48px auto;
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
@@ -79,8 +65,6 @@
     text-transform: none;
     text-align: center;
     color: #292984;
-    margin-bottom: -38px;
-
     span {
         color: #ff961c;
     }
@@ -116,7 +100,6 @@
 .latest_blog_sneak_peak {
     display: grid;
     grid-template-columns: auto auto;
-    margin-top: 87px;
     gap: 30px 35px;
 
     article {
@@ -127,9 +110,6 @@
             transform: translateY(-3%);
         }
     }
-}
-.latest_alpha{
-    grid-template-columns: 50% 50%;
 }
 .latest_blog_link,
 .latest_alpha_link {
@@ -157,7 +137,7 @@
     }
 
     p {
-        font-family: "Open Sans";
+        font-family: "Open Sans", sans-serif;
         font-size: 16px;
         margin-right: 32px;
     }
@@ -185,8 +165,6 @@
     grid-template-columns: auto auto auto;
     grid-gap: 30px;
     gap: 30px;
-    margin-top: 90px;
-
     img {
         height: 208px;
     }
@@ -214,7 +192,7 @@
 
     h4 {
         margin-left: 15px;
-        font-family: Kanit;
+        font-family: "Kanit", sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 22px;
@@ -226,7 +204,7 @@
     }
 
     date {
-        font-family: Open Sans;
+        font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -256,7 +234,7 @@
     }
 
     p {
-        font-family: Open Sans;
+        font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -268,7 +246,7 @@
 
     span {
         position: relative;
-        font-family: Open Sans;
+        font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -295,9 +273,10 @@
     .upcoming_events_cards {
         grid-template-columns: auto auto;
     }
-    .defi_projects_annotation,
     .recently_added_annotation {
-        margin-bottom: 0;
+        font-size: 36px;
+        margin: 48px auto 36px auto;
+
     }
 }
 
@@ -307,9 +286,8 @@
     .upcoming_events_cards {
         grid-template-columns: auto;
     }
-    .defi_projects_annotation,
     .recently_added_annotation {
-        margin-bottom: 0;
+        font-size: 32px;
     }
 }
 
