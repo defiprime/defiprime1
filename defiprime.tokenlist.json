@@ -200,7 +200,7 @@
       "symbol": "LEND",
       "name": "Aave",
       "decimals": 18,
-      "tags": ["Lending"]
+      "tags": ["defi"]
     },
     {
       "chainId": 1,
@@ -208,15 +208,15 @@
       "symbol": "COMP",
       "name": "Compound",
       "decimals": 18,
-      "tags": ["Lending"]
+      "tags": ["defi"]
     },
     {
       "chainId": 1,
       "address": "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
       "symbol": "MKR",
-      "name": "Oasis Borrow",
+      "name": "MakerDAO",
       "decimals": 18,
-      "tags": ["Lending"]
+      "tags": ["defi"]
     },
     {
       "chainId": 1,
@@ -329,11 +329,19 @@
       "name": "WBTC",
       "decimals": 8,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xdf574c24545e5ffecb9a659c229253d4111d87e1",
+      "symbol": "HUSD",
+      "name": "HUSD",
+      "decimals": 8,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 2
+    "patch": 3
   }
 }

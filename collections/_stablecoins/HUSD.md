@@ -4,7 +4,7 @@ product-title: HUSD
 product-url: https://www.stcoins.com/
 image: /images/output_md/www.stcoins.com.png
 ecosystem: ethereum
-product-description: A stablecoin backed 1&#58;1 by U.S. dollars held in a U.S. trust company.
+product-description: HUSD is a stablecoin backed 1&#58;1 by U.S. dollars held in a U.S. trust company.
 filter: Fiat-backed
 coltitle: Stablecoins
 colpermalink: stablecoins
