@@ -2,9 +2,9 @@
 git-date:
 layout: default
 pagetitle: DeFi Tokens List
-metadescription: Decentralized Exchanges Trading Volume Tracker for Ethereum-based trading platforms. DEXs ranked by volume along with historic volume and daily market share
-featured-image: /images/og-dexs.png
-permalink: tickers
+metadescription: We are participating in Token Lists initiative, providing and maintaining a list of reputable DeFi tokens tied to the products listed at Defiprime
+featured-image: /images/blog/tokenlist-og.png
+permalink: tokenlist
 ---
 # DeFi Tokens List
 
@@ -26,7 +26,7 @@ permalink: tickers
 | concat: site.stablecoins
  %}
 <section class="sectoin-tickers">
-  <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+  <p>We are participating in <a href="https://tokenlists.org/">Token Lists</a> initiative, providing and maintaining a <a href="https://tokenlists.org/token-list?url=https://defiprime.com/defiprime.tokenlist.json">list of reputable DeFi tokens tied to the products listed at Defiprime.</a> Visual representation of the Defiprime token list could be found below with a market stats.</p>
   <div class="container-tickers">
     <table class="table-tickers">
       <thead>
@@ -56,7 +56,7 @@ permalink: tickers
       </tbody>
     </table>
   </div>
-  <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+  <p>Market data provided by <a href="https://www.coingecko.com/">Coingecko API</a>.</p>
 </section>
 
 
