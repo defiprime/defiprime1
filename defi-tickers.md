@@ -33,10 +33,10 @@ permalink: tickers
         <tr>
           <th class="ticker-product-title">Product</th>
           <th class="ticker-address-title">Address</th>
-          <th class="ticker-price-title">Price </th>
-          <th class="ticker-change-title">24hr_change </th>
-          <th class="ticker-vol-title">24hr_vol </th>
-          <th class="ticker-market-cap-title">Market Cap</th>
+          <th class="ticker-price-title">Price, $</th>
+          <th class="ticker-change-title">24h Change</th>
+          <th class="ticker-vol-title">24h Volume, $</th>
+          <th class="ticker-market-cap-title">Market Capitalization, $</th>
         </tr>
       </thead>
       <tbody>
@@ -44,7 +44,7 @@ permalink: tickers
         {% if all_project.ticker  %}
         <tr class="ticker-row">
           <td class="ticker-product"><span class="name">{{ all_project.product-title }}</span> <span class="ticker">${{ all_project.ticker }}</span> <span class="coltitle">({{ all_project.coltitle }})</span></td>
-          <td class="ticker-address">{{ all_project.contract }}</td>
+          <td class="ticker-address">{{all_project.contract}}</td>
           <td class="ticker-price"><span class="sign">$</span><span class="ticker-price-value">100</span></td>
           <td class="ticker-change"> 100 </td>
           <td class="ticker-vol"> 100 </td>
