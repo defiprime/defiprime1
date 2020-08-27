@@ -45,13 +45,24 @@ document.addEventListener("DOMContentLoaded", function () {
     const tickersRow = document.querySelectorAll(".ticker-row");
     const arrayRow = Array.from(tickersRow);
     arrayRow.forEach((item, index) => {
-      if (tickers[index].usd) item.querySelector('.ticker-price-value').innerHTML = tickers[index].usd.toFixed(2);
+      if (tickers[index].usd) {
+        item.querySelector('.ticker-price-value').innerHTML = tickers[index].usd.toFixed(2);
+        item.querySelector('.ticker-price').classList.remove("loading");
+      }
       if (tickers[index].usd_24h_change) {
-        item.querySelector('.ticker-change').innerHTML = tickers[index].usd_24h_change.toFixed(2);
+        item.querySelector('.ticker-change-value').innerHTML = tickers[index].usd_24h_change.toFixed(2);
+        item.querySelector('.ticker-change').classList.remove("loading");
         tickers[index].usd_24h_change > 0 ? item.querySelector('.ticker-change').classList.add("hight") : item.querySelector('.ticker-change').classList.add("low");
       }
-      if (tickers[index].usd_24h_vol) item.querySelector('.ticker-vol').innerHTML = numberWithCommas(tickers[index].usd_24h_vol.toFixed());
-      if (tickers[index].usd_market_cap) item.querySelector('.ticker-market-cap').innerHTML = numberWithCommas(tickers[index].usd_market_cap.toFixed());
+      if (tickers[index].usd_24h_vol) {
+        item.querySelector('.ticker-vol-value').innerHTML = numberWithCommas(tickers[index].usd_24h_vol.toFixed());
+        item.querySelector('.ticker-vol').classList.remove("loading");
+      }
+      if (tickers[index].usd_market_cap){
+        item.querySelector('.ticker-market-cap-value').innerHTML = numberWithCommas(tickers[index].usd_market_cap.toFixed());
+        item.querySelector('.ticker-market-cap').classList.remove("loading");
+
+      } 
     })
   }
 });
