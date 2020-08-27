@@ -45,10 +45,22 @@ permalink: tokenlist
         <tr class="ticker-row">
           <td class="ticker-product"><span class="name">{{ all_project.product-title }}</span> <span class="ticker">${{ all_project.ticker }}</span> <span class="coltitle">({{ all_project.coltitle }})</span></td>
           <td class="ticker-address">{{all_project.contract}}</td>
-          <td class="ticker-price"><span class="sign">$</span><span class="ticker-price-value">100</span></td>
-          <td class="ticker-change"> 100 </td>
-          <td class="ticker-vol"> 100 </td>
-          <td class="ticker-market-cap"> 100 </td>
+          <td class="ticker-price loading">
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+            <span class="sign">$</span><span class="ticker-price-value"></span>
+          </td>
+          <td class="ticker-change loading">
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+            <span class="ticker-change-plus">+</span><span class="ticker-change-value"></span><span class="precent">%</span> 
+            </td>
+          <td class="ticker-vol loading">
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>  
+            <span class="ticker-vol-value"></span>
+          </td>
+          <td class="ticker-market-cap loading">
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+            <span class="ticker-market-cap-value"></span> 
+          </td>
           <td class="ticker-link"><a href="https://1inch.exchange/#/r/0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1/ETH/{{ all_project.ticker }}" class="button-trade">Trade</a> </td>
         </tr>
         {% endif %}
