@@ -6,7 +6,7 @@ image: /images/output_md/mooniswap.exchange.png
 ecosystem: ethereum
 type: non-custodial
 filter: No KYC
-product-description: Mooniswap is a next generation of the AMM exchanges with virtual balances, enabling liquidity providers to capture profits otherwise captured by arbitrageurs.
+product-description: Mooniswap is a next generation of the AMM exchanges with virtual balances, enabling liquidity providers to capture profits otherwise captured by arbitrageurs. [Interview with Mooniswap co-counder](/mooniswap).
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/mooniswap

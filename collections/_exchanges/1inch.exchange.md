@@ -6,7 +6,7 @@ image: /images/output_md/1inch.exchange.png
 ecosystem: ethereum
 type: non-custodial
 filter: Aggregators, No KYC
-product-description: 1inch.exchange split the order to several decentralized exchanges like UniswapExchange, KyberNetwork, Bancor and RadarRelay to avoid high price slippage.
+product-description: 1inch.exchange split the order to several decentralized exchanges like UniswapExchange, KyberNetwork, Bancor and RadarRelay to avoid high price slippage. [Interview with 1inch CTO](/mooniswap)
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/1inchExchange
