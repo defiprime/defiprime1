@@ -18,6 +18,11 @@
                   {% include icons/github.svg %}                
                 </a>
               {% endif %}
+              {% if author.linkedin %}
+                <a href="{{ author.linkedin }}" class="social-link">
+                  {% include icons/linkedin.svg %}                
+                </a>
+              {% endif %}
            </div>
          </div>
          <div class="author-descr">
@@ -36,6 +41,11 @@
                   {% include icons/github.svg %}                
                 </a>
               {% endif %}
+              {% if author.linkedin %}
+              <a href="{{ author.linkedin }}" class="social-link">
+                {% include icons/linkedin.svg %}                
+              </a>
+            {% endif %}
            </div>
             <div class="author-skills"> {{ author.bio }} </div>
          </div>
