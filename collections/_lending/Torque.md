@@ -4,10 +4,10 @@ product-title: Torque
 product-url: https://torque.loans/
 image: /images/output_md/torque.loans.png
 ecosystem: ethereum
-filter: Lend Crypto
+filter: Borrow Cryptocurrency
 product-description: Torque is a powerful DeFi platform for borrowing assets with indefinite-term loans and fixed interest rates.
-coltitle:  "Margin trading"
-colpermalink: margin-trading
+coltitle:  "Lending"
+colpermalink: decentralized-lending
 type: non-custodial
 twitter: https://twitter.com/bzxhq
 github: https://github.com/bZxNetwork
