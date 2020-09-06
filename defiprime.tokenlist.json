@@ -337,11 +337,19 @@
       "name": "HUSD",
       "decimals": 8,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x2ba592F78dB6436527729929AAf6c908497cB200",
+      "symbol": "CREAM",
+      "name": "Cream Finance",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 3
+    "patch": 4
   }
 }
