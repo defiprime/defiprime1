@@ -17,8 +17,13 @@ redirect_from:
 	<div id='defi-search'>
 		<div id="search-searchbar"></div>
 		<div id='search-powered-by'></div>
+		<div id='search-container'>
+    
 		<div class="post-list" id="search-hits">
 		</div>
+		<div class="post-list" id="search-hits-defiprime">
+		</div>
+    </div>
 	</div>
 </header>
 

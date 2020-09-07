@@ -122,9 +122,10 @@ sass:
     style: compressed
 
 algolia:
-  application_id: U1P9PKRFOS
+  application_id: U333UXR8S6
   index_name: defiprime
-  search_only_api_key: 471c4ea8d6a8d6cfce0e09c05807db0e
+  discourse_index_name: discourse-posts
+  search_only_api_key: cdf65e50e2bff1fa356bcb5808165a3f
   #everything in md or html
   files_to_exclude:
     - admin/
