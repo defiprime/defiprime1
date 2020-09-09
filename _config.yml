@@ -124,6 +124,7 @@ sass:
 algolia:
   application_id: U333UXR8S6
   index_name: defiprime
+  discourse_base_url: https://alpha.defiprime.com
   discourse_index_name: discourse-posts
   search_only_api_key: cdf65e50e2bff1fa356bcb5808165a3f
   #everything in md or html

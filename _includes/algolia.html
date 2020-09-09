@@ -15,34 +15,60 @@
     let { hits, widgetParams } = renderOptions;
     // let { hits1, widgetParams1 } = renderOptions[1];
     let template = `
-    <div class='defi-search-no-records'>
+    <div class='defi-search-no-records ${ emptyBox ? "empty" : ""}'>
       ${ emptyBox ? 'Type to start searching' : hits.length + ' matching materials at ' + renderOptions.results.index}
     </div>
   `;
     if (hits.length != 0) {
-      hits = groupBy(hits, 'category|collection');
+      if (renderOptions.results.index === 'defiprime') {
+        hits = groupBy(hits, 'category|collection');
 
-      let indexOfCategory = 0;
+        let indexOfCategory = 0;
 
-      for (const hitCategory in hits) {
-        template += `
+        for (const hitCategory in hits) {
+
+          template += `
         <div class='category_searchitem'>
           ${hitCategory.toString() != 'undefined' ? capitalize(hitCategory) : 'Uncategorized'}
         </div>
       `;
-        template += hits[hitCategory].map((item) => `
+          template += hits[hitCategory].map((item) => `
         <a href="{{ site.baseurl }}${item.url}" class='searchpost-link'>
           <h2>${item.title}</h2>
           <div class="searchpost-data">${$(item.html).text()}</div>
         </a>
       `).join('')
-        indexOfCategory++;
-        if (indexOfCategory != Object.keys(hits).length) { // prevent inserting on last one
-          template += `<hr class='defi-search-separator' />`
+          indexOfCategory++;
+          if (indexOfCategory != Object.keys(hits).length) { // prevent inserting on last one
+            template += `<hr class='defi-search-separator' />`
+          }
         }
       }
-    }
+      else if (renderOptions.results.index === '{{ site.algolia.discourse_index_name }}') {
+        hits = groupBy(hits, 'category.name');
 
+        let indexOfCategory = 0;
+
+        for (const hitCategory in hits) {
+          template += `
+        <div class='category_searchitem'>
+          ${hitCategory.toString() != 'undefined' ? capitalize(hitCategory) : 'Uncategorized'}
+        </div>
+      `;
+          template += hits[hitCategory].map((item) => `
+        <a href="{{ site.algolia.discourse_base_url }}${item.url}" class='searchpost-link'>
+          <h2>${item.topic.title}</h2>
+          <div class="searchpost-data"><p>${item.content}</p></div>
+        </a>
+      `).join('')
+          indexOfCategory++;
+          if (indexOfCategory != Object.keys(hits).length) { // prevent inserting on last one
+            template += `<hr class='defi-search-separator' />`
+          }
+        }
+      }
+
+    }
     widgetParams.container.innerHTML = template;
   };
 
@@ -84,6 +110,7 @@
     instantsearch.widgets
       .index({ indexName: '{{ site.algolia.discourse_index_name }}' })
       .addWidgets([
+
         customHits({
           container: document.querySelector('#search-hits-defiprime'),
         }),
