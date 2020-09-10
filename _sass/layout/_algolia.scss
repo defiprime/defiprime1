@@ -12,13 +12,16 @@
 #search-searchbar {
   text-align: center;
 }
-
+.header-content-menu #defi-search {
+  top:0;
+}
 #defi-search {
   background-color: #fff;
   position: relative;
   z-index: 200;
-  margin-top: 110px;
-  top: 8px;
+  margin: auto;
+  margin-top: 60px;
+  max-width: 730px;
   .header-content-menu & {
     display: none;
     margin-top: 0;
@@ -102,7 +105,7 @@
   padding-right: 46px;
   display: block;
   transition: 0.2s ease-in-out background;
-  margin: 50px 0;
+  margin: 20px 0;
   &:hover {
     background: #05d2dd;
   }

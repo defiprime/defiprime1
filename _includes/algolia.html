@@ -10,13 +10,12 @@
 <script>
 
   var emptyBox = true;
-
   const renderHits = (renderOptions, isFirstRender) => {
     let { hits, widgetParams } = renderOptions;
     // let { hits1, widgetParams1 } = renderOptions[1];
     let template = `
     <div class='defi-search-no-records ${ emptyBox ? "empty" : ""}'>
-      ${ emptyBox ? 'Type to start searching' : hits.length + ' matching materials at ' + renderOptions.results.index}
+      ${ emptyBox ? 'Type to start searching' : hits.length + ' matching materials at ' + (renderOptions.results.index === 'defiprime' ?  'Defiprime' : 'Alpha Defiprime')}
     </div>
   `;
     if (hits.length != 0) {
