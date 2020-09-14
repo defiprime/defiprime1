@@ -44,7 +44,7 @@ permalink: tokenlist
         {% if all_project.ticker  %}
         <tr class="ticker-row">
           <td class="ticker-product"><span class="name">{{ all_project.product-title }}</span> <span class="ticker">${{ all_project.ticker }}</span> <span class="coltitle">({{ all_project.coltitle }})</span></td>
-          <td class="ticker-address">{{all_project.contract}}</td>
+          <td title="{{all_project.contract}}" class="ticker-address">{{all_project.contract}}</td><td class="btncopy">{% include icons/copy.svg %}</td>
           <td class="ticker-price loading">
             <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
             <span class="sign">$</span><span class="ticker-price-value"></span>
