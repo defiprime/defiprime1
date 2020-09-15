@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const tickersAddress = document.querySelectorAll(".ticker-address");
     const arrayAddress = Array.from(tickersAddress);
     arrayAddress.forEach((item, index) => {
-      let address = item.innerHTML;
+      let address = item.getAttribute("title");
       tickers[index] = Object({ "address": address });
-      item.innerHTML = getShortAddress(address);
+      item.querySelector('.link-adress').innerHTML = getShortAddress(address);
     })
   }
 

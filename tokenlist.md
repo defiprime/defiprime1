@@ -33,6 +33,7 @@ permalink: tokenlist
         <tr>
           <th class="ticker-product-title">Product</th>
           <th class="ticker-address-title">Address</th>
+         <th class="ticker-address-copy"></th>
           <th class="ticker-price-title">Price, $</th>
           <th class="ticker-change-title">24h Change</th>
           <th class="ticker-vol-title">24h Volume, $</th>
@@ -44,7 +45,10 @@ permalink: tokenlist
         {% if all_project.ticker  %}
         <tr class="ticker-row">
           <td class="ticker-product"><span class="name">{{ all_project.product-title }}</span> <span class="ticker">${{ all_project.ticker }}</span> <span class="coltitle">({{ all_project.coltitle }})</span></td>
-          <td title="{{all_project.contract}}" class="ticker-address">{{all_project.contract}}</td><td class="btncopy">{% include icons/copy.svg %}</td>
+          <td title="{{all_project.contract}}" class="ticker-address">
+          <a href="https://etherscan.io/address/{{all_project.contract}}" target="_blank" rel="noopener noreferrer" class="link-adress">{{all_project.contract}}</a>
+          </td>
+          <td class="btncopy">{% include icons/copy.svg %}</td>
           <td class="ticker-price loading">
             <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
             <span class="sign">$</span><span class="ticker-price-value"></span>
