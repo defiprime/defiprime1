@@ -48,7 +48,9 @@ permalink: tokenlist
           <td title="{{all_project.contract}}" class="ticker-address">
           <a href="https://etherscan.io/address/{{all_project.contract}}" target="_blank" rel="noopener noreferrer" class="link-adress">{{all_project.contract}}</a>
           </td>
-          <td class="btncopy">{% include icons/copy.svg %}</td>
+          <td class="btncopy"><span class="tooltip default-hover" title="Copied">
+                      {% include icons/copy.svg %}
+                    </span></td>
           <td class="ticker-price loading">
             <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
             <span class="sign">$</span><span class="ticker-price-value"></span>

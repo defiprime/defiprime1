@@ -1,6 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
   let tickers = [];
-
+  $('.tooltip.default-hover').tooltipster({
+    theme: ['tooltipster-customized'],
+    trigger: 'custom',
+    triggerOpen: {
+        mouseenter: false,
+        touchstart: true,
+        click: true,
+    },
+    timer: 1500
+});
   const getShortAddress = (address) => {
     return address.substring(0, 6) + '...' + address.substring(address.length - 11);
   }
@@ -78,6 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
           document.body.removeChild(tempInput);
         });
       });
+      
     })
   }
 });
