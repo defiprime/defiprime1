@@ -28,7 +28,6 @@
   <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
     integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
     crossorigin="anonymous"></script>
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138327045-1"></script>
   <script>
@@ -38,13 +37,47 @@
     gtag('config', 'UA-138327045-1', { 'content_group1': 'blog' });
 
   </script>
+  {% assign author = site.data.authors[page.author] %}
+
+  <script type="application/ld+json">
+
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}",
+    "headline": "{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}",
+    "datePublished": "{% if page.date %}{{ page.date | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}",
+    "dateModified": "{% if page.date %}{{ page.date | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}",
+    "description": "{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ author.name }}"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Defiprime",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://defiprime.com/images/logo-60w.png",
+        "width": "60",
+        "height": "60"
+      }
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://defiprime.com/images/logo-60w.png",
+      "height": "60",
+      "width": "60"
+    }
+  }
+ </script>
 </head>
   <body class="post">
     {% include header.html %}
     {% if page.featured-image %}
       <div class="feature" style="background-image: url({{ page.featured-image }})">
         <div class="container  typeset"></div>
-      </div> 
+      </div>
     {% endif %}
     <h1>{{ page.h1title }}</h1>
     <main class="main">
