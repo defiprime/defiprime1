@@ -377,11 +377,19 @@
       "name": "Uniswap",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
+      "symbol": "GEN",
+      "name": "DAOstack",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 7
+    "patch": 8
   }
 }
