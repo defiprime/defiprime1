@@ -43,10 +43,11 @@ A key component of the Ethereum gas system is the Ethereum gas limit. In the con
 
 For basic ETH transactions, a standard gas limit is 21,000. So for example, let’s consider a hypothetical generic transaction sent when the gas price is 100 gwei. We can compute this transaction’s cost by multiplying 21,000 (gas limit) x 100 (gas price) x 0.000000001 (gwei denomination), with the result being 0.0021 ETH. Relatedly, gas limits for ERC20 token transfers can range from 25,000 to as high as 500,000.
 
+![](/images/blog/ethereum-gas-explained/image2.png)
+
 Another important element to consider is how Ethereum has a network-wide gas limit for its blocks, too. This limit bounds the amount of transactions that can be included in a block. Miners have voted on raising this block size limit repeatedly over time to meet growing demand. For instance, in June 2020 miners voted to raise the limit from 10 million to 12.5 million.
 
-
-![](/images/blog/ethereum-gas-explained/image2.png)
+![](/images/blog/gas-perblock.png)
 
 
 ## How to Set an Ethereum Transaction Fee
