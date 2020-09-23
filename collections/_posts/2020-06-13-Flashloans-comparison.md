@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title:  "Comparison betwen Flashloan providers: Aave vs dYdX vs Uniswap"
 permalink: flahloans-comparison
 h1title: "Comparison betwen Flashloan providers: Aave vs dYdX vs Uniswap"

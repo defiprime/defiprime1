@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title:  Centrifuge
 permalink: centrifuge
 h1title: "Centrifuge - bridging the gap between traditional finance and web3"

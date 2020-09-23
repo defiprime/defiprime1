@@ -1,6 +1,6 @@
 ---
 git-date: 2019-09-05T08:33:46-07:00
-layout: blog
+layout: [blog, blog-amp]
 title:  DeFi Accounting
 permalink: defi-accounting
 h1title: 'DeFi Accounting Series: Crypto Lending & Borrowing Platforms'

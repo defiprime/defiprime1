@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html amp lang="en">
 
 <head>
   <title>{{ page.pagetitle }} </title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <meta name="description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 160 }}">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
-  <link rel="amphtml" href="{{ page.url | append: '/amp' | prepend: site.baseurl | prepend: site.url }}">
+  
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | replace:'/amp','' | prepend: site.url }}">
+
   <meta property="og:title" content="{{ page.h1title }}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
@@ -26,22 +25,27 @@
   <meta name="twitter:title" content="{{ page.h1title }}">
   <meta name="twitter:description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 300 }}">
   <meta name="twitter:image" content="{{ page.featured-image | prepend: site.url }}">
+
+  <style amp-custom>
+ 
+    {% capture include_to_scssify %}
+    
+  /* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css"> */
+    .toc{overflow-y:auto}.toc>.toc-list{overflow:hidden;position:relative}.toc>.toc-list li{list-style:none}.toc-list{margin:0;padding-left:10px}a.toc-link{color:currentColor;height:100%}.is-collapsible{max-height:1000px;overflow:hidden;transition:all 300ms ease-in-out}.is-collapsed{max-height:0}.is-position-fixed{position:fixed !important;top:0}.is-active-link{font-weight:700}.toc-link::before{background-color:#EEE;content:' ';display:inline-block;height:inherit;left:0;margin-top:-1px;position:absolute;width:2px}.is-active-link::before{background-color:#54BC4B}
+
+      {% include main.scss %}
+    {% endcapture %}
+    {{ include_to_scssify | scssify }}
+    </style>
+
   <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
     integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
     crossorigin="anonymous"></script>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138327045-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-138327045-1', { 'content_group1': 'blog' });
-
-  </script>
+  <script async src="https://cdn.ampproject.org/v0.js"></script> 
 </head>
   <body class="post">
-    {% include header.html %}
+    {% include header-amp.html %}
     {% if page.featured-image %}
       <div class="feature" style="background-image: url({{ page.featured-image }})">
         <div class="container  typeset"></div>
@@ -70,8 +74,8 @@
       </div>
     </main>
     {% include folowus.html %}
-    {% include author_bio.html %}
+    {% include author_bio-amp.html %}
     {% include blog-readmore.html %}
-    {% include footer.html %}
+    {% include footer-amp.html %}
   </body>
 </html>

@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title:  "Mooniswap"
 permalink: mooniswap
 h1title: "Mooniswap"

@@ -1,6 +1,6 @@
 ---
 git-date: 2019-06-13T08:49:07-07:00
-layout: blog
+layout: [blog, blog-amp]
 title:  "Kyber Network"
 permalink: kyber-network
 h1title: Interview with Loi Luu, CEO and co-founder of Kyber Network

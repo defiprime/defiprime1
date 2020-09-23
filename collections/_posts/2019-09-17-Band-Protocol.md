@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title:  Band Protocol
 permalink: bandprotocol
 h1title: 'Band Protocol - interview with CEO and co-founder Soravis Srinawakoon'
