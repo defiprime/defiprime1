@@ -7,46 +7,14 @@
             {% if author.image %}
             <amp-img width="200" height="200" layout="responsive" src="{{ author.image }}"></amp-img>
             {% endif %}
-            <div class="author-social hidden-small">
-              {% if author.twitter %}
-              <a href="{{ author.twitter }}" class="social-link">
-                {% include icons/twitter.svg %}
-              </a>
-              {% endif %}
-              {% if author.github %}
-                <a href="{{ author.github }}" class="social-link">
-                  {% include icons/github.svg %}                
-                </a>
-              {% endif %}
-              {% if author.linkedin %}
-                <a href="{{ author.linkedin }}" class="social-link">
-                  {% include icons/linkedin.svg %}                
-                </a>
-              {% endif %}
-           </div>
+
          </div>
          <div class="author-descr">
              <span class="author-about"> About the author </span>
             <div class="author-title">
                <div class="author-name">{{ author.name }}</div>
             </div>
-            <div class="author-social shown-small">
-              {% if author.twitter %}
-              <a href="{{ author.twitter }}" class="social-link">
-                {% include icons/twitter.svg %}
-              </a>
-              {% endif %}
-              {% if author.github %}
-                <a href="{{ author.github }}" class="social-link">
-                  {% include icons/github.svg %}                
-                </a>
-              {% endif %}
-              {% if author.linkedin %}
-              <a href="{{ author.linkedin }}" class="social-link">
-                {% include icons/linkedin.svg %}                
-              </a>
-            {% endif %}
-           </div>
+
             <div class="author-skills"> {{ author.bio }} </div>
          </div>
       </div>

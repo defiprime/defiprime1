@@ -1,7 +1,3 @@
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PB9GWJD"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 <!-- Wrapper -->
 <div id="wrapper">
 	{% unless  page.name == "index.md" %}
@@ -38,7 +34,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 					</div>
 
-					{% include algolia.html %}
 					{% endunless %}
 
 
@@ -89,27 +84,3 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 		</div>
 	</header>
-
-	<script>
-		//Add event handler with addEventListener (not window.onload)
-		window.addEventListener('load', () => {
-			$("#hamburger_menu_open").on('click', () => {
-				$("#header").css("overflow", "visible")
-				$(".header-content-menu").animate({
-					left: '0'
-				}, 200, () => {
-					$("#hamburger_menu_close").css('display', 'block')
-					$("#hamburger_menu_open").css('display', 'none')
-				});
-			})
-			$("#hamburger_menu_close").on('click', () => {
-				$(".header-content-menu").animate({
-					left: '100%'
-				}, 200, () => {
-					$("#hamburger_menu_close").css('display', 'none')
-					$("#hamburger_menu_open").css('display', 'block')
-					$("#header").css("overflow", "hidden")
-				});
-			})
-		});
-	</script>
