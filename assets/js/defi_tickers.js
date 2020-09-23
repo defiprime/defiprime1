@@ -1,10 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
   let tickers = [];
-
+  $('.tooltip.default-hover').tooltipster({
+    theme: ['tooltipster-customized'],
+    trigger: 'custom',
+    triggerOpen: {
+        mouseenter: false,
+        touchstart: true,
+        click: true,
+    },
+    timer: 1500
+});
   const getShortAddress = (address) => {
     return address.substring(0, 6) + '...' + address.substring(address.length - 11);
   }
-
   const numberWithCommas = (number) => {
     const parts = number.toString().split(".");
     parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -15,9 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const tickersAddress = document.querySelectorAll(".ticker-address");
     const arrayAddress = Array.from(tickersAddress);
     arrayAddress.forEach((item, index) => {
-      let address = item.innerHTML;
+      let address = item.getAttribute("title");
       tickers[index] = Object({ "address": address });
-      item.innerHTML = getShortAddress(address);
+      item.querySelector('.link-adress').innerHTML = getShortAddress(address);
     })
   }
 
@@ -58,11 +66,28 @@ document.addEventListener("DOMContentLoaded", function () {
         item.querySelector('.ticker-vol-value').innerHTML = numberWithCommas(tickers[index].usd_24h_vol.toFixed());
         item.querySelector('.ticker-vol').classList.remove("loading");
       }
-      if (tickers[index].usd_market_cap){
+      if (tickers[index].usd_market_cap) {
         item.querySelector('.ticker-market-cap-value').innerHTML = numberWithCommas(tickers[index].usd_market_cap.toFixed());
         item.querySelector('.ticker-market-cap').classList.remove("loading");
 
-      } 
+      }
+      const btns = item.querySelectorAll('.btncopy')
+      Array.from(btns).forEach(function (item) {
+
+        item.addEventListener('click', function (e) {
+          const btn = e.currentTarget;
+          const title = btn.closest('.ticker-row').querySelector('.ticker-address').getAttribute("title");
+
+          const tempInput = document.createElement("input");
+          tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+          tempInput.value = title;
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          document.execCommand("copy");
+          document.body.removeChild(tempInput);
+        });
+      });
+      
     })
   }
 });
