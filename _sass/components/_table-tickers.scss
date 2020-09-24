@@ -135,7 +135,7 @@
   }
   .ticker-address,
   .ticker-address-title {
-    width: 18%;
+    width: 15%;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     line-height: 1.4;
@@ -143,6 +143,9 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    &:hover {
+      color: #05d2dd;
+    }
   }
   .ticker-price,
   .ticker-price-title {
@@ -170,6 +173,9 @@
   .ticker-vol-title,
   .ticker-market-cap-title {
     text-align: right;
+  }
+  .ticker-address-copy{
+    width: 3%;
   }
   .ticker-change {
     .precent {
@@ -274,5 +280,23 @@
   .sign,
   .precent {
     display: none;
+  }
+}
+.btncopy svg {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.btncopy svg {
+  &:hover {
+ path{
+    fill: #05d2dd;
+ }
+ rect{
+    fill: #05d2dd;
+  }
+  .ticker-address-title {
+
+      color: #05d2dd;
+    }
   }
 }
