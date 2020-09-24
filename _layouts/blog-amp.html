@@ -61,7 +61,7 @@
             <span class="name">{{ author.name }}</span>
             <span class="date">on {{ page.date | date_to_string }}</span>
           </div>
-          {{ content | toc }}
+          {{ content | toc | amp_images }}
         </div>
       </article>
       <div class="tags">
