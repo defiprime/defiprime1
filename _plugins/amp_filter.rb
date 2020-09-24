@@ -42,7 +42,7 @@ module Jekyll
       doc.css('img').each do |image|
         image.name = "amp-img"
 
-        image['layout'] = "flex-item" if responsive
+        image['layout'] = "fill" if responsive
       end
 
       # Picture elements are not accepted in amp pages, convert them to amp-img
