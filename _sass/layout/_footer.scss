@@ -91,7 +91,7 @@
 
     .social-links {
       display: flex;
-      margin-bottom: 28px;
+      margin-bottom: 15px;
       a {
         padding: 6px 0;
         &:hover {
@@ -103,8 +103,8 @@
         }
         svg {
           @include breakpoint(min-small) {
-            width: 36px;
-            height: 36px;
+            width: 48px;
+            height: 48px;
           }
           @include breakpoint(small) {
             width: 24px;

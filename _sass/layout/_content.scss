@@ -185,6 +185,10 @@ header ~ p {
       &:hover {
         background-color: _color(green-color);
       }
+      svg{
+        width: 32px;
+        height: 32px; 
+      }
     }
   }
 }
