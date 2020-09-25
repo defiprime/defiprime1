@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title:  "Ethereum Gas Explained"
 permalink: gas
 h1title: "Ethereum Gas Explained"
