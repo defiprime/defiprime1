@@ -56,19 +56,11 @@
 
 // Component.
 
-	@import 'components/section';
 	@import 'components/icon';
 	@import 'components/list';
-	@import 'components/form';
-	@import 'components/box';
 	@import 'components/image';
-	@import 'components/table';
 	@import 'components/button';
-	@import 'components/tiles';
 	@import 'components/blog';
-	@import "components/coming_soon";
-	@import "components/table-tickers";
-	@import "components/banner";
 
 // Layout.
 
@@ -78,11 +70,5 @@
 	@import 'layout/main';
 	@import 'layout/footer';
 	@import 'layout/wrapper';
-	@import 'layout/defi_rates';
-	@import 'layout/asset_management_tools';
-	@import 'layout/product_page';
 	@import 'layout/main_page';
-	@import 'layout/events';
-	@import 'layout/sidepanel';
 	@import 'layout/algolia';
-	@import 'layout/ecosystem';

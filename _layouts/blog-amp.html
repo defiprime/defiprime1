@@ -29,11 +29,7 @@
   <style amp-custom>
  
     {% capture include_to_scssify %}
-    
-  /* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css"> */
-    .toc{overflow-y:auto}.toc>.toc-list{overflow:hidden;position:relative}.toc>.toc-list li{list-style:none}.toc-list{margin:0;padding-left:10px}a.toc-link{color:currentColor;height:100%}.is-collapsible{max-height:1000px;overflow:hidden;transition:all 300ms ease-in-out}.is-collapsed{max-height:0}.is-position-fixed{position:fixed !important;top:0}.is-active-link{font-weight:700}.toc-link::before{background-color:#EEE;content:' ';display:inline-block;height:inherit;left:0;margin-top:-1px;position:absolute;width:2px}.is-active-link::before{background-color:#54BC4B}
-
-      {% include main.scss %}
+      {% include blog-amp.scss %}
     {% endcapture %}
     {{ include_to_scssify | scssify }}
     </style>
@@ -43,6 +39,22 @@
     crossorigin="anonymous"></script>
 
   <script async src="https://cdn.ampproject.org/v0.js"></script> 
+  
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+<amp-analytics type="gtag" data-credentials="include">
+<script type="application/json">
+{
+  "vars" : {
+    "gtag_id": "UA-138327045-1",
+    "config" : {
+      "UA-138327045-1": { "groups": "default" }
+    }
+  }
+}
+</script>
+</amp-analytics>
+
 </head>
   <body class="post">
     {% include header-amp.html %}
