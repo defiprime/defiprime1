@@ -29,7 +29,7 @@
   <style amp-custom>
  
     {% capture include_to_scssify %}
-      {% include blog-amp.scss %}
+      {% include amp/blog-amp.scss %}
     {% endcapture %}
     {{ include_to_scssify | scssify }}
     </style>
@@ -57,7 +57,7 @@
 
 </head>
   <body class="post">
-    {% include header-amp.html %}
+    {% include amp/header-amp.html %}
     {% if page.featured-image %}
       <div class="feature" style="background-image: url({{ page.featured-image }})">
         <div class="container  typeset"></div>
@@ -86,8 +86,8 @@
       </div>
     </main>
 
-    {% include author_bio-amp.html %}
+    {% include amp/author_bio-amp.html %}
     {% include blog-readmore.html %}
-    {% include footer-amp.html %}
+    {% include amp/footer-amp.html %}
   </body>
 </html>
