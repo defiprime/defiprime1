@@ -23,7 +23,7 @@ module Jekyll
           else
             # FastImage doesn't seem to handle local paths when used with Jekyll
             # so let's just force the path
-            src = File.join(Dir.pwd, '_site', image.attr('src'))
+            src = File.join(Dir.pwd, '', image.attr('src')) #fix bug described here  https://github.com/juusaw/amp-jekyll/issues/24#issuecomment-365681698
           end
           # Jekyll generates static assets after the build process.
           # This causes problems when trying to determine the dimensions of a locally stored image.
