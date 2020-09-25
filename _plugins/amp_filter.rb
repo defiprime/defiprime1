@@ -70,17 +70,17 @@ module Jekyll
       # </ampimg ...>
       # Duplicate amp-img, remove layout attribut, wrap it with noscript, and add
       # it as amp-img child
-      doc.css('amp-img').each do |amp_img|
-        noscript = Nokogiri::XML::Node.new "noscript", doc
+      # doc.css('amp-img').each do |amp_img|
+      #   noscript = Nokogiri::XML::Node.new "noscript", doc
 
-        noscript_img = amp_img.dup
-        noscript_img.remove_attribute('layout')
-        noscript_img.name = 'img'
+      #   noscript_img = amp_img.dup
+      #   noscript_img.remove_attribute('layout')
+      #   noscript_img.name = 'img'
 
-        noscript.add_child(noscript_img)
+      #   noscript.add_child(noscript_img)
 
-        amp_img.add_child(noscript)
-      end
+      #   amp_img.add_child(noscript)
+      # end
 
       # Return the html as plaintext string
       doc.to_s

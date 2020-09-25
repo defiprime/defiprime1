@@ -8,9 +8,7 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <meta name="description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 160 }}">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | replace:'/amp','' | prepend: site.url }}">
-
   <meta property="og:title" content="{{ page.h1title }}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
@@ -26,6 +24,8 @@
   <meta name="twitter:description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 300 }}">
   <meta name="twitter:image" content="{{ page.featured-image | prepend: site.url }}">
 
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
   <style amp-custom>
  
     {% capture include_to_scssify %}
@@ -34,29 +34,28 @@
     {{ include_to_scssify | scssify }}
     </style>
 
-  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
-    integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
-    crossorigin="anonymous"></script>
-
   <script async src="https://cdn.ampproject.org/v0.js"></script> 
   
  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-<amp-analytics type="gtag" data-credentials="include">
-<script type="application/json">
-{
-  "vars" : {
-    "gtag_id": "UA-138327045-1",
-    "config" : {
-      "UA-138327045-1": { "groups": "default" }
-    }
-  }
-}
-</script>
-</amp-analytics>
+
 
 </head>
   <body class="post">
+
+    <amp-analytics type="gtag" data-credentials="include">
+      <script type="application/json">
+      {
+        "vars" : {
+          "gtag_id": "UA-138327045-1",
+          "config" : {
+            "UA-138327045-1": { "groups": "default" }
+          }
+        }
+      }
+      </script>
+      </amp-analytics>
+
     {% include amp/header-amp.html %}
     {% if page.featured-image %}
       <div class="feature" style="background-image: url({{ page.featured-image }})">
