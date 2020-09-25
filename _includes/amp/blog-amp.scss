@@ -3,14 +3,6 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'libs/skel';
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900');
-@import url('https://fonts.googleapis.com/css?family=Kanit:300,400,500,600" rel="stylesheet');
-
-/*
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 	@include skel-breakpoints((
     xlarge: '(max-width: 1680px)',
@@ -49,7 +41,6 @@
 
 // Base.
 
-	@import 'base/page';
 	@import 'base/variables';
 	@import 'base/typography';
 

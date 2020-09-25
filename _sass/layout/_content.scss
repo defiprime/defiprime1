@@ -201,6 +201,8 @@ header ~ p {
     font-family: _add-font(second-family);
     color: _color(main-color);
     font-weight: _add-font(weight-medium);
+    text-transform: none;
+    letter-spacing: normal;
   }
   @include breakpoint(small) {
     h1 {
