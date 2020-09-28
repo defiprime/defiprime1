@@ -385,11 +385,19 @@
       "name": "DAOstack",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xa0246c9032bc3a600820415ae600c6388619a14d",
+      "symbol": "FARM",
+      "name": "Harvest",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 8
+    "patch": 9
   }
 }
