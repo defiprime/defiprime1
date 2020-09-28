@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title:  "Bonding Curve Offering Explained"
 permalink: bonding-curve-explained
 h1title: "Bonding Curve Offering Explained"

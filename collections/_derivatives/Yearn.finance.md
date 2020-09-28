@@ -4,6 +4,7 @@ product-title: Yearn.finance
 product-url: https://yearn.finance/earn
 image: /images/output_md/yearn.png
 ecosystem: ethereum
+filter: Synthetic Assets
 product-description: Yearn.Finance automates yield-maximizing profit switching opportunities for liquidity providers and yield farmers.
 coltitle:  "Derivatives"
 colpermalink: derivatives

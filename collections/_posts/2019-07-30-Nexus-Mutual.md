@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title:  Nexus Mutual
 permalink: nexus-mutual
 h1title: Nexus Mutual - Smart Contract Insurance. Interview with founder.   

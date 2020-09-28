@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title:  "Initial DeFi Offering"
 permalink: initial-defi-offering
 h1title: "Initial DeFi Offering"

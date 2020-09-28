@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title:  Hummingbot
 permalink: hummingbot
 h1title: 'Hummingbot for Crypto Market Making'

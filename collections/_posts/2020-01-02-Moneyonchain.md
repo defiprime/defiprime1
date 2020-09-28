@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title:  Money On Chain
 permalink: moneyonchain
 h1title: "Money On Chain - a Stable Asset Platform"

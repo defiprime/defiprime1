@@ -1,0 +1,22 @@
+{% assign author = site.data.authors[page.author] %}
+
+<div class="author">
+   <div class="author-wrap">
+      <div class="author-info">
+         <div class="author-img">
+            {% if author.image %}
+            <amp-img width="200" height="200" layout="responsive" src="{{ author.image }}"></amp-img>
+            {% endif %}
+
+         </div>
+         <div class="author-descr">
+             <span class="author-about"> About the author </span>
+            <div class="author-title">
+               <div class="author-name">{{ author.name }}</div>
+            </div>
+
+            <div class="author-skills"> {{ author.bio }} </div>
+         </div>
+      </div>
+   </div>
+</div>

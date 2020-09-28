@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title:  DAO Accounting
 permalink: dao-accounting
 h1title: DAO Accounting. DeFi Accounting Series

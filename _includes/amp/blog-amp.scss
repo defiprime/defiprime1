@@ -1,0 +1,63 @@
+
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+
+	@include skel-breakpoints((
+    xlarge: '(max-width: 1680px)',
+    min-xlarge: '(min-width: 1681px)',
+    large: '(max-width: 1280px)',
+    min-large: '(min-width: 1281px)',
+    medium: '(max-width: 980px)',
+    min-medium: '(min-width: 981px)',
+    small: '(max-width: 736px)',
+    min-small: '(min-width: 737px)',
+    xsmall: '(max-width: 480px)',
+    min-xsmall: '(min-width: 481px)',
+    xxsmall: '(max-width: 360px)',
+    min-xxsmall: '(min-width: 361px)'
+	));
+
+	@include skel-layout((
+		reset: 'full',
+		boxModel: 'border',
+		grid: (
+			gutters: 2em
+		),
+		breakpoints: (
+			medium: (
+				grid: (
+					gutters: 1.5em
+				)
+			),
+			small: (
+				grid: (
+					gutters: 1em
+				)
+			)
+		)
+	));
+
+// Base.
+
+	@import 'base/variables';
+	@import 'base/typography';
+
+// Component.
+
+	@import 'components/icon';
+	@import 'components/list';
+	@import 'components/image';
+	@import 'components/button';
+	@import 'components/blog';
+
+// Layout.
+
+	@import 'layout/header';
+	@import 'layout/content';
+	@import 'layout/menu';
+	@import 'layout/main';
+	@import 'layout/footer';
+	@import 'layout/wrapper';
+	@import 'layout/algolia';

@@ -48,35 +48,37 @@
 
       <section class="blog-articles">
         {% for post in  page.posts %}
-        <article>
-          <div class="tags">
-            {% for tag in post.tags %}
-            <a href="/t/{{tag | downcase | replace: " ", "-" }}.html" class="tag">{{ tag }}</a>
-            {% endfor %}
-          </div>
-          <a href="{{ post.url }}">
-            <div class="date">{{ post.date | date_to_string}}</div>
-            <div class="header">
-              <h2>{{ post.title }}</h2>
-              <div class="author-item">
-                {% assign author = site.data.authors[post.author] %}
-                {% if author.image %}
-                  <img class="lazyload" data-src="{{ author.image }}">
-                {% endif %}
-                <div class="author-data">
+          {% unless  post.url contains "/amp" %}
+          <article>
+            <div class="tags">
+              {% for tag in post.tags %}
+              <a href="/t/{{tag | downcase | replace: " ", "-" }}.html" class="tag">{{ tag }}</a>
+              {% endfor %}
+            </div>
+            <a href="{{ post.url }}">
+              <div class="date">{{ post.date | date_to_string}}</div>
+              <div class="header">
+                <h2>{{ post.title }}</h2>
+                <div class="author-item">
                   {% assign author = site.data.authors[post.author] %}
                   {% if author.image %}
-                    <span>Author</span>
-                    <span class="author">{{author.name}}</span>
+                    <img class="lazyload" data-src="{{ author.image }}">
                   {% endif %}
+                  <div class="author-data">
+                    {% assign author = site.data.authors[post.author] %}
+                    {% if author.image %}
+                      <span>Author</span>
+                      <span class="author">{{author.name}}</span>
+                    {% endif %}
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="content">
-              <p>{{ post.intro | strip_html | truncatewords:50 }}</p>
-            </div>
-          </a>
-        </article>
+              <div class="content">
+                <p>{{ post.intro | strip_html | truncatewords:50 }}</p>
+              </div>
+            </a>
+          </article>
+          {% endunless  %}
         {% endfor %}
 
       </section>
