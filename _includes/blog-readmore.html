@@ -2,6 +2,8 @@
 <section class="latest">
 	{% assign posts = site.categories.blog | where_exp:"post", "post.url != page.url" | sample:4 %}
 	{% for post in posts %}
+	{% unless  post.url contains "/amp" %}
+
 	<article>
 		<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}" class="post-link">
 			<div class="content">
@@ -10,5 +12,6 @@
 			</div>
 		</a>
 	</article>
+	{% endunless  %}
 	{% endfor %}
 </section>
