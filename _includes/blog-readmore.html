@@ -1,9 +1,18 @@
 <h3 class="align-center">The Latest:</h3>
 <section class="latest">
-	{% assign posts = site.categories.blog | where_exp:"post", "post.url != page.url" | sample:4 %}
-	{% for post in posts %}
-	{% unless  post.url contains "/amp" %}
+  {% assign posts = site.categories.blog | where_exp:"post", "post.url != page.url"%}
+  {% assign nonAmpPosts = ""  | split: ','%}
+  
+  {% for post in posts %}
+    {% unless  post.url contains "/amp" %}
+      {% assign nonAmpPosts = nonAmpPosts | push: post %}
+    {% endunless  %}
+  {% endfor %}
 
+  
+  {% assign nonAmpSamplePosts = nonAmpPosts | sample:4 %}
+    
+  {% for post in nonAmpSamplePosts%}
 	<article>
 		<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}" class="post-link">
 			<div class="content">
@@ -12,6 +21,5 @@
 			</div>
 		</a>
 	</article>
-	{% endunless  %}
 	{% endfor %}
 </section>
