@@ -27,19 +27,6 @@ redirect_from:
 	</div>
 </header>
 
-<section class="banner">
-    <a class="banner-link" target="_blank" href="https://1inch.exchange/#/r/0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1">
-      <div class="banner-content">
-        <div class="banner-icon">{% include icons/1inch.svg %}</div>
-        <div class="banner-description"><span class="fw-800">1inch</span> gives you the best <span class="separator"></span> DEX prices for {% include icons/fire.svg %}  DeFi Tokens</div>
-      </div>
-    </a>
-    <div class="circle circle-1"><span class="background"></span><span class="dot"></span></div>
-    <div class="circle circle-2"><span class="background"></span><span class="dot"></span></div>
-    <div class="circle circle-3"><span class="background"></span><span class="dot"></span></div>
-    <div class="circle circle-4"><span class="background"></span><span class="dot"></span></div>
-    <div class="circle circle-5"><span class="background"></span><span class="dot"></span></div>
-</section>
 
 <section>
   <h2 id="defi_projects" class='recently_added_annotation'>DeFi projects</h2>
