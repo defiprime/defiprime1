@@ -86,14 +86,14 @@ redirect_from:
   <div class='latest_blog_sneak_peak'>
     {% assign posts = site.categories.blog | sort: "date" | reverse  %}
     {% assign nonAmpPosts = ""  | split: ','%}
-    
+
     {% for post in posts %}
       {% unless  post.url contains "/amp" %}
         {% assign nonAmpPosts = nonAmpPosts | push: post %}
       {% endunless  %}
     {% endfor %}
-      
-    {% for blog_post in nonAmpPosts limit:12 %}
+
+    {% for blog_post in nonAmpPosts limit:6 %}
     {% assign link_colors = 'violet|cyan|orange|violetgray' | split: '|' %}
       <article class='latest_blog_link recent-blog-color_{{ forloop.index | random_item: link_colors }}'>
         <a  href="{{ blog_post.permalink | prepend: '/' }}">
