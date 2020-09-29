@@ -8,8 +8,11 @@
       {% assign nonAmpPosts = nonAmpPosts | push: post %}
     {% endunless  %}
   {% endfor %}
+
+  
+  {% assign nonAmpSamplePosts = nonAmpPosts | sample:4 %}
     
-  {% for post in nonAmpPosts limit:4 %}
+  {% for post in nonAmpSamplePosts%}
 	<article>
 		<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}" class="post-link">
 			<div class="content">
