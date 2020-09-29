@@ -85,9 +85,15 @@ redirect_from:
   <h2 class='recently_added_annotation'>Latest from DeFi <span>blog</span></h2>
   <div class='latest_blog_sneak_peak'>
     {% assign posts = site.categories.blog | sort: "date" | reverse  %}
-    {% for blog_post in posts limit:12 %}
-    {% unless  blog_post.url contains "/amp" %}
-
+    {% assign nonAmpPosts = ""  | split: ','%}
+    
+    {% for post in posts %}
+      {% unless  post.url contains "/amp" %}
+        {% assign nonAmpPosts = nonAmpPosts | push: post %}
+      {% endunless  %}
+    {% endfor %}
+      
+    {% for blog_post in nonAmpPosts limit:12 %}
     {% assign link_colors = 'violet|cyan|orange|violetgray' | split: '|' %}
       <article class='latest_blog_link recent-blog-color_{{ forloop.index | random_item: link_colors }}'>
         <a  href="{{ blog_post.permalink | prepend: '/' }}">
@@ -95,7 +101,6 @@ redirect_from:
           <p>{{ blog_post.intro | strip_html | strip_newlines }}</p>
         </a>
       </article>
-      {% endunless  %}
 
     {% endfor %}
   </div>
