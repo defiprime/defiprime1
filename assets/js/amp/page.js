@@ -23,11 +23,11 @@ function filterButtonClick(e) {
 function filter(filterValue) {
   var itemSelector = document.getElementById('assets_cards').getElementsByClassName("asset_tool_card");
   Array.from(itemSelector).forEach(item => {
-    var itemWrapper = item.closest(".article-wrapper");
+    var itemWrapper = item.parentNode; // item.closest(".article-wrapper");
     if (filterValue === "*") {
-      itemWrapper.style.display = '';
+      itemWrapper.classList.remove("none");
       return;
     }
-    itemWrapper.style.display = item.classList.contains(filterValue) ? '' : 'none';
+    itemWrapper.style.display = item.classList.contains(filterValue) ? itemWrapper.classList.remove("none") : itemWrapper.classList.add("none");
   });
 }

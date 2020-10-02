@@ -79,7 +79,7 @@
   a {
     color: #292984;
     font-weight: 600;
-    &:hover{
+    &:hover {
       color: _color(green-color);
     }
     &.button-trade {
@@ -92,14 +92,14 @@
       height: 45px;
       background-color: _color(purple-color);
       color: #ffffff;
-      &:hover{
+      &:hover {
         background-color: _color(green-color);
         color: #ffffff;
       }
     }
   }
-  p{
-    &:last-child{
+  p {
+    &:last-child {
       margin-bottom: 10px;
     }
   }
@@ -207,4 +207,11 @@ blockquote {
   #wrapper:before {
     content: none;
   }
+}
+
+.block {
+  display: block !important;
+}
+.none {
+  display: none !important;
 }
