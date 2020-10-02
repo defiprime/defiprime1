@@ -25,9 +25,9 @@ function filter(filterValue) {
   Array.from(itemSelector).forEach(item => {
     var itemWrapper = item.parentNode; // item.closest(".article-wrapper");
     if (filterValue === "*") {
-      itemWrapper.style.display = '';
+      itemWrapper.classList.remove("none");
       return;
     }
-    itemWrapper.style.display = item.classList.contains(filterValue) ? '' : 'none';
+    itemWrapper.style.display = item.classList.contains(filterValue) ? itemWrapper.classList.remove("none") : itemWrapper.classList.add("none");
   });
 }
