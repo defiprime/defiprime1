@@ -1,7 +1,5 @@
 var filterButtons = document.getElementsByClassName('filters-button-group')[0].getElementsByTagName("button");
 
-window.addEventListener("load", function(){
-
 
     if (window.location.hash) {
         var hash = window.location.hash.replace("#", "");
@@ -12,7 +10,6 @@ window.addEventListener("load", function(){
     Array.from(filterButtons).forEach(button => {
         button.addEventListener('click', filterButtonClick);
     });
-});
 
 function filterButtonClick(e) {
     Array.from(filterButtons).forEach(node => {
