@@ -1,6 +1,6 @@
 ---
 git-date: 2019-06-14T12:42:41-07:00
-layout: page
+layout: [page, page-amp]
 title:  "Margin Trading"
 permalink: margin-trading
 h1title: Margin trading

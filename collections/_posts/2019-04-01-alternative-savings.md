@@ -1,6 +1,6 @@
 ---
 git-date: 2019-04-13T21:06:27-07:00
-layout: page
+layout: [page, page-amp]
 title:  "Alternative Savings"
 permalink: alternative-savings
 h1title: Alternative Savings Apps

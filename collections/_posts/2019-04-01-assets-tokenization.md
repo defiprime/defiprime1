@@ -1,6 +1,6 @@
 ---
 git-date: 
-layout: page
+layout: [page, page-amp]
 title:  "Tokenization of Assets"
 permalink: assets-tokenization
 h1title: Tokenization of Assets

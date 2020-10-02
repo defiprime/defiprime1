@@ -1,6 +1,6 @@
 ---
 git-date: 2019-04-13T21:06:27-07:00
-layout: page
+layout: [page, page-amp]
 title:  "Analytics"
 permalink: defi-analytics
 h1title: Analytics

@@ -16,6 +16,7 @@ window.addEventListener('load', () => {
 
 });
 function filterButtonClick(e) {
+  console.log("button clicked")
     filterButtons.forEach(node => {
         node.classList.remove('active');
     });

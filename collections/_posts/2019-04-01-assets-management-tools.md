@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: page
+layout: [page, page-amp]
 title:  "Asset Management Tools"
 permalink: assets-management-tools
 h1title: Asset Management Tools

@@ -1,7 +1,7 @@
 ---
 git-date: 2019-04-13T21:06:27-07:00
 title: Stablecoins
-layout: page
+layout: [page, page-amp]
 permalink: stablecoins
 h1title: Stablecoins
 pagetitle: Complete Stablecoins List - Decentralized Stablecoins  
