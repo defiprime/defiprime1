@@ -5,7 +5,7 @@ var filterButtons = document.getElementsByClassName('filters-button-group')[0].g
         var hash = window.location.hash.replace("#", "");
         filter(hash);
         Array.from(filterButtons).find(button => button.classList.contains("active")).classList.remove("active");
-        Array.from(filterButtons).find(button => button.dataset.filter === hash).classList.add("active");
+        Array.from(filterButtons).find(button => button.getAttribute("data-filter") === hash).classList.add("active");
     }
     Array.from(filterButtons).forEach(button => {
         button.addEventListener('click', filterButtonClick);
@@ -16,7 +16,7 @@ function filterButtonClick(e) {
         node.classList.remove('active');
     });
     e.currentTarget.classList.add('active');
-    var filterValue = e.currentTarget.dataset.filter;
+    var filterValue = e.currentTarget.getAttribute("data-filter");
     if (filterValue !== "*") {
         window.location.hash = "#" + filterValue;
     } else {
