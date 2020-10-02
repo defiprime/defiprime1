@@ -3,7 +3,8 @@
 // Vars.
 
 	/// Breakpoints.
-	/// @var {list}
+  /// @var {list}
+  $breakpoints: null;
 	$breakpoints: () !global;
 
 	/// Vendor prefixes.

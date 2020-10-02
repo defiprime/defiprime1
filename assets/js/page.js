@@ -1,6 +1,6 @@
-var filterButtons = document.querySelectorAll('.filters-button-group button');
+var filterButtons = document.getElementsByClassName('filters-button-group')[0].getElementsByTagName("button");
 
-window.addEventListener('load', () => {
+window.addEventListener("load", function(){
 
 
     if (window.location.hash) {
@@ -9,15 +9,13 @@ window.addEventListener('load', () => {
         Array.from(filterButtons).find(button => button.classList.contains("active")).classList.remove("active");
         Array.from(filterButtons).find(button => button.dataset.filter === hash).classList.add("active");
     }
-    filterButtons.forEach(button => {
+    Array.from(filterButtons).forEach(button => {
         button.addEventListener('click', filterButtonClick);
     });
-
-
 });
+
 function filterButtonClick(e) {
-  console.log("button clicked")
-    filterButtons.forEach(node => {
+    Array.from(filterButtons).forEach(node => {
         node.classList.remove('active');
     });
     e.currentTarget.classList.add('active');
@@ -32,8 +30,8 @@ function filterButtonClick(e) {
 };
 
 function filter(filterValue) {
-    var itemSelector = document.querySelectorAll('#assets_cards .asset_tool_card');
-    itemSelector.forEach(item => {
+    var itemSelector = document.getElementById('assets_cards').getElementsByClassName("asset_tool_card");
+    Array.from(itemSelector).forEach(item => {
         var itemWrapper = item.closest(".article-wrapper");
         if (filterValue === "*") {
             itemWrapper.style.display = '';
