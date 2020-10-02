@@ -33,6 +33,7 @@ redirect_from:
   <div class="tiles floating grid">
     {% assign sorted_categories_products = site.categories.products | sort: 'title', 'last' %}
     {% for post in sorted_categories_products %}
+     {% unless  post.url contains "/amp" %}
       {% for collection in site.collections %}
         {% if post.cards == collection.label %}
           <article class="style{{ forloop.index | random_number: 0, 10 }}">
@@ -43,6 +44,7 @@ redirect_from:
           </article>
         {% endif %}
       {% endfor %}
+      {% endunless  %}
     {% endfor %}
   </div>
 </section>
