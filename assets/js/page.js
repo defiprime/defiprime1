@@ -1,22 +1,26 @@
-var filterButtons = document.getElementsByClassName('filters-button-group')[0].getElementsByTagName("button");
+var filterButtons = document.querySelectorAll('.filters-button-group button');
+
+window.addEventListener('load', () => {
 
 
     if (window.location.hash) {
         var hash = window.location.hash.replace("#", "");
         filter(hash);
         Array.from(filterButtons).find(button => button.classList.contains("active")).classList.remove("active");
-        Array.from(filterButtons).find(button => button.getAttribute("data-filter") === hash).classList.add("active");
+        Array.from(filterButtons).find(button => button.dataset.filter === hash).classList.add("active");
     }
-    Array.from(filterButtons).forEach(button => {
+    filterButtons.forEach(button => {
         button.addEventListener('click', filterButtonClick);
     });
 
+
+});
 function filterButtonClick(e) {
-    Array.from(filterButtons).forEach(node => {
+    filterButtons.forEach(node => {
         node.classList.remove('active');
     });
     e.currentTarget.classList.add('active');
-    var filterValue = e.currentTarget.getAttribute("data-filter");
+    var filterValue = e.currentTarget.dataset.filter;
     if (filterValue !== "*") {
         window.location.hash = "#" + filterValue;
     } else {
@@ -27,8 +31,8 @@ function filterButtonClick(e) {
 };
 
 function filter(filterValue) {
-    var itemSelector = document.getElementById('assets_cards').getElementsByClassName("asset_tool_card");
-    Array.from(itemSelector).forEach(item => {
+    var itemSelector = document.querySelectorAll('#assets_cards .asset_tool_card');
+    itemSelector.forEach(item => {
         var itemWrapper = item.closest(".article-wrapper");
         if (filterValue === "*") {
             itemWrapper.style.display = '';
