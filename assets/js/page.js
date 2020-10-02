@@ -1,6 +1,6 @@
 var filterButtons = document.getElementsByClassName('filters-button-group')[0].getElementsByTagName("button");
 
-window.addEventListener('load', () => {
+window.addEventListener("load", function(){
 
 
     if (window.location.hash) {
@@ -12,9 +12,8 @@ window.addEventListener('load', () => {
     Array.from(filterButtons).forEach(button => {
         button.addEventListener('click', filterButtonClick);
     });
-
-
 });
+
 function filterButtonClick(e) {
     Array.from(filterButtons).forEach(node => {
         node.classList.remove('active');
