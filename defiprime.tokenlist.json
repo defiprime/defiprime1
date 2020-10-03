@@ -393,11 +393,19 @@
       "name": "Harvest",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9",
+      "symbol": "AAVE",
+      "name": "AAVE",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 0,
-    "patch": 9
+    "minor": 1,
+    "patch": 0
   }
 }
