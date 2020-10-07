@@ -265,17 +265,7 @@ featured-image: /images/og-rates.png
 
 </section>
 
-<section class="section-portfolio">
-    <div class="flex ai-c f-lg-wrap">
-        <div class="icon-portfolio flex jc-c ai-c">
-            {% include icons/portfolio.html %}
-        </div>
-        <div class="info-portfolio">
-            <p class="lh-140 color-white">Check complete protocols stats and APR performance history at DeFi <span class="color-orange">Portfolio</span></p>
-        </div>
-        <a class="button-portfolio flex jc-c ai-c" href="https://portfolio.defiprime.com/opportunities">Go to</a>
-    </div>
-</section>
+
 
 
 <div id="overlay">
