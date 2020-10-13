@@ -7,7 +7,7 @@ h1title: "The Definitive Guide to DeFi Taxes"
 pagetitle: "The Definitive Guide to DeFi Taxes"
 metadescription: "What are the tax implications of these new DeFi transactions? There are tax implications for trading, lending, borrowing, and earning interest—even if it’s in the form of cryptocurrency. We dive into these further below."
 category: blog
-featured-image: /images/blog/
+featured-image: /images/blog/defitaxes-og.png
 intro: "What are the tax implications of these new DeFi transactions?"
 author: Kemmerer
 tags: ['DeFi Guides', 'DeFi Accounting']
