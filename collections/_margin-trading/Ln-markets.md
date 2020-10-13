@@ -9,4 +9,5 @@ coltitle:  "Margin trading"
 colpermalink: margin-trading
 filter: Bitcoin
 twitter: https://twitter.com/LNMarkets
+github: https://github.com/lnmarkets
 ---
