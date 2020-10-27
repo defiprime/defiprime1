@@ -76,13 +76,7 @@ featured-image: /images/og-rates.png
                         <span class="list-crypto-today"></span>
                         <span class="list-crypto-month"></span>
                     </li>
-                    <li class="item-crypto">
-                        <a href="https://fulcrum.trade/" class="inline-flex list-crypto-name list-liquidity-name">
-                            <span class="value" data-market="fulcrum">Fulcrum</span>
-                        </a>
-                        <span class="list-crypto-today"></span>
-                        <span class="list-crypto-month"></span>
-                    </li>
+
                     <!-- <li class="item-crypto">
                         <a href="https://oasis.app/save" class="inline-flex list-crypto-name list-liquidity-name">
                             <span class="value" data-market="dsr">MakerDAO DSR</span>
@@ -126,13 +120,7 @@ featured-image: /images/og-rates.png
                         <span class="list-crypto-today"></span>
                         <span class="list-crypto-month"></span>
                     </li>
-                    <li class="item-crypto">
-                        <a href="https://fulcrum.trade/" class="inline-flex list-crypto-name list-liquidity-name">
-                            <span class="value" data-market="fulcrum">Fulcrum</span>
-                        </a>
-                        <span class="list-crypto-today"></span>
-                        <span class="list-crypto-month"></span>
-                    </li>
+                
                 </ul>
             </div>
         </div>
@@ -265,17 +253,7 @@ featured-image: /images/og-rates.png
 
 </section>
 
-<section class="section-portfolio">
-    <div class="flex ai-c f-lg-wrap">
-        <div class="icon-portfolio flex jc-c ai-c">
-            {% include icons/portfolio.html %}
-        </div>
-        <div class="info-portfolio">
-            <p class="lh-140 color-white">Check complete protocols stats and APR performance history at DeFi <span class="color-orange">Portfolio</span></p>
-        </div>
-        <a class="button-portfolio flex jc-c ai-c" href="https://portfolio.defiprime.com/opportunities">Go to</a>
-    </div>
-</section>
+<a href="https://blockfi.mxuy67.net/c/2507261/689686/10568" target="_top" id="689686"><img src="//a.impactradius-go.com/display-ad/10568-689686" border="0" alt="" width="728" height="90"/></a><img height="0" width="0" src="https://imp.pxf.io/i/2507261/689686/10568" style="position:absolute;visibility:hidden;" border="0" />
 
 
 <div id="overlay">

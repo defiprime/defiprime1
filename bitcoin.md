@@ -83,6 +83,15 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
+{% assign margin-tradings = site.margin-trading | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if margin-tradings.size > 0 %}
+# Margin Trading
+{% for margin-trading in margin-tradings %}
+### <a href="{{ margin-trading.product-url }}">{{ margin-trading.product-title }}</a>
+{% include ecosystem-icons.html project = margin-trading %}
+{{ margin-trading.product-description }}
+{% endfor %}
+{% endif %}
 
 {% assign infrastructures = site.infrastructure | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
 {% if infrastructures.size > 0 %}

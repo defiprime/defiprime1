@@ -8,13 +8,13 @@
       "description": "Token listed at defiprime curated list"
     }
   },
-  "timestamp": "2020-08-16T00:00:00+00:00",
+  "timestamp": "2020-10-23T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
       "address": "0x960b236A07cf122663c4303350609A66A7B288C0",
       "symbol": "ANT",
-      "name": "Aragon",
+      "name": "Aragon ANT (old)",
       "decimals": 18,
       "tags": ["defi"]
     },
@@ -393,11 +393,35 @@
       "name": "Harvest",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9",
+      "symbol": "AAVE",
+      "name": "AAVE",
+      "decimals": 18,
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x43dfc4159d86f3a37a5a4b3d4580b888ad7d4ddd",
+      "symbol": "DODO",
+      "name": "DODO",
+      "decimals": 18,
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xa117000000f279D81A1D3cc75430fAA017FA5A2e",
+      "symbol": "ANT",
+      "name": "Aragon",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 0,
-    "patch": 9
+    "minor": 2,
+    "patch": 1
   }
 }
