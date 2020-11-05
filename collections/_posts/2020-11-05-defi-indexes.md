@@ -55,6 +55,8 @@ At the moment, PieDAO is incentivizing users to take up positions in DEFI+L by o
 **Current AUM**: $0.9M \
 **Price per token**: ~$1.50
 
+![](/images/blog/defi-indexes/piedao-defi-s.svg)
+
 “[PieDAO DEFI Small Cap](https://medium.com/piedao/announcing-defi-s-67ed53367364),” or [DEFI+S](https://www.coingecko.com/en/coins/piedao-defi-small-cap), is an index token that tracks the price performance of smaller DeFi markets per market cap. In this sense, it’s structured similarly to the DEFI+L token, with the main difference being that DEFI+S is riskier and may have more upside because smaller projects are involved. Token standouts in this portfolio include Balancer’s BAL, Loopring’s LRC, UMA Protocol’s UMA, and Ren Protocol’s REN.
 
 
