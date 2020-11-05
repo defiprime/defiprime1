@@ -87,7 +87,7 @@ _AAVE, AVAX, BAL, BAND, COMP, CREAM, CRV, DOT, KNC, LINK, MKR, MTA, REN, REP, RU
 
 ### Binance
 
-Malta-based cryptocurrency exchange giant [Binance](https://www.binance.com/en/register?ref=EWDLY70F) has also released its own DeFi-themed index asset, the [DeFi Composite Index](https://www.binance.com/en/support/faq/53a02affc6dd481aa1c53c9eae480e94). Notably, it’s the first index product released by Binance Futures, the exchange’s derivatives arm, and it specifically tracks the performance of DeFi tokens listed on Binance proper. The index’s ticker symbol is DEFIUSDT, so the asset is unsurprisingly denominated in the USDT stablecoin. The index tracks the following assets with the following weights at press time:
+Malta-based cryptocurrency exchange giant Binance has also released its own [DeFi-themed index asset](https://www.binance.com/en/register?ref=EWDLY70F), the [DeFi Composite Index](https://www.binance.com/en/support/faq/53a02affc6dd481aa1c53c9eae480e94). Notably, it’s the first index product released by Binance Futures, the exchange’s derivatives arm, and it specifically tracks the performance of DeFi tokens listed on Binance proper. The index’s ticker symbol is DEFIUSDT, so the asset is unsurprisingly denominated in the USDT stablecoin. The index tracks the following assets with the following weights at press time:
 
 _BAND (~7.55%), COMP (~7.61%), KAVA (~6.95%), KNC (~5.87%), LEND (~10.83%), LINK (~27.36%), MKR (~7.47%), SNX (~7.75%), SXP (~9.12%), and ZRX (~9.49%)._
 
