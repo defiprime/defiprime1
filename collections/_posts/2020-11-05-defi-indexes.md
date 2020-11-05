@@ -39,7 +39,7 @@ Another important point: sDEFI rebalances automatically occur, so traders have t
 ## PieDAO DEFI+L
 
 **Current tokens**: LINK (~18.78%), YFI (~18.42%), AAVE (~16.34%), UNI (~13.18%), SNX (~12.68%), COMP (~10.65%), MKR (~9.91%)  \
-**Current AUM**: Presently unknown \
+**Current AUM**: $1.4M \
 **Price per token**: ~$0.80
 
 ![](/images/blog/defi-indexes/piedao-defi-l.svg)
@@ -52,7 +52,7 @@ At the moment, PieDAO is incentivizing users to take up positions in DEFI+L by o
 ## PieDAO DEFI+S
 
 **Current tokens**: BAL (~12.21%), LRC (~14.72%), REN (~19.54%), UMA (~47.74%), PNT (~3.25%), MLN (~2.60%)  \
-**Current AUM**: Presently unknown \
+**Current AUM**: $0.9M \
 **Price per token**: ~$1.50
 
 “[PieDAO DEFI Small Cap](https://medium.com/piedao/announcing-defi-s-67ed53367364),” or [DEFI+S](https://www.coingecko.com/en/coins/piedao-defi-small-cap), is an index token that tracks the price performance of smaller DeFi markets per market cap. In this sense, it’s structured similarly to the DEFI+L token, with the main difference being that DEFI+S is riskier and may have more upside because smaller projects are involved. Token standouts in this portfolio include Balancer’s BAL, Loopring’s LRC, UMA Protocol’s UMA, and Ren Protocol’s REN.
@@ -61,7 +61,7 @@ At the moment, PieDAO is incentivizing users to take up positions in DEFI+L by o
 ## DeFi Pulse Index
 
 **Current tokens**: MKR (~16.58%), AAVE (~13.04%), SNX (~12.25%), UNI (~11.99%), YFI (~11.11%), COMP (~10.61%), REN (~7.96%), LRC (~6.04%), KNC (~5.35%), BAL (~2.79%), REP (~2.27%) \
-**Current AUM**: ~$14,785,000 million \
+**Current AUM**: ~$14.7M \
 **Price per token**: ~$66
 
 ![](/images/blog/defi-indexes/defi-pulse-index.svg)
