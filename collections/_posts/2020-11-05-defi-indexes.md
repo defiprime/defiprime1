@@ -4,7 +4,7 @@ layout: [blog, blog-amp]
 title:  "DeFi indexes"
 permalink: defi-index
 h1title: "DeFi Indexes"
-pagetitle: "DeFi Indexes"
+pagetitle: "DeFi Indexes Explained"
 metadescription: "DeFi Indexes - we are looking at the biggest DeFi index tokens to date to get a better sense for where the sector’s at now and where it may be heading"
 category: blog
 featured-image: /images/blog/defiindex-og.png
