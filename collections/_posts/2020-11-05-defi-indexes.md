@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/defiindex-og.png
 intro: "We’ll be looking at the biggest DeFi index tokens to date to get a better sense for where the sector’s at now and where it may be heading"
 author: Peaster
-tags: ['DeFi Guides']
+tags: ['DeFi Guides', 'Derivatives']
 ---
 In actualizing unprecedented yield-bearing systems (e.g. yield farms), Ethereum’s decentralized finance (DeFi) ecosystem took the cryptoeconomy by storm in 2020. That said, there’s been an unsurprising rush to own DeFi governance tokens -- which are used by communities to govern protocols in decentralized fashion -- in recent months.
 
