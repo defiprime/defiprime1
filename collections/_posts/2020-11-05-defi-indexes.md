@@ -4,13 +4,13 @@ layout: [blog, blog-amp]
 title:  "DeFi indexes"
 permalink: defi-index
 h1title: "DeFi Indexes"
-pagetitle: "DeFi Indexes"
+pagetitle: "DeFi Indexes Explained"
 metadescription: "DeFi Indexes - we are looking at the biggest DeFi index tokens to date to get a better sense for where the sector’s at now and where it may be heading"
 category: blog
 featured-image: /images/blog/defiindex-og.png
 intro: "We’ll be looking at the biggest DeFi index tokens to date to get a better sense for where the sector’s at now and where it may be heading"
 author: Peaster
-tags: ['DeFi Guides']
+tags: ['DeFi Guides', 'Derivatives']
 ---
 In actualizing unprecedented yield-bearing systems (e.g. yield farms), Ethereum’s decentralized finance (DeFi) ecosystem took the cryptoeconomy by storm in 2020. That said, there’s been an unsurprising rush to own DeFi governance tokens -- which are used by communities to govern protocols in decentralized fashion -- in recent months.
 
@@ -39,7 +39,7 @@ Another important point: sDEFI rebalances automatically occur, so traders have t
 ## PieDAO DEFI+L
 
 **Current tokens**: LINK (~18.78%), YFI (~18.42%), AAVE (~16.34%), UNI (~13.18%), SNX (~12.68%), COMP (~10.65%), MKR (~9.91%)  \
-**Current AUM**: Presently unknown \
+**Current AUM**: $1.4M \
 **Price per token**: ~$0.80
 
 ![](/images/blog/defi-indexes/piedao-defi-l.svg)
@@ -51,8 +51,8 @@ At the moment, PieDAO is incentivizing users to take up positions in DEFI+L by o
 
 ## PieDAO DEFI+S
 
-**Current tokens**: LINK (~18.98%), YFI (~18.24%), AAVE (~16.35%), UNI (~13.26%), SNX (~12.68%), COMP (~10.48%), MKR (~9.98%)  \
-**Current AUM**: Presently unknown \
+**Current tokens**: BAL (~12.21%), LRC (~14.72%), REN (~19.54%), UMA (~47.74%), PNT (~3.25%), MLN (~2.60%)  \
+**Current AUM**: $0.9M \
 **Price per token**: ~$1.50
 
 ![](/images/blog/defi-indexes/piedao-defi-s.svg)
@@ -63,7 +63,7 @@ At the moment, PieDAO is incentivizing users to take up positions in DEFI+L by o
 ## DeFi Pulse Index
 
 **Current tokens**: MKR (~16.58%), AAVE (~13.04%), SNX (~12.25%), UNI (~11.99%), YFI (~11.11%), COMP (~10.61%), REN (~7.96%), LRC (~6.04%), KNC (~5.35%), BAL (~2.79%), REP (~2.27%) \
-**Current AUM**: ~$14,785,000 million \
+**Current AUM**: ~$14.7M \
 **Price per token**: ~$66
 
 ![](/images/blog/defi-indexes/defi-pulse-index.svg)
@@ -87,7 +87,7 @@ _AAVE, AVAX, BAL, BAND, COMP, CREAM, CRV, DOT, KNC, LINK, MKR, MTA, REN, REP, RU
 
 ### Binance
 
-Malta-based cryptocurrency exchange giant [Binance](https://www.binance.com/en/register?ref=EWDLY70F) has also released its own DeFi-themed index asset, the [DeFi Composite Index](https://www.binance.com/en/support/faq/53a02affc6dd481aa1c53c9eae480e94). Notably, it’s the first index product released by Binance Futures, the exchange’s derivatives arm, and it specifically tracks the performance of DeFi tokens listed on Binance proper. The index’s ticker symbol is DEFIUSDT, so the asset is unsurprisingly denominated in the USDT stablecoin. The index tracks the following assets with the following weights at press time:
+Malta-based cryptocurrency exchange giant Binance has also released its own [DeFi-themed index asset](https://www.binance.com/en/register?ref=EWDLY70F), the [DeFi Composite Index](https://www.binance.com/en/support/faq/53a02affc6dd481aa1c53c9eae480e94). Notably, it’s the first index product released by Binance Futures, the exchange’s derivatives arm, and it specifically tracks the performance of DeFi tokens listed on Binance proper. The index’s ticker symbol is DEFIUSDT, so the asset is unsurprisingly denominated in the USDT stablecoin. The index tracks the following assets with the following weights at press time:
 
 _BAND (~7.55%), COMP (~7.61%), KAVA (~6.95%), KNC (~5.87%), LEND (~10.83%), LINK (~27.36%), MKR (~7.47%), SNX (~7.75%), SXP (~9.12%), and ZRX (~9.49%)._
 

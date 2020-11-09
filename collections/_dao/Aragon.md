@@ -9,6 +9,6 @@ coltitle:  "DAO"
 colpermalink: dao
 twitter: https://twitter.com/aragonproject
 ticker: ANT
-contract: "0x960b236A07cf122663c4303350609A66A7B288C0"
+contract: "0xa117000000f279D81A1D3cc75430fAA017FA5A2e"
 decimals: 18
 ---
