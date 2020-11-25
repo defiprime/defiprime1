@@ -1,6 +1,7 @@
 Defiprime:
     name: Nick Sawinyh
     twitter: https://twitter.com/sawinyh
+    linkedin: https://www.linkedin.com/in/sawinyh/
     bio: Nick Sawinyh is an LA-based crypto entrepreneur. After having spent over four years in the blockchain industry, Nick founded DeFiprime in 2019, with the idea to provide information about emerging DeFi ecosystem. He owns modest amounts of various cryptocurrencies.
     image: /images/sawinyh.jpg
 sawinyh:
@@ -72,5 +73,5 @@ Klepatch:
 Kemmerer:
     name: David Kemmerer
     twitter: https://twitter.com/David_Kemmerer
-    bio: David Kemmerer is the CEO of <a href="http://cryptotrader.tax/">CryptoTrader.Tax</a>, a cryptocurrency tax reporting platform used by investors and traders all over the world. 
+    bio: David Kemmerer is the CEO of <a href="http://cryptotrader.tax/">CryptoTrader.Tax</a>, a cryptocurrency tax reporting platform used by investors and traders all over the world.
     image: /images/kemmerer.jpg
