@@ -6,7 +6,7 @@ image: /images/output_md/app.dodoex.io.png
 ecosystem: ethereum
 type: non-custodial
 filter: No KYC
-product-description: DODO is a on-chain liquidity provider which leverages the Proactive Market Maker algorithm (PMM) to provide on-chain and contract-fillable liquidity for everyone
+product-description: "DODO is a on-chain liquidity provider which leverages the Proactive Market Maker algorithm (PMM) to provide on-chain and contract-fillable liquidity for everyone. [DODO: Capital-Efficient Decentralized Exchange, Interview with co-founder Diane Dai](/dodo)."
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/BreederDodo
