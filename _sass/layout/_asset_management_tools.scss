@@ -82,17 +82,20 @@
     }
 
     &.featured-wrapper {
-      padding-top: 0;
+     padding-top: 0;
       background-color: #05d2dd;
+      position: relative;
       .asset_tool_card {
         background-color: #ffffff;
-        max-height: calc(100% - 45px);
+        outline: 15px solid #05D2DD;
       }
       .featured-header {
+        margin-top: -8px;
+        padding-bottom: 5px;
+        background-color: #05d2dd;
+        z-index: 3;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        height: 45px;
         .sponsored {
           font-family: "Open Sans", sans-serif;
           font-style: normal;
@@ -388,6 +391,13 @@
   #assets_cards {
     grid-template-columns: auto;
     justify-content: space-evenly; //positioning single column to center
+  }
+}
+.product-page #main .asset_tool_card {
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0 1px #05d2dd, 0px 0px 6px 4px rgba(41, 41, 132, 0.12);
+    transform: translateY(-3%);
   }
 }
 .product-page #main .asset_tool_card {
