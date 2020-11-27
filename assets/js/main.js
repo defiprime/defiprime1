@@ -4,236 +4,239 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-(function($) {
+(function ($) {
 
-	skel.breakpoints({
-		xlarge:	'(max-width: 1680px)',
-		large:	'(max-width: 1280px)',
-		medium:	'(max-width: 980px)',
-		small:	'(max-width: 736px)',
-		xsmall:	'(max-width: 480px)'
-	});
+  skel.breakpoints({
+    xlarge: '(max-width: 1680px)',
+    large: '(max-width: 1280px)',
+    medium: '(max-width: 980px)',
+    small: '(max-width: 736px)',
+    xsmall: '(max-width: 480px)'
+  });
 
-	$(function() {
+  $(function () {
 
-		var	$window = $(window),
-			$body = $('body');
+    var $window = $(window),
+      $body = $('body');
 
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
+    // Disable animations/transitions until the page has loaded.
+    $body.addClass('is-loading');
 
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 100);
-			});
+    $window.on('load', function () {
+      window.setTimeout(function () {
+        $body.removeClass('is-loading');
+      }, 100);
+    });
 
-		// Touch?
-			if (skel.vars.touch)
-				$body.addClass('is-touch');
+    // Touch?
+    if (skel.vars.touch)
+      $body.addClass('is-touch');
 
-		// Forms.
-			var $form = $('form');
+    // Forms.
+    var $form = $('form');
 
-			// Auto-resizing textareas.
-				$form.find('textarea').each(function() {
+    // Auto-resizing textareas.
+    $form.find('textarea').each(function () {
 
-					var $this = $(this),
-						$wrapper = $('<div class="textarea-wrapper"></div>'),
-						$submits = $this.find('input[type="submit"]');
+      var $this = $(this),
+        $wrapper = $('<div class="textarea-wrapper"></div>'),
+        $submits = $this.find('input[type="submit"]');
 
-					$this
-						.wrap($wrapper)
-						.attr('rows', 1)
-						.css('overflow', 'hidden')
-						.css('resize', 'none')
-						.on('keydown', function(event) {
+      $this
+        .wrap($wrapper)
+        .attr('rows', 1)
+        .css('overflow', 'hidden')
+        .css('resize', 'none')
+        .on('keydown', function (event) {
 
-							if (event.keyCode == 13
-							&&	event.ctrlKey) {
+          if (event.keyCode == 13
+            && event.ctrlKey) {
 
-								event.preventDefault();
-								event.stopPropagation();
+            event.preventDefault();
+            event.stopPropagation();
 
-								$(this).blur();
+            $(this).blur();
 
-							}
+          }
 
-						})
-						.on('blur focus', function() {
-							$this.val($.trim($this.val()));
-						})
-						.on('input blur focus --init', function() {
+        })
+        .on('blur focus', function () {
+          $this.val($.trim($this.val()));
+        })
+        .on('input blur focus --init', function () {
 
-							$wrapper
-								.css('height', $this.height());
+          $wrapper
+            .css('height', $this.height());
 
-							$this
-								.css('height', 'auto')
-								.css('height', $this.prop('scrollHeight') + 'px');
+          $this
+            .css('height', 'auto')
+            .css('height', $this.prop('scrollHeight') + 'px');
 
-						})
-						.on('keyup', function(event) {
+        })
+        .on('keyup', function (event) {
 
-							if (event.keyCode == 9)
-								$this
-									.select();
+          if (event.keyCode == 9)
+            $this
+              .select();
 
-						})
-						.triggerHandler('--init');
+        })
+        .triggerHandler('--init');
 
-					// Fix.
-						if (skel.vars.browser == 'ie'
-						||	skel.vars.mobile)
-							$this
-								.css('max-height', '10em')
-								.css('overflow-y', 'auto');
+      // Fix.
+      if (skel.vars.browser == 'ie'
+        || skel.vars.mobile)
+        $this
+          .css('max-height', '10em')
+          .css('overflow-y', 'auto');
 
-				});
+    });
 
-			// Fix: Placeholder polyfill.
-				$form.placeholder();
+    // Fix: Placeholder polyfill.
+    $form.placeholder();
 
-		// Prioritize "important" elements on medium.
-			skel.on('+medium -medium', function() {
-				$.prioritize(
-					'.important\\28 medium\\29',
-					skel.breakpoint('medium').active
-				);
-			});
+    // Prioritize "important" elements on medium.
+    skel.on('+medium -medium', function () {
+      $.prioritize(
+        '.important\\28 medium\\29',
+        skel.breakpoint('medium').active
+      );
+    });
 
-		// Menu.
-			var $menu = $('#menu');
+    // Menu.
+    var $menu = $('#menu');
 
-			$menu.wrapInner('<div class="inner"></div>');
+    $menu.wrapInner('<div class="inner"></div>');
 
-			$menu._locked = false;
+    $menu._locked = false;
 
-			$menu._lock = function() {
+    $menu._lock = function () {
 
-				if ($menu._locked)
-					return false;
+      if ($menu._locked)
+        return false;
 
-				$menu._locked = true;
+      $menu._locked = true;
 
-				window.setTimeout(function() {
-					$menu._locked = false;
-				}, 350);
+      window.setTimeout(function () {
+        $menu._locked = false;
+      }, 350);
 
-				return true;
+      return true;
 
-			};
+    };
 
-			$menu._show = function() {
+    $menu._show = function () {
 
-				if ($menu._lock())
-					$body.addClass('is-menu-visible');
+      if ($menu._lock())
+        $body.addClass('is-menu-visible');
 
-			};
+    };
 
-			$menu._hide = function() {
+    $menu._hide = function () {
 
-				if ($menu._lock())
-					$body.removeClass('is-menu-visible');
+      if ($menu._lock())
+        $body.removeClass('is-menu-visible');
 
-			};
+    };
 
-			$menu._toggle = function() {
+    $menu._toggle = function () {
 
-				if ($menu._lock())
-					$body.toggleClass('is-menu-visible');
+      if ($menu._lock())
+        $body.toggleClass('is-menu-visible');
 
-			};
+    };
 
-			$menu
-				.appendTo($body)
-				.on('click', function(event) {
-					event.stopPropagation();
-				})
-				.on('click', 'a', function(event) {
+    $menu
+      .appendTo($body)
+      .on('click', function (event) {
+        event.stopPropagation();
+      })
+      .on('click', 'a', function (event) {
 
-					var href = $(this).attr('href');
+        var href = $(this).attr('href');
 
-					event.preventDefault();
-					event.stopPropagation();
+        event.preventDefault();
+        event.stopPropagation();
 
-					// Hide.
-						$menu._hide();
+        // Hide.
+        $menu._hide();
 
-					// Redirect.
-						if (href == '#menu')
-							return;
+        // Redirect.
+        if (href == '#menu')
+          return;
 
-						window.setTimeout(function() {
-							window.location.href = href;
-						}, 350);
+        window.setTimeout(function () {
+          window.location.href = href;
+        }, 350);
 
-				})
-				.append('<a class="close" href="#menu">Close</a>');
+      })
+      .append('<a class="close" href="#menu">Close</a>');
 
-			$body
-				.on('click', 'a[href="#menu"]', function(event) {
+    $body
+      .on('click', 'a[href="#menu"]', function (event) {
 
-					event.stopPropagation();
-					event.preventDefault();
+        event.stopPropagation();
+        event.preventDefault();
 
-					// Toggle.
-						$menu._toggle();
+        // Toggle.
+        $menu._toggle();
 
-				})
-				.on('click', function(event) {
+      })
+      .on('click', function (event) {
 
-					// Hide.
-						$menu._hide();
+        // Hide.
+        $menu._hide();
 
-				})
-				.on('keydown', function(event) {
+      })
+      .on('keydown', function (event) {
 
-					// Hide on escape.
-						if (event.keyCode == 27)
-							$menu._hide();
+        // Hide on escape.
+        if (event.keyCode == 27)
+          $menu._hide();
 
-        });
-        
-      $("#hamburger_menu").click(function (){
-        $(".nav.nav--header").slideToggle('slow');
-	  })
-	});
+      });
 
-	$(document).ready(function() {
-		$(".tooltip").tooltipster({
-			theme: ['tooltipster-customized'],
-			functionPosition: function(instance, helper, data){
-				var parent = $(helper.origin).closest(".asset_tool_card");
-    
-				//if content wider than container - put in inside
-				if (data.size.width > parent.width()) {
-					data.coord.left = parent.offset().left
-					$(helper.tooltipClone).width(parent.width())
-					var diffTop = $(helper.tooltipClone).height() - data.size.height;
-					data.size.height = $(helper.tooltipClone).height();
-					data.size.width = parent.width()
-					data.coord.top -= diffTop;
+    $("#hamburger_menu").click(function () {
+      $(".nav.nav--header").slideToggle('slow');
+    })
+  });
 
-					return data;
-				}
-    
-				//if content go out of the left boundary - shift it inside
-				if (data.coord.left < parent.offset().left) {
-					data.coord.left = parent.offset().left
+  $(document).ready(function () {
+    $(".tooltip:not(.default-hover)").tooltipster({
+      theme: ['tooltipster-customized'],
+      functionPosition: function (instance, helper, data) {
+        var parent = helper.origin.closest(".asset_tool_card");
+        if (parent == undefined) {
+           parent = helper.origin.closest(".ticker-row");
+        }
+        parent = $(parent)
+        //if content wider than container - put in inside
+        if (data.size.width > parent.width()) {
+          data.coord.left = parent.offset().left
+          $(helper.tooltipClone).width(parent.width())
+          var diffTop = $(helper.tooltipClone).height() - data.size.height;
+          data.size.height = $(helper.tooltipClone).height();
+          data.size.width = parent.width()
+          data.coord.top -= diffTop;
 
-					return data;
-				}
+          return data;
+        }
 
-				//if content go out of the right boundary - shift it inside
-				if (data.coord.left + $(helper.tooltipClone).width() - (parent.offset().left + parent.width()) > 0) {
-					data.coord.left -= data.coord.left + $(helper.tooltipClone).width() - (parent.offset().left + parent.width());
+        //if content go out of the left boundary - shift it inside
+        if (data.coord.left < parent.offset().left) {
+          data.coord.left = parent.offset().left
 
-					return data;
-				}
+          return data;
+        }
 
-				return data;
-			}
+        //if content go out of the right boundary - shift it inside
+        if (data.coord.left + $(helper.tooltipClone).width() - (parent.offset().left + parent.width()) > 0) {
+          data.coord.left -= data.coord.left + $(helper.tooltipClone).width() - (parent.offset().left + parent.width());
+
+          return data;
+        }
+
+        return data;
+      }
     });
 
 
@@ -247,36 +250,36 @@
     }).on('mouseout', function () {
       $(this).closest('.asset_tool_card').removeClass('is-hover');
     });
-});
+  });
 
   const latestAlpha = $(".latest_alpha");
-	async function getTopicsAlpha() {
-		const response = await fetch('https://alpha.defiprime.com/latest.json');
-		const responseJson = await response.json();
-		
-		let innerHtml = ``;
-		let color = ``;
-		responseJson.topic_list.topics.forEach((item, index) => {
-			color = index % 3 == 0 ? "orange" : index % 3 == 1 ? "cyan" : "violet";
-			if (index < 6) {
-				innerHtml += `<article class="latest_alpha_link recent-blog-color_${color}">
+  async function getTopicsAlpha() {
+    const response = await fetch('https://alpha.defiprime.com/latest.json');
+    const responseJson = await response.json();
+
+    let innerHtml = ``;
+    let color = ``;
+    responseJson.topic_list.topics.forEach((item, index) => {
+      color = index % 3 == 0 ? "orange" : index % 3 == 1 ? "cyan" : "violet";
+      if (index < 6) {
+        innerHtml += `<article class="latest_alpha_link recent-blog-color_${color}">
 				<a href="https://alpha.defiprime.com/t/${item.slug}/${item.id}"  target="_blank">
 					<h2>${item.title}</h2>
 				</a>
 			</article>`;
-			}
-		});
-		latestAlpha.html(innerHtml);
-	}
-  if ( latestAlpha.length > 0 ) {
+      }
+    });
+    latestAlpha.html(innerHtml);
+  }
+  if (latestAlpha.length > 0) {
     getTopicsAlpha();
   }
 
-	$(".wrapper-buttons .period-button").on("click", function (e) {
-		tablinks = document.getElementsByClassName("period-button");
-		for (i = 0; i < tablinks.length; i++) {
-			tablinks[i].className = tablinks[i].className.replace(" active", "");
-		}
-		e.currentTarget.className += " active";
-	});
+  $(".wrapper-buttons .period-button").on("click", function (e) {
+    tablinks = document.getElementsByClassName("period-button");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    e.currentTarget.className += " active";
+  });
 })(jQuery);

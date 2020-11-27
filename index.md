@@ -3,6 +3,7 @@ git-date: 2019-04-13T21:06:27-07:00
 layout: default
 pagetitle: DeFi - Best Decentralized Finance Projects | What is DeFi in Crypto
 metadescription: DeFi(Decentralized Finance) is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols.
+featured-image: /images/og.png
 redirect_from:
   - product
 ---
@@ -17,24 +18,16 @@ redirect_from:
 	<div id='defi-search'>
 		<div id="search-searchbar"></div>
 		<div id='search-powered-by'></div>
+		<div id='search-container'>
+
 		<div class="post-list" id="search-hits">
 		</div>
+		<div class="post-list" id="search-hits-defiprime">
+		</div>
+    </div>
 	</div>
 </header>
 
-<section class="banner">
-    <a class="banner-link" target="_blank" href="https://1inch.exchange/#/r/0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1">
-      <div class="banner-content">
-        <div class="banner-icon">{% include icons/1inch.svg %}</div>
-        <div class="banner-description"><span class="fw-800">1inch</span> gives you the best <span class="separator"></span> DEX prices for {% include icons/fire.svg %}  DeFi Tokens</div>
-      </div> 
-    </a>
-    <div class="circle circle-1"><span class="background"></span><span class="dot"></span></div>
-    <div class="circle circle-2"><span class="background"></span><span class="dot"></span></div>
-    <div class="circle circle-3"><span class="background"></span><span class="dot"></span></div>
-    <div class="circle circle-4"><span class="background"></span><span class="dot"></span></div>
-    <div class="circle circle-5"><span class="background"></span><span class="dot"></span></div>
-</section>
 
 <section>
   <h2 id="defi_projects" class='recently_added_annotation'>DeFi projects</h2>
@@ -80,7 +73,15 @@ redirect_from:
   <h2 class='recently_added_annotation'>Latest from DeFi <span>blog</span></h2>
   <div class='latest_blog_sneak_peak'>
     {% assign posts = site.categories.blog | sort: "date" | reverse  %}
-    {% for blog_post in posts limit:6 %}
+    {% assign nonAmpPosts = ""  | split: ','%}
+
+    {% for post in posts %}
+      {% unless  post.url contains "/amp" %}
+        {% assign nonAmpPosts = nonAmpPosts | push: post %}
+      {% endunless  %}
+    {% endfor %}
+
+    {% for blog_post in nonAmpPosts limit:6 %}
     {% assign link_colors = 'violet|cyan|orange|violetgray' | split: '|' %}
       <article class='latest_blog_link recent-blog-color_{{ forloop.index | random_item: link_colors }}'>
         <a  href="{{ blog_post.permalink | prepend: '/' }}">
@@ -88,6 +89,7 @@ redirect_from:
           <p>{{ blog_post.intro | strip_html | strip_newlines }}</p>
         </a>
       </article>
+
     {% endfor %}
   </div>
 </section>

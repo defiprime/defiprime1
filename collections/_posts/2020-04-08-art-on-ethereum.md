@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title:  "Art on Ethereum: a Beginner's Guide to Cryptoart Platforms"
 permalink: cryptoart-on-ethereum
 h1title: "Art on Ethereum: a Beginner's Guide to Cryptoart Platforms"

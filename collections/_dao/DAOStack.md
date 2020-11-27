@@ -9,4 +9,7 @@ coltitle:  "DAO"
 colpermalink: dao
 twitter: https://twitter.com/daostack
 github: https://github.com/daostack
+ticker: GEN
+contract: "0x543ff227f64aa17ea132bf9886cab5db55dcaddf"
+decimals: 18
 ---

@@ -2,11 +2,11 @@
 git-date:
 product-title: Zerion
 product-url: https://zerion.io/en
-image: /images/output_md/httpszerionioen.png
+image: /images/output_md/zerion.io.png
 ecosystem: ethereum
-platform: web, ios
+platform: web, ios, android
 filter: native defi integration
-product-description: Zerion is an interface for blockchain-based protocols in decentralized finance applications. [Interview with Zerion co-founder](/zerion).
+product-description: Zerion is an investment interface for decentralized finance, providing users with a single place to manage their entire DeFi portfolio in a non-custodial way. [Interview with Zerion co-founder](/zerion).
 coltitle:  "Asset Management Tools"
 colpermalink: assets-management-tools
 github: https://github.com/zeriontech

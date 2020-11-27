@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title:  Chainbeat
 permalink: chainbeat
 h1title: "Chainbeat - Google Analytics for the dApps world"

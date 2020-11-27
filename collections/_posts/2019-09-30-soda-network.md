@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title: SODA
 permalink: soda-network
 h1title: "SODA: BTC-backed Crypto Loans"

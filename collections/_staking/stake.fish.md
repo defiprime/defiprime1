@@ -4,7 +4,7 @@ product-title: stake.fish
 product-url: https://stake.fish/
 image: /images/output_md/stake.fish.png
 product-description: Stake.fish is a staking platform for cryptocurrencies where you can pool your crypto assets and earn an interest from it. [Interview with stake.fish founder, Wang Chun](/stakefish).
-filter: Cosmos, Tezos, IRISnet, Kusama, Loom
+filter: Cosmos, Tezos, IRISnet, Polkadot, Kusama, Loom, Ethereum 2.0, Solana, Near, Cardano, Kava, Band Protocol  
 coltitle:  "Staking"
 colpermalink: staking
 twitter: https://twitter.com/stakedotfish

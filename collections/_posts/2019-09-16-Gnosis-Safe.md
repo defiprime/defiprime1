@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title:  Gnosis Safe
 permalink: gnosis-safe
 h1title: 'Gnosis Safe: Smart contract-based multisig wallet'

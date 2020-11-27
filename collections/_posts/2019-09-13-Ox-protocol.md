@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title:  0x Protocol
 permalink: 0x-protocol
 h1title: '0x: Decentralized Exchange Protocol'

@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title:  DeversiFi
 permalink: deversifi
 h1title: 'DeversiFi - interview with CEO and founder, Will Harborne'

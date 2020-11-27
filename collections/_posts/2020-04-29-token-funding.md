@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title:  "Token Based Funding "
 permalink: token-based-funding
 h1title: "Token Based Funding"

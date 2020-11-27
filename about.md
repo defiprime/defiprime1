@@ -4,7 +4,7 @@ layout: static
 title: About
 h1title: About
 pagetitle: About DeFiprime   
-metadescription: Defiprime.com is the digital media and analytical services provider for the DeFi community. Its mandate is to inform, educate, and connect the community as the definitive source of news dedicated to decentralized finance space.
+metadescription: DeFiprime.com is a media outlet and analytical services provider for the DeFi community. Its mandate is to inform, educate, and connect the community as the definitive source of news dedicated to decentralized finance space.
 featured-image: /images/og.png
 permalink: about
 author: sawinyh
@@ -53,5 +53,5 @@ DMs are open [@defiprime](https://twitter.com/defiprime)
 
 This site runs independently. However, for the sake of transparency, and to avoid any possible future accusation of conflict of interests or unethical conduct, I should state that:
 
-- I work as a head of marketing at bZx
-- I hold ETH, BTC, and small amounts(less than $10k) of other ERC20 tokens and stablecoins
+- I'm ex-head of marketing at bZx, left the company on September 30, 2020.
+- I hold ETH, and small amounts(less than $10k) of other ERC20 tokens and stablecoins.

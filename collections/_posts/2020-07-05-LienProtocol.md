@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title:  "Lien Protocol"
 permalink: lien
 h1title: "Lien Protocol - Stablecoin Without Governance"

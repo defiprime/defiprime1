@@ -15,6 +15,7 @@ pagination:
 </header>
 <section class="blog-articles">
 	{% for post in paginator.posts %}
+    {% unless  post.url contains "/amp" %}
 		<article>
       {% if post.tags.size != 0 %}
         <div class="tags">
@@ -46,6 +47,7 @@ pagination:
 				</div>    
 			</a>
 		</article>
+    {% endunless  %}
 	{% endfor %}
 </section>
 

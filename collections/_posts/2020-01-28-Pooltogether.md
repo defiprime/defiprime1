@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title:  PoolTogether
 permalink: pooltogether
 h1title: "PoolTogether - Prize Linked Savings Account"
@@ -19,7 +19,7 @@ Leighton Cusack shared the PoolTogether backstory starting from ETHDenver 2019 a
 
 My name is Leighton Cusack, and I’m working on Ethereum applications that help promote economic mobility and financial health.
 
-Right now, that’s [PoolTogether](https://www.pooltogether.com/) -- an Ethereum app designed to make saving money as fun as playing a game. PoolTogether is based on the concept of a “prize linked savings account”, you deposit Dai for a chance to win a prize, and even if you don’t win, you keep all your money!
+Right now, that’s [PoolTogether](https://app-v3.pooltogether.com/?referrer=0xebdb626c95a25f4e304336b1adcad0521a1bdca1) -- an Ethereum app designed to make saving money as fun as playing a game. PoolTogether is based on the concept of a “prize linked savings account”, you deposit Dai for a chance to win a prize, and even if you don’t win, you keep all your money!
 
 ![](images/blog/pooltogether2.png)
 

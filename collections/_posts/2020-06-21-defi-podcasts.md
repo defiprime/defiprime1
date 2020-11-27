@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title:  "Top DeFi Podcasts of 2020"
 permalink: defi-podcasts
 h1title: "Top DeFi Podcasts of 2020"

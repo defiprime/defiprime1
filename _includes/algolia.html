@@ -1,6 +1,8 @@
 <!-- Including InstantSearch.js library and styling -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.34.0/algoliasearch.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@3.5.4/dist/instantsearch.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.0.0/dist/algoliasearch-lite.umd.js"
+  integrity="sha256-MfeKq2Aw9VAkaE9Caes2NOxQf6vUa8Av0JqcUXUGkd0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.0.0/dist/instantsearch.production.min.js"
+  integrity="sha256-6S7q0JJs/Kx4kb/fv0oMjS855QTz5Rc2hh9AkIUjUsk=" crossorigin="anonymous"></script>
 <!-- or include the full Algolia theme -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css"
   integrity="sha256-HB49n/BZjuqiCtQQf49OdZn63XuKFaxcIHWf0HNKte8=" crossorigin="anonymous">
@@ -8,6 +10,69 @@
 <script>
 
   var emptyBox = true;
+  const renderHits = (renderOptions, isFirstRender) => {
+    let { hits, widgetParams } = renderOptions;
+    // let { hits1, widgetParams1 } = renderOptions[1];
+    let template = `
+    <div class='defi-search-no-records ${ emptyBox ? "empty" : ""}'>
+      ${ emptyBox ? 'Type to start searching' : hits.length + ' matching materials at ' + (renderOptions.results.index === 'defiprime' ?  'Defiprime' : 'Alpha Community Forum')}
+    </div>
+  `;
+    if (hits.length != 0) {
+      if (renderOptions.results.index === 'defiprime') {
+        hits = groupBy(hits, 'category|collection');
+
+        let indexOfCategory = 0;
+
+        for (const hitCategory in hits) {
+
+          template += `
+        <div class='category_searchitem'>
+          ${hitCategory.toString() != 'undefined' ? capitalize(hitCategory) : 'Uncategorized'}
+        </div>
+      `;
+          template += hits[hitCategory].map((item) => `
+        <a href="{{ site.baseurl }}${item.url}" class='searchpost-link'>
+          <h2>${item.title}</h2>
+          <div class="searchpost-data">${$(item.html).text()}</div>
+        </a>
+      `).join('')
+          indexOfCategory++;
+          if (indexOfCategory != Object.keys(hits).length) { // prevent inserting on last one
+            template += `<hr class='defi-search-separator' />`
+          }
+        }
+      }
+      else if (renderOptions.results.index === '{{ site.algolia.discourse_index_name }}') {
+        hits = groupBy(hits, 'category.name');
+
+        let indexOfCategory = 0;
+
+        for (const hitCategory in hits) {
+          template += `
+        <div class='category_searchitem'>
+          ${hitCategory.toString() != 'undefined' ? capitalize(hitCategory) : 'Uncategorized'}
+        </div>
+      `;
+          template += hits[hitCategory].map((item) => `
+        <a href="{{ site.algolia.discourse_base_url }}${item.url}" class='searchpost-link'>
+          <h2>${item.topic.title}</h2>
+          <div class="searchpost-data"><p>${item.content}</p></div>
+        </a>
+      `).join('')
+          indexOfCategory++;
+          if (indexOfCategory != Object.keys(hits).length) { // prevent inserting on last one
+            template += `<hr class='defi-search-separator' />`
+          }
+        }
+      }
+
+    }
+    widgetParams.container.innerHTML = template;
+  };
+
+  // Create the custom widget
+  const customHits = instantsearch.connectors.connectHits(renderHits);
 
   // Instanciating InstantSearch.js with Algolia credentials
   const search = instantsearch({
@@ -25,7 +90,7 @@
   });
 
   // Adding searchbar and results widgets
-  search.addWidget(
+  search.addWidgets([
     instantsearch.widgets.searchBox({
       container: '#search-searchbar',
       placeholder: 'Search Defiprime',
@@ -38,9 +103,37 @@
         form: 'defi-search-form',
         submit: 'defi-search-submit',
         loadingIndicator: 'defi-search-loading'
-      }
+      },
+
+    }),
+    instantsearch.widgets
+      .index({ indexName: '{{ site.algolia.discourse_index_name }}' })
+      .addWidgets([
+
+        customHits({
+          container: document.querySelector('#search-hits-defiprime'),
+        }),
+        instantsearch.widgets.poweredBy({
+          container: '#search-powered-by',
+        })
+      ])
+
+  ]);
+
+
+
+  // Instantiate the custom widget
+  search.addWidgets([
+    customHits({
+      container: document.querySelector('#search-hits'),
+    }),
+    instantsearch.widgets.poweredBy({
+      container: '#search-powered-by',
     })
-  );
+  ]);
+
+  // Starting the search
+  search.start();
 
   if (document.querySelector("#custom-searchbox")) {
     document.querySelector("#custom-searchbox").addEventListener("click", function (e) {
@@ -88,56 +181,9 @@
     return s.charAt(0).toUpperCase() + s.slice(1)
   }
 
-  const renderHits = (renderOptions, isFirstRender) => {
-    let { hits, widgetParams } = renderOptions;
-    let template = `
-    <div class='defi-search-no-records'>
-      ${ emptyBox ? 'Type to start searching' : hits.length + ' matching materials'}
-    </div>
-  `;
 
-    if (hits.length != 0) {
-      hits = groupBy(hits, 'category|collection');
 
-      let indexOfCategory = 0;
 
-      for (const hitCategory in hits) {
-        template += `
-        <div class='category_searchitem'>
-          ${hitCategory.toString() != 'undefined' ? capitalize(hitCategory) : 'Uncategorized'}
-        </div>
-      `;
-        template += hits[hitCategory].map((item) => `
-        <a href="{{ site.baseurl }}${item.url}" class='searchpost-link'>
-          <h2>${item.title}</h2>
-          <div class="searchpost-data">${$(item.html).text()}</div>
-        </a>
-      `).join('')
-        indexOfCategory++;
-        if (indexOfCategory != Object.keys(hits).length) { // prevent inserting on last one
-          template += `<hr class='defi-search-separator' />`
-        }
-      }
-    }
-
-    widgetParams.container.innerHTML = template;
-  };
-
-  // Create the custom widget
-  const customHits = instantsearch.connectors.connectHits(renderHits);
-
-  // Instantiate the custom widget
-  search.addWidgets([
-    customHits({
-      container: document.querySelector('#search-hits'),
-    }),
-    instantsearch.widgets.poweredBy({
-      container: '#search-powered-by',
-    })
-  ]);
-
-  // Starting the search
-  search.start();
 
   window.addEventListener('load', () => {
     //change search icon svg from search-icon.svg
@@ -149,7 +195,7 @@
         $("#defi-search").hide();
       }
       $("#defi-search-fullpage").css('display', 'none');
-      $("#search-hits").css('display', 'none');
+      $("#search-container").css('display', 'none');
       $(".defi-search-inputbox").removeClass('searchbox-opened');
       $(".defi-search-form").stop(true, true).animate({
         maxWidth: '300px'
@@ -171,7 +217,7 @@
     $(document).on('click', '.defi-search-inputbox', () => {
       $('.defi-search-inputbox').addClass('searchbox-opened');
       $("#defi-search-fullpage").css('display', 'block');
-      $("#search-hits").css('display', 'block');
+      $("#search-container").css('display', 'block');
       $(".defi-search-form").stop(true, true).animate({
         maxWidth: '730px'
       }, 200)

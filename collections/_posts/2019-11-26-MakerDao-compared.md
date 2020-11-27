@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title:  MakerDAO vs. Equilibrium
 permalink: makerdao-compared-to-equilibrium
 h1title: "What’s The Difference Between MakerDAO And Equilibrium?"

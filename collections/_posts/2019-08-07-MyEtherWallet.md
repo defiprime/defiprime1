@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: blog
+layout: [blog, blog-amp]
 title:  MyEtherWallet
 permalink: myetherwallet
 h1title: MyEtherWallet and DeFi dApps. Interview with Brian Norton
