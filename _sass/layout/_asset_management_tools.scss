@@ -82,7 +82,7 @@
     }
 
     &.featured-wrapper {
-     padding-top: 0;
+     margin-top: -25px;
       background-color: #05d2dd;
       position: relative;
       .asset_tool_card {
@@ -393,11 +393,9 @@
     justify-content: space-evenly; //positioning single column to center
   }
 }
-.product-page #main .asset_tool_card {
+.product-page #main .featured-wrapper .asset_tool_card {
   &:hover {
-    cursor: pointer;
     box-shadow: 0 0 0 1px #05d2dd, 0px 0px 6px 4px rgba(41, 41, 132, 0.12);
-    transform: translateY(-3%);
   }
 }
 .product-page #main .asset_tool_card {
