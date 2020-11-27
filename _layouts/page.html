@@ -90,6 +90,7 @@
 
           {% if asset_tool.featured == true %}
           <div class="article-wrapper featured-wrapper">
+            <article class="asset_tool_card {{card_filters | join: ' '}}">
             <div class="featured-header">
               <span class="featured-product">
 
@@ -102,9 +103,10 @@
             </div>
             {% else %}
             <div class="article-wrapper">
+              <article class="asset_tool_card {{card_filters | join: ' '}}">
               {% endif %}
 
-              <article class="asset_tool_card {{card_filters | join: ' '}}">
+              
                 <a href="{{ asset_tool['product-url']}}" target="_blank" rel="noopener">
                   <img src="{{ asset_tool['image'] }}">
                   <button class="visit-website">Visit website</button>

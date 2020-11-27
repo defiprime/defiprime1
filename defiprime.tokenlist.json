@@ -417,11 +417,19 @@
       "name": "Aragon",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x875773784Af8135eA0ef43b5a374AaD105c5D39e",
+      "symbol": "IDLE",
+      "name": "IDLE",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 2,
-    "patch": 1
+    "minor": 3,
+    "patch": 0
   }
 }
