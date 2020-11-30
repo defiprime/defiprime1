@@ -18,7 +18,7 @@ We are a _curated list_ of DeFi products, not aiming to list every existing prod
 * Do you feel comfortable to recommend this product to your IRL friends?
 * Live product functioning on mainnet (not coming soon, not testnet, not "please take a look at our whitepaper")
 * Visible product traction (not empty marketplace, not empty order book, etc).   
-* Decentralized first. Label 'Region is not supported' is a spit in the face of DeFi. Check our recent [twitter-poll](https://twitter.com/defiprime/status/1130890433821724672) with community sentiment on this matter.
+* Decentralized first. Label 'Region is not supported' is a spit in the face of DeFi. 
 * No crypto tribalism and bias. Ethereum, Tron, EOS, Bitcoin and the rest of blockchains are equal as long as a DeFi product built on top of it is useful.
 * Lastly: no, you can’t buy a listing on Defiprime, don’t waste your time.
 

@@ -17,7 +17,7 @@ ICOs, or Initial Coin Offerings, exploded in popularity in 2017. In 2019, it was
 
 The decentralized finance sector, which uses smart contracts rather than third-party intermediaries to power traditional and unprecedented financial products, has become among the Ethereum’s brightest stars over the past few years. In this span, we’ve seen major new DeFi projects arise around things like borrowing and lending (e.g. Compound), synthetic assets (e.g. UMA Protocol), and more.
 
-[![](/images/blog/defi-offering-tweet.png)](https://twitter.com/defiprime/status/1277082175788052480)
+![](/images/blog/defi-offering-tweet.png)]
 
 In addition, another one of the biggest hits so far in the rising DeFi sector has been decentralized exchanges (DEXes), upon which users can trade tokens 24/7 and in non-custodial and permissionless fashion. Among these platforms, Uniswap, which was first deployed on Ethereum in November 2018, has particularly surged in popularity and become a premier and trusted source of liquidity for the cryptocurrency ecosystem.
 
@@ -143,7 +143,7 @@ In exchange for accepting the risk of liquidation and/or dilution, MTA token hol
 
 ## CRV
 
-In June 2020, [Curve Finance](https://www.curve.fi/) -- a premier decentralized exchange for efficient stablecoin-to-stablecoin trades -- unveiled the [Curve DAO and the CRV](https://twitter.com/defiprime/status/1277998053945823232) token. The DAO is Aragon-based and will collect Curve trading fees, while the CRV token is a governance token that will support staking (i.e. vote-locking).
+In June 2020, [Curve Finance](https://www.curve.fi/) -- a premier decentralized exchange for efficient stablecoin-to-stablecoin trades -- unveiled the Curve DAO and the CRV token. The DAO is Aragon-based and will collect Curve trading fees, while the CRV token is a governance token that will support staking (i.e. vote-locking).
 
 The initial supply of CRV is 1 billion, which is a third of the eventual supply of +3 billion tokens. As an inflationary token, CRV will be distributed to users of Curve. The token is still yet to be released to the public, but it will be distributed in decentralized fashion and will spur DEX liquidity pools rapidly upon release.
 
