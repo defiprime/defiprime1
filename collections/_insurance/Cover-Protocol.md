@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-12-06T10:02:11-07:00
 product-title: Cover Protocol
 product-url: https://www.coverprotocol.com/
 image: /images/output_md/www.coverprotocol.com.png
