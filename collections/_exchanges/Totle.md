@@ -1,7 +1,7 @@
 ---
 git-date: 2019-06-27T10:22:13-07:00
-product-title: Totle Swap
-product-url: https://swap.totle.com
+product-title: Totle
+product-url: https://totle.exchange/
 image: /images/output_md/swap.totle.com.png
 ecosystem: ethereum
 type: non-custodial
