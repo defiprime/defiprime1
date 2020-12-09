@@ -15,7 +15,7 @@ git-date: 2019-04-13T21:06:27-07:00
 
 Visit: https://defiprime.com
 
-Follow: https://twitter.com/defiprimehq  
+Follow: https://twitter.com/defiprime  
 
 ## What is this?
 
@@ -25,7 +25,7 @@ DeFiprime.com is the digital media and analytical services provider for the DeFi
 * Do you feel comfortable to recommend this product to your IRL friends?
 * Live product running on the mainnet (not coming soon, not testnet, not "please take a look at our whitepaper")
 * Visible product traction (not empty marketplace, not empty order book, etc).   
-* Decentralized first. Label 'Region is not supported' it's a spit in the face of DeFi. 
+* Decentralized first. Label 'Region is not supported' it's a spit in the face of DeFi. Check our recent [twitter-poll](https://twitter.com/defiprime/status/1130890433821724672) with community sentiment on this matter.
 * No crypto tribalism and bias. Ethereum, Tron, EOS, Bitcoin and the rest of blockchains are equal as long as DeFi product built on top are useful.
 
 So to reiterate, we’ll give you two examples below.
