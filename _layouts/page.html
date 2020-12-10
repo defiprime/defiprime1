@@ -7,9 +7,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 160 }}">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ "/assets/css/tooltipster/tooltipster.bundle.min.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" rel="preload" as="style">
+  <link rel="stylesheet" href="{{ "/assets/css/tooltipster/tooltipster.bundle.min.css" | prepend: site.baseurl }}" >
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}" >
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <meta property="og:title"
     content="{% if page.pagetitle %}{{ page.pagetitle | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
@@ -106,7 +106,7 @@
               <article class="asset_tool_card {{card_filters | join: ' '}}">
               {% endif %}
 
-              
+
                 <a href="{{ asset_tool['product-url']}}" target="_blank" rel="noopener">
                   <img src="{{ asset_tool['image'] }}">
                   <button class="visit-website">Visit website</button>
