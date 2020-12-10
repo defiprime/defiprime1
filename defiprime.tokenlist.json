@@ -433,11 +433,19 @@
       "name": "COVER",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x1695936d6a953df699c38ca21c2140d497c08bd9",
+      "symbol": "SYN",
+      "name": "SynLev",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 3,
+    "minor": 4,
     "patch": 0
   }
 }
