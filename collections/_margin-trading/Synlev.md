@@ -8,6 +8,7 @@ product-description: SynLev is a group of synthetic leveraged asset pairs built 
 coltitle:  "Margin trading"
 colpermalink: margin-trading
 filter: Ethereum
+type: non-custodial
 twitter: https://twitter.com/SynLevdefi
 github: https://github.com/CryptoIcarus/SynLev
 ticker: SYN
