@@ -3,8 +3,8 @@ git-date:
 layout: [blog, blog-amp]
 title:  "CryptoWars"
 permalink: cryptowars
-h1title: "CryptoWars: intersection of DeFi and gaming"
-pagetitle: "CryptoWars - Interview with co-founder"
+h1title: "CryptoWars: Intersection of DeFi and Gaming"
+pagetitle: "CryptoWars - Intersection of DeFi and Gaming, Interview with Co-Founder"
 metadescription: "CryptoWarsOU co-founder told us about gamification of liquidity farming mechanics, and how they built a novel project on the intersection of DeFi and game industry"
 category: blog
 featured-image: /images/blog/cryptowars-og.png
