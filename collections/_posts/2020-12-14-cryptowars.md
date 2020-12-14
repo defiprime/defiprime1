@@ -5,14 +5,14 @@ title:  "CryptoWars"
 permalink: cryptowars
 h1title: "CryptoWars: Intersection of DeFi and Gaming"
 pagetitle: "CryptoWars - Intersection of DeFi and Gaming, Interview with Co-Founder"
-metadescription: "CryptoWarsOU co-founder told us about gamification of liquidity farming mechanics, and how they built a novel project on the intersection of DeFi and game industry"
+metadescription: "CryptoWarsOU co-founder told us about gamification of liquidity farming mechanics, and how they built a novel project on the intersection of DeFi and gaming industry"
 category: blog
 featured-image: /images/blog/cryptowars-og.png
-intro: "CryptoWarsOU co-founder told us about gamification of liquidity farming mechanics, and how they built a novel project on the intersection of DeFi and game industry"
+intro: "CryptoWarsOU co-founder told us about gamification of liquidity farming mechanics, and how they built a novel project on the intersection of DeFi and gaming industry"
 author: Defiprime
 tags: ['Interview', 'NFTs']
 ---
-CryptoWarsOU co-founder told us about gamification of liquidity farming mechanics, and how they built a novel project on the intersection of DeFi and game industry.  
+CryptoWarsOU co-founder told us about gamification of liquidity farming mechanics, and how they built a novel project on the intersection of DeFi and gaming industry.  
 
 _Disclosure: This article was sponsored by CryptoWarsOU._
 
