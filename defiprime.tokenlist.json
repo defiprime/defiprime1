@@ -441,6 +441,14 @@
       "name": "SynLev",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x36f3fd68e7325a35eb768f1aedaae9ea0689d723",
+      "symbol": "ESD",
+      "name": "Empty Set Dollar",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
