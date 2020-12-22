@@ -449,6 +449,14 @@
       "name": "Empty Set Dollar",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xeF9Cd7882c067686691B6fF49e650b43AFBBCC6B",
+      "symbol": "FNX",
+      "name": "FinNexus",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
