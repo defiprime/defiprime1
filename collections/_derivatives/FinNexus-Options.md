@@ -5,7 +5,7 @@ product-url: https://options.finnexus.io/
 image: /images/output_md/options.finnexus.io.png
 ecosystem: ethereum
 filter: Options
-product-description: FinNexus Options is a decentralized options protocols with a multi-asset single-pool model where option buyers can set own option terms.  
+product-description: FinNexus Options is a decentralized options protocol with a multi-asset single-pool model where option buyers can set their own option terms.  
 coltitle:  "Derivatives"
 colpermalink: derivatives
 twitter: https://twitter.com/fin_nexus
