@@ -457,11 +457,19 @@
       "name": "FinNexus",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xca1207647ff814039530d7d35df0e1dd2e91fa84",
+      "symbol": "DHT",
+      "name": "dHEDGE",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 5,
+    "minor": 6,
     "patch": 0
   }
 }

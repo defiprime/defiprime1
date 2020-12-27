@@ -5,7 +5,7 @@ product-url: https://www.dhedge.org/
 image: /images/output_md/www.dhedge.org.png
 ecosystem: ethereum
 filter: Asset Management Platforms
-product-description: ​dHEDGE is a one-stop location for managing investment activities on the Ethereum blockchain where you can put your capital to work in different strategies based on a transparent track record. [Interview with co-founder](/dhedge).
+product-description: ​dHEDGE is a platform for managing investment activities on the Ethereum blockchain where you can put your capital to work in different strategies based on a transparent track record. [Interview with co-founder](/dhedge).
 coltitle:  "Asset Management Tools"
 colpermalink: assets-management-tools
 twitter: https://twitter.com/dHedgeOrg
