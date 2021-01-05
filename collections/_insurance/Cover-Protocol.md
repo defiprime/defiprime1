@@ -10,6 +10,6 @@ colpermalink: insurance
 twitter: https://twitter.com/COVERProtocol
 github: https://github.com/CoverProtocol
 ticker: COVER
-contract: "0x5d8d9f5b96f4438195be9b99eee6118ed4304286"
+contract: "0x4688a8b1f292fdab17e9a90c8bc379dc1dbd8713"
 decimals: 18
 ---
