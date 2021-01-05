@@ -1,7 +1,8 @@
 ---
 git-date:  2020-06-29T10:02:11-07:00
 product-title: Matcha
-product-url: https://matcha.xyz/
+product-url: https://matcha.xyz/referral/defiprime
+featured: true
 image: /images/output_md/matcha.xyz.png
 ecosystem: ethereum
 type: non-custodial
