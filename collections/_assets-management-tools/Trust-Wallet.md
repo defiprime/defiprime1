@@ -3,7 +3,7 @@ git-date:
 product-title: Trust Wallet
 product-url: https://trustwallet.com/
 image: /images/output_md/httpstrustwalletcom.png
-ecosystem: ethereum, eos, tron, bitcon, stellar
+ecosystem: ethereum, eos, tron, bitcoin
 platform: ios, android
 product-description: Multi cryptocurrency wallet to store your favorite BEP2, ERC20 and ERC721, tokens.
 coltitle:  "Asset Management Tools"
