@@ -9,6 +9,7 @@ metadescription: An online marketplace (or online e-commerce marketplace) is a t
 category: products
 og: /images/og-marketplaces.png
 cards: marketplaces
+filter-by: filter
 ---
 
 An online marketplace (or online e-commerce marketplace) is a type of e-commerce site where multiple third parties provide products or services.

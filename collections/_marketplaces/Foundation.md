@@ -6,6 +6,7 @@ image: /images/output_md/withfoundation.com.png
 ecosystem: ethereum
 product-description: Foundation is a marketplace platform for buying, selling, and trading limited-edition goods.
 coltitle:  "Marketplaces"
+filter: digital art
 colpermalink: decentralized_marketplaces
 twitter: https://twitter.com/withfnd
 ---

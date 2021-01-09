@@ -8,5 +8,6 @@ product-description: OpenSea is a peer to peer marketplace for crypto collectibl
 coltitle:  "Marketplaces"
 colpermalink: decentralized_marketplaces
 twitter: https://twitter.com/opensea
+filter: digital art, NFTs
 analytics: https://explore.duneanalytics.com/embed/query/2877/visualization/5680?api_key=o9JX1HyitJhoMuvo2qjOE3FzRuUXntIBChxolG6L
 ---
