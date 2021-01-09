@@ -2,12 +2,19 @@
 <html lang="en">
 <head>
     <title>{% if page.pagetitle %}{{ page.pagetitle | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://google-analytics.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://googletagmanager.com">
+    <link rel="preconnect" href="https://alpha.defiprime.com">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="{{ page.metadescription | strip_html | strip_newlines | truncate: 160 }}">
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" rel="preload" as="style">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="preload" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600;800&display=swap" rel="stylesheet" rel="preload" as="style">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     <meta property="og:title" content="{% if page.pagetitle %}{{ page.pagetitle | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
