@@ -1,5 +1,4 @@
 ---
-git-date: 2020-01-09T10:35:33-07:00
 product-title: Knownorigin
 product-url: https://knownorigin.io/
 image: /images/output_md/knownorigin.io.png
