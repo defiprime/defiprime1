@@ -3,14 +3,14 @@
   <hr />
   <ul class='toc-sidepanel'></ul>
 </aside>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
 <script>
   window.onload = () => {
 
     tocbot.init({
       // Where to render the table of contents.
       tocSelector: '.toc-sidepanel',
-      // Where to grab the headings to build the table of contents. 
+      // Where to grab the headings to build the table of contents.
       contentSelector: '.article .container-toc',
       listItemClass: 'toc-item',
       orderedList: false,
@@ -44,7 +44,7 @@
         });
       }
 
-      //autoscroll for active li at Table of Contents. Not the best solution. But there is no option to fire event when class s changed 
+      //autoscroll for active li at Table of Contents. Not the best solution. But there is no option to fire event when class s changed
       var activeLi = $(".is-active-li")
       sidepanel.animate({ scrollTop: activeLi.offset().top - sidepanel.offset().top + sidepanel.scrollTop() });
     })

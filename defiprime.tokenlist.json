@@ -428,7 +428,7 @@
     },
     {
       "chainId": 1,
-      "address": "0x5d8d9f5b96f4438195be9b99eee6118ed4304286",
+      "address": "0x4688a8b1f292fdab17e9a90c8bc379dc1dbd8713",
       "symbol": "COVER",
       "name": "COVER",
       "decimals": 18,
@@ -441,11 +441,35 @@
       "name": "SynLev",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x36f3fd68e7325a35eb768f1aedaae9ea0689d723",
+      "symbol": "ESD",
+      "name": "Empty Set Dollar",
+      "decimals": 18,
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xeF9Cd7882c067686691B6fF49e650b43AFBBCC6B",
+      "symbol": "FNX",
+      "name": "FinNexus",
+      "decimals": 18,
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xca1207647ff814039530d7d35df0e1dd2e91fa84",
+      "symbol": "DHT",
+      "name": "dHEDGE",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 4,
+    "minor": 7,
     "patch": 0
   }
 }

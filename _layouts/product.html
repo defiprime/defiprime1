@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
     content="What is {{ page.product-title }}? {{ page.product-description | strip_html | strip_newlines | truncate: 160 }}">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" rel="preload" as="style">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="preload" as="style">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <meta property="og:title" content="{{ page.product-title }} - Reviews. What is {{ page.product-title }}?" />
@@ -72,11 +72,11 @@
             <div {% if link_presented == 1 %} style='flex: 0' {% endif %}> {{ page.product-description | markdownify }}
               {% if page.ticker  %}<p>
                 {{ page.product-title }} token: <a
-                  href="https://1inch.exchange/#/r/0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1/ETH/{{ page.ticker }}">${{ page.ticker }}</a>.
+                  href="https://matcha.xyz/markets/{{ page.ticker }}">${{ page.ticker }}</a>.
                 {% endif %} </p>
             </div>
             {% if page.ticker  %}
-              <a href="https://1inch.exchange/#/r/0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1/ETH/{{ page.ticker }}" class="button-trade">Trade ${{ page.ticker }} on 1inch.exchange</a>
+              <a href="https://matcha.xyz/markets/{{ page.ticker }}" class="button-trade">Trade ${{ page.ticker }} on Matcha</a>
             {% endif %}
           </div>
         </div>
