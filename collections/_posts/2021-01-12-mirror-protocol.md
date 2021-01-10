@@ -4,7 +4,7 @@ layout: [blog, blog-amp]
 title:  "Mirror Protocol"
 permalink: mirror-protocol
 h1title: "Mirror Protocol"
-pagetitle: "Mirror Protocol - Synthetic Assets"
+pagetitle: "Mirror Protocol - Synthetic Assets on Chain"
 metadescription: "Do Kwon talks about Terra blockchain and a new Mirror Protocol that lives on Terra and Ethereum and enables access to global financial markets"
 category: blog
 featured-image: /images/blog/mirror-og.png
