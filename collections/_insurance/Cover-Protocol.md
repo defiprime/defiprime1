@@ -4,7 +4,7 @@ product-title: Cover Protocol
 product-url: https://www.coverprotocol.com/
 image: /images/output_md/www.coverprotocol.com.png
 ecosystem: ethereum
-product-description: Cover Protocol allows DeFi users to buy protection against smart contract risk.
+product-description: Cover Protocol allows DeFi users to buy protection against smart contract risk. [Interview with co-founder](/cover-protocol)
 coltitle:  "Insurance"
 colpermalink: insurance
 twitter: https://twitter.com/COVERProtocol
