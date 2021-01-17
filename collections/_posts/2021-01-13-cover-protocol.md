@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/cover-og.png
 intro: "Alan told us what is Cover Protocol, how peer-to-peer coverage marketplace different, and who determining coverage premiums in decentralized protocol"
 author: Defiprime
-tags: ['Interview']
+tags: ['Interview', 'Insurance']
 ---
 Alan told us what is Cover Protocol, how peer-to-peer coverage marketplace different, and who determining coverage premiums in decentralized protocol.
 

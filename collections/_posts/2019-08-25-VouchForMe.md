@@ -11,7 +11,7 @@ featured-image: /images/blog/vouchforme-og.png
 quote: /images/blog/vouchforme-quote.png
 intro: 'Matt Peterman, co-founder of VouchForMe, shared his thoughts on using social proof and blockchain in the insurance industry.'
 author: Defiprime
-tags: ['Interview']
+tags: ['Interview', 'Insurance']
 
 ---
 Matt Peterman, co-founder of VouchForMe, shared his thoughts on using social proof and blockchain in the insurance industry.
