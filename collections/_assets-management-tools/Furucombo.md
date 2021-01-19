@@ -10,4 +10,7 @@ product-description: Furucombo is a tool built for end-users to optimize their D
 coltitle:  "Asset Management Tools"
 colpermalink: assets-management-tools
 twitter: https://twitter.com/furucombo
+contract: "0xfFffFffF2ba8F66D4e51811C5190992176930278"
+decimals: 18
+ticker: COMBO
 ---
