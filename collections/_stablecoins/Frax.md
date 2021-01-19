@@ -4,7 +4,7 @@ product-title: Frax
 product-url: https://frax.finance/
 image: /images/output_md/frax.finance.png
 ecosystem: ethereum
-product-description: Frax is the first fractional-algorithmic stablecoin protocol.
+product-description: Frax is the first fractional-algorithmic stablecoin protocol. [Interview with Sam Kazemian, founder of Frax Finance](/frax)
 filter: Algorithmic
 coltitle: Stablecoins
 colpermalink: stablecoins
