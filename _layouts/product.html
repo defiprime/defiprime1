@@ -3,6 +3,22 @@
 
 <head>
   <title>{{ page.product-title }} - Crypto Project Reviews. What is {{ page.product-title }}?</title>
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://google-analytics.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://googletagmanager.com">
+  <link rel="preconnect" href="https://telegram.org">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://graphcomment.com" crossorigin>
+  {% if page.analytics  %}
+  <link rel="preconnect" href="https://explore.duneanalytics.com" crossorigin>
+  {% endif %}
+  <link rel="preload" href="/images/vector.png" as="image" media="(min-width: 601px)">
+  <link rel="preload" href="/images/logo.svg" as="image" media="(min-width: 601px)">
+  <link rel="preload" href="{{ page.image | prepend: site.url }}" as="image" media="(min-width: 601px)">
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
