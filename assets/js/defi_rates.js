@@ -464,24 +464,22 @@ async function getNotionalApr() {
   const usdcRates = getRateArray(aprToday, "USDC")
 
   return {
-    notional: {
-      supply: {
-        "dai": {
-          // Choose the highest rate between the different maturities available
-          "supply_rate": daiRates.length > 0 ? daiRates[daiRates.length - 1] : ''
-        },
-        "usdc": {
-          "supply_rate": usdcRates.length > 0 ? usdcRates[usdcRates.length - 1] : ''
-        }
+    supply: {
+      "dai": {
+        // Choose the highest rate between the different maturities available
+        "supply_rate": daiRates.length > 0 ? daiRates[daiRates.length - 1] : ''
       },
-      borrow: {
-        "dai": {
-          // Choose the lowest rate between the different maturities available
-          "borrow_rate": daiRates.length > 0 ? daiRates[0] : ''
-        },
-        "usdc": {
-          "borrow_rate": usdcRates.length > 0 ? usdcRates[0] : ''
-        }
+      "usdc": {
+        "supply_rate": usdcRates.length > 0 ? usdcRates[usdcRates.length - 1] : ''
+      }
+    },
+    borrow: {
+      "dai": {
+        // Choose the lowest rate between the different maturities available
+        "borrow_rate": daiRates.length > 0 ? daiRates[0] : ''
+      },
+      "usdc": {
+        "borrow_rate": usdcRates.length > 0 ? usdcRates[0] : ''
       }
     }
   }
