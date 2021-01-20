@@ -421,19 +421,87 @@ async function getAaveApr() {
   }
 }
 
+async function getNotionalApr() {
+  const SECONDS_IN_YEAR = 31536000;
+  const current_time = Math.floor((new Date()).getTime() / 1000)
+
+  const getRateArray = (results, currency) => {
+    return results.data["cashMarkets"].filter((m) => {
+      return m.cashGroup.currency.symbol === currency
+    }).map((m) => {
+      return (m.lastImpliedRate * SECONDS_IN_YEAR / m.cashGroup.maturityLength) / 1e7
+    }).sort((a, b) => a - b)
+  }
+
+  const aprToday = await fetch('https://api.thegraph.com/subgraphs/name/notional-finance/mainnet', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      body: JSON.stringify({
+        query: `query ($current_time: Int!) 
+        {
+          cashMarkets(where:{ maturity_gt: $current_time }) {
+            id
+            lastImpliedRate
+            maturity
+            cashGroup {
+              currency {
+                symbol
+              }
+              maturityLength
+            }
+          }
+        }`,
+      variables: {
+        current_time: current_time
+      }
+    })
+  }).then(r => r.json());
+
+  const daiRates = getRateArray(aprToday, "DAI")
+  const usdcRates = getRateArray(aprToday, "USDC")
+
+  return {
+    supply: {
+      "dai": {
+        // Choose the highest rate between the different maturities available
+        "supply_rate": daiRates.length > 0 ? daiRates[daiRates.length - 1] : ''
+      },
+      "usdc": {
+        "supply_rate": usdcRates.length > 0 ? usdcRates[usdcRates.length - 1] : ''
+      }
+    },
+    borrow: {
+      "dai": {
+        // Choose the lowest rate between the different maturities available
+        "borrow_rate": daiRates.length > 0 ? daiRates[0] : ''
+      },
+      "usdc": {
+        "borrow_rate": usdcRates.length > 0 ? usdcRates[0] : ''
+      }
+    }
+  }
+}
+
+
 async function getAPRData() {
 
   const compoundData = await getCompoundApr();
   const dydxData = await getDydxApr();
   const aaveData = await getAaveApr();
   const fulcrumData = await getFulcrumApr();
+  const notionalData = await getNotionalApr();
+
   // const torqueData = await getTorqueApr();
   return {
     supply: {
       "compound_v2": compoundData.supply,
       "dydx": dydxData.supply,
       "aave": aaveData.aave.supply,
-      "fulcrum": fulcrumData.supply
+      "fulcrum": fulcrumData.supply,
+      "notional": notionalData.supply,
     },
     borrow: {
       "compound_v2": compoundData.borrow,
@@ -441,6 +509,7 @@ async function getAPRData() {
       "aave": aaveData.aave.borrow,
       "aave_fixed": aaveData.aave_fixed,
       "fulcrum": fulcrumData.borrow,
+      "notional": notionalData.borrow
       // "torque": torqueData
     }
   }
