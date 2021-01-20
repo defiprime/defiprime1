@@ -78,7 +78,7 @@ featured-image: /images/og-rates.png
                     </li>
                     <li class="item-crypto">
                         <a href="https://notional.finance/lend" class="inline-flex list-crypto-name list-liquidity-name">
-                            <span class="value" data-market="notional">Notional***</span>
+                            <span class="value" data-market="notional">Notional&#8224;</span>
                         </a>
                         <span class="list-crypto-today"></span>
                         <span class="list-crypto-month"></span>
@@ -129,7 +129,7 @@ featured-image: /images/og-rates.png
                     </li>
                     <li class="item-crypto">
                         <a href="https://notional.finance/lend" class="inline-flex list-crypto-name list-liquidity-name">
-                            <span class="value" data-market="notional">Notional***</span>
+                            <span class="value" data-market="notional">Notional&#8224;</span>
                         </a>
                         <span class="list-crypto-today"></span>
                         <span class="list-crypto-month"></span>
@@ -189,7 +189,7 @@ featured-image: /images/og-rates.png
                     </li>
                     <li class="item-crypto">
                         <a href="https://notional.finance/borrow" class="inline-flex list-crypto-name list-liquidity-name">
-                            <span class="value" data-market="notional">Notional***</span>
+                            <span class="value" data-market="notional">Notional&#8224;</span>
                         </a>
                         <span class="list-crypto-today"></span>
                         <span class="list-crypto-month"></span>
@@ -253,7 +253,7 @@ featured-image: /images/og-rates.png
                     </li>
                     <li class="item-crypto">
                         <a href="https://notional.finance/borrow" class="inline-flex list-crypto-name list-liquidity-name">
-                            <span class="value" data-market="notional">Notional***</span>
+                            <span class="value" data-market="notional">Notional&#8224;</span>
                         </a>
                         <span class="list-crypto-today"></span>
                         <span class="list-crypto-month"></span>
@@ -278,7 +278,7 @@ featured-image: /images/og-rates.png
     </div>
     <div class="description">*Loans with a fixed interest</div>
     <div class="description">**Loans as a part of margin trading platform</div>
-    <div class="description">*** Notional rates are fixed and available at various future maturities. Lowest borrow and highest lend rates are shown.</div>
+    <div class="description">&#8224; Notional rates are fixed and available at various future maturities. Lowest borrow and highest lend rates are shown.</div>
 
 </section>
 
