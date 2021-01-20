@@ -278,7 +278,7 @@ featured-image: /images/og-rates.png
     </div>
     <div class="description">*Loans with a fixed interest</div>
     <div class="description">**Loans as a part of margin trading platform</div>
-    <div class="description">* Notional rates are fixed and available at various future maturities. Lowest borrow and highest lend rates are shown.</div>
+    <div class="description">*** Notional rates are fixed and available at various future maturities. Lowest borrow and highest lend rates are shown.</div>
 
 </section>
 

@@ -434,13 +434,13 @@ async function getNotionalApr() {
   }
 
   const aprToday = await fetch('https://api.thegraph.com/subgraphs/name/notional-finance/mainnet', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json',
-    },
-    body: JSON.stringify({
-      query: `query ($current_time: Int!) 
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      body: JSON.stringify({
+        query: `query ($current_time: Int!) 
         {
           cashMarkets(where:{ maturity_gt: $current_time }) {
             id
@@ -453,11 +453,11 @@ async function getNotionalApr() {
               maturityLength
             }
           }
-        }`
-    }),
-    variables: {
-      current_time: current_time
-    }
+        }`,
+      variables: {
+        current_time: current_time
+      }
+    })
   }).then(r => r.json());
 
   const daiRates = getRateArray(aprToday, "DAI")
