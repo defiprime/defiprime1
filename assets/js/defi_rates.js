@@ -423,7 +423,7 @@ async function getAaveApr() {
 
 async function getNotionalApr() {
   const SECONDS_IN_YEAR = 31536000;
-  const current_time = (new Date()).getTime() / 1000
+  const current_time = Math.floor((new Date()).getTime() / 1000)
 
   const getRateArray = (results, currency) => {
     return results.data["cashMarkets"].filter((m) => {
@@ -456,7 +456,7 @@ async function getNotionalApr() {
         }`
     }),
     variables: {
-      current_time
+      current_time: current_time
     }
   }).then(r => r.json());
 
