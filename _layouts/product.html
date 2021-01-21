@@ -86,10 +86,16 @@
             <h2>What is {{ page.product-title }}?</h2>
             {% assign link_presented = page.product-description | markdownify | split: '<a' | size %}
             <div {% if link_presented == 1 %} style='flex: 0' {% endif %}> {{ page.product-description | markdownify }}
-              {% if page.ticker  %}<p>
-                {{ page.product-title }} token: <a
-                  href="https://matcha.xyz/markets/{{ page.ticker }}">${{ page.ticker }}</a>.
-                {% endif %} </p>
+              {% if page.ticker  %}
+                <p>
+                {{ page.product-title }} token: <a href="https://matcha.xyz/markets/{{ page.ticker }}">${{ page.ticker }}</a>.
+                </p>
+                {% endif %}
+                {% if page.contract  %}
+                  <p>
+                  {{ page.product-title }} contract address: <strong> {{ page.contract }} </strong>
+                  </p>
+                  {% endif %}
             </div>
             {% if page.ticker  %}
               <a href="https://matcha.xyz/markets/{{ page.ticker }}" class="button-trade">Trade ${{ page.ticker }} on Matcha</a>
