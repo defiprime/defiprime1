@@ -78,7 +78,7 @@ Despite their potential, smart contract wallets have not achieved widespread ado
 
 ### What are your future thoughts for the DeFi market?
 
-It seems like Ethereum has found its first validated use case with DeFi. There is a globally accessible liquidity pool that applications can tap into resulting in lower transaction costs than traditional finance applications. Additionally, the recent rise of stable coins removes the inherent volatility of crypto, which has been one one of its biggest friction points to date.
+It seems like Ethereum has found its first validated use case with DeFi. There is a globally accessible liquidity pool that applications can tap into resulting in lower transaction costs than traditional finance applications. Additionally, the recent rise of [stable coins](/stablecoins) removes the inherent volatility of crypto, which has been one one of its biggest friction points to date.
 
 Also, the costs of switching between products is much lower. That is why we believe that open platforms will ultimately benefit the user. There is less of a lock in effect and more of a focus on user needs making it easier for them to choose the product that benefits them the most.
 

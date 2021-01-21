@@ -79,7 +79,7 @@ Our immediate goals are to improve usability for users both on the Terra and Eth
 
 Also in the short term, we would like to improve and simplify the existing process for adding new assets on the protocol. Many of our current users have suggested recently IPO’d assets like ABNB and DASH, and we are looking to continuously engage with the community to start new asset whitelisting proposals. We would love for the community to take the reins in Mirror’s governance, proposing and voting on the listing of new synthetic assets based on organic demand from users.
 
-Beyond Mirror, we’re currently working on [Anchor](https://anchorprotocol.com/), the low-volatility benchmark rate savings protocol on Terra that will launch in Q1 2021. Anchor addresses many of the problems currently facing the DeFi market, particularly variable-rate yields derived from speculatory yield farming and improving liquidation models to protect borrower collateral in periods of significant market volatility. Look for more details about the Anchor rollout to follow in the coming weeks.
+Beyond Mirror, we’re currently working on [Anchor](https://anchorprotocol.com/), the low-volatility benchmark rate savings protocol on Terra that will launch in Q1 2021. Anchor addresses many of the problems currently facing the DeFi market, particularly variable-rate yields derived from speculatory [yield farming](/defi-yield-farming) and improving liquidation models to protect borrower collateral in periods of significant market volatility. Look for more details about the Anchor rollout to follow in the coming weeks.
 
 
 ### What are your future thoughts for the DeFi market?

@@ -29,7 +29,7 @@ Staking means depositing digital assets into a special type of account that rewa
 
 In the same way those seeking traditional investment opportunities often capitalize on specialized knowledge about things like real estate, commodities, or business, DeFi investors typically leverage their unique insights to find valuable opportunities.
 
-Familiar with finance and the intricacies of liquidity? Perhaps you would be interested in tokens supporting decentralized exchanges, derivatives, or other financial contracts like the [Kyber Network token (KNC)](https://kyber.network/), [Synthetix (SNX)](https://www.synthetix.io/), or the [Universal Market Access token (UMA)](https://umaproject.org/).
+Familiar with finance and the intricacies of liquidity? Perhaps you would be interested in tokens supporting [decentralized exchanges](/exchanges), derivatives, or other financial contracts like the [Kyber Network token (KNC)](https://kyber.network/), [Synthetix (SNX)](https://www.synthetix.io/), or the [Universal Market Access token (UMA)](https://umaproject.org/).
 
 If decentralized governance is more your speed, the MakerDAO token governing MakerDAO’s DAI stablecoin might be a project that would catch your attention.
 

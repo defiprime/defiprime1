@@ -85,7 +85,7 @@ Notable investments: InstaDApp, OpenZeppelin, Optimism, PoolTogether
 
 Pantera Capital is an investment firm and hedge fund centered around blockchain and cryptocurrency ventures. Founded in 2013, the company describes itself as the “first U.S. Bitcoin investment firm.”
 
-Notable investments: 0x Protocol, Ampleforth, Audius, Brave, Circle, InsaDApp, Kyber Network, Livepeer OmiseGo, Paradex, Staked, Zcash
+Notable investments: [0x Protocol](/0x-protocol), Ampleforth, Audius, Brave, Circle, InsaDApp, Kyber Network, Livepeer OmiseGo, Paradex, Staked, Zcash
 
 - Website: [panteracapital.com](https://www.panteracapital.com/)
 - Twitter: [@PanteraCapital](https://twitter.com/PanteraCapital)
@@ -101,7 +101,7 @@ Notable investments: Argent, Compound, Maker (MKR), Numerai, Optimism, StarkWare
 ### Placeholder
 Based out of New York City, Placeholder is a venture capital firm that specializes in blockchain and cryptocurrency investments. The company theorizes the “Crypto Era” is the next major tech market cycle after the Hardware, Software, and Networks Eras of the preceding decades.
 
-Notable investments: 0x Protocol, Aragon, Fortmatic, Maker (MKR), Numerai, UMA, Zerion
+Notable investments: 0x Protocol, Aragon, Fortmatic, Maker (MKR), Numerai, UMA, [Zerion](/product/zerion)
 
 - Website: [placeholder.vc](https://www.placeholder.vc/)
 - Twitter: [@placeholdervc](https://twitter.com/placeholdervc)

@@ -27,7 +27,7 @@ While Uniswap V1 will live on for as long as Ethereum does, the upgraded and opt
 
 ### Automated Market Maker vs. Order book DEXes
 
-In Ethereum’s decentralized finance sector, two genres of decentralized exchanges, or DEXes, have dominated to date: order book-based DEXes and AMM-based DEXes.
+In Ethereum’s decentralized finance sector, two genres of [decentralized exchanges](/exchanges), or DEXes, have dominated to date: order book-based DEXes and AMM-based DEXes.
 
 Order book DEXes rely on buy and sell orders around a given token. Buy orders are called bids, and sell orders are called asks. To this end, these exchanges list bid orders and ask orders across every price point, with the “top of the book” marking whatever the lowest ask and the highest bid prices are at a particular time. The cons of order-book marketplaces, though, is that they don’t work well for illiquid markets, and they can be particularly prone to market manipulation and front-running. Some examples of this kind of DEX include 0x, IDEX, and Ethfinex.
 

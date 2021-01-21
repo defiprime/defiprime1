@@ -47,7 +47,7 @@ Since then, we sought to facilitate seamless decentralized token exchange betwee
 
 ### What went into building Kyber?
 
-Building Kyber’s liquidity protocol took my team and me many months of hard-work, but it was extremely rewarding and laid the strong technical foundations for Kyber to emerge. We launched our in-house token swap service KyberSwap on the Ethereum mainnet on February, 2018, and since then our protocol has facilitated over 827,000 ETH worth of trades, powering token swaps for over 55 applications, supporting over 70 ERC20 tokens, and has more than 24 different reserves contributing liquidity to the network.
+Building Kyber’s liquidity protocol took my team and me many months of hard-work, but it was extremely rewarding and laid the strong technical foundations for Kyber to emerge. We launched our in-house token swap service [KyberSwap](/product/kyberswap) on the Ethereum mainnet on February, 2018, and since then our protocol has facilitated over 827,000 ETH worth of trades, powering token swaps for over 55 applications, supporting over 70 ERC20 tokens, and has more than 24 different reserves contributing liquidity to the network.
 
 Security is one of our utmost priorities when building Kyber, and we have conducted multiple bug bounties and smart contract audits, including one with [ChainSecurity](https://medium.com/chainsecurity/kyber-network-audit-completed-b737acb1860f).
 
