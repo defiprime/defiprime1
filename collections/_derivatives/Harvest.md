@@ -13,4 +13,5 @@ github: https://github.com/harvest-finance
 ticker: FARM
 contract: "0xa0246c9032bc3a600820415ae600c6388619a14d"
 decimals: 18
+analytics: https://duneanalytics.com/embeds/13352/26745/GhDrSPo5YTQWDmrEZdtx6EIz5vqjKZD4jsejMTcC
 ---

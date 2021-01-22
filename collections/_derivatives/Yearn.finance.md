@@ -13,4 +13,5 @@ github: https://github.com/iearn-finance
 ticker: YFI
 contract: "0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e"
 decimals: 18
+analytics: https://duneanalytics.com/embeds/7176/14232/6LxCwQ6eWPEZ4ifkWEPLwpdNH2OWWecra7hbB5iM
 ---

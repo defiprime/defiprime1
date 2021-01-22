@@ -12,4 +12,5 @@ twitter: https://twitter.com/Bancor
 github: https://github.com/bancorprotocol
 contract: "0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C"
 decimals: 18
+analytics: https://duneanalytics.com/embeds/11523/22890/HGSexkFM2TYN6pdc9xspFn4Be7ywzsGv9mJrftj8
 ---

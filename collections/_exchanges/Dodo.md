@@ -14,4 +14,5 @@ github: https://github.com/DODOEX
 ticker: DODO
 contract: "0x43dfc4159d86f3a37a5a4b3d4580b888ad7d4ddd"
 decimals: 18
+analytics: https://duneanalytics.com/embeds/13350/26742/RmbG9laxDCkHHoRoVoePhCKmxupOMoDYdoSfu82N
 ---

@@ -12,4 +12,5 @@ github: https://github.com/somish/NexusMutual
 ticker: wNXM
 contract: "0x0d438f3b5175bebc262bf23753c1e53d03432bde"
 decimals: 18
+analytics: https://duneanalytics.com/embeds/2964/5729/Fk6GQ9UMAXxF2HYvQ98tvFCybCdsVFXPIk5GpPC8
 ---

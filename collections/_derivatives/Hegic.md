@@ -10,4 +10,5 @@ coltitle:  "Derivatives"
 colpermalink: derivatives
 twitter: https://twitter.com/HegicOptions
 github: https://github.com/hegic
+analytics: https://duneanalytics.com/embeds/13349/26740/m29LXm8OQGhFNWf9KD70Rwtm813cReH36zMVHo45
 ---

@@ -14,4 +14,5 @@ github: https://github.com/CreamFi
 ticker: CREAM
 contract: "0x2ba592F78dB6436527729929AAf6c908497cB200"
 decimals: 18
+analytics: https://duneanalytics.com/embeds/11521/22886/Z9heUixbfY0RcW5MCqwH4eCAVLbhfM0fMO76P8Ww
 ---
