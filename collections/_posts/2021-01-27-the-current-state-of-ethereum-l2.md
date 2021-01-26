@@ -102,7 +102,8 @@ Like xDai Chain, [POA Network](https://www.poa.network/) is an EVM-based sidecha
 #### <span style="text-decoration:underline;">Optimism</span>
 
 **Style**: ORU \
-**TPS**: +20,000 txs
+**TPS**: +20,000 txs \
+**Notable projects**: Uniswap, Compound, Synthetix
 
 [Optimism](https://optimism.io/) is an ORU implementation that is gaining early traction among some big DeFi players, like Synthetix. Optimism has built the OVM, an L2-based EVM that makes it so projects can enjoy all the benefits of Ethereum’s L1 smart contracts while on L2. Moreover, Optimism is already in the process of facilitating its mainnet launch, so L2 benefits are no longer on the horizon.
 
@@ -118,7 +119,8 @@ Like xDai Chain, [POA Network](https://www.poa.network/) is an EVM-based sidecha
 #### <span style="text-decoration:underline;">zkSync</span>
 
 **Style**: ZRU \
-**TPS**: +20,000 txs
+**TPS**: +20,000 txs \
+**Notable projects**: Curve, Gitcoin, Balancer, Argent
 
 Created by Matter Labs, [zkSync](https://medium.com/matter-labs/introducing-zk-sync-the-missing-link-to-mass-adoption-of-ethereum-14c9cea83f58) is a ZRU-based **L2 scaling** solution that uses zero-knowledge proofs to offer high throughput and high security. Ethereum projects that have already integrated with zkSync include Gitcoin and Golem.
 
@@ -134,7 +136,9 @@ Loopring was the first rollup deployed to Ethereum, running on mainnet for over 
 #### <span style="text-decoration:underline;">StarkEx</span>
 
 **Style**: Validum \
-**TPS**: +20,000 txs
+**TPS**: +20,000 txs \
+**Notable projects**: dYdX, DeversiFi, Paraswap
+
 
 [StarkEx](https://starkware.co/product/starkex/) works somewhat similarly to zkRollups, with the main difference being that StarkEx’s Validium-based system handles data storage off-chain. This dynamic allows the project to have higher throughput capabilities compared to pure ZRU systems.
 
