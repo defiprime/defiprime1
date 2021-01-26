@@ -12,6 +12,7 @@ intro: ""
 author: Peaster
 tags: ['DeFi List']
 ---
+1
 ## The Current State of Ethereum L2
 
 Demand to use Ethereum blockspace has exploded over the last year. The recent traction has led to Ethereum’s transaction fees, i.e. ETH gas prices, rising to painful levels at times. 
