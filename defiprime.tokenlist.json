@@ -505,11 +505,19 @@
       "name": "DefiPulse Index",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xad32a8e6220741182940c5abf610bde99e737b2d",
+      "symbol": "DOUGH",
+      "name": "PieDAO",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 10,
+    "minor": 11,
     "patch": 0
   }
 }
