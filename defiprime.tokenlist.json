@@ -513,6 +513,14 @@
       "name": "PieDAO",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x0000000000095413afc295d19edeb1ad7b71c952",
+      "symbol": "LON",
+      "name": "Tokenlon",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
