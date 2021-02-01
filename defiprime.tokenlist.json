@@ -8,7 +8,7 @@
       "description": "Tokens listed at defiprime curated list"
     }
   },
-  "timestamp": "2020-10-23T00:00:00+00:00",
+  "timestamp": "2021-01-31T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -529,11 +529,19 @@
       "name": "OPIUM",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x09a3ecafa817268f77be1283176b946c4ff2e608",
+      "symbol": "MIR",
+      "name": "Mirror Protocol",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 11,
+    "minor": 12,
     "patch": 0
   }
 }
