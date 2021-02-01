@@ -1,5 +1,5 @@
 ---
-git-date: 2020-12-31T10:02:11-07:00
+git-date: 2021-12-31T10:02:11-07:00
 product-title: Opium Insurance
 product-url: https://opium.finance/
 image: /images/output_md/opium.finance.png
