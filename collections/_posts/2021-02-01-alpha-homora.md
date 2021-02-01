@@ -1,25 +1,28 @@
 ---
 git-date:
 layout: [blog, blog-amp]
-title:  "Alpha Homora v2"
-permalink: alpha-homora-v2
-h1title: "Alpha Homora v2"
-pagetitle: "Alpha Homora v2"
-metadescription: ""
+title:  "Alpha Homora"
+permalink: alpha-homora
+h1title: "Alpha Homora - Leveraged Yield Farming"
+pagetitle: "Alpha Homora - Leveraged Yield Farming"
+metadescription: "Tascha Punyaneramitdee about leveraged yield farming product and what's coming next at Alpha Finance Lab"
 category: blog
 featured-image: /images/blog/
-intro: ""
+intro: "Tascha Punyaneramitdee about leveraged yield farming product and what's coming next at Alpha Finance Lab"
 author: Defiprime
 tags: ['Interview']
 ---
+Tascha Punyaneramitdee about leveraged yield farming product and what's coming next at Alpha Finance Lab.
 
 ### Hello! What's your background, and what are you working on?
 
-My name is Tascha Punyaneramitdee, Co-Founder and Project Lead of Alpha Finance Lab. I studied Economics at UC Berkeley and started my career as a Technology Investment Banker in San Francisco then in London. Previously, I was working in a product management team at Tencent in Thailand before I joined Band Protocol as a Head of Strategy. Afterwards, I left to start Alpha Finance Lab with Nipun Pitimanaaree. Throughout my career, I’ve always been interested in technology and finance, so I’ve been following DeFi for a long time before starting Alpha Finance Lab after realizing a number of market gaps needed to be captured before the industry can reach the next growth stage.
+My name is Tascha Punyaneramitdee, Co-Founder and Project Lead of [Alpha Finance Lab](https://alphafinance.io/). I studied Economics at UC Berkeley and started my career as a Technology Investment Banker in San Francisco then in London. Previously, I was working in a product management team at Tencent in Thailand before I joined Band Protocol as a Head of Strategy. Afterwards, I left to start Alpha Finance Lab with Nipun Pitimanaaree. Throughout my career, I’ve always been interested in technology and finance, so I’ve been following DeFi for a long time before starting Alpha Finance Lab after realizing a number of market gaps needed to be captured before the industry can reach the next growth stage.
 
 Alpha Finance Lab is building an ecosystem of DeFi products that will interoperate to maximize returns while minimizing risks for users. Alpha products focus on capturing unaddressed demand in DeFi in an innovative and user friendly way. While each Alpha product addresses market gaps in the sector the product is in, the various Alpha products will then work together as an Alpha ecosystem.
 
 The first Alpha product is Alpha Homora, the leveraged yield farming product, which is the focus of this interview.
+
+![](/images/blog/alpha-homora/Alpha_Homora_-_Yield_Farming_on_Leverage.png)
 
 Alpha Finance Lab's investors include The Spartan Group, Multicoin Capital, and DeFiance Capital.
 
@@ -27,9 +30,6 @@ Alpha Finance Lab's investors include The Spartan Group, Multicoin Capital, and 
 ### Who are your competitors?
 
 Since Alpha Finance Lab is building an ecosystem of DeFi products, the competitors will vary across the product suite.
-
-![](/images/blog/alpha-homora/image1.png)
-
 
 **Alpha Homora**
 
@@ -45,7 +45,7 @@ AlphaX is the perpetual swap trading product and the second Alpha product ([on p
 With these target users in mind, we have built AlphaX to bake in the funding payments into the price (so DeFi users don’t need to even understand funding rate) and to tokenize leveraged positions (so DeFi users can use these tokens in other DeFi platforms).
 
 
-### What's Alpha Homora backstory? 
+### What's Alpha Homora backstory?
 
 As we don’t limit ourselves to building products in a particular sector, but rather focusing on the end goal of maximizing returns while minimizing downside exposure for our users, we were able to spot two huge market gaps and build an innovative solution to address them.
 
@@ -92,9 +92,9 @@ To enable Alpha Homora v2 users to take leverage on many assets, instead of only
 
 ### What are your goals for the future?
 
-In addition to Alpha Homora v2 and AlphaX, we are building more Alpha products this year. For each Alpha product, we will continue to pivot until we find the product market fit that translates to significant product usages, which later translate to significant value accrual to ALPHA token holders. 
+In addition to Alpha Homora v2 and AlphaX, we are building more Alpha products this year. For each Alpha product, we will continue to pivot until we find the product market fit that translates to significant product usages, which later translate to significant value accrual to ALPHA token holders.
 
-Additionally, we aim to have Alpha products to integrate more with each other in order to build a strong Alpha ecosystem that helps maximize returns and minimize downside risks for users. 
+Additionally, we aim to have Alpha products to integrate more with each other in order to build a strong Alpha ecosystem that helps maximize returns and minimize downside risks for users.
 
 
 ### What are your future thoughts for the DeFi market?
@@ -107,10 +107,10 @@ The second trend/opportunity that I see is the growth in the on-chain derivative
 ### Where can we go to learn more?
 
 - Website: [https://alphafinance.io/](https://alphafinance.io/)
-- Project document: [https://app.gitbook.com/@alphafinancelab/s/alpha-finance-lab/](https://app.gitbook.com/@alphafinancelab/s/alpha-finance-lab/) 
+- Project document: [https://app.gitbook.com/@alphafinancelab/s/alpha-finance-lab/](https://app.gitbook.com/@alphafinancelab/s/alpha-finance-lab/)
 - Product #1 (Alpha Homora) document: [https://app.gitbook.com/@alphafinancelab/s/alpha-homora/](https://app.gitbook.com/@alphafinancelab/s/alpha-homora/)
-- Product #2 (AlphaX) document: [https://blog.alphafinance.io/inside-alphax/](https://blog.alphafinance.io/inside-alphax/) 
-- Project Twitter: [https://twitter.com/AlphaFinanceLab](https://twitter.com/AlphaFinanceLab) 
-- Project Telegram: [https://t.me/AlphaFinanceLab](https://t.me/AlphaFinanceLab) 
-- Project Discord: [https://discord.com/invite/Z2vuKDT](https://discord.com/invite/Z2vuKDT) 
-- Project Blog: [https://blog.alphafinance.io/](https://blog.alphafinance.io/) 
+- Product #2 (AlphaX) document: [https://blog.alphafinance.io/inside-alphax/](https://blog.alphafinance.io/inside-alphax/)
+- Project Twitter: [https://twitter.com/AlphaFinanceLab](https://twitter.com/AlphaFinanceLab)
+- Project Telegram: [https://t.me/AlphaFinanceLab](https://t.me/AlphaFinanceLab)
+- Project Discord: [https://discord.com/invite/Z2vuKDT](https://discord.com/invite/Z2vuKDT)
+- Project Blog: [https://blog.alphafinance.io/](https://blog.alphafinance.io/)
