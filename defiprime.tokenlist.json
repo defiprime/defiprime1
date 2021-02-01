@@ -521,6 +521,14 @@
       "name": "Tokenlon",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x888888888889c00c67689029d7856aac1065ec11",
+      "symbol": "OPIUM",
+      "name": "OPIUM",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
