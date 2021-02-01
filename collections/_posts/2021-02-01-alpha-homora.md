@@ -7,7 +7,7 @@ h1title: "Alpha Homora - Leveraged Yield Farming"
 pagetitle: "Alpha Homora - Leveraged Yield Farming"
 metadescription: "Tascha Punyaneramitdee about leveraged yield farming product and what's coming next at Alpha Finance Lab"
 category: blog
-featured-image: /images/blog/
+featured-image: /images/blog/alpha-og.png
 intro: "Tascha Punyaneramitdee about leveraged yield farming product and what's coming next at Alpha Finance Lab"
 author: Defiprime
 tags: ['Interview']
