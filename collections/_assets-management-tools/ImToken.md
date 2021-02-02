@@ -9,4 +9,5 @@ product-description: imToken is a digital asset wallet enabling multi-chain asse
 coltitle:  "Asset Management Tools"
 colpermalink: assets-management-tools
 twitter: https://twitter.com/imTokenOfficial
+github: https://github.com/consenlabs
 ---
