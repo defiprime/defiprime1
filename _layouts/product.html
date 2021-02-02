@@ -15,9 +15,10 @@
   {% if page.analytics  %}
   <link rel="preconnect" href="https://explore.duneanalytics.com" crossorigin>
   {% endif %}
-  <link rel="preload" href="/images/vector.png" as="image" media="(min-width: 601px)">
-  <link rel="preload" href="/images/logo.svg" as="image" media="(min-width: 601px)">
-  <link rel="preload" href="{{ page.image | prepend: site.url }}" as="image" media="(min-width: 601px)">
+  <link rel="preload" href="/images/vector.png" as="image" >
+  <link rel="preload" href="/images/logo.svg" as="image" >
+  <link rel="preload" href="/images/bg-fon.png" as="image" >
+  <link rel="preload" href="{{ page.image | prepend: site.url }}" as="image" >
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8" />
