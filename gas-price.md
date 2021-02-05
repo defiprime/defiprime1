@@ -36,7 +36,7 @@ Average Ethereum Gas Price
 
 # Ethereum Blocks Usage
 
-How filled are block on the L1 Ethereum Network?  
+How filled are blocks on the L1 Ethereum Network?  
 <object id="obj" data="https://duneanalytics.com/embeds/976/1628/nCchn5OHOSEd8Xs7cLzXi3s0zMSSlHrUIeaBo0gC"  style="width:100%;    height: 564px;"  type="text/html">
 Ethereum Blocks Filled
 </object>
