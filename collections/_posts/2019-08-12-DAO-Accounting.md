@@ -79,7 +79,7 @@ To briefly summarize, a user essentially opens up a loan with a smart contract. 
 
 - #### Bookkeeping Entries.
 
-The ETH transactions to create the CDP and request the DAI could be classified under expenses as gas fees.
+The ETH transactions to create the CDP and request the DAI could be classified under expenses as [gas fees](/gas-today).
 
 Generally, bookkeeping entries are not made for collateral. They would just be noted on financial statements under loan liabilities. However, because there is an actual transfer of funds to the counterparty (CDP), an entry should be made. This is where financial statements are not able to fully represent the totality of the situation. We must convert all transactions to USD terms, and so we miss some of the nuances of what is actually happening in the transaction. Let’s go through a sample transaction. For the sake of simplicity, we will ignore some of the complexity of the fee structure, value fluctuation, and risk margins and just get to the core of the loan transaction:
 
