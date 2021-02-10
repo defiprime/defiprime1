@@ -7,7 +7,7 @@ h1title: "NFT Ecosystem Explained"
 pagetitle: ""
 metadescription: ""
 category: blog
-featured-image: /images/blog/
+featured-image: /images/blog/nft-ecosystem-og.png
 intro: ""
 author: Peaster
 tags: ['DeFi List']
