@@ -62,7 +62,7 @@ Owned by the Gemini crypto exchange, Nifty Gateway has recently surged into beco
 
 ### [Rarible](https://rarible.com/)
 
-Rarible is a do-it-yourself NFT marketplace. This means you can go to the platform and permissionlessly mint your own NFTs whenever and however you please. This has led to creators flocking to Rarible, where the minting process is easy, free, and not gated. On the flip side, Rarible has also become a hotbed for scammers at times, i.e. people who mint counterfeit versions of NFTs and try to sell them as originals. To an extent, this is an unavoidable reality of DIY minting platforms though.
+Rarible is a do-it-yourself NFT marketplace. This means you can go to the platform and permissionlessly mint your own NFTs whenever and however you please. This has led to creators flocking to Rarible, where the minting process is easy, free, and not gated. On the flip side, Rarible has also become a hotbed for fake items at times, i.e. people who mint counterfeit versions of NFTs and try to sell them as originals. To an extent, this is an unavoidable reality of DIY minting platforms though.
 
 
 
