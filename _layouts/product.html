@@ -89,7 +89,7 @@
             <div {% if link_presented == 1 %} style='flex: 0' {% endif %}> {{ page.product-description | markdownify }}
               {% if page.ticker  %}
                 <p>
-                {{ page.product-title }} token: <a href="https://matcha.xyz/markets/{{ page.ticker }}">${{ page.ticker }}</a>.
+                {{ page.product-title }} token: <a href="https://1inch.exchange/#/r/0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1/ETH/{{ page.ticker }}">${{ page.ticker }}</a>.
                 </p>
                 {% endif %}
                 {% if page.contract  %}
@@ -99,7 +99,7 @@
                   {% endif %}
             </div>
             {% if page.ticker  %}
-              <a href="https://matcha.xyz/markets/{{ page.ticker }}" class="button-trade">Trade ${{ page.ticker }} on Matcha</a>
+              <a href="https://1inch.exchange/#/r/0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1/ETH/{{ page.ticker }}" class="button-trade">Trade ${{ page.ticker }}</a>
             {% endif %}
           </div>
         </div>
