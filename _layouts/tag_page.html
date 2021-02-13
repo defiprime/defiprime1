@@ -68,7 +68,7 @@
             <a href="{{ post.url }}">
               <div class="date">{{ post.date | date_to_string}}</div>
               <div class="header">
-                <h2>{{ post.title }}</h2>
+                <h2>{{ post.h1title }}</h2>
                 <div class="author-item">
                   {% assign author = site.data.authors[post.author] %}
                   {% if author.image %}

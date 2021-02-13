@@ -85,7 +85,7 @@ redirect_from:
     {% assign link_colors = 'violet|cyan|orange|violetgray' | split: '|' %}
       <article class='latest_blog_link recent-blog-color_{{ forloop.index | random_item: link_colors }}'>
         <a  href="{{ blog_post.permalink | prepend: '/' }}">
-          <h2>{{ blog_post.title }}</h2>
+          <h2>{{ blog_post.h1title }}</h2>
           <p>{{ blog_post.intro | strip_html | strip_newlines }}</p>
         </a>
       </article>
