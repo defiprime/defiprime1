@@ -14,7 +14,7 @@ tags: ['DeFi Guides', 'Derivatives']
 ---
 In actualizing unprecedented yield-bearing systems (e.g. yield farms), Ethereum’s decentralized finance (DeFi) ecosystem took the cryptoeconomy by storm in 2020. That said, there’s been an unsurprising rush to own DeFi governance tokens -- which are used by communities to govern protocols in decentralized fashion -- in recent months.
 
-However, in the past it wasn’t a streamlined process to take up positions in multiple DeFi tokens: you’d have to trade into each individual token one by one, which would take a decent amount of time and be inefficient cost-wise. Indeed, with Ethereum gas prices being acutely high lately, it can cost between 0.01 to 0.2 ETH to get trades executed “Fast” on decentralized exchanges right now.
+However, in the past it wasn’t a streamlined process to take up positions in multiple DeFi tokens: you’d have to trade into each individual token one by one, which would take a decent amount of time and be inefficient cost-wise. Indeed, with [Ethereum gas](/gas) prices being acutely high lately, it can cost between 0.01 to 0.2 ETH to get trades executed “Fast” on decentralized exchanges right now.
 
 That’s where DeFi token indexes come in. Ethereum’s answer to exchange-traded funds (ETFs), DeFi indexes are baskets of DeFi tokens that allow investors to get exposure to the upside of the DeFi arena by simply buying a single token. Alas, these products let investors trade in and out of DeFi efficiently and affordably. Moreover, courtesy of DeFi’s signature traits such tokens can be traded permissionlessly and around the clock unlike their mainstream ETF cousins.
 
