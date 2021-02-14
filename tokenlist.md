@@ -57,7 +57,7 @@ permalink: tokenlist
           </td>
           <td class="ticker-change loading">
             <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
-            <span class="ticker-change-plus">+</span><span class="ticker-change-value"></span><span class="precent">%</span> 
+            <span class="ticker-change-plus">+</span><span class="ticker-change-value"></span><span class="precent">%</span>
             </td>
           <td class="ticker-vol loading">
             <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>  
@@ -65,9 +65,9 @@ permalink: tokenlist
           </td>
           <td class="ticker-market-cap loading">
             <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
-            <span class="sign">$</span><span class="ticker-market-cap-value"></span> 
+            <span class="sign">$</span><span class="ticker-market-cap-value"></span>
           </td>
-          <td class="ticker-link"><a href="https://1inch.exchange/#/r/0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1/ETH/{{ all_project.ticker }}" class="button-trade">Trade</a> </td>
+          <td class="ticker-link"><a href="https://dex.guru/token/{{all_project.contract}}" target="_blank" class="button-trade">Analytics</a> </td>
         </tr>
         {% endif %}
       {% endfor %}
