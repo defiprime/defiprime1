@@ -4,7 +4,7 @@ layout: [blog, blog-amp]
 title:  "An analytic approach to maximize profit and identify risk in AMM liquidity pools"
 permalink: amm-liquidity-pools
 h1title: "An analytic approach to maximize profit and identify risk in AMM liquidity pools"
-pagetitle: "An analytic approach to maximize profit and identify risk in AMM liquidity pools"
+pagetitle: "How to maximize profit and identify risk in AMM liquidity pools"
 metadescription: "This article helps understand the various factors to consider when providing liquidity to Uniswap style AMM’s"
 category: blog
 featured-image: /images/blog/ammpools-og.png
