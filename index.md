@@ -28,6 +28,13 @@ redirect_from:
 	</div>
 </header>
 
+<section class="banner">
+ <a target="_blank" href="https://dex.guru/">
+    <div class="banner-content">
+      <div class="banner-icon"><img src="/images/banner.webp" alt=""/></div>
+    </div>
+  </a>
+</section>
 
 <section>
   <h2 id="defi_projects" class='recently_added_annotation'>DeFi projects</h2>
