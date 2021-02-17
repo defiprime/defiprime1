@@ -11,7 +11,7 @@ featured-image: /images/blog/liquiditypools-og.png
 quote: /images/blog/liquiditypools-quote.png
 intro: 'Are Uniswap’s Liquidity Pools Right for You?'
 author: chrisblec
-tags: ['DeFi Guides', 'DEXs']
+tags: ['DeFi Guides', 'DEXs', 'Liquidity Pools']
 ---
 <div style="text-align: right">This is a transcription from a <a href="https://www.youtube.com/watch?v=IotszRJdtYw">YouTube video</a>.
 </div>

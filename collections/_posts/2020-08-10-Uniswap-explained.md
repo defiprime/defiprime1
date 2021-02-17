@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/uniswapexplained-og.png
 intro: "In this post, we’ll break down what exactly Uniswap is, how it works, and how to list tokens and participate in liquidity pools using the protocol"
 author: Peaster
-tags: ['DeFi Guides','DEXs']
+tags: ['DeFi Guides','DEXs', 'Liquidity Pools']
 ---
 Decentralized trading protocol Uniswap is one of Ethereum’s biggest hits right now, and the breakout project has plenty more runway from here. In this post, we’ll break down what exactly Uniswap is, how it works, and how to list tokens and participate in liquidity pools using the protocol.
 
