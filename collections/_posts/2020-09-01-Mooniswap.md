@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/mooniswap-og.png
 intro: "Anton told us the 1inch backstory from a hackathon project to a leading DeFi aggregator, and how's new Mooniswap AMM is different"
 author: Defiprime
-tags: ['Interview', 'DEXs', 'VC-founded']
+tags: ['Interview', 'DEXs', 'VC-founded', 'Liquidity Pools']
 ---
 Anton told us the 1inch backstory from a hackathon project to a leading DeFi aggregator, and how's new Mooniswap AMM is different.
 
@@ -70,7 +70,7 @@ The Referral Fee is fixed and is equal to 5% of income earned by liquidity provi
 
 Notably, the Referral Fee does not introduce additional pressure on the price and rewards external actors who contribute to the protocol by providing trading volume. Apart from Swap Fee and Referral Fee, Mooniswap does not charge any additional protocol fees.
 
-We largely prefer the Referral Fee over the swap fee. In order to guarantee liquidity provider earnings, Mooniswap does contain a swap fee of 0.3% (*this fee has been reduced 0.15% due to successful pool performance). The swap fee could go away as volumes increase. 
+We largely prefer the Referral Fee over the swap fee. In order to guarantee liquidity provider earnings, Mooniswap does contain a swap fee of 0.3% (*this fee has been reduced 0.15% due to successful pool performance). The swap fee could go away as volumes increase.
 
 Zooming out, the first customers of 1inch were myself and Sergej. It was exhausting and inefficient to manually check for the best trading prices on all the DEXes – e.g. Uniswap, Kyber, 0x – before placing a trade. We, like all crypto users, needed an elegant algorithm to search every DEX for the best trading price and instantly deliver an optimized trade. The solution came in 1inch: a decentralized exchange aggregator that sources liquidity from various exchanges and is capable of splitting a single trade transaction across multiple DEXes.
 

@@ -4,13 +4,13 @@ layout: [blog, blog-amp]
 title:  "An analytic approach to maximize profit and identify risk in AMM liquidity pools"
 permalink: amm-liquidity-pools
 h1title: "An analytic approach to maximize profit and identify risk in AMM liquidity pools"
-pagetitle: ""
-metadescription: ""
+pagetitle: "An analytic approach to maximize profit and identify risk in AMM liquidity pools"
+metadescription: "This article helps understand the various factors to consider when providing liquidity to Uniswap style AMM’s"
 category: blog
-featured-image: /images/blog/
+featured-image: /images/blog/ammpools-og.png
 intro: ""
 author: Briggs
-tags: ['Interview']
+tags: ['DeFi Guides', "DEXs", 'Liquidity Pools']
 ---
 
 2020 was an incredible year for decentralized exchanges, with Uniswap surpassing Coinbase in trading volume in September of 2020. This has caused more investors to get interested in liquidity pools, part of the AMM model of Uniswap. Many are drawn to providing liquidity with attractive farming rewards, but that is only one part of the equation. This article helps understand the various factors to consider when providing liquidity to Uniswap style AMM’s.
@@ -64,7 +64,7 @@ A pool with large reserves is less profitable from fees but more protected from 
 
 Look at the red arrows above pointing to the .32 VR ratio and the spike in the blue area of the graph representing volume. As you can see, when volume spikes and there is no corresponding spike in reserve size, your fee revenue goes up considerably. If you look at the black arrows, you can see that with a larger reserve size (the green area) it takes more volume to make the same .32 VR ratio profit.
 
-A V/R ratio of 1 means the pool is returning 109% APY for that period (based on the swap fee of 0.3%). The V/R ratio fluctuates based on trading volume and the amount of liquidity provided to the pool. Just like with any business, with liquidity pooling, some days can be more profitable than others. 
+A V/R ratio of 1 means the pool is returning 109% APY for that period (based on the swap fee of 0.3%). The V/R ratio fluctuates based on trading volume and the amount of liquidity provided to the pool. Just like with any business, with liquidity pooling, some days can be more profitable than others.
 
 ## Key risk metrics for Liquidity Providers
 
