@@ -5,7 +5,7 @@ product-url: https://nftx.org/
 image: /images/output_md/nftx.jpg
 ecosystem: ethereum
 filter: Indices
-product-description: NFTX is a community-owned protocol for NFT index funds on Ethereum
+product-description: NFTX is a platform for making ERC20 tokens that are backed by NFT collectibles and governed by a community-owned protocol
 coltitle:  "Derivatives"
 colpermalink: derivatives
 twitter: https://twitter.com/NFTX_
