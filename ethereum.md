@@ -26,6 +26,7 @@ featured-image: /images/og-ethereum.png
 | concat: site.payments
 | concat: site.prediction_markets
 | concat: site.stablecoins
+| concat: site.yield-aggregators
  %}
 
 {% assign counter = all_projects.size %}
@@ -81,6 +82,16 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endif %}
 
 
+{% assign yield-aggregators = site.yield-aggregators | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
+{% if yield-aggregators.size > 0 %}
+# Yield Aggregators on Ethereum
+{% for yield-aggregator in yield-aggregators %}
+### <a href="/product/{{ yield-aggregator.product-title | slugify }}">{{ yield-aggregator.product-title }}</a>
+{% include ecosystem-icons.html project = yield-aggregator %}
+{{ yield-aggregator.product-description }}
+{% endfor %}
+{% endif %}
+
 {% assign exchanges = site.exchanges | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
 {% if exchanges.size > 0 %}
 # Decentralized exchanges on Ethereum
@@ -90,6 +101,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {{ exchange.product-description }}
 {% endfor %}
 {% endif %}
+
 
 {% assign margin-tradings = site.margin-trading | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
 {% if margin-tradings.size > 0 %}
