@@ -4,10 +4,9 @@ product-title: Harvest
 product-url: https://harvest.finance/
 image: /images/output_md/harvest.finance.png
 ecosystem: ethereum
-filter: Synthetic Assets
 product-description: Harvest automatically farms the highest yield available from the newest DeFi protocols, and optimizes the yields that are received using the latest farming techniques.
-coltitle:  "Derivatives"
-colpermalink: derivatives
+coltitle:  "Yield Aggregators"
+colpermalink: yield-aggregators
 twitter: https://twitter.com/harvest_finance
 github: https://github.com/harvest-finance
 ticker: FARM
