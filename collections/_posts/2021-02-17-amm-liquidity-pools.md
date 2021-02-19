@@ -22,7 +22,7 @@ tags: ['DeFi Guides', "DEXs", 'Liquidity Pools']
 ![](/images/blog/amm-liquidity-pools/image1.webp)
 
 
-_Chart showing recent performance of AAVE/ETH pool provided by[ APY.Vision](https://apy.vision/#)_
+_Chart showing recent performance of AAVE/ETH pool provided by [APY.Vision](https://apy.vision/#)_
 
 
 ### Trading Volume
