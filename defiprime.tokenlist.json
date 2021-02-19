@@ -8,7 +8,7 @@
       "description": "Tokens listed at defiprime curated list"
     }
   },
-  "timestamp": "2021-02-12T00:00:00+00:00",
+  "timestamp": "2021-02-18T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -573,7 +573,7 @@
   ],
   "version": {
     "major": 1,
-    "minor": 13,
-    "patch": 0
+    "minor": 14,
+    "patch": 1
   }
 }
