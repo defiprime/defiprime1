@@ -1,7 +1,7 @@
 ---
 git-date: 2020-09-12T10:35:33-07:00
 product-title: SushiSwap
-product-url: https://sushiswap.fi/swap
+product-url: https://sushi.com/
 image: /images/output_md/exchange.sushiswapclassic.org.png
 ecosystem: ethereum
 type: non-custodial
