@@ -8,7 +8,7 @@ product-description: Pickle allow users to deposit tokens from liquidity pools s
 coltitle:  "Yield Aggregators"
 colpermalink: yield-aggregators
 twitter: https://twitter.com/picklefinance
-github: https://github.com/harvest-finance
+github: https://github.com/pickle-finance
 ticker: PICKLE
 contract: "0x429881672b9ae42b8eba0e26cd9c73711b891ca5"
 decimals: 18
