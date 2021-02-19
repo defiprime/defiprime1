@@ -561,6 +561,14 @@
       "name": "NFTX",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x429881672b9ae42b8eba0e26cd9c73711b891ca5",
+      "symbol": "PICKLE",
+      "name": "PICKLE",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
