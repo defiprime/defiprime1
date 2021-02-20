@@ -569,11 +569,19 @@
       "name": "PICKLE",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x875773784af8135ea0ef43b5a374aad105c5d39e",
+      "symbol": "IDLE",
+      "name": "IDLE",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 14,
+    "minor": 15,
     "patch": 1
   }
 }
