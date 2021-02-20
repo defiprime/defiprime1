@@ -577,6 +577,14 @@
       "name": "IDLE",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xd291e7a03283640fdc51b121ac401383a46cc623",
+      "symbol": "RGT",
+      "name": "RGT",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
