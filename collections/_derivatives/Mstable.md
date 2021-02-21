@@ -5,7 +5,7 @@ product-url: https://mstable.org
 image: /images/output_md/app.mstable.org.png
 ecosystem: ethereum
 filter: Synthetic Assets
-product-description: mStable combine stablecoins and tokenized assets into higher-yielding instruments.
+product-description: mStable combine stablecoins and tokenized assets into higher-yielding instruments. [mStable Explained. Interview with Co-founder](/mstable)
 coltitle:  "Derivatives"
 colpermalink: derivatives
 github: https://github.com/mstable
