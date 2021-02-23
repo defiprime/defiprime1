@@ -26,7 +26,7 @@ A non-trivial portion of this BSC activity has seemed spoofed recently, but ther
 
 All this said, let’s dive into what BSC is and what it can do so we can get a realistic idea of how to accurately consider it within the cryptoeconomy’s present conditions. 
 
-[https://twitter.com/Fiskantes/status/1362721469378293761](https://twitter.com/Fiskantes/status/1362721469378293761) 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">1/ Since <a href="https://twitter.com/search?q=%24BNB&amp;src=ctag&amp;ref_src=twsrc%5Etfw">$BNB</a> is now TOP 3, maybe its good time to post my reflections<br><br>Why Binance CeDeFi (oh god such a dumb term, cant believe I am using it) ecosystem exceeded my expectations and is it sustainable? Should I FOMO in now or just focus on other things?<a href="https://t.co/YyILRijy96">https://t.co/YyILRijy96</a></p>&mdash; 🃏Fiskantes (@Fiskantes) <a href="https://twitter.com/Fiskantes/status/1362721469378293761?ref_src=twsrc%5Etfw">February 19, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 ### What is Binance Smart Chain (BSC) 
@@ -39,7 +39,7 @@ As such, this may be a layer-one (L1) smart contract platform, but it’s also e
 
 Another central aspect of BSC is that it’s compatible with Ethereum’s EVM, which lets BSC developers to easily migrate over popular Ethereum dapps and solutions via loosely-modified forks. This is why the vast majority of dapps on BSC today are essentially direct copies of Ethereum dapps, like how PancakeSwap was forked from Uniswap and Sushiswap. 
 
-[https://twitter.com/calchulus/status/1363123850716745729](https://twitter.com/calchulus/status/1363123850716745729)
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">2. this point of interoperability is important, because a user doesn&#39;t need to deal with new wallets or infrastructure to use this chain, whereas past projects like Tron required you to download a new set of tools (TronLink wallet, use tronscan, etc.)</p>&mdash; Calvin Chu (@calchulus) <a href="https://twitter.com/calchulus/status/1363123850716745729?ref_src=twsrc%5Etfw">February 20, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 ### What is the difference between Binance Chain and Binance Smart Chain?
