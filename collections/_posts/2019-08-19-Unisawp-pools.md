@@ -22,7 +22,7 @@ Today, let's talk about Uniswap, Liquidity pools to be exact. I want to discuss 
 
 Uniswap is a decentralized ERC-20 token exchange, and it's not just for tokens. It also supports Ethereum, and the beauty of Uniswap is you can exchange ETH for any other ERC-20 token in a decentralized fashion. There's no company involved, no KYC, and there's no person involved that's mediating things.
 
-It's not like a centralized exchange where there's a company that's holding your money and is charging you fees on it. This is a decentralized exchange where you're always in full control over your money. When you execute a transaction, it immediately all in one transaction, takes the money out of your wallet, puts the money back in, in the other format, so there's no custodianship. Uniswap Is a really, really amazing decentralized tool.
+It's not like a centralized exchange where there's a company that's holding your money and is charging you fees on it. This is a [decentralized exchange](/exchanges) where you're always in full control over your money. When you execute a transaction, it immediately all in one transaction, takes the money out of your wallet, puts the money back in, in the other format, so there's no custodianship. Uniswap Is a really, really amazing decentralized tool.
 
 ## How Uniswap liquidity pool works?
 

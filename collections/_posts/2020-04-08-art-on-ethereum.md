@@ -42,7 +42,7 @@ The two-year-old [SuperRare ](https://superrare.co/)platform -- “Instagram mee
 
 ### OpenSea
 
-[OpeanSea ](https://opensea.io/)is the “largest marketplace for rare digital goods.” You can buy SuperRare, Known Origin, and MakersPlace pieces on OpenSea, as well as other kinds of NFT collectibles like CryptoKitties and beyond. Also, anyone can easily mint their own NFT art using the marketplace’s simple minting dashboard. It’s a great project. Personally, OpenSea is probably my favorite Ethereum dapp … period.
+[OpeanSea ](https://opensea.io?ref=0xebdb626c95a25f4e304336b1adcad0521a1bdca1)is the “largest marketplace for rare digital goods.” You can buy SuperRare, Known Origin, and MakersPlace pieces on OpenSea, as well as other kinds of NFT collectibles like CryptoKitties and beyond. Also, anyone can easily mint their own NFT art using the marketplace’s simple minting dashboard. It’s a great project. Personally, OpenSea is probably my favorite Ethereum dapp … period.
 
 ### Other Rising Upstarts
 

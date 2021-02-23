@@ -53,7 +53,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% if assets-management-tools.size > 0 %}
 # Asset Management Tools
 {% for assets-management-tool in assets-management-tools %}
-### <a href="{{ assets-management-tool.product-url }}">{{ assets-management-tool.product-title }}</a>
+### <a href="/product/{{ assets-management-tool.product-title | slugify }}">{{ assets-management-tool.product-title }}</a>
 {% include ecosystem-icons.html project = assets-management-tool %}
 {{ assets-management-tool.product-description }}
 {% endfor %}
@@ -66,7 +66,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% if exchanges.size > 0 %}
 # Bitcoin Decentralized Exchanges
 {% for exchange in exchanges %}
-### <a href="{{ exchange.product-url }}">{{ exchange.product-title }}</a>
+### <a href="/product/{{ exchange.product-title | slugify }}">{{ exchange.product-title }}</a>
 {% include ecosystem-icons.html project = exchange %}
 {{ exchange.product-description }}
 {% endfor %}
@@ -77,7 +77,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% if lendings.size > 0 %}
 # Bitcoin Crypto Lending
 {% for lending in lendings %}
-### <a href="{{ lending.product-url }}">{{ lending.product-title }}</a>
+### <a href="/product/{{ lending.product-title | slugify }}">{{ lending.product-title }}</a>
 {% include ecosystem-icons.html project = lending %}
 {{ lending.product-description }}
 {% endfor %}
@@ -87,7 +87,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% if margin-tradings.size > 0 %}
 # Margin Trading
 {% for margin-trading in margin-tradings %}
-### <a href="{{ margin-trading.product-url }}">{{ margin-trading.product-title }}</a>
+### <a href="/product/{{ margin-trading.product-title  | slugify}}">{{ margin-trading.product-title }}</a>
 {% include ecosystem-icons.html project = margin-trading %}
 {{ margin-trading.product-description }}
 {% endfor %}
@@ -97,7 +97,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% if infrastructures.size > 0 %}
 # DeFi Infrastructure & Dev Tooling
 {% for infrastructure in infrastructures %}
-### <a href="{{ infrastructure.product-url }}">{{ infrastructure.product-title }}</a>
+### <a href="/product/{{ infrastructure.product-title | slugify }}">{{ infrastructure.product-title }}</a>
 {% include ecosystem-icons.html project = infrastructure %}
 {{ infrastructure.product-description }}
 {% endfor %}
@@ -108,7 +108,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% if payments.size > 0 %}
 # BTC Payments Solutions and Service Providers
 {% for payment in payments %}
-### <a href="{{ payment.product-url }}">{{ payment.product-title }}</a>
+### <a href="/product/{{ payment.product-title  | slugify}}">{{ payment.product-title }}</a>
 {% include ecosystem-icons.html project = payment %}
 {{ payment.product-description }}
 {% endfor %}
@@ -119,7 +119,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% if marketplaces.size > 0 %}
 # Marketplaces
 {% for marketplace in marketplaces %}
-### <a href="{{ marketplace.product-url }}">{{ marketplace.product-title }}</a>
+### <a href="/product/{{ marketplace.product-title  | slugify}}">{{ marketplace.product-title }}</a>
 {% include ecosystem-icons.html project = marketplace %}
 {{ marketplace.product-description }}
 {% endfor %}
@@ -129,7 +129,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% if stablecoins.size > 0 %}
 # Stablecoins
 {% for stablecoin in stablecoins %}
-### <a href="{{ stablecoin.product-url }}">{{ stablecoin.product-title }}</a>
+### <a href="/product/{{ stablecoin.product-title | slugify }}">{{ stablecoin.product-title }}</a>
 {% include ecosystem-icons.html project = stablecoin %}
 {{ stablecoin.product-description }}
 {% endfor %}
@@ -140,7 +140,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% if alternative-savings.size > 0 %}
 # Alternative Savings Apps
 {% for alternative-saving in alternative-savings %}
-### <a href="{{ alternative-saving.product-url }}">{{ alternative-saving.product-title }}</a>
+### <a href="/product/{{ alternative-saving.product-title  | slugify }}">{{ alternative-saving.product-title }}</a>
 {% include ecosystem-icons.html project = alternative-saving %}
 {{ alternative-saving.product-description }}
 {% endfor %}
@@ -151,7 +151,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% if analytics.size > 0 %}
 # Analytics
 {% for analytic in analytics %}
-### <a href="{{ analytic.product-url }}">{{ analytic.product-title }}</a>
+### <a href="/product/{{ analytic.product-title  | slugify }}">{{ analytic.product-title }}</a>
 {% include ecosystem-icons.html project = analytic %}
 {{ analytic.product-description }}
 {% endfor %}
@@ -162,7 +162,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% if assets-tokenizations.size > 0 %}
 # Asset Tokenization
 {% for assets-tokenization in assets-tokenizations %}
-### <a href="{{ assets-tokenization.product-url }}">{{ assets-tokenization.product-title }}</a>
+### <a href="/product/{{ assets-tokenization.product-title | slugify }}">{{ assets-tokenization.product-title }}</a>
 {% include ecosystem-icons.html project = assets-tokenization %}
 {{ assets-tokenization.product-description }}
 {% endfor %}
@@ -173,7 +173,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% if daos.size > 0 %}
 # Bitcoin-based DAO Platforms
 {% for dao in daos %}
-### <a href="{{ dao.product-url }}">{{ dao.product-title }}</a>
+### <a href="/product/{{ dao.product-title  | slugify }}">{{ dao.product-title }}</a>
 {% include ecosystem-icons.html project = dao %}
 {{ dao.product-description }}
 {% endfor %}
@@ -184,7 +184,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% if derivatives.size > 0 %}
 # Derivatives
 {% for derivative in derivatives %}
-### <a href="{{ derivative.product-url }}">{{ derivative.product-title }}</a>
+### <a href="/product/{{ derivative.product-title  | slugify }}">{{ derivative.product-title }}</a>
 {% include ecosystem-icons.html project = derivative %}
 {{ derivative.product-description }}
 {% endfor %}
@@ -195,7 +195,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% if insurances.size > 0 %}
 # Decentralized Insurance Platforms
 {% for insurance in insurances %}
-### <a href="{{ insurance.product-url }}">{{ insurance.product-title }}</a>
+### <a href="/product/{{ insurance.product-title | slugify }}">{{ insurance.product-title }}</a>
 {% include ecosystem-icons.html project = insurance %}
 {{ insurance.product-description }}
 {% endfor %}
@@ -206,7 +206,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% if kyc_identities.size > 0 %}
 # KYC & Identity
 {% for kyc_identity in kyc_identities %}
-### <a href="{{ kyc_identity.product-url }}">{{ kyc_identity.product-title }}</a>
+### <a href="/product/{{ kyc_identity.product-title | slugify }}">{{ kyc_identity.product-title }}</a>
 {% include ecosystem-icons.html project = kyc_identity %}
 {{ kyc_identity.product-description }}
 {% endfor %}
@@ -217,7 +217,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% if margin-tradings.size > 0 %}
 # Margin Trading on Bitcoin
 {% for margin-trading in margin-tradings %}
-### <a href="{{ margin-trading.product-url }}">{{ margin-trading.product-title }}</a>
+### <a href="/product/{{ margin-trading.product-title | slugify }}">{{ margin-trading.product-title }}</a>
 {% include ecosystem-icons.html project = margin-trading %}
 {{ margin-trading.product-description }}
 {% endfor %}
@@ -228,7 +228,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% if prediction_markets.size > 0 %}
 # Prediction Markets
 {% for prediction_market in prediction_markets %}
-### <a href="{{ prediction_market.product-url }}">{{ prediction_market.product-title }}</a>
+### <a href="/product/{{ prediction_market.product-title | slugify }}">{{ prediction_market.product-title }}</a>
 {% include ecosystem-icons.html project = prediction_market %}
 {{ prediction_market.product-description }}
 {% endfor %}

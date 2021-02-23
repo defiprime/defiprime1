@@ -15,9 +15,10 @@
   {% if page.analytics  %}
   <link rel="preconnect" href="https://explore.duneanalytics.com" crossorigin>
   {% endif %}
-  <link rel="preload" href="/images/vector.png" as="image" media="(min-width: 601px)">
-  <link rel="preload" href="/images/logo.svg" as="image" media="(min-width: 601px)">
-  <link rel="preload" href="{{ page.image | prepend: site.url }}" as="image" media="(min-width: 601px)">
+  <link rel="preload" href="/images/vector.png" as="image" >
+  <link rel="preload" href="/images/logo.svg" as="image" >
+  <link rel="preload" href="/images/bg-fon.png" as="image" >
+  <link rel="preload" href="{{ page.image | prepend: site.url }}" as="image" >
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8" />
@@ -88,7 +89,7 @@
             <div {% if link_presented == 1 %} style='flex: 0' {% endif %}> {{ page.product-description | markdownify }}
               {% if page.ticker  %}
                 <p>
-                {{ page.product-title }} token: <a href="https://matcha.xyz/markets/{{ page.ticker }}">${{ page.ticker }}</a>.
+                {{ page.product-title }} token: <a href="https://dex.guru/token/{{ page.contract }}" target="_blank" rel="noopener">${{ page.ticker }}</a>.
                 </p>
                 {% endif %}
                 {% if page.contract  %}
@@ -98,7 +99,7 @@
                   {% endif %}
             </div>
             {% if page.ticker  %}
-              <a href="https://matcha.xyz/markets/{{ page.ticker }}" class="button-trade">Trade ${{ page.ticker }} on Matcha</a>
+              <a href="https://dex.guru/token/{{ page.contract }}" class="button-trade" target="_blank" rel="noopener">${{ page.ticker }} Charts and Liquidity</a>
             {% endif %}
           </div>
         </div>

@@ -13,6 +13,12 @@
         </span>
         {% endif %}
 
+        {% if project.ecosystem contains 'bsc' %}
+        <span title="Built on Binance or related to Binance ecosystem">
+               {% include icons/binance.svg %}
+        </span>
+       {% endif %}
+
         {% if project.ecosystem contains 'eos' %}
         <span title="Built on EOS or related to EOS ecosystem">
             {% include icons/eos.svg %}

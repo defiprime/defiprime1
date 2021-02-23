@@ -107,7 +107,11 @@ collections:
     output: true
     permalink: /product/:name
     section_url: /alternative-savings
-
+  yield-aggregators:
+    output: true
+    permalink: /product/:name
+    section_url: /yield-aggregators
+    
 defaults:
   -
     values:
@@ -117,6 +121,7 @@ exclude:
     - node_modules
     - README.md
     - CONTRIBUTING.md
+    - gems
 keep_files: [images, admin]
 sass:
     style: compressed

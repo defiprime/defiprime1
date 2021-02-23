@@ -8,7 +8,7 @@
       "description": "Tokens listed at defiprime curated list"
     }
   },
-  "timestamp": "2020-10-23T00:00:00+00:00",
+  "timestamp": "2021-02-21T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -521,11 +521,91 @@
       "name": "Tokenlon",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x888888888889c00c67689029d7856aac1065ec11",
+      "symbol": "OPIUM",
+      "name": "OPIUM",
+      "decimals": 18,
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x09a3ecafa817268f77be1283176b946c4ff2e608",
+      "symbol": "MIR",
+      "name": "Mirror Protocol",
+      "decimals": 18,
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x8888801af4d980682e47f1a9036e589479e835c5",
+      "symbol": "MPH",
+      "name": "88mph",
+      "decimals": 18,
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x4c19596f5aaff459fa38b0f7ed92f11ae6543784",
+      "symbol": "TRU",
+      "name": "TrueFi",
+      "decimals": 18,
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x87d73e916d7057945c9bcd8cdd94e42a6f47f776",
+      "symbol": "NFTX",
+      "name": "NFTX",
+      "decimals": 18,
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x429881672b9ae42b8eba0e26cd9c73711b891ca5",
+      "symbol": "PICKLE",
+      "name": "PICKLE",
+      "decimals": 18,
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x875773784af8135ea0ef43b5a374aad105c5d39e",
+      "symbol": "IDLE",
+      "name": "IDLE",
+      "decimals": 18,
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xd291e7a03283640fdc51b121ac401383a46cc623",
+      "symbol": "RGT",
+      "name": "RGT",
+      "decimals": 18,
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xa1faa113cbe53436df28ff0aee54275c13b40975",
+      "symbol": "ALPHA",
+      "name": "ALPHA",
+      "decimals": 18,
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x584bc13c7d411c00c01a62e8019472de68768430",
+      "symbol": "HEGIC",
+      "name": "HEGIC",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 11,
-    "patch": 0
+    "minor": 17,
+    "patch": 1
   }
 }
