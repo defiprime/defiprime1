@@ -8,7 +8,7 @@
       "description": "Tokens listed at defiprime curated list"
     }
   },
-  "timestamp": "2021-02-21T00:00:00+00:00",
+  "timestamp": "2021-02-23T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -601,11 +601,19 @@
       "name": "HEGIC",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x49e833337ece7afe375e44f4e3e8481029218e5c",
+      "symbol": "VALUE",
+      "name": "VALUE",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 17,
-    "patch": 1
+    "minor": 18,
+    "patch": 0
   }
 }
