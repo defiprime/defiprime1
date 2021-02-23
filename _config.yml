@@ -111,7 +111,7 @@ collections:
     output: true
     permalink: /product/:name
     section_url: /yield-aggregators
-    
+
 defaults:
   -
     values:
@@ -132,6 +132,7 @@ algolia:
   discourse_base_url: https://alpha.defiprime.com
   discourse_index_name: discourse-posts
   search_only_api_key: 471c4ea8d6a8d6cfce0e09c05807db0e
+  max_record_size: 20000
   #everything in md or html
   files_to_exclude:
     - admin/
@@ -146,7 +147,9 @@ algolia:
     - eos.md
     - ethereum.md
     - placeholder.md
-    - .github/
+    - .github
+    - /amp
+
 
 lazy_load_image:
   src_attr_name: data-src # [required] You need to specify the attributes to be saved for lazy loading
