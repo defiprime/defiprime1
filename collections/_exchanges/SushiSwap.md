@@ -15,4 +15,5 @@ ticker: SUSHI
 contract: "0x6b3595068778dd592e39a122f4f5a5cf09c90fe2"
 decimals: 18
 analytics: https://duneanalytics.com/embeds/11519/22883/nGwtHgZ9SKnwfY1NLVCHE0DKJdsjXsSxBY9xRmZt
+alternative-to: uniswap
 ---
