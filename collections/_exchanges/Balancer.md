@@ -15,4 +15,5 @@ analytics: https://explore.duneanalytics.com/embed/query/4171/visualization/8115
 ticker: BAL
 contract: "0xba100000625a3754423978a60c9317c58a424e3D"
 decimals: 18
+alternative-to: uniswap
 ---

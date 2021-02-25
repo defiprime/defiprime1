@@ -11,4 +11,5 @@ coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/pancakeswap
 github: https://github.com/pancakeswap
+alternative-to: uniswap
 ---
