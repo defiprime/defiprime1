@@ -8,4 +8,5 @@ product-description: Uniswap.vision provides community made tradingview charts f
 coltitle:  "Analytics"
 colpermalink: defi-analytics
 twitter: https://twitter.com/UniswapVision
+alternative-to: dextools
 ---
