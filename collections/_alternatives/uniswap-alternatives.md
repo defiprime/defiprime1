@@ -1,8 +1,8 @@
 ---
 layout: alternatives
-title:  "Uniswap Alterntives"
-permalink: uniswap-alterntives
-h1title: uniswap alterntives Lorem ipsum
+title:  "Uniswap Alternatives"
+permalink: uniswap-alternatives
+h1title: Uniswap Alternatives Lorem ipsum
 pagetitle: uniswap Lorem ipsum
 metadescription: uniswap ipsum
 og: /images/ipsum.png
