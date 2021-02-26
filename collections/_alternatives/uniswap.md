@@ -5,7 +5,7 @@ permalink: uniswap-alternatives
 h1title: Uniswap Alternatives
 pagetitle: Uniswap Alternatives & Competitors - Top Uniswap Competitors and Alternatives
 metadescription: "Here you can find is a list of Uniswap alternatives. Uniswap is an automated market maker(AMM) decentralized exchange which facilitates swaps between  ERC20 tokens on the Ethereum blockchain through the immutable smart contract."
-og: /images/ipsum.png
+og: /images/blog/unialternatives-og.png
 filter-by: ecosystem, filter
 alternative-to: uniswap
 ---
