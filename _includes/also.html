@@ -1,7 +1,7 @@
 <section class="read_next">
   <div class="container">
     <div class='reading_next_links'>
-      {% assign collections = site.collections | where_exp:"post", "post.section_url != page.url" | sort: 'label' %}
+      {% assign collections = site.collections | where_exp:"post", "post.section_url != page.url" | where_exp: "post", "post.section_url != '/alternatives'" | sort: 'label' %}
       {% for collection in collections %}
       {% if collection.label != 'events' and collection.label != 'posts' %}
       <a href="{{ collection.section_url }}">

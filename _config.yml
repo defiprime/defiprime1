@@ -111,6 +111,10 @@ collections:
     output: true
     permalink: /product/:name
     section_url: /yield-aggregators
+  alternatives:
+    output: true
+    permalink: /product/:name
+    section_url: /alternatives
 
 defaults:
   -
