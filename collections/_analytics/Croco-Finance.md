@@ -8,4 +8,5 @@ product-description: Croco Finance let you analyze your liquidity positions in U
 coltitle:  "Analytics"
 colpermalink: defi-analytics
 twitter: https://twitter.com/CrocoFinance
+alternative-to: dextools
 ---

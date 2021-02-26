@@ -7,4 +7,5 @@ ecosystem: ethereum
 product-description: Uniswap ROI calculator helps you analyze your investments in Uniswap and find the best liquidity pools.
 coltitle:  "Analytics"
 colpermalink: defi-analytics
+alternative-to: dextools
 ---

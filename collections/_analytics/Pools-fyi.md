@@ -9,4 +9,5 @@ coltitle:  "Analytics"
 colpermalink: defi-analytics
 github: https://github.com/blocklytics
 twitter: https://twitter.com/blocklytics
+alternative-to: dextools
 ---
