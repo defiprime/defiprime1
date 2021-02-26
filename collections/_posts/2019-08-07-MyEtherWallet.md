@@ -65,7 +65,7 @@ Those exchanges charge fees, and a portion of those fees comes to MEW.  These ty
 We have begun opening up our dApps page for similar types of integrations; [DeFi integrations](https://medium.com/myetherwallet/makerdaos-cdp-protocol-benefits-of-decentralized-loans-ad13e2bc7d5d
 ) in particular, seem to be the next natural phase in our development. In my view, the space has evolved dramatically from the purely speculative FOMO sentiments of 2017.
 
-A high percentage of users coming into the space are looking for alternatives to the traditional financial system, and we believe that MEW is well-positioned to onboard them onto these new solutions.
+A high percentage of users coming into the space are looking for [alternatives](/dextools-alternatives) to the traditional financial system, and we believe that MEW is well-positioned to onboard them onto these new solutions.
 
 ### What's your position on the regulatory landscape today?
 
