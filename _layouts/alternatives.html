@@ -68,6 +68,24 @@
           {{ content }}
         </div>
 
+        {% if page.filter-by %}
+        <section>
+          <div class="button-group filters-button-group">
+            <button class="button active" data-filter="*">All</button>
+            {% assign items_filters = page.filter-by | split: ", " %}
+            {% for filter in items_filters  %}
+            {% assign filter_buttons = site[page.cards] | group_by: filter | map: "name" |  join: ", " | split: ", " | uniq | where_exp: "item", "item != ''" %}
+            {% for filter_button in filter_buttons  %}
+
+            <button class="button"
+              data-filter="{{filter_button | downcase | replace: ' ', '-' }}">{{filter_button}}</button>
+            {% endfor %}
+
+            {% endfor %}
+          </div>
+        </section>
+        {% endif %}
+
         <section id='assets_cards'>
 
           {% assign all_projects = site.alternative-savings
