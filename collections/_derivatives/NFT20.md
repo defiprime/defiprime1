@@ -11,6 +11,6 @@ colpermalink: derivatives
 twitter: https://twitter.com/niftymuseum
 github: https://github.com/verynifty/
 ticker: MUSE
-contract: "0x20d2c17d1928ef4290bf17f922a10eaa2770bf43"
+contract: "0xb6ca7399b4f9ca56fc27cbff44f4d2e4eef1fc81"
 decimals: 18
 ---

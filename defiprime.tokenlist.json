@@ -612,7 +612,7 @@
     },
     {
       "chainId": 1,
-      "address": "0x20d2c17d1928ef4290bf17f922a10eaa2770bf43",
+      "address": "0xb6ca7399b4f9ca56fc27cbff44f4d2e4eef1fc81",
       "symbol": "MUSE",
       "name": "MUSE",
       "decimals": 18,
@@ -622,6 +622,6 @@
   "version": {
     "major": 1,
     "minor": 19,
-    "patch": 0
+    "patch": 1
   }
 }
