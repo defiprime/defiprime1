@@ -8,7 +8,7 @@
       "description": "Tokens listed at defiprime curated list"
     }
   },
-  "timestamp": "2021-02-23T00:00:00+00:00",
+  "timestamp": "2021-02-28T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -609,11 +609,19 @@
       "name": "VALUE",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x20d2c17d1928ef4290bf17f922a10eaa2770bf43",
+      "symbol": "MUSE",
+      "name": "MUSE",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 18,
+    "minor": 19,
     "patch": 0
   }
 }
