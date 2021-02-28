@@ -7,7 +7,7 @@ h1title: "B.Protocol Explained"
 pagetitle: "B.Protocol Explained - Interview with Founder"
 metadescription: "Yaron told us how B.Protocol eliminating the gas wars and shifting the miner’s profit to the protocol users"
 category: blog
-featured-image: /images/blog/
+featured-image: /images/blog/bprotocol-og.png
 intro: "Yaron told us how B.Protocol eliminating the gas wars and shifting the miner’s profit to the protocol users"
 author: Defiprime
 tags: ['Interview']
