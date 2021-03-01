@@ -11,4 +11,5 @@ colpermalink: derivatives
 twitter: https://twitter.com/opyn_
 github: https://github.com/opynfinance
 analytics: https://explore.duneanalytics.com/embed/query/4175/visualization/8123?api_key=B84C63i0V7LsBAeHpKjhBfGY2oMg96M7D9s9NnGI
+alternative-to: deribit
 ---

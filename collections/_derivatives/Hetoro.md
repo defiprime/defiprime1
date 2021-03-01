@@ -8,4 +8,5 @@ filter: Options
 product-description: Hetoro is a trading and data analysis platform for on-chain options.
 coltitle:  "Derivatives"
 colpermalink: derivatives
+alternative-to: deribit
 ---

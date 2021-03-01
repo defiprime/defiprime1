@@ -14,4 +14,5 @@ analytics: https://explore.duneanalytics.com/embed/query/2961/visualization/5722
 ticker: SNX
 contract: "0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F"
 decimals: 18
+alternative-to: deribit
 ---

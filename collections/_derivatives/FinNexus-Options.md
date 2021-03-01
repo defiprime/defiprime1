@@ -13,4 +13,5 @@ github: https://github.com/FinNexus
 ticker: FNX
 contract: "0xeF9Cd7882c067686691B6fF49e650b43AFBBCC6B"
 decimals: 18
+alternative-to: deribit
 ---

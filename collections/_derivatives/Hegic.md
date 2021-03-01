@@ -13,4 +13,5 @@ github: https://github.com/hegic
 analytics: https://duneanalytics.com/embeds/13349/26740/m29LXm8OQGhFNWf9KD70Rwtm813cReH36zMVHo45
 ticker: HEGIC
 contract: "0x584bc13c7d411c00c01a62e8019472de68768430"
+alternative-to: deribit
 ---
