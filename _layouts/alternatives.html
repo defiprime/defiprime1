@@ -106,7 +106,7 @@
         {% endif %}
 
         <section id='assets_cards'>
-
+          {% assign page_cards = page_cards | sort: "featured", "last" %}
           {% for asset_tool in page_cards  %}
        
 
