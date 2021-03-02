@@ -127,8 +127,16 @@ Lemniscap, founded in 2017, is a VC firm specialising in investments in emerging
 
 Notable investments: Futureswap, KAVA, The Graph, StakerDAO, Dharma
 
-- Website: [lemniscap.com](https://lemniscap.com/ )
+- Website: [lemniscap.com](https://lemniscap.com/)
 - Twitter: [@lemniscap](https://twitter.com/lemniscap)
+
+### ParaFi Capital
+ParaFi Capital, founded in 2018, is an alternative investment firm focused on blockchain and DeFi markets.
+
+Notable investments: 1inch, Rarible, BarnBridge, Uniswap, Polymarket
+
+- Website: [parafi.capital](https://www.parafi.capital/)
+- Twitter: [@paraficapital](https://twitter.com/paraficapital)
 
 
 The future of DeFi has never been more promising than it is today, and some VCs are taking notice and getting ahead of the curve. The aforementioned firms are well-positioned because they’re proven early arrivers in the arena, since DeFi’s wider enterprise possibilities are only just beginning. That said, expect many more VCs to dive into the ecosystem in the years ahead.
