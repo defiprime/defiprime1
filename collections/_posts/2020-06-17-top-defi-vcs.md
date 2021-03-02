@@ -133,7 +133,7 @@ Notable investments: Futureswap, KAVA, The Graph, StakerDAO, Dharma
 ### ParaFi Capital
 ParaFi Capital, founded in 2018, is an alternative investment firm focused on blockchain and DeFi markets.
 
-Notable investments: 1inch, Rarible, BarnBridge, Uniswap, Polymarket
+Notable investments: Aave, Synthetix, Maker, Uniswap, 1inch
 
 - Website: [parafi.capital](https://www.parafi.capital/)
 - Twitter: [@paraficapital](https://twitter.com/paraficapital)
