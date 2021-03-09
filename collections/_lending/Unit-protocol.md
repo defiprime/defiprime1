@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2021-03-08T08:44:25-07:00
 product-title: Unit protocol
 product-url: https://unit.xyz/
 image: /images/output_md/unit.xyz.png
