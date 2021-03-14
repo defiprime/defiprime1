@@ -3,19 +3,20 @@ git-date:
 layout: [blog, blog-amp]
 title:  "Indexed Finance"
 permalink: indexed-finance
-h1title: "Indexed Finance"
-pagetitle: "Indexed Finance"
-metadescription: ""
+h1title: "Indexed Finance Explained"
+pagetitle: "Indexed Finance - Capitalization-weighted Index Pools"
+metadescription: "Dillion shared Indexed Finance backstory, explained DeFi index investing niche and capitalization-weighted index pools"
 category: blog
-featured-image: /images/blog/
-intro: ""
+featured-image: /images/blog/indexed-og.png
+intro: "Dillion shared Indexed Finance backstory, explained DeFi index investing niche and capitalization-weighted index pools"
 author: Defiprime
-tags: ['Interview']
+tags: ['Interview', 'Derivatives']
 ---
+Dillion shared Indexed Finance backstory, explained DeFi index investing niche and capitalization-weighted index pools.    
 
 ### Hello! What's your background, and what are you working on?
 
-My name is Dillion Kellar, and I am the founder of Indexed Finance. I have been tinkering with Solidity for the past three years and before that I was working as a software engineer in xyz. My last gig before building Indexed was at Dharma, where I was hired to build a Layer-2 EVM to scale their wallet transactions. Unfortunately, it never made it to production :-)
+My name is Dillion Kellar, and I am the founder of [Indexed Finance](http://indexed.finance/). I have been tinkering with Solidity for the past three years and before that I was working as a software engineer in xyz. My last gig before building Indexed was at Dharma, where I was hired to build a Layer-2 EVM to scale their wallet transactions. Unfortunately, it never made it to production :-)
 
 After working on infra/l2 stuff for a couple of years I increasingly felt the urge to do something in the DeFi space. I have always been quite interested in finance and had all these ideas of stuff to build, but the traditional financial system doesn’t allow that. On Ethereum on the other hand, anyone can build whatever financial primitive they like and in many ways improve it to the way it works in traditional finance.
 
@@ -25,7 +26,7 @@ Crypto needed something similar in my opinion. In short, Indexed is a protocol f
 
 
 
-### What's Indexed Finance backstory? 
+### What's Indexed Finance backstory?
 
 I launched a beta version of Indexed in December 2020. At that point I had been working on the code for about 4-5 months just by myself and frankly had no idea what to expect once I would deploy the code on the mainnet.
 
@@ -67,7 +68,7 @@ Another goal is to make it as easy as possible for end-users to acquire our indi
 
 ### What are your future thoughts for the DeFi market?
 
-I think the governance discussion is super important for the future of DeFi. How can we involve more people into the governance of a protocol? What’s the role of the core team? How will protocols be governed in 2-5 years from now? In a world where every multi-billion dollar application is governed by a protocol, your protocol must be set up in a way that it can survive in the long-term. 
+I think the governance discussion is super important for the future of DeFi. How can we involve more people into the governance of a protocol? What’s the role of the core team? How will protocols be governed in 2-5 years from now? In a world where every multi-billion dollar application is governed by a protocol, your protocol must be set up in a way that it can survive in the long-term.
 
 
 ### Where can we go to learn more?
