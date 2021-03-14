@@ -12,4 +12,7 @@ colpermalink: exchanges
 twitter: https://twitter.com/1inchExchange
 github: https://github.com/CryptoManiacsZone
 analytics: https://explore.duneanalytics.com/embed/query/2999/visualization/5795?api_key=eMBgjol6pyg1Ly4ciQF7D0kj7iOONMMQWUQpzP0q
+ticker: 1INCH
+contract: "0x111111111117dc0aa78b770fa6a738034120c302"
+decimals: 18
 ---
