@@ -8,7 +8,7 @@
       "description": "Tokens listed at defiprime curated list"
     }
   },
-  "timestamp": "2021-03-08T00:00:00+00:00",
+  "timestamp": "2021-03-13T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -625,11 +625,19 @@
       "name": "1INCH",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x1b40183efb4dd766f11bda7a7c3ad8982e998421",
+      "symbol": "VSP",
+      "name": "VSP",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 20,
-    "patch": 1
+    "minor": 21,
+    "patch": 0
   }
 }
