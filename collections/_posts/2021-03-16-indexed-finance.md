@@ -16,7 +16,7 @@ Dillion shared Indexed Finance backstory, explained DeFi index investing niche a
 
 ### Hello! What's your background, and what are you working on?
 
-My name is Dillion Kellar, and I am the founder of [Indexed Finance](http://indexed.finance/). I have been tinkering with Solidity for the past three years and before that I was working as a software engineer in xyz. My last gig before building Indexed was at Dharma, where I was hired to build a Layer-2 EVM to scale their wallet transactions. Unfortunately, it never made it to production :-)
+My name is Dillion Kellar, and I am the founder of [Indexed Finance](http://indexed.finance/). I have been tinkering with Solidity for the past three years and did monstly contract work for various crypto projects. My last gig before building Indexed was at Dharma, where I was hired to build a Layer-2 EVM to scale their wallet transactions. Unfortunately, it never made it to production :-)
 
 After working on infra/l2 stuff for a couple of years I increasingly felt the urge to do something in the DeFi space. I have always been quite interested in finance and had all these ideas of stuff to build, but the traditional financial system doesn’t allow that. On Ethereum on the other hand, anyone can build whatever financial primitive they like and in many ways improve it to the way it works in traditional finance.
 
