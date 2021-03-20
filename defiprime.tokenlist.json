@@ -428,14 +428,6 @@
     },
     {
       "chainId": 1,
-      "address": "0x1695936d6a953df699c38ca21c2140d497c08bd9",
-      "symbol": "SYN",
-      "name": "SynLev",
-      "decimals": 18,
-      "tags": ["defi"]
-    },
-    {
-      "chainId": 1,
       "address": "0x36f3fd68e7325a35eb768f1aedaae9ea0689d723",
       "symbol": "ESD",
       "name": "Empty Set Dollar",
