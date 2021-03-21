@@ -3,22 +3,22 @@ git-date:
 layout: [blog, blog-amp]
 title:  "Spendless"
 permalink: spendless
-h1title: "Spendless"
-pagetitle: "Spendless"
-metadescription: ""
+h1title: "Spendless - Donate Without Spending Anything"
+pagetitle: "Spendless - Donate Without Spending Anything"
+metadescription: "Patryk shared Spendless backstory and told us how Spendless with the help of DeFi protocols let us donate an interest earned to the causes that matter"
 category: blog
-featured-image: /images/blog/
-intro: ""
+featured-image: /images/blog/spendless-og.png
+intro: "Patryk shared Spendless backstory and told us how Spendless with the help of DeFi protocols let us donate an interest earned to the causes that matter"
 author: Defiprime
 tags: ['Interview']
 ---
+Patryk shared Spendless backstory and told us how Spendless with the help of DeFi protocols let us donate an interest earned to the causes that matter.
+
 ### Hello! What's your background, and what are you working on?
 
-I’m Patryk and I’m a designer and a co-founder of Spendless. I got attracted to crypto because of the new product possibilities - we can finally do more stuff with money! I want to make finances more approachable by making it more fun and friendly. 
+I’m Patryk and I’m a designer and a co-founder of [Spendless](https://spendless.io). I got attracted to crypto because of the new product possibilities - we can finally do more stuff with money! I want to make finances more approachable by making it more fun and friendly.
 
-Spendless is an app to donate money without spending it. It works by depositing users’ DAI into Compound Finance to earn interest and then redirecting only the interest to a charitable campaign.
-
-Spendless shows users the continuously increasing impact that their funds are generating in the metric that matters most, like the number of trees planted or the number of megabytes archived from the user’s redirected interest.
+Spendless is an app to donate money without spending it. It works by depositing users’ DAI into Compound Finance to earn interest and then redirecting only the interest to a charitable campaign. Spendless shows users the continuously increasing impact that their funds are generating in the metric that matters most, like the number of trees planted or the number of megabytes archived from the user’s redirected interest.
 
 We’re live with four Spendless Campaigns that have had the following impact:
 
@@ -27,14 +27,14 @@ We’re live with four Spendless Campaigns that have had the following impact:
 *   Archived over 20,000 MB of the internet with Internet Archive ([https://archive.org](https://archive.org))
 *   NEW CAMPAIGN - Supported open source software and public goods with the Gitcoin Grants Matching Pool Fund ([https://gitcoin.co](https://gitcoin.com))
 
-Spendless is a new way to give - one that’s possible only thanks to DeFi money legos. Our app allows users to put their savings to work to support the philanthropic causes they value without having to spend down their balance. 
+Spendless is a new way to give - one that’s possible only thanks to DeFi money legos. Our app allows users to put their savings to work to support the philanthropic causes they value without having to spend down their balance.
 
 [![](/images/blog/spendless/image1.webp)](/images/blog/spendless/image1.webp)
 
 
-### What's Spendless backstory? 
+### What's Spendless backstory?
 
-Patrick and Victor been working on the kernel of the idea that became Spendless ever since the rDAI contracts were released at ETHBerlin Zwei in August 2019. I started talking to Patrick about how cool it would be to build a crypto version of the Team Trees social campaign. We came up with the idea for a tree planting campaign powered by DeFi interest. The three of us then partnered with Trees for the Future to create rTrees ([https://rtrees.dappy.dev](https://rtrees.dappy.dev)) in early 2020, which to date has generated enough interest from user funds to plant over 23,000 real trees! Spendless expands what we’ve learned from that project to make it a generalized DeFi giving platform. 
+Patrick and Victor been working on the kernel of the idea that became Spendless ever since the rDAI contracts were released at ETHBerlin Zwei in August 2019. I started talking to Patrick about how cool it would be to build a crypto version of the Team Trees social campaign. We came up with the idea for a tree planting campaign powered by DeFi interest. The three of us then partnered with Trees for the Future to create rTrees ([https://rtrees.dappy.dev](https://rtrees.dappy.dev)) in early 2020, which to date has generated enough interest from user funds to plant over 23,000 real trees! Spendless expands what we’ve learned from that project to make it a generalized DeFi giving platform.
 
 rDAI is a protocol for depositing user funds into interest-earning DeFi protocols but instead of keeping the earnings like in a traditional savings account, splitting the static principal from the growing interest amount. An rDAI user retains the power to redeem the DAI he or she originally deposited at any time, but the interest is claimable by the recipients chosen by the user.
 
@@ -43,7 +43,7 @@ The concept of being able to hang on to what you have but still take financially
 
 ### What went into building the Spendless?
 
-We wanted to lean into the wholesome vibe of doing good things. We strive to bring the magic out into the open to show off how compelling the new DeFi-powered economy can be. Slight gamification of the interface is supposed to provide instant rewards for the user and bring back memories of RTS games, where you see in real-time your impact on the world. I think we deal better with images than numbers, and we’re still experimenting with the best way to visualize your money streams. 
+We wanted to lean into the wholesome vibe of doing good things. We strive to bring the magic out into the open to show off how compelling the new DeFi-powered economy can be. Slight gamification of the interface is supposed to provide instant rewards for the user and bring back memories of RTS games, where you see in real-time your impact on the world. I think we deal better with images than numbers, and we’re still experimenting with the best way to visualize your money streams.
 
 We’re using lots of metaphors, like sleeping DAI and awake DAI, to illustrate that your money can be doing more without overwhelming you with financial lingo. Finances do not have to be cold and boring.
 
@@ -64,14 +64,14 @@ Our target users are anyone that wants to build their savings yet still contribu
 
 ### What’s your position on the regulatory landscape today?
 
-The emergence of collateralized stablecoins like DAI has been a great development in the space, as its transparent accounting ledger reduces the need for certain forms of regulatory oversight. We build with a spirit of responsible innovation and experimentation, which hopefully can help demonstrate non-speculative DeFi use cases that do not occasion a heavy regulatory touch. 
+The emergence of collateralized stablecoins like DAI has been a great development in the space, as its transparent accounting ledger reduces the need for certain forms of regulatory oversight. We build with a spirit of responsible innovation and experimentation, which hopefully can help demonstrate non-speculative DeFi use cases that do not occasion a heavy regulatory touch.
 
 
 ### What are your goals for the future?
 
 We want to make Spendless the most wholesome place in DeFi, with reliable and sustainable yields powering a new model of web3 philanthropy.  We’ll continue to add featured campaigns, and plan to launch private campaigns soon, allowing small groups to create campaigns that can be shared via private Spendless campaign URL to a particular donor set. We’re also exploring allowing trusted and influential community members to recommend sets of worthwhile causes - their followers would be able to split their interest stream among multiple causes in a single transaction.  
 
-As mentioned above our top challenge is finding the right solution to high gas costs on L1. We want to migrate to a L2 with ample yields and nominal gas costs, and are watching the space closely for cues about where that will be - stay tuned! 
+As mentioned above our top challenge is finding the right solution to high gas costs on L1. We want to migrate to a L2 with ample yields and nominal gas costs, and are watching the space closely for cues about where that will be - stay tuned!
 
 
 ### What are your future thoughts for the DeFi market?
