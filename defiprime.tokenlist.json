@@ -4,11 +4,11 @@
   "keywords": ["Defi", "defiprime", "curated"],
   "tags": {
     "defi": {
-      "name": "DeFi Token",
-      "description": "Tokens listed at defiprime curated list"
+      "name": "DeFi Tokens",
+      "description": "Tokens associated with the products listed at defiprime.com"
     }
   },
-  "timestamp": "2021-03-13T00:00:00+00:00",
+  "timestamp": "2021-03-21T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -625,11 +625,19 @@
       "name": "VSP",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x8ab7404063ec4dbcfd4598215992dc3f8ec853d7",
+      "symbol": "AKRO",
+      "name": "Akropolis",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 21,
+    "minor": 22,
     "patch": 0
   }
 }
