@@ -1,11 +1,11 @@
 ---
 git-date: 2021-03-25T08:44:25-07:00
-product-title: RAI
+product-title: Reflexer
 product-url: https://reflexer.finance/
 image: /images/output_md/reflexer.finance.jpg
 ecosystem: ethereum
 filter: Synthetic Assets
-product-description: RAI is a non pegged, ETH backed synthetic stable asset. It is useful as more "stable" collateral for other DeFi protocols (compared to ETH or BTC) or as a stable asset with an embedded interest rate.
+product-description: Reflexer is a platform where anyone can use their crypto collateral to issue reflex indexes 
 coltitle:  "Derivatives"
 colpermalink: derivatives
 twitter: https://twitter.com/reflexerfinance
