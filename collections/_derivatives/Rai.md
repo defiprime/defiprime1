@@ -1,0 +1,16 @@
+---
+git-date: 2021-03-25T08:44:25-07:00
+product-title: RAI
+product-url: https://reflexer.finance/
+image: /images/output_md/reflexer.finance.jpg
+ecosystem: ethereum
+filter: Synthetic Assets
+product-description: RAI is a non pegged, ETH backed stable asset. It is useful as more "stable" collateral for other DeFi protocols (compared to ETH or BTC) or as a stable asset with an embedded interest rate.
+coltitle:  "Derivatives"
+colpermalink: derivatives
+twitter: https://twitter.com/reflexerfinance
+github: https://github.com/reflexer-labs
+ticker: RAI
+contract: "0x03ab458634910aad20ef5f1c8ee96f1d6ac54919"
+decimals: 18
+---
