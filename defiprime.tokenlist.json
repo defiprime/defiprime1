@@ -8,7 +8,7 @@
       "description": "Tokens associated with the products listed at defiprime.com"
     }
   },
-  "timestamp": "2021-03-21T00:00:00+00:00",
+  "timestamp": "2021-03-25T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -633,11 +633,19 @@
       "name": "Akropolis",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x03ab458634910aad20ef5f1c8ee96f1d6ac54919",
+      "symbol": "RAI",
+      "name": "RAI",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 22,
+    "minor": 23,
     "patch": 0
   }
 }
