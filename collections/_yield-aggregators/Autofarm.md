@@ -1,10 +1,10 @@
 ---
-git-date: 2021-03-26T10:35:33-07:00
+git-date: 2021-03-28T10:35:33-07:00
 product-title: Autofarm
 product-url: https://autofarm.network/
 image: /images/output_md/autofarm.network.jpg
 ecosystem: bsc
-product-description: AutoFarm is a yield farming aggregator running on both Binance Smart Chain (BSC) and Huobi ECO chain (HECO).
+product-description: Autofarm is a cross-chain yield aggregator that enables users to get the return on their assets from yield farming pools by simply staking in Autofarm vaults.
 coltitle:  "Yield Aggregators"
 colpermalink: yield-aggregators
 twitter: https://twitter.com/autofarmnetwork
