@@ -9,4 +9,7 @@ coltitle:  "Yield Aggregators"
 colpermalink: yield-aggregators
 twitter: https://twitter.com/autofarmnetwork
 github: https://github.com/autofarm-network
+decimals: 18
+contract: "0xa184088a740c695e156f91f5cc086a06bb78b827"
+ticker: AUTO
 ---
