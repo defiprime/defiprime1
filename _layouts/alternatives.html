@@ -53,7 +53,7 @@
     })(window, document, 'script', 'dataLayer', 'GTM-PB9GWJD');</script>
   <!-- End Google Tag Manager -->
 </head>
-          
+
 {% assign all_projects = site.alternative-savings
   | concat: site.analytics
   | concat: site.assets-management-tools
@@ -108,7 +108,7 @@
         <section id='assets_cards'>
           {% assign page_cards = page_cards | sort: "featured", "last" %}
           {% for asset_tool in page_cards  %}
-       
+
 
           {% assign card_filters = '' | split: '' %}
           {% for filter in items_filters  %}
@@ -150,7 +150,7 @@
                     {% case market_tag %}
                     {% when "ethereum" %}
                     <span class="tooltip" title="Built on Ethereum or related to Ethereum ecosystem">
-                      {% include icons/ethereum.svg %}
+                      {% include icons/eth.svg %}
                     </span>
                     {% when "bsc" %}
                     <span class="tooltip" title="Built on BSC or related to BSC ecosystem">
