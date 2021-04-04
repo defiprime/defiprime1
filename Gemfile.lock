@@ -22,10 +22,8 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.7)
-    eventmachine (1.2.7-x64-mingw32)
     fastimage (2.2.3)
     ffi (1.15.0)
-    ffi (1.15.0-x64-mingw32)
     filesize (0.2.0)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
@@ -92,8 +90,6 @@ GEM
     nokogiri (1.11.2)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
-    nokogiri (1.11.2-x64-mingw32)
-      racc (~> 1.4)
     nuggets (1.6.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -108,16 +104,14 @@ GEM
     safe_yaml (1.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
-    sassc (2.4.0-x64-mingw32)
-      ffi (~> 1.9)
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     unicode-display_width (1.7.0)
     verbal_expressions (0.1.5)
+    webrick (1.7.0)
 
 PLATFORMS
-  ruby
-  x64-mingw32
+  x86_64-darwin-20
 
 DEPENDENCIES
   fastimage
@@ -133,6 +127,7 @@ DEPENDENCIES
   jekyll-toc
   jekyll-youtube
   liquid-c
+  webrick (~> 1.7)
 
 BUNDLED WITH
-   1.17.3
+   2.3.0.dev

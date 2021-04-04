@@ -12,3 +12,5 @@ gem 'jekyll-feed', group: :jekyll_plugins
 gem 'jekyll-tagging', group: :jekyll_plugins
 gem 'fastimage', group: :jekyll_plugins
 gem 'jekyll-lazy-load-image', require: 'jekyll-lazy-load-image/auto-execution', :path => "./gems/jekyll-lazy-load-image-master", group: :jekyll_plugins
+
+gem "webrick", "~> 1.7"
