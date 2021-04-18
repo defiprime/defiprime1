@@ -6,7 +6,7 @@ image: /images/output_md/ellipsis.finance.jpg
 ecosystem: bsc
 type: non-custodial
 filter: No KYC
-product-description: Ellipsis is a decentralized exchange that allows for swapping of stablecoins with low slippage on Binance Smart Chain.
+product-description: Ellipsis is a decentralized exchange that enables swapping of stablecoins with low slippage on Binance Smart Chain
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/ellipsisfi
