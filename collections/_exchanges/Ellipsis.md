@@ -1,11 +1,12 @@
 ---
-git-date:
+git-date: 2021-04-18T10:35:33-07:00
 product-title: Ellipsis
 product-url: https://www.ellipsis.finance/
 image: /images/output_md/ellipsis.finance.jpg
-ecosystem: ethereum, bsc
+ecosystem: bsc
 type: non-custodial
-product-description: Ellipsis is a decentralized exchange that allows for swapping of stablecoins with low slippage and minimal fees on Binance Smart Chain.
+filter: No KYC
+product-description: Ellipsis is a decentralized exchange that allows for swapping of stablecoins with low slippage on Binance Smart Chain.
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/ellipsisfi
