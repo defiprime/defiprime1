@@ -8,7 +8,7 @@
       "description": "Tokens associated with the products listed at defiprime.com"
     }
   },
-  "timestamp": "2021-03-25T00:00:00+00:00",
+  "timestamp": "2021-04-21T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -641,11 +641,19 @@
       "name": "RAI",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x77fba179c79de5b7653f68b5039af940ada60ce0",
+      "symbol": "FORTH",
+      "name": "FORTH",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 23,
+    "minor": 24,
     "patch": 0
   }
 }
