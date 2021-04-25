@@ -8,7 +8,7 @@
       "description": "Tokens associated with the products listed at defiprime.com"
     }
   },
-  "timestamp": "2021-04-21T00:00:00+00:00",
+  "timestamp": "2021-04-25T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -649,11 +649,19 @@
       "name": "FORTH",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xab37e1358b639fd877f015027bb62d3ddaa7557e",
+      "symbol": "LIEN",
+      "name": "LIEN",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 24,
+    "minor": 25,
     "patch": 0
   }
 }
