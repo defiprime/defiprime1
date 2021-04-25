@@ -1,11 +1,11 @@
 ---
-git-date: 2021-04-22T08:44:25-07:00
+git-date: 2021-04-25T08:44:25-07:00
 product-title: Lien
 product-url: https://lien.finance/
 image: /images/output_md/lien.finance.jpg
 ecosystem: ethereum
 filter: Options
-product-description: A protocol for creating Options and Stablecoins out of ETH.
+product-description: Lien is a protocol for creating Options and Stablecoins out of ETH.
 coltitle:  "Derivatives"
 colpermalink: derivatives
 twitter: https://twitter.com/lienfinance
