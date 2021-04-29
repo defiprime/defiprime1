@@ -10,6 +10,6 @@ coltitle:  "Infrastructure"
 colpermalink: infrastructure
 analytics: https://explore.duneanalytics.com/embed/query/2997/visualization/5790?api_key=HHhfNvIIhiL3oc0NpRLaA7akSjHySN2a9D8tWros
 ticker: KNC
-contract: "0xdd974D5C2e2928deA5F71b9825b8b646686BD200"
+contract: "0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202"
 decimals: 18
 ---
