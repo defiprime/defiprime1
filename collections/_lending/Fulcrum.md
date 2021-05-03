@@ -3,7 +3,7 @@ git-date:
 product-title: Fulcrum
 product-url: https://fulcrum.trade
 image: /images/output_md/fulcrum.trade.png
-ecosystem: ethereum
+ecosystem: ethereum, bsc
 filter: Lend Cryptocurrency
 product-description: Fulcrum is the platform for tokenized margin trading and lending,  enables users to lend assets for interest or enter into short/leveraged positions.
 coltitle:  "Margin trading"

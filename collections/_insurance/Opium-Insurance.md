@@ -3,7 +3,7 @@ git-date: 2021-02-02T10:02:11-07:00
 product-title: Opium Insurance
 product-url: https://opium.finance/
 image: /images/output_md/opium.finance.png
-ecosystem: ethereum
+ecosystem: ethereum, bsc, polygon
 product-description: Opium Insurance offers tradable, tokenized insurance position against smart-contract hacking or against stablecoin default.
 coltitle:  "Insurance"
 colpermalink: insurance
