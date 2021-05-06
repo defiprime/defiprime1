@@ -3,10 +3,10 @@ git-date: 2021-05-04T10:35:33-07:00
 product-title: Quickswap
 product-url: https://quickswap.exchange/#/
 image: /images/output_md/quickswap.exchange.jpg
-ecosystem: ethereum
+ecosystem: polygon
 type: non-custodial
 filter: No KYC
-product-description: QuickSwap is a permissionless decentralized exchange (DEX) based on Ethereum, powered by Matic Network’s Layer 2 scalability infrastructure.
+product-description: QuickSwap is a permissionless decentralized exchange based on Polygon Layer 2 scalability infrastructure
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/QuickswapDEX
