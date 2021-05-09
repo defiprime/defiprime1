@@ -3,7 +3,7 @@ git-date:
 product-title: OpenSea
 product-url: https://opensea.io?ref=0xebdb626c95a25f4e304336b1adcad0521a1bdca1
 image: /images/output_md/httpsopenseaio.png
-ecosystem: ethereum
+ecosystem: ethereum, polygon
 product-description: OpenSea is a peer to peer marketplace for crypto collectibles. [Interview with OpenSean co-founder Devin Finzer](/opensea).
 coltitle:  "Marketplaces"
 colpermalink: decentralized_marketplaces
