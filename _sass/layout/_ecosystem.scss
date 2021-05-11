@@ -118,7 +118,7 @@
         }
         &:first-child {
           background-color: #ff961c;
-          width: 76%;
+          width: 74%;
           padding: 20px 0 15px 40px;
           @media screen and(max-width: 1109px) {
             width: 68%;
@@ -154,7 +154,7 @@
         }
         &:nth-child(2),
         &:nth-child(3) {
-          width: 12%;
+          width: 13%;
           border-left: 2px solid #ffffff;
           padding: 0;
           justify-content: space-between;
@@ -176,7 +176,7 @@
               }
             }
             &:last-child {
-              font-size: 66px;              
+              font-size: 66px;
               padding-bottom: 30px;
               @media screen and(max-width: 1109px) {
                 font-size: 56px;
@@ -184,7 +184,7 @@
               @media screen and(max-width: 991px) {
                 font-size: 48px;
               }
-              @media(min-width: 768px){
+              @media (min-width: 768px) {
                 justify-content: center;
               }
               @media screen and(max-width: 767px) {
