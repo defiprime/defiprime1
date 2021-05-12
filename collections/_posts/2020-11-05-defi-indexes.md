@@ -70,6 +70,24 @@ At the moment, PieDAO is incentivizing users to take up positions in DEFI+L by o
 
 [DeFi Pulse](https://defipulse.com/) is one of the premier data providers for all-things DeFi. That’s why heads turned in September 2020 when the DeFi Pulse team teamed up with automated token manager Set Protocol on the [DeFi Pulse Index](https://www.tokensets.com/portfolio/dpi), an index token tracking the performance of the data provider’s curated token picks. In this sense, this index is automated (when it comes to rebalances) but it’s also manually curated by the DeFi Pulse team. The token has quickly gained popularity on account of DeFi Pulse’s respect in the space.
 
+## DEFI5 Index
+
+**Current tokens**: UNI (39.80%), AAVE (17%.86), COMP(17.52%), CRV (13.32%), SNX (10.14%), MKR (1.36%) \
+**Current AUM**: ~$20m \
+**Price per token**: ~$143
+
+![](/images/blog/defi-indexes/defi5-index.svg)
+
+DEFI5 is an index developed by Indexed Finance tracking the DeFi “blue chips”. At the time of writing it consists of UNI, CRV, AAVE, COMP, SNX and MKR. It has been the best performing DeFi index year to date, increasing by over 450% since January.
+
+With Indexed, the underlying tokens are held in AMM pools. The entire re-weighting and re-balancing to continuously track the DeFi market sector happens on-chain. There is no governance involved in the process whatsoever. When a new token project enters the Top 5 of DeFi projects by market cap, it gets automatically added to the DeFi5 index so you never miss out on any up and coming project.
+
+Being held in AMM pools, the tokens also generate swap fees which accrue to the DEFI5 holders and contribute to its performance.
+
+DEFI5 can be bought either on [Uniswap](https://app.uniswap.org/#/) (Ethereum) or on [Quickswap](https://quickswap.exchange/) (Polygon) if you want to avoid the high transaction fees on the Ethereum blockchain.
+
+Lastly, it's worth noting that DEFI5 doesn’t impose any management or “streaming fee” to holders. There is merely a burn fee which applies when DEFI5 holders want to redeem their tokens against the underlying. This fee can be avoided however, when market selling on Uniswap or Quickswap.
+
 
 ## CEX Traded Indexes
 
