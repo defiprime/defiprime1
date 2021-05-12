@@ -130,7 +130,7 @@
                     {% case market_tag %}
                     {% when "ethereum" %}
                     <span class="tooltip" title="Built on Ethereum or related to Ethereum ecosystem">
-                      {% include icons/eth.svg %}
+                      {% include icons/ethereum.svg %}
                     </span>
                     {% when "bsc" %}
                     <span class="tooltip" title="Built on BSC or related to BSC ecosystem">
@@ -151,6 +151,10 @@
                     {% when "eos" %}
                     <span class="tooltip" title="Built on EOS or related to EOS ecosystem">
                       {% include icons/eos.svg %}
+                    </span>
+                    {% when "polygon" %}
+                    <span class="tooltip" title="Built on Polygon or related to Polygon ecosystem">
+                      {% include icons/polygon.svg %}
                     </span>
                     {% endcase %}
                     {% endfor %}
