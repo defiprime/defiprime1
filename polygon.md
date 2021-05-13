@@ -1,11 +1,11 @@
 ---
 git-date:
 layout: ecosystem
-title: Polygon Ecosystem
-metadescription: List of the best Polygon Defi Projects, that leverages decentralized networks to transform old financial products into trustless and transparent protocols.
+title: Polygon DeFi Ecosystem
+metadescription: List of the best Polygon DeFi Projects, that leverages decentralized networks to transform old financial products into trustless and transparent protocols.
 permalink: polygon
-h1title: Polygon Ecosystem
-pagetitle: Polygon Ecosystem - List of the Best Polygon Projects
+h1title: Polygon DeFi Ecosystem
+pagetitle: Polygon DeFi Ecosystem - List of the Best Polygon Projects
 featured-image: /images/blog/polygon.png
 ---
 
