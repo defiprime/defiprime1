@@ -101,7 +101,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% assign yield-aggregators = site.yield-aggregators | where_exp:"item", "item.ecosystem contains 'polygon'" %}
 {% if yield-aggregators.size > 0 %}
 
-# Yield Aggregators on BSC
+# Yield Aggregators on Polygon
 
 {% for yield-aggregator in yield-aggregators %}
 
@@ -115,7 +115,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% assign exchanges = site.exchanges | where_exp:"item", "item.ecosystem contains 'polygon'" %}
 {% if exchanges.size > 0 %}
 
-# Decentralized exchanges on BSC
+# Decentralized exchanges on Polygon
 
 {% for exchange in exchanges %}
 
@@ -129,7 +129,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% assign margin-tradings = site.margin-trading | where_exp:"item", "item.ecosystem contains 'polygon'" %}
 {% if margin-tradings.size > 0 %}
 
-# Margin Trading on BSC
+# Margin Trading on Polygon
 
 {% for margin-trading in margin-tradings %}
 
@@ -157,7 +157,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% assign daos = site.dao | where_exp:"item", "item.ecosystem contains 'polygon'" %}
 {% if daos.size > 0 %}
 
-# BSC-based DAO Platforms
+# Polygon-based DAO Platforms
 
 {% for dao in daos %}
 
@@ -213,7 +213,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% assign lendings = site.lending | where_exp:"item", "item.ecosystem contains 'polygon'" %}
 {% if lendings.size > 0 %}
 
-# Decentralized Lending on BSC
+# Decentralized Lending on Polygon
 
 {% for lending in lendings %}
 
