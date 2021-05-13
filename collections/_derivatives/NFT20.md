@@ -3,7 +3,7 @@ git-date: 2021-02-28T10:35:33-07:00
 product-title: NFT20
 product-url: https://nft20.io/
 image: /images/output_md/nft20.io.png
-ecosystem: ethereum
+ecosystem: ethereum, polygon
 filter: Indices
 product-description: NFT20 is a permissionless protocol enabling trade, swap and sell NFTs that tokenized at indices pools.
 coltitle:  "Derivatives"

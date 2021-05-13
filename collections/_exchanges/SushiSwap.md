@@ -3,7 +3,7 @@ git-date: 2020-09-12T10:35:33-07:00
 product-title: SushiSwap
 product-url: https://sushi.com/
 image: /images/output_md/exchange.sushiswapclassic.org.png
-ecosystem: ethereum
+ecosystem: ethereum, bsc, polygon
 type: non-custodial
 filter: No KYC
 product-description: The SushiSwap exchange allows users to swap any ERC20 token into any other ERC20 token through automated liquidity pools

@@ -3,7 +3,7 @@ git-date:
 product-title: Torque
 product-url: https://torque.loans/
 image: /images/output_md/torque.loans.png
-ecosystem: ethereum, bsc
+ecosystem: ethereum, bsc, polygon
 filter: Borrow Cryptocurrency
 product-description: Torque is a powerful DeFi platform for borrowing assets with indefinite-term loans and fixed interest rates.
 coltitle:  "Lending"

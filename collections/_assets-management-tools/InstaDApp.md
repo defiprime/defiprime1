@@ -3,7 +3,7 @@ git-date:
 product-title: InstaDApp
 product-url: https://instadapp.io/
 image: /images/output_md/httpsinstadappio.png
-ecosystem: ethereum
+ecosystem: ethereum, polygon
 platform: web
 filter: native defi integration
 product-description: Instadapp is a platform providing users and developers with a single point of integration to access all the DeFi protocols
