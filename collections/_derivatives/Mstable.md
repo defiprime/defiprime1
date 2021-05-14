@@ -3,7 +3,7 @@ git-date: 2020-08-23T08:44:25-07:00
 product-title: mStable
 product-url: https://mstable.org
 image: /images/output_md/app.mstable.org.png
-ecosystem: ethereum
+ecosystem: ethereum, polygon
 filter: Synthetic Assets
 product-description: mStable combine stablecoins and tokenized assets into higher-yielding instruments. [mStable Explained. Interview with Co-founder](/mstable)
 coltitle:  "Derivatives"
