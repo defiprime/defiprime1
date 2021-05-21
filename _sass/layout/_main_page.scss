@@ -10,6 +10,9 @@
       background-repeat: no-repeat;
       background-position: center top;
       z-index: -1;
+      @media screen and (max-width: 992px) {
+        background-repeat: repeat;
+      }
     }
   }
 }
