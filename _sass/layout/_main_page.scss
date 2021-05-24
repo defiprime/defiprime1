@@ -9,6 +9,7 @@
       background-position: top;
       @media screen and (min-width: 641px) {
       background: url("/images/bg_top.svg");
+      background-size: contain;
       }
       @media screen and (max-width: 640px) {
       background: url("/images/bg_top_mobile.svg");
