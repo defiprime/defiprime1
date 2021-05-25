@@ -665,6 +665,14 @@
       "name": "QUICK",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xde30da39c46104798bb5aa3fe8b9e0e1f348163f",
+      "symbol": "GTC",
+      "name": "GTC",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
