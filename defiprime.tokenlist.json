@@ -412,14 +412,6 @@
     },
     {
       "chainId": 1,
-      "address": "0x875773784Af8135eA0ef43b5a374AaD105c5D39e",
-      "symbol": "IDLE",
-      "name": "IDLE",
-      "decimals": 18,
-      "tags": ["defi"]
-    },
-    {
-      "chainId": 1,
       "address": "0x4688a8b1f292fdab17e9a90c8bc379dc1dbd8713",
       "symbol": "COVER",
       "name": "COVER",
