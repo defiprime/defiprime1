@@ -4,8 +4,9 @@ product-title: DefiLlama
 product-url: https://defillama.com/ 
 image: /images/output_md/defillama.com.jpg
 ecosystem: ethereum
-product-description: "DefiLlama is a DeFI TVL aggregator, based on Uniswap Info and its fork SushiSwap.vision."
+product-description: "DefiLlama is a multi-chain TVL stats dashboard, where data connectors contributed and maintained by a community"
 coltitle:  "Analytics"
 colpermalink: defi-analytics
 twitter: https://twitter.com/DefiLlama
+github: https://github.com/DefiLlama
 ---
