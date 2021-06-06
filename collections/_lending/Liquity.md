@@ -1,12 +1,12 @@
 ---
-git-date: 2021-06-03:05:44-07:00
+git-date: 2021-06-06:05:44-07:00
 product-title: Liquity
 product-url: https://www.liquity.org
 image: /images/output_md/liquity.org.jpg
 ecosystem: ethereum
-product-description: "Liquity is a decentralized borrowing protocol that allows you to draw interest-free loans against Ether used as collateral."
+product-description: "Liquity is a decentralized borrowing protocol that allows you to draw interest-free loans against Ether used as collateral"
 type: non-custodial
-filter: Borrow Cryptocurrency, Lend Cryptocurrency
+filter: Borrow Cryptocurrency
 coltitle:  "Lending"
 colpermalink: decentralized-lending
 twitter: https://twitter.com/LiquityProtocol
