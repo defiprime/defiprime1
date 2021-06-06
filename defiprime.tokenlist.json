@@ -8,7 +8,7 @@
       "description": "Tokens associated with the products listed at defiprime.com"
     }
   },
-  "timestamp": "2021-05-05T00:00:00+00:00",
+  "timestamp": "2021-06-06T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -673,11 +673,19 @@
       "name": "ALCX",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x6dea81c8171d0ba574754ef6f8b412f2ed88c54d",
+      "symbol": "LQTY",
+      "name": "LQTY",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 26,
+    "minor": 28,
     "patch": 0
   }
 }
