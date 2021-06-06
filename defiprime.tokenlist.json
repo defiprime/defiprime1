@@ -665,6 +665,14 @@
       "name": "GTC",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xdbdb4d16eda451d0503b854cf79d55697f90c8df",
+      "symbol": "ALCX",
+      "name": "ALCX",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
