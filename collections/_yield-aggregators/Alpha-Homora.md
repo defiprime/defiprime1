@@ -4,7 +4,7 @@ product-title: Alpha Homora
 product-url: https://homora.alphafinance.io/
 image: /images/output_md/homora.alphafinance.io.png
 ecosystem: ethereum
-product-description: Alpha Homora is a leveraged yield farming and leveraged liquidity providing protocol
+product-description: "Alpha Homora is a leveraged yield farming and leveraged liquidity providing protocol. [Alpha Homora - Leveraged Yield Farming](/alpha-homora)"
 coltitle:  "Yield Aggregators"
 colpermalink: yield-aggregators
 twitter: https://twitter.com/alphafinancelab
