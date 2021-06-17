@@ -10,6 +10,6 @@ colpermalink: staking
 twitter: https://twitter.com/lidofinance
 github: https://github.com/lidofinance
 ticker: LDO
-smartcontract: "0x5a98fcbea516cf06857215779fd812ca3bef1b32"
+contract: "0x5a98fcbea516cf06857215779fd812ca3bef1b32"
 decimals: 18
 ---
