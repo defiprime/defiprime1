@@ -8,7 +8,7 @@
       "description": "Tokens associated with the products listed at defiprime.com"
     }
   },
-  "timestamp": "2021-06-06T00:00:00+00:00",
+  "timestamp": "2021-06-17T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -681,11 +681,19 @@
       "name": "LQTY",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x5a98fcbea516cf06857215779fd812ca3bef1b32",
+      "symbol": "LDO",
+      "name": "LDO",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 28,
+    "minor": 29,
     "patch": 0
   }
 }
