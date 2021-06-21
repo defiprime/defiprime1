@@ -67,7 +67,7 @@ permalink: tokenlist
             <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
             <span class="sign">$</span><span class="ticker-market-cap-value"></span>
           </td>
-          <td class="ticker-link"><a href="https://dex.guru/token/{{all_project.contract}}" target="_blank" class="button-trade">Analytics</a> </td>
+          <td class="ticker-link"><a href="https://dex.guru/token/{{all_project.contract}}-eth" target="_blank" class="button-trade">Analytics</a> </td>
         </tr>
         {% endif %}
       {% endfor %}

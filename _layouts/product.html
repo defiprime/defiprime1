@@ -89,7 +89,7 @@
             <div {% if link_presented == 1 %} style='flex: 0' {% endif %}> {{ page.product-description | markdownify }}
               {% if page.ticker  %}
                 <p>
-                {{ page.product-title }} token: <a href="https://dex.guru/token/{{ page.contract }}" target="_blank" rel="noopener">${{ page.ticker }}</a>.
+                {{ page.product-title }} token: <a href="https://dex.guru/token/{{ page.contract }}-eth" target="_blank" rel="noopener">${{ page.ticker }}</a>.
                 </p>
                 {% endif %}
                 {% if page.contract  %}
@@ -99,7 +99,7 @@
                   {% endif %}
             </div>
             {% if page.ticker  %}
-              <a href="https://dex.guru/token/{{ page.contract }}" class="button-trade" target="_blank" rel="noopener">${{ page.ticker }} Charts and Liquidity</a>
+              <a href="https://dex.guru/token/{{ page.contract }}-eth" class="button-trade" target="_blank" rel="noopener">${{ page.ticker }} Charts and Liquidity</a>
             {% endif %}
           </div>
         </div>
