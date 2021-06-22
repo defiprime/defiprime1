@@ -12,4 +12,6 @@ colpermalink: assets-management-tools
 twitter: https://twitter.com/instadapp
 github: https://github.com/instadapp
 analytics: https://explore.duneanalytics.com/embed/query/2995/visualization/5787?api_key=uNkIzkmG5epqbHsVygxccDhFc5UFmZVyZ4NWN3yv
+ticker: INST
+contract: "0x6f40d4a6237c257fff2db00fa0510deeecd303eb"
 ---
