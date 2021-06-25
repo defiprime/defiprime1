@@ -697,6 +697,14 @@
       "name": "INST",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x72f020f8f3e8fd9382705723cd26380f8d0c66bb",
+      "symbol": "PLOT",
+      "name": "PLOT",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
