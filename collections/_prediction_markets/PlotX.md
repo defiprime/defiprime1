@@ -3,7 +3,7 @@ git-date: 2021-06-24T05:46:00-07:00
 product-title: PlotX
 product-url: https://app.plotx.io
 image: /images/output_md/app.plotx.io.jpg
-ecosystem: ethereum
+ecosystem: ethereum, polygon
 product-description: PlotX is a cross-chain prediction market protocol that enables crypto traders to make crypto-asset price predictions in hourly, daily & weekly time frames.
 coltitle: "Prediction markets"
 colpermalink: prediction-markets
