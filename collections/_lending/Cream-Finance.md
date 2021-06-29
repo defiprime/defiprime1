@@ -3,7 +3,7 @@ git-date: 2020-09-06:05:44-07:00
 product-title: Cream Finance
 product-url: https://app.cream.finance/
 image: /images/output_md/app.cream.finance.png
-ecosystem: ethereum, bsc
+ecosystem: ethereum, bsc, polygon 
 product-description: "C.R.E.A.M. is a crypto lending and borrowing dApp based on the Compound protocol with altered pools assets and own governance token."
 type: non-custodial
 filter: Borrow Cryptocurrency, Lend Cryptocurrency
