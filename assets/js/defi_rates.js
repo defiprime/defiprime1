@@ -104,7 +104,7 @@ async function getCompoundApr() {
   return {
     supply: {
       dai: {
-        supply_rate: blockRateToApr(aprToday.data["dai"].supplyRate, 18),
+        supply_rate: aprToday.data["dai"].supplyRate * 100,
         supply_30d_apr: rateRatioToApr(
           aprToday.data["dai"].exchangeRate,
           apr30Days.data["dai_30d"].exchangeRate,
@@ -112,7 +112,7 @@ async function getCompoundApr() {
         ),
       },
       usdc: {
-        supply_rate: blockRateToApr(aprToday.data["usdc"].supplyRate, 18),
+        supply_rate: aprToday.data["usdc"].supplyRate * 100,
         supply_30d_apr: rateRatioToApr(
           aprToday.data["usdc"].exchangeRate,
           apr30Days.data["usdc_30d"].exchangeRate,
@@ -122,7 +122,7 @@ async function getCompoundApr() {
     },
     borrow: {
       dai: {
-        borrow_rate: blockRateToApr(aprToday.data["dai"].borrowRate, 18),
+        borrow_rate: aprToday.data["dai"].borrowRate * 100,
         borrow_30d_apr: rateRatioToApr(
           aprToday.data["dai"].borrowIndex,
           apr30Days.data["dai_30d"].borrowIndex,
@@ -130,7 +130,7 @@ async function getCompoundApr() {
         ),
       },
       usdc: {
-        borrow_rate: blockRateToApr(aprToday.data["usdc"].borrowRate, 18),
+        borrow_rate: aprToday.data["usdc"].borrowRate * 100,
         borrow_30d_apr: rateRatioToApr(
           aprToday.data["usdc"].borrowIndex,
           apr30Days.data["usdc_30d"].borrowIndex,
@@ -373,8 +373,9 @@ async function getTorqueApr() {
 async function getAaveApr() {
   const daiAddress = "0x6b175474e89094c44da98b954eedeac495271d0f";
   const usdcAddress = "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48";
+  const aavePoolAddress = "0xb53c1a33016b2dc2ff3653530bff1848a515c8c5";
   const aprToday = await fetch(
-    "https://api.thegraph.com/subgraphs/name/aave/protocol",
+    "https://api.thegraph.com/subgraphs/name/aave/protocol-v2",
     {
       method: "POST",
       headers: {
@@ -382,29 +383,31 @@ async function getAaveApr() {
         Accept: "application/json",
       },
       body: JSON.stringify({
-        query: `query ($id_dai: ID!, $id_usdc: ID!)
+        query: `query ($id_pool: ID!, $id_dai: Bytes!, $id_usdc: Bytes!)
         {
-          dai: reserve(id: $id_dai) {
-            symbol
-            id
-            liquidityRate
-            variableBorrowRate
-            stableBorrowRate
-            variableBorrowIndex
-            liquidityIndex
-          }
-          
-          usdc: reserve(id: $id_usdc) {
-            symbol
-            id
-            liquidityRate
-            variableBorrowRate
-            stableBorrowRate
-            variableBorrowIndex
-            liquidityIndex
-          }
-      }`,
+            pools(where: {id : $id_pool}) {              
+                dai: reserves(where: {underlyingAsset: $id_dai}) {
+                  symbol
+                  underlyingAsset
+                  liquidityRate
+                  variableBorrowRate
+                  stableBorrowRate
+                  variableBorrowIndex
+                  liquidityIndex
+                }
+                usdc: reserves(where: {underlyingAsset: $id_usdc}) {
+                  symbol
+                  underlyingAsset
+                  liquidityRate
+                  variableBorrowRate
+                  stableBorrowRate
+                  variableBorrowIndex
+                  liquidityIndex
+                }
+            }
+        }`,
         variables: {
+          id_pool: aavePoolAddress,
           id_dai: daiAddress,
           id_usdc: usdcAddress,
         },
@@ -412,7 +415,7 @@ async function getAaveApr() {
     }
   ).then((r) => r.json());
   const apr30Days = await fetch(
-    "https://api.thegraph.com/subgraphs/name/aave/protocol",
+    "https://api.thegraph.com/subgraphs/name/aave/protocol-v2",
     {
       method: "POST",
       headers: {
@@ -420,29 +423,32 @@ async function getAaveApr() {
         Accept: "application/json",
       },
       body: JSON.stringify({
-        query: `query ($id_dai: ID!, $id_usdc: ID!)
+        query: `query ($id_pool: ID!, $id_dai: Bytes!, $id_usdc: Bytes!)
         { 
-          dai_30d: reserve(id: $id_dai, block: {number: ${window.oldBlock.number}}) {
-            symbol
-            id
-            liquidityRate
-            variableBorrowRate
-            stableBorrowRate
-            variableBorrowIndex
-            liquidityIndex
+          pools(where: {id : $id_pool}, block: {number: ${window.oldBlock.number}}) {
+            dai_30d: reserves(where: {underlyingAsset: $id_dai}) {
+              symbol
+              underlyingAsset
+              liquidityRate
+              variableBorrowRate
+              stableBorrowRate
+              variableBorrowIndex
+              liquidityIndex
+            }
+            
+            usdc_30d: reserves(where: {underlyingAsset: $id_usdc}) {
+              symbol
+              underlyingAsset
+              liquidityRate
+              variableBorrowRate
+              stableBorrowRate
+              variableBorrowIndex
+              liquidityIndex
+            }
           }
-          
-          usdc_30d: reserve(id: $id_usdc, block: {number: ${window.oldBlock.number}}) {
-            symbol
-            id
-            liquidityRate
-            variableBorrowRate
-            stableBorrowRate
-            variableBorrowIndex
-            liquidityIndex
-          }
-      }`,
+        }`,
         variables: {
+          id_pool: aavePoolAddress,
           id_dai: daiAddress,
           id_usdc: usdcAddress,
         },
@@ -453,36 +459,42 @@ async function getAaveApr() {
     aave: {
       supply: {
         dai: {
-          supply_rate: aprToday.data["dai"].liquidityRate * 100,
+          supply_rate:
+            (aprToday.data.pools[0]["dai"][0].liquidityRate / 10 ** 27) * 100,
           supply_30d_apr: rateRatioToApr(
-            aprToday.data["dai"].liquidityIndex,
-            apr30Days.data["dai_30d"].liquidityIndex,
+            aprToday.data.pools[0]["dai"][0].liquidityIndex,
+            apr30Days.data.pools[0]["dai_30d"][0].liquidityIndex,
             window.secPassed
           ),
         },
         usdc: {
-          supply_rate: aprToday.data["usdc"].liquidityRate * 100,
+          supply_rate:
+            (aprToday.data.pools[0]["usdc"][0].liquidityRate / 10 ** 27) * 100,
           supply_30d_apr: rateRatioToApr(
-            aprToday.data["usdc"].liquidityIndex,
-            apr30Days.data["usdc_30d"].liquidityIndex,
+            aprToday.data.pools[0]["usdc"][0].liquidityIndex,
+            apr30Days.data.pools[0]["usdc_30d"][0].liquidityIndex,
             window.secPassed
           ),
         },
       },
       borrow: {
         dai: {
-          borrow_rate: aprToday.data["dai"].variableBorrowRate * 100,
+          borrow_rate:
+            (aprToday.data.pools[0]["dai"][0].variableBorrowRate / 10 ** 27) *
+            100,
           borrow_30d_apr: rateRatioToApr(
-            aprToday.data["dai"].variableBorrowIndex,
-            apr30Days.data["dai_30d"].variableBorrowIndex,
+            aprToday.data.pools[0]["dai"][0].variableBorrowIndex,
+            apr30Days.data.pools[0]["dai_30d"][0].variableBorrowIndex,
             window.secPassed
           ),
         },
         usdc: {
-          borrow_rate: aprToday.data["usdc"].variableBorrowRate * 100,
+          borrow_rate:
+            (aprToday.data.pools[0]["usdc"][0].variableBorrowRate / 10 ** 27) *
+            100,
           borrow_30d_apr: rateRatioToApr(
-            aprToday.data["usdc"].variableBorrowIndex,
-            apr30Days.data["usdc_30d"].variableBorrowIndex,
+            aprToday.data.pools[0]["usdc"][0].variableBorrowIndex,
+            apr30Days.data.pools[0]["usdc_30d"][0].variableBorrowIndex,
             window.secPassed
           ),
         },
@@ -490,10 +502,12 @@ async function getAaveApr() {
     },
     aave_fixed: {
       dai: {
-        borrow_rate: aprToday.data["dai"].stableBorrowRate * 100,
+        borrow_rate:
+          (aprToday.data.pools[0]["dai"][0].stableBorrowRate / 10 ** 27) * 100,
       },
       usdc: {
-        borrow_rate: aprToday.data["usdc"].stableBorrowRate * 100,
+        borrow_rate:
+          (aprToday.data.pools[0]["usdc"][0].stableBorrowRate / 10 ** 27) * 100,
       },
     },
   };
@@ -577,7 +591,7 @@ async function getNotionalApr() {
 async function getAPRData() {
   const compoundData = await getCompoundApr();
   const dydxData = await getDydxApr();
-  // const aaveData = await getAaveApr();
+  const aaveData = await getAaveApr();
   const fulcrumData = await getFulcrumApr();
   const notionalData = await getNotionalApr();
 
@@ -586,15 +600,15 @@ async function getAPRData() {
     supply: {
       compound_v2: compoundData.supply,
       dydx: dydxData.supply,
-      // aave: aaveData.aave.supply,
+      aave: aaveData.aave.supply,
       fulcrum: fulcrumData.supply,
       notional: notionalData.supply,
     },
     borrow: {
       compound_v2: compoundData.borrow,
       dydx: dydxData.borrow,
-      // aave: aaveData.aave.borrow,
-      // aave_fixed: aaveData.aave_fixed,
+      aave: aaveData.aave.borrow,
+      aave_fixed: aaveData.aave_fixed,
       fulcrum: fulcrumData.borrow,
       notional: notionalData.borrow,
       // "torque": torqueData
