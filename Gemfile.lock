@@ -88,9 +88,11 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    nokogiri (1.11.3-x64-mingw32)
+    nokogiri (1.11.7-x64-mingw32)
       racc (~> 1.4)
-    nokogiri (1.11.3-x86_64-darwin)
+    nokogiri (1.11.7-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.11.7-x86_64-linux)
       racc (~> 1.4)
     nuggets (1.6.0)
     pathutil (0.16.2)
@@ -118,6 +120,7 @@ PLATFORMS
   x64-mingw32
   x86_64-darwin-18
   x86_64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   fastimage
