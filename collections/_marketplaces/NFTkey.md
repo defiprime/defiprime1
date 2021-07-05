@@ -1,10 +1,10 @@
 ---
-git-date: 2021-06-30T02:35:33-07:00
+git-date: 2021-07-05T02:35:33-07:00
 product-title: NFTKEY
 product-url: https://nftkey.app
 image: /images/output_md/nftkey.app.jpg
-ecosystem: ethereum
-product-description: Unlock quick and easy access to digital collectibles and explore, buy and sell NFTs from different blockchains and artists
+ecosystem: ethereum, bsc
+product-description: NFTKEY is a decentralised NFT marketplace that allows Ethereum and Binance Smart Chain NFTs to be listed, bid on, bought and sold without any centralized servers
 coltitle:  "Marketplaces"
 filter: digital art, NFTs
 colpermalink: decentralized_marketplaces
