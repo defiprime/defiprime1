@@ -5,19 +5,19 @@ title:  "Partially Collateralized Options with Opyn"
 permalink: partially-collateralized-options-with-opyn
 h1title: "Partially Collateralized Options with Opyn"
 pagetitle: "Partially Collateralized Options with Opyn"
-metadescription: ""
+metadescription: "Options are derivatives contracts that give the buyer the right, but not the obligation, to either buy or sell a fixed amount of an underlying asset at a fixed price on or before a certain date, commonly referred to as the expiry date"
 category: blog
-featured-image: /images/blog/
+featured-image: /images/blog/options-og.png
 intro: ""
 author: Prospere
-tags: ['Interview']
+tags: ['DeFi Guides', 'Derivatives']
 ---
 
 ### What are Options?
 
-Options are derivatives contracts that give the buyer the right, but not the obligation, to either buy or sell a fixed amount of an underlying asset at a fixed price on or before a certain date, commonly referred to as the expiry date. In DeFi, underlying assets can include any ERC-20 assets, such as: WETH, WBTC, UNI, YFI, SNX, among others. 
+Options are derivatives contracts that give the buyer the right, but not the obligation, to either buy or sell a fixed amount of an underlying asset at a fixed price on or before a certain date, commonly referred to as the expiry date. In DeFi, underlying assets can include any ERC-20 assets, such as: WETH, WBTC, UNI, YFI, SNX, among others.
 
-People use options for a variety of reasons. The primary reasons include yield / income generation, speculation, and hedging. For the purpose of this article, we’ll focus on generating yield through selling options and explain how DeFi traders can take advantage of the capital efficiency benefits of partially collateralized options. In short, partial collateralization allows options to be collateralized with less than their max loss (&lt;1 asset for call, &lt;strike for puts), enabling users to sell more options with the same amount of capital. 
+People use options for a variety of reasons. The primary reasons include yield / income generation, speculation, and hedging. For the purpose of this article, we’ll focus on generating yield through selling options and explain how DeFi traders can take advantage of the capital efficiency benefits of partially collateralized options. In short, partial collateralization allows options to be collateralized with less than their max loss (&lt;1 asset for call, &lt;strike for puts), enabling users to sell more options with the same amount of capital.
 
 
 ### Background
@@ -68,10 +68,10 @@ Full details [here](https://medium.com/opyn/partially-collateralized-options-now
 
 ### Opyn Partial Collateralization Tutorial
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4Rvy-XOcg3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%"  src="https://www.youtube.com/embed/4Rvy-XOcg3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 \
-Link: [https://youtu.be/4Rvy-XOcg3Y](https://youtu.be/4Rvy-XOcg3Y) 
+Link: [https://youtu.be/4Rvy-XOcg3Y](https://youtu.be/4Rvy-XOcg3Y)
 
 
 ### Partial Collateralization Examples (*numbers made up for ease of understanding)
@@ -122,7 +122,7 @@ On July 9, the settlement price of ETH is $2050
 Since the price of ETH stayed below the liquidation price of $2178 before the expiration date, Aparna’s options expire worthless and Aparna can redeem the premium + her full collateral.
 
 
-#### Collateralization Ratio 33.3% 
+#### Collateralization Ratio 33.3%
 
 * **Option:** 2400 call
 * **Option Expiration:** &lt; 1 week
