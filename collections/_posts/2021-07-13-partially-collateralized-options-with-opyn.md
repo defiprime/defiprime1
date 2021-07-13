@@ -68,7 +68,7 @@ Full details [here](https://medium.com/opyn/partially-collateralized-options-now
 
 ### Opyn Partial Collateralization Tutorial
 
-<iframe width="100%"  src="https://www.youtube.com/embed/4Rvy-XOcg3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="800px" height="600px" src="https://www.youtube.com/embed/4Rvy-XOcg3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 \
 Link: [https://youtu.be/4Rvy-XOcg3Y](https://youtu.be/4Rvy-XOcg3Y)
