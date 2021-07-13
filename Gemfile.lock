@@ -8,7 +8,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.7.0)
+    addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     algolia_html_extractor (2.6.4)
       json (~> 2.0)
@@ -92,6 +92,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.11.3-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.11.3-x86_64-linux)
+      racc (~> 1.4)
     nuggets (1.6.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -118,6 +120,7 @@ PLATFORMS
   x64-mingw32
   x86_64-darwin-18
   x86_64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   fastimage
