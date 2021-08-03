@@ -1,5 +1,5 @@
 ---
-git-date: 
+git-date: 2021-08-03T10:02:11-07:00
 product-title: Rainbow
 product-url: https://rainbow.me
 image: /images/output_md/rainbow.me.jpg
