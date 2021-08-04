@@ -5,10 +5,10 @@ title:  "NFT Gaming Explained"
 permalink: nft-gaming-explained
 h1title: "NFT Gaming Explained"
 pagetitle: "NFT Gaming Explained"
-metadescription: ""
+metadescription: "NFT games may have the potential to become the standard for the gaming market if it sees enough attention and popularity"
 category: blog
-featured-image: /images/blog/
-intro: ""
+featured-image: /images/blog/nftgaming-og.png
+intro: "NFT games may have the potential to become the standard for the gaming market if it sees enough attention and popularity"
 author: LimePierre
 tags: ['DeFi Guides', 'NFTs']
 ---
@@ -17,11 +17,11 @@ Ethereum is a very open platform, with many possibilities and media able to be e
 
 Before we cover the NFT gaming niche, let's talk about NFTs and blockchain itself. Whenever you tokenize something from the above and more, you get what we call a non-fungible token, or an NFT. NFTs are very tradable and are good representations of the media that is attached to it. With Ethereum as open as it is, most NFT projects run on the Ethereum blockchain, while others run on the Wax blockchains and more.
 
-The most popular template for modern NFTs is the ERC-721 standard. ERC-721 is the exact opposite of ERC-20 tokens. While ERC-20 tokens are fungible and easily interchangeable and exchangeable with each other, what makes ERC-721 explicitly different is that they are scarce, rare, and unique, thus making them not exchangeable with any other ERC-721 tokens. A popular example that also represents this is that while ERC-20s can be thought of as digital currency,  ERC-721s are collectibles, like baseball trading cards or Pokémon cards. 
+The most popular template for modern NFTs is the ERC-721 standard. ERC-721 is the exact opposite of ERC-20 tokens. While ERC-20 tokens are fungible and easily interchangeable and exchangeable with each other, what makes ERC-721 explicitly different is that they are scarce, rare, and unique, thus making them not exchangeable with any other ERC-721 tokens. A popular example that also represents this is that while ERC-20s can be thought of as digital currency,  ERC-721s are collectibles, like baseball trading cards or Pokémon cards.
 
-Because NFTs are unique in themselves and can be tokenized into almost anything, there are now many pieces of media as NFTs. NFTs have definitely become a hot topic, with the NFT craze in 2020 and 2021 popularizing and expanding the market for them, which is exactly why NFT gaming has become such a hot topic, since the audience for NFTs has exploded so much recently. 
+Because NFTs are unique in themselves and can be tokenized into almost anything, there are now many pieces of media as NFTs. NFTs have definitely become a hot topic, with the NFT craze in 2020 and 2021 popularizing and expanding the market for them, which is exactly why NFT gaming has become such a hot topic, since the audience for NFTs has exploded so much recently.
 
-Gaming in itself is an extremely big market. Already in 2021, it has a valuation of close to $180 Billion dollars, and an estimated valuation of $196 Billion in 2021. 
+Gaming in itself is an extremely big market. Already in 2021, it has a valuation of close to $180 Billion dollars, and an estimated valuation of $196 Billion in 2021.
 
 
 ![](/images/blog/nft-gaming-explained/image1.webp)
@@ -66,8 +66,8 @@ Battle Racers is a game packed full of action and racing in which you can design
 
 ### Conclusion
 
-NFT gaming certainly seems to be poised for success, with how big the gaming and NFT markets are, but recently the NFT craze has very clearly slowed down, so growth might be slow but plentiful. 
+NFT gaming certainly seems to be poised for success, with how big the gaming and NFT markets are, but recently the NFT craze has very clearly slowed down, so growth might be slow but plentiful.
 
-NFT games may have the potential to become the standard for the gaming market if it sees enough attention and popularity. Already they have made major changes to games and made it much more fun for players. From there, it could be a very major change to the way people play games and could be as major as Doom was to the market or 3D was for environments. 
+NFT games may have the potential to become the standard for the gaming market if it sees enough attention and popularity. Already they have made major changes to games and made it much more fun for players. From there, it could be a very major change to the way people play games and could be as major as Doom was to the market or 3D was for environments.
 
-Many more NFL games are to come, and some have already hit success, but NFTs are a blank canvas, a tech that can be used for many things, so maybe NFT games themselves might be changed in the future again. Only time will tell.
+Many more NFT games are to come, and some have already hit success, but NFTs are a blank canvas, a tech that can be used for many things, so maybe NFT games themselves might be changed in the future again. Only time will tell.
