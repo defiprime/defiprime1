@@ -8,7 +8,7 @@
       "description": "Tokens associated with the products listed at defiprime.com"
     }
   },
-  "timestamp": "2021-06-17T00:00:00+00:00",
+  "timestamp": "2021-08-11T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -705,11 +705,19 @@
       "name": "PLOT",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x8f8221afbb33998d8584a2b05749ba73c37a938a",
+      "symbol": "REQ",
+      "name": "REQ",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 29,
+    "minor": 30,
     "patch": 0
   }
 }
