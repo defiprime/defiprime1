@@ -9,6 +9,7 @@ product-description: Cryptex Finance tokenized Total Cryptocurrency Market Capit
 coltitle:  "Derivatives"
 colpermalink: derivatives
 twitter: https://twitter.com/cryptexfinance
+github: https://github.com/cryptexfinance
 ticker: CTX
 contract: "0x321c2fe4446c7c963dc41dd58879af648838f98d"
 decimals: 18
