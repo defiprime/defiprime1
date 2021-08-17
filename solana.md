@@ -6,7 +6,7 @@ metadescription: List of the best Solana DeFi Projects, that leverages decentral
 permalink: solana
 h1title: Solana DeFi Ecosystem
 pagetitle: Solana DeFi Ecosystem - List of the Best Solana Projects
-featured-image: /images/blog/solana.png
+featured-image: /images/og-solana.png
 ---
 
 {% assign all_projects = site.alternative-savings
