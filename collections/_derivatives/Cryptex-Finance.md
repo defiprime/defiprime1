@@ -5,7 +5,7 @@ product-url: https://cryptex.finance/
 image: /images/output_md/cryptex.finance.jpg
 ecosystem: ethereum
 filter: Synthetic Assets
-product-description: Cryptex Finance tokenized Total Cryptocurrency Market Capitalization into TCAP token that gives holders real-time price exposure to this key metric
+product-description: Cryptex Finance tokenized Total Cryptocurrency Market Capitalization into TCAP token that gives holders real-time price exposure to this key metric. [Interview with founder](/tcap).
 coltitle:  "Derivatives"
 colpermalink: derivatives
 twitter: https://twitter.com/cryptexfinance
