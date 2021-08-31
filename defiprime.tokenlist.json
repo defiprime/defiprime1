@@ -8,7 +8,7 @@
       "description": "Tokens associated with the products listed at defiprime.com"
     }
   },
-  "timestamp": "2021-08-15T00:00:00+00:00",
+  "timestamp": "2021-08-31T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -309,8 +309,8 @@
     {
       "chainId": 1,
       "address": "0x8e870d67f660d95d5be530380d0ec0bd388289e1",
-      "symbol": "PAX",
-      "name": "Paxos Standard",
+      "symbol": "USDP",
+      "name": "Pax Dollar",
       "decimals": 18,
       "tags": ["defi"]
     },
@@ -733,7 +733,7 @@
   ],
   "version": {
     "major": 1,
-    "minor": 31,
+    "minor": 32,
     "patch": 0
   }
 }
