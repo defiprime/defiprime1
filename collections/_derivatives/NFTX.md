@@ -5,7 +5,7 @@ product-url: https://nftx.org/
 image: /images/output_md/nftx.jpg
 ecosystem: ethereum
 filter: Indices
-product-description: NFTX is a platform for making ERC20 tokens that are backed by NFT collectibles and governed by a community-owned protocol
+product-description: NFTX is a platform for making ERC20 tokens that are backed by NFT collectibles and governed by a community-owned protocol. [Interview with core contributor](/nftx).
 coltitle:  "Derivatives"
 colpermalink: derivatives
 twitter: https://twitter.com/NFTX_
