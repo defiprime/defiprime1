@@ -6,7 +6,7 @@ image: /images/output_md/step.finance.jpg
 ecosystem: solana
 platform: web
 filter: Asset Management Platforms
-product-description: Step Finance is a dashboard for Solana blockchain that let you visualize, analyze, aggregate, and execute transactions
+product-description: Step Finance is a dashboard for Solana blockchain that let you visualize, analyze, aggregate, and execute transactions. [Interview with co-founder](/step-finance).
 coltitle:  "Asset Management Tools"
 colpermalink: assets-management-tools
 twitter: https://twitter.com/stepfinance_
