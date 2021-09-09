@@ -8,7 +8,7 @@
       "description": "Tokens associated with the products listed at defiprime.com"
     }
   },
-  "timestamp": "2021-08-31T00:00:00+00:00",
+  "timestamp": "2021-09-08T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -729,11 +729,19 @@
       "name": "TCAP",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x92d6c1e31e14520e676a687f0a93788b716beff5",
+      "symbol": "DYDX",
+      "name": "DYDX",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 32,
+    "minor": 33,
     "patch": 0
   }
 }

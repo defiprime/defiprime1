@@ -12,4 +12,6 @@ filter: Ethereum, Bitcoin, Perpetual
 twitter: https://twitter.com/dydxprotocol
 github: https://github.com/dydxprotocol/
 analytics: https://explore.duneanalytics.com/embed/query/2873/visualization/5534?api_key=ZcYHEmH4ZQrNEKcN22tNrTn2HvYl8tNFUjVwh7WG
+ticker: DYDX
+contract: "0x92d6c1e31e14520e676a687f0a93788b716beff5"
 ---
