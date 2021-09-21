@@ -3,8 +3,8 @@ git-date: 2019-07-03T14:03:48-07:00
 product-title: P2P Validator
 product-url: https://p2p.org/
 image: /images/output_md/p2p.org.png
-product-description: P2P Validator provide staking service to help you generate rewards on your blockchain assets across 9+ networks within a single interface.
-filter: Tezos, Cosmos, Kava, IRISnet, Kusama, Terra, Algorand, Kava, Solana, Cardano, Avalanche, Polkadot
+product-description: P2P Validator provides staking services to help you generate rewards on your assets across 25+ groundbreaking networks in the blockchain space. The P2P team has extensive experience in setting up secure and efficient staking infrastructure.
+filter: Tezos, Cosmos, Polkadot, Solana, Kusama, Kava, Ethereum 2.0, TheGraph, Cardano, Nucypher, IRISnet, Flow, DAObet, Oasis, Terra, Near, Marlin, Mina, Regen, Persistence
 coltitle:  "Staking"
 colpermalink: staking
 twitter: https://twitter.com/p2pvalidator
