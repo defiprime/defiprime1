@@ -8,7 +8,7 @@
       "description": "Tokens associated with the products listed at defiprime.com"
     }
   },
-  "timestamp": "2021-09-08T00:00:00+00:00",
+  "timestamp": "2021-10-05T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -757,7 +757,7 @@
   ],
   "version": {
     "major": 1,
-    "minor": 33,
+    "minor": 34,
     "patch": 0
   }
 }
