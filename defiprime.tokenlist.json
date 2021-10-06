@@ -737,6 +737,22 @@
       "name": "DYDX",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x6123b0049f904d730db3c36a31167d9d4121fa6b",
+      "symbol": "RBN",
+      "name": "RBN",
+      "decimals": 18,
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x73968b9a57c6e53d41345fd57a6e6ae27d6cdb2f",
+      "symbol": "SDT",
+      "name": "SDT",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {

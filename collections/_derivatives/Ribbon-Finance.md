@@ -5,9 +5,12 @@ product-url: https://www.ribbon.finance/
 image: /images/output_md/ribbon.finance.jpg
 ecosystem: ethereum
 filter: Synthetic Assets
-product-description: Ribbon Finance is the first crypto structured products protocol on Ethereum. Use Theta Vault to earn yield on BTC & ETH.
-coltitle:  "Derivatives"
+product-description: Ribbon Finance uses financial engineering to create structured products that deliver sustainable yield.
+coltitle: "Derivatives"
 colpermalink: derivatives
 twitter: https://twitter.com/ribbonfinance
 github: https://github.com/ribbon-finance
+ticker: RBN
+contract: "0x6123b0049f904d730db3c36a31167d9d4121fa6b"
+decimals: 18
 ---
