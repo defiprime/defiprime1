@@ -1,101 +1,101 @@
 Defiprime:
-    name: Nick Sawinyh
-    twitter: https://twitter.com/sawinyh
-    linkedin: https://www.linkedin.com/in/sawinyh/
-    bio: Nick Sawinyh is an LA-based crypto entrepreneur. After having spent over four years in the blockchain industry, Nick founded DeFiprime in 2019, with the idea to provide information about emerging DeFi ecosystem. He owns modest amounts of various cryptocurrencies.
-    image: /images/sawinyh.jpg
+  name: Nick Sawinyh
+  twitter: https://twitter.com/sawinyh
+  linkedin: https://www.linkedin.com/in/sawinyh/
+  bio: Nick Sawinyh is an LA-based crypto entrepreneur. After having spent over four years in the blockchain industry, Nick founded DeFiprime in 2019, with the idea to provide information about emerging DeFi ecosystem. He owns modest amounts of various cryptocurrencies.
+  image: /images/sawinyh.jpg
 sawinyh:
-    name: Nick Sawinyh
-    twitter: https://twitter.com/sawinyh
-    linkedin: https://www.linkedin.com/in/sawinyh/
-    bio: Nick Sawinyh is an LA-based crypto entrepreneur. After having spent over four years in the blockchain industry, Nick founded DeFiprime in 2019, with the idea to provide information about emerging DeFi ecosystem. He owns modest amounts of various cryptocurrencies.
-    image: /images/sawinyh.jpg
+  name: Nick Sawinyh
+  twitter: https://twitter.com/sawinyh
+  linkedin: https://www.linkedin.com/in/sawinyh/
+  bio: Nick Sawinyh is an LA-based crypto entrepreneur. After having spent over four years in the blockchain industry, Nick founded DeFiprime in 2019, with the idea to provide information about emerging DeFi ecosystem. He owns modest amounts of various cryptocurrencies.
+  image: /images/sawinyh.jpg
 goldfarb:
-    name: Seth Goldfarb
-    twitter: https://twitter.com/goldenchaosgod
-    bio: Seth Goldfarb is a Seattle-based writer who helps businesses working with blockchain and distributed ledger technology understand and convey the stories of their success. Seth is not an investment advisor and couldn’t give you anything constituting “investment advice,” even if you asked for it.
-    image: /images/goldfarb.jpg
+  name: Seth Goldfarb
+  twitter: https://twitter.com/goldenchaosgod
+  bio: Seth Goldfarb is a Seattle-based writer who helps businesses working with blockchain and distributed ledger technology understand and convey the stories of their success. Seth is not an investment advisor and couldn’t give you anything constituting “investment advice,” even if you asked for it.
+  image: /images/goldfarb.jpg
 knab:
-    name: Megan Knab
-    twitter: https://twitter.com/knotmegan
-    bio: Megan is the founder & CEO of <a href="https://veriledger.io/">VeriLedger</a>, an accounting system that automates reconciliation and supports cryptocurrencies. Her background is in accounting and building scalable operations systems.
-    image: /images/knab.jpg
+  name: Megan Knab
+  twitter: https://twitter.com/knotmegan
+  bio: Megan is the founder & CEO of <a href="https://veriledger.io/">VeriLedger</a>, an accounting system that automates reconciliation and supports cryptocurrencies. Her background is in accounting and building scalable operations systems.
+  image: /images/knab.jpg
 chrisblec:
-    name: Chris Blec
-    twitter: https://twitter.com/chrisblec
-    bio: Chris Blec founded <a href="https://defiglobal.net">DeFi Global (DFG)</a> in 2019 after a twenty year career running growth efforts for media & tech companies including TheStreet, UFC, Impact Wrestling, and edtech startups One Month and Designlab. DFG is dedicated to providing growth and end-user educational services to projects that are genuine in their interest of furthering the cause of decentralized finance.
-    image: /images/chrisblec.jpg
+  name: Chris Blec
+  twitter: https://twitter.com/chrisblec
+  bio: Chris Blec founded <a href="https://defiglobal.net">DeFi Global (DFG)</a> in 2019 after a twenty year career running growth efforts for media & tech companies including TheStreet, UFC, Impact Wrestling, and edtech startups One Month and Designlab. DFG is dedicated to providing growth and end-user educational services to projects that are genuine in their interest of furthering the cause of decentralized finance.
+  image: /images/chrisblec.jpg
 berenzon:
-    name: Dmitriy Berenzon
-    twitter: https://twitter.com/dberenzon
-    bio: Dmitriy is a Research Partner at <a href="https://www.zenith.ventures/">Zenith Ventures</a>, a multi-strategy venture fund for the blockchain ecosystem. Prior to this, Dmitriy worked with CoinFund, where he conducted investment due diligence and research, and co-founded a cryptoasset portfolio management platform, where he led business development and operations. Prior to this, Dmitriy was an Assistant Vice President at Deutsche Bank Labs, where he engaged with startups, investors, and academia to discover, evaluate, and adopt innovative technologies into the Bank. Dmitriy received his MBA at the University of California, Berkeley-Haas School of Business.
-    image: /images/berenzon.jpg
+  name: Dmitriy Berenzon
+  twitter: https://twitter.com/dberenzon
+  bio: Dmitriy is a Research Partner at <a href="https://www.zenith.ventures/">Zenith Ventures</a>, a multi-strategy venture fund for the blockchain ecosystem. Prior to this, Dmitriy worked with CoinFund, where he conducted investment due diligence and research, and co-founded a cryptoasset portfolio management platform, where he led business development and operations. Prior to this, Dmitriy was an Assistant Vice President at Deutsche Bank Labs, where he engaged with startups, investors, and academia to discover, evaluate, and adopt innovative technologies into the Bank. Dmitriy received his MBA at the University of California, Berkeley-Haas School of Business.
+  image: /images/berenzon.jpg
 paddison:
-    name: Rossco Paddison
-    twitter: https://twitter.com/rosscopaddison
-    bio: Rossco Paddison is the CEO & co-founder of <a href="https://mosendo.com/">Mosendo</a>, where they’re making peer-to-peer electronic cash a reality. Also co-founder of <a href="http://www.joindefination.com">DeFi Nation</a>, a thriving DeFi community.
-    image: /images/paddison.jpg
+  name: Rossco Paddison
+  twitter: https://twitter.com/rosscopaddison
+  bio: Rossco Paddison is the CEO & co-founder of <a href="https://mosendo.com/">Mosendo</a>, where they’re making peer-to-peer electronic cash a reality. Also co-founder of <a href="http://www.joindefination.com">DeFi Nation</a>, a thriving DeFi community.
+  image: /images/paddison.jpg
 karp:
-    name: Hugh Karp
-    twitter: https://twitter.com/HughKarp
-    bio: Insurance professional and actuary with 15 years of experience in a broad range of insurance and reinsurance roles including CFO of UK Life operations for a global reinsurer. Blockchain enthusiast since 2011. Founder at <a href="https://www.nexusmutual.io/">Nexus Mutual</a>
-    image: /images/karp.jpeg
+  name: Hugh Karp
+  twitter: https://twitter.com/HughKarp
+  bio: Insurance professional and actuary with 15 years of experience in a broad range of insurance and reinsurance roles including CFO of UK Life operations for a global reinsurer. Blockchain enthusiast since 2011. Founder at <a href="https://www.nexusmutual.io/">Nexus Mutual</a>
+  image: /images/karp.jpeg
 melikhov:
-    name: Alex Melikhov
-    twitter: https://twitter.com/EOSDT
-    bio: CEO of <a href="https://eqframework.io/">Equilibrium</a>. 15 years of entrepreneurial and fintech experience and had been a cryptocurrency enthusiast since 2013. Became more pragmatic about blockchain after co-founding his first crypto business in 2016. Ethereum & EOS smart contracts specialist. Fan of DApps. Engineer in applied mathematics.
-    image: /images/Melikhov.jpg
+  name: Alex Melikhov
+  twitter: https://twitter.com/EOSDT
+  bio: CEO of <a href="https://eqframework.io/">Equilibrium</a>. 15 years of entrepreneurial and fintech experience and had been a cryptocurrency enthusiast since 2013. Became more pragmatic about blockchain after co-founding his first crypto business in 2016. Ethereum & EOS smart contracts specialist. Fan of DApps. Engineer in applied mathematics.
+  image: /images/Melikhov.jpg
 masmej:
-    name: Alex Masmej
-    twitter: https://twitter.com/AlexMasmej
-    bio: "Alex Masmej is doing Operations & Community at MetaCartel Ventures, Membership Lead at Marketing DAO & Communications at Stake Capital. He is also the founder of the #UndercollaterizedDeFi community with 600+ members across Telegram & Discord."
-    image: /images/masmej.jpg
+  name: Alex Masmej
+  twitter: https://twitter.com/AlexMasmej
+  bio: "Alex Masmej is doing Operations & Community at MetaCartel Ventures, Membership Lead at Marketing DAO & Communications at Stake Capital. He is also the founder of the #UndercollaterizedDeFi community with 600+ members across Telegram & Discord."
+  image: /images/masmej.jpg
 Peaster:
-    name: William M. Peaster
-    twitter: https://twitter.com/WPeaster
-    bio: William M. Peaster is a writer and curator of the <a href="https://artsdefi.substack.com/p/defi-arts-intelligencer-apr-4th-2020">DeFi Arts Intelligencer</a>, a newsletter tracking Ethereum’s digital collectibles arena. He is not a financial advisor. The thoughts shared in this guest post are his opinions and reflect his personal experiences and personal optimism around Ethereum. He currently owns some cryptoart and ETH.
-    image: /images/peaster.jpg
+  name: William M. Peaster
+  twitter: https://twitter.com/WPeaster
+  bio: William M. Peaster is a writer and curator of the <a href="https://artsdefi.substack.com/p/defi-arts-intelligencer-apr-4th-2020">DeFi Arts Intelligencer</a>, a newsletter tracking Ethereum’s digital collectibles arena. He is not a financial advisor. The thoughts shared in this guest post are his opinions and reflect his personal experiences and personal optimism around Ethereum. He currently owns some cryptoart and ETH.
+  image: /images/peaster.jpg
 Belyakov:
-    name: Andrey Belyakov
-    twitter: https://twitter.com/belyakov123
-    bio: Andrey Belyakov is a member of the CFA Institute, a professional derivative trader and fund manager with ten years of experience with 30 billion EUR AUM portfolios. He is the founder of the <a href="https://opium.team/">Opium Team</a>, <a href="https://theart.exchange/">The Art Exchange</a>, and a private venture investor. Earlier, during his mathematical career, Andrey was working on Queue Theory for large distributed systems and Theory of Probabilities in Moscow State University.
-    image: /images/Belyakov.jpeg
+  name: Andrey Belyakov
+  twitter: https://twitter.com/belyakov123
+  bio: Andrey Belyakov is a member of the CFA Institute, a professional derivative trader and fund manager with ten years of experience with 30 billion EUR AUM portfolios. He is the founder of the <a href="https://opium.team/">Opium Team</a>, <a href="https://theart.exchange/">The Art Exchange</a>, and a private venture investor. Earlier, during his mathematical career, Andrey was working on Queue Theory for large distributed systems and Theory of Probabilities in Moscow State University.
+  image: /images/Belyakov.jpeg
 Mack:
-    name: David Mack
-    twitter: https://twitter.com/davidmycelium
-    bio: David Mack is an early-stage specialist at Koji Capital. He has a background in economics where he focused on micro-level business decisions.
-    image: /images/mack.jpg
+  name: David Mack
+  twitter: https://twitter.com/davidmycelium
+  bio: David Mack is an early-stage specialist at Koji Capital. He has a background in economics where he focused on micro-level business decisions.
+  image: /images/mack.jpg
 Klepatch:
-    name: Julien Klepatch
-    twitter: https://twitter.com/jklepatch
-    bio: Julien is an instructor who teaches Blockchain development on his youtube channel <a href="https://www.youtube.com/c/eattheblocks">EatTheBlocks</a> and <a href="https://eattheblocks.com">blog</a>. He became obsessed with Blockchain and DeFi in 2016, and never recovered. He has been a web developer for even longer. Before that, he was in the dark side, when he used to work in Finance. But he has changed, he promised.
-    image: /images/Klepatch.jpg
+  name: Julien Klepatch
+  twitter: https://twitter.com/jklepatch
+  bio: Julien is an instructor who teaches Blockchain development on his youtube channel <a href="https://www.youtube.com/c/eattheblocks">EatTheBlocks</a> and <a href="https://eattheblocks.com">blog</a>. He became obsessed with Blockchain and DeFi in 2016, and never recovered. He has been a web developer for even longer. Before that, he was in the dark side, when he used to work in Finance. But he has changed, he promised.
+  image: /images/Klepatch.jpg
 Kemmerer:
-    name: David Kemmerer
-    twitter: https://twitter.com/David_Kemmerer
-    bio: David Kemmerer is the CEO of <a href="http://cryptotrader.tax/">CryptoTrader.Tax</a>, a cryptocurrency tax reporting platform used by investors and traders all over the world.
-    image: /images/kemmerer.jpg
+  name: David Kemmerer
+  twitter: https://twitter.com/David_Kemmerer
+  bio: David Kemmerer is the CEO of <a href="http://cryptotrader.tax/">CryptoTrader.Tax</a>, a cryptocurrency tax reporting platform used by investors and traders all over the world.
+  image: /images/kemmerer.jpg
 Briggs:
-    name: Aaron Briggs
-    twitter: https://twitter.com/APYVision
-    bio: Aaron Briggs is head of content and business development for <a href="http://APY.Vision">APY.Vision</a>, an analytics service for liquidity pool providers. He is not a financial advisor and this content reflects his opinion and experience as a Uniswap liquidity provider and longtime Ethereum advocate and investor.
-    image: /images/briggs.jpg
+  name: Aaron Briggs
+  twitter: https://twitter.com/APYVision
+  bio: Aaron Briggs is head of content and business development for <a href="http://APY.Vision">APY.Vision</a>, an analytics service for liquidity pool providers. He is not a financial advisor and this content reflects his opinion and experience as a Uniswap liquidity provider and longtime Ethereum advocate and investor.
+  image: /images/briggs.jpg
 Ryan:
-    name: Austin Ryan
-    twitter: https://twitter.com/1A1zP1
-    bio: Austin is a DeFi enthusiast based out of San Francisco, CA. In additional to his day job, he currently writes a daily newsletter called <a href="https://baconeggsandefi.substack.com/">Bacon, Eggs, and DeFi</a> and researches DEXes. Austin holds various cryptocurrencies and NFTs.
-    image: /images/ryan.jpg
+  name: Austin Ryan
+  twitter: https://twitter.com/1A1zP1
+  bio: Austin is a DeFi enthusiast based out of San Francisco, CA. In additional to his day job, he currently writes a daily newsletter called <a href="https://baconeggsandefi.substack.com/">Bacon, Eggs, and DeFi</a> and researches DEXes. Austin holds various cryptocurrencies and NFTs.
+  image: /images/ryan.jpg
 Prospere:
-    name: Wade Prospere
-    twitter: https://twitter.com/wadepros
-    bio: Wade Prospere is the Head of Marketing and Community for Opyn. Prior to joining Opyn, he worked as a Financial Analyst for BofA Merrill Lynch and as a Consultant and Growth Advisor for startups throughout Latin America.
-    image: /images/prospere.jpg
+  name: Wade Prospere
+  twitter: https://twitter.com/wadepros
+  bio: Wade Prospere is the Head of Marketing and Community for Opyn. Prior to joining Opyn, he worked as a Financial Analyst for BofA Merrill Lynch and as a Consultant and Growth Advisor for startups throughout Latin America.
+  image: /images/prospere.jpg
 LimePierre:
-    name: LimePierre
-    bio: LimePierre is a LA-based author and crypto enthusiast, and takes interest in many DeFi projects and opportunities.
-    image: /images/limepierre.jpg
+  name: LimePierre
+  bio: LimePierre is a LA-based author and crypto enthusiast, and takes interest in many DeFi projects and opportunities.
+  image: /images/limepierre.jpg
 Jonklass:
-    name: Adrian Jonklass
-    twitter: https://twitter.com/AdrianJonklaas
-    bio: Adrian Jonklass, CFO, COO, Head of Research at Covalent. Adrian holds an MBA from Baylor University and is a CFA charterholder. He has extensive executive experience across multiple ventures he has worked with over the last decade including starting a regulated security token platform in 2017. He is also a mentor at Futurpreneur Canada and volunteers to support affordable housing development.
-    image: /images/jonklass.jpg
+  name: Adrian Jonklass
+  twitter: https://twitter.com/AdrianJonklaas
+  bio: Adrian Jonklass, CFO, COO, Head of Research at <a href="https://www.covalenthq.com/">Covalent</a>. Adrian holds an MBA from Baylor University and is a CFA charterholder. He has extensive executive experience across multiple ventures he has worked with over the last decade including starting a regulated security token platform in 2017. He is also a mentor at Futurpreneur Canada and volunteers to support affordable housing development.
+  image: /images/jonklass.jpg
