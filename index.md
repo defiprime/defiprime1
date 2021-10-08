@@ -20,18 +20,19 @@ redirect_from:
 		<div id='search-powered-by'></div>
 		<div id='search-container'>
 
-		<div class="post-list" id="search-hits">
-		</div>
-		<div class="post-list" id="search-hits-defiprime">
-		</div>
+    	<div class="post-list" id="search-hits">
+    	</div>
+    	<div class="post-list" id="search-hits-defiprime">
+    	</div>
     </div>
-	</div>
+    </div>
+
 </header>
 
 <section class="banner">
- <a target="_blank" href="https://dex.guru/">
+ <a target="_blank" href="https://dex.guru/?utm_source=defiprime.com&utm_medium=banner&utm_campaign=home">
     <div class="banner-content">
-      <div class="banner-icon"><img src="/images/banner.webp" alt=""/></div>
+      <div class="banner-icon"><img src="images/banner_defiprime.gif" alt=""/></div>
     </div>
   </a>
 </section>
@@ -98,6 +99,7 @@ redirect_from:
       </article>
 
     {% endfor %}
+
   </div>
 </section>
 
@@ -137,6 +139,5 @@ redirect_from:
   <h2 class='recently_added_annotation'>Recent Topics at <a href="https://alpha.defiprime.com/">Alpha</a></h2>
   <div class='latest_alpha'></div>
 </section>
-
 
 {% include algolia.html %}
