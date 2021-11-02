@@ -30,9 +30,9 @@ redirect_from:
 </header>
 
 <section class="banner">
- <a target="_blank" href="https://dex.guru/?utm_source=defiprime.com&utm_medium=banner&utm_campaign=home">
+ <a target="_blank" href="https://dex.guru/?utm_source=defiprime.com&utm_medium=banner&utm_campaign=defiprime.com_whitebanner">
     <div class="banner-content">
-      <div class="banner-icon"><img src="images/banner_defiprime.gif" alt=""/></div>
+      <div class="banner-icon"><img data-src="images/banner_defiprime_w.gif" src="images/banner_defiprime_w.gif" class="lazyloaded" alt=""/></div>
     </div>
   </a>
 </section>
