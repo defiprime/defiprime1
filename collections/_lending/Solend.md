@@ -1,5 +1,5 @@
 ---
-git-date: 2021-10-03T00:02:11-07:00
+git-date: 2021-11-03T00:02:11-07:00
 product-title: Solend
 product-url: https://solend.fi/
 image: /images/output_md/solend.fi.jpg
