@@ -28,7 +28,8 @@ async function getBlocks() {
 async function getCompoundApr() {
   const daiAddress = "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643";
   const usdcAddress = "0x39aa39c021dfbae8fac545936693ac917d5e7563";
-  const apiURL = 'https://api.compound.finance/api/v2/ctoken'
+  const apiURL = 'https://api.compound.finance/api/v2/ctoken';
+  const secondsInMonth = 2592000;
   // When num_buckets is set to 1, the api will return data that references the min_block_timestamp (or as close as possible),
   // add a 1 hour range to min_block_timestamp for current data to ensure that we get
   const daiMarketDataCurrent = await fetch(`${apiURL}?addresses=${daiAddress}`).then((r) => r.json())
