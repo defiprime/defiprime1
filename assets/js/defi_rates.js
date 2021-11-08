@@ -28,114 +28,42 @@ async function getBlocks() {
 async function getCompoundApr() {
   const daiAddress = "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643";
   const usdcAddress = "0x39aa39c021dfbae8fac545936693ac917d5e7563";
-  const aprToday = await fetch(
-    "https://api.thegraph.com/subgraphs/name/graphprotocol/compound-v2",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        query: `query ($id_dai: ID!, $id_usdc: ID!)
-        {
-          dai: market(id: $id_dai) {
-            id
-            symbol
-            borrowRate
-            supplyRate
-            borrowIndex
-            exchangeRate
-          }
-          
-          usdc: market(id: $id_usdc) {
-            id
-            symbol
-            borrowRate
-            supplyRate
-            borrowIndex
-            exchangeRate
-          }
-      }`,
-        variables: {
-          id_dai: daiAddress,
-          id_usdc: usdcAddress,
-        },
-      }),
-    }
-  ).then((r) => r.json());
-  const apr30Days = await fetch(
-    "https://api.thegraph.com/subgraphs/name/graphprotocol/compound-v2",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        query: `query ($id_dai: ID!, $id_usdc: ID!)
-        {
-          dai_30d: market(id: $id_dai, block: { number: ${window.oldBlock.number}}) {
-            id
-            symbol
-            borrowRate
-            supplyRate
-            borrowIndex
-            exchangeRate
-          }
-          
-          usdc_30d: market(id: $id_usdc, block: {number: ${window.oldBlock.number}}) {
-            id
-            symbol
-            borrowRate
-            supplyRate
-            borrowIndex
-            exchangeRate
-          }
-      }`,
-        variables: {
-          id_dai: daiAddress,
-          id_usdc: usdcAddress,
-        },
-      }),
-    }
-  ).then((r) => r.json());
+  const apiURL = 'https://api.compound.finance/api/v2/ctoken';
+  const secondsInMonth = 2592000;
+  // When num_buckets is set to 1, the api will return data that references the min_block_timestamp (or as close as possible),
+  // add a 1 hour range to min_block_timestamp for current data to ensure that we get
+  const daiMarketDataCurrent = await fetch(`${apiURL}?addresses=${daiAddress}`).then((r) => r.json())
+  const daiMarketData30Day = await fetch(`${apiURL}?addresses=${daiAddress}&block_number=${window.oldBlock.number}`).then((r) => r.json())
+  const usdcMarketDataCurrent = await fetch(`${apiURL}?addresses=${usdcAddress}`).then((r) => r.json())
+  const usdcMarketData30Day = await fetch(`${apiURL}?addresses=${usdcAddress}&block_number=${window.oldBlock.number}`).then((r) => r.json())
 
   return {
     supply: {
       dai: {
-        supply_rate: aprToday.data["dai"].supplyRate * 100,
+        supply_rate: daiMarketDataCurrent.cToken[0].supply_rate.value * 100,
         supply_30d_apr: rateRatioToApr(
-          aprToday.data["dai"].exchangeRate,
-          apr30Days.data["dai_30d"].exchangeRate,
-          window.secPassed
+          daiMarketDataCurrent.cToken[0].exchange_rate.value,
+          daiMarketData30Day.cToken[0].exchange_rate.value,
+          secondsInMonth
         ),
       },
       usdc: {
-        supply_rate: aprToday.data["usdc"].supplyRate * 100,
+        supply_rate: usdcMarketDataCurrent.cToken[0].supply_rate.value * 100,
         supply_30d_apr: rateRatioToApr(
-          aprToday.data["usdc"].exchangeRate,
-          apr30Days.data["usdc_30d"].exchangeRate,
-          window.secPassed
+          usdcMarketDataCurrent.cToken[0].exchange_rate.value,
+          usdcMarketData30Day.cToken[0].exchange_rate.value,
+          secondsInMonth
         ),
       },
     },
     borrow: {
       dai: {
-        borrow_rate: aprToday.data["dai"].borrowRate * 100,
-        borrow_30d_apr: rateRatioToApr(
-          aprToday.data["dai"].borrowIndex,
-          apr30Days.data["dai_30d"].borrowIndex,
-          window.secPassed
-        ),
+        borrow_rate: daiMarketDataCurrent.cToken[0].borrow_rate.value * 100,
+        borrow_30d_apr: daiMarketData30Day.cToken[0].borrow_rate.value * 100
       },
       usdc: {
-        borrow_rate: aprToday.data["usdc"].borrowRate * 100,
-        borrow_30d_apr: rateRatioToApr(
-          aprToday.data["usdc"].borrowIndex,
-          apr30Days.data["usdc_30d"].borrowIndex,
-          window.secPassed
-        ),
+        borrow_rate: usdcMarketDataCurrent.cToken[0].borrow_rate.value * 100,
+        borrow_30d_apr: usdcMarketData30Day.cToken[0].borrow_rate.value * 100
       },
     },
   };
@@ -518,22 +446,16 @@ async function getNotionalApr() {
   const current_time = Math.floor(new Date().getTime() / 1000);
 
   const getRateArray = (results, currency) => {
-    return results.data["cashMarkets"]
+    return results.data["markets"]
       .filter((m) => {
-        return m.cashGroup.currency.symbol === currency;
+        return m["currency"]["underlyingSymbol"] === currency;
       })
-      .map((m) => {
-        return (
-          (m.lastImpliedRate * SECONDS_IN_YEAR) /
-          m.cashGroup.maturityLength /
-          1e7
-        );
-      })
+      .map((m) => (m.lastImpliedRate / 1e9) * 100)
       .sort((a, b) => a - b);
   };
 
   const aprToday = await fetch(
-    "https://api.thegraph.com/subgraphs/name/notional-finance/mainnet",
+    "https://api.thegraph.com/subgraphs/name/notional-finance/mainnet-v2",
     {
       method: "POST",
       headers: {
@@ -543,15 +465,12 @@ async function getNotionalApr() {
       body: JSON.stringify({
         query: `query ($current_time: Int!) 
         {
-          cashMarkets(where:{ maturity_gt: $current_time }) {
+          markets(where:{ settlementDate_gt: $current_time, currency_in:["2", "3"] }) {
             id
             lastImpliedRate
             maturity
-            cashGroup {
-              currency {
-                symbol
-              }
-              maturityLength
+            currency {
+              underlyingSymbol
             }
           }
         }`,
@@ -572,8 +491,7 @@ async function getNotionalApr() {
         supply_rate: daiRates.length > 0 ? daiRates[daiRates.length - 1] : "",
       },
       usdc: {
-        supply_rate:
-          usdcRates.length > 0 ? usdcRates[usdcRates.length - 1] : "",
+        supply_rate: usdcRates.length > 0 ? usdcRates[usdcRates.length - 1] : "",
       },
     },
     borrow: {
