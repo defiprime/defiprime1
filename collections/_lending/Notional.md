@@ -4,7 +4,7 @@ product-title: Notional
 product-url: https://notional.finance/
 image: /images/output_md/notional.finance.png
 ecosystem: ethereum
-product-description: "Notional is an on-chain Ethereum protocol, that enables users to lend and borrow at fixed rates at predefined maturities"
+product-description: "Notional is a fixed rate lending and borrowing platform on Ethereum"
 type: non-custodial
 filter: Borrow Cryptocurrency, Lend Cryptocurrency
 coltitle:  "Lending"
