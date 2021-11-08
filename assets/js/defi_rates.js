@@ -32,9 +32,9 @@ async function getCompoundApr() {
   // When num_buckets is set to 1, the api will return data that references the min_block_timestamp (or as close as possible),
   // add a 1 hour range to min_block_timestamp for current data to ensure that we get
   const daiMarketDataCurrent = await fetch(`${apiURL}?addresses=${daiAddress}`).then((r) => r.json())
-  const daiMarketData30Day = await fetch(`${apiURL}?addresses=${daiAddress}&block_number=${window.oldBlock}`).then((r) => r.json())
+  const daiMarketData30Day = await fetch(`${apiURL}?addresses=${daiAddress}&block_number=${window.oldBlock.number}`).then((r) => r.json())
   const usdcMarketDataCurrent = await fetch(`${apiURL}?addresses=${usdcAddress}`).then((r) => r.json())
-  const usdcMarketData30Day = await fetch(`${apiURL}?addresses=${usdcAddress}&block_number=${window.oldBlock}`).then((r) => r.json())
+  const usdcMarketData30Day = await fetch(`${apiURL}?addresses=${usdcAddress}&block_number=${window.oldBlock.number}`).then((r) => r.json())
 
   return {
     supply: {
