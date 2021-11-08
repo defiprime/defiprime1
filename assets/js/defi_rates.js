@@ -28,51 +28,41 @@ async function getBlocks() {
 async function getCompoundApr() {
   const daiAddress = "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643";
   const usdcAddress = "0x39aa39c021dfbae8fac545936693ac917d5e7563";
-  const secondsInMonth = 2592000;
-  const currentTimestamp = Math.floor(new Date().getTime() / 1000);
-  const oldTimestamp = Math.floor(new Date().getTime() / 1000) - secondsInMonth;
-  const apiURL = 'https://api.compound.finance/api/v2/market_history/graph'
-  const daiMarketDataCurrent = await fetch(
-    `${apiURL}?asset=${daiAddress}&min_block_timestamp=${currentTimestamp - 500}&max_block_timestamp=${currentTimestamp}&num_buckets=1`
-  ).then((r) => r.json())
-  const usdcMarketDataCurrent = await fetch(
-    `${apiURL}?asset=${usdcAddress}&min_block_timestamp=${currentTimestamp - 500}&max_block_timestamp=${currentTimestamp}&num_buckets=1`
-  ).then((r) => r.json())
-  const daiMarketData30Day = await fetch(
-    `${apiURL}?asset=${daiAddress}&min_block_timestamp=${oldTimestamp - 500}&max_block_timestamp=${oldTimestamp}&num_buckets=1`
-  ).then((r) => r.json())
-  const usdcMarketData30Day = await fetch(
-    `${apiURL}?asset=${usdcAddress}&min_block_timestamp=${oldTimestamp - 500}&max_block_timestamp=${oldTimestamp}&num_buckets=1`
-  ).then((r) => r.json())
-
+  const apiURL = 'https://api.compound.finance/api/v2/ctoken'
+  // When num_buckets is set to 1, the api will return data that references the min_block_timestamp (or as close as possible),
+  // add a 1 hour range to min_block_timestamp for current data to ensure that we get
+  const daiMarketDataCurrent = await fetch(`${apiURL}?addresses=${daiAddress}`).then((r) => r.json())
+  const daiMarketData30Day = await fetch(`${apiURL}?addresses=${daiAddress}&block_number=${window.oldBlock}`).then((r) => r.json())
+  const usdcMarketDataCurrent = await fetch(`${apiURL}?addresses=${usdcAddress}`).then((r) => r.json())
+  const usdcMarketData30Day = await fetch(`${apiURL}?addresses=${usdcAddress}&block_number=${window.oldBlock}`).then((r) => r.json())
 
   return {
     supply: {
       dai: {
-        supply_rate: daiMarketDataCurrent.supply_rates[0].rate * 100,
+        supply_rate: daiMarketDataCurrent.cToken[0].supply_rate.value * 100,
         supply_30d_apr: rateRatioToApr(
-          daiMarketDataCurrent.exchange_rates[0].rate,
-          daiMarketData30Day.exchange_rates[0].rate,
+          daiMarketDataCurrent.cToken[0].exchange_rate.value,
+          daiMarketData30Day.cToken[0].exchange_rate.value,
           secondsInMonth
         ),
       },
       usdc: {
-        supply_rate: usdcMarketDataCurrent.supply_rates[0].rate * 100,
+        supply_rate: usdcMarketDataCurrent.cToken[0].supply_rate.value * 100,
         supply_30d_apr: rateRatioToApr(
-          usdcMarketDataCurrent.exchange_rates[0].rate,
-          usdcMarketData30Day.exchange_rates[0].rate,
+          usdcMarketDataCurrent.cToken[0].exchange_rate.value,
+          usdcMarketData30Day.cToken[0].exchange_rate.value,
           secondsInMonth
         ),
       },
     },
     borrow: {
       dai: {
-        borrow_rate: daiMarketDataCurrent.borrow_rates[0].rate * 100,
-        borrow_30d_apr: daiMarketData30Day.borrow_rates[0].rate * 100
+        borrow_rate: daiMarketDataCurrent.cToken[0].borrow_rate.value * 100,
+        borrow_30d_apr: daiMarketData30Day.cToken[0].borrow_rate.value * 100
       },
       usdc: {
-        borrow_rate: usdcMarketDataCurrent.borrow_rates[0].rate * 100,
-        borrow_30d_apr: usdcMarketData30Day.borrow_rates[0].rate * 100
+        borrow_rate: usdcMarketDataCurrent.cToken[0].borrow_rate.value * 100,
+        borrow_30d_apr: usdcMarketData30Day.cToken[0].borrow_rate.value * 100
       },
     },
   };
