@@ -5,7 +5,7 @@ product-url: https://www.olympusdao.finance/
 image: /images/output_md/www.olympusdao.finance.jpg
 ecosystem: ethereum
 filter: Synthetic Assets
-product-description: Olympus is a decentralized reserve currency protocol based on the OHM token. Each OHM token is backed by a basket of assets (e.g. DAI, FRAX) in the Olympus treasury, giving it an intrinsic value that it cannot fall below.
+product-description: Olympus is a decentralized reserve currency protocol based on the OHM token. Each OHM token is backed by a basket of assets in the Olympus treasury, giving it an intrinsic value that it cannot fall below.
 coltitle: "Derivatives"
 colpermalink: derivatives
 twitter: https://twitter.com/OlympusDAO
