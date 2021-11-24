@@ -8,7 +8,7 @@
       "description": "Tokens associated with the products listed at defiprime.com"
     }
   },
-  "timestamp": "2021-10-05T00:00:00+00:00",
+  "timestamp": "2021-11-24T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -753,11 +753,19 @@
       "name": "SDT",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xcafe001067cdef266afb7eb5a286dcfd277f3de5",
+      "symbol": "PSP",
+      "name": "PSP",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 34,
+    "minor": 35,
     "patch": 0
   }
 }
