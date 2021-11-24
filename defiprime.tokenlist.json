@@ -761,11 +761,19 @@
       "name": "PSP",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x383518188c0c6d7730d91b2c03a03c837814a899",
+      "symbol": "OHM",
+      "name": "OHM",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 35,
+    "minor": 36,
     "patch": 0
   }
 }
