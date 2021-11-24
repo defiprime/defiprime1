@@ -7,7 +7,8 @@ ecosystem: ethereum
 platform: ios, android, web
 filter: smart-contract wallets
 product-description: Gnosis Safe is a smart contract-based wallet enables users to manage their funds and interact with decentralized applications on Ethereum. [Interview with the Gnosis Safe Team](/gnosis-safe).
-coltitle:  "Asset Management Tools"
+coltitle: "Asset Management Tools"
 colpermalink: assets-management-tools
 twitter: https://twitter.com/gnosisSafe
+alternative-to: metamask
 ---

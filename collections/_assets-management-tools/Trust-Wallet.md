@@ -6,8 +6,9 @@ image: /images/output_md/httpstrustwalletcom.png
 ecosystem: ethereum, eos, tron, bitcoin, bsc, polygon
 platform: ios, android
 product-description: Multi cryptocurrency wallet to store your favorite BEP2, ERC20 and ERC721, tokens.
-coltitle:  "Asset Management Tools"
+coltitle: "Asset Management Tools"
 colpermalink: assets-management-tools
 twitter: https://twitter.com/trustwalletapp
 github: https://github.com/trustwallet
+alternative-to: metamask
 ---
