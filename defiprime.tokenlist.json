@@ -8,7 +8,7 @@
       "description": "Tokens associated with the products listed at defiprime.com"
     }
   },
-  "timestamp": "2021-11-24T00:00:00+00:00",
+  "timestamp": "2021-11-27T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -769,11 +769,19 @@
       "name": "OHM",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x72b886d09c117654ab7da13a14d603001de0b777",
+      "symbol": "XDEFI",
+      "name": "XDEFI",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 36,
+    "minor": 37,
     "patch": 0
   }
 }
