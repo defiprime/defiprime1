@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2021-11-27
 product-title: XDEFI Wallet
 product-url: https://www.xdefi.io
 image: /images/output_md/www.xdefi.io.jpg
@@ -11,4 +11,5 @@ alternative-to: metamask
 colpermalink: assets-management-tools
 twitter: https://twitter.com/xdefi_wallet
 contract: "0x72b886d09c117654ab7da13a14d603001de0b777"
+ticker: XDEFI
 ---
