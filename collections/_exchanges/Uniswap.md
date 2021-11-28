@@ -6,7 +6,7 @@ image: /images/output_md/httpsuniswapexchange.png
 ecosystem: ethereum, arbitrum, optimism
 type: non-custodial
 filter: No KYC
-product-description: Uniswap is an automated fully decentralized token exchange on Ethereum. [Uniswap Explained - In-Depth DeFi Guide](/uniswap-explained).
+product-description: Uniswap is an automated fully decentralized token exchange on Ethereum. [Uniswap Explained - In-Depth DeFi Guide](/uniswap-explained). [Uniswap Alternatives](/uniswap-alternatives).
 coltitle: "Decentralized exchanges"
 colpermalink: exchanges
 github: https://github.com/Uniswap
