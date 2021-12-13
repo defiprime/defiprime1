@@ -8,7 +8,7 @@
       "description": "Tokens associated with the products listed at defiprime.com"
     }
   },
-  "timestamp": "2021-11-27T00:00:00+00:00",
+  "timestamp": "2021-12-12T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -777,11 +777,19 @@
       "name": "XDEFI",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x3ec8798b81485a254928b70cda1cf0a2bb0b74d7",
+      "symbol": "GRO",
+      "name": "GRO",
+      "decimals": 18,
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 37,
+    "minor": 38,
     "patch": 0
   }
 }
