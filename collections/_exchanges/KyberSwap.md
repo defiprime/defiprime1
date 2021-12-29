@@ -1,7 +1,7 @@
 ---
 git-date:
 product-title: KyberSwap
-product-url: https://kyberswap.com/swap/eth-dai
+product-url: https://kyberswap.com/
 image: /images/output_md/httpskyberswapcomswapeth-dai.png
 ecosystem: ethereum, bsc
 type: non-custodial
