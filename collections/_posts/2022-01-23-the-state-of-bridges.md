@@ -13,7 +13,7 @@ author: Ashdown
 tags: ["Cross-chain"]
 ---
 
-On January 7th, Ethereum founder Vitalik Buterin made a bold statement in regards to how the future will be multi-chain but will noΩΩΩ* be cross-chain.
+On January 7th, Ethereum founder Vitalik Buterin made a bold statement in regards to how the future will be multi-chain but will _not_ be cross-chain.
 
 I had some comments on his statement which were picked up in [CoinTelegraph](https://cointelegraph.com/news/industry-players-respond-to-vitalik-buterin-s-thoughts-on-cross-chain-ecosystems). Shortly after this was published people reached out to me asking for more detail as to why I felt this way. A longer post was clearly required so here we are.
 
