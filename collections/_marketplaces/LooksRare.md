@@ -1,11 +1,11 @@
 ---
-git-date:
+git-date: 2022-01-25T02:35:33-07:00
 product-title: LooksRare
 product-url: https://looksrare.org/
 image: /images/output_md/looksrare.org.jpg
 ecosystem: ethereum
-product-description: 'LooksRare is a next generation NFT market. Buy NFTs, sell NFTs… or just HODL: Collectors, traders, and creators alike earn passive income!'
-coltitle:  "Marketplaces"
+product-description: "LooksRare is the community-first NFT marketplace that actively rewards traders, collectors and creators for participating"
+coltitle: "Marketplaces"
 filter: digital art, NFTs
 colpermalink: decentralized_marketplaces
 twitter: https://twitter.com/looksrarenft
