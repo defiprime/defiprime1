@@ -30,7 +30,7 @@ The IAD framework states that eight following principles form the basis for ever
 - Self-governance
 - Polycentricity
 
-Defined Boundaries
+### Defined Boundaries
 
 The first principle states that an organization should have clear boundaries to determine what is a part of the community and what isn’t. It comprises shared resources management, participant identification, core values and principles, communication channels, and project brand.
 
@@ -115,7 +115,7 @@ The core of monitoring comes from the corporate world. These are clear goals, KP
 
 There is a scale of graduated sanctions for resource appropriators who violate community rules.
 
-In the context of DAO, a community may implement a reputation system that penalizes wrongdoings with a loss of social credibility. Others may go for metrics based on experience
+**_In the context of DAO, a community may implement a reputation system that penalizes wrongdoings with a loss of social credibility. Others may go for metrics based on experience_**
 
 The outright banning of people who break the rules creates resentment rather than strengthening a community. Instead, graduated systems of warnings, fines, and reputational consequences are less disruptive to an organization and keep the punishments for wrongdoings proportional to the level of the offense.
 
