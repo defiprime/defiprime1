@@ -1,10 +1,10 @@
 ---
-git-date: 2022-03-30T03:35:33-07:00
+git-date: 2022-04-04T03:35:33-07:00
 product-title: X
 product-url: https://x.xyz
 image: /images/output_md/x.xyz.jpg
 ecosystem: ethereum
-product-description: X is a community-owned, cross-chain NFT marketplace. Collect, create and sell across multiple blockchains on the industry's first decentralised NFT marketplace.
+product-description: X is a community-owned, cross-chain NFT marketplace. X enables users to collect, create and sell NFTs across multiple blockchains on the decentralized marketplace.
 coltitle:  "Marketplaces"
 filter: digital art, NFTs
 colpermalink: decentralized_marketplaces
