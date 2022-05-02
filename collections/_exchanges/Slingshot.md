@@ -6,7 +6,7 @@ image: /images/output_md/app.slingshot.finance.jpg
 ecosystem: polygon, arbitrum, optimism
 type: non-custodial
 filter: Aggregators, No KYC
-product-description: Web3 Trading Platform aggregating DEX liquidity.
+product-description: Slingshot is a web3 trading platform aggregating DEX liquidity.
 coltitle: "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/SlingshotCrypto
