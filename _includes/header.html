@@ -1,144 +1,116 @@
 <!-- Google Tag Manager (noscript) -->
-<noscript
-  ><iframe
-    src="https://www.googletagmanager.com/ns.html?id=GTM-PB9GWJD"
-    height="0"
-    width="0"
-    style="display:none;visibility:hidden"
-  ></iframe
-></noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PB9GWJD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <!-- Wrapper -->
 <div id="wrapper">
-  {% unless page.name == "index.md" %}
-  <aside id="defi-search-fullpage"></aside>
-  {% endunless %}
-  <header id="header">
-    <div class="inner">
-      <div class="header-content">
-        <!-- Logo -->
-        <div class="header-content-logo">
-          <a href="{{ site.baseurl }}/" class="logo">
-            <img src="/images/logo.svg" width="220" height="41" alt="" />
-          </a>
-          <aside>
-            <img
-              id="hamburger_menu_open"
-              width="24"
-              height="24"
-              src="/images/hamburger.svg"
-            />
-            <img
-              id="hamburger_menu_close"
-              width="24"
-              height="24"
-              src="/images/close_hamburger.svg"
-            />
-          </aside>
-        </div>
-        <div class="header-content-menu">
-          {% unless page.name == "index.md" %}
-          <div id="custom-searchbox">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="10.5"
-                cy="10.5"
-                r="6.5"
-                stroke="#8F68FC"
-                stroke-width="2"
-              />
-              <path d="M20 20L15 15" stroke="#8F68FC" stroke-width="2" />
-            </svg>
-          </div>
-          <div id="defi-search">
-            <div id="search-searchbar"></div>
-            <div id="search-powered-by"></div>
-            <div class="post-list" id="search-hits"></div>
+	{% unless  page.name == "index.md" %}
+	<aside id='defi-search-fullpage'></aside>
+	{% endunless %}
+	<header id="header">
+		<div class="inner">
+			<div class="header-content">
+				<!-- Logo -->
+				<div class="header-content-logo">
+					<a href="{{ site.baseurl }}/" class="logo">
+						<img src="/images/logo.svg" width="220" height="41" alt="" />
+					</a>
+					<aside>
+						<img id="hamburger_menu_open"  width="24" height="24" src="/images/hamburger.svg" />
+						<img id="hamburger_menu_close" width="24" height="24" src="/images/close_hamburger.svg" />
+					</aside>
+				</div>
+				<div class="header-content-menu">
+					{% unless page.name == "index.md" %}
+					<div id="custom-searchbox">
+
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="10.5" cy="10.5" r="6.5" stroke="#8F68FC" stroke-width="2" />
+							<path d="M20 20L15 15" stroke="#8F68FC" stroke-width="2" />
+						</svg>
+					</div>
+					<div id='defi-search'>
+						<div id="search-searchbar"></div>
+						<div id='search-powered-by'></div>
+						<div class="post-list" id="search-hits">
+            </div>
             <div class="post-list" id="search-hits-defiprime"></div>
-          </div>
 
-          {% include algolia.html %} {% endunless %}
+					</div>
 
-          <ul class="menu-list">
-            <li class="menu-list-item">
-              <a href="/blog" class="link">
-                <img src="/images/vector.png" width="24" height="24" />
-                <span class="text">DeFi Blog</span>
-              </a>
-            </li>
-            <li class="menu-list-item">
-              <a href="/#defi_projects" class="link">
-                <span class="text">Projects</span>
-              </a>
-            </li>
+					{% include algolia.html %}
+					{% endunless %}
 
-            <li class="menu-list-item">
-              <a href="/defi-rates" class="link">
-                <span class="text">DeFi Rates</span>
-              </a>
-            </li>
 
-            <li class="menu-list-item">
-              <a href="/tokenlist" class="link">
-                <span class="text">DeFi Tokens</span>
-              </a>
-            </li>
-            <!-- <li class="menu-list-item">
+					<ul class="menu-list">
+						<li class="menu-list-item">
+							<a href="/blog" class="link" >
+								<img src="/images/vector.png" width="24" height="24"/>
+								<span class="text">DeFi Blog</span>
+							</a>
+						</li>
+						<li class="menu-list-item">
+							<a href="/#defi_projects" class="link" >
+								<span class="text">Projects</span>
+							</a>
+						</li>
+						<li class="menu-list-item">
+							<a href="https://alpha.defiprime.com" class="link" target="_blank">
+								<span class="text">Community</span>
+							</a>
+						</li>
+						<li class="menu-list-item">
+							<a href="/defi-rates" class="link" >
+								<span class="text">DeFi Rates</span>
+							</a>
+						</li>
+
+						<li class="menu-list-item">
+							<a href="/tokenlist" class="link" >
+								<span class="text">DeFi Tokens</span>
+							</a>
+						</li>
+						<!-- <li class="menu-list-item">
 							<a href="https://portfolio.defiprime.com" class="link" >
 								<span class="text">DeFi Portfolio</span>
 							</a>
 						</li> -->
-            <li class="menu-list-item">
-              <a href="/events" class="link">
-                <span class="text">Events</span>
-              </a>
-            </li>
-            <li class="menu-list-item">
-              <a href="/about" class="link">
-                <span class="text">About</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </header>
+						<li class="menu-list-item">
+							<a href="/events" class="link" >
+								<span class="text">Events</span>
+							</a>
+						</li>
+						<li class="menu-list-item">
+							<a href="/about" class="link" >
+								<span class="text">About</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
 
-  <script>
-    //Add event handler with addEventListener (not window.onload)
-    window.addEventListener("load", () => {
-      $("#hamburger_menu_open").on("click", () => {
-        $("#header").css("overflow", "visible");
-        $(".header-content-menu").animate(
-          {
-            left: "0"
-          },
-          200,
-          () => {
-            $("#hamburger_menu_close").css("display", "block");
-            $("#hamburger_menu_open").css("display", "none");
-          }
-        );
-      });
-      $("#hamburger_menu_close").on("click", () => {
-        $(".header-content-menu").animate(
-          {
-            left: "100%"
-          },
-          200,
-          () => {
-            $("#hamburger_menu_close").css("display", "none");
-            $("#hamburger_menu_open").css("display", "block");
-            $("#header").css("overflow", "hidden");
-          }
-        );
-      });
-    });
-  </script>
-</div>
+	<script>
+		//Add event handler with addEventListener (not window.onload)
+		window.addEventListener('load', () => {
+			$("#hamburger_menu_open").on('click', () => {
+				$("#header").css("overflow", "visible")
+				$(".header-content-menu").animate({
+					left: '0'
+				}, 200, () => {
+					$("#hamburger_menu_close").css('display', 'block')
+					$("#hamburger_menu_open").css('display', 'none')
+				});
+			})
+			$("#hamburger_menu_close").on('click', () => {
+				$(".header-content-menu").animate({
+					left: '100%'
+				}, 200, () => {
+					$("#hamburger_menu_close").css('display', 'none')
+					$("#hamburger_menu_open").css('display', 'block')
+					$("#header").css("overflow", "hidden")
+				});
+			})
+		});
+	</script>
