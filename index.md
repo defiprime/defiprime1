@@ -136,8 +136,7 @@ redirect_from:
 </section>
 
 <section>
-  <h2 class='recently_added_annotation'>Recent Topics at <a href="https://alpha.defiprime.com/">Alpha</a></h2>
-  <div class='latest_alpha'></div>
+
 </section>
 
 {% include algolia.html %}
