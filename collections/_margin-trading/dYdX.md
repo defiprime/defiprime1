@@ -1,7 +1,7 @@
 ---
 git-date: 2020-01-27T15:56:54-07:00
 product-title: dYdX
-product-url: https://trade.dydx.exchange/r/defiprime
+product-url: https://trade.dydx.exchange/r/QMFTAHFN
 image: /images/output_md/dydx.exchange.png
 ecosystem: ethereum
 featured: true
