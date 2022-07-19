@@ -9,7 +9,7 @@ product-description: RhinoFi(previously DeversiFi) is a hybrid Ethereum exchange
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
 github: https://github.com/DeversiFi
-twitter: https://twitter.com/deversifi
+twitter: https://twitter.com/rhinofi
 ticker: NEC
 contract: "0xcc80c051057b774cd75067dc48f8987c4eb97a5e"
 decimals: 18
