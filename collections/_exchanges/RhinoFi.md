@@ -1,11 +1,11 @@
 ---
 git-date:
-product-title: DeversiFi
-product-url: https://www.deversifi.com/
+product-title: RhinoFi
+product-url: https://rhino.fi/
 image: /images/output_md/www.deversifi.com.png
 ecosystem: ethereum
 type: non-custodial
-product-description: DeversiFi is a hybrid Ethereum exchange platform providing access to spot trading, margin trading, P2P funding & decentralized trading. [DeversiFi - interview with CEO and founder, Will Harborne](/deversifi).
+product-description: RhinoFi(previously DeversiFi) is a hybrid Ethereum exchange platform providing access to spot trading, margin trading, P2P funding & decentralized trading. [DeversiFi - interview with CEO and founder, Will Harborne](/deversifi).
 coltitle:  "Decentralized exchanges"
 colpermalink: exchanges
 github: https://github.com/DeversiFi
