@@ -1,7 +1,7 @@
 ---
 git-date:
 product-title: DAI
-product-url: https://makerdao.com/en/dai/
+product-url: https://oasis.app/?ref=0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1
 image: /images/output_md/httpsmakerdaocomendai.png
 ecosystem: ethereum, polygon
 product-description: DAI is a crypto-backed stablecoin soft-pegged to USD, built on the Ethereum and governed by the MakerDAO system.
