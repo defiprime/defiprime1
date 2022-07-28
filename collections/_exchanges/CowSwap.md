@@ -3,7 +3,7 @@ git-date: 2022-01-09T09:59:57-07:00
 product-title: CowSwap
 product-url: https://cowswap.exchange/
 image: /images/output_md/cowswap.exchange.jpg
-ecosystem: ethereum
+ecosystem: ethereum, gnosis
 type: non-custodial
 filter: No KYC
 product-description: CowSwap is a trading interface built on top of Gnosis Protocol v2. It allows you to buy and sell tokens using gas-less orders that are settled peer-to-peer among its users or into any on-chain liquidity source while providing MEV protection.
