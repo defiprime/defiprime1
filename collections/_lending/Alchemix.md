@@ -3,7 +3,7 @@ git-date: 2021-06-06:05:44-07:00
 product-title: Alchemix
 product-url: https://alchemix.fi/
 image: /images/output_md/alchemix.fi.jpg
-ecosystem: ethereum
+ecosystem: ethereum, fantom, arbitrum, optimism
 product-description: "Alchemix is a future-yield-backed synthetic asset platform with flexible instant loans that repay themselves over time and community DAO. The platform advances your yield farming via a synthetic token representing a fungible claim on any underlying collateral in the Alchemix protocol"
 type: non-custodial
 filter: Borrow Cryptocurrency, Lend Cryptocurrency

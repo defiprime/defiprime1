@@ -3,8 +3,8 @@ git-date: 2020-01-11:05:44-07:00
 product-title: Aave
 product-url: https://app.aave.com/?referral=28
 image: /images/output_md/aave.com.png
-ecosystem: ethereum, polygon
-product-description: "Aave is an Open Source and Non-Custodial protocol to earn interest on deposits & borrow assets. [Aave Protocol - Innovative DeFi Lending, interview with the founder](/aave)"
+ecosystem: ethereum, polygon, avalanche, fantom, optimism, arbitrum
+product-description: "Aave is an Open Source and Non-Custodial protocol that let you earn interest on deposits & borrow assets on multiple chains. [Aave Protocol - Innovative DeFi Lending, interview with the founder](/aave)"
 type: non-custodial
 filter: Borrow Cryptocurrency, Lend Cryptocurrency
 coltitle:  "Lending"
