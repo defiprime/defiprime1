@@ -3,7 +3,7 @@ git-date: 2021-02-20T10:35:33-07:00
 product-title: Rari Capital
 product-url: https://rari.capital/
 image: /images/output_md/rari.capital.png
-ecosystem: ethereum
+ecosystem: ethereum, arbitrum
 product-description: Rari Capital is a roboadvisor that ensures you receive the highest yield, beyond just lending.
 coltitle:  "Yield Aggregators"
 colpermalink: yield-aggregators

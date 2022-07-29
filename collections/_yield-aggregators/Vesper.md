@@ -3,7 +3,7 @@ git-date: 2021-03-13T10:35:33-07:00
 product-title: Vesper
 product-url: https://vesper.finance/
 image: /images/output_md/vesper.finance.png
-ecosystem: ethereum
+ecosystem: ethereum, polygon, avalanche
 product-description: Vesper provides a suite of yield-generating products, focused on accessibility, optimization, and longevity
 coltitle:  "Yield Aggregators"
 colpermalink: yield-aggregators

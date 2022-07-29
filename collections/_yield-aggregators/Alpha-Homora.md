@@ -1,9 +1,9 @@
 ---
 git-date: 2021-02-20T10:35:33-07:00
 product-title: Alpha Homora
-product-url: https://homora.alphafinance.io/
+product-url: https://homora-v2.alphaventuredao.io/
 image: /images/output_md/homora.alphafinance.io.png
-ecosystem: ethereum
+ecosystem: ethereum, fantom, avalanche
 product-description: "Alpha Homora is a leveraged yield farming and leveraged liquidity providing protocol. [Alpha Homora - Leveraged Yield Farming](/alpha-homora)"
 coltitle:  "Yield Aggregators"
 colpermalink: yield-aggregators

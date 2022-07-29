@@ -3,7 +3,7 @@ git-date:
 product-title: MetaMask
 product-url: https://metamask.io/
 image: /images/output_md/httpsmetamaskio.png
-ecosystem: ethereum, bsc, polygon
+ecosystem: ethereum, avalanche, celo, fantom, gnosis, optimism, polygon, arbitrum
 platform: web, ios, android
 product-description: MetaMask is a browser extension that allows users to run Ethereum dApps and interacting with smart contracts. [MetaMask Alternatives](/metamask-alternatives)
 coltitle: "Asset Management Tools"
