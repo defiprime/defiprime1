@@ -7,7 +7,7 @@ ecosystem: ethereum
 type: non-custodial
 filter: No KYC
 product-description: DDEX is the decentralized exchange built on Hydro Protocol technology, offering real-time order matching with secure on-chain settlement. [Interview with Tian Li, co-founder of DDEX exchange](/ddex).
-coltitle:  "Decentralized exchanges"
+coltitle: "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/ddexio2018
 ---

@@ -7,7 +7,7 @@ ecosystem: polygon
 type: non-custodial
 filter: No KYC
 product-description: QuickSwap is a permissionless decentralized exchange based on Polygon Layer 2 scalability infrastructure
-coltitle:  "Decentralized exchanges"
+coltitle: "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/QuickswapDEX
 github: https://github.com/QuickSwap

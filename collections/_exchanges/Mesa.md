@@ -7,7 +7,7 @@ ecosystem: ethereum
 type: non-custodial
 filter: No KYC
 product-description: Mesa is an open source interface for Gnosis Protocol, a fully permissionless DEX that enables ring trades to maximize liquidity.
-coltitle:  "Decentralized exchanges"
+coltitle: "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/dxdao_
 github: https://github.com/dOrgTech/dex-react

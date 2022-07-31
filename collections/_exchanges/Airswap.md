@@ -7,7 +7,7 @@ ecosystem: ethereum, bsc
 type: non-custodial
 filter: No KYC
 product-description: Peer-to-peer token trading on Ethereum, without trading fees. [Interview with AirSwap team](/airswap).
-coltitle:  "Decentralized exchanges"
+coltitle: "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/airswap
 github: https://github.com/airswap/developers
