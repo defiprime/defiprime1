@@ -1,7 +1,7 @@
 ---
 git-date: 2022-08-04
 product-title: GMX
-product-url: https://gmx.io/
+product-url: https://gmx.io/#/?ref=defiprime
 image: /images/output_md/gmx.io.jpg
 ecosystem: arbitrum, avalanche
 featured: false
