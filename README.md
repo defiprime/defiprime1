@@ -19,10 +19,10 @@ Follow: https://twitter.com/defiprime
 
 ## What is this?
 
-DeFiprime.com is the digital media and analytical services provider for the DeFi community. Its mandate is to inform, educate, and connect the community as the definitive source of news dedicated to decentralized finance space.
+DeFiprime.com is the digital media and analytical services provider for the DeFi community. Its mandate is to inform, educate, and connect the community as the definitive source of news dedicated to the decentralized finance space.
 
 ### Product Listing 101: definition of "the best DeFi Product"
-* Do you feel comfortable to recommend this product to your IRL friends?
+* Do you feel comfortable recommending this product to your IRL friends?
 * Live product running on the mainnet (not coming soon, not testnet, not "please take a look at our whitepaper")
 * Visible product traction (not empty marketplace, not empty order book, etc).   
 * Decentralized first. Label 'Region is not supported' it's a spit in the face of DeFi. Check our recent [twitter-poll](https://twitter.com/defiprime/status/1130890433821724672) with community sentiment on this matter.
@@ -34,6 +34,6 @@ Bad pitch for listing at DeFiprime:
 - "We are going to change the world with our super-duper AI-based smart contract platform, here is our whitepaper. We have a 10000 users strong community at our Telegram! We also struck a deal of the century with a big brand (but no one has heard about this brand anyway, and it's not related to Finance or Blockchain). Still working on our product launch, but you can play with this thing on testnet."
 
 Good pitch for listing at DeFiprime:
-- "We launched on mainnet three months ago, after two respectable auditors independently audited our smart contracts. Since our launch, we achieved this and that milestones, and XXXX users using our app regularly. We also integrated with a few well known DeFi protocols."
+- "We launched on mainnet three months ago, after two respectable auditors independently audited our smart contracts. Since our launch, we achieved this and that milestones, and XXXX users using our app regularly. We also integrated with a few well-known DeFi protocols."
 
 *If you'd like to submit your project, please fill this [product listing form](https://sneg55.typeform.com/to/WRFW02).*
