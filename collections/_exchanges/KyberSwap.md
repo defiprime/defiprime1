@@ -2,10 +2,10 @@
 git-date:
 product-title: KyberSwap
 product-url: https://kyberswap.com/
-image: /images/output_md/httpskyberswapcomswapeth-dai.png
+image: /images/output_md/kyber.png
 ecosystem: ethereum, bsc, avalanche, polygon, fantom, optimism, arbitrum
 type: non-custodial
-product-description: KyberSwap allows anyone to convert tokens directly from their wallet in an instant, convenient and secure way. [Interview with Loi Luu, CEO and co-founder of Kyber Network](/kyber-network).
+product-description: KyberSwap is a multi-chain decentralized exchange (DEX) aggregator which provides traders with the best token prices by analyzing rates across over 60 DEXs across 12 chains. [Interview with Loi Luu, CEO and co-founder of Kyber Network](/kyber-network).
 coltitle: "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/kybernetwork
