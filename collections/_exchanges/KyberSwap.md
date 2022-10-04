@@ -1,7 +1,7 @@
 ---
 git-date:
 product-title: KyberSwap
-product-url: https://kyberswap.com/
+product-url: https://kyberswap.com/swap?referral=0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1&fee_bip=10
 image: /images/output_md/kyber.png
 ecosystem: ethereum, bsc, avalanche, polygon, fantom, optimism, arbitrum
 type: non-custodial
