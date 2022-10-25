@@ -16,7 +16,7 @@ It’s no secret that DeFi has seen a massive influx of users in 2020. Individua
 
 In this guide, we’ll break down the tax implications of DeFi by looking at [existing cryptocurrency  tax guidance](https://www.irs.gov/businesses/small-businesses-self-employed/virtual-currencies) within the U.S.
 
-_This guide was created in-tandem with the tax professionals at [CryptoTrader.Tax](https://cryptotrader.tax/)._
+_This guide was created in-tandem with the tax professionals at [CoinLedger](https://coinledger.io)._
 
 
 ## The Basics of Cryptocurrency Taxes
@@ -92,7 +92,7 @@ For other DeFi platforms such as Aave, you earn interest directly to your wallet
 
 When looking at lending activities within DeFi, it’s important to assess how the interest is accruing. If it is being paid out directly to you, it is ordinary income. Contrary, if the interest rewards are accruing to the pool of which you have an LPT stake in, the income is treated as capital gains when you convert your LPT back to the underlying asset.
 
-For more information discussing the tax implications of specific DeFi protocols, refer to [this DeFi Tax Guide](https://cryptotrader.tax/blog/defi-crypto-tax-guide).
+For more information discussing the tax implications of specific DeFi protocols, refer to [this DeFi Tax Guide](https://coinledger.io/blog/defi-crypto-tax-guide).
 
 
 ## DeFi Token Swaps
@@ -154,7 +154,7 @@ Income earned from the interest on your cryptocurrency deposits/collateral shoul
 
 ## Cryptocurrency Tax Software
 
-Cryptocurrency tax software tools like [CryptoTrader.Tax](https://cryptotrader.tax/) can help automate your DeFi tax reporting. By integrating directly with platforms such as Uniswap, Compound, and others, you can use crypto tax software to import your transaction history and generate your capital gains and income tax reports with the click of a button.
+Cryptocurrency tax software tools like [CoinLedger](https://coinledger.io) can help automate your DeFi tax reporting. By integrating directly with platforms such as Uniswap, Compound, and others, you can use crypto tax software to import your transaction history and generate your capital gains and income tax reports with the click of a button.
 
 
 ## Conclusion
