@@ -3,7 +3,7 @@ git-date: 2021-08-08T15:56:54-07:00
 product-title: Perpetual Protocol
 product-url: https://perp.exchange/
 image: /images/output_md/perp.exchange.jpg
-ecosystem: ethereum
+ecosystem: ethereum, optimism
 product-description: Perpetual Protocol is a decentralized perpetual contract protocol with virtual AMMs to provide guaranteed liquidity.
 coltitle: "Margin trading"
 colpermalink: margin-trading
