@@ -5,7 +5,7 @@ product-url: https://harvest.finance/
 image: /images/output_md/harvest.finance.png
 ecosystem: ethereum, bsc, polygon, arbitrum
 product-description: Harvest automatically farms the highest yield available from the newest DeFi protocols, and optimizes the yields that are received using the latest farming techniques.
-coltitle:  "Yield Aggregators"
+coltitle: "Yield Aggregators"
 colpermalink: yield-aggregators
 twitter: https://twitter.com/harvest_finance
 github: https://github.com/harvest-finance

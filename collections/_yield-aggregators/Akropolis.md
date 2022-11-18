@@ -5,7 +5,7 @@ product-url: https://akropolis.io/
 image: /images/output_md/akropolis.io.png
 ecosystem: ethereum, bsc, arbitrum
 product-description: Akropolis allows executing automatic dollar-cost averaging into BTC ETH and participating in different liquidity mining programs.
-coltitle:  "Yield Aggregators"
+coltitle: "Yield Aggregators"
 colpermalink: yield-aggregators
 twitter: https://twitter.com/akropolisio
 github: https://github.com/akropolisio

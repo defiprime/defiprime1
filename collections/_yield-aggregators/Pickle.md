@@ -5,7 +5,7 @@ product-url: https://pickle.finance/
 image: /images/output_md/pickle.finance.png
 ecosystem: ethereum, arbitrum, fantom, gnosis, optimism, polygon
 product-description: Pickle allow users to deposit tokens from liquidity pools such as Uniswap or Curve, and then execute sophisticated strategies that maximize the returns of the depositor
-coltitle:  "Yield Aggregators"
+coltitle: "Yield Aggregators"
 colpermalink: yield-aggregators
 twitter: https://twitter.com/picklefinance
 github: https://github.com/pickle-finance
