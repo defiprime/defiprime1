@@ -1,6 +1,6 @@
 ---
 layout: alternatives
-title:  "Deribit Alternatives"
+title: "Deribit Alternatives"
 permalink: deribit-alternatives
 h1title: Deribit Alternatives
 pagetitle: Deribit Alternatives & Competitors - Top Deribit Competitors and Alternatives
@@ -9,4 +9,5 @@ og: /images/blog/deribit-og.png
 filter-by: ecosystem, filter
 alternative-to: deribit
 ---
+
 Deribit is a Panama-based Bitcoin and Ethereum Options Exchange. Deribit appears to be taking extra caution with its upcoming mandatory verification plan and does not allow U.S. residents to trade on its platform. Here you can find a list of decentralized Deribit alternatives without KYC, or geofences.

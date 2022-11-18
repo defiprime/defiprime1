@@ -7,7 +7,7 @@ ecosystem: ethereum
 product-description: "TrueFi is a protocol for uncollateralized lending"
 type: non-custodial
 filter: Lend Cryptocurrency
-coltitle:  "Lending"
+coltitle: "Lending"
 colpermalink: decentralized-lending
 twitter: https://twitter.com/TrustToken
 github: https://github.com/trusttoken

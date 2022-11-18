@@ -6,7 +6,7 @@ image: /images/output_md/venus.io.jpg
 ecosystem: bsc
 filter: Lend Cryptocurrency, Borrow Cryptocurrency
 product-description: Venus is a algorithmic money market and synthetic stablecoin protocol on Binance Smart Chain
-coltitle:  "Lending"
+coltitle: "Lending"
 colpermalink: decentralized-lending
 type: non-custodial
 twitter: https://twitter.com/VenusProtocol

@@ -7,7 +7,7 @@ ecosystem: ethereum, fantom, arbitrum, optimism
 product-description: "Alchemix is a future-yield-backed synthetic asset platform with flexible instant loans that repay themselves over time and community DAO. The platform advances your yield farming via a synthetic token representing a fungible claim on any underlying collateral in the Alchemix protocol"
 type: non-custodial
 filter: Borrow Cryptocurrency, Lend Cryptocurrency
-coltitle:  "Lending"
+coltitle: "Lending"
 colpermalink: decentralized-lending
 twitter: https://twitter.com/alchemixfi
 github: https://github.com/alchemix-finance

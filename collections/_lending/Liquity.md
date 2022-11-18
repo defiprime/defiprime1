@@ -7,7 +7,7 @@ ecosystem: ethereum
 product-description: "Liquity is a decentralized borrowing protocol that allows you to draw interest-free loans against Ether used as collateral. [Interview with founder](/liquity)."
 type: non-custodial
 filter: Borrow Cryptocurrency
-coltitle:  "Lending"
+coltitle: "Lending"
 colpermalink: decentralized-lending
 twitter: https://twitter.com/LiquityProtocol
 github: https://github.com/liquity/
