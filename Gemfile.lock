@@ -62,6 +62,7 @@ GEM
       nokogiri (~> 1.6)
       progressbar (~> 1.9)
       verbal_expressions (~> 0.1.5)
+    jekyll-cloudflare (0.1.0)
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-include-cache (0.2.1)
@@ -132,6 +133,7 @@ DEPENDENCIES
   fastimage
   jekyll!
   jekyll-algolia
+  jekyll-cloudflare
   jekyll-feed
   jekyll-include-cache
   jekyll-lazy-load-image!
