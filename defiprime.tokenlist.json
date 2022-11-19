@@ -8,7 +8,7 @@
       "description": "Tokens associated with the products listed at defiprime.com"
     }
   },
-  "timestamp": "2022-11-13T00:00:00+00:00",
+  "timestamp": "2022-11-19T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -792,11 +792,18 @@
       "symbol": "GMX",
       "name": "GMX",
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x7778360f035c589fce2f4ea5786cbd8b36e5396b",
+      "symbol": "OOE",
+      "name": "OOE",
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 40,
+    "minor": 41,
     "patch": 0
   }
 }
