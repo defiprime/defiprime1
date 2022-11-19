@@ -5,7 +5,7 @@ product-url: https://www.liquidityfolio.com/invite/4fb6fdede811400e84cb160f09d18
 image: /images/output_md/www.uniswaproi.com.png
 ecosystem: ethereum
 product-description: Uniswap ROI calculator helps you analyze your investments in Uniswap and find the best liquidity pools.
-coltitle:  "Analytics"
+coltitle: "Analytics"
 colpermalink: defi-analytics
 alternative-to: dextools
 ---

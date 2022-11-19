@@ -6,7 +6,7 @@ image: /images/output_md/unit.xyz.png
 ecosystem: ethereum, bsc, fantom
 filter: Borrow Cryptocurrency
 product-description: Unit Protocol is a decentralized protocol that allows you to mint stablecoin $USDP using a variety of tokens as collateral
-coltitle:  "Lending"
+coltitle: "Lending"
 colpermalink: decentralized-lending
 type: non-custodial
 twitter: https://twitter.com/unitprotocol

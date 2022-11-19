@@ -6,7 +6,7 @@ image: /images/output_md/httpswwwsendwyrecom.png
 ecosystem: ethereum
 product-description: Wyre is a secure and compliant bridge between fiat currencies and cryptocurrency.
 filter: Fiat on-ramps
-coltitle:  "Infrastructure"
+coltitle: "Infrastructure"
 colpermalink: infrastructure
 twitter: https://twitter.com/sendwyre
 ---

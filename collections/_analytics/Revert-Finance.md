@@ -5,7 +5,7 @@ product-url: https://revert.finance/
 image: /images/output_md/revert.finance.jpg
 ecosystem: ethereum
 product-description: "Revert provides actionable analytics for DeFi liquidity providers on Uniswap v2, v3 and Sushiswap"
-coltitle:  "Analytics"
+coltitle: "Analytics"
 colpermalink: defi-analytics
 twitter: https://twitter.com/revertfinance
 ---

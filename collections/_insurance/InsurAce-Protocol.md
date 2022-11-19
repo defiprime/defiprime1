@@ -5,7 +5,7 @@ product-url: https://app.insurace.io/Insurance/BuyCovers?referrer=13465052682954
 image: /images/output_md/insurace.io.jpg
 ecosystem: ethereum, bsc, polygon, avalanche
 product-description: InsurAce is a multi-chain protocol that provides insurance services to DeFi users, allowing them to protect their investment funds against various risks
-coltitle:  "Insurance"
+coltitle: "Insurance"
 colpermalink: insurance
 twitter: https://twitter.com/InsurAce_io
 ticker: INSUR

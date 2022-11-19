@@ -8,16 +8,8 @@
       "description": "Tokens associated with the products listed at defiprime.com"
     }
   },
-  "timestamp": "2022-01-26T00:00:00+00:00",
+  "timestamp": "2022-11-13T00:00:00+00:00",
   "tokens": [
-    {
-      "chainId": 1,
-      "address": "0x960b236A07cf122663c4303350609A66A7B288C0",
-      "symbol": "ANT",
-      "name": "Aragon ANT (old)",
-      "decimals": 18,
-      "tags": ["defi"]
-    },
     {
       "chainId": 1,
       "address": "0xa1d65E8fB6e87b60FECCBc582F7f97804B725521",
@@ -764,7 +756,7 @@
     },
     {
       "chainId": 1,
-      "address": "0x383518188c0c6d7730d91b2c03a03c837814a899",
+      "address": "0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5",
       "symbol": "OHM",
       "name": "OHM",
       "decimals": 18,
@@ -793,11 +785,18 @@
       "name": "LOOKS",
       "decimals": 18,
       "tags": ["defi"]
+    },
+    {
+      "chainId": 42161,
+      "address": "0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a",
+      "symbol": "GMX",
+      "name": "GMX",
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 39,
+    "minor": 40,
     "patch": 0
   }
 }

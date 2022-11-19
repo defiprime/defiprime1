@@ -3,7 +3,7 @@ git-date: 2021-10-05T10:02:11-07:00
 product-title: Ribbon Finance
 product-url: https://www.ribbon.finance/
 image: /images/output_md/ribbon.finance.jpg
-ecosystem: ethereum
+ecosystem: ethereum, avalanche, solana
 filter: Synthetic Assets
 product-description: Ribbon Finance uses financial engineering to create structured products that deliver sustainable yield.
 coltitle: "Derivatives"

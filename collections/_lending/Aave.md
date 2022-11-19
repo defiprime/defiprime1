@@ -7,7 +7,7 @@ ecosystem: ethereum, polygon, avalanche, fantom, optimism, arbitrum
 product-description: "Aave is an Open Source and Non-Custodial protocol that let you earn interest on deposits & borrow assets on multiple chains. [Aave Protocol - Innovative DeFi Lending, interview with the founder](/aave)"
 type: non-custodial
 filter: Borrow Cryptocurrency, Lend Cryptocurrency
-coltitle:  "Lending"
+coltitle: "Lending"
 colpermalink: decentralized-lending
 twitter: https://twitter.com/aaveaave
 github: https://github.com/aave/aave-protocol

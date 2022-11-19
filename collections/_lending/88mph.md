@@ -7,7 +7,7 @@ ecosystem: ethereum
 product-description: "88mph lets you lend your crypto assets at a fixed interest rate. [Interview with 88mph team](/88mph)"
 type: non-custodial
 filter: Lend Cryptocurrency
-coltitle:  "Lending"
+coltitle: "Lending"
 colpermalink: decentralized-lending
 twitter: https://twitter.com/88mphapp
 github: https://github.com/88mphapp

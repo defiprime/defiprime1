@@ -6,7 +6,7 @@ image: /images/output_md/walletconnect.org.png
 ecosystem: ethereum
 product-description: WalletConnect is an open protocol for connecting desktop Dapps to mobile Wallets using end-to-end encryption by scanning a QR code.
 filter: protocols
-coltitle:  "Infrastructure"
+coltitle: "Infrastructure"
 colpermalink: infrastructure
 twitter: https://twitter.com/walletconnect
 ---

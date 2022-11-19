@@ -5,7 +5,7 @@ product-url: https://www.gro.xyz/
 image: /images/output_md/www.gro.xyz.jpg
 ecosystem: ethereum, avalanche
 product-description: Gro is a yield optimizer that enables leverage and protection through risk tranching.
-coltitle:  "Yield Aggregators"
+coltitle: "Yield Aggregators"
 colpermalink: yield-aggregators
 twitter: https://twitter.com/groprotocol
 ticker: GRO

@@ -5,7 +5,7 @@ product-url: https://www.alpacafinance.org/
 image: /images/output_md/alpacafinance.org.jpg
 ecosystem: bsc, fantom
 product-description: "Alpaca Finance is the lending protocol for leveraged yield farming which is multiplying farming principals and resulting profits on Binance Smart Chain"
-coltitle:  "Yield Aggregators"
+coltitle: "Yield Aggregators"
 colpermalink: yield-aggregators
 twitter: https://twitter.com/AlpacaFinance
 github: https://github.com/alpaca-finance

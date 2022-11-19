@@ -3,9 +3,9 @@ git-date: 2021-04-04T10:35:33-07:00
 product-title: Beefy Finance
 product-url: https://beefy.finance/
 image: /images/output_md/beefy.finance.jpg
-ecosystem: bsc, polygon, avalanche, arbitrum, optimism, celo, fantom
+ecosystem: bsc, polygon, avalanche, arbitrum, optimism, celo, fantom, ethereum
 product-description: Beefy Finance is a Multi Chain Yield Optimizer that enables users to get maximal return on their assets while removing the cost and hassle of daily harvest.
-coltitle:  "Yield Aggregators"
+coltitle: "Yield Aggregators"
 colpermalink: yield-aggregators
 twitter: https://twitter.com/beefyfinance
 github: https://github.com/beefyfinance

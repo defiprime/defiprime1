@@ -6,7 +6,7 @@ image: /images/output_md/httpsrampnetwork.png
 ecosystem: ethereum
 product-description: The protocol powering fiat to crypto exchanges
 filter: Fiat on-ramps
-coltitle:  "Infrastructure"
+coltitle: "Infrastructure"
 colpermalink: infrastructure
 twitter: https://twitter.com/RampNetwork
 ---

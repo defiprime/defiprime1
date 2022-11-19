@@ -5,7 +5,7 @@ product-url: https://vesper.finance/
 image: /images/output_md/vesper.finance.png
 ecosystem: ethereum, polygon, avalanche
 product-description: Vesper provides a suite of yield-generating products, focused on accessibility, optimization, and longevity
-coltitle:  "Yield Aggregators"
+coltitle: "Yield Aggregators"
 colpermalink: yield-aggregators
 twitter: https://twitter.com/VesperFi
 github: https://github.com/vesperfi
