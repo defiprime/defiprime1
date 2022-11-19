@@ -10,17 +10,17 @@
             <div class="author-social hidden-small">
               {% if author.twitter %}
               <a href="{{ author.twitter }}" class="social-link">
-                {% include icons/twitter.svg %}
+                {% include_cached icons/twitter.svg %}
               </a>
               {% endif %}
               {% if author.github %}
                 <a href="{{ author.github }}" class="social-link">
-                  {% include icons/github.svg %}                
+                  {% include_cached icons/github.svg %}
                 </a>
               {% endif %}
               {% if author.linkedin %}
                 <a href="{{ author.linkedin }}" class="social-link">
-                  {% include icons/linkedin.svg %}                
+                  {% include_cached icons/linkedin.svg %}
                 </a>
               {% endif %}
            </div>
@@ -33,17 +33,17 @@
             <div class="author-social shown-small">
               {% if author.twitter %}
               <a href="{{ author.twitter }}" class="social-link">
-                {% include icons/twitter.svg %}
+                {% include_cached icons/twitter.svg %}
               </a>
               {% endif %}
               {% if author.github %}
                 <a href="{{ author.github }}" class="social-link">
-                  {% include icons/github.svg %}                
+                  {% include_cached icons/github.svg %}
                 </a>
               {% endif %}
               {% if author.linkedin %}
               <a href="{{ author.linkedin }}" class="social-link">
-                {% include icons/linkedin.svg %}                
+                {% include_cached icons/linkedin.svg %}
               </a>
             {% endif %}
            </div>

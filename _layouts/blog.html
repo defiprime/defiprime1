@@ -85,7 +85,7 @@
  </script>
 </head>
   <body class="post">
-    {% include header.html %}
+    {% include_cached header.html %}
     {% if page.featured-image %}
       <div class="feature" style="background-image: url({{ page.featured-image }})">
         <div class="container  typeset"></div>
@@ -115,9 +115,33 @@
 
       </div>
     </main>
-    {% include folowus.html %}
+    {% include_cached folowus.html %}
     {% include author_bio.html %}
-    {% include blog-readmore.html %}
-    {% include footer.html %}
+    <h3 class="align-center">The Latest:</h3>
+    <section class="latest">
+      {% assign posts = site.categories.blog | where_exp:"post", "post.url != page.url"%}
+      {% assign nonAmpPosts = ""  | split: ','%}
+
+      {% for post in posts %}
+        {% unless  post.url contains "/amp" %}
+          {% assign nonAmpPosts = nonAmpPosts | push: post %}
+        {% endunless  %}
+      {% endfor %}
+
+
+      {% assign nonAmpSamplePosts = nonAmpPosts | sample:4 %}
+
+      {% for post in nonAmpSamplePosts%}
+    	<article>
+    		<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}" class="post-link">
+    			<div class="content">
+    				<p class="title">{{ post.h1title }}</p>
+    				<p>{{ post.intro }}</p>
+    			</div>
+    		</a>
+    	</article>
+    	{% endfor %}
+    </section>
+        {% include_cached footer.html %}
   </body>
 </html>

@@ -58,13 +58,13 @@
 </head>
 
 <body class="post product">
-  {% include header.html %}
+  {% include_cached header.html %}
   <!-- Main -->
   <div id="main">
     <div class="inner">
       <article class="article  article--post content typeset">
         <a href="/{{ page.colpermalink }}" class="arrow-back">
-          {% include icons/arrow-back.svg %}
+          {% include_cached icons/arrow-back.svg %}
           {{ page.coltitle }}
         </a>
 
@@ -75,10 +75,10 @@
             <span>website</span>
           </a>
           {% if page.twitter  %}
-          <a href='{{page.twitter}}' target="_blank" rel="noopener">{% include icons/twitter.svg %}</a>
+          <a href='{{page.twitter}}' target="_blank" rel="noopener">{% include_cached icons/twitter.svg %}</a>
           {% endif %}
           {% if page.github %}
-          <a href='{{page.github}}' target="_blank" rel="noopener">{% include icons/github.svg %}</a>
+          <a href='{{page.github}}' target="_blank" rel="noopener">{% include_cached icons/github.svg %}</a>
           {% endif %}
         </div>
         <div class='product-description-table'>
@@ -159,7 +159,7 @@
 
     </div>
   </div>
-  {% include footer.html %}
+  {% include_cached footer.html %}
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
