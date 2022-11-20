@@ -3,7 +3,7 @@ git-date: 2022-11-19
 product-title: Orca
 product-url: https://www.orca.so
 image: /images/output_md/www.orca.so.jpg
-ecosystem: solana, fantom
+ecosystem: solana
 type: non-custodial
 filter: Aggregators, No KYC
 product-description: Orca is a decentralized protocol that facilitates trades on Solana, as Orca is non-custodial when you trade tokens the protocol will interact directly with your wallet.
