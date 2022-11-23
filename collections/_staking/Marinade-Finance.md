@@ -1,0 +1,12 @@
+---
+git-date: 2022-11-19T09:47:35-07:00
+product-title: Marinade Finance
+product-url: https://marinade.finance
+image: /images/output_md/marinade.finance.jpg
+product-description: Marinade.Finance is a non-custodial liquid staking protocol built on Solana. You can stake your SOL tokens with Marinade using automated staking strategies and receive "marinated SOL" tokens (mSOL) that you can use in decentralized finance (DeFi).
+filter: Solana
+coltitle: "Staking"
+colpermalink: staking
+twitter: https://twitter.com/MarinadeFinance
+github: https://github.com/marinade-finance
+---
