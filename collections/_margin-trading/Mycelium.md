@@ -12,4 +12,5 @@ coltitle: "Margin trading"
 colpermalink: margin-trading
 twitter: https://twitter.com/mycelium_xyz
 github: https://github.com/mycelium-ethereum
+alternative-to: ["ftx"]
 ---

@@ -10,4 +10,5 @@ product-description: Slingshot is a web3 trading platform aggregating DEX liquid
 coltitle: "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/SlingshotCrypto
+alternative-to: ["ftx", "uniswap"]
 ---

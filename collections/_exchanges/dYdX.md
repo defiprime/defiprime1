@@ -10,4 +10,5 @@ coltitle: "Margin trading"
 colpermalink: margin-trading
 twitter: https://twitter.com/dydxprotocol
 github: https://github.com/dydxprotocol/
+alternative-to: ["ftx", "uniswap"]
 ---

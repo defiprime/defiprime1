@@ -12,4 +12,5 @@ twitter: https://twitter.com/idexio
 ticker: IDEX
 contract: "0xB705268213D593B8FD88d3FDEFF93AFF5CbDcfAE"
 decimals: 18
+alternative-to: ["ftx", "uniswap"]
 ---

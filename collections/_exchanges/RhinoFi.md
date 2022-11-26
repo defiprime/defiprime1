@@ -13,4 +13,5 @@ twitter: https://twitter.com/rhinofi
 ticker: NEC
 contract: "0xcc80c051057b774cd75067dc48f8987c4eb97a5e"
 decimals: 18
+alternative-to: ["ftx", "uniswap"]
 ---

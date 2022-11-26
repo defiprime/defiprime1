@@ -11,4 +11,5 @@ coltitle: "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/traderjoe_xyz
 github: https://github.com/traderjoe-xyz
+alternative-to: ["ftx", "uniswap"]
 ---

@@ -14,4 +14,5 @@ github: https://github.com/perpetual-protocol/perpetual-protocol
 ticker: PERP
 contract: "0xbc396689893d065f41bc2c6ecbee5e0085233447"
 decimals: 18
+alternative-to: ["ftx"]
 ---

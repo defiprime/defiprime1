@@ -11,4 +11,5 @@ colpermalink: margin-trading
 filter: Ethereum, Bitcoin
 twitter: https://twitter.com/GMX_IO
 github: https://github.com/gmx-io
+alternative-to: ["ftx"]
 ---

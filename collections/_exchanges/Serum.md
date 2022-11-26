@@ -11,4 +11,5 @@ coltitle: "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/projectserum
 github: https://github.com/project-serum
+alternative-to: ["ftx", "uniswap"]
 ---
