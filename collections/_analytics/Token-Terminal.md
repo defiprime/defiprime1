@@ -8,4 +8,5 @@ product-description: Token Terminal is a analytics dashboard that provides tradi
 coltitle: "Analytics"
 colpermalink: defi-analytics
 twitter: https://twitter.com/tokenterminal
+alternative-to: nansen
 ---

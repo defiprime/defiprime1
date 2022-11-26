@@ -8,4 +8,5 @@ product-description: Chainbeat is the data insights and analytics platform for w
 coltitle: "Analytics"
 colpermalink: defi-analytics
 twitter: https://twitter.com/chainbeatinc
+alternative-to: nansen
 ---

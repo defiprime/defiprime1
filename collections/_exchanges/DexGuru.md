@@ -12,5 +12,5 @@ colpermalink: exchanges
 twitter: https://twitter.com/DexGuru
 github: https://github.com/dex-guru
 featured: true
-alternative-to: ["uniswap", "dextools", "1inch"]
+alternative-to: ["uniswap", "dextools", "1inch", "nansen"]
 ---

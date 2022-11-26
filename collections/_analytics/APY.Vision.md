@@ -11,4 +11,5 @@ twitter: https://twitter.com/ApyVision
 ticker: VISION
 contract: "0xf406f7a9046793267bc276908778b29563323996"
 decimals: 18
+alternative-to: nansen
 ---

@@ -8,4 +8,5 @@ product-description: Reports based on the blockchain realtime data DEX Trades An
 coltitle: "Analytics"
 colpermalink: defi-analytics
 twitter: https://twitter.com/Bloxy_info
+alternative-to: nansen
 ---

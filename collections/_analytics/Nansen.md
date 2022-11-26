@@ -8,4 +8,5 @@ product-description: Nansen is an analytics platform for Ethereum, which combine
 coltitle: "Analytics"
 colpermalink: defi-analytics
 twitter: https://twitter.com/d5_dao
+alternative-to: nansen
 ---

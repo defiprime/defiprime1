@@ -9,4 +9,5 @@ coltitle: "Analytics"
 colpermalink: defi-analytics
 twitter: https://twitter.com/DebankDeFi
 github: https://github.com/DeBankDeFi
+alternative-to: nansen
 ---

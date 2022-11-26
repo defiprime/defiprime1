@@ -8,4 +8,5 @@ product-description: Dune Analytics allows you to instantly create and share ana
 coltitle: "Analytics"
 colpermalink: defi-analytics
 twitter: https://twitter.com/DuneAnalytics
+alternative-to: nansen
 ---

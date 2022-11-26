@@ -10,4 +10,4 @@ filter-by: ecosystem, filter
 alternative-to: dextools
 ---
 
-DEX Screener is a cryptocurrency analysis and screening tool. DEX Screener provides realtime price charts and trading history on DEXes across Ethereum, BSC, Polygon, Avalanche, Fantom, Harmony, Cronos, Arbitrum, Optimism and more.
+DEX Screener is a cryptocurrency analysis and screening tool. DEX Screener provides realtime price charts and trading history on DEXes across Ethereum, BSC, Polygon, Avalanche, Fantom, Harmony, Cronos, Arbitrum, Optimism and more. There is a list of DEX Screener alternatives:
