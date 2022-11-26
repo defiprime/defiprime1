@@ -6,7 +6,7 @@ image: /images/output_md/nft20.io.png
 ecosystem: ethereum, polygon
 filter: Indices
 product-description: NFT20 is a permissionless protocol enabling trade, swap and sell NFTs that tokenized at indices pools.
-coltitle:  "Derivatives"
+coltitle: "Derivatives"
 colpermalink: derivatives
 twitter: https://twitter.com/niftymuseum
 github: https://github.com/verynifty/

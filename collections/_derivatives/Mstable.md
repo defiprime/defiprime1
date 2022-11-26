@@ -6,7 +6,7 @@ image: /images/output_md/app.mstable.org.png
 ecosystem: ethereum, polygon
 filter: Synthetic Assets
 product-description: mStable combine stablecoins and tokenized assets into higher-yielding instruments. [mStable Explained. Interview with Co-founder](/mstable)
-coltitle:  "Derivatives"
+coltitle: "Derivatives"
 colpermalink: derivatives
 github: https://github.com/mstable
 twitter: https://twitter.com/mstable_
