@@ -8,7 +8,7 @@
       "description": "Tokens associated with the products listed at defiprime.com"
     }
   },
-  "timestamp": "2022-11-19T00:00:00+00:00",
+  "timestamp": "2022-11-26T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -799,11 +799,18 @@
       "symbol": "OOE",
       "name": "OOE",
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xd9fcd98c322942075a5c3860693e9f4f03aae07b",
+      "symbol": "EUL",
+      "name": "EUL",
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 41,
+    "minor": 42,
     "patch": 0
   }
 }
