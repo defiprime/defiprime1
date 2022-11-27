@@ -1,12 +1,12 @@
 ---
-git-date: 2022-11-20:05:44-07:00
+git-date: 2022-11-26:05:44-07:00
 product-title: Euler
 product-url: https://www.euler.finance
 image: /images/output_md/www.euler.finance.jpg
 ecosystem: ethereum
 product-description: "Euler is a non-custodial permissionless lending protocol on Ethereum that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party."
 type: non-custodial
-filter: Borrow Cryptocurrency
+filter: Borrow Cryptocurrency, Lend Cryptocurrency
 coltitle: "Lending"
 colpermalink: decentralized-lending
 twitter: https://twitter.com/eulerfinance
