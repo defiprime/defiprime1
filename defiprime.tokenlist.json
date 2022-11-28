@@ -8,7 +8,7 @@
       "description": "Tokens associated with the products listed at defiprime.com"
     }
   },
-  "timestamp": "2022-11-26T00:00:00+00:00",
+  "timestamp": "2022-11-28T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -798,11 +798,18 @@
       "symbol": "EUL",
       "name": "EUL",
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x8290333cef9e6d528dd5618fb97a76f268f3edd4",
+      "symbol": "ANKR",
+      "name": "ANKR",
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 43,
+    "minor": 44,
     "patch": 0
   }
 }
