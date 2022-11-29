@@ -1,7 +1,7 @@
 ---
 git-date: 2019-04-13T21:06:27-07:00
 layout: page
-title:  "Marketplaces"
+title: "Marketplaces"
 permalink: decentralized_marketplaces
 h1title: Marketplaces
 pagetitle: Best Decentralized Marketplaces - Crypto Marketplaces
