@@ -8,7 +8,7 @@
       "description": "Tokens associated with the products listed at defiprime.com"
     }
   },
-  "timestamp": "2022-11-28T00:00:00+00:00",
+  "timestamp": "2022-11-29T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -805,11 +805,18 @@
       "symbol": "ANKR",
       "name": "ANKR",
       "tags": ["defi"]
+    },
+    {
+      "chainId": 10,
+      "address": "0x920cf626a271321c151d027030d5d08af699456b",
+      "symbol": "KWENTA",
+      "name": "KWENTA",
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 44,
+    "minor": 45,
     "patch": 0
   }
 }
