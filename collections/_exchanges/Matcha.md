@@ -3,7 +3,7 @@ git-date: 2021-01-09T10:02:11-07:00
 product-title: Matcha
 product-url: https://matcha.xyz
 image: /images/output_md/matcha.xyz.png
-ecosystem: ethereum, polygon, bsc, optimism, avalanche, fantom, celo
+ecosystem: ethereum, polygon, bsc, optimism, avalanche, fantom, celo, arbitrum
 type: non-custodial
 filter: Aggregators, No KYC
 product-description: Matcha is a crypto trading platform with smart order routing powered by 0x. Matcha aggregates liquidity from multiple sources, including 0x, Kyber, Uniswap, Oasis, Curve, and others. [Matcha Alternatives](/matcha-alternatives)
