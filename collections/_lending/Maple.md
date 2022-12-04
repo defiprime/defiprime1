@@ -1,12 +1,12 @@
 ---
-git-date: 2022-11-19:05:44-07:00
+git-date: 2022-12-04
 product-title: Maple
 product-url: https://www.maple.finance
 image: /images/output_md/www.maple.finance.jpg
 ecosystem: ethereum, solana
 product-description: "Maple Finance is an institutional crypto-capital network built on Ethereum and Solana. For Lenders, Maple offers a sustainable yield source through lending to diversified pools of crypto blue-chips."
 type: non-custodial
-filter: Borrow Cryptocurrency
+filter: Borrow Cryptocurrency, Lend Cryptocurrency
 coltitle: "Lending"
 colpermalink: decentralized-lending
 twitter: https://twitter.com/maplefinance
