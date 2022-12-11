@@ -1,9 +1,9 @@
 ---
-git-date: 2022-11-20T14:03:48-07:00
+git-date: 2022-12-11
 product-title: Rocket Pool
 product-url: https://rocketpool.net/
 image: /images/output_md/rocketpool.net.jpg
-product-description: Rocket Pool is a first of its kind ETH2 Proof of Stake Protocol, designed to be community owned, decentralised, trustless and compatible with staking in Ethereum 2.0. 
+product-description: Rocket Pool is a Ethereum Proof of Stake Protocol, designed to be community owned, decentralised and trustless. 
 filter: Ethereum 2.0
 coltitle: "Staking"
 colpermalink: staking
