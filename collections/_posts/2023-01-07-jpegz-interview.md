@@ -8,24 +8,20 @@ pagetitle: "JPEGz - NFT market capitalization Index"
 metadescription: "JPEGz is a synthetic index that provides utility for a user to track real-time market capitalization of 10 largest NFT collections"
 category: blog
 featured-image: /images/blog/jpegz-ogp.png
-intro: ""
+intro: "Interview with Joe Sticco, co-founder of Cryptex Finance"
 author: Defiprime
 tags: ["Interview", "NFTs", "DAO governed", "Derivatives"]
 ---
 
 ### Hello! What's your background, and what are you working on?
 
-Hi, I'm Joe Sticco, a lifelong trader and asset manager. In 2014, I purchased my first Bitcoin and sold it shortly after, realizing a small profit. In the summer of 2016, I began researching, accumulating, and holding various tokens.
-
-In 2018, I was soon inspired to create something to benefit the crypto ecosystem. This turned into Co-Founding Cryptex Finance alongside Preston Van Loon and Thomas Matzner in 2019. I left my former life and never looked back.
+Hi, I'm Joe Sticco, a lifelong trader and asset manager. In 2014, I purchased my first Bitcoin and sold it shortly after, realizing a small profit. In the summer of 2016, I began researching, accumulating, and holding various tokens. In 2018, I was soon inspired to create something to benefit the crypto ecosystem. This turned into Co-Founding Cryptex Finance alongside Preston Van Loon and Thomas Matzner in 2019. I left my former life and never looked back.
 
 Cryptex Finance is a DAO that builds fully decentralized index solutions for global DeFi users worldwide.
 
 Examples thus far are [TCAP](/tcap), a Total Crypto Market Capitalization Index, and JPEGz, an NFT index representing 10 collections weighted by their respective current market capitalization.
 
-JPEGz is a synthetic index that provides utility for a system user to track real-time market capitalization of these 10 NFT collections, without the need to own any of the underlying collections themselves.
-
-JPEGz index components are Bored Ape Yacht Club, CryptoPunks, Mutant Ape Yacht Club, Azuki, CloneX, Doodles, VeeFriends, Cool Cats, World of Women, and Cryptoadz.
+JPEGz is a synthetic index that provides utility for a system user to track real-time market capitalization of these 10 NFT collections, without the need to own any of the underlying collections themselves. JPEGz index components are Bored Ape Yacht Club, CryptoPunks, Mutant Ape Yacht Club, Azuki, CloneX, Doodles, VeeFriends, Cool Cats, World of Women, and Cryptoadz.
 
 Real-time NFT market capitalization data of these collections is powered by Coinbase Cloud. It is then aggregated and verified on chain via Chainlink. This index data is then further aggregated by Cryptex.
 
