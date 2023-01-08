@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/jpegz-ogp.png
 intro: ""
 author: Defiprime
-tags: ["Interview"]
+tags: ["Interview", "NFTs", "DAO governed", "Derivatives"]
 ---
 
 ### Hello! What's your background, and what are you working on?
@@ -55,14 +55,11 @@ Shoutout to Chainlink and Coinbase Cloud for building the oracles, Quantstamp fo
 
 ### What's your business model?
 
-Cryptex does not sell tokens. There are no ICO's, presales, or pre-mines.
-From a security perspective, the DAO works to have all systems audited and to build open-source software that is always accessible to the world.
+Cryptex does not sell tokens. There are no ICO's, presales, or pre-mines. From a security perspective, the DAO works to have all systems audited and to build open-source software that is always accessible to the world.
 
 The DAO generates money through burn fees within the software, there are no fees to mint any Cryptex Product, but there is a burn fee which goes to the treasury. How treasury funds are then used is decided by governance token holders.
 
-I try not to look at anyone as competitors, any one building in the space should be building for the greater good of the communities they serve.
-
-We are different as we are looking to create access to data metrics whilst widely quoted are inaccessible, thats the mission we look at whilst building. The target market is anyone interested in indexes, rather than just buying coins.
+I try not to look at anyone as competitors, any one building in the space should be building for the greater good of the communities they serve. We are different as we are looking to create access to data metrics whilst widely quoted are inaccessible, thats the mission we look at whilst building. The target market is anyone interested in indexes, rather than just buying coins.
 
 ### What are your goals for the future?
 
@@ -74,14 +71,7 @@ While we face challenging times as an industry, I am inspired daily by the build
 
 ### Where can we go to learn more?
 
-Website: [https://cryptex.finance/](https://cryptex.finance/)
-
-Twitter: [https://twitter.com/CryptexFinance](https://twitter.com/CryptexFinance)
-
-Discord: [https://discord.com/invite/cryptex](https://discord.com/invite/cryptex)
-
-JPEGz Annoucement Video: [https://twitter.com/CryptexFinance/status/1575262982556319745?s=20&t=2TW1CxAYEb6SpwIPgRESgw](https://twitter.com/CryptexFinance/status/1575262982556319745?s=20&t=2TW1CxAYEb6SpwIPgRESgw)
-
-JPEGz on Arbitrum Annoucement Video: [https://twitter.com/CryptexFinance/status/1593662890434650113?s=20&t=2TW1CxAYEb6SpwIPgRESgw](https://twitter.com/CryptexFinance/status/1593662890434650113?s=20&t=2TW1CxAYEb6SpwIPgRESgw)
-
-NFT Oracles Price Feeds: [https://blog.chain.link/nft-floor-price-feeds-mainnet/](https://blog.chain.link/nft-floor-price-feeds-mainnet/)
+- Website: [https://cryptex.finance/](https://cryptex.finance/)
+- Twitter: [https://twitter.com/CryptexFinance](https://twitter.com/CryptexFinance)
+- Discord: [https://discord.com/invite/cryptex](https://discord.com/invite/cryptex)
+- NFT Oracles Price Feeds: [https://blog.chain.link/nft-floor-price-feeds-mainnet/](https://blog.chain.link/nft-floor-price-feeds-mainnet/)
