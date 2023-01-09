@@ -5,7 +5,7 @@ product-url: https://www.synfutures.com
 image: /images/output_md/www.synfutures.com.jpg
 ecosystem: polygon, bsc, arbitrum
 filter: Synthetic Assets
-product-description: SynFutures is a permissionless web3 infrastructure for derivatives. It enables rypto risk management functions to hedge your portfolio risks in any asset, anywhere, any time.
+product-description: SynFutures is a permissionless web3 infrastructure for derivatives. It enables crypto risk management functions to hedge your portfolio risks in any asset, anywhere, at any time.
 coltitle: "Derivatives"
 colpermalink: derivatives
 twitter: https://twitter.com/SynFuturesDefi
