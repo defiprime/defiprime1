@@ -1,7 +1,7 @@
 ---
 git-date:
 product-title: RhinoFi
-product-url: https://rhino.fi/
+product-url: https://app.rhino.fi?ref=EBDB626645
 image: /images/output_md/www.deversifi.com.png
 ecosystem: ethereum
 type: non-custodial

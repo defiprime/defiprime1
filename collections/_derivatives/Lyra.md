@@ -3,7 +3,7 @@ git-date: 2022-08-14T10:02:11-07:00
 product-title: Lyra
 product-url: https://www.lyra.finance
 image: /images/output_md/lyra.finance.jpg
-ecosystem: optimism
+ecosystem: optimism, arbitrum
 filter: Options
 product-description: Lyra is a decentralized options exchange on Optimistic Ethereum, giving traders access to crypto markets with low fees and subsecond transaction speeds.
 coltitle: "Derivatives"
