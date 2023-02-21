@@ -14,4 +14,5 @@ ticker: KNC
 contract: "0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202"
 decimals: 18
 alternative-to: ["uniswap", "1inch"]
+featured: true
 ---
