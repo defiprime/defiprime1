@@ -56,7 +56,7 @@ featured-image: /images/cosmos-og.png
 
 {% assign cosmos_projects = all_projects | where_exp:"item", "item.ecosystem contains 'cosmos'"%}
 
-{% assign counter_cosmos = polygon_projects.size %}
+{% assign counter_cosmos = cosmos_projects.size %}
 
 DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ counter }} DeFi projects listed and {{ counter_cosmos }} of them built on Cosmos.
 
