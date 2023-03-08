@@ -46,11 +46,15 @@ featured-image: /images/blog/bsc-og.png
 
 {% assign counter_eth = eth_projects.size %}
 
+{% assign polygon_projects = all_projects | where_exp:"item", "item.ecosystem contains 'polygon'"%}
+
+{% assign counter_polygon = polygon_projects.size %}
+
 DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ counter }} DeFi projects listed and {{ counter_bsc }} of them built on BSC.
 
 | Ethereum <br /> DeFi | {{counter_eth}} |
-| BSC <br /> DeFi | {{ counter_bsc }} |
-| Bitcoin <br /> DeFi | {{counter_btc}} |
+| BNB <br /> DeFi | {{ counter_bsc }} |
+| Polygon <br /> DeFi | {{counter_polygon}} |
 
 {% assign assets-management-tools = site.assets-management-tools | where_exp:"item", "item.ecosystem contains 'bsc'" %}
 {% if assets-management-tools.size > 0 %}

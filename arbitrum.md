@@ -50,10 +50,14 @@ featured-image: /images/blog/arbitrum.png
 
 {% assign counter_arbitrum = arbitrum_projects.size %}
 
+{% assign polygon_projects = all_projects | where_exp:"item", "item.ecosystem contains 'polygon'"%}
+
+{% assign counter_polygon = polygon_projects.size %}
+
 DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ counter }} DeFi projects listed and {{ counter_arbitrum }} of them built on Arbitrum.
 
 | Ethereum <br /> DeFi | {{counter_eth}} |
-| BSC <br /> DeFi | {{ counter_bsc }} |
+| BNB <br /> DeFi | {{ counter_bsc }} |
 | Arbitrum <br /> DeFi | {{counter_arbitrum}} |
 
 {% assign assets-management-tools = site.assets-management-tools | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}

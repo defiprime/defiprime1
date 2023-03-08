@@ -53,7 +53,7 @@ featured-image: /images/blog/optimism.png
 DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ counter }} DeFi projects listed and {{ counter_optimism }} of them built on Optimism.
 
 | Ethereum <br /> DeFi | {{counter_eth}} |
-| BSC <br /> DeFi | {{ counter_bsc }} |
+| BNB <br /> DeFi | {{ counter_bsc }} |
 | Optimism <br /> DeFi | {{counter_optimism}} |
 
 {% assign assets-management-tools = site.assets-management-tools | where_exp:"item", "item.ecosystem contains 'optimism'" %}

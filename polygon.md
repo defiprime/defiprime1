@@ -53,7 +53,7 @@ featured-image: /images/blog/polygon.png
 DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ counter }} DeFi projects listed and {{ counter_polygon }} of them built on Polygon.
 
 | Ethereum <br /> DeFi | {{counter_eth}} |
-| BSC <br /> DeFi | {{ counter_bsc }} |
+| BNB <br /> DeFi | {{ counter_bsc }} |
 | Polygon <br /> DeFi | {{counter_polygon}} |
 
 {% assign assets-management-tools = site.assets-management-tools | where_exp:"item", "item.ecosystem contains 'polygon'" %}

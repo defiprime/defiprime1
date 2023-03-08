@@ -1,12 +1,12 @@
 ---
 git-date:
 layout: ecosystem
-title: Ethereum DeFi Ecosystem
-metadescription: List of the best Ethereum Defi Projects, that leverages decentralized networks to transform old financial products into trustless and transparent protocols.
-permalink: ethereum
-h1title: Ethereum DeFi Ecosystem
-pagetitle: Ethereum DeFi Ecosystem - List of the Best Ethereum DeFi dApps Projects
-featured-image: /images/og-ethereum.png
+title: Avalanche DeFi Ecosystem
+metadescription: List of the best Avalanche Defi Projects, that leverages decentralized networks to transform old financial products into trustless and transparent protocols.
+permalink: avalanche
+h1title: Avalanche DeFi Ecosystem
+pagetitle: Avalanche DeFi Ecosystem - List of the Best Avalanche DeFi dApps Projects
+featured-image: /images/avalanche-og.png
 ---
 
 {% assign all_projects = site.alternative-savings
@@ -30,7 +30,9 @@ featured-image: /images/og-ethereum.png
 
 {% assign counter = all_projects.size %}
 
-{% assign counter = all_projects.size %}
+{% assign bsc_projects = all_projects | where_exp:"item", "item.ecosystem contains 'bsc'"%}
+
+{% assign counter_bsc = bsc_projects.size %}
 
 {% assign eos_projects = all_projects | where_exp:"item", "item.ecosystem contains 'eos'"%}
 
@@ -44,21 +46,21 @@ featured-image: /images/og-ethereum.png
 
 {% assign counter_eth = eth_projects.size %}
 
-{% assign bsc_projects = all_projects | where_exp:"item", "item.ecosystem contains 'bsc'"%}
+{% assign polygon_projects = all_projects | where_exp:"item", "item.ecosystem contains 'polygon'"%}
 
-{% assign counter_bsc = bsc_projects.size %}
+{% assign counter_polygon = polygon_projects.size %}
 
-{% assign optimism_projects = all_projects | where_exp:"item", "item.ecosystem contains 'optimism'"%}
+{% assign avax_projects = all_projects | where_exp:"item", "item.ecosystem contains 'avalanche'"%}
 
-{% assign counter_optimism = optimism_projects.size %}
+{% assign counter_avax = avax_projects.size %}
 
-DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ counter }} DeFi projects listed and {{ counter_eth }} of them built on Ethereum.
+DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ counter }} DeFi projects listed and {{ counter_avax }} of them built on or deployed to Avalanche.
 
 | Ethereum <br /> DeFi | {{counter_eth}} |
-| Polygon <br /> DeFi | {{ counter_polygon }} |
-| BNB <br /> DeFi | {{counter_bsc}} |
+| BNB <br /> DeFi | {{ counter_bsc }} |
+| Avalanche <br /> DeFi | {{counter_avax}} |
 
-{% assign assets-management-tools = site.assets-management-tools | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
+{% assign assets-management-tools = site.assets-management-tools | where_exp:"item", "item.ecosystem contains 'avalanche'" %}
 {% if assets-management-tools.size > 0 %}
 
 # Asset Management Tools
@@ -72,7 +74,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign alternative-savings = site.alternative-savings | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
+{% assign alternative-savings = site.alternative-savings | where_exp:"item", "item.ecosystem contains 'avalanche'" %}
 {% if alternative-savings.size > 0 %}
 
 # Alternative Savings Apps
@@ -86,7 +88,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign derivatives = site.derivatives | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
+{% assign derivatives = site.derivatives | where_exp:"item", "item.ecosystem contains 'avalanche'" %}
 {% if derivatives.size > 0 %}
 
 # Derivatives
@@ -100,10 +102,10 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign yield-aggregators = site.yield-aggregators | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
+{% assign yield-aggregators = site.yield-aggregators | where_exp:"item", "item.ecosystem contains 'avalanche'" %}
 {% if yield-aggregators.size > 0 %}
 
-# Yield Aggregators on Ethereum
+# Yield Aggregators on Avalanche
 
 {% for yield-aggregator in yield-aggregators %}
 
@@ -114,10 +116,10 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign exchanges = site.exchanges | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
+{% assign exchanges = site.exchanges | where_exp:"item", "item.ecosystem contains 'avalanche'" %}
 {% if exchanges.size > 0 %}
 
-# Decentralized exchanges on Ethereum
+# Decentralized exchanges on Avalanche
 
 {% for exchange in exchanges %}
 
@@ -128,10 +130,10 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign margin-tradings = site.margin-trading | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
+{% assign margin-tradings = site.margin-trading | where_exp:"item", "item.ecosystem contains 'avalanche'" %}
 {% if margin-tradings.size > 0 %}
 
-# Margin Trading on Ethereum
+# Margin Trading on Avalanche
 
 {% for margin-trading in margin-tradings %}
 
@@ -142,7 +144,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign infrastructures = site.infrastructure | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
+{% assign infrastructures = site.infrastructure | where_exp:"item", "item.ecosystem contains 'avalanche'" %}
 {% if infrastructures.size > 0 %}
 
 # DeFi Infrastructure & Dev Tooling
@@ -156,10 +158,10 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign daos = site.dao | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
+{% assign daos = site.dao | where_exp:"item", "item.ecosystem contains 'avalanche'" %}
 {% if daos.size > 0 %}
 
-# Ethereum-based DAO Platforms
+# Avalanche-based DAO Platforms
 
 {% for dao in daos %}
 
@@ -170,7 +172,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign insurances = site.insurance | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
+{% assign insurances = site.insurance | where_exp:"item", "item.ecosystem contains 'avalanche'" %}
 {% if insurances.size > 0 %}
 
 # Decentralized Insurance Platforms
@@ -184,7 +186,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign assets-tokenizations = site.assets-tokenization | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
+{% assign assets-tokenizations = site.assets-tokenization | where_exp:"item", "item.ecosystem contains 'avalanche'" %}
 {% if assets-tokenizations.size > 0 %}
 
 # Asset Tokenization
@@ -198,7 +200,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign kyc_identities = site.kyc_identity | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
+{% assign kyc_identities = site.kyc_identity | where_exp:"item", "item.ecosystem contains 'avalanche'" %}
 {% if kyc_identities.size > 0 %}
 
 # KYC & Identity
@@ -212,10 +214,10 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign lendings = site.lending | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
+{% assign lendings = site.lending | where_exp:"item", "item.ecosystem contains 'avalanche'" %}
 {% if lendings.size > 0 %}
 
-# Decentralized Lending on Ethereum
+# Decentralized Lending on BSC
 
 {% for lending in lendings %}
 
@@ -226,7 +228,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign payments = site.payments | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
+{% assign payments = site.payments | where_exp:"item", "item.ecosystem contains 'avalanche'" %}
 {% if payments.size > 0 %}
 
 # Payments Solutions and Service Providers
@@ -240,7 +242,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign marketplaces = site.marketplaces | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
+{% assign marketplaces = site.marketplaces | where_exp:"item", "item.ecosystem contains 'avalanche'" %}
 {% if marketplaces.size > 0 %}
 
 # Marketplaces
@@ -254,7 +256,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign prediction_markets = site.prediction_markets | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
+{% assign prediction_markets = site.prediction_markets | where_exp:"item", "item.ecosystem contains 'avalanche'" %}
 {% if prediction_markets.size > 0 %}
 
 # Prediction Markets
@@ -268,7 +270,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign stablecoins = site.stablecoins | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
+{% assign stablecoins = site.stablecoins | where_exp:"item", "item.ecosystem contains 'avalanche'" %}
 {% if stablecoins.size > 0 %}
 
 # Stablecoins
@@ -282,7 +284,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign analytics = site.analytics | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
+{% assign analytics = site.analytics | where_exp:"item", "item.ecosystem contains 'avalanche'" %}
 {% if analytics.size > 0 %}
 
 # Analytics
