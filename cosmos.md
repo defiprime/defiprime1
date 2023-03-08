@@ -46,7 +46,7 @@ featured-image: /images/cosmos-og.png
 
 {% assign counter_eth = eth_projects.size %}
 
-{% assign arbitrum_projects = all_projects | where_exp:"item", "item.ecosystem contains 'cosmos'"%}
+{% assign arbitrum_projects = all_projects | where_exp:"item", "item.ecosystem contains 'arbitrum'"%}
 
 {% assign counter_arbitrum = arbitrum_projects.size %}
 
