@@ -3,7 +3,7 @@ git-date:
 layout: ecosystem
 title: Cosmos DeFi Ecosystem
 metadescription: List of the best Cosmos DeFi Projects, that leverages decentralized networks to transform old financial products into trustless and transparent protocols.
-permalink: arbitrum
+permalink: cosmos
 h1title: Cosmos DeFi Ecosystem
 pagetitle: Cosmos DeFi Ecosystem - List of the Best Cosmos Projects
 featured-image: /images/cosmos-og.png
