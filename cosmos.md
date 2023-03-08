@@ -6,7 +6,7 @@ metadescription: List of the best Cosmos DeFi Projects, that leverages decentral
 permalink: arbitrum
 h1title: Cosmos DeFi Ecosystem
 pagetitle: Cosmos DeFi Ecosystem - List of the Best Cosmos Projects
-featured-image: /images/blog/arbitrum.png
+featured-image: /images/cosmos-og.png
 ---
 
 {% assign all_projects = site.alternative-savings
