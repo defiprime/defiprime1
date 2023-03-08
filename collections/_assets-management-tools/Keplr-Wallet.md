@@ -5,7 +5,7 @@ product-url: https://www.keplr.app
 image: /images/output_md/www.keplr.app.jpg
 ecosystem: cosmos
 platform: web, ios, android
-product-description: Keplr is a non-custodial blockchain wallets for webpages that allow users to interact with blockchain applications.
+product-description: Keplr is a non-custodial IBC-enabled wallet that allow users to interact with Cosmos based blockchains.
 coltitle: "Asset Management Tools"
 colpermalink: assets-management-tools
 twitter: https://twitter.com/keplrwallet
