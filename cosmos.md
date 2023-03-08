@@ -46,7 +46,7 @@ featured-image: /images/cosmos-og.png
 
 {% assign counter_eth = eth_projects.size %}
 
-{% assign arbitrum_projects = all_projects | where_exp:"item", "item.ecosystem contains 'arbitrum'"%}
+{% assign arbitrum_projects = all_projects | where_exp:"item", "item.ecosystem contains 'cosmos'"%}
 
 {% assign counter_arbitrum = arbitrum_projects.size %}
 
@@ -64,7 +64,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 | BNB <br /> DeFi | {{ counter_bsc }} |
 | Cosmos <br /> DeFi | {{counter_cosmos}} |
 
-{% assign assets-management-tools = site.assets-management-tools | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
+{% assign assets-management-tools = site.assets-management-tools | where_exp:"item", "item.ecosystem contains 'cosmos'" %}
 {% if assets-management-tools.size > 0 %}
 
 # Asset Management Tools
@@ -78,7 +78,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign alternative-savings = site.alternative-savings | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
+{% assign alternative-savings = site.alternative-savings | where_exp:"item", "item.ecosystem contains 'cosmos'" %}
 {% if alternative-savings.size > 0 %}
 
 # Alternative Savings Apps
@@ -92,7 +92,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign derivatives = site.derivatives | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
+{% assign derivatives = site.derivatives | where_exp:"item", "item.ecosystem contains 'cosmos'" %}
 {% if derivatives.size > 0 %}
 
 # Derivatives
@@ -106,7 +106,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign yield-aggregators = site.yield-aggregators | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
+{% assign yield-aggregators = site.yield-aggregators | where_exp:"item", "item.ecosystem contains 'cosmos'" %}
 {% if yield-aggregators.size > 0 %}
 
 # Yield Aggregators on Cosmos
@@ -120,7 +120,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign exchanges = site.exchanges | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
+{% assign exchanges = site.exchanges | where_exp:"item", "item.ecosystem contains 'cosmos'" %}
 {% if exchanges.size > 0 %}
 
 # Decentralized exchanges on Cosmos
@@ -134,7 +134,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign margin-tradings = site.margin-trading | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
+{% assign margin-tradings = site.margin-trading | where_exp:"item", "item.ecosystem contains 'cosmos'" %}
 {% if margin-tradings.size > 0 %}
 
 # Margin Trading on Cosmos
@@ -148,7 +148,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign infrastructures = site.infrastructure | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
+{% assign infrastructures = site.infrastructure | where_exp:"item", "item.ecosystem contains 'cosmos'" %}
 {% if infrastructures.size > 0 %}
 
 # DeFi Infrastructure & Dev Tooling
@@ -162,7 +162,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign daos = site.dao | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
+{% assign daos = site.dao | where_exp:"item", "item.ecosystem contains 'cosmos'" %}
 {% if daos.size > 0 %}
 
 # Cosmos-based DAO Platforms
@@ -176,7 +176,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign insurances = site.insurance | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
+{% assign insurances = site.insurance | where_exp:"item", "item.ecosystem contains 'cosmos'" %}
 {% if insurances.size > 0 %}
 
 # Decentralized Insurance Platforms
@@ -190,7 +190,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign assets-tokenizations = site.assets-tokenization | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
+{% assign assets-tokenizations = site.assets-tokenization | where_exp:"item", "item.ecosystem contains 'cosmos'" %}
 {% if assets-tokenizations.size > 0 %}
 
 # Asset Tokenization
@@ -204,7 +204,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign kyc_identities = site.kyc_identity | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
+{% assign kyc_identities = site.kyc_identity | where_exp:"item", "item.ecosystem contains 'cosmos'" %}
 {% if kyc_identities.size > 0 %}
 
 # KYC & Identity
@@ -218,7 +218,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign lendings = site.lending | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
+{% assign lendings = site.lending | where_exp:"item", "item.ecosystem contains 'cosmos'" %}
 {% if lendings.size > 0 %}
 
 # Decentralized Lending on Cosmos
@@ -232,7 +232,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign payments = site.payments | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
+{% assign payments = site.payments | where_exp:"item", "item.ecosystem contains 'cosmos'" %}
 {% if payments.size > 0 %}
 
 # Payments Solutions and Service Providers
@@ -246,7 +246,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign marketplaces = site.marketplaces | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
+{% assign marketplaces = site.marketplaces | where_exp:"item", "item.ecosystem contains 'cosmos'" %}
 {% if marketplaces.size > 0 %}
 
 # Marketplaces
@@ -260,7 +260,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign prediction_markets = site.prediction_markets | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
+{% assign prediction_markets = site.prediction_markets | where_exp:"item", "item.ecosystem contains 'cosmos'" %}
 {% if prediction_markets.size > 0 %}
 
 # Prediction Markets
@@ -274,7 +274,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign stablecoins = site.stablecoins | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
+{% assign stablecoins = site.stablecoins | where_exp:"item", "item.ecosystem contains 'cosmos'" %}
 {% if stablecoins.size > 0 %}
 
 # Stablecoins
@@ -288,7 +288,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign analytics = site.analytics | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
+{% assign analytics = site.analytics | where_exp:"item", "item.ecosystem contains 'cosmos'" %}
 {% if analytics.size > 0 %}
 
 # Analytics
