@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "SecretSwap"
 permalink: secretswap
 h1title: "SecretSwap: Cross-Chain Dex With Front-Running Protection"

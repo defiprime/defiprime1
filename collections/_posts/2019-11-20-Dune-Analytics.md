@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  Dune Analytics
 permalink: dune-analytics
 h1title: "Dune Analytics - create and share analysis of smart-contract data"

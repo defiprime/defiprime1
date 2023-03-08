@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "Everything you need to know before investing in DeFi"
 permalink: investing-defi
 h1title: Everything you need to know before investing in DeFi

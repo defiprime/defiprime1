@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "Why Decentralized Finance totally needs interest rate swaps"
 permalink: defi-interest-rate-swaps
 h1title: "From Zero to Hero on DeFi Rate Swap"

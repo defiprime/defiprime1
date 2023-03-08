@@ -1,6 +1,6 @@
 ---
 git-date: 2019-08-27T21:50:05-07:00
-layout: [blog, blog-amp]
+layout: [blog]
 title: LocalEthereum
 permalink: localethereum
 h1title: 'LocalEthereum: Decentralized P2P Fiat on-ramp for ETH'

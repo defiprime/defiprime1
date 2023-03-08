@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "B.Protocol"
 permalink: bprotocol
 h1title: "B.Protocol Explained"

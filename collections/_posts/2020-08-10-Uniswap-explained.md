@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "Uniswap Explained"
 permalink: uniswap-explained
 h1title: "Uniswap Explained"

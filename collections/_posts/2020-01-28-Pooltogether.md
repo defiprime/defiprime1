@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  PoolTogether
 permalink: pooltogether
 h1title: "PoolTogether - Prize Linked Savings Account"

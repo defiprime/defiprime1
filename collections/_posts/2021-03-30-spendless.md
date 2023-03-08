@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "Spendless"
 permalink: spendless
 h1title: "Spendless - Donate Without Spending Anything"

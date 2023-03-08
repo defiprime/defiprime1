@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "Punk Protocol"
 permalink: punk-protocol
 h1title: "Punk Protocol - DeFi 401(k) Pension Service"

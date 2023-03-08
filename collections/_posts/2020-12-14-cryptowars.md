@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "CryptoWars"
 permalink: cryptowars
 h1title: "CryptoWars: Intersection of DeFi and Gaming"

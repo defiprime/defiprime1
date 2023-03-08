@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  DeFi lending returns vs. traditional asset classes
 permalink: defi-lending-vs-traditional-assets
 h1title: How lending with DeFi compares with traditional asset classes

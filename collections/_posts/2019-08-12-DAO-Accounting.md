@@ -1,7 +1,7 @@
 ---
 git-date:
-layout: [blog, blog-amp]
-title:  DAO Accounting
+layout: [blog]
+title: DAO Accounting
 permalink: dao-accounting
 h1title: DAO Accounting. DeFi Accounting Series
 pagetitle: DAO Accounting - DeFi Accounting Series
@@ -9,10 +9,11 @@ metadescription: DAO Accounting - DeFi Accounting Series. We’ll analyze variou
 category: blog
 featured-image: /images/blog/dao-og.png
 quote: /images/blog/dao-quote.png
-intro: 'We’ll analyze various DeFi products from a US GAAP accounting perspective and end with a rumination on what they mean for the Ethereum economy as a whole.'
+intro: "We’ll analyze various DeFi products from a US GAAP accounting perspective and end with a rumination on what they mean for the Ethereum economy as a whole."
 author: knab
-tags: ['DeFi Guides', 'DeFi Accounting']
+tags: ["DeFi Guides", "DeFi Accounting"]
 ---
+
 <div style="text-align: right">
 <p>DeFi Accounting Series:
 <br>
@@ -30,26 +31,24 @@ In this series, we’ll analyze various DeFi products from a US GAAP accounting 
 
 This article will go over:
 
-*   What’s a DAO?
-*   Historical context
-*   Overview of current DAO environment
-*   Accounting treatments
+- What’s a DAO?
+- Historical context
+- Overview of current DAO environment
+- Accounting treatments
 
 ### What’s a DAO?
 
 The best definition of a DAO that I have found comes from the [Amentum blog](https://medium.com/blockchannel/the-year-of-the-dao-comeback-1de1b1a36113):
 
-“An organization that runs autonomously, in a decentralized manner, that functions without the need for centralized parties to make decisions for the organization to grow, to be profitable, or *physically* exist to serve its overall purpose. A DAO can be an on-chain contract or a series of on-chain contracts that interoperate to complete some greater organizational function.”
+“An organization that runs autonomously, in a decentralized manner, that functions without the need for centralized parties to make decisions for the organization to grow, to be profitable, or _physically_ exist to serve its overall purpose. A DAO can be an on-chain contract or a series of on-chain contracts that interoperate to complete some greater organizational function.”
 
 Some define DAOs more broadly. For example, some would argue that Bitcoin itself is a DAO. To learn more about this perspective, check out [this article](https://hackernoon.com/the-state-of-the-daos-b7cba318460b). For the purposes of this piece, we will adhere to the Amentum definition.
-
 
 ### History: “The DAO”
 
 “The DAO” was a project in 2016 that resulted in the hard fork of Ethereum from which ETC and ETH were born. This project started up during an exciting time in the Ethereum community - prices were rising as was Ethereum’s notoriety. The concept was to create a kind of decentralized venture capital fund. Members would contribute ETH, then vote on projects they thought were worthy of funding. Tons of money poured into “The DAO.” This project was ultimately unsuccessful but did lay the intellectual and coding framework for the DAO environment that exists today. For more detailed background on The DAO, check out [this article](https://medium.com/swlh/the-story-of-the-dao-its-history-and-consequences-71e6a8a551ee).
 
 Immediately after the dissolution of The DAO, general DAO activity died down. The Securities and Exchange Commission released a [statement](https://www.sec.gov/news/press-release/2017-131) indicating that the project would have been subject to securities regulations. In the years since the DAO hack, U.S. regulatory guidelines have become a bit clearer, and smart contract code repositories have gone through more vetting and hardening. It has laid the groundwork for the resurgence of DAOs.
-
 
 ### DAO Landscape
 
@@ -63,7 +62,6 @@ Figures estimated as of August 5, 2019
 At the danger of sounding like a broken record, there are currently no specific guidelines for how contributions to and receipts from a DAO should be treated from an accounting perspective. All we can do is take the rules we know and attempt to apply them as best we can. I’ve created from arbitrary categorizations of DAOs that we’ll analyze from a bookkeeping and tax viewpoints. We’ll also look at each DAO from the perspective of what I’ve termed the “Pledger,” or the people/businesses sending assets to the DAO, and from the perspective of the “Receiver,” or those that given assets from the DAO.
 
 _Disclaimer: This is not accounting advice, just an intellectual exercise about how one can think about solving these issues._
-
 
 ### Financial Products Focused DAOs (MakerDAO Collateralized Debt Positions).
 
@@ -83,14 +81,14 @@ The ETH transactions to create the CDP and request the DAI could be classified u
 
 Generally, bookkeeping entries are not made for collateral. They would just be noted on financial statements under loan liabilities. However, because there is an actual transfer of funds to the counterparty (CDP), an entry should be made. This is where financial statements are not able to fully represent the totality of the situation. We must convert all transactions to USD terms, and so we miss some of the nuances of what is actually happening in the transaction. Let’s go through a sample transaction. For the sake of simplicity, we will ignore some of the complexity of the fee structure, value fluctuation, and risk margins and just get to the core of the loan transaction:
 
-As a very simple example, let’s say we open a CDP and collateralize 100 ETH with a spot price of $10 per ETH, and we want to withdraw 500 DAI. So we have:
+As a very simple example, let’s say we open a CDP and collateralize 100 ETH with a spot price of \$10 per ETH, and we want to withdraw 500 DAI. So we have:
 
-1. $1000 of ETH locked as collateral
-2. $500 of DAI withdrawn from the contract
+1. \$1000 of ETH locked as collateral
+2. \$500 of DAI withdrawn from the contract
 
-One way to handle the situation would be to credit the crypto-asset account $1000 and credit a new liability account for CDP Loan for $1000. We would then debit crypto-asset account $500 to denote the receipt of DAI. This is an accurate accounting of what happened but leaves our books out of balance.
+One way to handle the situation would be to credit the crypto-asset account $1000 and credit a new liability account for CDP Loan for $1000. We would then debit crypto-asset account \$500 to denote the receipt of DAI. This is an accurate accounting of what happened but leaves our books out of balance.
 
-There is one type of entry that might be of use in this situation — debentures as collateral security. Debentures as collateral security occur normally when a lender requires extra collateral from the borrower. The borrower then issues debentures against fixed assets on their balance sheet. In practice, formal entries are not usually made, but instead a note is put on the liabilities side of the balance sheet. For the sake of keeping balanced books though we can make an entry that creates a debentures account under liabilities for $500 and a corresponding debentures suspense account under assets. When the loan is repaid to the CDP, then we can reverse the debentures entries made. If your CDP gets liquidated, the debentures would just sit awkwardly on your balance sheet.
+There is one type of entry that might be of use in this situation — debentures as collateral security. Debentures as collateral security occur normally when a lender requires extra collateral from the borrower. The borrower then issues debentures against fixed assets on their balance sheet. In practice, formal entries are not usually made, but instead a note is put on the liabilities side of the balance sheet. For the sake of keeping balanced books though we can make an entry that creates a debentures account under liabilities for \$500 and a corresponding debentures suspense account under assets. When the loan is repaid to the CDP, then we can reverse the debentures entries made. If your CDP gets liquidated, the debentures would just sit awkwardly on your balance sheet.
 
 DAI and MKR payments made to the CDP would be entered as any other standard loan repayments would: decrease to crypto-asset accounts and decrease to CDP loan liabilities.
 
@@ -148,7 +146,7 @@ Capital gains/loss must be calculated for each fund flow.
 
 - #### Bookkeeping Entries.
 
-Financial record keeping for political campaigns requires specific support documentation. For a transaction of less than $50, all that is required is the name of the event where it was donated (if any), the date and total amount. For contributions over $50 documentation of the name of the contributor and the mailing address must also be captured. Images of the checks (or in this case block confirmation) must also be stored for audit purposes. For contributions over $200, the name and occupation of the contributor must also be saved. If for some reason, the campaign is unable to gather each data point, they must be able to demonstrate that they made “best efforts” to obtain it.
+Financial record keeping for political campaigns requires specific support documentation. For a transaction of less than $50, all that is required is the name of the event where it was donated (if any), the date and total amount. For contributions over $50 documentation of the name of the contributor and the mailing address must also be captured. Images of the checks (or in this case block confirmation) must also be stored for audit purposes. For contributions over \$200, the name and occupation of the contributor must also be saved. If for some reason, the campaign is unable to gather each data point, they must be able to demonstrate that they made “best efforts” to obtain it.
 
 - #### Tax Implication.
 
@@ -159,7 +157,6 @@ Capital gains/loss must be calculated for each fund flow.
 As with other projects in the DeFi space, DAOs have created an economy of transactions that really don’t fit well into our current structures. We can anticipate that guidance from the AICPA, the SEC, the IRS, and other agencies will not be given for quite some time. One of the lessons we can take away from the SEC’s actions in 2019 though is that the appearance of at least making an effort to be compliant can take a company a long way. We are given an opportunity with these emerging products to pave the way for how these transactions should be treated.
 
 This article serves as the first discussion that I am aware of on this topic. I hope that it can be a preliminary foundation for further debate and exploration about how to handle DAO accounting. If you’re interested in furthering the conversation, please contact me or leave your thoughts in the comments.
-
 
 #### DeFi Accounting Series
 

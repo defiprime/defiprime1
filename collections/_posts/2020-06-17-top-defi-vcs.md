@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "Top DeFi VCs: Surveying Some of the Space's Biggest Investors"
 permalink: defi-vcs
 h1title: "Top DeFi VCs: Surveying Some of the Space's Biggest Investors"

@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "Elastic Supply Tokens Explained"
 permalink: elastic
 h1title: "Elastic Supply Tokens Explained"

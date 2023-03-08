@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "Step Finance"
 permalink: step-finance
 h1title: "Step Finance - DeFi portfolio manager and aggregator"

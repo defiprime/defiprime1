@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title: "JPEGz"
 permalink: jpegz-interview-2023
 h1title: "JPEGz - NFT market capitalization Index"

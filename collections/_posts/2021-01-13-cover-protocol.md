@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "Cover Protocol"
 permalink: cover-protocol
 h1title: "Cover Protocol - Decentralized Insurance Marketplace"

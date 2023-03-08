@@ -1,6 +1,6 @@
 ---
 git-date: 2019-08-25T19:47:34-07:00
-layout: [blog, blog-amp]
+layout: [blog]
 title: VouchForMe
 permalink: vouchforme
 h1title: 'VouchForMe - Interview with co-founder Matt Peterman'

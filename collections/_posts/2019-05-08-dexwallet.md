@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title: "DexWallet"
 permalink: dexwallet
 h1title: Interview with Nicola Di Marco, Founder & Designer from DexWallet

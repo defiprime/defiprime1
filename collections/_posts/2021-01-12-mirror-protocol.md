@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "Mirror Protocol"
 permalink: mirror-protocol
 h1title: "Mirror Protocol"

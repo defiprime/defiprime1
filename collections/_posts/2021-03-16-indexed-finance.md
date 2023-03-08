@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "Indexed Finance"
 permalink: indexed-finance
 h1title: "Indexed Finance Explained"

@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "The Definitive Guide to DeFi Taxes"
 permalink: defi-taxes-2020
 h1title: "The Definitive Guide to DeFi Taxes"

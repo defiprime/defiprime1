@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  Equilibrium
 permalink: equilibrium
 h1title: 'Equilibrium - the framework for decentralized crypto-backed stablecoins and DeFi products'

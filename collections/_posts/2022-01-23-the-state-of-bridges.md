@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title: "The State of Bridges"
 permalink: the-state-of-bridges
 h1title: "The State of Bridges"

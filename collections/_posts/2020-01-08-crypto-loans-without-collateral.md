@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title: Crypto Loans Without Collateral
 permalink: crypto-loans-without-collateral
 h1title: "Unsecured DeFi loans: an overview"

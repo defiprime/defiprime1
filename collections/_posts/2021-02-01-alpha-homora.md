@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "Alpha Homora"
 permalink: alpha-homora
 h1title: "Alpha Homora - Leveraged Yield Farming"

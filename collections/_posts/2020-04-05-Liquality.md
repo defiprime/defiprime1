@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  Liquality
 permalink: liquality
 h1title: "Liquality - cross-chain atomic swaps"

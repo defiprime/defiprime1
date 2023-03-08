@@ -1,6 +1,6 @@
 ---
 git-date: 2019-05-23T18:16:23-07:00
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "Synthetix"
 permalink: synthetix
 h1title: Interview with Kain Warwick, founder of Synthetix

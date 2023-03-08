@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title: "The Current State of Ethereum L2"
 permalink: ethereum-l2
 h1title: "The Current State of Ethereum L2"

@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "Communications 101: Best Practices in Disclosing Software Vulnerabilities and Responding to Cyberattacks"
 permalink: communications-cyberattacks
 h1title: "Communications 101: Best Practices in Disclosing Software Vulnerabilities and Responding to Cyberattacks"

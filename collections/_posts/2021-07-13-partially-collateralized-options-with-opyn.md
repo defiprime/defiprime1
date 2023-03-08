@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "Partially Collateralized Options with Opyn"
 permalink: partially-collateralized-options-with-opyn
 h1title: "Partially Collateralized Options with Opyn"

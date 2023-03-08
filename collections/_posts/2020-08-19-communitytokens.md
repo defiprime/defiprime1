@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "Token-Curated Communities"
 permalink: token-communities
 h1title: "Token-Curated Communities"

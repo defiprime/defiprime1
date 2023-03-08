@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "An analytic approach to maximize profit and identify risk in AMM liquidity pools"
 permalink: amm-liquidity-pools
 h1title: "An analytic approach to maximize profit and identify risk in AMM liquidity pools"

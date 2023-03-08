@@ -1,6 +1,6 @@
 ---
 git-date: 2019-05-22T19:20:55-07:00
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "Neutral Dollar"
 permalink: neutral
 h1title: Neutral Dollar the first meta-stablecoin  

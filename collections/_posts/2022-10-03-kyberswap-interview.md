@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title: "KyberSwap"
 permalink: kyberswap-interview-2022
 h1title: "KyberSwap - a multichain DEX aggregator"

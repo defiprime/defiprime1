@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "DeFi indexes"
 permalink: defi-index
 h1title: "DeFi Indexes"

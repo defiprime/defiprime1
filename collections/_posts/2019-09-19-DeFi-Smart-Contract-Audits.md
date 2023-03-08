@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  DeFi Smart Contract Audits
 permalink: defi-smart-contract-audits
 h1title: 'Expert Roundup: DeFi Smart Contract Audits'

@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "What Are Perpetual Contracts for Bitcoin? dYdX Perpetual Futures Explained"
 permalink: perpetual-dydx
 h1title: "What Are Perpetual Contracts for Bitcoin? dYdX Perpetual Futures Explained"

@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title: "Index Coop - DAO launched to democratize access to complex crypto strategies"
 permalink: indexcoop
 h1title: "Index Coop - DAO launched to democratize access to complex crypto strategies"

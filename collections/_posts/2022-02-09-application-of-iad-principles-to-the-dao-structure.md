@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title: "Application of IAD Principles to the DAO structure"
 permalink: application-of-iad-principles-to-the-dao-structure
 h1title: "Application of IAD Principles to the DAO structure"

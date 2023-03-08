@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  StakeWithUs
 permalink: stakewithus
 h1title: StakeWithUs staking-as-a-service provider

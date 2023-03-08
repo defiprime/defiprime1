@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title: "How Decentralized is Decentralized Governance?"
 permalink: how-decentralized-is-decentralized-governance
 h1title: "How Decentralized is Decentralized Governance?"

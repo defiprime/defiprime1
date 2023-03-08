@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  StablePay
 permalink: stablepay
 h1title: "StablePay: DeFi native payment system"

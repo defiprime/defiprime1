@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  stake.fish
 permalink: stakefish
 h1title: 'Interview with stake.fish founder, Wang Chun'

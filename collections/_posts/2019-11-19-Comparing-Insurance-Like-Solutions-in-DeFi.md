@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  Comparing Insurance Like Solutions in DeFi
 permalink: comparing-insurance-like-solutions-in-defi
 h1title: "Comparing Insurance Like Solutions in DeFi"

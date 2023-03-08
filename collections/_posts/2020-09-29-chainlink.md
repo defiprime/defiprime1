@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "Chainlink"
 permalink: chainlink
 h1title: "Chainlink"

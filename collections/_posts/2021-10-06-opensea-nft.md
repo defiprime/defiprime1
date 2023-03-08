@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title: "OpenSea"
 permalink: opensea-vs-traditional-art-sellers
 h1title: "OpenSea Set to Eclipse Traditional Art Sellers with Over $10 Billion in Sales for 2021"

@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "Melon Protocol"
 permalink: melon-protocol
 h1title: Interview with Mona El Isa CEO and Co-Founder at Melonport  

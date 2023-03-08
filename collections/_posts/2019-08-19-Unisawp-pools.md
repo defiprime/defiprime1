@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title: Uniswap Liquidity Pools
 permalink: uniswap-liquidity-pools
 h1title: 'Are Uniswap‘s Liquidity Pools Right for You?'

@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "NFT Ecosystem Explained"
 permalink: nft-list
 h1title: "NFT Ecosystem Explained"

@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title: "KyberSwap.com: Swap and Earn Tokens at the Best Rates"
 permalink: kyberswap
 h1title: "KyberSwap: Swap and Earn Tokens at the Best Rates"

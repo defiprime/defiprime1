@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "LN Markets"
 permalink: lnmarkets
 h1title: "LN Markets"

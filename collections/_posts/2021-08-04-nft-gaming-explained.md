@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "NFT Gaming Explained"
 permalink: nft-gaming-explained
 h1title: "NFT Gaming Explained"

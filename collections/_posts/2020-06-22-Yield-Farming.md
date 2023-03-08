@@ -1,6 +1,6 @@
 ---
 git-date:
-layout: [blog, blog-amp]
+layout: [blog]
 title:  "Inside Yield Farming: A Beginner's Guide to the Latest Craze in DeFi"
 permalink: defi-yield-farming
 h1title: "Inside Yield Farming: A Beginner's Guide to the Latest Craze in DeFi"
