@@ -9,7 +9,6 @@ git-date: 2019-04-13T21:06:27-07:00
         <a href="https://twitter.com/intent/follow?screen_name=defiprime" alt="Follow us on twitter">
             <img src="https://img.shields.io/twitter/follow/defiprime.svg?label=Follow&style=social&logo=twitter" alt="Follow us on twitter"></a>
       
-    </p>
 </div>
 
 Visit: https://defiprime.com
