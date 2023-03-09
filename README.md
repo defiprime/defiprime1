@@ -8,8 +8,7 @@ git-date: 2019-04-13T21:06:27-07:00
             <img src="https://img.shields.io/github/repo-size/sneg55/defiprime.svg" /></a>
         <a href="https://twitter.com/intent/follow?screen_name=defiprime" alt="Follow us on twitter">
             <img src="https://img.shields.io/twitter/follow/defiprime.svg?label=Follow&style=social&logo=twitter" alt="Follow us on twitter"></a>
-        <a href="https://app.netlify.com/sites/vigorous-pasteur-b56317/deploys" alt="netlify status">
-            <img src="https://api.netlify.com/api/v1/badges/cf5973b6-5ffd-496f-92ac-4503e60446aa/deploy-status" alt="netlify status"></a>
+      
     </p>
 </div>
 
