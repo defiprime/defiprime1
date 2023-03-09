@@ -3,7 +3,7 @@ git-date: 2023-03-01T10:35:33-07:00
 product-title: Convex Finance
 product-url: https://www.convexfinance.com
 image: /images/output_md/www.convexfinance.com.jpg
-ecosystem: ethereum
+ecosystem: ethereum, polygon
 product-description: Convex Finance let you deposit your Curve LP tokens to earn Curve trading fees, boosted CRV and CVX tokens. Boost is pooled from CRV stakers so you do not need to worry about locking yourself.
 coltitle: "Yield Aggregators"
 colpermalink: yield-aggregators
