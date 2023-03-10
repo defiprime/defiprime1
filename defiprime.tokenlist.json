@@ -819,6 +819,132 @@
       "symbol": "BLUR",
       "name": "BLUR",
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xf406f7a9046793267bc276908778b29563323996",
+      "symbol": "VISION",
+      "name": "VISION",
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x01ba67aac7f75f647d94220cc98fb30fcc5105bf",
+      "symbol": "LYRA",
+      "name": "LYRA",
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xa3BeD4E1c75D00fa6f4E5E6922DB7261B5E9AcD2",
+      "symbol": "MTA",
+      "name": "MTA",
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x65ef703f5594d2573eb71aaf55bc0cb548492df4",
+      "symbol": "MULTI",
+      "name": "MULTI",
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x544c42fbb96b39b21df61cf322b5edc285ee7429",
+      "symbol": "INSUR",
+      "name": "INSUR",
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3",
+      "symbol": "MIM",
+      "name": "MIM",
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x8729438eb15e2c8b576fcc6aecda6a148776c0f5",
+      "symbol": "QI",
+      "name": "QI",
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x8d6cebd76f18e1558d4db88138e2defb3909fad6",
+      "symbol": "MAI",
+      "name": "MAI",
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 56,
+      "address": "0xcf6bb5389c92bdda8a3747ddb454cb7a64626c63",
+      "symbol": "XVS",
+      "name": "XVS",
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 43114,
+      "address": "0x77777777777d4554c39223c354a05825b2e8faa3",
+      "symbol": "YETI",
+      "name": "YETI",
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xbc396689893d065f41bc2c6ecbee5e0085233447",
+      "symbol": "PERP",
+      "name": "PERP",
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x7f3141c4d6b047fb930991b450f1ed996a51cb26",
+      "symbol": "X",
+      "name": "X",
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x1985365e9f78359a9b6ad760e32412f4a445e862",
+      "symbol": "REP",
+      "name": "REP",
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xd33526068d116ce69f19a9ee46f0bd304f21a51f",
+      "symbol": "RPL",
+      "name": "RPL",
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xc0c293ce456ff0ed870add98a0828dd4d2903dbf",
+      "symbol": "AURA",
+      "name": "AURA",
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 56,
+      "address": "0xa184088a740c695e156f91f5cc086a06bb78b827",
+      "symbol": "AUTO",
+      "name": "AUTO",
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 56,
+      "address": "0xca3f508b8e4dd382ee878a314789373d80a5190a",
+      "symbol": "BIFI",
+      "name": "BIFI",
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b",
+      "symbol": "CVX",
+      "name": "CVX",
+      "tags": ["defi"]
     }
   ],
   "version": {
