@@ -12,4 +12,5 @@ colpermalink: exchanges
 alternative-to: ["1inch", "ftx", "uniswap"]
 ticker: PSP
 contract: "0xcafe001067cdef266afb7eb5a286dcfd277f3de5"
+featured: true
 ---
