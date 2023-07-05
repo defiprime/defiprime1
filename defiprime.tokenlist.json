@@ -8,7 +8,7 @@
       "description": "Tokens associated with the products listed at defiprime.com"
     }
   },
-  "timestamp": "2023-02-22T00:00:00+00:00",
+  "timestamp": "2023-07-04T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -944,6 +944,13 @@
       "address": "0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b",
       "symbol": "CVX",
       "name": "CVX",
+      "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x88800092ff476844f74dc2fc427974bbee2794ae",
+      "symbol": "WALLET",
+      "name": "WALLET",
       "tags": ["defi"]
     }
   ],
