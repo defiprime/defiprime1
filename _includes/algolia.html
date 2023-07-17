@@ -14,11 +14,11 @@
     // let { hits1, widgetParams1 } = renderOptions[1];
     let template = `
     <div class='defi-search-no-records ${ emptyBox ? "empty" : ""}'>
-      ${ emptyBox ? 'Type to start searching' : hits.length + ' matching materials at ' + (renderOptions.results.index === 'defiprime' ?  'Defiprime' : 'Alpha Community Forum')}
+      ${ emptyBox ? 'Type to start searching' : hits.length + ' matching materials at ' + (renderOptions.results.index === 'defiprime2' ?  'Defiprime' : 'Alpha Community Forum')}
     </div>
   `;
     if (hits.length != 0) {
-      if (renderOptions.results.index === 'defiprime') {
+      if (renderOptions.results.index === 'defiprime2') {
         hits = groupBy(hits, 'category|collection');
 
         let indexOfCategory = 0;
@@ -42,7 +42,7 @@
           }
         }
       }
-      else if (renderOptions.results.index === '{{ site.algolia.discourse_index_name }}') {
+      else if (renderOptions.results.index === '{{ site.algolia.index_name }}') {
         hits = groupBy(hits, 'category.name');
 
         let indexOfCategory = 0;
@@ -106,7 +106,7 @@
 
     }),
     instantsearch.widgets
-      .index({ indexName: '{{ site.algolia.discourse_index_name }}' })
+      .index({ indexName: '{{ site.algolia.index_name }}' })
       .addWidgets([
 
         customHits({
