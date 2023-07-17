@@ -1,71 +1,117 @@
 <!-- Including InstantSearch.js library and styling -->
-<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js" integrity="sha256-EXPXz4W6pQgfYY3yTpnDa3OH8/EPn16ciVsPQ/ypsjk=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.8.3/dist/instantsearch.production.min.js" integrity="sha256-LAGhRRdtVoD6RLo2qDQsU2mp+XVSciKRC8XPOBWmofM=" crossorigin="anonymous"></script>
-
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/4.18.0/algoliasearch.cjs.js"
+  integrity="sha512-KSYpj/hRrGnxbpK//tdFGaDAJcjszdt32bOimAG6ss6IMLP9eh+yj11b4lg3rQxMm+XbYFu4yTxyE4bmOYegaw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/instantsearch.js/4.56.5/instantsearch.production.min.js"
+  integrity="sha512-ExJvfKuQORAEAcxSNrZCjvNGUVhKzLmYERlyEF7ujLpNgq1yZA4+PvF1G5P4/MJklr2mn1RYVkXYSgLp+UKH3Q=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
 <!-- or include the full Algolia theme -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css"
-  integrity="sha256-HB49n/BZjuqiCtQQf49OdZn63XuKFaxcIHWf0HNKte8=" crossorigin="anonymous">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/instantsearch.css@8.0.0/themes/reset-min.css"
+  integrity="sha256-2AeJLzExpZvqLUxMfcs+4DWcMwNfpnjUeAAvEtPr0wU="
+  crossorigin="anonymous"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/instantsearch.css@8.0.0/themes/satellite-min.css"
+  integrity="sha256-p/rGN4RGy6EDumyxF9t7LKxWGg6/MZfGhJM/asKkqvA="
+  crossorigin="anonymous"
+/>
 
 <script>
-
   var emptyBox = true;
   const renderHits = (renderOptions, isFirstRender) => {
     let { hits, widgetParams } = renderOptions;
     // let { hits1, widgetParams1 } = renderOptions[1];
     let template = `
-    <div class='defi-search-no-records ${ emptyBox ? "empty" : ""}'>
-      ${ emptyBox ? 'Type to start searching' : hits.length + ' matching materials at ' + (renderOptions.results.index === 'defiprime' ?  'Defiprime' : 'Alpha Community Forum')}
+    <div class='defi-search-no-records ${emptyBox ? "empty" : ""}'>
+      ${
+        emptyBox
+          ? "Type to start searching"
+          : hits.length +
+            " matching materials at " +
+            (renderOptions.results.index === "defiprime"
+              ? "Defiprime"
+              : "Alpha Community Forum")
+      }
     </div>
   `;
     if (hits.length != 0) {
-      if (renderOptions.results.index === 'defiprime') {
-        hits = groupBy(hits, 'category|collection');
+      if (renderOptions.results.index === "defiprime") {
+        hits = groupBy(hits, "category|collection");
 
         let indexOfCategory = 0;
 
         for (const hitCategory in hits) {
-
           template += `
         <div class='category_searchitem'>
-          ${hitCategory.toString() != 'undefined' ? capitalize(hitCategory) : 'Uncategorized'}
+          ${
+            hitCategory.toString() != "undefined"
+              ? capitalize(hitCategory)
+              : "Uncategorized"
+          }
         </div>
       `;
-          template += hits[hitCategory].map((item) => `
+          template += hits[hitCategory]
+            .map(
+              item => `
         <a href="{{ site.baseurl }}${item.url}" class='searchpost-link'>
           <h2>${item.title}</h2>
           <div class="searchpost-data">${$(item.html).text()}</div>
         </a>
-      `).join('')
+      `
+            )
+            .join("");
           indexOfCategory++;
-          if (indexOfCategory != Object.keys(hits).length) { // prevent inserting on last one
-            template += `<hr class='defi-search-separator' />`
+          if (indexOfCategory != Object.keys(hits).length) {
+            // prevent inserting on last one
+            template += `<hr class='defi-search-separator' />`;
           }
         }
-      }
-      else if (renderOptions.results.index === '{{ site.algolia.discourse_index_name }}') {
-        hits = groupBy(hits, 'category.name');
+      } else if (
+        renderOptions.results.index ===
+        "{{ site.algolia.discourse_index_name }}"
+      ) {
+        hits = groupBy(hits, "category.name");
 
         let indexOfCategory = 0;
 
         for (const hitCategory in hits) {
           template += `
         <div class='category_searchitem'>
-          ${hitCategory.toString() != 'undefined' ? capitalize(hitCategory) : 'Uncategorized'}
+          ${
+            hitCategory.toString() != "undefined"
+              ? capitalize(hitCategory)
+              : "Uncategorized"
+          }
         </div>
       `;
-          template += hits[hitCategory].map((item) => `
-        <a href="{{ site.algolia.discourse_base_url }}${item.url}" class='searchpost-link'>
+          template += hits[hitCategory]
+            .map(
+              item => `
+        <a href="{{ site.algolia.discourse_base_url }}${
+          item.url
+        }" class='searchpost-link'>
           <h2>${item.topic.title}</h2>
           <div class="searchpost-data"><p>${item.content}</p></div>
         </a>
-      `).join('')
+      `
+            )
+            .join("");
           indexOfCategory++;
-          if (indexOfCategory != Object.keys(hits).length) { // prevent inserting on last one
-            template += `<hr class='defi-search-separator' />`
+          if (indexOfCategory != Object.keys(hits).length) {
+            // prevent inserting on last one
+            template += `<hr class='defi-search-separator' />`;
           }
         }
       }
-
     }
     widgetParams.container.innerHTML = template;
   };
@@ -75,7 +121,7 @@
 
   // Instanciating InstantSearch.js with Algolia credentials
   const search = instantsearch({
-    searchFunction: (helper) => {
+    searchFunction: helper => {
       if (helper.state.query.length === 0) {
         emptyBox = true;
         return; // do not trigger search
@@ -84,50 +130,48 @@
 
       helper.search(); // trigger search
     },
-    indexName: '{{ site.algolia.index_name }}',
-    searchClient: algoliasearch('{{ site.algolia.application_id }}', '{{ site.algolia.search_only_api_key }}')
+    indexName: "{{ site.algolia.index_name }}",
+    searchClient: algoliasearch(
+      "{{ site.algolia.application_id }}",
+      "{{ site.algolia.search_only_api_key }}"
+    )
   });
 
   // Adding searchbar and results widgets
   search.addWidgets([
     instantsearch.widgets.searchBox({
-      container: '#search-searchbar',
-      placeholder: 'Search Defiprime',
+      container: "#search-searchbar",
+      placeholder: "Search Defiprime",
       showLoadingIndicator: false,
       poweredBy: true, // This is required if you're on the free Community plan
       cssClasses: {
-        root: 'defi-searchbox-root',
-        input: 'defi-search-inputbox',
-        reset: 'defi-clear-searchbox',
-        form: 'defi-search-form',
-        submit: 'defi-search-submit',
-        loadingIndicator: 'defi-search-loading'
-      },
-
+        root: "defi-searchbox-root",
+        input: "defi-search-inputbox",
+        reset: "defi-clear-searchbox",
+        form: "defi-search-form",
+        submit: "defi-search-submit",
+        loadingIndicator: "defi-search-loading"
+      }
     }),
     instantsearch.widgets
-      .index({ indexName: '{{ site.algolia.discourse_index_name }}' })
+      .index({ indexName: "{{ site.algolia.discourse_index_name }}" })
       .addWidgets([
-
         customHits({
-          container: document.querySelector('#search-hits-defiprime'),
+          container: document.querySelector("#search-hits-defiprime")
         }),
         instantsearch.widgets.poweredBy({
-          container: '#search-powered-by',
+          container: "#search-powered-by"
         })
       ])
-
   ]);
-
-
 
   // Instantiate the custom widget
   search.addWidgets([
     customHits({
-      container: document.querySelector('#search-hits'),
+      container: document.querySelector("#search-hits")
     }),
     instantsearch.widgets.poweredBy({
-      container: '#search-powered-by',
+      container: "#search-powered-by"
     })
   ]);
 
@@ -135,24 +179,26 @@
   search.start();
 
   if (document.querySelector("#custom-searchbox")) {
-    document.querySelector("#custom-searchbox").addEventListener("click", function (e) {
-      this.style.display = 'none';
-      document.querySelector("#defi-search").style.display = 'block';
-      document.querySelector(".defi-search-inputbox").click();
-    });
+    document
+      .querySelector("#custom-searchbox")
+      .addEventListener("click", function(e) {
+        this.style.display = "none";
+        document.querySelector("#defi-search").style.display = "block";
+        document.querySelector(".defi-search-inputbox").click();
+      });
   }
 
-  var groupBy = function (arr, criteria) {
+  var groupBy = function(arr, criteria) {
     if (!Array.isArray(arr)) {
       return arr;
     }
-    return arr.reduce(function (obj, item) {
-
+    return arr.reduce(function(obj, item) {
       // Check if the criteria is a function to run on the item or a property of it
-      var key = typeof criteria === 'function' ? criteria(item) : item[criteria];
+      var key =
+        typeof criteria === "function" ? criteria(item) : item[criteria];
 
-      if (criteria.indexOf('|') > -1) {
-        var criterias = criteria.split('|');
+      if (criteria.indexOf("|") > -1) {
+        var criterias = criteria.split("|");
         for (let subCriteria of criterias) {
           if (item[subCriteria] != undefined) {
             var key = item[subCriteria];
@@ -171,66 +217,82 @@
 
       // Return the object to the next item in the loop
       return obj;
-
     }, {});
   };
 
-  const capitalize = (s) => {
-    if (typeof s !== 'string') return ''
-    return s.charAt(0).toUpperCase() + s.slice(1)
-  }
+  const capitalize = s => {
+    if (typeof s !== "string") return "";
+    return s.charAt(0).toUpperCase() + s.slice(1);
+  };
 
-
-
-
-
-  window.addEventListener('load', () => {
+  window.addEventListener("load", () => {
     //change search icon svg from search-icon.svg
-    $(".defi-search-submit").html('<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10.5" cy="10.5" r="6.5" stroke="#8B8BB8" stroke-width="2" /><path d="M20 20L15 15" stroke="#8B8BB8" stroke-width="2" /></svg>');
+    $(".defi-search-submit").html(
+      '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10.5" cy="10.5" r="6.5" stroke="#8B8BB8" stroke-width="2" /><path d="M20 20L15 15" stroke="#8B8BB8" stroke-width="2" /></svg>'
+    );
 
     function exitSearchMode() {
       if (document.querySelector("#custom-searchbox")) {
         $("#custom-searchbox").show();
         $("#defi-search").hide();
       }
-      $("#defi-search-fullpage").css('display', 'none');
-      $("#search-container").css('display', 'none');
-      $(".defi-search-inputbox").removeClass('searchbox-opened');
-      $(".defi-search-form").stop(true, true).animate({
-        maxWidth: '300px'
-      }, 200)
+      $("#defi-search-fullpage").css("display", "none");
+      $("#search-container").css("display", "none");
+      $(".defi-search-inputbox").removeClass("searchbox-opened");
+      $(".defi-search-form")
+        .stop(true, true)
+        .animate(
+          {
+            maxWidth: "300px"
+          },
+          200
+        );
       $(".defi-search-submit").removeClass("active_magnifying_icon");
       $(".defi-clear-searchbox").hide();
-      $("#search-powered-by").removeClass('inner-powered-by')
-      $("#search-powered-by").removeAttr('style');
+      $("#search-powered-by").removeClass("inner-powered-by");
+      $("#search-powered-by").removeAttr("style");
     }
 
     $(".defi-clear-searchbox").click(() => exitSearchMode());
 
-    $(document).keyup(function (e) {
-      if (e.key === "Escape") { // escape key maps to keycode `27`
+    $(document).keyup(function(e) {
+      if (e.key === "Escape") {
+        // escape key maps to keycode `27`
         exitSearchMode();
       }
     });
 
-    $(document).on('click', '.defi-search-inputbox', () => {
-      $('.defi-search-inputbox').addClass('searchbox-opened');
-      $("#defi-search-fullpage").css('display', 'block');
-      $("#search-container").css('display', 'block');
-      $(".defi-search-form").stop(true, true).animate({
-        maxWidth: '730px'
-      }, 200)
+    $(document).on("click", ".defi-search-inputbox", () => {
+      $(".defi-search-inputbox").addClass("searchbox-opened");
+      $("#defi-search-fullpage").css("display", "block");
+      $("#search-container").css("display", "block");
+      $(".defi-search-form")
+        .stop(true, true)
+        .animate(
+          {
+            maxWidth: "730px"
+          },
+          200
+        );
       $(".defi-search-submit").addClass("active_magnifying_icon");
       $(".defi-clear-searchbox").show();
-      $("#search-powered-by").addClass('inner-powered-by')
-      const rightOffset = ($("#defi-search").width() - $('.defi-search-no-records').width()) / 2 + $('.defi-search-no-records').width() + 24;
+      $("#search-powered-by").addClass("inner-powered-by");
+      const rightOffset =
+        ($("#defi-search").width() - $(".defi-search-no-records").width()) / 2 +
+        $(".defi-search-no-records").width() +
+        24;
 
-      console.log(window.innerWidth)
+      console.log(window.innerWidth);
 
-      $("#search-powered-by").css("left", rightOffset - $('#search-powered-by').width() + 'px');
+      $("#search-powered-by").css(
+        "left",
+        rightOffset - $("#search-powered-by").width() + "px"
+      );
       if (window.innerWidth < 480) {
-        $('#search-powered-by').attr('style', function (i, s) { return s + 'top: -24px !important;' });
+        $("#search-powered-by").attr("style", function(i, s) {
+          return s + "top: -24px !important;";
+        });
       }
-    })
+    });
   });
 </script>
