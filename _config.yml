@@ -128,9 +128,11 @@ sass:
   style: compressed
 
 algolia:
-  application_id: 18BDKQYV27
+  application_id: U1P9PKRFOS
   index_name: defiprime
-  search_only_api_key: adb162fc8601b6a98051de76dd941a6b
+  discourse_base_url: https://alpha.defiprime.com
+  discourse_index_name: discourse-posts
+  search_only_api_key: 471c4ea8d6a8d6cfce0e09c05807db0e
   max_record_size: 20000
   #everything in md or html
   files_to_exclude:
