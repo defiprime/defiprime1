@@ -28,7 +28,7 @@
     justify-content: center;
     @include breakpoint(small) {
       flex-direction: column;
-    } 
+    }
     a {
       @include breakpoint(small) {
         margin: auto;
@@ -38,7 +38,7 @@
           margin-right: 30px;
         }
       }
-      &:focus{
+      &:focus {
         outline: none;
       }
       button {

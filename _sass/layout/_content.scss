@@ -36,10 +36,10 @@ header ~ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  @media screen and(min-width: 760px) {
+  @media screen and (min-width: 760px) {
     max-width: 730px;
   }
-  @media screen and(max-width: 759px) {
+  @media screen and (max-width: 759px) {
     max-width: 100%;
     padding: 0 15px;
   }
@@ -73,17 +73,17 @@ header ~ p {
     display: flex;
     justify-content: space-between;
   }
-  amp-img{
+  amp-img {
     margin-bottom: 40px;
   }
   &-img {
     display: flex;
     flex-direction: column;
     max-width: 130px;
-    margin: 0 auto 0 auto ;
+    margin: 0 auto 0 auto;
     img {
       border-radius: 50%;
-      margin: 0 auto 40px auto ;
+      margin: 0 auto 40px auto;
     }
     @include breakpoint(min-small) {
       width: 22%;
@@ -91,7 +91,6 @@ header ~ p {
         max-width: 130px;
         margin: 0 auto 40px auto;
       }
-      
     }
     @include breakpoint(small) {
       width: 100%;
@@ -99,7 +98,7 @@ header ~ p {
         max-width: 95px;
         margin: 0 auto 15px auto;
       }
-      amp-img{
+      amp-img {
         max-width: 95px;
         margin-bottom: 15px;
         margin-left: 15px;
@@ -185,9 +184,9 @@ header ~ p {
       &:hover {
         background-color: _color(green-color);
       }
-      svg{
+      svg {
         width: 32px;
-        height: 32px; 
+        height: 32px;
       }
     }
   }
@@ -210,8 +209,8 @@ header ~ p {
       padding-top: 105px;
     }
     #main {
-      h1{
-        padding-top: 0
+      h1 {
+        padding-top: 0;
       }
     }
   }
@@ -264,7 +263,7 @@ header ~ p {
   a {
     font-weight: _add-font(weight-bold);
   }
-  li{
+  li {
     font-family: "Open Sans", sans-serif;
     color: #000000;
   }

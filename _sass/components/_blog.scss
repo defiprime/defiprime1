@@ -182,8 +182,8 @@
           }
         }
       }
-      .tags{
-        @include breakpoint(min-small){
+      .tags {
+        @include breakpoint(min-small) {
           position: absolute;
           left: 95px;
           bottom: 65px;
@@ -191,7 +191,7 @@
             padding-bottom: 125px;
           }
         }
-        @include breakpoint(small){
+        @include breakpoint(small) {
           order: 2;
           margin: 0 -20px 0 15px;
           padding-bottom: 38px;

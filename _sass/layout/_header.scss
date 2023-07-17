@@ -44,7 +44,7 @@
     .symbol {
       margin-right: 0.65em;
     }
-    svg{
+    svg {
       max-width: 100%;
       height: auto;
     }
@@ -93,7 +93,10 @@
 
           &:before,
           &:after {
-            @include vendor("transition", "opacity #{_duration(transition)} ease");
+            @include vendor(
+              "transition",
+              "opacity #{_duration(transition)} ease"
+            );
             content: "";
             display: block;
             position: absolute;

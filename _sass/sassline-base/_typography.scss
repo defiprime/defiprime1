@@ -23,9 +23,11 @@ body {
 a {
   color: $linkColour;
   text-decoration: none;
-  transition: color .1s, background-color .1s;
+  transition: color 0.1s, background-color 0.1s;
 
-  &:hover, &:active, &:focus {
+  &:hover,
+  &:active,
+  &:focus {
     color: $hoverColour;
     text-decoration: none;
   }
@@ -33,82 +35,115 @@ a {
 
 // Styles for typeset text.
 .typeset {
-
   // Nice underlines for text links.
-  p a, li a {
-    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,$linkColour 50%);
+  p a,
+  li a {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 50%,
+      $linkColour 50%
+    );
     background-position: 0 93%;
     background-repeat: repeat-x;
     background-size: 100% 0.15rem;
-    text-shadow: 0.1rem 0 $backgroundColour,
-                 0.15rem 0 $backgroundColour,
-                -0.1rem 0 $backgroundColour,
-                -0.15rem 0 $backgroundColour;
+    text-shadow: 0.1rem 0 $backgroundColour, 0.15rem 0 $backgroundColour,
+      -0.1rem 0 $backgroundColour, -0.15rem 0 $backgroundColour;
 
-    &:hover, &:active, &:focus {
-      background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,$hoverColour 50%);
+    &:hover,
+    &:active,
+    &:focus {
+      background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 50%,
+        $hoverColour 50%
+      );
     }
   }
 
   // Paragraphs. OpenType ligatures and oldstyle figures enabled if available.
   p {
-    @include baseline($fontsize: zeta, $font: $bodytype, $lineheight: 2, $below: 2, $breakpoint: all);
+    @include baseline(
+      $fontsize: zeta,
+      $font: $bodytype,
+      $lineheight: 2,
+      $below: 2,
+      $breakpoint: all
+    );
 
-    font-feature-settings: 'kern', 'onum', 'liga';
+    font-feature-settings: "kern", "onum", "liga";
   }
 
   // Headings. OpenType ligatures, discretionary ligatures and lining figures enabled if available.
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: $headingColour;
     font-family: unquote(map-get($headingtype, font-family));
-    font-feature-settings: 'dlig', 'liga', 'lnum', 'kern';
+    font-feature-settings: "dlig", "liga", "lnum", "kern";
     font-style: normal;
     font-weight: map-get($headingtype, bold);
   }
 
   // Heading level 1.
-  h1, .alpha {
-    @include sassline($fontsize: alpha, $font: $headingtype, $lineheight: 3, $below: 1, $breakpoint: all);
+  h1,
+  .alpha {
+    @include sassline(
+      $fontsize: alpha,
+      $font: $headingtype,
+      $lineheight: 3,
+      $below: 1,
+      $breakpoint: all
+    );
   }
 
   // Heading level 2.
-  h2, .beta {
+  h2,
+  .beta {
     @include sassline(beta, $headingtype, 3, 1, all);
   }
 
   // Heading level 3.
-  h3, .gamma {
+  h3,
+  .gamma {
     @include sassline(gamma, $headingtype, 3, 1, all);
   }
 
   // Heading level 4.
-  h4, .delta {
+  h4,
+  .delta {
     @include sassline(delta, $headingtype, 2, 0, all);
   }
 
   // Heading level 5.
-  h5, .epsilon {
+  h5,
+  .epsilon {
     @include sassline(epsilon, $headingtype, 2, 0, all);
   }
 
   // Heading level 6.
-  h6, .zeta {
+  h6,
+  .zeta {
     @include sassline(zeta, $headingtype, 2, 0, all);
   }
 
   // Lists.
-  ul, ol {
+  ul,
+  ol {
     @include baseline(zeta, $bodytype, 2, 2, all);
 
     li {
-      font-feature-settings: 'kern', 'onum', 'liga';
+      font-feature-settings: "kern", "onum", "liga";
       margin-left: 2rem;
 
       @include breakpoint(break-1) {
         margin-left: 0;
       }
 
-      ol, ul {
+      ol,
+      ul {
         padding-top: 1rem;
         margin-bottom: 1rem;
         margin-left: 2rem;
@@ -124,8 +159,8 @@ a {
       counter-increment: top-level;
 
       &:before {
-        content: counter(top-level) '.';
-        font-feature-settings: 'lnum', 'tnum';
+        content: counter(top-level) ".";
+        font-feature-settings: "lnum", "tnum";
         margin-left: -3rem;
         position: absolute;
         text-align: right;
@@ -133,20 +168,17 @@ a {
       }
 
       ul {
-
         li {
-
           &:before {
-            content: '';
+            content: "";
           }
 
           ol {
-
             li {
               counter-increment: alt-level;
 
               &:before {
-                content: counter(alt-level) '.';
+                content: counter(alt-level) ".";
               }
             }
           }
@@ -154,31 +186,28 @@ a {
       }
 
       ol {
-
         li {
           counter-increment: sub-level;
 
           &:before {
-            content: counter(top-level) '.' counter(sub-level);
+            content: counter(top-level) "." counter(sub-level);
           }
 
           ul {
-
             li {
-
               &:before {
-                content: '';
+                content: "";
               }
             }
           }
 
           ol {
-
             li {
               counter-increment: sub-sub-level;
 
               &:before {
-                content: counter(top-level) '.' counter(sub-level) '.' counter(sub-sub-level);
+                content: counter(top-level) "." counter(sub-level) "."
+                  counter(sub-sub-level);
               }
             }
           }
@@ -191,8 +220,9 @@ a {
   dl {
     @include baseline(zeta, $bodytype, 2, 2, all);
 
-    dt, dd {
-      font-feature-settings: 'kern', 'onum', 'liga';
+    dt,
+    dd {
+      font-feature-settings: "kern", "onum", "liga";
       margin-left: 2rem;
 
       @include breakpoint(break-1) {
@@ -214,13 +244,12 @@ a {
     @include sassline(eta, $headingtype, 2, 0, all);
 
     font-family: unquote(map-get($headingtype, font-family));
-    font-feature-settings: 'liga', 'lnum', 'tnum', 'kern';
+    font-feature-settings: "liga", "lnum", "tnum", "kern";
     font-style: normal;
     font-weight: map-get($headingtype, regular);
     width: 100%;
 
     thead {
-
       th {
         @include sassline(zeta, $headingtype, 2, 0, all);
         padding-bottom: 1px;
@@ -229,17 +258,22 @@ a {
   }
 
   // Bold.
-  b, strong, .bold {
+  b,
+  strong,
+  .bold {
     font-weight: map-get($bodytype, bold);
   }
 
   // Italic.
-  em, i, .italic {
+  em,
+  i,
+  .italic {
     font-style: map-get($bodytype, italic);
   }
 
   // Caption and inline small text.
-  small, .caption {
+  small,
+  .caption {
     @include fontsize(theta, all);
 
     font-family: unquote(map-get($headingtype, font-family));
@@ -258,17 +292,23 @@ a {
   }
 
   // Nice spacing for captions.
-  h1 + .caption, .alpha + .caption, h2 + .caption, .beta + .caption, h3 + .caption, .gamma + .caption {
+  h1 + .caption,
+  .alpha + .caption,
+  h2 + .caption,
+  .beta + .caption,
+  h3 + .caption,
+  .gamma + .caption {
     margin-top: -1rem;
   }
 
-  .delta + .caption, .epsilon + .caption, .zeta + .caption {
+  .delta + .caption,
+  .epsilon + .caption,
+  .zeta + .caption {
     margin-top: 0rem;
   }
 
   // Quotes.
   blockquote {
-
     p {
       border-left: 0.15rem solid $linkColour;
       font-style: map-get($bodytype, italic);
@@ -278,8 +318,17 @@ a {
       $get-scale: map-get($modular-scale, scale-0);
       $get-size: map-get($get-scale, zeta);
       $rootsize: nth($sizes, 1);
-      $baseline-shift: #{($get-size / 2 * ((2 * $rootsize / $get-size) - map-get($bodytype, cap-height))) / $rootsize + 0.00001};
-      $baseline-push: #{3 - (($get-size * ((2 * $rootsize / $get-size) - map-get($bodytype, cap-height))) / $rootsize + 0.00001)};
+      $baseline-shift: #{(
+          $get-size / 2 *
+            ((2 * $rootsize / $get-size) - map-get($bodytype, cap-height))
+        ) / $rootsize + 0.00001};
+      $baseline-push: #{3 -
+        (
+          (
+              $get-size *
+                ((2 * $rootsize / $get-size) - map-get($bodytype, cap-height))
+            ) / $rootsize + 0.00001
+        )};
 
       margin-bottom: #{$baseline-push}rem;
       padding-bottom: #{$baseline-shift}rem;
@@ -288,10 +337,24 @@ a {
         $get-scale: map-get($modular-scale, scale-#{$i - 1});
         $get-size: map-get($get-scale, zeta);
         $rootsize: nth($sizes, $i);
-        $baseline-shift: #{($get-size / 2 * ((2 * $rootsize / $get-size) - map-get($bodytype, cap-height))) / $rootsize + 0.00001};
-        $baseline-push: #{3 - (($get-size * ((2 * $rootsize / $get-size) - map-get($bodytype, cap-height))) / $rootsize + 0.00001)};
+        $baseline-shift: #{(
+            $get-size /
+              2 *
+              ((2 * $rootsize / $get-size) - map-get($bodytype, cap-height))
+          ) /
+          $rootsize +
+          0.00001};
+        $baseline-push: #{3 -
+          (
+            (
+                $get-size *
+                  ((2 * $rootsize / $get-size) - map-get($bodytype, cap-height))
+              ) /
+              $rootsize +
+              0.00001
+          )};
 
-        @media screen and (min-width: nth($points, $i) / 16 * 1em ) {
+        @media screen and (min-width: nth($points, $i) / 16 * 1em) {
           margin-bottom: #{$baseline-push}rem;
           padding-bottom: #{$baseline-shift}rem;
         }
@@ -305,7 +368,11 @@ a {
 
   // Horizontal rule.
   hr {
-    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,$captionColour 50%);
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 50%,
+      $captionColour 50%
+    );
     background-position: 0 50%;
     background-repeat: repeat-x;
     background-size: 100% 0.15rem;
@@ -316,7 +383,8 @@ a {
   }
 
   // Code block.
-  code, pre {
+  code,
+  pre {
     background-color: $codeBackgroundColour;
     font-family: unquote(map-get($monospacetype, font-family));
   }
@@ -346,18 +414,18 @@ a {
 
   // Real small caps.
   .small-caps {
-    font-feature-settings: 'smcp', 'kern';
+    font-feature-settings: "smcp", "kern";
     font-kerning: normal;
     letter-spacing: 0.1rem;
   }
 
   // Consistent height numbers with OpenType.
   .lining-numerals {
-    font-feature-settings: 'lnum', 'kern';
+    font-feature-settings: "lnum", "kern";
   }
 
   // Ascending and descending numbers with OpenType.
   .oldstyle-numerals {
-    font-feature-settings: 'onum', 'kern';
+    font-feature-settings: "onum", "kern";
   }
 }

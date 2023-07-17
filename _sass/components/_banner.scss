@@ -1,13 +1,20 @@
-
-.banner{
+.banner {
   position: relative;
   overflow: hidden;
   max-width: 730px;
   margin: 48px auto 0 auto;
   .banner-link {
     padding: 32px 40px 32px 32px;
-    background: radial-gradient(57.45% 120% at 48.35% -30%, #23ffe9 0%, rgba(100, 217, 205, 0) 100%),
-      radial-gradient(46.67% 46.67% at 29.12% 53.33%, #1390ff 0%, rgba(70, 135, 182, 0) 100%),
+    background: radial-gradient(
+        57.45% 120% at 48.35% -30%,
+        #23ffe9 0%,
+        rgba(100, 217, 205, 0) 100%
+      ),
+      radial-gradient(
+        46.67% 46.67% at 29.12% 53.33%,
+        #1390ff 0%,
+        rgba(70, 135, 182, 0) 100%
+      ),
       linear-gradient(4.36deg, #2d5888 -4.98%, #2266a2 104.49%);
     color: #ffffff;
     display: block;
@@ -76,7 +83,11 @@
     &.circle-4,
     &.circle-5 {
       .background {
-        background: radial-gradient(50% 50% at 50% 50%, rgba(3, 227, 255, 0.9) 0%, rgba(12, 140, 156, 0) 100%);
+        background: radial-gradient(
+          50% 50% at 50% 50%,
+          rgba(3, 227, 255, 0.9) 0%,
+          rgba(12, 140, 156, 0) 100%
+        );
       }
     }
     &.circle-1,
@@ -95,7 +106,11 @@
       left: 100px;
       top: 15px;
       .background {
-        background: radial-gradient(50% 50% at 50% 50%, rgba(3, 227, 255, 0.9) 0%, rgba(12, 140, 156, 0) 100%);
+        background: radial-gradient(
+          50% 50% at 50% 50%,
+          rgba(3, 227, 255, 0.9) 0%,
+          rgba(12, 140, 156, 0) 100%
+        );
       }
     }
     &.circle-2 {
@@ -108,7 +123,11 @@
         height: 2px;
       }
       .background {
-        background: radial-gradient(50% 50% at 50% 50%, rgba(3, 227, 255, 0.36) 0%, rgba(12, 140, 156, 0) 100%);
+        background: radial-gradient(
+          50% 50% at 50% 50%,
+          rgba(3, 227, 255, 0.36) 0%,
+          rgba(12, 140, 156, 0) 100%
+        );
       }
     }
     &.circle-3 {
@@ -121,7 +140,11 @@
         height: 5.6px;
       }
       .background {
-        background: radial-gradient(50% 50% at 50% 50%, rgba(63, 234, 255, 0.9) 0%, rgba(52, 135, 176, 0) 100%);
+        background: radial-gradient(
+          50% 50% at 50% 50%,
+          rgba(63, 234, 255, 0.9) 0%,
+          rgba(52, 135, 176, 0) 100%
+        );
       }
     }
     &.circle-4 {

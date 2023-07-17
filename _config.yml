@@ -23,19 +23,17 @@ toc:
 pagination:
   enabled: true
   per_page: 16
-  permalink: '/page/:num/'
-  title: 'DeFi blog - page :num'
+  permalink: "/page/:num/"
+  title: "DeFi blog - page :num"
   limit: 0
-  sort_field: 'date'
+  sort_field: "date"
   sort_reverse: true
 
 # Build settings
 markdown: kramdown
 # Layout settings
 home-link-in-menu: no
-plugins:
-  - jekyll-random
-include: ['.htaccess']
+include: [".htaccess"]
 collections_dir: collections
 collections:
   lending:
@@ -117,18 +115,17 @@ collections:
     section_url: /alternatives
 
 defaults:
-  -
-    values:
+  - values:
       layout: "product"
 exclude:
-    - .jekyll-cache
-    - node_modules
-    - README.md
-    - CONTRIBUTING.md
-    - gems
+  - .jekyll-cache
+  - node_modules
+  - README.md
+  - CONTRIBUTING.md
+  - gems
 keep_files: [images, admin]
 sass:
-    style: compressed
+  style: compressed
 
 algolia:
   application_id: U1P9PKRFOS
@@ -154,7 +151,6 @@ algolia:
     - .github
     - /amp
 
-
 lazy_load_image:
   src_attr_name: data-src # [required] You need to specify the attributes to be saved for lazy loading
   #preload_image: /path/to/image # [optional] you can add a data uri or loading image as fallback src
@@ -167,7 +163,6 @@ lazy_load_image:
   #   "data-size": auto
 feed:
   path: feed.xml
-
 
 tag_page_layout: tag_page
 tag_page_dir: t

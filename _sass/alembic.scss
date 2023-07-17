@@ -1,11 +1,4 @@
 @charset "utf-8";
 
 // Import frameworks & theme styles
-@import
-  "normalize",
-  "settings",
-  "sassline-base",
-  "syntax",
-  "flex",
-  "theme"
-;
+@import "normalize", "settings", "sassline-base", "syntax", "flex", "theme";

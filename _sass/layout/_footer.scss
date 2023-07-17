@@ -75,9 +75,9 @@
           }
           @include breakpoint(small) {
             font-size: 12px;
-          }          
+          }
         }
-        p{
+        p {
           @include breakpoint(small) {
             font-size: 12px;
           }
@@ -96,7 +96,8 @@
         padding: 6px 0;
         &:hover {
           svg {
-            path, rect {
+            path,
+            rect {
               fill: #05d2dd;
             }
           }
@@ -110,7 +111,8 @@
             width: 24px;
             height: 24px;
           }
-          path, rect {
+          path,
+          rect {
             fill: #8f68fc;
           }
         }

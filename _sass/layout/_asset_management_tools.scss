@@ -83,12 +83,12 @@
     }
 
     &.featured-wrapper {
-     margin-top: -25px;
+      margin-top: -25px;
       background-color: #05d2dd;
       position: relative;
       .asset_tool_card {
         background-color: #ffffff;
-        outline: 15px solid #05D2DD;
+        outline: 15px solid #05d2dd;
       }
       .featured-header {
         margin-top: -8px;
@@ -420,7 +420,7 @@
     }
   }
   &.is-hover-link {
-    &.is-hover{
+    &.is-hover {
       > .card_main_details {
         p a {
           color: _color(green-color);
@@ -442,7 +442,6 @@
         }
       }
     }
-
   }
 
   &:hover {
@@ -458,7 +457,11 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background: linear-gradient(0deg, rgba(41, 41, 132, 0.6), rgba(41, 41, 132, 0.6));
+        background: linear-gradient(
+          0deg,
+          rgba(41, 41, 132, 0.6),
+          rgba(41, 41, 132, 0.6)
+        );
         z-index: 2;
         transform: scale(1.05);
       }

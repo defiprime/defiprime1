@@ -50,7 +50,13 @@
 
       &:before {
         @include vendor("pointer-events", "none");
-        @include vendor("transition", ("background-color #{$duration} #{$ease}", "opacity #{$duration} #{$ease}"));
+        @include vendor(
+          "transition",
+          (
+            "background-color #{$duration} #{$ease}",
+            "opacity #{$duration} #{$ease}"
+          )
+        );
         content: "";
         display: block;
         position: absolute;
@@ -91,7 +97,11 @@
       @include vendor("justify-content", "center");
       @include vendor(
         "transition",
-        ("background-color #{$duration} #{$ease}", "transform #{$duration} #{$ease}", "color #{$duration} #{$ease}")
+        (
+          "background-color #{$duration} #{$ease}",
+          "transform #{$duration} #{$ease}",
+          "color #{$duration} #{$ease}"
+        )
       );
       width: 100%;
       height: 100%;
@@ -129,7 +139,10 @@
       }
 
       .content {
-        @include vendor("transition", ("max-height #{$duration} #{$ease}", "opacity #{$duration} #{$ease}"));
+        @include vendor(
+          "transition",
+          ("max-height #{$duration} #{$ease}", "opacity #{$duration} #{$ease}")
+        );
         width: 100%;
         max-height: 0;
         line-height: 1.5;
@@ -241,7 +254,7 @@
     $gutter: _size(gutter) * 0.5;
 
     article {
-      width: calc(#{(100% / 3)} - #{$gutter * 1});
+      width: calc (#{(100% / 3)} - #{$gutter * 1});
       margin: $gutter 0 0 $gutter;
     }
   }
@@ -250,7 +263,7 @@
     $gutter: _size(gutter);
 
     article {
-      width: calc(#{(100% / 2)} - #{$gutter * 1});
+      width: calc (#{(100% / 2)} - #{$gutter * 1});
       margin: $gutter 0 0 $gutter;
     }
   }
@@ -259,7 +272,7 @@
     $gutter: _size(gutter) * 0.5;
 
     article {
-      width: calc(#{(100% / 2)} - #{$gutter * 1});
+      width: calc (#{(100% / 2)} - #{$gutter * 1});
       margin: $gutter 0 0 $gutter;
 
       &:hover {

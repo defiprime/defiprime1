@@ -8,7 +8,7 @@
   .container-tickers {
     overflow-x: scroll;
     -ms-overflow-style: none;
-    scrollbar-width: none; 
+    scrollbar-width: none;
   }
   .container-tickers::-webkit-scrollbar {
     display: none;
@@ -174,7 +174,7 @@
   .ticker-market-cap-title {
     text-align: right;
   }
-  .ticker-address-copy{
+  .ticker-address-copy {
     width: 3%;
   }
   .ticker-change {
@@ -217,7 +217,7 @@
   position: relative;
   width: 80px;
   height: 8px;
-  transform: translateX(12px)
+  transform: translateX(12px);
 }
 .lds-ellipsis div {
   position: absolute;
@@ -288,14 +288,13 @@
 }
 .btncopy svg {
   &:hover {
- path{
-    fill: #05d2dd;
- }
- rect{
-    fill: #05d2dd;
-  }
-  .ticker-address-title {
-
+    path {
+      fill: #05d2dd;
+    }
+    rect {
+      fill: #05d2dd;
+    }
+    .ticker-address-title {
       color: #05d2dd;
     }
   }

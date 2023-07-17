@@ -1,7 +1,7 @@
-@import 'libs/vars';
-@import 'libs/functions';
-@import 'libs/mixins';
-@import 'libs/skel';
+@import "libs/vars";
+@import "libs/functions";
+@import "libs/mixins";
+@import "libs/skel";
 
 /*
 	Phantom by HTML5 UP
@@ -11,42 +11,42 @@
 
 /* Tiles */
 
-	.tiles {
-		&:after {
-			content: '';
-			display: block;
-			clear: both;
-		}
+.tiles {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
 
-		article {
-			float: left;
+  article {
+    float: left;
 
-			> a {
-				padding-top: 50%;
-				margin-top: -1.75em;
-			}
+    > a {
+      padding-top: 50%;
+      margin-top: -1.75em;
+    }
 
-			body:not(.is-touch) & {
-				&:hover {
-					> .image {
-						@include vendor('transform', 'none');
-					}
-				}
-			}
-		}
-	}
+    body:not(.is-touch) & {
+      &:hover {
+        > .image {
+          @include vendor("transform", "none");
+        }
+      }
+    }
+  }
+}
 
 /* Footer */
 
-	#footer {
-		> .inner {
-			section {
-				float: left;
-			}
+#footer {
+  > .inner {
+    section {
+      float: left;
+    }
 
-			.copyright {
-				clear: both;
-				padding-top: (_size(element-margin) * 2);
-			}
-		}
-	}
+    .copyright {
+      clear: both;
+      padding-top: (_size(element-margin) * 2);
+    }
+  }
+}
