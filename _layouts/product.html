@@ -112,6 +112,11 @@
         {% endif %}
 
         <h3 class='give-thoughts-header'>What do you think of {{ page.product-title }} product?</h3>
+        {% if page.long-description  %}
+          <p>
+          {{ page.long-description }}
+          </p>
+          {% endif %}
 
         <div id="graphcomment"></div>
         <script type="text/javascript">
