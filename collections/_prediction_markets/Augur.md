@@ -1,4 +1,5 @@
 ---
+git-date: 2019-05-20T22:02:39-07:00
 product-title: Augur
 product-url: https://www.augur.net
 image: /images/output_md/augur.net.jpg

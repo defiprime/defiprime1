@@ -1,5 +1,5 @@
 ---
-git-date: 2021-08-22T10:35:33-07:00
+git-date: 2021-08-22T13:50:00-07:00
 product-title: Alpaca Finance
 product-url: https://www.alpacafinance.org/
 image: /images/output_md/alpacafinance.org.jpg

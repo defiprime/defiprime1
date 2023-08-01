@@ -1,5 +1,5 @@
 ---
-git-date: 2023-07-03
+git-date: 2023-07-04T22:01:37-04:00
 product-title: Bluefin
 product-url: https://trade.bluefin.io/r/defiprime?utm_source=defiprime&utm_medium=affiliate&utm_campaign=affiliate-program
 image: /images/output_md/bluefin.io.jpg

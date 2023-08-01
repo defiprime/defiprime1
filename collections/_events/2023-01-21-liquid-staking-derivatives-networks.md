@@ -1,4 +1,5 @@
 ---
+git-date: 2023-01-21T08:21:19-08:00
 product-title: "Liquid Staking Derivatives Networks at ETHDenver"
 product-url: https://www.eventbrite.com/e/liquid-staking-derivatives-networks-at-ethdenver-tickets-507800824937?aff=erelpanelorg
 image: /images/events/liquid-staking-derivatives-networks-event.jpg

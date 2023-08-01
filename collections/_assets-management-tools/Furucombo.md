@@ -1,5 +1,5 @@
 ---
-git-date: 2020-09-06:10:44-07:00
+git-date: 2020-09-25T18:01:23+03:00
 product-title: Furucombo
 product-url: https://furucombo.app/
 image: /images/output_md/furucombo.app.png

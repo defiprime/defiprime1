@@ -1,5 +1,5 @@
 ---
-git-date: 2021-09-26
+git-date: 2021-09-26T08:43:17-07:00
 product-title: Trader Joe
 product-url: https://www.traderjoexyz.com/#/home
 image: /images/output_md/traderjoexyz.com.jpg

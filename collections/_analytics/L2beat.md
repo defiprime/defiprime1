@@ -1,5 +1,5 @@
 ---
-git-date: 2021-09-12T00:00:44-07:00
+git-date: 2021-09-12T12:17:26-07:00
 product-title: L2beat
 product-url: https://l2beat.com
 image: /images/output_md/l2beat.com.jpg

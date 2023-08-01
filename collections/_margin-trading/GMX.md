@@ -1,5 +1,5 @@
 ---
-git-date: 2022-08-04
+git-date: 2022-08-05T07:53:46-07:00
 product-title: GMX
 product-url: https://gmx.io/#/?ref=defiprime
 image: /images/output_md/gmx.io.jpg

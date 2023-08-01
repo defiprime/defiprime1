@@ -1,5 +1,5 @@
 ---
-git-date: 2022-11-26:05:44-07:00
+git-date: 2022-11-26T17:27:22-08:00
 product-title: Euler
 product-url: https://www.euler.finance
 image: /images/output_md/www.euler.finance.jpg

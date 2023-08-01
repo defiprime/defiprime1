@@ -1,4 +1,5 @@
 ---
+git-date: 2021-02-25T11:56:26-08:00
 layout: alternatives
 title: "DEXTools Alternatives"
 permalink: dextools-alternatives

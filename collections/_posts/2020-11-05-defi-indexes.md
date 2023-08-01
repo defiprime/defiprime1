@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-11-05T08:54:50-08:00
 layout: [blog]
 title:  "DeFi indexes"
 permalink: defi-index

@@ -1,5 +1,5 @@
 ---
-git-date: 2022-11-29
+git-date: 2022-11-29T09:37:12-08:00
 product-title: Kwenta
 product-url: https://kwenta.eth.limo/
 image: /images/output_md/kwenta.io.jpg

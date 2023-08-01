@@ -1,4 +1,5 @@
 ---
+git-date: 2020-06-24T12:09:55-07:00
 name: Bug report
 about: Create a report to help us improve
 title: ''

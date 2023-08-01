@@ -1,5 +1,5 @@
 ---
-git-date: 2021-02-21T10:35:33-07:00
+git-date: 2021-02-20T12:43:53-08:00
 product-title: PancakeSwap
 product-url: https://pancakeswap.finance/
 image: /images/output_md/pancakeswap.finance.png

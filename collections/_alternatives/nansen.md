@@ -1,4 +1,5 @@
 ---
+git-date: 2022-11-25T19:28:13-08:00
 layout: alternatives
 title: "Nansen Alternatives"
 permalink: nansen-alternatives

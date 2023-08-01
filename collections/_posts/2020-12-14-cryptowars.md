@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-12-14T07:25:02-08:00
 layout: [blog]
 title:  "CryptoWars"
 permalink: cryptowars

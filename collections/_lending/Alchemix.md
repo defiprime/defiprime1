@@ -1,5 +1,5 @@
 ---
-git-date: 2021-06-06:05:44-07:00
+git-date: 2021-06-06T08:09:58-07:00
 product-title: Alchemix
 product-url: https://alchemix.fi/
 image: /images/output_md/alchemix.fi.jpg

@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2019-11-26T10:06:09+00:00
 layout: [blog]
 title:  MakerDAO vs. Equilibrium
 permalink: makerdao-compared-to-equilibrium

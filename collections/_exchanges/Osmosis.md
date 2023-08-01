@@ -1,5 +1,5 @@
 ---
-git-date: 2023-03-07
+git-date: 2023-03-07T17:37:25-08:00
 product-title: Osmosis
 product-url: https://osmosis.zone
 image: /images/output_md/osmosis.zone.jpg

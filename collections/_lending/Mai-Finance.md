@@ -1,5 +1,5 @@
 ---
-git-date: 
+git-date: 2023-03-07T17:54:37-08:00
 product-title: Mai Finance
 product-url: https://www.mai.finance
 image: /images/output_md/www.mai.finance.jpg

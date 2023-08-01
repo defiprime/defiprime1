@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-06-25T19:38:45-07:00
 layout: stats
 title: DEX Tracker - Decentralized Exchanges Trading Volume
 h1title: DEX Tracker - Decentralized Exchanges Trading Volume

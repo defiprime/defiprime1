@@ -1,5 +1,5 @@
 ---
-git-date: 2021-01-17T15:56:54-07:00
+git-date: 2021-01-17T10:29:35-08:00
 product-title: Frax
 product-url: https://frax.finance/
 image: /images/output_md/frax.finance.png

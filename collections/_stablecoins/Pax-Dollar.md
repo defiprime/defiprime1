@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2021-08-31T07:43:03-07:00
 product-title: Pax Dollar
 product-url: https://www.paxos.com/usdp/
 image: /images/output_md/www.paxos.com.png

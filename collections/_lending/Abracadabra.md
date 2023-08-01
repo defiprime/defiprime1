@@ -1,5 +1,5 @@
 ---
-git-date: 
+git-date: 2023-03-08T18:09:27-08:00
 product-title: Abracadabra
 product-url: https://abracadabra.money
 image: /images/output_md/abracadabra.money.jpg

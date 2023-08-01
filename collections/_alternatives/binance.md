@@ -1,4 +1,5 @@
 ---
+git-date: 2021-02-28T16:51:57-08:00
 layout: alternatives
 title: "Binance Alternatives"
 permalink: binance-alternatives

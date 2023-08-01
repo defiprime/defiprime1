@@ -1,5 +1,5 @@
 ---
-git-date: 2022-01-09T09:59:57-07:00
+git-date: 2022-01-09T12:32:42-08:00
 product-title: CowSwap
 product-url: https://cowswap.exchange/
 image: /images/output_md/cowswap.exchange.jpg

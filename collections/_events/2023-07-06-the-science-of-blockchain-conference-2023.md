@@ -1,4 +1,5 @@
 ---
+git-date: 2023-07-06T09:17:14-04:00
 product-title: "The Science of Blockchain Conference 2023"
 product-url: https://cbr.stanford.edu/sbc23/
 image: /images/events/sbc-2023-event.jpg

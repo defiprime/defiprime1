@@ -1,4 +1,5 @@
 ---
+git-date: 2023-02-14T13:45:37-08:00
 product-title: "Prague DeFi Summit"
 product-url: https://praguedefisummit.com/
 image: /images/events/prague-defi-summit-2023-event.jpg

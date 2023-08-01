@@ -1,5 +1,5 @@
 ---
-git-date: 2021-11-02T10:02:11-07:00
+git-date: 2021-11-29T18:12:47-07:00
 product-title: InsurAce Protocol
 product-url: https://app.insurace.io/Insurance/BuyCovers?referrer=1346505268295495491114991223717367640099680672929
 image: /images/output_md/insurace.io.jpg

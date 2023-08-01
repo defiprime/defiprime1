@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-10-13T07:54:33-07:00
 layout: [blog]
 title:  "The Definitive Guide to DeFi Taxes"
 permalink: defi-taxes-2020

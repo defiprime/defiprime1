@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2021-02-01T07:24:03-08:00
 layout: [blog]
 title:  "Alpha Homora"
 permalink: alpha-homora

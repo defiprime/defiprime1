@@ -1,4 +1,5 @@
 ---
+git-date: 2023-01-23T15:14:14-08:00
 product-title: "Next Block Expo Warsaw Summit"
 product-url: https://nextblockexpo.com
 image: /images/events/next-block-expo-warsaw-summit-event.jpg

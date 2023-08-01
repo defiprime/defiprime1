@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2022-01-23T17:34:17-07:00
 layout: [blog]
 title: "The State of Bridges"
 permalink: the-state-of-bridges

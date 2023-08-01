@@ -1,5 +1,5 @@
 ---
-git-date: 2020-08-12T10:46:00-07:00
+git-date: 2020-08-24T11:41:56-07:00
 product-title: Polymarket
 product-url: https://www.poly.market/discover
 image: /images/output_md/www.poly.market.png

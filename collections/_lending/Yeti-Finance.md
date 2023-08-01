@@ -1,5 +1,5 @@
 ---
-git-date: 
+git-date: 2023-03-07T17:37:25-08:00
 product-title: Yeti Finance
 product-url: https://yeti.finance
 image: /images/output_md/yeti.finance.jpg

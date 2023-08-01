@@ -1,5 +1,5 @@
 ---
-git-date: 2022-11-19
+git-date: 2022-11-19T10:08:11-08:00
 product-title: OpenOcean
 product-url: https://app.openocean.finance/referral/RbQPIvYH5uDqrj5Sm6L4ogtFlxs4IQf2Sxn5oc0CzYYxm_d-Jwghhluf22n8xcSX
 image: /images/output_md/openocean.finance.jpg

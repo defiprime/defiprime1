@@ -1,5 +1,5 @@
 ---
-git-date: 2019-07-05T09:47:35-07:00
+git-date: 2020-04-23T13:38:49-07:00
 product-title: Stakin
 product-url: https://stakin.com/
 image: /images/output_md/stakin.com.png

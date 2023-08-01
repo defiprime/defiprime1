@@ -1,5 +1,5 @@
 ---
-git-date: 2021-11-27
+git-date: 2021-11-26T23:30:23+02:00
 product-title: XDEFI Wallet
 product-url: https://www.xdefi.io
 image: /images/output_md/www.xdefi.io.jpg

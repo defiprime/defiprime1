@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2022-10-02T16:17:34-07:00
 layout: [blog]
 title: "KyberSwap"
 permalink: kyberswap-interview-2022

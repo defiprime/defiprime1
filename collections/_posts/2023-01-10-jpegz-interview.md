@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2023-01-10T06:11:09-08:00
 layout: [blog]
 title: "JPEGz"
 permalink: jpegz-interview-2023

@@ -1,4 +1,5 @@
 # Changelog
+git-date: 2019-11-12T07:51:54-08:00
 
 All notable changes to this project will be documented in this file.
 

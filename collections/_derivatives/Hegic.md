@@ -1,5 +1,5 @@
 ---
-git-date: 2020-04-24T08:44:25-07:00
+git-date: 2020-04-24T12:27:40-07:00
 product-title: Hegic
 product-url: https://www.hegic.co/
 image: /images/output_md/www.hegic.co.png

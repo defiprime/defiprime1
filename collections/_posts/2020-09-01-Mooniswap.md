@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-09-01T21:01:59-07:00
 layout: [blog]
 title:  "Mooniswap"
 permalink: mooniswap

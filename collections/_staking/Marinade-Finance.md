@@ -1,5 +1,5 @@
 ---
-git-date: 2022-11-19T09:47:35-07:00
+git-date: 2022-11-23T15:23:36-08:00
 product-title: Marinade Finance
 product-url: https://marinade.finance
 image: /images/output_md/marinade.finance.jpg

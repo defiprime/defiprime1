@@ -1,5 +1,5 @@
 ---
-git-date: 2020-09-20T01:10:44-07:00
+git-date: 2020-09-25T18:01:23+03:00
 product-title: DeepDAO
 product-url: https://deepdao.io/#/deepdao/dashboard
 image: /images/output_md/deepdao.io.png

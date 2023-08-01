@@ -1,5 +1,5 @@
 ---
-git-date: 2021-10-05T10:02:11-07:00
+git-date: 2021-10-05T16:41:48-07:00
 product-title: Ribbon Finance
 product-url: https://www.ribbon.finance/
 image: /images/output_md/ribbon.finance.jpg

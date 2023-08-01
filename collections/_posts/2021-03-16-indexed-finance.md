@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2021-03-14T10:57:05-07:00
 layout: [blog]
 title:  "Indexed Finance"
 permalink: indexed-finance

@@ -1,5 +1,5 @@
 ---
-git-date: 2020-05-16T10:35:33-07:00
+git-date: 2020-05-16T13:51:52-07:00
 product-title: Balancer
 product-url: https://balancer.finance/
 image: /images/output_md/balancer.exchange.png

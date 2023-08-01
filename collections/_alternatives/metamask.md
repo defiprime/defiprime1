@@ -1,4 +1,5 @@
 ---
+git-date: 2021-11-24T13:05:09-08:00
 layout: alternatives
 title: "Metamask Alternatives"
 permalink: metamask-alternatives

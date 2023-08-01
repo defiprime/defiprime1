@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-04-13T08:27:31-07:00
 layout: [blog]
 title:  "Why Decentralized Finance totally needs interest rate swaps"
 permalink: defi-interest-rate-swaps

@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-04-06T10:06:05+00:00
 layout: [blog]
 title:  Liquality
 permalink: liquality

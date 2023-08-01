@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-06-21T18:09:23-07:00
 layout: [blog]
 title:  "Top DeFi Podcasts of 2020"
 permalink: defi-podcasts

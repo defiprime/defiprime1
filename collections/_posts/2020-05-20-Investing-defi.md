@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-05-20T15:00:23-07:00
 layout: [blog]
 title:  "Everything you need to know before investing in DeFi"
 permalink: investing-defi

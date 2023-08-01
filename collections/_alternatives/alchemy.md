@@ -1,4 +1,5 @@
 ---
+git-date: 2023-08-01T09:13:26-04:00
 layout: alternatives
 title: "alchemy Alternatives"
 permalink: alchemy-alternatives

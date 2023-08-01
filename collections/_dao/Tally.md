@@ -1,5 +1,5 @@
 ---
-git-date: 2021-03-13T12:37:37-07:00
+git-date: 2021-03-13T18:23:28-08:00
 product-title: Tally
 product-url: https://www.tally.xyz/
 image: /images/output_md/www.withtally.com.png

@@ -1,4 +1,5 @@
 ---
+git-date: 2023-01-21T08:21:50-08:00
 product-title: "MEV and Proof of Neutrality at ETHDenver"
 product-url: https://www.eventbrite.com/e/mev-and-proof-of-neutrality-at-ethdenver-tickets-507809039507?aff=ebdssbdestsearch
 image: /images/events/mev-and-proof-of-neutrality-event.jpg

@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2021-08-04T09:27:29-07:00
 layout: [blog]
 title:  "NFT Gaming Explained"
 permalink: nft-gaming-explained

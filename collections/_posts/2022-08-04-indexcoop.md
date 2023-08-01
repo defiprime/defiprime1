@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2022-08-04T08:26:21-07:00
 layout: [blog]
 title: "Index Coop - DAO launched to democratize access to complex crypto strategies"
 permalink: indexcoop

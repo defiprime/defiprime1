@@ -1,5 +1,5 @@
 ---
-git-date: 2021-02-19T10:02:11-07:00
+git-date: 2021-02-18T17:40:02-08:00
 product-title: TrueFi
 product-url: https://truefi.io/
 image: /images/output_md/truefi.io.png

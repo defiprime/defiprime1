@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2019-05-20T22:02:39-07:00
 product-title: DAI
 product-url: https://oasis.app/?ref=0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1
 image: /images/output_md/httpsmakerdaocomendai.png

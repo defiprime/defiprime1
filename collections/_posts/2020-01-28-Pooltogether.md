@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-01-27T16:26:30-08:00
 layout: [blog]
 title:  PoolTogether
 permalink: pooltogether

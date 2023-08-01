@@ -1,5 +1,5 @@
 ---
-git-date: 2022-05-01T10:35:33-07:00
+git-date: 2022-05-02T06:36:34-07:00
 product-title: Slingshot
 product-url: https://app.slingshot.finance
 image: /images/output_md/app.slingshot.finance.jpg

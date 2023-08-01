@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2019-05-20T22:02:39-07:00
 product-title: Bisq
 product-url: https://bisq.network/
 image: /images/output_md/httpsbisqnetwork.png

@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2019-08-25T14:05:50-07:00
 layout: rates
 pagetitle: DeFi Yields Rates | DeFi Lending Interest Rates | DeFiprime.com
 metadescription: 'Compare DeFi crypto lending products with traditional financial system offerings.

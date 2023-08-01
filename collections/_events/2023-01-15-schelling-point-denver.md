@@ -1,4 +1,5 @@
 ---
+git-date: 2023-01-16T14:07:46-08:00
 product-title: "Schelling Point Denver"
 product-url: https://schellingpoint.gitcoin.co
 image: /images/events/schelling-point-denver-event.jpg

@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2019-09-18T09:03:33-07:00
 layout: [blog]
 title:  stake.fish
 permalink: stakefish

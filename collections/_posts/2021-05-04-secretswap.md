@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2021-05-02T09:35:24-07:00
 layout: [blog]
 title:  "SecretSwap"
 permalink: secretswap

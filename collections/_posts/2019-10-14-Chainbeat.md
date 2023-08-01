@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2019-10-14T07:08:04-07:00
 layout: [blog]
 title:  Chainbeat
 permalink: chainbeat

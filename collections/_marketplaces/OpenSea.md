@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2019-05-20T22:02:39-07:00
 product-title: OpenSea
 product-url: https://opensea.io?ref=0xebdb626c95a25f4e304336b1adcad0521a1bdca1
 image: /images/output_md/httpsopenseaio.png

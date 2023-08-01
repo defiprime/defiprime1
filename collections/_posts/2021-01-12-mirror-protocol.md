@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-12-18T17:10:02+02:00
 layout: [blog]
 title:  "Mirror Protocol"
 permalink: mirror-protocol

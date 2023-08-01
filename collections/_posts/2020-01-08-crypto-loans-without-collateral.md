@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-01-08T10:06:04+00:00
 layout: [blog]
 title: Crypto Loans Without Collateral
 permalink: crypto-loans-without-collateral

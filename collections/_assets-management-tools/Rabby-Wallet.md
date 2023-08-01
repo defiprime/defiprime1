@@ -1,5 +1,5 @@
 ---
-git-date: 
+git-date: 2023-07-30T10:12:58-04:00
 product-title: Rabby Wallet
 product-url: https://rabby.io
 image: /images/output_md/rabby.io.jpg

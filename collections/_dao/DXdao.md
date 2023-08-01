@@ -1,5 +1,5 @@
 ---
-git-date: 2019-09-14T12:37:37-07:00
+git-date: 2020-06-08T07:50:35-07:00
 product-title: DXdao
 product-url: https://dxdao.eth.link/#/
 image: /images/output_md/dxdao.eth.link.png

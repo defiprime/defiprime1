@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2023-07-07T09:29:36-04:00
 layout: [blog]
 title: "A Brief History of Blockchain Bridges Hacks: Lessons Learned and Ongoing Challenges"
 permalink: history-of-cross-chain-bridge-hacks

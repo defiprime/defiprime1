@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2019-09-25T09:06:05+00:00
 layout: [blog]
 title:  Hummingbot
 permalink: hummingbot

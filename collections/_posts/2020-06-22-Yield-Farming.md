@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-06-23T09:38:48-07:00
 layout: [blog]
 title:  "Inside Yield Farming: A Beginner's Guide to the Latest Craze in DeFi"
 permalink: defi-yield-farming

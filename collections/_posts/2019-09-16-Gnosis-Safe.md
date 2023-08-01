@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2019-09-15T23:24:03-07:00
 layout: [blog]
 title:  Gnosis Safe
 permalink: gnosis-safe

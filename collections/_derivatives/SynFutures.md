@@ -1,5 +1,5 @@
 ---
-git-date: 2023-01-08
+git-date: 2023-01-08T10:01:08-08:00
 product-title: SynFutures
 product-url: https://www.synfutures.com
 image: /images/output_md/www.synfutures.com.jpg

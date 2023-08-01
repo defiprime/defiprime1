@@ -1,5 +1,5 @@
 ---
-git-date: 2019-09-27T10:02:11-07:00
+git-date: 2019-09-27T15:44:34-07:00
 product-title: Eidoo
 product-url: https://eidoo.io/
 image: /images/output_md/eidoo.io.png

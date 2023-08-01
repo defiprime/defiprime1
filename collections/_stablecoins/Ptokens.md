@@ -1,5 +1,5 @@
 ---
-git-date: 2020-05-14T15:56:54-07:00
+git-date: 2020-05-14T13:30:50-07:00
 product-title: pTokens
 product-url: https://ptokens.io/
 image: /images/output_md/ptokens.io.png

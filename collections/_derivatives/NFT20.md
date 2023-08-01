@@ -1,5 +1,5 @@
 ---
-git-date: 2021-02-28T10:35:33-07:00
+git-date: 2021-02-28T11:14:52-08:00
 product-title: NFT20
 product-url: https://nft20.io/
 image: /images/output_md/nft20.io.png

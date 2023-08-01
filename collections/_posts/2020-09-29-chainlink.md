@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-09-29T16:09:02-07:00
 layout: [blog]
 title:  "Chainlink"
 permalink: chainlink

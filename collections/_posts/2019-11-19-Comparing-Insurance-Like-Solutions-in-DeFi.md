@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2019-11-19T08:58:16-08:00
 layout: [blog]
 title:  Comparing Insurance Like Solutions in DeFi
 permalink: comparing-insurance-like-solutions-in-defi

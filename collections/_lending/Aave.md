@@ -1,5 +1,5 @@
 ---
-git-date: 2020-01-11:05:44-07:00
+git-date: 2020-01-11T11:30:54-08:00
 product-title: Aave
 product-url: https://app.aave.com/?referral=28
 image: /images/output_md/aave.com.png

@@ -1,4 +1,5 @@
 ---
+git-date: 2021-02-23T21:42:02-08:00
 layout: alternatives
 title: "Uniswap Alternatives"
 permalink: uniswap-alternatives

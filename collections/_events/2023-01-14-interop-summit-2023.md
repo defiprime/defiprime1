@@ -1,4 +1,5 @@
 ---
+git-date: 2023-01-13T17:40:30-08:00
 product-title: "Interop Summit 2023"
 product-url: https://interopsummit.com/
 image: /images/events/interop-summit-2023-event.jpg

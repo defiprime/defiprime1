@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-06-28T12:37:26-07:00
 product-title: TokenPocket
 product-url: https://tokenpocket.pro/
 image: /images/output_md/httpstokenpocketpro.png

@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2021-02-12T13:57:39-08:00
 layout: [blog]
 title:  "NFT Ecosystem Explained"
 permalink: nft-list

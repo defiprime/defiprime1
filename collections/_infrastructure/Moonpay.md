@@ -1,5 +1,5 @@
 ---
-git-date: 2019-10-18T05:58:23-07:00
+git-date: 2019-10-18T15:04:06-07:00
 product-title: MoonPay
 product-url: https://www.moonpay.io
 image: /images/output_md/www.moonpay.io.png

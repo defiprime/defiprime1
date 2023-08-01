@@ -1,5 +1,5 @@
 ---
-git-date: 2021-08-08T15:56:54-07:00
+git-date: 2021-08-08T09:16:13-07:00
 product-title: Perpetual Protocol
 product-url: https://perp.exchange/
 image: /images/output_md/perp.exchange.jpg

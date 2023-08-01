@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2019-05-20T22:02:39-07:00
 product-title: Zerion
 product-url: https://zerion.io/en
 image: /images/output_md/zerion.io.png

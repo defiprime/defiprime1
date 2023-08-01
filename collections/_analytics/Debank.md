@@ -1,5 +1,5 @@
 ---
-git-date: 2020-04-10T00:00:44-07:00
+git-date: 2020-04-10T12:23:16-07:00
 product-title: DeBank
 product-url: https://debank.com/
 image: /images/output_md/debank.com.png

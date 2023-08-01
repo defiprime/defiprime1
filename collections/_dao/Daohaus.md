@@ -1,5 +1,5 @@
 ---
-git-date: 2020-01-19T12:37:37-07:00
+git-date: 2020-01-19T13:40:52-08:00
 product-title: Daohaus
 product-url: https://daohaus.club/
 image: /images/output_md/daohaus-main.png

@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-08-03T18:53:35-07:00
 layout: [blog]
 title:  "What Are Perpetual Contracts for Bitcoin? dYdX Perpetual Futures Explained"
 permalink: perpetual-dydx

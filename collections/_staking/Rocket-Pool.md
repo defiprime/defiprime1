@@ -1,5 +1,5 @@
 ---
-git-date: 2022-12-11
+git-date: 2022-12-11T10:25:10-08:00
 product-title: Rocket Pool
 product-url: https://rocketpool.net/
 image: /images/output_md/rocketpool.net.jpg

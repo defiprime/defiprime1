@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2021-10-06T09:19:13-07:00
 layout: [blog]
 title: "OpenSea"
 permalink: opensea-vs-traditional-art-sellers

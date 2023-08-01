@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-09-25T18:01:23+03:00
 layout: [blog]
 title: "Ethereum Gas Explained"
 permalink: gas

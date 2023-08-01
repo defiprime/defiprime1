@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2019-05-20T22:02:39-07:00
 product-title: MetaMask
 product-url: https://metamask.io/
 image: /images/output_md/httpsmetamaskio.png

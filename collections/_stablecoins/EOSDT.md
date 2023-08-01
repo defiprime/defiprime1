@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2019-05-20T22:02:39-07:00
 product-title: EOSDT
 product-url: https://eosdt.com/
 image: /images/output_md/eosdt.com.png

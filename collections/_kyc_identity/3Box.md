@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2019-08-25T14:05:50-07:00
 product-title: 3Box
 product-url: https://3box.io/
 image: /images/output_md/3box.io.png

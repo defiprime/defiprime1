@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2019-11-18T07:14:49-08:00
 layout: [blog]
 title:  Centrifuge
 permalink: centrifuge

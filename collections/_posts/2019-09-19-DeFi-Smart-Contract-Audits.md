@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2019-09-19T09:06:04+00:00
 layout: [blog]
 title:  DeFi Smart Contract Audits
 permalink: defi-smart-contract-audits

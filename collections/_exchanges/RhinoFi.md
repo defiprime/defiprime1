@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2019-08-25T14:05:50-07:00
 product-title: RhinoFi
 product-url: https://app.rhino.fi?ref=EBDB626645
 image: /images/output_md/www.deversifi.com.png

@@ -1,5 +1,5 @@
 ---
-git-date: 2021-02-18T10:35:33-07:00
+git-date: 2021-02-18T16:40:29-08:00
 product-title: NFTX
 product-url: https://nftx.org/
 image: /images/output_md/nftx.jpg

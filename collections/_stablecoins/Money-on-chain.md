@@ -1,5 +1,5 @@
 ---
-git-date: 2020-10-12T15:56:54-07:00
+git-date: 2020-10-12T14:59:01-07:00
 product-title: Money on Chain
 product-url: https://moneyonchain.com/
 image: /images/output_md/moneyonchain.com.png

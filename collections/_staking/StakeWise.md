@@ -1,5 +1,5 @@
 ---
-git-date: 
+git-date: 2022-11-28T08:41:55-08:00
 product-title: StakeWise
 product-url: https://stakewise.io
 image: /images/output_md/stakewise.io.jpg

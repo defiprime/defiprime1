@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2019-05-21T09:13:23-07:00
 product-title: Coinbase Wallet
 product-url: https://wallet.coinbase.com/
 image: /images/output_md/wallet.coinbase.com.png

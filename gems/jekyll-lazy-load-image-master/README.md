@@ -1,4 +1,5 @@
 # Jekyll Lazy Load Image [![Build Status](https://travis-ci.org/kenchan0130/jekyll-lazy-load-image.svg?branch=master)](https://travis-ci.org/kenchan0130/jekyll-lazy-load-image) [![Join the chat at https://gitter.im/kenchan0130/jekyll-lazy-load-image](https://badges.gitter.im/kenchan0130/jekyll-lazy-load-image.svg)](https://gitter.im/kenchan0130/jekyll-lazy-load-image?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+git-date: 2019-11-12T07:51:54-08:00
 
 _Edit img tag optimized lazy load images for your Jekyll site_
 

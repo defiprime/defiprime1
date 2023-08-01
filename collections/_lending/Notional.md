@@ -1,5 +1,5 @@
 ---
-git-date: 2021-01-20:05:44-07:00
+git-date: 2021-01-20T15:20:31-08:00
 product-title: Notional
 product-url: https://notional.finance/
 image: /images/output_md/notional.finance.png

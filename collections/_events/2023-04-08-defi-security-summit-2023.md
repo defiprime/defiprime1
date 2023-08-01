@@ -1,4 +1,5 @@
 ---
+git-date: 2023-04-08T08:07:50-07:00
 product-title: "DeFi Security Summit 2023"
 product-url: https://defisecuritysummit.org/?s=35
 image: /images/events/defi-security-summit-2023-event.jpg

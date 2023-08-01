@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2021-07-11T08:23:09-07:00
 layout: [blog]
 title:  "Partially Collateralized Options with Opyn"
 permalink: partially-collateralized-options-with-opyn

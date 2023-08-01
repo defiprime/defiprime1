@@ -1,5 +1,5 @@
 ---
-git-date: 2019-10-02T10:22:13-07:00
+git-date: 2019-11-25T18:13:17-08:00
 product-title: Oasis Borrow
 product-url: https://oasis.app/borrow?lang=en
 image: /images/output_md/oasis.app.jpg

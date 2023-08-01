@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2021-08-08T09:08:45-07:00
 layout: [blog]
 title:  "Punk Protocol"
 permalink: punk-protocol

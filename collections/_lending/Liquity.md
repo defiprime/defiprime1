@@ -1,5 +1,5 @@
 ---
-git-date: 2021-06-06:05:44-07:00
+git-date: 2021-06-06T10:46:19-07:00
 product-title: Liquity
 product-url: https://www.liquity.org
 image: /images/output_md/liquity.org.jpg

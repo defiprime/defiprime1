@@ -1,5 +1,5 @@
 ---
-git-date: 2019-09-14T12:37:37-07:00
+git-date: 2020-06-08T07:50:20-07:00
 product-title: PieDAO
 product-url: https://piedao.org/
 image: /images/output_md/piedao.org.png

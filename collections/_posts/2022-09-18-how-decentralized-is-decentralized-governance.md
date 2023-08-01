@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2022-09-18T18:40:50-07:00
 layout: [blog]
 title: "How Decentralized is Decentralized Governance?"
 permalink: how-decentralized-is-decentralized-governance

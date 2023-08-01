@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2021-02-05T11:52:43-08:00
 layout: stats
 title: Ethereum Gas Price and Usage Stats
 h1title: Ethereum Gas Price and Usage Stats

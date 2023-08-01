@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-08-03T18:53:35-07:00
 layout: [blog]
 title:  "Initial DeFi Offering"
 permalink: initial-defi-offering

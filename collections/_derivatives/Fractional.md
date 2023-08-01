@@ -1,5 +1,5 @@
 ---
-git-date: 2021-08-04T07:35:33-07:00
+git-date: 2021-08-03T10:45:36-07:00
 product-title: Fractional
 product-url: https://fractional.art
 image: /images/output_md/fractional.art.jpg

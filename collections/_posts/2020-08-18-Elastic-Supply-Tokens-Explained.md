@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-08-24T11:41:56-07:00
 layout: [blog]
 title:  "Elastic Supply Tokens Explained"
 permalink: elastic

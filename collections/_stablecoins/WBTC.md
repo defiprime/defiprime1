@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2019-05-20T22:02:39-07:00
 product-title: WBTC
 product-url: https://www.wbtc.network/
 image: /images/output_md/httpswwwwbtcnetwork.png

@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2021-08-22T14:30:23-07:00
 layout: [blog]
 title:  "Step Finance"
 permalink: step-finance

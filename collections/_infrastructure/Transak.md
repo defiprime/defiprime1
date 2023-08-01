@@ -1,5 +1,5 @@
 ---
-git-date: 2020-08-30T08:44:25-07:00
+git-date: 2020-08-30T12:54:58-07:00
 product-title: Transak
 product-url: https://transak.com/
 image: /images/output_md/transak.com.png

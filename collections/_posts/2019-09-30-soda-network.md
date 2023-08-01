@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2019-09-29T14:05:24-07:00
 layout: [blog]
 title: SODA
 permalink: soda-network

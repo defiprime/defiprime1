@@ -1,5 +1,5 @@
 ---
-git-date: 2019-12-10:10:44-07:00
+git-date: 2020-05-02T15:35:50-07:00
 product-title: Zapper
 product-url: https://www.zapper.fi/
 image: /images/output_md/defizap.com.png

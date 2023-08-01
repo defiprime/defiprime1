@@ -1,5 +1,5 @@
 ---
-git-date: 2020-09-06T15:56:54-07:00
+git-date: 2020-09-25T18:01:23+03:00
 product-title: DefiDollar
 product-url: https://app.dusd.finance/
 image: /images/output_md/app.dusd.finance.png

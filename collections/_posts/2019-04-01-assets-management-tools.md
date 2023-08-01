@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2019-09-14T12:07:59-07:00
 layout: page
 title: "Asset Management Tools"
 permalink: assets-management-tools

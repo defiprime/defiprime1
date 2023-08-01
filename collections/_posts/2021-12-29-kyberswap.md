@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2021-12-29T13:18:17+02:00
 layout: [blog]
 title: "KyberSwap.com: Swap and Earn Tokens at the Best Rates"
 permalink: kyberswap

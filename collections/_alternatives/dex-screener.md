@@ -1,4 +1,5 @@
 ---
+git-date: 2022-11-25T19:21:24-08:00
 layout: alternatives
 title: "DEX Screener Alternatives"
 permalink: dex-screener-alternatives

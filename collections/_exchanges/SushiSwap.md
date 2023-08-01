@@ -1,5 +1,5 @@
 ---
-git-date: 2020-09-12T10:35:33-07:00
+git-date: 2020-09-25T18:01:23+03:00
 product-title: SushiSwap
 product-url: https://sushi.com/
 image: /images/output_md/exchange.sushiswapclassic.org.png

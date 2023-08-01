@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2021-02-28T09:53:47-08:00
 layout: [blog]
 title:  "B.Protocol"
 permalink: bprotocol

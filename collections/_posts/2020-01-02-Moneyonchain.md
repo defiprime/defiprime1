@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-01-02T10:06:04+00:00
 layout: [blog]
 title:  Money On Chain
 permalink: moneyonchain

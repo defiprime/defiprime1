@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2021-03-21T10:52:18-07:00
 layout: [blog]
 title:  "Spendless"
 permalink: spendless

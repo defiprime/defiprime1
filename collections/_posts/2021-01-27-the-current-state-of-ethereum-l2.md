@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2021-01-27T07:54:28-08:00
 layout: [blog]
 title: "The Current State of Ethereum L2"
 permalink: ethereum-l2

@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-04-08T10:06:05+00:00
 layout: [blog]
 title:  "Art on Ethereum: a Beginner's Guide to Cryptoart Platforms"
 permalink: cryptoart-on-ethereum

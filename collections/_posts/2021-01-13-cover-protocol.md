@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2021-01-11T21:15:56+02:00
 layout: [blog]
 title:  "Cover Protocol"
 permalink: cover-protocol

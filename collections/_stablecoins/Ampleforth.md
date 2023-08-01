@@ -1,5 +1,5 @@
 ---
-git-date: 2020-07-28T15:56:54-07:00
+git-date: 2020-08-03T18:53:35-07:00
 product-title: Ampleforth
 product-url: https://www.ampleforth.org/
 image: /images/output_md/www.ampleforth.org.png

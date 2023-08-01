@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2022-02-10T11:40:51-07:00
 layout: [blog]
 title: "Application of IAD Principles to the DAO structure"
 permalink: application-of-iad-principles-to-the-dao-structure

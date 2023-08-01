@@ -1,5 +1,5 @@
 ---
-git-date: 2020-09-27T10:35:33-07:00
+git-date: 2020-09-27T17:18:20-07:00
 product-title: Harvest
 product-url: https://harvest.finance/
 image: /images/output_md/harvest.finance.png

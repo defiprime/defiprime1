@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-06-17T16:48:17-07:00
 layout: [blog]
 title:  "Top DeFi VCs: Surveying Some of the Space's Biggest Investors"
 permalink: defi-vcs

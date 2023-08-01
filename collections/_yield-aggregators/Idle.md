@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2019-08-25T14:05:50-07:00
 product-title: Idle
 product-url: https://idle.finance/
 image: /images/output_md/idle.finance.png

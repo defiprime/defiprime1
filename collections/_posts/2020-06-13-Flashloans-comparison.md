@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-06-14T13:41:40-07:00
 layout: [blog]
 title:  "Comparison betwen Flashloan providers: Aave vs dYdX vs Uniswap"
 permalink: flahloans-comparison

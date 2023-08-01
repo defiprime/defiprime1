@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2020-05-01T10:06:05+00:00
 layout: [blog]
 title:  "Token Based Funding "
 permalink: token-based-funding

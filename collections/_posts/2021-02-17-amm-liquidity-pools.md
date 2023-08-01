@@ -1,5 +1,5 @@
 ---
-git-date:
+git-date: 2021-02-17T07:41:39-08:00
 layout: [blog]
 title:  "An analytic approach to maximize profit and identify risk in AMM liquidity pools"
 permalink: amm-liquidity-pools
