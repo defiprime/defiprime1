@@ -6,6 +6,7 @@ metadescription: We are participating in Token Lists initiative, providing and m
 featured-image: /images/blog/tokenlist-og.png
 permalink: tokenlist
 ---
+
 # DeFi Tokens List
 
 {% assign all_projects = site.alternative-savings
@@ -25,6 +26,7 @@ permalink: tokenlist
 | concat: site.prediction_markets
 | concat: site.stablecoins
  %}
+
 <section class="sectoin-tickers">
   <p>We are participating in <a href="https://tokenlists.org/">Token Lists</a> initiative, providing and maintaining a <a href="https://tokenlists.org/token-list?url=https://defiprime.com/defiprime.tokenlist.json">list of reputable DeFi tokens tied to the products listed at Defiprime.</a> Visual representation of the Defiprime token list could be found below with a market stats.</p>
   <div class="container-tickers">
@@ -67,7 +69,7 @@ permalink: tokenlist
             <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
             <span class="sign">$</span><span class="ticker-market-cap-value"></span>
           </td>
-          <td class="ticker-link"><a href="https://dex.guru/token/{{all_project.contract}}-eth" target="_blank" class="button-trade">Analytics</a> </td>
+          <td class="ticker-link"><a href="https://dex.guru/token/eth/{{all_project.contract}}" target="_blank" class="button-trade">Analytics</a> </td>
         </tr>
         {% endif %}
       {% endfor %}
@@ -76,7 +78,5 @@ permalink: tokenlist
   </div>
   <p>Market data provided by <a href="https://www.coingecko.com/">Coingecko API</a>.</p>
 </section>
-
-
 
 <script src="/assets/js/defi_tickers.js"></script>
