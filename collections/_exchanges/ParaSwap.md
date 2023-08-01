@@ -9,7 +9,7 @@ filter: Aggregators, No KYC
 product-description: ParaSwap is a decentralized exchange aggregator that provides the best prices over multiple DEXs on the Ethereum, and many others EVM blockchains. [Interview with ParaSwap CEO and founder, Mounir Benchemled](/paraswap).
 coltitle: "Decentralized exchanges"
 colpermalink: exchanges
-alternative-to: ["1inch", "ftx", "uniswap"]
+alternative-to: ["1inch", "paraswap" "ftx", "uniswap"]
 ticker: PSP
 contract: "0xcafe001067cdef266afb7eb5a286dcfd277f3de5"
 featured: true

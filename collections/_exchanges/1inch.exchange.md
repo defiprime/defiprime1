@@ -15,5 +15,5 @@ analytics: https://explore.duneanalytics.com/embed/query/2999/visualization/5795
 ticker: 1INCH
 contract: "0x111111111117dc0aa78b770fa6a738034120c302"
 decimals: 18
-alternative-to: 1inch
+alternative-to: ["matcha", "1inch", "paraswap"]
 ---

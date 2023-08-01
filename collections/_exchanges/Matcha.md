@@ -15,5 +15,5 @@ analytics: https://explore.duneanalytics.com/embed/query/5352/visualization/1054
 ticker: ZRX
 contract: "0xe41d2489571d322189246dafa5ebde1f4699f498"
 decimals: 18
-alternative-to: 1inch
+alternative-to: ["1inch", "matcha", "paraswap"]
 ---

@@ -14,5 +14,5 @@ github: https://github.com/openocean-finance/
 ticker: OOE
 contract: "0x7778360f035c589fce2f4ea5786cbd8b36e5396b"
 decimals: 18
-alternative-to: ["uniswap", "1inch"]
+alternative-to: ["uniswap", "1inch", "paraswap"]
 ---
