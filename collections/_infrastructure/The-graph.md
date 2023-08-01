@@ -10,4 +10,5 @@ coltitle: "Infrastructure"
 colpermalink: infrastructure
 twitter: https://twitter.com/graphprotocol
 github: https://github.com/graphprotocol
+alternative-to: alchemy
 ---
