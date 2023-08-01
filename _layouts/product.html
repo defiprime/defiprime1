@@ -139,8 +139,12 @@
           })();
         </script>
       </article>
-  {% if page.alternative-to  %}
-<a href="/{{page.alternative-to | first}}-alternatives">
+  {% if page.alternative-to %}
+<a href="/{{page.alternative-to}}-alternatives">  {% endif %}
+
+{% if page.alternative-to[1]  %}
+  <a href="/{{page.alternative-to[1] | textilize  }}-alternatives">
+
   {% endif %}
 
       <h3 class='related-products'>{{ page.product-title }} alternatives{% if page.alternative-to  %}</a>{% endif %} in <a
