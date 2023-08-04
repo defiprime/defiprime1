@@ -37,29 +37,26 @@ Let's explore some of the key roles that Web3 accelerators play in nurturing dec
 
 Several notable Web3 accelerators have emerged in recent years, each playing a pivotal role in the advancement of decentralized technologies. Some of the prominent ones include:
 
-### Consensys Tachyon
+### Alliance.xyz
 
-Focused on blockchain-based startups, Consensys Tachyon offers an intensive three-month accelerator program to help early-stage projects gain traction.
-
-### Encode Club
-
-Specializing in web3 and blockchain startups, Encode Club provides funding, mentorship, and community support for promising projects.
+[Alliance](https://alliance.xyz/) is the leading Web3 accelerator investing \$250k at flexible terms and web3 founders community. Outside of just money they provide daily 1:1 mentorship, weekly lectures featuring founders of leading crypto companies and defi protocols, and access to a founder network.
 
 ### Outlier Ventures
 
-Known for its expertise in Web3 technologies, Outlier Ventures supports startups building decentralized protocols and dApps.
+Known for its expertise in Web3 technologies, [Outlier Ventures](https://outlierventures.io/) supports startups building decentralized protocols and dApps. Outlier have over 250
+portfolio projects, and probably one of the largest Web3 focused accelerators.
 
-### MetaCartel Ventures
+### TachyonX
 
-Focused on Web3 projects, MetaCartel Ventures provides funding, guidance, and access to a thriving community of developers and enthusiasts.
+Focused on blockchain-based startups, [TachyonX](https://tachyon.xyz/)(previously Consensys Tachyon) offers an intensive three-month remote accelerator program and \$150,000 in funding. TachyonX help early-stage projects gain traction, and access to the [Consensys Mesh](https://www.mesh.xyz/) network.
+
+### Encode Club
+
+Specializing in web3 and blockchain startups, [Encode Club](https://www.encode.club/) provides funding, mentorship, and community support for promising projects.
 
 ### Boost VC
 
 Boost VC invests \$500k into pre-seed rounds. They have a few [notable exits](https://www.boost.vc/portfolio#cryptolink) such as Coinbase and Etherscan.
-
-### Alliance.xyz
-
-[Alliance](https://alliance.xyz/) is the leading Web3 accelerator investing \$250k at flexible terms and web3 founders community. Outside of just money they provide daily 1:1 mentorship, weekly lectures featuring founders of leading crypto companies and defi protocols, and access to a founder network.
 
 ### Poolside
 
