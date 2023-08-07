@@ -60,7 +60,7 @@ redirect_from:
   <h2 class='recently_added_annotation'>Recently added</h2>
   <div class="tiles grid" id='recently_added_section'>
     {% assign docArray = "" | split: "" %}
-    {% assign collections = site.collections | where_exp: "coll", "coll.label != 'events'" | where_exp: "coll", "coll.label != 'posts'"  %}
+    {% assign collections = site.collections | where_exp: "coll", "coll.label != 'events'" | where_exp: "coll", "coll.label != 'posts'" | where_exp: "coll", "coll.label != 'alternatives'" %}
       {% for collection in collections %}
           {% assign docArray = collection.docs | concat: docArray %}
       {% endfor %}
