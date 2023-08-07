@@ -1,5 +1,5 @@
 ---
-git-date: 2021-11-24T12:54:25-08:00
+git-date: 2023-08-01T12:49:48-04:00
 layout: alternatives
 title: "Paraswap Alternatives"
 permalink: paraswap-alternatives

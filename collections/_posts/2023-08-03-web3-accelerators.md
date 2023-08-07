@@ -1,5 +1,5 @@
 ---
-git-date: 2023-08-03
+git-date: 2023-08-03T10:29:33-04:00
 layout: [blog]
 title: "Web3 Accelerators: Paving the Way for the Future of Decentralized Innovation"
 permalink: web3-accelerators
