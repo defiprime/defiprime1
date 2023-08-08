@@ -9,7 +9,7 @@ metadescription: "In this blog post, we will explore the concept of Web3 acceler
 category: blog
 featured-image: /images/blog/web3- accelerators-ogp.png
 intro: "In this blog post, we will explore the concept of Web3 accelerators and how they are playing a crucial role in driving forward the future of decentralized innovation."
-author: Sawinyh
+author: sawinyh
 tags: ["defi list"]
 ---
 
