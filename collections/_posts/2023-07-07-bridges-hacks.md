@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/bridges-hacks-ogp.png
 intro: "Cross-Chain Bridge Hacks History"
 author: Defiprime
-tags: ["defi list"]
+tags: ["DeFi List"]
 ---
 
 Decentralized Finance (DeFi) has rapidly gained popularity in recent years, offering users financial services without intermediaries. However, the rise of DeFi has also attracted malicious actors, resulting in numerous high-profile hacks and vulnerabilities. In this blog post, we will explore some of the notable DeFi hacks that have occurred, the lessons learned from each incident, and the ongoing challenges faced by the industry.

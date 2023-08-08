@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/web3- accelerators-ogp.png
 intro: "In this blog post, we will explore the concept of Web3 accelerators and how they are playing a crucial role in driving forward the future of decentralized innovation."
 author: sawinyh
-tags: ["defi list"]
+tags: ["DeFi List"]
 ---
 
 The internet has come a long way since its inception, transforming from a static collection of web pages into a dynamic platform for social interaction, e-commerce, and much more. However, the current web infrastructure has its limitations, including issues with data privacy, centralized control, and security vulnerabilities. Enter Web3, a promising evolution that aims to decentralize the internet and redefine the way we interact with online services. In this blog post, we will explore the concept of Web3 accelerators and how they are playing a crucial role in driving forward the future of decentralized innovation.
