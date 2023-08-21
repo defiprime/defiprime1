@@ -2,7 +2,7 @@
 git-date: 2023-08-01T09:13:26-04:00
 layout: alternatives
 title: "Alchemy vs QuickNode"
-permalink: alchemy-vs-quicnode
+permalink: alchemy-vs-quicknode
 h1title: Alchemy vs QuickNode
 pagetitle: Alchemy vs QuickNode
 metadescription: "Alchemy and QuickNode are both prominent players in the blockchain industry, offering services that cater to developers and projects within the blockchain and decentralized application (dApp) ecosystem. However, there are some differences between the two platforms in terms of their offerings and focus."
