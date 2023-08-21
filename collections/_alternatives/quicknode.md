@@ -8,7 +8,7 @@ pagetitle: Quicknode Alternatives & Competitors - Top Quicknode Competitors and 
 metadescription: "Below is a compilation of Quicknode alternatives, providing you with a range of choices beyond Quicknode. Recognized as a prominent RPC node provider in the blockchain sector, Quicknode stands out by providing a robust blend of web3 developer tools and products."
 og: /images/blog/quicknode-alternatives-ogp.png
 filter-by: ecosystem, filter
-alternative-to: quicknode
+alternative-to: alchemy
 ---
 
 Explore the following collection of alternatives to Quicknode, offering you a diverse array of options beyond Quicknode itself. Quicknode has gained recognition as a leading RPC node provider within the blockchain domain, distinguishing itself through the provision of a strong amalgamation of web3 developer tools and products.
