@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/jekyll/jekyll.git
-  revision: a6b861cd9509002b8da7b4d3168d79a84a86c6ba
+  revision: d86ba153fe012fbf4c62dc4af9dd73df1f1cfd58
   specs:
     jekyll (4.3.2)
       addressable (~> 2.4)
@@ -49,9 +49,7 @@ GEM
     ffi (1.15.5-x64-mingw32)
     filesize (0.2.0)
     forwardable-extended (2.6.0)
-    google-protobuf (3.23.4-x64-mingw32)
-    google-protobuf (3.23.4-x86_64-darwin)
-    google-protobuf (3.23.4-x86_64-linux)
+    google-protobuf (3.24.2)
     http_parser.rb (0.8.0)
     httpclient (2.8.3)
     i18n (1.14.1)
@@ -99,11 +97,9 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    nokogiri (1.15.3-x64-mingw32)
-      racc (~> 1.4)
-    nokogiri (1.15.3-x86_64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.15.3-x86_64-linux)
+    mini_portile2 (2.8.4)
+    nokogiri (1.15.4)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     nuggets (1.6.1)
     pathutil (0.16.2)
@@ -118,7 +114,7 @@ GEM
     rexml (3.2.6)
     rouge (4.1.3)
     safe_yaml (1.0.5)
-    sass-embedded (1.64.2)
+    sass-embedded (1.66.1)
       google-protobuf (~> 3.23)
       rake (>= 13.0.0)
     terminal-table (3.0.2)
