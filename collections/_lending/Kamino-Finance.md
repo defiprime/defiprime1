@@ -5,7 +5,7 @@ product-url: https://app.kamino.finance/
 image: /images/output_md/app.kamino.finance.jpg
 ecosystem: solana
 filter: Borrow Cryptocurrency, Lend Cryptocurrency
-product-description: Kamino Finance was originally created to offer users the easiest possible way of providing liquidity and earning yield on-chain. Today, Kamino is a first-of-its-kind DeFi protocol that unifies Lending, Liquidity, and Leverage into a single, secure DeFi product suite.
+product-description: Kamino Finance aims to provide users with an easy-to-use and efficient way to manage their digital assets, earn passive income, and participate in the growing DeFi ecosystem. The platform offers a variety of features, including automated liquidity provision, lending and borrowing, and yield farming.
 coltitle: "Lending"
 colpermalink: decentralized-lending
 type: non-custodial
