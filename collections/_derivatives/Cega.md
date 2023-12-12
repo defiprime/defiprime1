@@ -5,7 +5,7 @@ product-url: https://app.cega.fi
 image: /images/output_md/app.cega.fi.jpg
 ecosystem: ethereum, arbitrum, solana
 filter: Options
-product-description: Cega is a decentralized exotic derivatives protocol. We build exotic options structured products for retail investors that generate superior yield and offer built-in protection against market downturns. 
+product-description: Cega is a decentralized exotic derivatives protocol on Solana, which offers structured products that generate superior yield and provide built-in protection against market downturns. . 
 coltitle: "Derivatives"
 colpermalink: derivatives
 twitter: https://twitter.com/cega_fi
