@@ -4,7 +4,7 @@ product-title: Zeta
 product-url: https://www.zeta.markets
 image: /images/output_md/www.zeta.markets.jpg
 ecosystem: solana
-product-description: "Zeta's mission is to become the world's leading decentralized derivatives exchange (DEX). It offers the best of both worlds: the speed and user experience of a centralized exchange, whilst providing full self-custody and transparency for users by running on a public blockchain network (Solana)."
+product-description: "Zeta is a decentralized derivatives exchange built on the Solana blockchain. It offers a fully on-chain orderbook and focuses on providing a fast, liquid, and ecosystem-oriented platform for trading futures and options."
 coltitle: "Margin trading"
 colpermalink: margin-trading
 type: non-custodial
