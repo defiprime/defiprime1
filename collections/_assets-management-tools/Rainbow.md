@@ -1,7 +1,7 @@
 ---
 git-date: 2021-08-03T10:35:11-07:00
 product-title: Rainbow
-product-url: https://rainbow.me
+product-url: https://rainbow.me/points?ref=5ZGKAV
 image: /images/output_md/rainbow.me.jpg
 ecosystem: ethereum, avalanche, celo, fantom, gnosis, optimism, polygon, arbitrum
 platform: ios, android
