@@ -3,7 +3,7 @@ git-date: 2019-05-20T22:02:39-07:00
 product-title: Uniswap
 product-url: https://uniswap.exchange
 image: /images/output_md/httpsuniswapexchange.png
-ecosystem: ethereum, arbitrum, optimism, polygon
+ecosystem: ethereum, arbitrum, optimism, polygon, celo, base, bsc, avalanche, boba, zksync era, rootstock, moonbeam
 type: non-custodial
 filter: No KYC
 product-description: Uniswap is an automated fully decentralized token exchange on Ethereum. [Uniswap Explained - In-Depth DeFi Guide](/uniswap-explained). [Uniswap Alternatives](/uniswap-alternatives).

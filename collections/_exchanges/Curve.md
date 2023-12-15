@@ -3,7 +3,7 @@ git-date: 2020-03-10T17:09:33-07:00
 product-title: Curve
 product-url: https://www.curve.fi/
 image: /images/output_md/www.curve.fi.png
-ecosystem: ethereum, polygon, arbitrum, optimism, fantom, avalanche, gnosis
+ecosystem: ethereum, arbitrum, optimism, polygon, celo, base, bsc, avalanche, boba, zksync era, rootstock, moonbeam
 type: non-custodial
 filter: No KYC
 product-description: Curve is an exchange liquidity pool on Ethereum designed for extremely efficient stablecoin trading. [Interview with Curve Finance founder](/curve).
