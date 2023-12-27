@@ -34,21 +34,9 @@ featured-image: /images/avalanche-og.png
 
 {% assign counter_bsc = bsc_projects.size %}
 
-{% assign eos_projects = all_projects | where_exp:"item", "item.ecosystem contains 'eos'"%}
-
-{% assign counter_eos = eos_projects.size %}
-
-{% assign btc_projects = all_projects | where_exp:"item", "item.ecosystem contains 'bitcoin'"%}
-
-{% assign counter_btc = btc_projects.size %}
-
 {% assign eth_projects = all_projects | where_exp:"item", "item.ecosystem contains 'ethereum'"%}
 
 {% assign counter_eth = eth_projects.size %}
-
-{% assign polygon_projects = all_projects | where_exp:"item", "item.ecosystem contains 'polygon'"%}
-
-{% assign counter_polygon = polygon_projects.size %}
 
 {% assign avax_projects = all_projects | where_exp:"item", "item.ecosystem contains 'avalanche'"%}
 
@@ -57,8 +45,8 @@ featured-image: /images/avalanche-og.png
 DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ counter }} DeFi projects listed and {{ counter_avax }} of them built on or deployed to Avalanche.
 
 | Ethereum <br /> DeFi | {{counter_eth}} |
-| BNB <br /> DeFi | {{ counter_bsc }} |
 | Avalanche <br /> DeFi | {{counter_avax}} |
+| BNB <br /> DeFi | {{ counter_bsc }} |
 
 {% assign assets-management-tools = site.assets-management-tools | where_exp:"item", "item.ecosystem contains 'avalanche'" %}
 {% if assets-management-tools.size > 0 %}

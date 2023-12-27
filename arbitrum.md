@@ -30,18 +30,6 @@ featured-image: /images/blog/arbitrum.png
 
 {% assign counter = all_projects.size %}
 
-{% assign bsc_projects = all_projects | where_exp:"item", "item.ecosystem contains 'bsc'"%}
-
-{% assign counter_bsc = bsc_projects.size %}
-
-{% assign eos_projects = all_projects | where_exp:"item", "item.ecosystem contains 'eos'"%}
-
-{% assign counter_eos = eos_projects.size %}
-
-{% assign btc_projects = all_projects | where_exp:"item", "item.ecosystem contains 'bitcoin'"%}
-
-{% assign counter_btc = btc_projects.size %}
-
 {% assign eth_projects = all_projects | where_exp:"item", "item.ecosystem contains 'ethereum'"%}
 
 {% assign counter_eth = eth_projects.size %}
@@ -50,14 +38,14 @@ featured-image: /images/blog/arbitrum.png
 
 {% assign counter_arbitrum = arbitrum_projects.size %}
 
-{% assign polygon_projects = all_projects | where_exp:"item", "item.ecosystem contains 'polygon'"%}
+{% assign optimism_projects = all_projects | where_exp:"item", "item.ecosystem contains 'optimism'"%}
 
-{% assign counter_polygon = polygon_projects.size %}
+{% assign counter_optimism = optimism_projects.size %}
 
 DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ counter }} DeFi projects listed and {{ counter_arbitrum }} of them built on Arbitrum.
 
 | Ethereum <br /> DeFi | {{counter_eth}} |
-| BNB <br /> DeFi | {{ counter_bsc }} |
+| Optimism <br /> DeFi | {{ counter_optimism }} |
 | Arbitrum <br /> DeFi | {{counter_arbitrum}} |
 
 {% assign assets-management-tools = site.assets-management-tools | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}

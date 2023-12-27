@@ -30,25 +30,9 @@ featured-image: /images/canto-og.png
 
 {% assign counter = all_projects.size %}
 
-{% assign bsc_projects = all_projects | where_exp:"item", "item.ecosystem contains 'bsc'"%}
-
-{% assign counter_bsc = bsc_projects.size %}
-
-{% assign eos_projects = all_projects | where_exp:"item", "item.ecosystem contains 'eos'"%}
-
-{% assign counter_eos = eos_projects.size %}
-
-{% assign btc_projects = all_projects | where_exp:"item", "item.ecosystem contains 'bitcoin'"%}
-
-{% assign counter_btc = btc_projects.size %}
-
 {% assign eth_projects = all_projects | where_exp:"item", "item.ecosystem contains 'ethereum'"%}
 
 {% assign counter_eth = eth_projects.size %}
-
-{% assign arbitrum_projects = all_projects | where_exp:"item", "item.ecosystem contains 'arbitrum'"%}
-
-{% assign counter_arbitrum = arbitrum_projects.size %}
 
 {% assign polygon_projects = all_projects | where_exp:"item", "item.ecosystem contains 'polygon'"%}
 

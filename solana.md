@@ -34,14 +34,6 @@ featured-image: /images/og-solana.png
 
 {% assign counter_bsc = bsc_projects.size %}
 
-{% assign eos_projects = all_projects | where_exp:"item", "item.ecosystem contains 'eos'"%}
-
-{% assign counter_eos = eos_projects.size %}
-
-{% assign btc_projects = all_projects | where_exp:"item", "item.ecosystem contains 'bitcoin'"%}
-
-{% assign counter_btc = btc_projects.size %}
-
 {% assign eth_projects = all_projects | where_exp:"item", "item.ecosystem contains 'ethereum'"%}
 
 {% assign counter_eth = eth_projects.size %}
@@ -49,10 +41,6 @@ featured-image: /images/og-solana.png
 {% assign solana_projects = all_projects | where_exp:"item", "item.ecosystem contains 'solana'"%}
 
 {% assign counter_solana = solana_projects.size %}
-
-{% assign optimism_projects = all_projects | where_exp:"item", "item.ecosystem contains 'optimism'"%}
-
-{% assign counter_optimism = optimism_projects.size %}
 
 DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ counter }} DeFi projects listed and {{ counter_solana }} of them built on Solana.
 
