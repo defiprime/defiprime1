@@ -15,7 +15,7 @@ investors: "a16z, Paradigm, Variant, Solana Ventures, DeFi Alliance, Robert Lesh
 proejct_url: https://phantom.app/
 todo: " - Set up a wallet
 - Add tokens to your wallet.
-- Collect an exclusive NFT by navigating to DRiP's special page for Phantom users.
+- Collect an exclusive NFT on https://drip.haus/phantom.
 - Engage in additional quests via your wallet to access the DRiP NFTs.
 - Utilize the wallet's integrated swap function to exchange tokens.
 - Interact and conduct transactions with well-known Solana-based decentralized applications (dapps).

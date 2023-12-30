@@ -30,10 +30,10 @@ featured-image: /images/og-solana.png
         <tr class="ticker-row">
           <td > {{ solana_airdrops.title }} </td>
           <td > {{ solana_airdrops.category }}  </td>
-          <td > {{solana_airdrops.raised}} from {{solana_airdrops.investors}} </td>
+          <td > {{solana_airdrops.raised}} from {{solana_airdrops.investors }} </td>
           <td > <a href="{{ solana_airdrops.proejct_url }}">{{ solana_airdrops.proejct_url }}</a> </td>
           <td > <a href="https://twitter.com/{{ solana_airdrops.twitter_handle }}">@{{ solana_airdrops.twitter_handle }}</a> </td>
-          <td > <p>{{ solana_airdrops.todo }} </p> </td>
+          <td > <p>{{ solana_airdrops.todo | markdownify }} </p> </td>
         </tr>
       {% endfor %}
       </tbody>
