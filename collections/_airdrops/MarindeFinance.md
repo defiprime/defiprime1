@@ -18,8 +18,3 @@ todo: "Stake $SOL to earn $MNDE tokens"
 ---
 
 - We advise to stake at least \$100 worth of \$SOL and provide liquidity to mSOL-SOL LP on [liquidity page](https://marinade.finance/app/liquidity/).
-
-### Links
-
-- [{{page.proejct_url}}]({{page.proejct_url}})
-- Twitter: <a href="https://twitter.com/{{ page.twitter_handle }}">@{{ page.twitter_handle }}</a>

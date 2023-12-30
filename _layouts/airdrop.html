@@ -130,6 +130,22 @@
               There is a list of actions that you can perform to improve your
               chances of getting {{ page.h1title }}: <br />{{ content }}
             </p>
+            <h3>Links</h3>
+            <ul>
+              <li>
+                <a
+                  href="{% if page.reflink %} {{page.reflink}} {% else %}
+ {{page.project_url}} {% endif %}"
+                  >{{page.project_url | remove: 'https://'}}</a
+                >
+              </li>
+              <li>
+                Twitter:
+                <a href="https://twitter.com/{{ page.twitter_handle }}"
+                  >@{{ page.twitter_handle }}</a
+                >
+              </li>
+            </ul>
           </div>
 
           <section></section>

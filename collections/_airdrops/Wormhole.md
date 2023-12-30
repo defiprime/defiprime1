@@ -12,13 +12,8 @@ category: Crosschain Bridge
 twitter_handle: wormholecrypto
 raised: "$225M"
 investors: "Coinbase Ventures, Multicoin Capital, Jump Trading, Brevan Howard, Parafi, Dialectic, Borderless, Arrington Capital"
-proejct_url: https://portalbridge.com/
+project_url: https://portalbridge.com/
 todo: "Use bridge to transfer assets crosschain"
 ---
 
 - We advise to bridge at least \$100 back and forth between EVM compatible chains and Solana(or any other chain) to qualify.
-
-### Links
-
-- [{{page.proejct_url}}]({{page.proejct_url}})
-- Twitter: <a href="https://twitter.com/{{ page.twitter_handle }}">@{{ page.twitter_handle }}</a>

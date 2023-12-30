@@ -12,7 +12,7 @@ category: Wallet
 twitter_handle: phantom
 raised: "$118M"
 investors: "a16z, Paradigm, Variant, Solana Ventures, DeFi Alliance, Robert Leshner"
-proejct_url: https://phantom.app/
+project_url: https://phantom.app/
 todo: "Create wallet and interact with dApps."
 ---
 
@@ -23,8 +23,3 @@ todo: "Create wallet and interact with dApps."
 - Utilize the wallet's integrated swap function to exchange tokens.
 - Interact and conduct transactions with well-known Solana-based decentralized applications (dapps).
 - Explore the option of purchasing cryptocurrencies directly through the wallet's built-in fiat gateway.
-
-### Links
-
-- [{{page.proejct_url}}]({{page.proejct_url}})
-- Twitter: <a href="https://twitter.com/{{ page.twitter_handle }}">@{{ page.twitter_handle }}</a>

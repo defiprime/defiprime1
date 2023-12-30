@@ -23,8 +23,3 @@ todo: "Trade to qualify"
 - Participate in Insurance Fund Staking. Stake your assets into an insurance fund vault and earn a portion of the fees from perp trades, borrows, and liquidations. (Make sure you understand risks here!)
 - Refer other users to Drift.
 - We suggest to do at least \$1000 in trading volume monthly on Drift.
-
-### Links
-
-- [{{page.proejct_url}}]({% if page.reflink %} else {{page.proejct_url}} {% endif %})
-- Twitter: <a href="https://twitter.com/{{ page.twitter_handle }}">@{{ page.twitter_handle }}</a>
