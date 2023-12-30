@@ -12,7 +12,7 @@ category: Decentralized Exchange
 twitter_handle: DriftProtocol
 raised: "$3.8M"
 investors: "Multicoin Capital, Jump Capital, Robert Leshner, LedgerPrime, Not3Lau Capital, Jason Choi, Julian Koh, Loi Luu"
-proejct_url: https://www.drift.trade/
+project_url: https://www.drift.trade/
 reflink: https://app.drift.trade/ref/defiprime
 todo: "Trade to qualify"
 ---

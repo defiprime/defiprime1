@@ -12,7 +12,7 @@ category: Liquid Staking
 twitter_handle: wormholecrypto
 raised: "~"
 investors: "~"
-proejct_url: https://marinade.finance/
+project_url: https://marinade.finance/
 reflink: https://marinade.finance/app?ref=ektiq1g6
 todo: "Stake $SOL to earn $MNDE tokens"
 ---
