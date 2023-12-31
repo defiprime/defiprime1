@@ -1,7 +1,7 @@
 ---
 git-date: 2021-11-24T12:54:25-08:00
 layout: airdrop
-title: "Marinade Finance"
+title: Marinade Finance
 permalink: "/airdrop/:title"
 h1title: Marinade Finance Airdrop
 pagetitle: Marinade Finance Airdrop
@@ -9,7 +9,7 @@ metadescription: "meta Marinade Finance Airdrop"
 og: /images/blog/1inch-alternatives-ogp.png
 ecosystem: solana
 category: Liquid Staking
-twitter_handle: wormholecrypto
+twitter_handle: MarinadeFinance
 raised: "~"
 investors: "~"
 project_url: https://marinade.finance/
