@@ -33,7 +33,7 @@ featured-image: /images/og-solana.png
           <td > {{solana_airdrops.raised}} from {{solana_airdrops.investors }} </td>
           <td > <a href="{{ solana_airdrops.project_url }}">{{ solana_airdrops.project_url | remove: 'https://'}}</a> </td>
           <td > <a href="https://twitter.com/{{ solana_airdrops.twitter_handle }}">@{{ solana_airdrops.twitter_handle }}</a> </td>
-          <td > {{ solana_airdrops.todo | markdownify }} Read more: <a href="/airdrop/{{ solana_airdrops.title | slugify }}">{{ solana_airdrops.h1title}}</a></td>
+          <td > {{ solana_airdrops.todo | markdownify }} Read more: <a href="/airdrop/{{ solana_airdrops.title | remove:  ' ' | capitalize }}">{{ solana_airdrops.h1title}}</a></td>
         </tr>
       {% endfor %}
       </tbody>
