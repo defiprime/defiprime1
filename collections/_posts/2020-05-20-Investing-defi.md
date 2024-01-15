@@ -1,7 +1,7 @@
 ---
 git-date: 2020-05-20T15:00:23-07:00
 layout: [blog]
-title:  "Everything you need to know before investing in DeFi"
+title: "Everything you need to know before investing in DeFi"
 permalink: investing-defi
 h1title: Everything you need to know before investing in DeFi
 pagetitle: Everything you need to know before investing in DeFi
@@ -11,8 +11,9 @@ featured-image: /images/blog/investing/investing-og.png
 quote: /images/blog/investing/investing-quote.png
 intro: "Thinking about investing in DeFi? Here’s what you need to know..."
 author: goldfarb
-tags: ['DeFi Guides']
+tags: ["DeFi Guides"]
 ---
+
 In order to be successful, you have to do things nobody else is doing, go places nobody else is going, and say things nobody else is saying.
 
 If the things, places, and messages from those building DeFi are any indication, DeFi is certainly an excellent place to look for investment opportunities. Maybe you’ve heard of people getting rich on early investments in Bitcoin and Ethereum, receiving +10% interest using DeFi lending protocols, or developing their own unique investment opportunities using various DeFi legos.
@@ -37,9 +38,9 @@ If decentralized governance is more your speed, the MakerDAO token governing Mak
 
 Here’s what you definitely need to know before making your first DeFi investment:
 
-####   Do Your Research (Always!)
+#### Do Your Research (Always!)
 
-If you wouldn’t buy a used car without having a mechanic take a look at it, why would you make an investment in a DeFi token or protocol without checking out what’s going under the hood?  If you’re not sure about a DeFi project, the easiest way to check whether or not it may be a scam is to simply Google the name of the project along with the word “scam.” If the project is a scam, chances are good you’re not the first person to catch it.
+If you wouldn’t buy a used car without having a mechanic take a look at it, why would you make an investment in a DeFi token or protocol without checking out what’s going under the hood? If you’re not sure about a DeFi project, the easiest way to check whether or not it may be a scam is to simply Google the name of the project along with the word “scam.” If the project is a scam, chances are good you’re not the first person to catch it.
 
 Here’s [an example](https://www.google.com/search?q=plustoken+scam&rlz=1C1GCEA_enUS802US802&oq=plustoken+scam&aqs=chrome..69i57.2183j0j7&sourceid=chrome&ie=UTF-8) of a scam that fell apart at the beginning of 2020 and can now be easily Googled. Just because the project you’ve searched doesn’t come up as a scam doesn’t mean it might not still have critical bugs or other vulnerabilities to consider.
 
@@ -97,9 +98,9 @@ Now that we’ve covered what you do need to know, here’s what you should look
 
 ### Don’t Get Caught Slippin’
 
-Let’s say you do decide to get that used car. You wouldn’t just leave your keys or other valuables sitting in your brand new used car, would you?  If you’re going to invest any significant sum of money into digital assets, you need to take self-custody seriously.
+Let’s say you do decide to get that used car. You wouldn’t just leave your keys or other valuables sitting in your brand new used car, would you? If you’re going to invest any significant sum of money into digital assets, you need to take self-custody seriously.
 
-Purchase a hardware wallet directly from a reputable manufacturer like KeepKey or Ledger to store your digital assets and keep it in a safe place. Consider this your “crypto savings account.”  Mobile, desktop, and browser-based wallets may be useful for using or spending cryptocurrency but shouldn’t be trusted for long-term storage.
+Purchase a hardware wallet directly from a reputable manufacturer like KeepKey or Ledger to store your digital assets and keep it in a safe place. Consider this your “crypto savings account.” Mobile, desktop, and browser-based wallets may be useful for using or spending cryptocurrency but shouldn’t be trusted for long-term storage.
 
 ### Don’t invest more than you can afford to lose
 
@@ -113,13 +114,10 @@ If you still need motivation to stop yourself from investing irresponsible amoun
 - [I lost everything.](https://www.reddit.com/r/CryptoCurrency/comments/bv1kj7/i_lost_everything/)
 - [Lost My Life Savings In Bitconnect](https://www.reddit.com/r/Bitconnect/comments/7qxkgr/lost_my_life_savings_in_bitconnect/)
 
-
 ### Discover DeFi
 
 Ready to set off on your journey into DeFi investing? Great!
 
 Our list of [DeFi Projects](https://defiprime.com/#defi_projects) will introduce all of the projects you need to know about.
-
-Also, check out our live feed of [lending and borrowing rates](https://defiprime.com/defi-rates) to find the best opportunities for lending and borrowing your assets.
 
 Good luck and thanks for reading!
