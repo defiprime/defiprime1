@@ -113,6 +113,10 @@ collections:
     output: true
     permalink: /product/:name
     section_url: /alternatives
+  airdrops:
+    output: true
+    permalink: /airdrop/:name
+    section_url: /airdrop
 
 defaults:
   - values:

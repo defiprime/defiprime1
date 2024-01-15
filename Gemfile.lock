@@ -1,10 +1,11 @@
 GIT
   remote: https://github.com/jekyll/jekyll.git
-  revision: d86ba153fe012fbf4c62dc4af9dd73df1f1cfd58
+  revision: b38b7a14798d7231db8ef77d29db1eedeed51f47
   specs:
-    jekyll (4.3.2)
+    jekyll (4.3.3)
       addressable (~> 2.4)
       colorator (~> 1.0)
+      csv (~> 3.0)
       em-websocket (~> 0.5)
       i18n (~> 1.0)
       jekyll-sass-converter (>= 2.0, < 4.0)
@@ -29,7 +30,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.5)
+    addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
     algolia_html_extractor (2.6.4)
       json (~> 2.0)
@@ -39,17 +40,16 @@ GEM
       json (>= 1.5.1)
     colorator (1.1.0)
     concurrent-ruby (1.2.2)
+    csv (3.2.8)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
-    eventmachine (1.2.7-x64-mingw32)
-    fastimage (2.2.7)
-    ffi (1.15.5)
-    ffi (1.15.5-x64-mingw32)
+    fastimage (2.3.0)
+    ffi (1.16.3)
     filesize (0.2.0)
     forwardable-extended (2.6.0)
-    google-protobuf (3.24.2)
+    google-protobuf (3.25.2-x86_64-darwin)
     http_parser.rb (0.8.0)
     httpclient (2.8.3)
     i18n (1.14.1)
@@ -85,7 +85,7 @@ GEM
       listen (~> 3.0)
     jekyll-youtube (1.0.0)
       jekyll
-    json (2.6.3)
+    json (2.7.1)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -97,37 +97,31 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    mini_portile2 (2.8.4)
-    nokogiri (1.15.4)
-      mini_portile2 (~> 2.8.2)
+    nokogiri (1.16.0-x86_64-darwin)
       racc (~> 1.4)
     nuggets (1.6.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     progressbar (1.13.0)
-    public_suffix (5.0.3)
-    racc (1.7.1)
-    rake (13.0.6)
+    public_suffix (5.0.4)
+    racc (1.7.3)
     rb-fsevent (0.11.2)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.6)
-    rouge (4.1.3)
+    rouge (4.2.0)
     safe_yaml (1.0.5)
-    sass-embedded (1.66.1)
-      google-protobuf (~> 3.23)
-      rake (>= 13.0.0)
+    sass-embedded (1.69.7-x86_64-darwin)
+      google-protobuf (~> 3.25)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
-    unicode-display_width (2.4.2)
+    unicode-display_width (2.5.0)
     verbal_expressions (0.1.5)
     webrick (1.8.1)
 
 PLATFORMS
-  x64-mingw32
-  x86_64-darwin-18
   x86_64-darwin-20
-  x86_64-linux
+  x86_64-darwin-23
 
 DEPENDENCIES
   fastimage
@@ -147,4 +141,4 @@ DEPENDENCIES
   webrick (~> 1.7)
 
 BUNDLED WITH
-   2.2.15
+   2.4.13
