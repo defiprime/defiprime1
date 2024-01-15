@@ -7,6 +7,7 @@ gem 'jekyll-toc', group: :jekyll_plugins
 gem 'jekyll-sitemap', group: :jekyll_plugins
 gem 'jekyll-paginate-v2', group: :jekyll_plugins
 gem "liquid-c", group: :jekyll_plugins
+gem "jekyll-sass-converter", "~> 2.0", group: :jekyll_plugins
 gem 'jekyll-algolia', group: :jekyll_plugins
 gem 'jekyll-feed', group: :jekyll_plugins
 gem 'jekyll-tagging', group: :jekyll_plugins
