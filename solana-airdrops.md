@@ -1,15 +1,15 @@
 ---
 git-date: 2019-05-20T22:02:39-07:00
 layout: default
-title: Solana Airdrops: Most Comprehensive 101 Guide
+title: "Solana Airdrops: Most Comprehensive 101 Guide"
 metadescription: 101 Guide to Solana Airdrops - Most Comprehensive list covering significant airdrops.
 permalink: solana-airdrops
-h1title: Solana DeFi Ecosystem
-pagetitle: Solana Airdrops: Most Comprehensive 101 Guide
+h1title: Solana Airdrops
+pagetitle: "Solana Airdrops: Most Comprehensive 101 Guide"
 featured-image: /images/og-solana.png
 ---
 
-<h1>{{ page.pagetitle }}</h1>
+<h1>{{ page.h1title }}</h1>
 
 <section class="section-tickers">
   <p>intro</p>
