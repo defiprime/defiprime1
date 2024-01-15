@@ -10,10 +10,10 @@ og: /images/blog/1inch-alternatives-ogp.png
 ecosystem: solana
 category: DEX
 twitter_handle: ZetaMarkets
-raised: "$-"
-investors: "-"
+raised: "$8.5M"
+investors: "JumpCapital, ElectricCapital, Sino Global, Wintermute, GBV, MGNR, LedgerPrime, Solana Ventures"
 project_url: https://www.zeta.markets/
-todo: "Points system"
+todo: "Points system, trade to earn points"
 ---
 
-- We advise to bridge at least \$100 back and forth between EVM compatible chains and Solana(or any other chain) to qualify.
+- Trade to earn points. We suggest to trade at least \$100 back and forth and keep your trading volume steady over each month.

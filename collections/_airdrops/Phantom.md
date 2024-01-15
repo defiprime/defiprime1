@@ -16,10 +16,5 @@ project_url: https://phantom.app/
 todo: "Create wallet and interact with dApps."
 ---
 
-- Set up a wallet
-- Add tokens to your wallet.
 - Collect an [exclusive NFT on Drip](https://drip.haus/phantom).
-- Engage in additional quests via your wallet to access the DRiP NFTs.
 - Utilize the wallet's integrated swap function to exchange tokens.
-- Interact and conduct transactions with well-known Solana-based decentralized applications (dapps).
-- Explore the option of purchasing cryptocurrencies directly through the wallet's built-in fiat gateway.

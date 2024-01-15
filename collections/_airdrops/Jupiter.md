@@ -10,10 +10,13 @@ og: /images/blog/1inch-alternatives-ogp.png
 ecosystem: solana
 category: DEX
 twitter_handle: jupiterExchange
-raised: "$-"
-investors: "-"
+raised: "NA"
+investors: "NA"
 project_url: https://jup.ag/
 todo: "Trade to qualify"
 ---
 
-- We advise to bridge at least \$100 back and forth between EVM compatible chains and Solana(or any other chain) to qualify.
+- We advise to swap at least \$200 back and forth using spot and pepetual markets.
+- Use limit orders with at least \$100 order.
+- Use Jupiter Bridge aggregator and bridge at least \$100 between Ethereum and Solana.
+- Keep your trading volume steady over each month.
