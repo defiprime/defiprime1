@@ -1,13 +1,15 @@
 ---
 git-date: 2019-05-20T22:02:39-07:00
 layout: default
-title: Solana Airdrops
-metadescription: List of the best Solana DeFi Projects, that leverages decentralized networks to transform old financial products into trustless and transparent protocols.
+title: Solana Airdrops - Most Comprehensive List
+metadescription: 101 Guide to Solana Airdrops - Most Comprehensive list covering significant airdrops.
 permalink: solana-airdrops
 h1title: Solana DeFi Ecosystem
-pagetitle: Solana DeFi Ecosystem - List of the Best Solana Projects
+pagetitle: 101 Guide to Solana Airdrops
 featured-image: /images/og-solana.png
 ---
+
+<h1>{{ page.pagetitle }}</h1>
 
 <section class="section-tickers">
   <p>intro</p>
