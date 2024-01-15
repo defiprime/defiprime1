@@ -12,7 +12,7 @@ featured-image: /images/og-solana.png
 <h1>{{ page.h1title }}</h1>
 
 <section class="section-tickers">
-  <p>Our approach is no bullshit airdrops on Solana. We don't waste our own time and don't want to waste yours. We list only high-quality Soalana ecosystem projects where tokens make sense and meaningful airdrops are highly likely.</p>
+  <p>Our approach is no bullshit airdrops on Solana. We don't waste our own time and don't want to waste yours. We list only high-quality Solana ecosystem projects where tokens make sense and meaningful airdrops are highly likely.</p>
   <div class="container-tickers">
     <table class="table-tickers">
       <thead>
