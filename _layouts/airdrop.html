@@ -32,7 +32,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="{{ page.metadescription | strip_html | strip_newlines | truncate: 160 }}"
+      content="{{ page.title }} Airdrop. {{ page.title }} is a {{ page.category}} on {{ page.ecosystem |
+      capitalize }}"
     />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
@@ -106,7 +107,7 @@
     <!-- End Google Tag Manager -->
   </head>
 
-  <body class="product-page">
+  <body class="post">
     {% include_cached header.html %}
     <!-- Main -->
     <div id="main">
@@ -114,7 +115,6 @@
         <article class="article  article--post  content  typeset">
           <h1>{{ page.h1title }}</h1>
 
-          <div class="custodian_description">
             <p>
               {{ page.title }} is a {{ page.category}} on {{ page.ecosystem |
               capitalize }}. {{ page.title }} raised a total of {{ page.raised
@@ -146,9 +146,7 @@
                 >
               </li>
             </ul>
-          </div>
 
-          <section></section>
         </article>
       </div>
     </div>
