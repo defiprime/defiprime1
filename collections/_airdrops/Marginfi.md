@@ -1,7 +1,7 @@
 ---
 git-date: 2021-11-24T12:54:25-08:00
 layout: airdrop
-title: "Marginfi"
+title: "MarginFi"
 permalink: "/airdrop/:title"
 h1title: MarginFi Airdrop
 pagetitle: MarginFi Airdrop

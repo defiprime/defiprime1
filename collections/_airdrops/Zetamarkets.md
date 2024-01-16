@@ -1,7 +1,7 @@
 ---
 git-date: 2021-11-24T12:54:25-08:00
 layout: airdrop
-title: "Zetamarkets"
+title: "ZetaMarkets"
 permalink: "/airdrop/:title"
 h1title: ZetaMarkets Airdrop
 pagetitle: ZetaMarkets Airdrop
