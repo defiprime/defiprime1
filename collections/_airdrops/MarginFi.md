@@ -6,7 +6,7 @@ permalink: "/airdrop/:title"
 h1title: MarginFi Airdrop
 pagetitle: MarginFi Airdrop
 metadescription: "meta MarginFi Airdrop"
-og: /images/blog/1inch-alternatives-ogp.png
+og: /images/blog/solana-airdrops.png
 ecosystem: solana
 category: Liquid Staking Protocol
 twitter_handle: marginfi

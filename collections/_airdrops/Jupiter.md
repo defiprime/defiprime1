@@ -6,7 +6,7 @@ permalink: "/airdrop/:title"
 h1title: Jupiter Airdrop
 pagetitle: Jupiter Airdrop
 metadescription: "meta Jupiter Airdrop"
-og: /images/blog/1inch-alternatives-ogp.png
+og: /images/blog/solana-airdrops.png
 ecosystem: solana
 category: DEX
 twitter_handle: jupiterExchange

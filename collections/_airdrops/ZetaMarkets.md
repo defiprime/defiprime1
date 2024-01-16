@@ -6,7 +6,7 @@ permalink: "/airdrop/:title"
 h1title: ZetaMarkets Airdrop
 pagetitle: ZetaMarkets Airdrop
 metadescription: "meta ZetaMarkets Airdrop"
-og: /images/blog/1inch-alternatives-ogp.png
+og: /images/blog/solana-airdrops.png
 ecosystem: solana
 category: DEX
 twitter_handle: ZetaMarkets

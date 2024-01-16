@@ -6,7 +6,7 @@ permalink: "/airdrop/:title"
 h1title: Drift Protocol Airdrop
 pagetitle: Drift Protocol Airdrop
 metadescription: "meta Drift Protocol Airdrop"
-og: /images/blog/1inch-alternatives-ogp.png
+og: /images/blog/solana-airdrops.png
 ecosystem: solana
 category: Decentralized Exchange
 twitter_handle: DriftProtocol

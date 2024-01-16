@@ -6,7 +6,7 @@ metadescription: 101 Guide to Solana Airdrops - Most Comprehensive list covering
 permalink: solana-airdrops
 h1title: Solana Airdrops
 pagetitle: "Solana Airdrops: Most Comprehensive 101 Guide"
-featured-image: /images/og-solana.png
+featured-image: /images/blog/solana-airdrops.png
 ---
 
 <h1>{{ page.h1title }}</h1>

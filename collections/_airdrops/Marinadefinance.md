@@ -6,7 +6,7 @@ permalink: "/airdrop/:title"
 h1title: Marinade Finance Airdrop
 pagetitle: Marinade Finance Airdrop
 metadescription: "meta Marinade Finance Airdrop"
-og: /images/blog/1inch-alternatives-ogp.png
+og: /images/blog/solana-airdrops.png
 ecosystem: solana
 category: Liquid Staking
 twitter_handle: MarinadeFinance

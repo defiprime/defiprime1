@@ -6,7 +6,7 @@ permalink: "/airdrop/:title"
 h1title: Wormhole Airdrop
 pagetitle: Wormhole Airdrop
 metadescription: "meta Wormhole Airdrop"
-og: /images/blog/1inch-alternatives-ogp.png
+og: /images/blog/solana-airdrops.png
 ecosystem: solana, ethereum, Sei, Sui, and more
 category: Crosschain Bridge
 twitter_handle: wormholecrypto

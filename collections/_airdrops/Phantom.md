@@ -6,7 +6,7 @@ permalink: "/airdrop/:title"
 h1title: Phantom Airdrop
 pagetitle: Phantom Airdrop
 metadescription: "meta Phantom Airdrop"
-og: /images/blog/1inch-alternatives-ogp.png
+og: /images/blog/solana-airdrops.png
 ecosystem: solana
 category: Wallet
 twitter_handle: phantom
