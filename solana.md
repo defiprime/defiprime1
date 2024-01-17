@@ -285,3 +285,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {{ analytic.product-description }}
 {% endfor %}
 {% endif %}
+
+
+---
+While you are here: check out our [Solana Airdrops](/solana-airdrops) list. We have compiled a list of Solana projects that are expected to distribute tokens to users through airdrops in the current year.
