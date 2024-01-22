@@ -11,4 +11,5 @@ colpermalink: assets-management-tools
 twitter: https://twitter.com/rainbowdotme
 github: https://github.com/rainbow-me/rainbow
 alternative-to: metamask
+featured: true
 ---
