@@ -9,6 +9,7 @@ coltitle: "Margin trading"
 colpermalink: margin-trading
 type: non-custodial
 filter: Perpetual
+featured: true
 twitter: https://twitter.com/driftprotocol
 github: https://github.com/drift-labs
 ---

@@ -4,7 +4,7 @@ product-title: GMX
 product-url: https://app.gmx.io/#/trade/?ref=defiprime
 image: /images/output_md/gmx.io.jpg
 ecosystem: arbitrum, avalanche
-featured: false
+featured: true
 product-description: GMX is a decentralized spot and perpetual exchange that supports low swap fees and zero price impact trades and let you trade top cryptocurrencies with up to 30x leverage directly from your wallet.
 coltitle: "Margin trading"
 colpermalink: margin-trading
