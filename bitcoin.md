@@ -43,7 +43,7 @@ featured-image: /images/og-bitcoin.png
 
 DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ counter }} DeFi projects listed and {{ counter_btc }} of them using Bitcoin.
 
-| (Ethereum)[/ethereum] <br /> DeFi | {{counter_eth}} |
+| (Ethereum) <br /> DeFi | {{counter_eth}} |
 | EOS <br /> DeFi | {{ counter_eos }} |
 | Bitcoin <br /> DeFi | {{counter_btc}} |
 
