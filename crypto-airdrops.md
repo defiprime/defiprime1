@@ -12,7 +12,7 @@ featured-image: /images/blog/solana-airdrops.png
 <h1>{{ page.h1title }}</h1>
 
 <section class="section-tickers">
-  <p>ur approach is simple and straightforward; we don't list any bogus airdrops that waste your time or ours. We only feature high-quality Ethereum and L2 ecosystem projects where tokens are relevant, and meaningful airdrops are highly probable.</p>
+  <p>Our approach is simple and straightforward; we don't list any bogus airdrops that waste your time or ours. We only feature high-quality Ethereum and L2 ecosystem projects where tokens are relevant, and meaningful airdrops are highly probable.</p>
   <div class="container-tickers">
     <table class="table-tickers">
       <thead>
