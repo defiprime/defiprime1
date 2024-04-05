@@ -18,20 +18,16 @@ todo: "Points system, deposit tokens to earn XP"
 
 - Create an account and deposit eligible tokens, not that some tokens gives you 5x more points. We suggest deposit of a minimum $100.
 Use one of these invite codes when prompted:
-HH9ZKY
 KGYXRS  
 6MR3YH
 7SW6UH
-OR46KK
-ITGQ4L
 QP7TDY
-LZ7D45
-FHVLCR
-X2SG9F
 TIURRI
 R6R9NV
-VWMCG1
 X39ZLF
 FLNOMX
-JLYVYB
-I82NFK
+JTEWS8
+7VLQPF
+9E3NY1
+JPSIGD
+ANNBAX
