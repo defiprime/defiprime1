@@ -6,7 +6,7 @@ permalink: "/airdrop/:title"
 h1title: BOB Airdrop
 pagetitle: BOB Airdrop
 metadescription: "meta BOB Airdrop"
-og: /images/blog/solana-airdrops.png
+og: /images/blog/2024-airdrops.png
 ecosystem: ethereum
 category: Hybrid L2
 twitter_handle: build_on_bob

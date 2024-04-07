@@ -6,7 +6,7 @@ metadescription: 101 Guide to Crypto Airdrops - This is the most comprehensive l
 permalink: crypto-airdrops
 h1title: Crypto Airdrops
 pagetitle: "Crypto Airdrops: The Most Comprehensive List"
-featured-image: /images/blog/solana-airdrops.png
+featured-image: /images/blog/2024-airdrops.png
 ---
 
 <h1>{{ page.h1title }}</h1>

@@ -6,7 +6,7 @@ permalink: "/airdrop/:title"
 h1title: Dflow Airdrop
 pagetitle: Dflow Airdrop
 metadescription: "meta Dflow Airdrop"
-og: /images/blog/solana-airdrops.png
+og: /images/blog/2024-airdrops.png
 ecosystem: ethereum
 category: Hybrid Exchange
 twitter_handle: DFlowProtocol
