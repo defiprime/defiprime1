@@ -7,7 +7,7 @@ h1title: Dflow Airdrop
 pagetitle: Dflow Airdrop
 metadescription: "meta Dflow Airdrop"
 og: /images/blog/solana-airdrops.png
-ecosystem: solana
+ecosystem: ethereum
 category: Hybrid Exchange
 twitter_handle: DFlowProtocol
 raised: "$6M"
