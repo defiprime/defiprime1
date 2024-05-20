@@ -17,7 +17,7 @@ featured-image: /images/blog/solana-airdrops.png
     <table class="table-tickers">
       <thead>
         <tr>
-          <th>Proejct</th>
+          <th>Project</th>
           <th>Category</th>
           <th>Venture Funding</th>
           <th>URL</th>
