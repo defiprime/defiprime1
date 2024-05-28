@@ -8,7 +8,7 @@
       "description": "Tokens associated with the products listed at defiprime.com"
     }
   },
-  "timestamp": "2023-07-04T00:00:00+00:00",
+  "timestamp": "2024-05-28T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -829,13 +829,6 @@
     },
     {
       "chainId": 1,
-      "address": "0x01ba67aac7f75f647d94220cc98fb30fcc5105bf",
-      "symbol": "LYRA",
-      "name": "LYRA",
-      "tags": ["defi"]
-    },
-    {
-      "chainId": 1,
       "address": "0xa3BeD4E1c75D00fa6f4E5E6922DB7261B5E9AcD2",
       "symbol": "MTA",
       "name": "MTA",
@@ -957,6 +950,6 @@
   "version": {
     "major": 1,
     "minor": 46,
-    "patch": 0
+    "patch": 1
   }
 }
