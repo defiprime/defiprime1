@@ -1,7 +1,7 @@
 ---
 git-date: 2022-08-15T15:02:43-07:00
 product-title: Lyra
-product-url: https://www.lyra.finance
+product-url: https://lyra.finance/trade?ref=defiprime
 image: /images/output_md/lyra.finance.jpg
 ecosystem: optimism, arbitrum
 filter: Options
@@ -11,7 +11,5 @@ colpermalink: derivatives
 twitter: https://twitter.com/lyrafinance
 github: https://github.com/lyra-finance
 ticker: LYRA
-contract: "0x01ba67aac7f75f647d94220cc98fb30fcc5105bf"
-decimals: 18
 alternative-to: deribit
 ---
