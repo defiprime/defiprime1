@@ -8,7 +8,7 @@
       "description": "Tokens associated with the products listed at defiprime.com"
     }
   },
-  "timestamp": "2024-05-28T00:00:00+00:00",
+  "timestamp": "2024-05-30T00:00:00+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -945,11 +945,18 @@
       "symbol": "WALLET",
       "name": "WALLET",
       "tags": ["defi"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x525574C899A7c877a11865339e57376092168258",
+      "symbol": "GURU",
+      "name": "GURU",
+      "tags": ["defi"]
     }
   ],
   "version": {
     "major": 1,
-    "minor": 46,
-    "patch": 1
+    "minor": 47,
+    "patch": 0
   }
 }
