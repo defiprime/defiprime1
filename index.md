@@ -28,7 +28,7 @@ redirect_from:
     </div>
 
 </header>
-
+<!--
 <section class="banner">
  <a target="_blank" href="https://dex.guru/?utm_source=defiprime.com&utm_medium=banner&utm_campaign=defiprime.com_new_whitebanner">
     <div class="banner-content">
@@ -36,7 +36,7 @@ redirect_from:
     </div>
   </a>
 </section>
-
+-->
 <section>
   <h2 id="defi_projects" class='recently_added_annotation'>DeFi projects</h2>
   <div class="tiles floating grid">
