@@ -34,15 +34,15 @@ So to reiterate, we’ll give you two examples below.
 
 - "We launched on mainnet three months ago, after two respectable auditors independently audited our smart contracts. Since our launch, we achieved this and that milestones, and XXXX users using our app regularly. We also integrated with a few well known DeFi protocols."
 
-_If you'd like to submit your project, please fill this [product listing form](https://sneg55.typeform.com/to/WRFW02)._
+_If you'd like to submit your project, please fill this [product listing form](https://forms.fillout.com/t/by3Zq83Wnuus)._
 
 ### Advertising on DeFiprime
 
-We are the largest and oldest media outlet, focused solely on DeFi and Open Finance space. The only ad format available for adverts at the moment is a native articles(interviews, use cases, explainers). Fill this [inquiry form](https://sneg55.typeform.com/to/zAR7ZH) to get in touch. Please note: we don't list products on our site for a fee, this form for advertising requests only.
+We are the largest and oldest media outlet, focused solely on DeFi and Open Finance space. The only ad format available for adverts at the moment is a native articles(interviews, use cases, explainers). Fill this [inquiry form](https://forms.fillout.com/t/ehASQ5qMzxus) to get in touch. Please note: we don't list products on our site for a fee, this form for advertising requests only.
 
 ### Events Listing
 
-If you are hosting a DeFi-related event we are glad to feature it on our [DeFi Events Calendar](/events), and share it on our social media channels. Fill this [event listing form](https://sneg55.typeform.com/to/SPrjTk) to get in touch.
+If you are hosting a DeFi-related event we are glad to feature it on our [DeFi Events Calendar](/events), and share it on our social media channels. Fill this [event listing form](https://forms.fillout.com/t/vGb7Tj5Q65us) to get in touch.
 
 ### Media Assets
 
