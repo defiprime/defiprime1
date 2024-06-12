@@ -13,14 +13,15 @@ twitter_handle: Karak_Network
 raised: "$48M"
 investors: "LightSpeed, Framework, Pantera, Coinbase and DCG"
 project_url: https://karak.network/
+reflink: https://app.karak.network/?referralCode=vnjXF
 todo: "Points system, deposit ETH or tokens to earn points and Karak XP"
 ---
 
-- Join using [this link](https://app.karak.network/)
+- Join using [this link](https://app.karak.network/?referralCode=vnjXF)
 - Use early access codes:
   - HdBUN
   - v7GVp
   - cJQun
   - vnjXF
   - i4g3Q
-- We suggest deposit of a minimum $1000.
+- We suggest deposit of a minimum \$1000.

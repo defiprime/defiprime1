@@ -16,18 +16,18 @@ project_url: https://dflow.net/en
 todo: "Points system, deposit tokens to earn XP"
 ---
 
-- Create an account and deposit eligible tokens, not that some tokens gives you 5x more points. We suggest deposit of a minimum $100.
-Use one of these invite codes when prompted:
-KGYXRS  
-6MR3YH
-7SW6UH
-QP7TDY
-TIURRI
-R6R9NV
-X39ZLF
-FLNOMX
-JTEWS8
-7VLQPF
-9E3NY1
-JPSIGD
-ANNBAX
+- Create an account and deposit eligible tokens, not that some tokens gives you 5x more points. We suggest deposit of a minimum \$100.
+  Use one of these invite codes when prompted:
+  KGYXRS  
+  6MR3YH
+  7SW6UH
+  QP7TDY
+  TIURRI
+  R6R9NV
+  X39ZLF
+  FLNOMX
+  JTEWS8
+  7VLQPF
+  9E3NY1
+  JPSIGD
+  ANNBAX

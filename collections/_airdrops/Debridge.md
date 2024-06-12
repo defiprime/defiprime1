@@ -19,5 +19,5 @@ todo: "Points system, use bridge to earn"
 
 - Join using [this link](https://app.debridge.finance/r/10210)
 - Earn points for making cross-chain transfers through the bridge.
-- You earn 100 points for every $1 paid in fees to the protocol.
-- We suggest a minimum weekly trading volume of a $1000.
+- You earn 100 points for every \$1 paid in fees to the protocol.
+- We suggest a minimum weekly trading volume of a \$1000.

@@ -13,10 +13,10 @@ twitter_handle: KelpDAO
 raised: "$1.4M"
 investors: "Cluster Capital"
 project_url: https://kelpdao.xyz/
-reflink:  https://kelpdao.xyz/restake/?utm_source=0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1
+reflink: https://kelpdao.xyz/restake/?utm_source=0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1
 todo: "Points System, deposit to earn"
 ---
 
 - Deposit ETH, ETHx, stETH, sfrxETH to earn EigenLayer points, Kelp DAOpoints (they call it 'miles'), + bonus points.
 - We suggest deposit of at least 1ETH worth.
-- TVL at the time of writing is ~$800M
+- TVL at the time of writing is ~\$800M

@@ -19,4 +19,4 @@ todo: "Points system, deposit tokens to earn Spice"
 
 - Join using [this link](https://fusion.gobob.xyz/?refCode=8qubj8)
 - Connect Twitter account and deposit eligible tokens, note that wBTC, tBTC gives you 1.5x more points, and stables 1.3x points.
-- We suggest deposit of a minimum $1000.
+- We suggest deposit of a minimum \$1000.

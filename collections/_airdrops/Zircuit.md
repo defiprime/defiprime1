@@ -13,7 +13,7 @@ twitter_handle: ZircuitL2
 raised: "$NA"
 investors: "NA"
 project_url: zircuit.com
-reflink:  https://stake.zircuit.com/?ref=bmy6mm
+reflink: https://stake.zircuit.com/?ref=bmy6mm
 todo: "Points System. Stake ETH to earn Staking APR + Restaking APR + Eigenlayer Points + LRT points + Zircuit Points"
 ---
 

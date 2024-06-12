@@ -22,4 +22,4 @@ todo: "Points system, trade to earn"
 - Trade on perp markets
 - Trade on spot markets
 - Use vaults
-- We suggest to make at least $10,000 in trading volume every 14 days
+- We suggest to make at least \$10,000 in trading volume every 14 days
