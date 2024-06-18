@@ -14,7 +14,7 @@ raised: "$20M"
 investors: "Dragonfly, Arthur Hayes, Bybit, OKX, Deribit, Gemini"
 project_url: ethena.fi
 reflink: https://app.ethena.fi/join/027yu
-todo: "Farming Saats(points) System"
+todo: "Farming Sats(points) System"
 ---
 
 All this actions quality for "Sats" (essentially points). Depends on lock capacity different actions could earn you up to 30x shards.
