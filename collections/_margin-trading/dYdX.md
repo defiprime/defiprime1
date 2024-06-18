@@ -8,6 +8,7 @@ product-description: dYdX is a trading platform for crypto assets, built with op
 coltitle: "Margin trading"
 colpermalink: margin-trading
 filter: Ethereum, Bitcoin, Perpetual
+featured: true
 twitter: https://twitter.com/dydxprotocol
 github: https://github.com/dydxprotocol/
 analytics: https://explore.duneanalytics.com/embed/query/2873/visualization/5534?api_key=ZcYHEmH4ZQrNEKcN22tNrTn2HvYl8tNFUjVwh7WG
