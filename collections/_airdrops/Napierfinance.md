@@ -14,9 +14,9 @@ raised: NA
 investors: NA
 project_url: https://napier.finance
 reflink: https://app.napier.finance/quests/v8REc
-todo: "Quests + deposit to earn points"
+todo: "Deposit to earn points"
 ---
 
 - Join using [this link](https://app.napier.finance/quests/v8REc)
-- Connect Twitter account and earn points.
-- Watch for the next chapter and deposit tokens.
+- Connect Twitter account and earn points in Chapter 1
+- Deposit ETH to earn points in Chapter 2
