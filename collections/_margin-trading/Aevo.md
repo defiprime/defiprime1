@@ -11,5 +11,4 @@ colpermalink: derivatives
 twitter: https://twitter.com/aevoxyz
 github: https://github.com/aevoxyz
 featured: true
-
 ---
