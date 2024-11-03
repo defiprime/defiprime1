@@ -12,4 +12,6 @@ filter: Ethereum, Perpetual
 featured: true
 twitter: https://twitter.com/HyperliquidX
 github: https://github.com/hyperliquid-dex
+alternative-to: ["ftx"]
+
 ---

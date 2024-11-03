@@ -11,7 +11,7 @@ coltitle: "Decentralized exchanges"
 colpermalink: exchanges
 twitter: https://twitter.com/DexGuru
 github: https://github.com/dex-guru
-featured: true
+featured: false
 alternative-to:
   ["uniswap", "dextools", "1inch", "nansen", "dexscreener", "paraswap"]
 ---
