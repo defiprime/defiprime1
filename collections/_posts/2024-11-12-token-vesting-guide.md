@@ -37,7 +37,7 @@ Token vesting refers to the process by which cryptocurrency tokens are released 
 -	**Building Investor Confidence:** A vesting schedule reassures investors that the project has a structured plan for token release, reducing the likelihood of extreme price drops. This stability is attractive to investors and helps build confidence in the project’s longevity.
 
 **Mitigating “Pump and Dump” Risks**
--	**Discouraging Short-Term Speculation:** A structured vesting schedule can reduce the chance of “pump and dump” schemes, where early investors might drive up the price and then cash out, leaving others to bear the losses. Vesting makes it difficult for large holders to cash out quickly, promoting responsible trading and supporting sustainable growth.
+-	**Discouraging Short-Term Speculation:** A structured vesting schedule can reduce the chance of [“pump and dump”](https://coincub.com/welcome-to-the-crypto-jungle-a-cubs-guide-to-understanding-cryptocurrency-slang/) schemes, where early investors might drive up the price and then cash out, leaving others to bear the losses. Vesting makes it difficult for large holders to cash out quickly, promoting responsible trading and supporting sustainable growth.
 -	**Building Trust:** Transparent vesting schedules enhance investor confidence by demonstrating a commitment to the project’s longevity.
 
 **Long-Term Commitment**
