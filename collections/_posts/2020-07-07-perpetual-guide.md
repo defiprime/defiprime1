@@ -13,7 +13,7 @@ intro: "We are going in-depth on new dYdX Perpetual Futures platform in this art
 author: Defiprime
 tags: ['DeFi Guides', 'dYdX']
 ---
-A perpetual futures contract is a derivative product that mixes elements of futures contract trading and margin-based spot trading. We are going in-depth on new [dYdX Perpetual Futures](https://trade.dydx.exchange/r/QMFTAHFN) platform in this article.  
+A perpetual futures contract is a derivative product that mixes elements of futures contract trading and margin-based spot trading. We are going in-depth on new [dYdX Perpetual Futures](https://dydx.trade?ref=LastOrangeU5D) platform in this article.  
 
 
 ### What Are Perpetual Futures Contracts?
@@ -238,4 +238,4 @@ There are a handful of notable centralized exchanges that offer BTC Perpetuals. 
 
 #### Where can we go to learn more about dYdX Perpetual?
 
-- [Start trading on dYdX BTC Perpetual — get 10% off w/ DeFi Prime code](https://trade.dydx.exchange/r/QMFTAHFN)
+- [Start trading on dYdX BTC Perpetual — get 10% off w/ DeFi Prime code](https://dydx.trade?ref=LastOrangeU5D)
