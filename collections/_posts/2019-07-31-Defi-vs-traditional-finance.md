@@ -99,7 +99,7 @@ Cryptocurrencies can be borrowed and lent using platforms like Compound and [Dha
 
 ### Algo and Margin Trading - returns varies
 
-As is the case with day trading in traditional markets, most traders only report their earnings for tax purposes and many DeFi products for algorithmic and margin trading haven’t been around that long, so it’s difficult to get a sense of the possible returns. Products are only starting to be developed in this category, but [dYdX](https://dydx.exchange) is a popular example that provides a decentralized exchange with up to 4x margin trading.
+As is the case with day trading in traditional markets, most traders only report their earnings for tax purposes and many DeFi products for algorithmic and margin trading haven’t been around that long, so it’s difficult to get a sense of the possible returns. Products are only starting to be developed in this category, but [dYdX](https://dydx.trade?ref=LastOrangeU5D) is a popular example that provides a decentralized exchange with up to 4x margin trading.
 
 Another is [Set Protocol](https://setprotocol.com), who recently launched their first tokenized trend-trading product. Tokenized trend-trading allows investors to purchase a token that algorithmically executes a trend-trading product. In certain jurisdictions, this enables traders to gain exposure to the execution of trading strategies without accruing the taxes that would come with capital gains and loss if they actually executed those trades manually.
 
