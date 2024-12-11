@@ -11,4 +11,4 @@ filter-by: ecosystem, filter
 alternative-to: alchemy
 ---
 
-Alchemy is a popular RPC node provider. Alchemy gained significant recognition as a prominent node provider within the blockchain industry. Its launch in 2019 was met with great excitement, as it claimed to solve the persistent challenges related to blockchain nodes in a discreet manner. As a result, esteemed crypto and blockchain enterprises, including CryptoKitties, Augur, 0x, and Kyber Network, entrusted their projects to Alchemy for outsourcing during that period.
+Alchemy is a popular RPC node provider. Alchemy gained significant recognition as a prominent node provider within the blockchain industry. Its launch in 2019 was met with great excitement, as it claimed to solve the persistent challenges related to blockchain nodes in a discrete manner. As a result, esteemed crypto and blockchain enterprises, including CryptoKitties, Augur, 0x, and Kyber Network, entrusted their projects to Alchemy for outsourcing during that period.
