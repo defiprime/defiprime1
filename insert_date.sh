@@ -1,5 +1,5 @@
 # Run this script inside of directory with .md files.
-# Datetime of added date will ve written at second line of .md file. If it is already exist - will just overwrited
+# Datetime of added date will ve written at second line of .md file. If it is already exist - will just overwritten
 
 for file in $(git ls-files "*.md")
 do
