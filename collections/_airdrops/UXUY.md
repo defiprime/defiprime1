@@ -1,7 +1,7 @@
 ---
 git-date: 2021-11-24T12:54:25-08:00
 layout: airdrop
-title: "UXUY Wallet"
+title: "UXUY"
 permalink: "/airdrop/:title"
 h1title: UXUY Wallet Airdrop
 pagetitle: UXUY Wallet Airdrop
