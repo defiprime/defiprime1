@@ -8,7 +8,7 @@ pagetitle: Kaito Airdrop
 metadescription: "meta Kaito Airdrop"
 og: /images/blog/2024-airdrops.png
 ecosystem: ethereum
-category: Analytics PLatform
+category: Analytics Platform
 twitter_handle: _kaitoai
 raised: "$10.8M"
 investors: "Dragonfly, Spartan, Superscrypt, Sequoia, Jane Street, Mirana, Folius Ventures"

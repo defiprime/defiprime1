@@ -1,7 +1,7 @@
 ---
 git-date: 2021-11-24T12:54:25-08:00
 layout: airdrop
-title: "https://app.azura.xyz/ref/defiprime"
+title: "Cudis"
 permalink: "/airdrop/:title"
 h1title: Cudis Airdrop
 pagetitle: Cudis Airdrop
