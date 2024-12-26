@@ -17,7 +17,7 @@ reflink: https://app.stakestone.io/u/vault/detail/bera?r=174B6
 todo: "Points system in Berachain Vault"
 ---
 
-- Join [this link](https://app.stakestone.io/u/vault/detail/bera?r=174B6).
+- Join using [this link](https://app.stakestone.io/u/vault/detail/bera?r=174B6).
 - Deposit ETH, STONE, or wETH into Berachain Vault to earn Bera wave points and possible Stakestone airdrop.
 - We suggest deposit of at least 1ETH worth of assets.   
-- Note that withdrawal of deposits not available at the time, but coming soon. 
+- Note that withdrawal of deposits not available at the time, but coming soon.
