@@ -11,7 +11,7 @@ ecosystem: solana
 category: Wearable DePIN/Smart Ring
 twitter_handle: Cudis
 raised: "$5M"
-investors: "Draper Associates*, Foresight Ventures, SNZ Holding, NGC Ventures, Draper Dragon, MonkeVentures, SkyBridge Capital, Mozaik Capital"
+investors: "Draper Associates, Foresight Ventures, SNZ Holding, NGC Ventures, Draper Dragon, MonkeVentures, SkyBridge Capital, Mozaik Capital"
 project_url: https://cudis.xyz
 reflink: https://www.cudis.xyz/join?code=CwjHoC
 todo: "Points system"
