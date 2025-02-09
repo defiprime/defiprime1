@@ -48,7 +48,7 @@ permalink: tokenlist
         <tr class="ticker-row">
           <td class="ticker-product"><span class="name">{{ all_project.product-title }}</span> <span class="ticker">${{ all_project.ticker }}</span> <span class="coltitle">({{ all_project.coltitle }})</span></td>
           <td title="{{all_project.contract}}" class="ticker-address">
-          <a href="https://etherscan.io/address/{{all_project.contract}}" target="_blank" rel="noopener noreferrer" class="link-adress">{{all_project.contract}}</a>
+          <a href="https://etherscan.io/address/{{all_project.contract}}" target="_blank" rel="noopener noreferrer" class="link-address">{{all_project.contract}}</a>
           </td>
           <td class="btncopy"><span class="tooltip default-hover" title="Copied">
                       {% include icons/copy.svg %}
