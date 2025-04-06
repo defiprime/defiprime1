@@ -9,10 +9,10 @@ pagetitle: Arbitrum DeFi Ecosystem - List of the Best Arbitrum Projects
 featured-image: /images/blog/arbitrum.png
 ---
 
-{% assign all_projects = site.alternative-savings
+{% assign all_projects = site.alternative_savings
 | concat: site.analytics
-| concat: site.assets-management-tools
-| concat: site.assets-tokenization
+| concat: site.assets_management_tools
+| concat: site.assets_tokenization
 | concat: site.dao
 | concat: site.derivatives
 | concat: site.exchanges
@@ -20,12 +20,12 @@ featured-image: /images/blog/arbitrum.png
 | concat: site.insurance
 | concat: site.kyc_identity
 | concat: site.lending
-| concat: site.margin-trading
+| concat: site.margin_trading
 | concat: site.marketplaces
 | concat: site.payments
 | concat: site.prediction_markets
 | concat: site.stablecoins
-| concat: site.yield-aggregators
+| concat: site.yield_aggregators
  %}
 
 {% assign counter = all_projects.size %}
@@ -48,31 +48,31 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 | Optimism <br /> DeFi | {{ counter_optimism }} |
 | Arbitrum <br /> DeFi | {{counter_arbitrum}} |
 
-{% assign assets-management-tools = site.assets-management-tools | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
-{% if assets-management-tools.size > 0 %}
+{% assign assets_management_tools = site.assets_management_tools | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
+{% if assets_management_tools.size > 0 %}
 
 # Asset Management Tools
 
-{% for assets-management-tool in assets-management-tools %}
+{% for tool in assets_management_tools %}
 
-### <a href="/product/{{ assets-management-tool.product-title | slugify }}">{{ assets-management-tool.product-title }}</a>
+### <a href="/product/{{ tool.product-title | slugify }}">{{ tool.product-title }}</a>
 
-{% include ecosystem-icons.html project = assets-management-tool %}
-{{ assets-management-tool.product-description }}
+{% include ecosystem-icons.html project = tool %}
+{{ tool.product-description }}
 {% endfor %}
 {% endif %}
 
-{% assign alternative-savings = site.alternative-savings | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
-{% if alternative-savings.size > 0 %}
+{% assign alternative_savings = site.alternative_savings | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
+{% if alternative_savings.size > 0 %}
 
 # Alternative Savings Apps
 
-{% for alternative-saving in alternative-savings %}
+{% for saving in alternative_savings %}
 
-### <a href="/product/{{ alternative-saving.product-title | slugify }}">{{ alternative-saving.product-title }}</a>
+### <a href="/product/{{ saving.product-title | slugify }}">{{ saving.product-title }}</a>
 
-{% include ecosystem-icons.html project = alternative-saving %}
-{{ alternative-saving.product-description }}
+{% include ecosystem-icons.html project = saving %}
+{{ saving.product-description }}
 {% endfor %}
 {% endif %}
 
@@ -90,17 +90,17 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign yield-aggregators = site.yield-aggregators | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
-{% if yield-aggregators.size > 0 %}
+{% assign yield_aggregators = site.yield_aggregators | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
+{% if yield_aggregators.size > 0 %}
 
 # Yield Aggregators on Arbitrum
 
-{% for yield-aggregator in yield-aggregators %}
+{% for aggregator in yield_aggregators %}
 
-### <a href="/product/{{ yield-aggregator.product-title | slugify }}">{{ yield-aggregator.product-title }}</a>
+### <a href="/product/{{ aggregator.product-title | slugify }}">{{ aggregator.product-title }}</a>
 
-{% include ecosystem-icons.html project = yield-aggregator %}
-{{ yield-aggregator.product-description }}
+{% include ecosystem-icons.html project = aggregator %}
+{{ aggregator.product-description }}
 {% endfor %}
 {% endif %}
 
@@ -118,17 +118,17 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign margin-tradings = site.margin-trading | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
-{% if margin-tradings.size > 0 %}
+{% assign margin_tradings = site.margin_trading | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
+{% if margin_tradings.size > 0 %}
 
 # Margin Trading on Arbitrum
 
-{% for margin-trading in margin-tradings %}
+{% for margin_trading in margin_tradings %}
 
-### <a href="/product/{{ margin-trading.product-title | slugify }}">{{ margin-trading.product-title }}</a>
+### <a href="/product/{{ margin_trading.product-title | slugify }}">{{ margin_trading.product-title }}</a>
 
-{% include ecosystem-icons.html project = margin-trading %}
-{{ margin-trading.product-description }}
+{% include ecosystem-icons.html project = margin_trading %}
+{{ margin_trading.product-description }}
 {% endfor %}
 {% endif %}
 
@@ -174,17 +174,17 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign assets-tokenizations = site.assets-tokenization | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
-{% if assets-tokenizations.size > 0 %}
+{% assign assets_tokenizations = site.assets_tokenization | where_exp:"item", "item.ecosystem contains 'arbitrum'" %}
+{% if assets_tokenizations.size > 0 %}
 
 # Asset Tokenization
 
-{% for assets-tokenization in assets-tokenizations %}
+{% for tokenization in assets_tokenizations %}
 
-### <a href="/product/{{ assets-tokenization.product-title | slugify }}">{{ assets-tokenization.product-title }}</a>
+### <a href="/product/{{ tokenization.product-title | slugify }}">{{ tokenization.product-title }}</a>
 
-{% include ecosystem-icons.html project = assets-tokenization %}
-{{ assets-tokenization.product-description }}
+{% include ecosystem-icons.html project = tokenization %}
+{{ tokenization.product-description }}
 {% endfor %}
 {% endif %}
 
