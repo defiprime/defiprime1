@@ -10,55 +10,52 @@ featured-image: /images/og-bitcoin.png
 ---
 
 {% assign all_projects = site.alternative-savings
-| concat: site.analytics
-| concat: site.assets-management-tools
-| concat: site.assets-tokenization
-| concat: site.dao
-| concat: site.derivatives
-| concat: site.exchanges
-| concat: site.infrastructure
-| concat: site.insurance
-| concat: site.kyc_identity
-| concat: site.lending
-| concat: site.margin-trading
-| concat: site.marketplaces
-| concat: site.payments
-| concat: site.staking
-| concat: site.prediction_markets
-| concat: site.stablecoins
- %}
+  | concat: site.analytics
+  | concat: site.assets-management-tools
+  | concat: site.assets-tokenization
+  | concat: site.dao
+  | concat: site.derivatives
+  | concat: site.exchanges
+  | concat: site.infrastructure
+  | concat: site.insurance
+  | concat: site.kyc_identity
+  | concat: site.lending
+  | concat: site.margin-trading
+  | concat: site.marketplaces
+  | concat: site.payments
+  | concat: site.staking
+  | concat: site.prediction_markets
+  | concat: site.stablecoins
+%}
 
 {% assign counter = all_projects.size %}
 
-{% assign eos_projects = all_projects | where_exp:"item", "item.ecosystem contains 'eos'"%}
-
+{% assign eos_projects = all_projects | where_exp:"item", "item.ecosystem contains 'eos'" %}
 {% assign counter_eos = eos_projects.size %}
 
-{% assign btc_projects = all_projects | where_exp:"item", "item.ecosystem contains 'bitcoin'"%}
-
+{% assign btc_projects = all_projects | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
 {% assign counter_btc = btc_projects.size %}
 
-{% assign eth_projects = all_projects | where_exp:"item", "item.ecosystem contains 'ethereum'"%}
-
+{% assign eth_projects = all_projects | where_exp:"item", "item.ecosystem contains 'ethereum'" %}
 {% assign counter_eth = eth_projects.size %}
 
 DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ counter }} DeFi projects listed and {{ counter_btc }} of them using Bitcoin.
 
-| Ethereum <br /> DeFi | {{counter_eth}} |
+| Ethereum <br /> DeFi | {{ counter_eth }} |
 | EOS <br /> DeFi | {{ counter_eos }} |
-| Bitcoin <br /> DeFi | {{counter_btc}} |
+| Bitcoin <br /> DeFi | {{ counter_btc }} |
 
-{% assign assets-management-tools = site.assets-management-tools | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
-{% if assets-management-tools.size > 0 %}
+{% assign assets_management_tools = site.assets-management-tools | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if assets_management_tools.size > 0 %}
 
 # Asset Management Tools
 
-{% for assets-management-tool in assets-management-tools %}
+{% for tool in assets_management_tools %}
 
-### <a href="/product/{{ assets-management-tool.product-title | slugify }}">{{ assets-management-tool.product-title }}</a>
+### <a href="/product/{{ tool.product-title | slugify }}">{{ tool.product-title }}</a>
 
-{% include ecosystem-icons.html project = assets-management-tool %}
-{{ assets-management-tool.product-description }}
+{% include ecosystem-icons.html project = tool %}
+{{ tool.product-description }}
 {% endfor %}
 {% endif %}
 
@@ -76,12 +73,12 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign lendings = site.lending | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
-{% if lendings.size > 0 %}
+{% assign stakings = site.staking | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if stakings.size > 0 %}
 
 # Bitcoin Staking and Restaking
 
-{% for exchange in staking %}
+{% for staking in stakings %}
 
 ### <a href="/product/{{ staking.product-title | slugify }}">{{ staking.product-title }}</a>
 
@@ -104,17 +101,17 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign margin-tradings = site.margin-trading | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
-{% if margin-tradings.size > 0 %}
+{% assign margin_tradings = site.margin-trading | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if margin_tradings.size > 0 %}
 
 # Margin Trading
 
-{% for margin-trading in margin-tradings %}
+{% for margin_trading in margin_tradings %}
 
-### <a href="/product/{{ margin-trading.product-title  | slugify}}">{{ margin-trading.product-title }}</a>
+### <a href="/product/{{ margin_trading.product-title | slugify }}">{{ margin_trading.product-title }}</a>
 
-{% include ecosystem-icons.html project = margin-trading %}
-{{ margin-trading.product-description }}
+{% include ecosystem-icons.html project = margin_trading %}
+{{ margin_trading.product-description }}
 {% endfor %}
 {% endif %}
 
@@ -139,7 +136,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 
 {% for payment in payments %}
 
-### <a href="/product/{{ payment.product-title  | slugify}}">{{ payment.product-title }}</a>
+### <a href="/product/{{ payment.product-title | slugify }}">{{ payment.product-title }}</a>
 
 {% include ecosystem-icons.html project = payment %}
 {{ payment.product-description }}
@@ -153,7 +150,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 
 {% for marketplace in marketplaces %}
 
-### <a href="/product/{{ marketplace.product-title  | slugify}}">{{ marketplace.product-title }}</a>
+### <a href="/product/{{ marketplace.product-title | slugify }}">{{ marketplace.product-title }}</a>
 
 {% include ecosystem-icons.html project = marketplace %}
 {{ marketplace.product-description }}
@@ -174,17 +171,17 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign alternative-savings = site.alternative-savings | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
-{% if alternative-savings.size > 0 %}
+{% assign alternative_savings = site.alternative-savings | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if alternative_savings.size > 0 %}
 
 # Alternative Savings Apps
 
-{% for alternative-saving in alternative-savings %}
+{% for saving in alternative_savings %}
 
-### <a href="/product/{{ alternative-saving.product-title  | slugify }}">{{ alternative-saving.product-title }}</a>
+### <a href="/product/{{ saving.product-title | slugify }}">{{ saving.product-title }}</a>
 
-{% include ecosystem-icons.html project = alternative-saving %}
-{{ alternative-saving.product-description }}
+{% include ecosystem-icons.html project = saving %}
+{{ saving.product-description }}
 {% endfor %}
 {% endif %}
 
@@ -195,24 +192,24 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 
 {% for analytic in analytics %}
 
-### <a href="/product/{{ analytic.product-title  | slugify }}">{{ analytic.product-title }}</a>
+### <a href="/product/{{ analytic.product-title | slugify }}">{{ analytic.product-title }}</a>
 
 {% include ecosystem-icons.html project = analytic %}
 {{ analytic.product-description }}
 {% endfor %}
 {% endif %}
 
-{% assign assets-tokenizations = site.assets-tokenization | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
-{% if assets-tokenizations.size > 0 %}
+{% assign assets_tokenizations = site.assets-tokenization | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if assets_tokenizations.size > 0 %}
 
 # Asset Tokenization
 
-{% for assets-tokenization in assets-tokenizations %}
+{% for tokenization in assets_tokenizations %}
 
-### <a href="/product/{{ assets-tokenization.product-title | slugify }}">{{ assets-tokenization.product-title }}</a>
+### <a href="/product/{{ tokenization.product-title | slugify }}">{{ tokenization.product-title }}</a>
 
-{% include ecosystem-icons.html project = assets-tokenization %}
-{{ assets-tokenization.product-description }}
+{% include ecosystem-icons.html project = tokenization %}
+{{ tokenization.product-description }}
 {% endfor %}
 {% endif %}
 
@@ -223,7 +220,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 
 {% for dao in daos %}
 
-### <a href="/product/{{ dao.product-title  | slugify }}">{{ dao.product-title }}</a>
+### <a href="/product/{{ dao.product-title | slugify }}">{{ dao.product-title }}</a>
 
 {% include ecosystem-icons.html project = dao %}
 {{ dao.product-description }}
@@ -237,7 +234,7 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 
 {% for derivative in derivatives %}
 
-### <a href="/product/{{ derivative.product-title  | slugify }}">{{ derivative.product-title }}</a>
+### <a href="/product/{{ derivative.product-title | slugify }}">{{ derivative.product-title }}</a>
 
 {% include ecosystem-icons.html project = derivative %}
 {{ derivative.product-description }}
@@ -269,20 +266,6 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 
 {% include ecosystem-icons.html project = kyc_identity %}
 {{ kyc_identity.product-description }}
-{% endfor %}
-{% endif %}
-
-{% assign margin-tradings = site.margin-trading | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
-{% if margin-tradings.size > 0 %}
-
-# Margin Trading on Bitcoin
-
-{% for margin-trading in margin-tradings %}
-
-### <a href="/product/{{ margin-trading.product-title | slugify }}">{{ margin-trading.product-title }}</a>
-
-{% include ecosystem-icons.html project = margin-trading %}
-{{ margin-trading.product-description }}
 {% endfor %}
 {% endif %}
 
