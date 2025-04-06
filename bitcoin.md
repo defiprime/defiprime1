@@ -23,6 +23,7 @@ featured-image: /images/og-bitcoin.png
 | concat: site.margin-trading
 | concat: site.marketplaces
 | concat: site.payments
+| concat: site.staking
 | concat: site.prediction_markets
 | concat: site.stablecoins
  %}
@@ -72,6 +73,20 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 
 {% include ecosystem-icons.html project = exchange %}
 {{ exchange.product-description }}
+{% endfor %}
+{% endif %}
+
+{% assign lendings = site.lending | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% if lendings.size > 0 %}
+
+# Bitcoin Staking and Restaking
+
+{% for exchange in staking %}
+
+### <a href="/product/{{ staking.product-title | slugify }}">{{ staking.product-title }}</a>
+
+{% include ecosystem-icons.html project = staking %}
+{{ staking.product-description }}
 {% endfor %}
 {% endif %}
 
