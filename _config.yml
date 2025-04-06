@@ -165,6 +165,7 @@ lazy_load_image:
   #   "data-size": auto
 feed:
   path: feed.xml
+  posts_limit: 5
 
 tag_page_layout: tag_page
 tag_page_dir: t
