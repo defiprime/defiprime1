@@ -1,10 +1,10 @@
 ---
 git-date: 2020-06-14T13:41:40-07:00
 layout: [blog]
-title:  "Comparison betwen Flashloan providers: Aave vs dYdX vs Uniswap"
+title:  "Comparison between Flashloan providers: Aave vs dYdX vs Uniswap"
 permalink: flahloans-comparison
-h1title: "Comparison betwen Flashloan providers: Aave vs dYdX vs Uniswap"
-pagetitle: "Comparison betwen Flashloan providers: Aave vs dYdX vs Uniswap"
+h1title: "Comparison between Flashloan providers: Aave vs dYdX vs Uniswap"
+pagetitle: "Comparison between Flashloan providers: Aave vs dYdX vs Uniswap"
 metadescription: "If you follow DeFi, you probably have heard of Flashloans. With Flashloans, you can borrow massive amounts of money on the Blockchain without any collateral"
 category: blog
 featured-image: /images/blog/flahloans-og.png
