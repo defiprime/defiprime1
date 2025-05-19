@@ -60,7 +60,7 @@ While the concept of a credit card equivalent that allows spending against crypt
 ![alt_text](/images/blog/cards/image4.png)
 
 
-[Gnosis Card](https://gnosispay.com) is a popular solution for individuals outside the US. It offers up to 5% cashback on card spending and zero transaction and FX fees. The cashback program features five reward tiers, ranging from 1% to 4% based on the amount of $GNO tokens held in your Gnosis Pay Safe. Gnosis Pay OG NFT holders receive an additional 1%.
+[Gnosis Card](https://gnosispay.com/nonoginvite?rcc=22c4d43d6add&utm_source=referral&utm_campaign=cmaiqphr3016f2rbwkabwzaof) is a popular solution for individuals outside the US. It offers up to 5% cashback on card spending and zero transaction and FX fees. The cashback program features five reward tiers, ranging from 1% to 4% based on the amount of $GNO tokens held in your Gnosis Pay Safe. Gnosis Pay OG NFT holders receive an additional 1%.
 
 Gnosis Card has several limitations:
 
