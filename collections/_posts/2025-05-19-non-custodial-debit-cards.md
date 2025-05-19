@@ -132,7 +132,7 @@ The UI is user-friendly, although topping up is restricted to USDC on Solana.
     <td>Apple/Google Pay</td>
     <td>Both supported</td>
     <td>Apple Pay advertised, but didn’t work</td>
-    <td>Apple Pay</td>
+    <td>Both supported</td>
     <td>Both supported</td>
   </tr>
   <tr>
