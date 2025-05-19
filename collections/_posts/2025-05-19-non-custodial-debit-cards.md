@@ -7,7 +7,7 @@ h1title: "Non-Custodial Crypto Debit Cards"
 pagetitle: "Non-Custodial Crypto Debit Cards"
 metadescription: "Compare non-custodial crypto cards: Cypher, Ether.Fi, Gnosis, Solayer. Key features include network support, fees, limits, and cashback. Choose based on your needs and location."
 category: blog
-featured-image: /images/blog/og.png
+featured-image: /images/og.png
 intro: "This guide reviews top options like Cypher, Ether.Fi, Gnosis, and Solayer. Learn about fees, limits, and features for spending crypto directly from your wallet. Compare virtual vs. physical cards, network support, and cashback rewards."
 author: sawinyh
 tags: ["DeFi Guides"]
