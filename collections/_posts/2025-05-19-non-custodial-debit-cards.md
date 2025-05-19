@@ -64,14 +64,10 @@ While the concept of a credit card equivalent that allows spending against crypt
 
 Gnosis Card has several limitations:
 
-
-
 * Rental car and gas station payments are restricted.
-* Virtual cards are currently unavailable.
 * Magstripe transactions are not supported.
 
-Top-up options are also limited to depositing EURe or GBPe tokens on the Gnosis Chain. However, tokens from other chains can be bridged and swapped to Gnosis, although this process incurs time and fees.
-
+Top-up options are also limited to depositing EURe or GBPe tokens on the Gnosis Chain for EU or USDC for Brasil, Argentina, Mexico, Colombia, Thailand, Indonesia, Japan, Australia. However, tokens from other chains can be bridged and swapped to Gnosis, although this process incurs time and fees.
 
 
 ![alt_text](/images/blog/cards/image8.png)
