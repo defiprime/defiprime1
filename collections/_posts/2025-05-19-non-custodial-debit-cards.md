@@ -237,4 +237,11 @@ The UI is user-friendly, although topping up is restricted to USDC on Solana.
     <td>Limited top-up tokens, card use restrictions</td>
     <td>High fees, no physical card yet</td>
   </tr>
+  <tr>
+    <td>Sign Up</td>
+    <td><a href="https://app.cypherhq.io/card/referral/HSEG1235">Cypher</a></td>
+    <td>Ether.Fi</td>
+    <td><a href="https://gnosispay.com/nonoginvite?rcc=22c4d43d6add&utm_source=referral&utm_campaign=cmaiqphr3016f2rbwkabwzaof">Gnosis Card</a></td>
+    <td><a href="https://app.solayer.org/card?invite=SEVJ5D">Solayer Emerald</a></td>
+  </tr>
 </table>
