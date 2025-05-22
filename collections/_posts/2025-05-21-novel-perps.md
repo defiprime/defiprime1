@@ -321,7 +321,7 @@ As the original sentiment suggests, trying these platforms and potentially selli
 
 - [Hyperliquid](https://app.hyperliquid.xyz/join/DEFIPRIME)
 - [Extended Exchange](https://app.extended.exchange/join/DEFIPRIME)
-- [Lighter](https://app.lighter.xyz/trade/ETH?referral=186RPP1Q)
+- [Lighter](https://app.lighter.xyz/trade/ETH)
 - [Ostium](https://ostium.app/trade?from=SPX&to=USD&ref=X2I1V)
 
 Happy trading, and may your positions always close in profit!
