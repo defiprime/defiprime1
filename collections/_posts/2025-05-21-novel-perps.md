@@ -319,8 +319,8 @@ As the original sentiment suggests, trying these platforms and potentially selli
 
 **Get Started**:
 
-- [Hyperliquid](https://app.hyperliquid.xyz/join/BINANCE)
-- [Extended Exchange](https://app.extended.exchange/join/KIRBY)
+- [Hyperliquid](https://app.hyperliquid.xyz/join/DEFIPRIME)
+- [Extended Exchange](https://app.extended.exchange/join/DEFIPRIME)
 - [Lighter](https://app.lighter.xyz/trade/ETH?referral=186RPP1Q)
 - [Ostium](https://ostium.app/trade?from=SPX&to=USD&ref=X2I1V)
 
