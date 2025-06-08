@@ -7,7 +7,7 @@ h1title: "Introvert's Guide to Crypto Networking Events"
 pagetitle: "Introvert's Guide to Crypto Networking Events"
 metadescription: "Navigating crypto events as an introvert? This guide offers strategies side events, from prep to follow-up. Learn to connect & thrive in Web3."
 category: blog
-featured-image: images/blog/introvert.png
+featured-image: /images/blog/introvert.png
 intro: "A guide for introverts navigating crypto networking events. Offers strategies for preparation, engagement, follow-up, and self-care to thrive in the Web3 space, turning challenges into networking opportunities."
 author: sawinyh
 tags: ["DeFi Guides"]
