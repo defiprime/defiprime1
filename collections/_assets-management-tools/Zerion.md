@@ -11,4 +11,5 @@ coltitle: "Asset Management Tools"
 colpermalink: assets-management-tools
 github: https://github.com/zeriontech
 twitter: https://twitter.com/zerion_io
+alternative-to: metamask
 ---
