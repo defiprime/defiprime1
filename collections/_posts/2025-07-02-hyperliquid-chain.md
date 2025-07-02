@@ -83,6 +83,29 @@ The Hyperliquid ecosystem is rapidly expanding, with projects spanning DeFi, gam
   - Planned use in lending and staking protocols.
 - **Impact**: A stablecoin like feUSD could significantly boost Hyperliquid’s DeFi ecosystem by enabling stable trading pairs and reducing volatility risks.
 
+##### [Hyperstable![](/images/blog/hyperchain/hyperstable.png)](https://app.hyperstable.xyz/r/defiprime)
+
+- **Overview**: Hyperstable is a crypto-backed, over-collateralized, and decentralized stablecoin protocol on HyperEVM, designed to maintain a $1 peg for its USH stablecoin. Launched in 2024, it features a dual-token system with USH and the PEG governance token, where users can mint USH by depositing supported collateral (e.g., $HYPE) into non-custodial vaults. Hyperstable incentivizes growth through a Borrowing Rebate program, distributing weekly PEG tokens to offset interest costs, and a Referral Bonus for user acquisition. Liquidity providers can farm PEG by staking on AMMs like Curve, while vePEG holders lock tokens to earn 100% of protocol revenue in USH and vote on emissions. With a TVL of $2.53 million and a 24-hour trading volume of $822,936, Hyperstable has undergone audits by firms like 0x52 and Pashov Audit Group. Its innovative vote-escrow tokenomics and high-yield opportunities (20-50% APR on stable pools) make it a compelling DeFi platform.
+
+- **Impact**: Hyperstable’s stablecoin and governance model enhance Hyperliquid’s DeFi ecosystem, providing price stability and attractive yields for borrowers, liquidity providers, and token holders.
+
+##### [KittenSwap![](/images/blog/hyperchain/kittenswap.png)](https://kittenswap.finance/)
+
+- **Overview**: KittenSwap is a decentralized exchange (DEX) built on HyperEVM, launched in December 2024, and designed as a fork of Velodrome. It implements the innovative ve(3,3) tokenomics model, combining automated market maker (AMM) efficiency with a governance and reward system that aligns the interests of liquidity providers, token holders, and protocol developers.
+
+- **Impact**: KittenSwap’s ve(3,3) model and community-driven incentives, including its points program and NFT integration, make it a cornerstone of Hyperliquid’s DeFi ecosystem, driving user engagement and liquidity provision.
+
+##### [Valantis![](images/blog/hyperchain/valantis.png)](https://www.valantis.xyz/)
+
+- **Overview**: Valantis is a modular decentralized exchange (DEX) protocol on HyperEVM, launched in 2023 by Valantis Labs, designed to empower developers to create customized, composable DEXes. Its Sovereign Pools and Core Pools use reusable modules for pricing logic, fee calculation, oracle services, and liquidity management, mitigating liquidity fragmentation through shared external vaults. Valantis supports rebase tokens, such as liquid staking tokens (LSTs), and its HOT-AMM pool has facilitated over $50 million in trading volume with $5 million in liquidity. With $44.21 million in total value locked (TVL) on Hyperliquid, Valantis offers yield opportunities, including swap fees, lending, staking, and 2x HypurrFi points for $HYPE deposits. Backed by \$7.5 million in funding from investors like Triton Capital and Anthony Sassano, Valantis is a cornerstone of Hyperliquid’s DeFi infrastructure, enabling developers to build innovative DEX designs with enhanced security and capital efficiency.
+
+- **Impact**: Valantis’s modular framework and support for advanced DeFi features make it a critical liquidity hub, driving developer adoption and trader engagement.
+
+##### [Hyperbeat![](images/blog/hyperchain/hyperbeat.png)](https://app.hyperbeat.org/earn?referral=B2E11A94)
+
+- **Overview**: Hyperbeat is a decentralized lending and borrowing protocol on Hyperliquid’s HyperEVM, launched in early 2025, designed to enhance capital efficiency for traders and liquidity providers. It allows users to lend assets like $HYPE, $KITTEN, and stablecoins to earn interest or borrow against collateral to participate in Hyperliquid’s spot and perpetual futures markets. Hyperbeat integrates with Hyperliquid’s native order books, enabling seamless interaction between lending pools and trading activities. The protocol offers dynamic interest rates based on market demand and supports overcollateralized loans to ensure stability. With a focus on user-friendly interfaces and low-latency transactions, Hyperbeat has attracted significant attention, boasting \$20 million in TVL within its first month. Its points-based reward system incentivizes early adopters, with plans for a native token launch to further align community interests.
+- **Impact**: Hyperbeat strengthens Hyperliquid’s DeFi ecosystem by providing critical lending infrastructure, enabling leveraged trading and yield opportunities for a broad range of users.
+
 #### Trading and Analytics Tools
 
 ##### [Pvp.trade![](images/blog/hyperchain/pvptrade.png)](https://pvp.trade/join/44qh50)
@@ -132,6 +155,12 @@ The Hyperliquid ecosystem is rapidly expanding, with projects spanning DeFi, gam
   - Community-driven design and governance.
 - **Impact**: Hypio adds a creative dimension to Hyperliquid, attracting NFT enthusiasts and collectors.
 
+##### [TheFarm.fun![](images/blog/hyperchain/thefarm.png)](https://www.thefarm.fun/)
+
+- **Overview**: TheFarm.fun is a pioneering AI-powered gaming platform on Hyperliquid, launched in 2024, that combines generative AI and blockchain to create a unique on-chain creature generation system. Users can mint pixelated NFT creatures from real animal photos using a proprietary GenAI model, with the top 50 creatures, known as “The Ancestors,” forming the foundation of the ecosystem. The platform has confirmed a \$FARM token airdrop, allocating 5% of the total supply to reward creators and voters, with 50% for Ancestors, 30% for other minted creatures, and 20% for voters selecting Ancestors. TheFarm.fun’s roadmap includes simulation gameplay and battle/esports features, aiming to build a comprehensive gaming ecosystem. With strong community engagement and innovative AI integration, it has quickly gained traction, offering a novel blend of creativity and gamification.
+
+- **Impact**: TheFarm.fun’s AI-driven NFT creation and planned gaming features position it as a leader in Hyperliquid’s gaming ecosystem, attracting creators and gamers seeking innovative blockchain experiences.
+
 #### Infrastructure and Interoperability
 
 ##### [HyBridge![](/images/blog/hyperchain/hybridge.png)](https://v3.hybridge.xyz/)
@@ -162,6 +191,18 @@ The Hyperliquid ecosystem is rapidly expanding, with projects spanning DeFi, gam
 - **Impact**: Goldsky empowers developers with robust data infrastructure, fostering ecosystem growth.
 
 #### Gaming and Entertainment
+
+##### [Playmoon](https://playmoon.xyz/login)
+
+- **Overview**: Playmoon is an emerging gaming platform on Hyperliquid, launched in 2025, focused on delivering competitive and social gaming experiences integrated with blockchain technology. Accessible via its login portal at playmoon.xyz/login, Playmoon emphasizes user-driven challenges and tokenized rewards, allowing players to earn assets through gameplay. While still in its early stages, the platform aims to leverage Hyperliquid’s high-throughput infrastructure to support fast-paced, on-chain gaming mechanics. Playmoon’s social media presence, including a Facebook page with 56 likes, highlights its tagline “Défiez l’intouchable” (Challenge the Untouchable), suggesting a focus on competitive leaderboards or tournaments. Future plans include integrating with Hyperliquid’s spot markets for trading in-game assets and expanding its game offerings.
+
+- **Impact**: Playmoon’s competitive gaming model and blockchain integration add a dynamic entertainment layer to Hyperliquid, appealing to gamers and crypto enthusiasts alike.
+
+##### [MON Protocol![](/images/blog/hyperchain/monprotocol.png)](https://www.monprotocol.ai/)
+
+- **Overview**: MON Protocol is a blockchain-based gaming and IP distribution platform integrated with Hyperliquid, designed to govern and distribute intellectual property (IP) ecosystems through tokenization. Launched in 2024, it enables developers to create and monetize gaming assets, with over 100 partner projects and $20 million in token rewards distributed to $MON token holders. The protocol’s Launchpools allow $MON stakers to access partner tokens, while its community pre-sale of 62,092,000 $MON tokens (6.21% of supply) at $0.099 per token raised significant interest. MON Protocol also supports NFT staking for earning $MON, fostering user acquisition and community curation through granular, on-chain incentives. Its integration with Hyperliquid’s HyperEVM enables seamless asset trading and DeFi interactions, positioning it as a key player in the gaming ecosystem.
+
+- **Impact**: MON Protocol’s focus on IP governance and tokenized gaming rewards enhances Hyperliquid’s gaming and DeFi synergy, attracting developers and players to its expansive ecosystem.
 
 ##### [Sovrun](https://www.sovrun.org/)
 
@@ -219,6 +260,7 @@ The upcoming launch of a native stablecoin, potential cross-chain integrations, 
 - **Participate in Airdrops**: Engage with projects like [Pvp.trade](https://pvp.trade/join/44qh50), [HarmonixFi](https://app.harmonix.fi/?ref=p1SZdM7S), or [HypurrFun](https://t.me/HypurrFunBot?start=ref_1eb6cf66) to earn points for future token distributions.
 - **Build on HyperEVM**: Developers can deploy smart contracts using Ethereum-compatible tools, leveraging [HyperEVM documentation](https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm) and APIs.
 - **Stake \$HYPE**: Stake \$HYPE via liquid staking protocols like [Hyperdrive](https://app.hyperdrive.fi/?ref=30E88093) to earn rewards and support network security.
+- **Explore Hyperliquid Ecosystem**: Here is a great Public [Hyperliquid Ecosystem Database](https://www.hypurr.co/ecosystem-map) by HypurrCollective.
 - **Join the Community**: Follow [@HyperliquidX](https://x.com/HyperliquidX), [@hypurr_co](https://x.com/hypurr_co), and [HypurrCollective](https://x.com/hypurr_co) on X for updates, or participate in governance via \$HYPE voting.
 
 ## Conclusion
