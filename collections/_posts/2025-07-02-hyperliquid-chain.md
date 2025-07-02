@@ -7,7 +7,7 @@ h1title: "Exploring the Hyperliquid Chain Ecosystem: A Deep Dive"
 pagetitle: "Exploring the Hyperliquid Chain Ecosystem: A Deep Dive"
 metadescription: "Explore the Hyperliquid Chain ecosystem: a high-performance L1 blockchain with HyperEVM, CLOB, and zero gas fees. Discover DeFi, trading, NFTs, and more."
 category: blog
-featured-image: /images/blog/introvert.png
+featured-image: /images/blog/hyperchain/og.png
 intro: "Discover the Hyperliquid Chain: a high-performance L1 blockchain featuring HyperEVM, a Central Limit Order Book, and zero gas fees, revolutionizing on-chain trading. Explore its vibrant ecosystem of DeFi protocols, AI-driven tools, NFTs, and gaming projects, designed for speed and efficiency."
 author: sawinyh
 tags: ["DeFi Guides"]
