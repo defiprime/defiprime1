@@ -50,35 +50,10 @@ GEM
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     fastimage (2.4.0)
-    ffi (1.17.2-aarch64-linux-gnu)
-    ffi (1.17.2-aarch64-linux-musl)
-    ffi (1.17.2-arm-linux-gnu)
-    ffi (1.17.2-arm-linux-musl)
-    ffi (1.17.2-arm64-darwin)
     ffi (1.17.2-x86_64-darwin)
-    ffi (1.17.2-x86_64-linux-gnu)
-    ffi (1.17.2-x86_64-linux-musl)
     filesize (0.2.0)
     forwardable-extended (2.6.0)
-    google-protobuf (4.31.1)
-      bigdecimal
-      rake (>= 13)
-    google-protobuf (4.31.1-aarch64-linux-gnu)
-      bigdecimal
-      rake (>= 13)
-    google-protobuf (4.31.1-aarch64-linux-musl)
-      bigdecimal
-      rake (>= 13)
-    google-protobuf (4.31.1-arm64-darwin)
-      bigdecimal
-      rake (>= 13)
     google-protobuf (4.31.1-x86_64-darwin)
-      bigdecimal
-      rake (>= 13)
-    google-protobuf (4.31.1-x86_64-linux-gnu)
-      bigdecimal
-      rake (>= 13)
-    google-protobuf (4.31.1-x86_64-linux-musl)
       bigdecimal
       rake (>= 13)
     http_parser.rb (0.8.0)
@@ -130,21 +105,7 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
     mutex_m (0.3.0)
-    nokogiri (1.18.8-aarch64-linux-gnu)
-      racc (~> 1.4)
-    nokogiri (1.18.8-aarch64-linux-musl)
-      racc (~> 1.4)
-    nokogiri (1.18.8-arm-linux-gnu)
-      racc (~> 1.4)
-    nokogiri (1.18.8-arm-linux-musl)
-      racc (~> 1.4)
-    nokogiri (1.18.8-arm64-darwin)
-      racc (~> 1.4)
     nokogiri (1.18.8-x86_64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.18.8-x86_64-linux-gnu)
-      racc (~> 1.4)
-    nokogiri (1.18.8-x86_64-linux-musl)
       racc (~> 1.4)
     nuggets (1.6.1)
     pathutil (0.16.2)
@@ -159,21 +120,7 @@ GEM
     rexml (3.4.1)
     rouge (4.5.2)
     safe_yaml (1.0.5)
-    sass-embedded (1.89.2-aarch64-linux-gnu)
-      google-protobuf (~> 4.31)
-    sass-embedded (1.89.2-aarch64-linux-musl)
-      google-protobuf (~> 4.31)
-    sass-embedded (1.89.2-arm-linux-gnueabihf)
-      google-protobuf (~> 4.31)
-    sass-embedded (1.89.2-arm-linux-musleabihf)
-      google-protobuf (~> 4.31)
-    sass-embedded (1.89.2-arm64-darwin)
-      google-protobuf (~> 4.31)
     sass-embedded (1.89.2-x86_64-darwin)
-      google-protobuf (~> 4.31)
-    sass-embedded (1.89.2-x86_64-linux-gnu)
-      google-protobuf (~> 4.31)
-    sass-embedded (1.89.2-x86_64-linux-musl)
       google-protobuf (~> 4.31)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
@@ -182,17 +129,7 @@ GEM
     webrick (1.9.1)
 
 PLATFORMS
-  aarch64-linux-gnu
-  aarch64-linux-musl
-  arm-linux-gnu
-  arm-linux-gnueabihf
-  arm-linux-musl
-  arm-linux-musleabihf
-  arm64-darwin
-  x86_64-darwin
-  x86_64-linux
-  x86_64-linux-gnu
-  x86_64-linux-musl
+  x86_64-darwin-23
 
 DEPENDENCIES
   fastimage
@@ -212,4 +149,4 @@ DEPENDENCIES
   webrick (~> 1.7)
 
 BUNDLED WITH
-   2.5.23
+   2.4.22
