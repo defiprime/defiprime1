@@ -11,7 +11,7 @@ ecosystem: ethereum
 category: Wallet, Non-custodial Debit Card
 twitter_handle: Cypher_HQ_
 raised: "$4.3M"
-investors: "Y Combinato*, Samsung Next, Orange DAO, Picus Capital, AGE Crypto"
+investors: "Y Combinator, Samsung Next, Orange DAO, Picus Capital, AGE Crypto"
 project_url: cypherhq.io
 reflink: https://app.cypherhq.io/card/referral/HSEG1235
 todo: "Use Cypher Card to earn points"
