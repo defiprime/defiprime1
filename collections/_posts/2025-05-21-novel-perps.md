@@ -87,7 +87,7 @@ Extended Exchange is a promising option for traders interested in TradFi assets 
 
 **Overview**
 
-[Lighter](https://app.lighter.xyz/trade/ETH), built by Citadel high-frequency trading (HFT) alumni and backed by heavyweights like a16z and Dragonfly, is a private beta platform focused on institutional-grade trading. It emphasizes low-latency execution and zero fees for retail traders, positioning itself as a competitor to Hyperliquid for professional traders.
+[Lighter](https://app.lighter.xyz/trade/ETH?referral=ESMUUDZF5Y6S), built by Citadel high-frequency trading (HFT) alumni and backed by heavyweights like a16z and Dragonfly, is a private beta platform focused on institutional-grade trading. It emphasizes low-latency execution and zero fees for retail traders, positioning itself as a competitor to Hyperliquid for professional traders.
 
 **Key Features**
 
@@ -321,7 +321,7 @@ As the original sentiment suggests, trying these platforms and potentially selli
 
 - [Hyperliquid](https://app.hyperliquid.xyz/join/DEFIPRIME)
 - [Extended Exchange](https://app.extended.exchange/join/DEFIPRIME)
-- [Lighter](https://app.lighter.xyz/trade/ETH)
+- [Lighter](https://app.lighter.xyz/trade/ETH?referral=ESMUUDZF5Y6S)
 - [Ostium](https://ostium.app/trade?from=SPX&to=USD&ref=X2I1V)
 
 Happy trading, and may your positions always close in profit!
