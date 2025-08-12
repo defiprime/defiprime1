@@ -63,7 +63,7 @@ Hyperliquid’s combination of high liquidity, zero gas fees, and a CEX-like use
 - **TradFi Markets**: Extended Exchange allows trading of synthetic perps for traditional assets like XAU and SPX, appealing to traders seeking exposure to non-crypto markets.
 - **Points Campaign**: The recently launched points program rewards active traders, potentially leading to a future token airdrop.
 - **User-Friendly Interface**: Designed by ex-Revolut team members, the platform emphasizes accessibility and ease of use.
-- **Fee Discounts**: Using referral links (e.g.,[hhttps://app.hyperliquid.xyz/join/DEFIPRIME](https://app.hyperliquid.xyz/join/DEFIPRIME)) provides a 10% discount on trading fees.
+- **Fee Discounts**: Using referral links (e.g.,[https://app.hyperliquid.xyz/join/DEFIPRIME](https://app.hyperliquid.xyz/join/DEFIPRIME)) provides a 10% discount on trading fees.
 
 **Strengths**
 

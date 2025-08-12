@@ -41,7 +41,7 @@ We released DPI on Mainnet at the same time we launched Index Coop. That said, t
 
 Thus far, all Index Coop products are built on Set Protocol, who began idealizing Index Coop in 2018. We [raised venture capital funding](https://rbozman.medium.com/how-set-protocol-raised-2m-from-craft-ventures-scott-belsky-dfj-db5777737337) through the bear market, including some of the biggest names in DeFi investors like Sequoia Capital, Galaxy Digital, 1kx, DeFiance Capital, Blockchain.com Ventures, Assembly Capital, 1confirmation, White Star Capital, and Wintermute.
 
-Keeping user funds safe is our top priority. We only build on the best, battle-tested money legos. We’ve been audited by the best, twice, with those [audits publicly available](https://docs.tokensets.com/protocol/security). I like to use this example of how we ensure safety: We only use Compund and Aave for flexible leverage indices (FLIs). The same contracts that were hardened through lots of FLI rebalances to keep volatile ETH safe during 2021 volatility are used to execute Interest-compound ETH Index’s (icETH) leveraged staked ETH position.
+Keeping user funds safe is our top priority. We only build on the best, battle-tested money legos. We’ve been audited by the best, twice, with those [audits publicly available](https://docs.tokensets.com/protocol/security). I like to use this example of how we ensure safety: We only use Compound and Aave for flexible leverage indices (FLIs). The same contracts that were hardened through lots of FLI rebalances to keep volatile ETH safe during 2021 volatility are used to execute Interest-compound ETH Index’s (icETH) leveraged staked ETH position.
 
 ### What's your business model?
 
