@@ -18,5 +18,5 @@ todo: "Use Kast Card to earn points"
 ---
 
 - Create account using this [link](https://kastfinance.app.link/EC0LDK81) and apply for a Card.
-- Top up card balance. Cypher Supports top-ups with stablecoins on Solana and leading EVM-compatible networks.
+- Top up card balance. Kast Supports top-ups with stablecoins on Solana and leading EVM-compatible networks.
 - Use your debit card to earn points.
