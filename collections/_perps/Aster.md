@@ -1,5 +1,5 @@
 ---
-git-date: 2025-01-27T12:00:00-07:00
+git-date: 2025-09-24T12:00:00-07:00
 product-title: Aster
 product-url: https://asterdex.io
 image: /images/blog/aster.jpg
