@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-gem "jekyll", github: "jekyll/jekyll"
+gem "jekyll", "~> 4.3.0"
 gem 'jekyll-random', "~> 0.0.1", group: :jekyll_plugins
 gem 'jekyll-redirect-from', group: :jekyll_plugins
 gem 'jekyll-youtube', group: :jekyll_plugins

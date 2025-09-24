@@ -151,7 +151,6 @@ algolia:
     - ethereum.md
     - placeholder.md
     - .github
-    - /amp
 
 lazy_load_image:
   src_attr_name: data-src # [required] You need to specify the attributes to be saved for lazy loading

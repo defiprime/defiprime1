@@ -1,26 +1,4 @@
-require 'cgi'
-
 module Jekyll
-  module PermalinkBuilder
-    extend self
-
-    def get_adjusted_permalink(resource, layout)
-      layout_path = CGI.escape(layout)
-      url = resource.url
-      ext = File.extname(url)
-
-      if url.include?(':layout')
-        return url.gsub(/:layout/, layout_path)
-      end
-
-      if ext.empty?
-        "#{url}/#{layout_path}/"
-      else
-        url.gsub(/\/$|#{ext}$/) { |url_end| "/#{layout_path}#{url_end}" }
-      end
-    end
-  end
-
   class PageLayoutsGenerator
     def generate(site)
       pages = site.pages.map! do |page|
@@ -41,9 +19,6 @@ module Jekyll
         dir = File.dirname(page.relative_path)
         Page.new(page.site, page.site.source, dir, page.name).tap do |new_page|
           new_page.data["layout"] = layout
-          if layout.include? "-amp"
-            new_page.data["permalink"] = PermalinkBuilder.get_adjusted_permalink(page, "amp")
-          end
         end
       end
     end
@@ -71,9 +46,6 @@ module Jekyll
         Document.new(doc.path, :site => site, :collection => collection).tap do |new_doc|
           new_doc.read
           new_doc.data["layout"] = layout
-          if layout.include? "-amp"
-            new_doc.data["permalink"] = PermalinkBuilder.get_adjusted_permalink(doc, "amp")
-          end
         end
       end
     end
