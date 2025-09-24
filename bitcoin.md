@@ -102,16 +102,16 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endif %}
 
 {% assign perps = site.perps | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
-{% if margin_tradings.size > 0 %}
+{% if perps.size > 0 %}
 
 # Perps
 
-{% for margin_trading in margin_tradings %}
+{% for perp in perps %}
 
-### <a href="/product/{{ margin_trading.product-title | slugify }}">{{ margin_trading.product-title }}</a>
+### <a href="/product/{{ perp.product-title | slugify }}">{{ perp.product-title }}</a>
 
-{% include ecosystem-icons.html project = margin_trading %}
-{{ margin_trading.product-description }}
+{% include ecosystem-icons.html project = perp %}
+{{ perp.product-description }}
 {% endfor %}
 {% endif %}
 
