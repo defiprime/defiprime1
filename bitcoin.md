@@ -20,7 +20,7 @@ featured-image: /images/og-bitcoin.png
   | concat: site.insurance
   | concat: site.kyc_identity
   | concat: site.lending
-  | concat: site.margin-trading
+  | concat: site.perps
   | concat: site.marketplaces
   | concat: site.payments
   | concat: site.staking
@@ -101,10 +101,10 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign margin_tradings = site.margin-trading | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
+{% assign perps = site.perps | where_exp:"item", "item.ecosystem contains 'bitcoin'" %}
 {% if margin_tradings.size > 0 %}
 
-# Margin Trading
+# Perps
 
 {% for margin_trading in margin_tradings %}
 

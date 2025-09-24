@@ -5,8 +5,8 @@ product-url: https://app.hyperliquid.xyz/join/DEFIPRIME
 image: /images/output_md/hyperliquid.xyz.jpg
 ecosystem: arbitrum
 product-description: Hyperliquid is a decentralized perpetual exchange with best-in-class speed, liquidity, and price. Trade crypto in one click, without wallet approvals.
-coltitle: "Margin trading"
-colpermalink: margin-trading
+coltitle: "Perps"
+colpermalink: perps
 type: non-custodial
 filter: Ethereum, Perpetual
 featured: true

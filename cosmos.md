@@ -20,7 +20,7 @@ featured-image: /images/cosmos-og.png
 | concat: site.insurance
 | concat: site.kyc_identity
 | concat: site.lending
-| concat: site.margin-trading
+  | concat: site.perps
 | concat: site.marketplaces
 | concat: site.payments
 | concat: site.prediction_markets
@@ -134,17 +134,17 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign margin-tradings = site.margin-trading | where_exp:"item", "item.ecosystem contains 'cosmos'" %}
-{% if margin-tradings.size > 0 %}
+{% assign perps = site.perps | where_exp:"item", "item.ecosystem contains 'cosmos'" %}
+{% if perps.size > 0 %}
 
-# Margin Trading on Cosmos
+# Perps on Cosmos
 
-{% for margin-trading in margin-tradings %}
+{% for perp in perps %}
 
-### <a href="/product/{{ margin-trading.product-title | slugify }}">{{ margin-trading.product-title }}</a>
+### <a href="/product/{{ perp.product-title | slugify }}">{{ perp.product-title }}</a>
 
-{% include ecosystem-icons.html project = margin-trading %}
-{{ margin-trading.product-description }}
+{% include ecosystem-icons.html project = perp %}
+{{ perp.product-description }}
 {% endfor %}
 {% endif %}
 

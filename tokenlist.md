@@ -20,7 +20,7 @@ permalink: tokenlist
 | concat: site.insurance
 | concat: site.kyc_identity
 | concat: site.lending
-| concat: site.margin-trading
+| concat: site.perps
 | concat: site.marketplaces
 | concat: site.payments
 | concat: site.prediction_markets

@@ -21,7 +21,7 @@ featured-image: /images/og-eos.png
 | concat: site.insurance
 | concat: site.kyc_identity
 | concat: site.lending
-| concat: site.margin-trading
+  | concat: site.perps
 | concat: site.marketplaces
 | concat: site.payments
 | concat: site.prediction_markets
@@ -170,13 +170,13 @@ DeFi is the movement that leverages decentralized networks to transform old fina
 {% endfor %}
 {% endif %}
 
-{% assign margin-tradings = site.margin-trading | where_exp:"item", "item.ecosystem contains 'eos'" %}
-{% if margin-tradings.size > 0 %}
-# Margin Trading on Bitcoin
-{% for margin-trading in margin-tradings %}
-### <a href="/product/{{ margin-trading.product-title | slugify }}">{{ margin-trading.product-title }}</a>
-{% include ecosystem-icons.html project = margin-trading %}
-{{ margin-trading.product-description }}
+{% assign perps = site.perps | where_exp:"item", "item.ecosystem contains 'eos'" %}
+{% if perps.size > 0 %}
+# Perps on EOS
+{% for perp in perps %}
+### <a href="/product/{{ perp.product-title | slugify }}">{{ perp.product-title }}</a>
+{% include ecosystem-icons.html project = perp %}
+{{ perp.product-description }}
 {% endfor %}
 {% endif %}
 

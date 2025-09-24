@@ -84,10 +84,10 @@ collections:
     output: true
     permalink: /product/:name
     section_url: /stablecoins
-  margin-trading:
+  perps:
     output: true
     permalink: /product/:name
-    section_url: /margin-trading
+    section_url: /perps
   events:
   payments:
     output: true
