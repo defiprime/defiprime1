@@ -13,11 +13,11 @@ twitter_handle: farcaster_xyz
 raised: "$30M"
 investors: "a16z, Standard Crypto, 1confirmation, Scalar Capital, Coinbase Ventures, Multicoin Capital, Offline Ventures, Archetype, Canonical Crypto, Balaji Srinivsasan"
 project_url: farcaster.xyz
-reflink: https://warpcast.com/~/invite-page/6571?id=a5dfb0ae
+reflink: https://farcaster.xyz/~/code/D41XHR
 todo: "Create account and keep it active"
 ---
 
-- Create account using Warpcast, a Farcaster client for iOS & Android.
+- Join [Farcaster](https://farcaster.xyz/~/code/D41XHR)
 - Follow other accounts
 - Subscribe to Channels ([/degen](https://warpcast.com/~/channel/degen), [/memes](https://warpcast.com/~/channel/memes), [/farcaster](https://warpcast.com/~/channel/farcaster), there are many more available!)
 - Post and repost something regularly
