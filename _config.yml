@@ -127,6 +127,7 @@ exclude:
   - README.md
   - CONTRIBUTING.md
   - gems
+  - api
 keep_files: [images, admin]
 sass:
   style: compressed
