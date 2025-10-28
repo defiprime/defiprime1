@@ -51,35 +51,44 @@
   {% assign author = site.data.authors[page.author] %}
 
   <script type="application/ld+json">
-
   {
-    "@context": "http://schema.org",
-    "@type": "NewsArticle",
-    "mainEntityOfPage": "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}",
-    "headline": "{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}",
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ page.url | replace:'index.html','' | prepend: site.url }}"
+    },
+    "headline": "{% if page.h1title %}{{ page.h1title | escape }}{% elsif page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}",
+    "description": "{% if page.metadescription %}{{ page.metadescription | strip_html | strip_newlines | truncate: 300 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.description }}{% endif %}",
     "datePublished": "{% if page.date %}{{ page.date | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}",
-    "dateModified": "{% if page.date %}{{ page.date | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}",
-    "description": "{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}",
+    "dateModified": "{% if page.git-date %}{{ page.git-date | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}",
     "author": {
       "@type": "Person",
-      "name": "{{ author.name }}"
+      "name": "{{ author.name }}",
+      {% if author.url %}
+      "url": "{{ author.url }}"
+      {% endif %}
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Defiprime",
+      "name": "DefiPrime",
+      "url": "{{ site.url }}",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://defiprime.com/images/logo-60w.png",
-        "width": "60",
-        "height": "60"
+        "url": "{{ site.url }}/images/logo-60w.png",
+        "width": 60,
+        "height": 60
       }
     },
     "image": {
       "@type": "ImageObject",
-      "url": "https://defiprime.com/images/logo-60w.png",
-      "height": "60",
-      "width": "60"
-    }
+      "url": "{% if page.featured-image %}{{ page.featured-image | prepend: site.url }}{% else %}{{ site.url }}/images/logo-60w.png{% endif %}",
+      "height": 630,
+      "width": 1200
+    },
+    "articleSection": "{{ page.category }}",
+    "keywords": "{% if page.tags %}{{ page.tags | join: ', ' }}{% endif %}",
+    "url": "{{ page.url | replace:'index.html','' | prepend: site.url }}"
   }
  </script>
 </head>

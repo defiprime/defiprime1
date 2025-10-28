@@ -173,9 +173,11 @@
     </div>
   </div>
   {% include_cached footer.html %}
+  
+  <!-- Breadcrumb Schema -->
   <script type="application/ld+json">
     {
-      "@context": "http://schema.org",
+      "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [{
       "@type": "ListItem",
@@ -205,6 +207,86 @@
   }]
   }
 </script>
+
+  <!-- Product Schema - Enhanced for AI agents -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "{{ page.product-title }}",
+    "description": "{{ page.product-description | strip_html | strip_newlines | truncate: 500 }}",
+    "url": "{{ page.url | replace:'index.html','' | prepend: site.url }}",
+    "image": {
+      "@type": "ImageObject",
+      "url": "{{ page.image | prepend: site.url }}",
+      "contentUrl": "{{ page.image | prepend: site.url }}"
+    },
+    {% if page.product-url %}
+    "brand": {
+      "@type": "Brand",
+      "name": "{{ page.product-title }}"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "{{ page.product-url }}",
+      "seller": {
+        "@type": "Organization",
+        "name": "{{ page.product-title }}"
+      }
+    },
+    {% endif %}
+    "category": "{{ page.coltitle }}",
+    "keywords": "{{ page.filter }}",
+    "provider": {
+      "@type": "Organization",
+      "name": "DefiPrime",
+      "url": "{{ site.url }}"
+    }
+    {% if page.ticker %}
+    ,
+    "additionalProperty": {
+      "@type": "PropertyValue",
+      "name": "token",
+      "value": "{{ page.ticker }}"
+    }
+    {% endif %}
+    {% if page.contract %}
+    ,
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "contract",
+        "value": "{{ page.contract }}"
+      }{% if page.ticker %},{
+        "@type": "PropertyValue",
+        "name": "ticker",
+        "value": "{{ page.ticker }}"
+      }{% endif %}
+    ]
+    {% endif %}
+  }
+  </script>
+
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "DefiPrime",
+    "url": "{{ site.url }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/images/logo-60w.png",
+      "width": 60,
+      "height": 60
+    },
+    "description": "{{ site.description }}",
+    "sameAs": [
+      "https://twitter.com/defiprime"
+    ]
+  }
+  </script>
+
 </body>
 
 </html>
