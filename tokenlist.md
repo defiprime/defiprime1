@@ -79,4 +79,4 @@ permalink: tokenlist
   <p>Market data provided by <a href="https://www.coingecko.com/">Coingecko API</a>.</p>
 </section>
 
-<script src="/assets/js/defi_tickers.js"></script>
+<script defer src="/assets/js/defi_tickers.js"></script>
