@@ -64,10 +64,8 @@
     "dateModified": "{% if page.git-date %}{{ page.git-date | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}",
     "author": {
       "@type": "Person",
-      "name": "{{ author.name }}",
-      {% if author.url %}
-      "url": "{{ author.url }}"
-      {% endif %}
+      "name": "{{ author.name }}"{% if author.url %},
+      "url": "{{ author.url }}"{% endif %}
     },
     "publisher": {
       "@type": "Organization",
