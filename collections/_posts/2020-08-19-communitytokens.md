@@ -57,7 +57,7 @@ Presently, $PARTY only has $12,000 in total liquidity on Uniswap, so the new pro
 
 ![](/images/blog/Jammpad.png)
 
-$JAMM is the token of [Brian Flynn’s Jamm Session](https://jammsession.substack.com/) newsletter community. Flynn unveiled $JAMM in August 2020 as a means to “curate a group of individuals who who want to try out the weird and whacky things in crypto,” adding:
+$JAMM is the token of [Brian Flynn’s Jamm Session](https://jammsession.substack.com/) newsletter community. Flynn unveiled $JAMM in August 2020 as a means to “curate a group of individuals who want to try out the weird and whacky things in crypto,” adding:
 
 “_This newsletter was always [about] highlighting how creators can use crypto to monetize, and now we must dogfood ourselves to lead others into the new passion economy_.”
 

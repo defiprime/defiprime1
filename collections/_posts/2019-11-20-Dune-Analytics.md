@@ -36,7 +36,7 @@ We had already built some smart contract proof of concepts and used a bunch of d
 
 We’ve always been very focused on building something useful, and we think customers are the very best attestation of that. We delivered to Dharma as our first client only three months after we went full time, which was cool. We have to give a shoutout to Nadav and Brendan at Dharma that took a bet on us and became our first customer so early.
 
-On the tech side, getting all the data correctly and consistently from the blockchain is much much harder than a lot of people think it is. So a considerable part of the work is getting that right. We’ve also gone through quite a few iterations to get our decoded data into the best possible format.
+On the tech side, getting all the data correctly and consistently from the blockchain is much harder than a lot of people think it is. So a considerable part of the work is getting that right. We’ve also gone through quite a few iterations to get our decoded data into the best possible format.
 
 What we’re excited about now is the community version. Allowing anyone to create any form of analysis with SQL easily, turn it into a dashboard, and then share it with others. We think this will help a lot of discussions and decisions across the community going forward.
 
