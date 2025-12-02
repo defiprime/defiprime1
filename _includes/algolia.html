@@ -134,13 +134,60 @@
   // Starting the search
   search.start();
 
-  if (document.querySelector("#custom-searchbox")) {
-    document.querySelector("#custom-searchbox").addEventListener("click", function (e) {
-      this.style.display = 'none';
-      document.querySelector("#defi-search").style.display = 'block';
-      document.querySelector(".defi-search-inputbox").click();
-    });
+  // Function to open search box with full UI
+  function openSearchBox() {
+    const customSearchbox = document.querySelector("#custom-searchbox");
+    const defiSearch = document.querySelector("#defi-search");
+    
+    if (!customSearchbox || !defiSearch) {
+      return;
+    }
+    
+    customSearchbox.style.display = 'none';
+    defiSearch.style.display = 'block';
+    
+    // Wait a bit for Algolia to render the input, then trigger UI changes
+    let attempts = 0;
+    const maxAttempts = 20; // Max 1 second wait (20 * 50ms)
+    const checkAndOpen = () => {
+      const searchInput = document.querySelector(".defi-search-inputbox");
+      if (searchInput) {
+        $('.defi-search-inputbox').addClass('searchbox-opened');
+        $("#defi-search-fullpage").css('display', 'block');
+        $("#search-container").css('display', 'block');
+        $(".defi-search-form").stop(true, true).animate({
+          maxWidth: '730px'
+        }, 200);
+        $(".defi-search-submit").addClass("active_magnifying_icon");
+        $(".defi-clear-searchbox").show();
+        $("#search-powered-by").addClass('inner-powered-by');
+        const rightOffset = ($("#defi-search").width() - $('.defi-search-no-records').width()) / 2 + $('.defi-search-no-records').width() + 24;
+        $("#search-powered-by").css("left", rightOffset - $('#search-powered-by').width() + 'px');
+        if (window.innerWidth < 480) {
+          $('#search-powered-by').attr('style', function (i, s) { return s + 'top: -24px !important;' });
+        }
+        // Focus the input
+        searchInput.focus();
+      } else if (attempts < maxAttempts) {
+        // If input not ready yet, try again after a short delay
+        attempts++;
+        setTimeout(checkAndOpen, 50);
+      }
+    };
+    
+    checkAndOpen();
   }
+
+  // Set up click handler after search is initialized
+  window.addEventListener('load', () => {
+    if (document.querySelector("#custom-searchbox")) {
+      document.querySelector("#custom-searchbox").addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        openSearchBox();
+      });
+    }
+  });
 
   var groupBy = function (arr, criteria) {
     if (!Array.isArray(arr)) {
