@@ -7,6 +7,16 @@
   integrity="sha256-HB49n/BZjuqiCtQQf49OdZn63XuKFaxcIHWf0HNKte8=" crossorigin="anonymous">
 
 <script>
+  // Wait for all dependencies to load before initializing search
+  function initializeSearch() {
+    // Check if all required dependencies are loaded
+    if (typeof algoliasearch === 'undefined' ||
+        typeof instantsearch === 'undefined' ||
+        typeof $ === 'undefined') {
+      // Dependencies not ready yet, try again in 50ms
+      setTimeout(initializeSearch, 50);
+      return;
+    }
 
   var emptyBox = true;
   const renderHits = (renderOptions, isFirstRender) => {
@@ -280,4 +290,9 @@
       }
     })
   });
+
+  } // End of initializeSearch function
+
+  // Start checking for dependencies and initialize when ready
+  initializeSearch();
 </script>
