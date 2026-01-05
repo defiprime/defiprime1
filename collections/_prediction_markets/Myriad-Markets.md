@@ -8,3 +8,4 @@ product-description: Myriad Markets is a decentralized prediction market platfor
 coltitle: "Prediction markets"
 colpermalink: prediction-markets
 ---
+
