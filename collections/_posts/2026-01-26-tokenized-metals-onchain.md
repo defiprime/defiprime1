@@ -280,6 +280,8 @@ One of the most compelling aspects of tokenized gold is its programmability with
 
 ### Liquidity Provision on Decentralized Exchanges
 
+![](/images/blog/gold/dexeslp.png)
+
 Tokenized gold like PAXG (Pax Gold) and XAUt (Tether Gold) is actively traded on decentralized exchanges such as Uniswap v2 and v3, Curve, Fluid, Balancer, etc where liquidity providers (LPs) can earn trading fees by supplying capital to pools like PAXG/USDC or PAXG/WETH.
 • Risks: Impermanent loss if prices move outside the selected range, and Ethereum gas costs can materially impact profitability.
 • Earning potential: Yield is derived from trading fees proportional to pool volume, and rewards can be modest or variable depending on activity. ￼
