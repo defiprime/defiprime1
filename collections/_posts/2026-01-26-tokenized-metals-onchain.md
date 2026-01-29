@@ -259,6 +259,16 @@ What really sets Hyperliquid apart is its [HIP-3 framework](/hyperliquid-chain-d
 
 This expansion into tokenized commodities highlights Hyperliquid’s vision: to create a fully decentralized marketplace for both crypto and traditional finance derivatives, bringing liquidity, speed, and accessibility to markets that were once limited to institutions.
 
+#### GMX: Trading XAUT Gold
+
+[GMX](https://app.gmx.io/#/trade/?ref=defiprime) is a decentralized spot and perpetual exchange on Arbitrum and Avalanche that emphasizes low fees and oracle-based pricing. For traders focused on tokenized gold, GMX provides a straightforward path to trade XAUT markets when they are available on the platform, with optional leverage and 24/7 access.
+
+Key features that make GMX a strong venue for XAUT exposure:
+• Perpetual-style trading with no expiries
+• Low swap fees and zero price impact on swaps
+• Oracle-driven pricing to keep XAUT aligned with spot gold
+• Deep liquidity via GM pools that back long and short positions
+
 #### Ostium Perps: Gold, Silver, Copper, Palladium, Platinum
 
 ![](/images/blog/gold/ostium-gold.png)
