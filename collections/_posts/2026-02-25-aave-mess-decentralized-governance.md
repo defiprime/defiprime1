@@ -23,7 +23,7 @@ I've read the two major write-ups on this saga. They both get parts of it right.
 
 December 2025. [Aave Labs](https://aave.com/) swaps out [ParaSwap](https://www.paraswap.io/) for [CoW Swap](https://cow.fi/) on their frontend. Routine maintenance, you'd think. Except the fees that used to go to the DAO treasury now went to Labs. Nobody asked. Nobody even mentioned it until delegates noticed.
 
-[Marc Zeller](https://x.com/lemaboringfrog) from [ACI](https://www.aavechan.com/) (Aave Chan Initiative) called it "unacceptable." Others called it theft. AAVE dropped 20%.
+[Marc Zeller](https://x.com/Marczeller) from [ACI](https://www.aavechan.com/) (Aave Chan Initiative) called it "unacceptable." Others called it theft. AAVE dropped 20%.
 
 [Stani Kulechov](https://x.com/StaniKulechov) had a different read: the frontend isn't the protocol. Labs built the website, Labs maintains it, so Labs gets the revenue. The smart contracts and liquidity pools—that's the DAO's. The interface? Ours.
 
