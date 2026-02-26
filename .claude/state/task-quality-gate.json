@@ -58,5 +58,55 @@
     "failure_count": 0,
     "last_action": "reset",
     "updated_at": "2026-02-26T16:35:30Z"
+  },
+  "Run tests and commit all remaining changes": {
+    "failure_count": 0,
+    "last_action": "reset",
+    "updated_at": "2026-02-26T16:37:01Z"
+  },
+  "Compare Homepage (/ )": {
+    "failure_count": 0,
+    "last_action": "reset",
+    "updated_at": "2026-02-26T17:34:24Z"
+  },
+  "Compare Product Page (/product/aave)": {
+    "failure_count": 0,
+    "last_action": "reset",
+    "updated_at": "2026-02-26T17:48:44Z"
+  },
+  "Compare Category Page (/decentralized-lending)": {
+    "failure_count": 0,
+    "last_action": "reset",
+    "updated_at": "2026-02-26T17:49:57Z"
+  },
+  "Compare Blog Page (/blog)": {
+    "failure_count": 0,
+    "last_action": "reset",
+    "updated_at": "2026-02-26T17:52:29Z"
+  },
+  "Fix SCSS compilation - main.css returns 404": {
+    "failure_count": 0,
+    "last_action": "reset",
+    "updated_at": "2026-02-26T17:57:07Z"
+  },
+  "Fix blog post sorting and dates showing 01 Jan 0001": {
+    "failure_count": 0,
+    "last_action": "reset",
+    "updated_at": "2026-02-26T18:00:57Z"
+  },
+  "Fix category page products not rendering (0 cards shown)": {
+    "failure_count": 0,
+    "last_action": "reset",
+    "updated_at": "2026-02-26T18:04:12Z"
+  },
+  "Fix header search missing from all pages": {
+    "failure_count": 0,
+    "last_action": "reset",
+    "updated_at": "2026-02-26T18:05:00Z"
+  },
+  "Fix double slashes, entity encoding, style classes, and minor issues": {
+    "failure_count": 0,
+    "last_action": "reset",
+    "updated_at": "2026-02-26T18:37:17Z"
   }
 }

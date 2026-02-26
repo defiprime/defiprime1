@@ -73,14 +73,14 @@
       "url": "{{ .Site.BaseURL }}",
       "logo": {
         "@type": "ImageObject",
-        "url": "{{ .Site.BaseURL }}/images/logo-60w.png",
+        "url": "{{ .Site.BaseURL }}images/logo-60w.png",
         "width": 60,
         "height": 60
       }
     },
     "image": {
       "@type": "ImageObject",
-      "url": "{{ if index .Params "featured-image" }}{{ index .Params "featured-image" | absURL }}{{ else }}{{ .Site.BaseURL }}/images/logo-60w.png{{ end }}",
+      "url": "{{ if index .Params "featured-image" }}{{ index .Params "featured-image" | absURL }}{{ else }}{{ .Site.BaseURL }}images/logo-60w.png{{ end }}",
       "height": 630,
       "width": 1200
     },
@@ -115,7 +115,7 @@
           <span>Tags:</span>
         {{ end }}
         {{ range .Params.tags }}
-          <a href="/t/{{ . | lower | replace " " "-" }}.html" rel="tag" class="tag">{{ . }}</a>
+          <a href="/t/{{ . | lower | replace " " "-" }}" rel="tag" class="tag">{{ . }}</a>
         {{ end }}
 
 

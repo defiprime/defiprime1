@@ -32,7 +32,7 @@
       {{ with $section }}
         {{ $count = len .Pages }}
       {{ end }}
-      {{ $styleNum := mod (index (shuffle (seq 10)) 0) 10 }}
+      {{ $styleNum := add (mod (index (shuffle (seq 8)) 0) 8) 1 }}
       <article class="style{{ $styleNum }}">
         <a href="{{ .RelPermalink }}">
           <h2>{{ .Title }}</h2>

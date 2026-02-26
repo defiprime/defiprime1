@@ -58,7 +58,7 @@
               {{ if .Params.tags }}
                 <div class="tags">
                   {{ range .Params.tags }}
-                  <a href="/t/{{ . | lower | replaceRE " " "-" }}.html" class="tag">{{ . }}</a>
+                  <a href="/t/{{ . | lower | replaceRE " " "-" }}" class="tag">{{ . }}</a>
                   {{ end }}
                 </div>
               {{ end }}
@@ -91,10 +91,10 @@
 
         <section class="pagination">
           {{ if $paginator.HasNext }}
-            <a class="button" href="{{ $paginator.Next.URL }}">Older Posts</a>
+            <a class="button" href="{{ $paginator.Next.URL | replaceRE "//" "/" }}">Older Posts</a>
           {{ end }}
           {{ if $paginator.HasPrev }}
-            <a class="button" href="{{ $paginator.Prev.URL }}">Newer Posts</a>
+            <a class="button" href="{{ $paginator.Prev.URL | replaceRE "//" "/" }}">Newer Posts</a>
           {{ end }}
         </section>
       </div>

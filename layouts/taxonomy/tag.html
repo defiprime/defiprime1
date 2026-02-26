@@ -24,7 +24,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ .Site.BaseURL }}{{ .RelPermalink }}" />
   <meta property="og:description" content="{{ .Title }} and all things about DeFi - trustless and transparent financial products built on top of the blockchain " />
-  <meta property="og:image" content="{{ .Site.BaseURL }}/images/og-blog.png" />
+  <meta property="og:image" content="{{ .Site.BaseURL }}images/og-blog.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image">
@@ -32,7 +32,7 @@
   <meta name="twitter:creator" content="@defiprime">
   <meta name="twitter:title" content="{{ .Title }}">
   <meta name="twitter:description" content="{{ .Title }} and all things about DeFi - trustless and transparent financial products built on top of the blockchain ">
-  <meta name="twitter:image" content="{{ .Site.BaseURL }}/images/og-blog.png">
+  <meta name="twitter:image" content="{{ .Site.BaseURL }}images/og-blog.png">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138327045-1"></script>
   <script>
@@ -62,7 +62,7 @@
           <article>
             <div class="tags">
               {{ range .Params.tags }}
-              <a href="/t/{{ . | lower | replace " " "-" }}.html" class="tag">{{ . }}</a>
+              <a href="/t/{{ . | lower | replace " " "-" }}" class="tag">{{ . }}</a>
               {{ end }}
             </div>
             <a href="{{ .RelPermalink }}">

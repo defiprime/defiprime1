@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-02-26T16:13:37.859Z",
+  "updatedAt": "2026-02-26T17:55:52.729Z",
   "skills": {},
   "commands": {
     "harness-init": {
@@ -26,8 +26,8 @@
       "lastUsed": "2026-02-26T13:55:33.264Z"
     },
     "general-purpose": {
-      "count": 1,
-      "lastUsed": "2026-02-26T15:34:07.200Z"
+      "count": 2,
+      "lastUsed": "2026-02-26T17:55:52.727Z"
     }
   },
   "hooks": {

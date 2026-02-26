@@ -11,6 +11,12 @@ buildFuture = true
 # Clean URLs (matching vercel.json cleanUrls: true)
 uglyURLs = false
 
+# Map git-date front matter field to Hugo's date
+[frontmatter]
+  date = ["date", "git-date", ":filename"]
+  lastmod = ["lastmod", ":git"]
+  publishDate = ["publishDate", "date", "git-date"]
+
 # Match Jekyll's description
 [params]
   description = "All things DeFi - trustless and transparent financial products built on top of the blockchain"

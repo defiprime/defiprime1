@@ -189,7 +189,7 @@
       "position": 2,
           "item": {
           "@type": "WebPage",
-          "@id": "{{ .Site.BaseURL }}/{{ .Params.colpermalink }}",
+          "@id": "{{ .Site.BaseURL }}{{ .Params.colpermalink }}",
           "name": "{{ .Params.coltitle }}"
       }
   },{
@@ -273,7 +273,7 @@
     "url": "{{ .Site.BaseURL }}",
     "logo": {
       "@type": "ImageObject",
-      "url": "{{ .Site.BaseURL }}/images/logo-60w.png",
+      "url": "{{ .Site.BaseURL }}images/logo-60w.png",
       "width": 60,
       "height": 60
     },

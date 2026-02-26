@@ -28,23 +28,23 @@
   <noscript><link rel="stylesheet" href="{{ "/assets/css/tooltipster/tooltipster.bundle.min.css" | relURL }}"></noscript>
   <link rel="canonical" href="{{ .Permalink }}">
   <meta property="og:title"
-    content="{{ if .Params.pagetitle }}{{ .Params.pagetitle | htmlEscape }}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}" />
+    content="{{ if .Params.pagetitle }}{{ .Params.pagetitle }}{{ else }}{{ .Site.Title }}{{ end }}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ .Permalink }}" />
   <meta property="og:description"
-    content="{{ if .Params.excerpt }}{{ .Params.excerpt | plainify | truncate 160 }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    content="{{ if .Params.metadescription }}{{ .Params.metadescription | plainify | truncate 160 }}{{ else if .Params.excerpt }}{{ .Params.excerpt | plainify | truncate 160 }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
   <meta property="og:image"
-    content="{{ if .Params.og }}{{ .Site.BaseURL }}{{ .Params.og }}{{ else }}{{ .Site.BaseURL }}/images/og.png{{ end }}" />
+    content="{{ if .Params.og }}{{ .Site.BaseURL }}{{ .Params.og }}{{ else }}{{ .Site.BaseURL }}images/og.png{{ end }}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@defiprime">
   <meta name="twitter:creator" content="@defiprime">
   <meta name="twitter:title"
-    content="{{ if .Params.pagetitle }}{{ .Params.pagetitle | htmlEscape }}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}">
+    content="{{ if .Params.pagetitle }}{{ .Params.pagetitle }}{{ else }}{{ .Site.Title }}{{ end }}">
   <meta name="twitter:description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
   <meta name="twitter:image"
-    content="{{ if .Params.og }}{{ .Site.BaseURL }}{{ .Params.og }}{{ else }}{{ .Site.BaseURL }}/images/og.png{{ end }}">
+    content="{{ if .Params.og }}{{ .Site.BaseURL }}{{ .Params.og }}{{ else }}{{ .Site.BaseURL }}images/og.png{{ end }}">
   <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
     integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
     crossorigin="anonymous"></script>
@@ -77,7 +77,8 @@
         {{ if index .Params "filter-by" }}
         {{ $items_filters := split (index .Params "filter-by") ", " }}
         {{ $cards_section := printf "product/%s" .Params.cards }}
-        {{ $page_cards := where site.RegularPages "Section" .Params.cards }}
+        {{ $cardsSection := site.GetPage (printf "product/%s" .Params.cards) }}
+        {{ $page_cards := $cardsSection.Pages }}
         <section>
           <div class="button-group filters-button-group">
             <button class="button active" data-filter="*">All</button>
@@ -104,7 +105,8 @@
         {{ if index .Params "filter-by" }}
           {{ $items_filters = split (index .Params "filter-by") ", " }}
         {{ end }}
-        {{ $page_cards := where site.RegularPages "Section" .Params.cards }}
+        {{ $cardsSection := site.GetPage (printf "product/%s" .Params.cards) }}
+        {{ $page_cards := $cardsSection.Pages }}
         {{ $featured := where $page_cards "Params.featured" true }}
         {{ $non_featured := where $page_cards "Params.featured" "ne" true }}
         {{ $page_cards = $featured | append $non_featured }}
@@ -223,7 +225,7 @@
                     <a href="/product/{{ index $asset_tool.Params "product-title" | urlize }}">
                       {{ partial "icons/comment.svg" $ }}
                       <span class="gc-counter"
-                        data-url="{{ $.Site.BaseURL }}/product/{{ index $asset_tool.Params "product-title" | urlize }}">0</span>
+                        data-url="{{ $.Site.BaseURL }}product/{{ index $asset_tool.Params "product-title" | urlize }}">0</span>
                       <span class="tip"><span class="icon">👈</span> What do you think?</span>
                     </a>
                   </div>
