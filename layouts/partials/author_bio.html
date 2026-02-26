@@ -1,0 +1,54 @@
+{{ $author := index site.Data.authors .Params.author }}
+
+<div class="author">
+   <div class="author-wrap">
+      <div class="author-info">
+         <div class="author-img">
+            {{ if $author.image }}
+            <img class="lazyload" data-src="{{ $author.image }}">
+            {{ end }}
+            <div class="author-social hidden-small">
+              {{ if $author.twitter }}
+              <a href="{{ $author.twitter }}" class="social-link">
+                {{ partialCached "icons/twitter.svg" . }}
+              </a>
+              {{ end }}
+              {{ if $author.github }}
+                <a href="{{ $author.github }}" class="social-link">
+                  {{ partialCached "icons/github.svg" . }}
+                </a>
+              {{ end }}
+              {{ if $author.linkedin }}
+                <a href="{{ $author.linkedin }}" class="social-link">
+                  {{ partialCached "icons/linkedin.svg" . }}
+                </a>
+              {{ end }}
+           </div>
+         </div>
+         <div class="author-descr">
+             <span class="author-about"> About the author </span>
+            <div class="author-title">
+               <div class="author-name">{{ $author.name }}</div>
+            </div>
+            <div class="author-social shown-small">
+              {{ if $author.twitter }}
+              <a href="{{ $author.twitter }}" class="social-link">
+                {{ partialCached "icons/twitter.svg" . }}
+              </a>
+              {{ end }}
+              {{ if $author.github }}
+                <a href="{{ $author.github }}" class="social-link">
+                  {{ partialCached "icons/github.svg" . }}
+                </a>
+              {{ end }}
+              {{ if $author.linkedin }}
+              <a href="{{ $author.linkedin }}" class="social-link">
+                {{ partialCached "icons/linkedin.svg" . }}
+              </a>
+            {{ end }}
+           </div>
+            <div class="author-skills"> {{ $author.bio }} </div>
+         </div>
+      </div>
+   </div>
+</div>

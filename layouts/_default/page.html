@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>{{ .Params.pagetitle }} </title>
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://google-analytics.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://googletagmanager.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preload" href="/images/vector.png" as="image" media="(min-width: 601px)">
+  <link rel="preload" href="/images/logo.svg" as="image" media="(min-width: 601px)">
+  <link rel="preload" href="/images/bg-fon.png" as="image" media="(min-width: 601px)">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="preload" as="style">
+  <!-- Critical CSS Inlined -->
+  <style>{{ partial "critical.css" . }}</style>
+  <!-- Load non-critical CSS asynchronously -->
+  <script>!function(e){"use strict";var t=function(t,n,r){var o,i=e.document,a=i.createElement("link");if(n)o=n;else{var l=(i.body||i.getElementsByTagName("head")[0]).childNodes;o=l[l.length-1]}var d=i.styleSheets;a.rel="stylesheet",a.href=t,a.media="only x",function e(t){if(i.body)return t();setTimeout(function(){e(t)})}(function(){o.parentNode.insertBefore(a,n?o:o.nextSibling)});var f=function(e){for(var t=a.href,n=d.length;n--;)if(d[n].href===t)return e();setTimeout(function(){f(e)})};return a.addEventListener&&a.addEventListener("load",function(){this.media=r||"all"}),a.onloadcssdefined=f,f(function(){a.media!==r&&(a.media=r||"all")}),a};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this);</script>
+  <link rel="preload" href="{{ "/assets/css/main.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ "/assets/css/main.css" | relURL }}"></noscript>
+  <link rel="preload" href="{{ "/assets/css/tooltipster/tooltipster.bundle.min.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ "/assets/css/tooltipster/tooltipster.bundle.min.css" | relURL }}"></noscript>
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta property="og:title"
+    content="{{ if .Params.pagetitle }}{{ .Params.pagetitle | htmlEscape }}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:description"
+    content="{{ if .Params.excerpt }}{{ .Params.excerpt | plainify | truncate 160 }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+  <meta property="og:image"
+    content="{{ if .Params.og }}{{ .Site.BaseURL }}{{ .Params.og }}{{ else }}{{ .Site.BaseURL }}/images/og.png{{ end }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@defiprime">
+  <meta name="twitter:creator" content="@defiprime">
+  <meta name="twitter:title"
+    content="{{ if .Params.pagetitle }}{{ .Params.pagetitle | htmlEscape }}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}">
+  <meta name="twitter:description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
+  <meta name="twitter:image"
+    content="{{ if .Params.og }}{{ .Site.BaseURL }}{{ .Params.og }}{{ else }}{{ .Site.BaseURL }}/images/og.png{{ end }}">
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+    integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+    crossorigin="anonymous"></script>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PB9GWJD');</script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body class="product-page">
+
+  {{ partialCached "header.html" . }}
+  <!-- Main -->
+  <div id="main">
+    <div class="inner">
+      <article class="article  article--post  content  typeset">
+
+        <h1>{{ .Params.h1title }}</h1>
+
+        <div class="custodian_description">
+          {{ .Content }}
+        </div>
+
+        {{ if index .Params "filter-by" }}
+        {{ $items_filters := split (index .Params "filter-by") ", " }}
+        {{ $cards_section := printf "product/%s" .Params.cards }}
+        {{ $page_cards := where site.RegularPages "Section" .Params.cards }}
+        <section>
+          <div class="button-group filters-button-group">
+            <button class="button active" data-filter="*">All</button>
+            {{ range $items_filters }}
+            {{ $filter := . }}
+            {{ $filter_buttons := slice }}
+            {{ range $page_cards }}
+              {{ $val := index .Params $filter }}
+              {{ if $val }}
+                {{ $filter_buttons = $filter_buttons | append $val }}
+              {{ end }}
+            {{ end }}
+            {{ $filter_buttons = $filter_buttons | uniq }}
+            {{ range $filter_buttons }}
+            <button class="button"
+              data-filter="{{ . | lower | replace " " "-" }}">{{ . }}</button>
+            {{ end }}
+            {{ end }}
+          </div>
+        </section>
+        {{ end }}
+
+        {{ $items_filters := slice }}
+        {{ if index .Params "filter-by" }}
+          {{ $items_filters = split (index .Params "filter-by") ", " }}
+        {{ end }}
+        {{ $page_cards := where site.RegularPages "Section" .Params.cards }}
+        {{ $featured := where $page_cards "Params.featured" true }}
+        {{ $non_featured := where $page_cards "Params.featured" "ne" true }}
+        {{ $page_cards = $featured | append $non_featured }}
+
+        <section id='assets_cards'>
+          {{ range $page_cards }}
+          {{ $asset_tool := . }}
+          {{ $card_filters := slice }}
+          {{ range $items_filters }}
+            {{ $filter := . }}
+            {{ $val := index $asset_tool.Params $filter | lower | replace " " "-" }}
+            {{ if $val }}
+              {{ $card_filters = $card_filters | append $val }}
+            {{ end }}
+          {{ end }}
+
+          {{ if $asset_tool.Params.featured }}
+          <div class="article-wrapper featured-wrapper">
+            <article class="asset_tool_card {{ delimit $card_filters " " }}">
+            <div class="featured-header">
+              <span class="featured-product">
+
+                Featured product
+              </span>
+
+              <span class="sponsored">
+                Sponsored
+              </span>
+            </div>
+            {{ else }}
+            <div class="article-wrapper">
+              <article class="asset_tool_card {{ delimit $card_filters " " }}">
+              {{ end }}
+
+
+                <a href="{{ index $asset_tool.Params "product-url" }}" target="_blank" rel="noopener">
+                  <img src="{{ $asset_tool.Params.image }}" class="lazyload">
+                  <button class="visit-website">Visit website</button>
+                </a>
+                <div class="card_main_details">
+                  <h4><a href="{{ index $asset_tool.Params "product-url" }}" target="_blank"
+                    rel="noopener">{{ index $asset_tool.Params "product-title" }}</a></h4>
+                  <div class="asset-tool-tags">
+                    {{ $market_tags := split (index $asset_tool.Params "ecosystem") ", " }}
+                    {{ range $market_tags }}
+                    {{ $market_tag := . }}
+                    {{ if eq $market_tag "ethereum" }}
+                    <span class="tooltip" title="Built on Ethereum or related to Ethereum ecosystem">
+                      {{ partial "icons/eth.svg" $ }}
+                    </span>
+                    {{ else if eq $market_tag "bsc" }}
+                    <span class="tooltip" title="Built on BSC or related to BSC ecosystem">
+                      {{ partial "icons/binance.svg" $ }}
+                    </span>
+                    {{ else if eq $market_tag "bitcoin" }}
+                    <span class="tooltip" title="Using Bitcoin ecosystem">
+                      {{ partial "icons/bitcoin.svg" $ }}
+                    </span>
+                    {{ else if eq $market_tag "tron" }}
+                    <span class="tooltip" title="Built on Tron or related to Tron ecosystem">
+                      {{ partial "icons/tron.svg" $ }}
+                    </span>
+                    {{ else if eq $market_tag "stellar" }}
+                    <span class="tooltip" title="Built on Stellar or related to Stellar ecosystem">
+                      {{ partial "icons/stellar.svg" $ }}
+                    </span>
+                    {{ else if eq $market_tag "eos" }}
+                    <span class="tooltip" title="Built on EOS or related to EOS ecosystem">
+                      {{ partial "icons/eos.svg" $ }}
+                    </span>
+                    {{ else if eq $market_tag "polygon" }}
+                    <span class="tooltip" title="Built on Polygon or related to Polygon ecosystem">
+                      {{ partial "icons/polygon.svg" $ }}
+                    </span>
+                    {{ else if eq $market_tag "solana" }}
+                    <span class="tooltip" title="Built on Solana or related to Solana ecosystem">
+                      {{ partial "icons/solana.svg" $ }}
+                    </span>
+                    {{ end }}
+                    {{ end }}
+                    <div class="tags_separator"></div>
+                    {{ $platform_tags := split (index $asset_tool.Params "platform") ", " }}
+                    {{ range $platform_tags }}
+                    {{ $platform_tag := . }}
+                    {{ if eq $platform_tag "android" }}
+                    <span class="tooltip" title="Mobile wallet for Android">
+                      {{ partial "icons/android.svg" $ }}
+                    </span>
+                    {{ else if eq $platform_tag "web" }}
+                    <span class="tooltip" title="Browser based wallet">
+                      {{ partial "icons/web.svg" $ }}
+                    </span>
+                    {{ else if eq $platform_tag "ios" }}
+                    <span class="tooltip" title="Mobile wallet for iOS">
+                      {{ partial "icons/ios.svg" $ }}
+                    </span>
+                    {{ end }}
+                    {{ end }}
+                    {{ $type_tags := split (index $asset_tool.Params "type") ", " }}
+                    {{ range $type_tags }}
+                    {{ if eq . "cefi" }}
+                    <span class="tooltip"
+                      title="CeFi product. CeFi products are custodial, use centralized price feeds, initiate margin calls centrally, centrally determine interest rates, and centrally provide liquidity for their margin calls.">
+                      {{ partial "icons/cefi.svg" $ }}
+                    </span>
+                    {{ else }}
+                    <span class="tooltip" title="Non-custodial">
+                      {{ partial "icons/non-custodial.svg" $ }}
+                    </span>
+                    {{ end }}
+                    {{ end }}
+                  </div>
+                  <p>{{ index $asset_tool.Params "product-description" | markdownify | replaceRE "</?p>" "" }}
+                  </p>
+                  <div title="Would you recommend this product?" class="comments">
+                    <a href="/product/{{ index $asset_tool.Params "product-title" | urlize }}">
+                      {{ partial "icons/comment.svg" $ }}
+                      <span class="gc-counter"
+                        data-url="{{ $.Site.BaseURL }}/product/{{ index $asset_tool.Params "product-title" | urlize }}">0</span>
+                      <span class="tip"><span class="icon">👈</span> What do you think?</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div> <!--  /div end for div.article-wrapper -->
+
+            {{ end }}
+        </section>
+
+      </article>
+
+      <script defer src="/assets/js/page.js"></script>
+
+      <!--
+    Include this javascript code after your .gc-counters elements
+-->
+      <script type="text/javascript">
+
+        /* - - - CONFIGURATION VARIABLES - - - */
+
+        var website = 'defiprime_prod';
+
+        /* - - - DON'T EDIT BELOW THIS LINE - - - */
+
+        // get all counters
+        var counters = document.querySelectorAll('.gc-counter');
+        Array.prototype.forEach.call(counters, function (counter) {
+          var url = counter.dataset.url;
+          var uid = counter.dataset.uid;
+          var req = new XMLHttpRequest();
+
+          // called when the ajax request is completed
+          req.onreadystatechange = function () {
+            if (this.readyState == 4) {
+              if (this.status === 200) {
+                try {
+                  var resp = JSON.parse(this.responseText);
+                } catch (e) {
+                  console.error(
+                    '[gc-counter] fail to decode response "' + this.responseText + '", using url "' + url + '"'
+                  );
+                  return;
+                }
+                if (typeof resp.count !== 'undefined') {
+                  // write count
+                  counter.textContent = resp.count;
+                  if (resp.count > 0) {
+                    counter.className += " gc-active-comment";
+                  }
+                }
+              } else {
+                console.error(
+                  '[gc-counter] invalid url "' + url + '", this url is not rattached to a GraphComment page.'
+                );
+              }
+            }
+          }
+
+          // send ajax request
+          var query = 'website=' + encodeURIComponent(website)
+            + '&url=' + encodeURIComponent(url)
+            + (uid ? '&uid=' + encodeURIComponent(uid) : '')
+            ;
+          req.open('GET', 'https://graphcomment.com/api/pub/numberOfComments?' + query, true);
+          req.send();
+        });
+      </script>
+    </div>
+  </div>
+  {{ partialCached "also.html" . }}
+  {{ partialCached "footer.html" . }}
+</body>
+
+</html>

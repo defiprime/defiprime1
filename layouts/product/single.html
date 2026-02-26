@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>{{ index .Params "product-title" }} - Crypto Project Reviews. What is {{ index .Params "product-title" }}?</title>
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://google-analytics.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://googletagmanager.com">
+  <link rel="preconnect" href="https://telegram.org">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://graphcomment.com" crossorigin>
+  {{ if .Params.analytics }}
+  <link rel="preconnect" href="https://explore.duneanalytics.com" crossorigin>
+  {{ end }}
+  <link rel="preload" href="/images/vector.png" as="image" >
+  <link rel="preload" href="/images/logo.svg" as="image" >
+  <link rel="preload" href="/images/bg-fon.png" as="image" >
+  <link rel="preload" href="{{ .Params.image | absURL }}" as="image" >
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="What is {{ index .Params "product-title" }}? {{ index .Params "product-description" | plainify | truncate 160 }}">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="preload" as="style">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relURL }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta property="og:title" content="{{ index .Params "product-title" }} - Reviews. What is {{ index .Params "product-title" }}?" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:description"
+    content="{{ index .Params "product-description" | plainify | truncate 300 }}" />
+  <meta property="og:image" content="{{ .Params.image | absURL }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@defiprime">
+  <meta name="twitter:creator" content="@defiprime">
+  <meta name="twitter:title" content="{{ index .Params "product-title" }} - Reviews. What is {{ index .Params "product-title" }}?">
+  <meta name="twitter:description"
+    content="{{ index .Params "product-description" | plainify | truncate 300 }}">
+  <meta name="twitter:image" content="{{ .Params.image | absURL }}">
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+    integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+    crossorigin="anonymous"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138327045-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-138327045-1', { 'content_group2': 'product' });
+  </script>
+
+</head>
+
+<body class="post product">
+  {{ partialCached "header.html" . }}
+  <!-- Main -->
+  <div id="main">
+    <div class="inner">
+      <article class="article  article--post content typeset">
+        <a href="/{{ .Params.colpermalink }}" class="arrow-back">
+          {{ partial "icons/arrow-back.svg" . }}
+          {{ .Params.coltitle }}
+        </a>
+
+        <h1>{{ index .Params "product-title" }}</h1>
+        <div class='product-tags-icons'>
+          <a href="{{ index .Params "product-url" }}" target="_blank" rel="noopener"
+            class="button button-transparent product-url-showcase">
+            <span>website</span>
+          </a>
+          {{ if .Params.twitter }}
+          <a href='{{ .Params.twitter }}' target="_blank" rel="noopener">{{ partial "icons/twitter.svg" . }}</a>
+          {{ end }}
+          {{ if .Params.github }}
+          <a href='{{ .Params.github }}' target="_blank" rel="noopener">{{ partial "icons/github.svg" . }}</a>
+          {{ end }}
+        </div>
+        <div class='product-description-table'>
+          <a href="{{ index .Params "product-url" }}"><img class="lazyload" data-src="{{ .Params.image }}" width="100%" alt=""></a>
+          <div class='product-highlights'>
+            <h2>What is {{ index .Params "product-title" }}?</h2>
+            {{ $desc := index .Params "product-description" | markdownify }}
+            {{ $linkParts := split $desc "<a" }}
+            {{ $linkCount := len $linkParts }}
+            <div {{ if eq $linkCount 1 }} style='flex: 0' {{ end }}> {{ index .Params "product-description" | markdownify }}
+              {{ if .Params.ticker }}
+                <p>
+                {{ index .Params "product-title" }} token: <a href="https://dex.guru/token/eth/{{ .Params.contract }}" target="_blank" rel="noopener">${{ .Params.ticker }}</a>.
+                </p>
+                {{ end }}
+                {{ if .Params.contract }}
+                  <p>
+                  {{ index .Params "product-title" }} contract address: <strong> {{ .Params.contract }} </strong>
+                  </p>
+                  {{ end }}
+            </div>
+            {{ if .Params.ticker }}
+              <a href="https://dex.guru/token/eth/{{ .Params.contract }}" class="button-trade" target="_blank" rel="noopener">${{ .Params.ticker }} Charts and Liquidity</a>
+            {{ end }}
+          </div>
+        </div>
+        {{ if .Params.analytics }}
+        <h3 class="text-center">{{ index .Params "product-title" }} Usage Statistics</h3>
+        <object id="obj" data="{{ .Params.analytics }}" style="width:100%;    height: 564px;" type="text/html">
+          {{ index .Params "product-title" }} Stats, Daily Users
+        </object>
+
+        {{ end }}
+
+        <h3 class='give-thoughts-header'>What do you think of {{ index .Params "product-title" }} product?</h3>
+        {{ if index .Params "long-description" }}
+          <p>
+          {{ index .Params "long-description" }}
+          </p>
+          {{ end }}
+
+        <div id="graphcomment"></div>
+        <script type="text/javascript">
+          /* - - - CONFIGURATION VARIABLES - - - */
+
+          // make sure the id is yours
+          window.gc_params = {
+            graphcomment_id: 'defiprime_prod',
+
+            // if your website has a fixed header, indicate it's height in pixels
+            fixed_header_height: 0,
+          };
+
+          /* - - - DON'T EDIT BELOW THIS LINE - - - */
+
+          (function () {
+            var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+            gc.src = 'https://graphcomment.com/js/integration.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+          })();
+        </script>
+      </article>
+  {{ if index .Params "alternative-to" }}
+<a href="/{{ index .Params "alternative-to" }}-alternatives">  {{ end }}
+
+      <h3 class='related-products'>{{ index .Params "product-title" }} alternatives{{ if index .Params "alternative-to" }}</a>{{ end }} in <a
+          href="/{{ .Params.colpermalink }}">{{ .Params.coltitle }}</a>:</h3>
+      <section class="tiles">
+        {{ $posts := .CurrentSection.Pages | shuffle | first 3 }}
+
+        {{ range $posts }}
+        <article>
+          <a href="{{ .RelPermalink }}" class="post-link">
+            <div class="post-top">
+              <span class="image">
+                <img class="lazyload" data-src="{{ .Params.image }}" alt="" />
+              </span>
+            </div>
+            <div class="descr2">
+              <div class="content">
+                <h3>{{ index .Params "product-title" }}</h3>
+              </div>
+            </div>
+          </a>
+        </article>
+        {{ end }}
+      </section>
+
+    </div>
+  </div>
+  {{ partialCached "footer.html" . }}
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+          "item": {
+          "@type": "WebSite",
+          "@id": "{{ .Site.BaseURL }}",
+          "name": "DeFi"
+      }
+  },{
+      "@type": "ListItem",
+      "position": 2,
+          "item": {
+          "@type": "WebPage",
+          "@id": "{{ .Site.BaseURL }}/{{ .Params.colpermalink }}",
+          "name": "{{ .Params.coltitle }}"
+      }
+  },{
+      "@type": "ListItem",
+      "position": 3,
+          "item": {
+          "@type": "WebPage",
+          "@id": "{{ .Permalink }}",
+          "name": "{{ index .Params "product-title" }}"
+      }
+
+  }]
+  }
+</script>
+
+  <!-- Product Schema - Enhanced for AI agents -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "{{ index .Params "product-title" }}",
+    "description": "{{ index .Params "product-description" | plainify | truncate 500 }}",
+    "url": "{{ .Permalink }}",
+    "image": {
+      "@type": "ImageObject",
+      "url": "{{ .Params.image | absURL }}",
+      "contentUrl": "{{ .Params.image | absURL }}"
+    },
+    {{ if index .Params "product-url" }}
+    "brand": {
+      "@type": "Brand",
+      "name": "{{ index .Params "product-title" }}"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "{{ index .Params "product-url" }}",
+      "seller": {
+        "@type": "Organization",
+        "name": "{{ index .Params "product-title" }}"
+      }
+    },
+    {{ end }}
+    "category": "{{ .Params.coltitle }}",
+    "keywords": "{{ .Params.filter }}",
+    "provider": {
+      "@type": "Organization",
+      "name": "DefiPrime",
+      "url": "{{ .Site.BaseURL }}"
+    }
+    {{ if .Params.ticker }}
+    ,
+    "additionalProperty": {
+      "@type": "PropertyValue",
+      "name": "token",
+      "value": "{{ .Params.ticker }}"
+    }
+    {{ end }}
+    {{ if .Params.contract }}
+    ,
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "contract",
+        "value": "{{ .Params.contract }}"
+      }{{ if .Params.ticker }},{
+        "@type": "PropertyValue",
+        "name": "ticker",
+        "value": "{{ .Params.ticker }}"
+      }{{ end }}
+    ]
+    {{ end }}
+  }
+  </script>
+
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "DefiPrime",
+    "url": "{{ .Site.BaseURL }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ .Site.BaseURL }}/images/logo-60w.png",
+      "width": 60,
+      "height": 60
+    },
+    "description": "{{ .Site.Params.description }}",
+    "sameAs": [
+      "https://twitter.com/defiprime"
+    ]
+  }
+  </script>
+
+</body>
+
+</html>

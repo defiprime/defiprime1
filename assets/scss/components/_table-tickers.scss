@@ -1,0 +1,301 @@
+.sectoin-tickers {
+  @media screen and (min-width: 1140px) {
+    padding-bottom: 240px;
+  }
+  @media screen and (max-width: 1139px) {
+    padding-bottom: 98px;
+  }
+  .container-tickers {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .container-tickers::-webkit-scrollbar {
+    display: none;
+  }
+  p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 730px;
+    text-align: center;
+    margin: auto;
+    &:first-child {
+      color: #292984;
+    }
+  }
+  .table-tickers {
+    margin-top: 48px;
+    @media screen and (min-width: 1140px) {
+      width: 1110px;
+    }
+    @media screen and (max-width: 1139px) {
+      width: 980px;
+    }
+    thead,
+    tbody {
+      display: block;
+      width: 100%;
+    }
+    thead {
+      border: none;
+      tr {
+        display: flex;
+        width: 100%;
+        border: none;
+        @media screen and (min-width: 1140px) {
+          padding: 18px 24px;
+        }
+        @media screen and (max-width: 1139px) {
+          padding: 15px;
+        }
+        th {
+          font-family: "Open Sans", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 1.8;
+          color: #8b8bb8;
+          padding: 0;
+        }
+      }
+    }
+    tbody {
+      td {
+        padding: 0;
+      }
+      tr {
+        display: flex;
+        align-items: center;
+        background-color: transparent !important;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid #f2f2f2;
+        @media screen and (min-width: 1140px) {
+          padding: 18px 24px;
+        }
+        @media screen and (max-width: 1139px) {
+          padding: 15px;
+        }
+        &:first-child {
+          border-top: 1px solid #05d2dd;
+        }
+        &:hover {
+          cursor: pointer;
+          border: 1px solid #8f68fc;
+          box-shadow: 0px 5px 15px rgba(41, 41, 132, 0.15);
+          .button-trade {
+            background-color: #8f68fc;
+            color: #ffffff;
+          }
+        }
+        .button-trade {
+          line-height: 1.6;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #8f68fc;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          @media screen and (min-width: 1140px) {
+            width: 88px;
+            height: 39px;
+            font-size: 14px;
+          }
+          @media screen and (max-width: 1139px) {
+            width: 72px;
+            height: 39px;
+            font-size: 12px;
+          }
+          &:hover {
+            background-color: #05d2dd;
+          }
+        }
+      }
+    }
+  }
+  .ticker-product {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    .name {
+      color: #000000;
+    }
+    .ticker {
+      color: #8b8bb8;
+    }
+    .coltitle {
+      display: block;
+      color: #828282;
+    }
+  }
+  .ticker-product,
+  .ticker-product-title {
+    width: 25%;
+  }
+  .ticker-address,
+  .ticker-address-title {
+    width: 15%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #8f68fc;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &:hover {
+      color: #05d2dd;
+    }
+  }
+  .ticker-price,
+  .ticker-price-title {
+    width: 8%;
+  }
+  .ticker-change,
+  .ticker-change-title {
+    width: 10%;
+  }
+  .ticker-vol,
+  .ticker-vol-title {
+    width: 14%;
+  }
+  .ticker-market-cap,
+  .ticker-market-cap-title {
+    width: 15%;
+  }
+  .ticker-link {
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .ticker-price-title,
+  .ticker-change-title,
+  .ticker-vol-title,
+  .ticker-market-cap-title {
+    text-align: right;
+  }
+  .ticker-address-copy {
+    width: 3%;
+  }
+  .ticker-change {
+    .precent {
+      font-weight: 400;
+    }
+  }
+  .ticker-price,
+  .ticker-change,
+  .ticker-vol,
+  .ticker-market-cap {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #292984;
+    text-align: right;
+    @media screen and (min-width: 1140px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 1139px) {
+      font-size: 14px;
+    }
+    .sign {
+      font-weight: 300;
+      color: #8b8bb8;
+    }
+  }
+  .low {
+    color: #ff961c;
+    .ticker-change-plus {
+      display: none;
+    }
+  }
+  .hight {
+    color: #05d2dd;
+  }
+}
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 8px;
+  transform: translateX(12px);
+}
+.lds-ellipsis div {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #8b8bb8;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+.lds-ellipsis {
+  display: none;
+}
+.loading {
+  display: flex;
+  justify-content: flex-end;
+  .lds-ellipsis {
+    display: block;
+  }
+  .ticker-change-plus,
+  .sign,
+  .precent {
+    display: none;
+  }
+}
+.btncopy svg {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.btncopy svg {
+  &:hover {
+    path {
+      fill: #05d2dd;
+    }
+    rect {
+      fill: #05d2dd;
+    }
+    .ticker-address-title {
+      color: #05d2dd;
+    }
+  }
+}

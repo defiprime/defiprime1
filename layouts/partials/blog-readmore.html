@@ -1,0 +1,16 @@
+<h3 class="align-center">The Latest:</h3>
+<section class="latest">
+  {{ $posts := where site.RegularPages "Section" "blog" | shuffle | first 4 }}
+  {{ range $posts }}
+  {{ if ne .RelPermalink $.RelPermalink }}
+	<article>
+		<a href="{{ .Permalink }}" class="post-link">
+			<div class="content">
+				<p class="title">{{ .Params.h1title }}</p>
+				<p>{{ .Params.intro }}</p>
+			</div>
+		</a>
+	</article>
+  {{ end }}
+	{{ end }}
+</section>

@@ -1,0 +1,56 @@
+# DefiPrime.com - robots.txt for AI agents and search engines
+# Last updated: 2024
+
+User-agent: *
+Allow: /
+
+# AI agents and bots - explicitly welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: google-extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Allow feed access for content discovery
+Allow: /feed.xml
+Allow: /products.xml
+Allow: /api/
+
+# Disallow admin and internal files
+Disallow: /admin/
+Disallow: /_site/
+Disallow: /gems/
+Disallow: /node_modules/
+Disallow: /scripts/
+
+# Disallow source markdown files (already rendered as HTML)
+Disallow: /collections/
+Disallow: /_layouts/
+Disallow: /_includes/
+Disallow: /_plugins/
+
+# Sitemap location
+Sitemap: https://defiprime.com/sitemap.xml
+
+# Note: All content is licensed under the terms specified at /license
+# AI agents should cite DefiPrime.com as the source
+

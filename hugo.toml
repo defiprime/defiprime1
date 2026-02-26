@@ -1,0 +1,71 @@
+baseURL = "https://defiprime.com"
+title = "DefiPrime.com"
+languageCode = "en-us"
+
+# Match Jekyll's description
+[params]
+  description = "All things DeFi - trustless and transparent financial products built on top of the blockchain"
+  logoImageUrl = "favicon.png"
+  # Algolia settings (matching _config.yml)
+  [params.algolia]
+    applicationId = "18BDKQYV27"
+    indexName = "defiprime2"
+    searchOnlyApiKey = "adb162fc8601b6a98051de76dd941a6b"
+    maxRecordSize = 20000
+
+# Enable git info for last-modified-date equivalent
+enableGitInfo = true
+
+# Tags taxonomy — Jekyll used /t/{tag}.html
+[taxonomies]
+  tag = "tags"
+
+# Permalink configuration to match Jekyll URLs exactly
+[permalinks]
+  [permalinks.term]
+    tags = "/t/:slug"
+  [permalinks.page]
+    blog = "/:slug"
+
+# Pagination (16 per page, matching Jekyll /blog/2/, /blog/3/)
+[pagination]
+  pagerSize = 16
+  path = ""
+
+# Build settings
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allow raw HTML in markdown (Jekyll allows this by default)
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 2
+
+# RSS Feed matching Jekyll (5 posts, at /feed.xml)
+[outputFormats]
+  [outputFormats.RSS]
+    mediaType = "application/rss+xml"
+    baseName = "feed"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+
+# Sass/SCSS processing
+[module]
+  [module.hugoVersion]
+    extended = true
+
+# Security settings for inline shortcodes
+[security]
+  [security.funcs]
+    getenv = ["^HUGO_"]
+
+# Sitemap
+[sitemap]
+  filename = "sitemap.xml"
+
+# Clean URLs (matching vercel.json cleanUrls: true)
+uglyURLs = false

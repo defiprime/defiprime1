@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ .Params.pagetitle }}</title>
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://google-analytics.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://googletagmanager.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link
+      rel="preload"
+      href="/images/vector.png"
+      as="image"
+      media="(min-width: 601px)"
+    />
+    <link
+      rel="preload"
+      href="/images/logo.svg"
+      as="image"
+      media="(min-width: 601px)"
+    />
+    <link
+      rel="preload"
+      href="/images/bg-fon.png"
+      as="image"
+      media="(min-width: 601px)"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="{{ .Title }} Airdrop. {{ .Title }} is a {{ .Params.category }} on {{ .Params.ecosystem | title }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="preload"
+      as="style"
+    />
+    <link rel="stylesheet" href="{{ "/assets/css/tooltipster/tooltipster.bundle.min.css" | relURL }}" >
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relURL }}" >
+    <link
+      rel="canonical"
+      href="{{ .Permalink }}"
+    />
+    <meta
+      property="og:title"
+      content="{{ if .Params.pagetitle }}{{ .Params.pagetitle | htmlEscape }}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="{{ .Permalink }}"
+    />
+    <meta
+      property="og:description"
+      content="{{ if .Params.excerpt }}{{ .Params.excerpt | plainify | truncate 160 }}{{ else }}{{ .Site.Params.description }}{{ end }}"
+    />
+    <meta
+      property="og:image"
+      content="{{ if .Params.og }}{{ .Site.BaseURL }}{{ .Params.og }}{{ else }}{{ .Site.BaseURL }}/images/og.png{{ end }}"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@defiprime" />
+    <meta name="twitter:creator" content="@defiprime" />
+    <meta
+      name="twitter:title"
+      content="{{ if .Params.pagetitle }}{{ .Params.pagetitle | htmlEscape }}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}"
+    />
+    <meta
+      name="twitter:description"
+      content="{{ .Params.metadescription | plainify | truncate 160 }}"
+    />
+    <meta
+      name="twitter:image"
+      content="{{ if .Params.og }}{{ .Site.BaseURL }}{{ .Params.og }}{{ else }}{{ .Site.BaseURL }}/images/og.png{{ end }}"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+      integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js"
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PB9GWJD");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+
+  <body class="post">
+    {{ partialCached "header.html" . }}
+    <!-- Main -->
+    <div id="main">
+      <div class="inner">
+        <article class="article  article--post  content  typeset">
+          <h1>{{ .Params.h1title }}</h1>
+
+            <p>
+              {{ .Title }} is a {{ .Params.category }} on {{ .Params.ecosystem |
+              title }}. {{ .Title }} raised a total of {{ .Params.raised
+              }} from prominent VCs such as: {{ .Params.investors }}. Since {{
+              .Params.category }} is a category of web3 products where tokens
+              actually make sense, and network effects do exist we highly
+              suspect that eventually {{ .Title }} will airdrop tokens to
+              their community and users. What can you do to qualify for {{
+              .Params.pagetitle }}? We suggest at least: {{ .Params.todo }}
+            </p>
+            <h2>How to qualify for {{ .Params.h1title }}?</h2>
+            <p>
+              There is a list of actions that you can perform to improve your
+              chances of getting {{ .Params.h1title }}: <br />{{ .Content }}
+            </p>
+            <h3>Links</h3>
+            <ul>
+              <li>
+                <a
+                  href="{{ if .Params.reflink }}{{ .Params.reflink }}{{ else }}{{ .Params.project_url }}{{ end }}"
+                  >{{ .Params.project_url | strings.TrimPrefix "https://" }}</a
+                >
+              </li>
+              <li>
+                Twitter:
+                <a href="https://twitter.com/{{ .Params.twitter_handle }}"
+                  >@{{ .Params.twitter_handle }}</a
+                >
+              </li>
+            </ul>
+
+        </article>
+      </div>
+    </div>
+    {{ partialCached "footer.html" . }}
+  </body>
+</html>

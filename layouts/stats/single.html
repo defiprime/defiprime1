@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ .Params.pagetitle }} </title>
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://google-analytics.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://googletagmanager.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://explore.duneanalytics.com" crossorigin>
+    <link rel="preload" href="/images/vector.png" as="image" media="(min-width: 601px)">
+    <link rel="preload" href="/images/logo.svg" as="image" media="(min-width: 601px)">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relURL }}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="preload" as="style">
+    <link rel="canonical" href="{{ .Permalink }}">
+    <meta property="og:title" content="{{ .Params.pagetitle }} " />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:description" content="{{ .Params.metadescription | plainify | truncate 160 }}" />
+    <meta property="og:image" content="{{ index .Params "featured-image" | absURL }}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@defiprime">
+    <meta name="twitter:creator" content="@defiprime">
+    <meta name="twitter:title" content="{{ .Params.pagetitle }} ">
+    <meta name="twitter:description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
+    <meta name="twitter:image" content="{{ index .Params "featured-image" | absURL }}">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PB9GWJD');</script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+<body >
+
+    {{ partialCached "header.html" . }}
+    <!-- Main -->
+    <div id="main">
+      <div class="inner">
+    {{ .Content }}
+      </div>
+    </div>
+    {{ partialCached "folowus.html" . }}
+    {{ partialCached "footer.html" . }}
+
+</body>
+
+</html>

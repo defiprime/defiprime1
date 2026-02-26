@@ -1,0 +1,16 @@
+<section class="read_next">
+  <div class="container">
+    <div class='reading_next_links'>
+      {{ range site.Sections }}
+        {{ if and (ne .Section "blog") (ne .Section "events") (ne .Section "alternatives") (ne .Section "posts") }}
+          {{ if ne .RelPermalink $.RelPermalink }}
+          <a href="{{ .RelPermalink }}">
+            {{ .Title | humanize | title }}
+            <span class="articles_count">{{ len .RegularPages }}</span>
+          </a>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>

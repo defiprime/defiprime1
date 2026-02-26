@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ .Params.pagetitle | default .Title }} </title>
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://google-analytics.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://googletagmanager.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preload" href="/images/vector.png" as="image" media="(min-width: 601px)">
+    <link rel="preload" href="/images/logo.svg" as="image" media="(min-width: 601px)">
+    <link rel="preload" href="/images/bg-fon.png" as="image" media="(min-width: 601px)">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://defiprime.com/blog/">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"  rel="preload" as="style">
+    <meta property="og:title" content="{{ if .Title }}{{ .Title | htmlEscape }}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ .Site.BaseURL }}" />
+    <meta property="og:description" content="{{ .Params.metadescription | default .Site.Params.description }}" />
+    <meta property="og:image" content="{{ .Site.BaseURL }}images/og-blog.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@defiprime">
+    <meta name="twitter:creator" content="@defiprime">
+    <meta name="twitter:title" content="{{ if .Title }}{{ .Title | htmlEscape }}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}">
+    <meta name="twitter:description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}images/og-blog.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138327045-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-138327045-1', {'content_group1': 'blog'});
+    </script>
+</head>
+
+<body class="blog-page">
+    {{ partialCached "header.html" . }}
+    <!-- Main -->
+    <div id="main">
+      <div class="inner">
+        <header>
+          <h1>De<span class="text-green">fi</span> <span class="text-orange">Blog</span></h1>
+          <p>We want to shed some light on how DeFi products build and how the ecosystem evolves over time. Our blog features interviews with DeFi projects, analytics, and important news.</p>
+        </header>
+        <section class="blog-articles">
+          {{ $paginator := .Paginate .Pages }}
+          {{ range $paginator.Pages }}
+            <article>
+              {{ if .Params.tags }}
+                <div class="tags">
+                  {{ range .Params.tags }}
+                  <a href="/t/{{ . | lower | replaceRE " " "-" }}.html" class="tag">{{ . }}</a>
+                  {{ end }}
+                </div>
+              {{ end }}
+              <a href="{{ .RelPermalink }}">
+                <div class="date">{{ .Date.Format "02 Jan 2006" }}</div>
+                <div class="header">
+                  <h2>{{ .Params.h1title | default .Title }}</h2>
+                  <div class="author-item">
+                    {{ $author := index site.Data.authors .Params.author }}
+                    {{ with $author }}
+                      {{ if .image }}
+                        <img class="lazyload" data-src="{{ .image }}">
+                      {{ end }}
+                      <div class="author-data">
+                        {{ if .image }}
+                          <span>Author</span>
+                          <span class="author">{{ .name }}</span>
+                        {{ end }}
+                      </div>
+                    {{ end }}
+                  </div>
+                </div>
+                <div class="content">
+                  <p>{{ .Params.intro | plainify | truncate 300 }}</p>
+                </div>
+              </a>
+            </article>
+          {{ end }}
+        </section>
+
+        <section class="pagination">
+          {{ if $paginator.HasNext }}
+            <a class="button" href="{{ $paginator.Next.URL }}">Older Posts</a>
+          {{ end }}
+          {{ if $paginator.HasPrev }}
+            <a class="button" href="{{ $paginator.Prev.URL }}">Newer Posts</a>
+          {{ end }}
+        </section>
+      </div>
+    </div>
+    {{ partialCached "footer.html" . }}
+</body>
+</html>

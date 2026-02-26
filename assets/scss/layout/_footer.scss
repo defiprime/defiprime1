@@ -1,0 +1,210 @@
+///
+/// Phantom by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Footer */
+
+#footer {
+  font-family: "Open Sans", sans-serif;
+  padding: 45px 0 30px 0;
+  background-color: _color(main-color);
+  color: #ffffff;
+  @include breakpoint(medium) {
+    .blog-page & {
+      padding: 30px 15px;
+    }
+  }
+  > .inner {
+    @include vendor("display", "flex");
+    @include vendor("flex-wrap", "wrap");
+    @include vendor("flex-direction", "row");
+    .footer-row {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      &:first-child {
+        margin-bottom: 40px;
+      }
+
+      .footer-col {
+        @include breakpoint(min-medium) {
+          width: 40%;
+        }
+        @include breakpoint(medium) {
+          width: 100%;
+        }
+        &:first-child,
+        &:last-child {
+          @include breakpoint(min-medium) {
+            width: 30%;
+          }
+          @include breakpoint(medium) {
+            width: 100%;
+          }
+        }
+      }
+    }
+    > * > :last-child {
+      margin-bottom: 0;
+    }
+    .footer {
+      @include vendor("display", "flex");
+      @include vendor("justify-content", "space-between");
+      width: 100%;
+      @include breakpoint(medium) {
+        @include vendor("flex-direction", "column");
+      }
+      &-col-bottom {
+        display: flex;
+        flex-direction: column;
+        @include breakpoint(medium) {
+          margin-top: 30px;
+        }
+        span,
+        a {
+          color: #8b8bb8;
+          line-height: 1.6;
+          margin-bottom: 10px;
+          @include breakpoint(min-medium) {
+            font-size: 16px;
+          }
+          @include breakpoint(medium) {
+            font-size: 14px;
+          }
+          @include breakpoint(small) {
+            font-size: 12px;
+          }
+        }
+        p {
+          @include breakpoint(small) {
+            font-size: 12px;
+          }
+        }
+        .hash .value {
+          font-size: 12px;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .social-links {
+      display: flex;
+      margin-bottom: 15px;
+      a {
+        padding: 6px 0;
+        &:hover {
+          svg {
+            path,
+            rect {
+              fill: #05d2dd;
+            }
+          }
+        }
+        svg {
+          @include breakpoint(min-small) {
+            width: 48px;
+            height: 48px;
+          }
+          @include breakpoint(small) {
+            width: 24px;
+            height: 24px;
+          }
+          path,
+          rect {
+            fill: #8f68fc;
+          }
+        }
+      }
+
+      &.shown-small {
+        @include breakpoint(min-medium) {
+          display: none;
+        }
+      }
+      &.hidden-small {
+        @include breakpoint(medium) {
+          display: none;
+        }
+      }
+      .icon {
+        display: flex;
+        @include breakpoint(min-small) {
+          margin-right: 45px;
+        }
+        @include breakpoint(small) {
+          margin-right: 15px;
+        }
+      }
+    }
+
+    .text-made {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      color: #ffffff;
+      @include breakpoint(min-medium) {
+        width: 30%;
+      }
+      @include breakpoint(medium) {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      @include breakpoint(min-small) {
+        font-size: 14px;
+      }
+      @include breakpoint(small) {
+        font-size: 10px;
+      }
+    }
+    .disclaimer {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      line-height: 1.4;
+      color: #5d5dc0;
+      @include breakpoint(min-medium) {
+        width: 70%;
+      }
+      @include breakpoint(medium) {
+        width: 100%;
+      }
+      @include breakpoint(min-small) {
+        font-size: 12px;
+      }
+      @include breakpoint(small) {
+        font-size: 8px;
+      }
+      span {
+        color: #8b8bb8;
+      }
+    }
+    a {
+      color: _color(purple-color);
+      transition: 0.3s;
+      &:hover {
+        color: _color(green-color);
+      }
+      &.link {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        line-height: 1.8;
+        letter-spacing: normal;
+        @include breakpoint(min-medium) {
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+        @include breakpoint(medium) {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+  }
+}

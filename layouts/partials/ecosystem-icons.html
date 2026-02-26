@@ -1,0 +1,79 @@
+{{ $project := .Params }}
+<p>
+  <span>
+    {{ if in $project.ecosystem "ethereum" }}
+    <span title="Built on Ethereum or related to Ethereum ecosystem">
+      {{ partialCached "icons/ethereum.svg" . }}
+    </span>
+    {{ end }}
+    {{ if in $project.ecosystem "bitcoin" }}
+    <span title="Using Bitcoin ecosystem">
+      {{ partialCached "icons/bitcoin.svg" . }}
+    </span>
+    {{ end }}
+    {{ if in $project.ecosystem "bsc" }}
+    <span title="Built on Binance or related to Binance ecosystem">
+      {{ partialCached "icons/binance.svg" . }}
+    </span>
+    {{ end }}
+    {{ if in $project.ecosystem "eos" }}
+    <span title="Built on EOS or related to EOS ecosystem">
+      {{ partialCached "icons/eos.svg" . }}
+    </span>
+    {{ end }}
+    {{ if in $project.ecosystem "tron" }}
+    <span title="Built on Tron or related to Tron ecosystem">
+      {{ partialCached "icons/tron.svg" . }}
+    </span>
+    {{ end }}
+    {{ if in $project.ecosystem "polygon" }}
+    <span title="Built on Polygon or related to Polygon ecosystem">
+      {{ partialCached "icons/polygon.svg" . }}
+    </span>
+    {{ end }}
+    {{ if in $project.ecosystem "solana" }}
+    <span title="Built on Solana or related to Solana ecosystem">
+      {{ partialCached "icons/solana.svg" . }}
+    </span>
+    {{ end }}
+    {{ if in $project.ecosystem "stellar" }}
+    <span title="Built on Stellar or related to Stellar ecosystem">
+      {{ partialCached "icons/stellar.svg" . }}
+    </span>
+    {{ end }}
+    {{ if eq $project.type "non-custodial" }}
+    <span title="Non-custodial"> {{ partialCached "icons/non-custodial.svg" . }} </span>
+    {{ end }}
+    {{ if in $project.platform "ios" }}
+    <span title="Mobile wallet for iOS"> {{ partialCached "icons/ios.svg" . }} </span>
+    {{ end }}
+    {{ if in $project.platform "android" }}
+    <span title="Mobile wallet for Android">
+      {{ partialCached "icons/android.svg" . }}
+    </span>
+    {{ end }}
+    {{ if in $project.platform "web" }}
+    <span title="Browser based wallet"> {{ partialCached "icons/web.svg" . }} </span>
+    {{ end }}
+    {{ if in $project.platform "win" }}
+    <span title="Desktop wallet for windows">
+      {{ partialCached "icons/win.svg" . }}
+    </span>
+    {{ end }}
+    {{ if in $project.platform "mac" }}
+    <span title="Desktop wallet for osx"> {{ partialCached "icons/mac.svg" . }} </span>
+    {{ end }}
+    {{ if in $project.platform "linux" }}
+    <span title="Desktop wallet for linux">
+      {{ partialCached "icons/linux.svg" . }}
+    </span>
+    {{ end }}
+    {{ if in $project.type "cefi" }}
+    <span
+      title="CeFi product. CeFi products are custodial, use centralized price feeds, initiate margin calls centrally, centrally determine interest rates, and centrally provide liquidity for their margin calls."
+    >
+      {{ partialCached "icons/cefi.svg" . }}
+    </span>
+    {{ end }}
+  </span>
+</p>

@@ -1,0 +1,4 @@
+<figure class="figure  figure--{{ .Get "position" | default "center" }}">
+  <img class="image lazyload" data-src="{{ .Get "image" }}" alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" }}{{ end }}"{{ with .Get "width" }} width="{{ . }}"{{ end }}{{ with .Get "height" }} height="{{ . }}"{{ end }}>
+  {{ with .Get "caption" }}<figcaption class="caption">{{ . }}</figcaption>{{ end }}
+</figure>

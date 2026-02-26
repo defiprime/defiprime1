@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    {{ partialCached "header.html" . }}
+    <div id="main">
+      <div class="inner">
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+      </div>
+    </div>
+    {{ partialCached "footer.html" . }}
+</body>
+</html>
