@@ -177,7 +177,7 @@ Users participated for speculation rather than genuine community, revealing that
 
 ### Ethena: Stablecoins with Real Yield
 
-[Ethena](app.ethena.fi/join/027yu) launched in early 2024 with a synthetic dollar (USDe) backed by Ethereum and hedged with perpetual futures. In a crowded stablecoin market, their "Sats" points program needed to differentiate and drive adoption.
+[Ethena](https://app.ethena.fi/join/027yu) launched in early 2024 with a synthetic dollar (USDe) backed by Ethereum and hedged with perpetual futures. In a crowded stablecoin market, their "Sats" points program needed to differentiate and drive adoption.
 
 Ethena's approach was to reward both holding and productive deployment. Users earned Sats for holding USDe or the interest-bearing sUSDe, but critically, point rates varied based on where users deployed their capital. Providing liquidity on DeFi protocols earned higher rates than simple holding, incentivizing capital deployment into the broader ecosystem.
 

@@ -115,7 +115,9 @@
           <span>Tags:</span>
         {{ end }}
         {{ range .Params.tags }}
-          <a href="/t/{{ . | lower | replace " " "-" }}" rel="tag" class="tag">{{ . }}</a>
+          {{ if and . (ne (strings.TrimSpace .) "") }}
+          <a href="/t/{{ . | urlize }}" rel="tag" class="tag">{{ . }}</a>
+          {{ end }}
         {{ end }}
 
 

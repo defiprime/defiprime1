@@ -65,7 +65,7 @@ We will continuously expand our brand and presence in the staking space. We will
 
 On top of expanding our portfolio of staking projects we support, we have begun to launch tools that help delegators better understand each protocol and the staking ecosystem around it. We are targeting to launch at least five different tools and features for the top staking projects by the end of this year.
 
-{% youtube "https://youtu.be/bIuAsq6e99g" %}
+{{< youtube bIuAsq6e99g >}}
 
 We are currently hiring talented developers, infrastructure engineers, researchers, business developers, and marketers to help us reach our goals. If you are interested in staking as we are, please do not hesitate to reach out to us with your CV. Let us work together on building out the staking ecosystem!
 

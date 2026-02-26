@@ -69,7 +69,7 @@ We also developed [Tinlake](https://tinlake.com/), a set of contracts and tools 
 
 We are at the intersection of the real-world and on-chain DeFi products. This area is ripe for innovation while also dealing with lots of existing regulation of financial products. Together with our partners, like Maker Foundation and others, we are devising legal frameworks that allow us to operate adequately while also pushing forward to continue delivering new products and supporting new use-cases. It is not always a simple task to get legal clarity. However, we believe that operating within the law is the best way to guarantee the success of our network and our user’s projects.
 
-On the other hand, some DeFi proponents are holding the opinion that real-world assets are not suited well for DeFi. We think they are, even if they might not be 100% trustless. You can read more about that in a [recent post]((https://medium.com/centrifuge/defi-and-the-real-world-a-trust-issue-46f105eebe92?source=collection_home---4------3-----------------------)) of my co-founder Lucas Vogelsang
+On the other hand, some DeFi proponents are holding the opinion that real-world assets are not suited well for DeFi. We think they are, even if they might not be 100% trustless. You can read more about that in a [recent post](https://medium.com/centrifuge/defi-and-the-real-world-a-trust-issue-46f105eebe92?source=collection_home---4------3-----------------------) of my co-founder Lucas Vogelsang
 
 ### What are your goals for the future?
 

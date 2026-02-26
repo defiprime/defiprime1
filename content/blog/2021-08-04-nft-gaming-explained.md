@@ -50,7 +50,7 @@ Gods Unchained is a tactical card game, similar to Hearthstone, which gives play
 ![](/images/blog/nft-gaming-explained/image4.webp)
 
 
-### [Zed Run](zed.run)
+### [Zed Run](https://zed.run)
 
 Zed Run is a virtual race horsing game on the blockchain in which you can buy, breed, sell, and race thoroughbred horses to create your legacy, while generating real monetary return.
 

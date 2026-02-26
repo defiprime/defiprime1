@@ -141,10 +141,13 @@
           })();
         </script>
       </article>
-  {{ if index .Params "alternative-to" }}
-<a href="/{{ index .Params "alternative-to" }}-alternatives">  {{ end }}
+  {{ $altTo := index .Params "alternative-to" }}
+  {{ if $altTo }}
+    {{ $altSlug := "" }}
+    {{ if reflect.IsSlice $altTo }}{{ $altSlug = index $altTo 0 }}{{ else }}{{ $altSlug = $altTo }}{{ end }}
+<a href="/{{ $altSlug }}-alternatives">  {{ end }}
 
-      <h3 class='related-products'>{{ index .Params "product-title" }} alternatives{{ if index .Params "alternative-to" }}</a>{{ end }} in <a
+      <h3 class='related-products'>{{ index .Params "product-title" }} alternatives{{ if $altTo }}</a>{{ end }} in <a
           href="/{{ .Params.colpermalink }}">{{ .Params.coltitle }}</a>:</h3>
       <section class="tiles">
         {{ $posts := .CurrentSection.Pages | shuffle | first 3 }}

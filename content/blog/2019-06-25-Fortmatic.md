@@ -32,7 +32,7 @@ I aspire to build a solution that strikes the right balance by adopting a pragma
 
 To date, some well-known integrations with the Fortmatic SDK include dApps like [TokenSets](/tokensets), Cent, Radar Relay, Zerion, and Fulcrum - with Fortmatic enabling over 65% new interactions from users on mobile web browsers!
 
-![](images/blog/fortmatic2.gif)
+![](/images/blog/fortmatic2.gif)
 
 ### What's Fortmatic backstory?
 

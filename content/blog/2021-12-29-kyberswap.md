@@ -81,7 +81,7 @@ For any developers that want to integrate [KyberSwap](https://kyberswap.com?utm_
 
 Many DeFi and GameFi projects are choosing the capital efficient KyberSwap protocol for their liquidity needs. For example, Sipher has set up a pool and is running a **$50M liquidity mining campaign** with KyberSwap - one of the biggest GameFi campaigns ever!
 
-SIPHER liquidity providers can unlock their share of the $50M in liquidity mining rewards simply by adding any amount of liquidity to the eligible SIPHER-ETH pool on KyberSwap and staking their corresponding LP (liquidity provider) tokens on the ‘Farms’ page. Liquidity providers will then receive KNC rewards, which can be added on KNC liquidity pools, on KyberDAO for additional KNC rewards or on [KrystalGO](krystal.app) for their token sale allocations.
+SIPHER liquidity providers can unlock their share of the $50M in liquidity mining rewards simply by adding any amount of liquidity to the eligible SIPHER-ETH pool on KyberSwap and staking their corresponding LP (liquidity provider) tokens on the ‘Farms’ page. Liquidity providers will then receive KNC rewards, which can be added on KNC liquidity pools, on KyberDAO for additional KNC rewards or on [KrystalGO](https://krystal.app) for their token sale allocations.
 
 In addition, when liquidity providers stake their LP tokens on KyberSwap, they will also receive Kyber Staked LP (SLP) tokens representing their staked SIPHER LP position. This KyberSLP can then be deposited on the [Sipher portal](https://sipher.xyz/stake/deposit/kyber-slp-sipher-eth) to generate SIPHER rewards. Read more [here](https://bit.ly/3miTeX4).
 

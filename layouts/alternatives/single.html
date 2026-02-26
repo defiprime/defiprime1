@@ -222,10 +222,10 @@
                   <p>{{ index $asset_tool.Params "product-description" | markdownify | replaceRE "</?p>" "" }}
                   </p>
                   <div title="Would you recommend this product?" class="comments">
-                    <a href="/product/{{ index $asset_tool.Params "product-title" | urlize }}">
+                    <a href="{{ $asset_tool.RelPermalink }}">
                       {{ partial "icons/comment.svg" $ }}
                       <span class="gc-counter"
-                        data-url="{{ $.Site.BaseURL }}product/{{ index $asset_tool.Params "product-title" | urlize }}">0</span>
+                        data-url="{{ $asset_tool.Permalink }}">0</span>
                       <span class="tip"><span class="icon">👈</span> What do you think?</span>
                     </a>
                   </div>

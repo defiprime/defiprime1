@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>{{ .Params.pagetitle | default .Title }} </title>
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://google-analytics.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://googletagmanager.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preload" href="/images/vector.png" as="image" media="(min-width: 601px)">
+  <link rel="preload" href="/images/logo.svg" as="image" media="(min-width: 601px)">
+  <link rel="preload" href="/images/bg-fon.png" as="image" media="(min-width: 601px)">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta property="og:title" content="{{ .Params.pagetitle | default .Title }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:description" content="{{ .Params.metadescription | default .Site.Params.description }}" />
+  {{ $ogImage := index .Params "featured-image" | default "images/og.png" }}
+  <meta property="og:image" content="{{ $ogImage | absURL }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@defiprime">
+  <meta name="twitter:creator" content="@defiprime">
+  <meta name="twitter:title" content="{{ .Params.pagetitle | default .Title }}">
+  <meta name="twitter:description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
+  <meta name="twitter:image" content="{{ $ogImage | absURL }}">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138327045-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-138327045-1');
+  </script>
+</head>
+
+<body class="product-page">
+
+  {{ partialCached "header.html" . }}
+  <div id="main">
+    <div class="inner">
+      <article class="article article--post content typeset">
+
+        <h1>{{ .Params.h1title | default .Title }}</h1>
+
+        {{ $ecoFilter := .Params.airdrop_ecosystem | default "ethereum" }}
+
+        <section class="section-tickers">
+          <p>{{ .Content }}</p>
+          <div class="container-tickers">
+            <table class="table-tickers">
+              <thead>
+                <tr>
+                  <th>Project</th>
+                  <th>Category</th>
+                  <th>Venture Funding</th>
+                  <th>URL</th>
+                  <th>Twitter</th>
+                  <th>What to do?</th>
+                </tr>
+              </thead>
+              <tbody>
+              {{ $airdrops := site.GetPage "airdrop" }}
+              {{ if $airdrops }}
+                {{ range $airdrops.Pages }}
+                  {{ $eco := .Params.ecosystem | default "" }}
+                  {{ if in $eco $ecoFilter }}
+                  <tr class="ticker-row">
+                    <td>{{ .Title }}</td>
+                    <td>{{ .Params.category }}</td>
+                    <td>{{ .Params.raised }} from {{ .Params.investors }}</td>
+                    <td>
+                      {{ $url := .Params.reflink | default .Params.project_url }}
+                      {{ $display := .Params.project_url | replaceRE "^https?://" "" }}
+                      <a href="{{ $url }}">{{ $display }}</a>
+                    </td>
+                    <td><a href="https://twitter.com/{{ .Params.twitter_handle }}">@{{ .Params.twitter_handle }}</a></td>
+                    <td>{{ .Params.todo | markdownify }} Read more: <a href="{{ .RelPermalink }}">{{ .Params.h1title | default .Title }}</a></td>
+                  </tr>
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+      </article>
+    </div>
+  </div>
+  {{ partialCached "footer.html" . }}
+</body>
+
+</html>

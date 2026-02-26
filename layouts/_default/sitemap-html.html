@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sitemap | DeFiprime.com</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="product-page">
+  {{ partialCached "header.html" . }}
+  <div id="main">
+    <div class="inner">
+      <article class="article article--post content typeset">
+        <h1>Sitemap</h1>
+
+        <ul>
+        {{ range where site.RegularPages "Section" "alternatives" }}
+          {{ if ne .Params.published false }}
+          <li>{{ dateFormat "02 Jan 2006" .Date }} - <a href="{{ .Permalink }}">{{ .Params.pagetitle | default .Title }}</a></li>
+          {{ end }}
+        {{ end }}
+        </ul>
+
+        <ul>
+        {{ range where site.RegularPages "Section" "blog" }}
+          {{ if ne .Params.published false }}
+          <li>{{ dateFormat "02 Jan 2006" .Date }} - <a href="{{ .Permalink }}">{{ .Params.pagetitle | default .Title }}</a></li>
+          {{ end }}
+        {{ end }}
+        </ul>
+
+      </article>
+    </div>
+  </div>
+  {{ partialCached "footer.html" . }}
+</body>
+</html>

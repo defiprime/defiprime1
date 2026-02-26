@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Not Found | DeFiprime.com</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="product-page">
+  {{ partialCached "header.html" . }}
+  <div id="main">
+    <div class="inner">
+      <article class="article article--post content typeset">
+        <header>
+          <h1>URL Not Found</h1>
+        </header>
+        <h2>Recent posts:</h2>
+        <ul>
+          {{ range first 20 (where site.RegularPages "Section" "blog") }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </article>
+    </div>
+  </div>
+  {{ partialCached "footer.html" . }}
+</body>
+</html>

@@ -33,7 +33,7 @@ Using Kyber’s protocol, developers can build innovative payment flows and appl
 
 To date, there are more than 55 blockchain projects that have integrated Kyber for their liquidity needs, including popular wallets MyEtherWallet (MEW), imToken, Trust, Enjin, and HTC Exodus’s Zion Vault, as well as decentralized finance (DeFi) projects such as InstaDApp, Nuo, Set, Fulcrum, and Melonport.
 
-{% youtube "https://www.youtube.com/watch?v=xggWgqU7yVM" %}
+{{< youtube xggWgqU7yVM >}}
 
 ### What's Kyber backstory?
 

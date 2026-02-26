@@ -41,7 +41,7 @@
       {{ partialCached "icons/stellar.svg" . }}
     </span>
     {{ end }}
-    {{ if eq $project.type "non-custodial" }}
+    {{ if eq (index $project "product-type") "non-custodial" }}
     <span title="Non-custodial"> {{ partialCached "icons/non-custodial.svg" . }} </span>
     {{ end }}
     {{ if in $project.platform "ios" }}
@@ -68,7 +68,7 @@
       {{ partialCached "icons/linux.svg" . }}
     </span>
     {{ end }}
-    {{ if in $project.type "cefi" }}
+    {{ if in (index $project "product-type") "cefi" }}
     <span
       title="CeFi product. CeFi products are custodial, use centralized price feeds, initiate margin calls centrally, centrally determine interest rates, and centrally provide liquidity for their margin calls."
     >

@@ -26,7 +26,7 @@ DeFi projects ranging from lending services to atomic trading bots can tap into 
 
 To give your readers a sense of our progress so far, over a billion dollars in trades have flowed through the 0x protocol, 100+ projects have utilized 0x to enable p2p exchange functionality in their apps, and 0x’s networked liquidity pool often has the lowest slippage on the most popular trading pairs in the DeFi space, including ETH/DAI, ETH/USDC, DAI/USDC, and more.
 
-{% youtube "https://youtu.be/c04eIt3FQ5I" %}
+{{< youtube c04eIt3FQ5I >}}
 
 ### What's 0x's backstory?
 
@@ -46,7 +46,7 @@ Will and Amir also knew that the space was still nascent and would drastically c
 
 To learn more about how 0x works under the hood, check out our smart contract pipeline video series:
 
-{% youtube "https://youtu.be/WSxphhWcLxk" %}
+{{< youtube WSxphhWcLxk >}}
 [YouTube playlist](https://www.youtube.com/playlist?list=PLN51Tjs40v5PIm4avEo1m2Uz08qj0YWPa)
 
 ### What's your business model?
@@ -87,7 +87,7 @@ We look forward to educating regulators around the world on decentralized exchan
 
 Check out our Decrypting the Law video series to get our take on current regulatory issues:
 
-{% youtube "https://youtu.be/dID-wn2dSwk" %}
+{{< youtube dID-wn2dSwk >}}
 [YouTube playlist](https://www.youtube.com/playlist?list=PLN51Tjs40v5PQ5p4TbkQcF7iVtVGR5PGy)
 
 ### What are your goals for the future?

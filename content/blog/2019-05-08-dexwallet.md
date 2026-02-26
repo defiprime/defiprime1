@@ -70,7 +70,7 @@ We want to empower all people in the world with a fairer, more inclusive and mor
 
 It’s been awesome to be part of this revolution for the last couple of years and so many things happened in between! I’m sure this is just the beginning. What we are building has a tangible value already today and, contrary to what they say, I believe DeFi is already faster, easier and better than centralized traditional finance. In a few clicks, we can already offer investments with a 10x higher annual interest than your avg bank saving account.
 
-{% include figure.html image="/images/blog/saving-account-future-idea.png" position="center" height="300" %}
+![](/images/blog/saving-account-future-idea.png)
 
 Without you going to an office to show your passport or sign a contract, without locking time. This is hard to beat. We’re building better products. We are building fairer products. We are building awareness. The future is bright!
 

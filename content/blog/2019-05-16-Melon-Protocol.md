@@ -68,7 +68,7 @@ The modular nature of our software allows DEX’s to be integrated into the Melo
 
 Furthermore, in order to add more value to the user, we aggregated the order books of these exchanges (no easy task!) so that managers were always able to achieve and see best price execution for the fund and ultimately the investors. You can find out more on exchange adapters from [Gautham Nekkanti’s talk](https://www.youtube.com/watch?v=T_P4ZiLzF64&list=PLzdnEGRLbpgZrywI9gc9ZLrZRo8FKoNir&index=6&t=471s) at #M1 in Zug.
 
-{% youtube "https://www.youtube.com/watch?v=T_P4ZiLzF64&list=PLzdnEGRLbpgZrywI9gc9ZLrZRo8FKoNir&index=6&t=471s" %}
+{{< youtube T_P4ZiLzF64 >}}
 
 Another feature we added was the ability to whitelist the public addresses of investors so that KYC/AML on the participants in a fund could be performed where it is required by regulations.
 

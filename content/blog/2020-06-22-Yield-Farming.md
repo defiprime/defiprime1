@@ -32,7 +32,7 @@ For the next 4 years, [Compound](https://compound.finance/) is offering “liqui
 
 The start of this reward system caught the attention of plenty of traders. In the days since, many folks have moved their assets into Compound in order to start yield farming COMP distributions. Additionally, third-party projects are helping to facilitate COMP farming like the smart wallet project [InstaDApp](https://dsa.instadapp.io/compound), which rolled out a “Maximize $COMP mining” widget to help users easily hop in on the action in just a few clicks. Essentially, it’s [mining using a leveraged position](https://twitter.com/Instadapp/status/1272610924860448769): people borrow and deposit assets simultaneously in order to get more COMP. You can perform the same actions manually without a smart wallet, but something like InstaDApp makes this yield farming much easier, in just a few clicks.
 
-{% youtube "https://www.youtube.com/watch?v=lcLqPLRFfro" %}
+{{< youtube lcLqPLRFfro >}}
 
 InstaDApp’s made yield farming easy for Compound users.
 
@@ -56,7 +56,7 @@ Another intriguing opportunity for yield farmers comes courtesy of a new partner
 
 Because of the unique way the system has been set up, participants who provide WBTC, renBTC, and sBTC liquidity to the new BTC Curve liquidity pool will simultaneously earn BAL, SNX, REN, and CRV (Curve’s coming reward token). That’s a yield farmer’s dream come true, but how’s it possible? First off, the Synthetix and Ren teams have created a Balancer pool composed of SNX and REN tokens. This pool will generate BAL from Balancer’s liquidity mining campaign, as well as liquidity provider (LP) rewards in the form of BPT, which is simply a wrapped combination of SNX and REN.
 
-{% youtube "https://www.youtube.com/watch?v=fGxTwm-rf1s" %}
+{{< youtube fGxTwm-rf1s >}}
 
 For 10 weeks, then, this generated BAL and BPT will go to depositors who provide liquidity to the BTC Curve liquidity pool. Additionally, the LPs will also be allocated CRV tokens for servicing Curve.
 

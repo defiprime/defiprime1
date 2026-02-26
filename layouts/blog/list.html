@@ -58,7 +58,9 @@
               {{ if .Params.tags }}
                 <div class="tags">
                   {{ range .Params.tags }}
-                  <a href="/t/{{ . | lower | replaceRE " " "-" }}" class="tag">{{ . }}</a>
+                    {{ if and . (ne (strings.TrimSpace .) "") }}
+                  <a href="/t/{{ . | urlize }}" class="tag">{{ . }}</a>
+                    {{ end }}
                   {{ end }}
                 </div>
               {{ end }}

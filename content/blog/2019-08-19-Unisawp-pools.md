@@ -150,6 +150,6 @@ Keep in mind, like I said before, the fees are interesting, but the other side o
 
 Hope this was a useful tutorial and helps you decide whether or not Uniswap's liquidity pools are for you or not. Try it with as small in amount as you want to do it in. You can do with a dollar or $10, whatever. Just give it a try with a really small amount before you jump in with both feet. Watch the ratios and how they work, and then you can decide later if it's something you want to get bigger into.
 
-{% youtube "https://www.youtube.com/watch?v=IotszRJdtYw&feature=youtu.be" %}
+{{< youtube IotszRJdtYw >}}
 ---
 If you like this tutorial, please subscribe to Chris Blec [youtube channel](https://www.youtube.com/channel/UCuulLHp0eyXnl9yAao_pbEA). He is putting out content several times a week on DeFi, on all sorts of different projects, compound finance, Uniswap, etcetera.  

@@ -95,20 +95,20 @@ The Hyperliquid ecosystem is rapidly expanding, with projects spanning DeFi, gam
 
 - **Impact**: KittenSwap’s ve(3,3) model and community-driven incentives, including its points program and NFT integration, make it a cornerstone of Hyperliquid’s DeFi ecosystem, driving user engagement and liquidity provision.
 
-##### [Valantis![](images/blog/hyperchain/valantis.png)](https://www.valantis.xyz/)
+##### [Valantis![](/images/blog/hyperchain/valantis.png)](https://www.valantis.xyz/)
 
 - **Overview**: Valantis is a modular decentralized exchange (DEX) protocol on HyperEVM, launched in 2023 by Valantis Labs, designed to empower developers to create customized, composable DEXes. Its Sovereign Pools and Core Pools use reusable modules for pricing logic, fee calculation, oracle services, and liquidity management, mitigating liquidity fragmentation through shared external vaults. Valantis supports rebase tokens, such as liquid staking tokens (LSTs), and its HOT-AMM pool has facilitated over $50 million in trading volume with $5 million in liquidity. With $44.21 million in total value locked (TVL) on Hyperliquid, Valantis offers yield opportunities, including swap fees, lending, staking, and 2x HypurrFi points for $HYPE deposits. Backed by \$7.5 million in funding from investors like Triton Capital and Anthony Sassano, Valantis is a cornerstone of Hyperliquid’s DeFi infrastructure, enabling developers to build innovative DEX designs with enhanced security and capital efficiency.
 
 - **Impact**: Valantis’s modular framework and support for advanced DeFi features make it a critical liquidity hub, driving developer adoption and trader engagement.
 
-##### [Hyperbeat![](images/blog/hyperchain/hyperbeat.png)](https://app.hyperbeat.org/earn?referral=B2E11A94)
+##### [Hyperbeat![](/images/blog/hyperchain/hyperbeat.png)](https://app.hyperbeat.org/earn?referral=B2E11A94)
 
 - **Overview**: Hyperbeat is a decentralized lending and borrowing protocol on Hyperliquid’s HyperEVM, launched in early 2025, designed to enhance capital efficiency for traders and liquidity providers. It allows users to lend assets like $HYPE, $KITTEN, and stablecoins to earn interest or borrow against collateral to participate in Hyperliquid’s spot and perpetual futures markets. Hyperbeat integrates with Hyperliquid’s native order books, enabling seamless interaction between lending pools and trading activities. The protocol offers dynamic interest rates based on market demand and supports overcollateralized loans to ensure stability. With a focus on user-friendly interfaces and low-latency transactions, Hyperbeat has attracted significant attention, boasting \$20 million in TVL within its first month. Its points-based reward system incentivizes early adopters, with plans for a native token launch to further align community interests.
 - **Impact**: Hyperbeat strengthens Hyperliquid’s DeFi ecosystem by providing critical lending infrastructure, enabling leveraged trading and yield opportunities for a broad range of users.
 
 #### Trading and Analytics Tools
 
-##### [Pvp.trade![](images/blog/hyperchain/pvptrade.png)](https://pvp.trade/join/44qh50)
+##### [Pvp.trade![](/images/blog/hyperchain/pvptrade.png)](https://pvp.trade/join/44qh50)
 
 - **Overview**: Pvp.trade is a Telegram-based trading bot for spot and perpetual futures on Hyperliquid. It integrates social and competitive trading features, allowing users to earn points for future airdrops.
 - **Key Features**:
@@ -155,7 +155,7 @@ The Hyperliquid ecosystem is rapidly expanding, with projects spanning DeFi, gam
   - Community-driven design and governance.
 - **Impact**: Hypio adds a creative dimension to Hyperliquid, attracting NFT enthusiasts and collectors.
 
-##### [TheFarm.fun![](images/blog/hyperchain/thefarm.png)](https://www.thefarm.fun/)
+##### [TheFarm.fun![](/images/blog/hyperchain/thefarm.png)](https://www.thefarm.fun/)
 
 - **Overview**: TheFarm.fun is a pioneering AI-powered gaming platform on Hyperliquid, launched in 2024, that combines generative AI and blockchain to create a unique on-chain creature generation system. Users can mint pixelated NFT creatures from real animal photos using a proprietary GenAI model, with the top 50 creatures, known as “The Ancestors,” forming the foundation of the ecosystem. The platform has confirmed a \$FARM token airdrop, allocating 5% of the total supply to reward creators and voters, with 50% for Ancestors, 30% for other minted creatures, and 20% for voters selecting Ancestors. TheFarm.fun’s roadmap includes simulation gameplay and battle/esports features, aiming to build a comprehensive gaming ecosystem. With strong community engagement and innovative AI integration, it has quickly gained traction, offering a novel blend of creativity and gamification.
 

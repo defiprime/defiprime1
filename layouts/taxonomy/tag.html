@@ -62,7 +62,9 @@
           <article>
             <div class="tags">
               {{ range .Params.tags }}
-              <a href="/t/{{ . | lower | replace " " "-" }}" class="tag">{{ . }}</a>
+                {{ if and . (ne (strings.TrimSpace .) "") }}
+              <a href="/t/{{ . | urlize }}" class="tag">{{ . }}</a>
+                {{ end }}
               {{ end }}
             </div>
             <a href="{{ .RelPermalink }}">

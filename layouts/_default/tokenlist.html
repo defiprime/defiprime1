@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{ .Params.pagetitle | default .Title }}</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ $ogImage := index .Params "featured-image" | default "images/og.png" }}
+  <meta property="og:title" content="{{ .Params.pagetitle | default .Title }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:image" content="{{ $ogImage | absURL }}" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@defiprime">
+  <meta name="twitter:image" content="{{ $ogImage | absURL }}">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138327045-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-138327045-1');
+  </script>
+</head>
+<body class="product-page">
+  {{ partialCached "header.html" . }}
+  <div id="main">
+    <div class="inner">
+      <article class="article article--post content typeset">
+
+        <h1>DeFi Tokens List</h1>
+
+        <section class="sectoin-tickers">
+          <p>We are participating in <a href="https://tokenlists.org/">Token Lists</a> initiative, providing and maintaining a <a href="https://tokenlists.org/token-list?url=https://defiprime.com/defiprime.tokenlist.json">list of reputable DeFi tokens tied to the products listed at Defiprime.</a> Visual representation of the Defiprime token list could be found below with a market stats.</p>
+          <div class="container-tickers">
+            <table class="table-tickers">
+              <thead>
+                <tr>
+                  <th class="ticker-product-title">Product</th>
+                  <th class="ticker-address-title">Address</th>
+                  <th class="ticker-address-copy"></th>
+                  <th class="ticker-price-title">Price, $</th>
+                  <th class="ticker-change-title">24h Change</th>
+                  <th class="ticker-vol-title">24h Volume, $</th>
+                  <th class="ticker-market-cap-title">Market Capitalization, $</th>
+                </tr>
+              </thead>
+              <tbody>
+              {{/* Gather all products with ticker field */}}
+              {{ $productSection := site.GetPage "product" }}
+              {{ range $productSection.Sections }}
+                {{ range .Pages }}
+                  {{ if .Params.ticker }}
+                  <tr class="ticker-row">
+                    <td class="ticker-product"><span class="name">{{ index .Params "product-title" }}</span> <span class="ticker">${{ .Params.ticker }}</span> <span class="coltitle">({{ .Params.coltitle }})</span></td>
+                    <td title="{{ .Params.contract }}" class="ticker-address">
+                      <a href="https://etherscan.io/address/{{ .Params.contract }}" target="_blank" rel="noopener noreferrer" class="link-address">{{ .Params.contract }}</a>
+                    </td>
+                    <td class="btncopy"><span class="tooltip default-hover" title="Copied">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                    </span></td>
+                    <td class="ticker-price loading">
+                      <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                      <span class="sign">$</span><span class="ticker-price-value"></span>
+                    </td>
+                    <td class="ticker-change loading">
+                      <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                      <span class="ticker-change-plus">+</span><span class="ticker-change-value"></span><span class="precent">%</span>
+                    </td>
+                    <td class="ticker-vol loading">
+                      <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                      <span class="sign">$</span><span class="ticker-vol-value"></span>
+                    </td>
+                    <td class="ticker-market-cap loading">
+                      <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                      <span class="sign">$</span><span class="ticker-market-cap-value"></span>
+                    </td>
+                    <td class="ticker-link"><a href="https://dex.guru/token/eth/{{ .Params.contract }}" target="_blank" class="button-trade">Analytics</a></td>
+                  </tr>
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+              </tbody>
+            </table>
+          </div>
+          <p>Market data provided by <a href="https://www.coingecko.com/">Coingecko API</a>.</p>
+        </section>
+
+        <script defer src="/assets/js/defi_tickers.js"></script>
+      </article>
+    </div>
+  </div>
+  {{ partialCached "footer.html" . }}
+</body>
+</html>

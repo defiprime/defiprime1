@@ -21,7 +21,7 @@ My name is Leighton Cusack, and I’m working on Ethereum applications that help
 
 Right now, that’s [PoolTogether](https://app-v3.pooltogether.com/?referrer=0xebdb626c95a25f4e304336b1adcad0521a1bdca1) -- an Ethereum app designed to make saving money as fun as playing a game. PoolTogether is based on the concept of a “prize linked savings account”, you deposit Dai for a chance to win a prize, and even if you don’t win, you keep all your money!
 
-![](images/blog/pooltogether2.png)
+![](/images/blog/pooltogether2.png)
 
 
 This is possible because the prize is funded by the interest that accrues on all of the money deposited. Your chance to win is directly proportional to the amount of money you deposit. So depositing 100 Dai will give you 100 tickets. If there is 500,000 Dai in the pool, then you’ll have a 1 in 50,000 chance of winning the prize each time. As long as your money stays in the pool, you are eligible to win prizes, and you can remove your money whenever you want it.  
@@ -37,7 +37,7 @@ I went to ETHDenver in 2019 and pitched the idea there. I worked on the idea wit
 
 We didn’t do much market validation because we already were aware of how successful the concept had been in the fiat world. We believed building it on Ethereum would only make it better.
 
-![](images/blog/pooltogether1.png)
+![](/images/blog/pooltogether1.png)
 
 ### What went into building the Pooltogether?
 

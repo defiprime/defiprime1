@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>{{ .Params.pagetitle | default .Title }} </title>
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://google-analytics.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://googletagmanager.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preload" href="/images/vector.png" as="image" media="(min-width: 601px)">
+  <link rel="preload" href="/images/logo.svg" as="image" media="(min-width: 601px)">
+  <link rel="preload" href="/images/bg-fon.png" as="image" media="(min-width: 601px)">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="preload" as="style">
+  <style>{{ partial "critical.css" . }}</style>
+  <script>!function(e){"use strict";var t=function(t,n,r){var o,i=e.document,a=i.createElement("link");if(n)o=n;else{var l=(i.body||i.getElementsByTagName("head")[0]).childNodes;o=l[l.length-1]}var d=i.styleSheets;a.rel="stylesheet",a.href=t,a.media="only x",function e(t){if(i.body)return t();setTimeout(function(){e(t)})}(function(){o.parentNode.insertBefore(a,n?o:o.nextSibling)});var f=function(e){for(var t=a.href,n=d.length;n--;)if(d[n].href===t)return e();setTimeout(function(){f(e)})};return a.addEventListener&&a.addEventListener("load",function(){this.media=r||"all"}),a.onloadcssdefined=f,f(function(){a.media!==r&&(a.media=r||"all")}),a};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this);</script>
+  <link rel="preload" href="{{ "/assets/css/main.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ "/assets/css/main.css" | relURL }}"></noscript>
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta property="og:title" content="{{ .Params.pagetitle | default .Title }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:description" content="{{ .Params.metadescription | default .Site.Params.description }}" />
+  {{ $ogImage := .Params.og | default (index .Params "featured-image") | default "images/og.png" }}
+  <meta property="og:image" content="{{ $ogImage | absURL }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@defiprime">
+  <meta name="twitter:creator" content="@defiprime">
+  <meta name="twitter:title" content="{{ .Params.pagetitle | default .Title }}">
+  <meta name="twitter:description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
+  <meta name="twitter:image" content="{{ $ogImage | absURL }}">
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+    integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+    crossorigin="anonymous"></script>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PB9GWJD');</script>
+</head>
+
+<body class="product-page">
+
+  {{ partialCached "header.html" . }}
+  <div id="main">
+    <div class="inner">
+      <article class="article article--post content typeset">
+
+        <h1>{{ .Params.h1title | default .Title }}</h1>
+
+        {{/* Determine ecosystem filter - use "ecosystem-filter" param or derive from URL */}}
+        {{ $ecoFilter := .Params.ecosystem_filter | default (path.Base .Params.url | default .File.ContentBaseName) }}
+
+        {{/* Gather all products from all sub-sections */}}
+        {{ $productSection := site.GetPage "product" }}
+        {{ $allProducts := slice }}
+        {{ range $productSection.Sections }}
+          {{ range .Pages }}
+            {{ $allProducts = $allProducts | append . }}
+          {{ end }}
+        {{ end }}
+
+        {{/* Filter products matching this ecosystem */}}
+        {{ $ecoProducts := slice }}
+        {{ range $allProducts }}
+          {{ $eco := index .Params "ecosystem" | default "" }}
+          {{ if in $eco $ecoFilter }}
+            {{ $ecoProducts = $ecoProducts | append . }}
+          {{ end }}
+        {{ end }}
+
+        {{/* Count stats for the intro text */}}
+        {{ $totalProducts := len $allProducts }}
+        {{ $ecoCount := len $ecoProducts }}
+
+        <div class="custodian_description">
+          <p>DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ $totalProducts }} DeFi projects listed and {{ $ecoCount }} of them built on {{ .Title | replaceRE " DeFi Ecosystem" "" }}.</p>
+        </div>
+
+        {{/* Define categories in display order */}}
+        {{ $categories := slice
+          (dict "section" "assets-management-tools" "title" "Asset Management Tools")
+          (dict "section" "alternative-savings" "title" "Alternative Savings Apps")
+          (dict "section" "derivatives" "title" "Derivatives")
+          (dict "section" "yield-aggregators" "title" (printf "Yield Aggregators on %s" (.Title | replaceRE " DeFi Ecosystem" "")))
+          (dict "section" "exchanges" "title" (printf "Decentralized exchanges on %s" (.Title | replaceRE " DeFi Ecosystem" "")))
+          (dict "section" "perps" "title" (printf "Perps on %s" (.Title | replaceRE " DeFi Ecosystem" "")))
+          (dict "section" "infrastructure" "title" "DeFi Infrastructure & Dev Tooling")
+          (dict "section" "dao" "title" (printf "%s-based DAO Platforms" (.Title | replaceRE " DeFi Ecosystem" "")))
+          (dict "section" "insurance" "title" "Decentralized Insurance Platforms")
+          (dict "section" "assets-tokenization" "title" "Asset Tokenization")
+          (dict "section" "kyc_identity" "title" "KYC & Identity")
+          (dict "section" "lending" "title" (printf "Decentralized Lending on %s" (.Title | replaceRE " DeFi Ecosystem" "")))
+          (dict "section" "payments" "title" "Payments Solutions and Service Providers")
+          (dict "section" "marketplaces" "title" "Marketplaces")
+          (dict "section" "prediction_markets" "title" "Prediction Markets")
+          (dict "section" "stablecoins" "title" "Stablecoins")
+          (dict "section" "staking" "title" "Staking")
+          (dict "section" "analytics" "title" "Analytics")
+        }}
+
+        {{ range $categories }}
+          {{ $cat := . }}
+          {{ $catSection := site.GetPage (printf "product/%s" .section) }}
+          {{ if $catSection }}
+            {{ $catProducts := slice }}
+            {{ range $catSection.Pages }}
+              {{ $eco := index .Params "ecosystem" | default "" }}
+              {{ if in $eco $ecoFilter }}
+                {{ $catProducts = $catProducts | append . }}
+              {{ end }}
+            {{ end }}
+            {{ if gt (len $catProducts) 0 }}
+
+<h1>{{ $cat.title }}</h1>
+
+              {{ range $catProducts }}
+                {{ $isDao := eq $cat.section "dao" }}
+                {{ $productUrl := index .Params "product-url" }}
+                {{ $productTitle := index .Params "product-title" }}
+
+<h3>{{ if $isDao }}<a href="{{ $productUrl }}">{{ $productTitle }}</a>{{ else }}<a href="{{ .RelPermalink }}">{{ $productTitle }}</a>{{ end }}</h3>
+
+{{ partial "ecosystem-icons.html" . }}
+{{ index .Params "product-description" | markdownify }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+      </article>
+    </div>
+  </div>
+  {{ partialCached "footer.html" . }}
+</body>
+
+</html>

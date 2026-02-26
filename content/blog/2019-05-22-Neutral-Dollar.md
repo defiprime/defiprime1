@@ -32,7 +32,7 @@ The first product is Neutral Dollar (NUSD), a [basket of stablecoins](https://me
 
 The use cases are really exciting, and shows that NUSD is not only a product but more of an ecosystem. Any use case that a stablecoin has can also be addressed by NUSD. If NUSD can’t directly satisfy a use case, then a user can break apart NUSD into a component that can. NUSD itself as a product has better risk characteristics simply due to diversification. Similarly, the liquidity of constituents are pooled and aggregated due to the creation/redemption mechanism (a great example is fixed income ETFs, which created an easy way to invest in a typically illiquid asset class).
 
-{% youtube "https://www.youtube.com/watch?v=TyOPwF6WyJY" %}
+{{< youtube TyOPwF6WyJY >}}
 
 So for end users, NUSD is a more [stable stablecoin](https://medium.com/@neutralproject/intro-to-neutral-dollar-98f95d1ff9f4). For traders, it’s a natural way to engage in arbitrage and unlock price discovery mechanics on underlying stablecoins. For institutions, it provides an autonomous way to rebalance stablecoin exposures due to the underlying activity and help facilitate primary and secondary market activity. Any application for stablecoins, we want it to exist for NUSD and more.
 
