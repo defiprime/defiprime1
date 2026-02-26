@@ -13,7 +13,7 @@ author: Defiprime
 tags: ["DeFi Guides", "Infrastructure"]
 ---
 
-The blockchain landscape has split more sharply than most architects acknowledge. The EVM ecosystem—[Ethereum](/ethereum) and its compatible chains—runs on a shared global state machine that anyone can read, write to, and build on without permission. [Canton](https://canton.network), built atop [Digital Asset](https://www.digitalasset.com)'s [Daml](https://www.daml.com) smart contract language, was designed around privacy, legal enforceability, and the operating constraints of regulated financial institutions. These two systems answer different questions. Comparing them as if they were racing toward the same finish line misses the point.
+The blockchain landscape has split more sharply than most architects acknowledge. The EVM ecosystem—[Ethereum](/ethereum) and its compatible chains—runs on a shared global state machine that anyone can read, write to, and build on without permission. [Canton](https://canton.network), built atop [Digital Asset](https://www.digitalasset.com)'s [Daml](https://docs.canton.network) smart contract language, was designed around privacy by default, optional legal enforceability, and the ability to support both permissionless participation and regulated applications on the same network. These two systems answer different questions. Comparing them as if they were racing toward the same finish line misses the point.
 
 Getting the comparison right means tracing each system back to the assumptions its architects made: what they decided the ledger was _for_, who they imagined would use it, and which failure modes kept them up at night.
 
@@ -31,7 +31,7 @@ This philosophy produced a remarkably active software ecosystem. [Uniswap](/unis
 
 Canton starts from a different premise: for most institutional financial workflows—securities settlement, syndicated lending, FX netting, derivative clearing—_selective disclosure_ is a regulatory and commercial requirement, not a preference. A bond issuer cannot expose its complete order book to every network participant. A bank cannot share the details of a bilateral derivative with counterparties who have no relationship to that trade.
 
-Digital Asset's response was to abandon the shared global state model. In Canton, there is no global ledger that all participants maintain. Each piece of data—each "contract" in Daml parlance—is known only to the parties explicitly named in it. The ledger is not a database everyone reads; it is a collection of private sub-ledgers whose consistency is guaranteed by cryptographic proofs and a synchronization protocol between domain operators and participants. The network does not achieve consensus on a single world-state. It achieves consensus on _the sub-set of state that each participant is entitled to see_, and those sub-ledgers are kept consistent by a protocol that guarantees global coherence without global visibility.
+Digital Asset's response was to abandon the shared global state model. In Canton, there is no global ledger that all participants maintain. Each piece of data—each "contract" in Daml parlance—is known only to the parties explicitly named in it. The ledger is not a database everyone reads; it is a collection of private sub-ledgers whose consistency is guaranteed by cryptographic proofs and a synchronization protocol between synchronizers and participant nodes. The network does not achieve consensus on a single world-state. It achieves consensus on _the sub-set of state that each participant is entitled to see_, and those sub-ledgers are kept consistent by a protocol that guarantees global coherence without global visibility.
 
 That architectural choice has consequences for execution, privacy, scalability, and trust throughout the stack.
 
@@ -51,11 +51,11 @@ Gas is the metering mechanism. Every EVM opcode has a fixed gas cost; the sum mu
 
 Canton's execution model is built around the concept of a _contract_—not in the Ethereum sense of "code living at an address," but in the legal-contract sense: a data structure representing an agreement between named parties, along with a set of permissible actions (choices) that those parties can exercise. Daml contracts have explicit signatories (parties whose authority created the contract), observers (parties who can see the contract), and controllers (parties who can exercise specific choices).
 
-When a Daml choice is exercised, the transaction is represented as a _transaction tree_: a hierarchical structure of create, exercise, and archive actions. This tree is decomposed before being submitted to the network. Each node in the tree is disclosed only to the participants who need to see it—the parties to the contracts involved in that node. The Canton protocol routes these fragments to the appropriate domain nodes, which validate the sub-transactions they are responsible for without seeing the sub-transactions that belong to other parties.
+When a Daml choice is exercised, the transaction is represented as a _transaction tree_: a hierarchical structure of create, exercise, and archive actions. This tree is decomposed before being submitted to the network. Each node in the tree is disclosed only to the participants who need to see it—the parties to the contracts involved in that node. The Canton protocol routes these fragments to the appropriate participant nodes via a synchronizer. The synchronizer—which contains a sequencer and a mediator—handles ordering, delivery, and a two-phase atomic commit, but does not execute or validate any transaction. Validation is performed by participant nodes (Validators), which confirm only the sub-transactions they are party to, without seeing sub-transactions that belong to other parties.
 
 The result is _sub-transaction privacy_: in a multi-step workflow involving Party A, Party B, and Party C, Party A does not automatically learn the details of the step that occurs only between Party B and Party C, even if that step is part of the same atomic transaction. This is architecturally unavailable in the EVM without a separate off-chain computation layer and cryptographic proofs (as ZK co-processors like [Risc Zero](https://www.risczero.com) attempt to provide).
 
-Canton validators—called _domain nodes_ or _sequencers_—process these transactions through a BFT-based ordering layer. The sequencer timestamps and orders messages, but it does not see the content of private contract data. Participant nodes validate the transactions they are party to, apply them to their local contract state, and maintain only the slice of the global ledger that belongs to them.
+Canton [Validators](https://docs.global.canton.network) process these transactions on the participant side. The synchronizer—a separate infrastructure component—provides BFT-based ordering and a two-phase atomic commit protocol, but does not see the content of private contract data. Validators confirm the transactions they are party to, apply them to their local contract state, and maintain only the slice of the global ledger that belongs to them. Anonymous Validators can join the network and contribute to transaction processing without disclosing their identity.
 
 One operational distinction worth noting: Canton transactions reference _specific contract instances by their unique contract ID_, not by a globally shared storage slot. This means Canton's execution model resembles a UTXO model more than an account model—contracts are created, referenced by subsequent transactions, and eventually archived. There is no mutable global key-value store that all participants read from and write to. This has significant implications for concurrency, addressed in the scalability section.
 
@@ -83,7 +83,7 @@ None of these approaches is native to the EVM itself. They are layers applied on
 
 Canton's privacy model is built into the transaction model rather than layered over it. The key mechanisms:
 
-_Party-level privacy_ — a contract's data is stored only on the participant nodes of the parties explicitly named in the contract. The domain node (sequencer) sees encrypted metadata necessary for ordering but not the contract payload itself.
+_Party-level privacy_ — a contract's data is stored only on the participant nodes of the parties explicitly named in the contract. The synchronizer sees encrypted metadata necessary for ordering but not the contract payload itself.
 
 _Sub-transaction privacy_ — as described above, different legs of a multi-leg transaction can be disclosed to different subsets of parties. A CCP (central counterparty) might see only the net obligations between parties, not the gross bilateral trades that produced them.
 
@@ -91,7 +91,7 @@ _Divulgence_ — Canton supports a mechanism by which a party can be shown a con
 
 _Cryptographic verification_ — participants validate transactions cryptographically, checking that exercises on contracts are authorized by the correct parties and that the transaction tree is internally consistent, without needing to see contracts held by other parties. This uses Merkle proofs and commitment schemes embedded in the Canton protocol.
 
-Concretely: a Canton deployment at a bank consortium can have participant A and participant B transact with each other, with participant C serving as a domain operator, without participant C learning the economic terms of A and B's trade. On any EVM chain, this requires additional cryptographic machinery that does not yet exist at production scale for complex financial contracts.
+Concretely: a Canton deployment at a bank consortium can have participant A and participant B transact with each other, with participant C operating the synchronizer, without participant C learning the economic terms of A and B's trade. On any EVM chain, this requires additional cryptographic machinery that does not yet exist at production scale for complex financial contracts.
 
 The tradeoff: Canton's privacy model makes global verifiability hard. A third party who is not a named participant in a contract cannot verify its contents—which is exactly the point, but it means Canton cannot support the permissionless "anyone can verify" security model that Ethereum depends on.
 
@@ -107,19 +107,19 @@ EVM smart contracts are trustless in a specific sense: once deployed, they execu
 
 EVM-compatible L1s and L2s vary significantly in their trust assumptions. [BNB Chain](https://www.bnbchain.org) has 21 active validators—effectively a federated system controlled by Binance-aligned entities. [Polygon](https://polygon.technology) PoS has roughly 100 validators. [Arbitrum](https://arbitrum.io)'s sequencer is currently a single operator (Offchain Labs) with a planned transition to a decentralized sequencer set. These are not Ethereum's security model; they are pragmatic compromises that institutional buyers should understand clearly.
 
-**Canton trust model: legal and cryptographic hybrid**
+**Canton trust model: cryptographic and protocol-level guarantees**
 
-Canton's trust model is explicitly hybrid. It relies on:
+Canton's trust model relies on protocol-enforced guarantees rather than a single enforcement mechanism:
 
-_Cryptographic correctness_ — transaction validity is enforced by the Daml runtime and Canton protocol. Participants cryptographically verify that exercises on contracts are authorized by the correct parties, that contract invariants hold, and that the transaction tree is internally consistent. This is deterministic, not probabilistic.
+_Cryptographic correctness_ — transaction validity is enforced by the [Daml](https://docs.canton.network) runtime and Canton protocol. Validators cryptographically verify that exercises on contracts are authorized by the correct parties, that contract invariants hold, and that the transaction tree is internally consistent. This is deterministic, not probabilistic.
 
-_Domain operator trust_ — the domain node (sequencer) is trusted for _liveness and ordering_ but not for _data confidentiality or correctness_. A malicious domain operator can deny service but cannot forge transactions or read private contract data it is not party to. This is a narrower trust assumption than Ethereum's full validator trust model for individual transactions, but it does rely on the domain operator being available and non-censoring.
+_Synchronizer operator trust_ — the synchronizer provides ordering, delivery, and a two-phase atomic commit. On the [Global Synchronizer](https://docs.global.canton.network), this operates under BFT consensus: all actions require a two-thirds supermajority, so no individual node can censor or block transactions, either actively or by being unavailable. Private subnets may still choose a centralized synchronizer—much as many EVM L2s run centralized sequencers—but the main network does not require a trust relationship with any single operator.
 
-_Legal enforceability_ — Daml was explicitly designed so that a smart contract can be a direct expression of a legal agreement. The signatories on a Daml contract have the same semantics as signatories on a legal document. Digital Asset has structured the system so that disputes can be adjudicated in traditional legal frameworks, with the ledger serving as an auditable record. This maps to how institutional counterparties actually think about agreements.
+_Legal enforceability as an option_ — Daml was designed so that a smart contract _can_ be a direct expression of a legal agreement. The signatories on a Daml contract have the same semantics as signatories on a legal document. Applications built on Canton can choose to leverage traditional legal frameworks, with the ledger serving as an auditable record. This is an application-level choice, not a network-level requirement.
 
-_Synchronized sub-ledger consistency_ — the Canton protocol guarantees that if two participants hold contracts on different domains, a transaction that spans both domains is executed atomically or not at all. This is guaranteed by a cryptographic commitment scheme, not by a single global validator set. The trust assumption here is that each domain's operator is honest about the commits it acknowledges—a weaker assumption than "every validator is honest," but one that participants must evaluate carefully.
+_Synchronized sub-ledger consistency_ — the Canton protocol guarantees that if two participants hold contracts on different synchronizers, a transaction that spans both is executed atomically or not at all. On the Global Synchronizer, this is guaranteed by BFT consensus and a cryptographic commitment scheme, removing the need to trust any individual synchronizer operator.
 
-Canton is better suited to environments where participants are identified legal entities that can be held accountable, where regulators require auditability but not public transparency, and where the realistic attack scenario is a rogue insider rather than an anonymous economic attacker.
+Canton accommodates a range of trust models: from fully permissionless participation at the network level (where any party can join, hold assets, and transact without credentials) to application-level permissioning (where specific apps may require KYC or credentials for their users). This separation is how Canton can be both permissionless and regulatory-compliant simultaneously.
 
 ---
 
@@ -137,15 +137,15 @@ The EVM's sequential execution model creates a bottleneck within a domain: trans
 
 **Canton scalability: horizontal parallelism by design**
 
-Canton's scalability works differently. Because the ledger is partitioned by contract—each contract exists on one or more domain nodes, and transactions reference specific contract IDs—transactions on different contracts can be processed in parallel without conflict detection overhead. There is no global state trie creating write contention.
+Canton's scalability works differently. Because the ledger is partitioned by contract—each contract exists on one or more synchronizers, and transactions reference specific contract IDs—transactions on different contracts can be processed in parallel without conflict detection overhead. There is no global state trie creating write contention.
 
-Adding a new domain node effectively adds a new parallel track for transactions on those contracts. The network scales horizontally: throughput is proportional to the number of domain nodes, and these domains operate in parallel without coordinating on every transaction. Cross-domain transactions require a synchronization round (similar to a two-phase commit), which adds latency but maintains atomicity guarantees.
+Adding a new synchronizer effectively adds a new parallel track for transactions. The network scales horizontally: throughput is proportional to the number of synchronizers, which operate in parallel without coordinating on every transaction. Cross-synchronizer transactions use a two-phase atomic commit protocol, which adds latency but maintains atomicity guarantees.
 
-Digital Asset has published benchmarks showing Canton participant nodes handling thousands of transactions per second per domain. Total network throughput across all domains can scale to enterprise volumes without the global sequencing bottleneck that constrains EVM chains.
+Digital Asset has published benchmarks showing Canton participant nodes handling thousands of transactions per second per synchronizer. Total network throughput across all synchronizers can scale to enterprise volumes without the global sequencing bottleneck that constrains EVM chains.
 
-The tradeoff: Canton's scalability is bounded by the permissioned participant set. Adding throughput requires adding identified, credentialed domain nodes—not simply spinning up anonymous validators. For institutional deployments this is acceptable; for permissionless public networks it is not.
+Since the launch of the Global Synchronizer in mid-2024, Canton's scalability is not bounded by a permissioned participant set. Anonymous Validators can join the network to contribute to transaction processing, and Validator ownership can be transferred after onboarding without disclosure. Adding throughput does not require credentialed or identified operators.
 
-One nuance: Canton's horizontal scaling comes with a composability cost. In the EVM, any contract can call any other contract atomically because they share a global state. In Canton, cross-domain atomic transactions are supported but require coordination between domain operators. Two contracts on the same domain can transact with minimal overhead; two contracts on different domains require the synchronization protocol, which adds round-trip latency. This is manageable in institutional workflows where transaction graphs are pre-defined, but it imposes a design discipline that EVM developers do not face.
+One nuance: Canton's horizontal scaling comes with a composability cost. In the EVM, any contract can call any other contract atomically because they share a global state. In Canton, cross-synchronizer atomic transactions are supported but require coordination between synchronizer operators. Two contracts on the same synchronizer can transact with minimal overhead; two contracts on different synchronizers require the two-phase commit protocol, which adds round-trip latency. This is manageable in workflows where transaction graphs are pre-defined, but it imposes a design discipline that EVM developers do not face.
 
 ---
 
@@ -161,15 +161,17 @@ This permissionlessness is what makes Ethereum genuinely censorship-resistant. P
 
 EVM L2s sacrifice degrees of decentralization for performance. [Arbitrum](https://arbitrum.io)'s sequencer is centralized today. [Base](https://base.org) is operated by Coinbase. [zkSync](https://zksync.io)'s prover infrastructure is controlled by Matter Labs. These are pragmatic choices that meaningfully change the trust model—participants in these systems are trusting specific companies, not a decentralized validator set.
 
-**Canton: deliberate permissioning**
+**Canton: permissionless network, permissioned applications**
 
-Canton makes no pretense of permissionless participation. Domain operators are known, credentialed entities; participants are identified counterparties who have completed onboarding and legal agreements. This is the design intent, not a concession to operational convenience.
+Canton's decentralization model is more nuanced than a simple "permissioned" label suggests. At the _network level_, Canton is permissionless: any party can join, hold assets (Canton Coin, CBTC, USDC, and others), and transact without any permissioning or gating. Node operators do not have to disclose their identity. Hundreds of thousands of uncredentialed users already participate in the network.
 
-The Global Synchronizer (built on Besu-based BFT consensus in the Canton Coin network) provides a decentralized ordering layer for the Canton Network as a whole, with a defined validator set. But "decentralized" here means "decentralized among identified financial institutions and infrastructure providers," not "open to anonymous stakers." The governance model involves vetted super-validators that are accountable entities under legal frameworks.
+Permissioning operates at the _application level_. If a user wants to join a specific regulated application—say, a permissioned securities settlement platform—that application may issue credentials. But this governs the right to use that application, not the network itself. This separation is analogous to how the internet is permissionless infrastructure, while individual websites may require login credentials.
 
-For engineers evaluating Canton for enterprise use, this permissioned model offers meaningful operational guarantees: validators are subject to SLAs, can be held legally accountable for misbehavior, and operate under regulatory supervision. The cryptoeconomic slashing mechanism of Ethereum—designed to align anonymous validators' incentives—is less relevant when the validator set consists of Goldman Sachs, Citi, and Deutsche Bank. Legal accountability replaces cryptoeconomic incentives as the enforcement mechanism.
+The [Global Synchronizer](https://docs.global.canton.network) provides a decentralized ordering layer for the Canton Network. It is built on a BFT consensus ordering layer under Canton's two-phase atomic commit protocol—not on Besu. Super Validators are known entities _by choice_, not by requirement. They advertise their identity voluntarily but operate with complete independence from each other. Every action they take—both on-chain and in off-chain operational and governance decisions—is a vote via two-thirds supermajority. There are no written agreements, contracts, or SLAs between them. Each Super Validator is an independent power center with equal on-chain rights.
 
-The consequence: Canton cannot offer censorship resistance to participants who lack standing in the legal jurisdictions governing the network. A transaction can be blocked by a domain operator acting under regulatory authority. For financial markets, this is a feature—regulators _should_ be able to freeze assets in court-ordered scenarios. For applications requiring censorship resistance, it is disqualifying.
+Super Validators provide no SLA, cannot be held legally accountable for misbehavior, and do not operate under regulatory supervision. They run only the Canton Coin tokenomics app, the Canton Coin Scan app, a name registry, and the Global Synchronizer governance app—none of which are subject to regulation. This is a stronger form of decentralization than Proof of Stake, where validators are economically aligned but can be pressured through their staked capital.
+
+At the network level, Canton does offer censorship resistance. Transactions cannot be blocked by synchronizer operators on the Global Synchronizer, because all ordering and commit operations require BFT consensus. Individual application providers may choose to block transactions within their applications, but this is a feature of those applications, not of the network or the protocol. This is how Canton can be both permissionless and regulatory-compliant simultaneously: the network is open, while applications built on it can enforce whatever compliance requirements their use case demands.
 
 ---
 
@@ -183,7 +185,7 @@ _KYC/AML compliance_ — counterparty identity must be verified before transacti
 
 _Regulatory auditability_ — regulators may need to see transaction details that counterparties do not. Canton's divulgence mechanism handles this natively. On EVM chains, everything is already public—but this creates data privacy problems under GDPR and similar frameworks for private data.
 
-_Settlement finality_ — [Ethereum](/ethereum) provides probabilistic finality (effectively final after ~64 blocks, roughly 13 minutes), though Casper FFG now provides one-slot finality under certain conditions. Most institutional applications require deterministic finality for settlement accounting. Canton's domain sequencer provides deterministic finality within a domain upon ordering.
+_Settlement finality_ — [Ethereum](/ethereum) provides probabilistic finality (effectively final after ~64 blocks, roughly 13 minutes), though Casper FFG now provides one-slot finality under certain conditions. Most institutional applications require deterministic finality for settlement accounting. Canton's synchronizer provides deterministic finality upon ordering.
 
 _Reversibility and legal override_ — Daml's design allows authorized parties (regulators, courts) to archive contracts and create replacement contracts reflecting a corrected state. This is incompatible with EVM's "code is law" philosophy but essential for environments where courts can order asset freezes or trade corrections.
 
@@ -205,15 +207,15 @@ The EVM ecosystem is not irrelevant for enterprise. For _public settlement layer
 
 DeFi, as it exists, is an EVM phenomenon. The combination of permissionless access, global state atomicity, composability, and token standards ([ERC-20](https://eips.ethereum.org/EIPS/eip-20), [ERC-721](https://eips.ethereum.org/EIPS/eip-721), [ERC-4626](https://eips.ethereum.org/EIPS/eip-4626)) has produced a self-reinforcing ecosystem with over \$100 billion in TVL at its peak. [Automated market makers](/exchanges), lending protocols, yield aggregators, [perpetual futures](/perps), and structured products have been built and iterated at a pace no permissioned system can match.
 
-The EVM's suitability for DeFi rests on properties Canton cannot replicate:
+The EVM's suitability for DeFi rests on several distinctive properties:
 
 _Permissionless composability_ — any protocol can integrate with any other without coordination. Flash loans exist because anyone can atomically borrow, use, and repay within a single transaction.
 
-_Open liquidity_ — AMM pools aggregate liquidity from anonymous market makers globally. Price discovery is continuous and transparent.
+_Transparent liquidity_ — AMM pools aggregate liquidity from anonymous market makers globally. Price discovery is continuous and transparent.
 
 _Censorship resistance_ — protocols like [Uniswap](/uniswap-explained) cannot be shut down by a single legal entity, which is what makes them useful as neutral infrastructure.
 
-Canton can support some DeFi-like functionality—Digital Asset has demonstrated atomic swap workflows, repo markets, and CLO waterfall calculations in Daml—but these require identified counterparties, cannot benefit from anonymous liquidity provision, and sacrifice the composability that makes DeFi powerful.
+Canton also supports DeFi—and increasingly does so in production. The network hosts atomic swaps, repo markets, and other financial primitives in Daml. Canton's DeFi differs from EVM DeFi in that liquidity is _private_ rather than transparent: participants and their positions are not visible to the entire network unless an application and its users choose to make information public. This is a different design point, not a limitation—for many financial participants, private liquidity is preferable to transparent liquidity. However, the EVM's deep existing liquidity pools, composability across arbitrary protocols, and transparent price discovery remain advantages that Canton's DeFi ecosystem has not yet matched in scale.
 
 **Canton's financial market infrastructure angle**
 
@@ -230,18 +232,18 @@ A word on ASX: the project was ultimately shelved—not because Daml was technic
 | **Execution model**         | Global shared state, sequential              | Global shared state, sequential (within L2)  | Sub-ledger, contract-scoped parallelism                 |
 | **Privacy**                 | Fully transparent                            | Fully transparent (within L2)                | Sub-transaction privacy by construction                 |
 | **Smart contract language** | Solidity/Vyper → EVM bytecode                | Solidity/Vyper → EVM bytecode                | Daml → Canton protocol                                  |
-| **Finality**                | ~12 min (probabilistic → near-deterministic) | Minutes (optimistic) / seconds (ZK)          | Deterministic, per-domain                               |
-| **Throughput**              | ~15–30 TPS                                   | ~1,000–10,000 TPS (theoretical)              | Thousands TPS per domain, horizontally scalable         |
-| **Decentralization**        | Permissionless, ~1M validators               | Semi-permissioned (sequencer centralization) | Permissioned, identified participants                   |
-| **Censorship resistance**   | High                                         | Medium                                       | Low (by design)                                         |
-| **KYC/AML integration**     | External, fragile                            | External, fragile                            | Native, identity-first                                  |
+| **Finality**                | ~12 min (probabilistic → near-deterministic) | Minutes (optimistic) / seconds (ZK)          | Deterministic, per-synchronizer                         |
+| **Throughput**              | ~15–30 TPS                                   | ~1,000–10,000 TPS (theoretical)              | Thousands TPS per synchronizer, horizontally scalable   |
+| **Decentralization**        | Permissionless, ~1M validators               | Semi-permissioned (sequencer centralization) | Permissionless network; app-level permissioning         |
+| **Censorship resistance**   | High                                         | Medium                                       | High at network level; app-level controls optional      |
+| **KYC/AML integration**     | External, fragile                            | External, fragile                            | App-level, optional per application                     |
 | **Regulatory compliance**   | Requires workarounds                         | Requires workarounds                         | Core design goal                                        |
-| **Composability**           | Global, permissionless                       | Within L2; bridges for cross-L2              | Within domain (atomic); cross-domain (synchronized)     |
-| **Legal enforceability**    | Code is law                                  | Code is law                                  | Daml = legal agreement                                  |
+| **Composability**           | Global, permissionless                       | Within L2; bridges for cross-L2              | Within synchronizer (atomic); cross-synchronizer (two-phase commit) |
+| **Legal enforceability**    | Code is law                                  | Code is law                                  | Daml can express legal agreements (app-level choice)    |
 | **Developer ecosystem**     | Massive, mature                              | Large, growing                               | Smaller, institutional-focused                          |
 | **Reversibility**           | Immutable by default                         | Immutable by default                         | Authorized reversal supported                           |
-| **Ideal use case**          | DeFi, public tokenization, open markets      | DeFi with lower fees, gaming, consumer apps  | Post-trade settlement, bilateral markets, regulated FMI |
-| **Trust model**             | Cryptoeconomic (anonymous validators)        | Operator + cryptoeconomic hybrid             | Legal accountability + cryptographic verification       |
+| **Ideal use case**          | DeFi, public tokenization, open markets      | DeFi with lower fees, gaming, consumer apps  | Private DeFi, post-trade settlement, regulated FMI      |
+| **Trust model**             | Cryptoeconomic (anonymous validators)        | Operator + cryptoeconomic hybrid             | BFT consensus + cryptographic verification              |
 
 ---
 
@@ -261,7 +263,7 @@ Trade corrections, failed settlement remediation, corporate action processing, a
 
 **4. Institutional collateral management**
 
-Collateral moves between custodians, prime brokers, and CCPs throughout a trading day. These moves involve multiple legal entities, are subject to regulatory oversight, and require atomic execution (collateral should not be in transit with no owner for any period). Canton's atomic cross-domain transaction capability, combined with its identity model, maps cleanly to this workflow. [EVM bridges](/history-of-cross-chain-bridge-hacks)—the closest analogue—have lost hundreds of millions of dollars to security exploits and cannot provide the legal identity guarantees required.
+Collateral moves between custodians, prime brokers, and CCPs throughout a trading day. These moves involve multiple legal entities, are subject to regulatory oversight, and require atomic execution (collateral should not be in transit with no owner for any period). Canton's atomic cross-synchronizer transaction capability, combined with its privacy model, maps cleanly to this workflow. [EVM bridges](/history-of-cross-chain-bridge-hacks)—the closest analogue—have lost hundreds of millions of dollars to security exploits and cannot provide the legal identity guarantees required.
 
 **5. Enterprises requiring auditability without transparency**
 
@@ -273,19 +275,19 @@ A fund administrator may need to prove to regulators that all NAV calculations w
 
 **1. Open, permissionless markets**
 
-Any application that benefits from anonymous, global liquidity provision—[decentralized exchanges](/exchanges), lending pools, yield aggregators—requires permissionless participation. Canton's identity requirements make this impossible. If the goal is a market where anyone with an internet connection can provide or consume liquidity, EVM chains are the only realistic option today.
+Any application that benefits from _transparent_, global liquidity provision—[decentralized exchanges](/exchanges), lending pools, yield aggregators—where public price discovery and visible order books are the point, the EVM's transparent model is a natural fit. Canton supports permissionless participation at the network level, but its privacy-first design means liquidity is private by default. For applications where full transparency of all positions and trades is the desired property, EVM chains remain the dominant choice.
 
 **2. Token issuance for public secondary markets**
 
-A tokenized equity that needs to trade on a public DEX, be held in [MetaMask](https://metamask.io), and be listed on Coinbase must live on a public EVM chain. Canton's permissioned model does not connect natively to these distribution channels. Institutional issuers who want both primary market compliance (using Canton for issuance and settlement) and secondary market access (using Ethereum for trading) must bridge between the two systems—adding complexity and risk.
+A tokenized equity that needs to trade on a public DEX, be held in [MetaMask](https://metamask.io), and be listed on Coinbase must live on a public EVM chain. While Canton is permissionless at the network level, its privacy-first architecture does not connect natively to these transparent distribution channels. Institutional issuers who want both private primary market workflows (using Canton for issuance and settlement) and public secondary market access (using Ethereum for trading) must bridge between the two systems—adding complexity and risk.
 
 **3. Developer velocity and ecosystem maturity**
 
-Ethereum's [Solidity](https://soliditylang.org) developer pool numbers in the hundreds of thousands. The tooling—[Hardhat](https://hardhat.org), [Foundry](https://getfoundry.sh), [Tenderly](https://tenderly.co), [OpenZeppelin](https://openzeppelin.com)—is deep and battle-tested. Daml has a steeper learning curve, a smaller developer community, and fewer open-source libraries. For teams that need to ship quickly, iterate based on user feedback, and hire from a large talent pool, the EVM is the pragmatic choice. This is an underrated consideration: the productivity difference between having thousands of answered Stack Overflow questions versus having to read source code is real.
+Ethereum's [Solidity](https://soliditylang.org) developer pool numbers in the hundreds of thousands. The tooling—[Hardhat](https://hardhat.org), [Foundry](https://getfoundry.sh), [Tenderly](https://tenderly.co), [OpenZeppelin](https://openzeppelin.com)—is deep and battle-tested. [Daml](https://docs.canton.network) has a steeper learning curve, a smaller developer community, and fewer open-source libraries. For teams that need to ship quickly, iterate based on user feedback, and hire from a large talent pool, the EVM is the pragmatic choice. This is an underrated consideration: the productivity difference between having thousands of answered Stack Overflow questions versus having to read source code is real.
 
 **4. Composability-dependent applications**
 
-Flash loans, liquidation bots, MEV strategies, and complex multi-protocol yield strategies all depend on global state atomicity across arbitrary contracts. A [flash loan](/aave) that borrows from [Aave](/aave), arbitrages [Uniswap](/uniswap-explained), and repays within a single transaction is only possible because all three protocols share the same EVM state. Canton's domain-partitioned model does not support this kind of arbitrary cross-contract composition without pre-coordination.
+Flash loans, liquidation bots, MEV strategies, and complex multi-protocol yield strategies all depend on global state atomicity across arbitrary contracts. A [flash loan](/aave) that borrows from [Aave](/aave), arbitrages [Uniswap](/uniswap-explained), and repays within a single transaction is only possible because all three protocols share the same EVM state. Canton's synchronizer-partitioned model does not support this kind of arbitrary cross-contract composition without pre-coordination.
 
 **5. Consumer applications and NFT markets**
 
@@ -299,7 +301,7 @@ The interesting question for the next five years is whether these ecosystems con
 
 Privacy on EVM is advancing faster than it was three years ago. [Aztec](https://aztec.network)'s Noir language, [Risc Zero](https://www.risczero.com)'s ZK co-processor, and [EIP-7702](https://eips.ethereum.org/EIPS/eip-7702) collectively push toward a model where private smart contracts are possible on EVM-compatible infrastructure. If ZK proofs become fast enough and the developer experience becomes tractable, the EVM's privacy gap could narrow substantially. At that point, the EVM ecosystem's network effects—tooling, liquidity, developer talent—become formidable competition for Canton in institutional use cases.
 
-Conversely, Canton is expanding its public connectivity. The [Canton Network](https://canton.network)'s Global Synchronizer uses an open validator set for its ordering layer. [Digital Asset](https://www.digitalasset.com) has announced interoperability frameworks with public chains. The vision of Canton as "private institution-grade smart contracts that can settle to public chains" is technically coherent—similar to how traditional finance uses private internal systems ([SWIFT](https://www.swift.com), private ledgers) that ultimately settle through public infrastructure (Fedwire, CHIPS).
+Conversely, Canton has already moved toward public permissionless participation. The [Canton Network](https://canton.network)'s Global Synchronizer operates with an open validator set and BFT consensus, allowing anonymous Validators to join. [Digital Asset](https://www.digitalasset.com) has announced interoperability frameworks with public chains, and both the Canton and [Splice](https://github.com/hyperledger-labs/splice) (governance and Canton Coin for the Global Synchronizer) codebases are publicly available. The vision of Canton as "privacy-preserving smart contracts on a permissionless network that can also interoperate with public chains" is already partially realized—not a future aspiration.
 
 The most likely near-term outcome is complementarity rather than convergence: institutions use Canton for private multi-party workflows and settlement netting, while using Ethereum (or an L2) as a public reference and distribution layer for tokenized assets. The settlement leg is private; the issuance and secondary market leg is public. This mirrors how regulated markets already work—bilateral OTC derivatives settle privately; exchange-traded derivatives use public price feeds.
 
@@ -311,6 +313,6 @@ Canton and EVM-compatible blockchains are not rivals in the same market. They ar
 
 The EVM ecosystem's strengths—permissionless access, global composability, deep liquidity, ecosystem maturity—flow directly from its transparency and shared global state. You cannot have [Uniswap](/uniswap-explained) without every participant being able to see every trade. The EVM is the right answer for open, permissionless financial applications, and it will likely remain so even as its privacy tooling matures.
 
-Canton's strengths—sub-transaction privacy, legal enforceability, regulatory compliance, deterministic finality—also flow from its architectural choices: identified participants, partitioned sub-ledgers, and a trust model built on legal accountability rather than cryptoeconomic incentives. These properties cannot be added to EVM as bolt-ons; they require the decisions Canton made from the start.
+Canton's strengths—sub-transaction privacy, optional legal enforceability, application-level regulatory compliance, deterministic finality—also flow from its architectural choices: partitioned sub-ledgers, a permissionless network with privacy by default, and a trust model built on BFT consensus rather than cryptoeconomic incentives. These properties cannot be added to EVM as bolt-ons; they require the decisions Canton made from the start. Notably, Canton achieves this without sacrificing permissionless participation at the network level—a design that defies the traditional "permissioned vs. permissionless" dichotomy.
 
-For engineers and architects making platform decisions: if your application involves anonymous users, open liquidity, or permissionless composability, build on EVM. If your application involves identified financial institutions, requires confidential multi-party workflows, and must satisfy regulatory obligations that preclude public data exposure, Canton is worth serious architectural consideration. The question is not which platform is better—it is which platform's assumptions match your application's requirements. Getting that analysis right before committing is worth considerably more than any feature comparison, including this one.
+For engineers and architects making platform decisions: if your application benefits from transparent global state, open liquidity pools, and composability across arbitrary public protocols, build on EVM. If your application requires confidential multi-party workflows, privacy-preserving DeFi, or the ability to layer regulatory compliance at the application level while operating on a permissionless network, Canton is worth serious architectural consideration. The question is not which platform is better—it is which platform's assumptions match your application's requirements. Getting that analysis right before committing is worth considerably more than any feature comparison, including this one.
