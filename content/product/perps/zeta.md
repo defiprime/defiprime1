@@ -8,7 +8,7 @@ ecosystem: solana
 product-description: "Zeta is a decentralized derivatives exchange built on the Solana blockchain. It offers a fully on-chain orderbook and focuses on providing a fast, liquid, and ecosystem-oriented platform for trading futures and options."
 coltitle: "Perps"
 colpermalink: perps
-type: non-custodial
+product-type: non-custodial
 filter: Perpetual
 twitter: https://twitter.com/ZetaMarkets
 github: https://github.com/zetamarkets

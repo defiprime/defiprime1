@@ -9,6 +9,6 @@ filter: Borrow Cryptocurrency, Lend Cryptocurrency
 product-description: Kamino Finance aims to provide users with an easy-to-use and efficient way to manage their digital assets, earn passive income, and participate in the growing DeFi ecosystem. The platform offers a variety of features, including automated liquidity provision, lending and borrowing, and yield farming.
 coltitle: "Lending"
 colpermalink: decentralized-lending
-type: non-custodial
+product-type: non-custodial
 twitter: https://twitter.com/kamino_finance
 ---

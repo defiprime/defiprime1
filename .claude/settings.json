@@ -1,0 +1,5 @@
+{
+  "enabledPlugins": {
+    "claude-code-harness@claude-code-harness-marketplace": true
+  }
+}

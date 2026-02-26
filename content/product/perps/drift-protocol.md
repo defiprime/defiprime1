@@ -8,7 +8,7 @@ ecosystem: solana
 product-description: Drift Protocol is an open-sourced, decentralized exchange built on the Solana blockchain, enabling transparent and non-custodial cryptocurrency trading.
 coltitle: "Perps"
 colpermalink: perps
-type: non-custodial
+product-type: non-custodial
 filter: Perpetual
 twitter: https://twitter.com/driftprotocol
 github: https://github.com/drift-labs

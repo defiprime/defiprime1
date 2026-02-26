@@ -1,0 +1,5 @@
+{
+  "command": "plan-with-agent",
+  "started_at": "2026-02-26T13:07:43Z",
+  "prompt_preview": "/plan-with-agent I want to migrate this site to HUgo CMS. we need to keep exactly the same design, layout, functionality and url structure. build extensive test suit to cover migration. investigate in"
+}

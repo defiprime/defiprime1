@@ -6,7 +6,7 @@ product-url: https://www.liquity.org
 image: /images/output_md/liquity.org.jpg
 ecosystem: ethereum
 product-description: "Liquity is a decentralized borrowing protocol that allows you to draw interest-free loans against Ether used as collateral. [Interview with founder](/liquity)."
-type: non-custodial, CDP
+product-type: non-custodial, CDP
 filter: Borrow Cryptocurrency
 coltitle: "Lending"
 colpermalink: decentralized-lending

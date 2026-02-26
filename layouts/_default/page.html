@@ -203,7 +203,7 @@
                     </span>
                     {{ end }}
                     {{ end }}
-                    {{ $type_tags := split (index $asset_tool.Params "type") ", " }}
+                    {{ $type_tags := split (index $asset_tool.Params "product-type") ", " }}
                     {{ range $type_tags }}
                     {{ if eq . "cefi" }}
                     <span class="tooltip"

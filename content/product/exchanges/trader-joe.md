@@ -5,7 +5,7 @@ product-title: Trader Joe
 product-url: https://www.traderjoexyz.com/#/home
 image: /images/output_md/traderjoexyz.com.jpg
 ecosystem: avalanche
-type: non-custodial
+product-type: non-custodial
 filter: No KYC
 product-description: Trader Joe is a one stop decentralized trading platform on Avalanche that helps users swap between two tokens
 coltitle: "Decentralized exchanges"

@@ -1,0 +1,40 @@
+{
+  "version": "1.0",
+  "updatedAt": "2026-02-26T16:13:37.859Z",
+  "skills": {},
+  "commands": {
+    "harness-init": {
+      "count": 1,
+      "lastUsed": "2026-02-26T13:04:40.000Z"
+    },
+    "plan-with-agent": {
+      "count": 1,
+      "lastUsed": "2026-02-26T13:07:43.443Z"
+    },
+    "work": {
+      "count": 1,
+      "lastUsed": "2026-02-26T16:13:37.857Z"
+    }
+  },
+  "agents": {
+    "Explore": {
+      "count": 3,
+      "lastUsed": "2026-02-26T13:13:39.484Z"
+    },
+    "claude-code-harness:task-worker": {
+      "count": 3,
+      "lastUsed": "2026-02-26T13:55:33.264Z"
+    },
+    "general-purpose": {
+      "count": 1,
+      "lastUsed": "2026-02-26T15:34:07.200Z"
+    }
+  },
+  "hooks": {
+    "session-init": {
+      "triggered": 1,
+      "blocked": 0,
+      "lastTriggered": "2026-02-26T13:04:32.872Z"
+    }
+  }
+}

@@ -2,6 +2,15 @@ baseURL = "https://defiprime.com"
 title = "DefiPrime.com"
 languageCode = "en-us"
 
+# Enable git info for last-modified-date equivalent
+enableGitInfo = true
+
+# Build future-dated content (needed for events with future dates)
+buildFuture = true
+
+# Clean URLs (matching vercel.json cleanUrls: true)
+uglyURLs = false
+
 # Match Jekyll's description
 [params]
   description = "All things DeFi - trustless and transparent financial products built on top of the blockchain"
@@ -12,9 +21,6 @@ languageCode = "en-us"
     indexName = "defiprime2"
     searchOnlyApiKey = "adb162fc8601b6a98051de76dd941a6b"
     maxRecordSize = 20000
-
-# Enable git info for last-modified-date equivalent
-enableGitInfo = true
 
 # Tags taxonomy — Jekyll used /t/{tag}.html
 [taxonomies]
@@ -66,6 +72,3 @@ enableGitInfo = true
 # Sitemap
 [sitemap]
   filename = "sitemap.xml"
-
-# Clean URLs (matching vercel.json cleanUrls: true)
-uglyURLs = false

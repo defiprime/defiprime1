@@ -74,9 +74,7 @@ if [ -f "$FIXTURES/url-inventory.txt" ]; then
         FOUND_URLS=$((FOUND_URLS + 1))
       else
         MISSING_URLS=$((MISSING_URLS + 1))
-        if [ "$MISSING_URLS" -le 20 ]; then
-          echo "    MISSING: /$url_clean"
-        fi
+        echo "    MISSING: /$url_clean"
       fi
     else
       # Clean URL — check both /path/index.html and /path.html
@@ -84,9 +82,7 @@ if [ -f "$FIXTURES/url-inventory.txt" ]; then
         FOUND_URLS=$((FOUND_URLS + 1))
       else
         MISSING_URLS=$((MISSING_URLS + 1))
-        if [ "$MISSING_URLS" -le 20 ]; then
-          echo "    MISSING: /$url_clean"
-        fi
+        echo "    MISSING: /$url_clean"
       fi
     fi
   done < "$FIXTURES/url-inventory.txt"

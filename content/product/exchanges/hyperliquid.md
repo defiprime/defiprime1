@@ -8,7 +8,7 @@ ecosystem: arbitrum
 product-description: Hyperliquid is a decentralized perpetual exchange with best-in-class speed, liquidity, and price. Trade crypto in one click, without wallet approvals.
 coltitle: "Decentralized exchanges"
 colpermalink: exchanges
-type: non-custodial
+product-type: non-custodial
 filter: Ethereum, Perpetual
 featured: true
 twitter: https://twitter.com/HyperliquidX

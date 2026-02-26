@@ -1,0 +1,57 @@
+{
+  "session_id": "session-1772111072",
+  "parent_session_id": null,
+  "state": "stopped",
+  "started_at": "2026-02-26T13:04:32Z",
+  "updated_at": "2026-02-26T13:06:14Z",
+  "event_seq": 15,
+  "last_event_id": "event-000015",
+  "state_version": 1,
+  "cwd": "/Users/sneg55-pro13/Documents/github/defiprime1",
+  "project_name": "defiprime1",
+  "resumed_at": "2026-02-26T13:04:32Z",
+  "git": {
+    "branch": "master",
+    "uncommitted_changes": 1,
+    "last_commit": "3ab67d8d"
+  },
+  "plans": {
+    "exists": false,
+    "last_modified": 0,
+    "wip_tasks": 0,
+    "todo_tasks": 0,
+    "pending_tasks": 0,
+    "completed_tasks": 0
+  },
+  "orchestration": {
+    "max_state_retries": 3,
+    "retry_backoff_seconds": 10
+  },
+  "prompt_seq": 1,
+  "intent": "literal",
+  "changes_this_session": [
+    {
+      "file": "AGENTS.md",
+      "action": "Write",
+      "timestamp": "2026-02-26T13:05:50Z",
+      "important": true
+    },
+    {
+      "file": "Plans.md",
+      "action": "Write",
+      "timestamp": "2026-02-26T13:05:53Z",
+      "important": true
+    },
+    {
+      "file": "/Users/sneg55-pro13/.claude/projects/-Users-sneg55-pro13-Documents-github-defiprime1/memory/MEMORY.md",
+      "action": "Write",
+      "timestamp": "2026-02-26T13:06:06Z",
+      "important": false
+    }
+  ],
+  "last_message_length": 752,
+  "last_message_hash": "04731b2953ceb77e",
+  "ended_at": "2026-02-26T13:06:14Z",
+  "duration_minutes": -298,
+  "memory_logged": true
+}

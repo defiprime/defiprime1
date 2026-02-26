@@ -6,7 +6,7 @@ product-url: https://abracadabra.money
 image: /images/output_md/abracadabra.money.jpg
 ecosystem: ethereum, bsc, fantom, arbitrum, avalanche, optimism
 product-description: "Abracadabra.money is a lending platform that uses interest-bearing tokens (ibTKNs) as collateral to borrow a USD pegged stablecoin (Magic Internet Money - MIM), that can be used as any other traditional stablecoin."
-type: non-custodial
+product-type: non-custodial
 filter: Borrow Cryptocurrency, Lend Cryptocurrency
 coltitle: "Lending"
 colpermalink: decentralized-lending

@@ -6,7 +6,7 @@ product-url: https://88mph.app/
 image: /images/output_md/88mph.app.png
 ecosystem: ethereum
 product-description: "88mph lets you lend your crypto assets at a fixed interest rate. [Interview with 88mph team](/88mph)"
-type: non-custodial
+product-type: non-custodial
 filter: Lend Cryptocurrency
 coltitle: "Lending"
 colpermalink: decentralized-lending

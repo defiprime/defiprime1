@@ -5,7 +5,7 @@ product-title: Compound
 product-url: https://compound.finance/
 image: /images/output_md/httpscompoundfinance.png
 ecosystem: ethereum, polygon, arbitrum, base
-type: non-custodial
+product-type: non-custodial
 filter: Lend Cryptocurrency, Borrow Cryptocurrency
 product-description: Compound is an open-source, autonomous protocol built for developers, enable algorithmic, efficient money markets on the Ethereum.
 coltitle: "Lending"

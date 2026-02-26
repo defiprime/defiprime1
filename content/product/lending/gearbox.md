@@ -8,7 +8,7 @@ ecosystem: ethereum
 product-description: "Gearbox Protocol is essentially a two-sided lending marketplace: it connects users who want passive safe APY & leverage degens who know how to make more with leverage and alpha."
 coltitle: "Margin trading"
 colpermalink: decentralized-lending
-type: non-custodial
+product-type: non-custodial
 filter: Ethereum
 twitter: https://twitter.com/GearboxProtocol
 github: https://github.com/Gearbox-protocol

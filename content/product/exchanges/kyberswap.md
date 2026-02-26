@@ -5,7 +5,7 @@ product-title: KyberSwap
 product-url: https://kyberswap.com/swap?referral=0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1&fee_bip=10
 image: /images/output_md/kyber.png
 ecosystem: ethereum, bsc, avalanche, polygon, fantom, optimism, arbitrum, solana
-type: non-custodial
+product-type: non-custodial
 product-description: KyberSwap is a multi-chain decentralized exchange (DEX) aggregator which provides traders with the best token prices by analyzing rates across over 60 DEXs across 12 chains. [Interview with Loi Luu, CEO and co-founder of Kyber Network](/kyber-network).
 coltitle: "Decentralized exchanges"
 colpermalink: exchanges

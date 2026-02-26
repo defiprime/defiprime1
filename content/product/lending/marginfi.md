@@ -9,7 +9,7 @@ filter: Lend Cryptocurrency
 product-description: Marginfi is a decentralized lending protocol on Solana that prioritizes risk management to provide a safe and reliable solution for users looking to access leverage and maximize capital efficiency.
 coltitle: "Lending"
 colpermalink: decentralized-lending
-type: non-custodial
+product-type: non-custodial
 featured: true
 twitter: https://twitter.com/marginfi
 github: https://github.com/mrgnlabs/marginfi-v2

@@ -8,7 +8,7 @@ ecosystem: ethereum, arbitrum, polygon, bsc
 product-description: Aster is a next-generation decentralized perpetual exchange offering multi-chain, liquid, and secure trading. Trade perpetuals across multiple chains with deep liquidity aggregation, hidden orders, and zero price impact trades.
 coltitle: "Perps"
 colpermalink: perps
-type: non-custodial
+product-type: non-custodial
 filter: Ethereum, Bitcoin, Perpetual
 featured: true
 twitter: https://twitter.com/AsterDEX

@@ -1,0 +1,10 @@
+# Netlify redirects for Jekyll->Hugo URL compatibility
+
+/product  /  301
+/product/1inch.exchange  /product/1inch-exchange  301
+/product/apy.vision  /product/apy-vision  301
+/product/identity.com  /product/identity-com  301
+/product/stake.fish  /product/stake-fish  301
+/product/summer.fi  /product/summer-fi  301
+/product/yearn.finance  /product/yearn-finance  301
+/t/*.html  /t/:splat  301

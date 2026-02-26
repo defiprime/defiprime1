@@ -5,7 +5,7 @@ product-title: 1inch.exchange
 product-url: https://app.1inch.io/#/r/0xebdb626c95a25f4e304336b1adcad0521a1bdca1
 image: /images/output_md/1inch.exchange.png
 ecosystem: ethereum, bsc, polygon, arbitrum, optimism, avalanche, fantom, gnosis
-type: non-custodial
+product-type: non-custodial
 filter: Aggregators, No KYC
 product-description: 1inch.exchange split the order to several decentralized exchanges like UniswapExchange, KyberNetwork, Bancor and RadarRelay to avoid high price slippage. [Interview with 1inch CTO](/mooniswap). [1inch alternatives](/1inch-alternatives).
 coltitle: "Decentralized exchanges"

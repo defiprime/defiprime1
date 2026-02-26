@@ -5,7 +5,7 @@ product-title: Balancer
 product-url: https://balancer.finance/
 image: /images/output_md/balancer.exchange.png
 ecosystem: ethereum, polygon, arbitrum, avalanche, gnosis, polygon zkevm, base
-type: non-custodial
+product-type: non-custodial
 filter: No KYC
 product-description: Balancer Exchange allow you to swap ERC20 tokens trustlessly across all Balancer's liquidity pools.
 coltitle: "Decentralized exchanges"

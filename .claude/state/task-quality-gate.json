@@ -1,0 +1,62 @@
+{
+  "Analyze all front matter patterns across Jekyll site": {
+    "failure_count": 0,
+    "last_action": "reset",
+    "updated_at": "2026-02-26T13:11:46Z"
+  },
+  "Create hugo branch from master": {
+    "failure_count": 0,
+    "last_action": "reset",
+    "updated_at": "2026-02-26T13:51:25Z"
+  },
+  "Build Jekyll baseline and capture URL inventory": {
+    "failure_count": 0,
+    "last_action": "reset",
+    "updated_at": "2026-02-26T14:13:55Z"
+  },
+  "Initialize Hugo project structure and config": {
+    "failure_count": 0,
+    "last_action": "reset",
+    "updated_at": "2026-02-26T14:13:56Z"
+  },
+  "Write content migration scripts and migrate all content": {
+    "failure_count": 0,
+    "last_action": "reset",
+    "updated_at": "2026-02-26T14:13:56Z"
+  },
+  "Convert all layouts and templates from Liquid to Go templates": {
+    "failure_count": 0,
+    "last_action": "reset",
+    "updated_at": "2026-02-26T14:13:56Z"
+  },
+  "Migrate assets and deployment config": {
+    "failure_count": 0,
+    "last_action": "reset",
+    "updated_at": "2026-02-26T14:13:57Z"
+  },
+  "Build and run comprehensive test suite": {
+    "failure_count": 0,
+    "last_action": "reset",
+    "updated_at": "2026-02-26T14:13:57Z"
+  },
+  "Fix product pages: add layout: product to all product files": {
+    "failure_count": 0,
+    "last_action": "reset",
+    "updated_at": "2026-02-26T16:23:06Z"
+  },
+  "Fix product/single.html debug cleanup and remove backup": {
+    "failure_count": 0,
+    "last_action": "reset",
+    "updated_at": "2026-02-26T16:23:07Z"
+  },
+  "Convert homepage _index.md from Jekyll Liquid to Hugo templates": {
+    "failure_count": 0,
+    "last_action": "reset",
+    "updated_at": "2026-02-26T16:35:30Z"
+  },
+  "Convert category listing pages from Liquid to Hugo": {
+    "failure_count": 0,
+    "last_action": "reset",
+    "updated_at": "2026-02-26T16:35:30Z"
+  }
+}

@@ -5,7 +5,7 @@ product-title: Jupiter
 product-url: https://jup.ag
 image: /images/output_md/jup.ag.jpg
 ecosystem: solana
-type: non-custodial
+product-type: non-custodial
 filter: No KYC
 product-description: "Jupiter is a decentralized exchange (DEX) aggregator on the Solana blockchain that provides the best swap rates by combining liquidity from multiple sources."
 coltitle: "Decentralized exchanges"

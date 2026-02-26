@@ -6,7 +6,7 @@ product-url: https://truefi.io/
 image: /images/output_md/truefi.io.png
 ecosystem: ethereum
 product-description: "TrueFi is a protocol for uncollateralized lending"
-type: non-custodial
+product-type: non-custodial
 filter: Lend Cryptocurrency
 coltitle: "Lending"
 colpermalink: decentralized-lending

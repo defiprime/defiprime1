@@ -9,7 +9,7 @@ filter: Borrow Cryptocurrency, Lend Cryptocurrency
 product-description: Solend is an algorithmic, decentralized protocol for lending and borrowing on Solana that lets you earn interest on deposits and borrow assets.
 coltitle: "Lending"
 colpermalink: decentralized-lending
-type: non-custodial
+product-type: non-custodial
 twitter: https://twitter.com/solendprotocol
 github: https://github.com/solendprotocol
 ---
