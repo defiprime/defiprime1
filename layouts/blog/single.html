@@ -107,7 +107,7 @@
             <span class="name">{{ if $author }}{{ $author.name }}{{ end }}</span>
             <span class="date">on {{ .Date.Format "02 Jan 2006" }}</span>
           </div>
-          {{ .TableOfContents }}{{ .Content }}
+          {{ .Content }}
         </div>
       </article>
       <div class="tags">

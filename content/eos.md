@@ -7,5 +7,11 @@ url: eos
 h1title: EOS DeFi Ecosystem
 pagetitle: EOS DeFi Ecosystem - List of the best EOS DeFi Projects
 featured-image: /images/og-eos.png
-
+stats_ecosystems:
+  - label: "Ethereum"
+    filter: "ethereum"
+  - label: "EOS"
+    filter: "eos"
+  - label: "Bitcoin"
+    filter: "bitcoin"
 ---

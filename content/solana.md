@@ -7,4 +7,11 @@ url: solana
 h1title: Solana DeFi Ecosystem
 pagetitle: Solana DeFi Ecosystem - List of the Best Solana Projects
 featured-image: /images/og-solana.png
+stats_ecosystems:
+  - label: "Ethereum"
+    filter: "ethereum"
+  - label: "BNB"
+    filter: "bsc"
+  - label: "Solana"
+    filter: "solana"
 ---

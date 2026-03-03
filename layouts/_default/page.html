@@ -88,13 +88,17 @@
             {{ range $page_cards }}
               {{ $val := index .Params $filter }}
               {{ if $val }}
-                {{ $filter_buttons = $filter_buttons | append $val }}
+                {{ $vals := split $val ", " }}
+                {{ range $vals }}
+                  {{ $filter_buttons = $filter_buttons | append . }}
+                {{ end }}
               {{ end }}
             {{ end }}
             {{ $filter_buttons = $filter_buttons | uniq }}
             {{ range $filter_buttons }}
+            {{ $filterVal := . | lower | replaceRE " " "-" }}
             <button class="button"
-              data-filter="{{ . | lower | replace " " "-" }}">{{ . }}</button>
+              data-filter="{{ $filterVal }}">{{ . }}</button>
             {{ end }}
             {{ end }}
           </div>
@@ -117,9 +121,12 @@
           {{ $card_filters := slice }}
           {{ range $items_filters }}
             {{ $filter := . }}
-            {{ $val := index $asset_tool.Params $filter | lower | replace " " "-" }}
+            {{ $val := index $asset_tool.Params $filter }}
             {{ if $val }}
-              {{ $card_filters = $card_filters | append $val }}
+              {{ $vals := split $val ", " }}
+              {{ range $vals }}
+                {{ $card_filters = $card_filters | append (. | lower | replaceRE " " "-") }}
+              {{ end }}
             {{ end }}
           {{ end }}
 

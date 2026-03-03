@@ -7,4 +7,11 @@ url: optimism
 h1title: Optimism DeFi Ecosystem
 pagetitle: Optimism DeFi Ecosystem - List of the Best Optimism Projects
 featured-image: /images/blog/optimism.png
+stats_ecosystems:
+  - label: "Ethereum"
+    filter: "ethereum"
+  - label: "Optimism"
+    filter: "optimism"
+  - label: "Arbitrum"
+    filter: "arbitrum"
 ---

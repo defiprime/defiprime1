@@ -7,4 +7,11 @@ url: bitcoin
 h1title: Bitcoin DeFi ecosystem
 pagetitle: Bitcoin DeFi ecosystem - List of the best Bitcoin Defi Projects
 featured-image: /images/og-bitcoin.png
+stats_ecosystems:
+  - label: "Ethereum"
+    filter: "ethereum"
+  - label: "EOS"
+    filter: "eos"
+  - label: "Bitcoin"
+    filter: "bitcoin"
 ---

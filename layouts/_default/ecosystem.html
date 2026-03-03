@@ -55,9 +55,11 @@
   {{ partialCached "header.html" . }}
   <div id="main">
     <div class="inner">
-      <article class="article article--post content typeset">
+      {{ partial "sidepanel.html" . }}
+      <article class="article article--post content typeset ecosystem">
 
         <h1>{{ .Params.h1title | default .Title }}</h1>
+        <div class="container-ecosystem container-toc">
 
         {{/* Determine ecosystem filter - use "ecosystem-filter" param or derive from URL */}}
         {{ $ecoFilter := .Params.ecosystem_filter | default (path.Base .Params.url | default .File.ContentBaseName) }}
@@ -85,8 +87,30 @@
         {{ $ecoCount := len $ecoProducts }}
 
         <div class="custodian_description">
-          <p>DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ $totalProducts }} DeFi projects listed and {{ $ecoCount }} of them built on {{ .Title | replaceRE " DeFi Ecosystem" "" }}.</p>
+          <p>DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ $totalProducts }} DeFi projects listed and {{ $ecoCount }} of them built on {{ .Title | replaceRE " DeFi [Ee]cosystem" "" }}.</p>
         </div>
+
+        {{/* Stats banner - colored boxes matching production */}}
+        {{ with .Params.stats_ecosystems }}
+        <table>
+          <tbody>
+            {{ range . }}
+              {{ $filter := .filter }}
+              {{ $count := 0 }}
+              {{ range $allProducts }}
+                {{ $eco := index .Params "ecosystem" | default "" }}
+                {{ if in $eco $filter }}
+                  {{ $count = add $count 1 }}
+                {{ end }}
+              {{ end }}
+              <tr>
+                <td>{{ .label }} <br /> DeFi</td>
+                <td>{{ $count }}</td>
+              </tr>
+            {{ end }}
+          </tbody>
+        </table>
+        {{ end }}
 
         {{/* Define categories in display order */}}
         {{ $categories := slice
@@ -139,9 +163,11 @@
           {{ end }}
         {{ end }}
 
+        </div>{{/* /container-ecosystem */}}
       </article>
     </div>
   </div>
+  {{ partialCached "folowus.html" . }}
   {{ partialCached "footer.html" . }}
 </body>
 

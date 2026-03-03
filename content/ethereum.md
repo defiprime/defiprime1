@@ -7,4 +7,11 @@ url: ethereum
 h1title: Ethereum DeFi Ecosystem
 pagetitle: Ethereum DeFi Ecosystem - List of the Best Ethereum DeFi dApps Projects
 featured-image: /images/og-ethereum.png
+stats_ecosystems:
+  - label: "Ethereum"
+    filter: "ethereum"
+  - label: "Polygon"
+    filter: "polygon"
+  - label: "BNB"
+    filter: "bsc"
 ---

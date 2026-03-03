@@ -7,4 +7,11 @@ url: cosmos
 h1title: Cosmos DeFi Ecosystem
 pagetitle: Cosmos DeFi Ecosystem - List of the Best Cosmos Projects
 featured-image: /images/cosmos-og.png
+stats_ecosystems:
+  - label: "Ethereum"
+    filter: "ethereum"
+  - label: "BNB"
+    filter: "bsc"
+  - label: "Cosmos"
+    filter: "cosmos"
 ---

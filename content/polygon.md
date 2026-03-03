@@ -7,4 +7,11 @@ url: polygon
 h1title: Polygon DeFi Ecosystem
 pagetitle: Polygon DeFi Ecosystem - List of the Best Polygon Projects
 featured-image: /images/blog/polygon.png
+stats_ecosystems:
+  - label: "Ethereum"
+    filter: "ethereum"
+  - label: "BNB"
+    filter: "bsc"
+  - label: "Polygon"
+    filter: "polygon"
 ---

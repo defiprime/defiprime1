@@ -7,4 +7,11 @@ url: avalanche
 h1title: Avalanche DeFi Ecosystem
 pagetitle: Avalanche DeFi Ecosystem - List of the Best Avalanche DeFi dApps Projects
 featured-image: /images/avalanche-og.png
+stats_ecosystems:
+  - label: "Ethereum"
+    filter: "ethereum"
+  - label: "Avalanche"
+    filter: "avalanche"
+  - label: "BNB"
+    filter: "bsc"
 ---

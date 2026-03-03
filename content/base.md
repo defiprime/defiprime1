@@ -7,4 +7,11 @@ url: base
 h1title: Base DeFi Ecosystem
 pagetitle: Base DeFi Ecosystem - List of the Best Base Projects
 featured-image: /images/blog/base.png
+stats_ecosystems:
+  - label: "Ethereum"
+    filter: "ethereum"
+  - label: "Base"
+    filter: "base"
+  - label: "Arbitrum"
+    filter: "arbitrum"
 ---

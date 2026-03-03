@@ -7,4 +7,11 @@ url: canto
 h1title: Canto DeFi Ecosystem
 pagetitle: Canto DeFi Ecosystem - List of the Best Canto Projects
 featured-image: /images/canto-og.png
+stats_ecosystems:
+  - label: "Ethereum"
+    filter: "ethereum"
+  - label: "Polygon"
+    filter: "polygon"
+  - label: "Canto"
+    filter: "canto"
 ---

@@ -7,4 +7,11 @@ url: bsc
 h1title: BNB DeFi Ecosystem
 pagetitle: BNB DeFi Ecosystem - List of the Best Binance Smart Chain DeFi dApps Projects
 featured-image: /images/blog/bsc-og.png
+stats_ecosystems:
+  - label: "Ethereum"
+    filter: "ethereum"
+  - label: "BNB"
+    filter: "bsc"
+  - label: "Polygon"
+    filter: "polygon"
 ---

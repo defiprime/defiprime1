@@ -7,4 +7,11 @@ url: arbitrum
 h1title: Arbitrum DeFi Ecosystem
 pagetitle: Arbitrum DeFi Ecosystem - List of the Best Arbitrum Projects
 featured-image: /images/blog/arbitrum.png
+stats_ecosystems:
+  - label: "Ethereum"
+    filter: "ethereum"
+  - label: "Optimism"
+    filter: "optimism"
+  - label: "Arbitrum"
+    filter: "arbitrum"
 ---
