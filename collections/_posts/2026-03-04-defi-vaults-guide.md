@@ -35,6 +35,7 @@ Vaults solve a real problem for most users. Raw yield farming requires constant 
 
 The history of DeFi vaults is shorter than you'd expect, barely five years, but a lot has happened.
 
+**2020: The Yearn Genesis.** Andre Cronje launched Yearn Finance in July 2020 with a simple concept: deposit [stablecoins](/stablecoins), and the protocol moves them to whichever lending platform pays the best rate. The "yVaults" that followed automated increasingly complex strategies, like depositing into [Curve](/curve) pools, staking LP tokens for CRV rewards, selling CRV for more stablecoins, and repeating. Yearn's TVL hit $6 billion at its 2021 peak. It proved that automated yield strategies could attract serious capital.
 
 **2021–2023: Multi-chain expansion.** Beefy Finance took the Yearn model and ran it across every EVM chain that would have it. By 2023, Beefy supported 40+ chains, auto-compounding hundreds of strategies from BSC to Arbitrum to Avalanche. CIAN, Idle, Harvest, and others carved out niches. The category matured but also commoditized, since auto-compounding a Curve pool on chain X wasn't fundamentally different from auto-compounding it on chain Y.
 
