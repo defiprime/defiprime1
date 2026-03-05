@@ -1,5 +1,5 @@
 ---
 title: "Events"
-_build:
+build:
   render: never
 ---

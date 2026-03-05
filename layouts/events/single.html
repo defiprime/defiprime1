@@ -54,9 +54,8 @@
 <p> </p>
 
     <section class='upcoming_events_cards'>
-        {{ range site.RegularPages }}
-        {{ if eq .Section "events" }}
-        {{ if ge .Date.Unix now.Unix }}
+        {{ $events := where (where site.RegularPages "Section" "events") ".Date.Unix" ">=" now.Unix }}
+        {{ range $events }}
 
         <article>
             <a href='{{ index .Params "product-url" }}' target="_blank" rel="noopener">
@@ -73,8 +72,6 @@
                 </div>
             </a>
         </article>
-        {{ end }}
-        {{ end }}
         {{ end }}
     </section>
 

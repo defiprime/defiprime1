@@ -219,7 +219,7 @@
                     {{ end }}
                     {{ end }}
                   </div>
-                  <p>{{ index $asset_tool.Params "product-description" | markdownify | replaceRE "</?p>" "" }}
+                  <p>{{ index $asset_tool.Params "product-description" | markdownify | replaceRE "</?p>" "" | safeHTML }}
                   </p>
                   <div title="Would you recommend this product?" class="comments">
                     <a href="{{ $asset_tool.RelPermalink }}">
