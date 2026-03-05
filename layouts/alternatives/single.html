@@ -26,7 +26,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ .Permalink }}" />
   <meta property="og:description"
-    content="{{ .Summary | plainify | truncate 160 }}" />
+    content="{{ .Params.metadescription | plainify | truncate 160 }}" />
   <meta property="og:image"
     content="{{ if .Params.og }}{{ .Site.BaseURL }}{{ .Params.og }}{{ else }}{{ .Site.BaseURL }}images/og.png{{ end }}" />
   <meta property="og:image:width" content="1200" />
