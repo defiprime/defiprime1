@@ -86,9 +86,7 @@
         {{ $totalProducts := len $allProducts }}
         {{ $ecoCount := len $ecoProducts }}
 
-        <div class="custodian_description">
-          <p>DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ $totalProducts }} DeFi projects listed and {{ $ecoCount }} of them built on {{ .Title | replaceRE " DeFi [Ee]cosystem" "" }}.</p>
-        </div>
+        <p>DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ $totalProducts }} DeFi projects listed and {{ $ecoCount }} of them built on {{ .Title | replaceRE " DeFi [Ee]cosystem" "" }}.</p>
 
         {{/* Stats banner - colored boxes matching production */}}
         {{ with .Params.stats_ecosystems }}
