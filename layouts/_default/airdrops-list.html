@@ -42,7 +42,7 @@
   </script>
 </head>
 
-<body class="product-page">
+<body class="main-page">
 
   {{ partialCached "header.html" . }}
   <div id="main">
@@ -53,8 +53,8 @@
 
         {{ $ecoFilter := .Params.airdrop_ecosystem | default "ethereum" }}
 
-        <section class="sectoin-tickers">
-          <p>{{ .Content }}</p>
+        <section class="section-tickers">
+          {{ .Content }}
           <div class="container-tickers">
             <table class="table-tickers">
               <thead>

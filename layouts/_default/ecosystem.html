@@ -155,7 +155,7 @@
 <h3>{{ if $isDao }}<a href="{{ $productUrl }}">{{ $productTitle }}</a>{{ else }}<a href="{{ .RelPermalink }}">{{ $productTitle }}</a>{{ end }}</h3>
 
 {{ partial "ecosystem-icons.html" . }}
-{{ index .Params "product-description" | markdownify }}
+<p>{{ index .Params "product-description" | markdownify }}</p>
               {{ end }}
             {{ end }}
           {{ end }}
