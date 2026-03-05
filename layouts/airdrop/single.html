@@ -47,7 +47,7 @@
     />
     <meta
       property="og:title"
-      content="{{ if .Params.pagetitle }}{{ .Params.pagetitle | htmlEscape }}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}"
+      content="{{ if .Params.pagetitle }}{{ .Params.pagetitle }}{{ else }}{{ .Site.Title }}{{ end }}"
     />
     <meta property="og:type" content="website" />
     <meta
@@ -56,7 +56,7 @@
     />
     <meta
       property="og:description"
-      content="{{ if .Params.excerpt }}{{ .Params.excerpt | plainify | truncate 160 }}{{ else }}{{ .Site.Params.description }}{{ end }}"
+      content="{{ .Summary | plainify | truncate 160 }}"
     />
     <meta
       property="og:image"
@@ -69,7 +69,7 @@
     <meta name="twitter:creator" content="@defiprime" />
     <meta
       name="twitter:title"
-      content="{{ if .Params.pagetitle }}{{ .Params.pagetitle | htmlEscape }}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}"
+      content="{{ if .Params.pagetitle }}{{ .Params.pagetitle }}{{ else }}{{ .Site.Title }}{{ end }}"
     />
     <meta
       name="twitter:description"

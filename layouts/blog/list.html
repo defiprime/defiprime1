@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="canonical" href="https://defiprime.com/blog/">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"  rel="preload" as="style">
-    <meta property="og:title" content="{{ if .Title }}{{ .Title | htmlEscape }}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}" />
+    <meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ .Site.BaseURL }}" />
     <meta property="og:description" content="{{ .Params.metadescription | default .Site.Params.description }}" />
@@ -29,7 +29,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@defiprime">
     <meta name="twitter:creator" content="@defiprime">
-    <meta name="twitter:title" content="{{ if .Title }}{{ .Title | htmlEscape }}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}">
+    <meta name="twitter:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}">
     <meta name="twitter:description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
     <meta name="twitter:image" content="{{ .Site.BaseURL }}images/og-blog.png">
     <!-- Global site tag (gtag.js) - Google Analytics -->

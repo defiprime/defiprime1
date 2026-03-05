@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>{{ if .Params.pagetitle }}{{ .Params.pagetitle | htmlEscape }}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}</title>
+    <title>{{ if .Params.pagetitle }}{{ .Params.pagetitle }}{{ else }}{{ .Site.Title }}{{ end }}</title>
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link rel="preconnect" href="https://google-analytics.com">
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="preload" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600;800&display=swap" rel="preload" as="style">
     <link rel="canonical" href="{{ .Permalink }}">
-    <meta property="og:title" content="{{ if .Params.pagetitle }}{{ .Params.pagetitle | htmlEscape }}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}" />
+    <meta property="og:title" content="{{ if .Params.pagetitle }}{{ .Params.pagetitle }}{{ else }}{{ .Site.Title }}{{ end }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ .Permalink }}" />
     <meta property="og:description" content="{{ .Params.metadescription | plainify | truncate 160 }}" />
@@ -27,7 +27,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@defiprime">
     <meta name="twitter:creator" content="@defiprime">
-    <meta name="twitter:title" content="{{ if .Params.pagetitle }}{{ .Params.pagetitle | htmlEscape }}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}">
+    <meta name="twitter:title" content="{{ if .Params.pagetitle }}{{ .Params.pagetitle }}{{ else }}{{ .Site.Title }}{{ end }}">
     <meta name="twitter:description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
     <meta name="twitter:image" content="{{ index .Params "featured-image" | absURL }}">
 

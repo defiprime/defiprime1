@@ -29,7 +29,7 @@
     <meta property="og:title" content="{{ .Params.h1title }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ .Permalink }}" />
-    <meta property="og:description" content="{{ if .Params.excerpt }}{{ .Params.excerpt | plainify | truncate 300 }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    <meta property="og:description" content="{{ if .Params.metadescription }}{{ .Params.metadescription | plainify | truncate 300 }}{{ else if .Params.intro }}{{ .Params.intro | plainify | truncate 300 }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
     <meta property="og:image" content="{{ index .Params "featured-image" | absURL }}" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
