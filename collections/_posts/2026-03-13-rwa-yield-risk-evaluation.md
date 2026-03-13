@@ -25,7 +25,7 @@ This article breaks down what those risks actually look like in practice, how th
 
 ## What We Mean by "Yield-Generating RWAs"
 
-Yield-generating RWAs are tokenized representations of traditional assets that produce income on-chain. That income might come from interest (U.S. Treasuries), coupons (corporate bonds), loan repayments (private credit), or rental flows (real estate). Common examples include BlackRock's BUIDL fund, Ondo Finance's USDY, Apollo's ACRED (via Securitize), and various private credit pools on platforms like Maple, Centrifuge, and the now-troubled Goldfinch.
+Yield-generating RWAs are tokenized representations of traditional assets that produce income on-chain. That income might come from interest (U.S. Treasuries), coupons (corporate bonds), loan repayments (private credit), or rental flows (real estate). Common examples include [BlackRock's BUIDL fund](https://securitize.io/blackrock/buidl), [Ondo Finance's USDY](https://ondo.finance/usdy), [Apollo's ACRED](https://securitize.io/primary-market/apollo-diversified-credit-securitize-fund) (via [Securitize](https://securitize.io/)), and various private credit pools on platforms like [Maple](https://maple.finance/), [Centrifuge](https://centrifuge.io/), and the now-troubled [Goldfinch](https://www.goldfinch.finance/).
 
 The appeal is obvious. A tokenized Treasury product can deliver 4-6% yield with 24/7 access, compared to the [T+1 settlement cycle](https://www.sec.gov/newsroom/press-releases/2024-62) that traditional U.S. securities moved to in May 2024. Private credit instruments on-chain can offer 8-12%. For corporate treasurers and DeFi protocols alike, the math is attractive.
 
@@ -63,11 +63,11 @@ What to check: Analyze the financial health and track record of every entity in 
 
 ### 3. Legal and Regulatory Risk
 
-RWAs live in a regulatory gray zone that varies by jurisdiction and changes frequently. The token might be classified as a security in one country and a commodity in another, or fall into no existing category at all. The EU's MiCA framework and the DLT Pilot Regime provide some structure in Europe. In the U.S., the SEC is still evaluating tokenized money market funds and similar products on a case-by-case basis, issuing bespoke exemptive orders rather than broad guidance.
+RWAs live in a regulatory gray zone that varies by jurisdiction and changes frequently. The token might be classified as a security in one country and a commodity in another, or fall into no existing category at all. The EU's [MiCA framework](https://eur-lex.europa.eu/eli/reg/2023/1114/oj/eng) and the [DLT Pilot Regime](https://eur-lex.europa.eu/eli/reg/2022/858/oj/eng) provide some structure in Europe. In the U.S., the SEC is still evaluating tokenized money market funds and similar products on a case-by-case basis, issuing bespoke exemptive orders rather than broad guidance.
 
 This matters because legal classification determines who can buy the token, where it can trade, and what recourse you have if things go wrong. Cross-border enforcement is another open question. If an SPV in the Cayman Islands holds the underlying asset and the issuer is in Singapore, which court do you petition when the redemption mechanism breaks?
 
-IOSCO's Decentralized Finance and Digital Assets report flagged these issues directly, noting that tokenized markets introduce technology-related risks layered on top of the familiar legal uncertainties of cross-border finance.
+[IOSCO's Decentralized Finance and Digital Assets report](https://www.iosco.org/library/pubdocs/pdf/ioscopd754.pdf) flagged these issues directly, noting that tokenized markets introduce technology-related risks layered on top of the familiar legal uncertainties of cross-border finance.
 
 What to check: Determine the token's securities classification in your jurisdiction. Map the governing law and dispute resolution process. KYC/AML and transfer restrictions (whitelisting) can limit secondary liquidity, so understand who can actually trade the token. Ambiguous status is not neutral; it's a liability.
 
@@ -85,9 +85,9 @@ What to check: How often are attestations or audits published, and by whom? Is t
 
 Liquidity risk in RWAs has a particular character: the on-chain wrapper can trade continuously, but the underlying asset may not be liquid at all. A tokenized private credit position might show a live price on a DEX, but the actual loan has a multi-year maturity and no secondary market.
 
-This creates what Gauntlet, in their section of the June 2025 RedStone/RWA.xyz report, described as a fundamental liquidity trap during stress. Redemption timelines for certain RWAs may require weeks or months, while DeFi users expect immediate settlement.
+This creates what Gauntlet, in their section of the [June 2025 RedStone/RWA.xyz report](https://blog.redstone.finance/2025/06/26/real-world-assets-in-onchain-finance-report/), described as a fundamental liquidity trap during stress. Redemption timelines for certain RWAs may require weeks or months, while DeFi users expect immediate settlement.
 
-The RWA.io "State of RWA Tokenization 2026" report quantified part of this problem: 1-3% pricing gaps for identical assets across different chains, and 2-5% friction costs when moving capital cross-chain. These aren't theoretical. They're measured inefficiencies that widen during volatility.
+The ["State of RWA Tokenization 2026" report](https://www.canton.network/hubfs/State%20of%20RWA%20Tokenization%202026%20Report.pdf) quantified part of this problem: 1-3% pricing gaps for identical assets across different chains, and 2-5% friction costs when moving capital cross-chain. These aren't theoretical. They're measured inefficiencies that widen during volatility.
 
 What to check: Examine on-chain trading volume, spreads, and order-book depth. Model what happens during mass redemptions. Compare the token's liquidity profile against the underlying asset's actual redemption timeline. If there's a mismatch, you need to understand how it resolves under stress.
 
@@ -97,9 +97,9 @@ What to check: Examine on-chain trading volume, spreads, and order-book depth. M
 
 The technical layer adds failure modes that don't exist in traditional finance. Smart contract bugs can drain funds. Oracle manipulation can distort valuations. Admin-key compromises can allow unauthorized changes. Upgradeability mechanisms, if poorly designed, can introduce vulnerabilities after deployment.
 
-For yield-generating RWAs specifically, oracle risk is acute. Most tokenized funds use NAV data supplied by a single fund administrator on a delayed schedule (T+1 or slower). Gauntlet noted that liquidation triggers in leveraged RWA positions operate on this same delayed schedule, meaning a credit default might not be reflected in on-chain pricing for days.
+For yield-generating RWAs specifically, oracle risk is acute. Most tokenized funds use NAV data supplied by a single fund administrator on a delayed schedule (T+1 or slower). [Gauntlet noted](https://blog.redstone.finance/2025/06/26/real-world-assets-in-onchain-finance-report/) that liquidation triggers in leveraged RWA positions operate on this same delayed schedule, meaning a credit default might not be reflected in on-chain pricing for days.
 
-IOSCO's report echoed this concern, noting that tokenized markets introduce smart contract vulnerabilities, cyber risks, and the need for secure key management as distinct technology-related considerations.
+[IOSCO's report](https://www.iosco.org/library/pubdocs/pdf/ioscopd754.pdf) echoed this concern, noting that tokenized markets introduce smart contract vulnerabilities, cyber risks, and the need for secure key management as distinct technology-related considerations.
 
 What to check: Require multiple independent security audits (firms like PeckShield, Trail of Bits, or OpenZeppelin). Verify oracle redundancy, specifically whether there are multiple data sources and fallback mechanisms. Understand admin-key controls and who has the ability to pause or upgrade the contract.
 
@@ -161,7 +161,7 @@ Based on the curator frameworks and real-world failure cases, here's a condensed
 
 **Step 6: Map the regulatory landscape.** Securities classification, KYC requirements, cross-border enforceability. These constraints directly affect who can provide liquidity and what happens when something goes wrong.
 
-**Step 7: Score the project holistically.** Consider a multi-factor heuristic covering permissionlessness (global retail access), reliability (issuer reputation and yield stability), DeFi integration (composability as collateral, trading pairs), maintenance cost (complexity of the underlying asset), and UX (auto-rebasing yield, simple redemption). Products like Ondo's USDY, which offer rebasing yield with multi-chain DEX trading and simple redemption, score well on adoption risk. Products requiring manual claims, restricted access, or complex intermediary structures carry higher friction risk even when the underlying asset is solid.
+**Step 7: Score the project holistically.** Consider a multi-factor heuristic covering permissionlessness (global retail access), reliability (issuer reputation and yield stability), DeFi integration (composability as collateral, trading pairs), maintenance cost (complexity of the underlying asset), and UX (auto-rebasing yield, simple redemption). Products like [Ondo's USDY](https://ondo.finance/usdy), which offer rebasing yield with multi-chain DEX trading and simple redemption, score well on adoption risk. Products requiring manual claims, restricted access, or complex intermediary structures carry higher friction risk even when the underlying asset is solid.
 
 **Step 8: Run the numbers.** Sharpe ratio, Value-at-Risk, duration sensitivity. Scenario model a +200bps rate hike, a counterparty default, and a borrow-cost spike simultaneously. If the position survives all three, it's probably sized right.
 
@@ -169,15 +169,15 @@ Based on the curator frameworks and real-world failure cases, here's a condensed
 
 Not all RWAs are created equal. The risk profile varies enormously by underlying asset class and product design.
 
-On the lower-risk end, products like BlackRock's BUIDL fund or Ondo's USDY tokenize short-duration U.S. Treasuries through bankruptcy-remote SPVs with strong institutional issuers and auto-rebasing yield. The primary risks are interest-rate movements and, to a lesser extent, the operational risk of the on-chain wrapper. These products have attracted billions precisely because the risk profile is well-understood.
+On the lower-risk end, products like [BlackRock's BUIDL fund](https://securitize.io/blackrock/buidl) or [Ondo's USDY](https://ondo.finance/usdy) tokenize short-duration U.S. Treasuries through bankruptcy-remote SPVs with strong institutional issuers and auto-rebasing yield. The primary risks are interest-rate movements and, to a lesser extent, the operational risk of the on-chain wrapper. These products have attracted billions precisely because the risk profile is well-understood.
 
 On the higher-risk end, private credit pools carry elevated default, servicer, and liquidity risks. The Goldfinch experience demonstrated that even with a reputable platform, individual loan pools can suffer from borrower misallocation, lack of transparency, and inadequate underwriting controls. The yields are higher because the risks are higher. Tokenization makes the investment accessible but does not make it safer.
 
-In between, there's a growing category of leveraged RWA strategies that use vault automation to amplify returns on otherwise conservative assets. Gauntlet's leveraged vaults on Morpho, which use Apollo's ACRED as collateral, are the leading example. These strategies introduce DeFi-specific risks (variable borrow costs, liquidation mechanics, smart contract dependencies) on top of the underlying asset risk. They require active curator oversight and are not suitable for passive holders.
+In between, there's a growing category of leveraged RWA strategies that use vault automation to amplify returns on otherwise conservative assets. Gauntlet's leveraged vaults on [Morpho](https://morpho.org/), which use Apollo's ACRED as collateral, are the leading example. These strategies introduce DeFi-specific risks (variable borrow costs, liquidation mechanics, smart contract dependencies) on top of the underlying asset risk. They require active curator oversight and are not suitable for passive holders.
 
 ## Where This Is Heading
 
-The RWA risk infrastructure is maturing fast. Credora's ratings are already influencing capital flows on Morpho and Spark. Chaos Labs' Risk Oracles are automating parameter adjustments on [Aave Horizon](https://aave.com/docs/aave-v3/horizon). Gauntlet is stress-testing leveraged positions in real time with billions at stake.
+The RWA risk infrastructure is maturing fast. Credora's ratings are already influencing capital flows on [Morpho](https://morpho.org/) and Spark. Chaos Labs' Risk Oracles are automating parameter adjustments on [Aave Horizon](https://aave.com/docs/aave-v3/horizon). Gauntlet is stress-testing leveraged positions in real time with billions at stake.
 
 But the gap between the best-in-class risk management and the average RWA product remains wide. Many smaller issuers still lack independent audits, rely on single custodians, publish infrequent attestations, and operate with opaque legal structures. The market's rapid growth, potentially reaching \$100 billion by year-end, will attract products that prioritize speed to market over risk infrastructure.
 
