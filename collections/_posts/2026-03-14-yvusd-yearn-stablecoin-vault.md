@@ -40,6 +40,8 @@ The practical implication: yvUSD's current strategies are modular. They can be a
 
 This is the architectural decision that distinguishes yvUSD from a standard Yearn vault. When you deposit, you choose between two modes.
 
+![yvUSD Unlocked vs Locked Modes](/images/blog/yvusd-unlocked-locked-modes.png)
+
 **Unlocked** gives you withdrawal access at any time, subject to the vault's liquidity buffer. At the time of writing, the displayed estimated APY is around 7.14%, but this number is a trailing estimate that fluctuates based on strategy performance, incentive programs, and capital allocation. The Yearn UI may show substantially different numbers depending on the calculation window (7-day, 30-day, inception). Don't treat any displayed APY as a fixed rate. The vault ensures it always has enough capital parked in short-duration, liquid strategies (sUSDS, basic Morpho lending) so that unlocked depositors can exit without delay.
 
 **Locked** imposes a 14-day cooldown period after you signal your intent to withdraw, followed by a 5-day window during which you can actually pull your funds. In exchange, the vault can deploy your capital into longer-duration positions that pay more, things like Pendle principal tokens with fixed maturities, deeper leverage loops on Morpho, and cross-chain L2 plays.
@@ -52,6 +54,8 @@ It's a clean tradeoff, and worth thinking through carefully. If you're not sure 
 ## Active strategies: where the yield comes from
 
 Everything is published on-chain, and the [DeBank bundle](https://debank.com/bundles/221066/portfolio) shows live positions in real time. The vault currently runs nine strategies (this count is dynamic and managed by the vault operator). Here's the approximate allocation as of March 13, 2026.
+
+![yvUSD Strategy Allocation](/images/blog/yvusd-strategy-allocation.png)
 
 
 ### Morpho Yearn OG USDC Compounder (28% allocation, ~3.81% APY)
@@ -139,6 +143,8 @@ Here's the honest version of what to expect.
 ## How Yearn monetizes points (and why it matters that you don't have to)
 
 This is one of the smartest parts of the design, and it's worth understanding.
+
+![How Yearn Monetizes Points](/images/blog/yvusd-points-monetization.png)
 
 When you deposit into yvUSD, all points and reward tokens accrue to the vault's contract address, not to your wallet. You never claim anything. You never pay gas to harvest. You never have to research which airdrop campaigns are running or track eligibility criteria.
 
