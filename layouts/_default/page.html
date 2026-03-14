@@ -19,7 +19,7 @@
   <meta name="description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="preload" as="style">
   <!-- Critical CSS Inlined -->
-  <style>{{ partial "critical.css" . }}</style>
+  <style>{{ partial "critical.css" . | safeCSS }}</style>
   <!-- Load non-critical CSS asynchronously -->
   <script>!function(e){"use strict";var t=function(t,n,r){var o,i=e.document,a=i.createElement("link");if(n)o=n;else{var l=(i.body||i.getElementsByTagName("head")[0]).childNodes;o=l[l.length-1]}var d=i.styleSheets;a.rel="stylesheet",a.href=t,a.media="only x",function e(t){if(i.body)return t();setTimeout(function(){e(t)})}(function(){o.parentNode.insertBefore(a,n?o:o.nextSibling)});var f=function(e){for(var t=a.href,n=d.length;n--;)if(d[n].href===t)return e();setTimeout(function(){f(e)})};return a.addEventListener&&a.addEventListener("load",function(){this.media=r||"all"}),a.onloadcssdefined=f,f(function(){a.media!==r&&(a.media=r||"all")}),a};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this);</script>
   <link rel="preload" href="{{ "/assets/css/main.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">

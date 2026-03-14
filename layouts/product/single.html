@@ -24,7 +24,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-    content="What is {{ index .Params "product-title" }}? {{ index .Params "product-description" | plainify | truncate 160 }}">
+    content="What is {{ index .Params "product-title" }}? {{ index .Params "product-description" | markdownify | plainify | truncate 160 }}">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="preload" as="style">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relURL }}">
   <link rel="canonical" href="{{ .Permalink }}">
@@ -32,7 +32,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ .Permalink }}" />
   <meta property="og:description"
-    content="{{ index .Params "product-description" | plainify | truncate 300 }}" />
+    content="{{ index .Params "product-description" | markdownify | plainify | truncate 300 }}" />
   <meta property="og:image" content="{{ .Params.image | absURL }}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -41,7 +41,7 @@
   <meta name="twitter:creator" content="@defiprime">
   <meta name="twitter:title" content="{{ index .Params "product-title" }} - Reviews. What is {{ index .Params "product-title" }}?">
   <meta name="twitter:description"
-    content="{{ index .Params "product-description" | plainify | truncate 300 }}">
+    content="{{ index .Params "product-description" | markdownify | plainify | truncate 300 }}">
   <meta name="twitter:image" content="{{ .Params.image | absURL }}">
   <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
     integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"

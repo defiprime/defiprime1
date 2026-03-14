@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tags - DeFi Blog</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Browse all DeFi blog tags">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relURL }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta property="og:title" content="Tags - DeFi Blog" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:image" content="{{ "images/og-blog.png" | absURL }}" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@defiprime">
+</head>
+<body class="blog-page">
+  {{ partialCached "header.html" . }}
+  <div id="main">
+    <div class="inner">
+      <header>
+        <h1 class="align-center">All <span class="text-orange">Tags</span></h1>
+      </header>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; padding: 20px 0;">
+        {{ range .Pages }}
+        <a href="{{ .RelPermalink }}" class="tag" style="display: inline-block; padding: 8px 16px; background: #f0f0f5; border-radius: 4px; text-decoration: none;">
+          {{ .Title }} ({{ len .Pages }})
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  {{ partialCached "footer.html" . }}
+</body>
+</html>
