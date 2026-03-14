@@ -2,10 +2,21 @@
 <html lang="en">
 <head>
   <title>{{ .Params.pagetitle | default .Title }}</title>
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://google-analytics.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://googletagmanager.com">
+  <link rel="preload" href="/images/vector.png" as="image" media="(min-width: 601px)">
+  <link rel="preload" href="/images/logo.svg" as="image" media="(min-width: 601px)">
+  <link rel="preload" href="/images/bg-fon.png" as="image" media="(min-width: 601px)">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relURL }}">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="preload" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600;800&display=swap" rel="preload" as="style">
   <link rel="canonical" href="{{ .Permalink }}">
   {{ $ogImage := index .Params "featured-image" | default "images/og.png" }}
   <meta property="og:title" content="{{ .Params.pagetitle | default .Title }}" />
@@ -23,7 +34,7 @@
     gtag('config', 'UA-138327045-1');
   </script>
 </head>
-<body class="product-page">
+<body class="main-page">
   {{ partialCached "header.html" . }}
   <div id="main">
     <div class="inner">
