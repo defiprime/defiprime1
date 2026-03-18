@@ -20,6 +20,8 @@ Today, two competing visions for that future shipped on the same day. I want to 
 
 ## x402: the simple one
 
+![x402 Protocol Flow](/images/blog/stripe-x402-flow.png)
+
 Coinbase [publicly launched x402 in May 2025](https://www.coinbase.com/developer-platform/discover/launches/x402), and the core idea is almost aggressively minimal. A client requests a resource. The server responds with HTTP 402 and tells the client how much it costs, in what token, on what chain. The client pays on-chain, staples a payment proof to the retry request, and the server delivers the goods.
 
 That's it. No accounts, no API keys, no subscriptions. Just an HTTP round-trip with money in the middle.
@@ -36,6 +38,8 @@ The thesis: make payments as lightweight as HTTP requests, and the use cases sho
 
 
 ## MPP: the full-stack one
+
+![MPP Streaming Sessions](/images/blog/stripe-mpp-sessions.png)
 
 Stripe and Tempo took a different approach. The Machine Payments Protocol launched today alongside [Tempo's mainnet](https://tempo.xyz/blog/mainnet), and where x402 is a thin shim on existing chains, MPP is built for the specific problem of agents transacting at high frequency.
 
