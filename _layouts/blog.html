@@ -110,44 +110,45 @@
           {{ content | toc }}
         </div>
       </article>
-      <div class="tags">
+      <div class="post-tags">
         {% if page.tags %}
-          <span>Tags:</span>
-        {% endif %}
         {% for tag in page.tags %}
-          <a href="/t/{{tag | downcase | replace: " ", "-" }}.html" rel="tag" class="tag">{{ tag }}</a>
+          <a href="/t/{{tag | downcase | replace: " ", "-" }}.html" rel="tag" class="post-tag-pill">{{ tag }}</a>
         {% endfor %}
-
-
+        {% endif %}
       </div>
     </main>
     {% include_cached folowus.html %}
     {% include author_bio.html %}
-    <h3 class="align-center">The Latest:</h3>
-    <section class="latest">
-      {% assign posts = site.categories.blog | where_exp:"post", "post.url != page.url"%}
-      {% assign nonAmpPosts = ""  | split: ','%}
+    <div class="latest-section">
+      <h3 class="section-heading">More from the <span>blog</span></h3>
+      <section class="latest-grid">
+        {% assign posts = site.categories.blog | where_exp:"post", "post.url != page.url"%}
+        {% assign nonAmpPosts = "" | split: ','%}
+        {% for post in posts %}
+          {% unless post.url contains "/amp" %}
+            {% assign nonAmpPosts = nonAmpPosts | push: post %}
+          {% endunless %}
+        {% endfor %}
 
-      {% for post in posts %}
-        {% unless  post.url contains "/amp" %}
-          {% assign nonAmpPosts = nonAmpPosts | push: post %}
-        {% endunless  %}
-      {% endfor %}
-
-
-      {% assign nonAmpSamplePosts = nonAmpPosts | sample:4 %}
-
-      {% for post in nonAmpSamplePosts%}
-    	<article>
-    		<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}" class="post-link">
-    			<div class="content">
-    				<p class="title">{{ post.h1title }}</p>
-    				<p>{{ post.intro }}</p>
-    			</div>
-    		</a>
-    	</article>
-    	{% endfor %}
-    </section>
+        {% assign nonAmpSamplePosts = nonAmpPosts | sample:4 %}
+        {% for post in nonAmpSamplePosts %}
+        {% assign link_colors = 'violet|cyan|orange|muted' | split: '|' %}
+        {% assign border_color = forloop.index | random_item: link_colors %}
+        <article class="blog-card">
+          <a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}">
+            <div class="blog-card-inner border-{{ border_color }}">
+              {% if post.tags.first %}
+              <span class="tag-pill tag-{{ border_color }}">{{ post.tags | first }}</span>
+              {% endif %}
+              <h3>{{ post.h1title }}</h3>
+              <p>{{ post.intro | strip_html | strip_newlines | truncatewords: 20 }}</p>
+            </div>
+          </a>
+        </article>
+        {% endfor %}
+      </section>
+    </div>
         {% include_cached footer.html %}
   </body>
 </html>

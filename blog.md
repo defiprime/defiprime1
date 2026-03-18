@@ -9,53 +9,50 @@ pagination:
   category: blog
   permalink: /:num/  
 ---
-<header>
-	<h1>De<span class="text-green">fi</span> <span class="text-orange">Blog</span></h1>
-	<p>We want to shed some light on how DeFi products build and how the ecosystem evolves over time. Our blog features interviews with DeFi projects, analytics, and important news.</p>
+<header class="blog-page-header">
+	<h1>DeFi <span>Blog</span></h1>
+	<p>Interviews with DeFi projects, analytics, and important news about decentralized finance.</p>
 </header>
-<section class="blog-articles">
+
+<section class="blog-articles-grid">
 	{% for post in paginator.posts %}
-    {% unless  post.url contains "/amp" %}
-		<article>
-      {% if post.tags.size != 0 %}
-        <div class="tags">
-          {% for tag in post.tags %}
-          <a href="/t/{{tag | downcase | replace: ' ', '-' }}.html" class="tag">{{ tag }}</a>
-          {% endfor %}
-        </div>
-      {% endif %}
+    {% unless post.url contains "/amp" %}
+    {% assign link_colors = 'violet|cyan|orange|muted' | split: '|' %}
+    {% assign border_color = forloop.index | random_item: link_colors %}
+		<article class="blog-card">
 			<a href="{{ post.url }}">
-				<div class="date">{{ post.date | date_to_string}}</div>
-				<div class="header">
-					<h2>{{ post.h1title }}</h2>
-					<div class="author-item">
+				<div class="blog-card-inner border-{{ border_color }}">
+					{% if post.tags.size != 0 %}
+					<div class="blog-card-meta">
+						{% for tag in post.tags limit:2 %}
+						<span class="tag-pill tag-{{ border_color }}">{{ tag }}</span>
+						{% endfor %}
+						<span class="blog-card-date">{{ post.date | date_to_string }}</span>
+					</div>
+					{% endif %}
+					<h3>{{ post.h1title }}</h3>
+					<p>{{ post.intro | strip_html | strip_newlines | truncatewords: 30 }}</p>
+					<div class="blog-card-author">
 						{% assign author = site.data.authors[post.author] %}
 						{% if author.image %}
-							<img class="lazyload" data-src="{{ author.image }}">
+						<img class="lazyload" data-src="{{ author.image }}">
 						{% endif %}
-						<div class="author-data">
-							{% assign author = site.data.authors[post.author] %}								
-							{% if author.image %}
-								<span>Author</span>
-								<span class="author">{{author.name}}</span>
-							{% endif %}
-						</div>
+						{% if author.name %}
+						<span>{{ author.name }}</span>
+						{% endif %}
 					</div>
 				</div>
-				<div class="content">
-					<p>{{ post.intro | strip_html | truncatewords:50 }}</p>
-				</div>    
 			</a>
 		</article>
-    {% endunless  %}
+    {% endunless %}
 	{% endfor %}
 </section>
 
 <section class="pagination">
 	{% if paginator.next_page %}
-		<a class="button" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older Posts</a>
+		<a class="pagination-btn" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older Posts</a>
 	{% endif %}
 	{% if paginator.previous_page %}
-		<a class="button" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer Posts</a>
+		<a class="pagination-btn" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer Posts</a>
 	{% endif %}
 </section>
