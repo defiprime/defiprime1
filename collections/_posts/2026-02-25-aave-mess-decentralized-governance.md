@@ -7,7 +7,7 @@ h1title: "The Aave Mess: Who Actually Owns a Decentralized Protocol?"
 pagetitle: "The Aave Mess: Who Actually Owns a Decentralized Protocol?"
 metadescription: "Aave's governance crisis—swap fees, brand transfer, BGD's exit—exposes deeper questions about who really controls a decentralized protocol and whether DeFi governance is broken."
 category: blog
-featured-image: /images/blog/aave2025drama.png
+featured-image: /images/blog/aave-governance-ogp.png
 intro: "Aave had a rough winter. What started as a fight over swap fees turned into a full-blown war between the people who built the protocol and the people who theoretically own it."
 author: sawinyh
 tags: ["DeFi Guides", "Governance", "DAO"]

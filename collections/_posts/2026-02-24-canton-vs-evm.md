@@ -7,7 +7,7 @@ h1title: "Canton Network vs. EVM-Compatible Blockchains: A Technical Reckoning"
 pagetitle: "Canton Network vs. EVM-Compatible Blockchains: A Technical Reckoning"
 metadescription: "A deep technical comparison of Canton Network and EVM-compatible blockchains. Explore execution models, privacy guarantees, trust assumptions, scalability, and where each platform excels for institutional and DeFi use cases."
 category: blog
-featured-image: /images/blog/cantonevm.png
+featured-image: /images/blog/canton-vs-evm-ogp.png
 intro: "The blockchain landscape has split more sharply than most architects acknowledge. The EVM ecosystem and Canton answer different questions—comparing them as if they were racing toward the same finish line misses the point."
 author: Defiprime
 tags: ["DeFi Guides", "Infrastructure"]

@@ -7,7 +7,7 @@ h1title: "Stablecoins Hit $320 Billion. Here's What the Data Actually Shows."
 pagetitle: "Stablecoins Hit $320 Billion – What the Data Actually Shows in 2026"
 metadescription: "A data-driven look at the $320 billion stablecoin market in early 2026: market dominance, chain distribution, DeFi volumes, holder metrics, and what it means for global finance."
 category: blog
-featured-image: /images/blog/stables320.png
+featured-image: /images/blog/stables320-ogp.png
 intro: "In January 2026, stablecoin networks moved more than ten trillion dollars. A look at where the money is, how it moves, and why it matters."
 author: Defiprime
 tags: ["DeFi Guides", "Stablecoins"]
