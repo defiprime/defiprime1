@@ -1,0 +1,38 @@
+{% assign recentCandidates = site.categories.blog | slice: 0, 60 %}
+{% assign recentPosts = "" | split: ',' %}
+{% for post in recentCandidates %}
+  {% unless post.url contains "/amp" %}
+    {% assign recentPosts = recentPosts | push: post %}
+    {% if recentPosts.size >= 50 %}{% break %}{% endif %}
+  {% endunless %}
+{% endfor %}
+{% assign primaryTag = include.tag %}
+{% assign taggedPosts = "" | split: ',' %}
+{% if primaryTag %}
+  {% for p in recentPosts %}
+    {% if p.tags contains primaryTag %}
+      {% assign taggedPosts = taggedPosts | push: p %}
+      {% if taggedPosts.size >= 4 %}{% break %}{% endif %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% if taggedPosts.size >= 4 %}
+  {% assign relatedPosts = taggedPosts | slice: 0, 4 %}
+{% else %}
+  {% assign relatedPosts = recentPosts | slice: 0, 4 %}
+{% endif %}
+{% for post in relatedPosts %}
+{% assign link_colors = 'violet|cyan|orange|muted' | split: '|' %}
+{% assign border_color = forloop.index | random_item: link_colors %}
+<article class="blog-card">
+  <a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}">
+    <div class="blog-card-inner border-{{ border_color }}">
+      {% if post.tags.first %}
+      <span class="tag-pill tag-{{ border_color }}">{{ post.tags | first }}</span>
+      {% endif %}
+      <h3>{{ post.h1title }}</h3>
+      <p>{{ post.intro | strip_html | strip_newlines | truncatewords: 20 }}</p>
+    </div>
+  </a>
+</article>
+{% endfor %}
