@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/step-og.png
 intro: "George told us how Step Finance team building the first Solana-based DeFi portfolio manager"
 author: Defiprime
-tags: ['Interview', 'Asset Management', 'VC-founded']
+tags: ['Interview', "Yield", 'VC-founded']
 ---
 George told us how Step Finance team building the first Solana-based DeFi portfolio manager.
 

@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/ethereum-gas-og.png
 intro: "Gas is one of the most salient UX aspects of Ethereum"
 author: Peaster
-tags: ["DeFi Guides"]
+tags: ["Guide"]
 ---
 
 Ethereum is an open-source network designed to reliably power decentralized applications. A crucial element of the network is “gas,” which, if we understand Ethereum as a world computer, serves as the fuel for this computer’s applications and transactions. Accordingly, gas is one of the most salient UX aspects of Ethereum.

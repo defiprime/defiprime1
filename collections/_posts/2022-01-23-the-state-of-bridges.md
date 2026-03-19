@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/bridges-og.png
 intro: "Bridges are in their infancy. In 2016, most people were skeptical about anything other than Bitcoin. In 2018, most people were skeptical about smart contract platforms which were not Ethereum…"
 author: Ashdown
-tags: ["Cross-chain"]
+tags: ["Infrastructure"]
 ---
 
 On January 7th, Ethereum founder Vitalik Buterin made a bold statement in regards to how the future will be multi-chain but will _not_ be cross-chain.

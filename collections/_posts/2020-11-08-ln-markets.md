@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/ln-og.png
 intro: "Romain talks about decentralization, derivatives trading and building product on Lightning Network"
 author: Defiprime
-tags: ['Interview', 'Derivatives']
+tags: ['Interview', "DEXs"]
 ---
 Romain talks about decentralization, derivatives trading and building product on Lightning Network.
 

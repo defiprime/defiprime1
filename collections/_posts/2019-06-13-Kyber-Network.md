@@ -11,7 +11,7 @@ featured-image: /images/blog/kyber-og.png
 quote: /images/blog/kyber-quote.png
 intro: Loi Luu talks about long term objectives, and how Kyber Network is going to become the transaction layer for the decentralized economy.
 author: Defiprime
-tags: ['Interview', 'DEXs', 'Infrastructure', 'DAO governed']
+tags: ['Interview', 'DEXs', 'Infrastructure', "Governance"]
 
 ---
 Loi Luu talks about long term objectives, and how Kyber Network is going to become the transaction layer for the decentralized economy.

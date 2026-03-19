@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/kyberswap-ogp.png
 intro: "What is KyberSwap?"
 author: Defiprime
-tags:  ['DEXs', 'DeFi Guides']
+tags:  ['DEXs', "Guide"]
 ---
 
 _Disclosure: This article was sponsored by KyberSwap_

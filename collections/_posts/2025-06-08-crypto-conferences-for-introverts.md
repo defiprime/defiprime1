@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/introvert.png
 intro: "A guide for introverts navigating crypto networking events. Offers strategies for preparation, engagement, follow-up, and self-care to thrive in the Web3 space, turning challenges into networking opportunities."
 author: sawinyh
-tags: ["DeFi Guides"]
+tags: ["Guide"]
 ---
 
 Crypto networking events are a powerful way to build lasting connections, uncover opportunities, and elevate your visibility in the rapidly evolving Web3 landscape. But turning casual conversations into valuable relationships takes more than just showing up and handing out business cards. Whether you’re attending major industry conferences like Token2049 or ETHDenver, or side events, having a strategic approach can significantly amplify your outcomes.

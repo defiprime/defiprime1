@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/nftgaming-og.png
 intro: "NFT games may have the potential to become the standard for the gaming market if it sees enough attention and popularity"
 author: LimePierre
-tags: ['DeFi Guides', 'NFTs']
+tags: ["Guide", 'NFTs']
 ---
 
 Ethereum is a very open platform, with many possibilities and media able to be expanded upon with Ethereum, specifically its blockchain. With those possibilities also comes the opportunity of NFTs, especially the ERC-721 standard, which adds in the opportunity to tokenize anything you can imagine, from pictures, to music, and to what we will be touching upon today, gaming.

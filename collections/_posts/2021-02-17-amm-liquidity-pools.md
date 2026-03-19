@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/ammpools-og.png
 intro: ""
 author: Briggs
-tags: ['DeFi Guides', "DEXs", 'Liquidity Pools']
+tags: ["Guide", "DEXs"]
 ---
 
 2020 was an incredible year for decentralized exchanges, with Uniswap surpassing Coinbase in trading volume in September of 2020. This has caused more investors to get interested in liquidity pools, part of the AMM model of Uniswap. Many are drawn to providing liquidity with attractive farming rewards, but that is only one part of the equation. This article helps understand the various factors to consider when providing liquidity to Uniswap style AMM’s.

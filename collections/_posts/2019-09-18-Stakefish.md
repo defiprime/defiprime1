@@ -17,7 +17,7 @@ Wang Chun, founder of stake.fish talks about PoS staking, security-first mindset
 
 ## Hello! What's your background, and what are you working on?
 
-My name is Wang Chun. I am the founder of [stake.fish](https://stake.fish). I've been around this space ever since coming across someone discussing "Bitcoin" on Slashdot in 2011. I started to mine with machines purchased at the local market. I then co-founded one of the biggest mining pools, [f2pool](https://www.f2pool.com/), in 2013. With the rise of Proof of Stake blockchains, I founded stake.fish in 2018 to support a broader range of projects in the blockchain ecosystem.
+My name is Wang Chun. I am the founder of [stake.fish](https://stake.fish). I've been around this space ever since coming across someone discussing "Infrastructure" on Slashdot in 2011. I started to mine with machines purchased at the local market. I then co-founded one of the biggest mining pools, [f2pool](https://www.f2pool.com/), in 2013. With the rise of Proof of Stake blockchains, I founded stake.fish in 2018 to support a broader range of projects in the blockchain ecosystem.
 
 Stake.fish is a validator and node operator for blockchain projects that are using Proof of Stake or some form of staking in their mechanism. These projects will incentivize token holders to lock up (or stake) their tokens to contribute to the overall security of their network.
 

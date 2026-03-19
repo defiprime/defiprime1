@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/indexed-og.png
 intro: "Dillion shared Indexed Finance backstory, explained DeFi index investing niche and capitalization-weighted index pools"
 author: Defiprime
-tags: ['Interview', 'Derivatives']
+tags: ['Interview', "DEXs"]
 ---
 Dillion shared Indexed Finance backstory, explained DeFi index investing niche and capitalization-weighted index pools.    
 

@@ -1,7 +1,7 @@
 ---
 git-date: 2019-05-23T18:16:23-07:00
 layout: [blog]
-title:  "Synthetix"
+title:  "DEXs"
 permalink: synthetix
 h1title: Interview with Kain Warwick, founder of Synthetix
 pagetitle: Synthetix is an on-chain synthetic asset platform running on Ethereum  
@@ -11,8 +11,7 @@ featured-image: /images/blog/synthetix-og.png
 quote: /images/blog/synthetix-quote.png
 intro: Kain Warwick, founder of Synthetix talks about on-chain synthetic assets.   
 author: Defiprime
-tags: ['Interview', 'Synthetix', 'DAO governed', 'DEXs', 'Governance Token']
-
+tags: ["Interview", "DEXs", "Governance"]
 ---
 Kain Warwick, founder of Synthetix talks about on-chain synthetic assets.
 

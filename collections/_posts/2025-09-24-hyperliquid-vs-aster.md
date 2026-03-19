@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/hypervsaster.png
 intro: "The decentralized finance landscape continues to evolve with innovative protocols pushing the boundaries of what's possible in on-chain trading and financial services. Among the newer entrants making waves are Hyperliquid and Aster, two protocols that, while operating in the broader DeFi space, take distinctly different approaches to solving key challenges in decentralized trading and liquidity provision."
 author: sawinyh
-tags: ["DeFi Guides"]
+tags: ["Analysis"]
 ---
 
 The decentralized finance landscape continues to evolve with innovative protocols pushing the boundaries of what's possible in on-chain trading and financial services. Among the newer entrants making waves are Hyperliquid and Aster, two protocols that, while operating in the broader DeFi space, take distinctly different approaches to solving key challenges in decentralized trading and liquidity provision.

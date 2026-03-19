@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/stablecoin-issuance-ogp.png
 intro: "Everything you need to know about issuing a stablecoin in 2026: models, regulation, infrastructure, and the new stablechains."
 author: sawinyh
-tags: ["DeFi Guides"]
+tags: ["Guide"]
 ---
 
 Stablecoins are blockchain tokens pegged 1:1 to a fiat currency, usually the U.S. dollar. They give you the programmability and speed of crypto without the price swings. That simple combination has turned them into plumbing for DeFi, cross-border payments, remittances, treasury management, and on-chain settlement.

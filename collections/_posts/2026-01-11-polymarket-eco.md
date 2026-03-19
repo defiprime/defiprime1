@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/polyeco-og.png
 intro: "This definitive guide explores the complete landscape of Polymarket ecosystem products."
 author: sawinyh
-tags: ["DeFi Guides"]
+tags: ["Guide"]
 ---
 
 [Polymarket](https://polymarket.com/) has evolved from a niche crypto experiment into the world's largest prediction market, commanding over $44 billion in trading volume in 2025 and achieving a valuation of approximately $9 billion following a landmark \$2 billion investment from [Intercontinental Exchange (ICE)](https://www.ice.com/), the parent company of the New York Stock Exchange. What began as a platform for betting on elections has transformed into comprehensive forecasting infrastructure that now shapes how investors, institutions, and everyday users anticipate real-world events.

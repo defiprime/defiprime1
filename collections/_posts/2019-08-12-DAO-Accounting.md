@@ -11,7 +11,7 @@ featured-image: /images/blog/dao-og.png
 quote: /images/blog/dao-quote.png
 intro: "We’ll analyze various DeFi products from a US GAAP accounting perspective and end with a rumination on what they mean for the Ethereum economy as a whole."
 author: knab
-tags: ["DeFi Guides", "DeFi Accounting"]
+tags: ["Guide", "DeFi Accounting"]
 ---
 
 <div style="text-align: right">

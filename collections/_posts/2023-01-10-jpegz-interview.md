@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/jpegz-ogp.png
 intro: "Interview with Joe Sticco, co-founder of Cryptex Finance"
 author: Defiprime
-tags: ["Interview", "NFTs", "DAO governed", "Derivatives"]
+tags: ["Interview", "NFTs", "Governance", "DEXs"]
 ---
 
 ### Hello! What's your background, and what are you working on?

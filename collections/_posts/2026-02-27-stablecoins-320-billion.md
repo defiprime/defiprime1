@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/stables320-ogp.png
 intro: "In January 2026, stablecoin networks moved more than ten trillion dollars. A look at where the money is, how it moves, and why it matters."
 author: Defiprime
-tags: ["DeFi Guides", "Stablecoins"]
+tags: ["Analysis", "Stablecoins"]
 ---
 
 In January 2026, stablecoin networks moved more than ten trillion dollars. That's not a typo. Ten trillion in a single month.

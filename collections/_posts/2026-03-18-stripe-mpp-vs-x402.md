@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/stripe-mpp-vs-x402-ogp.png
 intro: "Two competing visions for machine-to-machine payments shipped on the same day. Here's how x402 and MPP differ, and why Stripe is betting on both."
 author: sawinyh
-tags: ["DeFi Guides", "Payments"]
+tags: ["Analysis", "Payments"]
 ---
 
 HTTP status code 402 has been waiting for something to do since the [HTTP/1.1 spec](https://datatracker.ietf.org/doc/html/rfc2068) defined it in the late 1990s. "Payment Required." That was the idea: bake payments into the protocol layer of the web so machines could buy things the way they request pages. It mostly didn't happen. The code saw [occasional niche use](https://www.abstractapi.com/guides/http-status-codes/402) over the years, Shopify rate-limit responses and Apple MobileMe billing errors, but no one built the micropayment future it implied. Instead we got credit cards, subscription paywalls, and API keys. All built for humans with fingers.

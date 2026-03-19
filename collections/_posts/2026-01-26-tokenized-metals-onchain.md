@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/tokenized-og.png
 intro: "How blockchain is transforming precious metals investing with $5+ billion in tokenized gold, silver, and beyond"
 author: sawinyh
-tags: ["DeFi Guides"]
+tags: ["Analysis"]
 ---
 
 The marriage of precious metals and blockchain technology has reached an inflection point in 2026. What began as an experimental concept has evolved into a multi-billion dollar market that fundamentally changes how investors gain exposure to gold, silver, and other metals. The tokenized gold market alone has surpassed \$5.1 billion in market capitalization, while the broader tokenized commodities sector now exceeds \$4.4 billion in total value locked (TVL).

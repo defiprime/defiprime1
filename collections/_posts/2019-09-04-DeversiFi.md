@@ -11,8 +11,7 @@ featured-image: /images/blog/deversifi-og.png
 quote: /images/blog/deversifi-quote.png
 intro: 'Will Harborne, told us backstory of building Ethfinex including recent rebranding it into DeversiFi, and shared his thoughts on the future of DeFi.'
 author: Defiprime
-tags: ['Interview', 'DEXs', 'DAO governed', 'Governance Token']
-
+tags: ["Interview", "DEXs", "Governance"]
 ---
 Will Harborne, told us backstory of building Ethfinex including recent rebranding it into DeversiFi, and shared his thoughts on the future of DeFi.
 

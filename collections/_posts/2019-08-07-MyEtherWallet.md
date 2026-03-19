@@ -11,7 +11,7 @@ featured-image: /images/blog/mew-og.png
 quote: /images/blog/mew-quote.png
 intro: Brian Norton talks about building a new version of MEW and sharing thoughts on the future of DeFi and dApps space at Ethereum.
 author: Defiprime
-tags: ['Interview', 'Asset Management']
+tags: ['Interview', "Yield"]
 
 ---
 Brian Norton talks about building a new version of MEW and sharing his thoughts on the future of DeFi and dApps space at Ethereum.

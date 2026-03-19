@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/vesting-og.png
 intro: "Learn everything about token vesting in this comprehensive guide. Understand different vesting schedules, their benefits, and how they ensure long-term commitment and stability in blockchain projects. Perfect for investors, developers, and crypto enthusiasts."
 author: sawinyh
-tags: ["For Builders", "DeFi Guides"]
+tags: ["For Builders", "Guide"]
 ---
 
 

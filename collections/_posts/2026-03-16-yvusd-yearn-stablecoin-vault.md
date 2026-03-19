@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/yvusd-ogp.png
 intro: "A deep dive into Yearn's yvUSD V3 vault: zero fees, nine active strategies, two deposit modes, and an honest look at where the yield comes from."
 author: sawinyh
-tags: ["DeFi Guides", "Yield Aggregators"]
+tags: ["Guide", "Yield"]
 ---
 
 Yearn Finance launched yvUSD on January 19, 2026. It's a V3 cross-chain, cross-asset stablecoin vault, not a simple USDC-only vault, with zero management fees, zero performance fees, and two deposit modes. At the time of writing it runs nine active yield strategies, though that number is dynamic and managed by the vault operator. If you've been watching the stablecoin yield space this year, those numbers alone probably caught your attention. Zero fees on a yield aggregator is unusual. Strategies spanning lending, fixed income, and points farming is ambitious. And the two-mode system (unlocked vs. locked) is a design choice I haven't seen done quite this cleanly before.

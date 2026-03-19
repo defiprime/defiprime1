@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/rwa-yield-risk-ogp.png
 intro: "A practitioner's guide to the hybrid TradFi/DeFi risks hiding inside tokenized real-world assets, and what the leading risk curators are doing about them."
 author: sawinyh
-tags: ["DeFi Guides"]
+tags: ["Analysis"]
 ---
 
 Tokenized RWAs have blown past [\$26 billion in distributed asset value](https://app.rwa.xyz/) as of March 2026, according to RWA.xyz, with an additional ~$340 billion in represented (platform-locked) value sitting behind permissioned systems. Projections for $100 billion in distributed value by year-end are circulating from credible sources like Bitfinex and [Centrifuge's COO](https://www.coindesk.com/news-analysis/2026/01/17/why-tokenized-stocks-funds-and-gold-will-have-a-breakout-year-in-2026). BlackRock and Apollo have moved well past pilots, with BUIDL and [ACRED](https://blog.redstone.finance/2025/06/26/real-world-assets-in-onchain-finance-report/) deploying real institutional capital on-chain. JPMorgan and KKR are running production tokenization initiatives, though their scope remains narrower.

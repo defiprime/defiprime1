@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/vaults-ogp.png
 intro: "From Yearn's genesis to Apollo's $160M commitment to Morpho, DeFi vaults have evolved from experimental yield tools into institutional-grade infrastructure managing billions."
 author: Defiprime
-tags: ["DeFi Guides", "DeFi List"]
+tags: ["Guide", "DeFi List"]
 ---
 
 In January 2026, Kraken launched DeFi Earn, a product that routes centralized exchange deposits into on-chain lending vaults managed by professional risk teams. Within weeks, tens of millions of dollars flowed in. Around the same time, Apollo Global Management, a firm managing $940 billion in traditional assets, signed a deal to acquire up to 9% of Morpho's token supply over four years. These aren't speculative bets on meme tokens. They're calculated moves into DeFi vaults, the infrastructure layer that quietly became the dominant way to earn yield on-chain.

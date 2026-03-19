@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/card-og.png
 intro: "This guide reviews top options like Cypher, Ether.Fi, Gnosis, and Solayer. Learn about fees, limits, and features for spending crypto directly from your wallet. Compare virtual vs. physical cards, network support, and cashback rewards."
 author: sawinyh
-tags: ["DeFi Guides"]
+tags: ["Guide"]
 ---
 
 

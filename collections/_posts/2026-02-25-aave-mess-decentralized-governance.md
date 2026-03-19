@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/aave-governance-ogp.png
 intro: "Aave had a rough winter. What started as a fight over swap fees turned into a full-blown war between the people who built the protocol and the people who theoretically own it."
 author: sawinyh
-tags: ["DeFi Guides", "Governance", "DAO"]
+tags: ["Analysis", "Governance"]
 ---
 
 [Aave](https://aave.com/) had a rough winter.

@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/bonding-curve-og.png
 intro: "This year we’ve notably seen more DeFi projects turning to bonding curves to efficiently distribute their tokens to the ecosystem"
 author: Peaster
-tags: ['DeFi Guides']
+tags: ["Guide"]
 ---
 In the context of DeFi, a bonding curve is a mathematical formula used to set a relationship between a token’s price and its supply. This year we’ve notably seen more DeFi projects turning to bonding curves to efficiently distribute their tokens to the ecosystem.
 

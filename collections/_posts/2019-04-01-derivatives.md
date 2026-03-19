@@ -1,7 +1,7 @@
 ---
 git-date: 2019-04-13T21:06:27-07:00
 layout: page
-title: "Derivatives"
+title: "DEXs"
 permalink: derivatives
 h1title: Derivatives
 pagetitle: Top DeFi Ethereum Options, Futures, Derivatives Exchanges

@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/mooniswap-og.png
 intro: "Anton told us the 1inch backstory from a hackathon project to a leading DeFi aggregator, and how's new Mooniswap AMM is different"
 author: Defiprime
-tags: ['Interview', 'DEXs', 'VC-founded', 'Liquidity Pools']
+tags: ["Interview", "DEXs", "VC-founded"]
 ---
 Anton told us the 1inch backstory from a hackathon project to a leading DeFi aggregator, and how's new Mooniswap AMM is different.
 

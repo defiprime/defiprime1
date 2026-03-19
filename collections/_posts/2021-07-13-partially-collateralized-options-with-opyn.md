@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/options-og.png
 intro: ""
 author: Prospere
-tags: ['DeFi Guides', 'Derivatives']
+tags: ["Guide", "DEXs"]
 ---
 
 ### What are Options?

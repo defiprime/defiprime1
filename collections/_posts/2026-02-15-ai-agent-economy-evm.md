@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/aionchain-ogp.png
 intro: "A clear-eyed look at the on-chain AI agent economy onchain in early 2026."
 author: sawinyh
-tags: ["DeFi Guides"]
+tags: ["Analysis"]
 ---
 
 The idea of AI agents living and earning on blockchain used to feel like pure speculation. In early 2026 it is starting to look more like an actual, if still immature, economic layer, especially on Ethereum-compatible chains. The EVM ecosystem's big advantages are its huge developer base, deep liquidity, and mature tooling. That combination is letting builders tackle the practical problems of letting software act like economic actors: identity, trust, payments, and compute.

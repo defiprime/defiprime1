@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/elastic-og.png
 intro: "In this post, we’ll break down how these assets work via rebases and walk through top example projects from today’s cryptoeconomy"
 author: Peaster
-tags: ['DeFi Guides']
+tags: ["Guide"]
 ---
 Ethereum’s decentralized finance arena has many rising sectors, including non-custodial exchanges, stablecoins, tokenized bitcoin, and more.
 

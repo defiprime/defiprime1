@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/points-og.png
 intro: "Planning a token launch? This comprehensive guide reveals how to design points programs that build loyal communities while avoiding costly mistakes."
 author: sawinyh
-tags: ["For Builders", "DeFi Guides"]
+tags: ["For Builders", "Guide"]
 ---
 
 Points-based distribution programs have emerged as one of the most powerful mechanisms for bootstrapping Web3 projects, driving user adoption, and creating anticipation around token launches. These programs reward users for early participation, engagement, and contributions to a protocol before—and sometimes after—its native token goes live. Unlike traditional airdrops that provide one-time snapshots of user activity, points systems create sustained engagement loops that align user behavior with protocol growth objectives.

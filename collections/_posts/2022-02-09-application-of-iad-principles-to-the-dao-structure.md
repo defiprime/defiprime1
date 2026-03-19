@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/iad-ogp.png
 intro: "This article will explore some examples of how IAD principles can be realized in the context of DAO and the open questions we have so far"
 author: Savelyev
-tags: ["DeFi Guides", "For Builders", "DAO governed"]
+tags: ["Analysis", "For Builders", "Governance"]
 ---
 
 ![](/images/blog/application-of-iad-principles-to-the-dao-structure/image1.png)
