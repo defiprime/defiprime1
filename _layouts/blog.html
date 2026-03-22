@@ -123,7 +123,7 @@
     <div class="latest-section">
       <h3 class="section-heading">More from the <span>blog</span></h3>
       <section class="latest-grid">
-        {% include_cached related-posts.html tag=page.tags.first %}
+        {% include related-posts.html tag=page.tags.first current_url=page.url %}
       </section>
     </div>
         {% include_cached footer.html %}

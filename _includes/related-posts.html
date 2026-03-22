@@ -10,7 +10,7 @@
 {% assign taggedPosts = "" | split: ',' %}
 {% if primaryTag %}
   {% for p in recentPosts %}
-    {% if p.tags contains primaryTag and p.url != page.url %}
+    {% if p.tags contains primaryTag and p.url != include.current_url %}
       {% assign taggedPosts = taggedPosts | push: p %}
       {% if taggedPosts.size >= 4 %}{% break %}{% endif %}
     {% endif %}
@@ -18,7 +18,7 @@
 {% endif %}
 {% assign filteredRecent = "" | split: ',' %}
 {% for p in recentPosts %}
-  {% unless p.url == page.url %}
+  {% unless p.url == include.current_url %}
     {% assign filteredRecent = filteredRecent | push: p %}
   {% endunless %}
 {% endfor %}
