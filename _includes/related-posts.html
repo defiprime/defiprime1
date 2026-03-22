@@ -10,16 +10,22 @@
 {% assign taggedPosts = "" | split: ',' %}
 {% if primaryTag %}
   {% for p in recentPosts %}
-    {% if p.tags contains primaryTag %}
+    {% if p.tags contains primaryTag and p.url != page.url %}
       {% assign taggedPosts = taggedPosts | push: p %}
       {% if taggedPosts.size >= 4 %}{% break %}{% endif %}
     {% endif %}
   {% endfor %}
 {% endif %}
+{% assign filteredRecent = "" | split: ',' %}
+{% for p in recentPosts %}
+  {% unless p.url == page.url %}
+    {% assign filteredRecent = filteredRecent | push: p %}
+  {% endunless %}
+{% endfor %}
 {% if taggedPosts.size >= 4 %}
   {% assign relatedPosts = taggedPosts | slice: 0, 4 %}
 {% else %}
-  {% assign relatedPosts = recentPosts | slice: 0, 4 %}
+  {% assign relatedPosts = filteredRecent | slice: 0, 4 %}
 {% endif %}
 {% for post in relatedPosts %}
 {% assign link_colors = 'violet|cyan|orange|muted' | split: '|' %}
