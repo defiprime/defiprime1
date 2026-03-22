@@ -43,6 +43,8 @@ That's the toolkit. Now here's what you can build with it.
 
 ## Model 1: Liquid Genesis Staking Pools (LGSP)
 
+![LGSP Model](/images/blog/token-model-lgsp.png)
+
 *"Stake-to-Own the Network"*
 
 This is probably the most immediately deployable model here. It could ship on Ethereum or Solana in weeks using existing audited staking contracts.
@@ -74,6 +76,8 @@ Pure protocol staking plus LSD issuance plus commodity-token rewards. No offer o
 
 
 ## Model 2: Commodity Pre-Participation Agreements (CPAs)
+
+![CPA Model](/images/blog/token-model-cpa.png)
 
 *The SAFT Killer*
 
@@ -118,6 +122,8 @@ The SAFT had a structural contradiction: you're selling something and simultaneo
 
 
 ## Model 3: Separation-Accelerated Revenue Rights (SARR)
+
+![SARR Model](/images/blog/token-model-sarr.png)
 
 *The Decentralization Bond*
 
