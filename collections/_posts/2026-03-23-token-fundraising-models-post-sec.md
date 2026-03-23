@@ -1,30 +1,32 @@
 ---
 git-date:
 layout: [blog]
-title: "Three Token Fundraising Models That Didn't Exist Before March 17, 2026"
+title: "Three Token Fundraising Models Inspired by the SEC's March 17 Release"
 permalink: token-fundraising-models-post-sec
-h1title: "Three Token Fundraising Models That Didn't Exist Before March 17"
-pagetitle: "Three Token Fundraising Models That Didn't Exist Before the SEC's March 17 Release"
-metadescription: "The SEC's Interpretive Release 33-11412 cleared staking, wrapping, and airdrops. Here are three fundraising models you can actually build with the new rules."
+h1title: "Three Token Fundraising Models Inspired by the SEC's March 17 Release"
+pagetitle: "Three Token Fundraising Models Inspired by SEC Interpretive Release 33-11412"
+metadescription: "The SEC's Interpretive Release 33-11412 cleared specific crypto activities. We explore three speculative fundraising models inspired by the new guidance and where the legal risk still lives."
 category: blog
 featured-image: /images/blog/token-fundraising-models-post-sec-ogp.png
-intro: "The SEC's Interpretive Release 33-11412 cleared staking, wrapping, and airdrops. Here are three fundraising models you can actually build with the new rules."
+intro: "The SEC's Interpretive Release 33-11412 cleared specific crypto activities. We explore three speculative fundraising models inspired by the new guidance and where the legal risk still lives."
 author: sawinyh
 tags: ["Analysis"]
 ---
 
 On March 17, the SEC and CFTC jointly published [Interpretive Release No. 33-11412](/sec-defi-release-33-11412), a 68-page document that did something the crypto industry had been begging for since 2017: it drew actual lines. Not enforcement actions disguised as guidance. Not speeches that contradicted each other from one commissioner to the next. Lines.
 
-The release classifies crypto assets into five categories, declares that staking, liquid staking derivatives, wrapping, and qualifying airdrops fall outside securities law, and introduces a "separation doctrine" that gives projects a defined off-ramp from investment-contract status once they decentralize. Chairman Paul Atkins said the quiet part loud: "Most crypto assets are not themselves securities."
+The release classifies crypto assets into five categories and declares that specific, common crypto activities, staking, liquid staking derivatives, wrapping, and qualifying airdrops, "in the manner and under the circumstances described," fall outside securities law. It also introduces a "separation doctrine" that gives projects a potential off-ramp from investment-contract status once they decentralize. Chairman Paul Atkins said the quiet part loud: "Most crypto assets are not themselves securities."
 
-We've read the release cover to cover. The legal analysis has been done to death by every law firm with a blockchain practice. What hasn't been explored yet is this: *what can you actually build with these new rules?*
+We've read the release cover to cover. The legal analysis has been done to death by every law firm with a blockchain practice. What hasn't been explored yet is this: *what design space does this guidance open up, at least in theory?*
 
-Below are three token-based fundraising and treasury models that were legally impossible, or at least legally terrifying, before 33-11412. None of them are SAFTs. None rely on token sales. All of them treat the native token as a commodity from day one and use only the activities the SEC just cleared. We ran simulations on each, and the numbers hold up better than most 2021-era tokenomics ever did.
+**An important caveat before we go further:** The release cleared specific activities as they commonly exist today. It did not pre-approve novel fundraising structures that chain those activities together in new ways. The three models below are thought experiments, not legal opinions. They use primitives the SEC described, but combine them into constructions the release never analyzed. Any team considering something like these would need its own legal counsel and a fact-specific analysis. We flag the legal risk for each model honestly, including where we think the arguments are weakest.
+
+With that framing, here are three token-based fundraising and treasury designs that become *easier to reason about* after 33-11412, even if they aren't blessed by it. We ran economic simulations on each, and the numbers are interesting regardless of where the legal lines ultimately land.
 
 
 ## What Actually Changed (the 90-Second Version)
 
-For readers who haven't waded through the release, here's what matters for protocol design:
+For readers who haven't waded through the release, here's what the SEC and CFTC actually said. Note: these apply to activities "in the manner and under the circumstances described" in the release, meaning existing common practices, not hypothetical new constructions:
 
 **Native tokens of functional, decentralized networks are digital commodities.** Bitcoin, Ethereum, Solana, Cardano, Chainlink, and at least ten others are named explicitly. If no single person or group controls a network's operations, economics, or upgrades, the native token is probably a commodity under CFTC jurisdiction, not the SEC's.
 
@@ -36,9 +38,9 @@ For readers who haven't waded through the release, here's what matters for proto
 
 **Qualifying airdrops fail the Howey test.** No consideration from recipients means no "investment of money." Community drops, retroactive rewards, testnet airdrops, all clear.
 
-**The separation doctrine gives projects an exit.** Once promises are fulfilled, code is open-sourced, and the network decentralizes, the token separates from any prior investment contract. Secondary trading becomes non-security activity.
+**The separation doctrine describes a potential exit.** The release suggests that once promises are fulfilled, code is open-sourced, and the network genuinely decentralizes, the token may separate from any prior investment contract. But the conditions are fact-specific and require careful legal analysis, it's not a mechanical trigger you can just declare. As the Aurum Law analysis noted, you'll likely need a legal opinion benchmarked against your own prior representations.
 
-That's the toolkit. Now here's what you can build with it.
+That's what the release actually cleared. Below, we explore what *might* be buildable in its spirit, with full acknowledgment that these are extrapolations, not covered ground.
 
 
 ## Model 1: Liquid Genesis Staking Pools (LGSP)
@@ -68,11 +70,13 @@ The "fundraise" is locked TVL, not sold equity. Protocol revenue from fees, MEV,
 
 We ran a 12-month simulation starting from $10M TVL with a 5% LSD base yield, 20% annual token emission relative to TVL, 10% protocol revenue, and 2% monthly organic TVL growth. By month 12, the TVL reached roughly $13.3M. The circulating token supply hit about 116M tokens. Market cap landed around $2.5M with a token price near $0.02.
 
-Early stakers capture upside while the protocol gets instant, sticky capital. Zero legal friction.
+Early stakers capture upside while the protocol gets instant, sticky capital.
 
-### Why It's Compliant
+### The Legal Case and Its Limits
 
-Pure protocol staking plus LSD issuance plus commodity-token rewards. No offer or sale of a security. If the team never promises profits, it stays clean even before separation. The SEC's own language in the release says rewards are payments in exchange for services provided to the network, not profits from managerial efforts.
+Of the three models, LGSP stays closest to what the release actually describes. Each individual component, staking, LSD issuance, programmatic rewards, is an activity the SEC addressed. The release says staking rewards are payments in exchange for services provided to the network, not profits from managerial efforts.
+
+The open question is whether combining these primitives into a deliberate fundraising mechanism changes the analysis. A staking pool designed from day one to bootstrap a protocol's treasury looks different from Ethereum validators earning rewards on an established network. If users are staking primarily because they expect the new protocol's token to appreciate, a court might view that differently than the SEC's description of routine staking. The team's conduct matters enormously here: any marketing that frames staking as an investment opportunity could undermine the entire structure.
 
 
 ## Model 2: Commodity Pre-Participation Agreements (CPAs)
@@ -116,9 +120,13 @@ Early participants "pre-mine" their allocation through real work and capital whi
 
 The CPA model starts with a $5M initial contribution raise, giving it an immediate war chest. With a 50% ongoing treasury allocation and flat 10% emission cap, our simulation showed treasury staying above 29 months of runway through the first year. By month 12, TVL reached $13.5M, and token price sat around $0.46. Dilution over five years stayed at only about 40%, the best price performance of all three models.
 
-### Why This Actually Works
+### The Legal Case and Its Limits
 
-The SAFT had a structural contradiction: you're selling something and simultaneously arguing it's not the thing you need registration to sell. CPAs sidestep this. You never sell the token. You incentivize contributions through wrapped commodity rights that convert post-decentralization. The SEC's release says wrapping is safe, staking is safe, and separation gives you the clean break. CPAs chain all three together.
+The SAFT had a structural contradiction: you're selling something and simultaneously arguing it's not the thing you need registration to sell. CPAs attempt to sidestep this by never selling the token directly.
+
+But here's where it gets uncomfortable: "participation rights" that convert into tokens post-milestones and trade on DEXs in the meantime look a lot like investment contracts. If people are buying these rights on a DEX because they expect the token conversion to be profitable, that's hard to distinguish from a securities offering regardless of the wrapping mechanism. The SEC's release cleared wrapping of existing non-security crypto assets on a one-for-one basis, not wrapping novel pre-token claims. A CPA right is not wETH. Calling it a "wrapped commodity" doesn't make it one if the underlying right hasn't been established as a commodity in the first place.
+
+This model would need the strongest legal opinion of the three, and the outcome is genuinely uncertain.
 
 
 ## Model 3: Separation-Accelerated Revenue Rights (SARR)
@@ -149,9 +157,15 @@ The model creates a "decentralization bond" market. The price of rights rises as
 
 In our simulation, SARR showed the strongest long-term treasury sustainability. By month 45, the project achieves positive treasury, with growing runway thereafter. By month 60 (five years), the treasury covers 6-7 months of operating expenses and is still growing. Dilution stayed around 49% over five years. The decay function means every milestone literally pays the dev team more, since less revenue flows to early holders and more stays in the treasury.
 
-### Why SARR Might Be the Best Model for New Protocols
+### Why SARR Is Interesting as a Design Primitive
 
-It solves the biggest problem in crypto: aligning the founding team's financial interests with actual decentralization. Under the old regime, founders had every reason to maintain control, because that's where the value accrued. SARR inverts this. Centralization is expensive (high revenue share to early holders). Decentralization is profitable (lower share plus freely tradable commodity token).
+It attempts to solve the biggest problem in crypto: aligning the founding team's financial interests with actual decentralization. Under the old regime, founders had every reason to maintain control, because that's where the value accrued. SARR inverts this. Centralization is expensive (high revenue share to early holders). Decentralization is profitable (lower share plus freely tradable commodity token).
+
+### The Legal Case and Its Limits
+
+Of the three models, SARR has the most obvious legal vulnerability. A claim on a percentage of protocol fees, paid in the native token, that decays over time, looks like a profit-sharing instrument under almost any reading of Howey. Calling it a "wrapped revenue commodity right" is creative labeling, but substance matters more than labels in securities law. The release cleared wrapping of existing non-security crypto assets. It did not address wrapping novel revenue claims.
+
+The decay mechanism is economically elegant but doesn't solve the Howey problem. If anything, the milestone-gated structure reinforces that holders are depending on the team's managerial efforts to hit decentralization targets that increase the token's tradability. A skeptical regulator would have a strong argument here.
 
 
 ## Can These Models Actually Fund a Real Team?
@@ -178,7 +192,7 @@ For the bridge period (roughly months 1-18), projects using LGSP or SARR would p
 
 ## What About the Caveats?
 
-We'd be doing the reader a disservice if we didn't flag the risks.
+We'd be doing the reader a disservice if we didn't flag the structural risks, beyond the model-specific issues above.
 
 **33-11412 is interpretive guidance, not statutory law.** It's the SEC's view of how existing law applies. It doesn't bind courts, and a future commission could revise it. That said, revising a jointly issued SEC/CFTC interpretation would be politically expensive and legally complex. This is about as durable as non-legislative guidance gets.
 
@@ -197,10 +211,12 @@ The 33-11412 release is open for public comment. CFTC rulemaking on commodities 
 
 But the gap is navigable now in ways it wasn't two weeks ago. Protocols can design around the five-category taxonomy instead of guessing. They can use staking, wrapping, and airdrops as fundraising primitives without wondering whether each one is a potential enforcement action. And they can build toward the separation doctrine as a defined milestone rather than a vague aspiration.
 
-The three models above aren't theoretical. Every component, staking pools, LSD issuance, wrapped receipts, programmatic rewards, milestone-gated conversion, on-chain revenue sharing, exists in production today across multiple chains. What didn't exist was the regulatory clarity to combine them into coherent fundraising mechanisms.
+Every individual component in the models above, staking pools, LSD issuance, wrapped receipts, programmatic rewards, milestone-gated conversion, on-chain revenue sharing, exists in production today across multiple chains. What 33-11412 provides is clearer language around those individual primitives. What it does *not* provide is a blessing for novel combinations of those primitives into fundraising mechanisms the release never contemplated.
 
-Now it does.
+That's the honest gap. The release makes it easier to reason about these designs. It does not make them safe to ship without serious legal work. LGSP is closest to covered ground. CPAs and SARR are more creative but carry proportionally more legal risk, SARR especially.
 
-The next few months will reveal whether founders actually use this window or keep incorporating in the Cayman Islands out of habit. If we had to bet, we'd say the first LGSP or CPA launches on Ethereum before June. The regulatory runway is there. The smart contract infrastructure is there. The institutional capital that's been sitting on the sidelines waiting for exactly this kind of clarity is there too.
+The next few months will reveal whether founders treat the release as a starting point for careful legal engineering or as a green light for creative tokenomics. History suggests some will do the latter and regret it. The design space is genuinely more interesting after March 17. But "more interesting" and "legally cleared" are very different things.
 
-The question isn't whether these models work on paper. It's who ships first.
+---
+
+*Disclaimer: This article is not legal advice and was not written or reviewed by attorneys. It represents our observations on what might theoretically be possible in the design space opened by Interpretive Release 33-11412. The models described are speculative thought experiments, not recommendations. The SEC's release cleared specific existing activities under specific conditions; it did not analyze or approve the constructions described here. Anyone considering building on these ideas should engage qualified legal counsel for a fact-specific analysis. The tokenomic simulations use illustrative assumptions and are not predictive. Nothing here constitutes financial or investment advice.*
