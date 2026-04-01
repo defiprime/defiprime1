@@ -34,4 +34,4 @@ Bad pitch for listing at DeFiprime:
 Good pitch for listing at DeFiprime:
 - "We launched on mainnet three months ago, after two respectable auditors independently audited our smart contracts. Since our launch, we achieved this and that milestones, and XXXX users using our app regularly. We also integrated with a few well-known DeFi protocols."
 
-*If you'd like to submit your project, please fill this [product listing form](https://sneg55.typeform.com/to/WRFW02).*
+*If you'd like to submit your project, please fill this [product listing form](https://forms.fillout.com/t/by3Zq83Wnuus).*
