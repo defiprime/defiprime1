@@ -29,7 +29,7 @@ Now the DeFi side, stablecoin lending specifically, the "safest" corner of on-ch
 
 Net premium over T-bills? Somewhere between zero and 40 basis points on the best blue-chip setups. On vanilla Aave it's frequently *negative*, meaning you're getting paid less than risk-free for taking on smart contract risk, oracle risk, governance risk, and the possibility of total loss.
 
-Tokenized RWAs (BlackRock's BUIDL, [Ondo](/ondo-finance), and similar products) sit in the middle at roughly 3.5-4.5%, blending TradFi yields with on-chain composability. They're not "DeFi alpha" either, but at least the risk profile is different.
+Tokenized RWAs (BlackRock's BUIDL, Ondo, and similar products) sit in the middle at roughly 3.5-4.5%, blending TradFi yields with on-chain composability. They're not "DeFi alpha" either, but at least the risk profile is different.
 
 The gap between DeFi lending and Treasuries has been compressing for years. Real borrowing demand exists on-chain, but it's no longer generating the fat risk premiums that made yield farming attractive in 2021-2023.
 
@@ -71,7 +71,7 @@ Blue-chip stablecoin lending on [Aave](/aave) or [Morpho](/decentralized-lending
 
 Aggregated yield across multiple protocols with routing and liquidity assumptions layered on top? 8-15% APY. You're stacking risks and the premium needs to reflect that.
 
-Delta-neutral strategies like [Ethena](/ethena)-style basis trades and funding rate plays? 12-25% APY. Ethena's sUSDe has swung between 30%+ in bull markets and under 5% when funding flips negative — the average looks attractive, but the variance is the risk. If you're getting a steady 8% for this kind of exposure, you're underpaid.
+Delta-neutral strategies like Ethena-style basis trades and funding rate plays? 12-25% APY. Ethena's sUSDe has swung between 30%+ in bull markets and under 5% when funding flips negative — the average looks attractive, but the variance is the risk. If you're getting a steady 8% for this kind of exposure, you're underpaid.
 
 High-APY farms and incentive programs? 20-50%+ APY, and even then, expected value can be negative. Most of these are token inflation subsidies dressed up as yield.
 
