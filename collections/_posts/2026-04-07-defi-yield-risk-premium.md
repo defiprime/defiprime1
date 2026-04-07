@@ -37,15 +37,15 @@ The gap between DeFi lending and Treasuries has been compressing for years. Real
 
 Every time someone frames DeFi risk as "well, nothing has happened to Aave yet," they're making an argument from survivorship. The correct framing: what's the cost if something does happen?
 
-The answer is 100%. Not a drawdown. Not a temporary loss. A complete wipeout of principal.
+In the worst case, 100%. A complete wipeout of principal. In practice, some exploits end in partial recoveries — Euler returned roughly $200 million after negotiating with the attacker in 2023, and Jump backstopped Wormhole's $320 million loss. But you can't count on the white knight showing up. Plenty of exploits end with zero recovery and a Discord announcement that the team is "working with law enforcement."
 
-Q1 2026 data from DefiLlama puts total DeFi losses at about $169 million across 34 incidents. That's down 89% year-over-year, which sounds great until you remember that Q1 2025 was dominated by the $1.4 billion Bybit breach. Exclude that outlier and the pace of smaller exploits is actually *increasing*.
+Q1 2026 data from DefiLlama puts total DeFi protocol losses at about $169 million across 34 incidents. That's down sharply from Q1 2025, though that comparison is skewed by the $1.4 billion Bybit breach — a centralized exchange hack, not a DeFi exploit. Strip out CeFi incidents from both periods and the pace of on-chain exploits is actually *increasing*.
 
-Then came April 1st. Drift Protocol, the largest decentralized perpetual futures exchange on Solana, lost $285 million in a single attack. Not a smart contract bug. The attackers manufactured a fake token called CarbonVote, spent weeks building a synthetic price history through wash trading, socially engineered multisig signers into pre-approving transactions, and executed 31 withdrawals in 12 minutes. Drift's TVL collapsed from $550 million to under $250 million in less than an hour.
+Then came April 1st. Drift Protocol, the largest decentralized perpetual futures exchange on Solana, lost $285 million in a single attack. Drift is a perps DEX, not a lending protocol — a different risk category than Aave or Morpho. But the mechanics of the attack are relevant to anyone in DeFi because they didn't exploit a smart contract bug. The attackers manufactured a fake token called CarbonVote, spent weeks building a synthetic price history through wash trading, socially engineered multisig signers into pre-approving transactions, and executed 31 withdrawals in 12 minutes. Drift's TVL collapsed from $550 million to under $250 million in less than an hour.
 
 Elliptic flagged the attack as likely linked to North Korean state-sponsored hackers. If confirmed, it would be the eighteenth DPRK-attributed operation this year alone, with over $300 million stolen.
 
-This is what the downside looks like in practice. Not a rounding error on your yield, but the complete evaporation of your deposit. And it happened to a protocol that had passed security audits from Trail of Bits and ClawSecure just weeks earlier.
+This is what the downside looks like in practice. Not a rounding error on your yield, but the evaporation of your deposit. And it happened to a protocol that had passed security audits from Trail of Bits and ClawSecure just weeks earlier.
 
 Compare that to T-bills: the worst realistic case is inflation eroding real returns. The absolute worst case is a U.S. default, which remains firmly in "tail of tails" territory.
 
@@ -53,15 +53,17 @@ Compare that to T-bills: the worst realistic case is inflation eroding real retu
 
 Let's work through the expected value math, then layer on how real people actually behave.
 
-Assume an annualized probability *p* of total loss from a major exploit or systemic failure. For mature protocols like Aave or Morpho, a conservative estimate based on historical resilience: 0.5-2% per year. For anything newer or less battle-tested, significantly higher.
+Assume an annualized probability *p* of total loss from a major exploit or systemic failure. For mature protocols like Aave or Morpho, the honest answer is that nobody knows the real number. Aave has never been exploited on Ethereum mainnet, which could mean the probability is 0.1% or that we're still in the early innings of a long game. Nexus Mutual prices exploit cover on Aave at roughly 2-3% annualized, which is the market's best guess at the risk. For anything newer or less battle-tested, significantly higher.
 
 The break-even formula is simple:
 
 **Required DeFi APY ≥ T-bill yield / (1 - p)**
 
-At *p* = 1%, you need about 3.74% just to *match* expected value with Treasuries. At *p* = 2%, you need about 3.78%.
+At *p* = 1%, you need about 3.74% just to *match* expected value with Treasuries. At *p* = 2% (closer to what Nexus Mutual implies), you need about 3.78%.
 
 But that's the risk-neutral calculation. Nobody is risk-neutral with real money. We demand compensation for tail risk, for illiquidity, for variance, for the fact that losing 100% of a position is psychologically and financially devastating in a way that earning an extra 40 bps is not. This is the same reason high-yield bonds trade at 200-500+ bps over Treasuries.
+
+One way to make this concrete: buy exploit cover. If Nexus Mutual charges you 2.5% annually to insure your Aave deposit, your effective yield drops by that amount. A 4% Aave yield minus 2.5% cover leaves you at 1.5% — well below T-bills. The insurance market is telling you the risk premium isn't there.
 
 Apply that logic to DeFi by strategy tier and the numbers get uncomfortable fast.
 
@@ -69,7 +71,7 @@ Blue-chip stablecoin lending on [Aave](/aave) or [Morpho](/decentralized-lending
 
 Aggregated yield across multiple protocols with routing and liquidity assumptions layered on top? 8-15% APY. You're stacking risks and the premium needs to reflect that.
 
-Delta-neutral strategies like [Ethena](/ethena)-style basis trades and funding rate plays? 12-25% APY. The tail risk is non-linear blowups. If you're getting 8% for this, you're underpaid.
+Delta-neutral strategies like [Ethena](/ethena)-style basis trades and funding rate plays? 12-25% APY. Ethena's sUSDe has swung between 30%+ in bull markets and under 5% when funding flips negative — the average looks attractive, but the variance is the risk. If you're getting a steady 8% for this kind of exposure, you're underpaid.
 
 High-APY farms and incentive programs? 20-50%+ APY, and even then, expected value can be negative. Most of these are token inflation subsidies dressed up as yield.
 
@@ -108,7 +110,7 @@ That said, the infrastructure is getting better. Curated risk vaults with profes
 
 Aave V4 launched on March 30 with a new hub-and-spoke architecture designed to reduce liquidity fragmentation. If it works as intended, it could meaningfully change the capital efficiency equation. But "if it works as intended" is doing a lot of heavy lifting given that the protocol just went live.
 
-The biggest shift isn't technical, it's conceptual. The most expensive attacks in Q1 2026 weren't smart contract bugs. They were key management failures, social engineering, and governance manipulation. Step Finance lost $40 million to a phishing compromise. [Resolv](/resolv-usr-exploit) lost $25 million through a compromised AWS key. Drift lost $285 million through manufactured tokens and socially engineered multisig approvals. The code held up. The humans didn't.
+The biggest shift isn't technical, it's conceptual. The most expensive attacks in Q1 2026 weren't smart contract bugs in the traditional sense. They were key management failures, social engineering, and governance manipulation. Step Finance lost $40 million to a phishing compromise. [Resolv](/resolv-usr-exploit) lost $25 million through a compromised AWS key. Drift lost $285 million through manufactured tokens and socially engineered multisig approvals. That said, calling these purely "human failures" lets the protocols off too easy — Drift's design trusted synthetic price history that could be manufactured through wash trading, which is a protocol design flaw as much as an operational one. The line between code risk and human risk is blurrier than it looks.
 
 ## The bottom line
 
