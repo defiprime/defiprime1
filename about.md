@@ -4,50 +4,51 @@ layout: static
 title: About
 h1title: About
 pagetitle: About DeFiprime
-metadescription: DeFiprime.com is a media outlet and analytical services provider for the DeFi community. Its mandate is to inform, educate, and connect the community as the definitive source of news dedicated to decentralized finance space.
+metadescription: DeFiprime is a media outlet covering decentralized finance since 2019. We publish practitioner research on stablecoins, RWAs, DeFi yield, payments infrastructure, and crypto regulation.
 featured-image: /images/og.png
 permalink: about
 author: sawinyh
 date: 2019-04-01
 ---
 
-DeFiprime.com is a media outlet and analytical services provider for the DeFi community. Its mandate is to inform, educate, and connect the community as the definitive source of news dedicated to decentralized finance space.
+DeFiprime has covered decentralized finance since 2019. The scope has changed a lot since then. Stablecoins now settle hundreds of billions of dollars in monthly volume, real-world assets are showing up on-chain in size, the SEC has started to draw clearer lines around what is and isn't a security, and machine-to-machine payments are a real product category.
 
-### Product Listing 101: definition of "the best DeFi Product"
+Our editorial focus has moved with the market. We write for people who build, allocate capital, or regulate in this space. Expect research-driven pieces on yield math, risk curation, stablecoin issuance, RWA structure, governance failures, exploit postmortems, and the regulatory frontier.
 
-We are a _curated list_ of DeFi products, not aiming to list every existing product, but only the best ones. The product listing could be a _subjective_ process, and not a substitute for professional advice and independent verification.
+### What we publish
 
-- Is this a product interesting to the people outside of its own bagholders community?
-- Is it a live product functioning on mainnet(not coming soon, not testnet, not "please take a look at our whitepaper")?
-- Visible product traction(not empty marketplace, not empty order book, etc).
-- Decentralized or open-sourced frontend in case you want to play with geofences. Label 'Region is not supported' is a spit in the face of DeFi. Check our recent [twitter-poll](https://twitter.com/defiprime/status/1130890433821724672) with community sentiment on this matter.
-- No crypto tribalism and bias. Ethereum, Tron, EOS, Bitcoin and the rest of blockchains are equal as long as a DeFi product built on top of it is useful.
-- Lastly: no, you can’t buy a listing on Defiprime, don’t waste your time.
+- **Practitioner research.** Risk premiums, yield decomposition, protocol mechanics. If the APY doesn't justify the downside, we show the arithmetic.
+- **Regulatory reporting.** SEC releases, MiCA, enforcement actions, read against the primary source rather than a press release.
+- **Infrastructure deep-dives.** Stablecoin issuers, perps venues, prediction markets, credit markets, settlement layers.
+- **Incident coverage.** Exploits, governance blow-ups, peg events. What actually happened, and who bore the loss.
 
-So to reiterate, we’ll give you two examples below.
+### Product listing
 
-**Bad pitch** for listing at DeFiprime:
+We run a curated list of DeFi products. We aren't trying to catalogue every project; we're trying to surface the ones worth paying attention to.
 
-- "We are going to change the world with our super-duper AI-based smart contract platform, here is our whitepaper. We have 50,000 people at our Telegram group! We also struck a deal of the century with a big brand(but no one has heard about this brand anyway, and it's not related to Finance or Blockchain). Still working on our product launch, but you can play with this thing on testnet."
+Criteria we actually apply:
 
-**Good pitch** for listing at DeFiprime:
+- Live on mainnet with real usage. Not a testnet, not a pitch deck.
+- Open to users regardless of jurisdiction, or at minimum honest about its geofencing. "Region is not supported" is not a feature.
+- Chain-agnostic. We don't play tribal.
+- No pay-to-list. This has always been the rule.
 
-- "We launched on mainnet three months ago, after two respectable auditors independently audited our smart contracts. Since our launch, we achieved this and that milestones, and XXXX users using our app regularly. We also integrated with a few well known DeFi protocols."
+If you'd like to submit a project for consideration, use the [listing form](https://forms.fillout.com/t/by3Zq83Wnuus).
 
-_If you'd like to submit your project, please fill this [product listing form](https://forms.fillout.com/t/by3Zq83Wnuus)._
+### Advertising
 
-### Advertising on DeFiprime
+The only ad format we run is native articles: interviews, use cases, technical explainers. No display ads, no sponsored listings. If you have something worth writing about, use the [advertising form](https://forms.fillout.com/t/ehASQ5qMzxus). Listing a project and advertising are separate processes, and listings are free.
 
-We are the largest and oldest media outlet, focused solely on DeFi and Open Finance space. The only ad format available for adverts at the moment is a native articles(interviews, use cases, explainers). Fill this [inquiry form](https://forms.fillout.com/t/ehASQ5qMzxus) to get in touch. Please note: we don't list products on our site for a fee, this form for advertising requests only.
+### Events
 
-### Events Listing
+Hosting a DeFi conference, research event, or hackathon? Submit it via the [event listing form](https://forms.fillout.com/t/vGb7Tj5Q65us) and we'll add it to the [DeFi Events Calendar](/events) and share it on our social channels.
 
-If you are hosting a DeFi-related event we are glad to feature it on our [DeFi Events Calendar](/events), and share it on our social media channels. Fill this [event listing form](https://forms.fillout.com/t/vGb7Tj5Q65us) to get in touch.
+### Media assets
 
-### Media Assets
+Logos and brand assets are on the [media assets](/media-assets) page.
 
-If you need our logo visit this page with [media assets](/media-assets).
+### Follow & contact
 
-### Contact DeFiprime
-
-DMs are open [@defiprime](https://twitter.com/defiprime)
+- [X / Twitter](https://twitter.com/defiprime) — DMs open
+- [Telegram](https://t.me/defiprime)
+- [Newsletter](https://defiprime.substack.com/)
