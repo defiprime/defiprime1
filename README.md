@@ -8,30 +8,69 @@ git-date: 2019-04-13T21:06:27-07:00
             <img src="https://img.shields.io/github/repo-size/sneg55/defiprime.svg" /></a>
         <a href="https://twitter.com/intent/follow?screen_name=defiprime" alt="Follow us on twitter">
             <img src="https://img.shields.io/twitter/follow/defiprime.svg?label=Follow&style=social&logo=twitter" alt="Follow us on twitter"></a>
-      
 </div>
 
-Visit: https://defiprime.com
+**Site:** <https://defiprime.com>
+**X / Twitter:** <https://twitter.com/defiprime>
+**Newsletter:** <https://defiprime.substack.com/>
+**Telegram:** <https://t.me/defiprime>
 
-Follow: https://twitter.com/defiprime  
+## What is DeFiprime
 
-## What is this?
+DeFiprime is a media outlet covering decentralized finance since 2019. We publish practitioner research and curate a list of DeFi products worth paying attention to. We write for people who build, allocate capital, or regulate in this space.
 
-DeFiprime.com is the digital media and analytical services provider for the DeFi community. Its mandate is to inform, educate, and connect the community as the definitive source of news dedicated to the decentralized finance space.
+### What we publish
 
-### Product Listing 101: definition of "the best DeFi Product"
-* Do you feel comfortable recommending this product to your IRL friends?
-* Live product running on the mainnet (not coming soon, not testnet, not "please take a look at our whitepaper")
-* Visible product traction (not empty marketplace, not empty order book, etc).   
-* Decentralized first. Label 'Region is not supported' it's a spit in the face of DeFi. Check our recent [twitter-poll](https://twitter.com/defiprime/status/1130890433821724672) with community sentiment on this matter.
-* No crypto tribalism and bias. Ethereum, Tron, EOS, Bitcoin and the rest of blockchains are equal as long as DeFi product built on top are useful.
+- **Practitioner research** — risk premiums, yield decomposition, protocol mechanics. If the APY doesn't justify the downside, we show the arithmetic.
+- **Regulatory reporting** — SEC releases, MiCA, enforcement actions, read against the primary source rather than a press release.
+- **Infrastructure deep-dives** — stablecoin issuers, perps venues, prediction markets, credit markets, settlement layers.
+- **Incident coverage** — exploits, governance blow-ups, peg events. What actually happened, and who bore the loss.
 
-So to reiterate, we’ll give you two examples below.
+Full editorial positioning is on the [about page](https://defiprime.com/about).
 
-Bad pitch for listing at DeFiprime:
-- "We are going to change the world with our super-duper AI-based smart contract platform, here is our whitepaper. We have a 10000 users strong community at our Telegram! We also struck a deal of the century with a big brand (but no one has heard about this brand anyway, and it's not related to Finance or Blockchain). Still working on our product launch, but you can play with this thing on testnet."
+## How the repo is organized
 
-Good pitch for listing at DeFiprime:
-- "We launched on mainnet three months ago, after two respectable auditors independently audited our smart contracts. Since our launch, we achieved this and that milestones, and XXXX users using our app regularly. We also integrated with a few well-known DeFi protocols."
+Jekyll site (Ruby). Content lives under `collections/`:
 
-*If you'd like to submit your project, please fill this [product listing form](https://forms.fillout.com/t/by3Zq83Wnuus).*
+| Collection | What's in it |
+|---|---|
+| `_posts` | Blog posts and research articles |
+| `_stablecoins`, `_lending`, `_exchanges`, `_perps`, `_derivatives`, `_payments` | Curated DeFi product listings by category |
+| `_prediction-markets`, `_yield-aggregators`, `_staking`, `_dao`, `_insurance` | More product categories |
+| `_analytics`, `_infrastructure`, `_assets-tokenization`, `_kyc-identity`, `_marketplaces`, `_alternative-savings`, `_assets-management-tools` | Remaining product sections |
+| `_events` | DeFi events calendar |
+| `_alternatives` | "Alternatives to X" comparison pages |
+
+Page layouts, includes, and assets are in the standard Jekyll locations (`_layouts/`, `_includes/`, `assets/`, `images/`). Chain landing pages (e.g. `ethereum.md`, `solana.md`, `base.md`) live at the repo root.
+
+## Product listing
+
+We run a curated list. We aren't trying to catalogue every project — we surface the ones worth paying attention to. Criteria we actually apply:
+
+- Live on mainnet with real usage. Not a testnet, not a pitch deck.
+- Open to users regardless of jurisdiction, or at minimum honest about its geofencing. "Region is not supported" is not a feature.
+- Chain-agnostic. We don't play tribal.
+- No pay-to-list. This has always been the rule.
+
+Submit a project via the [listing form](https://forms.fillout.com/t/by3Zq83Wnuus).
+
+## Submitting events
+
+Hosting a DeFi conference, research event, or hackathon? Use the [event listing form](https://forms.fillout.com/t/vGb7Tj5Q65us) and we'll add it to the [events calendar](https://defiprime.com/events).
+
+## Advertising
+
+The only ad format we run is native articles — interviews, use cases, technical explainers. No display ads, no sponsored listings. Listing a project and advertising are separate processes, and listings are free. Use the [advertising form](https://forms.fillout.com/t/ehASQ5qMzxus).
+
+## Local development
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+Site builds to `_site/` and serves on <http://127.0.0.1:4000>. Netlify handles production deploys (see `netlify.toml`).
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md). For corrections or small edits, a PR against `master` works fine. For listing changes or new posts, use the forms above.
