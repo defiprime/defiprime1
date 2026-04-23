@@ -31,6 +31,9 @@ The mechanics on the user side are unsurprising. Connect a wallet, pass whatever
 
 As of late April 2026, three markets are running.
 
+![Agra Bonds ACRDX/USDC orderbook, NAV chart, and trade panel](/images/blog/agra-bonds-ui.png)
+
+
 **ACRDX/USDC** is the flagship. The underlying is Anemoy's tokenized wrapper of the Apollo Diversified Credit Fund, a senior private-credit fund managed through a BVI vehicle with KYC required for transfers. NAV sits at roughly $1.016. The coupon floats around 8.18%, and maturity is open-ended. The book typically shows bids in the −1% to −7% discount-to-NAV range, with larger capacity at deeper discounts. A buyer hitting the best bid is taking the 8.18% coupon plus whatever pull-to-NAV accrues if the position can eventually be redeemed at par, in exchange for accepting illiquidity and senior-private-credit default risk on a BVI vehicle.
 
 **pALPHA** is Pharos Network's tokenized consumer credit, structured as a multi-tranche instrument with partial guarantees, onboarded through the same Centrifuge/Anemoy stack. Liquidity is thinner than ACRDX, and the discount band is wider, which is roughly what the credit profile would imply.
