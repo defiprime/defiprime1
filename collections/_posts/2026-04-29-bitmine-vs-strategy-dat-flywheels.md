@@ -82,7 +82,16 @@ Strategy's flywheel is purely reflexive. Capital comes in via equity, debt, or p
 
 BitMine's flywheel has an internal cash flow. Staking rewards arrive whether or not the common stock trades at a premium. They cover operating expenses with substantial room left over. They can be reinvested into more ETH directly without going through equity markets at all. That doesn't make the flywheel immune to a stuck premium (equity issuance is still the main lever for growing ETH-per-share rapidly), but it does mean the company can sit through an extended discount period without forced selling. The yield engine is a structural buffer against the failure mode that Strategy's structure cannot avoid.
 
-This connects directly to the [40 basis point illusion piece](/defi-yield-risk-premium) on DeFi yield: the difference between yield-bearing and non-yield-bearing assets shows up at the corporate-treasury layer too, and it shows up most clearly when a flywheel has to keep turning through a flat or negative tape.
+The size of that buffer is most easily seen in ETH terms rather than dollar terms. At a 2.8% net staking yield on the current ~4.98M ETH treasury, the engine produces roughly 139,000 ETH per year of native income regardless of where the dollar price goes. The USD value of that income scales linearly with the spot ETH price, but the ETH itself is paid through:
+
+| ETH spot price | Annual ETH yield (2.8% on 4.98M ETH) | USD-equivalent annual income |
+|---|---|---|
+| $1,500 | ~139K ETH | ~$209M |
+| $2,300 (current) | ~139K ETH | ~$320M |
+| $3,000 | ~139K ETH | ~$418M |
+| $4,500 | ~139K ETH | ~$627M |
+
+In a downcycle where dollar valuations compress, BitMine still accumulates ETH at the same native rate; the yield engine is therefore most valuable exactly when the equity-issuance flywheel is least available. In an upcycle, the same engine compounds USD-denominated cash that can either pay operating costs or be redeployed into more ETH without touching equity markets. Strategy has no equivalent. This connects directly to the [40 basis point illusion piece](/defi-yield-risk-premium) on DeFi yield: the difference between yield-bearing and non-yield-bearing assets shows up at the corporate-treasury layer too, and it shows up most clearly when a flywheel has to keep turning through a flat or negative tape.
 
 ## Political and Regulatory Sensitivity Diverge
 
