@@ -34,6 +34,8 @@ Ethereum's PoS reward curve was specified before the Merge with one explicit ass
 <div class="formula-display">base_reward = (effective_balance × BASE_REWARD_FACTOR)
               ÷ (BASE_REWARDS_PER_EPOCH × √total_active_balance)</div>
 
+![Ethereum issuance curve: BRF=64 vs hypothetical BRF=32](/images/blog/cut-ethereum-staking-issuance-debate-curve.png)
+
 Three things matter in that expression. The validator's *effective_balance* is capped at 32 ETH. *BASE_REWARDS_PER_EPOCH* is a fixed denominator constant in the spec. *BASE_REWARD_FACTOR* is the tunable scalar, set to 64 at genesis and never changed since. The square-root denominator is what makes the curve self-correcting: as more ETH stakes, the per-validator yield falls. Total annual issuance grows roughly with √s, while the yield each staker sees scales as 1/√s.
 
 At very low staking ratios the curve pays out aggressively, which is what bootstrapped validator participation in the first place. At the 20–25% range the original designers were aiming for, nominal issuance yield sits around 4%. Past 30%, the yield has already compressed to roughly 3% before MEV and execution-layer tips. As of late April 2026 the staking ratio is in the low-30s percent of the ETH supply, which means the network is sitting beyond the equilibrium the curve was specified for, and the marginal economics for new validators keep getting tighter.
@@ -47,7 +49,13 @@ Either path requires a hard fork. Both were seriously discussed in the run-up to
 
 ## Why The Debate Is Loud Now
 
-The Beacon Chain's design assumption broke quietly. Staking participation rose past 20% in 2023, past 25% in 2024, and into the 30%+ range over 2025–2026, helped enormously by liquid staking tokens that let stakers keep using their ETH inside DeFi. Lido alone holds roughly $20.5B in ETH at current prices per DefiLlama (the largest LST by a wide margin), with ether.fi restaking at ~$5B, Binance Staked ETH at ~$8B, Rocket Pool at ~$1.2B, Mantle's mETH and other smaller LSTs making up the rest of the on-chain landscape.
+The Beacon Chain's design assumption broke quietly. Staking participation rose past 20% in 2023, past 25% in 2024, and into the 30%+ range over 2025–2026, helped enormously by liquid staking tokens that let stakers keep using their ETH inside DeFi.
+
+![ETH staking ratio over time, showing the overshoot of the original 20-30% design band](/images/blog/cut-ethereum-staking-issuance-debate-staking-ratio.png)
+
+Lido alone holds roughly $20.8B in ETH at current prices per DefiLlama (the largest LST by a wide margin), with Binance Staked ETH at ~$8.3B, ether.fi restaking at ~$5.1B, Rocket Pool at ~$1.2B, Mantle's mETH and other smaller LSTs making up the rest of the on-chain landscape.
+
+![LST market share by TVL, April 2026: Lido at 54%, Binance staked ETH at 22%, ether.fi at 13%, others below 6%](/images/blog/cut-ethereum-staking-issuance-debate-lst-share.png)
 
 That supply structure produced a feedback loop the curve was never designed for. LSTs strip the only practical cost of staking, illiquidity, which means the marginal staker keeps showing up well past the point where the curve was supposed to make staking unattractive. The protocol responds by lowering yields, but each yield decrement is offset by composability gains as LSTs get plumbed deeper into [lending](/decentralized-lending), restaking, and stablecoin collateral. Equilibrium keeps moving up.
 
