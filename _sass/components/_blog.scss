@@ -352,3 +352,132 @@
     }
   }
 }
+
+// ─── Static tweet embed (sawinyh.com / astro-tweet visual parity) ───
+.tweet-embed {
+  margin: 28px auto;
+  max-width: 560px;
+
+  article {
+    background: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 12px;
+    padding: 16px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #0f1419;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+
+  &__avatar {
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(135deg, #292984 0%, #05d2dd 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    img { width: 100%; height: 100%; object-fit: cover; }
+  }
+
+  &__avatar-fallback {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1;
+  }
+
+  &__author {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+  }
+
+  &__name {
+    color: #0f1419;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+
+    &:hover { text-decoration: underline; }
+  }
+
+  &__verified {
+    width: 16px;
+    height: 16px;
+    fill: #1d9bf0;
+    flex: 0 0 16px;
+  }
+
+  &__handle {
+    color: #536471;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 1px;
+    &:hover { text-decoration: underline; }
+  }
+
+  &__brand {
+    flex: 0 0 22px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0f1419;
+
+    svg { width: 22px; height: 22px; fill: currentColor; }
+    &:hover { color: #1d9bf0; }
+  }
+
+  &__body {
+    font-size: 17px;
+    line-height: 1.4;
+    color: #0f1419;
+    word-wrap: break-word;
+
+    p {
+      margin: 0 0 8px;
+      &:last-child { margin-bottom: 0; }
+    }
+
+    a { color: #1d9bf0; text-decoration: none; &:hover { text-decoration: underline; } }
+  }
+
+  &__footer {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid #eff3f4;
+    font-size: 14px;
+
+    a { color: #536471; text-decoration: none; &:hover { text-decoration: underline; } }
+  }
+}
+
+// ─── Display formula block (cleaner than fenced code for math) ───
+.formula-display {
+  margin: 24px 0;
+  padding: 18px 24px;
+  background: #f7f8fb;
+  border-left: 3px solid #292984;
+  border-radius: 4px;
+  font-family: "SFMono-Regular", "Menlo", "Monaco", "Consolas", monospace;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #292984;
+  overflow-x: auto;
+  white-space: pre;
+  letter-spacing: 0.01em;
+}

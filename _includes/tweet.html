@@ -1,0 +1,52 @@
+{%- comment -%}
+Static tweet card. Mirrors the astro-tweet visual structure used on sawinyh.com
+so embeds stay rendered even if the source post is deleted.
+
+Required: name, handle, date
+Optional: link (full status URL), avatar, verified (true|false), body (markdownified)
+
+If `body` is omitted, the include captures its inner content as the tweet body.
+{%- endcomment -%}
+{%- assign profile_url = include.handle | prepend: "https://x.com/" -%}
+{%- if include.link -%}
+  {%- assign tweet_url = include.link -%}
+{%- else -%}
+  {%- assign tweet_url = profile_url -%}
+{%- endif -%}
+<div class="tweet-embed">
+  <article>
+    <header class="tweet-embed__header">
+      <a class="tweet-embed__avatar" href="{{ tweet_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ include.name }} on X">
+        {%- if include.avatar -%}
+          <img src="{{ include.avatar }}" alt="{{ include.name }}" width="48" height="48" loading="lazy">
+        {%- else -%}
+          <span class="tweet-embed__avatar-fallback">{{ include.name | slice: 0, 1 }}</span>
+        {%- endif -%}
+      </a>
+      <div class="tweet-embed__author">
+        <a class="tweet-embed__name" href="{{ tweet_url }}" target="_blank" rel="noopener noreferrer">
+          <span>{{ include.name }}</span>
+          {%- if include.verified == "true" -%}
+          <svg viewBox="0 0 24 24" aria-label="Verified account" role="img" class="tweet-embed__verified"><g><path d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.34-2.19c1.39.45 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"/></g></svg>
+          {%- endif -%}
+        </a>
+        <a class="tweet-embed__handle" href="{{ profile_url }}" target="_blank" rel="noopener noreferrer">@{{ include.handle }}</a>
+      </div>
+      <a class="tweet-embed__brand" href="{{ tweet_url }}" target="_blank" rel="noopener noreferrer" aria-label="View on X">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></g></svg>
+      </a>
+    </header>
+    <div class="tweet-embed__body">
+      {%- if include.body -%}
+        {{ include.body | markdownify }}
+      {%- else -%}
+        {{ include.content | markdownify }}
+      {%- endif -%}
+    </div>
+    <footer class="tweet-embed__footer">
+      <a href="{{ tweet_url }}" target="_blank" rel="noopener noreferrer">
+        <time>{{ include.date }}</time>
+      </a>
+    </footer>
+  </article>
+</div>

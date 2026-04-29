@@ -13,9 +13,14 @@ author: sawinyh
 tags: ["Analysis", "Yield"]
 ---
 
-On April 28, 2026, Dima Gusakov, a tech lead at Lido's community staking team, posted a tweet that read like a four-line obituary for [Ethereum](/ethereum):
+On April 28, 2026, Dima Gusakov, a tech lead at Lido's community staking team, posted a tweet that read like a four-line obituary for [Ethereum](/ethereum).
 
-> If we cut Ethereum staking issuance, we will likely kill LSTs. Without LSTs, DeFi will shrink to the size of a penny. Without DeFi, Ethereum will lose its main value proposition. Without its value proposition, Ethereum will die.
+{% include tweet.html
+  name="Dima Gusakov"
+  handle="d_gusakov"
+  date="April 28, 2026"
+  body="If we cut @ethereum staking issuance, we will likely kill LSTs. Without LSTs, DeFi will shrink to the size of a penny. Without DeFi, @ethereum will lose its main value proposition. Without its value proposition, @ethereum will die. Do we really want to kill @ethereum?"
+%}
 
 It hit 55,000 views in a day, and Crypto Twitter has not stopped arguing about it since. The post was dramatic enough to cut through the noise, but the underlying debate is older and more technical than the framing suggests. It is also genuinely consequential. Ethereum's consensus-layer reward curve has not been touched since the Beacon Chain launched in 2020. The community is now openly asking whether that should change in a future hard fork.
 
@@ -25,12 +30,10 @@ This is, structurally, a fight about which property of Ethereum matters more: sh
 
 Ethereum's PoS reward curve was specified before the Merge with one explicit assumption: only 20–30% of the ETH supply would ever be staked. That target shaped the math. The protocol issues new ETH every epoch (~6.4 minutes) according to a formula whose key building block is the per-validator base reward:
 
-```
-base_reward = (effective_balance × BASE_REWARD_FACTOR)
-              ÷ (BASE_REWARDS_PER_EPOCH × √(total_active_balance))
-```
+<div class="formula-display">base_reward = (effective_balance × BASE_REWARD_FACTOR)
+              ÷ (BASE_REWARDS_PER_EPOCH × √total_active_balance)</div>
 
-Three things matter in that expression. `effective_balance` is capped at 32 ETH per validator. `BASE_REWARDS_PER_EPOCH` is a fixed denominator constant in the spec. `BASE_REWARD_FACTOR` is the tunable scalar, set to 64 at genesis and never changed since. The square-root denominator is what makes the curve self-correcting: as more ETH stakes, the per-validator yield falls. Total annual issuance grows roughly with √s, while the yield each staker sees scales as 1/√s.
+Three things matter in that expression. The validator's *effective_balance* is capped at 32 ETH. *BASE_REWARDS_PER_EPOCH* is a fixed denominator constant in the spec. *BASE_REWARD_FACTOR* is the tunable scalar, set to 64 at genesis and never changed since. The square-root denominator is what makes the curve self-correcting: as more ETH stakes, the per-validator yield falls. Total annual issuance grows roughly with √s, while the yield each staker sees scales as 1/√s.
 
 At very low staking ratios the curve pays out aggressively, which is what bootstrapped validator participation in the first place. At the 20–25% range the original designers were aiming for, nominal issuance yield sits around 4–5%. Past 30%, the yield has already compressed to roughly 3% before MEV and execution-layer tips. As of late April 2026 the staking ratio is in the low-30s percent of the ETH supply, which means the network is sitting beyond the equilibrium the curve was specified for, and the marginal economics for new validators keep getting tighter.
 
