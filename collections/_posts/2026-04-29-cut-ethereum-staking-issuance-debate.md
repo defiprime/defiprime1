@@ -19,6 +19,7 @@ On April 28, 2026, Dima Gusakov, a tech lead at Lido's community staking team, p
   name="Dima Gusakov"
   handle="d_gusakov"
   date="April 28, 2026"
+  link="https://x.com/d_gusakov/status/2049089784459543008"
   body="If we cut @ethereum staking issuance, we will likely kill LSTs. Without LSTs, DeFi will shrink to the size of a penny. Without DeFi, @ethereum will lose its main value proposition. Without its value proposition, @ethereum will die. Do we really want to kill @ethereum?"
 %}
 
