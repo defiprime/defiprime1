@@ -33,19 +33,29 @@ rwa.xyz is explicit that classifications evolve. The example the team uses is Fi
 
 The most jarring effect of the new lens is that "total RWA" looks smaller. Distributed value at ~$30B is roughly an order of magnitude below the ~$438B Represented total. A casual reader looking at the headline before and after the reclassification might conclude the market shrank. It did not. What shrank is the share of the total that meets a strict on-chain mobility test.
 
+![Bar chart of the rwa.xyz Distributed vs. Represented split in early May 2026: Distributed at ~$30B, Represented at ~$438B. Source: rwa.xyz dashboard.](/images/blog/distributed-vs-represented-headline-split.png)
+
 The split also reveals what the old aggregate was hiding. The Canton Network alone accounts for something on the order of $380B in tokenized institutional value, dominated by repo, money-market, and bond collateral flows between large counterparties on a permissioned chain. Those positions are real, useful, and structurally important to TradFi rails, but they are not assets that can move into a [DeFi yield strategy](/defi-yield-risk-premium), get posted as collateral on [Aave](/aave), or trade on a public DEX. Counting them in a number compared against ~$30B of mobile, transferable on-chain assets was a category error, and the new dashboard at least separates the two.
 
-Where this gets interesting is the asset-class breakdown. As of early May 2026:
+Where this gets interesting is the asset-class breakdown.
 
-- **Tokenized Treasuries** sit around $15B total, split between Distributed (BlackRock's BUIDL on public chains, Ondo's USDY and OUSG, Superstate, Franklin Templeton's BENJI) and Represented (institutional money-market wrappers that stay on issuer platforms). This is the category furthest along on the Distributed side. Treasuries are homogeneous, the secondary market is solved through standard DEXes, and NAV is essentially constant.
-- **Private credit** shows roughly $5B Distributed against $18 to $19B in the broader category, with most of the gap sitting in Represented vehicles. The names typically associated with Distributed private credit include Apollo's ACRED, Maple's syrupUSDC and syrupUSDT line, and the Centrifuge issuer set, though individual bucket assignment can change as issuers tighten or loosen transfer logic. The Represented slice is dominated by Figure's HELOC stack and large institutional credit platforms.
-- **Tokenized stocks** clock about $1.2B in Distributed value, growing fast off a small base and concentrated in the cohort of issuers that came online after the U.S. stablecoin and securities-tokenization rules clarified through 2025.
-- **Real estate** is around $448M total, almost entirely Distributed, almost entirely small.
-- **Private equity** is a small dollar number and the fastest mover in percentage terms, up north of 160% over the trailing 30 days. That growth rate sounds dramatic, and it is, but it sits on a base small enough that one or two new tokenized fund vehicles drive most of the move. It is a signal that the category is opening, not that it is scaling.
+| Category | Total | Distributed share | 30d trend | Lead names on the Distributed side |
+|---|---|---|---|---|
+| Tokenized Treasuries | ~$15B | High | Steady | BUIDL, USDY/OUSG, Superstate, BENJI |
+| Private credit | $18–19B | ~$5B (≈25%) | Steady | ACRED, Maple syrupUSDC/USDT, Centrifuge |
+| Tokenized stocks | ~$1.2B | Mostly Distributed | +18–24% | Newer post-2025 issuers |
+| Real estate | ~$448M | Mostly Distributed | Slow | Long tail, mostly small |
+| Private equity | Small | Mostly Distributed | +160% | One or two new tokenized fund vehicles |
+
+Numbers are point-in-time snapshots from the rwa.xyz dashboard, early May 2026. "Distributed share" is rounded to the nearest visible split; bucket assignment for individual tokens can change as issuers tighten or loosen transfer logic. **Tokenized Treasuries** are the category furthest along on the Distributed side because the underlying is homogeneous, the secondary market clears through standard DEXes, and NAV is essentially constant. **Private credit** is the opposite case: most of the value still sits in Represented vehicles dominated by Figure's HELOC stack and large institutional credit platforms, with only ~$5B passing the mobility test cleanly. **Private equity's** +160% trailing-30-day move sounds dramatic, and it is, but it sits on a base small enough that one or two new tokenized fund vehicles drive most of it. That is a signal the category is opening, not that it is scaling.
 
 Two patterns matter here. First, the categories that are big in dollars (private credit, repo) are heavy on Represented. Second, the categories that are growing fastest in percentage terms (private equity, stocks) are heavy on Distributed but tiny in absolute size.
 
-The Distributed total is up roughly 5% over the last 30 days. Holding that monthly rate constant for a full year compounds to about 1.8x, which gets the category to roughly $54B. The same math against the eight months left in 2026 lands closer to $44B. The $100B-by-year-end forecast requires something close to 3.3x in eight months. That is not extrapolation, it is a step change, and it has to come from a discrete event: Figure's HELOC book flipping fully into Distributed, a major institutional issuer launching public-chain wrappers that pass the mobility test at scale, or a regulatory move that unlocks part of the Represented stack. The 5% monthly rate itself is also extrapolated, which is worth flagging: a single large issuance in the trailing 30 days can flatter the rate, and growth this small in absolute dollars is not a stable trend line yet.
+The Distributed total is up roughly 5% over the last 30 days. Holding that monthly rate constant for a full year compounds to about 1.8x, which gets the category to roughly $54B. The same math against the eight months left in 2026 lands closer to $44B. The $100B-by-year-end forecast requires something close to 3.3x in eight months.
+
+![Line chart showing the $30B Distributed baseline in May 2026 projecting to ~$44B by year-end at the current 5%/month rate, against a steeper required path to the $100B target. Source: rwa.xyz Distributed total.](/images/blog/distributed-vs-represented-path-to-100b.png)
+
+That is not extrapolation, it is a step change, and it has to come from a discrete event: Figure's HELOC book flipping fully into Distributed, a major institutional issuer launching public-chain wrappers that pass the mobility test at scale, or a regulatory move that unlocks part of the Represented stack. The 5% monthly rate itself is also extrapolated, which is worth flagging: a single large issuance in the trailing 30 days can flatter the rate, and growth this small in absolute dollars is not a stable trend line yet.
 
 ## Transferable Is Not Tradable
 
@@ -69,7 +79,13 @@ The second is product design. Some institutional products are Represented by int
 
 The third is operational. Many earlier tokenization efforts shipped without the contract-level transfer logic, on-chain registry support, or off-chain reconciliation needed to let the asset leave the issuer's platform safely. Those products are Represented because the team has not yet built the rails to make them Distributed, not because they have a structural reason to stay locked. Those are the cases most likely to flip in the next two years.
 
-The rwa.xyz team's migration thesis (Represented becomes Distributed over time) is broadly correct, but the speed depends on which bucket each Represented asset is actually in. Regulatory-driven assets flip when rules change, which is slow and uneven. Design-driven ones do not flip at all, and probably should not. Operations-driven ones flip whenever the issuer puts engineering hours into the problem, which is usually fast once the decision is made.
+The rwa.xyz team's migration thesis (Represented becomes Distributed over time) is broadly correct, but the speed depends on which bucket each Represented asset is actually in.
+
+| Bucket | Why locked | Migration speed |
+|---|---|---|
+| Regulatory perimeter | KYC, jurisdictional rules, transfer hooks the issuer must enforce | Slow and uneven; flips when rules or compliance machinery change |
+| Product design | Closed institutional system with shared atomic settlement (e.g., Canton repos) | Does not flip, and probably should not |
+| Operational | Contract-level transfer logic and registry support not yet built | Fast once the issuer commits engineering time |
 
 ## Where the Framework Stops Short
 
