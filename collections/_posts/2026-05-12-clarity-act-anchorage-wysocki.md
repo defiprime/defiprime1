@@ -66,20 +66,9 @@ This is the section where Anchorage's seat in the market makes Wysocki's answer 
 
 Wysocki anchored his day-one answer in the GENIUS template. He framed CLARITY as "a huge unlock for industry and for Anchorage," then pointed at what GENIUS already did: "we were able to onshore Tether. We were able to onshore Ethena. I think we're going to see a lot of TradFi invest even more in this space."
 
-Anchorage's institutional issuance and custody footprint since the GENIUS Act signing reads like the proof set for that thesis:
+Anchorage's institutional issuance and custody footprint since the GENIUS Act signing reads like the proof set for that thesis. Tether's U.S. stablecoin and Ethena were both onshored under the new regime. Western Union's USDPT launched on Solana on May 4, 2026 with Anchorage as issuer of record. BlackRock's BUIDL, the largest single tokenized treasury fund, and T. Rowe Price's pending TKNZ ETF both name Anchorage as custodian.
 
-| Counterparty | Role | Status |
-|---|---|---|
-| Western Union (USDPT) | Issuer of record on Solana | Launched May 4, 2026 |
-| Tether (US stablecoin) | Regulated U.S. issuer | Onshored under GENIUS |
-| Ethena | Regulated U.S. issuer | Onshored under GENIUS |
-| BlackRock (BUIDL) | Named custodian | Live |
-| T. Rowe Price (TKNZ ETF) | Named custodian | Pending |
-| JPMorgan + Solana | Just-in-time stablecoin reserve redemptions | Recently announced |
-| U.S. Bank | Custody of fiat reserve assets backing stablecoins | Recently announced |
-| M^0 | Stablecoin issuance partnership on DeFi-native rails | Recently announced |
-
-Wysocki described the JPMorgan and Solana arrangement as enabling just-in-time stablecoin redemptions and what he called "cashless" stablecoin reserves, framing it as efficiencies and liquidity that don't exist on current rails. The U.S. Bank deal addresses the fiat side of reserve custody. M^0 extends Anchorage's regulated issuance posture into a DeFi-native protocol layer. The shape across these is consistent: Anchorage is positioning as the regulated bridge between TradFi balance sheets, crypto-native protocols, and the chains they need to settle on.
+The most recent additions are operational rather than custodial. Wysocki described a JPMorgan-and-Solana arrangement enabling just-in-time stablecoin redemptions and what he called "cashless" stablecoin reserves, framing it as efficiencies and liquidity that don't exist on current rails. A U.S. Bank deal addresses the fiat side of reserve custody. A partnership with M^0 extends Anchorage's regulated issuance posture into a DeFi-native protocol layer. The shape across these is consistent: Anchorage is positioning as the regulated bridge between TradFi balance sheets, crypto-native protocols, and the chains they need to settle on.
 
 GENIUS produced the first round of those deals. Wysocki's read on CLARITY's role is that it determines whether the next round is multiples larger, and that the institutions everyone says are "waiting on legislation" have, in his view, already started:
 
