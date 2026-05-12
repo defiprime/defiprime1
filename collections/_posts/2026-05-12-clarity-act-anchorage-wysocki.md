@@ -62,7 +62,7 @@ Polymarket's compression from the recent peak appears to be pricing exactly this
 
 ## On What Changes for Anchorage Day One
 
-This is the section where Anchorage's seat in the market makes Wysocki's answer concrete instead of abstract. The bank already operates as a federally chartered crypto bank under its OCC trust charter, so CLARITY does not change Anchorage's charter. What it changes is the population of counterparties willing to transact at production scale rather than in pilot.
+This is the section where Anchorage's seat in the market makes Wysocki's answer concrete instead of abstract. Anchorage already holds a federal OCC trust charter, so CLARITY does not change its regulatory status. What it changes is the population of counterparties willing to transact at production scale rather than in pilot.
 
 Wysocki anchored his day-one answer in the GENIUS template. He framed CLARITY as "a huge unlock for industry and for Anchorage," then pointed at what GENIUS already did: "we were able to onshore Tether. We were able to onshore Ethena. I think we're going to see a lot of TradFi invest even more in this space."
 
