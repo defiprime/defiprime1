@@ -80,7 +80,7 @@ The honest counter to that framing is that "they're already moving" can quietly 
 
 This was the question that mattered most. If CLARITY clears markup, the floor, and the President's desk, what does institutional crypto infrastructure still lack? Wysocki named five gaps.
 
-1. **Fed master accounts.** Anchorage has applied. Kraken has one, per Wysocki. He expects more crypto-natives to receive them over the next couple of years. The master account question is mechanically separate from CLARITY but practically the gating constraint on tier-one banking integration.
+1. **Fed master accounts.** Anchorage has applied; Kraken already holds one, per Wysocki, and he expects more crypto-natives to follow over the next couple of years. The master account question is mechanically separate from CLARITY but practically the gating constraint on tier-one banking integration.
 2. **Financial privacy legislation.** A separate fight. It becomes more urgent as on-chain volume scales and as agency surveillance capabilities expand.
 3. **Agentic payments legislation.** Specific rules for AI agent-initiated payments. The forward-looking item on Wysocki's list and a signal of where Anchorage thinks the institutional roadmap goes after stablecoins.
 4. **Tokenization legislation.** Federal rules for tokenized securities and real-world assets and the operational mechanics around them. CLARITY's Section 304 covers a narrow slice. Broader tokenization rules sit outside the bill.
