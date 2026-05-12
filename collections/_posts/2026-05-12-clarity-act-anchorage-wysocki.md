@@ -13,7 +13,7 @@ author: sawinyh
 tags: ["Analysis", "Regulation"]
 ---
 
-The Senate Banking Committee is days from marking up the CLARITY Act, the House-passed market structure bill that cleared 294-134 in July 2025. The current Senate draft, dated January 12, 2026, runs 278 pages. Polymarket prices CLARITY's 2026 passage in a roughly 38 to 48% range, off a recent peak. Galaxy Digital recently called it 50-50. Sen. John Kennedy (R-LA) is publicly withholding support, which drops the effective GOP base from 53 to 52 and means around eight Democrats are needed for 60-vote cloture, not the seven that gets cited.
+The Senate Banking Committee is days from marking up the CLARITY Act, the House-passed market structure bill that cleared 294-134 in July 2025. The most recent publicly circulated Senate Banking draft we've seen is dated January 12, 2026 and runs 278 pages; the markup text may differ. Polymarket has been pricing CLARITY's 2026 passage in a 38 to 48% range in recent weeks, off a higher peak earlier this year. Galaxy Digital research has called it roughly 50-50. The vote-math piece pre-markup whip watchers are tracking: Sen. John Kennedy (R-LA) is publicly withholding support, which drops the effective GOP base from 53 to 52 and means around eight Democrats are needed for 60-vote cloture rather than the seven the bill's sponsors prefer to cite.
 
 We sat down with Kevin Wysocki, Head of Policy at Anchorage Digital, in the week before the markup. Anchorage's read on what CLARITY changes is unusually direct because of what the bank already does. Anchorage is the issuer of record for Western Union's USDPT stablecoin, which launched on [Solana](/solana) on May 4, 2026. The bank is [a regulated U.S. issuer](/stablecoin-issuance-infrastructure-2026) for Tether's domestic stablecoin and for Ethena, and a named custodian for BlackRock's BUIDL (the largest single tokenized treasury fund) and for T. Rowe Price's pending TKNZ ETF. The OCC consent order it operated under since April 2022 was lifted on August 21, 2025, after what CEO Nathan McCauley described as "tens of millions" in remediation spend.
 
@@ -41,14 +41,14 @@ The headlines on CLARITY focus on SEC versus CFTC jurisdiction. Wysocki's refram
 
 He pointed at the [SEC and CFTC's joint interpretive release on crypto assets](/sec-defi-release-33-11412) (Release 33-11412), which published in March 2026 with a five-bucket token taxonomy and a named list of 16 digital commodities. CFTC Chairman Michael Selig shared the stage with SEC Chairman Paul Atkins at the announcement. That release, in Wysocki's framing, is the belt. CLARITY adds the suspenders by codifying agency authority in statute and creating the registration pathways the guidance already assumes.
 
-The section-level mechanics matter:
+The section-level mechanics worth knowing, based on the publicly circulated draft (numbering and deadlines could shift in markup):
 
 - **Section 304** gives the SEC jurisdiction over digital commodity activities by SEC-registered broker-dealers and national securities exchanges.
 - **Section 401** gives the CFTC exclusive jurisdiction over digital commodity spot and cash markets via new CFTC-registered Digital Commodity Exchanges, Dealers, and Brokers.
 - **Section 105** sets a 270-day deadline for joint SEC/CFTC rulemakings on definitions.
 - **Section 106** is the provisional registration framework. It is the de facto self-executing safe harbor. Provisionally registered entities can keep operating with previously listed assets until the joint rulemaking on definitions in Section 105(a) becomes effective. SEC and CFTC retain joint delisting authority during the interim window.
 
-Section 106 is what makes the bill operationally meaningful even before final rules. It also makes the "two-year clock" framing the industry uses somewhat loose. Bill text is 360 days for individual rulemakings and 270 days for joint definitional rulemakings, not a flat 24 months. Whether the latest Senate draft contains a hard 24-month sunset is the kind of detail worth tracking once the markup text drops.
+Section 106 is what makes the bill operationally meaningful even before final rules. It also makes the "two-year clock" framing the industry uses somewhat loose. Per the draft text, the timing is 360 days for individual rulemakings and 270 days for joint definitional rulemakings, not a flat 24 months. Whether the version that emerges from markup contains a hard 24-month sunset is one of the specifics worth re-reading the moment the marked-up text drops.
 
 ## On the Rulemaking Clock and CRA Risk
 
@@ -62,11 +62,11 @@ Polymarket's compression from the recent peak appears to be pricing exactly this
 
 ## On What Changes for Anchorage Day One
 
-This is the part where Wysocki's vantage is unusually direct, because Anchorage already operates as a federally chartered crypto bank under its OCC trust charter. CLARITY does not change Anchorage's charter. What it changes is the population of counterparties willing to transact at production scale rather than in pilot.
+This is the section where Anchorage's seat in the market makes Wysocki's answer concrete instead of abstract. The bank already operates as a federally chartered crypto bank under its OCC trust charter, so CLARITY does not change Anchorage's charter. What it changes is the population of counterparties willing to transact at production scale rather than in pilot.
 
-Wysocki anchored the answer in GENIUS. "The GENIUS Act was a huge unlock for industry. We were able to onshore Tether. We were able to onshore Ethena. We're going to see a lot of TradFi invest even more in this space."
+Wysocki anchored his day-one answer in the GENIUS template. He framed CLARITY as "a huge unlock for industry and for Anchorage," then pointed at what GENIUS already did: "we were able to onshore Tether. We were able to onshore Ethena. I think we're going to see a lot of TradFi invest even more in this space."
 
-Anchorage's institutional issuance and custody footprint over the past 90 days reads like the proof set for that thesis:
+Anchorage's institutional issuance and custody footprint since the GENIUS Act signing reads like the proof set for that thesis:
 
 | Counterparty | Role | Status |
 |---|---|---|
@@ -81,17 +81,11 @@ Anchorage's institutional issuance and custody footprint over the past 90 days r
 
 Wysocki described the JPMorgan and Solana arrangement as enabling just-in-time stablecoin redemptions and what he called "cashless" stablecoin reserves, framing it as efficiencies and liquidity that don't exist on current rails. The U.S. Bank deal addresses the fiat side of reserve custody. M^0 extends Anchorage's regulated issuance posture into a DeFi-native protocol layer. The shape across these is consistent: Anchorage is positioning as the regulated bridge between TradFi balance sheets, crypto-native protocols, and the chains they need to settle on.
 
-GENIUS already produced the first round of those deals. CLARITY is what determines whether the next round is multiples larger.
+GENIUS produced the first round of those deals. Wysocki's read on CLARITY's role is that it determines whether the next round is multiples larger, and that the institutions everyone says are "waiting on legislation" have, in his view, already started:
 
-## On What Institutions Are Actually Waiting On
+"They're anticipating that this is a more favorable regulatory environment with the agencies. They know whoever is going to be the next president of the United States is probably going to be at least neutral to pro-crypto. So even if market structure doesn't happen, businesses are already investing. But if you get that crystal clear clarity of having a federal law on the books, you're going to see multiples of the investment we're seeing now."
 
-The industry boilerplate is that asset managers, pension funds, and insurance companies are waiting on legislation. Wysocki disagrees with the timing, not the underlying point.
-
-"They're already starting to move," he said. "They're anticipating that this is a more favorable regulatory environment. They know whoever is going to be the next president of the United States is probably going to be at least neutral to pro-crypto. So even if market structure doesn't happen, businesses are already investing. But if you get that crystal clear clarity of having a federal law on the books, you're going to see multiples of the investment we're seeing now."
-
-The table above is the data point. BlackRock, T. Rowe Price, JPMorgan, Western Union, U.S. Bank, plus several DeFi-native protocols have all moved during a period when CLARITY was not law. The institutional flywheel started turning roughly on the GENIUS Act signing in July 2025. CLARITY accelerates a curve already in motion.
-
-The risk in that framing is that "they're already moving" can become an argument against urgency. Wysocki's answer to that is the multiples language. The current run rate is institutional pilots and named partnerships. Production-scale balance-sheet allocations from pensions, insurers, and the largest asset managers are not yet in the data.
+The honest counter to that framing is that "they're already moving" can quietly become an argument against urgency. The current run rate is institutional pilots and named partnerships. Production-scale balance-sheet allocations from pensions, insurers, and the largest asset managers are not yet in the data, and that gap is what the "multiples" language is reaching toward.
 
 ## On What's Still Missing After CLARITY Passes
 
@@ -105,13 +99,9 @@ This was the question that mattered most. If CLARITY clears markup, the floor, a
 
 The list reads like a two-year lobbying roadmap for a regulated crypto bank. CLARITY is the immediate fight. None of the five items above are inside it.
 
-## On MiCA, Singapore, Hong Kong, and Reciprocity
+## On MiCA and GENIUS Reciprocity
 
-We asked about jurisdictional flight. MiCA has been live for 18 months. Singapore, Hong Kong, and Dubai have established crypto regimes. Wysocki's answer was less competitive than the trope.
-
-"I'm just happy that all these jurisdictions have established rules of the road. America's been a little bit slower, but they're coming along strong now. I think we're going to see a harmonization over time of standards. With GENIUS, the Treasury is supposed to work on reciprocity agreements with the EU and other countries. I wouldn't be surprised if over time there are reciprocal arrangements with a lot of the G20 countries."
-
-The GENIUS reciprocity provision is the under-discussed piece of this. Treasury has authority to negotiate reciprocity with foreign stablecoin regimes that have comparable issuer requirements. That mechanism is the path by which a U.S.-domiciled issuer operates in EU markets under MiCA equivalence, and vice versa. Anchorage's position as the regulated U.S. issuer for what was historically an offshore-domiciled stablecoin operator (Tether) is the live test case.
+Asked about jurisdictional flight to MiCA, Singapore, Hong Kong, and Dubai, Wysocki's answer was less competitive than the trope. He said he was "just happy" the other jurisdictions had established rules of the road and expected harmonization over time, pointing at the GENIUS Act's authorization for Treasury to negotiate reciprocity with foreign stablecoin regimes, likely starting with the EU and extending to G20 countries. That mechanism is the under-discussed path by which a U.S.-domiciled issuer operates in MiCA markets under equivalence, and vice versa. Anchorage's regulated U.S. issuer role for what was historically an offshore-domiciled operator (Tether) is the live test case.
 
 ## What We're Watching from Here
 
@@ -127,4 +117,4 @@ The fourth is Section 106 uptake. If CLARITY passes, the provisional registratio
 
 The fifth is which of Wysocki's five post-CLARITY gaps moves first. Fed master accounts are the most mechanically actionable. Financial privacy and agentic payments are the most politically loaded. Tokenization legislation is the most consequential for the next institutional wave. A crypto-specific tax bill is the one that quietly determines unit economics for every retail and institutional participant downstream.
 
-CLARITY is the headline. Wysocki's view, read against Anchorage's actual counterparty list, is that the bill being short of perfect is acceptable because the operational mechanics it codifies are already in motion. The institutional flywheel has started. CLARITY makes the flywheel spin faster. The direction was set by deals already on the table.
+CLARITY is the headline. Wysocki's view, read against Anchorage's actual counterparty list, is that the bill being short of perfect is acceptable because the operational mechanics it codifies are already in motion. The institutional flywheel has started. CLARITY decides how fast it spins. The direction was set by deals already on the table.
