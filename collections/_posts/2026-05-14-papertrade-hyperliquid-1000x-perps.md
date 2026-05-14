@@ -1,97 +1,118 @@
 ---
 git-date:
 layout: [blog]
-title: "Papertrade's 1000x Perps and the Edge of HIP-3"
+title: "Inside Papertrade: 1000x Synthetic Perps Built on a Zero-LP Bootstrap"
 permalink: papertrade-hyperliquid-1000x-perps
-h1title: "Papertrade's 1000x Perps and the Edge of HIP-3"
-pagetitle: "Papertrade's 1000x Perps and the Edge of HIP-3"
-metadescription: "Papertrade.xyz markets 1000x leverage on Hyperliquid via HIP-3. The leverage math against the documented liquidation engine, where this sits between trade.xyz and JELLY, and what HIP-3 has not yet priced in."
+h1title: "Inside Papertrade: 1000x Synthetic Perps and the Martin Galer Bootstrap"
+pagetitle: "Inside Papertrade: 1000x Synthetic Perps Built on a Zero-LP Bootstrap"
+metadescription: "Papertrade isn't a HIP-3 perp DEX. It's a peer-vs-pool synthetic casino on HyperEVM that uses Hyperliquid's BBO as an oracle, bootstraps its LP from zero through a payout queue, and mints its token only to traders who lose."
 category: blog
 featured-image: /images/blog/papertrade-hyperliquid-1000x-perps-ogp.png
-intro: "Papertrade.xyz markets 1000x leverage on Hyperliquid via HIP-3. The leverage math against the documented liquidation engine, where this sits between trade.xyz and JELLY, and what HIP-3 has not yet priced in."
+intro: "Papertrade isn't a HIP-3 perp DEX. It's a peer-vs-pool synthetic casino on HyperEVM that uses Hyperliquid's BBO as an oracle, bootstraps its LP from zero through a payout queue, and mints its token only to traders who lose."
 author: sawinyh
 tags: ["Analysis"]
 ---
 
-HIP-3 has been live on Hyperliquid mainnet for seven months and has already produced two distinct kinds of product. The big one, trade.xyz, runs tokenized stock, index, and commodity perps with conservative leverage caps and accounts for most of HIP-3's open interest; tokenized equity and commodity futures on Hyperliquid peaked above $2 billion in open interest in April 2026. The other shape is starting to surface around the edges. [Papertrade.xyz](https://papertrade.xyz/) markets itself as "the first fair-launched fully onchain perpetual exchange built on Hyperliquid" and puts a 1000x leverage offer on the front page. Documentation is "coming soon"; the team is not publicly named.
+A quick first read of papertrade.xyz suggests yet another HIP-3 deployer chasing extreme leverage on Hyperliquid: 1000x, "fair launch," "synthetic perpetuals." Read the actual documentation and the picture flips. Papertrade isn't a HIP-3 deployer at all. It doesn't trade perp contracts on Hyperliquid. It runs its own smart contracts on HyperEVM that read Hyperliquid's best-bid/offer price through a precompile and use that price to settle synthetic swaps between users and a self-bootstrapping LP. The product surface looks like a perp DEX. The mechanism underneath is something much closer to an academically-grounded on-chain casino.
 
-That second category is where HIP-3's design is now being stress-tested. Trade.xyz is what the standard pitched. Papertrade is what permissionless market deployment also makes possible.
+This is genuinely interesting. The whitepaper, [*Martin Galer: A Bootstrapping Mechanism for Sustainable Asynchronous Speculation Games of Chance*](https://docs.papertrade.xyz/martingaler-whitepaper.pdf) by Jez (@izebel_eth) and Blurr (Refund Contract Deployer), cites Tarun Chitra and Guillermo Angeris' CFMM-theory papers and explicitly positions itself in the SatoshiDice → Bustabit → Etheroll → EtherCrash → Rollbit lineage. The result is a leveraged-perp surface that mechanically resembles a CFD broker more than a Hyperliquid market, with a token economy designed so the supply can only be created by losing money. That last property is rarer than it sounds.
 
-Hyperliquid itself spent 2024 and most of 2025 being the cleanest on-chain answer to centralized perp execution. By April 2026 the platform was clearing roughly $40 billion in weekly perp volume, holding about $9.5 billion of open interest, and capturing the majority of decentralized perp activity on most days. Hyperliquid's own validator-operated markets cap leverage at 40x on majors. Papertrade's 1000x sits 25x above that.
+## What's Actually On Chain
 
-## How a 1000x Builder Plugs Into Hyperliquid
+Papertrade's contracts live on HyperEVM, Hyperliquid's L1 EVM layer. There is no order book on papertrade, no matching engine, no other trader on the other side of your trade. The counterparty on every trade is "the LP," a single USDC pool inside the protocol's Exchange contract.
 
-HIP-3 lets anyone with 500,000 HYPE staked deploy a perpetual futures market on top of HyperCore. At HYPE near $39 in mid-May 2026, the stake is roughly $20 million. The unstaking queue is 7 days, during which the stake remains slashable. Validators can vote to slash up to 100% for "irregular inputs that cause invalid state transitions or prolonged downtime," and lesser amounts (50% or 20%) for performance issues.
+When you open a position, the Exchange contract reads Hyperliquid's BBO precompile at `0x000000000000000000000000000000000000080e`, takes the midpoint of the best bid and best ask on Hyperliquid's native book, and locks that price as your entry. When you close, it reads the precompile again and settles your PnL against the LP. No actual perpetual contract is opened on Hyperliquid through papertrade. Hyperliquid is purely the price source.
 
-What that $20 million buys is editorial control over a specific surface. A deployer picks the oracle, the leverage caps, the collateral asset, the listed contracts, and (within HIP-3's range) the fees. A deployer does not touch the matching engine, the order book, the margin engine, the backstop liquidator vault, or the protocol's solvency guarantees. Those are HyperCore's, run by Hyperliquid's validators and unified across all HIP-3 deployments.
+That single architectural choice unlocks most of papertrade's marketing claims. There are no funding costs because no real perp position is being held. There is no slippage at execution because every trade clears at the precompile-read BBO mid regardless of size, subject only to per-instrument open-interest caps the protocol enforces internally. There are no trading fees on notional, because the protocol's revenue model is built around a different mechanism (the asymmetric impact curve, below). USDC balances live on HyperCore (Hyperliquid's native spot ledger); the bridge between HyperEVM contract state and HyperCore balances runs through the `CoreWriter` precompile and per-user CREATE2 deposit proxies.
 
-The economic engine for a deployer is fee flow. HIP-3 markets charge 2x the standard Hyperliquid base rate (so 3 basis points maker / 9 basis points taker at the lowest tier, versus Hyperliquid's own 1.5 / 4.5 bps base) and the deployer takes a fixed 50% of that. There is also a "growth mode" config that can cut taker fees by roughly 90% to compete for early volume.
+Live markets at launch are BTC and ETH, both with up to 1000x leverage and a per-user position cap of $10M. The protocol can list any Hyperliquid perp, including HIP-3 ones; new markets are added by the contract owner through a 7-day timelock.
 
-So the question for a 1000x product is whether the leverage envelope it offers is consistent with the rest of that plumbing.
+## The Martin Galer Mechanism: Zero-LP Bootstrap
 
-## The 1000x Margin Math
+The reason the docs and the whitepaper matter together is that papertrade's LP starts at zero. No seed capital, no founders' deposit, no upfront fundraise. There is no way for anyone to deposit *into* the LP directly. The LP grows entirely from cumulative user losses. That is not a marketing line; it is the structural property the protocol was designed around.
 
-Hyperliquid documents maintenance margin as half the initial margin at max leverage. At 40x leverage on BTC perps, maintenance margin is 1.25%. At 3x on a long-tail name, it's 16.7%. Below that threshold, accounts are liquidated against the order book. If equity falls below two-thirds of maintenance margin without a successful book fill, the position is absorbed by the backstop liquidator vault, a component strategy of HLP, Hyperliquid's community liquidity pool.
+The mechanism that makes this work is the Martin Galer payout queue. Traditional onchain casinos (SatoshiDice, Bustabit, EtherCrash) all needed an LP pool seeded upfront so winners could be paid on demand. That seed had to come from somewhere, usually centralised capital or token-funded liquidity mining. Martin Galer replaces instant payout with a FIFO queue:
 
-If you extend the formula to 1000x, maintenance margin is roughly 0.05% of notional. A five-basis-point adverse move liquidates; three basis points sends the position to the backstop. Five basis points on BTC is a normal-second amount of price drift on a normal day. Three is closer to bid-ask noise on the book.
+- A user wins. If the LP has enough USDC, pay the user immediately. If not, the unpaid portion of the win goes to the back of the queue. The user's *margin* is always returned immediately; only the profit portion can land in the queue.
+- A user loses. If the queue is empty, the loss credits the LP directly. If the queue is non-empty, the loss is parked in a `sideBucket` instead of the LP.
+- A keeper periodically calls `harvest()`, which drains the `sideBucket` into queue payouts in order. Anyone can run the keeper. When the queue empties, residual `sideBucket` funds flow into the LP as a normal gain.
 
-No serious venue lets that math hold mechanically. Real 1000x products tend to defend the engine somewhere downstream: position size caps, isolated margin only, stepped maintenance curves at extreme leverage, or different liquidation triggers entirely. Without published docs it is impossible to say which constraints papertrade actually imposes. But the headline 1000x number is doing work whether the constraints are there or not. Either the trader gets the leverage and most of the structural problems below come with it, or the trader uses much lower effective leverage than the marketing implies and the 1000x is theatrical.
+The accounting is three buckets: `treasury` (LP balance, never negative), `sideBucket` (parked LP gains during a queue), and the payout queue. Net protocol equity is `treasury + sideBucket − queueTotal`, and that figure **can go negative**. The docs are explicit about this — "temporary insolvency by design." What guarantees winners eventually get paid is the assumption that the user base is positive-EV for the protocol on aggregate (the house edge), so future losses will refill the LP faster than queued wins drain it.
 
-The fee math is the cleaner part of the picture. At HIP-3's 9-bp base taker fee, a 1000x position pays roughly 90% of its collateral on the entry alone. A round trip — entry plus exit, both as taker — runs about 180% of collateral. The headline fees on a maxed-out position are larger than the collateral backing it. The product is only economically coherent at 1000x in one of three configurations: growth-mode taker rebates that drop fees to fractional basis points, very small tickets where the user is paying for the lottery experience, or position caps that mean nobody ever runs the headline leverage in size. Each of those is a real product choice. None of them is "1000x leverage" the way the marketing reads it.
+Crucially, the queue overhang doesn't block anything else. New positions open whether the queue is empty or not. Margin is always under the user's control. The only thing that's delayed when the LP can't pay is the profit portion of a particular winning close. The UI is designed to show this explicitly: an "available" balance and a "queued" balance, where queued balance still counts as collateral for new opens.
 
-Slippage works the same way. A trader posting 100 USDC at 1000x is holding 100,000 USDC of notional. When auto-liquidated, the leveraged size goes through the order book, not the collateral. Hyperliquid's CLOB is genuinely deep, but it is not literally zero-impact at 100,000 USDC of notional on any pair where that size matters. "0 slippage" is either a claim about the experience of opening small positions or it is marketing language without an execution claim attached.
+The whitepaper also discusses a stuck-participant escape valve (queued winners can forfeit their winnings to reclaim original wager input) but the live protocol doesn't expose that escape, on the bet that the LP rarely sits in deep deficit.
 
-## Where This Sits, Between Trade.xyz and JELLY
+## PAPER: A Token Minted Only By Losers
 
-The HIP-3 surface has two reference points for thinking about where papertrade lands.
+Papertrade's native token, $PAPER, is the protocol's mechanism for paying anyone to put money into the LP — because there's no other way to put money in. The design is unusual enough to spell out precisely:
 
-Trade.xyz is what the HIP-3 pitch decks lead with. Tokenized S&P 500 and NASDAQ futures, pre-IPO contracts (Cerebras' CBRS being one example), tokenized gold, silver, and oil. The product targets 24/7 access to traditional markets, which is a real underserved demand, and per recent ecosystem reporting has hit 24-hour volumes in the multi-billion-dollar range with tens of thousands of daily traders. The leverage caps are conservative compared to what's now showing up at the edges. Tokenized equity perps are not risk-free — they are oracle-dependent on TradFi venues, can experience weekend reporting gaps, and the pre-IPO contracts reference assets with no real spot liquidity — but the risk profile is different in kind from a 1000x crypto-perp. Trade.xyz sells access. Papertrade sells extremity.
+- Total supply at genesis: zero.
+- No pre-mint. No team allocation. No VC allocation. No airdrop. No vesting schedule.
+- Every PAPER token that will ever exist must be minted through one specific path: a trader closing at a loss or being liquidated.
+- The mint rate is governed by a flat-then-decay curve. While the LP balance is below $2 million (including any time it's underwater), the rate is a flat **100 PAPER per $1 of LP gain**. Past $2M, the rate decays as `100 × (S / (S + H))²` where `S = $120M` and `H` is the cumulative LP gain past the threshold.
+- The decay is a strict high-water-mark ratchet. If stakers drain LP back below the threshold, the rate stays decayed; subsequent gain past the prior HWM picks up where it left off. Early traders mint at materially higher rates than late traders, by design.
 
-JELLYJELLY is the other reference, and the analogy is narrower than it first looks. In March 2025 a coordinated attacker opened roughly $4.5 million of short and ~$5 million of long positions on a thinly-traded memecoin perp, then pumped the underlying spot price by more than 400% in an hour on outside venues. The short was made uneconomic to liquidate through the book and inherited by HLP. Hyperliquid's validator set voted to delist JELLY perps within minutes, settled all positions at the opening price, and the Hyper Foundation made non-flagged users whole. The defense worked — bad debt was contained and users were compensated — but the resolution required active validator coordination and produced months of debate about how meaningfully a "validator delist" emergency button differs from a CEX. The lesson JELLY carries forward is specifically about listing perps on assets with thin, manipulable spot liquidity, not about leverage in general. It is a constraint on what deployers can list, not on how much leverage they can offer.
+What stakers earn in return is a continuous USDC dividend from the LP, in two streams. First, every settlement that credits the LP (the asymmetric impact on a winning close, or an outright loss) carves a small slice for stakers. Second, once the LP grows past a $5M cap, every dollar of LP gain past that point sweeps fully to stakers via a public `pushStakerFees()` call. Stake and unstake are both instant: no cooldown, no lockup, no minimum.
 
-For a direct comparison on the 1000x dimension, [opt.fun](https://www.dlnews.com/articles/markets/hyperliquid-protocol-cranks-up-the-risk-with-1000x-leverage/) is the cleaner reference. Opt.fun is a separate Hyperliquid-ecosystem protocol that announced 1000x leverage options trading with one-minute expiry on BTC and PUMP. The opt.fun design has a property the perp version does not: user loss is bounded by the premium paid, because it is an option. A 1000x perp has no such bound. The position can in principle go further underwater than the collateral if a liquidation cascade slips, with the residual landing on HLP and ultimately on Hyperliquid's protocol-level backstops.
+This is a clean reinterpretation of the "loyalty token" pattern. Every PAPER holder is, by definition, someone who put real USDC into the LP through a losing trade. They are buying back a claim on future LP revenue by absorbing the early variance. The flat-region mint rate is what makes that trade attractive even when the LP is underwater: a loser early in the protocol's life walks away with a much bigger fraction of the eventual revenue pool than a loser later on.
 
-## What HIP-3 Does Not Outsource
+## Asymmetric Impact: The LP's Real Income
 
-The most useful thing the HIP-3 documentation makes explicit is the split of responsibilities. A deployer is responsible for:
+If there are no trading fees and no spread, the natural question is what funds the LP at all. The answer is the asymmetric impact curve, a Rollbit-inspired mechanism papertrade has adapted for its own constraints.
 
-- Oracle selection and integrity. If the oracle gets manipulated, the deployer is on the hook, and if validators rule the manipulation produced "irregular inputs," potentially slashed.
-- Leverage caps, contract specifications, and listing curation.
-- Collateral asset choice. Non-slashable but real: it changes who eats the loss if the collateral itself depegs or fails.
-- Market settlement and halt decisions, via the `haltTrading` action.
+On a winning close, the protocol applies a smooth scale factor to the raw PnL:
 
-A deployer does not touch:
+```
+adjustedPnl   = rawPnl × scale
+scale         = (1 − baseRate) / (1 + term1 + term2)
+term1         = 1 / (move × rateMultiplier)
+term2         = referenceNotional / (move × positionMultiplier)
+move          = |exitPrice − entryPrice| / entryPrice
+```
 
-- The matching engine and order book. HyperCore-operated.
-- The margin engine and liquidation logic. The "half-of-initial" maintenance formula is unified.
-- The backstop liquidator vault and the ADL fallback. Those belong to HLP and the validator set.
-- Protocol solvency guarantees.
+As `move` grows, both terms in the denominator shrink, the scale factor approaches `(1 − baseRate)`, and the trader keeps most of the raw gain. As `move` approaches zero, the terms blow up and the gain collapses toward zero. Losing closes pay nothing extra — the loss is the loss, and that's the end of it.
 
-That distinction matters for the question of who pays when a high-leverage market blows up. First line of defense is the trader's own collateral. From there the loss-absorption stack is Hyperliquid's: the order book absorbs what it can, then the backstop liquidator vault funded by HLP, then auto-deleveraging (ADL) closing against opposite-side profitable positions, then in the worst case validator intervention of the JELLY variety. None of those downstream layers sit on the deployer's balance sheet. The 500,000 HYPE stake is a clawback for deployer misconduct. It is not an insurance fund sized to absorb a portfolio of 1000x-leveraged blowups.
+The key word is *asymmetric*. The cost of trading on papertrade lives entirely on the win side, scaled by how far price moved. Bigger moves keep more; tiny moves are scaled most aggressively. Papertrade's twist on the Rollbit formula is that the position-size factor (`term2`) is replaced with a per-instrument constant. At 1000x leverage the original formulation would have penalised larger trades and pushed users into many small positions, which is bad on gas, state, and UX. Papertrade fixes the haircut percentage to depend on the move, not on the trade size.
 
-This is the structural point about builder-deployed perps and high leverage: a deployer can offer leverage that consumes Hyperliquid's solvency stack as the backstop. The stake-to-slash threshold prices in the deployer's incentive to behave. It does not, directly, price in the volume of bad debt their leverage choices can route into HLP.
+This curve does more than fund the LP. It is also the protocol's main defence against oracle manipulation. The BBO precompile is consensus-verified and cannot be lied to, but a sub-spread distortion is cheap: a single small limit order on Hyperliquid's book can shift the BBO mid by a tick. An attacker who used that distortion to engineer a small profitable close on papertrade would find the gain almost entirely consumed by the impact curve, because the curve is steepest on the smallest moves. Stack a 0.2 basis-point jitter-protection deadband (small wins below `entryPrice / 50000` are zeroed) and trailing per-asset open-interest caps on top, and the attack stops being economically viable. The docs are explicit that this is why papertrade can read BBO directly with no circuit breaker and no off-chain oracle.
 
-## The Design Space, Honestly
+## What Liquidation Means When There's No Order Book
 
-There is a version of papertrade where the structural critique above mostly does not apply: small-ticket gambling positioning, $5-50 user balances, position caps that prevent anyone from running the headline leverage in size, growth-mode fees that make tiny tickets economically coherent. That product is closer in spirit to opt.fun than to a real perp venue. The name *papertrade* — paper trading is practice trading, sometimes literally fake money — even gestures at it. If the live product is parameterized that way, blow-ups stay inside individual user balances and HLP is not stressed.
+Liquidations on papertrade do not run through Hyperliquid's order book, and there's no HLP backstop relationship. Each position has a "bust price": the BBO at which the position's equity would hit zero, less a fixed buffer of approximately 5 basis points. When BBO crosses bust, any keeper can call `liquidate(positionId)`. The contract closes the position at the bust price and credits the margin to the LP. The trader loses their margin and receives PAPER for the loss, the same way they would on a regular losing close.
 
-There is another version where the critique lands cleanly: no meaningful position caps, listed against deep crypto-major liquidity, full headline leverage available to anyone who shows up. That version routes the kind of liquidation flow into HLP that the JELLY governance precedent was about, with extra steps. Which version is live is what the docs would settle.
+The buffer exists so the LP captures the full position before the close even if price drifts during keeper round-trip. Liquidation is permissionless, run by whoever shows up first; the protocol team runs a keeper but doesn't have exclusive access.
 
-## What HIP-3 Still Has To Decide
+The structural point worth flagging: papertrade's solvency stack stops at its own contracts. There is no HLP exposure, no validator-set intervention vector, no JELLY-style precedent that applies. If the protocol's three-bucket accounting goes deep into deficit because users keep winning faster than the queue can clear, the consequence lands on PAPER holders (their dividends slow) and on queued winners (their payouts wait), not on Hyperliquid's solvency layer.
 
-The deployer-stake-to-leverage envelope is the thing HIP-3 has not yet been tested on at scale. The 500,000 HYPE requirement was set when HIP-3 launched, in a context where the expected deployer was something like trade.xyz. It maps to the cost of misconduct, not to the size of the bad-debt envelope a deployer's product choices can generate. As more deployers test how far the leverage envelope can be pushed, the empirical question is how much liquidation flow products at the extreme actually generate and whether HLP's exposure profile shifts as a result.
+## Admin Surface and Real Risks
 
-Hyperliquid has a working precedent for governance intervention in JELLY. It does not have a working precedent for pricing structural risk into deployer stakes ex ante. The first one is a fire alarm. The second is a building code. The next interesting HIP-3 story may be whether the building code shows up before another fire.
+Three admin roles are documented, each scoped:
 
-For the moment, the practitioner takeaway is narrower. Hyperliquid's CLOB is a deep on-chain execution surface. HIP-3 is a real category, and trade.xyz-class deployers are doing real work. The same primitive that runs a 24/7 S&P 500 perp also runs a 1000x leverage product. The product label tells you which side of that primitive you are standing on.
+- A **pause guardian** can halt new opens on any market or globally, and doing so freezes the BBO at the moment of pause for any subsequent close on that market.
+- An **owner** sits behind a 7-day timelock and can tune impact curve and fee parameters, swap signers and keepers, list new markets, and ultimately upgrade the proxied contracts. Every owner action queues publicly for 7 days before execution.
+- A **market keeper** moves the trailing per-asset directional OI caps as organic OI moves.
 
-## Quick Reference
+Pause-opens and the owner upgrade path are the centralised levers that exist; the 7-day timelock on owner actions is what the team points to as the trust-minimisation knob. Existing positions can always be closed at the BBO frozen at pause time, so a freeze doesn't strand collateral.
 
-- HIP-3 went live on Hyperliquid mainnet on October 13, 2025. ([Hyperliquid Docs](https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals))
-- Builder-deployed perps grew to roughly 35% of Hyperliquid volume and peaked near $2.3 billion in open interest by April 2026, with trade.xyz responsible for the large majority of that OI. ([TheBlock](https://www.theblock.co/post/393810/hyperliquid-hip-3-markets-1-43-billion-open-interest-24-7-trading-tokenized-equities-commodities), [CoinDesk](https://www.coindesk.com/markets/2026/03/10/hyperliquid-s-permissionless-market-smashes-usd1-2-billion-in-open-positions-as-oil-and-equity-futures-boom))
-- Deployer staking requirement is 500,000 HYPE (~$20M at mid-May 2026 prices); unstaking takes 7 days during which stake remains slashable; deployers receive a fixed 50% fee share; HIP-3 user-side fees are 2x validator-operated markets (3 / 9 bps maker / taker at base). ([Hyperliquid Docs](https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals), [Fees](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees))
-- Hyperliquid maintenance margin is half the initial margin at max leverage; backstop liquidation triggers at two-thirds of that. ([Hyperliquid Docs — Liquidations](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/liquidations))
-- The JELLYJELLY incident (March 26, 2025) is the working precedent for validator intervention against manipulated thin-liquidity perps. ([CoinDesk](https://www.coindesk.com/markets/2025/03/26/hyperliquid-delists-jellyjelly-after-vault-squeezed-in-usd13m-tussle), [Halborn post-mortem](https://www.halborn.com/blog/post/explained-the-hyperliquid-hack-march-2025))
-- Opt.fun is the closest 1000x-leverage comparable in the ecosystem — options, not perps, with one-minute expiry on BTC and PUMP. ([DL News](https://www.dlnews.com/articles/markets/hyperliquid-protocol-cranks-up-the-risk-with-1000x-leverage/))
+The documented risks worth flagging on the user side: queue overhang means a winning close can take time to actually arrive, especially in the early life of the protocol when the LP is still bootstrapping. The 7-day timelock is meaningful but not eliminative — the team can upgrade the contracts, and a sufficiently motivated proposal could materially change protocol behaviour after the timelock window. The bridging UX has a known race-condition deposit bug, mitigated by a separate 7-day-timelock admin key whose only purpose is to credit orphaned deposits.
 
-For related defiprime coverage: [Hyperliquid vs. Aster](/hyperliquid-vs-aster) and the [Hyperliquid Chain ecosystem deep dive](/hyperliquid-chain-deep-dive). The product page for [Hyperliquid](/product/hyperliquid) sits in the [perps](/perps) collection.
+None of those are unusual for a contract proxied behind a timelock. They are worth knowing.
+
+## Where This Sits in the Landscape
+
+Papertrade is structurally different from the things it gets compared to.
+
+It is not a HIP-3 deployer. The HIP-3 surface — 500,000 HYPE staked, validator slashing, deployer-side oracle and leverage configs, HLP backstop exposure — does not apply. trade.xyz's tokenized stocks and opt.fun's options are different products built on different relationships with Hyperliquid; papertrade uses Hyperliquid the same way an HyperEVM DeFi app uses any precompile.
+
+It is not the typical perp DEX. There is no order book. There is no margin engine in the GMX or dYdX sense. The closest structural cousin in DeFi is the GMX peer-to-pool perp design, but GMX uses a multi-asset GLP pool seeded with real liquidity and quotes against Chainlink oracles; papertrade uses a single-USDC LP that starts at zero and reads HL's BBO directly through a precompile. The queue mechanism and the loss-mint token are not present in GMX.
+
+It is not a generic crypto casino. The Martin Galer mechanism design is academically grounded, the whitepaper cites Chitra-Angeris CFMM literature, and the on-chain architecture (precompile reads, CoreWriter bridges, CREATE2 proxies, 7-day-timelock proxy upgrades) is serious systems work. The product surface is a leveraged perp; the framing as a "speculation game" in the whitepaper is honest about what it is, but the implementation is closer to a CFD broker built on Hyperliquid's pricing infrastructure than to a Rollbit-style centralized casino.
+
+The interesting thing is the combination. A peer-vs-pool perp surface with no orderbook, bootstrapped from zero capital, with a token minted only to losers, with an asymmetric impact curve that doubles as oracle-manipulation defence, all running on Hyperliquid's price feed without depending on Hyperliquid's solvency or governance — that is a different shape than the rest of the HyperEVM ecosystem. Whether it scales to meaningful volume depends on whether the user base ends up positive-EV for the LP (it has to, for the queue to ever clear), and on whether PAPER holders find the dividend stream attractive enough to keep absorbing variance.
+
+There is a real product question worth thinking about. At 1000x leverage with a bust-price buffer of about 5 bps and an asymmetric impact curve that haircuts wins, the per-trade economics are unfriendly to the trader and friendly to the LP. The protocol bets that traders will show up anyway, because at 1000x the variance is the point. The PAPER emissions curve front-loads the reward for early traders, who carry the most variance risk. That is the only thing turning a structurally trader-unfriendly product into something a participant might rationally show up for.
+
+It is a coherent design. Whether it works is an empirical question about traffic, queue dynamics, and how long the flat-region of the mint curve lasts. The next interesting data point will be the live LP trajectory once trading is open and the first wave of losses starts feeding the bootstrap.
+
+For related defiprime coverage on Hyperliquid: [Hyperliquid vs. Aster](/hyperliquid-vs-aster) and the [Hyperliquid Chain ecosystem deep dive](/hyperliquid-chain-deep-dive). The product page for [Hyperliquid](/product/hyperliquid) sits in the [perps](/perps) collection.
