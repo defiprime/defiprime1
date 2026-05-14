@@ -1,118 +1,89 @@
 ---
 git-date:
 layout: [blog]
-title: "Inside Papertrade: 1000x Synthetic Perps Built on a Zero-LP Bootstrap"
+title: "Papertrade Is the Cleanest Onchain Casino Anyone's Shipped, Dressed as a Perp DEX"
 permalink: papertrade-hyperliquid-1000x-perps
-h1title: "Inside Papertrade: 1000x Synthetic Perps and the Martin Galer Bootstrap"
-pagetitle: "Inside Papertrade: 1000x Synthetic Perps Built on a Zero-LP Bootstrap"
-metadescription: "Papertrade isn't a HIP-3 perp DEX. It's a peer-vs-pool synthetic casino on HyperEVM that uses Hyperliquid's BBO as an oracle, bootstraps its LP from zero through a payout queue, and mints its token only to traders who lose."
+h1title: "Papertrade: The Cleanest Onchain Casino, Dressed as a Perp DEX"
+pagetitle: "Papertrade Is the Cleanest Onchain Casino Anyone's Shipped, Dressed as a Perp DEX"
+metadescription: "Papertrade's 1000x leverage and 'fair-launched fully onchain perpetual exchange' framing buries the real story: an academically-grounded onchain casino with a zero-LP bootstrap and a token minted only by losers, sitting on top of Hyperliquid's price feed."
 category: blog
 featured-image: /images/blog/papertrade-hyperliquid-1000x-perps-ogp.png
-intro: "Papertrade isn't a HIP-3 perp DEX. It's a peer-vs-pool synthetic casino on HyperEVM that uses Hyperliquid's BBO as an oracle, bootstraps its LP from zero through a payout queue, and mints its token only to traders who lose."
+intro: "Papertrade's 1000x leverage and 'fair-launched fully onchain perpetual exchange' framing buries the real story: an academically-grounded onchain casino with a zero-LP bootstrap and a token minted only by losers, sitting on top of Hyperliquid's price feed."
 author: sawinyh
 tags: ["Analysis"]
 ---
 
-A quick first read of papertrade.xyz suggests yet another HIP-3 deployer chasing extreme leverage on Hyperliquid: 1000x, "fair launch," "synthetic perpetuals." Read the actual documentation and the picture flips. Papertrade isn't a HIP-3 deployer at all. It doesn't trade perp contracts on Hyperliquid. It runs its own smart contracts on HyperEVM that read Hyperliquid's best-bid/offer price through a precompile and use that price to settle synthetic swaps between users and a self-bootstrapping LP. The product surface looks like a perp DEX. The mechanism underneath is something much closer to an academically-grounded on-chain casino.
+The pitch on papertrade.xyz reads like every other extreme-leverage perp protocol: 1000x leverage, 0 slippage, 100% user owned, fully onchain. Read the docs and the whitepaper and that framing falls apart. Papertrade is not a perp DEX. It is the most carefully-engineered onchain casino anyone has shipped to date, with a token-economics design that's the rarest thing in DeFi — actually fair — and it runs on top of Hyperliquid without taking any of Hyperliquid's solvency risk. The "1000x perp" packaging is what gets it past the DeFi/gambling line in people's heads. The mechanism underneath is straight out of [Tarun Chitra and Guillermo Angeris' CFMM literature](https://docs.papertrade.xyz/martingaler-whitepaper.pdf).
 
-This is genuinely interesting. The whitepaper, [*Martin Galer: A Bootstrapping Mechanism for Sustainable Asynchronous Speculation Games of Chance*](https://docs.papertrade.xyz/martingaler-whitepaper.pdf) by Jez (@izebel_eth) and Blurr (Refund Contract Deployer), cites Tarun Chitra and Guillermo Angeris' CFMM-theory papers and explicitly positions itself in the SatoshiDice → Bustabit → Etheroll → EtherCrash → Rollbit lineage. The result is a leveraged-perp surface that mechanically resembles a CFD broker more than a Hyperliquid market, with a token economy designed so the supply can only be created by losing money. That last property is rarer than it sounds.
+Three things make this protocol worth paying attention to, none of them is the leverage number.
 
-## What's Actually On Chain
+## It Doesn't Touch Hyperliquid's Risk Stack At All
 
-Papertrade's contracts live on HyperEVM, Hyperliquid's L1 EVM layer. There is no order book on papertrade, no matching engine, no other trader on the other side of your trade. The counterparty on every trade is "the LP," a single USDC pool inside the protocol's Exchange contract.
+The first surprise from the docs is that papertrade is not a [HIP-3](/hyperliquid-vs-aster) deployer. No 500,000 HYPE staked, no validator slashing exposure, no relationship with HLP. Papertrade runs its own contracts on HyperEVM — Hyperliquid's L1 EVM layer — and uses Hyperliquid's best-bid/offer precompile at `0x000000000000000000000000000000000000080e` purely as a price feed. No perp contract trades on Hyperliquid through papertrade. When you open a position, the Exchange contract reads the BBO mid, locks it as your entry, and creates a synthetic swap between you and the protocol's internal LP. When you close, it reads the BBO mid again and settles your PnL against that same LP.
 
-When you open a position, the Exchange contract reads Hyperliquid's BBO precompile at `0x000000000000000000000000000000000000080e`, takes the midpoint of the best bid and best ask on Hyperliquid's native book, and locks that price as your entry. When you close, it reads the precompile again and settles your PnL against the LP. No actual perpetual contract is opened on Hyperliquid through papertrade. Hyperliquid is purely the price source.
+That single architectural choice changes the risk picture entirely. The recent conversation about builder-deployed perps has centered on whether deployer stakes are calibrated to the bad-debt envelope deployers can route into HLP. Papertrade is outside that conversation. The protocol's three-bucket accounting (treasury, side bucket, payout queue) cannot route losses to HLP, because there's no relationship to HLP. If papertrade's LP blows up, the consequence lands on PAPER holders' dividends and on queued winners waiting longer — not on Hyperliquid validators, not on HLP depositors, not on anyone outside papertrade's own contracts.
 
-That single architectural choice unlocks most of papertrade's marketing claims. There are no funding costs because no real perp position is being held. There is no slippage at execution because every trade clears at the precompile-read BBO mid regardless of size, subject only to per-instrument open-interest caps the protocol enforces internally. There are no trading fees on notional, because the protocol's revenue model is built around a different mechanism (the asymmetric impact curve, below). USDC balances live on HyperCore (Hyperliquid's native spot ledger); the bridge between HyperEVM contract state and HyperCore balances runs through the `CoreWriter` precompile and per-user CREATE2 deposit proxies.
+Papertrade is doing to Hyperliquid what Polymarket did to UMA: consuming the upstream's price infrastructure as a free public good, building a self-contained product on top, taking exactly zero exposure to the upstream's governance or solvency layer. The 7-day timelock on the contract owner is the only centralized lever, and it's exactly the same trust assumption you make using any proxied DeFi protocol.
 
-Live markets at launch are BTC and ETH, both with up to 1000x leverage and a per-user position cap of $10M. The protocol can list any Hyperliquid perp, including HIP-3 ones; new markets are added by the contract owner through a 7-day timelock.
+## The LP Starts at Zero. That's the Whole Point.
 
-## The Martin Galer Mechanism: Zero-LP Bootstrap
+Most onchain casinos die for the same reason: they need a bankroll. SatoshiDice, Bustabit, Etheroll, EtherCrash all needed an LP seeded upfront before they could pay winners on demand. The seed had to come from somewhere — centralized capital, token-funded liquidity mining, or in EtherCrash's case, the LP getting drained by a bad actor — and that requirement made every onchain casino either custodial in spirit or a token-incentive game.
 
-The reason the docs and the whitepaper matter together is that papertrade's LP starts at zero. No seed capital, no founders' deposit, no upfront fundraise. There is no way for anyone to deposit *into* the LP directly. The LP grows entirely from cumulative user losses. That is not a marketing line; it is the structural property the protocol was designed around.
+Papertrade's LP starts at $0. There is no seed, no founders' deposit, no upfront raise, and crucially, **no way for anyone to deposit directly into the LP**. The pool grows entirely from cumulative user losses. The mechanism that lets that work is the Martin Galer payout queue, written up in [a whitepaper](https://docs.papertrade.xyz/martingaler-whitepaper.pdf) co-authored by Jez (@izebel_eth) and Blurr that cites a wall of Chitra-Angeris papers on CFMM theory.
 
-The mechanism that makes this work is the Martin Galer payout queue. Traditional onchain casinos (SatoshiDice, Bustabit, EtherCrash) all needed an LP pool seeded upfront so winners could be paid on demand. That seed had to come from somewhere, usually centralised capital or token-funded liquidity mining. Martin Galer replaces instant payout with a FIFO queue:
+The mechanics are clean enough to spell out. Three buckets: `treasury` (the LP, never negative), `sideBucket` (parked LP gains during a queue), and a FIFO `payout queue` of unpaid winning closes. When a user wins and the LP can pay, the user gets paid. When the LP can't pay, the profit portion of the win goes to the back of the queue and the user's margin returns immediately. When a user loses and the queue is empty, the loss credits the LP directly. When a user loses and the queue is non-empty, the loss is parked in the side bucket. A permissionless `harvest()` keeper periodically drains the side bucket into queue payouts in order.
 
-- A user wins. If the LP has enough USDC, pay the user immediately. If not, the unpaid portion of the win goes to the back of the queue. The user's *margin* is always returned immediately; only the profit portion can land in the queue.
-- A user loses. If the queue is empty, the loss credits the LP directly. If the queue is non-empty, the loss is parked in a `sideBucket` instead of the LP.
-- A keeper periodically calls `harvest()`, which drains the `sideBucket` into queue payouts in order. Anyone can run the keeper. When the queue empties, residual `sideBucket` funds flow into the LP as a normal gain.
+Net protocol equity is `treasury + sideBucket − queueTotal`, and the docs spell out the consequence: **that figure can go negative.** "Temporary insolvency by design." What guarantees winners eventually get paid is the assumption that aggregate user flow is positive-EV to the LP, which at 1000x leverage with the impact curve described below is almost certainly true.
 
-The accounting is three buckets: `treasury` (LP balance, never negative), `sideBucket` (parked LP gains during a queue), and the payout queue. Net protocol equity is `treasury + sideBucket − queueTotal`, and that figure **can go negative**. The docs are explicit about this — "temporary insolvency by design." What guarantees winners eventually get paid is the assumption that the user base is positive-EV for the protocol on aggregate (the house edge), so future losses will refill the LP faster than queued wins drain it.
+The thing that makes this a different category of design is that nobody is asked to put up risk capital. Traders show up to bet. Losses fund the LP. Winners may have to wait, but only on the profit portion, and only when the LP is in temporary deficit. Margin is always returned immediately. Nothing about this requires trust in a centralized treasury and nothing about it requires a token incentive that lies about what's actually happening.
 
-Crucially, the queue overhang doesn't block anything else. New positions open whether the queue is empty or not. Margin is always under the user's control. The only thing that's delayed when the LP can't pay is the profit portion of a particular winning close. The UI is designed to show this explicitly: an "available" balance and a "queued" balance, where queued balance still counts as collateral for new opens.
+## Every PAPER Token Is Minted By a Loser
 
-The whitepaper also discusses a stuck-participant escape valve (queued winners can forfeit their winnings to reclaim original wager input) but the live protocol doesn't expose that escape, on the bet that the LP rarely sits in deep deficit.
+The PAPER tokenomics are the most honest design I've seen in DeFi this cycle. Total supply at genesis: zero. No pre-mint. No team allocation. No VC allocation. No airdrop. No vesting. The only way a PAPER token comes into existence is for a trader to close a position at a loss or get liquidated, at which point the protocol mints PAPER to that trader's wallet against the loss.
 
-## PAPER: A Token Minted Only By Losers
+The rate is mathematical. While the LP balance is below $2M (including any time it's underwater), the rate is a flat 100 PAPER per $1 of LP gain. Above $2M, the rate decays as `100 × (S / (S + H))²` where `S = $120M` and `H` is the cumulative LP gain past the threshold. The decay is a strict high-water-mark ratchet — if stakers drain LP back below the threshold, the rate stays decayed forever. The cumulative tail HWM only ever ratchets up.
 
-Papertrade's native token, $PAPER, is the protocol's mechanism for paying anyone to put money into the LP — because there's no other way to put money in. The design is unusual enough to spell out precisely:
+What stakers get in return: a continuous USDC dividend out of LP revenue, paid in two streams. Every settlement that credits the LP carves a slice for stakers. Once the LP balance grows past $5M, every dollar of LP gain past that point sweeps fully to stakers. Stake and unstake are both instant — no cooldown, no lockup, no minimum.
 
-- Total supply at genesis: zero.
-- No pre-mint. No team allocation. No VC allocation. No airdrop. No vesting schedule.
-- Every PAPER token that will ever exist must be minted through one specific path: a trader closing at a loss or being liquidated.
-- The mint rate is governed by a flat-then-decay curve. While the LP balance is below $2 million (including any time it's underwater), the rate is a flat **100 PAPER per $1 of LP gain**. Past $2M, the rate decays as `100 × (S / (S + H))²` where `S = $120M` and `H` is the cumulative LP gain past the threshold.
-- The decay is a strict high-water-mark ratchet. If stakers drain LP back below the threshold, the rate stays decayed; subsequent gain past the prior HWM picks up where it left off. Early traders mint at materially higher rates than late traders, by design.
+This works as an economic loop in a way most "fair launch" tokens don't. A PAPER holder is, by definition, someone who paid real USDC into the LP through a losing trade. They are buying back a fractional claim on future LP revenue by absorbing the early variance. The flat-region mint rate is what makes that trade attractive when the LP is small or underwater — exactly the period where most protocols would either need a token-incentive program or a seed deposit. Here the participation incentive is mechanically tied to the protocol's bootstrapping need. A loser at LP = -$50K mints flat at the full 100/$ rate. A loser at LP = $50M mints far less. By design.
 
-What stakers earn in return is a continuous USDC dividend from the LP, in two streams. First, every settlement that credits the LP (the asymmetric impact on a winning close, or an outright loss) carves a small slice for stakers. Second, once the LP grows past a $5M cap, every dollar of LP gain past that point sweeps fully to stakers via a public `pushStakerFees()` call. Stake and unstake are both instant: no cooldown, no lockup, no minimum.
+Compare this to any recent "fair launch" you can name. PAPER has no premise of equality, no insider allocation hidden in a vesting cliff, no liquidity bootstrap built on top of pre-allocated tokens. The supply curve is the protocol's economic engine and the protocol's economic engine is the supply curve. There is one mechanism, and it is legible from the source code.
 
-This is a clean reinterpretation of the "loyalty token" pattern. Every PAPER holder is, by definition, someone who put real USDC into the LP through a losing trade. They are buying back a claim on future LP revenue by absorbing the early variance. The flat-region mint rate is what makes that trade attractive even when the LP is underwater: a loser early in the protocol's life walks away with a much bigger fraction of the eventual revenue pool than a loser later on.
+## The Asymmetric Impact Curve Tells You Who the Product Is For
 
-## Asymmetric Impact: The LP's Real Income
-
-If there are no trading fees and no spread, the natural question is what funds the LP at all. The answer is the asymmetric impact curve, a Rollbit-inspired mechanism papertrade has adapted for its own constraints.
-
-On a winning close, the protocol applies a smooth scale factor to the raw PnL:
+If trades have no fees, no spread, no funding cost, and no gas — and they don't — the natural question is what feeds the LP at all. The answer is an asymmetric impact curve, adapted from Rollbit. On a winning close the protocol applies a scale factor that depends on how far price moved between entry and exit:
 
 ```
-adjustedPnl   = rawPnl × scale
-scale         = (1 − baseRate) / (1 + term1 + term2)
-term1         = 1 / (move × rateMultiplier)
-term2         = referenceNotional / (move × positionMultiplier)
-move          = |exitPrice − entryPrice| / entryPrice
+adjustedPnl = rawPnl × scale
+scale       = (1 − baseRate) / (1 + term1 + term2)
+term1       = 1 / (move × rateMultiplier)
+term2       = referenceNotional / (move × positionMultiplier)
 ```
 
-As `move` grows, both terms in the denominator shrink, the scale factor approaches `(1 − baseRate)`, and the trader keeps most of the raw gain. As `move` approaches zero, the terms blow up and the gain collapses toward zero. Losing closes pay nothing extra — the loss is the loss, and that's the end of it.
+Losing closes pay the full loss with no haircut. Winning closes are scaled. Bigger price moves keep more of the gain; tiny moves are scaled most aggressively. Papertrade's twist on the Rollbit formulation is that the position-size factor (`term2`) uses a fixed per-instrument reference notional rather than the trader's actual size, so the haircut percentage is the same on a $100 close and a $100K close.
 
-The key word is *asymmetric*. The cost of trading on papertrade lives entirely on the win side, scaled by how far price moved. Bigger moves keep more; tiny moves are scaled most aggressively. Papertrade's twist on the Rollbit formula is that the position-size factor (`term2`) is replaced with a per-instrument constant. At 1000x leverage the original formulation would have penalised larger trades and pushed users into many small positions, which is bad on gas, state, and UX. Papertrade fixes the haircut percentage to depend on the move, not on the trade size.
+This curve does two jobs. It funds the LP, which is the visible job. The less visible job is that it makes BBO oracle manipulation unprofitable. The natural attack on a perp that reads BBO directly is to place a small limit order on Hyperliquid's book to shift the mid by a tick, then open and close a position against the distorted price. The impact curve is steepest on the smallest moves, so a sub-spread manipulation produces a gain that gets eaten almost entirely by the haircut. Stack a 0.2 basis-point jitter-protection deadband on top (small wins below `entryPrice / 50000` are zeroed) and trailing per-asset open-interest caps, and the attack stops being economically viable. That is why papertrade can read BBO directly with no circuit breaker and no off-chain oracle.
 
-This curve does more than fund the LP. It is also the protocol's main defence against oracle manipulation. The BBO precompile is consensus-verified and cannot be lied to, but a sub-spread distortion is cheap: a single small limit order on Hyperliquid's book can shift the BBO mid by a tick. An attacker who used that distortion to engineer a small profitable close on papertrade would find the gain almost entirely consumed by the impact curve, because the curve is steepest on the smallest moves. Stack a 0.2 basis-point jitter-protection deadband (small wins below `entryPrice / 50000` are zeroed) and trailing per-asset open-interest caps on top, and the attack stops being economically viable. The docs are explicit that this is why papertrade can read BBO directly with no circuit breaker and no off-chain oracle.
+What the curve tells you about the target user is more interesting. At 1000x leverage with a haircut that's harshest on the smallest moves and a bust-price buffer of 5 basis points, the per-trade economics are aggressive on the LP's side. To actually make money, a trader needs to catch directional moves big enough to escape the steep part of the curve, fast enough to avoid bust, without trying to scalp small ticks (which get haircut to zero) and without sitting in positions long enough for the bust buffer to bite. This isn't a serious trader's product. It's a high-variance product for users who understand they are betting, designed to be honest about that. The PAPER emissions curve front-loads the consolation prize for the early variance-takers. The asymmetric impact funds the LP. Both mechanisms align around a specific user: someone showing up for the lottery, not for the directional edge.
 
-## What Liquidation Means When There's No Order Book
+## What Can Actually Go Wrong
 
-Liquidations on papertrade do not run through Hyperliquid's order book, and there's no HLP backstop relationship. Each position has a "bust price": the BBO at which the position's equity would hit zero, less a fixed buffer of approximately 5 basis points. When BBO crosses bust, any keeper can call `liquidate(positionId)`. The contract closes the position at the bust price and credits the margin to the LP. The trader loses their margin and receives PAPER for the loss, the same way they would on a regular losing close.
+Three real risks, in order of likelihood.
 
-The buffer exists so the LP captures the full position before the close even if price drifts during keeper round-trip. Liquidation is permissionless, run by whoever shows up first; the protocol team runs a keeper but doesn't have exclusive access.
+**Queue overhang.** In the early life of the protocol, the LP is small or negative, and a string of winning closes can queue up profit payouts that wait until losses refill the side bucket. Margin is always returned immediately, but the profit portion can sit. This is the visible cost of the zero-LP bootstrap. The protocol is honest about it. Whether users tolerate it is the empirical question of the first six months.
 
-The structural point worth flagging: papertrade's solvency stack stops at its own contracts. There is no HLP exposure, no validator-set intervention vector, no JELLY-style precedent that applies. If the protocol's three-bucket accounting goes deep into deficit because users keep winning faster than the queue can clear, the consequence lands on PAPER holders (their dividends slow) and on queued winners (their payouts wait), not on Hyperliquid's solvency layer.
+**The 7-day timelock owner.** The contracts are proxied. The contract owner can tune the impact-curve parameters, the mint-rate constants, the OI caps, the fee rates, and ultimately upgrade the implementation. Every owner action queues publicly for 7 days before it can execute, so users have a week to withdraw and exit if they disagree. This is a real trust assumption. It's the same one you make with most DeFi protocols, but it's worth naming because the mint curve and the impact curve are both parametric.
 
-## Admin Surface and Real Risks
+**Aggregate trader EV.** The Martin Galer mechanism mathematically only works if cumulative user flow is positive-EV for the LP over time. If, hypothetically, papertrade attracted a population of users who were systematically winning against the BBO oracle through some pattern the impact curve didn't price in, the queue would grow without bound and the protocol would never settle. This is structurally unlikely at 1000x leverage on BTC and ETH — the impact curve and the bust buffer are designed to make sub-move-size profit extraction uneconomic. But it is the load-bearing assumption of the whole design, and the data to confirm it will only exist after users actually trade.
 
-Three admin roles are documented, each scoped:
+The two risks that aren't there are worth naming too. There's no HLP exposure, so a bad day on papertrade doesn't drain anyone else's vault. There's no validator-intervention vector, because there's no HIP-3 market to delist. The protocol's bad outcomes are contained inside its own three-bucket accounting and its own token holders.
 
-- A **pause guardian** can halt new opens on any market or globally, and doing so freezes the BBO at the moment of pause for any subsequent close on that market.
-- An **owner** sits behind a 7-day timelock and can tune impact curve and fee parameters, swap signers and keepers, list new markets, and ultimately upgrade the proxied contracts. Every owner action queues publicly for 7 days before execution.
-- A **market keeper** moves the trailing per-asset directional OI caps as organic OI moves.
+## What This Actually Is
 
-Pause-opens and the owner upgrade path are the centralised levers that exist; the 7-day timelock on owner actions is what the team points to as the trust-minimisation knob. Existing positions can always be closed at the BBO frozen at pause time, so a freeze doesn't strand collateral.
+The honest framing for papertrade is that it's an onchain casino, designed with the seriousness of a DeFi protocol, that has chosen to present itself as a perp DEX because that framing gets through filters that "onchain casino" doesn't. The whitepaper is explicit about the lineage — SatoshiDice through EtherCrash through Rollbit — and the mechanism design is the next step in that lineage rather than a divergence from it.
 
-The documented risks worth flagging on the user side: queue overhang means a winning close can take time to actually arrive, especially in the early life of the protocol when the LP is still bootstrapping. The 7-day timelock is meaningful but not eliminative — the team can upgrade the contracts, and a sufficiently motivated proposal could materially change protocol behaviour after the timelock window. The bridging UX has a known race-condition deposit bug, mitigated by a separate 7-day-timelock admin key whose only purpose is to credit orphaned deposits.
+That's not a criticism. It is a more interesting product than most of the actual perp DEXs in the ecosystem right now, because it is solving a real mechanism-design problem that perp DEXs don't have. Onchain casinos need bankrolls and onchain casinos need fair token distribution and onchain casinos need oracle integrity. Papertrade has a paper, a code base, and a deployment that addresses all three at once.
 
-None of those are unusual for a contract proxied behind a timelock. They are worth knowing.
-
-## Where This Sits in the Landscape
-
-Papertrade is structurally different from the things it gets compared to.
-
-It is not a HIP-3 deployer. The HIP-3 surface — 500,000 HYPE staked, validator slashing, deployer-side oracle and leverage configs, HLP backstop exposure — does not apply. trade.xyz's tokenized stocks and opt.fun's options are different products built on different relationships with Hyperliquid; papertrade uses Hyperliquid the same way an HyperEVM DeFi app uses any precompile.
-
-It is not the typical perp DEX. There is no order book. There is no margin engine in the GMX or dYdX sense. The closest structural cousin in DeFi is the GMX peer-to-pool perp design, but GMX uses a multi-asset GLP pool seeded with real liquidity and quotes against Chainlink oracles; papertrade uses a single-USDC LP that starts at zero and reads HL's BBO directly through a precompile. The queue mechanism and the loss-mint token are not present in GMX.
-
-It is not a generic crypto casino. The Martin Galer mechanism design is academically grounded, the whitepaper cites Chitra-Angeris CFMM literature, and the on-chain architecture (precompile reads, CoreWriter bridges, CREATE2 proxies, 7-day-timelock proxy upgrades) is serious systems work. The product surface is a leveraged perp; the framing as a "speculation game" in the whitepaper is honest about what it is, but the implementation is closer to a CFD broker built on Hyperliquid's pricing infrastructure than to a Rollbit-style centralized casino.
-
-The interesting thing is the combination. A peer-vs-pool perp surface with no orderbook, bootstrapped from zero capital, with a token minted only to losers, with an asymmetric impact curve that doubles as oracle-manipulation defence, all running on Hyperliquid's price feed without depending on Hyperliquid's solvency or governance — that is a different shape than the rest of the HyperEVM ecosystem. Whether it scales to meaningful volume depends on whether the user base ends up positive-EV for the LP (it has to, for the queue to ever clear), and on whether PAPER holders find the dividend stream attractive enough to keep absorbing variance.
-
-There is a real product question worth thinking about. At 1000x leverage with a bust-price buffer of about 5 bps and an asymmetric impact curve that haircuts wins, the per-trade economics are unfriendly to the trader and friendly to the LP. The protocol bets that traders will show up anyway, because at 1000x the variance is the point. The PAPER emissions curve front-loads the reward for early traders, who carry the most variance risk. That is the only thing turning a structurally trader-unfriendly product into something a participant might rationally show up for.
-
-It is a coherent design. Whether it works is an empirical question about traffic, queue dynamics, and how long the flat-region of the mint curve lasts. The next interesting data point will be the live LP trajectory once trading is open and the first wave of losses starts feeding the bootstrap.
+What it asks of the user is something most DeFi protocols don't ask: be honest about why you're here. If you are here because you want directional exposure to BTC at moderate leverage with predictable funding, this is not your product — go use Hyperliquid's native perps. If you are here because you want a lottery ticket with a token-rebate built in, the design is coherent and the math is documented and the LP can't run with your money because there is no LP custodian to run anywhere. That is rare. It is worth recognizing on its own terms.
 
 For related defiprime coverage on Hyperliquid: [Hyperliquid vs. Aster](/hyperliquid-vs-aster) and the [Hyperliquid Chain ecosystem deep dive](/hyperliquid-chain-deep-dive). The product page for [Hyperliquid](/product/hyperliquid) sits in the [perps](/perps) collection.
