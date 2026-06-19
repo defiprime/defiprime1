@@ -285,7 +285,36 @@
   </div>
   {% include also.html %}
   {% include_cached footer.html %}
-  
+
+  <!-- ItemList Schema - alternatives for AI answer engines & rich results -->
+  {% if page_cards and page_cards.size > 0 %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": {{ page.h1title | default: page.pagetitle | default: page.title | jsonify }},
+    "description": {{ page.metadescription | strip_html | strip_newlines | jsonify }},
+    "url": "{{ page.url | replace:'index.html','' | prepend: site.url }}",
+    "numberOfItems": {{ page_cards.size }},
+    "itemListElement": [
+      {% for asset_tool in page_cards %}{% assign img = asset_tool["image"] %}{% unless img contains "://" %}{% assign img = img | prepend: site.url %}{% endunless %}{
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "item": {
+          "@type": "Product",
+          "name": {{ asset_tool["product-title"] | jsonify }},
+          "description": {{ asset_tool["product-description"] | markdownify | strip_html | strip_newlines | jsonify }},
+          "url": "{{ site.url }}/product/{{ asset_tool["product-title"] | slugify: 'latin' }}",
+          "image": {{ img | jsonify }}{% if asset_tool["product-url"] %},
+          "sameAs": {{ asset_tool["product-url"] | jsonify }}{% endif %}
+        }
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+  </script>
+  {% endif %}
+
   <script>
   document.addEventListener('DOMContentLoaded', function() {
     // Configuration

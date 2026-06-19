@@ -92,6 +92,62 @@
   </div>
   {% include_cached footer.html %}
 
+  <!-- Tag-hub structured data for AI answer engines & rich results -->
+  {% if page.posts and page.posts.size > 0 %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": {{ page.tag | append: " - DeFi Blog" | jsonify }},
+    "description": {{ page.tag | append: " articles and guides on DefiPrime — trustless, transparent DeFi products built on the blockchain." | jsonify }},
+    "url": "{{ site.url }}{{ page.url }}",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "DefiPrime",
+      "url": "{{ site.url }}"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": {{ page.tag | jsonify }},
+      "itemListElement": [
+        {% assign sep = "" %}{% assign pos = 0 %}{% for post in page.posts %}{% unless post.url contains "/amp" %}{% assign pos = pos | plus: 1 %}{{ sep }}{
+          "@type": "ListItem",
+          "position": {{ pos }},
+          "url": "{{ post.url | prepend: site.url }}",
+          "name": {{ post.h1title | default: post.title | jsonify }}
+        }{% assign sep = "," %}{% endunless %}{% endfor %}
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "DefiPrime",
+        "item": "{{ site.url }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "{{ site.url }}/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": {{ page.tag | jsonify }},
+        "item": "{{ site.url }}{{ page.url }}"
+      }
+    ]
+  }
+  </script>
+  {% endif %}
+
 </body>
 
 </html>

@@ -34,6 +34,23 @@
     <!-- RSS Feed -->
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS" href="{{ '/feed.xml' | prepend: site.url }}" />
     
+    <!-- WebSite Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "DefiPrime",
+      "alternateName": "DefiPrime.com",
+      "url": "{{ site.url }}",
+      "description": "{{ site.description }}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DefiPrime",
+        "url": "{{ site.url }}"
+      }
+    }
+    </script>
+
     <!-- Organization Schema -->
     <script type="application/ld+json">
     {
