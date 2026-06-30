@@ -30,7 +30,7 @@ redirect_from:
 <section>
   <div class='section-heading-row'>
     <h2 class='section-heading'>Latest from DeFi <span>blog</span></h2>
-    <a href='/blog' class='view-all'>View all posts &rarr;</a>
+    <a href='/blog/' class='view-all'>View all posts &rarr;</a>
   </div>
 
   {% assign posts = site.categories.blog | sort: "date" | reverse %}
