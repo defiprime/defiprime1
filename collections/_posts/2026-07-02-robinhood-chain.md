@@ -41,11 +41,23 @@ Robinhood Chain was built first and foremost for tokenized stocks: round-the-clo
 
 The tokens are not shares. They are tokenized debt securities issued by Robinhood Assets (Jersey) Limited, a subsidiary in the Channel Islands. Holding one gives you price exposure to the underlying stock. It does not give you ownership, voting rights, or a direct claim on the company. What you hold is a liability of a Robinhood entity that tracks the price and is redeemable for cash through authorized participants, with redemption for the actual underlying securities described as a future plan rather than a present feature. If that entity fails, you are a creditor, not a shareholder. This is the same structural model that drew public pushback when earlier tokenized-equity efforts launched, including OpenAI distancing itself from tokens that claimed to represent its equity in 2025.
 
+| | Robinhood Stock Token | The actual share |
+|---|---|---|
+| What it is | Tokenized debt security | Equity ownership |
+| Counterparty | Robinhood Assets (Jersey) Limited | The company itself |
+| Ownership / voting | None | Yes |
+| Claim if issuer fails | Creditor of the Jersey entity | Shareholder of the company |
+| Redemption | Cash via authorized participants (underlying securities "planned") | Sell on the exchange |
+| Who can hold | 120+ countries, not the US, UK, Canada, Switzerland, or UAE | Anyone with a broker |
+| Trading | 24/7 on an AMM | Exchange hours, on an order book |
+
 This is also not Robinhood's first pass at tokenized equities. It switched on more than 200 tokenized US stocks and ETFs for EU and EEA users at an event in Cannes in June 2025; those are now rebranded "Classic Stock Tokens" and stay in the Robinhood Europe app. The new Stock Tokens on Robinhood Chain are the second generation, and the pitch this time is composability: the same tokens can move into DeFi rather than sitting inside one app.
 
 Then there is geography. The tokenized stocks are available in 120-plus countries but explicitly not in the United States, and they are restricted in the UK, Canada, Switzerland, the UAE, and sanctioned jurisdictions. In fairness, the US wall is a regulatory constraint rather than a Robinhood preference; US securities law does not have a clean lane for a retail-traded tokenized debt security wrapping an equity, and Robinhood is not going to pick that fight first. But the effect is the same regardless of the cause. Robinhood's core audience is American retail, and the flagship product on its new chain is unavailable to most of the people who made Robinhood a household name. Robinhood is rolling out an onchain lending product (Robinhood Earn) for eligible US users, so Americans get a version of the DeFi story, just not the tokenized-equity part that the chain was built around.
 
 Put the two facts together and you get the central tension. The rails are permissionless: anyone can deploy a contract, run a node against the public RPC, or bridge in ETH. The flagship asset is the opposite of permissionless. It is a jurisdictionally gated, ownership-free debt instrument issued by a single company's offshore subsidiary. The chain is open. The product that justifies the chain is fenced.
+
+![Diagram showing a Robinhood stock token minted off-chain by Robinhood Assets (Jersey) Ltd, then moving freely across the permissionless chain (trading on the Uniswap/Pleiades AMM, serving as Morpho lending collateral), while a fence travels with the token itself: no ownership or voting, and blocked in the US, UK, Canada, Switzerland, and UAE.](/images/blog/robinhood-chain-flow.png)
 
 For a cleaner way to think about where these tokens sit on the spectrum from "truly on-chain" to "database entry with a wrapper," the [Distributed vs. Represented framework](/distributed-vs-represented-rwa-framework) is the useful lens. Robinhood's stock tokens are mobile and composable, which pushes them toward the Distributed end. But mobility is a separate axis from ownership, and on the ownership axis these are as thin as tokenized RWAs get.
 
@@ -86,6 +98,14 @@ Two more things the metrics conversation is quietly about. There is no confirmed
 ## Where It Fits
 
 Strip away the launch noise and Robinhood Chain is a real strategic move by one of the largest retail brokers in the world to own on-chain rails rather than rent them. The obvious comparison is Coinbase's [Base](/base): a large, regulated, US-listed consumer platform standing up an L2 and pointing its user base at it. Base went with a general-purpose OP-stack chain and let the ecosystem decide what to build. Robinhood has chosen an Arbitrum-stack chain with a specific flagship use case, tokenized equities, baked in from day one. Whether a purpose-built chain beats a general-purpose one for this is the bet. And Robinhood is not first to on-chain equities; the debt-security-wrapper approach it uses has been tried before by other issuers, with mixed traction and recurring questions from the underlying companies about tokens they never authorized.
+
+| | Robinhood Chain | Coinbase's Base |
+|---|---|---|
+| Stack | Arbitrum Orbit | OP Stack |
+| Mainnet | July 2026 | 2023 |
+| Design | Purpose-built for tokenized equities | General-purpose |
+| Operator | Robinhood (single sequencer, for now) | Coinbase (single sequencer) |
+| US access | Flagship stock tokens blocked | Fully available |
 
 The honest framing is the one the more careful threads have already landed on. Bull case: a battle-tested stack, deep day-one integrations, a real 24/7 tokenized-equity unlock for users outside the US, and one of the largest retail distribution funnels in finance. Bear case: the flagship asset is a synthetic debt security that carries counterparty and regulatory risk, is blocked in Robinhood's home market, and trades on an AMM model that may not suit equities; and the "permissionless" chain is, for now, operated end to end by a company whose most famous moment was restricting trades.
 
