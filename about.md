@@ -22,6 +22,10 @@ Our editorial focus has moved with the market. We write for people who build, al
 - **Infrastructure deep-dives.** Stablecoin issuers, perps venues, prediction markets, credit markets, settlement layers.
 - **Incident coverage.** Exploits, governance blow-ups, peg events. What actually happened, and who bore the loss.
 
+### Our writers
+
+DeFiprime is written by a mix of in-house editors and guest practitioners. You can browse [every contributor and their published articles](/authors/).
+
 ### Product listing
 
 We run a curated list of DeFi products. We aren't trying to catalogue every project; we're trying to surface the ones worth paying attention to.
@@ -49,6 +53,6 @@ Logos and brand assets are on the [media assets](/media-assets) page.
 
 ### Follow & contact
 
-- [X / Twitter](https://twitter.com/defiprime) — DMs open
+- [X / Twitter](https://twitter.com/defiprime) (DMs open)
 - [Telegram](https://t.me/defiprime)
 - [Newsletter](https://defiprime.substack.com/)

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Authors - DeFi Blog</title>
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://google-analytics.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://googletagmanager.com">
+  <link rel="preload" href="/images/vector.png" as="image" media="(min-width: 601px)">
+  <link rel="preload" href="/images/logo.svg" as="image" media="(min-width: 601px)">
+  <link rel="preload" href="/images/bg-fon.png" as="image" media="(min-width: 601px)">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The writers and analysts behind DeFiprime. Browse every contributor and read their articles on DeFi, stablecoins, real-world assets, and crypto regulation.">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="preload" as="style">
+  <meta property="og:title" content="Authors - DeFiprime" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:description" content="The writers and analysts behind DeFiprime." />
+  <meta property="og:image" content="{{ site.url }}/images/og-blog.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@defiprime">
+  <meta name="twitter:title" content="Authors - DeFiprime">
+  <meta name="twitter:description" content="The writers and analysts behind DeFiprime.">
+  <meta name="twitter:image" content="{{ site.url }}/images/og-blog.png">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138327045-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-138327045-1', { 'content_group3': 'author' });
+  </script>
+</head>
+
+<body class="blog-page">
+  {% include_cached header.html %}
+  <div id="main">
+    <div class="inner">
+      <header class="blog-page-header">
+        <h1><span>Authors</span> @ DeFi Blog</h1>
+        <p class="author-article-count">The writers and analysts behind DeFiprime</p>
+      </header>
+
+      <section class="blog-articles-grid">
+        {% for a in page.authors_list %}
+        {% assign link_colors = 'violet|cyan|orange|muted' | split: '|' %}
+        {% assign border_color = forloop.index | random_item: link_colors %}
+        <article class="blog-card">
+          <a href="/authors/{{ a.slug }}/">
+            <div class="blog-card-inner border-{{ border_color }}">
+              <div class="blog-card-author">
+                {% if a.data.image %}
+                <img class="lazyload" data-src="{{ a.data.image }}" alt="{{ a.data.name }}">
+                {% endif %}
+                <span>{{ a.data.name }}</span>
+              </div>
+              <p>{{ a.count }} article{% if a.count != 1 %}s{% endif %}</p>
+            </div>
+          </a>
+        </article>
+        {% endfor %}
+      </section>
+
+    </div>
+  </div>
+  {% include_cached footer.html %}
+
+  <!-- Authors hub structured data for search & AI answer engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Authors - DeFiprime",
+    "description": "The writers and analysts behind DeFiprime.",
+    "url": "{{ site.url }}{{ page.url }}",
+    "isPartOf": { "@type": "WebSite", "name": "DefiPrime", "url": "{{ site.url }}" },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {% for a in page.authors_list %}{
+          "@type": "ListItem",
+          "position": {{ forloop.index }},
+          "url": "{{ site.url }}/authors/{{ a.slug }}/",
+          "name": {{ a.data.name | jsonify }}
+        }{% unless forloop.last %},{% endunless %}{% endfor %}
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "DefiPrime", "item": "{{ site.url }}" },
+      { "@type": "ListItem", "position": 2, "name": "Authors", "item": "{{ site.url }}/authors/" }
+    ]
+  }
+  </script>
+
+</body>
+
+</html>

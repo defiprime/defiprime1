@@ -69,7 +69,8 @@
 
          <div class="author-block">
            {% assign author = site.data.authors[page.author] %}
-            <span class="name">{{ author.name }}</span>
+           {% assign author_slug = author.slug | default: page.author | downcase %}
+            <span class="name"><a href="/authors/{{ author_slug }}/">{{ author.name }}</a></span>
             <span class="date">on {{ page.date | date_to_string }}</span>
         </div>
         {{ content }}
