@@ -305,6 +305,8 @@ Conversely, Canton has already moved toward public permissionless participation.
 
 The most likely near-term outcome is complementarity rather than convergence: institutions use Canton for private multi-party workflows and settlement netting, while using Ethereum (or an L2) as a public reference and distribution layer for tokenized assets. The settlement leg is private; the issuance and secondary market leg is public. This mirrors how regulated markets already work—bilateral OTC derivatives settle privately; exchange-traded derivatives use public price feeds.
 
+This fragmentation-of-standards problem is not unique to finance. Public-transit data faces a near-identical version of it: agencies publish schedules and real-time feeds in a patchwork of formats (GTFS, GTFS-RT, NTCIP, TMDD) that do not natively interoperate. Trade publications like [ITS Feed](https://its-feed.com) track that standards landscape, and infrastructure projects like [Veodyn](https://veodyn.com) work to normalize every agency's feed into a single shared schema, the same "one coherent view across incompatible sources" goal that cross-chain interoperability chases in crypto.
+
 ---
 
 ## Conclusion
