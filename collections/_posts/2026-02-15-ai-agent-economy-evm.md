@@ -106,7 +106,7 @@ Several open questions remain:
 - **What even counts as an "AI agent"?** Many of today's agents are still rule-based automations. The truly reasoning, LLM-driven ones exist but are a smaller slice of the 21,000+ registrations.
 - **Security and robustness.** Rogue or poorly designed agents could still drain funds or manipulate markets. Wallet guardrails help, but they are not foolproof.
 - **Interoperability.** Dozens of EVM chains now have their own ERC-8004 registries. Cross-chain reputation and seamless movement are improving but not seamless.
-- **Sustainable value vs. token activity.** A lot of the reported volume is still within closed ecosystems. The test will be whether agents start generating meaningful revenue from real-world users and services outside the crypto bubble.
+- **Sustainable value vs. token activity.** A lot of the reported volume is still within closed ecosystems. The test will be whether agents start generating meaningful revenue from real-world users and services outside the crypto bubble. It is the same distinction as [measuring AI spend instead of AI value](https://sawinyh.com/blog/measuring-ai-spend-not-value): tokens circulating among agents is activity, not proof that anything valuable was produced.
 - **Competition beyond EVM.** While this piece focuses on Ethereum-compatible chains, projects like [Render Network](https://rendernetwork.com/) on Solana show that strong decentralized compute also exists outside the EVM world.
 
 ## Bottom Line

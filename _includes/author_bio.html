@@ -1,13 +1,19 @@
 {% assign author = site.data.authors[page.author] %}
+{% assign author_slug = author.slug | default: page.author | downcase %}
 
 <div class="author">
    <div class="author-wrap">
       <div class="author-info">
          <div class="author-img">
             {% if author.image %}
-            <img class="lazyload" data-src="{{ author.image }}">
+            <a href="/authors/{{ author_slug }}/"><img class="lazyload" data-src="{{ author.image }}" alt="{{ author.name }}"></a>
             {% endif %}
             <div class="author-social hidden-small">
+              {% if author.url %}
+              <a href="{{ author.url }}" class="social-link" rel="me" title="Website">
+                {% include_cached icons/web.svg %}
+              </a>
+              {% endif %}
               {% if author.twitter %}
               <a href="{{ author.twitter }}" class="social-link">
                 {% include_cached icons/twitter.svg %}
@@ -28,9 +34,14 @@
          <div class="author-descr">
              <span class="author-about"> About the author </span>
             <div class="author-title">
-               <div class="author-name">{{ author.name }}</div>
+               <div class="author-name"><a href="/authors/{{ author_slug }}/">{{ author.name }}</a></div>
             </div>
             <div class="author-social shown-small">
+              {% if author.url %}
+              <a href="{{ author.url }}" class="social-link" rel="me" title="Website">
+                {% include_cached icons/web.svg %}
+              </a>
+              {% endif %}
               {% if author.twitter %}
               <a href="{{ author.twitter }}" class="social-link">
                 {% include_cached icons/twitter.svg %}
