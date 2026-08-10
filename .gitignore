@@ -20,3 +20,5 @@ draft.md
 .claude/settings.local.json
 CLAUDE.md
 docs/
+bin/dev.sh
+.harness/ledger.jsonl
