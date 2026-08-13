@@ -13,21 +13,19 @@ author: sawinyh
 tags: ["Guide"]
 ---
 
-
 Crypto debit cards that allow you to retain control of your own funds are revolutionizing how we use digital money. Unlike traditional bank cards, these cards enable you to spend cryptocurrencies directly from your personal wallet, ensuring you remain in charge. This article delves into how these cards function, their advantages, and key considerations, providing a comprehensive overview of this emerging financial tool.
 
 As is common in the cryptocurrency space, the definition of "non-custodial" can vary. For the purposes of this article, we will focus on solutions that do not require installing third-party apps, avoiding vendor lock-in, and allowing card creation using only a standard Web3 wallet. The goal is to avoid needing yet another crypto wallet tied to a debit card and instead prioritize a simple experience where you can connect an existing wallet and top up the card balance.
 
 **Here is a review of several non-custodial crypto debit cards:**
 
-## Cypher
+## Cypher [Project is Dead as of 2026]
 
 [Cypher](https://app.cypherhq.io/card/referral/HSEG1235) offers a free virtual Visa card that can be easily funded with USDC or other tokens. It supports cross-chain assets, allowing you to top up your card from Ethereum, Optimism, Base, and most popular EVM-compatible chains. Top-up fees for the free card are 0.5% for USDC and 1% for other tokens. A 1% fee is applied for non-USD transactions (FX fees) when making international payments. ATM withdrawal fees are 3%. Cypher supports both Apple Pay and Google Pay. The daily spending limit is $50,000, and the monthly limit is $150,000.
 
-For $199, you can upgrade to a premium plan that includes a physical metal card (with free worldwide shipping), a 0% top-up fee for USDC, 0.5% for other tokens, and 0% for non-USD transactions. The ATM withdrawal fee on the premium plan is 2%, and spending limits are $200,000 daily and $500,000 monthly.
+For $199, you can upgrade to a premium plan that includes a physical metal card (with free worldwide shipping), a 0% top-up fee for USDC, 0.5% for other tokens, and 0% for non-USD transactions. The ATM withdrawal fee on the premium plan is 2%, and spending limits are $200,000 daily and \$500,000 monthly.
 
 ![alt_text](/images/blog/cards/image2.png)
-
 
 To obtain a Cypher card, you must complete KYC (simple ID and liveness check). A list of supported countries, including the USA, can be found here:[ https://help.cypherhq.io/en/articles/9847350-list-of-supported-countries](https://help.cypherhq.io/en/articles/9847350-list-of-supported-countries).
 
@@ -43,12 +41,9 @@ The card failed to function correctly, and several transaction attempts were dec
 
 ![alt_text](/images/blog/cards/image3.png)
 
-
 Additionally, Apple Pay did not work despite being advertised on the Ether.Fi page.
 
-
 ![alt_text](/images/blog/cards/image5.png)
-
 
 Further, while top-ups are available from Ethereum or Base, withdrawals are only possible on Scroll. This necessitates additional transaction fees and bridging to move funds back.
 
@@ -56,33 +51,24 @@ While the concept of a credit card equivalent that allows spending against crypt
 
 ## Gnosis Card
 
-
 ![alt_text](/images/blog/cards/image4.png)
 
-
-[Gnosis Card](https://gnosispay.com/nonoginvite?rcc=22c4d43d6add&utm_source=referral&utm_campaign=cmaiqphr3016f2rbwkabwzaof) is a popular solution for individuals outside the US. It offers up to 5% cashback on card spending and zero transaction and FX fees. The cashback program features five reward tiers, ranging from 1% to 4% based on the amount of $GNO tokens held in your Gnosis Pay Safe. Gnosis Pay OG NFT holders receive an additional 1%.
+[Gnosis Card](https://gnosispay.com/nonoginvite?rcc=22c4d43d6add&utm_source=referral&utm_campaign=cmaiqphr3016f2rbwkabwzaof) is a popular solution for individuals outside the US. It offers up to 5% cashback on card spending and zero transaction and FX fees. The cashback program features five reward tiers, ranging from 1% to 4% based on the amount of \$GNO tokens held in your Gnosis Pay Safe. Gnosis Pay OG NFT holders receive an additional 1%.
 
 Gnosis Card has several limitations:
 
-* Rental car and gas station payments are restricted.
-* Magstripe transactions are not supported.
+- Rental car and gas station payments are restricted.
+- Magstripe transactions are not supported.
 
 Top-up options are also limited to depositing EURe or GBPe tokens on the Gnosis Chain for EU or USDC for Brasil, Argentina, Mexico, Colombia, Thailand, Indonesia, Japan, Australia. However, tokens from other chains can be bridged and swapped to Gnosis, although this process incurs time and fees.
 
-
 ![alt_text](/images/blog/cards/image8.png)
-
-
 
 ## Solayer Emerald Card
 
-
-The [Emerald Card from Solayer](https://app.solayer.org/card?invite=SEVJ5D) costs $10 for eligible Genesis airdrop and community sale users' wallets and $75 for all others. It is the only Solana-based card reviewed. It is Visa-based, supports Apple Pay and Google Pay, and features the Solayer Points Program, allowing users to earn points towards future $LAYER airdrops with real-world purchases. For every $1 spent, 1 Emerald Point is earned, and monthly spending determines a points multiplier, with up to 5x points for spending $2500 or more. Only a virtual card is currently available, though a physical card is anticipated soon.
-
-
+The [Emerald Card from Solayer](https://app.solayer.org/card?invite=SEVJ5D) costs $10 for eligible Genesis airdrop and community sale users' wallets and $75 for all others. It is the only Solana-based card reviewed. It is Visa-based, supports Apple Pay and Google Pay, and features the Solayer Points Program, allowing users to earn points towards future $LAYER airdrops with real-world purchases. For every $1 spent, 1 Emerald Point is earned, and monthly spending determines a points multiplier, with up to 5x points for spending \$2500 or more. Only a virtual card is currently available, though a physical card is anticipated soon.
 
 ![alt_text](/images/blog/cards/image1.png)
-
 
 Emerald's fees are higher than those of competitors: a 1% top-up fee, a $0.15 transaction fee, and $0.10 + 1.5% FX fees for USD transactions. There is only one membership plan, with no options to upgrade for lower fees.
 
@@ -92,10 +78,7 @@ The Emerald Card supports numerous countries ([https://docs.solayer.org/document
 
 The UI is user-friendly, although topping up is restricted to USDC on Solana.
 
-
 ![alt_text](/images/blog/cards/image7.png)
-
-
 
 ### Comparison Table
 
@@ -235,7 +218,7 @@ The UI is user-friendly, although topping up is restricted to USDC on Solana.
   </tr>
   <tr>
     <td>Sign Up</td>
-    <td><a href="https://app.cypherhq.io/card/referral/HSEG1235">Cypher</a></td>
+    <td>Cypher</td>
     <td>Ether.Fi</td>
     <td><a href="https://gnosispay.com/nonoginvite?rcc=22c4d43d6add&utm_source=referral&utm_campaign=cmaiqphr3016f2rbwkabwzaof">Gnosis Card</a></td>
     <td><a href="https://app.solayer.org/card?invite=SEVJ5D">Solayer Emerald</a></td>
