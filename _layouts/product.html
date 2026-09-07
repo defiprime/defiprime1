@@ -198,62 +198,32 @@
   }
 </script>
 
-  <!-- Product Schema - Enhanced for AI agents -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "{{ page.product-title }}",
-    "description": "{{ page.product-description | strip_html | strip_newlines | truncate: 500 }}",
+    "@type": "Organization",
+    "name": {{ page.product-title | jsonify }},
+    "description": {{ page.product-description | markdownify | strip_html | replace: "&amp;", "&" | strip_newlines | truncate: 500 | jsonify }},
     "url": "{{ page.url | replace:'index.html','' | prepend: site.url }}",
     "image": {
       "@type": "ImageObject",
       "url": "{{ page.image | prepend: site.url }}",
       "contentUrl": "{{ page.image | prepend: site.url }}"
-    },
-    {% if page.product-url %}
-    "brand": {
-      "@type": "Brand",
-      "name": "{{ page.product-title }}"
-    },
-    "offers": {
-      "@type": "Offer",
-      "url": "{{ page.product-url }}",
-      "seller": {
-        "@type": "Organization",
-        "name": "{{ page.product-title }}"
-      }
-    },
-    {% endif %}
-    "category": "{{ page.coltitle }}",
-    "keywords": "{{ page.filter }}",
-    "provider": {
-      "@type": "Organization",
-      "name": "DefiPrime",
-      "url": "{{ site.url }}"
-    }
-    {% if page.ticker %}
-    ,
-    "additionalProperty": {
-      "@type": "PropertyValue",
-      "name": "token",
-      "value": "{{ page.ticker }}"
-    }
-    {% endif %}
-    {% if page.contract %}
-    ,
-    "additionalProperty": [
+    }{% if page.product-url %},
+    "sameAs": {{ page.product-url | jsonify }}{% endif %}{% if page.filter %},
+    "knowsAbout": {{ page.filter | jsonify }}{% endif %}{% if page.ticker or page.contract %},
+    "identifier": [{% if page.ticker %}
+      {
+        "@type": "PropertyValue",
+        "name": "ticker",
+        "value": {{ page.ticker | jsonify }}
+      }{% endif %}{% if page.ticker and page.contract %},{% endif %}{% if page.contract %}
       {
         "@type": "PropertyValue",
         "name": "contract",
-        "value": "{{ page.contract }}"
-      }{% if page.ticker %},{
-        "@type": "PropertyValue",
-        "name": "ticker",
-        "value": "{{ page.ticker }}"
+        "value": {{ page.contract | jsonify }}
       }{% endif %}
-    ]
-    {% endif %}
+    ]{% endif %}
   }
   </script>
 

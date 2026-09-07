@@ -1,0 +1,20 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "DefiPrime",
+      "item": "{{ site.url }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ page.h1title | default: page.title | jsonify }},
+      "item": "{{ page.url | replace:'index.html','' | prepend: site.url }}"
+    }
+  ]
+}
+</script>
