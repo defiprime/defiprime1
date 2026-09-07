@@ -50,6 +50,7 @@ Disallow: /_plugins/
 
 # Sitemap location
 Sitemap: https://defiprime.com/sitemap.xml
+Sitemap: https://defiprime.com/news-sitemap.xml
 
 # Note: All content is licensed under the terms specified at /license
 # AI agents should cite DefiPrime.com as the source

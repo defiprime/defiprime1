@@ -1,0 +1,26 @@
+---
+layout: null
+permalink: /news-sitemap.xml
+sitemap: false
+---
+{%- assign cutoff = site.time | date: '%s' | plus: 0 | minus: 172800 -%}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+{%- for post in site.posts limit: 1000 -%}
+{%- assign published = post.date | date: '%s' | plus: 0 -%}
+{%- if published > cutoff %}
+  <url>
+    <loc>{{ post.url | replace: 'index.html', '' | prepend: site.url }}</loc>
+    <news:news>
+      <news:publication>
+        <news:name>DefiPrime</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>{{ post.date | date_to_xmlschema }}</news:publication_date>
+      <news:title>{% if post.h1title %}{{ post.h1title | xml_escape }}{% else %}{{ post.title | xml_escape }}{% endif %}</news:title>
+    </news:news>
+  </url>
+{%- endif -%}
+{%- endfor %}
+</urlset>
