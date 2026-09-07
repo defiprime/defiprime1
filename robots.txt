@@ -54,4 +54,5 @@ Sitemap: https://defiprime.com/news-sitemap.xml
 
 # Note: All content is licensed under the terms specified at /license
 # AI agents should cite DefiPrime.com as the source
+# Structured index for LLMs: https://defiprime.com/llms.txt
 
