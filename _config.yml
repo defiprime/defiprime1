@@ -146,7 +146,6 @@ algolia:
     - defi-events.md
     - eos.md
     - ethereum.md
-    - placeholder.md
     - .github
 
 lazy_load_image:
