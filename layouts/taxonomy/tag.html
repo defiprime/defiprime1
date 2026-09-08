@@ -72,12 +72,12 @@
               <div class="header">
                 <h2>{{ .Params.h1title }}</h2>
                 <div class="author-item">
-                  {{ $author := index site.Data.authors .Params.author }}
+                  {{ $author := index hugo.Data.authors .Params.author }}
                   {{ if and $author $author.image }}
                     <img class="lazyload" data-src="{{ $author.image }}">
                   {{ end }}
                   <div class="author-data">
-                    {{ $author2 := index site.Data.authors .Params.author }}
+                    {{ $author2 := index hugo.Data.authors .Params.author }}
                     {{ if and $author2 $author2.image }}
                       <span>Author</span>
                       <span class="author">{{ $author2.name }}</span>
@@ -86,7 +86,7 @@
                 </div>
               </div>
               <div class="content">
-                <p>{{ .Params.intro | plainify | truncate 300 }}</p>
+                <p>{{ partial "jekyll-truncate.html" (slice .Params.intro 300) }}</p>
               </div>
             </a>
           </article>

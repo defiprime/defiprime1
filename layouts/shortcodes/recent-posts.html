@@ -1,0 +1,10 @@
+{{- $posts := where site.RegularPages "Section" "blog" -}}
+{{- $listings := where site.RegularPages "Params.category" "products" -}}
+{{- $all := sort ($posts | append $listings) "Date" "desc" -}}
+<ul>
+{{- range $all }}
+  <li>
+    <a href="{{ partial "page-url.html" . }}">{{ .Title }}</a>
+  </li>
+{{- end }}
+</ul>

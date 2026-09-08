@@ -91,3 +91,8 @@ disableKinds = ["taxonomy"]
 # Sitemap
 [sitemap]
   filename = "sitemap.xml"
+
+[minify]
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepWhitespace = true

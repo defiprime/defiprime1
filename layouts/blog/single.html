@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{ $siteUrl := strings.TrimSuffix "/" .Site.BaseURL }}<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>{{ .Params.pagetitle }}</title>
@@ -17,25 +17,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
+  <meta name="description" content="{{ partial "jekyll-truncate.html" (slice .Params.metadescription 160) }}">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="preload" as="style">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relURL }}">
   <link rel="canonical" href="{{ partial "page-url.html" . }}">
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css"  as="style"  media="print" onload="this.media='all'" >
   <meta property="og:title" content="{{ .Params.h1title }}" />
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="article" />
   <meta property="og:url" content="{{ partial "page-url.html" . }}" />
   <meta property="og:description"
-    content="{{ .Params.metadescription | plainify | truncate 300 }}" />
-  <meta property="og:image" content="{{ index .Params "featured-image" | absURL }}" />
+    content="{{ partial "jekyll-truncate.html" (slice .Params.metadescription 300) }}" />
+  <meta property="og:image" content="{{ $siteUrl }}{{ index .Params "featured-image" }}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@defiprime">
   <meta name="twitter:creator" content="@defiprime">
   <meta name="twitter:title" content="{{ .Params.h1title }}">
-  <meta name="twitter:description" content="{{ .Params.metadescription | plainify | truncate 300 }}">
-  <meta name="twitter:image" content="{{ index .Params "featured-image" | absURL }}">
+  <meta name="twitter:description" content="{{ partial "jekyll-truncate.html" (slice .Params.metadescription 300) }}">
+  <meta name="twitter:image" content="{{ $siteUrl }}{{ index .Params "featured-image" }}">
   <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
     integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
     crossorigin="anonymous"></script>
@@ -48,7 +48,7 @@
     gtag('config', 'UA-138327045-1', { 'content_group1': 'blog' });
 
   </script>
-  {{ $author := index .Site.Data.authors .Params.author }}
+  {{ $author := index hugo.Data.authors .Params.author }}
 
   <script type="application/ld+json">
   {
@@ -59,7 +59,7 @@
       "@id": "{{ partial "page-url.html" . }}"
     },
     "headline": "{{ if .Params.h1title }}{{ .Params.h1title | htmlEscape }}{{ else if .Title }}{{ .Title | htmlEscape }}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}",
-    "description": "{{ if .Params.metadescription }}{{ .Params.metadescription | plainify | truncate 300 }}{{ else if .Params.excerpt }}{{ .Params.excerpt | plainify | truncate 300 }}{{ else }}{{ .Site.Params.description }}{{ end }}",
+    "description": "{{ if .Params.metadescription }}{{ partial "jekyll-truncate.html" (slice .Params.metadescription 300) }}{{ else if .Params.excerpt }}{{ partial "jekyll-truncate.html" (slice .Params.excerpt 300) }}{{ else }}{{ .Site.Params.description }}{{ end }}",
     "datePublished": "{{ if .Date }}{{ .Date.Format "2006-01-02T15:04:05-07:00" }}{{ else }}{{ now.Format "2006-01-02T15:04:05-07:00" }}{{ end }}",
     "dateModified": "{{ with .GitInfo }}{{ .AuthorDate.Format "2006-01-02T15:04:05-07:00" }}{{ else }}{{ .Date.Format "2006-01-02T15:04:05-07:00" }}{{ end }}",
     "author": {
@@ -80,7 +80,7 @@
     },
     "image": {
       "@type": "ImageObject",
-      "url": "{{ if index .Params "featured-image" }}{{ index .Params "featured-image" | absURL }}{{ else }}{{ .Site.BaseURL }}images/logo-60w.png{{ end }}",
+      "url": "{{ if index .Params "featured-image" }}{{ $siteUrl }}{{ index .Params "featured-image" }}{{ else }}{{ .Site.BaseURL }}images/logo-60w.png{{ end }}",
       "height": 630,
       "width": 1200
     },
@@ -103,7 +103,7 @@
       <article class="article  article--post  content  typeset">
         <div class="container container-toc">
           <div class="author-block">
-            {{ $author := index .Site.Data.authors .Params.author }}
+            {{ $author := index hugo.Data.authors .Params.author }}
             <span class="name">{{ if $author }}{{ $author.name }}{{ end }}</span>
             <span class="date">on {{ .Date.Format "02 Jan 2006" }}</span>
           </div>
