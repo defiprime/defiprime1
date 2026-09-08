@@ -61,7 +61,6 @@
         <h1>{{ .Params.h1title | default .Title }}</h1>
         <div class="container-ecosystem container-toc">
 
-        {{/* Determine ecosystem filter - use "ecosystem-filter" param or derive from URL */}}
         {{ $ecoFilter := .Params.ecosystem_filter | default .File.ContentBaseName }}
 
         {{/* Gather all products from all sub-sections */}}
