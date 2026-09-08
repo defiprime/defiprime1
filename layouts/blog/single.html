@@ -30,6 +30,11 @@
   <meta property="og:image" content="{{ $siteUrl }}{{ index .Params "featured-image" }}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
+  {{ with .Date }}<meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05-07:00" }}" />{{ end }}
+  {{ with index .Params "git-date" }}<meta property="article:modified_time" content="{{ (time.AsTime .).Format "2006-01-02T15:04:05-07:00" }}" />{{ end }}
+  {{ with index hugo.Data.authors .Params.author }}{{ with .name }}<meta property="article:author" content="{{ . }}" />{{ end }}{{ end }}
+  {{ range .Params.tags }}<meta property="article:tag" content="{{ . }}" />
+  {{ end }}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@defiprime">
   <meta name="twitter:creator" content="@defiprime">
@@ -62,7 +67,7 @@
     "headline": "{{ if .Params.h1title }}{{ .Params.h1title | htmlEscape }}{{ else if .Title }}{{ .Title | htmlEscape }}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}",
     "description": "{{ if .Params.metadescription }}{{ partial "jekyll-truncate.html" (slice .Params.metadescription 300) }}{{ else if .Params.excerpt }}{{ partial "jekyll-truncate.html" (slice .Params.excerpt 300) }}{{ else }}{{ .Site.Params.description }}{{ end }}",
     "datePublished": "{{ if .Date }}{{ .Date.Format "2006-01-02T15:04:05-07:00" }}{{ else }}{{ now.Format "2006-01-02T15:04:05-07:00" }}{{ end }}",
-    "dateModified": "{{ with .GitInfo }}{{ .AuthorDate.Format "2006-01-02T15:04:05-07:00" }}{{ else }}{{ .Date.Format "2006-01-02T15:04:05-07:00" }}{{ end }}",
+    "dateModified": "{{ with index .Params "git-date" }}{{ (time.AsTime .).Format "2006-01-02T15:04:05-07:00" }}{{ else }}{{ .Date.Format "2006-01-02T15:04:05-07:00" }}{{ end }}",
     "author": {
       "@type": "Person",
       "name": "{{ if $author }}{{ $author.name }}{{ end }}"{{ if and $author $author.url }},
@@ -105,45 +110,29 @@
         <div class="container container-toc">
           <div class="author-block">
             {{ $author := index hugo.Data.authors .Params.author }}
-            <span class="name">{{ if $author }}{{ $author.name }}{{ end }}</span>
+            {{ $authorSlug := $author.slug | default .Params.author | lower }}
+            <span class="name"><a href="/authors/{{ $authorSlug }}/">{{ $author.name }}</a></span>
             <span class="date">on {{ .Date.Format "02 Jan 2006" }}</span>
           </div>
           {{ .Content }}
         </div>
       </article>
-      <div class="tags">
-        {{ if .Params.tags }}
-          <span>Tags:</span>
-        {{ end }}
+      <div class="post-tags">
         {{ range .Params.tags }}
           {{ if and . (ne (strings.TrimSpace .) "") }}
-          <a href="{{ with site.GetPage (printf "/tags/%s" (urlize .)) }}{{ partial "page-url.html" .RelPermalink }}{{ end }}" rel="tag" class="tag">{{ . }}</a>
+          <a href="{{ with site.GetPage (printf "/tags/%s" (urlize .)) }}{{ partial "page-url.html" .RelPermalink }}{{ end }}" rel="tag" class="post-tag-pill">{{ . }}</a>
           {{ end }}
         {{ end }}
-
-
       </div>
     </main>
     {{ partialCached "folowus.html" . }}
     {{ partial "author_bio.html" . }}
-    <h3 class="align-center">The Latest:</h3>
-    <section class="latest">
-      {{ $currentURL := .RelPermalink }}
-      {{ $posts := where site.RegularPages "Section" "blog" }}
-      {{ $posts = where $posts "RelPermalink" "ne" $currentURL }}
-      {{ $posts = $posts | shuffle | first 4 }}
-
-      {{ range $posts }}
-    	<article>
-    		<a href="{{ partial "page-url.html" .RelPermalink }}" class="post-link">
-    			<div class="content">
-    				<p class="title">{{ .Params.h1title }}</p>
-    				<p>{{ .Params.intro }}</p>
-    			</div>
-    		</a>
-    	</article>
-    	{{ end }}
-    </section>
+    <div class="latest-section">
+      <h3 class="section-heading">More from the <span>blog</span></h3>
+      <section class="latest-grid">
+        {{ partial "related-posts.html" (dict "page" . "tag" (index .Params.tags 0)) }}
+      </section>
+    </div>
         {{ partialCached "footer.html" . }}
   </body>
 </html>

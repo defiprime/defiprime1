@@ -1,0 +1,35 @@
+{{- $current := .page -}}
+{{- $tag := .tag -}}
+{{- $recent := first 50 (first 60 (partial "blog-pages.html" $current)) -}}
+{{- $tagged := slice -}}
+{{- if $tag -}}
+  {{- range $recent -}}
+    {{- if and (lt (len $tagged) 4) (in .Params.tags $tag) (ne .RelPermalink $current.RelPermalink) -}}
+      {{- $tagged = $tagged | append . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $filtered := slice -}}
+{{- range $recent -}}
+  {{- if ne .RelPermalink $current.RelPermalink -}}
+    {{- $filtered = $filtered | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- $related := first 4 $filtered -}}
+{{- if ge (len $tagged) 4 -}}
+  {{- $related = first 4 $tagged -}}
+{{- end -}}
+{{ range $i, $post := $related }}
+{{ $color := partial "link-color.html" (add $i 1) }}
+<article class="blog-card">
+  <a href="{{ partial "page-url.html" $post }}">
+    <div class="blog-card-inner border-{{ $color }}">
+      {{ with $post.Params.tags }}
+      <span class="tag-pill tag-{{ $color }}">{{ index . 0 }}</span>
+      {{ end }}
+      <h3>{{ $post.Params.h1title }}</h3>
+      <p>{{ partial "jekyll-truncatewords.html" (slice $post.Params.intro 20) }}</p>
+    </div>
+  </a>
+</article>
+{{ end }}
