@@ -3,7 +3,10 @@
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.157.0"
+  HUGO_VERSION = "0.164.0"
+
+[build.processing.html]
+  pretty_urls = false
 
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
