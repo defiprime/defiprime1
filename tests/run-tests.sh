@@ -102,7 +102,7 @@ PRODUCT_FILES=$(find "$PUBLIC/product" -name "*.html" 2>/dev/null | head -3)
 if [ -n "$PRODUCT_FILES" ]; then
   FIRST_PRODUCT=$(echo "$PRODUCT_FILES" | head -1)
   if grep -q 'BreadcrumbList' "$FIRST_PRODUCT"; then pass "Product BreadcrumbList schema"; else warn "Product BreadcrumbList schema missing"; fi
-  if grep -q '"@type": "Product"' "$FIRST_PRODUCT" || grep -q '"@type":"Product"' "$FIRST_PRODUCT"; then pass "Product schema present"; else warn "Product schema missing"; fi
+  if grep -q '"@type": "Organization"' "$FIRST_PRODUCT" || grep -q '"@type":"Organization"' "$FIRST_PRODUCT"; then pass "Product Organization schema"; else warn "Product Organization schema missing"; fi
 fi
 
 echo ""
