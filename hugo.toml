@@ -51,6 +51,9 @@ disableKinds = ["taxonomy"]
 # Build settings
 [markup]
   [markup.goldmark]
+    [markup.goldmark.extensions]
+      linkify = false
+      strikethrough = false
     [markup.goldmark.extensions.typographer]
       apostrophe = "\u2019"
       ellipsis = "\u2026"
