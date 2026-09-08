@@ -181,7 +181,10 @@
                     </span>
                     {{ end }}
                     {{ end }}
-                    {{ $type_tags := split (index $asset_tool.Params "product-type") ", " }}
+                    {{ $type_tags := slice }}
+                    {{ with index $asset_tool.Params "product-type" }}
+                    {{ $type_tags = split . ", " }}
+                    {{ end }}
                     {{ range $type_tags }}
                     {{ if eq . "cefi" }}
                     <span class="tooltip"
