@@ -2,7 +2,7 @@
 
 <aside id='defi-search-fullpage'></aside>
 
-<header class='main-page-header'>
+<header class='main-page-header compact'>
 	<h1>DeFi and Open Finance</h1>
 	<span>
 	Decentralized Finance (DeFi) is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries.
@@ -18,47 +18,6 @@
     </div>
     </div>
 </header>
-
-<section>
-  <h2 id="defi_projects" class='recently_added_annotation'>DeFi projects</h2>
-  <div class="tiles floating grid">
-    {{/* Get all category listing pages that have cards param, sorted by title */}}
-    {{ $listingPages := where site.RegularPages "Params.cards" "!=" nil }}
-    {{ range sort $listingPages "Title" }}
-      {{ $cards := .Params.cards }}
-      {{ $sectionPath := printf "product/%s" $cards }}
-      {{ $section := site.GetPage $sectionPath }}
-      {{ $count := 0 }}
-      {{ with $section }}
-        {{ $count = len .Pages }}
-      {{ end }}
-      {{ $styleNum := add (mod (index (shuffle (seq 8)) 0) 8) 1 }}
-      <article class="style{{ $styleNum }}">
-        <a href="{{ partial "page-url.html" .RelPermalink }}">
-          <h2>{{ .Title }}</h2>
-          <span>{{ $count }}</span>
-        </a>
-      </article>
-    {{ end }}
-  </div>
-</section>
-
-<section>
-  <h2 class='recently_added_annotation'>Recently added</h2>
-  <div class="tiles grid" id='recently_added_section'>
-    {{/* Get all product pages sorted by git date (most recent first) */}}
-    {{ $allProducts := where site.RegularPages "Type" "product" }}
-    {{ $sorted := sort $allProducts "Params.git-date" "desc" }}
-    {{ range first 6 $sorted }}
-      <article>
-        <a class='recent_blog_link' href="{{ partial "page-url.html" .RelPermalink }}">
-          <img class="lazyload" data-src="{{ .Params.image }}">
-          <h2>{{ index .Params "product-title" }}</h2>
-        </a>
-      </article>
-    {{ end }}
-  </div>
-</section>
 
 <section>
   <div class='section-heading-row'>
@@ -111,7 +70,55 @@
 </section>
 
 <section>
-  <h2 class='recently_added_annotation'>Upcoming DeFi events</h2>
+  <div class='section-heading-row'>
+    <h2 class='section-heading' id="defi_projects">DeFi <span>projects</span></h2>
+  </div>
+  <div class="projects-grid">
+    {{ $listingPages := where site.RegularPages "Params.cards" "!=" nil }}
+    {{ $keyedByTitleBytes := slice }}
+    {{ range $listingPages }}
+      {{ $keyedByTitleBytes = $keyedByTitleBytes | append (dict "titleBytes" (printf "%x" .Title) "listing" .) }}
+    {{ end }}
+    {{ range sort $keyedByTitleBytes "titleBytes" }}
+      {{ $listing := .listing }}
+      {{ $section := site.GetPage (printf "product/%s" $listing.Params.cards) }}
+      {{ $count := 0 }}
+      {{ with $section }}
+        {{ $count = len .Pages }}
+      {{ end }}
+      <a class="project-tile" href="{{ partial "page-url.html" $listing.RelPermalink }}">
+        <span class='tile-name'>{{ $listing.Title }}</span>
+        <div class='tile-count'>{{ $count }} projects</div>
+      </a>
+    {{ end }}
+  </div>
+</section>
+
+<section>
+  <div class='section-heading-row'>
+    <h2 class='section-heading'>Recently <span>added</span></h2>
+  </div>
+  <div class="tiles grid" id='recently_added_section'>
+    {{ $allProducts := where site.RegularPages "Type" "product" }}
+    {{ $byFileName := sort $allProducts "File.BaseFileName" "desc" }}
+    {{ $byDirectory := sort $byFileName "File.Dir" "asc" }}
+    {{ $sorted := sort $byDirectory "Params.git-date" "desc" }}
+    {{ range first 6 $sorted }}
+      <article>
+        <a class='recent_blog_link' href="{{ partial "page-url.html" .RelPermalink }}">
+          <img class="lazyload" data-src="{{ .Params.image }}">
+          <h2>{{ index .Params "product-title" }}</h2>
+        </a>
+      </article>
+    {{ end }}
+  </div>
+</section>
+
+<section>
+  <div class='section-heading-row'>
+    <h2 class='section-heading'>Upcoming <span>events</span></h2>
+    <a href='/events' class='view-all'>All events &rarr;</a>
+  </div>
   <div class='upcoming_events_cards'>
   {{ $eventsSection := site.GetPage "/events" }}
   {{ if $eventsSection }}
