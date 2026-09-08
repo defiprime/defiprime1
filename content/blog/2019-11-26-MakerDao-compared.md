@@ -99,7 +99,7 @@ Now that you have a clearer understanding of how these two specialized decentral
 Those seeking to compete meaningfully in this space will compete in secondary markets for users and liquidity. Newer systems might offer more lucrative parameters since established players can’t provide better interest rates — the existing rates are crucial for balancing the system.
 
 | Parameter | MakerDAO (new DAI)| Equilibrium (EOSDT) |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | Critical collateralization requirement | 150% | 130% |
 | Annual payment rate | 4% | 1% |
 | Liquidation penalty | 13% | 15% |

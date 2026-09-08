@@ -28,7 +28,7 @@ An equivalent quantity of SBT and LBT (i.e. at a ratio of 1:1) are minted from t
 
 For example, let’s assume you pledge 1 ETH and generate 1SBT and 1LBT with a strike price of 100 USD/ETH when the price of ETH is 200 USD/ETH. If the price of ETH on the maturity date is 400 USD/ETH, the SBT holder receives ETH equivalent to 100 USD, which is 0.25 ETH, and the LBT holder receives 0.75 ETH. On the other hand, if the price of ETH on the maturity date is 100 USD/ETH, the SBT holder still receives ETH equivalent to 100 USD, which is 1 ETH, and the LBT holder receives nothing. While the value of SBT is stable, LBT acts as a call option since the amount of ETH the LBT holder receives increases as the price of ETH increases. By bifurcating ETH into a stable-valued token and a call option token, the Lien Protocol eliminates the need for over-collateralization.
 
-![](/images/blog/Frame 1.png)
+![](</images/blog/Frame 1.png>)
 
 As was explained above, the value of SBT is stable as long as the strike price is adequately set by considering the current price and volatility. By utilizing this feature of SBT, the Lien Protocol is able to mint stablecoins from SBT. By putting SBTs with varied maturity dates and appropriate strike prices into a contract, the value of the stablecoins are kept stable. We believe this mechanism is an improvement to other protocols that require frequent intervention of governance schemes to maintain stability fees or require users to pledge excess collateral to ensure that the protocol is kept stable.
 

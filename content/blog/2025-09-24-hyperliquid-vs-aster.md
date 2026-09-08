@@ -23,6 +23,7 @@ The decentralized finance landscape continues to evolve with innovative protocol
 The architecture of Hyperliquid is purpose-built for high-frequency trading, featuring sub-second block times and the ability to process over 100,000 orders per second. This isn't just another AMM with a different curve – it's a complete reimagining of what decentralized trading infrastructure can achieve. The protocol supports both spot and perpetual futures trading, with up to 50x leverage available on select pairs.
 
 <iframe src="https://dune.com/embeds/4081979/6873546" width="100%" height="600"></iframe>
+
 More [perps market data on Dune](https://dune.com/uwusanauwu/perps)
 
 ### Aster: The Liquidity Aggregation Layer
@@ -33,6 +34,7 @@ More [perps market data on Dune](https://dune.com/uwusanauwu/perps)
 The protocol employs sophisticated algorithms to source liquidity from multiple DEXs, lending protocols, and other DeFi primitives, abstracting away the complexity for end users. Aster's approach is particularly valuable in the current multi-chain environment where liquidity is increasingly fragmented across different ecosystems.
 
 <iframe src="https://dune.com/embeds/4078266/6867091" width="100%" height="600"></iframe>
+
 More [perps market data on Dune](https://dune.com/uwusanauwu/perps)
 
 ## Technical Architecture

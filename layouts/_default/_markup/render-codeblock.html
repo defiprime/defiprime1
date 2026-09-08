@@ -1,0 +1,3 @@
+{{- $lang := or .Type "plaintext" -}}
+<div class="language-{{ $lang }} highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{{ .Inner | htmlEscape | safeHTML }}
+</code></pre></div></div>

@@ -9,5 +9,4 @@ product-description: Sablier is the protocol for real-time finance on Ethereum, 
 coltitle: "Payments"
 colpermalink: payments
 twitter: https://twitter.com/sablierhq
-GitHub: https://github.com/sablierhq
 ---

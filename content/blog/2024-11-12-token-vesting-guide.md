@@ -396,7 +396,6 @@ On-chain vesting involves the use of **smart contracts on a blockchain** to mana
   - **Cliff Periods:** Allows the inclusion of cliff periods before vesting commences.
   - **NFT Representation:** Each stream is represented as an NFT, offering flexibility in transferability and integration with other protocols.
   - **Available on most popular EVM L1/L2 chains:** Ethereum, Optimism, Arbitrum, Linea, Scroll, etc.
-
 - **Use Cases:**
   - **Token Vesting:** Automates the distribution of tokens to team members, investors, and advisors over time.
   - **Airdrops:** Enables time-based token distributions to community members.
@@ -415,7 +414,6 @@ Sablier’s open-source nature and extensive documentation make it accessible fo
   - **Composability:** Streams can interact with other DeFi protocols, enabling use cases like automated yield farming.
   - **Full Liquidity:** Tokens remain in the sender’s wallet until streamed, allowing for liquidity management.
   - **Simple User Interface:** Offers a user-friendly dashboard for setting up and managing vesting schedules.
-
 - **Use Cases:**
   - **Token Vesting:** Provides liquid and composable vesting solutions for projects.
   - **Salaries and Subscriptions:** Enables real-time salary payments and subscription models.
@@ -435,7 +433,6 @@ Superfluid’s innovative approach to continuous token flows offers flexibility 
   - **Flexibility:** Supports various token distribution models, including linear and milestone-based vesting.
   - **Analytics:** Provides insights and analytics on token distribution and vesting progress.
   - **Non-EVM chains supported:** Solana, Aptos, Sui
-
 - **Use Cases:**
   - **Token Vesting:** Automates the release of tokens to stakeholders over time.
   - **Payroll:** Enables continuous payment streams for employees and contractors.
@@ -456,7 +453,6 @@ Ready-to-go smart contract vesting providers—like Sablier, Superfluid, and Str
 - **Speed and Convenience**
   * Pre-built solutions allow projects to set up vesting contracts quickly, often in a matter of minutes.
   * Project teams can avoid the complexities of smart contract development, letting them focus on other core aspects of the project.
-
 - **Reduced Security Risks**
   * Leading vesting providers have been extensively tested and audited, minimizing vulnerabilities. Security audits are critical in blockchain, as bugs or exploits can lead to massive financial losses.
   * By using an audited provider, projects can trust that the vesting contract has passed rigorous security reviews, reducing the risk of loss due to exploits.
@@ -489,11 +485,9 @@ Creating a custom vesting smart contract offers complete control over the vestin
 - **Full Customization and Control**
   * Custom solutions can be designed to meet any specific requirements, including unique vesting schedules, complex conditions, and tailored functionalities.
   * Projects have full control over how tokens are distributed, which is especially valuable for unique projects or those with complex tokenomics.
-
 - **No Ongoing Platform Dependency**
   * By developing an in-house solution, projects eliminate reliance on third-party providers, which can be beneficial for maintaining full ownership and flexibility.
   * An internal solution also allows the project to adapt or update the vesting contract without depending on external schedules or policies.
-
 - **Potential for Future Flexibility**
   * Custom contracts can be designed to adapt to future project changes, giving teams the flexibility to add new features or modify the vesting schedule if needed.
 
@@ -502,19 +496,15 @@ Creating a custom vesting smart contract offers complete control over the vestin
 - **High Cost of Smart Contract Security Audits**
   * Developing a custom smart contract means it must be rigorously audited by security experts to avoid costly vulnerabilities or exploits.
   * Smart contract audits are expensive, often costing tens of thousands of dollars depending on the complexity of the code. Audits may also need to be repeated if updates are made, leading to additional costs.
-
 - **Frontend Development Overhead**
   * Custom solutions require a frontend for user interactions, adding development time and costs. The team will need frontend developers to build a dashboard or interface where users can check their vesting status.
   * Building an intuitive and secure interface is crucial, as users must have a straightforward way to monitor and manage their vesting tokens.
-
 - **Engineering Time and Resource Demands**
   * Creating a smart contract from scratch is time-consuming and requires skilled blockchain developers, which are in high demand and can be costly to hire.
   * The project’s engineering team will need to spend valuable time developing, testing, and refining the custom vesting contract, taking focus away from other essential tasks, like building the project’s core functionalities.
-
 - **Ongoing Maintenance and Updates**
   * A custom smart contract requires regular maintenance to address potential issues, security vulnerabilities, and compatibility updates.
   * Any bugs or required changes after deployment would fall on the project’s developers, requiring ongoing attention and resources for troubleshooting and improvements.
-
 - **Increased Launch Timeline**
   * Building an in-house solution extends the time it takes to get the vesting solution ready. This delay can impact project timelines and reduce time-to-market, especially in fast-paced blockchain environments.
 

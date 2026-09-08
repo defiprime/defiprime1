@@ -1,0 +1,12 @@
+{{- $asset_tool := .card -}}
+{{- $items_filters := .filters -}}
+{{- $card_filters := slice -}}
+{{- range $items_filters -}}
+  {{- $val := index $asset_tool.Params . -}}
+  {{- if $val -}}
+    {{- range (split $val ", ") -}}
+      {{- $card_filters = $card_filters | append (. | lower | replaceRE " " "-") -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- delimit $card_filters " " -}}

@@ -79,30 +79,7 @@
         {{ $cards_section := printf "product/%s" .Params.cards }}
         {{ $cardsSection := site.GetPage (printf "product/%s" .Params.cards) }}
         {{ $page_cards := sort $cardsSection.Pages "File.Path" }}
-        <section>
-          <div class="button-group filters-button-group">
-            <button class="button active" data-filter="*">All</button>
-            {{ range $items_filters }}
-            {{ $filter := . }}
-            {{ $filter_buttons := slice }}
-            {{ range $page_cards }}
-              {{ $val := index .Params $filter }}
-              {{ if $val }}
-                {{ $vals := split $val ", " }}
-                {{ range $vals }}
-                  {{ $filter_buttons = $filter_buttons | append . }}
-                {{ end }}
-              {{ end }}
-            {{ end }}
-            {{ $filter_buttons = $filter_buttons | uniq }}
-            {{ range $filter_buttons }}
-            {{ $filterVal := . | lower | replaceRE " " "-" }}
-            <button class="button"
-              data-filter="{{ $filterVal }}">{{ . }}</button>
-            {{ end }}
-            {{ end }}
-          </div>
-        </section>
+        {{ partial "filter-buttons.html" (dict "cards" $page_cards "filters" $items_filters) }}
         {{ end }}
 
         {{ $items_filters := slice }}
@@ -118,21 +95,11 @@
         <section id='assets_cards'>
           {{ range $page_cards }}
           {{ $asset_tool := . }}
-          {{ $card_filters := slice }}
-          {{ range $items_filters }}
-            {{ $filter := . }}
-            {{ $val := index $asset_tool.Params $filter }}
-            {{ if $val }}
-              {{ $vals := split $val ", " }}
-              {{ range $vals }}
-                {{ $card_filters = $card_filters | append (. | lower | replaceRE " " "-") }}
-              {{ end }}
-            {{ end }}
-          {{ end }}
+          {{ $card_filters := partial "card-filter-classes.html" (dict "card" $asset_tool "filters" $items_filters) }}
 
           {{ if $asset_tool.Params.featured }}
           <div class="article-wrapper featured-wrapper">
-            <article class="asset_tool_card {{ delimit $card_filters " " }}">
+            <article class="asset_tool_card {{ $card_filters }}">
             <div class="featured-header">
               <span class="featured-product">
 
@@ -145,7 +112,7 @@
             </div>
             {{ else }}
             <div class="article-wrapper">
-              <article class="asset_tool_card {{ delimit $card_filters " " }}">
+              <article class="asset_tool_card {{ $card_filters }}">
               {{ end }}
 
 
@@ -212,7 +179,10 @@
                     </span>
                     {{ end }}
                     {{ end }}
-                    {{ $type_tags := split (index $asset_tool.Params "product-type") ", " }}
+                    {{ $type_tags := slice }}
+                    {{ with index $asset_tool.Params "product-type" }}
+                    {{ $type_tags = split . ", " }}
+                    {{ end }}
                     {{ range $type_tags }}
                     {{ if eq . "cefi" }}
                     <span class="tooltip"

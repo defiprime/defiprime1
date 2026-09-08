@@ -88,7 +88,7 @@
             {{ $desc := index .Params "product-description" | markdownify }}
             {{ $linkParts := split $desc "<a" }}
             {{ $linkCount := len $linkParts }}
-            <div {{ if eq $linkCount 1 }} style='flex: 0' {{ end }}> {{ index .Params "product-description" | markdownify }}
+            <div {{ if eq $linkCount 1 }} style='flex: 0' {{ end }}> {{ .RenderString (dict "display" "block") (index .Params "product-description") }}
               {{ if .Params.ticker }}
                 <p>
                 {{ index .Params "product-title" }} token: ${{ .Params.ticker }}.

@@ -1,0 +1,7 @@
+{{- $alt := "" -}}
+{{- with .PlainText -}}{{- $alt = replace (replace (replace (replace . "’" "'") "‘" "'") "“" "\"") "”" "\"" -}}{{- end -}}
+{{- if eq .Page.Section "blog" -}}
+<img alt="{{ $alt }}" data-src="{{ .Destination | safeURL }}" class="lazyload">
+{{- else -}}
+<img src="{{ .Destination | safeURL }}" alt="{{ $alt }}" />
+{{- end -}}

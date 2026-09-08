@@ -12,9 +12,15 @@ quote: /images/blog/liquiditypools-quote.png
 intro: 'Are Uniswap’s Liquidity Pools Right for You?'
 author: chrisblec
 tags: ["Guide", "DEXs"]
+excerpt: |
+  <div style="text-align: right">This is a transcription from a <a href="https://www.youtube.com/watch?v=IotszRJdtYw">YouTube video</a>.
+  </div>
+
+  Today, let's talk about Uniswap, Liquidity pools to be exact. I want to discuss how they work and whether or not they're a good idea for everyone. So first things first [Uniswap.exchange](https://uniswap.exchange/swap) is the website where this all happens.
 ---
 <div style="text-align: right">This is a transcription from a <a href="https://www.youtube.com/watch?v=IotszRJdtYw">YouTube video</a>.
 </div>
+
 ---
 Today, let's talk about Uniswap, Liquidity pools to be exact. I want to discuss how they work and whether or not they're a good idea for everyone. So first things first [Uniswap.exchange](https://uniswap.exchange/swap) is the website where this all happens.
 
@@ -151,5 +157,6 @@ Keep in mind, like I said before, the fees are interesting, but the other side o
 Hope this was a useful tutorial and helps you decide whether or not Uniswap's liquidity pools are for you or not. Try it with as small in amount as you want to do it in. You can do with a dollar or $10, whatever. Just give it a try with a really small amount before you jump in with both feet. Watch the ratios and how they work, and then you can decide later if it's something you want to get bigger into.
 
 {{< youtube IotszRJdtYw >}}
+
 ---
 If you like this tutorial, please subscribe to Chris Blec [youtube channel](https://www.youtube.com/channel/UCuulLHp0eyXnl9yAao_pbEA). He is putting out content several times a week on DeFi, on all sorts of different projects, compound finance, Uniswap, etcetera.  
