@@ -4,9 +4,10 @@
 {{- else -}}
   {{- $url = .Permalink -}}
 {{- end -}}
+{{- $path := (urls.Parse $url).Path -}}
 {{- if hasSuffix $url "/index.html" -}}
   {{- $url = strings.TrimSuffix "index.html" $url -}}
-{{- else if and (hasSuffix $url ".html") (not (hasPrefix (urls.Parse $url).Path "/t/")) -}}
+{{- else if and (hasSuffix $url ".html") (not (hasPrefix $path "/t/")) (ne $path "/404.html") -}}
   {{- $url = strings.TrimSuffix ".html" $url -}}
 {{- end -}}
 {{- $url -}}
