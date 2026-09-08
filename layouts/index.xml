@@ -1,24 +1,14 @@
-{{- $blogPages := where site.RegularPages "Section" "blog" -}}
-{{- $pctx := . -}}
-{{- if gt (len $blogPages) 0 -}}
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>{{ .Site.Title }}</title>
-    <link>{{ partial "page-url.html" . }}</link>
-    <description>{{ .Site.Params.description | default "Recent content" }}</description>
-    <generator>Hugo</generator>
-    <language>{{ .Site.Language.Locale }}</language>
-    <lastBuildDate>{{ (index $blogPages 0).Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</lastBuildDate>
-    <atom:link href="{{ "feed.xml" | absURL }}" rel="self" type="application/rss+xml" />
-    {{- range first 20 $blogPages }}
-    <item>
-      <title>{{ .Title }}</title>
-      <link>{{ partial "page-url.html" . }}</link>
-      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
-      <guid>{{ partial "page-url.html" . }}</guid>
-      <description>{{ .Params.intro | default .Summary | html }}</description>
-    </item>
-    {{- end }}
-  </channel>
-</rss>
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\"?>" | safeHTML -}}
+{{- $stamp := "2006-01-02T15:04:05-07:00" -}}
+{{- $feedURL := "feed.xml" | absURL -}}
+<feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://gohugo.io/" version="{{ hugo.Version }}">Hugo</generator><link href="{{ $feedURL }}" rel="self" type="application/atom+xml" /><link href="{{ partial "page-url.html" . }}" rel="alternate" type="text/html" /><updated>{{ now.UTC.Format $stamp | safeHTML }}</updated><id>{{ $feedURL }}</id><title type="html">{{ site.Title | transform.XMLEscape }}</title><subtitle>{{ site.Params.description | transform.XMLEscape }}</subtitle>
+{{- range first 5 (partial "blog-pages.html" .) -}}
+{{- $url := partial "page-url.html" . -}}
+{{- $title := .RenderString .Title | transform.XMLEscape -}}
+<entry><title type="html">{{ $title }}</title><link href="{{ $url }}" rel="alternate" type="text/html" title="{{ $title }}" /><published>{{ .Date.UTC.Format $stamp | safeHTML }}</published><updated>{{ .Lastmod.UTC.Format $stamp | safeHTML }}</updated><id>{{ $url }}</id><content type="html" xml:base="{{ $url }}">{{ printf "<![CDATA[%s]]>" .Content | safeHTML }}</content>
+{{- with index hugo.Data.authors .Params.author }}{{ with .name }}<author><name>{{ . | transform.XMLEscape }}</name></author>{{ end }}{{ end }}
+{{- with .Params.category }}<category term="{{ . | transform.XMLEscape }}" />{{ end }}
+{{- range .Params.tags }}<category term="{{ . | transform.XMLEscape }}" />{{ end }}
+{{- with partial "jekyll-excerpt.html" . }}<summary type="html">{{ printf "<![CDATA[%s]]>" (partial "jekyll-strip.html" .) | safeHTML }}</summary>{{ end }}</entry>
 {{- end -}}
+</feed>
