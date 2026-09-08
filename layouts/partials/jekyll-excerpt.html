@@ -1,4 +1,14 @@
 {{- if and (eq .Kind "page") (or (ne .Section "") (eq .Params.category "products")) -}}
-{{- $raw := strings.TrimPrefix "\n" .RawContent -}}
-{{- index (split $raw "\n\n") 0 | markdownify -}}
+{{- $block := index (split (strings.TrimPrefix "\n" .RawContent) "\n\n") 0 -}}
+{{- $opening := findRESubmatch `^<([a-zA-Z][a-zA-Z0-9]*)[\s>]` $block 1 -}}
+{{- $rendered := $block | markdownify -}}
+{{- with $opening -}}
+  {{- $closing := printf "</%s>" (index (index . 0) 1) -}}
+  {{- $parts := split $block $closing -}}
+  {{- if gt (len $parts) 1 -}}
+    {{- $head := replaceRE `&([^a-zA-Z#])` "&amp;${1}" (printf "%s%s" (index $parts 0) $closing) -}}
+    {{- $rendered = printf "%s%s" $head (delimit (after 1 $parts) $closing | markdownify) -}}
+  {{- end -}}
+{{- end -}}
+{{- replaceRE `(?m)^<li>` "  <li>" $rendered | safeHTML -}}
 {{- end -}}
