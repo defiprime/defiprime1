@@ -111,9 +111,9 @@
         {{ end }}
         {{ $cardsSection := site.GetPage (printf "product/%s" .Params.cards) }}
         {{ $page_cards := sort $cardsSection.Pages "File.Path" }}
-        {{ $featured := where $page_cards "Params.featured" true }}
-        {{ $non_featured := where $page_cards "Params.featured" "ne" true }}
-        {{ $page_cards = $featured | append $non_featured }}
+        {{ $flagged := sort (where $page_cards "Params.featured" "!=" nil) "Params.featured" }}
+        {{ $unflagged := where $page_cards "Params.featured" nil }}
+        {{ $page_cards = $flagged | append $unflagged }}
 
         <section id='assets_cards'>
           {{ range $page_cards }}
