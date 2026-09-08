@@ -76,6 +76,16 @@ hugo --minify
 
 Netlify handles production deploys (see `netlify.toml`).
 
+### Stylesheet
+
+`assets/scss/` is not wired into the Hugo pipeline: the pages link the checked-in `static/assets/css/main.css`. After editing the SCSS, regenerate it with:
+
+```bash
+sass --style=compressed --no-source-map assets/scss/main.scss static/assets/css/main.css
+```
+
+The checked-in file came out of Jekyll's libsass, so the first run rewrites it in dart-sass formatting (the same rules, different whitespace and selector order).
+
 ### Testing
 
 ```bash
