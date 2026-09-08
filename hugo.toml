@@ -14,7 +14,7 @@ disableKinds = ["taxonomy"]
 
 # Map git-date front matter field to Hugo's date
 [frontmatter]
-  date = ["date", "git-date", ":filename"]
+  date = ["date", ":filename", "git-date"]
   lastmod = ["lastmod", ":git"]
   publishDate = ["publishDate", "date", "git-date"]
 
