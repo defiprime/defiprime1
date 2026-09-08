@@ -1,14 +1,14 @@
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\"?>" | safeHTML -}}
 {{- $stamp := "2006-01-02T15:04:05-07:00" -}}
 {{- $feedURL := "feed.xml" | absURL -}}
-<feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://gohugo.io/" version="{{ hugo.Version }}">Hugo</generator><link href="{{ $feedURL }}" rel="self" type="application/atom+xml" /><link href="{{ partial "page-url.html" . }}" rel="alternate" type="text/html" /><updated>{{ now.UTC.Format $stamp | safeHTML }}</updated><id>{{ $feedURL }}</id><title type="html">{{ site.Title | transform.XMLEscape }}</title><subtitle>{{ site.Params.description | transform.XMLEscape }}</subtitle>
+<feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://gohugo.io/" version="{{ hugo.Version }}">Hugo</generator><link href="{{ $feedURL }}" rel="self" type="application/atom+xml" /><link href="{{ partial "page-url.html" . }}" rel="alternate" type="text/html" /><updated>{{ now.UTC.Format $stamp | safeHTML }}</updated><id>{{ $feedURL }}</id><title type="html">{{ site.Title | transform.XMLEscape | safeHTML }}</title><subtitle>{{ site.Params.description | transform.XMLEscape | safeHTML }}</subtitle>
 {{- range first 5 (partial "blog-pages.html" .) -}}
 {{- $url := partial "page-url.html" . -}}
-{{- $title := .RenderString .Title | transform.XMLEscape -}}
+{{- $title := .RenderString .Title | transform.XMLEscape | safeHTML -}}
 <entry><title type="html">{{ $title }}</title><link href="{{ $url }}" rel="alternate" type="text/html" title="{{ $title }}" /><published>{{ .Date.UTC.Format $stamp | safeHTML }}</published><updated>{{ .Lastmod.UTC.Format $stamp | safeHTML }}</updated><id>{{ $url }}</id><content type="html" xml:base="{{ $url }}">{{ printf "<![CDATA[%s]]>" .Content | safeHTML }}</content>
-{{- with index hugo.Data.authors .Params.author }}{{ with .name }}<author><name>{{ . | transform.XMLEscape }}</name></author>{{ end }}{{ end }}
-{{- with .Params.category }}<category term="{{ . | transform.XMLEscape }}" />{{ end }}
-{{- range .Params.tags }}<category term="{{ . | transform.XMLEscape }}" />{{ end }}
+{{- with index hugo.Data.authors .Params.author }}{{ with .name }}<author><name>{{ . | transform.XMLEscape | safeHTML }}</name></author>{{ end }}{{ end }}
+{{- with .Params.category }}<category term="{{ . | transform.XMLEscape | safeHTML }}" />{{ end }}
+{{- range .Params.tags }}<category term="{{ . | transform.XMLEscape | safeHTML }}" />{{ end }}
 {{- with partial "jekyll-excerpt.html" . }}<summary type="html">{{ printf "<![CDATA[%s]]>" (partial "jekyll-strip.html" .) | safeHTML }}</summary>{{ end }}</entry>
 {{- end -}}
 </feed>
