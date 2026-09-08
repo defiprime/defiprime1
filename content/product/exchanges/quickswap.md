@@ -1,5 +1,5 @@
 ---
-url: /product/quickswap
+url: /product/quickswap.html
 git-date: 2021-05-05T22:53:20-07:00
 product-title: Quickswap
 product-url: https://quickswap.exchange/#/

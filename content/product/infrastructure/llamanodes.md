@@ -1,5 +1,5 @@
 ---
-url: /product/llamanodes
+url: /product/llamanodes.html
 git-date: 2023-07-30T10:13:42-04:00
 product-title: LlamaNodes
 product-url: https://llamanodes.com/share?referral=01H6BP5KFG8DAMGSN77ZVWR0W9

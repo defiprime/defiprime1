@@ -1,5 +1,5 @@
 ---
-url: /product/marginfi
+url: /product/marginfi.html
 git-date: 2023-12-11T19:30:01-08:00
 product-title: Marginfi
 product-url: https://www.mfi.gg/refer/75fdf33f-cd44-4d9f-8c99-cf72cb031076

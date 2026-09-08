@@ -1,8 +1,8 @@
 ---
 git-date:
-layout: [blog]
+layout: blog
 title: "Stablecoin Issuance Infrastructure in 2026: The Full Map"
-permalink: stablecoin-issuance-infrastructure-2026
+url: /stablecoin-issuance-infrastructure-2026.html
 h1title: "Stablecoin Issuance Infrastructure in 2026: The Full Map"
 pagetitle: "Stablecoin Issuance Infrastructure in 2026: The Full Map"
 metadescription: "A comprehensive guide to stablecoin issuance in 2026: models, regulatory frameworks, technical architecture, service providers, stablechains, and step-by-step launch guidance."
@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/stablecoin-issuance-ogp.png
 intro: "Everything you need to know about issuing a stablecoin in 2026: models, regulation, infrastructure, and the new stablechains."
 author: sawinyh
-tags: ["DeFi Guides"]
+tags: ["Guide"]
 ---
 
 Stablecoins are blockchain tokens pegged 1:1 to a fiat currency, usually the U.S. dollar. They give you the programmability and speed of crypto without the price swings. That simple combination has turned them into plumbing for DeFi, cross-border payments, remittances, treasury management, and on-chain settlement.

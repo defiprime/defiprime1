@@ -1,5 +1,5 @@
 ---
-url: /product/orca
+url: /product/orca.html
 git-date: 2022-11-20T09:52:02-08:00
 product-title: Orca
 product-url: https://www.orca.so

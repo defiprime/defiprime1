@@ -2,7 +2,7 @@
 git-date:
 layout: blog
 title: "Introvert's Guide to Crypto Networking Events"
-url: introverts-guide-to-crypto-events
+url: /introverts-guide-to-crypto-events.html
 h1title: "Introvert's Guide to Crypto Networking Events"
 pagetitle: "Introvert's Guide to Crypto Networking Events"
 metadescription: "Navigating crypto events as an introvert? This guide offers strategies side events, from prep to follow-up. Learn to connect & thrive in Web3."
@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/introvert.png
 intro: "A guide for introverts navigating crypto networking events. Offers strategies for preparation, engagement, follow-up, and self-care to thrive in the Web3 space, turning challenges into networking opportunities."
 author: sawinyh
-tags: ["DeFi Guides"]
+tags: ["Guide"]
 ---
 
 Crypto networking events are a powerful way to build lasting connections, uncover opportunities, and elevate your visibility in the rapidly evolving Web3 landscape. But turning casual conversations into valuable relationships takes more than just showing up and handing out business cards. Whether you’re attending major industry conferences like Token2049 or ETHDenver, or side events, having a strategic approach can significantly amplify your outcomes.
@@ -51,6 +51,6 @@ Pro-tip: **Don't be afraid to end conversations and move on.** You don't have to
 - **Prepare an elevator pitch:** Have a concise and engaging description of what you do and what you're looking for. This helps you introduce yourself effectively. A well-crafted elevator pitch ensures that you make a strong first impression and clearly communicate your value proposition.
 - **Listen actively:** Pay attention to what others are saying and ask follow-up questions. People appreciate genuine interest. Active listening involves showing that you're engaged and paying attention, which makes others feel valued.
 - **Business cards are dead:** Most people prefer connection on Telegram. In the crypto space, Telegram has become the preferred method of communication. It’s quick, efficient, and widely used.
-- **Follow up promptly:** You have a week or two after the event to follow up with people you met and reference your conversation. Timely follow-up is critical. It shows that you value the connection and helps keep the momentum going.
+- **Follow up promptly:** You have a week or two after the event to follow up with people you met and reference your conversation. Timely follow-up is critical. It shows that you value the connection and helps keep the momentum going. A lightweight networking CRM like [PingCRM](https://pingcrm.xyz) can pull those Telegram and LinkedIn threads into one place and remind you to follow up before a new contact goes cold.
 
 By implementing these strategies, you can make the most of crypto networking events and build valuable relationships in this dynamic and innovative industry. These events offer unparalleled opportunities to connect with like-minded individuals, learn about the latest trends, and potentially find collaborators or investors for your projects. They are a vital part of being involved in the crypto world.conversation after the event.

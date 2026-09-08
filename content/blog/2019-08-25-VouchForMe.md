@@ -2,7 +2,7 @@
 git-date: 2019-08-25T19:47:34-07:00
 layout: blog
 title: VouchForMe
-url: vouchforme
+url: /vouchforme.html
 h1title: 'VouchForMe - Interview with co-founder Matt Peterman'
 pagetitle: 'VouchForMe - Interview with co-founder Matt Peterman'
 metadescription: 'Matt Peterman, co-founder of VouchForMe, shared his thoughts on using social proof and blockchain in the insurance industry.'
@@ -12,7 +12,6 @@ quote: /images/blog/vouchforme-quote.png
 intro: 'Matt Peterman, co-founder of VouchForMe, shared his thoughts on using social proof and blockchain in the insurance industry.'
 author: Defiprime
 tags: ['Interview', 'Insurance']
-
 ---
 Matt Peterman, co-founder of VouchForMe, shared his thoughts on using social proof and blockchain in the insurance industry.
 

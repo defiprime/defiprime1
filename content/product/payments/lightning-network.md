@@ -1,5 +1,5 @@
 ---
-url: /product/lightning-network
+url: /product/lightning-network.html
 git-date: 2019-07-03T13:24:38-07:00
 product-title: Lightning Network
 product-url: https://lightning.network/

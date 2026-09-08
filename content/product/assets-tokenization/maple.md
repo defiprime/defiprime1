@@ -1,5 +1,5 @@
 ---
-url: /product/maple
+url: /product/maple.html
 git-date: 2019-05-20T22:02:39-07:00
 product-title: Maple
 product-url: https://maple.finance

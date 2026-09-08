@@ -1,5 +1,5 @@
 ---
-url: /product/harvest
+url: /product/harvest.html
 git-date: 2020-09-27T17:18:20-07:00
 product-title: Harvest
 product-url: https://harvest.finance/

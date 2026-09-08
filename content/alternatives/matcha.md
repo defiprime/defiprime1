@@ -2,7 +2,7 @@
 git-date: 2022-03-15T11:31:42-07:00
 layout: alternatives
 title: "Matcha Alternatives"
-url: matcha-alternatives
+url: /matcha-alternatives.html
 h1title: Matcha Alternatives
 pagetitle: Matcha Alternatives & Competitors - Top 0x Matcha Competitors and Alternatives
 metadescription: "Here you can find is a list of Matcha alternatives. Matcha finds you the best prices across exchanges and combines them into one trade."

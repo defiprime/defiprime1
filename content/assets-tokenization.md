@@ -2,7 +2,7 @@
 git-date: 2019-05-20T22:02:39-07:00
 layout: page
 title: "Tokenization of Assets"
-url: assets-tokenization
+url: /assets-tokenization.html
 h1title: Tokenization of Assets
 pagetitle: Best tokenization of assets Platforms for Digital Securities
 metadescription: Through tokenization, investing is cheaper, faster, more secure and available every hour of the day.

@@ -1,5 +1,5 @@
 ---
-url: /product/opinion-trade
+url: /product/opinion-trade.html
 git-date: 2025-12-26T17:41:07-07:00
 product-title: Opinion.Trade
 product-url: https://opinion.trade/

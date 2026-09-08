@@ -2,7 +2,7 @@
 git-date: 2020-04-06T10:06:05+00:00
 layout: blog
 title:  Liquality
-url: liquality
+url: /liquality.html
 h1title: "Liquality - cross-chain atomic swaps"
 pagetitle: "Liquality - cross-chain atomic swaps"
 metadescription: "Simon told us Liquality backstory, and shared his thoughts on complexities of a cross-chain swap for end users"
@@ -11,7 +11,7 @@ featured-image: /images/blog/liquality-quote.png
 quote: /images/blog/liquality-quote.png
 intro: "Simon told us Liquality backstory, and shared his thoughts on complexities of a cross-chain swap for end users"
 author: Defiprime
-tags: ['Interview', 'DEXs', 'Cross-chain']
+tags: ['Interview', 'DEXs', "Infrastructure"]
 ---
 Simon told us Liquality backstory and shared his thoughts on the complexities of a cross-chain swap for end users.   
 

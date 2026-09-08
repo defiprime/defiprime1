@@ -2,7 +2,7 @@
 git-date: 2022-11-25T19:28:13-08:00
 layout: alternatives
 title: "Nansen Alternatives"
-url: nansen-alternatives
+url: /nansen-alternatives.html
 h1title: Nansen Alternatives
 pagetitle: Nansen Alternatives & Competitors - Free Nansen Alternatives
 metadescription: "Here you can find a list of Nansen alternatives (including free ones)."

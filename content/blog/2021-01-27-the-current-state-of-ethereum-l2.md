@@ -2,7 +2,7 @@
 git-date: 2021-01-27T07:54:28-08:00
 layout: blog
 title: "The Current State of Ethereum L2"
-url: ethereum-l2
+url: /ethereum-l2.html
 h1title: "The Current State of Ethereum L2"
 pagetitle: "The Current State of Ethereum L2 - Ethereum Layer 2 Projects"
 metadescription: "In today’s post let’s examine how some of Ethereum’s most promising L2 projects are looking in the here and now"

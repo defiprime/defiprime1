@@ -2,7 +2,7 @@
 git-date:
 layout: blog
 title: "Token Vesting - The most extensive guide"
-url: token-vesting-guide
+url: /token-vesting-guide.html
 h1title: "Token Vesting: Everything You Need to Know"
 pagetitle: "Token Vesting: Everything You Need to Know"
 metadescription: "Learn everything about token vesting in this comprehensive guide. Understand different vesting schedules, their benefits, and how they ensure long-term commitment and stability in blockchain projects. Perfect for investors, developers, and crypto enthusiasts."
@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/vesting-og.png
 intro: "Learn everything about token vesting in this comprehensive guide. Understand different vesting schedules, their benefits, and how they ensure long-term commitment and stability in blockchain projects. Perfect for investors, developers, and crypto enthusiasts."
 author: sawinyh
-tags: ["For Builders", "DeFi Guides"]
+tags: ["For Builders", "Guide"]
 ---
 
 

@@ -2,7 +2,7 @@
 git-date: 2019-09-13T07:06:04+00:00
 layout: blog
 title:  0x Protocol
-url: 0x-protocol
+url: /0x-protocol.html
 h1title: '0x: Decentralized Exchange Protocol'
 pagetitle: '0x: Decentralized Exchange Protocol'
 metadescription: 'Matt Taylor from the 0x Core Team told us how they built a decentralized exchange protocol, and what comes next for DeFi dApps.'
@@ -12,7 +12,6 @@ quote: /images/blog/0x-quote.png
 intro: 'Matt Taylor from the 0x Core Team told us how they built a decentralized exchange protocol, and what comes next for DeFi dApps.'
 author: Defiprime
 tags: ['Interview', 'DEXs']
-
 ---
 Matt Taylor from the 0x Core Team told us how they built a decentralized exchange protocol, and what comes next for DeFi dApps.
 

@@ -2,7 +2,7 @@
 git-date: 2019-08-25T14:05:50-07:00
 layout: blog
 title: Uniswap Liquidity Pools
-url: uniswap-liquidity-pools
+url: /uniswap-liquidity-pools.html
 h1title: 'Are Uniswap‘s Liquidity Pools Right for You?'
 pagetitle: 'Uniswap Liquidity Pools: Definitive Guide'
 metadescription: 'Uniswap Liquidity Pools: Definitive Guide, how they work, and whether or not Uniswap liquidity provider is a good idea for everyone. Are Uniswap Liquidity Pools Right for You?'
@@ -11,7 +11,7 @@ featured-image: /images/blog/liquiditypools-og.png
 quote: /images/blog/liquiditypools-quote.png
 intro: 'Are Uniswap’s Liquidity Pools Right for You?'
 author: chrisblec
-tags: ['DeFi Guides', 'DEXs', 'Liquidity Pools']
+tags: ["Guide", "DEXs"]
 ---
 <div style="text-align: right">This is a transcription from a <a href="https://www.youtube.com/watch?v=IotszRJdtYw">YouTube video</a>.
 </div>

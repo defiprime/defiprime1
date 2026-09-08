@@ -1,5 +1,5 @@
 ---
-url: /product/idle
+url: /product/idle.html
 git-date: 2019-08-25T14:05:50-07:00
 product-title: Idle
 product-url: https://idle.finance/

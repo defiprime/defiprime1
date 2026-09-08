@@ -1,5 +1,5 @@
 ---
-url: /product/bloxy
+url: /product/bloxy.html
 git-date: 2019-05-20T22:02:39-07:00
 product-title: Bloxy
 product-url: https://bloxy.info/

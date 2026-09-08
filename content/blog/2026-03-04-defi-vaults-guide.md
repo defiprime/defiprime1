@@ -1,8 +1,8 @@
 ---
 git-date:
-layout: [blog]
+layout: blog
 title: "The Complete Guide to DeFi Vaults in 2026: How Curated Vaults Became the Smartest Way to Earn Yield in Crypto"
-permalink: defi-vaults-guide
+url: /defi-vaults-guide.html
 h1title: "The Complete Guide to DeFi Vaults in 2026: How Curated Vaults Became the Smartest Way to Earn Yield in Crypto"
 pagetitle: "The Complete Guide to DeFi Vaults in 2026: How Curated Vaults Became the Smartest Way to Earn Yield in Crypto"
 metadescription: "Everything you need to know about DeFi vaults in 2026. How curated vaults work, why Morpho leads with $5.8B TVL, top protocols, real strategies, risks, and step-by-step guides for beginners and institutions."
@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/vaults-ogp.png
 intro: "From Yearn's genesis to Apollo's $160M commitment to Morpho, DeFi vaults have evolved from experimental yield tools into institutional-grade infrastructure managing billions."
 author: Defiprime
-tags: ["DeFi Guides", "DeFi List"]
+tags: ["Guide", "DeFi List"]
 ---
 
 In January 2026, Kraken launched DeFi Earn, a product that routes centralized exchange deposits into on-chain lending vaults managed by professional risk teams. Within weeks, tens of millions of dollars flowed in. Around the same time, Apollo Global Management, a firm managing $940 billion in traditional assets, signed a deal to acquire up to 9% of Morpho's token supply over four years. These aren't speculative bets on meme tokens. They're calculated moves into DeFi vaults, the infrastructure layer that quietly became the dominant way to earn yield on-chain.

@@ -1,5 +1,5 @@
 ---
-url: /product/jupiter
+url: /product/jupiter.html
 git-date: 2023-12-12T03:04:30-07:00
 product-title: Jupiter
 product-url: https://jup.ag

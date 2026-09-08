@@ -2,7 +2,7 @@
 git-date: 2021-03-21T10:52:18-07:00
 layout: blog
 title:  "Spendless"
-url: spendless
+url: /spendless.html
 h1title: "Spendless - Donate Without Spending Anything"
 pagetitle: "Spendless - Donate Without Spending Anything"
 metadescription: "Patryk shared Spendless backstory and told us how Spendless with the help of DeFi protocols let us donate an interest earned to the causes that matter"

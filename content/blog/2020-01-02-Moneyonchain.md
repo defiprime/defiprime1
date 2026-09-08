@@ -2,7 +2,7 @@
 git-date: 2020-01-02T10:06:04+00:00
 layout: blog
 title:  Money On Chain
-url: moneyonchain
+url: /moneyonchain.html
 h1title: "Money On Chain - a Stable Asset Platform"
 pagetitle: "Money On Chain - a Stable Asset Platform"
 metadescription: "Max, the co-founder of Money On Chain, shared the story of building a stable asset platform using RSK"
@@ -12,7 +12,6 @@ quote: /images/blog/moneyonchain-quote.png
 intro: "Max, the co-founder of Money On Chain, shared the story of building a stable asset platform using RSK"
 author: Defiprime
 tags: ['Interview']
-
 ---
 Max, the co-founder of Money On Chain, shared the story of building a stable asset platform using RSK.
 

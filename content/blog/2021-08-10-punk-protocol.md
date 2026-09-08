@@ -2,7 +2,7 @@
 git-date: 2021-08-08T09:08:45-07:00
 layout: blog
 title:  "Punk Protocol"
-url: punk-protocol
+url: /punk-protocol.html
 h1title: "Punk Protocol - DeFi 401(k) Pension Service"
 pagetitle: "Punk Protocol - DeFi 401(k) Pension Service"
 metadescription: "Punk protocol aims to provide financial tools to liberate people from traditional finance and to empower their financial freedom and stability"

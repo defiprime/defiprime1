@@ -1,5 +1,5 @@
 ---
-url: /product/aave
+url: /product/aave.html
 git-date: 2020-01-11T11:30:54-08:00
 product-title: Aave
 product-url: https://app.aave.com/?referral=28

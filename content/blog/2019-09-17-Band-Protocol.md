@@ -2,7 +2,7 @@
 git-date: 2019-09-17T08:06:05+00:00
 layout: blog
 title:  Band Protocol
-url: bandprotocol
+url: /bandprotocol.html
 h1title: 'Band Protocol - interview with CEO and co-founder Soravis Srinawakoon'
 pagetitle: 'Band Protocol - interview with CEO and co-founder Soravis Srinawakoon'
 metadescription: "Soravis shared his thoughts on DeFi core values and told us how Band Protocol bring data available on-chain."
@@ -12,7 +12,6 @@ quote: /images/blog/bandprotocol-quote.png
 intro: "Soravis shared his thoughts on DeFi core values and told us how Band Protocol bring data available on-chain."
 author: Defiprime
 tags: ['Interview', 'VC-founded', 'Oracles']
-
 ---
 Soravis shared his thoughts on DeFi core values and told us how Band Protocol bring data available on-chain.
 

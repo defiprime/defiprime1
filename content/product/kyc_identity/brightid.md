@@ -1,5 +1,5 @@
 ---
-url: /product/brightid
+url: /product/brightid.html
 git-date: 2021-01-21T13:43:37-08:00
 product-title: BrightID
 product-url: https://www.brightid.org/

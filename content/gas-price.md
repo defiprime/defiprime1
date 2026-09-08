@@ -6,7 +6,7 @@ h1title: Ethereum Gas Price and Usage Stats
 pagetitle: Ethereum Gas Price and Usage Stats
 metadescription: Gas Cost and Usage Stats and for Typical Actions at Recent Gas Prices. Gas is the fee a user pays to process a transaction on the Ethereum blockchain.
 featured-image: /images/blog/og-gas.png
-url: gas-today
+url: /gas-today.html
 author: sawinyh
 date: 2021-02-05
 ---

@@ -2,7 +2,7 @@
 git-date: 2022-09-18T18:40:50-07:00
 layout: blog
 title: "How Decentralized is Decentralized Governance?"
-url: how-decentralized-is-decentralized-governance
+url: /how-decentralized-is-decentralized-governance.html
 h1title: "How Decentralized is Decentralized Governance?"
 pagetitle: "How Decentralized is Decentralized Governance?"
 metadescription: "What is decentralization in terms of a DAO, and how can we measure it?"
@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/governance-ogp.png
 intro: "What is decentralization in terms of a DAO, and how can we measure it?"
 author: Savelyev
-tags: ["DeFi Guides"]
+tags: ["Analysis"]
 ---
 
 _Many thanks to Derek Hsue ([@derek_hsue](https://twitter.com/derek_hsue)), trach.eth ([@tracheopteryx](https://twitter.com/tracheopteryx)) and Dennison Bertram ([@DennisonBertram](https://twitter.com/DennisonBertram)) for reviewing this article and for their valuable comments and additions._

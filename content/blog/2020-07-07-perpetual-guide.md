@@ -2,7 +2,7 @@
 git-date: 2020-08-03T18:53:35-07:00
 layout: blog
 title:  "What Are Perpetual Contracts for Bitcoin? dYdX Perpetual Futures Explained"
-url: perpetual-dydx
+url: /perpetual-dydx.html
 h1title: "What Are Perpetual Contracts for Bitcoin? dYdX Perpetual Futures Explained"
 pagetitle: "What Are Perpetual Contracts for Bitcoin? dYdX Perpetual Futures Explained"
 metadescription: "What Are Perpetual Contracts for Bitcoin? dYdX Perpetual Futures Explained. A perpetual futures contract is a derivative product that mixes elements of futures contract trading and margin-based spot trading"
@@ -11,7 +11,7 @@ featured-image: /images/blog/dydxperp/perpetual-dydx-og.png
 quote: /images/blog/dydxperp/perpetual-dydx-quote.png
 intro: "We are going in-depth on new dYdX Perpetual Futures platform in this article."
 author: Defiprime
-tags: ['DeFi Guides', 'dYdX']
+tags: ["Guide", "DEXs"]
 ---
 A perpetual futures contract is a derivative product that mixes elements of futures contract trading and margin-based spot trading. We are going in-depth on new [dYdX Perpetual Futures](https://dydx.trade?ref=LastOrangeU5D) platform in this article.  
 

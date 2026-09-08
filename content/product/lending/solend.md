@@ -1,5 +1,5 @@
 ---
-url: /product/solend
+url: /product/solend.html
 git-date: 2021-11-03T07:21:58-07:00
 product-title: Solend
 product-url: https://solend.fi/

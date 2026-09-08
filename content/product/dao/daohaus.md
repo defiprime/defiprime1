@@ -1,5 +1,5 @@
 ---
-url: /product/daohaus
+url: /product/daohaus.html
 git-date: 2020-01-19T13:40:52-08:00
 product-title: Daohaus
 product-url: https://daohaus.club/

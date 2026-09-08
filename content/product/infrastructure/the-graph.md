@@ -1,5 +1,5 @@
 ---
-url: /product/the-graph
+url: /product/the-graph.html
 git-date: 2019-05-22T10:36:43-07:00
 product-title: The Graph
 product-url: https://thegraph.com/

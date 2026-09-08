@@ -2,7 +2,7 @@
 git-date: 2020-08-24T11:41:56-07:00
 layout: blog
 title:  "Elastic Supply Tokens Explained"
-url: elastic
+url: /elastic.html
 h1title: "Elastic Supply Tokens Explained"
 pagetitle: "Elastic Supply Tokens Explained"
 metadescription: "Elastic supply tokens are one of the newer and less-known of these blooming sectors, and yet the field’s gained traction upon a handful of price-elastic projects recently breaking into DeFi’s limelight"
@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/elastic-og.png
 intro: "In this post, we’ll break down how these assets work via rebases and walk through top example projects from today’s cryptoeconomy"
 author: Peaster
-tags: ['DeFi Guides']
+tags: ["Guide"]
 ---
 Ethereum’s decentralized finance arena has many rising sectors, including non-custodial exchanges, stablecoins, tokenized bitcoin, and more.
 

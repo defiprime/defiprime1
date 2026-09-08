@@ -1,5 +1,5 @@
 ---
-url: /product/truefi
+url: /product/truefi.html
 git-date: 2021-02-18T17:40:02-08:00
 product-title: TrueFi
 product-url: https://truefi.io/

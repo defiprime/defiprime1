@@ -2,7 +2,7 @@
 git-date: 2019-11-19T08:58:16-08:00
 layout: blog
 title:  Comparing Insurance Like Solutions in DeFi
-url: comparing-insurance-like-solutions-in-defi
+url: /comparing-insurance-like-solutions-in-defi.html
 h1title: "Comparing Insurance Like Solutions in DeFi"
 pagetitle: "Comparing Insurance Like Solutions in DeFi"
 metadescription: "Hugh Karp compared various insurance like solutions existing right now in DeFi space"
@@ -11,7 +11,7 @@ featured-image: /images/blog/comparing-insurance-og.png
 quote: /images/blog/comparing-insurance-quote.png
 intro: "Hugh Karp compared various insurance like solutions existing right now in DeFi space"
 author: karp
-tags: ['DeFi Guides', 'Insurance']
+tags: ["Analysis", 'Insurance']
 ---
 I regularly get questions like, could you use a prediction market for insurance instead? Or how does a financial derivative compare to what you’re doing at [Nexus Mutual](https://nexusmutual.io/)?
 

@@ -2,7 +2,7 @@
 git-date: 2019-06-14T12:42:41-07:00
 layout: page
 title: "Perps"
-url: perps
+url: /perps.html
 h1title: Perps
 pagetitle: DeFi Perps and Margin Trading - DeFi Short and Leveraged Trading Platforms
 metadescription: DeFi perpetuals are decentralized derivatives that allow traders to speculate on asset prices with leverage without expiration dates. Trade crypto perpetuals on decentralized exchanges with no KYC required.

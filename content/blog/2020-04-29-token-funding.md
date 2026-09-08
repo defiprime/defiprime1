@@ -2,7 +2,7 @@
 git-date: 2020-05-01T10:06:05+00:00
 layout: blog
 title:  "Token Based Funding "
-url: token-based-funding
+url: /token-based-funding.html
 h1title: "Token Based Funding"
 pagetitle: "Token Based Funding"
 metadescription: "In this article, we discuss a handful of the fundraising methods implemented within the decentralized finance space and otherwise, expounding on strengths and weaknesses therein"
@@ -11,7 +11,7 @@ featured-image: /images/blog/token-based-funding-og.png
 quote: /images/blog/token-based-funding-quote.png
 intro: "In this article, we discuss a handful of the fundraising methods implemented within the decentralized finance space"
 author: Mack
-tags: ['DeFi Guides']
+tags: ["Guide"]
 ---
 Crowdfunding is an ambitious experiment in stakeholder capitalism. While the idea of a world where individuals fund projects they find important is compelling, a number of obstacles stand in the way of such a bright future. In this article, we discuss a handful of the fundraising methods implemented within the decentralized finance space and otherwise, expounding on strengths and weaknesses therein.
 

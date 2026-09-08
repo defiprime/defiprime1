@@ -2,7 +2,7 @@
 git-date: 2021-02-25T11:56:26-08:00
 layout: alternatives
 title: "DEXTools Alternatives"
-url: dextools-alternatives
+url: /dextools-alternatives.html
 h1title: DEXTools Alternatives
 pagetitle: DEXTools Alternatives & Competitors - Free DEXTools Alternatives
 metadescription: "Here you can find a list of DEXTools alternatives (including free ones)."

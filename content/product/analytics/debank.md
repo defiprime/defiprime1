@@ -1,5 +1,5 @@
 ---
-url: /product/debank
+url: /product/debank.html
 git-date: 2020-04-10T12:23:16-07:00
 product-title: DeBank
 product-url: https://debank.com/claim?r=112920

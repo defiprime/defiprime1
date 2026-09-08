@@ -1,5 +1,5 @@
 ---
-url: /product/88mph
+url: /product/88mph.html
 git-date: 2021-02-12T14:38:45-08:00
 product-title: 88mph
 product-url: https://88mph.app/

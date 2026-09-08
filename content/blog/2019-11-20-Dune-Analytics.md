@@ -2,7 +2,7 @@
 git-date: 2019-11-20T09:06:05+00:00
 layout: blog
 title:  Dune Analytics
-url: dune-analytics
+url: /dune-analytics.html
 h1title: "Dune Analytics - create and share analysis of smart-contract data"
 pagetitle: "Dune Analytics - create and share analysis of smart-contract data"
 metadescription: "Fredrik told us the backstory of Dune Analytics and shared plans for lowering the bar for anyone who wants to explore aggregated on-chain data insights for Ethereum smart contracts."

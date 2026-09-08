@@ -1,5 +1,5 @@
 ---
-url: /product/realms
+url: /product/realms.html
 git-date: 2023-12-12T01:36:07-07:00
 product-title: Realms
 product-url: https://realms.today

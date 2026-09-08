@@ -2,7 +2,7 @@
 git-date: 2019-05-16T11:43:26-07:00
 layout: blog
 title:  "Melon Protocol"
-url: melon-protocol
+url: /melon-protocol.html
 h1title: Interview with Mona El Isa CEO and Co-Founder at Melonport  
 pagetitle: Interview with Mona El Isa CEO and Co-Founder at Melonport   
 metadescription: Mona El Isa, Co-Founder at Melonport talking about building a new infrastructure for asset management at Melon Protocol.
@@ -11,7 +11,7 @@ featured-image: /images/blog/melon-og.png
 quote: /images/blog/melon-quote.png
 intro: Mona El Isa, Co Founder at Melonport talking about building a new infrastructure for asset management at Melon Protocol.  
 author: Defiprime
-tags: ['Interview', 'Asset Management']
+tags: ['Interview', "Yield"]
 ---
 Mona El Isa, Co-Founder at Melonport talking about building a new infrastructure for asset management at Melon Protocol.  
 

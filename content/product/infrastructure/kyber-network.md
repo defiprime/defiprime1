@@ -1,5 +1,5 @@
 ---
-url: /product/kyber-network
+url: /product/kyber-network.html
 git-date: 2019-05-20T22:02:39-07:00
 product-title: Kyber Network
 product-url: https://kyber.network/

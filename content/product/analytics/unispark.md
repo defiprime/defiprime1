@@ -1,5 +1,5 @@
 ---
-url: /product/unispark
+url: /product/unispark.html
 git-date: 2023-07-23T13:05:45-04:00
 product-title: Unispark
 product-url: https://unispark.metacrypt.org

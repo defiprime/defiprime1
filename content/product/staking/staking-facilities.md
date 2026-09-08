@@ -1,5 +1,5 @@
 ---
-url: /product/staking-facilities
+url: /product/staking-facilities.html
 git-date: 2019-07-05T09:41:17-07:00
 product-title: Staking Facilities
 product-url: https://stakingfacilities.com

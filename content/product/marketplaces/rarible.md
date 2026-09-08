@@ -1,5 +1,5 @@
 ---
-url: /product/rarible
+url: /product/rarible.html
 git-date: 2020-08-03T18:53:35-07:00
 product-title: Rarible
 product-url: https://rarible.com

@@ -2,7 +2,7 @@
 git-date: 2022-08-04T08:26:21-07:00
 layout: blog
 title: "Index Coop - DAO launched to democratize access to complex crypto strategies"
-url: indexcoop
+url: /indexcoop.html
 h1title: "Index Coop - DAO launched to democratize access to complex crypto strategies"
 pagetitle: "Index Coop - DAO launched to democratize access to complex crypto strategies"
 metadescription: "Index Coop one of the oldest DAOs in the DeFi ecosystem launched to democratize access to complex crypto strategies"
@@ -29,7 +29,7 @@ Index Coop was created on October 6, 2021 by Felix Feng, the Co-Founder and CEO 
 
 Indices are a rare breed in crypto, still. Even though 18% of the global stock market is held in indices, less than 1% of DeFi TVL is held in indices. We’re looking to change that. It’s a huge opportunity, for both us and customers—indices abstract away having to pick winners for less experienced users and they help even experienced users save on fees via automatic rebalancing.
 
-Since we’re a DAO, we launched with a native token (ERC-20) called [INDEX](https://dex.guru/token/0x0954906da0bf32d5479e25f46056d22f08464cab-eth) that enables community-led ownership and governance and has a total supply of 10 million tokens. So initial allocation was split between founders—Set Labs and DeFi Pulse—with 30% and the Index Coop community with the other 70% of tokens. Almost immediately, we began an airdrop to past holders and liquidity providers of DPI. This helped us gain a bit of a following, building up the Discord and all.
+Since we’re a DAO, we launched with a native token (ERC-20) called INDEX that enables community-led ownership and governance and has a total supply of 10 million tokens. So initial allocation was split between founders—Set Labs and DeFi Pulse—with 30% and the Index Coop community with the other 70% of tokens. Almost immediately, we began an airdrop to past holders and liquidity providers of DPI. This helped us gain a bit of a following, building up the Discord and all.
 
 I think that since we’re a DAO, people were excited at the opportunity to actually drive the success of the project they held via INDEX. We saw people popping up on our governance forum near constantly with ideas for indices. One of the first, the Metaverse Index (MVI), which we ended up launching about 6 months later, was proposed within the first month of our existence.
 

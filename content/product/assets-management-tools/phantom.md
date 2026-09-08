@@ -1,5 +1,5 @@
 ---
-url: /product/phantom
+url: /product/phantom.html
 git-date: 2021-08-18T20:57:24-07:00
 product-title: Phantom
 product-url: https://phantom.app

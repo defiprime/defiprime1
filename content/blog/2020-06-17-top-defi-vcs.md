@@ -2,7 +2,7 @@
 git-date: 2020-06-17T16:48:17-07:00
 layout: blog
 title:  "Top DeFi VCs: Surveying Some of the Space's Biggest Investors"
-url: defi-vcs
+url: /defi-vcs.html
 h1title: "Top DeFi VCs: Surveying Some of the Space's Biggest Investors"
 pagetitle: "Top DeFi VCs: Surveying Some of the Space's Biggest Investors"
 metadescription: "Here’s a non-exhaustive list of some of the companies who have made big splashes in the young but maturing DeFi arena to date"

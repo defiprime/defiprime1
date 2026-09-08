@@ -2,7 +2,7 @@
 git-date: 2019-09-04T07:06:05+00:00
 layout: blog
 title:  DeversiFi
-url: deversifi
+url: /deversifi.html
 h1title: 'DeversiFi - interview with CEO and founder, Will Harborne'
 pagetitle: 'DeversiFi - interview with CEO and founder, Will Harborne'
 metadescription: 'Will Harborne, told us backstory of building Ethfinex including recent rebranding it into DeversiFi, and shared his thoughts on the future of DeFi.'
@@ -11,8 +11,7 @@ featured-image: /images/blog/deversifi-og.png
 quote: /images/blog/deversifi-quote.png
 intro: 'Will Harborne, told us backstory of building Ethfinex including recent rebranding it into DeversiFi, and shared his thoughts on the future of DeFi.'
 author: Defiprime
-tags: ['Interview', 'DEXs', 'DAO governed', 'Governance Token']
-
+tags: ["Interview", "DEXs", "Governance"]
 ---
 Will Harborne, told us backstory of building Ethfinex including recent rebranding it into DeversiFi, and shared his thoughts on the future of DeFi.
 

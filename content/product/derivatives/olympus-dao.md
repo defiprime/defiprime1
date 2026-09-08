@@ -1,5 +1,5 @@
 ---
-url: /product/olympus-dao
+url: /product/olympus-dao.html
 git-date: 2021-11-08T14:28:14-08:00
 product-title: Olympus DAO
 product-url: https://www.olympusdao.finance/

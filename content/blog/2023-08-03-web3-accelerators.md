@@ -2,7 +2,7 @@
 git-date: 2023-08-03T10:29:33-04:00
 layout: blog
 title: "Web3 Accelerators: Paving the Way for the Future of Decentralized Innovation"
-url: web3-accelerators
+url: /web3-accelerators.html
 h1title: "Web3 Accelerators: Paving the Way for the Future of Decentralized Innovation"
 pagetitle: "A Brief History of Blockchain Bridges Hacks: Lessons Learned and Ongoing Challenges"
 metadescription: "In this blog post, we will explore the concept of Web3 accelerators and how they are playing a crucial role in driving forward the future of decentralized innovation."

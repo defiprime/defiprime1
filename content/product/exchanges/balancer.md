@@ -1,5 +1,5 @@
 ---
-url: /product/balancer
+url: /product/balancer.html
 git-date: 2020-05-16T13:51:52-07:00
 product-title: Balancer
 product-url: https://balancer.finance/

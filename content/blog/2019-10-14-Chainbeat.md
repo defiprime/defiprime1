@@ -2,7 +2,7 @@
 git-date: 2019-10-14T07:08:04-07:00
 layout: blog
 title:  Chainbeat
-url: chainbeat
+url: /chainbeat.html
 h1title: "Chainbeat - Google Analytics for the dApps world"
 pagetitle: "Chainbeat - Google Analytics for the dApps world"
 metadescription: "Ashok shared his thoughts on cross-platform blockchain analytics, and challenges Chainbeat team faced while building Google Analytics for the dApps world"
@@ -12,7 +12,6 @@ quote: /images/blog/chainbeat-quote.png
 intro: "Ashok shared his thoughts on cross-platform blockchain analytics, and challenges Chainbeat team faced while building Google Analytics for the dApps world"
 author: Defiprime
 tags: ['Interview', 'VC-founded']
-
 ---
 Ashok shared his thoughts on cross-platform blockchain analytics, and challenges Chainbeat team faced while building Google Analytics for the dApps world.  
 

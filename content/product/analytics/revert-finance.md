@@ -1,5 +1,5 @@
 ---
-url: /product/revert-finance
+url: /product/revert-finance.html
 git-date: 2021-05-23T12:10:39-07:00
 product-title: Revert Finance
 product-url: https://revert.finance/

@@ -2,7 +2,7 @@
 git-date: 2020-05-20T15:00:23-07:00
 layout: blog
 title: "Everything you need to know before investing in DeFi"
-url: investing-defi
+url: /investing-defi.html
 h1title: Everything you need to know before investing in DeFi
 pagetitle: Everything you need to know before investing in DeFi
 metadescription: "Thinking about investing in DeFi? Here’s what you need to know. The Do’s and Don’t of Investing with DeFi"
@@ -11,7 +11,7 @@ featured-image: /images/blog/investing/investing-og.png
 quote: /images/blog/investing/investing-quote.png
 intro: "Thinking about investing in DeFi? Here’s what you need to know..."
 author: goldfarb
-tags: ["DeFi Guides"]
+tags: ["Guide"]
 ---
 
 In order to be successful, you have to do things nobody else is doing, go places nobody else is going, and say things nobody else is saying.

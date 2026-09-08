@@ -1,5 +1,5 @@
 ---
-url: /product/jolocom
+url: /product/jolocom.html
 git-date: 2019-05-20T22:02:39-07:00
 product-title: Jolocom
 product-url: https://jolocom.io/

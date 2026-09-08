@@ -2,7 +2,7 @@
 git-date: 2019-08-27T21:50:05-07:00
 layout: blog
 title: LocalEthereum
-url: localethereum
+url: /localethereum.html
 h1title: 'LocalEthereum: Decentralized P2P Fiat on-ramp for ETH'
 pagetitle: 'LocalEthereum: decentralized P2P fiat on-ramp for ETH'
 metadescription: 'Michael Foster, talks about building decentralized fiat on-ramp for ETH and the future of decentralized finances.'
@@ -12,7 +12,6 @@ quote: /images/blog/localethereum-quote.png
 intro: 'Michael Foster, talks about building decentralized fiat on-ramp for ETH and the future of decentralized finances.'
 author: Defiprime
 tags: ['Interview']
-
 ---
 Michael Foster, talks about building decentralized fiat on-ramp for ETH and the future of decentralized finances.
 

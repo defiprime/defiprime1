@@ -1,5 +1,5 @@
 ---
-url: /product/venus
+url: /product/venus.html
 git-date: 2021-03-24T10:07:47-07:00
 product-title: Venus
 product-url: https://venus.io

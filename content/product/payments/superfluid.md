@@ -1,5 +1,5 @@
 ---
-url: /product/superfluid
+url: /product/superfluid.html
 git-date: 2022-01-26T14:33:04-07:00
 product-title: Superfluid
 product-url: https://www.superfluid.finance/home

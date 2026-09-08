@@ -2,7 +2,7 @@
 git-date: 2020-09-01T21:01:59-07:00
 layout: blog
 title:  "Mooniswap"
-url: mooniswap
+url: /mooniswap.html
 h1title: "Mooniswap"
 pagetitle: "Mooniswap - New AMM exchange from 1inch team"
 metadescription: "Anton told us the 1inch backstory from a hackathon project to a leading DeFi aggregator, and how's new Mooniswap AMM is different"
@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/mooniswap-og.png
 intro: "Anton told us the 1inch backstory from a hackathon project to a leading DeFi aggregator, and how's new Mooniswap AMM is different"
 author: Defiprime
-tags: ['Interview', 'DEXs', 'VC-founded', 'Liquidity Pools']
+tags: ["Interview", "DEXs", "VC-founded"]
 ---
 Anton told us the 1inch backstory from a hackathon project to a leading DeFi aggregator, and how's new Mooniswap AMM is different.
 

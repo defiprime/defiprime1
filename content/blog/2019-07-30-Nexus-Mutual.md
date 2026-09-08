@@ -2,7 +2,7 @@
 git-date: 2019-08-25T14:05:50-07:00
 layout: blog
 title:  Nexus Mutual
-url: nexus-mutual
+url: /nexus-mutual.html
 h1title: Nexus Mutual - Smart Contract Insurance. Interview with founder.   
 pagetitle: Nexus Mutual - Smart Contract Insurance. Interview with Hugh Karp, founder of Nexus Mutual.   
 metadescription: Nexus Mutual - Smart Contract Insurance. Hugh Karp talks about Nexus as a part of the best practice standard for smart contract security.

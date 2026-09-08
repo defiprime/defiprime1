@@ -2,7 +2,7 @@
 git-date: 2021-10-06T09:19:13-07:00
 layout: blog
 title: "OpenSea"
-url: opensea-vs-traditional-art-sellers
+url: /opensea-vs-traditional-art-sellers.html
 h1title: "OpenSea Set to Eclipse Traditional Art Sellers with Over $10 Billion in Sales for 2021"
 pagetitle: "OpenSea Set to Eclipse Traditional Art Sellers with Over $10 Billion in Sales for 2021"
 metadescription: "While the pace of NFT sales on the OpenSea platform shows signs of cooling off after record sales in August and an insider trading scandal in September, OpenSea is on track to record over $10 billion in sales for 2021"

@@ -1,5 +1,5 @@
 ---
-url: /product/selfkey
+url: /product/selfkey.html
 git-date: 2019-05-20T22:02:39-07:00
 product-title: SelfKey
 product-url: https://selfkey.org/

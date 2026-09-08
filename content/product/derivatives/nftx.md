@@ -1,5 +1,5 @@
 ---
-url: /product/nftx
+url: /product/nftx.html
 git-date: 2021-02-18T16:40:29-08:00
 product-title: NFTX
 product-url: https://nftx.org/

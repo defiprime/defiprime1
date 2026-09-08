@@ -1,5 +1,5 @@
 ---
-url: /product/lido
+url: /product/lido.html
 git-date: 2021-06-17T14:08:07-07:00
 product-title: Lido
 product-url: https://stake.lido.fi/?ref=0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1

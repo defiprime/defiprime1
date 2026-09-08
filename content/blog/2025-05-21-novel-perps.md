@@ -2,7 +2,7 @@
 git-date:
 layout: blog
 title: "Novel Perpetual Trading Platforms: Hyperliquid, Extended Exchange, Lighter, and Ostium"
-url: perps-2025
+url: /perps-2025.html
 h1title: "Novel Perpetual Trading Platforms: Hyperliquid, Extended Exchange, Lighter, and Ostium"
 pagetitle: "Novel Perpetual Trading Platforms: Hyperliquid, Extended Exchange, Lighter, and Ostium"
 metadescription: "Compare top DeFi perp platforms: Hyperliquid, Extended Exchange, Lighter, Ostium. Dive into features, fees, leverage, and RWAs. Find the best fit for your crypto trading needs!"
@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/perps/og.png
 intro: "Explore top decentralized perpetual trading platforms: Hyperliquid (high liquidity, zero gas), Extended Exchange (TradFi), Lighter (HFT), and Ostium (RWA trading, high leverage). Compare features, fees, risks, and potential rewards. Discover which platform suits your trading style and goals in this DeFi perps guide."
 author: sawinyh
-tags: ["DeFi Guides"]
+tags: ["Guide"]
 ---
 
 Decentralized perpetual futures (perps) trading platforms have surged in popularity, offering traders the ability to speculate on asset prices with leverage, without expiration dates, and in a non-custodial manner. Hyperliquid has emerged as a dominant player in this space, but new platforms like Extended Exchange, Lighter, and Ostium are carving out their own niches with unique features and value propositions. In this blog post, we’ll dive deep into a comparison of these four platforms, analyzing their features, strengths, weaknesses, and potential for traders. Whether you’re a seasoned DeFi trader or a curious newcomer, this guide will help you navigate these innovative platforms.

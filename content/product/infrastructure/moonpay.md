@@ -1,5 +1,5 @@
 ---
-url: /product/moonpay
+url: /product/moonpay.html
 git-date: 2019-10-18T15:04:06-07:00
 product-title: MoonPay
 product-url: https://www.moonpay.io

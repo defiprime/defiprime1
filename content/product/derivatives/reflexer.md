@@ -1,5 +1,5 @@
 ---
-url: /product/reflexer
+url: /product/reflexer.html
 git-date: 2021-03-25T14:00:30+02:00
 product-title: Reflexer
 product-url: https://reflexer.finance/

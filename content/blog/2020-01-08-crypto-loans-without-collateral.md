@@ -2,7 +2,7 @@
 git-date: 2020-01-08T10:06:04+00:00
 layout: blog
 title: Crypto Loans Without Collateral
-url: crypto-loans-without-collateral
+url: /crypto-loans-without-collateral.html
 h1title: "Unsecured DeFi loans: an overview"
 pagetitle: "Unsecured DeFi loans: an overview. Crypto Loans Without Collateral"
 metadescription: "Ethereum ecosystem is already looking to build new financial services for as many people as possible — and in DeFi, that implies unsecured loans"
@@ -11,7 +11,7 @@ featured-image: /images/blog/loans-without-collateral-og.png
 quote: /images/blog/loans-without-collateral-quote.png
 intro: "Ethereum ecosystem is already looking to build new financial services for as many people as possible — and in DeFi, that implies unsecured loans"
 author: masmej
-tags: ['DeFi Guides', 'Lending', 'NFTs']
+tags: ["Guide", 'Lending', 'NFTs']
 ---
 
 In the past months, there’s been an uptick in interest for #DeFi beyond margin trading, popularized by Compound, Maker Vaults, and InstaDapp. To start 2020 with the same innovation speed, the Ethereum ecosystem is already looking to build new financial services for as many people as possible — and in DeFi, that implies unsecured loans.

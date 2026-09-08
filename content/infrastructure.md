@@ -2,7 +2,7 @@
 git-date: 2019-04-13T21:06:27-07:00
 layout: page
 title: "Infrastructure & Dev Tooling"
-url: infrastructure
+url: /infrastructure.html
 h1title: DeFi Infrastructure & Dev Tooling
 pagetitle: DeFi Network Financial Services Infrastructure
 metadescription: DeFi Network it is protocols, frameworks and underlaying technologies for building decentralized finance ecosystems.

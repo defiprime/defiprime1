@@ -2,7 +2,7 @@
 git-date: 2021-02-18T18:02:56-08:00
 title: Yield Aggregators
 layout: page
-url: yield-aggregators
+url: /yield-aggregators.html
 h1title: Yield Aggregators
 pagetitle: Complete Yield Aggregators List - DeFi Yield Aggregators
 metadescription: Yield Aggregators playing a key role in the yield farming economy by leveraging different DeFi protocols and strategies to maximize user profits. The yield farming process usually requires you to lock up or stake funds, providing variable or fixed ROI.

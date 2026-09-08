@@ -1,5 +1,5 @@
 ---
-url: /product/looksrare
+url: /product/looksrare.html
 git-date: 2022-01-26T12:52:59-08:00
 product-title: LooksRare
 product-url: https://looksrare.org/?ref=4131753

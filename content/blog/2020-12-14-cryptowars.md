@@ -2,7 +2,7 @@
 git-date: 2020-12-14T07:25:02-08:00
 layout: blog
 title:  "CryptoWars"
-url: cryptowars
+url: /cryptowars.html
 h1title: "CryptoWars: Intersection of DeFi and Gaming"
 pagetitle: "CryptoWars - Intersection of DeFi and Gaming, Interview with Co-Founder"
 metadescription: "CryptoWarsOU co-founder told us about gamification of liquidity farming mechanics, and how they built a novel project on the intersection of DeFi and gaming industry"

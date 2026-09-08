@@ -1,5 +1,5 @@
 ---
-url: /product/bloom
+url: /product/bloom.html
 git-date: 2019-05-20T22:02:39-07:00
 product-title: Bloom
 product-url: https://bloom.co/

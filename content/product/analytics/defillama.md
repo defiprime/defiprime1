@@ -1,5 +1,5 @@
 ---
-url: /product/defillama
+url: /product/defillama.html
 git-date: 2021-06-04T15:46:04-07:00
 product-title: DefiLlama
 product-url: https://defillama.com/

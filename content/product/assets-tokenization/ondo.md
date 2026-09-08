@@ -1,5 +1,5 @@
 ---
-url: /product/ondo
+url: /product/ondo.html
 git-date: 2023-10-12T05:02:39-07:00
 product-title: Ondo
 product-url: https://ondo.finance

@@ -1,5 +1,5 @@
 ---
-url: /product/derive
+url: /product/derive.html
 git-date: 2022-08-15T15:02:43-07:00
 product-title: Derive
 product-url: https://derive.xyz/invite/652CJ

@@ -1,5 +1,5 @@
 ---
-url: /product/p2p-validator
+url: /product/p2p-validator.html
 git-date: 2019-07-03T14:03:48-07:00
 product-title: P2P Validator
 product-url: https://p2p.org/

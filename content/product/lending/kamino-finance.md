@@ -1,5 +1,5 @@
 ---
-url: /product/kamino-finance
+url: /product/kamino-finance.html
 git-date: 2023-12-11T18:30:01-08:00
 product-title: Kamino Finance
 product-url: https://app.kamino.finance/

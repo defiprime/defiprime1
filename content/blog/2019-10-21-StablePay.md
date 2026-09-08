@@ -2,7 +2,7 @@
 git-date: 2019-10-21T11:06:05+00:00
 layout: blog
 title:  StablePay
-url: stablepay
+url: /stablepay.html
 h1title: "StablePay: DeFi native payment system"
 pagetitle: "StablePay"
 metadescription: "Doug from the StablePay team talks about building DeFi enabled payment solution for content creators."

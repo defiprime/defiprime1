@@ -2,7 +2,7 @@
 git-date: 2021-02-01T07:24:03-08:00
 layout: blog
 title:  "Alpha Homora"
-url: alpha-homora
+url: /alpha-homora.html
 h1title: "Alpha Homora - Leveraged Yield Farming"
 pagetitle: "Alpha Homora - Leveraged Yield Farming"
 metadescription: "Tascha Punyaneramitdee about leveraged yield farming product and what's coming next at Alpha Finance Lab"

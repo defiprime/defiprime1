@@ -1,5 +1,5 @@
 ---
-url: /product/openeden
+url: /product/openeden.html
 git-date: 2023-10-11T22:02:39-07:00
 product-title: Openeden
 product-url: https://openeden.com

@@ -2,7 +2,7 @@
 git-date:
 layout: blog
 title: "Hyperliquid vs Aster: A Comprehensive Analysis of Two Emerging DeFi Protocols"
-url: hyperliquid-vs-aster
+url: /hyperliquid-vs-aster.html
 h1title: "Hyperliquid vs Aster: A Comprehensive Analysis of Two Emerging DeFi Protocols"
 pagetitle: "Exploring the Hyperliquid Chain Ecosystem: A Deep Dive"
 metadescription: "Explore Hyperliquid vs Aster in DeFi. Compare performance, liquidity aggregation, tokenomics, risks, and growth potential of these emerging protocols"
@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/hypervsaster.png
 intro: "The decentralized finance landscape continues to evolve with innovative protocols pushing the boundaries of what's possible in on-chain trading and financial services. Among the newer entrants making waves are Hyperliquid and Aster, two protocols that, while operating in the broader DeFi space, take distinctly different approaches to solving key challenges in decentralized trading and liquidity provision."
 author: sawinyh
-tags: ["DeFi Guides"]
+tags: ["Analysis"]
 ---
 
 The decentralized finance landscape continues to evolve with innovative protocols pushing the boundaries of what's possible in on-chain trading and financial services. Among the newer entrants making waves are Hyperliquid and Aster, two protocols that, while operating in the broader DeFi space, take distinctly different approaches to solving key challenges in decentralized trading and liquidity provision.

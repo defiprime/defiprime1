@@ -2,7 +2,7 @@
 git-date: 2019-09-15T23:24:03-07:00
 layout: blog
 title:  Gnosis Safe
-url: gnosis-safe
+url: /gnosis-safe.html
 h1title: 'Gnosis Safe: Smart contract-based multisig wallet'
 pagetitle: 'Gnosis Safe - Multisig Ethereum Wallet'
 metadescription: "Tobias from the Gnosis Team told us how to securely store funds on Ethereum, with multiple signatures to authenticate transactions and an extra layer of security, and about a future of DeFi."
@@ -11,8 +11,7 @@ featured-image: /images/blog/gnosis-safe-og.png
 quote: /images/blog/gnosis-safe-quote.png
 intro: "Tobias from the Gnosis Team told us how to securely store funds on Ethereum, with multiple signatures to authenticate transactions and an extra layer of security, and about a future of DeFi."
 author: Defiprime
-tags: ['Interview', 'Asset Management']
-
+tags: ['Interview', "Yield"]
 ---
 Tobias from the Gnosis Team told us how to securely store funds on Ethereum, with multiple signatures to authenticate transactions and an extra layer of security, and about a future of DeFi.
 

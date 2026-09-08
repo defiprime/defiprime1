@@ -1,5 +1,5 @@
 ---
-url: /product/colony
+url: /product/colony.html
 git-date: 2019-09-14T21:36:07-07:00
 product-title: Colony
 product-url: https://colony.io/

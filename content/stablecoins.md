@@ -2,7 +2,7 @@
 git-date: 2019-04-13T21:06:27-07:00
 title: Stablecoins
 layout: page
-url: stablecoins
+url: /stablecoins.html
 h1title: Stablecoins
 pagetitle: Complete Stablecoins List - Decentralized Stablecoins
 metadescription: Stablecoins are cryptocurrencies designed to minimize the volatility of the price of the stablecoin, relative to some 'stable' asset or basket of assets.

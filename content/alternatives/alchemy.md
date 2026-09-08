@@ -2,7 +2,7 @@
 git-date: 2023-08-01T09:13:26-04:00
 layout: alternatives
 title: "alchemy Alternatives"
-url: alchemy-alternatives
+url: /alchemy-alternatives.html
 h1title: Alchemy Alternatives
 pagetitle: Alchemy Alternatives & Competitors - Top Alchemy Competitors and Alternatives
 metadescription: "Here you can find is a list of Alchemy alternatives. Alchemy is a popular RPC node provider and standout player in the blockchain industry, offering a powerful combination of web3 developer products and tools"

@@ -2,7 +2,7 @@
 git-date: 2023-01-10T06:11:09-08:00
 layout: blog
 title: "JPEGz"
-url: jpegz-interview-2023
+url: /jpegz-interview-2023.html
 h1title: "JPEGz - NFT market capitalization Index"
 pagetitle: "JPEGz - NFT market capitalization Index"
 metadescription: "JPEGz is a synthetic index that provides utility for a user to track real-time market capitalization of 10 largest NFT collections"
@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/jpegz-ogp.png
 intro: "Interview with Joe Sticco, co-founder of Cryptex Finance"
 author: Defiprime
-tags: ["Interview", "NFTs", "DAO governed", "Derivatives"]
+tags: ["Interview", "NFTs", "Governance", "DEXs"]
 ---
 
 ### Hello! What's your background, and what are you working on?

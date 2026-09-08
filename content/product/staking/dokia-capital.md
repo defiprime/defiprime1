@@ -1,5 +1,5 @@
 ---
-url: /product/dokia-capital
+url: /product/dokia-capital.html
 git-date: 2019-10-21T09:25:36-07:00
 product-title: Dokia Capital
 product-url: https://staking.dokia.cloud/

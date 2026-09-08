@@ -1,5 +1,5 @@
 ---
-url: /product/dydx
+url: /product/dydx.html
 git-date: 2019-06-14T15:56:54-07:00
 product-title: dYdX
 product-url: https://dydx.trade?ref=LastOrangeU5D

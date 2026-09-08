@@ -1,5 +1,5 @@
 ---
-url: /product/pancakebunny
+url: /product/pancakebunny.html
 git-date: 2021-03-21T11:31:33-07:00
 product-title: PancakeBunny
 product-url: https://pancakebunny.finance/

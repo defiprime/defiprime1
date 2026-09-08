@@ -2,7 +2,7 @@
 git-date: 2021-11-24T12:54:25-08:00
 layout: alternatives
 title: "1inch Alternatives"
-url: 1inch-alternatives
+url: /1inch-alternatives.html
 h1title: 1inch Alternatives
 pagetitle: 1inch Alternatives & Competitors - Top 1inch Competitors and Alternatives
 metadescription: "Here you can find is a list of 1inch alternatives. 1inch is a dex aggregator with a discovery and routing algorithm, which offers asset exchanges."

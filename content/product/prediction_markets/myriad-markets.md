@@ -1,5 +1,5 @@
 ---
-url: /product/myriad-markets
+url: /product/myriad-markets.html
 git-date: 2025-12-26T17:42:27-07:00
 product-title: Myriad Markets
 product-url: https://myriad.markets/markets/btc-above-or-below-90k-at-year-s-end?t=1766771456&rC=7gJL1n

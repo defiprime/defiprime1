@@ -2,7 +2,7 @@
 git-date: 2020-08-03T18:53:35-07:00
 layout: blog
 title:  "Initial DeFi Offering"
-url: initial-defi-offering
+url: /initial-defi-offering.html
 h1title: "Initial DeFi Offering"
 pagetitle: "Initial DeFi Offering or Initial DeX Offering 🤔"
 metadescription: "Circa 2020, traditional ICOs and IEOs have all but died down, while a new kind of crypto-native offering type has arrived: Initial DeFi Offerings"
@@ -11,7 +11,7 @@ featured-image: /images/blog/initial-defi-offering-og.png
 quote: /images/blog/initial-defi-offering-quote.png
 intro: "A new kind of crypto-native offering type has arrived: Initial DeFi Offerings"
 author: Peaster
-tags: ['DeFi Guides', 'For Builders']
+tags: ["Guide", 'For Builders']
 ---
 ICOs, or Initial Coin Offerings, exploded in popularity in 2017. In 2019, it was Initial Exchange Offerings (IEOs), where centralized cryptocurrency exchanges like Binance served as third-party springboards for new token offerings. Circa 2020, traditional ICOs and IEOs have all but died down, while a new kind of crypto-native offering type has arrived: Initial DeFi Offerings.
 

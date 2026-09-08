@@ -2,7 +2,7 @@
 git-date: 2020-09-29T16:09:02-07:00
 layout: blog
 title:  "Chainlink"
-url: chainlink
+url: /chainlink.html
 h1title: "Chainlink"
 pagetitle: "Chainlink - Interview with Adelyn Zhou"
 metadescription: "Adelyn Zhou shared Chainlink Network backstory and future goals, and how Chainlink going to build truly chain-agnostic oracles"

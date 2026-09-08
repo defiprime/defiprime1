@@ -1,5 +1,5 @@
 ---
-url: /product/templum
+url: /product/templum.html
 git-date: 2019-05-20T22:02:39-07:00
 product-title: Templum
 product-url: https://templuminc.com/

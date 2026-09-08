@@ -1,5 +1,5 @@
 ---
-url: /product/polymath-network
+url: /product/polymath-network.html
 git-date: 2019-05-20T22:02:39-07:00
 product-title: Polymath Network
 product-url: https://polymath.network/

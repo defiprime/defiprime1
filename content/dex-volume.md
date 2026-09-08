@@ -6,7 +6,7 @@ h1title: DEX Tracker - Decentralized Exchanges Trading Volume
 pagetitle: DEX Tracker - Decentralized Exchanges Trading Volume
 metadescription: Decentralized Exchanges Trading Volume Tracker for Ethereum-based trading platforms. DEXs ranked by volume along with historic volume and daily market share
 featured-image: /images/og-dexs.png
-url: dex-volume
+url: /dex-volume.html
 author: sawinyh
 date: 2020-06-25
 ---

@@ -1,5 +1,5 @@
 ---
-url: /product/pancakeswap
+url: /product/pancakeswap.html
 git-date: 2021-02-20T12:43:53-08:00
 product-title: PancakeSwap
 product-url: https://pancakeswap.finance/

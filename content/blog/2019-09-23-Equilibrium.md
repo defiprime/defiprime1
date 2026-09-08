@@ -2,7 +2,7 @@
 git-date: 2019-09-23T09:06:05+00:00
 layout: blog
 title:  Equilibrium
-url: equilibrium
+url: /equilibrium.html
 h1title: 'Equilibrium - the framework for decentralized crypto-backed stablecoins and DeFi products'
 pagetitle: 'Equilibrium - framework for generating asset-backed EOSDT stablecoins'
 metadescription: 'Alex Melikhov shared his thoughts on stablecoins and DeFi and told us the backstory of building the first crypto-backed stablecoin based on the EOS blockchain.'

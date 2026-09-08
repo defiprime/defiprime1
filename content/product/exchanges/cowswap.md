@@ -1,5 +1,5 @@
 ---
-url: /product/cowswap
+url: /product/cowswap.html
 git-date: 2022-01-09T12:32:42-08:00
 product-title: CowSwap
 product-url: https://cowswap.exchange/

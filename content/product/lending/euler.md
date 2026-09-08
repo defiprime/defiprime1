@@ -1,5 +1,5 @@
 ---
-url: /product/euler
+url: /product/euler.html
 git-date: 2022-11-26T17:27:22-08:00
 product-title: Euler
 product-url: https://www.euler.finance

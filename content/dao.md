@@ -2,7 +2,7 @@
 git-date: 2019-09-14T21:36:07-07:00
 layout: page
 title: "DAOs & Governance"
-url: dao
+url: /dao.html
 h1title: Decentralized Autonomous Organizations(DAO)
 pagetitle: Top DAO Blockchain Projects - Best Apps, Protocols and Solutions
 metadescription: A DAO, or Decentralized Autonomous Organization, is a concept for a company that is ruled with forced digital rules and directly controlled by shareholders without hierarchical management.

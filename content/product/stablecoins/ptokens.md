@@ -1,5 +1,5 @@
 ---
-url: /product/ptokens
+url: /product/ptokens.html
 git-date: 2020-05-14T13:30:50-07:00
 product-title: pTokens
 product-url: https://ptokens.io/

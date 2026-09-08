@@ -2,7 +2,7 @@
 git-date: 2021-01-11T21:15:56+02:00
 layout: blog
 title:  "Cover Protocol"
-url: cover-protocol
+url: /cover-protocol.html
 h1title: "Cover Protocol - Decentralized Insurance Marketplace"
 pagetitle: "Cover Protocol - Decentralized Insurance Marketplace"
 metadescription: "Alan told us what is Cover Protocol, how peer-to-peer coverage marketplace different, and who determining coverage premiums in decentralized protocol"

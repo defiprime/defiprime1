@@ -1,5 +1,5 @@
 ---
-url: /product/sablier
+url: /product/sablier.html
 git-date: 2019-12-14T10:15:18-08:00
 product-title: Sablier
 product-url: https://www.sablier.finance/

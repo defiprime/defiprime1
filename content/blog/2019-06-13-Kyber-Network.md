@@ -2,7 +2,7 @@
 git-date: 2019-06-13T08:49:07-07:00
 layout: blog
 title:  "Kyber Network"
-url: kyber-network
+url: /kyber-network.html
 h1title: Interview with Loi Luu, CEO and co-founder of Kyber Network
 pagetitle: Interview with Loi Luu, CEO and co-founder of Kyber Network. Kyber Network exchange review.  
 metadescription: Loi Luu talks about long term objectives, and how Kyber Network is going to become the transaction layer for the decentralized economy.
@@ -11,8 +11,7 @@ featured-image: /images/blog/kyber-og.png
 quote: /images/blog/kyber-quote.png
 intro: Loi Luu talks about long term objectives, and how Kyber Network is going to become the transaction layer for the decentralized economy.
 author: Defiprime
-tags: ['Interview', 'DEXs', 'Infrastructure', 'DAO governed']
-
+tags: ['Interview', 'DEXs', 'Infrastructure', "Governance"]
 ---
 Loi Luu talks about long term objectives, and how Kyber Network is going to become the transaction layer for the decentralized economy.
 

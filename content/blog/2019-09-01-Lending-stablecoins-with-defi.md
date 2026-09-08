@@ -2,7 +2,7 @@
 git-date: 2019-09-01T11:36:48-07:00
 layout: blog
 title:  Lending Stablecoins with DeFi
-url: stablecoins-lending-experiment
+url: /stablecoins-lending-experiment.html
 h1title: 'Lending Stablecoins with DeFi'
 pagetitle: 'Lending Stablecoins with DeFi: a year long experiment'
 metadescription: 'The idea is simple I will put $100 worth into various DeFi lending products, and going to track results over the year.'
@@ -11,7 +11,7 @@ featured-image: /images/blog/stablecoinslending-og.png
 quote: /images/blog/stablecoinslending-quote.png
 intro: 'The idea is simple I will put $100 worth into various DeFi lending products, and going to track results over the year'
 author: Defiprime
-tags: ['DeFi Guides']
+tags: ["Guide"]
 ---
 I've been advocating for DeFi for a long enough time and tested by myself most of the products presented at DeFiprime. But now I think it's the right time for skin in the game experiment.  
 

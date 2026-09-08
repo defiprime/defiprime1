@@ -1,5 +1,5 @@
 ---
-url: /product/beefy-finance
+url: /product/beefy-finance.html
 git-date: 2021-04-04T09:05:33-07:00
 product-title: Beefy Finance
 product-url: https://beefy.finance/

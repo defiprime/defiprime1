@@ -1,5 +1,5 @@
 ---
-url: /product/limitless-exchange
+url: /product/limitless-exchange.html
 git-date: 2025-12-26T17:44:35-07:00
 product-title: Limitless Exchange
 product-url: https://limitless.exchange/

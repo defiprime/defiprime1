@@ -1,5 +1,5 @@
 ---
-url: /product/synfutures
+url: /product/synfutures.html
 git-date: 2023-01-08T10:01:08-08:00
 product-title: SynFutures
 product-url: https://oyster.synfutures.com

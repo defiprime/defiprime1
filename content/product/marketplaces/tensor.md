@@ -1,5 +1,5 @@
 ---
-url: /product/tensor
+url: /product/tensor.html
 git-date: 2023-12-12T01:04:59-07:00
 product-title: Tensor
 product-url: https://www.tensor.trade

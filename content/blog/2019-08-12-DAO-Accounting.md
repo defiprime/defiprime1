@@ -2,7 +2,7 @@
 git-date: 2019-08-25T14:05:50-07:00
 layout: blog
 title: DAO Accounting
-url: dao-accounting
+url: /dao-accounting.html
 h1title: DAO Accounting. DeFi Accounting Series
 pagetitle: DAO Accounting - DeFi Accounting Series
 metadescription: DAO Accounting - DeFi Accounting Series. We’ll analyze various DeFi products from a US GAAP accounting perspective and end with a rumination on what they mean for the Ethereum economy as a whole.
@@ -11,7 +11,7 @@ featured-image: /images/blog/dao-og.png
 quote: /images/blog/dao-quote.png
 intro: "We’ll analyze various DeFi products from a US GAAP accounting perspective and end with a rumination on what they mean for the Ethereum economy as a whole."
 author: knab
-tags: ["DeFi Guides", "DeFi Accounting"]
+tags: ["Guide", "DeFi Accounting"]
 ---
 
 <div style="text-align: right">

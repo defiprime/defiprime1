@@ -2,7 +2,7 @@
 git-date: 2019-06-25T10:32:41-07:00
 layout: blog
 title:  "Fortmatic"
-url: fortmatic
+url: /fortmatic.html
 h1title: Interview with Fortmatic co-founder Sean Li
 pagetitle: Interview with Fortmatic co-founder Sean Li. Fortmatic Review.
 metadescription: Fortmatic co-founder, Sean Li talks about building an SDK that enables users across the globe to interact with dApps using just their phone number.
@@ -12,7 +12,6 @@ quote: /images/blog/fortmatic-quote.png
 intro: Fortmatic co-founder, Sean Li talks about building an SDK that enables users across the globe to interact with dApps using just their phone number.
 author: Defiprime
 tags: ['Interview', 'Infrastructure']
-
 ---
 Fortmatic co-founder, Sean Li talks about building an SDK that enables users across the globe to interact with dApps using just their phone number.
 
@@ -32,7 +31,7 @@ I aspire to build a solution that strikes the right balance by adopting a pragma
 
 To date, some well-known integrations with the Fortmatic SDK include dApps like [TokenSets](/tokensets), Cent, Radar Relay, Zerion, and Fulcrum - with Fortmatic enabling over 65% new interactions from users on mobile web browsers!
 
-![](/images/blog/fortmatic2.gif)
+![](images/blog/fortmatic2.gif)
 
 ### What's Fortmatic backstory?
 

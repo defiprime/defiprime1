@@ -1,5 +1,5 @@
 ---
-url: /product/pickle
+url: /product/pickle.html
 git-date: 2021-02-18T18:09:26-08:00
 product-title: Pickle
 product-url: https://pickle.finance/

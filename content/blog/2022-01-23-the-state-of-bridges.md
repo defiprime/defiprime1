@@ -2,7 +2,7 @@
 git-date: 2022-01-23T17:34:17-07:00
 layout: blog
 title: "The State of Bridges"
-url: the-state-of-bridges
+url: /the-state-of-bridges.html
 h1title: "The State of Bridges"
 pagetitle: "The State of Bridges"
 metadescription: "Bridges are in their infancy. In 2016, most people were skeptical about anything other than Bitcoin. In 2018, most people were skeptical about smart contract platforms which were not Ethereum…"
@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/bridges-og.png
 intro: "Bridges are in their infancy. In 2016, most people were skeptical about anything other than Bitcoin. In 2018, most people were skeptical about smart contract platforms which were not Ethereum…"
 author: Ashdown
-tags: ["Cross-chain"]
+tags: ["Infrastructure"]
 ---
 
 On January 7th, Ethereum founder Vitalik Buterin made a bold statement in regards to how the future will be multi-chain but will _not_ be cross-chain.

@@ -1,5 +1,5 @@
 ---
-url: /product/convex-finance
+url: /product/convex-finance.html
 git-date: 2023-03-08T18:10:30-08:00
 product-title: Convex Finance
 product-url: https://www.convexfinance.com

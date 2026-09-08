@@ -1,5 +1,5 @@
 ---
-url: /product/aura-finance
+url: /product/aura-finance.html
 git-date: 2023-03-08T18:10:55-08:00
 product-title: Aura Finance
 product-url: https://aura.finance

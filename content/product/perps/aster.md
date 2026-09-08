@@ -1,5 +1,5 @@
 ---
-url: /product/aster
+url: /product/aster.html
 git-date: 2025-09-24T12:00:00-07:00
 product-title: Aster
 product-url: https://www.asterdex.com/en/referral/f01852

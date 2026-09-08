@@ -1,5 +1,5 @@
 ---
-url: /product/mai-finance
+url: /product/mai-finance.html
 git-date: 2023-03-07T17:54:37-08:00
 product-title: Mai Finance
 product-url: https://www.mai.finance

@@ -2,7 +2,7 @@
 git-date: 2021-08-22T14:30:23-07:00
 layout: blog
 title:  "Step Finance"
-url: step-finance
+url: /step-finance.html
 h1title: "Step Finance - DeFi portfolio manager and aggregator"
 pagetitle: "Step Finance - DeFi portfolio manager and aggregator"
 metadescription: "George told us how Step Finance team building the first Solana-based DeFi portfolio manager"
@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/step-og.png
 intro: "George told us how Step Finance team building the first Solana-based DeFi portfolio manager"
 author: Defiprime
-tags: ['Interview', 'Asset Management', 'VC-founded']
+tags: ['Interview', "Yield", 'VC-founded']
 ---
 George told us how Step Finance team building the first Solana-based DeFi portfolio manager.
 

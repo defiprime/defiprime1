@@ -1,5 +1,5 @@
 ---
-url: /product/alpaca-finance
+url: /product/alpaca-finance.html
 git-date: 2021-08-22T13:50:00-07:00
 product-title: Alpaca Finance
 product-url: https://www.alpacafinance.org/

@@ -1,5 +1,5 @@
 ---
-url: /product/dxdao
+url: /product/dxdao.html
 git-date: 2020-06-08T07:50:35-07:00
 product-title: DXdao
 product-url: https://dxdao.eth.link/#/

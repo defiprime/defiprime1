@@ -2,7 +2,7 @@
 git-date: 2021-11-24T13:05:09-08:00
 layout: alternatives
 title: "Metamask Alternatives"
-url: metamask-alternatives
+url: /metamask-alternatives.html
 h1title: Metamask Alternatives
 pagetitle: Metamask Alternatives & Competitors - Top Metamask Competitors and Alternatives
 metadescription: "Here you can find is a list of Metamask alternatives. Metamask provides a secure and straightforward way to connect to web3-based applications"

@@ -2,7 +2,7 @@
 git-date: 2021-02-28T09:53:47-08:00
 layout: blog
 title:  "B.Protocol"
-url: bprotocol
+url: /bprotocol.html
 h1title: "B.Protocol Explained"
 pagetitle: "B.Protocol Explained - Interview with Founder"
 metadescription: "Yaron told us how B.Protocol eliminating the gas wars and shifting the miner’s profit to the protocol users"

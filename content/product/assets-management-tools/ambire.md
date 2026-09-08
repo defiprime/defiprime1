@@ -1,5 +1,5 @@
 ---
-url: /product/ambire
+url: /product/ambire.html
 git-date: 2023-07-04T21:59:23-04:00
 product-title: Ambire
 product-url: https://www.ambire.com

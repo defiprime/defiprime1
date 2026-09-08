@@ -1,5 +1,5 @@
 ---
-url: /product/airswap
+url: /product/airswap.html
 git-date: 2019-05-20T22:02:39-07:00
 product-title: AirSwap
 product-url: https://www.airswap.io/

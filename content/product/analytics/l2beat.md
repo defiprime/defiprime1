@@ -1,5 +1,5 @@
 ---
-url: /product/l2beat
+url: /product/l2beat.html
 git-date: 2021-09-12T12:17:26-07:00
 product-title: L2beat
 product-url: https://l2beat.com

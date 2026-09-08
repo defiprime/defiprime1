@@ -1,5 +1,5 @@
 ---
-url: /product/frax
+url: /product/frax.html
 git-date: 2021-01-17T10:29:35-08:00
 product-title: Frax
 product-url: https://frax.finance/

@@ -2,7 +2,7 @@
 git-date: 2020-08-24T11:41:56-07:00
 layout: blog
 title:  "Token-Curated Communities"
-url: token-communities
+url: /token-communities.html
 h1title: "Token-Curated Communities"
 pagetitle: "Token-Curated Communities"
 metadescription: "These “communities with tokens” use tokens, of which a minimum amount must be held at all times to maintain membership in these groups, to establish and confer special membership rights"
@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/token-communities-og.png
 intro: "In this post, we’ll break down how these assets work via rebases and walk through top example projects from today’s cryptoeconomy"
 author: Peaster
-tags: ['DeFi Guides']
+tags: ["Guide"]
 ---
 Token-curated registries, or TCRs, incentivize users to stake tokens in order to curate decentralized lists of trusted information, e.g. reliable project websites. TCRs were a larger focus in Ethereum’s ecosystem in years past, though they’ve seemingly slid into the background lately as flashier things like decentralized finance (DeFi) have started commanding the limelight.
 

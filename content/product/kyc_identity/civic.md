@@ -1,5 +1,5 @@
 ---
-url: /product/civic
+url: /product/civic.html
 git-date: 2019-05-20T22:02:39-07:00
 product-title: Civic
 product-url: https://www.civic.com/

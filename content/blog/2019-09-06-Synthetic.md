@@ -2,7 +2,7 @@
 git-date: 2019-09-06T09:30:21-07:00
 layout: blog
 title:  'Synthetic Assets in DeFi: Use Cases & Opportunities'
-url: synthetic-assets-defi
+url: /synthetic-assets-defi.html
 h1title: 'Synthetic Assets in DeFi: Use Cases & Opportunities'
 pagetitle:  'Synthetic Assets in DeFi: Use Cases & Opportunities'
 metadescription: 'Why synthetics are crucial to the maturation of the cryptoasset markets and examples of projects using synthetics today'
@@ -11,8 +11,7 @@ featured-image: /images/blog/synthetics/synthetics-og.png
 quote: /images/blog/synthetics/synthetics-quote.png
 intro: 'Why synthetics are crucial to the maturation of the cryptoasset markets and examples of projects using synthetics today'
 author: berenzon
-tags: ['DeFi Guides', 'Derivatives']
-
+tags: ["Guide", "DEXs"]
 ---
 While the primary use-case for cryptoassets continues to be speculation, I don’t believe this is a bad thing. Speculation was a key driver in the development of traditional financial markets and continues to play an important role in the industry today. Most importantly, speculators provide liquidity, allowing participants to enter or exit the market more easily. This reduces transaction costs and increases access for market participants.
 

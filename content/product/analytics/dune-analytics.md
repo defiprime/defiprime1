@@ -1,5 +1,5 @@
 ---
-url: /product/dune-analytics
+url: /product/dune-analytics.html
 git-date: 2019-05-29T18:32:30-07:00
 product-title: Dune Analytics
 product-url: https://www.duneanalytics.com/

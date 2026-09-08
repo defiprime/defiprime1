@@ -1,5 +1,5 @@
 ---
-url: /product/rocket-pool
+url: /product/rocket-pool.html
 git-date: 2022-12-11T10:25:10-08:00
 product-title: Rocket Pool
 product-url: https://rocketpool.net/

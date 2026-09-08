@@ -5,7 +5,7 @@ title: Media Assets
 h1title: Media Assets
 pagetitle: Defiprime Logo and Media Assets   
 metadescription: Defiprime.com is the digital media and analytical services provider for the DeFi community. Its mandate is to inform, educate, and connect the community as the definitive source of news dedicated to decentralized finance space.
-url: media-assets
+url: /media-assets.html
 featured-image: /images/og.png
 author: sawinyh
 date: 2019-04-01

@@ -2,7 +2,7 @@
 git-date: 2019-09-19T09:06:04+00:00
 layout: blog
 title:  DeFi Smart Contract Audits
-url: defi-smart-contract-audits
+url: /defi-smart-contract-audits.html
 h1title: 'Expert Roundup: DeFi Smart Contract Audits'
 pagetitle: 'Expert Roundup: DeFi Smart Contract Audits'
 metadescription: 'A software audit is a process where an individual or team examines the code that lies behind a piece of software with the goal of uncovering any bugs, security breaches, or violations of programming conventions before the code gets deployed'
@@ -11,7 +11,7 @@ featured-image: /images/blog/defi-smart-contract-audits-og.png
 quote: /images/blog/defi-smart-contract-audits-quote.png
 intro: 'When it comes to “being your own bank,” having the ability to evaluate the security of the tools at your disposal becomes a necessity.'
 author: Defiprime
-tags: ['DeFi Guides', 'For Builders']
+tags: ["Guide", 'For Builders']
 ---
 When it comes to "being your own bank," having the ability to evaluate the security of the tools at your disposal becomes a necessity.
 

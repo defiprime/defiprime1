@@ -1,5 +1,5 @@
 ---
-url: /product/token-terminal
+url: /product/token-terminal.html
 git-date: 2020-08-30T14:43:55-07:00
 product-title: Token Terminal
 product-url: https://www.tokenterminal.com/

@@ -1,5 +1,5 @@
 ---
-url: /product/hegic
+url: /product/hegic.html
 git-date: 2020-04-24T12:27:40-07:00
 product-title: Hegic
 product-url: https://www.hegic.co/?ref=defiprime.eth

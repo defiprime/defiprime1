@@ -1,5 +1,5 @@
 ---
-url: /product/money-on-chain
+url: /product/money-on-chain.html
 git-date: 2020-10-12T14:59:01-07:00
 product-title: Money on Chain
 product-url: https://moneyonchain.com/

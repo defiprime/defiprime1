@@ -2,7 +2,7 @@
 git-date:
 layout: blog
 title: "The Complete Guide to Tokenized Metals and Onchain Markets in 2026"
-url: tokenized-metals-onchain-2026
+url: /tokenized-metals-onchain-2026.html
 h1title: "The Complete Guide to Tokenized Metals and Onchain Markets in 2026"
 pagetitle: "The Complete Guide to Tokenized Metals and Onchain Markets in 2026"
 metadescription: "This guide explores everything you need to know about tokenized metals in 2026: the major players, where to trade, how perpetual futures are revolutionizing speculation, and what the future holds for this rapidly evolving market."
@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/tokenized-og.png
 intro: "How blockchain is transforming precious metals investing with $5+ billion in tokenized gold, silver, and beyond"
 author: sawinyh
-tags: ["DeFi Guides"]
+tags: ["Analysis"]
 ---
 
 The marriage of precious metals and blockchain technology has reached an inflection point in 2026. What began as an experimental concept has evolved into a multi-billion dollar market that fundamentally changes how investors gain exposure to gold, silver, and other metals. The tokenized gold market alone has surpassed \$5.1 billion in market capitalization, while the broader tokenized commodities sector now exceeds \$4.4 billion in total value locked (TVL).

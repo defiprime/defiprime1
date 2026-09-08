@@ -1,5 +1,5 @@
 ---
-url: /product/vesper
+url: /product/vesper.html
 git-date: 2021-03-13T18:13:19-08:00
 product-title: Vesper
 product-url: https://vesper.finance/

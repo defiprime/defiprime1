@@ -1,5 +1,5 @@
 ---
-url: /product/kyberswap
+url: /product/kyberswap.html
 git-date: 2019-05-20T22:02:39-07:00
 product-title: KyberSwap
 product-url: https://kyberswap.com/swap?referral=0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1&fee_bip=10

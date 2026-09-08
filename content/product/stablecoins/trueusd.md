@@ -1,5 +1,5 @@
 ---
-url: /product/trueusd
+url: /product/trueusd.html
 git-date: 2019-05-20T22:02:39-07:00
 product-title: TrueUSD
 product-url: https://www.trusttoken.com/trueusd/

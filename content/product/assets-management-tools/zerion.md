@@ -1,5 +1,5 @@
 ---
-url: /product/zerion
+url: /product/zerion.html
 git-date: 2019-05-20T22:02:39-07:00
 product-title: Zerion
 product-url: https://link.zerion.io/referral?code=ERAMNMS0T

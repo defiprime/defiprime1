@@ -2,7 +2,7 @@
 git-date: 2020-04-13T08:27:31-07:00
 layout: blog
 title:  "Why Decentralized Finance totally needs interest rate swaps"
-url: defi-interest-rate-swaps
+url: /defi-interest-rate-swaps.html
 h1title: "From Zero to Hero on DeFi Rate Swap"
 pagetitle: "Why DeFi totally needs interest rate swaps. Why interest rate swaps are so important?"
 metadescription: "Why interest rate swaps are so important? Interest rate swaps are “an average” expectation of future variable rate and that swap rates can tell you about the “market” view"
@@ -11,7 +11,7 @@ featured-image: /images/blog/swaprate/og.png
 quote: /images/blog/swaprate/quote.png
 intro: "This article explains why interest rate swaps are so important"
 author: Belyakov
-tags: ['DeFi Guides', 'Derivatives']
+tags: ["Analysis", "DEXs"]
 ---
 This article explains why interest rate swaps are so important, especially for Decentralized Finance now.
 

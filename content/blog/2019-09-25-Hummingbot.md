@@ -2,7 +2,7 @@
 git-date: 2019-09-25T09:06:05+00:00
 layout: blog
 title:  Hummingbot
-url: hummingbot
+url: /hummingbot.html
 h1title: 'Hummingbot for Crypto Market Making'
 pagetitle: 'Hummingbot - interview with co-founder Carlo Las Marias'
 metadescription: "Hummingbot - interview with co-founder Carlo Las Marias. Carlo talks about switching career from Wall Street investment banker to open-source market making bot developer."

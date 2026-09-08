@@ -1,5 +1,5 @@
 ---
-url: /product/opyn
+url: /product/opyn.html
 git-date: 2020-03-19T18:52:48-07:00
 product-title: Opyn
 product-url: https://opyn.co/

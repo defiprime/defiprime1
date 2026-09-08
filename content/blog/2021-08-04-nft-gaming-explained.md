@@ -2,7 +2,7 @@
 git-date: 2021-08-04T09:27:29-07:00
 layout: blog
 title:  "NFT Gaming Explained"
-url: nft-gaming-explained
+url: /nft-gaming-explained.html
 h1title: "NFT Gaming Explained"
 pagetitle: "NFT Gaming Explained"
 metadescription: "NFT games may have the potential to become the standard for the gaming market if it sees enough attention and popularity"
@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/nftgaming-og.png
 intro: "NFT games may have the potential to become the standard for the gaming market if it sees enough attention and popularity"
 author: LimePierre
-tags: ['DeFi Guides', 'NFTs']
+tags: ["Guide", 'NFTs']
 ---
 
 Ethereum is a very open platform, with many possibilities and media able to be expanded upon with Ethereum, specifically its blockchain. With those possibilities also comes the opportunity of NFTs, especially the ERC-721 standard, which adds in the opportunity to tokenize anything you can imagine, from pictures, to music, and to what we will be touching upon today, gaming.
@@ -50,7 +50,7 @@ Gods Unchained is a tactical card game, similar to Hearthstone, which gives play
 ![](/images/blog/nft-gaming-explained/image4.webp)
 
 
-### [Zed Run](https://zed.run)
+### [Zed Run](zed.run)
 
 Zed Run is a virtual race horsing game on the blockchain in which you can buy, breed, sell, and race thoroughbred horses to create your legacy, while generating real monetary return.
 

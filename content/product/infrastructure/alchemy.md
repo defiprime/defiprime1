@@ -1,5 +1,5 @@
 ---
-url: /product/alchemy
+url: /product/alchemy.html
 git-date: 2019-06-25T15:58:23-07:00
 product-title: Alchemy
 product-url: https://alchemyapi.io/

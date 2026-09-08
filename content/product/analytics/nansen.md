@@ -1,5 +1,5 @@
 ---
-url: /product/nansen
+url: /product/nansen.html
 git-date: 2020-09-25T18:01:23+03:00
 product-title: Nansen
 product-url: https://app.nansen.ai/ref?K8JXtLESe4C

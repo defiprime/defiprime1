@@ -1,5 +1,5 @@
 ---
-url: /product/plotx
+url: /product/plotx.html
 git-date: 2021-06-25T09:15:07-07:00
 product-title: PlotX
 product-url: https://app.plotx.io

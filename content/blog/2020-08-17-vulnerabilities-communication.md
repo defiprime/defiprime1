@@ -2,7 +2,7 @@
 git-date: 2020-08-24T11:41:56-07:00
 layout: blog
 title:  "Communications 101: Best Practices in Disclosing Software Vulnerabilities and Responding to Cyberattacks"
-url: communications-cyberattacks
+url: /communications-cyberattacks.html
 h1title: "Communications 101: Best Practices in Disclosing Software Vulnerabilities and Responding to Cyberattacks"
 pagetitle: "DeFi Communications 101: Disclosing Software Vulnerabilities and Responding to Cyberattacks"
 metadescription: "How to handle communications when disclosing software vulnerabilities and responding to cyberattacks. Best Practices 2020."

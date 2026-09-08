@@ -1,5 +1,5 @@
 ---
-url: /product/drift-protocol
+url: /product/drift-protocol.html
 git-date: 2023-12-11T09:16:13-07:00
 product-title: Drift Protocol
 product-url: https://app.drift.trade/ref/defiprime

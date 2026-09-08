@@ -1,5 +1,5 @@
 ---
-url: /product/gemini-dollar
+url: /product/gemini-dollar.html
 git-date: 2019-05-20T22:02:39-07:00
 product-title: Gemini Dollar
 product-url: https://gemini.com/dollar/

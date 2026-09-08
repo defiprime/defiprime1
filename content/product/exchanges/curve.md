@@ -1,5 +1,5 @@
 ---
-url: /product/curve
+url: /product/curve.html
 git-date: 2020-03-10T17:09:33-07:00
 product-title: Curve
 product-url: https://www.curve.fi/

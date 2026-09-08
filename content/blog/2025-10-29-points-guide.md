@@ -2,7 +2,7 @@
 git-date:
 layout: blog
 title: "Points-Based Distribution Programs in Web3: A Comprehensive Guide for Crypto Founders"
-url: points-based-token-distribution-programs-web3
+url: /points-based-token-distribution-programs-web3.html
 h1title: "Points-Based Distribution Programs in Web3: A Comprehensive Guide for Crypto Founders"
 pagetitle: "Points-Based Distribution Programs in Web3: A Comprehensive Guide for Crypto Founders"
 metadescription: "Learn how to design effective points-based distribution programs for your Web3 project. Complete guide covering strategy, case studies, and common pitfalls."
@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/points-og.png
 intro: "Planning a token launch? This comprehensive guide reveals how to design points programs that build loyal communities while avoiding costly mistakes."
 author: sawinyh
-tags: ["For Builders", "DeFi Guides"]
+tags: ["For Builders", "Guide"]
 ---
 
 Points-based distribution programs have emerged as one of the most powerful mechanisms for bootstrapping Web3 projects, driving user adoption, and creating anticipation around token launches. These programs reward users for early participation, engagement, and contributions to a protocol before—and sometimes after—its native token goes live. Unlike traditional airdrops that provide one-time snapshots of user activity, points systems create sustained engagement loops that align user behavior with protocol growth objectives.
@@ -177,7 +177,7 @@ Users participated for speculation rather than genuine community, revealing that
 
 ### Ethena: Stablecoins with Real Yield
 
-[Ethena](https://app.ethena.fi/join/027yu) launched in early 2024 with a synthetic dollar (USDe) backed by Ethereum and hedged with perpetual futures. In a crowded stablecoin market, their "Sats" points program needed to differentiate and drive adoption.
+[Ethena](app.ethena.fi/join/027yu) launched in early 2024 with a synthetic dollar (USDe) backed by Ethereum and hedged with perpetual futures. In a crowded stablecoin market, their "Sats" points program needed to differentiate and drive adoption.
 
 Ethena's approach was to reward both holding and productive deployment. Users earned Sats for holding USDe or the interest-bearing sUSDe, but critically, point rates varied based on where users deployed their capital. Providing liquidity on DeFi protocols earned higher rates than simple holding, incentivizing capital deployment into the broader ecosystem.
 

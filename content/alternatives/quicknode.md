@@ -2,7 +2,7 @@
 git-date: 2023-08-01T09:13:26-04:00
 layout: alternatives
 title: "quicknode Alternatives"
-url: quicknode-alternatives
+url: /quicknode-alternatives.html
 h1title: Quicknode Alternatives
 pagetitle: Quicknode Alternatives & Competitors - Top Quicknode Competitors and Alternatives
 metadescription: "Below is a compilation of Quicknode alternatives, providing you with a range of choices beyond Quicknode. Recognized as a prominent RPC node provider in the blockchain sector, Quicknode stands out by providing a robust blend of web3 developer tools and products."

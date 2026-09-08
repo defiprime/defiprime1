@@ -1,5 +1,5 @@
 ---
-url: /product/polymarket
+url: /product/polymarket.html
 git-date: 2020-08-24T11:41:56-07:00
 product-title: Polymarket
 product-url: https://www.poly.market/discover

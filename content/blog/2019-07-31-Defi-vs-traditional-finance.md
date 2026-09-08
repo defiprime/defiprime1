@@ -2,7 +2,7 @@
 git-date: 2019-08-25T14:05:50-07:00
 layout: blog
 title:  DeFi lending returns vs. traditional asset classes
-url: defi-lending-vs-traditional-assets
+url: /defi-lending-vs-traditional-assets.html
 h1title: How lending with DeFi compares with traditional asset classes
 pagetitle: Comparing returns on lending with DeFi to traditional asset classes
 metadescription: Comparing returns on lending with DeFi to traditional asset classes. How lending with DeFi compares with traditional asset classes
@@ -11,7 +11,7 @@ featured-image: /images/blog/defivsfinance-og.png
 quote: /images/blog/defivsfinance-quote.png
 intro: Comparing returns on lending with DeFi to traditional asset classes
 author: goldfarb
-tags: ['DeFi Guides']
+tags: ["Analysis"]
 ---
 Decentralized finance (DeFi) is quickly gaining momentum as an area of application for distributed ledger technologies.
 

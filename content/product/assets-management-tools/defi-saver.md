@@ -1,5 +1,5 @@
 ---
-url: /product/defi-saver
+url: /product/defi-saver.html
 git-date: 2019-07-11T11:07:11-07:00
 product-title: DeFi Saver
 product-url: https://defisaver.com/

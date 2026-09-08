@@ -1,5 +1,5 @@
 ---
-url: /product/aragon
+url: /product/aragon.html
 git-date: 2019-09-14T21:36:07-07:00
 product-title: Aragon
 product-url: https://aragon.org/

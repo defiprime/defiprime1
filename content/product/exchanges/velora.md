@@ -1,5 +1,5 @@
 ---
-url: /product/velora
+url: /product/velora.html
 git-date: 2019-07-02T18:41:34-07:00
 product-title: Velora
 product-url: https://app.velora.xyz/?ref=MHhFYkRiNjI2Qzk1YTI1ZjRlMzA0MzM2YjFhZGNBZDA1MjFhMUJkY2Ex

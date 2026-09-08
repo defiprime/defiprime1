@@ -2,7 +2,7 @@
 git-date: 2021-05-02T09:35:24-07:00
 layout: blog
 title:  "SecretSwap"
-url: secretswap
+url: /secretswap.html
 h1title: "SecretSwap: Cross-Chain Dex With Front-Running Protection"
 pagetitle: "SecretSwap Cross-Chain Dex Dex With Front-Running Protection"
 metadescription: "What are privacy-preserving smart contracts? Find it out in our interview with Secret Network co-founder"

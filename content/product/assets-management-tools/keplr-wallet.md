@@ -1,5 +1,5 @@
 ---
-url: /product/keplr-wallet
+url: /product/keplr-wallet.html
 git-date: 2023-03-07T16:58:38-08:00
 product-title: Keplr Wallet
 product-url: https://www.keplr.app

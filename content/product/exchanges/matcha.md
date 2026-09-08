@@ -1,5 +1,5 @@
 ---
-url: /product/matcha
+url: /product/matcha.html
 git-date: 2020-06-30T10:36:50-07:00
 product-title: Matcha
 product-url: https://matcha.xyz

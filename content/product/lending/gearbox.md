@@ -1,5 +1,5 @@
 ---
-url: /product/gearbox
+url: /product/gearbox.html
 git-date: 2022-11-20T15:28:37-08:00
 product-title: Gearbox
 product-url: https://app.gearbox.fi/?referral=1031

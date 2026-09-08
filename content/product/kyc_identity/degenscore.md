@@ -1,5 +1,5 @@
 ---
-url: /product/degenscore
+url: /product/degenscore.html
 git-date: 2022-11-22T14:19:35-08:00
 product-title: DegenScore
 product-url: https://degenscore.com

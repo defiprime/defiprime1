@@ -2,7 +2,7 @@
 git-date: 2019-04-13T21:06:27-07:00
 layout: page
 title: "Marketplaces"
-url: decentralized_marketplaces
+url: /decentralized_marketplaces.html
 h1title: Marketplaces
 pagetitle: Best Decentralized Marketplaces - Crypto Marketplaces
 metadescription: An online marketplace (or online e-commerce marketplace) is a type of e-commerce site where multiple third parties provide products or services.

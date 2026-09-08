@@ -4,5 +4,5 @@ layout: sitemap-html
 title: sitemap
 h1title: sitemap
 pagetitle: sitemap
-url: sitemap-html
+url: /sitemap-html.html
 ---

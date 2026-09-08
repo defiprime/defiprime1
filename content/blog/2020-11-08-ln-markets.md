@@ -2,7 +2,7 @@
 git-date: 2020-11-08T12:20:26-08:00
 layout: blog
 title:  "LN Markets"
-url: lnmarkets
+url: /lnmarkets.html
 h1title: "LN Markets"
 pagetitle: "LN Markets - Trading Platform Built on Lightning Network"
 metadescription: "Romain talks about decentralization, derivatives trading and building product on Lightning Network"
@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/ln-og.png
 intro: "Romain talks about decentralization, derivatives trading and building product on Lightning Network"
 author: Defiprime
-tags: ['Interview', 'Derivatives']
+tags: ['Interview', "DEXs"]
 ---
 Romain talks about decentralization, derivatives trading and building product on Lightning Network.
 

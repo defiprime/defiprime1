@@ -1,5 +1,5 @@
 ---
-url: /product/zengo
+url: /product/zengo.html
 git-date: 2020-03-09T09:11:52-07:00
 product-title: ZenGo
 product-url: https://zengo.com/

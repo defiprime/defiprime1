@@ -1,5 +1,5 @@
 ---
-url: /product/deepdao
+url: /product/deepdao.html
 git-date: 2020-09-25T18:01:23+03:00
 product-title: DeepDAO
 product-url: https://deepdao.io/#/deepdao/dashboard

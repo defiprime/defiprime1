@@ -1,5 +1,5 @@
 ---
-url: /product/opium-insurance
+url: /product/opium-insurance.html
 git-date: 2021-01-31T17:27:18-08:00
 product-title: Opium Insurance
 product-url: https://opium.finance/

@@ -2,13 +2,13 @@
 git-date: 2019-04-13T21:06:27-07:00
 layout: page
 title: "Prediction Markets"
-url: prediction-markets
+url: /prediction-markets.html
 h1title: Decentralized Prediction Markets
 pagetitle: Best Decentralized Prediction Markets on crypto blockchains
 metadescription: Decentralized Prediction Markets - what it is? DeFi Prediction markets are exchange-traded markets created for the purpose of trading the outcome of events.
 category: products
 aliases:
-  - decentralized_prediction_markets
+  - /decentralized_prediction_markets
 cards: prediction_markets
 filter-by: filter, ecosystem
 ---

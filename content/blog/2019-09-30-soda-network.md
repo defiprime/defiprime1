@@ -2,7 +2,7 @@
 git-date: 2019-09-29T14:05:24-07:00
 layout: blog
 title: SODA
-url: soda-network
+url: /soda-network.html
 h1title: "SODA: BTC-backed Crypto Loans"
 pagetitle: "SODA: BTC-backed Crypto Loans. Interview with the founder."
 metadescription: "Max told us about what it looks like being a managing partner with $2M AUM and what's the goals SODA see in the future."

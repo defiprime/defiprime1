@@ -2,7 +2,7 @@
 git-date: 2019-05-16T11:43:26-07:00
 layout: blog
 title: "DexWallet"
-url: dexwallet
+url: /dexwallet.html
 h1title: Interview with Nicola Di Marco, Founder & Designer from DexWallet
 pagetitle: Interview with Nicola Di Marco, Founder & Designer from DexWallet
 metadescription: Nicola Di Marco Founder & Designer from DexWallet talking about building mobile wallet for the decentralized finance with integrated borrowing, lending, exchange, and native in-wallet Staking for everyone.
@@ -11,7 +11,7 @@ featured-image: /images/blog/dexwallet-og.png
 quote: /images/blog/dexwallet-quote.png
 intro: Nicola Di Marco Founder & Designer from DexWallet talking about building mobile wallet for the decentralized finance with integrated borrowing, lending, exchange, and native in-wallet Staking for everyone.
 author: Defiprime
-tags: ["Interview", "Asset Management"]
+tags: ["Interview", "Yield"]
 ---
 
 Today we talking with Nicola Di Marco from DexWallet about building mobile wallet for the decentralized finance.
@@ -70,7 +70,7 @@ We want to empower all people in the world with a fairer, more inclusive and mor
 
 It’s been awesome to be part of this revolution for the last couple of years and so many things happened in between! I’m sure this is just the beginning. What we are building has a tangible value already today and, contrary to what they say, I believe DeFi is already faster, easier and better than centralized traditional finance. In a few clicks, we can already offer investments with a 10x higher annual interest than your avg bank saving account.
 
-![](/images/blog/saving-account-future-idea.png)
+{{< figure image="/images/blog/saving-account-future-idea.png" position="center" height="300" >}}
 
 Without you going to an office to show your passport or sign a contract, without locking time. This is hard to beat. We’re building better products. We are building fairer products. We are building awareness. The future is bright!
 

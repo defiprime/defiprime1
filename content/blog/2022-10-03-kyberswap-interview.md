@@ -2,7 +2,7 @@
 git-date: 2022-10-02T16:17:34-07:00
 layout: blog
 title: "KyberSwap"
-url: kyberswap-interview-2022
+url: /kyberswap-interview-2022.html
 h1title: "KyberSwap - a multichain DEX aggregator"
 pagetitle: "KyberSwap - a multichain DEX aggregator"
 metadescription: "KyberSwap is a DEX aggregator designed to provide the best token prices for traders across multiple exchanges, and maximizing earnings for liquidity providers using capital efficient AMM, in one decentralized platform"

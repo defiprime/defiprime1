@@ -1,5 +1,5 @@
 ---
-url: /product/marinade-finance
+url: /product/marinade-finance.html
 git-date: 2022-11-23T15:23:36-08:00
 product-title: Marinade Finance
 product-url: https://marinade.finance/app?ref=ektiq1g6

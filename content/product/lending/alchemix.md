@@ -1,5 +1,5 @@
 ---
-url: /product/alchemix
+url: /product/alchemix.html
 git-date: 2021-06-06T08:09:58-07:00
 product-title: Alchemix
 product-url: https://alchemix.fi/

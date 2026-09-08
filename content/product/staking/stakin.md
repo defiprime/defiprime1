@@ -1,5 +1,5 @@
 ---
-url: /product/stakin
+url: /product/stakin.html
 git-date: 2020-04-23T13:38:49-07:00
 product-title: Stakin
 product-url: https://stakin.com/

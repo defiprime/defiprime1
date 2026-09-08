@@ -1,5 +1,5 @@
 ---
-url: /product/blur
+url: /product/blur.html
 git-date: 2023-02-22T06:42:18-08:00
 product-title: Blur
 product-url: https://blur.io

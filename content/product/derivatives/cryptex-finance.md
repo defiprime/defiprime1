@@ -1,5 +1,5 @@
 ---
-url: /product/cryptex-finance
+url: /product/cryptex-finance.html
 git-date: 2021-08-15T10:15:57-07:00
 product-title: Cryptex Finance
 product-url: https://cryptex.finance/

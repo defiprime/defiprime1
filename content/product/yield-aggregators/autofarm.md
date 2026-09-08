@@ -1,5 +1,5 @@
 ---
-url: /product/autofarm
+url: /product/autofarm.html
 git-date: 2021-03-28T09:23:21-07:00
 product-title: Autofarm
 product-url: https://autofarm.network/

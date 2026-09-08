@@ -1,8 +1,8 @@
 ---
 git-date:
-layout: [blog]
+layout: blog
 title: "Tranched Credit Markets in DeFi: Where Things Stand in 2026"
-permalink: tranched-credit-markets
+url: /tranched-credit-markets.html
 h1title: "Tranched Credit Markets in DeFi: Where Things Stand in 2026"
 pagetitle: "Tranched Credit Markets in DeFi: Where Things Stand in 2026"
 metadescription: "An overview of tranched credit markets in DeFi as of March 2026. How tranching works, who's building on EVM chains and Solana, what risks remain, and why institutional interest is accelerating."
@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/tranched-credit-ogp.png
 intro: "Tranched credit markets split lending pool risk into layers so different investors can choose their exposure. As of March 2026, they're becoming core infrastructure on EVM chains and Solana, driven by RWA tokenization, institutional demand, and AI-driven credit scoring."
 author: Defiprime
-tags: ["DeFi", "Lending"]
+tags: ["Analysis", "Lending"]
 ---
 
 If you follow DeFi at all, you've noticed it's gotten more complicated. Not in a bad way, necessarily, but the space is importing structures from traditional finance that would have seemed absurd two years ago. One of the more interesting imports is tranched credit markets, which split lending pool risk into layers so different investors can take on different levels of exposure. As of March 2026, these aren't experimental anymore. They're becoming core infrastructure on EVM chains and Solana.

@@ -1,5 +1,5 @@
 ---
-url: /product/liquity
+url: /product/liquity.html
 git-date: 2021-06-06T10:46:19-07:00
 product-title: Liquity
 product-url: https://www.liquity.org

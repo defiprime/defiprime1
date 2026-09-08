@@ -1,5 +1,5 @@
 ---
-url: /product/blockpass
+url: /product/blockpass.html
 git-date: 2019-05-20T22:02:39-07:00
 product-title: Blockpass
 product-url: https://www.blockpass.org

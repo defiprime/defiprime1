@@ -2,7 +2,7 @@
 git-date: 2021-02-28T17:03:43-08:00
 layout: alternatives
 title: "Deribit Alternatives"
-url: deribit-alternatives
+url: /deribit-alternatives.html
 h1title: Deribit Alternatives
 pagetitle: Deribit Alternatives & Competitors - Top Deribit Competitors and Alternatives
 metadescription: "Here you can find is a list of Deribit alternatives. Deribit is a Panama-based Bitcoin and Ethereum Options Exchange. Deribit appears to be taking extra caution with its upcoming mandatory verification plan and does not allow U.S. residents to trade on its platform"

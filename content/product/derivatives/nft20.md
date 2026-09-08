@@ -1,5 +1,5 @@
 ---
-url: /product/nft20
+url: /product/nft20.html
 git-date: 2021-02-28T11:14:52-08:00
 product-title: NFT20
 product-url: https://nft20.io/

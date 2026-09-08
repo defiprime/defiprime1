@@ -1,5 +1,5 @@
 ---
-url: /product/matrixdock
+url: /product/matrixdock.html
 git-date: 2023-10-11T20:02:39-07:00
 product-title: Matrixdock
 product-url: https://www.matrixdock.com

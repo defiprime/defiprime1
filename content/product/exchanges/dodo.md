@@ -1,5 +1,5 @@
 ---
-url: /product/dodo
+url: /product/dodo.html
 git-date: 2020-10-18T17:21:32-07:00
 product-title: Dodo
 product-url: https://app.dodoex.io/?utm_source=defiprime

@@ -1,5 +1,5 @@
 ---
-url: /product/stake-dao
+url: /product/stake-dao.html
 git-date: 2021-10-05T12:49:48-07:00
 product-title: Stake DAO
 product-url: https://stakedao.org/r/defiprime

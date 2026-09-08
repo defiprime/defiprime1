@@ -2,7 +2,7 @@
 git-date: 2019-08-25T14:05:50-07:00
 layout: blog
 title:  StakeWithUs
-url: stakewithus
+url: /stakewithus.html
 h1title: StakeWithUs staking-as-a-service provider
 pagetitle: StakeWithUs - staking-as-a-service provider. StakeWithUs Review.
 metadescription: Oliver, co-founder of StakeWith.Us talks about infrastructure and scalability built around adoption driven projects, staking-as-a-service providers and the future of DeFi.

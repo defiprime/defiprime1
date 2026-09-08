@@ -1,5 +1,5 @@
 ---
-url: /product/sushiswap
+url: /product/sushiswap.html
 git-date: 2020-09-25T18:01:23+03:00
 product-title: SushiSwap
 product-url: https://sushi.com/

@@ -2,7 +2,7 @@
 git-date: 2022-11-25T19:21:24-08:00
 layout: alternatives
 title: "DEX Screener Alternatives"
-url: dex-screener-alternatives
+url: /dex-screener-alternatives.html
 h1title: DEX Screener Alternatives
 pagetitle: DEX Screener Alternatives & Competitors - Free DEX Screener Alternatives
 metadescription: "Here you can find a list of DEX Screener alternatives (including free ones)."

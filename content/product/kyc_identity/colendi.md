@@ -1,5 +1,5 @@
 ---
-url: /product/colendi
+url: /product/colendi.html
 git-date: 2019-09-02T15:37:03-07:00
 product-title: Colendi
 product-url: https://www.colendi.com/

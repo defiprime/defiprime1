@@ -2,7 +2,7 @@
 git-date: 2019-05-22T19:20:55-07:00
 layout: blog
 title:  "Neutral Dollar"
-url: neutral
+url: /neutral.html
 h1title: Neutral Dollar the first meta-stablecoin  
 pagetitle: Neutral Dollar the first meta-stablecoin   
 metadescription: Nelson from Neutral talks about the first meta-stablecoin, Neutral Dollar (NUSD), and use cases for basketing stablecoins.
@@ -12,7 +12,6 @@ quote: /images/blog/neutral-quote.png
 intro: Nelson from Neutral talks about the first meta-stablecoin, Neutral Dollar (NUSD), and use cases for basketing stablecoins.   
 author: Defiprime
 tags: ['Interview', 'Stablecoins']
-
 ---
 Nelson from Neutral talks about the first meta-stablecoin, Neutral Dollar (NUSD), and use cases for basketing stablecoins.
 

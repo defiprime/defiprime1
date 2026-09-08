@@ -1,5 +1,5 @@
 ---
-url: /product/safe
+url: /product/safe.html
 git-date: 2019-08-25T14:05:50-07:00
 product-title: Safe
 product-url: https://safe.global/

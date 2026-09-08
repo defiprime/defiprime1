@@ -1,5 +1,5 @@
 ---
-url: /product/dhedge
+url: /product/dhedge.html
 git-date: 2021-01-10T09:37:12-08:00
 product-title: Dhedge
 product-url: https://www.dhedge.org/

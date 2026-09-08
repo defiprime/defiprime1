@@ -2,7 +2,7 @@
 git-date: 2019-08-25T14:05:50-07:00
 layout: blog
 title:  MyEtherWallet
-url: myetherwallet
+url: /myetherwallet.html
 h1title: MyEtherWallet and DeFi dApps. Interview with Brian Norton
 pagetitle: MyEtherWallet and DeFi dApps. Interview with Brian Norton
 metadescription: Brian Norton talks about building a new version of MEW and sharing thoughts on the future of DeFi and dApps space at Ethereum.
@@ -11,8 +11,7 @@ featured-image: /images/blog/mew-og.png
 quote: /images/blog/mew-quote.png
 intro: Brian Norton talks about building a new version of MEW and sharing thoughts on the future of DeFi and dApps space at Ethereum.
 author: Defiprime
-tags: ['Interview', 'Asset Management']
-
+tags: ['Interview', "Yield"]
 ---
 Brian Norton talks about building a new version of MEW and sharing his thoughts on the future of DeFi and dApps space at Ethereum.
 

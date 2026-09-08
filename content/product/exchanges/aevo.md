@@ -1,5 +1,5 @@
 ---
-url: /product/aevo
+url: /product/aevo.html
 git-date: 2023-08-27T10:15:57-07:00
 product-title: Aevo
 product-url: https://app.aevo.xyz/r/General-Childish-Egorov

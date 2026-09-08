@@ -1,5 +1,5 @@
 ---
-url: /product/pooltogether
+url: /product/pooltogether.html
 git-date: 2020-01-17T08:59:25-08:00
 product-title: PoolTogether
 product-url: https://pooltogether.com/

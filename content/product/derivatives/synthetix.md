@@ -1,5 +1,5 @@
 ---
-url: /product/synthetix
+url: /product/synthetix.html
 git-date: 2019-05-20T22:02:39-07:00
 product-title: Synthetix
 product-url: https://www.synthetix.io/

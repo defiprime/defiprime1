@@ -2,7 +2,7 @@
 git-date: 2021-07-11T08:23:09-07:00
 layout: blog
 title:  "Partially Collateralized Options with Opyn"
-url: partially-collateralized-options-with-opyn
+url: /partially-collateralized-options-with-opyn.html
 h1title: "Partially Collateralized Options with Opyn"
 pagetitle: "Partially Collateralized Options with Opyn"
 metadescription: "Options are derivatives contracts that give the buyer the right, but not the obligation, to either buy or sell a fixed amount of an underlying asset at a fixed price on or before a certain date, commonly referred to as the expiry date"
@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/options-og.png
 intro: ""
 author: Prospere
-tags: ['DeFi Guides', 'Derivatives']
+tags: ["Guide", "DEXs"]
 ---
 
 ### What are Options?

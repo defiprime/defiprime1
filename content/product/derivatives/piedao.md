@@ -1,5 +1,5 @@
 ---
-url: /product/piedao
+url: /product/piedao.html
 git-date: 2020-06-08T07:50:20-07:00
 product-title: PieDAO
 product-url: https://piedao.org/

@@ -1,5 +1,5 @@
 ---
-url: /product/husd
+url: /product/husd.html
 git-date: 2020-08-24T11:41:56-07:00
 product-title: HUSD
 product-url: https://www.stcoins.com/

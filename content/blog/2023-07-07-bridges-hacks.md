@@ -2,7 +2,7 @@
 git-date: 2023-07-07T09:29:36-04:00
 layout: blog
 title: "A Brief History of Blockchain Bridges Hacks: Lessons Learned and Ongoing Challenges"
-url: history-of-cross-chain-bridge-hacks
+url: /history-of-cross-chain-bridge-hacks.html
 h1title: "Blockchain Bridges Hacks"
 pagetitle: "A Brief History of Blockchain Bridges Hacks: Lessons Learned and Ongoing Challenges"
 metadescription: "In this blog post, we will explore some of the notable DeFi hacks that have occurred, the lessons learned from each incident, and the ongoing challenges faced by the industry."

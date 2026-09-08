@@ -1,5 +1,5 @@
 ---
-url: /product/zapper
+url: /product/zapper.html
 git-date: 2020-05-02T15:35:50-07:00
 product-title: Zapper
 product-url: https://www.zapper.fi/

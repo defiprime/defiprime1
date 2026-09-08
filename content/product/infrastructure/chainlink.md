@@ -1,5 +1,5 @@
 ---
-url: /product/chainlink
+url: /product/chainlink.html
 git-date: 2019-06-03T18:44:25-07:00
 product-title: Chainlink
 product-url: https://defi.chain.link/

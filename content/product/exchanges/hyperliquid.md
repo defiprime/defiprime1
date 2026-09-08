@@ -1,5 +1,5 @@
 ---
-url: /product/hyperliquid
+url: /product/hyperliquid.html
 git-date: 2023-12-01T01:16:14-07:00
 product-title: Hyperliquid
 product-url: https://app.hyperliquid.xyz/join/DEFIPRIME
@@ -14,5 +14,4 @@ featured: true
 twitter: https://twitter.com/HyperliquidX
 github: https://github.com/hyperliquid-dex
 alternative-to: ["ftx"]
-
 ---

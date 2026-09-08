@@ -1,5 +1,5 @@
 ---
-url: /product/osmosis
+url: /product/osmosis.html
 git-date: 2023-03-07T17:37:25-08:00
 product-title: Osmosis
 product-url: https://osmosis.zone

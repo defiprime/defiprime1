@@ -2,7 +2,7 @@
 git-date: 2023-08-01T12:49:48-04:00
 layout: alternatives
 title: "Paraswap Alternatives"
-url: paraswap-alternatives
+url: /paraswap-alternatives.html
 h1title: Paraswap Alternatives
 pagetitle: Paraswap Alternatives & Competitors - Top Paraswap Competitors and Alternatives
 metadescription: "Here you can find is a list of Paraswap alternatives. Paraswap is a decentralized finance (DeFi) platform and protocol that facilitates decentralized token swaps on various DEXs"

@@ -1,5 +1,5 @@
 ---
-url: /product/tally
+url: /product/tally.html
 git-date: 2021-03-13T18:23:28-08:00
 product-title: Tally
 product-url: https://www.tally.xyz/

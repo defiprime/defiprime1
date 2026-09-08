@@ -1,5 +1,5 @@
 ---
-url: /product/hydro
+url: /product/hydro.html
 git-date: 2019-05-20T22:02:39-07:00
 product-title: Hydro
 product-url: https://projecthydro.org/

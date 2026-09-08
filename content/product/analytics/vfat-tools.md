@@ -1,5 +1,5 @@
 ---
-url: /product/vfat-tools
+url: /product/vfat-tools.html
 git-date: 2021-02-27T14:02:28-08:00
 product-title: vfat.tools
 product-url: https://vfat.tools

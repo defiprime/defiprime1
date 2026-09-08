@@ -1,5 +1,5 @@
 ---
-url: /product/ankr
+url: /product/ankr.html
 git-date: 2022-11-28T08:40:15-08:00
 product-title: Ankr
 product-url: https://www.ankr.com

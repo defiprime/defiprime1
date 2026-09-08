@@ -1,5 +1,5 @@
 ---
-url: /product/provable
+url: /product/provable.html
 git-date: 2019-06-05T09:29:55-07:00
 product-title: Provable
 product-url: https://provable.xyz/

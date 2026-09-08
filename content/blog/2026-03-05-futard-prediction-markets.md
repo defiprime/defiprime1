@@ -1,8 +1,8 @@
 ---
 git-date:
-layout: [blog]
+layout: blog
 title: "Futard.io and the Futarchy Bet: Can Prediction Markets Fix Crypto Launches?"
-permalink: futard-prediction-markets
+url: /futard-prediction-markets.html
 h1title: "Futard.io and the Futarchy Bet: Can Prediction Markets Fix Crypto Launches?"
 pagetitle: "Futard.io and the Futarchy Bet: Can Prediction Markets Fix Crypto Launches?"
 metadescription: "An in-depth look at Futard.io's futarchy-governed launchpad on Solana. How prediction markets replace token voting, why treasury escrow matters, and the unresolved risks of thin markets and governance fatigue."
@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/futard-ogp.png
 intro: "Futard.io locks launch funds in escrow and uses prediction markets to govern spending. The treasury model is a clear upgrade. The futarchy governance is an open experiment with real limitations."
 author: Defiprime
-tags: ["DeFi"]
+tags: ["Analysis", "Prediction Markets"]
 ---
 
 Crypto launchpads have a trust problem. The basic pitch, "give us money and we'll build something," has been repeated so many times, with such consistently disappointing results, that most experienced participants now treat every new launch as guilty until proven innocent. Teams vanish. Treasuries drain. Governance devolves into whale-dominated theater.

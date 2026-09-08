@@ -1,5 +1,5 @@
 ---
-url: /product/notional
+url: /product/notional.html
 git-date: 2021-01-20T15:20:31-08:00
 product-title: Notional
 product-url: https://notional.finance/

@@ -1,5 +1,5 @@
 ---
-url: /product/stakewithus
+url: /product/stakewithus.html
 git-date: 2019-07-05T10:33:58-07:00
 product-title: StakeWithUs
 product-url: https://stakewith.us

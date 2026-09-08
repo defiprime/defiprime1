@@ -2,7 +2,7 @@
 git-date: 2020-08-11T17:45:10-07:00
 layout: blog
 title:  "Uniswap Explained"
-url: uniswap-explained
+url: /uniswap-explained.html
 h1title: "Uniswap Explained"
 pagetitle: "Uniswap Explained - In-Depth DeFi Guide"
 metadescription: "In this post, we’ll break down what exactly Uniswap is, how it works, and how to list tokens and participate in liquidity pools using the protocol"
@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/uniswapexplained-og.png
 intro: "In this post, we’ll break down what exactly Uniswap is, how it works, and how to list tokens and participate in liquidity pools using the protocol"
 author: Peaster
-tags: ['DeFi Guides','DEXs', 'Liquidity Pools']
+tags: ["Guide", "DEXs"]
 ---
 Decentralized trading protocol Uniswap is one of Ethereum’s biggest hits right now, and the breakout project has plenty more runway from here. In this post, we’ll break down what exactly Uniswap is, how it works, and how to list tokens and participate in liquidity pools using the protocol.
 

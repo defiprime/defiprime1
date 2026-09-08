@@ -18,3 +18,4 @@ _layouts/events-newsletter.html
 placeholder.md
 draft.md
 public/
+__pycache__/

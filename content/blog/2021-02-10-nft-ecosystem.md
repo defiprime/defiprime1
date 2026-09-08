@@ -2,7 +2,7 @@
 git-date: 2021-02-12T13:57:39-08:00
 layout: blog
 title:  "NFT Ecosystem Explained"
-url: nft-list
+url: /nft-list.html
 h1title: "NFT Ecosystem Explained"
 pagetitle: "NFT Ecosystem Explained - Best NFT Crypto Projects"
 metadescription: "NFT ecosystem is booming right now as more people are stumbling upon and diving deeper into its many novel possibilities"

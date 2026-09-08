@@ -2,7 +2,7 @@
 git-date: 2020-12-18T17:10:02+02:00
 layout: blog
 title:  "Mirror Protocol"
-url: mirror-protocol
+url: /mirror-protocol.html
 h1title: "Mirror Protocol"
 pagetitle: "Mirror Protocol - Synthetic Assets on Chain"
 metadescription: "Do Kwon talks about Terra blockchain and a new Mirror Protocol that lives on Terra and Ethereum and enables access to global financial markets"

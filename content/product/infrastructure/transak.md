@@ -1,5 +1,5 @@
 ---
-url: /product/transak
+url: /product/transak.html
 git-date: 2020-08-30T12:54:58-07:00
 product-title: Transak
 product-url: https://transak.com/

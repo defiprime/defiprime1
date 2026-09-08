@@ -2,7 +2,7 @@
 git-date: 2020-10-13T07:54:33-07:00
 layout: blog
 title:  "The Definitive Guide to DeFi Taxes"
-url: defi-taxes-2020
+url: /defi-taxes-2020.html
 h1title: "The Definitive Guide to DeFi Taxes"
 pagetitle: "The Definitive Guide to DeFi Taxes"
 metadescription: "What are the tax implications of these new DeFi transactions? There are tax implications for trading, lending, borrowing, and earning interest—even if it’s in the form of cryptocurrency. We dive into these further below."
@@ -10,7 +10,7 @@ category: blog
 featured-image: /images/blog/defitaxes-og.png
 intro: "What are the tax implications of these new DeFi transactions?"
 author: Kemmerer
-tags: ['DeFi Guides', 'DeFi Accounting']
+tags: ["Guide", 'DeFi Accounting']
 ---
 It’s no secret that DeFi has seen a massive influx of users in 2020. Individuals seeking to gain financial upside, or _yield_, on their crypto holdings are flocking to decentralized platforms such as Uniswap, Compound, Maker, and many others. In addition to earning yield, decentralized exchange and other use cases are fueling the DeFi demand. With this flurry of new crypto activity comes the question: What are the tax implications of these new DeFi transactions?
 

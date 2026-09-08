@@ -2,7 +2,7 @@
 git-date: 2020-01-16T12:41:31-08:00
 layout: page
 title: "Alternative Savings"
-url: alternative-savings
+url: /alternative-savings.html
 h1title: Alternative Savings Apps
 pagetitle: DeFi Alternative Savings Apps
 metadescription: DeFi Alternative Savings Apps are aiming to improve and simplify onboarding experience for third-party DeFi lending protocols

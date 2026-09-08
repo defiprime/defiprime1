@@ -1,5 +1,5 @@
 ---
-url: /product/solv
+url: /product/solv.html
 git-date: 2025-04-06
 product-title: Solv
 product-url: https://app.solv.finance/points/9U6EEH

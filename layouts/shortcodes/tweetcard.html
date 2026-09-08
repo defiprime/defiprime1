@@ -1,0 +1,30 @@
+{{- $handle := .Get "handle" -}}
+{{- $name := .Get "name" -}}
+{{- $profile := printf "https://x.com/%s" $handle -}}
+{{- $tweet := cond (ne (.Get "link") "") (.Get "link") $profile -}}
+<div class="tweet-embed">
+  <article>
+    <header class="tweet-embed__header">
+      <a class="tweet-embed__avatar" href="{{ $tweet }}" target="_blank" rel="noopener noreferrer" aria-label="{{ $name }} on X">
+        {{- with .Get "avatar" -}}
+        <img src="{{ . }}" alt="{{ $name }}" width="48" height="48" loading="lazy">
+        {{- else -}}
+        <span class="tweet-embed__avatar-fallback">{{ substr $name 0 1 }}</span>
+        {{- end -}}
+      </a>
+      <div class="tweet-embed__author">
+        <a class="tweet-embed__name" href="{{ $tweet }}" target="_blank" rel="noopener noreferrer">
+          <span>{{ $name }}</span>
+        </a>
+        <a class="tweet-embed__handle" href="{{ $profile }}" target="_blank" rel="noopener noreferrer">@{{ $handle }}</a>
+      </div>
+      <a class="tweet-embed__brand" href="{{ $tweet }}" target="_blank" rel="noopener noreferrer" aria-label="View on X">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></g></svg>
+      </a>
+    </header>
+    <div class="tweet-embed__body">{{ .Get "body" | markdownify }}</div>
+    <footer class="tweet-embed__footer">
+      <a href="{{ $tweet }}" target="_blank" rel="noopener noreferrer"><time>{{ .Get "date" }}</time></a>
+    </footer>
+  </article>
+</div>

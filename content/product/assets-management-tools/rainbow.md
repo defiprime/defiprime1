@@ -1,5 +1,5 @@
 ---
-url: /product/rainbow
+url: /product/rainbow.html
 git-date: 2023-12-07
 product-title: Rainbow
 product-url: https://rainbow.me/points?ref=5ZGKAV
