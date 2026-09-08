@@ -1,52 +1,14 @@
 #!/usr/bin/env python3
 import contextlib
-import importlib.util
 import io
 import json
 import os
 import tempfile
 import unittest
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-SCRIPT = os.path.join(HERE, os.pardir, "scripts", "algolia-index.py")
-
-
-def load_module():
-    spec = importlib.util.spec_from_file_location("algolia_index", SCRIPT)
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    return module
-
+from algolia_index_fixtures import ExplodingHttp, load_module, make_record, write_index
 
 algolia_index = load_module()
-
-
-def make_record(object_id, filler_chars=0):
-    return {
-        "objectID": object_id,
-        "title": object_id,
-        "url": object_id,
-        "content": "x" * filler_chars,
-        "html": "<p>" + "x" * filler_chars + "</p>",
-    }
-
-
-def write_index(records):
-    handle = tempfile.NamedTemporaryFile(
-        mode="w", suffix=".json", delete=False, encoding="utf-8"
-    )
-    json.dump(records, handle, ensure_ascii=False)
-    handle.close()
-    return handle.name
-
-
-class ExplodingHttp:
-    def __init__(self):
-        self.calls = []
-
-    def __call__(self, *args, **kwargs):
-        self.calls.append((args, kwargs))
-        raise AssertionError("network call attempted")
 
 
 class EncodeRecordTests(unittest.TestCase):

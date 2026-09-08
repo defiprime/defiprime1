@@ -1,5 +1,6 @@
-{{- $cap := 6000 -}}
+{{- $cap := 15000 -}}
 {{- $excerptCap := 240 -}}
+{{- $snippetCap := 300 -}}
 {{- $skipUrls := slice "/404.html" "/about.html" -}}
 {{- $skipSections := slice "events" -}}
 {{- $skipLayouts := slice "ecosystem" -}}
@@ -17,7 +18,7 @@
     {{- $seen = $seen | append $url -}}
     {{- $productTitle := index .Params "product-title" -}}
     {{- $productDescription := index .Params "product-description" -}}
-    {{- $title := $productTitle | default .Title -}}
+    {{- $title := $productTitle | default .Title | default (index .Params "pagetitle") | default (index .Params "h1title") -}}
     {{- $body := .Plain | htmlUnescape | replaceRE "\\s+" " " | strings.TrimSpace -}}
     {{- $fallback := "" -}}
     {{- with $productDescription -}}
@@ -28,6 +29,7 @@
     {{- end -}}
     {{- $content := substr $body 0 $cap -}}
     {{- $excerpt := index .Params "metadescription" | default $fallback | default (substr $body 0 $excerptCap) -}}
+    {{- $snippet := truncate $snippetCap "" ($content | default $excerpt) -}}
     {{- $type := "page" -}}
     {{- if eq .Section "blog" -}}
       {{- $type = "blog" -}}
@@ -43,7 +45,7 @@
         "url" $url
         "title" $title
         "content" $content
-        "html" (printf "<p>%s</p>" (htmlEscape $content))
+        "html" (printf "<p>%s</p>" $snippet)
         "excerpt" $excerpt
         "type" $type
         "tags" (.Params.tags | default slice) -}}
