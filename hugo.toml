@@ -58,9 +58,14 @@ uglyURLs = false
   [outputFormats.RSS]
     mediaType = "application/rss+xml"
     baseName = "feed"
+  [outputFormats.SearchIndex]
+    mediaType = "application/json"
+    baseName = "searchindex"
+    isPlainText = true
+    notAlternative = true
 
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "SearchIndex"]
   section = ["HTML"]
   taxonomy = ["HTML"]
   term = ["HTML"]

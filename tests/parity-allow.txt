@@ -1,1 +1,2 @@
 # <kind:MISSING|EXTRA|META|LINKS> <path-glob> <field-or-*>  # reason (mandatory)
+EXTRA searchindex.json *  # Hugo search index feed, replaces jekyll-algolia push

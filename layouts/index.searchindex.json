@@ -1,0 +1,71 @@
+{{- $cap := 6000 -}}
+{{- $excerptCap := 240 -}}
+{{- $skipUrls := slice "/404.html" "/about.html" -}}
+{{- $skipSections := slice "events" -}}
+{{- $skipLayouts := slice "ecosystem" -}}
+{{- $records := slice -}}
+{{- $seen := slice -}}
+{{- range site.RegularPages -}}
+  {{- $url := strings.TrimSuffix ".html" .RelPermalink -}}
+  {{- $keep := and
+      (not (in $skipUrls .RelPermalink))
+      (not (in $skipSections .Section))
+      (not (in $skipLayouts .Layout))
+      (not .Sitemap.Disable)
+      (not (in $seen $url)) -}}
+  {{- if $keep -}}
+    {{- $seen = $seen | append $url -}}
+    {{- $productTitle := index .Params "product-title" -}}
+    {{- $productDescription := index .Params "product-description" -}}
+    {{- $title := $productTitle | default .Title -}}
+    {{- $body := .Plain | htmlUnescape | replaceRE "\\s+" " " | strings.TrimSpace -}}
+    {{- $fallback := "" -}}
+    {{- with $productDescription -}}
+      {{- $fallback = . | markdownify | plainify | htmlUnescape | replaceRE "\\s+" " " | strings.TrimSpace -}}
+    {{- end -}}
+    {{- if not $body -}}
+      {{- $body = $fallback -}}
+    {{- end -}}
+    {{- $content := substr $body 0 $cap -}}
+    {{- $excerpt := index .Params "metadescription" | default $fallback | default (substr $body 0 $excerptCap) -}}
+    {{- $type := "page" -}}
+    {{- if eq .Section "blog" -}}
+      {{- $type = "blog" -}}
+    {{- else if eq .Section "product" -}}
+      {{- $type = "product" -}}
+    {{- end -}}
+    {{- $collection := .Section -}}
+    {{- if and (eq .Section "product") .File -}}
+      {{- $collection = path.Base .File.Dir -}}
+    {{- end -}}
+    {{- $record := dict
+        "objectID" $url
+        "url" $url
+        "title" $title
+        "content" $content
+        "html" (printf "<p>%s</p>" (htmlEscape $content))
+        "excerpt" $excerpt
+        "type" $type
+        "tags" (.Params.tags | default slice) -}}
+    {{- with .Params.category -}}
+      {{- $record = merge $record (dict "category" .) -}}
+    {{- end -}}
+    {{- with $collection -}}
+      {{- $record = merge $record (dict "collection" .) -}}
+    {{- end -}}
+    {{- if not .Date.IsZero -}}
+      {{- $record = merge $record (dict "date" .Date.Unix) -}}
+    {{- end -}}
+    {{- with $productTitle -}}
+      {{- $record = merge $record (dict "product-title" .) -}}
+    {{- end -}}
+    {{- with $productDescription -}}
+      {{- $record = merge $record (dict "product-description" .) -}}
+    {{- end -}}
+    {{- with (index .Params "image" | default (index .Params "featured-image") | default (index .Params "og")) -}}
+      {{- $record = merge $record (dict "image" .) -}}
+    {{- end -}}
+    {{- $records = $records | append $record -}}
+  {{- end -}}
+{{- end -}}
+{{- jsonify $records -}}
