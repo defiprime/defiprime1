@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 import unittest
 
 from sync_content_fixtures import load_module
@@ -170,6 +171,50 @@ class FrontMatterConversionTests(unittest.TestCase):
         self.assertNotIn("pagination", out)
         self.assertIn("title: A\n", out)
         self.assertIn("url: /blog/\n", out)
+
+
+class CaseCollisionTests(unittest.TestCase):
+    def test_distinct_paths_report_nothing(self):
+        self.assertEqual(
+            sync_content.case_collisions(["content/a/fluid.md", "content/a/spark.md"]), [])
+
+    def test_case_only_variants_are_grouped(self):
+        self.assertEqual(
+            sync_content.case_collisions(
+                ["content/a/Fluid.md", "content/a/fluid.md", "content/a/spark.md"]),
+            [["content/a/Fluid.md", "content/a/fluid.md"]],
+        )
+
+    def test_a_directory_differing_only_by_case_is_caught(self):
+        self.assertEqual(
+            sync_content.case_collisions(["content/A/x.md", "content/a/x.md"]),
+            [["content/A/x.md", "content/a/x.md"]],
+        )
+
+    def test_scan_raises_when_tracked_paths_collide(self):
+        original = sync_content.tracked_paths
+        sync_content.tracked_paths = lambda dest: ["content/a/Fluid.md", "content/a/fluid.md"]
+        self.addCleanup(setattr, sync_content, "tracked_paths", original)
+        report = sync_content.Report()
+        with self.assertRaises(sync_content.SyncError) as caught:
+            sync_content.scan_case_collisions("/dest", set(), report)
+        self.assertIn("content/a/Fluid.md", str(caught.exception))
+
+    def test_scan_falls_back_to_written_files_outside_a_git_tree(self):
+        original = sync_content.tracked_paths
+        sync_content.tracked_paths = lambda dest: None
+        self.addCleanup(setattr, sync_content, "tracked_paths", original)
+        report = sync_content.Report()
+        with self.assertRaises(sync_content.SyncError):
+            sync_content.scan_case_collisions(
+                "/dest", {"content/a/Fluid.md", "content/a/fluid.md"}, report)
+
+    def test_the_branch_tree_has_no_colliding_tracked_paths(self):
+        root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        paths = sync_content.tracked_paths(root)
+        if paths is None:
+            self.skipTest("not a git tree")
+        self.assertEqual(sync_content.case_collisions(paths), [])
 
 
 if __name__ == "__main__":

@@ -3,6 +3,7 @@ import argparse
 import difflib
 import os
 import shutil
+import subprocess
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -190,6 +191,32 @@ def scan_offenders(dest, managed, report):
         raise SyncError("liquid left in generated content: " + ", ".join(strict))
 
 
+def case_collisions(paths):
+    groups = {}
+    for path in paths:
+        groups.setdefault(path.lower(), set()).add(path)
+    return sorted(sorted(group) for group in groups.values() if len(group) > 1)
+
+
+def tracked_paths(dest):
+    result = subprocess.run(["git", "-C", dest, "ls-files", "-z"],
+                            stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
+    if result.returncode != 0:
+        return None
+    return [path for path in result.stdout.decode("utf-8").split("\0") if path]
+
+
+def scan_case_collisions(dest, managed, report):
+    paths = tracked_paths(dest)
+    if paths is None:
+        paths = sorted(managed)
+        report.notes.append("case collisions: checked written files, %s is not a git tree" % dest)
+    collisions = case_collisions(paths)
+    if collisions:
+        raise SyncError("paths differ only by case: " + "; ".join(
+            " vs ".join(group) for group in collisions))
+
+
 def sync(source, dest, golden=None):
     report = Report()
     managed = set()
@@ -202,6 +229,7 @@ def sync(source, dest, golden=None):
     sync_assets(source, dest, report)
     sync_authors(dest, report, managed)
     scan_offenders(dest, managed, report)
+    scan_case_collisions(dest, managed, report)
     if report.missing_golden:
         raise SyncError("urls absent from the golden build: " + ", ".join(
             "%s -> %s" % pair for pair in report.missing_golden))
