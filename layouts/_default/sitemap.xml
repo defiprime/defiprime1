@@ -10,7 +10,7 @@
   {{- end }}
   {{- with site.GetPage "/blog" }}
   {{- $listURL := partial "page-url.html" . }}
-  {{- range .Paginator.Pagers }}
+  {{- range (.Paginate (partial "blog-pages.html" .)).Pagers }}
   {{- if gt .PageNumber 1 }}
   <url>
     <loc>{{ printf "%s%d/" $listURL .PageNumber }}</loc>
