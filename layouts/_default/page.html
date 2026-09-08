@@ -303,7 +303,7 @@
       </script>
     </div>
   </div>
-  {{ partialCached "also.html" . }}
+  {{ partialCached "also.html" "alternative-savings" }}
   {{ partialCached "footer.html" . }}
 
   {{ if and .Params.cards (gt (len $page_cards) 0) }}

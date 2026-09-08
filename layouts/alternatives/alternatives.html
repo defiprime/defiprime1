@@ -55,23 +55,26 @@
 </head>
 
 {{ $alternativeTo := index .Params "alternative-to" }}
-{{ $all_projects := where site.RegularPages "Section" "alternative-savings" }}
-{{ $all_projects = $all_projects | append (where site.RegularPages "Section" "analytics") }}
-{{ $all_projects = $all_projects | append (where site.RegularPages "Section" "assets-management-tools") }}
-{{ $all_projects = $all_projects | append (where site.RegularPages "Section" "assets-tokenization") }}
-{{ $all_projects = $all_projects | append (where site.RegularPages "Section" "dao") }}
-{{ $all_projects = $all_projects | append (where site.RegularPages "Section" "derivatives") }}
-{{ $all_projects = $all_projects | append (where site.RegularPages "Section" "exchanges") }}
-{{ $all_projects = $all_projects | append (where site.RegularPages "Section" "infrastructure") }}
-{{ $all_projects = $all_projects | append (where site.RegularPages "Section" "insurance") }}
-{{ $all_projects = $all_projects | append (where site.RegularPages "Section" "kyc_identity") }}
-{{ $all_projects = $all_projects | append (where site.RegularPages "Section" "lending") }}
-{{ $all_projects = $all_projects | append (where site.RegularPages "Section" "perps") }}
-{{ $all_projects = $all_projects | append (where site.RegularPages "Section" "marketplaces") }}
-{{ $all_projects = $all_projects | append (where site.RegularPages "Section" "payments") }}
-{{ $all_projects = $all_projects | append (where site.RegularPages "Section" "prediction_markets") }}
-{{ $all_projects = $all_projects | append (where site.RegularPages "Section" "stablecoins") }}
-{{ $page_cards := where $all_projects "Params.alternative-to" $alternativeTo }}
+{{ $collections := slice "alternative-savings" "analytics" "assets-management-tools" "assets-tokenization" "dao" "derivatives" "exchanges" "infrastructure" "insurance" "kyc_identity" "lending" "perps" "marketplaces" "payments" "prediction_markets" "stablecoins" }}
+{{ $all_projects := slice }}
+{{ range $collections }}
+  {{ with site.GetPage (printf "/product/%s" .) }}
+    {{ $all_projects = $all_projects | append (sort .Pages "File.Path") }}
+  {{ end }}
+{{ end }}
+{{ $page_cards := slice }}
+{{ range $all_projects }}
+  {{ $card_alternative := index .Params "alternative-to" }}
+  {{ if $alternativeTo }}
+    {{ if reflect.IsSlice $card_alternative }}
+      {{ if in $card_alternative $alternativeTo }}{{ $page_cards = $page_cards | append . }}{{ end }}
+    {{ else if eq $card_alternative $alternativeTo }}
+      {{ $page_cards = $page_cards | append . }}
+    {{ end }}
+  {{ else if not $card_alternative }}
+    {{ $page_cards = $page_cards | append . }}
+  {{ end }}
+{{ end }}
 
 <body class="product-page">
 
@@ -115,9 +118,8 @@
         {{ if index .Params "filter-by" }}
           {{ $items_filters = split (index .Params "filter-by") ", " }}
         {{ end }}
-        {{ $featured := where $page_cards "Params.featured" true }}
-        {{ $non_featured := where $page_cards "Params.featured" "ne" true }}
-        {{ $sorted_cards := $featured | append $non_featured }}
+        {{ $flagged := sort (where $page_cards "Params.featured" "!=" nil) "Params.featured" }}
+        {{ $sorted_cards := $flagged | append (where $page_cards "Params.featured" nil) }}
 
         <section id='assets_cards'>
           {{ range $sorted_cards }}
@@ -296,8 +298,12 @@
       </script>
     </div>
   </div>
-  {{ partial "also.html" . }}
+  {{ partial "also.html" "" }}
   {{ partialCached "footer.html" . }}
+
+  {{ if $page_cards }}
+  {{ partial "product-itemlist-schema.html" (dict "page" . "cards" $page_cards) }}
+  {{ end }}
 
   <script>
   document.addEventListener('DOMContentLoaded', function() {

@@ -1,4 +1,4 @@
-{{- if or (ne .Section "") (eq .Params.category "products") -}}
+{{- if and (eq .Kind "page") (or (ne .Section "") (eq .Params.category "products")) -}}
 {{- $raw := strings.TrimPrefix "\n" .RawContent -}}
 {{- index (split $raw "\n\n") 0 | markdownify -}}
 {{- end -}}
