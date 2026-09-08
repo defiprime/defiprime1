@@ -1,0 +1,120 @@
+baseURL = "https://defiprime.com"
+title = "DefiPrime.com"
+locale = "en-us"
+
+# Build future-dated content (needed for events with future dates)
+buildFuture = true
+
+uglyURLs = true
+
+disableKinds = ["taxonomy"]
+
+[frontmatter]
+  date = ["date", ":filename", "git-date"]
+  lastmod = ["lastmod", "date"]
+  publishDate = ["publishDate", "date", "git-date"]
+
+# Match Jekyll's description
+[params]
+  description = "All things DeFi - trustless and transparent financial products built on top of the blockchain"
+  logoImageUrl = "favicon.png"
+  # Algolia settings (matching _config.yml)
+  [params.algolia]
+    applicationId = "18BDKQYV27"
+    indexName = "defiprime2"
+    searchOnlyApiKey = "adb162fc8601b6a98051de76dd941a6b"
+    maxRecordSize = 20000
+
+# Tags taxonomy — Jekyll used /t/{tag}.html
+[taxonomies]
+  tag = "tags"
+
+# Permalink configuration to match Jekyll URLs exactly
+[permalinks]
+  [permalinks.term]
+    tags = "/t/:slug"
+  [permalinks.page]
+    blog = "/:slug"
+
+[pagination]
+  pagerSize = 16
+  path = ""
+  disableAliases = true
+
+[[cascade]]
+  [cascade.build]
+    render = "never"
+  [cascade.target]
+    path = "{/product,/product/**}"
+    kind = "section"
+
+# Build settings
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions.typographer]
+      apostrophe = "\u2019"
+      ellipsis = "\u2026"
+      emDash = "\u2014"
+      enDash = "\u2013"
+      leftAngleQuote = "\u00AB"
+      leftDoubleQuote = "\u201C"
+      leftSingleQuote = "\u2018"
+      rightAngleQuote = "\u00BB"
+      rightDoubleQuote = "\u201D"
+      rightSingleQuote = "\u2019"
+    [markup.goldmark.renderer]
+      unsafe = true  # Allow raw HTML in markdown (Jekyll allows this by default)
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 2
+
+[mediaTypes]
+  [mediaTypes."text/newssitemap"]
+    suffixes = ["xml"]
+
+# RSS Feed matching Jekyll (5 posts, at /feed.xml)
+[outputFormats]
+  [outputFormats.RSS]
+    mediaType = "application/rss+xml"
+    baseName = "feed"
+  [outputFormats.SearchIndex]
+    mediaType = "application/json"
+    baseName = "searchindex"
+    isPlainText = true
+    notAlternative = true
+  [outputFormats.LLMS]
+    mediaType = "text/plain"
+    baseName = "llms"
+    isPlainText = true
+    notAlternative = true
+  [outputFormats.NewsSitemap]
+    mediaType = "text/newssitemap"
+    baseName = "news-sitemap"
+    isPlainText = true
+    notAlternative = true
+
+[outputs]
+  home = ["HTML", "RSS", "SearchIndex", "LLMS", "NewsSitemap"]
+  section = ["HTML"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+
+# Sass/SCSS processing
+[module]
+  [module.hugoVersion]
+    extended = true
+
+# Security settings for inline shortcodes
+[security]
+  [security.funcs]
+    getenv = ["^HUGO_"]
+
+# Sitemap
+[sitemap]
+  filename = "sitemap.xml"
+
+[minify]
+  disableXML = true
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepWhitespace = true

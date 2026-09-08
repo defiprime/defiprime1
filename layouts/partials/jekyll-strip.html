@@ -1,0 +1,4 @@
+{{- $s := . | default "" -}}
+{{- $s = replaceRE `(?s)<script.*?</script>|<!--.*?-->|<style.*?</style>` "" $s -}}
+{{- $s = replaceRE `(?s)<.*?>` "" $s -}}
+{{- replaceRE `\r?\n` "" $s | safeHTML -}}

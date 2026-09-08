@@ -1,0 +1,16 @@
+---
+lastmod: 2019-04-01
+git-date: 2019-07-03T13:24:38-07:00
+layout: page
+title: "Payments"
+url: /payments.html
+h1title: Payments
+pagetitle: DeFi Payments - Best apps, protocols and solutions from DeFi ecosystem
+metadescription: DeFi payments apps, protocols and solutions focused on creating an open finance ecosystem that caters to the needs of institutions, as well as the underbanked and unbanked populations.
+category: products
+filter-by: filter, ecosystem
+og: /images/og-payments.png
+cards: payments
+---
+
+DeFi payments apps, protocols and solutions focused on creating an open finance ecosystem that caters to the needs of institutions, as well as the underbanked and unbanked populations.

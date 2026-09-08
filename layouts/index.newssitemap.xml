@@ -1,0 +1,20 @@
+{{- $cutoff := now.Add (time.Duration "hour" -48) -}}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+{{- range first 1000 (sort (where site.RegularPages "Section" "blog") "Date" "desc") -}}
+{{- if gt .Date $cutoff }}
+  <url>
+    <loc>{{ partial "page-url.html" . }}</loc>
+    <news:news>
+      <news:publication>
+        <news:name>DefiPrime</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>{{ .Date.Format "2006-01-02T15:04:05-07:00" }}</news:publication_date>
+      <news:title>{{ .Params.h1title | default .Title | transform.XMLEscape }}</news:title>
+    </news:news>
+  </url>
+{{- end -}}
+{{- end }}
+</urlset>

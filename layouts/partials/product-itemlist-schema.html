@@ -1,0 +1,28 @@
+{{- $page := .page -}}
+{{- $cards := .cards -}}
+{{- $siteUrl := strings.TrimSuffix "/" $page.Site.BaseURL -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": {{ $page.Params.h1title | default $page.Params.pagetitle | default $page.Title | jsonify | safeJS }},
+  "description": {{ partial "jekyll-strip.html" $page.Params.metadescription | jsonify | safeJS }},
+  "url": "{{ partial "page-url.html" $page }}",
+  "numberOfItems": {{ len $cards }},
+  "itemListElement": [
+    {{ range $i, $card := $cards }}{{ $img := $card.Params.image }}{{ if not (strings.Contains $img "://") }}{{ $img = printf "%s%s" $siteUrl $img }}{{ end }}{{ if $i }},
+    {{ end }}{
+      "@type": "ListItem",
+      "position": {{ add $i 1 }},
+      "item": {
+        "@type": "Organization",
+        "name": {{ index $card.Params "product-title" | jsonify | safeJS }},
+        "description": {{ partial "jekyll-strip.html" (replaceRE `&amp;` "&" (index $card.Params "product-description" | markdownify)) | jsonify | safeJS }},
+        "url": "{{ partial "page-url.html" $card }}",
+        "image": {{ $img | jsonify | safeJS }}{{ with index $card.Params "product-url" }},
+        "sameAs": {{ . | jsonify | safeJS }}{{ end }}
+      }
+    }{{ end }}
+  ]
+}
+</script>

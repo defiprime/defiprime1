@@ -1,0 +1,7 @@
+{{- $s := partial "jekyll-strip.html" (index . 0) -}}
+{{- $n := index . 1 -}}
+{{- if gt (strings.RuneCount $s) $n -}}
+{{- printf "%s..." (substr $s 0 (sub $n 3)) | safeHTML -}}
+{{- else -}}
+{{- $s | safeHTML -}}
+{{- end -}}

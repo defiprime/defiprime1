@@ -1,0 +1,17 @@
+<section class="read_next">
+  <div class="container">
+    <div class='reading_next_links'>
+      {{- $exclude := . -}}
+      {{- $listings := where site.RegularPages "Params.category" "products" -}}
+      {{- range sort $listings "Params.cards" }}
+        {{- $cards := .Params.cards }}
+        {{- if ne $cards $exclude }}
+      <a href="{{ partial "page-url.html" . }}">
+        {{ replaceRE `[-_]` " " (strings.FirstUpper (lower $cards)) }}
+        <span class="articles_count">{{ len (site.GetPage (printf "product/%s" $cards)).RegularPages }}</span>
+      </a>
+        {{- end }}
+      {{- end }}
+    </div>
+  </div>
+</section>

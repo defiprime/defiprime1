@@ -1,0 +1,256 @@
+{{ $siteUrl := strings.TrimSuffix "/" .Site.BaseURL }}<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>{{ index .Params "product-title" }} - Crypto Project Reviews. What is {{ index .Params "product-title" }}?</title>
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://google-analytics.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://googletagmanager.com">
+  <link rel="preconnect" href="https://telegram.org">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://graphcomment.com" crossorigin>
+  {{ if .Params.analytics }}
+  <link rel="preconnect" href="https://explore.duneanalytics.com" crossorigin>
+  {{ end }}
+  <link rel="preload" href="/images/vector.png" as="image" >
+  <link rel="preload" href="/images/logo.svg" as="image" >
+  <link rel="preload" href="/images/bg-fon.png" as="image" >
+  <link rel="preload" href="{{ $siteUrl }}{{ .Params.image }}" as="image" >
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    {{ printf `content="What is %s? %s"` (index .Params "product-title") (partial "jekyll-truncate.html" (slice (index .Params "product-description") 160)) | safeHTMLAttr }}>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="preload" as="style">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relURL }}">
+  <link rel="canonical" href="{{ partial "page-url.html" . }}">
+  <meta property="og:title" content="{{ index .Params "product-title" }} - Reviews. What is {{ index .Params "product-title" }}?" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ partial "page-url.html" . }}" />
+  <meta property="og:description"
+    {{ printf `content="%s"` (partial "jekyll-truncate.html" (slice (index .Params "product-description") 300)) | safeHTMLAttr }} />
+  <meta property="og:image" content="{{ $siteUrl }}{{ .Params.image }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@defiprime">
+  <meta name="twitter:creator" content="@defiprime">
+  <meta name="twitter:title" content="{{ index .Params "product-title" }} - Reviews. What is {{ index .Params "product-title" }}?">
+  <meta name="twitter:description"
+    {{ printf `content="%s"` (partial "jekyll-truncate.html" (slice (index .Params "product-description") 300)) | safeHTMLAttr }}>
+  <meta name="twitter:image" content="{{ $siteUrl }}{{ .Params.image }}">
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+    integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+    crossorigin="anonymous"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138327045-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-138327045-1', { 'content_group2': 'product' });
+  </script>
+
+</head>
+
+<body class="post product">
+  {{ partialCached "header.html" . }}
+  <!-- Main -->
+  <div id="main">
+    <div class="inner">
+      <article class="article  article--post content typeset">
+        <a href="/{{ .Params.colpermalink }}" class="arrow-back">
+          {{ partial "icons/arrow-back.svg" . }}
+          {{ .Params.coltitle }}
+        </a>
+
+        <h1>{{ index .Params "product-title" }}</h1>
+        <div class='product-tags-icons'>
+          <a href="{{ index .Params "product-url" }}" target="_blank" rel="noopener"
+            class="button button-transparent product-url-showcase">
+            <span>website</span>
+          </a>
+          {{ if .Params.twitter }}
+          <a href='{{ .Params.twitter }}' target="_blank" rel="noopener">{{ partial "icons/twitter.svg" . }}</a>
+          {{ end }}
+          {{ if .Params.github }}
+          <a href='{{ .Params.github }}' target="_blank" rel="noopener">{{ partial "icons/github.svg" . }}</a>
+          {{ end }}
+        </div>
+        <div class='product-description-table'>
+          <a href="{{ index .Params "product-url" }}"><img class="lazyload" data-src="{{ .Params.image }}" width="100%" alt=""></a>
+          <div class='product-highlights'>
+            <h2>What is {{ index .Params "product-title" }}?</h2>
+            {{ $desc := index .Params "product-description" | markdownify }}
+            {{ $linkParts := split $desc "<a" }}
+            {{ $linkCount := len $linkParts }}
+            <div {{ if eq $linkCount 1 }} style='flex: 0' {{ end }}> {{ index .Params "product-description" | markdownify }}
+              {{ if .Params.ticker }}
+                <p>
+                {{ index .Params "product-title" }} token: ${{ .Params.ticker }}.
+                </p>
+                {{ end }}
+                {{ if .Params.contract }}
+                  <p>
+                  {{ index .Params "product-title" }} contract address: <strong> {{ .Params.contract }} </strong>
+                  </p>
+                  {{ end }}
+            </div>
+          </div>
+        </div>
+        {{ if .Params.analytics }}
+        <h3 class="text-center">{{ index .Params "product-title" }} Usage Statistics</h3>
+        <object id="obj" data="{{ .Params.analytics }}" style="width:100%;    height: 564px;" type="text/html">
+          {{ index .Params "product-title" }} Stats, Daily Users
+        </object>
+
+        {{ end }}
+
+        <h3 class='give-thoughts-header'>What do you think of {{ index .Params "product-title" }} product?</h3>
+        {{ if index .Params "long-description" }}
+          <p>
+          {{ index .Params "long-description" }}
+          </p>
+          {{ end }}
+
+        <div id="graphcomment"></div>
+        <script type="text/javascript">
+          /* - - - CONFIGURATION VARIABLES - - - */
+
+          // make sure the id is yours
+          window.gc_params = {
+            graphcomment_id: 'defiprime_prod',
+
+            // if your website has a fixed header, indicate it's height in pixels
+            fixed_header_height: 0,
+          };
+
+          /* - - - DON'T EDIT BELOW THIS LINE - - - */
+
+          (function () {
+            var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+            gc.src = 'https://graphcomment.com/js/integration.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+          })();
+        </script>
+      </article>
+      {{ $altTo := index .Params "alternative-to" }}
+      {{ $altFirst := "" }}
+      {{ if $altTo }}{{ if reflect.IsSlice $altTo }}{{ $altFirst = index $altTo 0 }}{{ else }}{{ $altFirst = $altTo }}{{ end }}{{ end }}
+      <h3 class='related-products'>{{ if $altTo }}<a href="/{{ $altFirst }}-alternatives">{{ index .Params "product-title" }} alternatives</a>{{ else }}{{ index .Params "product-title" }} alternatives{{ end }} in <a
+          href="/{{ .Params.colpermalink }}">{{ .Params.coltitle }}</a>:</h3>
+      <section class="tiles">
+        {{ $posts := .CurrentSection.Pages | shuffle | first 3 }}
+
+        {{ range $posts }}
+        <article>
+          <a href="{{ partial "page-url.html" .RelPermalink }}" class="post-link">
+            <div class="post-top">
+              <span class="image">
+                <img class="lazyload" data-src="{{ .Params.image }}" alt="" />
+              </span>
+            </div>
+            <div class="descr2">
+              <div class="content">
+                <h3>{{ index .Params "product-title" }}</h3>
+              </div>
+            </div>
+          </a>
+        </article>
+        {{ end }}
+      </section>
+
+    </div>
+  </div>
+  {{ partialCached "footer.html" . }}
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+          "item": {
+          "@type": "WebSite",
+          "@id": "{{ $siteUrl }}",
+          "name": "DeFi"
+      }
+  },{
+      "@type": "ListItem",
+      "position": 2,
+          "item": {
+          "@type": "WebPage",
+          "@id": "{{ $siteUrl }}/{{ .Params.colpermalink }}",
+          "name": "{{ .Params.coltitle }}"
+      }
+  },{
+      "@type": "ListItem",
+      "position": 3,
+          "item": {
+          "@type": "WebPage",
+          "@id": "{{ partial "page-url.html" . }}",
+          "name": "{{ index .Params "product-title" }}"
+      }
+
+  }]
+  }
+</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": {{ index .Params "product-title" | jsonify | safeJS }},
+    "description": {{ partial "jekyll-truncate.html" (slice (replaceRE `&amp;` "&" (index .Params "product-description" | markdownify)) 500) | jsonify | safeJS }},
+    "url": "{{ partial "page-url.html" . }}",
+    "image": {
+      "@type": "ImageObject",
+      "url": "{{ $siteUrl }}{{ .Params.image }}",
+      "contentUrl": "{{ $siteUrl }}{{ .Params.image }}"
+    }{{ with index .Params "product-url" }},
+    "sameAs": {{ . | jsonify | safeJS }}{{ end }}{{ with .Params.filter }},
+    "knowsAbout": {{ . | jsonify | safeJS }}{{ end }}{{ if or .Params.ticker .Params.contract }},
+    "identifier": [{{ if .Params.ticker }}
+      {
+        "@type": "PropertyValue",
+        "name": "ticker",
+        "value": {{ .Params.ticker | jsonify | safeJS }}
+      }{{ end }}{{ if and .Params.ticker .Params.contract }},{{ end }}{{ if .Params.contract }}
+      {
+        "@type": "PropertyValue",
+        "name": "contract",
+        "value": {{ .Params.contract | jsonify | safeJS }}
+      }{{ end }}
+    ]{{ end }}
+  }
+  </script>
+
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "DefiPrime",
+    "url": "{{ $siteUrl }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ $siteUrl }}/images/logo-60w.png",
+      "width": 60,
+      "height": 60
+    },
+    "description": "{{ .Site.Params.description }}",
+    "sameAs": [
+      "https://twitter.com/defiprime"
+    ]
+  }
+  </script>
+
+</body>
+
+</html>

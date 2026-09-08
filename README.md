@@ -30,18 +30,18 @@ Full editorial positioning is on the [about page](https://defiprime.com/about).
 
 ## How the repo is organized
 
-Jekyll site (Ruby). Content lives under `collections/`:
+Hugo site (Go). Content lives under `content/`:
 
-| Collection | What's in it |
+| Directory | What's in it |
 |---|---|
-| `_posts` | Blog posts and research articles |
-| `_stablecoins`, `_lending`, `_exchanges`, `_perps`, `_derivatives`, `_payments` | Curated DeFi product listings by category |
-| `_prediction-markets`, `_yield-aggregators`, `_staking`, `_dao`, `_insurance` | More product categories |
-| `_analytics`, `_infrastructure`, `_assets-tokenization`, `_kyc-identity`, `_marketplaces`, `_alternative-savings`, `_assets-management-tools` | Remaining product sections |
-| `_events` | DeFi events calendar |
-| `_alternatives` | "Alternatives to X" comparison pages |
+| `content/blog` | Blog posts and research articles |
+| `content/product/stablecoins`, `content/product/lending`, `content/product/exchanges`, `content/product/perps`, `content/product/derivatives`, `content/product/payments` | Curated DeFi product listings by category |
+| `content/product/prediction_markets`, `content/product/yield-aggregators`, `content/product/staking`, `content/product/dao`, `content/product/insurance` | More product categories |
+| `content/product/analytics`, `content/product/infrastructure`, `content/product/assets-tokenization`, `content/product/kyc_identity`, `content/product/marketplaces`, `content/product/alternative-savings`, `content/product/assets-management-tools` | Remaining product sections |
+| `content/events` | DeFi events calendar |
+| `content/alternatives` | "Alternatives to X" comparison pages |
 
-Page layouts, includes, and assets are in the standard Jekyll locations (`_layouts/`, `_includes/`, `assets/`, `images/`). Chain landing pages (e.g. `ethereum.md`, `solana.md`, `base.md`) live at the repo root.
+Templates are in `layouts/`, static assets in `assets/` and `static/`. Chain landing pages (e.g. `ethereum.md`, `solana.md`, `base.md`) live at the root of `content/`.
 
 ## Product listing
 
@@ -65,11 +65,56 @@ The only ad format we run is native articles — interviews, use cases, technica
 ## Local development
 
 ```bash
-bundle install
-bundle exec jekyll serve
+hugo server
 ```
 
-Site builds to `_site/` and serves on <http://127.0.0.1:4000>. Netlify handles production deploys (see `netlify.toml`).
+Serves the site with live reload. Build to `public/` with:
+
+```bash
+hugo --minify
+```
+
+Netlify handles production deploys (see `netlify.toml`).
+
+### Stylesheet
+
+`assets/scss/` is not wired into the Hugo pipeline: the pages link the checked-in `static/assets/css/main.css`. After editing the SCSS, regenerate it with:
+
+```bash
+sass --style=compressed --no-source-map assets/scss/main.scss static/assets/css/main.css
+```
+
+The checked-in file came out of Jekyll's libsass, so the first run rewrites it in dart-sass formatting (the same rules, different whitespace and selector order).
+
+### Testing
+
+```bash
+bash tests/run-tests.sh
+```
+
+Runs the parity gate against the golden Jekyll build. Override the golden build's path with the `JEKYLL_GOLDEN` environment variable.
+
+```bash
+cd tests && python3 -m unittest discover -p 'test_*.py'
+```
+
+Runs the unit suite.
+
+### Content sync
+
+Until cutover, content is authored in the Jekyll checkout and pulled into this repo:
+
+```bash
+python3 scripts/sync-content.py --source ../defiprime
+```
+
+### Search index
+
+```bash
+python3 scripts/algolia-index.py --dry-run
+```
+
+Preview what would be pushed to Algolia. Drop `--dry-run` to push for real; the script reads the admin key from `_algolia_api_key`.
 
 ## Contributing
 

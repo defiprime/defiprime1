@@ -1,0 +1,138 @@
+{{ $siteUrl := strings.TrimSuffix "/" .Site.BaseURL }}<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{ .Params.pagetitle }}</title>
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://google-analytics.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://googletagmanager.com">
+  <link rel="preconnect" href="https://telegram.org">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preload" href="/images/vector.png" as="image" media="(min-width: 601px)">
+  <link rel="preload" href="/images/logo.svg" as="image" media="(min-width: 601px)">
+  <link rel="preload" href="/images/bg-fon.png" as="image" media="(min-width: 601px)">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{{ partial "jekyll-truncate.html" (slice .Params.metadescription 160) }}">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="preload" as="style">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relURL }}">
+  <link rel="canonical" href="{{ partial "page-url.html" . }}">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css"  as="style"  media="print" onload="this.media='all'" >
+  <meta property="og:title" content="{{ .Params.h1title }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{ partial "page-url.html" . }}" />
+  <meta property="og:description"
+    content="{{ $excerpt := partial "jekyll-excerpt.html" . }}{{ if $excerpt }}{{ partial "jekyll-truncate.html" (slice $excerpt 300) }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+  <meta property="og:image" content="{{ $siteUrl }}{{ index .Params "featured-image" }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  {{ with .Date }}<meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05-07:00" }}" />{{ end }}
+  {{ with index .Params "git-date" }}<meta property="article:modified_time" content="{{ (time.AsTime .).UTC.Format "2006-01-02T15:04:05-07:00" }}" />{{ end }}
+  {{ with index hugo.Data.authors .Params.author }}{{ with .name }}<meta property="article:author" content="{{ . }}" />{{ end }}{{ end }}
+  {{ range .Params.tags }}<meta property="article:tag" content="{{ . }}" />
+  {{ end }}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@defiprime">
+  <meta name="twitter:creator" content="@defiprime">
+  <meta name="twitter:title" content="{{ .Params.h1title }}">
+  <meta name="twitter:description" content="{{ partial "jekyll-truncate.html" (slice .Params.metadescription 300) }}">
+  <meta name="twitter:image" content="{{ $siteUrl }}{{ index .Params "featured-image" }}">
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+    integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+    crossorigin="anonymous"></script>
+  {{ partialCached "image-zoom.html" . }}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138327045-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-138327045-1', { 'content_group1': 'blog' });
+
+  </script>
+  {{ $author := index hugo.Data.authors .Params.author }}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ partial "page-url.html" . }}"
+    },
+    "headline": "{{ if .Params.h1title }}{{ .Params.h1title | htmlEscape }}{{ else if .Title }}{{ .Title | htmlEscape }}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}",
+    "description": "{{ if .Params.metadescription }}{{ partial "jekyll-truncate.html" (slice .Params.metadescription 300) }}{{ else if .Params.excerpt }}{{ partial "jekyll-truncate.html" (slice .Params.excerpt 300) }}{{ else }}{{ .Site.Params.description }}{{ end }}",
+    "datePublished": {{ if .Date }}{{ .Date.UTC.Format "2006-01-02T15:04:05-07:00" | jsonify | safeJS }}{{ else }}{{ now.UTC.Format "2006-01-02T15:04:05-07:00" | jsonify | safeJS }}{{ end }},
+    "dateModified": {{ with index .Params "git-date" }}{{ (time.AsTime .).UTC.Format "2006-01-02T15:04:05-07:00" | jsonify | safeJS }}{{ else }}{{ .Date.UTC.Format "2006-01-02T15:04:05-07:00" | jsonify | safeJS }}{{ end }},
+    "author": {
+      "@type": "Person",
+      "name": "{{ if $author }}{{ $author.name }}{{ end }}"{{ if and $author $author.url }},
+      "url": "{{ $author.url }}"{{ end }}
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "DefiPrime",
+      "url": "{{ .Site.BaseURL }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ .Site.BaseURL }}images/logo-60w.png",
+        "width": 60,
+        "height": 60
+      }
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "{{ if index .Params "featured-image" }}{{ $siteUrl }}{{ index .Params "featured-image" }}{{ else }}{{ .Site.BaseURL }}images/logo-60w.png{{ end }}",
+      "height": 630,
+      "width": 1200
+    },
+    "articleSection": "{{ .Params.category }}",
+    "keywords": "{{ if .Params.tags }}{{ delimit .Params.tags ", " }}{{ end }}",
+    "url": "{{ partial "page-url.html" . }}"
+  }
+ </script>
+</head>
+  <body class="post">
+    {{ partialCached "header.html" . }}
+    {{ if index .Params "featured-image" }}
+      <div class="feature" style="background-image: url({{ index .Params "featured-image" }})">
+        <div class="container  typeset"></div>
+      </div>
+    {{ end }}
+    <h1>{{ .Params.h1title }}</h1>
+    <main class="main">
+      {{ partial "sidepanel.html" . }}
+      <article class="article  article--post  content  typeset">
+        <div class="container container-toc">
+          <div class="author-block">
+            {{ $author := index hugo.Data.authors .Params.author }}
+            {{ $authorSlug := $author.slug | default .Params.author | lower }}
+            <span class="name"><a href="/authors/{{ $authorSlug }}/">{{ $author.name }}</a></span>
+            <span class="date">on {{ .Date.Format "02 Jan 2006" }}</span>
+          </div>
+          {{ .Content }}
+        </div>
+      </article>
+      <div class="post-tags">
+        {{ range .Params.tags }}
+          {{ if and . (ne (strings.TrimSpace .) "") }}
+          <a href="{{ with site.GetPage (printf "/tags/%s" (urlize .)) }}{{ partial "page-url.html" .RelPermalink }}{{ end }}" rel="tag" class="post-tag-pill">{{ . }}</a>
+          {{ end }}
+        {{ end }}
+      </div>
+    </main>
+    {{ partialCached "folowus.html" . }}
+    {{ partial "author_bio.html" . }}
+    <div class="latest-section">
+      <h3 class="section-heading">More from the <span>blog</span></h3>
+      <section class="latest-grid">
+        {{ partial "related-posts.html" (dict "page" . "tag" (index .Params.tags 0)) }}
+      </section>
+    </div>
+        {{ partialCached "footer.html" . }}
+  </body>
+</html>

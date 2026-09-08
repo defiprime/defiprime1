@@ -1,0 +1,150 @@
+{{ define "main" }}
+
+<aside id='defi-search-fullpage'></aside>
+
+<header class='main-page-header'>
+	<h1>DeFi and Open Finance</h1>
+	<span>
+	Decentralized Finance (DeFi) is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries.
+	</span>
+	<div id='defi-search'>
+		<div id="search-searchbar"></div>
+		<div id='search-powered-by'></div>
+		<div id='search-container'>
+    	<div class="post-list" id="search-hits">
+    	</div>
+    	<div class="post-list" id="search-hits-defiprime">
+    	</div>
+    </div>
+    </div>
+</header>
+
+<section>
+  <h2 id="defi_projects" class='recently_added_annotation'>DeFi projects</h2>
+  <div class="tiles floating grid">
+    {{/* Get all category listing pages that have cards param, sorted by title */}}
+    {{ $listingPages := where site.RegularPages "Params.cards" "!=" nil }}
+    {{ range sort $listingPages "Title" }}
+      {{ $cards := .Params.cards }}
+      {{ $sectionPath := printf "product/%s" $cards }}
+      {{ $section := site.GetPage $sectionPath }}
+      {{ $count := 0 }}
+      {{ with $section }}
+        {{ $count = len .Pages }}
+      {{ end }}
+      {{ $styleNum := add (mod (index (shuffle (seq 8)) 0) 8) 1 }}
+      <article class="style{{ $styleNum }}">
+        <a href="{{ partial "page-url.html" .RelPermalink }}">
+          <h2>{{ .Title }}</h2>
+          <span>{{ $count }}</span>
+        </a>
+      </article>
+    {{ end }}
+  </div>
+</section>
+
+<section>
+  <h2 class='recently_added_annotation'>Recently added</h2>
+  <div class="tiles grid" id='recently_added_section'>
+    {{/* Get all product pages sorted by git date (most recent first) */}}
+    {{ $allProducts := where site.RegularPages "Type" "product" }}
+    {{ $sorted := sort $allProducts "Params.git-date" "desc" }}
+    {{ range first 6 $sorted }}
+      <article>
+        <a class='recent_blog_link' href="{{ partial "page-url.html" .RelPermalink }}">
+          <img class="lazyload" data-src="{{ .Params.image }}">
+          <h2>{{ index .Params "product-title" }}</h2>
+        </a>
+      </article>
+    {{ end }}
+  </div>
+</section>
+
+<section>
+  <div class='section-heading-row'>
+    <h2 class='section-heading'>Latest from DeFi <span>blog</span></h2>
+    <a href='/blog/' class='view-all'>View all posts &rarr;</a>
+  </div>
+
+  {{ $posts := partial "blog-pages.html" . }}
+  {{ with index $posts 0 }}
+  <a href="{{ partial "page-url.html" .RelPermalink }}" class='featured-post'>
+    <div class='featured-post-content'>
+      <div class='featured-tag'>Latest Post</div>
+      <h2>{{ .Params.h1title }}</h2>
+      <p class='intro'>{{ partial "jekyll-strip.html" .Params.intro }}</p>
+      <span class='read-more'>Read article &rarr;</span>
+    </div>
+    <div class='featured-post-visual'>
+      <div class='decorative-bars'>
+        <span style="left:15%; top:10%; height:60%; background:rgba(143,104,252,0.2)"></span>
+        <span style="left:25%; top:25%; height:50%; background:rgba(5,210,221,0.25)"></span>
+        <span style="left:38%; top:5%; height:70%; background:rgba(126,202,246,0.2)"></span>
+        <span style="left:50%; top:30%; height:55%; background:rgba(255,150,28,0.15)"></span>
+        <span style="left:62%; top:15%; height:45%; background:rgba(174,133,202,0.18)"></span>
+        <span style="left:72%; top:20%; height:60%; background:rgba(5,210,221,0.2)"></span>
+        <span style="left:85%; top:8%; height:50%; background:rgba(143,104,252,0.15)"></span>
+      </div>
+      {{ with .Params.tags }}
+      <div class='topic-label'>{{ index . 0 }}</div>
+      {{ end }}
+    </div>
+  </a>
+  {{ end }}
+
+  <div class='blog-grid'>
+    {{ range $i, $post := first 6 (after 1 $posts) }}
+    {{ $color := partial "link-color.html" (add $i 1) }}
+      <article class='blog-card'>
+        <a href="{{ partial "page-url.html" $post.RelPermalink }}">
+          <div class='blog-card-inner border-{{ $color }}'>
+            {{ with $post.Params.tags }}
+            <span class='tag-pill tag-{{ $color }}'>{{ index . 0 }}</span>
+            {{ end }}
+            <h3>{{ $post.Params.h1title }}</h3>
+            <p>{{ partial "jekyll-truncate.html" (slice $post.Params.intro 120) }}</p>
+          </div>
+        </a>
+      </article>
+    {{ end }}
+  </div>
+</section>
+
+<section>
+  <h2 class='recently_added_annotation'>Upcoming DeFi events</h2>
+  <div class='upcoming_events_cards'>
+  {{ $eventsSection := site.GetPage "/events" }}
+  {{ if $eventsSection }}
+    {{ $events := sort $eventsSection.Pages "Date" }}
+    {{ $upcoming := slice }}
+    {{ range $events }}
+      {{ if ge .Date.Unix now.Unix }}
+        {{ $upcoming = $upcoming | append . }}
+      {{ end }}
+    {{ end }}
+    {{ range first 3 $upcoming }}
+      <article>
+        <a href='{{ index .Params "product-url" }}'>
+          <img class="lazyload" data-src='{{ .Params.image }}'>
+          <div class='event_card_info_part'>
+            <h4>{{ index .Params "product-title" }}</h4>
+            <div class='event_card_details'>
+              <date>
+                {{ .Date.Format "02 Jan 2006" }}
+              </date>
+              <span> {{ partial "jekyll-truncate.html" (slice .Params.location 31) }} </span>
+            </div>
+          </div>
+        </a>
+      </article>
+    {{ end }}
+  {{ end }}
+  </div>
+</section>
+
+<section>
+</section>
+
+{{ partial "algolia.html" . }}
+
+{{ end }}

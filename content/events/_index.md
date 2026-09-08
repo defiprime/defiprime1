@@ -1,0 +1,14 @@
+---
+title: "DeFi Meetups and Conferences"
+metadescription: List of the best DeFi events. DeFi Calendar with the best meetups, conferences, and hackathons around the world.
+h1title: DeFi Meetups and Conferences
+pagetitle: DeFi Events Calendar. DeFi meetups, conferences and hackathons
+featured-image: /images/og-events.png
+url: /events.html
+cascade:
+  - target:
+      kind: page
+    build:
+      render: never
+      list: local
+---

@@ -1,0 +1,8 @@
+# <kind:MISSING|EXTRA|META|LINKS> <path-glob> <field-or-*>  # reason (mandatory)
+META events.html og:url  # golden emits site.url here, a Jekyll template bug; Hugo emits the page canonical
+EXTRA searchindex.json *  # Hugo search index feed, replaces jekyll-algolia push
+META dolomite.html title  # the source title carries a double space that Hugo's HTML minifier collapses; an unminified build is byte-identical to golden
+META fabrx.html title  # the source title carries a double space that Hugo's HTML minifier collapses; an unminified build is byte-identical to golden
+META bandprotocol.html og:description  # master's post body separates paragraphs with CRLF only, so Jekyll's "\n\n" excerpt separator never matches and page.excerpt becomes the whole post
+LINKS index.html *  # seven products share git-date 2026-03-04T07:46:00-08:00 and Jekyll ranks the tie with Ruby's unstable Array#sort, so the sixth Recently added card (golden /product/spark, Hugo /product/fluid) is not derivable
+LINKS product/*.html *  # master picks three related products with Liquid sample:3, random per build; every finding here is at most three /product/ hrefs on each side

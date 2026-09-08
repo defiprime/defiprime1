@@ -1,0 +1,110 @@
+{{- $siteUrl := strings.TrimSuffix "/" .Site.BaseURL -}}
+{{- $paginator := .Paginate (partial "blog-pages.html" .) -}}
+{{- $listURL := partial "page-url.html" . -}}
+{{- $listPath := partial "page-url.html" .RelPermalink -}}
+{{- $pageURL := $listURL -}}
+{{- $title := .Title -}}
+{{- if gt $paginator.PageNumber 1 -}}
+  {{- $pageURL = printf "%s%d/" $listURL $paginator.PageNumber -}}
+  {{- $title = printf "DeFi blog - page %d" $paginator.PageNumber -}}
+{{- end -}}
+{{- $excerpt := partial "jekyll-excerpt.html" . -}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ $title }}</title>
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://google-analytics.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://googletagmanager.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preload" href="/images/vector.png" as="image" media="(min-width: 601px)">
+    <link rel="preload" href="/images/logo.svg" as="image" media="(min-width: 601px)">
+    <link rel="preload" href="/images/bg-fon.png" as="image" media="(min-width: 601px)">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ if gt $paginator.PageNumber 1 }}Page {{ $paginator.PageNumber }} of the DefiPrime DeFi blog. {{ end }}{{ partial "jekyll-truncate.html" (slice .Params.metadescription 150) }}">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="{{ $pageURL }}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"  rel="preload" as="style">
+    <meta property="og:title" content="{{ $title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ $pageURL }}" />
+    <meta property="og:description" content="{{ if $excerpt }}{{ partial "jekyll-truncate.html" (slice $excerpt 160) }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    <meta property="og:image" content="{{ $siteUrl }}/images/og-blog.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@defiprime">
+    <meta name="twitter:creator" content="@defiprime">
+    <meta name="twitter:title" content="{{ $title }}">
+    <meta name="twitter:description" content="{{ partial "jekyll-truncate.html" (slice .Params.metadescription 160) }}">
+    <meta name="twitter:image" content="{{ $siteUrl }}/images/og-blog.png">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138327045-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-138327045-1', {'content_group1': 'blog'});
+
+    </script>
+</head>
+
+<body class="blog-page">
+    {{ partialCached "header.html" . }}
+    <div id="main">
+      <div class="inner">
+<header class="blog-page-header">
+	<h1>DeFi <span>Blog</span></h1>
+	<p>Interviews with DeFi projects, analytics, and important news about decentralized finance.</p>
+</header>
+
+<section class="blog-articles-grid">
+	{{ range $i, $post := $paginator.Pages }}
+    {{ $color := partial "link-color.html" (add $i 1) }}
+		<article class="blog-card">
+			<a href="{{ partial "page-url.html" $post.RelPermalink }}">
+				<div class="blog-card-inner border-{{ $color }}">
+					{{ with $post.Params.tags }}
+					<div class="blog-card-meta">
+						{{ range first 2 . }}
+						<span class="tag-pill tag-{{ $color }}">{{ . }}</span>
+						{{ end }}
+						<span class="blog-card-date">{{ $post.Date.Format "02 Jan 2006" }}</span>
+					</div>
+					{{ end }}
+					<h3>{{ $post.Params.h1title }}</h3>
+					<p>{{ partial "jekyll-truncatewords.html" (slice $post.Params.intro 30) }}</p>
+					<div class="blog-card-author">
+						{{ $author := index hugo.Data.authors $post.Params.author }}
+						{{ with $author }}
+							{{ with .image }}
+						<img class="lazyload" data-src="{{ . }}">
+							{{ end }}
+							{{ with .name }}
+						<span>{{ . }}</span>
+							{{ end }}
+						{{ end }}
+					</div>
+				</div>
+			</a>
+		</article>
+	{{ end }}
+</section>
+
+<section class="pagination">
+	{{ if $paginator.HasNext }}
+		<a class="pagination-btn" href="{{ printf "%s%d/" $listPath $paginator.Next.PageNumber }}">Older Posts</a>
+	{{ end }}
+	{{ if $paginator.HasPrev }}
+		<a class="pagination-btn" href="{{ if eq $paginator.Prev.PageNumber 1 }}{{ $listPath }}{{ else }}{{ printf "%s%d/" $listPath $paginator.Prev.PageNumber }}{{ end }}">Newer Posts</a>
+	{{ end }}
+</section>
+      </div>
+    </div>
+    {{ partialCached "footer.html" . }}
+</body>
+</html>

@@ -1,0 +1,14 @@
+{{- $slug := . -}}
+{{- $keys := slice -}}
+{{- range $key, $data := hugo.Data.authors -}}
+  {{- if eq (lower (default $key $data.slug)) $slug -}}
+    {{- $keys = $keys | append $key -}}
+  {{- end -}}
+{{- end -}}
+{{- $posts := slice -}}
+{{- range partial "blog-pages.html" . -}}
+  {{- if in $keys .Params.author -}}
+    {{- $posts = $posts | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- return $posts -}}
