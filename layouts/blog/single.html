@@ -31,7 +31,7 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   {{ with .Date }}<meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05-07:00" }}" />{{ end }}
-  {{ with index .Params "git-date" }}<meta property="article:modified_time" content="{{ (time.AsTime .).Format "2006-01-02T15:04:05-07:00" }}" />{{ end }}
+  {{ with index .Params "git-date" }}<meta property="article:modified_time" content="{{ (time.AsTime .).UTC.Format "2006-01-02T15:04:05-07:00" }}" />{{ end }}
   {{ with index hugo.Data.authors .Params.author }}{{ with .name }}<meta property="article:author" content="{{ . }}" />{{ end }}{{ end }}
   {{ range .Params.tags }}<meta property="article:tag" content="{{ . }}" />
   {{ end }}
@@ -66,8 +66,8 @@
     },
     "headline": "{{ if .Params.h1title }}{{ .Params.h1title | htmlEscape }}{{ else if .Title }}{{ .Title | htmlEscape }}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}",
     "description": "{{ if .Params.metadescription }}{{ partial "jekyll-truncate.html" (slice .Params.metadescription 300) }}{{ else if .Params.excerpt }}{{ partial "jekyll-truncate.html" (slice .Params.excerpt 300) }}{{ else }}{{ .Site.Params.description }}{{ end }}",
-    "datePublished": "{{ if .Date }}{{ .Date.Format "2006-01-02T15:04:05-07:00" }}{{ else }}{{ now.Format "2006-01-02T15:04:05-07:00" }}{{ end }}",
-    "dateModified": "{{ with index .Params "git-date" }}{{ (time.AsTime .).Format "2006-01-02T15:04:05-07:00" }}{{ else }}{{ .Date.Format "2006-01-02T15:04:05-07:00" }}{{ end }}",
+    "datePublished": {{ if .Date }}{{ .Date.UTC.Format "2006-01-02T15:04:05-07:00" | jsonify | safeJS }}{{ else }}{{ now.UTC.Format "2006-01-02T15:04:05-07:00" | jsonify | safeJS }}{{ end }},
+    "dateModified": {{ with index .Params "git-date" }}{{ (time.AsTime .).UTC.Format "2006-01-02T15:04:05-07:00" | jsonify | safeJS }}{{ else }}{{ .Date.UTC.Format "2006-01-02T15:04:05-07:00" | jsonify | safeJS }}{{ end }},
     "author": {
       "@type": "Person",
       "name": "{{ if $author }}{{ $author.name }}{{ end }}"{{ if and $author $author.url }},

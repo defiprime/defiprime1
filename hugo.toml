@@ -12,7 +12,6 @@ uglyURLs = true
 
 disableKinds = ["taxonomy"]
 
-# Map git-date front matter field to Hugo's date
 [frontmatter]
   date = ["date", ":filename", "git-date"]
   lastmod = ["lastmod", ":git"]
