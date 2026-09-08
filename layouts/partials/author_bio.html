@@ -58,7 +58,7 @@
               </a>
             {{ end }}
            </div>
-            <div class="author-skills"> {{ $author.bio }} </div>
+            <div class="author-skills"> {{ $author.bio | safeHTML }} </div>
          </div>
       </div>
    </div>
