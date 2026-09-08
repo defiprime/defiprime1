@@ -32,6 +32,15 @@
     max-width: 779px;
     margin: 0 auto;
   }
+
+  &.compact {
+    padding-bottom: 16px;
+
+    span {
+      font-size: 18px;
+      max-width: 700px;
+    }
+  }
 }
 
 .tiles.grid {
@@ -48,6 +57,192 @@
   article {
     width: 100% !important;
     margin: 0 !important;
+  }
+}
+
+// Section heading row with "View all" link
+.section-heading-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.section-heading {
+  font-family: "Kanit", sans-serif;
+  margin: 56px 0 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #292984;
+
+  span {
+    color: #ff961c;
+  }
+}
+.view-all {
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  color: #8f68fc;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 0;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Featured blog post hero card
+.featured-post {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 20px rgba(41, 41, 132, 0.10);
+  transition: box-shadow 0.3s, transform 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 0;
+
+  &:hover {
+    box-shadow: 0 0 0 1px #8f68fc, 0 4px 24px rgba(41, 41, 132, 0.18);
+    transform: translateY(-2px);
+  }
+}
+.featured-post-content {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #292984;
+    margin-bottom: 14px;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  .intro {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #585858;
+    margin-bottom: 20px;
+  }
+
+  .read-more {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #8f68fc;
+  }
+}
+.featured-tag {
+  display: inline-block;
+  font-family: "Kanit", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #8f68fc;
+  background: rgba(143, 104, 252, 0.08);
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  width: fit-content;
+}
+.featured-post-visual {
+  background: linear-gradient(135deg, #f0eef9 0%, #e8f4f5 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  position: relative;
+  overflow: hidden;
+
+  .decorative-bars {
+    position: absolute;
+    inset: 0;
+    opacity: 0.5;
+
+    span {
+      position: absolute;
+      width: 3px;
+      border-radius: 2px;
+      display: block;
+      text-align: left;
+      color: transparent;
+      font-size: 0;
+      max-width: none;
+      margin: 0;
+    }
+  }
+
+  .topic-label {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #292984;
+    text-align: center;
+    padding: 24px;
+    z-index: 1;
+    line-height: 1.3;
+  }
+}
+
+// Blog grid (cards styled in _blog.scss)
+.blog-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+// Projects grid (compact 4-col)
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.project-tile {
+  background: #fff;
+  box-shadow: 0 0 6px rgba(41, 41, 132, 0.10);
+  border-radius: 8px;
+  padding: 20px 16px;
+  text-align: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 0;
+  display: block;
+
+  &:hover {
+    box-shadow: 0 0 0 1px #8f68fc, 0 2px 12px rgba(41, 41, 132, 0.20);
+    transform: translateY(-2px);
+  }
+
+  .tile-name {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #292984;
+    text-transform: none;
+    letter-spacing: 0;
+    display: block;
+  }
+
+  .tile-count {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    color: #8b8bb8;
+    margin-top: 4px;
   }
 }
 
@@ -274,6 +469,29 @@
     font-size: 36px;
     margin: 48px auto 36px auto;
   }
+  .section-heading {
+    font-size: 28px;
+    margin: 40px 0 24px;
+  }
+  .featured-post {
+    grid-template-columns: 1fr;
+  }
+  .featured-post-content {
+    padding: 28px;
+
+    h2 {
+      font-size: 22px;
+    }
+  }
+  .featured-post-visual {
+    min-height: 180px;
+  }
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @include breakpoint(xsmall) {
@@ -284,6 +502,12 @@
   }
   .recently_added_annotation {
     font-size: 32px;
+  }
+  .section-heading {
+    font-size: 24px;
+  }
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

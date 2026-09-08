@@ -1,0 +1,25 @@
+// Author byline links, author-bio name link, and the author profile / index
+// pages. Byline names and the author-bio name now link to /authors/<slug>/, but
+// should keep their container color instead of the default link color.
+.author-block .name a,
+.author-name a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Sub-heading under the H1 on the author profile and authors index pages.
+.author-article-count {
+  color: #8b8bb8;
+  font-size: 15px;
+  margin-top: 6px;
+}
+
+// web.svg ships with a muted purple fill; match it to the white Twitter /
+// LinkedIn glyphs that sit on the same purple social buttons.
+.author-social .social-link .icon-token-purple {
+  fill: #fff;
+}
