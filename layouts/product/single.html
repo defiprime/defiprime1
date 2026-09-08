@@ -27,10 +27,10 @@
     content="What is {{ index .Params "product-title" }}? {{ index .Params "product-description" | markdownify | plainify | truncate 160 }}">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="preload" as="style">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relURL }}">
-  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="canonical" href="{{ partial "page-url.html" . }}">
   <meta property="og:title" content="{{ index .Params "product-title" }} - Reviews. What is {{ index .Params "product-title" }}?" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:url" content="{{ partial "page-url.html" . }}" />
   <meta property="og:description"
     content="{{ index .Params "product-description" | markdownify | plainify | truncate 300 }}" />
   <meta property="og:image" content="{{ .Params.image | absURL }}" />
@@ -154,7 +154,7 @@
 
         {{ range $posts }}
         <article>
-          <a href="{{ .RelPermalink }}" class="post-link">
+          <a href="{{ partial "page-url.html" .RelPermalink }}" class="post-link">
             <div class="post-top">
               <span class="image">
                 <img class="lazyload" data-src="{{ .Params.image }}" alt="" />
@@ -200,7 +200,7 @@
       "position": 3,
           "item": {
           "@type": "WebPage",
-          "@id": "{{ .Permalink }}",
+          "@id": "{{ partial "page-url.html" . }}",
           "name": "{{ index .Params "product-title" }}"
       }
 
@@ -215,7 +215,7 @@
     "@type": "Product",
     "name": "{{ index .Params "product-title" }}",
     "description": "{{ index .Params "product-description" | plainify | truncate 500 }}",
-    "url": "{{ .Permalink }}",
+    "url": "{{ partial "page-url.html" . }}",
     "image": {
       "@type": "ImageObject",
       "url": "{{ .Params.image | absURL }}",

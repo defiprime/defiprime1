@@ -18,7 +18,7 @@
         <ul>
           {{ range first 20 (where site.RegularPages "Section" "blog") }}
           <li>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <a href="{{ partial "page-url.html" .RelPermalink }}">{{ .Title }}</a>
           </li>
           {{ end }}
         </ul>

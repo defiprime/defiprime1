@@ -20,11 +20,11 @@
   <meta name="description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="preload" as="style">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relURL }}">
-  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="canonical" href="{{ partial "page-url.html" . }}">
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css"  as="style"  media="print" onload="this.media='all'" >
   <meta property="og:title" content="{{ .Params.h1title }}" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:url" content="{{ partial "page-url.html" . }}" />
   <meta property="og:description"
     content="{{ .Params.metadescription | plainify | truncate 300 }}" />
   <meta property="og:image" content="{{ index .Params "featured-image" | absURL }}" />
@@ -56,7 +56,7 @@
     "@type": "BlogPosting",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "{{ .Permalink }}"
+      "@id": "{{ partial "page-url.html" . }}"
     },
     "headline": "{{ if .Params.h1title }}{{ .Params.h1title | htmlEscape }}{{ else if .Title }}{{ .Title | htmlEscape }}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}",
     "description": "{{ if .Params.metadescription }}{{ .Params.metadescription | plainify | truncate 300 }}{{ else if .Params.excerpt }}{{ .Params.excerpt | plainify | truncate 300 }}{{ else }}{{ .Site.Params.description }}{{ end }}",
@@ -86,7 +86,7 @@
     },
     "articleSection": "{{ .Params.category }}",
     "keywords": "{{ if .Params.tags }}{{ delimit .Params.tags ", " }}{{ end }}",
-    "url": "{{ .Permalink }}"
+    "url": "{{ partial "page-url.html" . }}"
   }
  </script>
 </head>
@@ -116,7 +116,7 @@
         {{ end }}
         {{ range .Params.tags }}
           {{ if and . (ne (strings.TrimSpace .) "") }}
-          <a href="/t/{{ . | urlize }}" rel="tag" class="tag">{{ . }}</a>
+          <a href="{{ with site.GetPage (printf "/tags/%s" (urlize .)) }}{{ partial "page-url.html" .RelPermalink }}{{ end }}" rel="tag" class="tag">{{ . }}</a>
           {{ end }}
         {{ end }}
 
@@ -134,7 +134,7 @@
 
       {{ range $posts }}
     	<article>
-    		<a href="{{ .Permalink }}" class="post-link">
+    		<a href="{{ partial "page-url.html" .RelPermalink }}" class="post-link">
     			<div class="content">
     				<p class="title">{{ .Params.h1title }}</p>
     				<p>{{ .Params.intro }}</p>

@@ -1,3 +1,8 @@
+{{- $paginator := .Paginator -}}
+{{- $listURL := partial "page-url.html" . -}}
+{{- $listPath := partial "page-url.html" .RelPermalink -}}
+{{- $pageURL := $listURL -}}
+{{- if gt $paginator.PageNumber 1 }}{{ $pageURL = printf "%s%d/" $listURL $paginator.PageNumber }}{{ end -}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,11 +22,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://defiprime.com/blog/">
+    <link rel="canonical" href="{{ $pageURL }}">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"  rel="preload" as="style">
     <meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ .Site.BaseURL }}" />
+    <meta property="og:url" content="{{ $pageURL }}" />
     <meta property="og:description" content="{{ .Params.metadescription | default .Site.Params.description }}" />
     <meta property="og:image" content="{{ .Site.BaseURL }}images/og-blog.png" />
     <meta property="og:image:width" content="1200" />
@@ -52,19 +57,18 @@
           <p>We want to shed some light on how DeFi products build and how the ecosystem evolves over time. Our blog features interviews with DeFi projects, analytics, and important news.</p>
         </header>
         <section class="blog-articles">
-          {{ $paginator := .Paginate .Pages }}
           {{ range $paginator.Pages }}
             <article>
               {{ if .Params.tags }}
                 <div class="tags">
                   {{ range .Params.tags }}
                     {{ if and . (ne (strings.TrimSpace .) "") }}
-                  <a href="/t/{{ . | urlize }}" class="tag">{{ . }}</a>
+                  <a href="{{ with site.GetPage (printf "/tags/%s" (urlize .)) }}{{ partial "page-url.html" .RelPermalink }}{{ end }}" class="tag">{{ . }}</a>
                     {{ end }}
                   {{ end }}
                 </div>
               {{ end }}
-              <a href="{{ .RelPermalink }}">
+              <a href="{{ partial "page-url.html" .RelPermalink }}">
                 <div class="date">{{ .Date.Format "02 Jan 2006" }}</div>
                 <div class="header">
                   <h2>{{ .Params.h1title | default .Title }}</h2>
@@ -93,10 +97,10 @@
 
         <section class="pagination">
           {{ if $paginator.HasNext }}
-            <a class="button" href="{{ $paginator.Next.URL | replaceRE "//" "/" }}">Older Posts</a>
+            <a class="button" href="{{ printf "%s%d/" $listPath $paginator.Next.PageNumber }}">Older Posts</a>
           {{ end }}
           {{ if $paginator.HasPrev }}
-            <a class="button" href="{{ $paginator.Prev.URL | replaceRE "//" "/" }}">Newer Posts</a>
+            <a class="button" href="{{ if eq $paginator.Prev.PageNumber 1 }}{{ $listPath }}{{ else }}{{ printf "%s%d/" $listPath $paginator.Prev.PageNumber }}{{ end }}">Newer Posts</a>
           {{ end }}
         </section>
       </div>

@@ -18,10 +18,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="canonical" href="{{ partial "page-url.html" . }}">
   <meta property="og:title" content="{{ .Params.pagetitle | default .Title }}" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:url" content="{{ partial "page-url.html" . }}" />
   <meta property="og:description" content="{{ .Params.metadescription | default .Site.Params.description }}" />
   {{ $ogImage := index .Params "featured-image" | default "images/og.png" }}
   <meta property="og:image" content="{{ $ogImage | absURL }}" />
@@ -83,7 +83,7 @@
                       <a href="{{ $url }}">{{ $display }}</a>
                     </td>
                     <td><a href="https://twitter.com/{{ .Params.twitter_handle }}">@{{ .Params.twitter_handle }}</a></td>
-                    <td>{{ .Params.todo | markdownify }} Read more: <a href="{{ .RelPermalink }}">{{ .Params.h1title | default .Title }}</a></td>
+                    <td>{{ .Params.todo | markdownify }} Read more: <a href="{{ partial "page-url.html" .RelPermalink }}">{{ .Params.h1title | default .Title }}</a></td>
                   </tr>
                   {{ end }}
                 {{ end }}

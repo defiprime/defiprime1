@@ -22,10 +22,10 @@
   <script>!function(e){"use strict";var t=function(t,n,r){var o,i=e.document,a=i.createElement("link");if(n)o=n;else{var l=(i.body||i.getElementsByTagName("head")[0]).childNodes;o=l[l.length-1]}var d=i.styleSheets;a.rel="stylesheet",a.href=t,a.media="only x",function e(t){if(i.body)return t();setTimeout(function(){e(t)})}(function(){o.parentNode.insertBefore(a,n?o:o.nextSibling)});var f=function(e){for(var t=a.href,n=d.length;n--;)if(d[n].href===t)return e();setTimeout(function(){f(e)})};return a.addEventListener&&a.addEventListener("load",function(){this.media=r||"all"}),a.onloadcssdefined=f,f(function(){a.media!==r&&(a.media=r||"all")}),a};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this);</script>
   <link rel="preload" href="{{ "/assets/css/main.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="{{ "/assets/css/main.css" | relURL }}"></noscript>
-  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="canonical" href="{{ partial "page-url.html" . }}">
   <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:url" content="{{ partial "page-url.html" . }}" />
   <meta property="og:description" content="{{ .Params.metadescription | default .Site.Params.description }}" />
   {{ $ogImage := .Params.og | default (index .Params "featured-image") | default "images/og.png" }}
   <meta property="og:image" content="{{ $ogImage | absURL }}" />
@@ -152,7 +152,7 @@
                 {{ $productUrl := index .Params "product-url" }}
                 {{ $productTitle := index .Params "product-title" }}
 
-<h3>{{ if $isDao }}<a href="{{ $productUrl }}">{{ $productTitle }}</a>{{ else }}<a href="{{ .RelPermalink }}">{{ $productTitle }}</a>{{ end }}</h3>
+<h3>{{ if $isDao }}<a href="{{ $productUrl }}">{{ $productTitle }}</a>{{ else }}<a href="{{ partial "page-url.html" .RelPermalink }}">{{ $productTitle }}</a>{{ end }}</h3>
 
 {{ partial "ecosystem-icons.html" . }}
 <p>{{ index .Params "product-description" | markdownify }}</p>

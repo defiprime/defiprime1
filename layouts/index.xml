@@ -4,7 +4,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>{{ .Site.Title }}</title>
-    <link>{{ .Permalink }}</link>
+    <link>{{ partial "page-url.html" . }}</link>
     <description>{{ .Site.Params.description | default "Recent content" }}</description>
     <generator>Hugo</generator>
     <language>{{ .Site.LanguageCode }}</language>
@@ -13,9 +13,9 @@
     {{- range first 20 $blogPages }}
     <item>
       <title>{{ .Title }}</title>
-      <link>{{ .Permalink }}</link>
+      <link>{{ partial "page-url.html" . }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
-      <guid>{{ .Permalink }}</guid>
+      <guid>{{ partial "page-url.html" . }}</guid>
       <description>{{ .Params.intro | default .Summary | html }}</description>
     </item>
     {{- end }}

@@ -25,10 +25,10 @@
     <noscript><link rel="stylesheet" href="{{ "/assets/css/main.css" | relURL }}"></noscript>
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css"></noscript>
-    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="canonical" href="{{ partial "page-url.html" . }}">
     <meta property="og:title" content="{{ .Params.h1title }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:url" content="{{ partial "page-url.html" . }}" />
     <meta property="og:description" content="{{ if .Params.metadescription }}{{ .Params.metadescription | plainify | truncate 300 }}{{ else if .Params.intro }}{{ .Params.intro | plainify | truncate 300 }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
     <meta property="og:image" content="{{ index .Params "featured-image" | absURL }}" />
     <meta property="og:image:width" content="1200" />

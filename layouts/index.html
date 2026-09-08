@@ -34,7 +34,7 @@
       {{ end }}
       {{ $styleNum := add (mod (index (shuffle (seq 8)) 0) 8) 1 }}
       <article class="style{{ $styleNum }}">
-        <a href="{{ .RelPermalink }}">
+        <a href="{{ partial "page-url.html" .RelPermalink }}">
           <h2>{{ .Title }}</h2>
           <span>{{ $count }}</span>
         </a>
@@ -51,7 +51,7 @@
     {{ $sorted := sort $allProducts "Params.git-date" "desc" }}
     {{ range first 6 $sorted }}
       <article>
-        <a class='recent_blog_link' href="{{ .RelPermalink }}">
+        <a class='recent_blog_link' href="{{ partial "page-url.html" .RelPermalink }}">
           <img class="lazyload" data-src="{{ .Params.image }}">
           <h2>{{ index .Params "product-title" }}</h2>
         </a>
@@ -70,7 +70,7 @@
       {{ $colorIdx := mod $i (len $colors) }}
       {{ $color := index $colors $colorIdx }}
       <article class='latest_blog_link recent-blog-color_{{ $color }}'>
-        <a href="{{ $post.RelPermalink }}">
+        <a href="{{ partial "page-url.html" $post.RelPermalink }}">
           <h2>{{ $post.Params.h1title }}</h2>
           <p>{{ $post.Params.intro | plainify | truncate 200 }}</p>
         </a>

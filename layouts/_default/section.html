@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="{{ partial "page-url.html" . }}">
+    <meta property="og:url" content="{{ partial "page-url.html" . }}" />
 </head>
 <body>
     {{ partialCached "header.html" . }}

@@ -4,7 +4,7 @@
       {{ range site.Sections }}
         {{ if and (ne .Section "blog") (ne .Section "events") (ne .Section "alternatives") (ne .Section "posts") }}
           {{ if ne .RelPermalink $.RelPermalink }}
-          <a href="{{ .RelPermalink }}">
+          <a href="{{ partial "page-url.html" .RelPermalink }}">
             {{ .Title | humanize | title }}
             <span class="articles_count">{{ len .RegularPages }}</span>
           </a>

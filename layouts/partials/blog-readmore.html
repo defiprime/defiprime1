@@ -4,7 +4,7 @@
   {{ range $posts }}
   {{ if ne .RelPermalink $.RelPermalink }}
 	<article>
-		<a href="{{ .Permalink }}" class="post-link">
+		<a href="{{ partial "page-url.html" .RelPermalink }}" class="post-link">
 			<div class="content">
 				<p class="title">{{ .Params.h1title }}</p>
 				<p>{{ .Params.intro }}</p>
