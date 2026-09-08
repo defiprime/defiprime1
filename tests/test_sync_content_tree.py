@@ -121,6 +121,16 @@ class SyncTreeTests(unittest.TestCase):
         self.assertFalse(self.exists("content/alternatives.md"))
         self.assertIn("content/alternatives/_index.md", self.report.rewritten_indexes)
 
+    def test_a_page_that_renders_nothing_claims_no_url(self):
+        text = self.read("content/defi-events.md")
+        self.assertNotIn("url:", text)
+        self.assertIn("build:\n  render: never\n  list: never\n", text)
+        self.assertIn("layout: events\n", text)
+        self.assertIn("Event copy.", text)
+
+    def test_a_page_that_renders_keeps_its_url(self):
+        self.assertIn("url: /about.html\n", self.read("content/about.md"))
+
     def test_section_indexes_are_left_alone(self):
         for rel in ("content/product/_index.md", "content/events/_index.md",
                     "content/product/lending/_index.md",

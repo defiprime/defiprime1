@@ -58,6 +58,23 @@ def page_body(master_body, branch_body, rel, report):
     return body
 
 
+def renders_nothing(entries):
+    if entries is None:
+        return False
+    block = find_entry(entries, "build")[1]
+    if block is None:
+        return False
+    for line in block[1:]:
+        key, _, value = line.partition(":")
+        if key.strip() == "render" and value.strip().strip("\"'") == "never":
+            return True
+    return False
+
+
+def drop_url(entries):
+    return [(key, lines) for key, lines in entries if key != "url"]
+
+
 def is_generated_output(entries):
     sitemap = find_entry(entries, "sitemap")[1]
     layout = find_entry(entries, "layout")[1]
@@ -87,8 +104,10 @@ def sync_pages(source, dest, report, managed):
                 branch_entries, branch_body = branch
         if rel.endswith("_index.md"):
             report.rewritten_indexes.append(rel)
-        emit(dest, rel, merge_entries(converted, branch_entries, rel in NO_LAYOUT_TARGETS),
-             page_body(master_body, branch_body, rel, report), report, managed)
+        merged = merge_entries(converted, branch_entries, rel in NO_LAYOUT_TARGETS)
+        if renders_nothing(branch_entries):
+            merged = drop_url(merged)
+        emit(dest, rel, merged, page_body(master_body, branch_body, rel, report), report, managed)
 
 
 def read_authors(path):

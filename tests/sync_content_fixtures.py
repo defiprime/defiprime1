@@ -137,6 +137,15 @@ SOURCE_FILES = {
         "---\n"
         "{% for post in site.posts %}{% endfor %}\n"
     ),
+    "defi-events.md": (
+        "---\n"
+        "layout: events\n"
+        "title: events\n"
+        "permalink: events\n"
+        "---\n"
+        "\n"
+        "Event copy.\n"
+    ),
     "README.md": "---\ntitle: readme\n---\nignore me\n",
     "CLAUDE.md": "# Project Instructions\n",
     "robots.txt": "User-agent: *\nAllow: /\n",
@@ -177,7 +186,10 @@ DEST_FILES = {
     "content/product/perps/_index.md": '---\ntitle: "perps"\n---\n',
     "content/product/lending/stale.md": "---\nurl: /product/stale.html\n---\n",
     "content/alternatives/_index.md": '---\ntitle: "Alternatives"\n---\n',
-    "content/events/_index.md": '---\ntitle: "Events"\n---\n',
+    "content/events/_index.md": '---\ntitle: "Events"\nurl: /events.html\n---\n',
+    "content/defi-events.md": (
+        "---\nlayout: events\ntitle: events\nbuild:\n  render: never\n  list: never\n---\n"
+    ),
     "content/events/2025-01-01-gone.md": "---\nproduct-title: Gone\n---\n",
     "content/airdrop/_index.md": '---\ntitle: "Airdrops"\n---\n',
     "content/airdrop/some-airdrop.md": "---\ntitle: drop\n---\n",
