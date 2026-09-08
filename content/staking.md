@@ -1,4 +1,5 @@
 ---
+lastmod: 2019-04-01
 git-date: 2019-07-03T14:03:48-07:00
 layout: page
 title: "Staking"

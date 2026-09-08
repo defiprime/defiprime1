@@ -1,4 +1,5 @@
 ---
+lastmod: 2019-04-01
 git-date: 2021-02-18T18:02:56-08:00
 title: Yield Aggregators
 layout: page

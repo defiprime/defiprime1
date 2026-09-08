@@ -182,6 +182,11 @@ def set_url(entries, url):
     return [("url", ["url: " + url])] + out
 
 
+def set_lastmod(entries, value):
+    out = [(key, lines) for key, lines in entries if key != "lastmod"]
+    return [("lastmod", ["lastmod: " + value])] + out
+
+
 def convert_shortcodes(body):
     def youtube_sub(match):
         return "{{< youtube " + youtube_id(match.group(1)) + " >}}"

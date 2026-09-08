@@ -1,10 +1,13 @@
 import os
+import re
 
 from sync_content_core import (
     SyncError, convert_entries, convert_shortcodes, count_conversions, entry_value, find_entry,
-    name_slug, parse_front_matter, read_collections, render_front_matter, set_url,
+    name_slug, parse_front_matter, read_collections, render_front_matter, set_lastmod, set_url,
     split_front_matter, strip_cr, write_file,
 )
+
+POST_DATE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})-")
 
 SKIPPED_COLLECTIONS = ("posts", "events", "alternatives")
 SHADOW_BUILD = ("build", ["build:", "  render: link", "  list: always"])
@@ -71,6 +74,10 @@ def sync_posts(source, dest, report, managed):
             permalink = find_entry(entries, "permalink")[1]
             if permalink is None:
                 raise SyncError("listing post without permalink: " + rel_source)
+            stamp = POST_DATE_RE.match(name)
+            if stamp is None:
+                raise SyncError("listing post without a dated filename: " + rel_source)
+            converted = set_lastmod(converted, stamp.group(1))
             rel = "content/" + entry_value(permalink).strip("\"'").strip("/") + ".md"
         else:
             rel = "content/blog/" + name

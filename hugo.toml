@@ -2,9 +2,6 @@ baseURL = "https://defiprime.com"
 title = "DefiPrime.com"
 locale = "en-us"
 
-# Enable git info for last-modified-date equivalent
-enableGitInfo = true
-
 # Build future-dated content (needed for events with future dates)
 buildFuture = true
 
@@ -14,7 +11,7 @@ disableKinds = ["taxonomy"]
 
 [frontmatter]
   date = ["date", ":filename", "git-date"]
-  lastmod = ["lastmod", ":git"]
+  lastmod = ["lastmod", "date"]
   publishDate = ["publishDate", "date", "git-date"]
 
 # Match Jekyll's description

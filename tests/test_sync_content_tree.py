@@ -48,6 +48,12 @@ class SyncTreeTests(unittest.TestCase):
         self.assertIn("aliases:\n  - /decentralized_lending\n", text)
         self.assertFalse(self.exists("content/blog/2019-04-01-lending.md"))
 
+    def test_listing_post_keeps_its_filename_date_as_lastmod(self):
+        self.assertIn("lastmod: 2019-04-01\n", self.read("content/decentralized-lending.md"))
+
+    def test_blog_post_gets_no_lastmod(self):
+        self.assertNotIn("lastmod:", self.read("content/blog/2020-01-01-hello.md"))
+
     def test_product_file_is_lowercased_and_slugged(self):
         text = self.read("content/product/lending/apy.vision.md")
         self.assertIn("url: /product/apy-vision.html\n", text)
