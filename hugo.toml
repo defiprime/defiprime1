@@ -1,6 +1,6 @@
 baseURL = "https://defiprime.com"
 title = "DefiPrime.com"
-languageCode = "en-us"
+locale = "en-us"
 
 # Enable git info for last-modified-date equivalent
 enableGitInfo = true
@@ -8,8 +8,9 @@ enableGitInfo = true
 # Build future-dated content (needed for events with future dates)
 buildFuture = true
 
-# Clean URLs (matching vercel.json cleanUrls: true)
-uglyURLs = false
+uglyURLs = true
+
+disableKinds = ["taxonomy"]
 
 # Map git-date front matter field to Hugo's date
 [frontmatter]
@@ -39,10 +40,17 @@ uglyURLs = false
   [permalinks.page]
     blog = "/:slug"
 
-# Pagination (16 per page, matching Jekyll /blog/2/, /blog/3/)
 [pagination]
   pagerSize = 16
   path = ""
+  disableAliases = true
+
+[[cascade]]
+  [cascade.build]
+    render = "never"
+  [cascade.target]
+    path = "{/product,/product/**}"
+    kind = "section"
 
 # Build settings
 [markup]

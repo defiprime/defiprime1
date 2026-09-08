@@ -18,10 +18,10 @@
     <meta name="description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relURL }}">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"  rel="preload" as="style">
-    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="canonical" href="{{ partial "page-url.html" . }}">
     <meta property="og:title" content="{{ if .Params.pagetitle }}{{ .Params.pagetitle }}{{ else }}{{ .Site.Title }}{{ end }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ .Site.BaseURL }}" />
+    <meta property="og:url" content="{{ partial "page-url.html" . }}" />
     <meta property="og:description" content="{{ if .Params.metadescription }}{{ .Params.metadescription | plainify | truncate 160 }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
     <meta property="og:image" content="{{ index .Params "featured-image" | absURL }}" />
     <meta property="og:image:width" content="1200" />
@@ -54,7 +54,7 @@
 <p> </p>
 
     <section class='upcoming_events_cards'>
-        {{ $events := where (where site.RegularPages "Section" "events") ".Date.Unix" ">=" now.Unix }}
+        {{ $events := where .RegularPages ".Date.Unix" ">=" now.Unix }}
         {{ range $events }}
 
         <article>

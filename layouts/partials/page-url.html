@@ -1,0 +1,12 @@
+{{- $url := "" -}}
+{{- if eq (printf "%T" .) "string" -}}
+  {{- $url = . -}}
+{{- else -}}
+  {{- $url = .Permalink -}}
+{{- end -}}
+{{- if hasSuffix $url "/index.html" -}}
+  {{- $url = strings.TrimSuffix "index.html" $url -}}
+{{- else if and (hasSuffix $url ".html") (not (hasPrefix (urls.Parse $url).Path "/t/")) -}}
+  {{- $url = strings.TrimSuffix ".html" $url -}}
+{{- end -}}
+{{- $url -}}

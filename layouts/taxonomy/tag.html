@@ -18,11 +18,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="{{ .Title }} and all things about DeFi - trustless and transparent financial products built on top of the blockchain ">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relURL }}">
-  <link rel="canonical" href="{{ .Site.BaseURL }}{{ .RelPermalink }}">
+  <link rel="canonical" href="{{ partial "page-url.html" . }}">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"  rel="preload" as="style">
   <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ .Site.BaseURL }}{{ .RelPermalink }}" />
+  <meta property="og:url" content="{{ partial "page-url.html" . }}" />
   <meta property="og:description" content="{{ .Title }} and all things about DeFi - trustless and transparent financial products built on top of the blockchain " />
   <meta property="og:image" content="{{ .Site.BaseURL }}images/og-blog.png" />
   <meta property="og:image:width" content="1200" />
@@ -63,11 +63,11 @@
             <div class="tags">
               {{ range .Params.tags }}
                 {{ if and . (ne (strings.TrimSpace .) "") }}
-              <a href="/t/{{ . | urlize }}" class="tag">{{ . }}</a>
+              <a href="{{ with site.GetPage (printf "/tags/%s" (urlize .)) }}{{ partial "page-url.html" .RelPermalink }}{{ end }}" class="tag">{{ . }}</a>
                 {{ end }}
               {{ end }}
             </div>
-            <a href="{{ .RelPermalink }}">
+            <a href="{{ partial "page-url.html" .RelPermalink }}">
               <div class="date">{{ .Date.Format "02 Jan 2006" }}</div>
               <div class="header">
                 <h2>{{ .Params.h1title }}</h2>
@@ -94,14 +94,6 @@
         {{ end }}
 
       </section>
-
-      {{ if .Paginator.HasNext }}
-      <a class="button" href="{{ .Paginator.Next.URL }}">Next</a>
-      {{ end }}
-
-      {{ if .Paginator.HasPrev }}
-      <a class="button" href="{{ .Paginator.Prev.URL }}">Previous</a>
-      {{ end }}
 
     </div>
   </div>
