@@ -2,7 +2,7 @@ import filecmp
 import os
 import shutil
 
-from sync_content_core import has_liquid, split_front_matter, strip_cr
+from sync_content_core import has_liquid, split_front_matter, strip_cr, write_file
 
 IGNORED_NAMES = {".DS_Store"}
 ROOT_ASSETS = ("defiprime.tokenlist.json", "favicon.ico", "favicon.png", "ogp-template.png")
@@ -55,17 +55,6 @@ def copy_root_assets(source, dest, report):
                               os.path.join("static", name))
 
 
-def write_text_asset(path, text, report, label):
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    if os.path.exists(path):
-        with open(path, "r", encoding="utf-8") as handle:
-            if handle.read() == text:
-                return
-    with open(path, "w", encoding="utf-8") as handle:
-        handle.write(text)
-    report.written.append(label)
-
-
 def read_body(path):
     with open(path, "r", encoding="utf-8") as handle:
         text = strip_cr(handle.read())
@@ -79,15 +68,15 @@ def copy_authors(source, dest, report):
         return
     with open(src, "r", encoding="utf-8") as handle:
         text = strip_cr(handle.read())
-    write_text_asset(os.path.join(dest, "data", "authors.yaml"), text, report,
-                     os.path.join("data", "authors.yaml"))
+    write_file(os.path.join(dest, "data", "authors.yaml"), text, report,
+               os.path.join("data", "authors.yaml"))
 
 
 def copy_text_roots(source, dest, report):
     robots = os.path.join(source, "robots.txt")
     if os.path.isfile(robots):
-        write_text_asset(os.path.join(dest, "static", "robots.txt"), read_body(robots),
-                         report, os.path.join("static", "robots.txt"))
+        write_file(os.path.join(dest, "static", "robots.txt"), read_body(robots),
+                   report, os.path.join("static", "robots.txt"))
     llms = os.path.join(source, "llms.txt")
     if not os.path.isfile(llms):
         return
@@ -95,8 +84,8 @@ def copy_text_roots(source, dest, report):
     if has_liquid(body):
         report.needs_template.append("llms.txt")
         return
-    write_text_asset(os.path.join(dest, "static", "llms.txt"), body, report,
-                     os.path.join("static", "llms.txt"))
+    write_file(os.path.join(dest, "static", "llms.txt"), body, report,
+               os.path.join("static", "llms.txt"))
 
 
 def sync_assets(source, dest, report):

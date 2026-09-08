@@ -20,6 +20,9 @@ SOURCE_FILES = {
         "  lending:\n"
         "    output: true\n"
         "    permalink: /product/:name\n"
+        "  perps:\n"
+        "    output: true\n"
+        "    permalink: /product/:name\n"
         "  events:\n"
         "  alternatives:\n"
         "    output: true\n"
@@ -57,6 +60,12 @@ SOURCE_FILES = {
     ),
     "collections/_lending/APY.Vision.md": (
         "---\nproduct-title: APY.Vision\ntype: non-custodial\n---\n"
+    ),
+    "collections/_lending/Aevo.md": (
+        "---\nproduct-title: Aevo\ncoltitle: \"Lending\"\n---\nlending copy\n"
+    ),
+    "collections/_perps/Aevo.md": (
+        "---\nproduct-title: Aevo\ncoltitle: \"Perps\"\n---\nperps copy\n"
     ),
     "collections/_alternatives/1inch.md": (
         "---\n"
@@ -154,6 +163,7 @@ DEST_FILES = {
     "content/stale-page.md": "---\ntitle: stale\n---\n",
     "content/product/_index.md": '---\ntitle: "Products"\ncascade:\n  type: "product"\n---\n',
     "content/product/lending/_index.md": '---\ntitle: "lending"\n---\n',
+    "content/product/perps/_index.md": '---\ntitle: "perps"\n---\n',
     "content/product/lending/stale.md": "---\nurl: /product/stale.html\n---\n",
     "content/alternatives/_index.md": '---\ntitle: "Alternatives"\n---\n',
     "content/events/_index.md": '---\ntitle: "Events"\n---\n',

@@ -3,36 +3,16 @@ import os
 from sync_content_core import (
     SyncError, convert_entries, convert_shortcodes, count_conversions, entry_value, find_entry,
     name_slug, parse_front_matter, read_collections, render_front_matter, set_url,
-    split_front_matter, strip_cr,
+    split_front_matter, strip_cr, write_file,
 )
 
 SKIPPED_COLLECTIONS = ("posts", "events", "alternatives")
+SHADOW_BUILD = ("build", ["build:", "  render: link", "  list: always"])
 
 
 def read_text(path):
     with open(path, "r", encoding="utf-8") as handle:
         return strip_cr(handle.read())
-
-
-def drop_case_variants(directory, rel, report):
-    base = os.path.basename(rel)
-    for name in os.listdir(directory):
-        if name != base and name.lower() == base.lower():
-            os.remove(os.path.join(directory, name))
-            report.deleted.append(os.path.join(os.path.dirname(rel), name))
-
-
-def write_text(dest, rel, text, report):
-    path = os.path.join(dest, rel)
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    drop_case_variants(os.path.dirname(path), rel, report)
-    if os.path.exists(path):
-        with open(path, "r", encoding="utf-8") as handle:
-            if handle.read() == text:
-                return
-    with open(path, "w", encoding="utf-8") as handle:
-        handle.write(text)
-    report.written.append(rel)
 
 
 def load_doc(path, rel, report):
@@ -58,7 +38,7 @@ def convert_body(body, rel, report):
 
 
 def emit(dest, rel, entries, body, report, managed):
-    write_text(dest, rel, render_front_matter(entries) + body, report)
+    write_file(os.path.join(dest, rel), render_front_matter(entries) + body, report, rel, True)
     managed.add(rel)
 
 
@@ -97,8 +77,10 @@ def sync_posts(source, dest, report, managed):
         emit(dest, rel, converted, convert_body(body, rel, report), report, managed)
 
 
-def sync_products(source, dest, report, managed, golden):
-    for collection in read_collections(read_text(os.path.join(source, "_config.yml"))):
+def collect_products(source, report):
+    docs = []
+    order = read_collections(read_text(os.path.join(source, "_config.yml")))
+    for rank, collection in enumerate(order):
         if collection in SKIPPED_COLLECTIONS:
             continue
         directory = os.path.join(source, "collections", "_" + collection)
@@ -113,11 +95,44 @@ def sync_products(source, dest, report, managed, golden):
                 continue
             entries, body = doc
             slug = name_slug(name[:-3])
-            rel = "content/product/" + collection + "/" + name.lower()
-            converted = set_url(convert_entries(entries, rename_type=True),
-                                "/product/" + slug + ".html")
-            emit(dest, rel, converted, convert_body(body, rel, report), report, managed)
-            check_golden(golden, "product/" + slug + ".html", rel, report)
+            docs.append({
+                "rank": rank,
+                "rel": "content/product/" + collection + "/" + name.lower(),
+                "slug": slug,
+                "url": "/product/" + slug + ".html",
+                "entries": entries,
+                "body": body,
+            })
+    return docs
+
+
+def shadowed_products(docs, report):
+    claims = {}
+    for doc in docs:
+        claims.setdefault(doc["url"], []).append((doc["rank"], doc["rel"]))
+    shadowed = set()
+    for url in sorted(claims):
+        ranked = sorted(claims[url])
+        if len(ranked) < 2:
+            continue
+        winner = ranked[-1][1]
+        for _, rel in ranked[:-1]:
+            shadowed.add(rel)
+            report.duplicate_urls.append((url, winner, rel))
+    return shadowed
+
+
+def sync_products(source, dest, report, managed, golden):
+    docs = collect_products(source, report)
+    shadowed = shadowed_products(docs, report)
+    for doc in docs:
+        converted = set_url(convert_entries(doc["entries"], rename_type=True), doc["url"])
+        if doc["rel"] in shadowed:
+            converted = [item for item in converted if item[0] != SHADOW_BUILD[0]]
+            converted.append((SHADOW_BUILD[0], list(SHADOW_BUILD[1])))
+        body = convert_body(doc["body"], doc["rel"], report)
+        emit(dest, doc["rel"], converted, body, report, managed)
+        check_golden(golden, "product/" + doc["slug"] + ".html", doc["rel"], report)
 
 
 def sync_alternatives(source, dest, report, managed, golden):
@@ -141,5 +156,6 @@ def sync_events(source, dest, report, managed):
     directory = os.path.join(source, "collections", "_events")
     for name in source_names(directory):
         rel = "content/events/" + name
-        write_text(dest, rel, read_text(os.path.join(directory, name)), report)
+        write_file(os.path.join(dest, rel), read_text(os.path.join(directory, name)),
+                   report, rel, True)
         managed.add(rel)

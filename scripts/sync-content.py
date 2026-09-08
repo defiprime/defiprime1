@@ -158,6 +158,8 @@ def summarise(report):
         "branch bodies kept: %d" % len(report.body_diffs),
         "needs a hugo layout: %s" % (", ".join(report.needs_template) or "none"),
         "liquid offenders reported: %s" % (", ".join(report.offenders) or "none"),
+        "duplicate product urls: %s" % (", ".join(
+            "%s won by %s over %s" % triple for triple in report.duplicate_urls) or "none"),
         "unparseable front matter: %s" % (", ".join(report.unparseable) or "none"),
     ]
     return "\n".join(lines + report.notes)

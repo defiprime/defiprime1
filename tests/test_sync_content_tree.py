@@ -53,6 +53,20 @@ class SyncTreeTests(unittest.TestCase):
         self.assertIn("url: /product/apy-vision.html\n", text)
         self.assertIn("product-type: non-custodial\n", text)
 
+    def test_duplicate_url_is_won_by_the_last_collection_in_config_order(self):
+        winner = self.read("content/product/perps/aevo.md")
+        loser = self.read("content/product/lending/aevo.md")
+        self.assertIn("url: /product/aevo.html\n", winner)
+        self.assertIn("url: /product/aevo.html\n", loser)
+        self.assertIn("perps copy", winner)
+        self.assertNotIn("build:", winner)
+        self.assertIn("build:\n  render: link\n  list: always\n", loser)
+        self.assertEqual(
+            self.report.duplicate_urls,
+            [("/product/aevo.html", "content/product/perps/aevo.md",
+              "content/product/lending/aevo.md")],
+        )
+
     def test_alternatives_use_their_own_permalink(self):
         self.assertIn("url: /1inch-alternatives.html\n", self.read("content/alternatives/1inch.md"))
 
@@ -94,7 +108,8 @@ class SyncTreeTests(unittest.TestCase):
 
     def test_section_indexes_are_left_alone(self):
         for rel in ("content/product/_index.md", "content/events/_index.md",
-                    "content/alternatives/_index.md", "content/product/lending/_index.md"):
+                    "content/alternatives/_index.md", "content/product/lending/_index.md",
+                    "content/product/perps/_index.md"):
             self.assertEqual(self.read(rel), DEST_FILES[rel])
 
     def test_removed_content_is_deleted(self):

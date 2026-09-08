@@ -1,3 +1,4 @@
+import os
 import re
 
 KEY_RE = re.compile(r"^([A-Za-z_][A-Za-z0-9_.\-]*)\s*:")
@@ -26,6 +27,7 @@ class Report:
         self.rewritten_indexes = []
         self.offenders = []
         self.missing_golden = []
+        self.duplicate_urls = []
         self.deleted = []
         self.written = []
         self.notes = []
@@ -33,6 +35,24 @@ class Report:
 
 def strip_cr(text):
     return text.replace("\r", "")
+
+
+def write_file(path, text, report, label, drop_case=False):
+    directory = os.path.dirname(path)
+    os.makedirs(directory, exist_ok=True)
+    if drop_case:
+        base = os.path.basename(path)
+        for name in os.listdir(directory):
+            if name != base and name.lower() == base.lower():
+                os.remove(os.path.join(directory, name))
+                report.deleted.append(os.path.join(os.path.dirname(label), name))
+    if os.path.exists(path):
+        with open(path, "r", encoding="utf-8") as handle:
+            if handle.read() == text:
+                return
+    with open(path, "w", encoding="utf-8") as handle:
+        handle.write(text)
+    report.written.append(label)
 
 
 def split_front_matter(text):

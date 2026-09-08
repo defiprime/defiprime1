@@ -14,4 +14,7 @@ featured: true
 twitter: https://twitter.com/HyperliquidX
 github: https://github.com/hyperliquid-dex
 alternative-to: ["ftx"]
+build:
+  render: link
+  list: always
 ---
