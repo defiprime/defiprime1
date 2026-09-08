@@ -1,2 +1,3 @@
 # <kind:MISSING|EXTRA|META|LINKS> <path-glob> <field-or-*>  # reason (mandatory)
 META events.html og:url  # golden emits site.url here, a Jekyll template bug; Hugo emits the page canonical
+EXTRA searchindex.json *  # Hugo search index feed, replaces jekyll-algolia push
