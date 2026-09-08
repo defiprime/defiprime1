@@ -1,5 +1,5 @@
 {{- if and (eq .Kind "page") (or (ne .Section "") (eq .Params.category "products")) -}}
-{{- $block := index (split (strings.TrimPrefix "\n" .RawContent) "\n\n") 0 -}}
+{{- $block := .Params.excerpt | default (index (split (strings.TrimPrefix "\n" .RawContent) "\n\n") 0) -}}
 {{- $opening := findRESubmatch `^<([a-zA-Z][a-zA-Z0-9]*)[\s>]` $block 1 -}}
 {{- $rendered := $block | markdownify -}}
 {{- with $opening -}}

@@ -12,10 +12,15 @@ quote: /images/blog/liquiditypools-quote.png
 intro: 'Are Uniswap’s Liquidity Pools Right for You?'
 author: chrisblec
 tags: ["Guide", "DEXs"]
+excerpt: |
+  <div style="text-align: right">This is a transcription from a <a href="https://www.youtube.com/watch?v=IotszRJdtYw">YouTube video</a>.
+  </div>
+
+  Today, let's talk about Uniswap, Liquidity pools to be exact. I want to discuss how they work and whether or not they're a good idea for everyone. So first things first [Uniswap.exchange](https://uniswap.exchange/swap) is the website where this all happens.
 ---
 <div style="text-align: right">This is a transcription from a <a href="https://www.youtube.com/watch?v=IotszRJdtYw">YouTube video</a>.
 </div>
- 
+
 ---
 Today, let's talk about Uniswap, Liquidity pools to be exact. I want to discuss how they work and whether or not they're a good idea for everyone. So first things first [Uniswap.exchange](https://uniswap.exchange/swap) is the website where this all happens.
 
