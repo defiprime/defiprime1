@@ -12,6 +12,15 @@ quote: /images/blog/dao-quote.png
 intro: "We’ll analyze various DeFi products from a US GAAP accounting perspective and end with a rumination on what they mean for the Ethereum economy as a whole."
 author: knab
 tags: ["Guide", "DeFi Accounting"]
+excerpt: |
+  <div style="text-align: right">
+  <p>DeFi Accounting Series:
+  <br>
+  <a href="/dao-accounting">Part 1: Decentralized Autonomous Organization Accounting</a>
+  <br>
+  <a href="/defi-accounting">Part 2: Crypto Lending & Borrowing Platforms</a></p>
+  </div>
+  The prominence of decentralized finance products has ushered in a wave of capital and new users to the Ethereum ecosystem.
 ---
 
 <div style="text-align: right">
@@ -21,6 +30,7 @@ tags: ["Guide", "DeFi Accounting"]
 <br>
 <a href="/defi-accounting">Part 2: Crypto Lending & Borrowing Platforms</a></p>
 </div>
+
 The prominence of decentralized finance products has ushered in a wave of capital and new users to the Ethereum ecosystem.
 
 These experiments have also been great learning opportunities to think about finance and an economy at a more fundamental level. While there has been much discussion about the mechanics of particular products and projections of their outcomes, I thought it would be worthwhile to discuss what should happen once these transactions have actually taken place.

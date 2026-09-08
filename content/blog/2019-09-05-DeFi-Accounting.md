@@ -12,6 +12,15 @@ quote: /images/blog/defiaccounting-quote.png
 intro: "In this article, we'll look at some of the most popular crypto to crypto financing platforms in detail and discuss the bookkeeping entries and tax ramifications from the lender side and borrower side."
 author: knab
 tags: ["Guide", 'DeFi Accounting']
+excerpt: |
+  <div style="text-align: right">
+  <p>DeFi Accounting Series:
+  <br>
+  <a href="/dao-accounting">Part 1: Decentralized Autonomous Organization Accounting</a>
+  <br>
+  <a href="/defi-accounting">Part 2: Crypto Lending & Borrowing Platforms</a></p>
+  </div>
+  The notion of HODLing is rooted in the idea that assets should be held onto because chances are the price of the assets will increase. We know thought that cryptocurrency prices don’t always go up because of inherent value.
 ---
 <div style="text-align: right">
 <p>DeFi Accounting Series:
@@ -20,6 +29,7 @@ tags: ["Guide", 'DeFi Accounting']
 <br>
 <a href="/defi-accounting">Part 2: Crypto Lending & Borrowing Platforms</a></p>
 </div>
+
 The notion of HODLing is rooted in the idea that assets should be held onto because chances are the price of the assets will increase. We know thought that cryptocurrency prices don’t always go up because of inherent value.
 
 Lending and borrowing cryptocurrencies gives HODL a whole new meaning. The Compound Finance [whitepaper](https://compound.finance/documents/Compound.Whitepaper.pdf) describes HODLing as providing “negative yield.” The network fees and risk associated with holding onto an asset mean that unless there are price increases, the value of the asset actually decreases over time. DeFi platforms allow lenders to lock cryptocurrency and watch the interest accrue. Borrowing also offers ways to hedge risk and potentially make money off your cryptocurrency holdings.

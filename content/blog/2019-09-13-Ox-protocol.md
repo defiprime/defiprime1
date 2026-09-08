@@ -46,6 +46,7 @@ Will and Amir also knew that the space was still nascent and would drastically c
 To learn more about how 0x works under the hood, check out our smart contract pipeline video series:
 
 {{< youtube WSxphhWcLxk >}}
+
 [YouTube playlist](https://www.youtube.com/playlist?list=PLN51Tjs40v5PIm4avEo1m2Uz08qj0YWPa)
 
 ### What's your business model?
@@ -87,6 +88,7 @@ We look forward to educating regulators around the world on decentralized exchan
 Check out our Decrypting the Law video series to get our take on current regulatory issues:
 
 {{< youtube dID-wn2dSwk >}}
+
 [YouTube playlist](https://www.youtube.com/playlist?list=PLN51Tjs40v5PQ5p4TbkQcF7iVtVGR5PGy)
 
 ### What are your goals for the future?
