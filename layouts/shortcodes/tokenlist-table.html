@@ -14,9 +14,9 @@
                 </tr>
               </thead>
               <tbody>
-                            {{ $productSection := site.GetPage "product" }}
-              {{ range $productSection.Sections }}
-                {{ range .Pages }}
+                            {{ $collections := slice "alternative-savings" "analytics" "assets-management-tools" "assets-tokenization" "dao" "derivatives" "exchanges" "infrastructure" "insurance" "kyc_identity" "lending" "perps" "marketplaces" "payments" "prediction_markets" "stablecoins" }}
+              {{ range $collections }}
+                {{ range (sort (site.GetPage (printf "/product/%s" .)).Pages "File.Path") }}
                   {{ if .Params.ticker }}
                   <tr class="ticker-row">
                     <td class="ticker-product"><span class="name">{{ index .Params "product-title" }}</span> <span class="ticker">${{ .Params.ticker }}</span> <span class="coltitle">({{ .Params.coltitle }})</span></td>
@@ -24,7 +24,7 @@
                       <a href="https://etherscan.io/address/{{ .Params.contract }}" target="_blank" rel="noopener noreferrer" class="link-address">{{ .Params.contract }}</a>
                     </td>
                     <td class="btncopy"><span class="tooltip default-hover" title="Copied">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                      {{ partial "icons/copy.svg" . }}
                     </span></td>
                     <td class="ticker-price loading">
                       <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
@@ -42,7 +42,6 @@
                       <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
                       <span class="sign">$</span><span class="ticker-market-cap-value"></span>
                     </td>
-                    <td class="ticker-link"><a href="https://dex.guru/token/eth/{{ .Params.contract }}" target="_blank" class="button-trade">Analytics</a></td>
                   </tr>
                   {{ end }}
                 {{ end }}
