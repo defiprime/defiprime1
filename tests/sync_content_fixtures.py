@@ -100,6 +100,16 @@ SOURCE_FILES = {
         "---\n"
         "{% for post in paginator.posts %}{% endfor %}\n"
     ),
+    "alternatives.md": (
+        "---\n"
+        "layout: alternatives\n"
+        "title: DeFi Alternatives\n"
+        "h1title: DeFi Alternatives\n"
+        "permalink: /alternatives/\n"
+        "---\n"
+        "\n"
+        "Filter by category and explore the ecosystem.\n"
+    ),
     "about.md": (
         "---\n"
         "layout: static\n"

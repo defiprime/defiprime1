@@ -106,9 +106,18 @@ class SyncTreeTests(unittest.TestCase):
         self.assertNotIn("pagination", text)
         self.assertNotIn("{%", text)
 
+    def test_alternatives_listing_becomes_the_section_index(self):
+        text = self.read("content/alternatives/_index.md")
+        self.assertIn("layout: alternatives\n", text)
+        self.assertIn("url: /alternatives/\n", text)
+        self.assertIn("title: DeFi Alternatives\n", text)
+        self.assertIn("Filter by category and explore the ecosystem.", text)
+        self.assertFalse(self.exists("content/alternatives.md"))
+        self.assertIn("content/alternatives/_index.md", self.report.rewritten_indexes)
+
     def test_section_indexes_are_left_alone(self):
         for rel in ("content/product/_index.md", "content/events/_index.md",
-                    "content/alternatives/_index.md", "content/product/lending/_index.md",
+                    "content/product/lending/_index.md",
                     "content/product/perps/_index.md"):
             self.assertEqual(self.read(rel), DEST_FILES[rel])
 

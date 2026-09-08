@@ -19,25 +19,29 @@ from sync_content_docs import (
 
 ROOT_SKIP = ("README.md", "CONTRIBUTING.md", "BLOG-IMAGE-STYLE-GUIDE.md", "CLAUDE.md",
              "AGENTS.md", "Plans.md")
-ROOT_INDEXES = {"index.md": "content/_index.md", "blog.md": "content/blog/_index.md"}
+ROOT_INDEXES = {"index.md": "content/_index.md", "blog.md": "content/blog/_index.md",
+                "alternatives.md": "content/alternatives/_index.md"}
+NO_LAYOUT_TARGETS = ("content/_index.md",)
 STRICT_ROOTS = ("content/blog/", "content/product/", "content/alternatives/")
 
 
-def merge_entries(converted, branch_entries):
-    if branch_entries is not None:
+def merge_entries(converted, branch_entries, drop_layout):
+    if drop_layout:
+        converted = [(key, block) for key, block in converted if key != "layout"]
+    elif branch_entries is not None:
         branch = find_entry(branch_entries, "layout")[1]
         index = find_entry(converted, "layout")[0]
-        if branch is None:
-            converted = [(key, block) for key, block in converted if key != "layout"]
-        elif index >= 0:
+        if branch is not None and index >= 0:
             converted = list(converted)
             converted[index] = ("layout", branch)
-        else:
+        elif branch is not None:
             converted = [("layout", branch)] + list(converted)
-        taken = {key for key, _ in converted}
-        converted = list(converted) + [(key, block) for key, block in branch_entries
-                                       if key not in taken]
-    return converted
+    if branch_entries is None:
+        return list(converted)
+    taken = {key for key, _ in converted}
+    if drop_layout:
+        taken.add("layout")
+    return list(converted) + [(key, block) for key, block in branch_entries if key not in taken]
 
 
 def page_body(master_body, branch_body, rel, report):
@@ -82,7 +86,7 @@ def sync_pages(source, dest, report, managed):
                 branch_entries, branch_body = branch
         if rel.endswith("_index.md"):
             report.rewritten_indexes.append(rel)
-        emit(dest, rel, merge_entries(converted, branch_entries),
+        emit(dest, rel, merge_entries(converted, branch_entries, rel in NO_LAYOUT_TARGETS),
              page_body(master_body, branch_body, rel, report), report, managed)
 
 
