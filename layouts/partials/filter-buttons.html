@@ -1,0 +1,26 @@
+{{ $page_cards := .cards }}
+{{ $items_filters := .filters }}
+        <section>
+          <div class="button-group filters-button-group">
+            <button class="button active" data-filter="*">All</button>
+            {{ range $items_filters }}
+            {{ $filter := . }}
+            {{ $filter_buttons := slice }}
+            {{ range $page_cards }}
+              {{ $val := index .Params $filter }}
+              {{ if $val }}
+                {{ $vals := split $val ", " }}
+                {{ range $vals }}
+                  {{ $filter_buttons = $filter_buttons | append . }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+            {{ $filter_buttons = $filter_buttons | uniq }}
+            {{ range $filter_buttons }}
+            {{ $filterVal := . | lower | replaceRE " " "-" }}
+            <button class="button"
+              data-filter="{{ $filterVal }}">{{ . }}</button>
+            {{ end }}
+            {{ end }}
+          </div>
+        </section>

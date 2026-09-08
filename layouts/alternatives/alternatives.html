@@ -92,26 +92,7 @@
 
         {{ if index .Params "filter-by" }}
         {{ $items_filters := split (index .Params "filter-by") ", " }}
-        <section>
-          <div class="button-group filters-button-group">
-            <button class="button active" data-filter="*">All</button>
-            {{ range $items_filters }}
-            {{ $filter := . }}
-            {{ $filter_buttons := slice }}
-            {{ range $page_cards }}
-              {{ $val := index .Params $filter }}
-              {{ if $val }}
-                {{ $filter_buttons = $filter_buttons | append $val }}
-              {{ end }}
-            {{ end }}
-            {{ $filter_buttons = $filter_buttons | uniq }}
-            {{ range $filter_buttons }}
-            <button class="button"
-              data-filter="{{ . | lower | replace " " "-" }}">{{ . }}</button>
-            {{ end }}
-            {{ end }}
-          </div>
-        </section>
+        {{ partial "filter-buttons.html" (dict "cards" $page_cards "filters" $items_filters) }}
         {{ end }}
 
         {{ $items_filters := slice }}
@@ -124,18 +105,11 @@
         <section id='assets_cards'>
           {{ range $sorted_cards }}
           {{ $asset_tool := . }}
-          {{ $card_filters := slice }}
-          {{ range $items_filters }}
-            {{ $filter := . }}
-            {{ $val := index $asset_tool.Params $filter | lower | replace " " "-" }}
-            {{ if $val }}
-              {{ $card_filters = $card_filters | append $val }}
-            {{ end }}
-          {{ end }}
+          {{ $card_filters := partial "card-filter-classes.html" (dict "card" $asset_tool "filters" $items_filters) }}
 
           {{ if $asset_tool.Params.featured }}
           <div class="article-wrapper featured-wrapper">
-            <article class="asset_tool_card {{ delimit $card_filters " " }}">
+            <article class="asset_tool_card {{ $card_filters }}">
             <div class="featured-header">
               <span class="featured-product">
 
@@ -148,7 +122,7 @@
             </div>
           {{ else }}
           <div class="article-wrapper">
-            <article class="asset_tool_card {{ delimit $card_filters " " }}">
+            <article class="asset_tool_card {{ $card_filters }}">
           {{ end }}
 
 
