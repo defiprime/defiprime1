@@ -61,18 +61,49 @@
 </section>
 
 <section>
-  <h2 class='recently_added_annotation'>Latest from DeFi <span>blog</span></h2>
-  <div class='latest_blog_sneak_peak'>
-    {{ $blogPages := where site.RegularPages "Section" "blog" }}
-    {{ $blogPages = sort $blogPages "Date" "desc" }}
-    {{ $colors := slice "violet" "cyan" "orange" "violetgray" }}
-    {{ range $i, $post := first 6 $blogPages }}
-      {{ $colorIdx := mod $i (len $colors) }}
-      {{ $color := index $colors $colorIdx }}
-      <article class='latest_blog_link recent-blog-color_{{ $color }}'>
+  <div class='section-heading-row'>
+    <h2 class='section-heading'>Latest from DeFi <span>blog</span></h2>
+    <a href='/blog/' class='view-all'>View all posts &rarr;</a>
+  </div>
+
+  {{ $posts := partial "blog-pages.html" . }}
+  {{ with index $posts 0 }}
+  <a href="{{ partial "page-url.html" .RelPermalink }}" class='featured-post'>
+    <div class='featured-post-content'>
+      <div class='featured-tag'>Latest Post</div>
+      <h2>{{ .Params.h1title }}</h2>
+      <p class='intro'>{{ partial "jekyll-strip.html" .Params.intro }}</p>
+      <span class='read-more'>Read article &rarr;</span>
+    </div>
+    <div class='featured-post-visual'>
+      <div class='decorative-bars'>
+        <span style="left:15%; top:10%; height:60%; background:rgba(143,104,252,0.2)"></span>
+        <span style="left:25%; top:25%; height:50%; background:rgba(5,210,221,0.25)"></span>
+        <span style="left:38%; top:5%; height:70%; background:rgba(126,202,246,0.2)"></span>
+        <span style="left:50%; top:30%; height:55%; background:rgba(255,150,28,0.15)"></span>
+        <span style="left:62%; top:15%; height:45%; background:rgba(174,133,202,0.18)"></span>
+        <span style="left:72%; top:20%; height:60%; background:rgba(5,210,221,0.2)"></span>
+        <span style="left:85%; top:8%; height:50%; background:rgba(143,104,252,0.15)"></span>
+      </div>
+      {{ with .Params.tags }}
+      <div class='topic-label'>{{ index . 0 }}</div>
+      {{ end }}
+    </div>
+  </a>
+  {{ end }}
+
+  <div class='blog-grid'>
+    {{ range $i, $post := first 6 (after 1 $posts) }}
+    {{ $color := partial "link-color.html" (add $i 1) }}
+      <article class='blog-card'>
         <a href="{{ partial "page-url.html" $post.RelPermalink }}">
-          <h2>{{ $post.Params.h1title }}</h2>
-          <p>{{ partial "jekyll-truncate.html" (slice $post.Params.intro 120) }}</p>
+          <div class='blog-card-inner border-{{ $color }}'>
+            {{ with $post.Params.tags }}
+            <span class='tag-pill tag-{{ $color }}'>{{ index . 0 }}</span>
+            {{ end }}
+            <h3>{{ $post.Params.h1title }}</h3>
+            <p>{{ partial "jekyll-truncate.html" (slice $post.Params.intro 120) }}</p>
+          </div>
         </a>
       </article>
     {{ end }}
