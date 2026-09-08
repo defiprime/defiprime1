@@ -7,4 +7,3 @@
 /product/stake.fish  /product/stake-fish  301
 /product/summer.fi  /product/summer-fi  301
 /product/yearn.finance  /product/yearn-finance  301
-/t/*.html  /t/:splat  301

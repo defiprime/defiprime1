@@ -54,7 +54,7 @@ if [ -f "$PUBLIC/blog/index.html" ]; then pass "Blog listing exists"; else fail 
 
 if [ -f "$PUBLIC/blog/2/index.html" ]; then pass "Blog pagination page 2 exists"; else fail "Blog pagination page 2 missing"; fi
 
-if [ -f "$PUBLIC/aave-mess-decentralized-governance/index.html" ]; then pass "Blog post exists"; else fail "Blog post missing"; fi
+if [ -f "$PUBLIC/aave-mess-decentralized-governance.html" ]; then pass "Blog post exists"; else fail "Blog post missing"; fi
 
 if [ -f "$PUBLIC/product/aave.html" ]; then
   pass "Product page exists (Aave)"
@@ -69,11 +69,11 @@ else
 fi
 
 for eco in ethereum bitcoin solana polygon; do
-  if [ -f "$PUBLIC/$eco/index.html" ]; then pass "Ecosystem: /$eco"; else fail "Ecosystem missing: /$eco"; fi
+  if [ -f "$PUBLIC/$eco.html" ]; then pass "Ecosystem: /$eco"; else fail "Ecosystem missing: /$eco"; fi
 done
 
 for page in about events; do
-  if [ -f "$PUBLIC/$page/index.html" ]; then pass "Page: /$page"; else fail "Page missing: /$page"; fi
+  if [ -f "$PUBLIC/$page.html" ]; then pass "Page: /$page"; else fail "Page missing: /$page"; fi
 done
 
 if [ -f "$PUBLIC/404.html" ]; then pass "404 page exists"; else fail "404 page missing"; fi
@@ -85,11 +85,11 @@ if [ -f "$PUBLIC/sitemap.xml" ]; then pass "Sitemap exists"; else fail "Sitemap 
 echo ""
 echo "--- Test 4: HTML Content Checks ---"
 
-BLOG_FILE="$PUBLIC/aave-mess-decentralized-governance/index.html"
+BLOG_FILE="$PUBLIC/aave-mess-decentralized-governance.html"
 if [ -f "$BLOG_FILE" ]; then
   if grep -q 'BlogPosting' "$BLOG_FILE"; then pass "Blog JSON-LD schema present"; else fail "Blog JSON-LD schema missing"; fi
   if grep -q 'og:title' "$BLOG_FILE"; then pass "Blog OG meta tags present"; else fail "Blog OG meta tags missing"; fi
-  if grep -q 'class="tag"' "$BLOG_FILE"; then pass "Blog tag links present"; else fail "Blog tag links missing"; fi
+  if grep -Eq 'class="?tag"?' "$BLOG_FILE"; then pass "Blog tag links present"; else fail "Blog tag links missing"; fi
 fi
 
 HOME_FILE="$PUBLIC/index.html"
@@ -98,7 +98,7 @@ if [ -f "$HOME_FILE" ]; then
   if grep -q 'og:title' "$HOME_FILE"; then pass "Homepage OG meta present"; else fail "Homepage OG meta missing"; fi
 fi
 
-PRODUCT_FILES=$(find "$PUBLIC/product" -name "index.html" 2>/dev/null | head -3)
+PRODUCT_FILES=$(find "$PUBLIC/product" -name "*.html" 2>/dev/null | head -3)
 if [ -n "$PRODUCT_FILES" ]; then
   FIRST_PRODUCT=$(echo "$PRODUCT_FILES" | head -1)
   if grep -q 'BreadcrumbList' "$FIRST_PRODUCT"; then pass "Product BreadcrumbList schema"; else warn "Product BreadcrumbList schema missing"; fi
@@ -109,7 +109,7 @@ echo ""
 echo "--- Test 5: Internal Link Spot Check ---"
 if [ -f "$HOME_FILE" ]; then
   for link in blog about events; do
-    if [ -d "$PUBLIC/$link" ] || [ -f "$PUBLIC/$link/index.html" ]; then
+    if [ -f "$PUBLIC/$link/index.html" ] || [ -f "$PUBLIC/$link.html" ]; then
       pass "Internal link /$link resolves"
     else
       fail "Internal link /$link broken"
@@ -120,9 +120,9 @@ fi
 echo ""
 echo "--- Test 6: Redirects (Aliases) ---"
 for redirect in product decentralized_lending analytics custodian_services; do
-  if [ -f "$PUBLIC/$redirect/index.html" ] && grep -q 'refresh' "$PUBLIC/$redirect/index.html" 2>/dev/null; then
+  if [ -f "$PUBLIC/$redirect.html" ] && grep -q 'refresh' "$PUBLIC/$redirect.html" 2>/dev/null; then
     pass "Redirect /$redirect exists"
-  elif [ -f "$PUBLIC/$redirect/index.html" ]; then
+  elif [ -f "$PUBLIC/$redirect.html" ]; then
     warn "/$redirect exists but may not be a redirect"
   else
     warn "Redirect /$redirect not found"

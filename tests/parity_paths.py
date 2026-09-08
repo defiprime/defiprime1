@@ -17,7 +17,6 @@ GOLDEN_IGNORE_NAMES = {
     "redirects.json",
     "package-lock.json",
     "insert_date.sh",
-    "defiprime.tokenlist.json",
     "ogp-template.png",
 }
 GOLDEN_IGNORE_GLOBS = ["favicon.*"]
