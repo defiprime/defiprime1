@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{ $siteUrl := strings.TrimSuffix "/" .Site.BaseURL }}<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,13 +18,13 @@
   <link rel="preload" href="/images/vector.png" as="image" >
   <link rel="preload" href="/images/logo.svg" as="image" >
   <link rel="preload" href="/images/bg-fon.png" as="image" >
-  <link rel="preload" href="{{ .Params.image | absURL }}" as="image" >
+  <link rel="preload" href="{{ $siteUrl }}{{ .Params.image }}" as="image" >
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-    content="What is {{ index .Params "product-title" }}? {{ index .Params "product-description" | markdownify | plainify | truncate 160 }}">
+    {{ printf `content="What is %s? %s"` (index .Params "product-title") (partial "jekyll-truncate.html" (slice (index .Params "product-description") 160)) | safeHTMLAttr }}>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="preload" as="style">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relURL }}">
   <link rel="canonical" href="{{ partial "page-url.html" . }}">
@@ -32,8 +32,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ partial "page-url.html" . }}" />
   <meta property="og:description"
-    content="{{ index .Params "product-description" | markdownify | plainify | truncate 300 }}" />
-  <meta property="og:image" content="{{ .Params.image | absURL }}" />
+    {{ printf `content="%s"` (partial "jekyll-truncate.html" (slice (index .Params "product-description") 300)) | safeHTMLAttr }} />
+  <meta property="og:image" content="{{ $siteUrl }}{{ .Params.image }}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image">
@@ -41,8 +41,8 @@
   <meta name="twitter:creator" content="@defiprime">
   <meta name="twitter:title" content="{{ index .Params "product-title" }} - Reviews. What is {{ index .Params "product-title" }}?">
   <meta name="twitter:description"
-    content="{{ index .Params "product-description" | markdownify | plainify | truncate 300 }}">
-  <meta name="twitter:image" content="{{ .Params.image | absURL }}">
+    {{ printf `content="%s"` (partial "jekyll-truncate.html" (slice (index .Params "product-description") 300)) | safeHTMLAttr }}>
+  <meta name="twitter:image" content="{{ $siteUrl }}{{ .Params.image }}">
   <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
     integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
     crossorigin="anonymous"></script>
@@ -91,7 +91,7 @@
             <div {{ if eq $linkCount 1 }} style='flex: 0' {{ end }}> {{ index .Params "product-description" | markdownify }}
               {{ if .Params.ticker }}
                 <p>
-                {{ index .Params "product-title" }} token: <a href="https://dex.guru/token/eth/{{ .Params.contract }}" target="_blank" rel="noopener">${{ .Params.ticker }}</a>.
+                {{ index .Params "product-title" }} token: ${{ .Params.ticker }}.
                 </p>
                 {{ end }}
                 {{ if .Params.contract }}
@@ -100,9 +100,6 @@
                   </p>
                   {{ end }}
             </div>
-            {{ if .Params.ticker }}
-              <a href="https://dex.guru/token/eth/{{ .Params.contract }}" class="button-trade" target="_blank" rel="noopener">${{ .Params.ticker }} Charts and Liquidity</a>
-            {{ end }}
           </div>
         </div>
         {{ if .Params.analytics }}
@@ -141,13 +138,10 @@
           })();
         </script>
       </article>
-  {{ $altTo := index .Params "alternative-to" }}
-  {{ if $altTo }}
-    {{ $altSlug := "" }}
-    {{ if reflect.IsSlice $altTo }}{{ $altSlug = index $altTo 0 }}{{ else }}{{ $altSlug = $altTo }}{{ end }}
-<a href="/{{ $altSlug }}-alternatives">  {{ end }}
-
-      <h3 class='related-products'>{{ index .Params "product-title" }} alternatives{{ if $altTo }}</a>{{ end }} in <a
+      {{ $altTo := index .Params "alternative-to" }}
+      {{ $altFirst := "" }}
+      {{ if $altTo }}{{ if reflect.IsSlice $altTo }}{{ $altFirst = index $altTo 0 }}{{ else }}{{ $altFirst = $altTo }}{{ end }}{{ end }}
+      <h3 class='related-products'>{{ if $altTo }}<a href="/{{ $altFirst }}-alternatives">{{ index .Params "product-title" }} alternatives</a>{{ else }}{{ index .Params "product-title" }} alternatives{{ end }} in <a
           href="/{{ .Params.colpermalink }}">{{ .Params.coltitle }}</a>:</h3>
       <section class="tiles">
         {{ $posts := .CurrentSection.Pages | shuffle | first 3 }}
@@ -208,62 +202,32 @@
   }
 </script>
 
-  <!-- Product Schema - Enhanced for AI agents -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "{{ index .Params "product-title" }}",
-    "description": "{{ index .Params "product-description" | plainify | truncate 500 }}",
+    "@type": "Organization",
+    "name": {{ index .Params "product-title" | jsonify | safeJS }},
+    "description": {{ partial "jekyll-truncate.html" (slice (replaceRE `&amp;` "&" (index .Params "product-description" | markdownify)) 500) | jsonify | safeJS }},
     "url": "{{ partial "page-url.html" . }}",
     "image": {
       "@type": "ImageObject",
-      "url": "{{ .Params.image | absURL }}",
-      "contentUrl": "{{ .Params.image | absURL }}"
-    },
-    {{ if index .Params "product-url" }}
-    "brand": {
-      "@type": "Brand",
-      "name": "{{ index .Params "product-title" }}"
-    },
-    "offers": {
-      "@type": "Offer",
-      "url": "{{ index .Params "product-url" }}",
-      "seller": {
-        "@type": "Organization",
-        "name": "{{ index .Params "product-title" }}"
-      }
-    },
-    {{ end }}
-    "category": "{{ .Params.coltitle }}",
-    "keywords": "{{ .Params.filter }}",
-    "provider": {
-      "@type": "Organization",
-      "name": "DefiPrime",
-      "url": "{{ .Site.BaseURL }}"
-    }
-    {{ if .Params.ticker }}
-    ,
-    "additionalProperty": {
-      "@type": "PropertyValue",
-      "name": "token",
-      "value": "{{ .Params.ticker }}"
-    }
-    {{ end }}
-    {{ if .Params.contract }}
-    ,
-    "additionalProperty": [
+      "url": "{{ $siteUrl }}{{ .Params.image }}",
+      "contentUrl": "{{ $siteUrl }}{{ .Params.image }}"
+    }{{ with index .Params "product-url" }},
+    "sameAs": {{ . | jsonify | safeJS }}{{ end }}{{ with .Params.filter }},
+    "knowsAbout": {{ . | jsonify | safeJS }}{{ end }}{{ if or .Params.ticker .Params.contract }},
+    "identifier": [{{ if .Params.ticker }}
+      {
+        "@type": "PropertyValue",
+        "name": "ticker",
+        "value": {{ .Params.ticker | jsonify | safeJS }}
+      }{{ end }}{{ if and .Params.ticker .Params.contract }},{{ end }}{{ if .Params.contract }}
       {
         "@type": "PropertyValue",
         "name": "contract",
-        "value": "{{ .Params.contract }}"
-      }{{ if .Params.ticker }},{
-        "@type": "PropertyValue",
-        "name": "ticker",
-        "value": "{{ .Params.ticker }}"
+        "value": {{ .Params.contract | jsonify | safeJS }}
       }{{ end }}
-    ]
-    {{ end }}
+    ]{{ end }}
   }
   </script>
 
