@@ -5,7 +5,7 @@
 {{- range first 5 (partial "blog-pages.html" .) -}}
 {{- $url := partial "page-url.html" . -}}
 {{- $title := .RenderString .Title | transform.XMLEscape | safeHTML -}}
-<entry><title type="html">{{ $title }}</title><link href="{{ $url }}" rel="alternate" type="text/html" title="{{ $title }}" /><published>{{ .Date.UTC.Format $stamp | safeHTML }}</published><updated>{{ .Lastmod.UTC.Format $stamp | safeHTML }}</updated><id>{{ $url }}</id><content type="html" xml:base="{{ $url }}">{{ printf "<![CDATA[%s]]>" .Content | safeHTML }}</content>
+<entry><title type="html">{{ $title }}</title><link href="{{ $url }}" rel="alternate" type="text/html" title="{{ $title }}" /><published>{{ .Date.UTC.Format $stamp | safeHTML }}</published><updated>{{ .Lastmod.UTC.Format $stamp | safeHTML }}</updated><id>{{ $url }}</id><content type="html" xml:base="{{ $url }}">{{ printf "<![CDATA[%s]]>" (replaceRE `<img alt="([^"]*)" data-src="([^"]*)" class="lazyload">` `<img src="$2" alt="$1" />` .Content) | safeHTML }}</content>
 {{- with index hugo.Data.authors .Params.author }}{{ with .name }}<author><name>{{ . | transform.XMLEscape | safeHTML }}</name></author>{{ end }}{{ end }}
 {{- with .Params.category }}<category term="{{ . | transform.XMLEscape | safeHTML }}" />{{ end }}
 {{- range .Params.tags }}<category term="{{ . | transform.XMLEscape | safeHTML }}" />{{ end }}
