@@ -1,8 +1,12 @@
+{{- $siteUrl := strings.TrimSuffix "/" .Site.BaseURL -}}
+{{- $tag := .Data.Term -}}
+{{- $pageUrl := partial "page-url.html" . -}}
+{{- $posts := sort (sort .Pages "File.Path" "desc") "Date" "desc" -}}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>{{ .Params.tag }} - DeFi Blog</title>
+  <title>{{ $tag }} - DeFi Blog</title>
   <link rel="preconnect" href="https://gstatic.com" crossorigin>
   <link rel="preconnect" href="https://google-analytics.com">
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
@@ -16,24 +20,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="{{ .Title }} and all things about DeFi - trustless and transparent financial products built on top of the blockchain ">
+  <meta name="description" content="{{ $tag }} and all things about DeFi - trustless and transparent financial products built on top of the blockchain ">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relURL }}">
-  <link rel="canonical" href="{{ partial "page-url.html" . }}">
+  <link rel="canonical" href="{{ $pageUrl }}">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"  rel="preload" as="style">
-  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:title" content="{{ $tag }}" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ partial "page-url.html" . }}" />
-  <meta property="og:description" content="{{ .Title }} and all things about DeFi - trustless and transparent financial products built on top of the blockchain " />
-  <meta property="og:image" content="{{ .Site.BaseURL }}images/og-blog.png" />
+  <meta property="og:url" content="{{ $pageUrl }}" />
+  <meta property="og:description" content="{{ $tag }} and all things about DeFi - trustless and transparent financial products built on top of the blockchain " />
+  <meta property="og:image" content="{{ $siteUrl }}/images/og-blog.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@defiprime">
   <meta name="twitter:creator" content="@defiprime">
-  <meta name="twitter:title" content="{{ .Title }}">
-  <meta name="twitter:description" content="{{ .Title }} and all things about DeFi - trustless and transparent financial products built on top of the blockchain ">
-  <meta name="twitter:image" content="{{ .Site.BaseURL }}images/og-blog.png">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <meta name="twitter:title" content="{{ $tag }}">
+  <meta name="twitter:description" content="{{ $tag }} and all things about DeFi - trustless and transparent financial products built on top of the blockchain ">
+  <meta name="twitter:image" content="{{ $siteUrl }}/images/og-blog.png">
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138327045-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -47,57 +50,103 @@
 
 <body class="blog-page">
   {{ partialCached "header.html" . }}
-  <!-- Main -->
   <div id="main">
     <div class="inner">
-      <header>
-        <h1 class="align-center"><span class="text-green">{{ .Title }}</span> @ DeFi <span
-            class="text-orange">Blog</span></h1>
+      <header class="blog-page-header">
+        <h1><span>{{ $tag }}</span> @ DeFi Blog</h1>
       </header>
 
-
-      <section class="blog-articles">
-        {{ range .Pages }}
-          {{ if not (in .RelPermalink "/amp") }}
-          <article>
-            <div class="tags">
-              {{ range .Params.tags }}
-                {{ if and . (ne (strings.TrimSpace .) "") }}
-              <a href="{{ with site.GetPage (printf "/tags/%s" (urlize .)) }}{{ partial "page-url.html" .RelPermalink }}{{ end }}" class="tag">{{ . }}</a>
-                {{ end }}
-              {{ end }}
-            </div>
-            <a href="{{ partial "page-url.html" .RelPermalink }}">
-              <div class="date">{{ .Date.Format "02 Jan 2006" }}</div>
-              <div class="header">
-                <h2>{{ .Params.h1title }}</h2>
-                <div class="author-item">
-                  {{ $author := index hugo.Data.authors .Params.author }}
-                  {{ if and $author $author.image }}
-                    <img class="lazyload" data-src="{{ $author.image }}">
+      <section class="blog-articles-grid">
+        {{ range $i, $post := $posts }}
+          {{ $color := partial "link-color.html" (add $i 1) }}
+          <article class="blog-card">
+            <a href="{{ partial "page-url.html" $post.RelPermalink }}">
+              <div class="blog-card-inner border-{{ $color }}">
+                {{ with $post.Params.tags }}
+                <div class="blog-card-meta">
+                  {{ range first 2 . }}
+                  <span class="tag-pill tag-{{ $color }}">{{ . }}</span>
                   {{ end }}
-                  <div class="author-data">
-                    {{ $author2 := index hugo.Data.authors .Params.author }}
-                    {{ if and $author2 $author2.image }}
-                      <span>Author</span>
-                      <span class="author">{{ $author2.name }}</span>
-                    {{ end }}
-                  </div>
+                  <span class="blog-card-date">{{ $post.Date.Format "02 Jan 2006" }}</span>
                 </div>
-              </div>
-              <div class="content">
-                <p>{{ partial "jekyll-truncate.html" (slice .Params.intro 300) }}</p>
+                {{ end }}
+                <h3>{{ $post.Params.h1title }}</h3>
+                <p>{{ partial "jekyll-truncatewords.html" (slice $post.Params.intro 30) }}</p>
+                <div class="blog-card-author">
+                  {{ $author := index hugo.Data.authors $post.Params.author }}
+                  {{ with $author }}
+                    {{ with .image }}
+                  <img class="lazyload" data-src="{{ . }}">
+                    {{ end }}
+                    {{ with .name }}
+                  <span>{{ . }}</span>
+                    {{ end }}
+                  {{ end }}
+                </div>
               </div>
             </a>
           </article>
-          {{ end }}
         {{ end }}
-
       </section>
 
     </div>
   </div>
   {{ partialCached "footer.html" . }}
+
+  {{ if $posts }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": {{ printf "%s - DeFi Blog" $tag | jsonify | safeJS }},
+    "description": {{ printf "%s articles and guides on DefiPrime: trustless, transparent DeFi products built on the blockchain." $tag | jsonify | safeJS }},
+    "url": "{{ $pageUrl }}",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "DefiPrime",
+      "url": "{{ $siteUrl }}"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": {{ $tag | jsonify | safeJS }},
+      "itemListElement": [
+        {{ range $i, $post := $posts }}{{ if $i }},{{ end }}{
+          "@type": "ListItem",
+          "position": {{ add $i 1 }},
+          "url": "{{ partial "page-url.html" $post }}",
+          "name": {{ $post.Params.h1title | default $post.Title | jsonify | safeJS }}
+        }{{ end }}
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "DefiPrime",
+        "item": "{{ $siteUrl }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "{{ $siteUrl }}/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": {{ $tag | jsonify | safeJS }},
+        "item": "{{ $pageUrl }}"
+      }
+    ]
+  }
+  </script>
+  {{ end }}
 
 </body>
 
