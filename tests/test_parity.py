@@ -30,6 +30,24 @@ PAGE_A = """<!doctype html>
 """
 
 
+def page_og(url="https://defiprime.com/page", image="https://defiprime.com/images/a.png", card="summary_large_image"):
+    return (
+        "<!doctype html>\n"
+        "<html><head>\n"
+        "<title>Page OG</title>\n"
+        '<link rel=canonical href=https://defiprime.com/page>\n'
+        '<meta property="og:url" content="%s">\n'
+        '<meta property="og:image" content="%s">\n'
+        '<meta name=twitter:card content="%s">\n'
+        "</head><body>\n"
+        "<h1>Heading OG</h1>\n"
+        "</body></html>\n"
+    ) % (url, image, card)
+
+
+PAGE_OG = page_og()
+
+
 class BuildTree(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
@@ -76,6 +94,30 @@ class TestMetaDifference(BuildTree):
         self.assertIn("title", fields)
         self.assertEqual(result.exit_code, 1)
 
+    def test_og_and_twitter_differences_reported_per_key(self):
+        write(os.path.join(self.golden, "page.html"), PAGE_OG)
+        write(os.path.join(self.public, "page.html"), page_og(url="https://defiprime.com/other"))
+        allow_path = os.path.join(self.tmp.name, "allow.txt")
+        write(allow_path, "# header\n")
+        result = parity.run(self.golden, self.public, allow_path)
+        fields = [f for (p, f, g, h) in result.meta]
+        self.assertEqual(fields, ["og:url"])
+        self.assertEqual(
+            result.meta[0],
+            ("page.html", "og:url", "https://defiprime.com/page", "https://defiprime.com/other"),
+        )
+        self.assertEqual(result.exit_code, 1)
+
+    def test_twitter_key_named_in_full(self):
+        write(os.path.join(self.golden, "page.html"), PAGE_OG)
+        write(os.path.join(self.public, "page.html"), page_og(card="summary"))
+        allow_path = os.path.join(self.tmp.name, "allow.txt")
+        write(allow_path, "# header\n")
+        result = parity.run(self.golden, self.public, allow_path)
+        fields = [f for (p, f, g, h) in result.meta]
+        self.assertEqual(fields, ["twitter:card"])
+        self.assertEqual(result.exit_code, 1)
+
 
 class TestLinksDifference(BuildTree):
     def test_link_set_difference_reported(self):
@@ -102,6 +144,22 @@ class TestAllowlistSuppression(BuildTree):
         self.assertEqual(result.missing, [])
         self.assertEqual(result.missing_suppressed, 1)
         self.assertEqual(result.exit_code, 0)
+
+
+class TestAllowlistSuppressesOneMetaKey(BuildTree):
+    def test_og_url_entry_leaves_og_image_reported(self):
+        write(os.path.join(self.golden, "page.html"), PAGE_OG)
+        write(
+            os.path.join(self.public, "page.html"),
+            page_og(url="https://defiprime.com/other", image="https://defiprime.com/images/b.png"),
+        )
+        allow_path = os.path.join(self.tmp.name, "allow.txt")
+        write(allow_path, "META page.html og:url  # golden emits site.url here\n")
+        result = parity.run(self.golden, self.public, allow_path)
+        fields = [f for (p, f, g, h) in result.meta]
+        self.assertEqual(fields, ["og:image"])
+        self.assertEqual(result.meta_suppressed, 1)
+        self.assertEqual(result.exit_code, 1)
 
 
 class TestAllowlistRejectsMissingReason(unittest.TestCase):

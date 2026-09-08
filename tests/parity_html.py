@@ -5,6 +5,7 @@ from html.parser import HTMLParser
 
 META_FIELDS = ["title", "description", "canonical", "og", "twitter", "robots", "ld-types", "h1"]
 META_FIELD_KEY = {"ld-types": "ld_types"}
+META_TAG_MAP_FIELDS = {"og", "twitter"}
 
 
 def collapse_ws(text):
@@ -147,8 +148,6 @@ def parse_meta_file(path):
 
 
 def format_field_value(field, value):
-    if field in ("og", "twitter"):
-        return "{" + ", ".join(f"{k}={v}" for k, v in sorted(value.items())) + "}"
     if field == "ld-types":
         return "[" + ", ".join(value) + "]"
     return value
@@ -160,6 +159,13 @@ def compare_meta(gm, hm):
         key = META_FIELD_KEY.get(field, field)
         gv = gm[key]
         hv = hm[key]
+        if field in META_TAG_MAP_FIELDS:
+            for tag in sorted(set(gv) | set(hv)):
+                gtag = gv.get(tag, "")
+                htag = hv.get(tag, "")
+                if gtag != htag:
+                    diffs.append((tag, gtag, htag))
+            continue
         if gv != hv:
             diffs.append((field, format_field_value(field, gv), format_field_value(field, hv)))
     return diffs
