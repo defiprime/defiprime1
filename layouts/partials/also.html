@@ -1,16 +1,16 @@
 <section class="read_next">
   <div class="container">
     <div class='reading_next_links'>
-      {{ range site.Sections }}
-        {{ if and (ne .Section "blog") (ne .Section "events") (ne .Section "alternatives") (ne .Section "posts") }}
-          {{ if and .RelPermalink (ne .RelPermalink $.RelPermalink) }}
-          <a href="{{ partial "page-url.html" .RelPermalink }}">
-            {{ .Title | humanize | title }}
-            <span class="articles_count">{{ len .RegularPages }}</span>
-          </a>
-          {{ end }}
-        {{ end }}
-      {{ end }}
+      {{- $listings := where site.RegularPages "Params.category" "products" -}}
+      {{- range sort $listings "Params.cards" }}
+        {{- $cards := .Params.cards }}
+        {{- if ne $cards "alternative-savings" }}
+      <a href="{{ partial "page-url.html" . }}">
+        {{ replaceRE `[-_]` " " (strings.FirstUpper (lower $cards)) }}
+        <span class="articles_count">{{ len (site.GetPage (printf "product/%s" $cards)).RegularPages }}</span>
+      </a>
+        {{- end }}
+      {{- end }}
     </div>
   </div>
 </section>
