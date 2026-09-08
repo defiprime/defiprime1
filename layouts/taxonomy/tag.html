@@ -99,7 +99,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": {{ printf "%s - DeFi Blog" $tag | jsonify | safeJS }},
-    "description": {{ printf "%s articles and guides on DefiPrime: trustless, transparent DeFi products built on the blockchain." $tag | jsonify | safeJS }},
+    "description": {{ printf "%s articles and guides on DefiPrime — trustless, transparent DeFi products built on the blockchain." $tag | jsonify | safeJS }},
     "url": "{{ $pageUrl }}",
     "isPartOf": {
       "@type": "WebSite",

@@ -301,8 +301,8 @@
   {{ partial "also.html" "" }}
   {{ partialCached "footer.html" . }}
 
-  {{ if $page_cards }}
-  {{ partial "product-itemlist-schema.html" (dict "page" . "cards" $page_cards) }}
+  {{ if $sorted_cards }}
+  {{ partial "product-itemlist-schema.html" (dict "page" . "cards" $sorted_cards) }}
   {{ end }}
 
   <script>
