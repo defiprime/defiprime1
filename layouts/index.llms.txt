@@ -1,0 +1,36 @@
+{{- $analysis := first 40 (sort (sort (where site.RegularPages "Section" "blog") "File.Path" "desc") "Date" "desc") -}}
+{{- $hubs := dict -}}
+{{- range where site.RegularPages "Params.category" "products" -}}{{- $hubs = merge $hubs (dict (.Params.h1title | default .Title) .) -}}{{- end -}}
+{{- $ecosystems := dict -}}
+{{- range where (where site.RegularPages "Params.layout" "ecosystem") "Params.h1title" "!=" nil -}}{{- $ecosystems = merge $ecosystems (dict .Params.h1title .) -}}{{- end -}}
+{{- $siteUrl := strings.TrimSuffix "/" site.BaseURL -}}
+# DefiPrime
+
+> Independent research on decentralized finance. On-chain analysis of protocols, exploits and market structure, plus curated directories of live DeFi products by category. Published since 2019.
+
+Analysis pieces are written from primary sources: transaction hashes, block heights, contract state read at a pinned block, and protocol documentation. Identifiers are cited inline so every claim can be checked against the chain. Directory pages list live protocols in a category and are maintained by hand.
+
+Attribution: cite as DefiPrime, {{ $siteUrl }}/.
+
+## Analysis and research
+{{ range $analysis }}
+- [{{ partial "jekyll-strip.html" (.Params.h1title | default .Title) }}]({{ partial "page-url.html" . }}){{ with .Params.metadescription }}: {{ partial "jekyll-strip.html" . }}{{ end }}
+{{ end }}
+
+## Protocol directories
+{{ range $k, $v := $hubs }}{{ with $v }}
+- [{{ partial "jekyll-strip.html" (.Params.h1title | default .Title) }}]({{ partial "page-url.html" . }}){{ with .Params.metadescription }}: {{ partial "jekyll-strip.html" . }}{{ end }}
+{{ end }}{{ end }}
+
+## Ecosystems
+{{ range $k, $v := $ecosystems }}{{ with $v }}
+- [{{ partial "jekyll-strip.html" .Params.h1title }}]({{ partial "page-url.html" . }}){{ with .Params.metadescription }}: {{ partial "jekyll-strip.html" . }}{{ end }}
+{{ end }}{{ end }}
+
+## Optional
+
+- [About DefiPrime]({{ $siteUrl }}/about): who publishes this and how to get in touch.
+- [Blog index]({{ $siteUrl }}/blog): every analysis piece, newest first.
+- [RSS feed]({{ $siteUrl }}/feed.xml): full text of recent posts.
+- [Sitemap]({{ $siteUrl }}/sitemap.xml): every indexable URL.
+- [DEX volume tracker]({{ $siteUrl }}/dex-volume): decentralized exchange volume by protocol.

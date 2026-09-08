@@ -61,6 +61,10 @@ disableKinds = ["taxonomy"]
     startLevel = 1
     endLevel = 2
 
+[mediaTypes]
+  [mediaTypes."text/newssitemap"]
+    suffixes = ["xml"]
+
 # RSS Feed matching Jekyll (5 posts, at /feed.xml)
 [outputFormats]
   [outputFormats.RSS]
@@ -71,9 +75,19 @@ disableKinds = ["taxonomy"]
     baseName = "searchindex"
     isPlainText = true
     notAlternative = true
+  [outputFormats.LLMS]
+    mediaType = "text/plain"
+    baseName = "llms"
+    isPlainText = true
+    notAlternative = true
+  [outputFormats.NewsSitemap]
+    mediaType = "text/newssitemap"
+    baseName = "news-sitemap"
+    isPlainText = true
+    notAlternative = true
 
 [outputs]
-  home = ["HTML", "RSS", "SearchIndex"]
+  home = ["HTML", "RSS", "SearchIndex", "LLMS", "NewsSitemap"]
   section = ["HTML"]
   taxonomy = ["HTML"]
   term = ["HTML"]
@@ -93,6 +107,7 @@ disableKinds = ["taxonomy"]
   filename = "sitemap.xml"
 
 [minify]
+  disableXML = true
   [minify.tdewolff]
     [minify.tdewolff.html]
       keepWhitespace = true
