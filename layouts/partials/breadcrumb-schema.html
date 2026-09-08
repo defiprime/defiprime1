@@ -1,0 +1,21 @@
+{{- $siteUrl := strings.TrimSuffix "/" .Site.BaseURL -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "DefiPrime",
+      "item": "{{ $siteUrl }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ .Params.h1title | default .Title | jsonify | safeJS }},
+      "item": "{{ partial "page-url.html" . }}"
+    }
+  ]
+}
+</script>

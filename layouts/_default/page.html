@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{ $siteUrl := strings.TrimSuffix "/" .Site.BaseURL }}{{ $excerpt := partial "jekyll-excerpt.html" . }}<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -16,7 +16,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
+  <meta name="description" content="{{ partial "jekyll-truncate.html" (slice .Params.metadescription 160) }}">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="preload" as="style">
   <!-- Critical CSS Inlined -->
   <style>{{ partial "critical.css" . | safeCSS }}</style>
@@ -32,9 +32,9 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ partial "page-url.html" . }}" />
   <meta property="og:description"
-    content="{{ if .Params.metadescription }}{{ .Params.metadescription | plainify | truncate 160 }}{{ else if .Params.excerpt }}{{ .Params.excerpt | plainify | truncate 160 }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    content="{{ if $excerpt }}{{ partial "jekyll-truncate.html" (slice $excerpt 160) }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
   <meta property="og:image"
-    content="{{ .Params.og | default "/images/og.png" | absURL }}" />
+    content="{{ $siteUrl }}{{ .Params.og | default "/images/og.png" }}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image">
@@ -42,9 +42,9 @@
   <meta name="twitter:creator" content="@defiprime">
   <meta name="twitter:title"
     content="{{ if .Params.pagetitle }}{{ .Params.pagetitle }}{{ else }}{{ .Site.Title }}{{ end }}">
-  <meta name="twitter:description" content="{{ .Params.metadescription | plainify | truncate 160 }}">
+  <meta name="twitter:description" content="{{ partial "jekyll-truncate.html" (slice .Params.metadescription 160) }}">
   <meta name="twitter:image"
-    content="{{ .Params.og | default "/images/og.png" | absURL }}">
+    content="{{ $siteUrl }}{{ .Params.og | default "/images/og.png" }}">
   <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
     integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
     crossorigin="anonymous"></script>
@@ -78,7 +78,7 @@
         {{ $items_filters := split (index .Params "filter-by") ", " }}
         {{ $cards_section := printf "product/%s" .Params.cards }}
         {{ $cardsSection := site.GetPage (printf "product/%s" .Params.cards) }}
-        {{ $page_cards := $cardsSection.Pages }}
+        {{ $page_cards := sort $cardsSection.Pages "File.Path" }}
         <section>
           <div class="button-group filters-button-group">
             <button class="button active" data-filter="*">All</button>
@@ -110,7 +110,7 @@
           {{ $items_filters = split (index .Params "filter-by") ", " }}
         {{ end }}
         {{ $cardsSection := site.GetPage (printf "product/%s" .Params.cards) }}
-        {{ $page_cards := $cardsSection.Pages }}
+        {{ $page_cards := sort $cardsSection.Pages "File.Path" }}
         {{ $featured := where $page_cards "Params.featured" true }}
         {{ $non_featured := where $page_cards "Params.featured" "ne" true }}
         {{ $page_cards = $featured | append $non_featured }}
@@ -305,6 +305,11 @@
   </div>
   {{ partialCached "also.html" . }}
   {{ partialCached "footer.html" . }}
+
+  {{ if and .Params.cards (gt (len $page_cards) 0) }}
+  {{ partial "product-itemlist-schema.html" (dict "page" . "cards" $page_cards) }}
+  {{ partial "breadcrumb-schema.html" . }}
+  {{ end }}
 </body>
 
 </html>
