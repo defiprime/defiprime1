@@ -1,0 +1,19 @@
+<ul>
+{{ range where site.RegularPages "Section" "alternatives" }}
+   {{ if ne .Params.published false }}
+   <li>{{ dateFormat "02 Jan 2006" .Date }} - <a href="{{ partial "page-url.html" . }}">{{ .Params.pagetitle }}</a>
+   </li>
+   {{ end }}
+ {{ end }}
+</ul>
+
+<ul>
+{{ $posts := where site.RegularPages "Section" "blog" }}
+{{ $listings := where site.RegularPages "Params.category" "products" }}
+{{ range sort ($posts | append $listings) "Date" "desc" }}
+   {{ if ne .Params.published false }}
+   <li>{{ dateFormat "02 Jan 2006" .Date }} - <a href="{{ partial "page-url.html" . }}">{{ .Params.pagetitle }}</a>
+   </li>
+   {{ end }}
+ {{ end }}
+</ul>
