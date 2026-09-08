@@ -11,7 +11,7 @@ from sync_content_assets import sync_assets
 from sync_content_core import (
     OFFENDER_RE, Report, SyncError, convert_entries, convert_shortcodes, entry_value,
     find_entry, has_liquid, name_slug, parse_front_matter, permalink_to_url,
-    render_front_matter, set_url, split_front_matter, strip_cr, youtube_id,
+    render_front_matter, set_url, split_front_matter, strip_cr, write_file, youtube_id,
 )
 from sync_content_docs import (
     convert_body, emit, load_doc, sync_alternatives, sync_events, sync_posts, sync_products,
@@ -90,6 +90,64 @@ def sync_pages(source, dest, report, managed):
              page_body(master_body, branch_body, rel, report), report, managed)
 
 
+def read_authors(path):
+    authors = {}
+    current = None
+    with open(path, "r", encoding="utf-8") as handle:
+        for line in handle:
+            line = line.rstrip("\n")
+            if not line.strip() or line.lstrip().startswith("#"):
+                continue
+            if not line[0].isspace():
+                current = line.split(":", 1)[0].strip()
+                authors[current] = {}
+            elif current is not None and ":" in line:
+                key, value = line.split(":", 1)
+                authors[current][key.strip()] = value.strip().strip('"\'')
+    return authors
+
+
+def author_slugs(authors):
+    key_to_slug = {}
+    slug_to_key = {}
+    for key, data in authors.items():
+        slug = str(data.get("slug") or key).lower()
+        key_to_slug[key] = slug
+        if key.lower() == slug or slug not in slug_to_key:
+            slug_to_key[slug] = key
+    return key_to_slug, slug_to_key
+
+
+def sync_authors(dest, report, managed):
+    data_path = os.path.join(dest, "data", "authors.yaml")
+    if not os.path.isfile(data_path):
+        raise SyncError("data/authors.yaml not found; cannot generate author pages")
+    authors = read_authors(data_path)
+    _, slug_to_key = author_slugs(authors)
+
+    root = os.path.join(dest, "content", "authors")
+    index_rel = "content/authors/_index.md"
+    write_file(os.path.join(dest, index_rel),
+               "---\nlayout: authors_index\ntitle: Authors\n---\n", report, index_rel)
+    managed.add(index_rel)
+
+    for slug in sorted(slug_to_key):
+        key = slug_to_key[slug]
+        rel = "content/authors/%s/_index.md" % slug
+        name = authors[key].get("name") or slug
+        text = ("---\nlayout: author_page\nauthor: %s\nauthor_slug: %s\ntitle: %s\n---\n"
+                % (key, slug, name))
+        write_file(os.path.join(dest, rel), text, report, rel)
+        managed.add(rel)
+
+    if os.path.isdir(root):
+        for name in sorted(os.listdir(root)):
+            path = os.path.join(root, name)
+            if os.path.isdir(path) and name not in slug_to_key:
+                shutil.rmtree(path)
+                report.deleted.append("content/authors/%s/" % name)
+
+
 def prune(dest, managed, report):
     for name in ("content/airdrop", "content/.claude"):
         path = os.path.join(dest, name)
@@ -142,6 +200,7 @@ def sync(source, dest, golden=None):
     sync_pages(source, dest, report, managed)
     prune(dest, managed, report)
     sync_assets(source, dest, report)
+    sync_authors(dest, report, managed)
     scan_offenders(dest, managed, report)
     if report.missing_golden:
         raise SyncError("urls absent from the golden build: " + ", ".join(

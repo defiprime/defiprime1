@@ -134,7 +134,8 @@ class SyncTreeTests(unittest.TestCase):
             self.assertFalse(self.exists(rel), rel)
 
     def test_assets_and_data(self):
-        self.assertEqual(self.read("data/authors.yaml"), "sawinyh:\n  name: Sergej\n")
+        self.assertEqual(self.read("data/authors.yaml"),
+                         "Defiprime:\n  name: Sergej\n  slug: sawinyh\nsawinyh:\n  name: Sergej\n")
         self.assertEqual(self.read("static/robots.txt"), "User-agent: *\nAllow: /\n")
         self.assertEqual(self.read("static/images/og.png"), "PNGDATA")
         self.assertEqual(self.read("static/images/blog/new.png"), "NEWPNG")
@@ -145,6 +146,15 @@ class SyncTreeTests(unittest.TestCase):
     def test_llms_txt_with_liquid_is_not_written(self):
         self.assertFalse(self.exists("static/llms.txt"))
         self.assertIn("llms.txt", self.report.needs_template)
+
+    def test_author_pages_follow_the_data_file(self):
+        self.assertEqual(self.read("content/authors/_index.md"),
+                         "---\nlayout: authors_index\ntitle: Authors\n---\n")
+        self.assertEqual(self.read("content/authors/sawinyh/_index.md"),
+                         "---\nlayout: author_page\nauthor: sawinyh\n"
+                         "author_slug: sawinyh\ntitle: Sergej\n---\n")
+        self.assertFalse(self.exists("content/authors/Defiprime/_index.md"))
+        self.assertFalse(self.exists("content/authors/stale/_index.md"))
 
     def test_report_counts(self):
         self.assertEqual(self.report.youtube, [("content/blog/2020-01-01-hello.md", 1)])

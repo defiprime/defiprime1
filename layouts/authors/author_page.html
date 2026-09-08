@@ -1,0 +1,140 @@
+{{- $siteUrl := strings.TrimSuffix "/" .Site.BaseURL -}}
+{{- $author := index hugo.Data.authors .Params.author -}}
+{{- $posts := partial "author-posts.html" .Params.author_slug -}}
+{{- $count := len $posts -}}
+{{- $pageUrl := partial "page-url.html" . -}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>{{ $author.name }} - DeFi Blog Author</title>
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://google-analytics.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://googletagmanager.com">
+  <link rel="preload" href="/images/vector.png" as="image" media="(min-width: 601px)">
+  <link rel="preload" href="/images/logo.svg" as="image" media="(min-width: 601px)">
+  <link rel="preload" href="/images/bg-fon.png" as="image" media="(min-width: 601px)">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{{ $author.name }} on DeFiprime: {{ $count }} articles. {{ partial "jekyll-truncate.html" (slice $author.bio 160) }}">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relURL }}">
+  <link rel="canonical" href="{{ $pageUrl }}">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="preload" as="style">
+  <meta property="og:title" content="{{ $author.name }} - DeFiprime Author" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="{{ $pageUrl }}" />
+  <meta property="og:description" content="{{ $author.name }} on DeFiprime: {{ $count }} articles on DeFi, stablecoins, RWAs and more." />
+  <meta property="og:image" content="{{ $siteUrl }}/images/og-blog.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@defiprime">
+  <meta name="twitter:title" content="{{ $author.name }} - DeFiprime Author">
+  <meta name="twitter:description" content="{{ $author.name }} on DeFiprime: {{ $count }} articles.">
+  <meta name="twitter:image" content="{{ $siteUrl }}/images/og-blog.png">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138327045-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-138327045-1', { 'content_group3': 'author' });
+  </script>
+</head>
+
+<body class="blog-page">
+  {{ partialCached "header.html" . }}
+  <div id="main">
+    <div class="inner">
+      <header class="blog-page-header">
+        <h1><span>{{ $author.name }}</span> @ DeFi Blog</h1>
+        <p class="author-article-count">{{ $count }} article{{ if ne $count 1 }}s{{ end }} published on DeFiprime</p>
+      </header>
+
+      {{ partial "author_bio.html" . }}
+
+      <section class="blog-articles-grid">
+        {{ range $i, $post := $posts }}
+          {{ $color := partial "link-color.html" (add $i 1) }}
+          <article class="blog-card">
+            <a href="{{ partial "page-url.html" $post.RelPermalink }}">
+              <div class="blog-card-inner border-{{ $color }}">
+                {{ with $post.Params.tags }}
+                <div class="blog-card-meta">
+                  {{ range first 2 . }}
+                  <span class="tag-pill tag-{{ $color }}">{{ . }}</span>
+                  {{ end }}
+                  <span class="blog-card-date">{{ $post.Date.Format "02 Jan 2006" }}</span>
+                </div>
+                {{ end }}
+                <h3>{{ $post.Params.h1title | default $post.Title }}</h3>
+                <p>{{ partial "jekyll-truncatewords.html" (slice $post.Params.intro 30) }}</p>
+              </div>
+            </a>
+          </article>
+        {{ end }}
+      </section>
+
+    </div>
+  </div>
+  {{ partialCached "footer.html" . }}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "url": "{{ $pageUrl }}",
+    "mainEntity": {
+      "@type": "Person",
+      "name": {{ $author.name | jsonify | safeJS }},
+      {{ with $author.bio }}"description": {{ partial "jekyll-strip.html" . | jsonify | safeJS }},{{ end }}
+      {{ with $author.image }}"image": "{{ $siteUrl }}{{ . }}",{{ end }}
+      {{ with $author.url }}"url": "{{ . }}",{{ end }}
+      "sameAs": [
+        {{- $links := slice -}}
+        {{- with $author.url }}{{ $links = $links | append . }}{{ end -}}
+        {{- with $author.twitter }}{{ $links = $links | append . }}{{ end -}}
+        {{- with $author.linkedin }}{{ $links = $links | append . }}{{ end -}}
+        {{- with $author.github }}{{ $links = $links | append . }}{{ end -}}
+        {{ range $j, $l := $links }}{{ if $j }},{{ end }}{{ $l | jsonify | safeJS }}{{ end }}
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": {{ printf "%s - DeFiprime articles" $author.name | jsonify | safeJS }},
+    "url": "{{ $pageUrl }}",
+    "isPartOf": { "@type": "WebSite", "name": "DefiPrime", "url": "{{ $siteUrl }}" },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {{ range $i, $post := $posts }}{{ if $i }},{{ end }}{
+          "@type": "ListItem",
+          "position": {{ add $i 1 }},
+          "url": "{{ partial "page-url.html" $post }}",
+          "name": {{ $post.Params.h1title | default $post.Title | jsonify | safeJS }}
+        }{{ end }}
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "DefiPrime", "item": "{{ $siteUrl }}" },
+      { "@type": "ListItem", "position": 2, "name": "Authors", "item": "{{ $siteUrl }}/authors/" },
+      { "@type": "ListItem", "position": 3, "name": {{ $author.name | jsonify | safeJS }}, "item": "{{ $pageUrl }}" }
+    ]
+  }
+  </script>
+
+</body>
+
+</html>

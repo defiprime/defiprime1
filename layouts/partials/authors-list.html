@@ -1,0 +1,25 @@
+{{- $keyToSlug := dict -}}
+{{- $slugToKey := dict -}}
+{{- range $key, $data := hugo.Data.authors -}}
+  {{- $slug := lower (default $key $data.slug) -}}
+  {{- $keyToSlug = merge $keyToSlug (dict $key $slug) -}}
+  {{- if or (eq (lower $key) $slug) (not (isset $slugToKey $slug)) -}}
+    {{- $slugToKey = merge $slugToKey (dict $slug $key) -}}
+  {{- end -}}
+{{- end -}}
+{{- $counts := dict -}}
+{{- $order := slice -}}
+{{- range sort (partial "blog-pages.html" .) "Date" -}}
+  {{- $slug := index $keyToSlug .Params.author -}}
+  {{- if $slug -}}
+    {{- if not (isset $counts $slug) -}}
+      {{- $order = $order | append $slug -}}
+    {{- end -}}
+    {{- $counts = merge $counts (dict $slug (add (int (index $counts $slug)) 1)) -}}
+  {{- end -}}
+{{- end -}}
+{{- $list := slice -}}
+{{- range $order -}}
+  {{- $list = $list | append (dict "slug" . "data" (index hugo.Data.authors (index $slugToKey .)) "count" (index $counts .)) -}}
+{{- end -}}
+{{- return sort $list "count" "desc" -}}

@@ -1,0 +1,2 @@
+{{- $pages := where site.RegularPages "Section" "blog" -}}
+{{- return sort (sort $pages "File.Path" "desc") "Date" "desc" -}}

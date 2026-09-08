@@ -1,0 +1,8 @@
+{{- $s := partial "jekyll-strip.html" (index . 0) -}}
+{{- $n := index . 1 -}}
+{{- $words := split (strings.TrimSpace (replaceRE `\s+` " " $s)) " " -}}
+{{- if gt (len $words) $n -}}
+{{- printf "%s..." (delimit (first $n $words) " ") | safeHTML -}}
+{{- else -}}
+{{- $s | safeHTML -}}
+{{- end -}}

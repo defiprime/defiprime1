@@ -143,7 +143,8 @@ SOURCE_FILES = {
     "llms.txt": (
         "---\nlayout: null\npermalink: /llms.txt\n---\n{% for post in site.posts %}{% endfor %}\n"
     ),
-    "_data/authors.yml": "sawinyh:\r\n  name: Sergej\r\n",
+    "_data/authors.yml": ("Defiprime:\r\n  name: Sergej\r\n  slug: sawinyh\r\n"
+                          "sawinyh:\r\n  name: Sergej\r\n"),
     "images/og.png": "PNGDATA",
     "images/blog/new.png": "NEWPNG",
     "defiprime.tokenlist.json": '{"name": "defiprime"}\n',
@@ -189,6 +190,7 @@ DEST_FILES = {
     "static/images/gone.png": "GONE",
     "static/robots.txt": "old robots\n",
     "data/authors.yaml": "old\n",
+    "content/authors/stale/_index.md": "---\nlayout: author_page\n---\n",
     "scripts/migrate-content.sh": "#!/usr/bin/env bash\n",
     "layouts/shortcodes/figure.html": "<figure></figure>\n",
 }
