@@ -112,11 +112,10 @@ class SyncTreeTests(unittest.TestCase):
     def test_assets_and_data(self):
         self.assertEqual(self.read("data/authors.yaml"), "sawinyh:\n  name: Sergej\n")
         self.assertEqual(self.read("static/robots.txt"), "User-agent: *\nAllow: /\n")
-        self.assertEqual(self.read("images/og.png"), "PNGDATA")
-        self.assertEqual(self.read("images/blog/new.png"), "NEWPNG")
-        self.assertFalse(self.exists("images/gone.png"))
         self.assertEqual(self.read("static/images/og.png"), "PNGDATA")
         self.assertEqual(self.read("static/images/blog/new.png"), "NEWPNG")
+        self.assertFalse(self.exists("static/images/gone.png"))
+        self.assertEqual(self.read("images/og.png"), "LEGACY")
         self.assertEqual(self.read("defiprime.tokenlist.json"), '{"name": "defiprime"}\n')
 
     def test_llms_txt_with_liquid_is_not_written(self):

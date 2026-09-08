@@ -33,18 +33,15 @@ def mirror_images(source, dest, report):
     if not os.path.isdir(src_root):
         return
     wanted = relative_files(src_root)
-    dst_root = os.path.join(dest, "images")
+    dst_root = os.path.join(dest, "static", "images")
     for rel in sorted(wanted):
         copy_if_different(os.path.join(src_root, rel), os.path.join(dst_root, rel),
-                          report, os.path.join("images", rel))
-    if os.path.isdir(dst_root):
-        for rel in sorted(relative_files(dst_root) - wanted):
-            os.remove(os.path.join(dst_root, rel))
-            report.deleted.append(os.path.join("images", rel))
-    static_root = os.path.join(dest, "static", "images")
-    for rel in sorted(wanted):
-        copy_if_different(os.path.join(src_root, rel), os.path.join(static_root, rel),
                           report, os.path.join("static", "images", rel))
+    if not os.path.isdir(dst_root):
+        return
+    for rel in sorted(relative_files(dst_root) - wanted):
+        os.remove(os.path.join(dst_root, rel))
+        report.deleted.append(os.path.join("static", "images", rel))
 
 
 def copy_root_assets(source, dest, report):
