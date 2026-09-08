@@ -72,7 +72,7 @@
       <article class='latest_blog_link recent-blog-color_{{ $color }}'>
         <a href="{{ partial "page-url.html" $post.RelPermalink }}">
           <h2>{{ $post.Params.h1title }}</h2>
-          <p>{{ $post.Params.intro | plainify | truncate 200 }}</p>
+          <p>{{ partial "jekyll-truncate.html" (slice $post.Params.intro 120) }}</p>
         </a>
       </article>
     {{ end }}
@@ -101,7 +101,7 @@
               <date>
                 {{ .Date.Format "02 Jan 2006" }}
               </date>
-              <span> {{ .Params.location | truncate 31 }} </span>
+              <span> {{ partial "jekyll-truncate.html" (slice .Params.location 31) }} </span>
             </div>
           </div>
         </a>
