@@ -19,3 +19,7 @@ placeholder.md
 draft.md
 public/
 __pycache__/
+CLAUDE.md
+.claude/settings.local.json
+.claude/
+.superpowers/
