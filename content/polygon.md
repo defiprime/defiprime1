@@ -14,4 +14,39 @@ stats_ecosystems:
     filter: "bsc"
   - label: "Polygon"
     filter: "polygon"
+sections:
+  - section: assets-management-tools
+    title: "Asset Management Tools"
+  - section: alternative-savings
+    title: "Alternative Savings Apps"
+  - section: derivatives
+    title: "Derivatives"
+  - section: yield-aggregators
+    title: "Yield Aggregators on Polygon"
+  - section: exchanges
+    title: "Decentralized exchanges on Polygon"
+  - section: perps
+    title: "Perps on Polygon"
+  - section: infrastructure
+    title: "DeFi Infrastructure & Dev Tooling"
+  - section: dao
+    title: "Polygon-based DAO Platforms"
+  - section: insurance
+    title: "Decentralized Insurance Platforms"
+  - section: assets-tokenization
+    title: "Asset Tokenization"
+  - section: kyc_identity
+    title: "KYC & Identity"
+  - section: lending
+    title: "Decentralized Lending on Polygon"
+  - section: payments
+    title: "Payments Solutions and Service Providers"
+  - section: marketplaces
+    title: "Marketplaces"
+  - section: prediction_markets
+    title: "Prediction Markets"
+  - section: stablecoins
+    title: "Stablecoins"
+  - section: analytics
+    title: "Analytics"
 ---

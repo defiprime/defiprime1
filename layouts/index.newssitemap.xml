@@ -12,7 +12,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>{{ .Date.Format "2006-01-02T15:04:05-07:00" }}</news:publication_date>
-      <news:title>{{ .Params.h1title | default .Title }}</news:title>
+      <news:title>{{ .Params.h1title | default .Title | transform.XMLEscape }}</news:title>
     </news:news>
   </url>
 {{- end -}}

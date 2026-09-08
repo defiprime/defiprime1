@@ -63,16 +63,15 @@
 
         {{ $ecoFilter := .Params.ecosystem_filter | default .File.ContentBaseName }}
 
-        {{/* Gather all products from all sub-sections */}}
-        {{ $productSection := site.GetPage "product" }}
         {{ $allProducts := slice }}
-        {{ range $productSection.Sections }}
-          {{ range .Pages }}
-            {{ $allProducts = $allProducts | append . }}
+        {{ range .Params.sections }}
+          {{ with site.GetPage (printf "product/%s" .section) }}
+            {{ range sort .Pages "File.Path" }}
+              {{ $allProducts = $allProducts | append . }}
+            {{ end }}
           {{ end }}
         {{ end }}
 
-        {{/* Filter products matching this ecosystem */}}
         {{ $ecoProducts := slice }}
         {{ range $allProducts }}
           {{ $eco := index .Params "ecosystem" | default "" }}
@@ -81,13 +80,11 @@
           {{ end }}
         {{ end }}
 
-        {{/* Count stats for the intro text */}}
         {{ $totalProducts := len $allProducts }}
         {{ $ecoCount := len $ecoProducts }}
 
         <p>DeFi is the movement that leverages decentralized networks to transform old financial products into trustless and transparent protocols that run without intermediaries. We have {{ $totalProducts }} DeFi projects listed and {{ $ecoCount }} of them built on {{ .Title | replaceRE " DeFi [Ee]cosystem" "" }}.</p>
 
-        {{/* Stats banner - colored boxes matching production */}}
         {{ with .Params.stats_ecosystems }}
         <table>
           <tbody>
@@ -109,34 +106,12 @@
         </table>
         {{ end }}
 
-        {{/* Define categories in display order */}}
-        {{ $categories := slice
-          (dict "section" "assets-management-tools" "title" "Asset Management Tools")
-          (dict "section" "alternative-savings" "title" "Alternative Savings Apps")
-          (dict "section" "derivatives" "title" "Derivatives")
-          (dict "section" "yield-aggregators" "title" (printf "Yield Aggregators on %s" (.Title | replaceRE " DeFi Ecosystem" "")))
-          (dict "section" "exchanges" "title" (printf "Decentralized exchanges on %s" (.Title | replaceRE " DeFi Ecosystem" "")))
-          (dict "section" "perps" "title" (printf "Perps on %s" (.Title | replaceRE " DeFi Ecosystem" "")))
-          (dict "section" "infrastructure" "title" "DeFi Infrastructure & Dev Tooling")
-          (dict "section" "dao" "title" (printf "%s-based DAO Platforms" (.Title | replaceRE " DeFi Ecosystem" "")))
-          (dict "section" "insurance" "title" "Decentralized Insurance Platforms")
-          (dict "section" "assets-tokenization" "title" "Asset Tokenization")
-          (dict "section" "kyc_identity" "title" "KYC & Identity")
-          (dict "section" "lending" "title" (printf "Decentralized Lending on %s" (.Title | replaceRE " DeFi Ecosystem" "")))
-          (dict "section" "payments" "title" "Payments Solutions and Service Providers")
-          (dict "section" "marketplaces" "title" "Marketplaces")
-          (dict "section" "prediction_markets" "title" "Prediction Markets")
-          (dict "section" "stablecoins" "title" "Stablecoins")
-          (dict "section" "staking" "title" "Staking")
-          (dict "section" "analytics" "title" "Analytics")
-        }}
-
-        {{ range $categories }}
+        {{ range .Params.sections }}
           {{ $cat := . }}
           {{ $catSection := site.GetPage (printf "product/%s" .section) }}
           {{ if $catSection }}
             {{ $catProducts := slice }}
-            {{ range $catSection.Pages }}
+            {{ range sort $catSection.Pages "File.Path" }}
               {{ $eco := index .Params "ecosystem" | default "" }}
               {{ if in $eco $ecoFilter }}
                 {{ $catProducts = $catProducts | append . }}

@@ -14,4 +14,39 @@ stats_ecosystems:
     filter: "eos"
   - label: "Bitcoin"
     filter: "bitcoin"
+sections:
+  - section: assets-management-tools
+    title: "Asset Management Tools"
+  - section: exchanges
+    title: "Bitcoin Decentralized Exchanges"
+  - section: staking
+    title: "Bitcoin Staking and Restaking"
+  - section: lending
+    title: "Bitcoin Crypto Lending"
+  - section: perps
+    title: "Perps"
+  - section: infrastructure
+    title: "DeFi Infrastructure & Dev Tooling"
+  - section: payments
+    title: "BTC Payments Solutions and Service Providers"
+  - section: marketplaces
+    title: "Marketplaces"
+  - section: stablecoins
+    title: "Stablecoins"
+  - section: alternative-savings
+    title: "Alternative Savings Apps"
+  - section: analytics
+    title: "Analytics"
+  - section: assets-tokenization
+    title: "Asset Tokenization"
+  - section: dao
+    title: "Bitcoin-based DAO Platforms"
+  - section: derivatives
+    title: "Derivatives"
+  - section: insurance
+    title: "Decentralized Insurance Platforms"
+  - section: kyc_identity
+    title: "KYC & Identity"
+  - section: prediction_markets
+    title: "Prediction Markets"
 ---

@@ -14,4 +14,39 @@ stats_ecosystems:
     filter: "optimism"
   - label: "Arbitrum"
     filter: "arbitrum"
+sections:
+  - section: assets-management-tools
+    title: "Asset Management Tools"
+  - section: alternative-savings
+    title: "Alternative Savings Apps"
+  - section: derivatives
+    title: "Derivatives"
+  - section: yield-aggregators
+    title: "Yield Aggregators on Optimism"
+  - section: exchanges
+    title: "Decentralized exchanges on Optimism"
+  - section: perps
+    title: "Perps on Optimism"
+  - section: infrastructure
+    title: "DeFi Infrastructure & Dev Tooling"
+  - section: dao
+    title: "Optimism-based DAO Platforms"
+  - section: insurance
+    title: "Decentralized Insurance Platforms"
+  - section: assets-tokenization
+    title: "Asset Tokenization"
+  - section: kyc_identity
+    title: "KYC & Identity"
+  - section: lending
+    title: "Decentralized Lending on Optimism"
+  - section: payments
+    title: "Payments Solutions and Service Providers"
+  - section: marketplaces
+    title: "Marketplaces"
+  - section: prediction_markets
+    title: "Prediction Markets"
+  - section: stablecoins
+    title: "Stablecoins"
+  - section: analytics
+    title: "Analytics"
 ---
