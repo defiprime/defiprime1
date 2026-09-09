@@ -34,7 +34,7 @@ TVL_CATEGORIES = {
 }
 
 SUFFIXES = re.compile(r"\s+(V\d+|v\d+|Lite|Classic|Legacy)$")
-OVERVIEW_SUFFIXES = re.compile(r"\s+(AMM V3|Spot Orderbook|Options|Slipstream|Infinity|DLMM|CLOB|AMM|DEX|V2|V3|V4)$")
+OVERVIEW_SUFFIXES = re.compile(r"(\s+(AMM|Spot Orderbook|Options|Slipstream|Infinity|DLMM|CLOB|DEX|[Vv]\d+))+$")
 STOPWORDS = ("finance", "protocol", "dao", "network", "labs")
 
 
