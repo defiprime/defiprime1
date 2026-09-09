@@ -11,4 +11,5 @@ colpermalink: defi-analytics
 product-type: non-custodial
 filter: Dashboards, On-chain Data
 rank: 3
+twitter: https://x.com/artemis
 ---

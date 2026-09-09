@@ -8,7 +8,7 @@ h1title: Analytics
 pagetitle: Best DeFi Analytics and On-chain Data Platforms in 2026
 metadescription: 'Directory of DeFi analytics platforms: protocol dashboards, on-chain data, portfolio tracking, risk monitoring and research, with what each one is best at.'
 category: products
-filter-by: ecosystem
+filter-by: filter, ecosystem
 og: /images/og-analytics.png
 cards: analytics
 aliases:
