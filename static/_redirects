@@ -7,3 +7,14 @@
 /product/stake.fish  /product/stake-fish  301
 /product/summer.fi  /product/summer-fi  301
 /product/yearn.finance  /product/yearn-finance  301
+
+/perps  /derivatives  301
+/perps.html  /derivatives  301
+/alternative-savings  /yield-aggregators  301
+/alternative-savings.html  /yield-aggregators  301
+/dao  /infrastructure  301
+/dao.html  /infrastructure  301
+/decentralized_kyc_identity  /infrastructure  301
+/decentralized_kyc_identity.html  /infrastructure  301
+/decentralized_marketplaces  /exchanges  301
+/decentralized_marketplaces.html  /exchanges  301

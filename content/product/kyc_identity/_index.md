@@ -1,3 +1,0 @@
----
-title: "kyc_identity"
----

@@ -1,12 +1,12 @@
 ---
-lastmod: 2019-04-01
-git-date: 2019-04-13T21:06:27-07:00
+url: /stablecoins.html
+git-date: '2019-04-13T21:06:27-07:00'
+lastmod: '2019-04-01'
 title: Stablecoins
 layout: page
-url: /stablecoins.html
 h1title: Stablecoins
-pagetitle: Complete Stablecoins List - Decentralized Stablecoins
-metadescription: Stablecoins are cryptocurrencies designed to minimize the volatility of the price of the stablecoin, relative to some 'stable' asset or basket of assets.
+pagetitle: 'Best Stablecoins in 2026: Fiat-backed, Crypto-backed and Synthetic Dollars'
+metadescription: Directory of the leading stablecoins by circulating supply, covering fiat-backed, crypto-backed, synthetic and yield-bearing dollars with the chains each one runs on.
 category: products
 filter-by: ecosystem, filter
 og: /images/og-stablecoins.png

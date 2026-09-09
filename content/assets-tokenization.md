@@ -1,12 +1,12 @@
 ---
-lastmod: 2019-04-01
-git-date: 2019-05-20T22:02:39-07:00
-layout: page
-title: "Tokenization of Assets"
 url: /assets-tokenization.html
-h1title: Tokenization of Assets
-pagetitle: Best tokenization of assets Platforms for Digital Securities
-metadescription: Through tokenization, investing is cheaper, faster, more secure and available every hour of the day.
+git-date: '2019-05-20T22:02:39-07:00'
+lastmod: '2019-04-01'
+layout: page
+title: Tokenization & RWA
+h1title: Tokenization & Real-World Assets
+pagetitle: Best Tokenization and RWA Platforms in 2026
+metadescription: Directory of tokenized treasuries, private credit, equities and commodities, plus the issuance platforms that bring real-world assets on-chain, ranked by value locked.
 category: products
 cards: assets-tokenization
 filter-by: filter, ecosystem

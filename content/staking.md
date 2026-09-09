@@ -1,12 +1,12 @@
 ---
-lastmod: 2019-04-01
-git-date: 2019-07-03T14:03:48-07:00
-layout: page
-title: "Staking"
 url: /staking.html
-h1title: Staking Service Providers
-pagetitle: Staking-as-a-Service - Best staking pools and Staking service providers.
-metadescription: Staking-as-a-Service - Best staking pools and Staking service providers. PoS networks use validators who create, propose, or vote on blocks added to the blockchain. From the end-user perspective, Staking is similar to interest savings account in a traditional bank.
+git-date: '2019-07-03T14:03:48-07:00'
+lastmod: '2019-04-01'
+layout: page
+title: Staking & Restaking
+h1title: Staking & Restaking
+pagetitle: Best Liquid Staking and Restaking Protocols in 2026
+metadescription: Directory of the leading liquid staking, restaking and Bitcoin staking protocols by value locked, plus validator operators for direct delegation.
 filter-by: filter
 category: products
 og: /images/og-staking.png
