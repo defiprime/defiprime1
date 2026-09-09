@@ -1,15 +1,0 @@
----
-url: /product/jolocom.html
-git-date: '2019-05-20T22:02:39-07:00'
-product-title: Jolocom
-product-url: https://jolocom.io/
-image: /images/output_md/httpsjolocomio.png
-ecosystem: ethereum
-product-description: 'Jolocom is an open source protocol for people and organizations to create and interact with digital,   self-sovereign identities.'
-coltitle: Infrastructure
-colpermalink: infrastructure
-product-type: non-custodial
-filter: Identity
-twitter: https://twitter.com/GETJolocom
-github: https://github.com/jolocom
----
