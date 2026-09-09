@@ -138,6 +138,7 @@ def apply_entry(entry, root=ROOT, today=None, capture=capture_screenshot):
         return target
     if entry.get("copy_of"):
         meta = build_copy_meta(entry, root, today=today)
+        guard_copy_target(target)
         fm.dump(target, meta)
         return target
     meta = build_meta(entry, today=today)
@@ -147,6 +148,11 @@ def apply_entry(entry, root=ROOT, today=None, capture=capture_screenshot):
         capture(entry.get("screenshot_url") or entry["url"], image)
     fm.dump(target, meta)
     return target
+
+
+def guard_copy_target(target):
+    if target.exists() and fm.is_rendering(fm.load(target)[0]):
+        raise ValueError(f"{target.name}: is a rendering page, refusing to replace it with a list-only copy")
 
 
 def guard_new_target(target, meta, root):

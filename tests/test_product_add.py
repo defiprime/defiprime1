@@ -119,6 +119,18 @@ class GuardTest(unittest.TestCase):
             meta, _ = fm.load(root / "content" / "product" / "lending" / "dolomite.md")
             self.assertEqual(meta["product-title"], "Dolomite")
 
+    def test_copy_refuses_to_replace_rendering_page(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "content" / "product" / "lending").mkdir(parents=True)
+            (root / "content" / "product" / "assets-tokenization").mkdir(parents=True)
+            (root / "static" / "images" / "output_md").mkdir(parents=True)
+            (root / "static" / "images" / "output_md" / "dolomite.io.png").write_bytes(b"x")
+            pa.apply_entry(ENTRY, root=root, today="2026-09-09", capture=lambda url, path: None)
+            pa.apply_entry(dict(ENTRY, dir="assets-tokenization", slug="maple", title="Maple", url="https://maple.finance", filter="Private Credit"), root=root, today="2026-09-09", capture=lambda url, path: (path.write_bytes(b"x")))
+            with self.assertRaises(ValueError):
+                pa.apply_entry({"dir": "lending", "slug": "dolomite", "copy_of": "assets-tokenization/maple", "filter": "Lend", "rank": 2}, root=root, today="2026-09-09", capture=lambda url, path: None)
+
 
 if __name__ == "__main__":
     unittest.main()
