@@ -2,6 +2,7 @@ import argparse
 import subprocess
 import sys
 import tempfile
+import time
 from datetime import date
 from pathlib import Path
 from urllib.parse import urlparse
@@ -19,6 +20,7 @@ CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 CAPTURE_SIZE = (1600, 800)
 IMAGE_SIZE = (800, 400)
 MAX_BYTES = 300_000
+CAPTURE_TIMEOUT = 90
 NEW_DESCRIPTION_MIN = 80
 NEW_DESCRIPTION_MAX = 240
 REQUIRED = ["dir", "slug", "title", "url", "ecosystem", "description", "filter"]
@@ -81,10 +83,28 @@ def build_meta(entry, today=None):
     return fm.ordered(meta)
 
 
+def wait_for_file(raw, process, timeout=CAPTURE_TIMEOUT):
+    deadline = time.monotonic() + timeout
+    last_size = -1
+    while time.monotonic() < deadline:
+        if raw.exists() and raw.stat().st_size > 0 and raw.stat().st_size == last_size:
+            break
+        last_size = raw.stat().st_size if raw.exists() else -1
+        if process.poll() is not None and raw.exists():
+            break
+        time.sleep(1)
+    process.kill()
+    process.wait()
+    if not raw.exists() or raw.stat().st_size == 0:
+        raise RuntimeError(f"no screenshot produced within {timeout}s")
+
+
 def capture_screenshot(url, path):
     with tempfile.TemporaryDirectory() as profile:
         raw = Path(profile) / "raw.png"
-        subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--hide-scrollbars", f"--window-size={CAPTURE_SIZE[0]},{CAPTURE_SIZE[1]}", f"--screenshot={raw}", "--virtual-time-budget=8000", f"--user-data-dir={profile}/chrome", url], check=True, capture_output=True, timeout=120)
+        command = [CHROME, "--headless=new", "--disable-gpu", "--hide-scrollbars", f"--window-size={CAPTURE_SIZE[0]},{CAPTURE_SIZE[1]}", f"--screenshot={raw}", "--virtual-time-budget=8000", f"--user-data-dir={profile}/chrome", url]
+        process = subprocess.Popen(command, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        wait_for_file(raw, process)
         image = Image.open(raw).convert("RGB").resize(IMAGE_SIZE, Image.LANCZOS)
         image.save(path, optimize=True)
         if path.stat().st_size > MAX_BYTES:
