@@ -11,4 +11,5 @@ colpermalink: derivatives
 product-type: non-custodial
 filter: Perpetual
 rank: 10
+twitter: https://x.com/extendedapp
 ---

@@ -5,7 +5,7 @@ product-title: Jupiter
 product-url: https://jup.ag
 image: /images/output_md/jup.ag.jpg
 ecosystem: solana
-product-description: Jupiter is a decentralized exchange (DEX) aggregator on the Solana blockchain that provides the best swap rates by combining liquidity from multiple sources.
+product-description: Jupiter is the Solana trading hub that routes spot swaps across on-chain liquidity and also runs perpetual futures and a lending market from the same app.
 coltitle: Lending
 colpermalink: decentralized-lending
 product-type: non-custodial

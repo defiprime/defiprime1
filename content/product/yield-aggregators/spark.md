@@ -5,7 +5,7 @@ product-title: Spark
 product-url: https://app.spark.fi/
 image: /images/output_md/app.spark.fi.jpg
 ecosystem: ethereum, base, gnosis
-product-description: Spark is a DeFi lending protocol in the Sky ecosystem, offering lending, borrowing, and savings products backed by Sky's capital reserves with transparent governance-set rates.
+product-description: Spark is the Sky ecosystem lending market and savings layer, lending $USDS and $DAI against major collateral and paying the Sky Savings Rate. It runs on Ethereum, Base, Arbitrum and Gnosis.
 coltitle: Yield & Vaults
 colpermalink: yield-aggregators
 product-type: non-custodial

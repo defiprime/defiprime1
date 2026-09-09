@@ -5,7 +5,7 @@ product-title: Fluid
 product-url: https://fluid.instadapp.io/
 image: /images/output_md/fluid.instadapp.io.jpg
 ecosystem: ethereum, arbitrum, base
-product-description: Fluid is a unified liquidity protocol by Instadapp that combines lending, borrowing, and DEX functionality into a single capital-efficient layer, enabling smart collateral and debt management.
+product-description: Fluid combines a lending market and a DEX in one liquidity layer, so collateral and debt positions also earn trading fees. It runs on Ethereum, Arbitrum, Base, Polygon and Plasma.
 coltitle: Decentralized exchanges
 colpermalink: exchanges
 product-type: non-custodial

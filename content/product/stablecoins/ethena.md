@@ -5,7 +5,7 @@ product-title: Ethena
 product-url: https://ethena.fi/
 image: /images/output_md/ethena.fi.jpg
 ecosystem: ethereum
-product-description: Ethena is a synthetic dollar protocol that issues USDe, the third-largest stablecoin, using delta-neutral hedging strategies combining staked ETH/BTC with short perpetual futures positions.
+product-description: Ethena issues $USDe, a synthetic dollar backed by staked $ETH and $BTC hedged with short perpetual positions, and pays the funding carry to $sUSDe holders. It runs on Ethereum with bridges to Solana, Arbitrum and Base.
 coltitle: Stablecoins
 colpermalink: stablecoins
 product-type: non-custodial
