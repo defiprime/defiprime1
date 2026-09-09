@@ -9,7 +9,7 @@ product-description: Velora(ex-Paraswap) is a decentralized exchange aggregator 
 coltitle: Decentralized exchanges
 colpermalink: exchanges
 product-type: non-custodial
-filter: No KYC
+filter: Aggregator, No KYC
 ticker: PSP
 contract: '0xcafe001067cdef266afb7eb5a286dcfd277f3de5'
 alternative-to:

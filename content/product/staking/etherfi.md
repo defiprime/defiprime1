@@ -9,7 +9,7 @@ product-description: EtherFi is a non-custodial liquid restaking protocol that l
 coltitle: Staking & Restaking
 colpermalink: staking
 product-type: non-custodial
-filter: Validator
+filter: Liquid Staking
 twitter: https://twitter.com/ether_fi
 github: https://github.com/etherfi-protocol
 ticker: ETHFI

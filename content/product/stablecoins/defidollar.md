@@ -9,7 +9,7 @@ product-description: DefiDollar is a stable asset, backed by an index of stablec
 coltitle: Stablecoins
 colpermalink: stablecoins
 product-type: non-custodial
-filter: Crypto-backed
+filter: Synthetic
 twitter: https://twitter.com/defidollar
 github: https://github.com/defidollar
 ticker: DUSD

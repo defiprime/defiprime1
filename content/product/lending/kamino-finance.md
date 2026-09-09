@@ -9,6 +9,6 @@ product-description: Kamino Finance aims to provide users with an easy-to-use an
 coltitle: Lending
 colpermalink: decentralized-lending
 product-type: non-custodial
-filter: Lend, Borrow
+filter: Borrow, Lend
 twitter: https://twitter.com/kamino_finance
 ---

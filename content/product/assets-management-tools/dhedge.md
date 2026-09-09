@@ -9,7 +9,7 @@ product-description: ​dHEDGE is a platform for managing investment activities 
 coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
 product-type: non-custodial
-filter: Wallet
+filter: Portfolio
 twitter: https://twitter.com/dHedgeOrg
 github: https://github.com/dhedge
 ticker: DHT

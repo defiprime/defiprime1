@@ -9,7 +9,7 @@ product-description: LayerZero is an omnichain interoperability protocol enablin
 coltitle: Infrastructure
 colpermalink: infrastructure
 product-type: non-custodial
-filter: Dev Tools
+filter: Bridges
 twitter: https://twitter.com/LayerZero_Labs
 github: https://github.com/LayerZero-Labs
 ticker: ZRO

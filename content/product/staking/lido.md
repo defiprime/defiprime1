@@ -9,7 +9,7 @@ product-description: Lido is a liquid staking solution for ETH 2.0 that lets use
 coltitle: Staking & Restaking
 colpermalink: staking
 product-type: non-custodial
-filter: Validator
+filter: Liquid Staking
 twitter: https://twitter.com/lidofinance
 github: https://github.com/lidofinance
 ticker: LDO

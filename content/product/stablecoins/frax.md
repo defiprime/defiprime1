@@ -9,7 +9,7 @@ product-description: Frax is the first fractional-algorithmic stablecoin protoco
 coltitle: Stablecoins
 colpermalink: stablecoins
 product-type: non-custodial
-filter: Crypto-backed
+filter: Synthetic
 twitter: https://twitter.com/fraxfinance
 github: https://github.com/fraxfinance
 ticker: FRAX

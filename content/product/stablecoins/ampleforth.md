@@ -9,7 +9,7 @@ product-description: AMPL is a USD soft-pegged digital currency, that adjusts su
 coltitle: Stablecoins
 colpermalink: stablecoins
 product-type: non-custodial
-filter: Crypto-backed
+filter: Synthetic
 twitter: https://twitter.com/ampleforthorg
 github: https://github.com/ampleforth
 analytics: https://explore.duneanalytics.com/embed/query/6444/visualization/12786?api_key=mgXkuF9U7hpyKSnFna0BhC33KET2Tu4YHPHedZF2

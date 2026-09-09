@@ -9,7 +9,7 @@ product-description: Stake DAO is a non-custodial platform that enables anyone t
 coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
 product-type: non-custodial
-filter: Wallet
+filter: Portfolio
 twitter: https://twitter.com/StakeDAOHQ
 ticker: SDT
 contract: '0x73968b9a57c6e53d41345fd57a6e6ae27d6cdb2f'

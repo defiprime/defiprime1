@@ -9,7 +9,7 @@ product-description: Aave is an Open Source and Non-Custodial protocol that let 
 coltitle: Lending
 colpermalink: decentralized-lending
 product-type: non-custodial
-filter: Lend, Borrow
+filter: Borrow, Lend
 twitter: https://twitter.com/aaveaave
 github: https://github.com/aave/aave-protocol
 analytics: https://explore.duneanalytics.com/embed/query/2994/visualization/5785?api_key=cfEgS6JlBVrEyXOohUjIXgxJysh3lJv6nObbnnoy

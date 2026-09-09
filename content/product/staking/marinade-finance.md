@@ -9,7 +9,7 @@ product-description: Marinade.Finance is a non-custodial liquid staking protocol
 coltitle: Staking & Restaking
 colpermalink: staking
 product-type: non-custodial
-filter: Validator
+filter: Liquid Staking
 twitter: https://twitter.com/MarinadeFinance
 github: https://github.com/marinade-finance
 ---

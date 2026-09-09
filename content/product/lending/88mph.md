@@ -9,7 +9,7 @@ product-description: 88mph lets you lend your crypto assets at a fixed interest 
 coltitle: Lending
 colpermalink: decentralized-lending
 product-type: non-custodial
-filter: Lend, Borrow
+filter: Lend
 twitter: https://twitter.com/88mphapp
 github: https://github.com/88mphapp
 ticker: MPH

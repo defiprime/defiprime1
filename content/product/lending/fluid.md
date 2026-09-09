@@ -9,7 +9,7 @@ product-description: Fluid is a unified liquidity protocol by Instadapp that com
 coltitle: Lending
 colpermalink: decentralized-lending
 product-type: non-custodial
-filter: Lend, Borrow
+filter: Borrow, Lend
 twitter: https://twitter.com/0xfluid
 github: https://github.com/Instadapp/fluid-contracts-public
 ---

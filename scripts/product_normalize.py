@@ -89,7 +89,7 @@ def new_filter(directory, stem, old):
         return "NFT"
     kept = []
     for value in str(old or "").split(", "):
-        mapped = RENAMES[directory].get(value)
+        mapped = value if value in TAXONOMY[directory]["filters"] else RENAMES[directory].get(value)
         if mapped and mapped not in kept:
             kept.append(mapped)
     if "CDP" in str(old or "") and directory == "lending" and "CDP" not in kept:

@@ -9,7 +9,7 @@ product-description: Euler is a non-custodial permissionless lending protocol on
 coltitle: Lending
 colpermalink: decentralized-lending
 product-type: non-custodial
-filter: Lend, Borrow
+filter: Borrow, Lend
 twitter: https://twitter.com/eulerfinance
 github: https://github.com/euler-xyz
 ticker: EUL

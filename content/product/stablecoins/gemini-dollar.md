@@ -5,7 +5,7 @@ product-title: Gemini Dollar
 product-url: https://gemini.com/dollar/
 image: /images/output_md/httpsgeminicomdollar.png
 ecosystem: ethereum
-product-description: A stable value coin backed 1:1 by USD.
+product-description: Gemini Dollar ($GUSD) is a US dollar stablecoin issued by Gemini on Ethereum, backed one to one by dollar reserves held at US banks.
 coltitle: Stablecoins
 colpermalink: stablecoins
 product-type: non-custodial

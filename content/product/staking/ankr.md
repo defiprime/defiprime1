@@ -9,7 +9,7 @@ product-description: Ankr is a Web3 infrastructure provider that operates an arr
 coltitle: Staking & Restaking
 colpermalink: staking
 product-type: non-custodial
-filter: Validator
+filter: Liquid Staking
 twitter: https://twitter.com/ankr
 github: https://github.com/Ankr-network
 ticker: ANKR

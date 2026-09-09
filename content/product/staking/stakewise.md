@@ -9,7 +9,7 @@ product-description: StakeWise is a DeFi protocol created to simplify entry into
 coltitle: Staking & Restaking
 colpermalink: staking
 product-type: non-custodial
-filter: Validator
+filter: Liquid Staking
 twitter: https://twitter.com/stakewise_io
 github: https://github.com/stakewise
 ---
