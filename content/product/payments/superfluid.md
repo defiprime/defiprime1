@@ -2,7 +2,7 @@
 url: /product/superfluid.html
 git-date: '2022-01-26T14:33:04-07:00'
 product-title: Superfluid
-product-url: https://www.superfluid.finance/home
+product-url: https://app.superfluid.finance
 image: /images/output_md/www.superfluid.finance.jpg
 ecosystem: ethereum
 product-description: Superfluid is a novel crypto asset streaming protocol that enables transformative web3 money experiences like salary and subscription streaming, real-time investing, and more -- all on-chain

@@ -2,14 +2,14 @@
 url: /product/stake-dao.html
 git-date: '2021-10-05T12:49:48-07:00'
 product-title: Stake DAO
-product-url: https://stakedao.org/r/defiprime
+product-url: https://www.stakedao.org
 image: /images/output_md/stakedao.org.jpg
 ecosystem: ethereum, polygon
 product-description: Stake DAO is a non-custodial platform that enables anyone to easily grow their crypto portfolio. It is built on top of decentralized blockchain protocols, offering a seamless way for people to grow, track, and control assets right from their wallet.
-coltitle: Wallets & Portfolio
-colpermalink: assets-management-tools
+coltitle: Yield & Vaults
+colpermalink: yield-aggregators
 product-type: non-custodial
-filter: Portfolio
+filter: Vaults
 twitter: https://twitter.com/StakeDAOHQ
 ticker: SDT
 contract: '0x73968b9a57c6e53d41345fd57a6e6ae27d6cdb2f'
