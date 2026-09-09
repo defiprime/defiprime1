@@ -12,4 +12,6 @@ cards: insurance
 filter-by: filter, ecosystem
 ---
 
-Insurance is a practice or arrangement by which a company provides a guarantee of compensation for specified loss, damage, illness, or death in return for payment of a premium.
+Risk and insurance products sit between capital and the ways it gets lost. Cover pools pay out against a defined failure such as a contract exploit or a depeg, while auditors, bug bounty platforms and monitoring services work upstream, finding the bug before it is used or catching an exploit while it runs.
+
+The filters separate cover providers, risk curators that set vault parameters, live security monitoring, bug bounty platforms and audit firms. Entries are ordered by value locked on DefiLlama, with featured listings first.

@@ -15,4 +15,6 @@ aliases:
 - /analytics
 ---
 
-Analytics is the discovery, interpretation, and communication of meaningful patterns in DeFi protocols data; and the process of applying those patterns towards effective decision making.
+Analytics platforms turn raw chain data into something readable: protocol dashboards with fees and revenue, query tools that run against indexed tables, portfolio views that price a set of addresses, risk monitors that watch collateral and oracle health, and research desks that publish the interpretation.
+
+The listing spans all of those, so the right entry depends on whether the question calls for a number, a query or a judgement, and the chain filter narrows it to the networks a platform actually covers. Entries are listed in editorial order, with featured listings first.

@@ -15,4 +15,6 @@ aliases:
 cards: lending
 ---
 
-Decentralized lending platforms provide loans to businesses, or the public with no intermediaries are present. On the other hand, DeFi lending protocols enable everyone to earn interest on supplied stable coins and cryptocurrencies.
+Lending markets let depositors earn interest on supplied assets while borrowers post collateral to draw loans, with rates set by utilisation or by fixed-term auctions. Collateralised debt positions mint a stablecoin against locked collateral instead of borrowing from a pool.
+
+The filters separate protocols by whether they take deposits, offer borrowing, mint a CDP stablecoin, fix the rate, or run without identity checks. Entries are ordered by value locked on DefiLlama, with featured listings first.

@@ -13,4 +13,6 @@ og: /images/og-staking.png
 cards: staking
 ---
 
-PoS networks use validators who create, propose, or vote on blocks added to the blockchain. From the customer point of view, Staking is similar to interest savings account in a traditional bank. In DeFi, infrastructure service providers such as _staking pools_ and _Staking-as-a-Service providers_ play the role of the bank, running nodes for decentralized PoS protocols on behalf of investors.
+Staking commits tokens to a proof-of-stake network in return for a share of issuance and fees, with the stake slashable if the validator misbehaves. Liquid staking issues a receipt token that stays tradable and usable as collateral while the deposit stays bonded, and restaking lends the same security to other services.
+
+The filters separate liquid staking, restaking, validator operators that run nodes on behalf of delegators, and Bitcoin staking. Entries are ordered by value locked on DefiLlama, with featured listings first.

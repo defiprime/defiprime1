@@ -12,4 +12,6 @@ cards: assets-tokenization
 filter-by: filter, ecosystem
 ---
 
-Through tokenization, investing is cheaper, faster, more secure and available every hour of the day. This opens up real-world assets and the world of cryptocurrencies to people who previously may not have been able to invest due to geographic or financial restrictions, and offers an alternative to traditional and largely outdated investment methods.
+Tokenization brings off-chain assets on-chain as transferable tokens, so treasury bills, private credit loans, equities and commodities settle with the same tooling as native crypto. Holders get exposure to the underlying instrument while a custodian or issuer keeps the asset itself and honours redemptions.
+
+The filters separate entries by the asset class behind the token, and set aside issuance platforms, which run the plumbing for other people to mint. Entries are ordered by value locked on DefiLlama, with featured listings first.

@@ -13,4 +13,6 @@ og: /images/og-stablecoins.png
 cards: stablecoins
 ---
 
-Stablecoins are cryptocurrencies created to decrease the volatility of the coin's price, relative to some "stable" asset or basket of assets. A stablecoin can be pegged to currency or exchange-traded commodities.
+Stablecoins hold a peg to a reference asset, usually the dollar, and serve as the settlement leg for most on-chain trading, lending and payments. The mechanism behind the peg differs: cash and treasury reserves held off-chain, crypto collateral locked in a smart contract, or a delta-neutral hedge funded from derivatives markets.
+
+The filters separate coins by whether the backing is fiat, crypto collateral or a synthetic hedge, and mark the ones that pass yield through to holders. Entries are ordered by circulating supply on DefiLlama, with featured listings first.
