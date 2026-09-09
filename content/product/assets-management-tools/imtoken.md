@@ -10,6 +10,7 @@ coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
 product-type: non-custodial
 filter: Wallet
+rank: 20
 twitter: https://twitter.com/imTokenOfficial
 github: https://github.com/consenlabs
 platform: ios, android

@@ -10,6 +10,7 @@ coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
 product-type: non-custodial
 filter: Wallet
+rank: 9
 twitter: https://twitter.com/trustwalletapp
 github: https://github.com/trustwallet
 platform: ios, android

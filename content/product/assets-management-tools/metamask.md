@@ -10,6 +10,7 @@ coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
 product-type: non-custodial
 filter: Wallet
+rank: 2
 twitter: https://twitter.com/metamask_io
 github: https://github.com/MetaMask/metamask-extension
 platform: web, ios, android

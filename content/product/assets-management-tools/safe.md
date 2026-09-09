@@ -9,7 +9,8 @@ product-description: Gnosis Safe is a smart contract-based wallet enables users 
 coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
 product-type: non-custodial
-filter: Wallet
+filter: Multisig
+rank: 7
 twitter: https://twitter.com/gnosisSafe
 platform: ios, android, web
 alternative-to: metamask

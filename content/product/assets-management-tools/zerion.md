@@ -10,6 +10,7 @@ coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
 product-type: non-custodial
 filter: Wallet
+rank: 5
 twitter: https://twitter.com/zerion_io
 github: https://github.com/zeriontech
 platform: web, ios, android

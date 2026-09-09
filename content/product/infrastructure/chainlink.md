@@ -10,6 +10,7 @@ coltitle: Infrastructure
 colpermalink: infrastructure
 product-type: non-custodial
 filter: Oracles
+rank: 1
 twitter: https://twitter.com/chainlink
 github: https://github.com/smartcontractkit/chainlink
 ticker: LINK

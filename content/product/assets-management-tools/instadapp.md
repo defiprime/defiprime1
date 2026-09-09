@@ -9,7 +9,8 @@ product-description: Instadapp is a platform providing users and developers with
 coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
 product-type: non-custodial
-filter: Wallet
+filter: Automation
+rank: 17
 twitter: https://twitter.com/instadapp
 github: https://github.com/instadapp
 analytics: https://explore.duneanalytics.com/embed/query/2995/visualization/5787?api_key=uNkIzkmG5epqbHsVygxccDhFc5UFmZVyZ4NWN3yv

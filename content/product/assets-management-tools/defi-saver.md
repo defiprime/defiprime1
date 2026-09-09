@@ -9,7 +9,8 @@ product-description: DeFi Saver is a management dashboard for decentralized fina
 coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
 product-type: non-custodial
-filter: Wallet
+filter: Automation
+rank: 16
 twitter: https://twitter.com/defisaver
 platform: web
 ---

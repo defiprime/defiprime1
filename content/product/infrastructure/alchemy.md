@@ -9,6 +9,7 @@ product-description: Alchemy is an infrastructure provider for web3 developers i
 coltitle: Infrastructure
 colpermalink: infrastructure
 product-type: non-custodial
-filter: Dev Tools
+filter: RPC, Dev Tools
+rank: 7
 alternative-to: alchemy
 ---

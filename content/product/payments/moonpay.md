@@ -10,5 +10,6 @@ coltitle: Payments & Cards
 colpermalink: payments
 product-type: non-custodial
 filter: On-ramp
+rank: 7
 twitter: https://twitter.com/moonpayhq/
 ---

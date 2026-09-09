@@ -10,6 +10,7 @@ coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
 product-type: non-custodial
 filter: Wallet
+rank: 18
 twitter: https://twitter.com/keplrwallet
 github: https://github.com/chainapsis/keplr-wallet
 platform: web, ios, android

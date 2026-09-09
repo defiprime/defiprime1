@@ -9,6 +9,7 @@ product-description: Revert provides actionable analytics for DeFi liquidity pro
 coltitle: Analytics
 colpermalink: defi-analytics
 product-type: non-custodial
-filter: Dashboards
+filter: Portfolio
+rank: 17
 twitter: https://twitter.com/revertfinance
 ---

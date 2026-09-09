@@ -10,6 +10,7 @@ coltitle: Payments & Cards
 colpermalink: payments
 product-type: non-custodial
 filter: Invoicing
+rank: 17
 twitter: https://twitter.com/requestnetwork
 github: https://github.com/RequestNetwork/
 ticker: REQ

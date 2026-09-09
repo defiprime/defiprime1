@@ -10,6 +10,7 @@ coltitle: Analytics
 colpermalink: defi-analytics
 product-type: non-custodial
 filter: Dashboards
+rank: 1
 twitter: https://twitter.com/DefiLlama
 github: https://github.com/DefiLlama
 ---

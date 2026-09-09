@@ -10,6 +10,7 @@ coltitle: Infrastructure
 colpermalink: infrastructure
 product-type: non-custodial
 filter: Bridges
+rank: 3
 twitter: https://twitter.com/LayerZero_Labs
 github: https://github.com/LayerZero-Labs
 ticker: ZRO

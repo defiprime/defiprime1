@@ -10,5 +10,6 @@ coltitle: Infrastructure
 colpermalink: infrastructure
 product-type: non-custodial
 filter: Dev Tools
+rank: 16
 twitter: https://twitter.com/walletconnect
 ---

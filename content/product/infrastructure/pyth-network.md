@@ -10,6 +10,7 @@ coltitle: Infrastructure
 colpermalink: infrastructure
 product-type: non-custodial
 filter: Oracles
+rank: 2
 twitter: https://twitter.com/PythNetwork
 github: https://github.com/pyth-network
 ---

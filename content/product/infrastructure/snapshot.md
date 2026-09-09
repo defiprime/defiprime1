@@ -10,6 +10,7 @@ coltitle: Infrastructure
 colpermalink: infrastructure
 product-type: non-custodial
 filter: Governance
+rank: 19
 twitter: https://twitter.com/SnapshotLabs
 github: https://github.com/balancer-labs/snapshot
 ---

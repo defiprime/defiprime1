@@ -9,7 +9,8 @@ product-description: QuikNode is a RPC node service provider with APIs & dedicat
 coltitle: Infrastructure
 colpermalink: infrastructure
 product-type: non-custodial
-filter: Dev Tools
+filter: RPC
+rank: 8
 twitter: https://twitter.com/quiknode
 alternative-to: alchemy
 featured: false

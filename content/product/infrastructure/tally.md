@@ -10,5 +10,6 @@ coltitle: Infrastructure
 colpermalink: infrastructure
 product-type: non-custodial
 filter: Governance
+rank: 20
 twitter: https://twitter.com/voteWithTally
 ---

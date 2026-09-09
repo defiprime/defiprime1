@@ -10,6 +10,7 @@ coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
 product-type: non-custodial
 filter: Wallet
+rank: 4
 twitter: https://twitter.com/rainbowdotme
 github: https://github.com/rainbow-me/rainbow
 platform: ios, android

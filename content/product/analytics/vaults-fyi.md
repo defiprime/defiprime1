@@ -10,5 +10,6 @@ coltitle: Analytics
 colpermalink: defi-analytics
 product-type: non-custodial
 filter: Dashboards
+rank: 14
 twitter: https://twitter.com/vaultsfyi
 ---

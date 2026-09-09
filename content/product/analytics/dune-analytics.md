@@ -9,7 +9,8 @@ product-description: Dune Analytics allows you to instantly create and share ana
 coltitle: Analytics
 colpermalink: defi-analytics
 product-type: non-custodial
-filter: Dashboards
+filter: On-chain Data, Dashboards
+rank: 2
 twitter: https://twitter.com/DuneAnalytics
 alternative-to: nansen
 ---

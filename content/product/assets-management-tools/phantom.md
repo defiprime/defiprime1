@@ -10,6 +10,7 @@ coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
 product-type: non-custodial
 filter: Wallet
+rank: 3
 twitter: https://twitter.com/phantom
 platform: web
 alternative-to: metamask

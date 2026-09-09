@@ -10,6 +10,7 @@ coltitle: Infrastructure
 colpermalink: infrastructure
 product-type: non-custodial
 filter: Governance
+rank: 21
 twitter: https://twitter.com/aragonproject
 ticker: ANT
 contract: '0xa117000000f279D81A1D3cc75430fAA017FA5A2e'

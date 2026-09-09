@@ -10,6 +10,7 @@ coltitle: Payments & Cards
 colpermalink: payments
 product-type: non-custodial
 filter: Streaming
+rank: 16
 twitter: https://twitter.com/Superfluid_HQ
 github: https://github.com/superfluid-finance/
 ---

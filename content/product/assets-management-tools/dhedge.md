@@ -10,6 +10,7 @@ coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
 product-type: non-custodial
 filter: Portfolio
+rank: 23
 twitter: https://twitter.com/dHedgeOrg
 github: https://github.com/dhedge
 ticker: DHT

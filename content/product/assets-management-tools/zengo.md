@@ -10,6 +10,7 @@ coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
 product-type: non-custodial
 filter: Wallet
+rank: 22
 twitter: https://twitter.com/zengo
 github: https://github.com/KZen-networks
 platform: ios, android

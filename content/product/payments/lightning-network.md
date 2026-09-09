@@ -10,4 +10,5 @@ coltitle: Payments & Cards
 colpermalink: payments
 product-type: non-custodial
 filter: Lightning
+rank: 18
 ---

@@ -10,6 +10,7 @@ coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
 product-type: non-custodial
 filter: Wallet
+rank: 19
 twitter: https://twitter.com/AmbireWallet
 github: https://github.com/AmbireTech
 ticker: WALLET

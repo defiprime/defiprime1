@@ -9,7 +9,8 @@ product-description: Zapper is a system focused on abstracting away the complexi
 coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
 product-type: non-custodial
-filter: Wallet
+filter: Portfolio
+rank: 14
 twitter: https://twitter.com/zapper_fi
 platform: web
 ---

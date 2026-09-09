@@ -9,7 +9,8 @@ product-description: DeBank is a dashboard for tracking your DeFi portfolio, wit
 coltitle: Analytics
 colpermalink: defi-analytics
 product-type: non-custodial
-filter: Dashboards
+filter: Portfolio
+rank: 9
 twitter: https://twitter.com/DebankDeFi
 github: https://github.com/DeBankDeFi
 alternative-to: nansen

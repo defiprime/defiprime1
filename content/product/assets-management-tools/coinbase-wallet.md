@@ -10,6 +10,7 @@ coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
 product-type: non-custodial
 filter: Wallet
+rank: 8
 twitter: https://twitter.com/CoinbaseWallet
 github: https://github.com/CoinbaseWallet
 platform: ios, android, web

@@ -9,7 +9,8 @@ product-description: UMA is a decentralized financial contracts platform built t
 coltitle: Infrastructure
 colpermalink: infrastructure
 product-type: non-custodial
-filter: Dev Tools
+filter: Oracles
+rank: 18
 twitter: https://twitter.com/UMAprotocol
 github: https://github.com/umaprotocol
 ticker: UMA

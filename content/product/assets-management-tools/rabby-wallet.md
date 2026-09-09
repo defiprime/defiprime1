@@ -10,6 +10,7 @@ coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
 product-type: non-custodial
 filter: Wallet
+rank: 1
 twitter: https://twitter.com/Rabby_io
 github: https://github.com/RabbyHub/Rabby
 platform: web, windows, mac

@@ -9,7 +9,8 @@ product-description: The Graph is a decentralized protocol for indexing and quer
 coltitle: Infrastructure
 colpermalink: infrastructure
 product-type: non-custodial
-filter: Dev Tools
+filter: Indexing
+rank: 11
 twitter: https://twitter.com/graphprotocol
 github: https://github.com/graphprotocol
 alternative-to: alchemy

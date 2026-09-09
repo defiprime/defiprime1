@@ -9,7 +9,8 @@ product-description: L2BEAT is an analytics and research website about Ethereum 
 coltitle: Analytics
 colpermalink: defi-analytics
 product-type: non-custodial
-filter: Dashboards
+filter: Dashboards, Risk
+rank: 8
 twitter: https://twitter.com/l2beatcom
 github: https://github.com/l2beat/l2beat
 ---

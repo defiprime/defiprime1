@@ -10,6 +10,7 @@ coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
 product-type: non-custodial
 filter: Wallet
+rank: 21
 twitter: https://twitter.com/TokenPocket_TP
 github: https://github.com/TP-Lab
 platform: ios, android, windows, mac

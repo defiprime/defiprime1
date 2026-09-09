@@ -10,6 +10,7 @@ coltitle: Infrastructure
 colpermalink: infrastructure
 product-type: non-custodial
 filter: Identity
+rank: 23
 twitter: https://twitter.com/civickey
 ticker: CVC
 contract: '0x41e5560054824eA6B0732E656E3Ad64E20e94E45'
