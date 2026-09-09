@@ -85,5 +85,40 @@ class WriteTest(unittest.TestCase):
             self.assertNotIn("featured", meta)
 
 
+class GuardTest(unittest.TestCase):
+    def test_refuses_existing_file_with_other_data(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            target = root / "content" / "product" / "lending"
+            target.mkdir(parents=True)
+            (root / "static" / "images" / "output_md").mkdir(parents=True)
+            (root / "static" / "images" / "output_md" / "dolomite.io.png").write_bytes(b"x")
+            fm.dump(target / "dolomite.md", {"url": "/product/dolomite.html", "git-date": "2020-01-01T00:00:00-08:00", "product-title": "Dolomite", "product-url": "https://app.dolomite.io/?ref=1", "image": "/images/output_md/dolomite.io.png", "ecosystem": "arbitrum", "product-description": "Dolomite is a margin and lending protocol on Arbitrum.", "coltitle": "Lending", "colpermalink": "decentralized-lending", "product-type": "non-custodial", "filter": "Lend"})
+            with self.assertRaises(ValueError):
+                pa.apply_entry(ENTRY, root=root, today="2026-09-09", capture=lambda url, path: None)
+
+    def test_refuses_second_rendering_copy_of_same_url(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "content" / "product" / "lending").mkdir(parents=True)
+            (root / "content" / "product" / "exchanges").mkdir(parents=True)
+            (root / "static" / "images" / "output_md").mkdir(parents=True)
+            (root / "static" / "images" / "output_md" / "dolomite.io.png").write_bytes(b"x")
+            pa.apply_entry(ENTRY, root=root, today="2026-09-09", capture=lambda url, path: None)
+            with self.assertRaises(ValueError):
+                pa.apply_entry(dict(ENTRY, dir="exchanges", filter="Spot"), root=root, today="2026-09-09", capture=lambda url, path: None)
+
+    def test_rerun_of_same_entry_is_idempotent(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "content" / "product" / "lending").mkdir(parents=True)
+            (root / "static" / "images" / "output_md").mkdir(parents=True)
+            (root / "static" / "images" / "output_md" / "dolomite.io.png").write_bytes(b"x")
+            pa.apply_entry(ENTRY, root=root, today="2026-09-09", capture=lambda url, path: None)
+            pa.apply_entry(ENTRY, root=root, today="2026-09-09", capture=lambda url, path: None)
+            meta, _ = fm.load(root / "content" / "product" / "lending" / "dolomite.md")
+            self.assertEqual(meta["product-title"], "Dolomite")
+
+
 if __name__ == "__main__":
     unittest.main()

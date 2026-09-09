@@ -140,11 +140,25 @@ def apply_entry(entry, root=ROOT, today=None, capture=capture_screenshot):
         fm.dump(target, meta)
         return target
     meta = build_meta(entry, today=today)
+    guard_new_target(target, meta, root)
     image = root / "static" / meta["image"].lstrip("/")
     if not image.exists():
         capture(entry.get("screenshot_url") or entry["url"], image)
     fm.dump(target, meta)
     return target
+
+
+def guard_new_target(target, meta, root):
+    if target.exists():
+        existing, _ = fm.load(target)
+        if existing.get("product-url") != meta["product-url"] or existing.get("git-date") != meta["git-date"]:
+            raise ValueError(f"{target.name}: exists with different data, use update: true")
+    for other in (root / "content" / "product").glob("*/*.md"):
+        if other == target or other.name == "_index.md":
+            continue
+        other_meta, _ = fm.load(other)
+        if other_meta.get("url") == meta["url"] and fm.is_rendering(other_meta):
+            raise ValueError(f"{target.name}: {meta['url']} already rendered by {other.relative_to(root)}, use copy_of")
 
 
 def main():
