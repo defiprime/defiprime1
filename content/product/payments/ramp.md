@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: The protocol powering fiat to crypto exchanges
 coltitle: Payments & Cards
 colpermalink: payments
+product-type: non-custodial
 filter: On-ramp
 twitter: https://twitter.com/RampNetwork
 ---

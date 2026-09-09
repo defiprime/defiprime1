@@ -9,7 +9,7 @@ product-description: Notional is a fixed rate lending and borrowing platform on 
 coltitle: Lending
 colpermalink: decentralized-lending
 product-type: non-custodial
-filter: Borrow, Lend
+filter: Lend, Borrow
 twitter: https://twitter.com/NotionalFinance
 github: https://github.com/notional-finance
 ---

@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Rarible allows you to create and sell NFT collectibles at digital art marketplace. [Interview with Alexei Falin, CEO and co-founder of Rarible](/rarible)
 coltitle: Decentralized exchanges
 colpermalink: exchanges
+product-type: non-custodial
 filter: NFT
 twitter: https://twitter.com/rariblecom
 ticker: RARI

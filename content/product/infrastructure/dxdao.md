@@ -8,6 +8,7 @@ ecosystem: ethereum, polygon
 product-description: The DXdao is a decentralized organization that develops, governs, and grows DeFi protocols and products, owned and operated by the community.
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Governance
 twitter: https://twitter.com/dxdao_
 ticker: DXD

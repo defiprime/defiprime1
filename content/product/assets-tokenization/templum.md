@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Templum provides a regulated, end-to-end solution for raising capital and secondary trading in the private market.
 coltitle: Tokenization & RWA
 colpermalink: assets-tokenization
+product-type: non-custodial
 filter: Issuance Platform
 twitter: https://twitter.com/TemplumInc
 ---

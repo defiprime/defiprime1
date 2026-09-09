@@ -8,6 +8,7 @@ ecosystem: ethereum, bitcoin, bsc, polygon
 product-description: QuikNode is a RPC node service provider with APIs & dedicated nodes available.
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Dev Tools
 twitter: https://twitter.com/quiknode
 alternative-to: alchemy

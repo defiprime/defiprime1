@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Bloom is a blockchain solution for secure identity and credit scoring. [Interview with Shannon Wu from Bloom Founding Team](/bloom).
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Identity
 twitter: https://twitter.com/bloom
 ticker: BLT

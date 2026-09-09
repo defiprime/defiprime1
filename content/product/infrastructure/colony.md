@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Colony is a suite of smart contracts, providing a general purpose framework for the essential functions organizations require, such as ownership, structure, authority, and financial management.
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Governance
 twitter: https://twitter.com/joincolony
 github: https://github.com/JoinColony

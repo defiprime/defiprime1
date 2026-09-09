@@ -8,6 +8,7 @@ ecosystem: ethereum, polygon
 product-description: NFT20 is a permissionless protocol enabling trade, swap and sell NFTs that tokenized at indices pools.
 coltitle: Perps & Derivatives
 colpermalink: derivatives
+product-type: non-custodial
 filter: Synthetics
 twitter: https://twitter.com/niftymuseum
 github: https://github.com/verynifty/

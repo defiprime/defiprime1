@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Sablier is the protocol for real-time finance on Ethereum, that enables continuous, autonomous and trustless payroll. [Interview with Paul Berg, inventor of the Sablier protocol.](/sablier)
 coltitle: Payments & Cards
 colpermalink: payments
+product-type: non-custodial
 filter: Streaming
 twitter: https://twitter.com/sablierhq
 ---

@@ -8,6 +8,7 @@ ecosystem: cosmos
 product-description: Keplr is a non-custodial IBC-enabled wallet that allow users to interact with Cosmos based blockchains.
 coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
+product-type: non-custodial
 filter: Wallet
 twitter: https://twitter.com/keplrwallet
 github: https://github.com/chainapsis/keplr-wallet

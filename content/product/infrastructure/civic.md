@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Secure blockchain identity toolbox and ecosystem.
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Identity
 twitter: https://twitter.com/civickey
 ticker: CVC

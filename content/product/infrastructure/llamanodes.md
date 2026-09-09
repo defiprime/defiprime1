@@ -8,6 +8,7 @@ ecosystem: ethereum, polygon, arbitrum, bsc, optimism
 product-description: LlamaNodes is a low-latency, privacy first RPC provider - with dynamic load-balancing, autoscaling, and globally redundant infrastructure.
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Dev Tools
 twitter: https://twitter.com/LlamaNodes
 github: https://github.com/llamanodes

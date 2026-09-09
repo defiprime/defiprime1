@@ -8,6 +8,7 @@ ecosystem: ethereum, bsc, polygon
 product-description: The Graph is a decentralized protocol for indexing and querying data from blockchains. [Interview with The Graph Co-Founder Yaniv Tal](/thegraph)
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Dev Tools
 twitter: https://twitter.com/graphprotocol
 github: https://github.com/graphprotocol

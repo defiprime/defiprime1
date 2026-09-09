@@ -8,6 +8,7 @@ ecosystem: ethereum, polygon, bsc, gnosis, fantom, avalanche, arbitrum, optimism
 product-description: DeBank is a dashboard for tracking your DeFi portfolio, with data and analytics for decentralized lending protocols, stablecoins, margin trading platforms and DEXes.
 coltitle: Analytics
 colpermalink: defi-analytics
+product-type: non-custodial
 filter: Dashboards
 twitter: https://twitter.com/DebankDeFi
 github: https://github.com/DeBankDeFi

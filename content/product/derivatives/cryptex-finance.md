@@ -8,6 +8,7 @@ ecosystem: ethereum, optimism
 product-description: Cryptex Finance is a multi-network DeFi protocol that provides easy access to fully-decentralized index tokens. The protocol uses Ethereum smart contracts, over-collateralized vaults, and Chainlink data oracles to create indexes in a trustless way. [Interview with founder](/tcap).
 coltitle: Perps & Derivatives
 colpermalink: derivatives
+product-type: non-custodial
 filter: Synthetics
 twitter: https://twitter.com/cryptexfinance
 github: https://github.com/cryptexfinance

@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: SelfKey is building a blockchain-based identity system that allows identity owners to truly own, control and manage their digital identity.
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Identity
 twitter: https://twitter.com/selfkey
 ticker: KEY

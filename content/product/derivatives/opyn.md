@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Opyn is the insurance layer for decentralized finance. [Opyn co-founder Aparna told us about Opyn backstory, state of defi options market and what's new in Opyn v2](/opyn)
 coltitle: Perps & Derivatives
 colpermalink: derivatives
+product-type: non-custodial
 filter: Options
 twitter: https://twitter.com/opyn_
 github: https://github.com/opynfinance

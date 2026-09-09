@@ -8,6 +8,7 @@ ecosystem: ethereum, bsc, polygon
 product-description: Opium Insurance offers tradable, tokenized insurance position against smart-contract hacking or against stablecoin default.
 coltitle: Risk & Insurance
 colpermalink: insurance
+product-type: non-custodial
 filter: Cover
 twitter: https://twitter.com/Opium_Network
 github: https://github.com/opiumprotocol

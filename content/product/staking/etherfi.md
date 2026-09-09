@@ -8,7 +8,8 @@ ecosystem: ethereum
 product-description: EtherFi is a non-custodial liquid restaking protocol that lets users stake ETH while retaining key ownership, with native EigenLayer restaking for additional yield on top of Ethereum consensus rewards.
 coltitle: Staking & Restaking
 colpermalink: staking
-filter: Liquid Staking
+product-type: non-custodial
+filter: Validator
 twitter: https://twitter.com/ether_fi
 github: https://github.com/etherfi-protocol
 ticker: ETHFI

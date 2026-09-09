@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Ethena is a synthetic dollar protocol that issues USDe, the third-largest stablecoin, using delta-neutral hedging strategies combining staked ETH/BTC with short perpetual futures positions.
 coltitle: Stablecoins
 colpermalink: stablecoins
+product-type: non-custodial
 filter: Crypto-backed
 twitter: https://twitter.com/ethena_labs
 github: https://github.com/ethena-labs

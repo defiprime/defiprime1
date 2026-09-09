@@ -8,6 +8,7 @@ ecosystem: solana
 product-description: Realms is a platform built on Solana that provides tools for builders to create and manage their own DAO. Using Realms, builders can create their own DAO, which allows them to manage their members, vote on proposals, and allocate their treasury.
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Governance
 twitter: https://twitter.com/Realms_DAOs
 github: https://github.com/solana-labs/governance-ui

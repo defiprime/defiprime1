@@ -8,6 +8,7 @@ ecosystem: ethereum, arbitrum, optimism, base, blast, scroll
 product-description: vaults.fyi is a DeFi yield discovery and analytics platform that tracks vault performance across multiple chains, with normalized APY, TVL and reputation scores for hundreds of stablecoin and ETH strategies.
 coltitle: Analytics
 colpermalink: defi-analytics
+product-type: non-custodial
 filter: Dashboards
 twitter: https://twitter.com/vaultsfyi
 ---

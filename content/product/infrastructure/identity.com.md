@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Identity.com is an open source ecosystem providing access to on-demand, secure identity verification.
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Identity
 twitter: https://twitter.com/identity
 ---

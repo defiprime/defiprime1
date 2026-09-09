@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: A protocol for decentralized token exchange, where traders have complete and total control of their crypto-assets. [Intreview with Daniel Wang, founder of Loopring Foundation](/loopring-protocol).
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Dev Tools
 twitter: https://twitter.com/loopringorg
 github: https://github.com/Loopring

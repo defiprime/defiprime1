@@ -8,7 +8,8 @@ ecosystem: ethereum
 product-description: DefiDollar is a stable asset, backed by an index of stablecoins. DUSD is a hedge against volatility and provides portfolio risk diversification.
 coltitle: Stablecoins
 colpermalink: stablecoins
-filter: Synthetic
+product-type: non-custodial
+filter: Crypto-backed
 twitter: https://twitter.com/defidollar
 github: https://github.com/defidollar
 ticker: DUSD

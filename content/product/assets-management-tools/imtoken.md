@@ -8,6 +8,7 @@ ecosystem: ethereum, bitcoin, tron, eos
 product-description: imToken is a digital asset wallet enabling multi-chain asset management, dApp browsing and exchange of value. [Interview with imToken](/imtoken).
 coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
+product-type: non-custodial
 filter: Wallet
 twitter: https://twitter.com/imTokenOfficial
 github: https://github.com/consenlabs

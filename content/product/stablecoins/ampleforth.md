@@ -8,7 +8,8 @@ ecosystem: ethereum
 product-description: AMPL is a USD soft-pegged digital currency, that adjusts supply daily based on market conditions.
 coltitle: Stablecoins
 colpermalink: stablecoins
-filter: Synthetic
+product-type: non-custodial
+filter: Crypto-backed
 twitter: https://twitter.com/ampleforthorg
 github: https://github.com/ampleforth
 analytics: https://explore.duneanalytics.com/embed/query/6444/visualization/12786?api_key=mgXkuF9U7hpyKSnFna0BhC33KET2Tu4YHPHedZF2

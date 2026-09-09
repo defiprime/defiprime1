@@ -8,7 +8,8 @@ ecosystem: ethereum, polygon
 product-description: Frax is the first fractional-algorithmic stablecoin protocol. [Interview with Sam Kazemian, founder of Frax Finance](/frax)
 coltitle: Stablecoins
 colpermalink: stablecoins
-filter: Synthetic
+product-type: non-custodial
+filter: Crypto-backed
 twitter: https://twitter.com/fraxfinance
 github: https://github.com/fraxfinance
 ticker: FRAX

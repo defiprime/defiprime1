@@ -8,6 +8,7 @@ ecosystem: bsc, polygon, avalanche, fantom, celo, gnosis
 product-description: Autofarm is a cross-chain yield aggregator that enables users to get the return on their assets from yield farming pools by simply staking in Autofarm vaults.
 coltitle: Yield & Vaults
 colpermalink: yield-aggregators
+product-type: non-custodial
 filter: Vaults
 twitter: https://twitter.com/autofarmnetwork
 github: https://github.com/autofarm-network

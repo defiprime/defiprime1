@@ -8,6 +8,7 @@ ecosystem: ethereum, bsc, polygon, gnosis, fantom, arbitrum, optimism, base
 product-description: Vfat.tools is a minimalist yield farming dashboard and farming calculator where you can find the most popular farms and their APY
 coltitle: Analytics
 colpermalink: defi-analytics
+product-type: non-custodial
 filter: Dashboards
 twitter: https://twitter.com/vfat12
 github: https://github.com/vfat-tools

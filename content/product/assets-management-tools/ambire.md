@@ -8,6 +8,7 @@ ecosystem: ethereum, avalanche, fantom, gnosis, optimism, polygon, arbitrum
 product-description: Ambire Wallet is a user-friendly crypto wallet for both beginners and experienced users with a simplified UI.
 coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
+product-type: non-custodial
 filter: Wallet
 twitter: https://twitter.com/AmbireWallet
 github: https://github.com/AmbireTech

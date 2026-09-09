@@ -6,7 +6,7 @@ layout: page
 title: Perps & Derivatives
 h1title: Perps & Derivatives
 pagetitle: Best Perp DEXs and On-chain Derivatives Platforms in 2026
-metadescription: Directory of the leading on-chain perpetuals, options and synthetics venues ranked by 30-day volume, covering Hyperliquid, Aster, Lighter and the rest of the field.
+metadescription: Directory of the leading on-chain perpetuals, options and synthetics venues ranked by 30-day volume, from Hyperliquid, Aster and Lighter down the field.
 category: products
 cards: derivatives
 filter-by: filter, ecosystem

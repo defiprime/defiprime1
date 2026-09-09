@@ -8,6 +8,7 @@ ecosystem: solana
 product-description: Phantom is a wallet and browser extension that can be used to manage digital assets and access decentralized applications on the Solana blockchain
 coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
+product-type: non-custodial
 filter: Wallet
 twitter: https://twitter.com/phantom
 platform: web

@@ -8,6 +8,7 @@ ecosystem: ethereum, eos
 product-description: Bancor is an on-chain liquidity protocol that enables automated, decentralized token exchange on Ethereum and across blockchains. [Bancor Protocol History and Bancor v2 Details](/bancor).
 coltitle: Decentralized exchanges
 colpermalink: exchanges
+product-type: non-custodial
 filter: Spot
 twitter: https://twitter.com/Bancor
 github: https://github.com/bancorprotocol

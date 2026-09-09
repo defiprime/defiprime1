@@ -8,6 +8,7 @@ ecosystem: ethereum, avalanche, celo, fantom, gnosis, optimism, polygon, arbitru
 product-description: Coinbase Wallet is a mobile crypto wallet supporting multicoin assets as well as ERC-20 tokens and ERC-721 collectibles. Coinbase Wallet also provides access to Web 3 Decentralized Applications (dApps) powered by Ethereum smart contracts.
 coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
+product-type: non-custodial
 filter: Wallet
 twitter: https://twitter.com/CoinbaseWallet
 github: https://github.com/CoinbaseWallet

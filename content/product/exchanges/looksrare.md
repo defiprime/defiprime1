@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: LooksRare is the community-first NFT marketplace that actively rewards traders, collectors and creators for participating
 coltitle: Decentralized exchanges
 colpermalink: exchanges
+product-type: non-custodial
 filter: NFT
 twitter: https://twitter.com/looksrarenft
 github: https://github.com/LooksRare

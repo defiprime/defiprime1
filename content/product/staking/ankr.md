@@ -4,10 +4,12 @@ git-date: '2022-11-28T08:40:15-08:00'
 product-title: Ankr
 product-url: https://www.ankr.com
 image: /images/output_md/www.ankr.com.jpg
+ecosystem: ethereum
 product-description: Ankr is a Web3 infrastructure provider that operates an array of globally-distributed nodes serving 50 blockchain networks and RPC services to 18+ blockchains.
 coltitle: Staking & Restaking
 colpermalink: staking
-filter: Liquid Staking
+product-type: non-custodial
+filter: Validator
 twitter: https://twitter.com/ankr
 github: https://github.com/Ankr-network
 ticker: ANKR

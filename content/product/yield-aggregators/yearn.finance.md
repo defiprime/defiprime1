@@ -8,6 +8,7 @@ ecosystem: ethereum, fantom, arbitrum
 product-description: Yearn.Finance automates yield-maximizing profit switching opportunities for liquidity providers and yield farmers.
 coltitle: Yield & Vaults
 colpermalink: yield-aggregators
+product-type: non-custodial
 filter: Vaults
 twitter: https://twitter.com/iearnfinance
 github: https://github.com/iearn-finance

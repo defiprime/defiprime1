@@ -8,6 +8,7 @@ ecosystem: ethereum, bsc, polygon
 product-description: Chainlink is a decentralized oracle that can provide external data to smart contracts. [Interview with Adelyn Zhou](/chainlink)
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Oracles
 twitter: https://twitter.com/chainlink
 github: https://github.com/smartcontractkit/chainlink

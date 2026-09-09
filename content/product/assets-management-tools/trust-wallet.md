@@ -8,6 +8,7 @@ ecosystem: ethereum, eos, tron, bitcoin, bsc, polygon
 product-description: Multi cryptocurrency wallet to store your favorite BEP2, ERC20 and ERC721, tokens.
 coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
+product-type: non-custodial
 filter: Wallet
 twitter: https://twitter.com/trustwalletapp
 github: https://github.com/trustwallet

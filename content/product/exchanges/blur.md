@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Blur is a zero fees NFT marketplace, with a fast UI, portfolio management tools and advanced analytics.
 coltitle: Decentralized exchanges
 colpermalink: exchanges
+product-type: non-custodial
 filter: NFT
 twitter: https://twitter.com/blur_io
 ticker: BLUR

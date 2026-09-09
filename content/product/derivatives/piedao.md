@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: The PieDAO is a decentralized organization dedicated to bringing market accessibility and economic empowerment through Pie Protocol and Tokenized ETFs governed by a DAO
 coltitle: Perps & Derivatives
 colpermalink: derivatives
+product-type: non-custodial
 filter: Synthetics
 twitter: https://twitter.com/PieDAO_DeFi
 github: https://github.com/pie-dao

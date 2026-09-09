@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: A stable value coin backed 1:1 by USD.
 coltitle: Stablecoins
 colpermalink: stablecoins
+product-type: non-custodial
 filter: Fiat-backed
 twitter: https://twitter.com/gemini
 ticker: GUSD

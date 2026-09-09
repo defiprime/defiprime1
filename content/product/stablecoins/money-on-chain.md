@@ -8,6 +8,7 @@ ecosystem: bitcoin
 product-description: Money on Chain provides a bitcoin-collateralized and dollar-pegged stablecoin
 coltitle: Stablecoins
 colpermalink: stablecoins
+product-type: non-custodial
 filter: Crypto-backed
 twitter: https://twitter.com/moneyonchainok
 github: https://github.com/money-on-chain/

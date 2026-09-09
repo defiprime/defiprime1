@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: AlphaWallet is a mobile crypto wallet that interacts with smart contracts and dApps.
 coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
+product-type: non-custodial
 filter: Wallet
 twitter: https://twitter.com/Alpha_Wallet
 github: https://github.com/AlphaWallet

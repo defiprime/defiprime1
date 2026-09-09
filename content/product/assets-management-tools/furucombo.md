@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Furucombo is a tool built for end-users to optimize their DeFi strategy simply by drag and drop UI.
 coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
+product-type: non-custodial
 filter: Wallet
 twitter: https://twitter.com/furucombo
 ticker: COMBO

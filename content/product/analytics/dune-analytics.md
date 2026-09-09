@@ -8,6 +8,7 @@ ecosystem: ethereum, solana, polygon, bitcoin, fantom, avalanche, optimism, arbi
 product-description: Dune Analytics allows you to instantly create and share analysis of Ethereum data. Smart contract data is converted to a human-readable format that can be queried with SQL. [Interview with Dune Analytics co-founder](/dune-analytics).
 coltitle: Analytics
 colpermalink: defi-analytics
+product-type: non-custodial
 filter: Dashboards
 twitter: https://twitter.com/DuneAnalytics
 alternative-to: nansen

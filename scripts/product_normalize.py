@@ -4,7 +4,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "tests"))
 import product_frontmatter as fm
-from product_taxonomy import TAXONOMY, colpermalink
+from product_taxonomy import ECOSYSTEM_ALIASES, ECOSYSTEMS, TAXONOMY, colpermalink
 
 ROOT = Path(__file__).resolve().parent.parent
 PRODUCT_ROOT = ROOT / "content" / "product"
@@ -107,7 +107,18 @@ def normalize(path):
     meta["product-description"] = description.replace(" \u2014 ", ", ").replace("\u2014", ", ")
     if "product-type" in meta and "CDP" in str(meta["product-type"]) and "CDP" not in meta["filter"]:
         meta["filter"] += ", CDP"
+    meta.setdefault("product-type", "non-custodial")
+    meta["ecosystem"] = ", ".join(known_ecosystems(meta.get("ecosystem")))
     fm.dump(path, meta, body)
+
+
+def known_ecosystems(value):
+    kept = []
+    for raw in str(value or "").split(", "):
+        tag = ECOSYSTEM_ALIASES.get(raw.strip().lower(), raw.strip().lower())
+        if tag in ECOSYSTEMS and tag not in kept:
+            kept.append(tag)
+    return kept or ["ethereum"]
 
 
 def main():

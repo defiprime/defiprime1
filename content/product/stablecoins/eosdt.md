@@ -8,6 +8,7 @@ ecosystem: eos
 product-description: EOS-based stablecoin with self-service dApp to generate stablecoins against crypto collateral and to manage existing user positions. [Equilibrium - framework for generating asset-backed EOSDT stablecoins. Interview with CEO](/equilibrium).
 coltitle: Stablecoins
 colpermalink: stablecoins
+product-type: non-custodial
 filter: Crypto-backed
 twitter: https://twitter.com/@eosdt
 github: https://github.com/equilibrium-eosdt

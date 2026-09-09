@@ -8,7 +8,8 @@ ecosystem: ethereum, polygon
 product-description: ​dHEDGE is a platform for managing investment activities on the Ethereum blockchain where you can put your capital to work in different strategies based on a transparent track record. [Interview with co-founder](/dhedge).
 coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
-filter: Portfolio
+product-type: non-custodial
+filter: Wallet
 twitter: https://twitter.com/dHedgeOrg
 github: https://github.com/dhedge
 ticker: DHT

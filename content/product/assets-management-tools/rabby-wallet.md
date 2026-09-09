@@ -8,6 +8,7 @@ ecosystem: eos, ethereum, bsc, avalanche, celo, fantom, gnosis, optimism, polygo
 product-description: Rabby Wallet is a Web3 wallet that offers a smooth multi-chain experience by automatically switching to the corresponding chain based on your visited Web3 dApp.
 coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
+product-type: non-custodial
 filter: Wallet
 twitter: https://twitter.com/Rabby_io
 github: https://github.com/RabbyHub/Rabby

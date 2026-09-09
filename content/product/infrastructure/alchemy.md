@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Alchemy is an infrastructure provider for web3 developers interacting with Ethereum blockchain.
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Dev Tools
 alternative-to: alchemy
 ---

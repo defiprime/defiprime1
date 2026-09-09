@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Ondo is creating secure, onchain financial products like tokenized notes such as USDY. It is backed by short-term US Treasuries and bank demand deposits.
 coltitle: Tokenization & RWA
 colpermalink: assets-tokenization
+product-type: non-custodial
 filter: Treasuries
 twitter: https://twitter.com/OndoFinance
 github: https://github.com/ondoprotocol

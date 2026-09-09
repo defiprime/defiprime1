@@ -8,6 +8,7 @@ ecosystem: ethereum, avalanche, celo, fantom, gnosis, optimism, polygon, arbitru
 product-description: MetaMask is a browser extension that allows users to run Ethereum dApps and interacting with smart contracts. [MetaMask Alternatives](/metamask-alternatives)
 coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
+product-type: non-custodial
 filter: Wallet
 twitter: https://twitter.com/metamask_io
 github: https://github.com/MetaMask/metamask-extension

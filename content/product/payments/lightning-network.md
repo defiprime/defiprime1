@@ -8,5 +8,6 @@ ecosystem: bitcoin
 product-description: Lightning Network is a decentralized network using smart contract functionality in the blockchain to enable instant payments across a network of participants.
 coltitle: Payments & Cards
 colpermalink: payments
+product-type: non-custodial
 filter: Lightning
 ---

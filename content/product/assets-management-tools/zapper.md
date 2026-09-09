@@ -8,6 +8,7 @@ ecosystem: ethereum, avalanche, celo, fantom, gnosis, optimism, polygon, arbitru
 product-description: Zapper is a system focused on abstracting away the complexities of composing and accessing the most innovative opportunities in open finance. [Interview with the team](/defizap).
 coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
+product-type: non-custodial
 filter: Wallet
 twitter: https://twitter.com/zapper_fi
 platform: web

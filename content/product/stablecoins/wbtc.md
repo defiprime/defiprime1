@@ -8,6 +8,7 @@ ecosystem: ethereum, bitcoin
 product-description: Wrapped Bitcoin (WBTC) is the ERC20 token backed 1&#58;1 with Bitcoin. [WBTC origins with Benedict Chan, CTO of BitGo](/wbtc).
 coltitle: Stablecoins
 colpermalink: stablecoins
+product-type: non-custodial
 filter: Crypto-backed
 ticker: WBTC
 contract: '0x2260fac5e5542a773aa44fbcfedf7c193bc2c599'

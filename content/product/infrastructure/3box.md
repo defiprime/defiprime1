@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: 3Box is a next-generation framework for managing user data on the internet.
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Identity
 twitter: https://twitter.com/3boxdb
 github: https://github.com/3box

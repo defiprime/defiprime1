@@ -8,6 +8,7 @@ ecosystem: bsc, fantom
 product-description: Alpaca Finance is the lending protocol for leveraged yield farming which is multiplying farming principals and resulting profits on Binance Smart Chain
 coltitle: Yield & Vaults
 colpermalink: yield-aggregators
+product-type: non-custodial
 filter: Vaults
 twitter: https://twitter.com/AlpacaFinance
 github: https://github.com/alpaca-finance

@@ -4,7 +4,7 @@ git-date: '2020-09-25T18:01:23+03:00'
 product-title: SushiSwap
 product-url: https://sushi.com/
 image: /images/output_md/exchange.sushiswapclassic.org.png
-ecosystem: ethereum, arbitrum, optimism, polygon, celo, base, bsc, avalanche, boba, zksync era, rootstock, moonbeam
+ecosystem: ethereum, arbitrum, optimism, polygon, celo, base, bsc, avalanche, boba, zksync, rootstock, moonbeam
 product-description: The SushiSwap exchange allows users to swap any ERC20 token into any other ERC20 token through automated liquidity pools
 coltitle: Decentralized exchanges
 colpermalink: exchanges

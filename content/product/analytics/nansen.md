@@ -8,6 +8,7 @@ ecosystem: ethereum, celo, bsc, arbitrum, optimism, fantom, polygon, avalanche, 
 product-description: Nansen is an analytics platform for Ethereum, which combines on-chain data with a massive and constantly growing database containing millions of wallet labels. [Interview with Alex Svanevik, co-founder and CEO of Nansen](/nansen)
 coltitle: Analytics
 colpermalink: defi-analytics
+product-type: non-custodial
 filter: Dashboards
 twitter: https://twitter.com/d5_dao
 alternative-to: nansen

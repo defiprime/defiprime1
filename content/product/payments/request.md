@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Request is a decentralized network built on top of Ethereum, which allows anyone, anywhere to request, validate and execute payments. [How Request Enabling Blockchain-based Invoices? Interview with Request co-founder Christophe Lassuyt](/request).
 coltitle: Payments & Cards
 colpermalink: payments
+product-type: non-custodial
 filter: Invoicing
 twitter: https://twitter.com/requestnetwork
 github: https://github.com/RequestNetwork/

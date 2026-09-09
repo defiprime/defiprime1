@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: A platform for the creation of tokenized securities.
 coltitle: Tokenization & RWA
 colpermalink: assets-tokenization
+product-type: non-custodial
 filter: Issuance Platform
 twitter: https://twitter.com/polymathnetwork
 github: https://github.com/PolymathNetwork

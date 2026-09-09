@@ -9,7 +9,7 @@ product-description: TrueFi is a protocol for uncollateralized lending
 coltitle: Lending
 colpermalink: decentralized-lending
 product-type: non-custodial
-filter: Lend
+filter: Lend, Borrow
 twitter: https://twitter.com/TrustToken
 github: https://github.com/trusttoken
 ticker: TRU

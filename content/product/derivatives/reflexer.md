@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Reflexer is a platform where anyone can use their crypto collateral to issue reflex indexes. [Interview](/reflexer) with Stefan, co-founder of Reflexer Labs
 coltitle: Perps & Derivatives
 colpermalink: derivatives
+product-type: non-custodial
 filter: Synthetics
 twitter: https://twitter.com/reflexerfinance
 github: https://github.com/reflexer-labs

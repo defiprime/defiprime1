@@ -9,7 +9,7 @@ product-description: Spark is a DeFi lending protocol in the Sky ecosystem, offe
 coltitle: Lending
 colpermalink: decentralized-lending
 product-type: non-custodial
-filter: Borrow, Lend
+filter: Lend, Borrow
 twitter: https://twitter.com/sparkdotfi
 github: https://github.com/marsfoundation/spark-lend
 ticker: SPK

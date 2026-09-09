@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Matrixdock is a digital assets platform that provides institutional and accredited investors with transparent access to tokenized real-world assets (RWA) with an immutable record of ownership, daily Proof-of-Reserve and full bankruptcy remoteness.
 coltitle: Tokenization & RWA
 colpermalink: assets-tokenization
+product-type: non-custodial
 filter: Treasuries
 twitter: https://twitter.com/matrixdock
 ---

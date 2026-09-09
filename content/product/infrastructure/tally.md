@@ -8,6 +8,7 @@ ecosystem: ethereum, polygon, arbitrum, optimism, fantom, avalanche, bsc
 product-description: Tally is a voting dashboard, aggregating data from defi protocols' governance and providing it in real-time for research and analysis. [Interview with co-founder](/tally).
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Governance
 twitter: https://twitter.com/voteWithTally
 ---

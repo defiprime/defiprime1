@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Superfluid is a novel crypto asset streaming protocol that enables transformative web3 money experiences like salary and subscription streaming, real-time investing, and more -- all on-chain
 coltitle: Payments & Cards
 colpermalink: payments
+product-type: non-custodial
 filter: Streaming
 twitter: https://twitter.com/Superfluid_HQ
 github: https://github.com/superfluid-finance/

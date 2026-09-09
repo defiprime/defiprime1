@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: USDC is a USD-backed stablecoin as an ERC20 token.
 coltitle: Stablecoins
 colpermalink: stablecoins
+product-type: non-custodial
 filter: Fiat-backed
 twitter: https://twitter.com/circlepay
 ticker: USDC

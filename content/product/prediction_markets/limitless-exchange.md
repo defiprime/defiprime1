@@ -8,5 +8,6 @@ ecosystem: base
 product-description: Limitless Exchange is a rapidly growing prediction market platform that allows users to trade on various future events. It has established itself as the largest prediction market on the Base blockchain with over $500 million in total trading volume.
 coltitle: Prediction Markets
 colpermalink: prediction-markets
+product-type: non-custodial
 filter: Crypto
 ---

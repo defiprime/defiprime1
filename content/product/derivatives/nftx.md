@@ -8,6 +8,7 @@ ecosystem: ethereum, arbitrum
 product-description: NFTX is a platform for making ERC20 tokens that are backed by NFT collectibles and governed by a community-owned protocol. [Interview with core contributor](/nftx).
 coltitle: Perps & Derivatives
 colpermalink: derivatives
+product-type: non-custodial
 filter: Synthetics
 twitter: https://twitter.com/NFTX_
 github: https://github.com/NFTX-project

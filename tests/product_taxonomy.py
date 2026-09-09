@@ -125,7 +125,15 @@ ECOSYSTEMS = {
     "ethereum", "bsc", "bitcoin", "tron", "stellar", "eos", "polygon", "solana",
     "arbitrum", "base", "optimism", "avalanche", "hyperliquid", "cosmos", "sui",
     "aptos", "ton", "gnosis", "linea", "scroll", "zksync", "mantle", "sonic",
-    "berachain", "monad", "plasma", "tempo",
+    "berachain", "monad", "plasma", "tempo", "fantom", "celo", "moonbeam", "canto",
+    "boba", "rootstock", "blast", "metis",
+}
+
+ECOSYSTEM_ALIASES = {
+    "zksync era": "zksync",
+    "polygon zkevm": "polygon",
+    "binance": "bsc",
+    "bnb": "bsc",
 }
 
 PRODUCT_TYPES = {"non-custodial", "cefi", "non-custodial, CDP"}

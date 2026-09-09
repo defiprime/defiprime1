@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Reports based on the blockchain realtime data DEX Trades Analysis, DEX Arbitrage Analysis, Margin Trade Positions.
 coltitle: Analytics
 colpermalink: defi-analytics
+product-type: non-custodial
 filter: Dashboards
 twitter: https://twitter.com/Bloxy_info
 alternative-to: nansen

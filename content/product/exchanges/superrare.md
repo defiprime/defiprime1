@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: SuperRare is a marketplace to collect and trade unique, single-edition digital artworks.
 coltitle: Decentralized exchanges
 colpermalink: exchanges
+product-type: non-custodial
 filter: NFT
 twitter: https://twitter.com/SuperRare
 ---

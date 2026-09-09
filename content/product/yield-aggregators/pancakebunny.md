@@ -8,6 +8,7 @@ ecosystem: bsc
 product-description: PancakeBunny is a DeFi yield aggregator platform that enables auto compounding and yield optimization for all PancakeSwap LP pairs
 coltitle: Yield & Vaults
 colpermalink: yield-aggregators
+product-type: non-custodial
 filter: Vaults
 twitter: https://twitter.com/PancakeBunnyFin
 github: https://github.com/PancakeBunny-finance

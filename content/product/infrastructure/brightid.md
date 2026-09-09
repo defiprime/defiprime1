@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: BrightID allows people to prove to applications that they're only using one account.
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Identity
 twitter: https://twitter.com/BrightIDProject
 github: https://github.com/BrightID

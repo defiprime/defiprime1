@@ -8,6 +8,7 @@ ecosystem: solana
 product-description: Tensor is an NFT marketplace on the Solana blockchain, known for its fast and feature-rich platform. It offers advanced trading tools such as real-time data, historical candlestick prices, and AMM pools for NFTs.
 coltitle: Decentralized exchanges
 colpermalink: exchanges
+product-type: non-custodial
 filter: NFT
 twitter: https://twitter.com/tensor_hq
 ---

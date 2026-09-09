@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Open, decentralized platform to connect the global financial supply chain. [Intreview with Philip Stehlik, co-founder and CTO of Centrifuge](/centrifuge).
 coltitle: Tokenization & RWA
 colpermalink: assets-tokenization
+product-type: non-custodial
 filter: Private Credit
 twitter: https://twitter.com/centrifuge
 github: https://github.com/centrifuge/

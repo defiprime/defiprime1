@@ -8,6 +8,7 @@ ecosystem: ethereum, solana
 product-description: Maple is the only on-chain marketplace focused exclusively on serving Institutional and Individual Accredited Investors with high-quality lending opportunities which suit their liquidity, risk and return requirements.
 coltitle: Tokenization & RWA
 colpermalink: assets-tokenization
+product-type: non-custodial
 filter: Private Credit
 twitter: https://twitter.com/maplefinance?lang=en
 ---

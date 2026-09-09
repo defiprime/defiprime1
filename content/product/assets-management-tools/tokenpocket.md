@@ -8,6 +8,7 @@ ecosystem: eos, ethereum, bitcoin, tron, bsc, polygon
 product-description: TokenPocket is a multi-chain cryptocurrency wallet on both mobile and desktop with built in dApp browsers.
 coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
+product-type: non-custodial
 filter: Wallet
 twitter: https://twitter.com/TokenPocket_TP
 github: https://github.com/TP-Lab

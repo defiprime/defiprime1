@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Foundation is a marketplace platform for buying, selling, and trading limited-edition goods.
 coltitle: Decentralized exchanges
 colpermalink: exchanges
+product-type: non-custodial
 filter: NFT
 twitter: https://twitter.com/withfnd
 ---

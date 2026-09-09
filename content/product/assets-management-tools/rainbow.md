@@ -8,6 +8,7 @@ ecosystem: ethereum, avalanche, celo, fantom, gnosis, optimism, polygon, arbitru
 product-description: Rainbow is a fun, simple, and secure Ethereum wallet that makes managing your assets a joy.
 coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
+product-type: non-custodial
 filter: Wallet
 twitter: https://twitter.com/rainbowdotme
 github: https://github.com/rainbow-me/rainbow

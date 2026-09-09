@@ -8,6 +8,7 @@ ecosystem: ethereum, bitcoin
 product-description: pTokens are the ERC-20 token version of other, non-Ethereum blockchain currencies that enable liquidity to freely move from one blockchain to another.
 coltitle: Stablecoins
 colpermalink: stablecoins
+product-type: non-custodial
 filter: Crypto-backed
 twitter: https://twitter.com/pTokens_io
 github: https://github.com/provable-things

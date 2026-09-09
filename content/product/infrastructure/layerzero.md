@@ -8,7 +8,8 @@ ecosystem: ethereum, arbitrum, optimism, base, bsc, avalanche, polygon
 product-description: LayerZero is an omnichain interoperability protocol enabling secure cross-chain messaging, token transfers, and data movement across 70+ blockchains through immutable, censorship-resistant infrastructure.
 coltitle: Infrastructure
 colpermalink: infrastructure
-filter: Bridges
+product-type: non-custodial
+filter: Dev Tools
 twitter: https://twitter.com/LayerZero_Labs
 github: https://github.com/LayerZero-Labs
 ticker: ZRO

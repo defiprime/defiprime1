@@ -8,6 +8,7 @@ ecosystem: bitcoin
 product-description: Solv Protocol is a Bitcoin staking platform that enables users to stake BTC while maintaining liquidity. Powered by its Staking Abstraction Layer (SAL), SolvBTC connects Bitcoin holders with diverse DeFi opportunities for yield generation.
 coltitle: Staking & Restaking
 colpermalink: staking
+product-type: non-custodial
 filter: Restaking
 twitter: https://twitter.com/SolvProtocol/
 github: https://github.com/solv-finance

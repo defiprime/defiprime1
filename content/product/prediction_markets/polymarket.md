@@ -8,6 +8,7 @@ ecosystem: ethereum, polygon
 product-description: Polymarket is an information markets platform, where you can bet on the highly-debated topics and earn for being right.
 coltitle: Prediction Markets
 colpermalink: prediction-markets
+product-type: non-custodial
 filter: Politics, Sports, Crypto
 twitter: https://www.twitter.com/polydotmarket
 ---

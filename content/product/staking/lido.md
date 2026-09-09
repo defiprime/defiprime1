@@ -8,7 +8,8 @@ ecosystem: ethereum, solana
 product-description: Lido is a liquid staking solution for ETH 2.0 that lets users stake their ETH without maintaining infrastructure
 coltitle: Staking & Restaking
 colpermalink: staking
-filter: Liquid Staking
+product-type: non-custodial
+filter: Validator
 twitter: https://twitter.com/lidofinance
 github: https://github.com/lidofinance
 ticker: LDO

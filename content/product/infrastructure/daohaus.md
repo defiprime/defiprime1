@@ -8,5 +8,6 @@ ecosystem: ethereum, polygon
 product-description: Daohaus is a DAO Explorer with interface enabling joining existing DAOs, as well as creating a new Moloch-like DAOs.
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Governance
 ---

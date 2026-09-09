@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: The Openeden TBILL Vault provides investors with direct exposure to a pool of short-dated T-Bills through the Vault’s TBILL token, which is backed 1:1 by the T-Bills as well as USDC and U.S. Dollar reserves.
 coltitle: Tokenization & RWA
 colpermalink: assets-tokenization
+product-type: non-custodial
 filter: Treasuries
 twitter: https://twitter.com/OpenEden_Labs
 ---

@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: USDP is a stablecoin backed 1&#58;1 by USD, and gives customers the ability to store and send US Dollars with freedom, unrestricted by the limits of traditional banking system.
 coltitle: Stablecoins
 colpermalink: stablecoins
+product-type: non-custodial
 filter: Fiat-backed
 twitter: https://twitter.com/paxosglobal
 ticker: USDP

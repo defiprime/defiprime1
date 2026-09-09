@@ -8,5 +8,6 @@ ecosystem: bsc
 product-description: Myriad Markets is a decentralized prediction market platform offering markets across crypto, sports, politics, economy, gaming, culture, and sentiment. Users can trade on various outcomes and earn rewards for accurate predictions.
 coltitle: Prediction Markets
 colpermalink: prediction-markets
+product-type: non-custodial
 filter: Crypto
 ---

@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: On-chain liquidity protocol allows decentralized token swaps to be integrated into any application. [Interview with Loi Luu, CEO and co-founder of Kyber Network](/kyber-network).
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Dev Tools
 analytics: https://explore.duneanalytics.com/embed/query/2997/visualization/5790?api_key=HHhfNvIIhiL3oc0NpRLaA7akSjHySN2a9D8tWros
 ticker: KNC

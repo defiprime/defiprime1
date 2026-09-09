@@ -9,6 +9,6 @@ product-description: Summer.fi allows you to lock your tokens as collateral to g
 coltitle: Lending
 colpermalink: decentralized-lending
 product-type: non-custodial, CDP
-filter: Borrow, CDP
+filter: CDP
 twitter: https://twitter.com/oasisdotapp
 ---

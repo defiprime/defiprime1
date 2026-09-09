@@ -8,6 +8,7 @@ ecosystem: ethereum, polygon, optimism, arbitrum, avalanche, fantom
 product-description: Olympus is a decentralized reserve currency protocol based on the OHM token. Each OHM token is backed by a basket of assets in the Olympus treasury, giving it an intrinsic value that it cannot fall below.
 coltitle: Perps & Derivatives
 colpermalink: derivatives
+product-type: non-custodial
 filter: Synthetics
 twitter: https://twitter.com/OlympusDAO
 github: https://github.com/OlympusDAO

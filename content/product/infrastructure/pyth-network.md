@@ -8,6 +8,7 @@ ecosystem: solana, ethereum, arbitrum, optimism, base, bsc, avalanche
 product-description: Pyth Network is a decentralized oracle delivering real-time price feeds from 128+ first-party data publishers across 2,800+ feeds on 100+ blockchains, serving 520+ DeFi applications.
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Oracles
 twitter: https://twitter.com/PythNetwork
 github: https://github.com/pyth-network

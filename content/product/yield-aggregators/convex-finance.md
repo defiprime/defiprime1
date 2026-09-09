@@ -8,6 +8,7 @@ ecosystem: ethereum, polygon
 product-description: Convex Finance let you deposit your Curve LP tokens to earn Curve trading fees, boosted CRV and CVX tokens. Boost is pooled from CRV stakers so you do not need to worry about locking yourself.
 coltitle: Yield & Vaults
 colpermalink: yield-aggregators
+product-type: non-custodial
 filter: Vaults
 twitter: https://twitter.com/ConvexFinance
 github: https://github.com/convex-eth/platform

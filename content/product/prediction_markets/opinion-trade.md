@@ -8,5 +8,6 @@ ecosystem: bsc
 product-description: Opinion.Trade is a decentralized, AI-powered prediction market platform that enables users to trade directly on macroeconomic events, such as inflation data, interest rate decisions, employment trends, and geopolitical shifts.
 coltitle: Prediction Markets
 colpermalink: prediction-markets
+product-type: non-custodial
 filter: Crypto
 ---

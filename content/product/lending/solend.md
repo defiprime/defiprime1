@@ -9,7 +9,7 @@ product-description: Solend is an algorithmic, decentralized protocol for lendin
 coltitle: Lending
 colpermalink: decentralized-lending
 product-type: non-custodial
-filter: Borrow, Lend
+filter: Lend, Borrow
 twitter: https://twitter.com/solendprotocol
 github: https://github.com/solendprotocol
 ---

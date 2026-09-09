@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Backed is creating on-chain infrastructure for capital markets, including composable tokenized securities that track the value of real-world assets such as bonds, stocks, or ETFs.
 coltitle: Tokenization & RWA
 colpermalink: assets-tokenization
+product-type: non-custodial
 filter: Equities
 twitter: https://twitter.com/BackedFi
 ---

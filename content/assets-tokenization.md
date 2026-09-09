@@ -6,7 +6,7 @@ layout: page
 title: Tokenization & RWA
 h1title: Tokenization & Real-World Assets
 pagetitle: Best Tokenization and RWA Platforms in 2026
-metadescription: Directory of tokenized treasuries, private credit, equities and commodities, plus the issuance platforms that bring real-world assets on-chain, ranked by value locked.
+metadescription: Directory of tokenized treasuries, private credit, equities and commodities, plus the platforms that bring real-world assets on-chain, ranked by value locked.
 category: products
 cards: assets-tokenization
 filter-by: filter, ecosystem

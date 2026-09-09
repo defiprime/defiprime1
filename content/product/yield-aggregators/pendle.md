@@ -8,6 +8,7 @@ ecosystem: ethereum, arbitrum, base, optimism, bsc
 product-description: Pendle is a yield tokenization protocol that splits yield-bearing assets into separate principal and yield tokens, enabling users to trade future yield, lock in fixed rates, or speculate on yield movements.
 coltitle: Yield & Vaults
 colpermalink: yield-aggregators
+product-type: non-custodial
 filter: Yield Trading
 twitter: https://twitter.com/pendle_fi
 github: https://github.com/pendle-finance

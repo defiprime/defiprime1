@@ -8,6 +8,7 @@ ecosystem: ethereum, polygon, avalanche
 product-description: Vesper provides a suite of yield-generating products, focused on accessibility, optimization, and longevity
 coltitle: Yield & Vaults
 colpermalink: yield-aggregators
+product-type: non-custodial
 filter: Vaults
 twitter: https://twitter.com/VesperFi
 github: https://github.com/vesperfi

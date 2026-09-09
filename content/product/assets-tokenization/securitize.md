@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: The compliance platform for digitizing securities on the blockchain.
 coltitle: Tokenization & RWA
 colpermalink: assets-tokenization
+product-type: non-custodial
 filter: Issuance Platform
 twitter: https://twitter.com/securitize
 ---

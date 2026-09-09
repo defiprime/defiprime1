@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: DegenScore Beacon is an Ethereum soulbound token that highlights your on-chain skills & traits across one or more wallets. You can use it to leverage your on-chain reputation across web3.
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Identity
 twitter: https://twitter.com/DegenScore
 github: https://github.com/degenscore

@@ -8,6 +8,7 @@ ecosystem: ethereum, avalanche, celo, fantom, gnosis, optimism, polygon, arbitru
 product-description: APY.Vision is an all-in-one analytics dashboard for liquidity providers and yield farmers
 coltitle: Analytics
 colpermalink: defi-analytics
+product-type: non-custodial
 filter: Dashboards
 twitter: https://twitter.com/ApyVision
 ticker: VISION

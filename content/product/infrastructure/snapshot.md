@@ -8,6 +8,7 @@ ecosystem: ethereum, polygon, arbitrum, optimism, fantom, avalanche, bsc
 product-description: Snapshot is a off-chain, gasless, multi-governance community polling dashboard
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Governance
 twitter: https://twitter.com/SnapshotLabs
 github: https://github.com/balancer-labs/snapshot

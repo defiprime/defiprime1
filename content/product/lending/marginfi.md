@@ -9,7 +9,7 @@ product-description: Marginfi is a decentralized lending protocol on Solana that
 coltitle: Lending
 colpermalink: decentralized-lending
 product-type: non-custodial
-filter: Lend
+filter: Lend, Borrow
 twitter: https://twitter.com/marginfi
 github: https://github.com/mrgnlabs/marginfi-v2
 featured: true

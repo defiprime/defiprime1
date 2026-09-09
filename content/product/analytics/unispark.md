@@ -8,5 +8,6 @@ ecosystem: ethereum
 product-description: Unispark allows you to analyze, optimize and simulate your Uniswap V3 positions in seconds, giving you useful insights on fees, returns, risk, volume, impermanent loss, and more.
 coltitle: Analytics
 colpermalink: defi-analytics
+product-type: non-custodial
 filter: Dashboards
 ---

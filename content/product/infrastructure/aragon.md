@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Aragon allows you to create global, bureaucracy-free companies and freely organize and collaborate without borders or intermediaries.
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Governance
 twitter: https://twitter.com/aragonproject
 ticker: ANT

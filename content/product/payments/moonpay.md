@@ -8,6 +8,7 @@ ecosystem: ethereum, bitcoin, tron, eos, stellar
 product-description: MoonPay is a fiat on-ramp that enables web and mobile developers to let their users purchase virtual currencies using credit card.
 coltitle: Payments & Cards
 colpermalink: payments
+product-type: non-custodial
 filter: On-ramp
 twitter: https://twitter.com/moonpayhq/
 ---

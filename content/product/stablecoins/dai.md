@@ -8,6 +8,7 @@ ecosystem: ethereum, polygon
 product-description: DAI is a crypto-backed stablecoin soft-pegged to USD, built on the Ethereum and governed by the MakerDAO system.
 coltitle: Stablecoins
 colpermalink: stablecoins
+product-type: non-custodial
 filter: Crypto-backed
 twitter: https://twitter.com/MakerDAO
 github: https://github.com/makerdao/

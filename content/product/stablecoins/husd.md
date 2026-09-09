@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: HUSD is a stablecoin backed 1&#58;1 by U.S. dollars held in a U.S. trust company.
 coltitle: Stablecoins
 colpermalink: stablecoins
+product-type: non-custodial
 filter: Fiat-backed
 twitter: https://twitter.com/Stablecoin_HUSD
 github: https://github.com/stcoins/HUSD

@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: A stablecoin backed 1&#58;1 by U.S. dollars.
 coltitle: Stablecoins
 colpermalink: stablecoins
+product-type: non-custodial
 filter: Fiat-backed
 twitter: https://twitter.com/trusttoken
 ---

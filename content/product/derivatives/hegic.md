@@ -8,6 +8,7 @@ ecosystem: ethereum, arbitrum
 product-description: Hegic is on-chain options trading protocol, allowing you to buy ETH call and put options as an individual holder (buyer) or sell ETH call and put options as a liquidity provider.
 coltitle: Perps & Derivatives
 colpermalink: derivatives
+product-type: non-custodial
 filter: Options
 twitter: https://twitter.com/HegicOptions
 github: https://github.com/hegic

@@ -8,6 +8,7 @@ ecosystem: ethereum, polygon
 product-description: PlotX is a cross-chain prediction market protocol that enables crypto traders to make crypto-asset price predictions in hourly, daily & weekly time frames.
 coltitle: Prediction Markets
 colpermalink: prediction-markets
+product-type: non-custodial
 filter: Crypto
 twitter: https://twitter.com/TryPlotX
 ticker: PLOT

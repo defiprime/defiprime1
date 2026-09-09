@@ -8,6 +8,7 @@ ecosystem: ethereum, polygon
 product-description: Instadapp is a platform providing users and developers with a single point of integration to access all the DeFi protocols
 coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
+product-type: non-custodial
 filter: Wallet
 twitter: https://twitter.com/instadapp
 github: https://github.com/instadapp

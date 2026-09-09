@@ -8,6 +8,7 @@ ecosystem: ethereum, polygon, avalanche, optimism
 product-description: PoolTogether is a no-loss, audited savings game powered by blockchain technology. [Interview with PoolTogether co-founder.](/pooltogether)
 coltitle: Yield & Vaults
 colpermalink: yield-aggregators
+product-type: non-custodial
 filter: Lottery
 twitter: https://twitter.com/PoolTogether_
 github: https://github.com/pooltogether

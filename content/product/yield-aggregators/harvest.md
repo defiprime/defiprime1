@@ -8,6 +8,7 @@ ecosystem: ethereum, bsc, polygon, arbitrum
 product-description: Harvest automatically farms the highest yield available from the newest DeFi protocols, and optimizes the yields that are received using the latest farming techniques.
 coltitle: Yield & Vaults
 colpermalink: yield-aggregators
+product-type: non-custodial
 filter: Vaults
 twitter: https://twitter.com/harvest_finance
 github: https://github.com/harvest-finance

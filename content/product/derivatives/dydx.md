@@ -8,6 +8,7 @@ ecosystem: ethereum, polygon, optimism, base, avalanche
 product-description: dYdX is a trading platform for crypto assets, built with open-source protocols, enabling decentralized margin trading. [dYdX - Decentralized Platform for Advanced Financial Products, interview with  Antonio Juliano](/dydx)
 coltitle: Perps & Derivatives
 colpermalink: derivatives
+product-type: non-custodial
 filter: Perpetual
 twitter: https://twitter.com/dydxprotocol
 github: https://github.com/dydxprotocol/

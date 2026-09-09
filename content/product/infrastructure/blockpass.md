@@ -8,6 +8,7 @@ ecosystem: ethereum
 product-description: Blockpass is a blockchain based self-sovereign identity protocol for the connected world. Blockpass offers shared regulatory compliance services for humans, companies, objects and devices.
 coltitle: Infrastructure
 colpermalink: infrastructure
+product-type: non-custodial
 filter: Identity
 twitter: https://twitter.com/BlockpassOrg
 ---

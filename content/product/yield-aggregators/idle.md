@@ -8,6 +8,7 @@ ecosystem: ethereum, polygon
 product-description: Idle enables tokenizing the best interest rate among Ethereum money markets. [Interview with Idle co-founder, Matteo Pandolfi](/idle).
 coltitle: Yield & Vaults
 colpermalink: yield-aggregators
+product-type: non-custodial
 filter: Vaults
 twitter: https://twitter.com/idlefinance
 github: https://github.com/Idle-Labs/idle-governance

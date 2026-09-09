@@ -8,6 +8,7 @@ ecosystem: ethereum, arbitrum, optimism, base, zksync
 product-description: L2BEAT is an analytics and research website about Ethereum layer 2 scaling. Here you will find in depth comparison of major protocols live on Ethereum today.
 coltitle: Analytics
 colpermalink: defi-analytics
+product-type: non-custodial
 filter: Dashboards
 twitter: https://twitter.com/l2beatcom
 github: https://github.com/l2beat/l2beat

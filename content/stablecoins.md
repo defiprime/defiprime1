@@ -6,7 +6,7 @@ title: Stablecoins
 layout: page
 h1title: Stablecoins
 pagetitle: 'Best Stablecoins in 2026: Fiat-backed, Crypto-backed and Synthetic Dollars'
-metadescription: Directory of the leading stablecoins by circulating supply, covering fiat-backed, crypto-backed, synthetic and yield-bearing dollars with the chains each one runs on.
+metadescription: 'Directory of the leading stablecoins by circulating supply: fiat-backed, crypto-backed, synthetic and yield-bearing dollars, with the chains each one runs on.'
 category: products
 filter-by: ecosystem, filter
 og: /images/og-stablecoins.png
