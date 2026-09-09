@@ -21,6 +21,7 @@ CAPTURE_SIZE = (1600, 800)
 IMAGE_SIZE = (800, 400)
 MAX_BYTES = 300_000
 CAPTURE_TIMEOUT = 90
+USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
 NEW_DESCRIPTION_MIN = 80
 NEW_DESCRIPTION_MAX = 240
 REQUIRED = ["dir", "slug", "title", "url", "ecosystem", "description", "filter"]
@@ -102,7 +103,7 @@ def wait_for_file(raw, process, timeout=CAPTURE_TIMEOUT):
 def capture_screenshot(url, path):
     with tempfile.TemporaryDirectory() as profile:
         raw = Path(profile) / "raw.png"
-        command = [CHROME, "--headless=new", "--disable-gpu", "--hide-scrollbars", f"--window-size={CAPTURE_SIZE[0]},{CAPTURE_SIZE[1]}", f"--screenshot={raw}", "--virtual-time-budget=8000", f"--user-data-dir={profile}/chrome", url]
+        command = [CHROME, "--headless=new", "--disable-gpu", "--hide-scrollbars", f"--user-agent={USER_AGENT}", f"--window-size={CAPTURE_SIZE[0]},{CAPTURE_SIZE[1]}", f"--screenshot={raw}", "--virtual-time-budget=8000", f"--user-data-dir={profile}/chrome", url]
         process = subprocess.Popen(command, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         wait_for_file(raw, process)
         image = Image.open(raw).convert("RGB").resize(IMAGE_SIZE, Image.LANCZOS)
