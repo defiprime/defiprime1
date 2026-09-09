@@ -16,4 +16,4 @@ filter-by: filter, ecosystem
 
 Prediction markets let traders buy and sell shares in the outcome of an event, with each share settling at a fixed value if the outcome happens and at nothing if it does not. The price a share trades at reads as the market's probability for that outcome, and resolution comes from an oracle or a dispute process.
 
-The filters separate markets by the subject they cover, from sports and politics to crypto prices, and mark aggregators that pull quotes from several venues. Entries are ordered by value locked on DefiLlama, with featured listings first.
+The filters separate markets by the subject they cover, from sports and politics to crypto prices. Entries are ordered by value locked on DefiLlama, with featured listings first.

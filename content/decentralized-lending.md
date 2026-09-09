@@ -17,4 +17,4 @@ cards: lending
 
 Lending markets let depositors earn interest on supplied assets while borrowers post collateral to draw loans, with rates set by utilisation or by fixed-term auctions. Collateralised debt positions mint a stablecoin against locked collateral instead of borrowing from a pool.
 
-The filters separate protocols by whether they take deposits, offer borrowing, mint a CDP stablecoin, fix the rate, or run without identity checks. Entries are ordered by value locked on DefiLlama, with featured listings first.
+The filters separate protocols by whether they take deposits, offer borrowing, or mint a CDP stablecoin. Entries are ordered by value locked on DefiLlama, with featured listings first.

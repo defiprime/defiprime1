@@ -14,4 +14,4 @@ filter-by: filter, ecosystem
 
 Derivatives venues price contracts that track an underlying asset without holding it. Perpetual futures carry no expiry and use a funding rate to hold the contract near spot, options sell the right to buy or sell at a strike, and synthetics mint an on-chain token that follows an external price feed.
 
-The filters separate perpetuals, options, synthetic assets and yield trading, which splits a yield-bearing token into principal and future income. Entries are ordered by 30-day trading volume on DefiLlama, with featured listings first.
+The filters separate perpetuals, options and synthetic assets. Entries are ordered by 30-day trading volume on DefiLlama, with featured listings first.
