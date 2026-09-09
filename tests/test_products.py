@@ -59,6 +59,7 @@ class ProductFilesTest(unittest.TestCase):
 
     def test_every_product_is_valid(self):
         seen = {}
+        list_only = {}
         for path in product_files():
             meta, _ = fm.load(path)
             directory = path.parent.name
@@ -69,6 +70,8 @@ class ProductFilesTest(unittest.TestCase):
                 if fm.is_rendering(meta):
                     self.assertNotIn(meta["url"], seen, f"also rendered by {seen.get(meta['url'])}")
                     seen[meta["url"]] = path.name
+                else:
+                    list_only[meta["url"]] = path.name
                 self.assertTrue((ROOT / "static" / meta["image"].lstrip("/")).is_file(), meta["image"])
                 self.assertEqual(meta["coltitle"], TAXONOMY[directory]["coltitle"])
                 self.assertEqual(meta["colpermalink"], colpermalink(directory))
@@ -84,6 +87,8 @@ class ProductFilesTest(unittest.TestCase):
                 if "rank" in meta:
                     self.assertIsInstance(meta["rank"], int)
                     self.assertGreaterEqual(meta["rank"], 1)
+        for url, name in list_only.items():
+            self.assertIn(url, seen, f"{name} is list-only and nothing renders {url}")
 
     def test_listing_pages_match_taxonomy(self):
         listings = {}
@@ -107,7 +112,11 @@ class ProductFilesTest(unittest.TestCase):
         for old, new in REMOVED_LISTINGS.items():
             self.assertEqual(rules.get(old), new)
             self.assertEqual(rules.get(old + ".html"), new)
-        current = {fm.load(p)[0]["url"] for p in product_files()}
+        current = set()
+        for path in product_files():
+            meta, _ = fm.load(path)
+            if fm.is_rendering(meta):
+                current.add(meta["url"])
         listing_urls = {spec["url"].removesuffix(".html") for spec in TAXONOMY.values()}
         for url in master_product_urls() - current:
             bare = url.removesuffix(".html")
