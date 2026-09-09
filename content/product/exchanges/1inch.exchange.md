@@ -10,6 +10,7 @@ coltitle: Decentralized exchanges
 colpermalink: exchanges
 product-type: non-custodial
 filter: Aggregator, No KYC
+rank: 11
 twitter: https://twitter.com/1inchExchange
 github: https://github.com/CryptoManiacsZone
 analytics: https://explore.duneanalytics.com/embed/query/2999/visualization/5795?api_key=eMBgjol6pyg1Ly4ciQF7D0kj7iOONMMQWUQpzP0q

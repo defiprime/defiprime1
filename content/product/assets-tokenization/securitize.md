@@ -10,5 +10,6 @@ coltitle: Tokenization & RWA
 colpermalink: assets-tokenization
 product-type: non-custodial
 filter: Issuance Platform
+rank: 1
 twitter: https://twitter.com/securitize
 ---

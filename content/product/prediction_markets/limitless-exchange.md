@@ -10,4 +10,5 @@ coltitle: Prediction Markets
 colpermalink: prediction-markets
 product-type: non-custodial
 filter: Crypto
+rank: 9
 ---

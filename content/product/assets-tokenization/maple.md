@@ -10,5 +10,6 @@ coltitle: Tokenization & RWA
 colpermalink: assets-tokenization
 product-type: non-custodial
 filter: Private Credit
+rank: 4
 twitter: https://twitter.com/maplefinance?lang=en
 ---

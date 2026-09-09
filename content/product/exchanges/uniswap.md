@@ -10,6 +10,7 @@ coltitle: Decentralized exchanges
 colpermalink: exchanges
 product-type: non-custodial
 filter: No KYC
+rank: 1
 twitter: https://twitter.com/UniswapProtocol
 github: https://github.com/Uniswap
 analytics: https://explore.duneanalytics.com/embed/query/2740/visualization/5532?api_key=V2lWvHRsdEdMsQaqUvQPrftxQ4J3uliNTpNCWxkO

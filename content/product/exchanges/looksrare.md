@@ -10,6 +10,7 @@ coltitle: Decentralized exchanges
 colpermalink: exchanges
 product-type: non-custodial
 filter: NFT
+rank: 22
 twitter: https://twitter.com/looksrarenft
 github: https://github.com/LooksRare
 ticker: LOOKS

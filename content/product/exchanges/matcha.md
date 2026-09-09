@@ -9,7 +9,8 @@ product-description: Matcha is a crypto trading platform with smart order routin
 coltitle: Decentralized exchanges
 colpermalink: exchanges
 product-type: non-custodial
-filter: Aggregator, No KYC
+filter: Aggregator
+rank: 13
 twitter: https://twitter.com/matchaxyz
 github: https://github.com/0xProject
 analytics: https://explore.duneanalytics.com/embed/query/5352/visualization/10546?api_key=pCnt3aDnI2OHkglB2qT53cruSNmj3IrPU9bxUjny

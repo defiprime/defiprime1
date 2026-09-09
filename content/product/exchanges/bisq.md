@@ -9,7 +9,8 @@ product-description: Bisq is an open-source, peer-to-peer desktop application th
 coltitle: Decentralized exchanges
 colpermalink: exchanges
 product-type: non-custodial
-filter: Spot
+filter: Spot, No KYC
+rank: 20
 twitter: https://twitter.com/bisq_network
 github: https://github.com/bisq-network
 ---

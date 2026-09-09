@@ -9,7 +9,8 @@ product-description: Pendle is a yield tokenization protocol that splits yield-b
 coltitle: Yield & Vaults
 colpermalink: yield-aggregators
 product-type: non-custodial
-filter: Yield Trading
+filter: Yield Trading, Fixed Yield
+rank: 4
 twitter: https://twitter.com/pendle_fi
 github: https://github.com/pendle-finance
 ticker: PENDLE

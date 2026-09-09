@@ -10,6 +10,7 @@ coltitle: Yield & Vaults
 colpermalink: yield-aggregators
 product-type: non-custodial
 filter: Vaults
+rank: 12
 twitter: https://twitter.com/StakeDAOHQ
 ticker: SDT
 contract: '0x73968b9a57c6e53d41345fd57a6e6ae27d6cdb2f'

@@ -10,6 +10,7 @@ coltitle: Decentralized exchanges
 colpermalink: exchanges
 product-type: non-custodial
 filter: Spot
+rank: 19
 twitter: https://twitter.com/driftprotocol
 github: https://github.com/drift-labs
 ---

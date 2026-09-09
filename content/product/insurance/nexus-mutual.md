@@ -10,6 +10,7 @@ coltitle: Risk & Insurance
 colpermalink: insurance
 product-type: non-custodial
 filter: Cover
+rank: 5
 twitter: https://twitter.com/NexusMutual
 github: https://github.com/somish/NexusMutual
 analytics: https://duneanalytics.com/embeds/2964/5729/Fk6GQ9UMAXxF2HYvQ98tvFCybCdsVFXPIk5GpPC8

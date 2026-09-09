@@ -10,6 +10,7 @@ coltitle: Yield & Vaults
 colpermalink: yield-aggregators
 product-type: non-custodial
 filter: Vaults
+rank: 10
 twitter: https://twitter.com/iearnfinance
 github: https://github.com/iearn-finance
 analytics: https://duneanalytics.com/embeds/7176/14232/6LxCwQ6eWPEZ4ifkWEPLwpdNH2OWWecra7hbB5iM

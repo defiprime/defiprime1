@@ -10,6 +10,7 @@ coltitle: Staking & Restaking
 colpermalink: staking
 product-type: non-custodial
 filter: Liquid Staking
+rank: 12
 twitter: https://twitter.com/MarinadeFinance
 github: https://github.com/marinade-finance
 ---

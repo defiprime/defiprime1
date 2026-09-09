@@ -10,6 +10,7 @@ coltitle: Perps & Derivatives
 colpermalink: derivatives
 product-type: non-custodial
 filter: Perpetual
+rank: 1
 twitter: https://twitter.com/HyperliquidX
 github: https://github.com/hyperliquid-dex
 alternative-to:

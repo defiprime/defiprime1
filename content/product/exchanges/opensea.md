@@ -10,6 +10,7 @@ coltitle: Decentralized exchanges
 colpermalink: exchanges
 product-type: non-custodial
 filter: NFT
+rank: 21
 twitter: https://twitter.com/opensea
 analytics: https://explore.duneanalytics.com/embed/query/2877/visualization/5680?api_key=o9JX1HyitJhoMuvo2qjOE3FzRuUXntIBChxolG6L
 ---

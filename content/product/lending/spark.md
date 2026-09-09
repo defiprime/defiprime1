@@ -10,6 +10,7 @@ coltitle: Lending
 colpermalink: decentralized-lending
 product-type: non-custodial
 filter: Borrow, Lend
+rank: 4
 twitter: https://twitter.com/sparkdotfi
 github: https://github.com/marsfoundation/spark-lend
 ticker: SPK

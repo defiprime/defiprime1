@@ -10,5 +10,6 @@ coltitle: Tokenization & RWA
 colpermalink: assets-tokenization
 product-type: non-custodial
 filter: Treasuries
+rank: 17
 twitter: https://twitter.com/matrixdock
 ---

@@ -10,6 +10,7 @@ coltitle: Yield & Vaults
 colpermalink: yield-aggregators
 product-type: non-custodial
 filter: Vaults
+rank: 6
 twitter: https://twitter.com/ConvexFinance
 github: https://github.com/convex-eth/platform
 ticker: CVX

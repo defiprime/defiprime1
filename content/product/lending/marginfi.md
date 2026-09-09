@@ -10,6 +10,7 @@ coltitle: Lending
 colpermalink: decentralized-lending
 product-type: non-custodial
 filter: Lend
+rank: 19
 twitter: https://twitter.com/marginfi
 github: https://github.com/mrgnlabs/marginfi-v2
 featured: true

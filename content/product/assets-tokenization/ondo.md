@@ -10,6 +10,7 @@ coltitle: Tokenization & RWA
 colpermalink: assets-tokenization
 product-type: non-custodial
 filter: Treasuries
+rank: 2
 twitter: https://twitter.com/OndoFinance
 github: https://github.com/ondoprotocol
 ---

@@ -10,6 +10,7 @@ coltitle: Stablecoins
 colpermalink: stablecoins
 product-type: non-custodial
 filter: Fiat-backed
+rank: 2
 twitter: https://twitter.com/circlepay
 ticker: USDC
 contract: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'

@@ -10,6 +10,7 @@ coltitle: Perps & Derivatives
 colpermalink: derivatives
 product-type: non-custodial
 filter: Perpetual, Options
+rank: 16
 twitter: https://twitter.com/aevoxyz
 github: https://github.com/aevoxyz
 ---

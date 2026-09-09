@@ -10,6 +10,7 @@ coltitle: Lending
 colpermalink: decentralized-lending
 product-type: non-custodial
 filter: Borrow, Lend
+rank: 2
 twitter: https://twitter.com/MorphoLabs
 github: https://github.com/morpho-org
 ticker: MORPHO

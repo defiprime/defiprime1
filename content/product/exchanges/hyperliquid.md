@@ -10,6 +10,7 @@ coltitle: Decentralized exchanges
 colpermalink: exchanges
 product-type: non-custodial
 filter: Spot
+rank: 7
 twitter: https://twitter.com/HyperliquidX
 github: https://github.com/hyperliquid-dex
 alternative-to:

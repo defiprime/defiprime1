@@ -9,7 +9,8 @@ product-description: Jupiter is a decentralized exchange (DEX) aggregator on the
 coltitle: Decentralized exchanges
 colpermalink: exchanges
 product-type: non-custodial
-filter: No KYC
+filter: Aggregator, Spot
+rank: 10
 twitter: https://twitter.com/JupiterExchange
 github: https://github.com/jup-ag
 ---

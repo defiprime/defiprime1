@@ -10,6 +10,7 @@ coltitle: Staking & Restaking
 colpermalink: staking
 product-type: non-custodial
 filter: Validator
+rank: 7
 twitter: https://twitter.com/Rocket_Pool
 github: https://github.com/rocket-pool
 ticker: RPL

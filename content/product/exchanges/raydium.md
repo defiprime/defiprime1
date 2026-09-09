@@ -10,5 +10,6 @@ coltitle: Decentralized exchanges
 colpermalink: exchanges
 product-type: non-custodial
 filter: No KYC
+rank: 6
 twitter: https://twitter.com/RaydiumProtocol
 ---

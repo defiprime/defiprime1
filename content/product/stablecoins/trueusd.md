@@ -10,5 +10,6 @@ coltitle: Stablecoins
 colpermalink: stablecoins
 product-type: non-custodial
 filter: Fiat-backed
+rank: 16
 twitter: https://twitter.com/trusttoken
 ---

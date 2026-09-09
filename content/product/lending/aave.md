@@ -10,6 +10,7 @@ coltitle: Lending
 colpermalink: decentralized-lending
 product-type: non-custodial
 filter: Borrow, Lend
+rank: 1
 twitter: https://twitter.com/aaveaave
 github: https://github.com/aave/aave-protocol
 analytics: https://explore.duneanalytics.com/embed/query/2994/visualization/5785?api_key=cfEgS6JlBVrEyXOohUjIXgxJysh3lJv6nObbnnoy

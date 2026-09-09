@@ -10,6 +10,7 @@ coltitle: Decentralized exchanges
 colpermalink: exchanges
 product-type: non-custodial
 filter: No KYC
+rank: 16
 twitter: https://twitter.com/QuickswapDEX
 github: https://github.com/QuickSwap
 ticker: QUICK

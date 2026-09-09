@@ -10,6 +10,7 @@ coltitle: Perps & Derivatives
 colpermalink: derivatives
 product-type: non-custodial
 filter: Perpetual
+rank: 14
 twitter: https://twitter.com/dydxprotocol
 github: https://github.com/dydxprotocol/
 analytics: https://explore.duneanalytics.com/embed/query/2873/visualization/5534?api_key=ZcYHEmH4ZQrNEKcN22tNrTn2HvYl8tNFUjVwh7WG

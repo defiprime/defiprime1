@@ -10,6 +10,7 @@ coltitle: Stablecoins
 colpermalink: stablecoins
 product-type: non-custodial
 filter: Synthetic
+rank: 19
 twitter: https://twitter.com/fraxfinance
 github: https://github.com/fraxfinance
 ticker: FRAX

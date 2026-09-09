@@ -10,5 +10,6 @@ coltitle: Tokenization & RWA
 colpermalink: assets-tokenization
 product-type: non-custodial
 filter: Equities
+rank: 12
 twitter: https://twitter.com/BackedFi
 ---

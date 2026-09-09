@@ -10,6 +10,7 @@ coltitle: Staking & Restaking
 colpermalink: staking
 product-type: non-custodial
 filter: Liquid Staking
+rank: 11
 twitter: https://twitter.com/stakewise_io
 github: https://github.com/stakewise
 ---

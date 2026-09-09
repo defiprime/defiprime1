@@ -10,6 +10,7 @@ coltitle: Decentralized exchanges
 colpermalink: exchanges
 product-type: non-custodial
 filter: No KYC
+rank: 18
 twitter: https://twitter.com/SushiSwap
 github: https://github.com/sushiswap
 analytics: https://duneanalytics.com/embeds/11519/22883/nGwtHgZ9SKnwfY1NLVCHE0DKJdsjXsSxBY9xRmZt

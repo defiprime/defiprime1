@@ -10,6 +10,7 @@ coltitle: Lending
 colpermalink: decentralized-lending
 product-type: non-custodial
 filter: Lend, Borrow
+rank: 9
 twitter: https://twitter.com/VenusProtocol
 github: https://github.com/VenusProtocol
 ticker: XVS

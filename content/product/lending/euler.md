@@ -10,6 +10,7 @@ coltitle: Lending
 colpermalink: decentralized-lending
 product-type: non-custodial
 filter: Borrow, Lend
+rank: 14
 twitter: https://twitter.com/eulerfinance
 github: https://github.com/euler-xyz
 ticker: EUL

@@ -10,5 +10,6 @@ coltitle: Staking & Restaking
 colpermalink: staking
 product-type: non-custodial
 filter: Validator
+rank: 20
 twitter: https://twitter.com/p2pvalidator
 ---

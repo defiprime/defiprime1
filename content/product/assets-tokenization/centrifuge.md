@@ -10,6 +10,7 @@ coltitle: Tokenization & RWA
 colpermalink: assets-tokenization
 product-type: non-custodial
 filter: Private Credit
+rank: 9
 twitter: https://twitter.com/centrifuge
 github: https://github.com/centrifuge/
 ---

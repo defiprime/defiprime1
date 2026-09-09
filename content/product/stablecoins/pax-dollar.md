@@ -10,6 +10,7 @@ coltitle: Stablecoins
 colpermalink: stablecoins
 product-type: non-custodial
 filter: Fiat-backed
+rank: 18
 twitter: https://twitter.com/paxosglobal
 ticker: USDP
 contract: '0x8e870d67f660d95d5be530380d0ec0bd388289e1'

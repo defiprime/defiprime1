@@ -9,7 +9,8 @@ product-description: CowSwap is a trading interface built on top of Gnosis Proto
 coltitle: Decentralized exchanges
 colpermalink: exchanges
 product-type: non-custodial
-filter: No KYC
+filter: Aggregator
+rank: 12
 twitter: https://twitter.com/mevprotection
 github: https://github.com/gnosis/cowswap
 ---

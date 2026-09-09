@@ -9,7 +9,8 @@ product-description: Solv Protocol is a Bitcoin staking platform that enables us
 coltitle: Staking & Restaking
 colpermalink: staking
 product-type: non-custodial
-filter: Restaking
+filter: Bitcoin Staking
+rank: 16
 twitter: https://twitter.com/SolvProtocol/
 github: https://github.com/solv-finance
 ticker: SOLV

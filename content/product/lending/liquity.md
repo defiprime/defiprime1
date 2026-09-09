@@ -10,6 +10,7 @@ coltitle: Lending
 colpermalink: decentralized-lending
 product-type: non-custodial, CDP
 filter: Borrow, CDP
+rank: 17
 twitter: https://twitter.com/LiquityProtocol
 github: https://github.com/liquity/
 ticker: LQTY

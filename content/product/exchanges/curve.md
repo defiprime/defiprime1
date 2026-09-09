@@ -9,7 +9,8 @@ product-description: Curve is an exchange liquidity pool on Ethereum designed fo
 coltitle: Decentralized exchanges
 colpermalink: exchanges
 product-type: non-custodial
-filter: No KYC
+filter: Spot, Stable Swap
+rank: 8
 twitter: https://twitter.com/CurveFinance
 github: https://github.com/curvefi/curve-contract
 analytics: https://explore.duneanalytics.com/embed/query/4177/visualization/8129?api_key=IwmzBnSTA6LFcqLYy1f5HQRiR3iDrNhOD8895hJP

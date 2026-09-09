@@ -10,6 +10,7 @@ coltitle: Stablecoins
 colpermalink: stablecoins
 product-type: non-custodial
 filter: Crypto-backed
+rank: 4
 twitter: https://twitter.com/MakerDAO
 github: https://github.com/makerdao/
 analytics: https://explore.duneanalytics.com/embed/query/2992/visualization/5780?api_key=aXkk8JW3JnMCVuifpq2lEjU78D0YizB3rhEUo2U4

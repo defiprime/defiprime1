@@ -10,6 +10,7 @@ coltitle: Perps & Derivatives
 colpermalink: derivatives
 product-type: non-custodial
 filter: Perpetual
+rank: 2
 twitter: https://twitter.com/AsterDEX
 github: https://github.com/asterdex
 alternative-to:

@@ -10,6 +10,7 @@ coltitle: Staking & Restaking
 colpermalink: staking
 product-type: non-custodial
 filter: Liquid Staking
+rank: 1
 twitter: https://twitter.com/lidofinance
 github: https://github.com/lidofinance
 ticker: LDO

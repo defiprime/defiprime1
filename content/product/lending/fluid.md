@@ -10,6 +10,7 @@ coltitle: Lending
 colpermalink: decentralized-lending
 product-type: non-custodial
 filter: Borrow, Lend
+rank: 12
 twitter: https://twitter.com/0xfluid
 github: https://github.com/Instadapp/fluid-contracts-public
 ---

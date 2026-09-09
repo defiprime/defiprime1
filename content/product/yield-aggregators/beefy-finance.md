@@ -10,6 +10,7 @@ coltitle: Yield & Vaults
 colpermalink: yield-aggregators
 product-type: non-custodial
 filter: Vaults
+rank: 14
 twitter: https://twitter.com/beefyfinance
 github: https://github.com/beefyfinance
 ticker: BIFI

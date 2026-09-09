@@ -9,7 +9,8 @@ product-description: Derive is a decentralized protocol that creates unique and 
 coltitle: Perps & Derivatives
 colpermalink: derivatives
 product-type: non-custodial
-filter: Options
+filter: Options, Perpetual
+rank: 15
 twitter: https://x.com/derivexyz
 github: https://github.com/derivexyz
 ticker: DRV

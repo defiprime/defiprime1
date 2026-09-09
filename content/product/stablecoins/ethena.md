@@ -9,7 +9,8 @@ product-description: Ethena is a synthetic dollar protocol that issues USDe, the
 coltitle: Stablecoins
 colpermalink: stablecoins
 product-type: non-custodial
-filter: Crypto-backed
+filter: Synthetic, Yield-bearing
+rank: 5
 twitter: https://twitter.com/ethena_labs
 github: https://github.com/ethena-labs
 ticker: ENA

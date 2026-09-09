@@ -10,6 +10,7 @@ coltitle: Staking & Restaking
 colpermalink: staking
 product-type: non-custodial
 filter: Liquid Staking
+rank: 19
 twitter: https://twitter.com/ankr
 github: https://github.com/Ankr-network
 ticker: ANKR

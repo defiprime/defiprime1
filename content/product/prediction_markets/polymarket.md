@@ -10,5 +10,6 @@ coltitle: Prediction Markets
 colpermalink: prediction-markets
 product-type: non-custodial
 filter: Politics, Sports, Crypto
+rank: 1
 twitter: https://www.twitter.com/polydotmarket
 ---

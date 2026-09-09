@@ -10,6 +10,7 @@ coltitle: Decentralized exchanges
 colpermalink: exchanges
 product-type: non-custodial
 filter: No KYC
+rank: 15
 twitter: https://twitter.com/BalancerLabs
 github: https://github.com/balancer-labs/
 analytics: https://explore.duneanalytics.com/embed/query/4171/visualization/8115?api_key=DvVRTNM70csWdnF9jorVDUWJMo38jfTZBNGzuQmj

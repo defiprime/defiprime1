@@ -10,6 +10,7 @@ coltitle: Decentralized exchanges
 colpermalink: exchanges
 product-type: non-custodial
 filter: No KYC
+rank: 2
 twitter: https://twitter.com/pancakeswap
 github: https://github.com/pancakeswap
 alternative-to:
