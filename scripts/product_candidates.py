@@ -34,6 +34,8 @@ TVL_CATEGORIES = {
 }
 
 SUFFIXES = re.compile(r"\s+(V\d+|v\d+|Lite|Classic|Legacy)$")
+OVERVIEW_SUFFIXES = re.compile(r"\s+(AMM V3|Spot Orderbook|Options|Slipstream|Infinity|DLMM|CLOB|AMM|DEX|V2|V3|V4)$")
+STOPWORDS = ("finance", "protocol", "dao", "network", "labs")
 
 
 def money(text):
@@ -85,11 +87,28 @@ def rank_protocols(protocols, categories, limit=LIMIT):
     return [row for row in rows if row["metric"] >= TVL_FLOOR][:limit]
 
 
+def overview_base_name(name):
+    previous = None
+    while previous != name:
+        previous = name
+        name = OVERVIEW_SUFFIXES.sub("", name).strip()
+    return name
+
+
 def rank_overview(payload, source, limit=LIMIT):
-    rows = []
+    groups = {}
     for protocol in payload.get("protocols", []):
-        rows.append({"name": protocol.get("displayName") or protocol["name"], "slug": protocol.get("module") or protocol["name"], "url": None, "twitter": None, "metric": float(protocol.get("total30d") or 0), "metric_name": "volume30d", "source": f"{source} {date.today()}", "chains": protocol.get("chains") or [], "category": protocol.get("category")})
-    return sorted(rows, key=lambda r: -r["metric"])[:limit]
+        name = protocol.get("displayName") or protocol["name"]
+        base = overview_base_name(name)
+        metric = float(protocol.get("total30d") or 0)
+        group = groups.setdefault(base, {"name": base, "slug": protocol.get("module") or protocol["name"], "url": None, "twitter": None, "metric": 0.0, "metric_name": "volume30d", "source": f"{source} {date.today()}", "chains": protocol.get("chains") or [], "category": protocol.get("category"), "best": 0.0})
+        group["metric"] += metric
+        if metric > group["best"]:
+            group.update(slug=protocol.get("module") or protocol["name"], chains=protocol.get("chains") or [], category=protocol.get("category"), best=metric)
+    rows = sorted(groups.values(), key=lambda g: -g["metric"])
+    for row in rows:
+        row.pop("best", None)
+    return rows[:limit]
 
 
 def rank_stablecoins(payload, limit=LIMIT):
@@ -126,6 +145,30 @@ def http_status(url):
         return None
 
 
+def normalize_name(name):
+    name = name.lower()
+    name = re.sub(r"\s*\([^)]*\)\s*$", "", name)
+    for word in STOPWORDS:
+        name = re.sub(rf"\b{word}\b", " ", name)
+    return re.sub(r"[^a-z0-9]", "", name)
+
+
+def candidate_symbol(name):
+    match = re.search(r"\(([^()]+)\)\s*$", name)
+    return match.group(1) if match else None
+
+
+def is_listed(candidate, existing_hosts, existing_keys, existing_symbols):
+    if candidate.get("url") and host(candidate["url"]) in existing_hosts:
+        return True
+    if normalize_name(candidate["name"]) in existing_keys:
+        return True
+    symbol = candidate_symbol(candidate["name"])
+    if symbol and symbol.lower() in existing_symbols:
+        return True
+    return False
+
+
 def llama_index(protocols):
     by_host = {}
     by_name = {}
@@ -149,28 +192,54 @@ def check_existing(protocols, stable_names):
         status = http_status(str(meta["product-url"]))
         tvl = by_host.get(product_host) or by_name.get(title.lower())
         is_stable = title.lower() in stable_names
-        keep = True if (status == 200 or (tvl and tvl >= TVL_FLOOR) or is_stable) else None
-        report.setdefault(path.parent.name, []).append({"file": str(path.relative_to(ROOT)), "title": title, "host": product_host, "http": status, "llama_tvl": tvl, "stablecoin": is_stable, "keep": keep})
+        featured = bool(meta.get("featured"))
+        keep = True if (status == 200 or (tvl and tvl >= TVL_FLOOR) or is_stable or featured) else None
+        row = {
+            "file": str(path.relative_to(ROOT)),
+            "title": title,
+            "host": product_host,
+            "http": status,
+            "llama_tvl": tvl,
+            "tvl_source": f"{PROTOCOLS_URL} {date.today()}" if tvl else None,
+            "stablecoin": is_stable,
+            "stablecoin_source": f"{STABLES_URL} {date.today()}" if is_stable else None,
+            "ticker": meta.get("ticker"),
+            "keep": keep,
+        }
+        if featured:
+            row["featured"] = True
+        report.setdefault(path.parent.name, []).append(row)
     return report
 
 
 def write_report(path, data):
-    lines = [f"# Product candidates, {date.today()}", "", "Metric sources are named per row. `keep: null` means site and DefiLlama checks both failed and the X account check decides.", ""]
+    lines = [
+        f"# Product candidates, {date.today()}",
+        "",
+        "Metric sources are named per row. `keep: null` means site and DefiLlama checks both failed and the X account check decides. `stablecoin` means the title matched the DefiLlama stablecoin list by name.",
+        "",
+    ]
     for directory in TAXONOMY:
         block = data.get(directory, {})
         lines.append(f"## {TAXONOMY[directory]['title']} ({directory})")
         lines.append("")
         lines.append("### Existing")
         for row in block.get("existing", []):
-            flag = "keep" if row["keep"] else "CHECK X"
-            lines.append(f"- {flag}: {row['title']} ({row['file']}) http={row['http']} tvl={row['llama_tvl']}")
+            if row.get("featured"):
+                flag = "keep (featured)"
+            elif row["keep"]:
+                flag = "keep"
+            else:
+                flag = "CHECK X"
+            lines.append(f"- {flag}: {row['title']} ({row['file']}) http={row['http']} tvl={row['llama_tvl']} tvl_source={row['tvl_source']} stablecoin_source={row['stablecoin_source']}")
         lines.append("")
         lines.append("### Candidates not yet listed")
         existing_hosts = {r["host"] for r in block.get("existing", [])}
-        existing_names = {r["title"].lower() for r in block.get("existing", [])}
+        existing_keys = {normalize_name(r["title"]) for r in block.get("existing", [])}
+        existing_symbols = {r["title"].lower() for r in block.get("existing", [])}
+        existing_symbols |= {r["ticker"].lower() for r in block.get("existing", []) if r.get("ticker")}
         for row in block.get("candidates", []):
-            listed = (row.get("url") and host(row["url"]) in existing_hosts) or row["name"].lower() in existing_names
-            if not listed:
+            if not is_listed(row, existing_hosts, existing_keys, existing_symbols):
                 lines.append(f"- {row['name']}: {row['metric_name']}={row['metric']:,.0f} chains={', '.join(row['chains'][:4])} source={row['source']}")
         lines.append("")
     Path(path).write_text("\n".join(lines), encoding="utf-8")

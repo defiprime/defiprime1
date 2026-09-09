@@ -34,6 +34,27 @@ class ParseTest(unittest.TestCase):
         self.assertEqual(pc.host("https://app.aave.com/?referral=28"), "aave.com")
         self.assertEqual(pc.host("https://www.morpho.org"), "morpho.org")
 
+    def test_rank_overview_collapses_versions(self):
+        payload = {
+            "protocols": [
+                {"displayName": "Uniswap V3", "module": "uniswap-v3", "total30d": 10.0, "category": "Dexs", "chains": ["Ethereum"]},
+                {"displayName": "Uniswap V4", "module": "uniswap-v4", "total30d": 5.0, "category": "Dexs", "chains": ["Ethereum"]},
+                {"displayName": "Curve DEX", "module": "curve", "total30d": 3.0, "category": "Dexs", "chains": ["Ethereum"]},
+            ]
+        }
+        rows = pc.rank_overview(payload, "source")
+        self.assertEqual(len(rows), 2)
+        self.assertEqual(rows[0]["name"], "Uniswap")
+        self.assertEqual(rows[0]["metric"], 15.0)
+
+    def test_is_listed_matches_decorated_stablecoin_name(self):
+        existing = [{"title": "Dai", "host": "makerdao.com", "ticker": None}]
+        existing_hosts = {r["host"] for r in existing}
+        existing_keys = {pc.normalize_name(r["title"]) for r in existing}
+        existing_symbols = {r["title"].lower() for r in existing}
+        candidate = {"name": "Dai (DAI)", "url": None}
+        self.assertTrue(pc.is_listed(candidate, existing_hosts, existing_keys, existing_symbols))
+
 
 if __name__ == "__main__":
     unittest.main()
