@@ -14,7 +14,7 @@
                 </tr>
               </thead>
               <tbody>
-                            {{ $collections := slice "alternative-savings" "analytics" "assets-management-tools" "assets-tokenization" "dao" "derivatives" "exchanges" "infrastructure" "insurance" "kyc_identity" "lending" "perps" "marketplaces" "payments" "prediction_markets" "stablecoins" }}
+                            {{ $collections := slice "analytics" "assets-management-tools" "assets-tokenization" "derivatives" "exchanges" "infrastructure" "insurance" "lending" "payments" "prediction_markets" "stablecoins" "staking" "yield-aggregators" }}
               {{ range $collections }}
                 {{ range (sort (site.GetPage (printf "/product/%s" .)).Pages "File.Path") }}
                   {{ if .Params.ticker }}

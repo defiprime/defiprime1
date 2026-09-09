@@ -55,7 +55,7 @@
 </head>
 
 {{ $alternativeTo := index .Params "alternative-to" }}
-{{ $collections := slice "alternative-savings" "analytics" "assets-management-tools" "assets-tokenization" "dao" "derivatives" "exchanges" "infrastructure" "insurance" "kyc_identity" "lending" "perps" "marketplaces" "payments" "prediction_markets" "stablecoins" }}
+{{ $collections := slice "analytics" "assets-management-tools" "assets-tokenization" "derivatives" "exchanges" "infrastructure" "insurance" "lending" "payments" "prediction_markets" "stablecoins" "staking" "yield-aggregators" }}
 {{ $all_projects := slice }}
 {{ range $collections }}
   {{ with site.GetPage (printf "/product/%s" .) }}
@@ -293,18 +293,13 @@
       { name: 'derivatives', url: '/derivatives' },
       { name: 'analytics', url: '/defi-analytics' },
       { name: 'infrastructure', url: '/infrastructure' },
-      { name: 'dao', url: '/dao' },
       { name: 'insurance', url: '/insurance' },
-      { name: 'kyc_identity', url: '/decentralized_kyc_identity' },
-      { name: 'perps', url: '/perps' },
-      { name: 'marketplaces', url: '/decentralized_marketplaces' },
       { name: 'payments', url: '/payments' },
       { name: 'prediction_markets', url: '/prediction-markets' },
       { name: 'stablecoins', url: '/stablecoins' },
       { name: 'staking', url: '/staking' },
       { name: 'assets-management-tools', url: '/assets-management-tools' },
-      { name: 'assets-tokenization', url: '/assets-tokenization' },
-      { name: 'alternative-savings', url: '/alternative-savings' }
+      { name: 'assets-tokenization', url: '/assets-tokenization' }
     ];
 
     let allAlternatives = [];
