@@ -1,16 +1,18 @@
 ---
-lastmod: 2019-04-01
-git-date: 2021-02-18T18:02:56-08:00
-title: Yield Aggregators
-layout: page
 url: /yield-aggregators.html
-h1title: Yield Aggregators
-pagetitle: Complete Yield Aggregators List - DeFi Yield Aggregators
-metadescription: Yield Aggregators playing a key role in the yield farming economy by leveraging different DeFi protocols and strategies to maximize user profits. The yield farming process usually requires you to lock up or stake funds, providing variable or fixed ROI.
+git-date: '2021-02-18T18:02:56-08:00'
+lastmod: '2019-04-01'
+title: Yield & Vaults
+layout: page
+h1title: Yield & Vaults
+pagetitle: Best DeFi Yield Vaults and Curators in 2026
+metadescription: Directory of the leading DeFi vaults, risk curators, yield-trading and fixed-yield protocols by value locked, with the chains and strategies behind each one.
 category: products
 filter-by: ecosystem, filter
 og: /images/blog/yield-og.png
 cards: yield-aggregators
 ---
 
-Yield Aggregators playing a key role in the yield farming economy by leveraging different DeFi protocols and strategies to maximize user profits. The yield farming process usually requires you to lock up or stake funds, providing variable or fixed ROI in return.
+Yield protocols take a deposit and run a strategy with it, so the holder keeps a single position instead of managing allocations across lending markets, liquidity pools and staking. Risk curators go a step further and set the parameters, collateral and caps for vaults that other people supply.
+
+The filters separate plain vaults, curated vaults, yield trading, fixed-yield products and no-loss lotteries that pay interest out as a prize. Entries are ordered by value locked on DefiLlama, with featured listings first.

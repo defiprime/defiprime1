@@ -1,14 +1,17 @@
 ---
 url: /product/tokenpocket.html
-git-date: 2020-06-28T12:37:26-07:00
+git-date: '2020-06-28T12:37:26-07:00'
 product-title: TokenPocket
 product-url: https://tokenpocket.pro/
 image: /images/output_md/httpstokenpocketpro.png
 ecosystem: eos, ethereum, bitcoin, tron, bsc, polygon
-platform: ios, android, windows, mac
 product-description: TokenPocket is a multi-chain cryptocurrency wallet on both mobile and desktop with built in dApp browsers.
-coltitle:  "Asset Management Tools"
+coltitle: Wallets & Portfolio
 colpermalink: assets-management-tools
+product-type: non-custodial
+filter: Wallet
+rank: 21
 twitter: https://twitter.com/TokenPocket_TP
 github: https://github.com/TP-Lab
+platform: ios, android, windows, mac
 ---

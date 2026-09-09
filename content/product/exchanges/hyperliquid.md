@@ -1,19 +1,21 @@
 ---
 url: /product/hyperliquid.html
-git-date: 2023-12-01T01:16:14-07:00
+git-date: '2023-12-01T01:16:14-07:00'
 product-title: Hyperliquid
 product-url: https://app.hyperliquid.xyz/join/DEFIPRIME
 image: /images/output_md/hyperliquid.xyz.jpg
 ecosystem: arbitrum
 product-description: Hyperliquid is a decentralized perpetual exchange with best-in-class speed, liquidity, and price. Trade crypto in one click, without wallet approvals.
-coltitle: "Decentralized exchanges"
+coltitle: Decentralized exchanges
 colpermalink: exchanges
 product-type: non-custodial
-filter: Ethereum, Perpetual
-featured: true
+filter: Spot
+rank: 7
 twitter: https://twitter.com/HyperliquidX
 github: https://github.com/hyperliquid-dex
-alternative-to: ["ftx"]
+alternative-to:
+- ftx
+featured: true
 build:
   render: link
   list: always

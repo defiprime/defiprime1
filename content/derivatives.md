@@ -1,15 +1,17 @@
 ---
-lastmod: 2019-04-01
-git-date: 2019-04-13T21:06:27-07:00
-layout: page
-title: "DEXs"
 url: /derivatives.html
-h1title: Derivatives
-pagetitle: Top DeFi Ethereum Options, Futures, Derivatives Exchanges
-metadescription: What are Cryptocurrency Derivatives such as Options or Futures? In traditional finance, a derivative is a contract that derives its value from the performance of an underlying entity. This underlying entity can be an asset, index, or interest rate, and is often simply called the underlying.
+git-date: '2019-04-13T21:06:27-07:00'
+lastmod: '2019-04-01'
+layout: page
+title: Perps & Derivatives
+h1title: Perps & Derivatives
+pagetitle: Best Perp DEXs and On-chain Derivatives Platforms in 2026
+metadescription: Directory of the leading on-chain perpetuals, options and synthetics venues ranked by 30-day volume, from Hyperliquid, Aster and Lighter down the field.
 category: products
 cards: derivatives
 filter-by: filter, ecosystem
 ---
 
-In traditional finance, a derivative is a contract that derives its value from the performance of an underlying entity. This underlying entity can be an asset, index, or interest rate, and is often simply called the "underlying."
+Derivatives venues price contracts that track an underlying asset without holding it. Perpetual futures carry no expiry and use a funding rate to hold the contract near spot, options sell the right to buy or sell at a strike, and synthetics mint an on-chain token that follows an external price feed.
+
+The filters separate perpetuals, options and synthetic assets. Entries are ordered by 30-day trading volume on DefiLlama, with featured listings first.

@@ -7,7 +7,7 @@
         {{- $cards := .Params.cards }}
         {{- if ne $cards $exclude }}
       <a href="{{ partial "page-url.html" . }}">
-        {{ replaceRE `[-_]` " " (strings.FirstUpper (lower $cards)) }}
+        {{ .Title }}
         <span class="articles_count">{{ len (site.GetPage (printf "product/%s" $cards)).RegularPages }}</span>
       </a>
         {{- end }}

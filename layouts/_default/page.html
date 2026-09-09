@@ -89,8 +89,10 @@
         {{ $cardsSection := site.GetPage (printf "product/%s" .Params.cards) }}
         {{ $page_cards := sort $cardsSection.Pages "File.Path" }}
         {{ $flagged := sort (where $page_cards "Params.featured" "!=" nil) "Params.featured" }}
-        {{ $unflagged := where $page_cards "Params.featured" nil }}
-        {{ $page_cards = $flagged | append $unflagged }}
+        {{ $rest := where $page_cards "Params.featured" nil }}
+        {{ $ranked := sort (where $rest "Params.rank" "!=" nil) "Params.rank" }}
+        {{ $unranked := where $rest "Params.rank" nil }}
+        {{ $page_cards = $flagged | append $ranked | append $unranked }}
 
         <section id='assets_cards'>
           {{ range $page_cards }}
@@ -158,6 +160,26 @@
                     {{ else if eq $market_tag "solana" }}
                     <span class="tooltip" title="Built on Solana or related to Solana ecosystem">
                       {{ partial "icons/solana.svg" $ }}
+                    </span>
+                    {{ else if eq $market_tag "arbitrum" }}
+                    <span class="tooltip" title="Built on Arbitrum or related to Arbitrum ecosystem">
+                      {{ partial "icons/arbitrum.svg" $ }}
+                    </span>
+                    {{ else if eq $market_tag "base" }}
+                    <span class="tooltip" title="Built on Base or related to Base ecosystem">
+                      {{ partial "icons/base.svg" $ }}
+                    </span>
+                    {{ else if eq $market_tag "optimism" }}
+                    <span class="tooltip" title="Built on Optimism or related to Optimism ecosystem">
+                      {{ partial "icons/optimism.svg" $ }}
+                    </span>
+                    {{ else if eq $market_tag "avalanche" }}
+                    <span class="tooltip" title="Built on Avalanche or related to Avalanche ecosystem">
+                      {{ partial "icons/avalanche.svg" $ }}
+                    </span>
+                    {{ else if eq $market_tag "hyperliquid" }}
+                    <span class="tooltip" title="Built on Hyperliquid or related to Hyperliquid ecosystem">
+                      {{ partial "icons/hyperliquid.svg" $ }}
                     </span>
                     {{ end }}
                     {{ end }}

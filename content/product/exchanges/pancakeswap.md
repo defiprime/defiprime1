@@ -1,16 +1,19 @@
 ---
 url: /product/pancakeswap.html
-git-date: 2021-02-20T12:43:53-08:00
+git-date: '2021-02-20T12:43:53-08:00'
 product-title: PancakeSwap
 product-url: https://pancakeswap.finance/
 image: /images/output_md/pancakeswap.finance.png
 ecosystem: bsc
+product-description: PancakeSwap is a Binance Smart Chain based AMM exchange with liquidity incentivized through farming mechanics, lottery, and collectibles gamification.
+coltitle: Decentralized exchanges
+colpermalink: exchanges
 product-type: non-custodial
 filter: No KYC
-product-description: PancakeSwap is a Binance Smart Chain based AMM exchange with liquidity incentivized through farming mechanics, lottery, and collectibles gamification.
-coltitle: "Decentralized exchanges"
-colpermalink: exchanges
+rank: 2
 twitter: https://twitter.com/pancakeswap
 github: https://github.com/pancakeswap
-alternative-to: ["ftx", "uniswap"]
+alternative-to:
+- ftx
+- uniswap
 ---

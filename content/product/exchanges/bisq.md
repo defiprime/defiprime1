@@ -1,14 +1,16 @@
 ---
 url: /product/bisq.html
-git-date: 2019-05-20T22:02:39-07:00
+git-date: '2019-05-20T22:02:39-07:00'
 product-title: Bisq
 product-url: https://bisq.network/
 image: /images/output_md/httpsbisqnetwork.png
 ecosystem: bitcoin
-product-type: non-custodial
 product-description: Bisq is an open-source, peer-to-peer desktop application that allows you to buy and sell cryptocurrencies.
-coltitle: "Decentralized exchanges"
+coltitle: Decentralized exchanges
 colpermalink: exchanges
+product-type: non-custodial
+filter: Spot, No KYC
+rank: 20
 twitter: https://twitter.com/bisq_network
 github: https://github.com/bisq-network
 ---

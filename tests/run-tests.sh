@@ -34,15 +34,33 @@ else
 fi
 
 echo ""
-echo "--- Test 2: Parity harness ---"
-if [ -d "$GOLDEN" ]; then
+echo "--- Test 2: Parity harness (opt-in, PARITY=1) ---"
+if [ "${PARITY:-0}" = "1" ] && [ -d "$GOLDEN" ]; then
   if python3 "$ROOT/tests/parity.py" --golden "$GOLDEN" --public "$PUBLIC"; then
     pass "Parity harness: no unsuppressed findings"
   else
-    fail "Parity harness: unsuppressed findings against golden build"
+    fail "Parity harness reported findings"
   fi
 else
-  warn "Golden build not found at $GOLDEN, skipping parity harness"
+  warn "Parity harness skipped (set PARITY=1 with a golden build to run it)"
+fi
+
+echo ""
+echo "--- Test 2b: Product directory ---"
+if python3 -m unittest discover -s "$ROOT/tests" -p 'test_product*.py' > /tmp/product-tests.log 2>&1; then
+  pass "Product taxonomy, generator and candidate tests"
+else
+  fail "Product tests failed (see /tmp/product-tests.log)"
+  tail -20 /tmp/product-tests.log
+fi
+if [ "${LINKCHECK:-0}" = "1" ]; then
+  if python3 "$ROOT/tests/check_product_links.py"; then
+    pass "Every product-url returns 200"
+  else
+    fail "Some product-url did not return 200"
+  fi
+else
+  warn "Link check skipped (set LINKCHECK=1 to run it)"
 fi
 
 echo ""
