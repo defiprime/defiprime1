@@ -21,7 +21,7 @@ Our [2025 guide to non-custodial cards](/non-custodial-crypto-debit-cards) cover
 
 Everything below reflects documents and dashboards as read on September 10, 2026. Terms change: KAST rewrote its custody clause on July 7 and Ether.fi's terms carry a September 9 modification date.
 
-## The Volume, and What Is Inside It
+## Crypto Card Volume in 2026: $1.1 Billion a Month, and What Is Inside It
 
 ![Monthly crypto card volume tracked by Paymentscan from December 2024 to August 2026, rising from $153M to $1.116B, with RedotPay's self-reported spend and Rain-issued program settlement shown as stacked segments from February 2026. Source: paymentscan.xyz, read 2026-09-10.](/images/blog/crypto-cards-who-holds-the-money-volume.png)
 
@@ -33,11 +33,11 @@ The strictest number available is spend observed on chain, which excludes RedotP
 
 The number that organizes the rest of this piece is the orange segment. Paymentscan's [issuer view](https://paymentscan.xyz/issuers/rain) attributes $468 million of August's $1.116 billion, about 42%, to programs settling through Rain. Add RedotPay and two companies carry roughly 78% of tracked crypto card volume.
 
-## Five Places Your Money Can Be
+## Crypto Card Custody Models: Five Places Your Money Can Be
 
 Every crypto card asks you to move value into something before you can spend it. The terms of the 18 programs we read describe five different somethings. The order below runs from the weakest claim a user holds to the strongest.
 
-### 1. You Sold It to the Operator
+### 1. Sold to the Operator: KAST's Terms of Service
 
 This is the [KAST](/product/kast) model, and it is the paragraph the summer's argument was about. It has existed in three versions.
 
@@ -57,13 +57,13 @@ None of this is hidden. It is also not unique. Baanx, the infrastructure company
 
 The data since the argument cuts both ways. Paymentscan's onchain count of KAST top-ups fell from $219.6 million in July to $94.4 million in August, while KAST's settlement batches to Rain rose from $89.6 million to $104.8 million. Top-ups are not spend, and we cannot tell from outside whether users pulled back or KAST changed how deposits route. It is a signal, not a conclusion, and the settlement series hit a record in August after the fight.
 
-### 2. Someone Holds It for You, and Says So
+### 2. Held in Custody for You: RedotPay, Revolut and Coinbase
 
 RedotPay, the largest card by volume, is custodial and its [terms](https://www.redotpay.com/terms/general) (last updated July 9, 2026) say so plainly: a "Debit Account" is "the debit account opened by a user with the Custodian, including a cryptocurrency wallet hosted by the Custodian." The custodian is Red Dot Trust, a RedotPay group company, so this is affiliate custody rather than independent custody. The terms carry a general lien over "any or all of your property which (for any reason) is in or comes into our possession or control," and a user becoming "Insolvent" is an event of default. No bank or BIN sponsor is named in the general terms; a February 2025 release names StraitsX as the Singapore Visa BIN sponsor.
 
 Revolut's crypto terms use the cleanest version of this language: "You appoint us as your 'nominee' for the purpose of holding your cryptoassets. This means we hold the legal title to, and you are the beneficial owner of, the amount of cryptoassets we hold on your behalf." Coinbase's [US user agreement](https://www.coinbase.com/legal/user_agreement/united_states) goes furthest toward the user: "Title to Supported Digital Assets shall at all times remain with you and shall not transfer to Coinbase. [...] All interests in Digital Assets we hold for Digital Asset Wallets are held for customers, are not property of Coinbase, and are not subject to claims of Coinbase's creditors." Whether a bankruptcy court agrees with that sentence is a question nobody has had to test at Coinbase.
 
-### 3. It Becomes Fiat at a Licensed Institution
+### 3. Converted to Fiat at a Licensed Issuer: Crypto.com, Krak and Bybit
 
 The exchange cards mostly do not hold crypto on the card at all. Crypto.com's [US cardholder agreement](https://crypto.com/document/us_card.pdf), effective September 1, 2026, states that "No cryptocurrency debits, credits or balances will take place on the CRYPTO.COM Prepaid Visa Card or be held on the Card. Only US Dollars (USD) are held," with Community Federal Savings Bank as issuer. Kraken's new US Krak Card, [issued by Lead Bank](https://stripe.com/legal/krak-debit-cardholder-agreement) with Stripe as program manager, is more explicit still: "The Account holds only Fiat Currency. The Account and Card do not hold any Digital Assets," and "Lead Bank is not involved with the movement, custody, purchase, or sale of any Digital Assets." Your crypto stays in Kraken's exchange custody until the moment of sale. Bybit's card terms, dated January 16, 2026, disclaim the fiat leg entirely: "we do not at any time receive, hold, or safeguard any Fiat funds, and all such funds are received, held, and managed by the relevant authorised payment service provider."
 
@@ -71,7 +71,7 @@ In the EU and UK this is the e-money regime, and it is the only bucket with a st
 
 Safeguarding is a real protection, and it covers exactly one thing: fiat that has been issued as e-money. It does not cover the crypto you hold before conversion, and, as the next two buckets show, it does not cover value in a smart contract either.
 
-### 4. Your Own Contract, in the Card Program's Pool
+### 4. Your Own Contract in the Card Program's Pool: Avici, Tria and Rain
 
 This is where the August 28 money was. [Rain](/product/rain), which issues or program-manages most of the self-custodial cards in the market, describes the arrangement on [its own site](https://www.rain.xyz/resources/launch-a-card-program-with-rain): "In a Rain-Managed setup, we handle the smart contract and daily settlements with your users. A dedicated smart contract is created when a user opens a card, and they fund and manage it from their own wallet. Rain maintains the ongoing ledger and manages settlement with cardholders, while also handling liquidation to settle with Visa." The alternative, "Partner-Managed," is for brands that want "maximum control over treasury, collateral types, and customer settlement logic," and in it the partner "maintain[s] the reserve balance" while "Rain powers the Visa connectivity and handles liquidation to settle with Visa." The user's terms do not say which option the brand chose.
 
@@ -79,7 +79,7 @@ Under this design the user's terms can say, truthfully, that neither the brand n
 
 Solayer's Emerald card is the sharpest example of the gap between the word and the mechanism. [Solayer's site](https://solayer.org/) sells "a crypto-native Visa card that lets you spend stablecoins globally, while staying fully on-chain." Its own [security documentation](https://docs.solayer.org/solayer-pay/security.md) describes something else: "the majority of your assets live in cold storage," in wallets that are "Completely offline, Protected by multi-signature access controls, Stored on hardware-separated systems." Cold storage with multisig access is custody. Fully on-chain is a description of where the ledger lives, not of who controls the keys.
 
-### 5. Your Own Vault, Debited at Authorization
+### 5. Your Own Vault, Debited at Authorization: Gnosis Pay, Ether.fi Cash and Bleap
 
 The strongest position a cardholder can hold is a wallet or smart account the operator cannot move, with a spend permission scoped to the card. It is documented well enough to check at four programs.
 
@@ -91,7 +91,7 @@ Bridge, Stripe's stablecoin arm, documents just-in-time debit for its non-custod
 
 Bleap, a Latvian program on a Cypriot EMI, is the only document in the set that answers the insolvency question inside the custody clause: "Your Card is non-custodial and can be funded only from your Bleap Wallet (which you control). Neither Bleap nor Unlimit holds your wallet assets. If either Bleap or Unlimit becomes insolvent, your Bleap Wallet assets remain unaffected." Compare that sentence with KAST's, and you have the whole spectrum in two paragraphs.
 
-## What the Terms Say, Program by Program
+## Crypto Card Custody Terms Compared: 18 Programs
 
 | Program | Where your value sits after top-up | Issuer named in the terms | Terms date |
 |---|---|---|---|
@@ -116,7 +116,7 @@ Bleap, a Latvian program on a Cypriot EMI, is the only document in the set that 
 
 On paper, eight of the 18 sit in the two self-custodial buckets, and seven of the 18 name the same issuer. That is the next problem.
 
-## The Issuer Under Seven of Them Is Not a Bank
+## Third National: The Card Issuer Behind Seven Crypto Cards Is Not a Bank
 
 KAST, Avici, Ether.fi Cash, Plasma One, Solayer, Payy and Tria, seven programs in the table, name "Third National" as their card issuer. Tria's international terms point to legal.raincards.xyz for the issuer's privacy notice. Rain's [privacy policy](https://legal.raincards.xyz/legal/privacy-policy), last updated July 16, 2026, defines the group: "'Rain' refers to Signify Holdings, Inc. and its affiliates, successors, assigns, and subsidiaries, including without limitation Nimbus LLC, doing business as Third National and Third National LLC, Rain Liquidity LLC, Rain Payments Services, Inc., and Rain Products, Inc." [Third National's own site](https://www.third-national.com/) describes itself as "an issuer on the Visa Network" and states that "Nimbus LLC dba Third National is licensed as a Money Transmitter by the Commissioner of Financial Institutions of Puerto Rico," NMLS #2612780. Plasma One's page says both that "the issuer for this card program is Third National" and that the card "is issued by Rain, a Visa Principal Member." Those are the same company.
 
@@ -126,7 +126,7 @@ That model is scaling fast. Rain [raised $250 million at a $1.95 billion valuati
 
 Concentration is not the same as fragility, and every affected cardholder was made whole within a day in August. But the drain reached Avici and Tria users at the same time through one Rain codebase, Blockaid named Solayer Pay as a third affected program, [Jupiter's mobile card paused balance withdrawals as a precaution](https://x.com/0xVishnya/status/2094342614925345015), and the reason Ether.fi was not touched, as [@Nikitont argued](https://x.com/Nikitont/status/2093704522572955651) and Ether.fi's published contract layout supports, is that its users' funds sit in their own vaults rather than in Rain-administered collateral accounts. Ether.fi itself issued no statement; Rain's said only that "other programs were not impacted." Programs with the same issuer and the same "non-custodial" sentence in their terms had different outcomes because of where the money physically was.
 
-## What the August 28 Drain Shows
+## The Rain Solana Card Contract Exploit of August 28, 2026
 
 We traced the incident on both chains, and the shape is clearer than the coverage suggested. The attacker's wallet, `FVNFzqAny8spWdPmYw6RQ9TkYa29ueFFiqCFD1gQnCEj`, received 1.79 SOL at 13:40:41 UTC through a deBridge order that had converted 189.99 USDC sent from an Ethereum address funded twenty minutes earlier. It then sat idle for 189 minutes. The first exploit transaction landed at 16:49:48 UTC and the last at 19:18:52 UTC, a window of 2 hours 29 minutes that matches what [Blockaid](https://www.coindesk.com/web3/2026/08/29/a-usd1-1-million-crypto-card-hack-crashed-a-neobank-s-token-49) reported. In between, the wallet sent 21,405 transactions, of which about 17,500 succeeded.
 
@@ -140,7 +140,7 @@ Avici's [second statement](https://x.com/avici/status/2093745374683082767) drew 
 
 "Self-custody failed" is the wrong lesson. In a cardholder agreement, "non-custodial" describes who cannot move your funds under normal operation. It says nothing about who wrote the contract, whether the deployed version is the audited one, or who holds the upgrade key. Avici's users held their own keys and still lost the balances they had moved into the card layer, and the reason they got the money back is that a private company with $338 million of venture funding decided to pay. That is the same recourse a KAST user would have, dressed in different language.
 
-## The No-KYC Tier, Checked Against the Sites
+## No-KYC Crypto Cards: Fees, Issuers and Shutdowns, Checked Against the Sites
 
 The other thread that circulated this summer was [@OG_Branxi's August 5 price list](https://x.com/OG_Branxi/status/2085066372305019358) of no-KYC cards, drawn from the [TODEY directory](https://todey.xyz/): opening costs, monthly fees, "typical loading fees 2-5% on most cards," and the honest closing notes that "almost all are virtual-only" and "many teams still unverified." It is a useful map. It is also, like every list of these cards, out of date by the time it is read, and the replies to it are more informative than the post. Replies from two users said Mpay's "free" card costs $4.99 to activate. One [posted a screenshot](https://x.com/Octop3s/status/2085206026433777829) of Bit.Store's March card shutdown with the caption "This is going to happened to you if you ever parked your money in any card on this lists." Branxi's own conclusion, [two days in](https://x.com/OG_Branxi/status/2085285883130024010): "feels more like a niche product or step 1 before getting a KYC card."
 
@@ -170,7 +170,7 @@ The way these cards die has not changed since 2018, when BitPay [wrote](https://
 
 The regulatory horizon is now dated. The EU's Anti-Money Laundering Regulation, [Regulation (EU) 2024/1624](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1624), applies from July 10, 2027. Its Article 19(7) allows supervisors to exempt low-risk e-money from customer due diligence only where "the payment instrument is not reloadable, and the amount stored electronically does not exceed EUR 150," and "the payment instrument is not linked to a payment account and it does not permit any stored amount to be exchanged for cash or for crypto-assets." Article 79 prohibits credit institutions, financial institutions and crypto-asset service providers from keeping "anonymous crypto-asset accounts as well as any account otherwise allowing for the anonymisation of the customer account holder," and bars EU acquirers from accepting "payments carried out with anonymous prepaid cards issued in third countries" unless technical standards carve out a proven low risk. In other words, from mid-2027 an anonymous card loaded from crypto is outside the exemption by construction, and an offshore anonymous prepaid card may be refused at the EU merchant's terminal rather than at the issuer. As [@Nikitont put it](https://x.com/Nikitont/status/2095834274897215921) in a September 4 tier list of the same cards: "no-KYC ≠ safe and ≠ forever. BIN freezes, partner changes and sudden KYC still happen."
 
-## The Infrastructure Failures That Did Not Make Headlines
+## Crypto Card Infrastructure Failures in 2026: Kulipa, Paytend, Cypher, Fiat24 and Gnosis Pay
 
 The August drain was the loud failure. The quiet ones did more damage to cardholders, and none of them involved a hack.
 
@@ -180,7 +180,7 @@ Nium [acquired Cypher](https://www.nium.com/newsroom/nium-acquires-cypher) on Ju
 
 And Gnosis Pay, the program whose Safe architecture the whole self-custodial category copied, [told its users on September 4](https://help.gnosispay.com/hc/en-us/articles/53246151768596) that it is winding down its own consumer interface. Web app signups closed that day, the $GNO cashback program ends September 30, no new cards will be issued on existing accounts after September 30, and the web app is to be deprecated by the end of 2026, with cardholders steered to partner apps such as Rebind. The help article says "Is Gnosis Pay shutting down? No." Paymentscan's data says its volume peaked at $12.05 million in October 2025 and was $8.3 million in August. The Safe, the Delay module and the Monavate issuing relationship survive as a white-label platform. The consumer card that proved the model does not.
 
-## A Year On From the Rewards Table
+## Crypto Card Cashback and Rewards, a Year On
 
 [@0xSammy's original October 2025 table](https://x.com/0xSammy/status/1974839194972221806), which his July post revisited, compared eight cards on cashback and perks. Almost every cell has moved, and the direction is consistent: the self-custodial programs kept or raised rewards and added credit, the exchange programs cut.
 
@@ -188,7 +188,7 @@ Ether.fi pays cashback by membership tier, lets cardholders borrow against the w
 
 @0xVishnya's [receipt tests](https://x.com/0xVishnya/status/2089265275182981341) are the right way to read any of these numbers. On the same EUR 11.17 purchase in the same minute, seven cards charged between $12.92 and $13.09, a 1.3% spread that was entirely FX, and one card's app showed a different purchase amount from the paper receipt while printing "Fees $0.00." Cashback is what the card advertises. The exchange rate at the terminal is what it charges.
 
-## Questions to Ask Before You Top Up
+## What to Check Before You Top Up a Crypto Card
 
 The point of reading 18 sets of terms was to find out which questions actually separate these products. There are five, and the marketing answers none of them.
 
