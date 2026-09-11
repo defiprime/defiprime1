@@ -8,7 +8,7 @@ ecosystem: solana, ethereum
 product-description: KAST is a stablecoin account with Visa cards that spends balances held in $USDC and $USDT and pays cashback on purchases. It takes deposits on Solana, Ethereum and other major chains.
 coltitle: Payments & Cards
 colpermalink: payments
-product-type: non-custodial
+product-type: cefi
 filter: Cards
 rank: 4
 twitter: https://x.com/kast
