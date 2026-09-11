@@ -2,7 +2,7 @@
 url: /product/etherfi.html
 git-date: '2026-03-04T07:46:00-08:00'
 product-title: EtherFi
-product-url: https://www.ether.fi/
+product-url: https://www.ether.fi/@0b0f6141
 image: /images/output_md/www.ether.fi.jpg
 ecosystem: ethereum
 product-description: EtherFi is a non-custodial liquid restaking protocol that lets users stake ETH while retaining key ownership, with native EigenLayer restaking for additional yield on top of Ethereum consensus rewards.
