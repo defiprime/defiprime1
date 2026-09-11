@@ -95,24 +95,24 @@ Bleap, a Latvian program on a Cypriot EMI, is the only document in the set that 
 
 | Program | Where your value sits after top-up | Issuer named in the terms | Terms date |
 |---|---|---|---|
-| KAST | Sold to KAST; you hold a USD debt claim, $500 liability cap | Third National | Jul 7, 2026 |
-| RedotPay | Custody at Red Dot Trust, a group affiliate; general lien | Not named (StraitsX for Singapore, per release) | Jul 9, 2026 |
-| Revolut | Nominee custody, Revolut holds legal title | Lead Bank (US prepaid) | undated |
-| Coinbase Card | Title stays with you, creditor-remote wording; sold at the swipe | Pathward (US), Paysafe (UK) | Jul 22, 2026 |
-| Crypto.com | USD only on the card; e-money in the EU | Community Federal Savings Bank (US), Foris MT (Malta) | Sep 1, 2026 |
-| Krak Card (US) | Fiat only at Lead Bank; crypto in Kraken custody | Lead Bank | Aug 3, 2026 |
-| Bybit | Bybit sells as agent, disclaims holding fiat | Harmoniie SAS with Moorwand | Jan 16, 2026 |
-| Avici | Your collateral in a Rain-run contract | Third National | Jun 23, 2025 |
-| Tria | Your collateral in a smart contract | Third National / Nimbus LLC | Jan 9, 2026 |
-| Payy | Your collateral in a smart contract (Rain template) | Third National | Feb 12, 2024 |
-| Solayer Emerald | "Fully on-chain" marketing; security docs describe cold storage multisig | Third National | Apr 11, 2025 |
-| Plasma One | Non-custodial Privy wallet, keys in a TEE | Third National, also stated as Rain | Feb 26, 2026 |
-| Ether.fi Cash | Your vault on Optimism, Turnkey signer, corporate recovery signer | Third National | Sep 9, 2026 |
-| Gnosis Pay | Your Safe on Gnosis Chain, Roles and Delay modules | Monavate | Nov 18, 2025 |
-| MetaMask Card | ERC-20 spending cap on your own address | Monavate; Cross River Bank (US) | read Sep 10, 2026 |
-| Bleap | Your smart account, direct debit mandate | Unlimit EU (Cyprus EMI) | Jun 28, 2026 |
-| Holyheld | Your wallet until conversion at an unnamed partner | Not named | Jul 1, 2026 |
-| Wirex | Fiat as safeguarded e-money | Transact Payments Malta | undated |
+| [KAST](https://app.kast.xyz/referral/EC0LDK81) | Sold to KAST; you hold a USD debt claim, $500 liability cap | Third National | Jul 7, 2026 |
+| [RedotPay](https://www.redotpay.com) | Custody at Red Dot Trust, a group affiliate; general lien | Not named (StraitsX for Singapore, per release) | Jul 9, 2026 |
+| [Revolut](https://www.revolut.com) | Nominee custody, Revolut holds legal title | Lead Bank (US prepaid) | undated |
+| [Coinbase Card](https://www.coinbase.com/card) | Title stays with you, creditor-remote wording; sold at the swipe | Pathward (US), Paysafe (UK) | Jul 22, 2026 |
+| [Crypto.com](https://crypto.com/cards) | USD only on the card; e-money in the EU | Community Federal Savings Bank (US), Foris MT (Malta) | Sep 1, 2026 |
+| [Krak Card (US)](https://krak.app/@sawinyh) | Fiat only at Lead Bank; crypto in Kraken custody | Lead Bank | Aug 3, 2026 |
+| [Bybit](https://www.bybit.com/en/cards) | Bybit sells as agent, disclaims holding fiat | Harmoniie SAS with Moorwand | Jan 16, 2026 |
+| [Avici](https://avici.money) | Your collateral in a Rain-run contract | Third National | Jun 23, 2025 |
+| [Tria](https://tria.so) | Your collateral in a smart contract | Third National / Nimbus LLC | Jan 9, 2026 |
+| [Payy](https://payy.network) | Your collateral in a smart contract (Rain template) | Third National | Feb 12, 2024 |
+| [Solayer Emerald](https://app.solayer.org/card?invite=SEVJ5D) | "Fully on-chain" marketing; security docs describe cold storage multisig | Third National | Apr 11, 2025 |
+| [Plasma One](https://www.plasma.org/personal) | Non-custodial Privy wallet, keys in a TEE | Third National, also stated as Rain | Feb 26, 2026 |
+| [Ether.fi Cash](https://www.ether.fi/@0b0f6141) | Your vault on Optimism, Turnkey signer, corporate recovery signer | Third National | Sep 9, 2026 |
+| [Gnosis Pay](https://gnosispay.com/nonoginvite?rcc=22c4d43d6add&utm_source=referral&utm_campaign=cmaiqphr3016f2rbwkabwzaof) | Your Safe on Gnosis Chain, Roles and Delay modules | Monavate | Nov 18, 2025 |
+| [MetaMask Card](https://metamask.io/card) | ERC-20 spending cap on your own address | Monavate; Cross River Bank (US) | read Sep 10, 2026 |
+| [Bleap](https://www.bleap.finance) | Your smart account, direct debit mandate | Unlimit EU (Cyprus EMI) | Jun 28, 2026 |
+| [Holyheld](https://holyheld.com) | Your wallet until conversion at an unnamed partner | Not named | Jul 1, 2026 |
+| [Wirex](https://wirexapp.com) | Fiat as safeguarded e-money | Transact Payments Malta | undated |
 
 On paper, eight of the 18 sit in the two self-custodial buckets, and seven of the 18 name the same issuer. That is the next problem.
 
@@ -148,17 +148,17 @@ We went to each card's own site where it would load, and where it was bot-blocke
 
 | Card | To open | Monthly | Load fee | Issuer named? | What the list left out |
 |---|---|---|---|---|---|
-| Laso Finance | $0 (US/CAD) | $0 | 0% US/CAD, 3.8% international | No | Non-reloadable, $1,000 per card, 14% fee to refund unused balance |
-| Freedomia | $0 | $5 Founder tier (launch price); $9.99 to $17.99 tiers "coming soon" | 1.3% | No | Domain registered October 2025 |
-| SolCard | $10 | $0 | 5% on the no-KYC tier, 0% with KYC | No (operator SC Payments Ltd, Hong Kong) | No-KYC tier is Mastercard only; Trustpilot 2.3/5 with frozen-balance complaints |
-| Trocador | $2 + 3% | $2.50 after month two (international) | included | No (aggregator) | Collects name, phone and address at checkout |
-| Bing Exclusive | $25 | $1 per review sites | 1% | No (operator Queensland FX, per review site) | Listed under "zero monthly fees"; review sites show a $1 monthly fee we could not confirm on Bing's own page |
-| XHYPE | not separately stated | $9 to $20 ($108 to $240 a year) | 2.3% to 4.5% | No ("licensed financial partners") | List said $25 plus $108 to $588 a year; site shows no $588 tier |
-| OffGrid | $0 | $49 to $197 a year, fourth tier undisclosed | 1.5% flat since August | No (TODEY marks the entity "not disclosed") | Invite-only; domain registered December 2025 |
-| KardPay | $29 to $299 | $0 | 3% to 5% | No (operator Rosscapital US LLC) | Most detailed review says full KYC is required |
-| Pintopay | $35 | $0 | 2.5% | Yes: Sunrate Solutions (HK) | KYC "when required by the issuer"; clustered frozen-fund complaints on Trustpilot since April |
-| MaxSwap | $50 + $25 minimum balance | $0 | 4.5% | No | Telegram bot; claims $2M monthly limits on email-only onboarding |
-| Privacy Gateway | not stated | $5 promo, $10 regular | 3.5% | No | One-way conversion: loaded crypto cannot be withdrawn |
+| [Laso Finance](https://laso.finance) | $0 (US/CAD) | $0 | 0% US/CAD, 3.8% international | No | Non-reloadable, $1,000 per card, 14% fee to refund unused balance |
+| [Freedomia](https://freedomia.io) | $0 | $5 Founder tier (launch price); $9.99 to $17.99 tiers "coming soon" | 1.3% | No | Domain registered October 2025 |
+| [SolCard](https://solcard.cc) | $10 | $0 | 5% on the no-KYC tier, 0% with KYC | No (operator SC Payments Ltd, Hong Kong) | No-KYC tier is Mastercard only; Trustpilot 2.3/5 with frozen-balance complaints |
+| [Trocador](https://trocador.app/en/prepaidcards/) | $2 + 3% | $2.50 after month two (international) | included | No (aggregator) | Collects name, phone and address at checkout |
+| [Bing Exclusive](https://bingcard.com) | $25 | $1 per review sites | 1% | No (operator Queensland FX, per review site) | Listed under "zero monthly fees"; review sites show a $1 monthly fee we could not confirm on Bing's own page |
+| [XHYPE](https://cards1.xhype.io) | not separately stated | $9 to $20 ($108 to $240 a year) | 2.3% to 4.5% | No ("licensed financial partners") | List said $25 plus $108 to $588 a year; site shows no $588 tier |
+| [OffGrid](https://offgridcash.com) | $0 | $49 to $197 a year, fourth tier undisclosed | 1.5% flat since August | No (TODEY marks the entity "not disclosed") | Invite-only; domain registered December 2025 |
+| [KardPay](https://kardpay.com) | $29 to $299 | $0 | 3% to 5% | No (operator Rosscapital US LLC) | Most detailed review says full KYC is required |
+| [Pintopay](https://pintopay.me) | $35 | $0 | 2.5% | Yes: Sunrate Solutions (HK) | KYC "when required by the issuer"; clustered frozen-fund complaints on Trustpilot since April |
+| [MaxSwap](https://maxswap.cc) | $50 + $25 minimum balance | $0 | 4.5% | No | Telegram bot; claims $2M monthly limits on email-only onboarding |
+| [Privacy Gateway](https://privacygateway.io) | not stated | $5 promo, $10 regular | 3.5% | No | One-way conversion: loaded crypto cannot be withdrawn |
 
 Neither of the two names volunteered in the replies belongs on a no-KYC list at all. Revuto's card is [issued by Paynovate SA](https://revuto.com/terms-for-revuto-crypto-wallet/), an e-money issuer regulated by the National Bank of Belgium, and its terms say users "may not use the Wallet or withdraw any cryptocurrencies until the KYC process is successfully completed"; the KYC-lite tier caps out at $250. Payy requires government ID before issuing a card; its privacy is on-chain privacy, with balances hidden from block explorers, not identity privacy. Where the fees above conflict with what the list said, the operator's own page won, and where the operator's page was bot-blocked we have said so.
 
