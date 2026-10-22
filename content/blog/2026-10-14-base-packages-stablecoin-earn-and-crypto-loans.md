@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-14T06:21:48+00:00
 ---
 
-On October 13, 2026 at 17:04 UTC, [Base introduced Earn & Borrow](https://x.com/base/status/2110054191419027932), an integration stack for platforms that want to offer stablecoin yield and loans against customers' crypto. The product page puts the launch against more than $3B supplied across tracked Base lending protocols and a 4.45% average yield for USD stablecoins before incentives. Base says those market figures use 28-day average balances as of October 1.
+On October 13, 2026, [Base introduced Earn & Borrow](https://x.com/base/status/2110054191419027932), an integration stack for platforms that want to offer stablecoin yield and loans against customers' crypto. The product page puts the launch against more than $3B supplied across tracked Base lending protocols and a 4.45% average yield for USD stablecoins before incentives. Base says those market figures use 28-day average balances as of October 1.
 
 Earn & Borrow is infrastructure for other businesses rather than a single vault run by Base. [The product page](https://www.base.org/earn-borrow) says platforms use Base infrastructure and third-party lending markets to serve eligible customers. Each integrating platform chooses its wallet and custody model. The underlying deposits, loans, repayments and liquidations are recorded onchain.
 

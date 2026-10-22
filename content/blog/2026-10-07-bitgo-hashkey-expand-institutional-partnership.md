@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-07T07:20:07+00:00
 ---
 
-At 08:00 UTC on October 6, 2026, BitGo Holdings and HashKey Cloud [announced](https://www.businesswire.com/news/home/20261006536177/en/) a strategic partnership covering staking, trading, custody and real-world asset tokenization. The companies signed the agreement at the Fullerton Bay Hotel in Singapore during TOKEN2049 week. No transaction value or launch schedule was disclosed.
+On October 6, 2026, BitGo Holdings and HashKey Cloud [announced](https://www.businesswire.com/news/home/20261006536177/en/) a strategic partnership covering staking, trading, custody and real-world asset tokenization. The companies signed the agreement at the Fullerton Bay Hotel in Singapore during TOKEN2049 week. No transaction value or launch schedule was disclosed.
 
 The signing extends a staking collaboration that began in July into a broader relationship for eligible institutional clients in Asia-Pacific. BitGo signed with WanCloud Ltd., the HashKey Group company that operates as HashKey Cloud. Abel Seow, BitGo's managing director and head of APAC sales, and Leo Li, CEO of HashKey OnChain BG, represented the companies at the ceremony.
 

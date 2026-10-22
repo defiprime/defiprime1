@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-08T12:19:45+00:00
 ---
 
-At 18:02 UTC on October 7, 2026, the U.S. Attorney's Office for the Southern District of New York [announced](https://x.com/SDNYnews/status/2107894427532292158) that a Manhattan jury had convicted Jonathan Spalletta over hacks that took more than $50 million from Uranium Finance. The corresponding [Justice Department release](https://www.justice.gov/usao-sdny/pr/jonathan-spalletta-convicted-defrauding-crypto-exchange-over-50-million-hacks-0), numbered 26-285, says jurors found him guilty of computer fraud and money laundering after a six-day trial before U.S. District Judge Jed S. Rakoff.
+On October 7, 2026, the U.S. Attorney's Office for the Southern District of New York [announced](https://x.com/SDNYnews/status/2107894427532292158) that a Manhattan jury had convicted Jonathan Spalletta over hacks that took more than $50 million from Uranium Finance. The corresponding [Justice Department release](https://www.justice.gov/usao-sdny/pr/jonathan-spalletta-convicted-defrauding-crypto-exchange-over-50-million-hacks-0), numbered 26-285, says jurors found him guilty of computer fraud and money laundering after a six-day trial before U.S. District Judge Jed S. Rakoff.
 
 Spalletta, 36, of Rockville, Maryland, was convicted on every count in the indictment. The computer fraud count carries a maximum prison sentence of 10 years. The money laundering count carries a maximum of 20 years. Those are statutory maximums, and the judge will determine the sentence. The release does not give a sentencing date.
 

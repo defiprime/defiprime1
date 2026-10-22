@@ -13,7 +13,7 @@ tags: ["DeFi", "News"]
 date: 2026-10-14T21:20:00+00:00
 ---
 
-At 21:07:32 UTC on October 14, 2026, the SEC accepted [VanEck's Form RW](https://www.sec.gov/Archives/edgar/data/2091159/000209115926000005/vanecklidostakedethereumet.htm) for the VanEck Lido Staked Ethereum ETF under accession 0002091159-26-000005 and file number 333-290918. The sponsor asked to withdraw the registration after deciding not to proceed with the planned distribution. It also confirmed that the registration never became effective and that no securities were issued or sold.
+On October 14, 2026, the SEC accepted [VanEck's Form RW](https://www.sec.gov/Archives/edgar/data/2091159/000209115926000005/vanecklidostakedethereumet.htm) for the VanEck Lido Staked Ethereum ETF under accession 0002091159-26-000005 and file number 333-290918. The sponsor asked to withdraw the registration after deciding not to proceed with the planned distribution. It also confirmed that the registration never became effective and that no securities were issued or sold.
 
 The request closes this filing rather than changing a live fund. VanEck told the SEC that no preliminary prospectus had been distributed. There are therefore no shareholders in this proposed trust who need a redemption process, asset sale or transfer as a result of the withdrawal. The product's planned creation and redemption system never reached an effective offering.
 

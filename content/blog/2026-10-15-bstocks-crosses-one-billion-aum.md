@@ -13,7 +13,7 @@ tags: ["RWAs", "News"]
 date: 2026-10-15T16:18:39+00:00
 ---
 
-At 13:06 UTC on October 15, 2026, bStocks [reported](https://x.com/bstocksfinance/status/2110718961075757266) that its tokenized equities had crossed $1 billion in assets under management four months after their June launch. The company also said users had converted more than $6 billion between bStocks and the corresponding stocks on Binance.
+On October 15, 2026, bStocks [reported](https://x.com/bstocksfinance/status/2110718961075757266) that its tokenized equities had crossed $1 billion in assets under management four months after their June launch. The company also said users had converted more than $6 billion between bStocks and the corresponding stocks on Binance.
 
 The milestone is a company-reported figure rather than an on-chain reading. The announcement does not identify a chain, contract address, block or account set from which an outside reader could reproduce the total. It does explain what the figure covers, how conversions work and where users have been active.
 

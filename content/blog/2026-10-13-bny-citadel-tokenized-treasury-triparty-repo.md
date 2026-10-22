@@ -13,7 +13,7 @@ tags: ["News", "RWAs"]
 date: 2026-10-13T21:19:39+00:00
 ---
 
-At 20:51 UTC on October 13, 2026, BNY [announced](https://x.com/BNYglobal/status/2110111120841224418) that Citadel Securities had settled a tokenized 2-year U.S. Treasury note on BNY's private digital ledger and used it as collateral in an overnight triparty repo. BNY did not disclose the note's face value or the transaction time in its release.
+On October 13, 2026, BNY [announced](https://x.com/BNYglobal/status/2110111120841224418) that Citadel Securities had settled a tokenized 2-year U.S. Treasury note on BNY's private digital ledger and used it as collateral in an overnight triparty repo. BNY did not disclose the note's face value or the transaction time in its release.
 
 The transaction was the first use of tokenized assets on a major triparty repo platform, according to [BNY's account](https://www.bny.com/corporate/global/en/about-us/newsroom/press-release/bny-completes-tokenized-us-treasury-triparty-repo-workflow-with-citadel-securities.html). It joined trade execution, settlement, and secured financing in one workflow. The sequence matters more than token issuance alone because the Treasury representation remained useful after settlement as collateral for cash financing.
 

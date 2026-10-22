@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-21T06:22:34+00:00
 ---
 
-At 18:14 UTC on October 20, 2026, Qubic [announced that its network was live again](https://x.com/_Qubic_/status/2112608369135804801), following a recovery approved by its Computor quorum. The team said the reclaim platform was open and the first funds had returned to verified owners. Its announcement did not provide an amount for those initial returns.
+On October 20, 2026, Qubic [announced that its network was live again](https://x.com/_Qubic_/status/2112608369135804801), following a recovery approved by its Computor quorum. The team said the reclaim platform was open and the first funds had returned to verified owners. Its announcement did not provide an amount for those initial returns.
 
 The [recovery thread](https://x.com/_Qubic_/status/2112608375129436524) says affected funds were moved into protected escrow while the network was halted. The quorum then approved the recovery and normal operation resumed. Holders must secure wallets that may still be vulnerable and provide proof of ownership to claim the assets held for recovery.
 

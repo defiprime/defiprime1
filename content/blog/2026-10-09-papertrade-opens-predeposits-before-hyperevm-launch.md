@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-09T08:35:54+00:00
 ---
 
-At 16:33 UTC on October 8, 2026, Papertrade [opened phase-zero pre-deposits](https://x.com/papertrade_xyz/status/2108234249904275922) on HyperEVM for a perpetuals venue whose liquidity pool starts at $0. The team expects live trading to begin around one hour after HyperEVM's scheduled October 10 network upgrade, although it said the upgrade time was not known in advance and could slip into October 11.
+On October 8, 2026, Papertrade [opened phase-zero pre-deposits](https://x.com/papertrade_xyz/status/2108234249904275922) on HyperEVM for a perpetuals venue whose liquidity pool starts at $0. The team expects live trading to begin around one hour after HyperEVM's scheduled October 10 network upgrade, although it said the upgrade time was not known in advance and could slip into October 11.
 
 The deposit window separates account creation and funding from the expected launch traffic. Papertrade said deposits and new accounts will receive much lower priority once trading starts. Depositing earlier within the pre-launch window does not earn an advantage.
 

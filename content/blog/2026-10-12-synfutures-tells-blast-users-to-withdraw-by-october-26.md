@@ -13,7 +13,7 @@ tags: ["News", "DeFi"]
 date: 2026-10-12T15:19:06+00:00
 ---
 
-At 13:35 UTC on October 12, 2026, SynFutures [told users on Blast](https://x.com/SynFuturesDefi/status/2109639128220356789) to withdraw their funds to Ethereum mainnet before October 26. The protocol said anyone with a valid SynFutures balance should act before that date following Blast's shutdown announcement.
+On October 12, 2026, SynFutures [told users on Blast](https://x.com/SynFuturesDefi/status/2109639128220356789) to withdraw their funds to Ethereum mainnet before October 26. The protocol said anyone with a valid SynFutures balance should act before that date following Blast's shutdown announcement.
 
 The notice applies directly to balances held through SynFutures on Blast. Users with a $USDB balance will see a withdrawal prompt in the SynFutures portfolio interface. SynFutures directed them to open the portfolio page, choose the withdrawal control and confirm the pop-up for their Blast balance. The protocol asked users who encounter problems to contact its team by direct message.
 

@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-07T17:20:21+00:00
 ---
 
-At 17:02 UTC on October 7, 2026, Polygon [announced that TRON was live on Polygon Open Money Stack](https://x.com/0xPolygon/status/2107879216490680538), or OMS. The accompanying product post says TRON carries more than $94 billion in circulating $USDT, representing over half of the stablecoin's supply across all chains.
+On October 7, 2026, Polygon [announced that TRON was live on Polygon Open Money Stack](https://x.com/0xPolygon/status/2107879216490680538), or OMS. The accompanying product post says TRON carries more than $94 billion in circulating $USDT, representing over half of the stablecoin's supply across all chains.
 
 The integration gives businesses a single product flow for money entering through a bank transfer, card, cash or crypto and leaving through a bank account, card, cash pickup or wallet. Between those endpoints, OMS can create a TRON deposit address, hold $USDT in a custodial or embedded wallet, convert fiat, and route stablecoins to Polygon or other supported chains.
 

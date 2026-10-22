@@ -13,7 +13,7 @@ tags: ["News", "DeFi"]
 date: 2026-10-11T23:20:08+00:00
 ---
 
-At 15:42 UTC on October 11, Papertrade [acknowledged overnight manipulation attempts](https://x.com/papertrade_xyz/status/2109308773231911359) against the Hyperliquid best-bid-and-offer feed used for its $BTC and $ETH markets. The team said the exchange had a $5m liquidity pool one day after launch and had paid 25M to stakers. It also said it had begun tightening open-interest caps onchain and at the relayer level.
+On October 11, Papertrade [acknowledged overnight manipulation attempts](https://x.com/papertrade_xyz/status/2109308773231911359) against the Hyperliquid best-bid-and-offer feed used for its $BTC and $ETH markets. The team said the exchange had a $5m liquidity pool one day after launch and had paid 25M to stakers. It also said it had begun tightening open-interest caps onchain and at the relayer level.
 
 The statement did not identify the wallets, give transaction hashes, or quantify the LP loss from the attempts. Papertrade said one user who initially won continued through new accounts and ultimately returned almost all of that profit to the house. It also said some users agreed to undo manipulated trades in exchange for the PAPER they had farmed. Those assertions came from the team and were not accompanied by an onchain incident report.
 

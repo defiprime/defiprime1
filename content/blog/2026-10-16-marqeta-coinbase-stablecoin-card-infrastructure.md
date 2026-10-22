@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-16T17:19:14+00:00
 ---
 
-At 12:00 UTC on October 16, 2026, Marqeta [announced a Coinbase collaboration](https://investors.marqeta.com/news-releases/news-release-details/marqeta-and-coinbase-collaborate-enable-stablecoin-backed-card) that will add stablecoin custody, fiat conversion, and Base settlement to its card issuing platform. Marqeta, which processed nearly $400 billion in payments during 2025, described the arrangement as a planned expansion of an existing relationship rather than a live card program.
+On October 16, 2026, Marqeta [announced a Coinbase collaboration](https://investors.marqeta.com/news-releases/news-release-details/marqeta-and-coinbase-collaborate-enable-stablecoin-backed-card) that will add stablecoin custody, fiat conversion, and Base settlement to its card issuing platform. Marqeta, which processed nearly $400 billion in payments during 2025, described the arrangement as a planned expansion of an existing relationship rather than a live card program.
 
 The companies are dividing the payment stack between crypto infrastructure and card infrastructure. Coinbase will custody stablecoin balances and convert digital assets into fiat. Base will provide the on-chain settlement layer. Marqeta will issue and process the cards while managing bank and card network relationships.
 

@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-22T09:25:08+00:00
 ---
 
-Polkadot issued a security alert at 14:13:03 UTC on October 21, 2026, warning that the Fearless Wallet browser extension had leaked users’ private keys since February 2025. The [Polkadot Community Foundation notice](https://forum.polkadot.network/t/security-notice-fearless-wallet-browser-extension-leaked-private-keys/19058) tells anyone who used the extension during that period to generate a new private key outside Fearless and move funds to the new account.
+Polkadot issued a security alert on October 21, 2026, warning that the Fearless Wallet browser extension had leaked users’ private keys since February 2025. The [Polkadot Community Foundation notice](https://forum.polkadot.network/t/security-notice-fearless-wallet-browser-extension-leaked-private-keys/19058) tells anyone who used the extension during that period to generate a new private key outside Fearless and move funds to the new account.
 
 The [announcement](https://x.com/Polkadot/status/2112910039207800970) follows an investigation by the Polkadot Technical Fellowship on behalf of the Foundation. Fearless is independently built and maintained. The Foundation says it has never been an official Polkadot wallet.
 

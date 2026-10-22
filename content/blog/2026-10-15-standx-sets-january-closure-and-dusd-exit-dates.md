@@ -13,7 +13,7 @@ tags: ["News", "Stablecoins"]
 date: 2026-10-15T06:18:40+00:00
 ---
 
-StandX said at 06:06 UTC on October 15, 2026 that it will gradually cease operations, close every remaining perpetuals position on January 15, 2027, and stop DUSD redemptions and platform withdrawals on January 31. The [official announcement](https://x.com/StandX_Official/status/2110613283967230232) also ends every StandX yield program and new vault deposits from October 15.
+StandX said on October 15, 2026 that it will gradually cease operations, close every remaining perpetuals position on January 15, 2027, and stop DUSD redemptions and platform withdrawals on January 31. The [official announcement](https://x.com/StandX_Official/status/2110613283967230232) also ends every StandX yield program and new vault deposits from October 15.
 
 The protocol will not launch a token. Instead, it will distribute a one-time $DUSD airdrop with no lockup. StandX said the distribution will use all remaining project revenue plus additional funds from the team. It did not disclose the total airdrop amount or allocations in the announcement.
 

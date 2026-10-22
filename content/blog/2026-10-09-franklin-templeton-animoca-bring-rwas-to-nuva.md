@@ -13,7 +13,7 @@ tags: ["News", "RWAs"]
 date: 2026-10-09T06:18:45+00:00
 ---
 
-At 23:01 UTC on October 8, 2026, Franklin Templeton Digital Assets [published X post 2108332077766541665](https://x.com/FTDA_US/status/2108332077766541665) announcing a collaboration with Animoca Brands to bring tokenized real-world assets to NUVA. The post carried an October 9 dateline and said Provenance Blockchain, the source of NUVA's existing assets, held more than US$30 billion in total value locked as of September 24.
+On October 8, 2026, Franklin Templeton Digital Assets [published X post 2108332077766541665](https://x.com/FTDA_US/status/2108332077766541665) announcing a collaboration with Animoca Brands to bring tokenized real-world assets to NUVA. The post carried an October 9 dateline and said Provenance Blockchain, the source of NUVA's existing assets, held more than US$30 billion in total value locked as of September 24.
 
 The parties did not name the first Franklin Templeton product that will enter a NUVA vault. They also gave no launch date, allocation size, fee schedule or eligibility terms for a new product. The immediate event is an integration plan, a joint research program and a commitment to consider another category of tokenized asset later in 2026.
 

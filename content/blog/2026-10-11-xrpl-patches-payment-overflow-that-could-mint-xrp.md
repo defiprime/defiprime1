@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-11T18:20:06+00:00
 ---
 
-At 00:04 UTC on October 10, 2026, XRPL [published the full source for xrpld 3.4.1](https://api.github.com/repos/XRPLF/rippled/releases/408417250), the emergency release that closed a payment-engine overflow. The researcher who reported it said a single crafted transaction could create 18 trillion $XRP, or 184 times the intended 100 billion supply.
+On October 10, 2026, XRPL [published the full source for xrpld 3.4.1](https://api.github.com/repos/XRPLF/rippled/releases/408417250), the emergency release that closed a payment-engine overflow. The researcher who reported it said a single crafted transaction could create 18 trillion $XRP, or 184 times the intended 100 billion supply.
 
 The [official disclosure](https://xrpl.org/blog/2026/vulnerabilitydisclosurereport-bug-20261009) says the bug let an attacker create $XRP from nothing and spend it like ordinary $XRP. RippleX reproduced the mint on a standalone server, verified that the new $XRP could be spent in a follow-up payment, and raised the finding from major to critical. XRPL says it found no evidence that anyone exploited the flaw on a public network.
 

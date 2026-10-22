@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-13T09:21:00+00:00
 ---
 
-HyperDex [introduced its spot and perpetuals aggregator](https://x.com/Hyperdex_app/status/2109809384750792820) at 00:52 UTC on October 13, 2026. The announcement did not report launch volume. The release puts spot routing, cross-chain transfers and a newly announced perpetuals aggregator under the HyperDex interface.
+HyperDex [introduced its spot and perpetuals aggregator](https://x.com/Hyperdex_app/status/2109809384750792820) on October 13, 2026. The announcement did not report launch volume. The release puts spot routing, cross-chain transfers and a newly announced perpetuals aggregator under the HyperDex interface.
 
 The launch announcement is brief about perpetuals. HyperDex names the product but does not identify the perpetual venues, supported contracts, collateral rules or liquidation mechanics in that post. Its published documentation describes the spot side in much more detail.
 

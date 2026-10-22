@@ -13,7 +13,7 @@ tags: ["Analysis", "Governance", "DEXs"]
 date: 2026-10-14T09:21:00+00:00
 ---
 
-At 07:48 UTC on October 14, 2026, PancakeSwap's Kitchen opened forum post 3031 with [The Flip proposal](https://forum.pancakeswap.finance/t/proposal-discussion-the-flip-liquidity-should-get-paid-more/1658). It would give liquidity providers 88% of swap fees on v3 and Infinity, leave 12% for the Treasury, and cut daily $CAKE emissions from 22,500 to 7,000.
+On October 14, 2026, PancakeSwap's Kitchen opened forum post 3031 with [The Flip proposal](https://forum.pancakeswap.finance/t/proposal-discussion-the-flip-liquidity-should-get-paid-more/1658). It would give liquidity providers 88% of swap fees on v3 and Infinity, leave 12% for the Treasury, and cut daily $CAKE emissions from 22,500 to 7,000.
 
 The proposal is still a discussion draft. The Kitchen plans to review forum feedback before publishing a final proposal for a Snapshot vote. No fee split or emissions change has passed yet.
 

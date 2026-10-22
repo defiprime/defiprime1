@@ -13,7 +13,7 @@ tags: ["Analysis"]
 date: 2026-10-09T05:21:17+00:00
 ---
 
-At 21:29:50 UTC on October 8, 2026, [ledger 107,524,865](https://livenet.xrpl.org/transactions/478284066BA0B83CC35CA1174F667F43D9577782F221440AFCC5541788F25A77) enabled PermissionDelegationV1_1 on XRPL. The amendment gives an account a way to authorize another account for selected actions. Each delegate relationship consumes one object reserve, and the delegate pays the fees on transactions it submits.
+On October 8, 2026, [ledger 107,524,865](https://livenet.xrpl.org/transactions/478284066BA0B83CC35CA1174F667F43D9577782F221440AFCC5541788F25A77) enabled PermissionDelegationV1_1 on XRPL. The amendment gives an account a way to authorize another account for selected actions. Each delegate relationship consumes one object reserve, and the delegate pays the fees on transactions it submits.
 
 The change addresses a specific operational problem for token issuers and other organizations. Routine work such as sending payments, managing trust lines or authorizing counterparties previously required the keys of the account that held the relevant authority. The [XLS-75 specification](https://github.com/XRPLF/XRPL-Standards/tree/master/XLS-0075-permission-delegation) now lets the owner place a narrower set of permissions in a Delegate ledger object. The delegated account signs with its own keys and can act only within that recorded scope.
 

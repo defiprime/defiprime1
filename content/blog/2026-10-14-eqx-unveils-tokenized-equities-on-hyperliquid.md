@@ -13,7 +13,7 @@ tags: ["RWAs", "News"]
 date: 2026-10-14T16:19:58+00:00
 ---
 
-At 13:00 UTC on October 14, 2026, EQX Labs [introduced 11 tokenized U.S. equity markets](https://x.com/eqxlabs/status/2110355136329449686) that it plans to issue as HIP-1 tokens on HyperCore. The set covers $SPY, $QQQ, $AAPL, $AMZN, $GOOGL, $META, $MSFT, $NVDA, $TSLA, $MU and $SPCX. EQX says the markets will trade against $USDC on Hyperliquid's public spot order book, but its documentation states that trading is not live yet and gives no launch date.
+On October 14, 2026, EQX Labs [introduced 11 tokenized U.S. equity markets](https://x.com/eqxlabs/status/2110355136329449686) that it plans to issue as HIP-1 tokens on HyperCore. The set covers $SPY, $QQQ, $AAPL, $AMZN, $GOOGL, $META, $MSFT, $NVDA, $TSLA, $MU and $SPCX. EQX says the markets will trade against $USDC on Hyperliquid's public spot order book, but its documentation states that trading is not live yet and gives no launch date.
 
 The tokens are issued by EQX SPC Ltd., a British Virgin Islands segregated portfolio company. [Each token is legally an unsecured, limited-recourse participating debt instrument](https://docs.eqxlabs.io/how-eqx-works/what-you-hold), rather than the underlying share. Each ticker has a separate portfolio whose assets and obligations are kept apart from the other portfolios. The issuer is owned by the EQX STAR Trust, a Cayman purpose trust with independent governance, and EQX Labs provides technology services under an agreement with the issuer.
 

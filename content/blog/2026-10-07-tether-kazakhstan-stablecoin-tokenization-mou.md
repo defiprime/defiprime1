@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-07T15:22:42+00:00
 ---
 
-At 12:00 UTC on October 7, 2026, [Tether announced a memorandum of understanding](https://tether.io/news/tether-signs-mou-with-the-national-bank-of-kazakhstan-and-the-alatau-city-authority-to-explore-stablecoin-use-cases-and-asset-tokenization/) with the National Bank of Kazakhstan and the Alatau City Authority. The parties will study stablecoin development, asset tokenization and decentralized finance. The release names no issued stablecoin, pilot date or investment amount.
+On October 7, 2026, [Tether announced a memorandum of understanding](https://tether.io/news/tether-signs-mou-with-the-national-bank-of-kazakhstan-and-the-alatau-city-authority-to-explore-stablecoin-use-cases-and-asset-tokenization/) with the National Bank of Kazakhstan and the Alatau City Authority. The parties will study stablecoin development, asset tokenization and decentralized finance. The release names no issued stablecoin, pilot date or investment amount.
 
 The agreement starts a design process rather than a product launch. Its most specific stablecoin objective is a concept and pilot proposal for a token pegged to Kazakhstan's national currency, the tenge. The same work program covers tokenization rules, candidate assets and a pilot inside Alatau City's jurisdiction.
 

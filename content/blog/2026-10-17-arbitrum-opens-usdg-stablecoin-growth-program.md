@@ -13,7 +13,7 @@ tags: ["Stablecoins", "News"]
 date: 2026-10-17T10:19:21+00:00
 ---
 
-At 13:43 UTC on October 15, 2026, the Arbitrum Foundation [opened its Stablecoin Growth Program](https://blog.arbitrum.io/stablecoin-growth-program/) to protocols with at least $1M in stablecoin balances. The program asks accepted teams to make $USDG their primary stablecoin on Arbitrum One. Its headline award is a 2M $ARB pool for the first 10 participants to reach a 30-day average balance of $10M in $USDG.
+On October 15, 2026, the Arbitrum Foundation [opened its Stablecoin Growth Program](https://blog.arbitrum.io/stablecoin-growth-program/) to protocols with at least $1M in stablecoin balances. The program asks accepted teams to make $USDG their primary stablecoin on Arbitrum One. Its headline award is a 2M $ARB pool for the first 10 participants to reach a 30-day average balance of $10M in $USDG.
 
 The award is only one part of the program. Arbitrum says accepted teams may receive performance-based incentives as their $USDG activity grows. The support package may also include marketing resources, partner introductions, integration help, direct access to the ecosystem team, and potential access to the DeFi Renaissance Incentive Program.
 

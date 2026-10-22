@@ -13,7 +13,7 @@ tags: ["News", "RWAs"]
 date: 2026-10-15T02:18:33+00:00
 ---
 
-On October 13 at 16:55 UTC, Neoprime Capital [announced $NEOPRIME](https://x.com/NeoprimeCapital/status/2110051816704811269), a Canton-native investment vehicle that it says is backed by shares in pre-IPO companies. Hecto developed the product, and the token is to be issued on Canton. The announcement said trading is coming soon but gave no opening date.
+On October 13, Neoprime Capital [announced $NEOPRIME](https://x.com/NeoprimeCapital/status/2110051816704811269), a Canton-native investment vehicle that it says is backed by shares in pre-IPO companies. Hecto developed the product, and the token is to be issued on Canton. The announcement said trading is coming soon but gave no opening date.
 
 The launch gives Hecto's private-market product line a named asset and a network. It does not yet give prospective holders the final documents needed to evaluate the claim on the underlying shares. Hecto's [PMX product page](https://www.hecto.inc/products/pmx) says product documents define exposure mechanics, rights, restrictions, and updates. Access also depends on product rules, onboarding, and jurisdiction.
 

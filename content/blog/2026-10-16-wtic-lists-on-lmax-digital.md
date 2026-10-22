@@ -13,7 +13,7 @@ tags: ["RWAs", "News"]
 date: 2026-10-16T04:19:22+00:00
 ---
 
-At 21:23 UTC on October 15, 2026, Energy Substantiation [announced](https://www.energysubstantiation.com/blog/wtic-listed-on-lmax-digital) that its $WTIC token was available for institutional spot trading on LMAX Digital. The token uses Ethereum contract `0x709ab533D18e652eCd56423d71c0241A0ee56a3b`, and each token represents one barrel of West Texas Intermediate crude oil backed by physical inventory.
+On October 15, 2026, Energy Substantiation [announced](https://www.energysubstantiation.com/blog/wtic-listed-on-lmax-digital) that its $WTIC token was available for institutional spot trading on LMAX Digital. The token uses Ethereum contract `0x709ab533D18e652eCd56423d71c0241A0ee56a3b`, and each token represents one barrel of West Texas Intermediate crude oil backed by physical inventory.
 
 The listing gives $WTIC a disclosed institutional venue alongside Uniswap and BingX. Energy Substantiation describes LMAX Digital as a regulated institutional execution venue and custodian within LMAX Group. The announcement does not publish an opening order book, minimum trade size, trading pair, fee schedule, or initial liquidity figure. Those details determine whether the new venue creates usable depth beyond the existing markets.
 

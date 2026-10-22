@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-13T14:24:15+00:00
 ---
 
-At 13:00 UTC on October 13, 2026, Blockchain.com [said it had filed](https://www.prnewswire.com/news-releases/blockchaincom-files-for-cftc-licenses-to-offer-crypto-derivatives-and-prediction-markets-in-the-us-302904952.html) for registration as a futures commission merchant and designation as a designated contract market with the US Commodity Futures Trading Commission. The filing announcement did not give an application number or approval timetable.
+On October 13, 2026, Blockchain.com [said it had filed](https://www.prnewswire.com/news-releases/blockchaincom-files-for-cftc-licenses-to-offer-crypto-derivatives-and-prediction-markets-in-the-us-302904952.html) for registration as a futures commission merchant and designation as a designated contract market with the US Commodity Futures Trading Commission. The filing announcement did not give an application number or approval timetable.
 
 The two applications cover different parts of a regulated derivatives service. Designated contract market status would allow Blockchain.com to run an exchange. Futures commission merchant registration would cover accepting customer orders and assets. Blockchain.com said the combined structure could support crypto futures, options, and event contracts for US retail and institutional customers if regulators approve both applications.
 

@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-22T00:22:31+00:00
 ---
 
-At 00:00 UTC on October 22, 2026, Aerodrome and Velodrome's merger into Aero reaches its scheduled launch, replacing their separate token-reward systems with a shared exchange across seven networks. Aero's [launch announcement](https://aero.xyz/articles/aero-launches-today/) allocates 94.5% of the upgraded supply to the Aerodrome community and 5.5% to Velodrome holders.
+On October 22, 2026, Aerodrome and Velodrome's merger into Aero reaches its scheduled launch, replacing their separate token-reward systems with a shared exchange across seven networks. Aero's [launch announcement](https://aero.xyz/articles/aero-launches-today/) allocates 94.5% of the upgraded supply to the Aerodrome community and 5.5% to Velodrome holders.
 
 The supported networks are Base, Ethereum mainnet, Optimism mainnet, Arc, Ink, Robinhood Chain and Arbitrum. The operator directs holders to the existing Aerodrome and Velodrome sites for upgrades and liquidity migration. Staking, allocation and new pools are available through the Aero app.
 

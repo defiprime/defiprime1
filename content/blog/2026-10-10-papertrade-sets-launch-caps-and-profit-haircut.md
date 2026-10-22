@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-10T10:19:29+00:00
 ---
 
-Papertrade [scheduled live trading](https://x.com/papertrade_xyz/status/2108852108766437759) for 14:00 UTC on October 10, 2026, after the planned HyperEVM network upgrade. The launch configuration gives each market and side $1 billion of new open-interest headroom, while the protocol frontend controls transaction submission through a relayer.
+Papertrade [scheduled live trading](https://x.com/papertrade_xyz/status/2108852108766437759) on October 10, 2026, after the planned HyperEVM network upgrade. The launch configuration gives each market and side $1 billion of new open-interest headroom, while the protocol frontend controls transaction submission through a relayer.
 
 The schedule turns the earlier pre-deposit phase into a fixed launch window. Papertrade plans to pause deposits at 13:45 UTC, fifteen minutes before trading starts, so the relayer can give trading traffic priority. Users who want to take part at launch need to fund their accounts before that pause.
 

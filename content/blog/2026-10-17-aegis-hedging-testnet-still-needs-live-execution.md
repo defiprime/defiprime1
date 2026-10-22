@@ -13,7 +13,7 @@ tags: ["Analysis", "DeFi"]
 date: 2026-10-17T06:19:35+00:00
 ---
 
-At 17:05 UTC on October 15, 2026, [Aegis introduced](https://x.com/aegis_hedge/status/2110779116500726076) a non-custodial risk-management layer for Elysium. The repository identifies the network as Elysium testnet, Chain ID 99801. At block 10,421,030, the deployed Aegis vault held 9,155 bytes of runtime code. The native price and order addresses that the final design expects, 0x0801 and 0x0802, each held 0 bytes.
+On October 15, 2026, [Aegis introduced](https://x.com/aegis_hedge/status/2110779116500726076) a non-custodial risk-management layer for Elysium. The repository identifies the network as Elysium testnet, Chain ID 99801. At block 10,421,030, the deployed Aegis vault held 9,155 bytes of runtime code. The native price and order addresses that the final design expects, 0x0801 and 0x0802, each held 0 bytes.
 
 That split defines the launch. The contracts and adapters exist on testnet, but the protocol cannot yet run the native hedge path described in its pitch. Aegis currently depends on relayed data and an offchain dispatcher. Its own readiness plan says the keeper must remain in dry-run mode while the native interfaces are unavailable or unverified.
 

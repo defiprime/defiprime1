@@ -13,7 +13,7 @@ tags: ["Stablecoins", "Payments", "News"]
 date: 2026-10-10T08:21:57+00:00
 ---
 
-At 20:19 UTC on October 9, 2026, Coinbase Developer Platform [announced](https://x.com/CoinbaseDev/status/2108653569713090695) that Coinbase and Gennius would bring ONED USD to Latin American banks, starting in Argentina. ONED USD is backed 1:1 by $USDC. The planned service covers stablecoin payments, custody and trading from a banking app.
+On October 9, 2026, Coinbase Developer Platform [announced](https://x.com/CoinbaseDev/status/2108653569713090695) that Coinbase and Gennius would bring ONED USD to Latin American banks, starting in Argentina. ONED USD is backed 1:1 by $USDC. The planned service covers stablecoin payments, custody and trading from a banking app.
 
 Coinbase described a direct conversion route from eligible bank deposits into ONED USD. Customers would be able to transfer the stablecoin around the clock and spend through Visa. The announcement does not identify an Argentine bank, give a launch date, name a supported chain or state the fees and redemption terms. Those details determine whether the service works as a bank-integrated dollar balance or as a separate crypto product reached through the bank's interface.
 

@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-07T22:21:03+00:00
 ---
 
-At 14:35 UTC on October 7, 2026, Babylon [announced](https://x.com/babylonlabs_io/status/2107842354962919815) that HashKey Cloud would integrate its Trustless Bitcoin Vaults, or TBV, for institutional clients using Aave v4. The companies have not set a public launch date. Their [joint announcement](https://babylonlabs.io/blog/hashkey-cloud-to-integrate-babylon-trustless-bitcoin-vaults) says further timing and partnership details will arrive in the coming months.
+On October 7, 2026, Babylon [announced](https://x.com/babylonlabs_io/status/2107842354962919815) that HashKey Cloud would integrate its Trustless Bitcoin Vaults, or TBV, for institutional clients using Aave v4. The companies have not set a public launch date. Their [joint announcement](https://babylonlabs.io/blog/hashkey-cloud-to-integrate-babylon-trustless-bitcoin-vaults) says further timing and partnership details will arrive in the coming months.
 
 The planned service would let a HashKey client borrow against Bitcoin that remains on the Bitcoin network. Babylon says the design avoids wrapping the asset, sending it through a bridge or placing it with a centralized intermediary. Aave v4 supplies the lending market, while HashKey Cloud provides the institutional access and operational role described by the partners.
 

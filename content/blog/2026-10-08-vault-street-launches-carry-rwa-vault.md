@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-08T15:19:05+00:00
 ---
 
-On October 8 at 14:36 UTC, Vault Street [announced CARRY](https://x.com/Vault_St/status/2108204828774318346), its second vault, with a target of 12%+ net APY. The product combines leveraged exposure to tokenized real-world assets with delta-neutral strategies.
+On October 8, Vault Street [announced CARRY](https://x.com/Vault_St/status/2108204828774318346), its second vault, with a target of 12%+ net APY. The product combines leveraged exposure to tokenized real-world assets with delta-neutral strategies.
 
 The target is not a fixed return. Vault Street described it as the result of portfolio construction, borrowing and hedged trading across several types of underlying exposure. The same announcement identified leverage, redemption timing and collateral management as parts of the product's operating model.
 
