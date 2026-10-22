@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-14T08:19:46+00:00
 ---
 
-StonkBrokers [announced Pair Tokens](https://x.com/ClutchMarkets/status/2110062378025144450) on October 13 at 17:37 UTC as part of a package of official Uniswap v4 hooks built with Hookr. The product turns two deposited assets into one ERC-20 representing a full-range liquidity position on Robinhood Chain.
+StonkBrokers [announced Pair Tokens](https://x.com/ClutchMarkets/status/2110062378025144450) on October 13 as part of a package of official Uniswap v4 hooks built with Hookr. The product turns two deposited assets into one ERC-20 representing a full-range liquidity position on Robinhood Chain.
 
 The live [Pair Tokens interface](https://stonkbrokers.io/pair-tokens) lets users mint with both underlying tokens or enter with one token through a zap. Holders can transfer or trade the resulting ERC-20, then burn it for both assets or zap out to one. The documentation says there is no lockup and no administrative path to the liquidity.
 

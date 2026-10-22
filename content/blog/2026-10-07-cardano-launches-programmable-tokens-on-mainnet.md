@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-07T04:21:53+00:00
 ---
 
-At 03:00 UTC on October 7, 2026, the Cardano Foundation [announced](https://x.com/Cardano_CF/status/2107667227210367411) that its programmable token standard was live on mainnet. The launch carries the identifier CIP-0113 and no transaction amount. It gives issuers of regulated stablecoins and other assets a way to put compliance rules into native Cardano tokens without a hard fork.
+On October 7, 2026, the Cardano Foundation [announced](https://x.com/Cardano_CF/status/2107667227210367411) that its programmable token standard was live on mainnet. The launch carries the identifier CIP-0113 and no transaction amount. It gives issuers of regulated stablecoins and other assets a way to put compliance rules into native Cardano tokens without a hard fork.
 
 The [launch page](https://cardano.org/programmable-tokens/) describes a framework for stablecoins, bonds, shares and other securities. An issuer can attach allow lists, deny lists, freezes, seizures or transfer restrictions to an asset. The ledger checks those conditions whenever the token is transferred, minted or burned. The rules travel with the asset instead of depending on a wallet, custodian or separate off-chain check.
 

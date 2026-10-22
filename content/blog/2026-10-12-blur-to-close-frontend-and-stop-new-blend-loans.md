@@ -13,7 +13,7 @@ tags: ["DeFi", "News"]
 date: 2026-10-12T21:21:03+00:00
 ---
 
-At 19:59 UTC on October 12, 2026, Blur [said it will deprecate the Blur frontend](https://x.com/blur_io/status/2109735810857861203) on November 12, 2026. The marketplace protocol will remain operational onchain, and $BLUR holders will retain control of its fee switch.
+On October 12, 2026, Blur [said it will deprecate the Blur frontend](https://x.com/blur_io/status/2109735810857861203) on November 12, 2026. The marketplace protocol will remain operational onchain, and $BLUR holders will retain control of its fee switch.
 
 The same deadline applies to Blend's loan-matching service. Blur [said Blend will stop matching new loans](https://x.com/blur_io/status/2109735871377289375) on November 12. Borrowers have until then to repay their loans or allow them to default. After the cutoff, Blur plans to provide a frontend tool that helps users withdraw assets from Blend.
 

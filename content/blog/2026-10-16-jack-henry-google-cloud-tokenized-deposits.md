@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-16T16:18:04+00:00
 ---
 
-At 15:00 UTC on October 16, 2026, Jack Henry [announced an expanded Google Cloud collaboration](https://www.prnewswire.com/news-releases/jack-henry-expands-collaboration-with-google-cloud-to-deliver-tokenized-deposits-for-banks-and-credit-unions-302911361.html) intended to let banks and credit unions offer tokenized deposits through Google Cloud Universal Ledger. Jack Henry said it will be the first core banking technology provider to integrate with the service.
+On October 16, 2026, Jack Henry [announced an expanded Google Cloud collaboration](https://www.prnewswire.com/news-releases/jack-henry-expands-collaboration-with-google-cloud-to-deliver-tokenized-deposits-for-banks-and-credit-unions-302911361.html) intended to let banks and credit unions offer tokenized deposits through Google Cloud Universal Ledger. Jack Henry said it will be the first core banking technology provider to integrate with the service.
 
 The announcement describes a planned integration, not an available product. Jack Henry says it will become the first provider to connect with the ledger and that banks can use the connection to explore new transactional uses. It gives no production launch date, names no participating bank, and sets no date for a first tokenized deposit.
 

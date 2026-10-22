@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-08T10:20:05+00:00
 ---
 
-At 09:05 UTC on October 8, 2026, [Based co-founder Edison Chen disclosed](https://x.com/edison0xyz/status/2108121505884504310) a security incident involving the Based Visa Card program. Based said it discovered and contained the attack on October 5 after a security alert, but the attacker had already accessed some user data. The company said the attacker tried and failed to reach deposited funds.
+On October 8, 2026, [Based co-founder Edison Chen disclosed](https://x.com/edison0xyz/status/2108121505884504310) a security incident involving the Based Visa Card program. Based said it discovered and contained the attack on October 5 after a security alert, but the attacker had already accessed some user data. The company said the attacker tried and failed to reach deposited funds.
 
 The incident began in an internal dashboard used to manage the card program. Based said an unauthorized party gained access to that dashboard. The company did not identify the vulnerability, the attacker's access method, the data fields exposed, the number of affected cardholders, or how long the access remained available before the alert.
 

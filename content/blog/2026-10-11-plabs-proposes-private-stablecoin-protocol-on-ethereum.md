@@ -13,7 +13,7 @@ tags: ["News", "Stablecoins"]
 date: 2026-10-11T20:18:56+00:00
 ---
 
-At 10:00 UTC on October 9, 2026, PLabs committed an [English technical paper](https://github.com/PLabs4/Private-StableCoin-On-Ethereum/blob/636c0e72bbc4e14cdc59d4b88bf9f563847e5c9f/private-stablecoin-on-ethereum-en.pdf) describing a private stablecoin issuance protocol for Ethereum. The proposed system separates unbacked protocol inventory from circulating private notes and requires a reserve deposit equal to each note that enters circulation. Its running example uses $USDC reserves and calls the resulting instance pUSDC.
+On October 9, 2026, PLabs committed an [English technical paper](https://github.com/PLabs4/Private-StableCoin-On-Ethereum/blob/636c0e72bbc4e14cdc59d4b88bf9f563847e5c9f/private-stablecoin-on-ethereum-en.pdf) describing a private stablecoin issuance protocol for Ethereum. The proposed system separates unbacked protocol inventory from circulating private notes and requires a reserve deposit equal to each note that enters circulation. Its running example uses $USDC reserves and calls the resulting instance pUSDC.
 
 The paper presents a design and does not report a deployed stablecoin. It describes two immutable contracts, ReserveVault and NotePool, plus zero-knowledge circuits and off-chain roles. Anyone could deploy a pair backed by a chosen reserve ERC-20. PLabs says the contracts would enforce reserve balance greater than or equal to circulating supply.
 

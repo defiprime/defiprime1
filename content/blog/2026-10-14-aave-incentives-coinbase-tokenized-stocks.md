@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-14T07:20:06+00:00
 ---
 
-Aave announced at 15:47 UTC on October 13, 2026 that its DAO had approved incentives for the Coinbase Tokenized Stocks market on Base. The [published program terms](https://governance.aave.com/t/direct-to-aip-august-september-2026-funding-update/25597/4) say rewards began that day, are paid in $USDC through Merkl, and continue until the budget runs out. They do not state a campaign-specific budget.
+Aave announced on October 13, 2026 that its DAO had approved incentives for the Coinbase Tokenized Stocks market on Base. The [published program terms](https://governance.aave.com/t/direct-to-aip-august-september-2026-funding-update/25597/4) say rewards began that day, are paid in $USDC through Merkl, and continue until the budget runs out. They do not state a campaign-specific budget.
 
 The campaign covers supply positions in AAPLc, AMZNc, GOOGLc, METAc, MSFTc, NVDAc, and TSLAc. The rate is variable and not guaranteed. Aave can modify, pause, or end the program early, while rewards accrued before a change remain claimable for eligible users.
 

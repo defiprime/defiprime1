@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-14T06:21:48+00:00
 ---
 
-On October 13, 2026 at 16:29 UTC, [Privy announced](https://x.com/privy_io/status/2110045210935951702) a partnership with Ripple to bring its wallet infrastructure to XRPL. The companies are positioning the integration for stablecoin payments, fintech applications and agentic commerce. Privy's detailed announcement uses future tense, so it describes capabilities developers will receive rather than a finished public rollout with a stated activation date.
+On October 13, 2026, [Privy announced](https://x.com/privy_io/status/2110045210935951702) a partnership with Ripple to bring its wallet infrastructure to XRPL. The companies are positioning the integration for stablecoin payments, fintech applications and agentic commerce. Privy's detailed announcement uses future tense, so it describes capabilities developers will receive rather than a finished public rollout with a stated activation date.
 
 The integration is designed to let developers create and manage XRPL wallets programmatically. It will also let those wallets sign transactions and use $XRP, $RLUSD and other assets on the network. Privy says developers will retain an export path for private keys and seed phrases, giving users ownership and portability instead of locking the wallet to one application interface.
 

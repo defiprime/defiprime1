@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-16T09:18:47+00:00
 ---
 
-Jupiter [introduced YOLO](https://x.com/JupiterExchange/status/2110708473793257503) at 12:24 UTC on October 15 as a live beta for leveraged $SOL, $BTC, and $ETH price trades. The [product interface](https://jup.ag/yolo/?market=SOL) was live the following day with leverage settings from 500 to 1,000 times and a default payment amount of $10.00.
+Jupiter [introduced YOLO](https://x.com/JupiterExchange/status/2110708473793257503) on October 15 as a live beta for leveraged $SOL, $BTC, and $ETH price trades. The [product interface](https://jup.ag/yolo/?market=SOL) was live the following day with leverage settings from 500 to 1,000 times and a default payment amount of $10.00.
 
 The product is an unaudited Jupiter Labs experiment. Its structure differs from an order book or a conventional perpetual futures venue because each trader faces a house pool rather than another trader. Trader losses add money to that pool. Winning traders receive profit from the same pool.
 

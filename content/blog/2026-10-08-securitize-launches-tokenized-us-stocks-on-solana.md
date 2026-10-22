@@ -13,7 +13,7 @@ tags: ["News", "RWAs"]
 date: 2026-10-08T14:19:26+00:00
 ---
 
-At 13:00 UTC on October 8, 2026, Securitize [announced](https://x.com/Securitize/status/2108180783827411451) the launch of 12 security entitlements to U.S. stocks on Solana. Trading is live on the company's registered broker-dealer platform, with settlement in $USDC and access subject to onboarding, identity checks, jurisdiction and securities law.
+On October 8, 2026, Securitize [announced](https://x.com/Securitize/status/2108180783827411451) the launch of 12 security entitlements to U.S. stocks on Solana. Trading is live on the company's registered broker-dealer platform, with settlement in $USDC and access subject to onboarding, identity checks, jurisdiction and securities law.
 
 The initial set covers Apple, Microsoft, Nvidia, Alphabet, Tesla, Meta, Amazon, Netflix, Circle, SpaceX, Strategy and Palantir. Securitize says each token is backed one for one by an underlying share. The product is available to eligible investors in the United States, the European Union and other permitted jurisdictions.
 

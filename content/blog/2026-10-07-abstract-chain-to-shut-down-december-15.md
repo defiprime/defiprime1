@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-07T00:20:02+00:00
 ---
 
-At 19:32 UTC on October 6, 2026, Abstract [announced](https://x.com/AbstractChain/status/2107554632675340420) that it would wind down after almost three years. Its official [Migration Hub](https://migrate.abs.xyz/) says the chain will shut down on December 15, 2026. Users who have not moved their assets by then will lose access to funds left on Abstract.
+On October 6, 2026, Abstract [announced](https://x.com/AbstractChain/status/2107554632675340420) that it would wind down after almost three years. Its official [Migration Hub](https://migrate.abs.xyz/) says the chain will shut down on December 15, 2026. Users who have not moved their assets by then will lose access to funds left on Abstract.
 
 The announcement starts a fixed exit period for a network that still carries user capital. DefiLlama's chains API listed Abstract with [$9.51 million](https://api.llama.fi/v2/chains) in total value locked when checked for this article. Its stablecoin API separately listed [$5.91 million](https://stablecoins.llama.fi/stablecoinchains) circulating on the chain. Those figures describe different measures and should not be added together. They show that the shutdown is not limited to an inactive test environment.
 

@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-17T11:18:37+00:00
 ---
 
-At 15:59 UTC on October 16, 2026, Token Terminal [launched Fact Sheets](https://x.com/tokenterminal/status/2111124879504453931) for more than 10,000 tokenized assets. The product adds legal, operational, and economic disclosures to the platform's existing onchain records. Each asset can now carry more than 60 standardized fields, with citations that point users back to the underlying documents.
+On October 16, 2026, Token Terminal [launched Fact Sheets](https://x.com/tokenterminal/status/2111124879504453931) for more than 10,000 tokenized assets. The product adds legal, operational, and economic disclosures to the platform's existing onchain records. Each asset can now carry more than 60 standardized fields, with citations that point users back to the underlying documents.
 
 The launch separates two questions that token data often mixes together. Blockchain records can show supply, holders, transfers, and activity across chains and DeFi venues. They do not by themselves establish the legal issuer, the holder's claim, the party holding the underlying asset, or the conditions for redemption. Token Terminal's [product announcement](https://tokenterminal.com/resources/newsletter/introducing-token-terminal-fact-sheets) places those details beside the onchain record.
 

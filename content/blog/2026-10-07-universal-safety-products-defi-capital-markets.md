@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-07T12:24:41+00:00
 ---
 
-On October 7, 2026 at 10:30 UTC, NYSE American-listed Universal Safety Products [said it would become DeFi Capital Markets](https://www.prnewswire.com/news-releases/universal-safety-products-inc-to-become-defi-capital-markets-inc-302900613.html). The company set October 19, 2026 as the effective date for the new name and expects its common stock to begin trading under the $DCM ticker that day.
+On October 7, 2026, NYSE American-listed Universal Safety Products [said it would become DeFi Capital Markets](https://www.prnewswire.com/news-releases/universal-safety-products-inc-to-become-defi-capital-markets-inc-302900613.html). The company set October 19, 2026 as the effective date for the new name and expects its common stock to begin trading under the $DCM ticker that day.
 
 The announcement turns a year of work inside the company's wholly owned Universal DeFi subsidiary into the listed parent company's stated direction. Universal Safety Products said the subsidiary has built technology for asset owners and companies to issue, hold, and, where permitted, trade real-world and financial assets on blockchain infrastructure.
 

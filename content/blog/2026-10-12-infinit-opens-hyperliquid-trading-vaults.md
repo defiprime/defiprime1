@@ -13,7 +13,7 @@ tags: ["DeFi", "News"]
 date: 2026-10-12T19:18:30+00:00
 ---
 
-At 12:02 UTC on October 12, 2026, INFINIT [introduced its managed trading-vault framework](https://x.com/Infinit_Labs/status/2109615759022555510), with APEX Multi-Strategy as the first named vault. The framework restricts vaults to eligible Hyperliquid markets with at least $100 million in open interest.
+On October 12, 2026, INFINIT [introduced its managed trading-vault framework](https://x.com/Infinit_Labs/status/2109615759022555510), with APEX Multi-Strategy as the first named vault. The framework restricts vaults to eligible Hyperliquid markets with at least $100 million in open interest.
 
 Depositors enter with $USDC during a defined window and receive a receipt token representing their share. A strategy manager trades for a fixed term. At the end, holders can redeem the receipt token for their share of the vault's $USDC value after fees. Each manager sets the fees, lock period, deposit window, risk limits and strategy before deposits open.
 

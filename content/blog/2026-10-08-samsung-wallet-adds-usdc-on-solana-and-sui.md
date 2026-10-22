@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-08T03:19:43+00:00
 ---
 
-At 00:39 UTC on October 8, 2026, the [Solana Foundation announced](https://x.com/solana/status/2107994265104339166) that Samsung Wallet users in the United States will be able to send $USDC across borders on Solana beginning in the last week of October. The planned feature will be available across 82 million U.S. Galaxy devices at launch. A [separate Sui Foundation announcement](https://www.sui.io/blog/samsung-collaborates-with-sui-to-bring-usdc-to-samsung-wallet-on-82-million-u-s-galaxy-devices) confirms that Samsung Wallet will also support $USDC on Sui.
+On October 8, 2026, the [Solana Foundation announced](https://x.com/solana/status/2107994265104339166) that Samsung Wallet users in the United States will be able to send $USDC across borders on Solana beginning in the last week of October. The planned feature will be available across 82 million U.S. Galaxy devices at launch. A [separate Sui Foundation announcement](https://www.sui.io/blog/samsung-collaborates-with-sui-to-bring-usdc-to-samsung-wallet-on-82-million-u-s-galaxy-devices) confirms that Samsung Wallet will also support $USDC on Sui.
 
 The two network announcements describe one Samsung Wallet rollout with multiple blockchain rails. Solana says Samsung Wallet and Samsung Pay will support stablecoins on Solana. Sui says users will be able to hold and send $USDC over Sui. Coinbase separately said $USDC will be the first supported stablecoin and that the feature is powered by Coinbase. None of the three announcements names another stablecoin available at launch.
 

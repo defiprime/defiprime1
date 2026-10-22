@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-08T05:21:29+00:00
 ---
 
-At 01:00 UTC on October 8, 2026, Sui [announced](https://chainwire.org/2026/10/08/hashi-mainnet-to-launch-with-500m-in-capital-backing-adds-anchorage-digital-to-coalition/) an October mainnet rollout for Hashi, its native Bitcoin collateral system, with more than $500 million in capital commitments. The coalition supplying those commitments has more than 20 partners, and Anchorage Digital joined as a launch partner.
+On October 8, 2026, Sui [announced](https://chainwire.org/2026/10/08/hashi-mainnet-to-launch-with-500m-in-capital-backing-adds-anchorage-digital-to-coalition/) an October mainnet rollout for Hashi, its native Bitcoin collateral system, with more than $500 million in capital commitments. The coalition supplying those commitments has more than 20 partners, and Anchorage Digital joined as a launch partner.
 
 Hashi is intended to let holders use Bitcoin as collateral in Sui applications while the underlying asset remains on the Bitcoin network. The [product page](https://www.sui.io/hashi) describes it as a decentralized Bitcoin collateralization primitive that orchestrates native $BTC from smart contracts without relying on a centralized balance sheet.
 

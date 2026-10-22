@@ -13,7 +13,7 @@ tags: ["News", "Regulation", "Stablecoins"]
 date: 2026-10-10T13:19:20+00:00
 ---
 
-At 07:55 UTC on October 8, 2026, the French National Assembly's Finance Committee adopted amendment [I-CF1822](https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/CION_FIN/CF1822), a proposal to extend France's exit tax to crypto portfolios worth more than €800,000. The committee had adopted amendment [I-CF1826](https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/CION_FIN/CF1826) at 19:11 UTC the previous day, targeting gains realized when a taxpayer swaps cryptoassets for certain fiat-referenced stablecoins.
+On October 8, 2026, the French National Assembly's Finance Committee adopted amendment [I-CF1822](https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/CION_FIN/CF1822), a proposal to extend France's exit tax to crypto portfolios worth more than €800,000. The committee had adopted amendment [I-CF1826](https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/CION_FIN/CF1826) the previous day, targeting gains realized when a taxpayer swaps cryptoassets for certain fiat-referenced stablecoins.
 
 Both measures sit inside the first reading of France's 2027 finance bill. The Assembly records classify each amendment as adopted by the Finance Committee. Committee approval does not make either measure law.
 

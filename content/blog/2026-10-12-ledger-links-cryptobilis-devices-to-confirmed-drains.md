@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-12T17:18:10+00:00
 ---
 
-At 17:13 UTC on October 11, Ledger [said](https://x.com/Ledger/status/2109331538072494364) every confirmed case from a draining incident disclosed on October 9 involved devices sold through CryptoBilis, a reseller in Southeast Asia. The company described the number of affected devices as limited. It did not put a number on the devices or the funds lost in the update.
+On October 11, Ledger [said](https://x.com/Ledger/status/2109331538072494364) every confirmed case from a draining incident disclosed on October 9 involved devices sold through CryptoBilis, a reseller in Southeast Asia. The company described the number of affected devices as limited. It did not put a number on the devices or the funds lost in the update.
 
 Ledger said its own systems and direct sales channels remained unaffected. Its investigation is continuing with relevant authorities, and it is contacting affected users. CryptoBilis has stopped selling hardware wallets, according to the statement.
 

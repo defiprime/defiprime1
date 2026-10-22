@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-07T09:21:27+00:00
 ---
 
-At 21:21 UTC on October 5, 2026, stablecoin payments company Rain [announced](https://www.prnewswire.com/news-releases/rain-files-application-with-the-occ-to-establish-rain-national-trust-bank-302898950.html) that it had applied to the Office of the Comptroller of the Currency to establish Rain National Trust Bank. The proposed New York institution has not been approved, and the release gives no OCC filing number or transaction amount.
+On October 5, 2026, stablecoin payments company Rain [announced](https://www.prnewswire.com/news-releases/rain-files-application-with-the-occ-to-establish-rain-national-trust-bank-302898950.html) that it had applied to the Office of the Comptroller of the Currency to establish Rain National Trust Bank. The proposed New York institution has not been approved, and the release gives no OCC filing number or transaction amount.
 
 Rain wants the trust bank to place custody, stablecoin reserve management, and issuance and redemption under one federal supervisor. The applicant would be a separately capitalized Rain subsidiary rather than a conversion of the existing payments company. Rain would remain a stablecoin payments platform and a principal member of both Visa and Mastercard.
 

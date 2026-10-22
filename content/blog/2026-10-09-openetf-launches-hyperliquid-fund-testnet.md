@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-09T13:19:13+00:00
 ---
 
-At 04:23 UTC on October 6, OpenETF [introduced](https://x.com/openetfxyz/status/2107325794817372294) a testnet system that turns Hyperliquid portfolios into funds with wallet-held share tokens. The current deployment uses test assets with no value, and the [documentation](https://docs.openetf.xyz/) says real funds have no place in it.
+On October 6, OpenETF [introduced](https://x.com/openetfxyz/status/2107325794817372294) a testnet system that turns Hyperliquid portfolios into funds with wallet-held share tokens. The current deployment uses test assets with no value, and the [documentation](https://docs.openetf.xyz/) says real funds have no place in it.
 
 The product gives each fund a name, symbol, public terms and an ERC-20-compatible share token. A manager trades the portfolio on Hyperliquid while investors hold the shares in their own wallets. The first release accepts subscriptions in $USDC at net asset value, with a minimum subscription of 100 $USDC unless the manager sets a higher floor.
 

@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-08T04:19:48+00:00
 ---
 
-At 22:43 UTC on October 7, 2026, [Formation announced](https://x.com/formation_so/status/2107965006578921623) that Orca and Loopscale had merged under a new company called Formation. The announcement says Orca has processed more than $550 billion in trading volume since 2021, while Loopscale has facilitated more than $2 billion in loans and holds over $150 million in deposits.
+On October 7, 2026, [Formation announced](https://x.com/formation_so/status/2107965006578921623) that Orca and Loopscale had merged under a new company called Formation. The announcement says Orca has processed more than $550 billion in trading volume since 2021, while Loopscale has facilitated more than $2 billion in loans and holds over $150 million in deposits.
 
 The combined company is headquartered in New York City. Loopscale co-founder Luke Truitt is its chief executive, Mary Gooneratne is chief operating officer, and Christopher Montagano is chief strategy and legal officer. Formation brings Orca's trading and liquidity infrastructure together with Loopscale's credit and vault products.
 

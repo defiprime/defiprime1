@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-11T19:21:13+00:00
 ---
 
-At 19:11 UTC on October 7, 2026, the French National Assembly's Finance Committee adopted amendment I-CF1826 to the 2027 Finance Bill. The measure would make some crypto-to-stablecoin conversions taxable from January 1, 2027. At 07:55 UTC the next day, the committee adopted amendment I-CF1822, which would apply an exit tax to unrealized gains in crypto portfolios worth more than €800,000.
+On October 7, 2026, the French National Assembly's Finance Committee adopted amendment I-CF1826 to the 2027 Finance Bill. The measure would make some crypto-to-stablecoin conversions taxable from January 1, 2027. The next day, the committee adopted amendment I-CF1822, which would apply an exit tax to unrealized gains in crypto portfolios worth more than €800,000.
 
 Both amendments were introduced by Nicolas Sansu and other lawmakers from the Democratic and Republican Left group. Committee adoption moves the provisions into the bill's first reading. It does not make either amendment law.
 

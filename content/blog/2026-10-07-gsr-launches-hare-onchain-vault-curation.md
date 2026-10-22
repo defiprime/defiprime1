@@ -13,7 +13,7 @@ tags: ["News"]
 date: 2026-10-07T13:19:54+00:00
 ---
 
-At 12:40 UTC on October 7, 2026, [Hare announced its launch](https://x.com/hare_xyz/status/2107813305540817250) as GSR's credit desk for onchain finance. The project named two forthcoming vaults and said Aave, Paxos Labs, Chainlink and Hypernative support the launch.
+On October 7, 2026, [Hare announced its launch](https://x.com/hare_xyz/status/2107813305540817250) as GSR's credit desk for onchain finance. The project named two forthcoming vaults and said Aave, Paxos Labs, Chainlink and Hypernative support the launch.
 
 Hare is a vault curation business rather than a single lending market. Its announcement assigns separate jobs to GSR, Hare and Turtle. That division matters to prospective depositors because the project will choose and structure products while another participant handles distribution. The first products cover dollar stablecoins and tokenized gold, but neither is open yet. The thread describes both products before deposits are available.
 

@@ -13,7 +13,7 @@ tags: ["Stablecoins", "Payments", "News"]
 date: 2026-10-15T13:18:32+00:00
 ---
 
-At 13:01 UTC on October 15, Stripe Crypto [announced](https://x.com/StripeCrypto/status/2110717778244018535) a collaboration with Plasma to launch multi-currency stablecoin cards. The companies said the cards are intended for people and businesses that spend across currencies and markets.
+On October 15, Stripe Crypto [announced](https://x.com/StripeCrypto/status/2110717778244018535) a collaboration with Plasma to launch multi-currency stablecoin cards. The companies said the cards are intended for people and businesses that spend across currencies and markets.
 
 Plasma is serving as a design partner rather than only adopting a finished Stripe product. The companies are developing the card experience together, while Plasma plans to move to Stripe's stablecoin card infrastructure. Plasma described the objective as letting a customer spend in the local currency wherever they are.
 

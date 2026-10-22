@@ -13,7 +13,7 @@ tags: ["News", "Stablecoins", "Payments"]
 date: 2026-10-15T01:20:15+00:00
 ---
 
-On October 14 at 13:18 UTC, Tempo announced that [Zones are generally available to enterprises](https://tempo.xyz/blog/privacy-is-live-on-tempo/), with Deel as the first production customer. The system keeps customer stablecoin balances and payments from public view while preserving operator visibility, policy controls, and access to applications on Tempo.
+On October 14, Tempo announced that [Zones are generally available to enterprises](https://tempo.xyz/blog/privacy-is-live-on-tempo/), with Deel as the first production customer. The system keeps customer stablecoin balances and payments from public view while preserving operator visibility, policy controls, and access to applications on Tempo.
 
 Deel is using its Zone to pay contractors without publicly revealing who received a payment or how much they received. Tempo says the deployment is live, rather than a pilot or planned integration.
 
