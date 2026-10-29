@@ -1,4 +1,5 @@
 ---
+date: 2026-10-29T18:27:00+00:00
 git-date:
 layout: blog
 title: "Polymarket Drained Again: A Hijacked Monitoring Script and $2.6M in POL"
