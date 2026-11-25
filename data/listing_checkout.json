@@ -5,35 +5,58 @@
       "id": 1,
       "name": "Ethereum",
       "receiver": "",
+      "startBlock": 0,
       "confirmations": 3,
       "rpc": "https://ethereum-rpc.publicnode.com",
       "explorer": "https://etherscan.io/tx/",
       "tokens": [
-        { "symbol": "USDC", "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48", "decimals": 6 },
-        { "symbol": "USDT", "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7", "decimals": 6 }
+        {
+          "symbol": "USDC",
+          "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+          "decimals": 6
+        },
+        {
+          "symbol": "USDT",
+          "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+          "decimals": 6
+        }
       ]
     },
     {
       "id": 8453,
       "name": "Base",
       "receiver": "",
+      "startBlock": 0,
       "confirmations": 5,
       "rpc": "https://mainnet.base.org",
       "explorer": "https://basescan.org/tx/",
       "tokens": [
-        { "symbol": "USDC", "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913", "decimals": 6 }
+        {
+          "symbol": "USDC",
+          "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+          "decimals": 6
+        }
       ]
     },
     {
       "id": 42161,
       "name": "Arbitrum",
       "receiver": "",
+      "startBlock": 0,
       "confirmations": 5,
       "rpc": "https://arb1.arbitrum.io/rpc",
       "explorer": "https://arbiscan.io/tx/",
       "tokens": [
-        { "symbol": "USDC", "address": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831", "decimals": 6 },
-        { "symbol": "USDT", "address": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9", "decimals": 6 }
+        {
+          "symbol": "USDC",
+          "address": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+          "decimals": 6
+        },
+        {
+          "symbol": "USDT",
+          "address": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
+          "decimals": 6
+        }
       ]
     }
   ]

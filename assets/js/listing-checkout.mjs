@@ -10,6 +10,7 @@ import {
 const STORAGE_KEY = "defiprime-listing-pending";
 const POLL_MS = 6000;
 const POLL_LIMIT = 100;
+const FINAL_REFUSALS = [400, 402, 403, 409];
 
 const root = document.getElementById("listing-checkout");
 const form = root?.querySelector("form");
@@ -81,13 +82,12 @@ async function deliver(pending) {
       say("Payment confirmed and submission received. We review every listing and reply by email.", "success");
       return;
     }
-    if (response.status === 202 || response.status >= 500) {
+    if (!FINAL_REFUSALS.includes(response.status)) {
       say(`${payload.reason || payload.error || "Waiting for the chain"}. Keep this page open.`);
       await new Promise((resolve) => setTimeout(resolve, POLL_MS));
       continue;
     }
-    localStorage.removeItem(STORAGE_KEY);
-    say(`${payload.error || `Submission refused (${response.status})`}. If you paid, email us transaction ${pending.txHash} and we will sort it out.`, "error");
+    say(`${payload.error || `Submission refused (${response.status})`}. If you paid, message us on Telegram (t.me/defiprime) with transaction ${pending.txHash} and we will sort it out.`, "error");
     return;
   }
   say("Still waiting on the chain. Your submission is saved in this browser; reopen this page later to finish it.", "error");
@@ -108,6 +108,12 @@ async function pay(event) {
 
   payButton.disabled = true;
   try {
+    say("Checking that checkout is available...");
+    const ready = await fetch("/api/listing", { cache: "no-store" }).then((response) => response.ok).catch(() => false);
+    if (!ready) {
+      say("Checkout is temporarily unavailable, so nothing was charged. Please try again later.", "error");
+      return;
+    }
     say("Connect your wallet...");
     const [account] = await provider.request({ method: "eth_requestAccounts" });
     say(`Switching to ${chain.name}...`);

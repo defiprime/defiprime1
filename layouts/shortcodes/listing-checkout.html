@@ -1,7 +1,7 @@
 {{- $checkout := hugo.Data.listing_checkout -}}
 {{- $chains := slice -}}
 {{- range $checkout.chains -}}
-  {{- if findRE `^0x[0-9a-fA-F]{40}$` .receiver -}}
+  {{- if and (findRE `^0x[0-9a-fA-F]{40}$` .receiver) (gt (int .startBlock) 0) -}}
     {{- $chains = $chains | append (dict "id" .id "name" .name "receiver" .receiver "tokens" .tokens) -}}
   {{- end -}}
 {{- end -}}

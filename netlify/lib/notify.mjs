@@ -38,7 +38,6 @@ export async function sendEmail(record, chain, env = process.env) {
         {
           From: { Email: LISTING_EMAIL_FROM, Name: "defiprime listings" },
           To: [{ Email: LISTING_EMAIL_TO }],
-          ReplyTo: { Email: record.fields.email },
           Subject: `Paid listing: ${record.fields.project}`,
           TextPart: emailText(record, chain),
         },

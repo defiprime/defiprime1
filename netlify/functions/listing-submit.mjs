@@ -2,7 +2,7 @@ import { getStore } from "@netlify/blobs";
 import { createPublicClient, http } from "viem";
 import checkout from "../../data/listing_checkout.json" with { type: "json" };
 import { sendEmail } from "../lib/notify.mjs";
-import { handleSubmission } from "../lib/submit.mjs";
+import { checkReady, handleSubmission } from "../lib/submit.mjs";
 
 const MAX_BODY_BYTES = 16384;
 
@@ -16,6 +16,10 @@ function claimsStore(context) {
 }
 
 export default async (request, context) => {
+  if (request.method === "GET") {
+    const [status, payload] = await checkReady({ checkout, store: claimsStore(context), env: process.env });
+    return Response.json(payload, { status, headers: { "cache-control": "no-store" } });
+  }
   if (request.method !== "POST") return Response.json({ error: "Use POST" }, { status: 405 });
   const text = await request.text();
   if (text.length > MAX_BODY_BYTES) return Response.json({ error: "Submission is too large" }, { status: 413 });

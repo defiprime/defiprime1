@@ -68,5 +68,5 @@ export function utf8Hex(text) {
 }
 
 export function activeChains(config) {
-  return config.chains.filter((chain) => /^0x[0-9a-fA-F]{40}$/.test(chain.receiver));
+  return config.chains.filter((chain) => /^0x[0-9a-fA-F]{40}$/.test(chain.receiver) && Number.isInteger(chain.startBlock) && chain.startBlock > 0);
 }

@@ -17,7 +17,7 @@ import {
   submissionDigest,
   transferCalldata,
 } from "../assets/js/listing-core.mjs";
-import { handleSubmission } from "../netlify/lib/submit.mjs";
+import { checkReady, handleSubmission } from "../netlify/lib/submit.mjs";
 import { emailText } from "../netlify/lib/notify.mjs";
 
 const RECEIVER = "0x1111111111111111111111111111111111111111";
@@ -32,12 +32,13 @@ const checkout = {
       id: 8453,
       name: "Base",
       receiver: RECEIVER,
+      startBlock: 50,
       confirmations: 5,
       rpc: "http://unused",
       explorer: "https://basescan.org/tx/",
       tokens: [{ symbol: "USDC", address: USDC, decimals: 6 }],
     },
-    { id: 1, name: "Ethereum", receiver: "", confirmations: 3, rpc: "http://unused", explorer: "", tokens: [] },
+    { id: 1, name: "Ethereum", receiver: "", startBlock: 0, confirmations: 3, rpc: "http://unused", explorer: "", tokens: [] },
   ],
 };
 
@@ -76,21 +77,25 @@ function fakeStore() {
   };
 }
 
-function fakeClient({ receipt, latest = 200n, missing = false }) {
+function fakeClient({ receipt, latest = 200n, missing = false, rpcDown = false }) {
   return {
     async getTransactionReceipt() {
       if (missing) throw new TransactionReceiptNotFoundError({ hash: TX });
       return receipt;
     },
     async getBlockNumber() {
+      if (rpcDown === "block") throw new Error("429");
       return latest;
     },
-    verifyMessage,
+    async verifyMessage(args) {
+      if (rpcDown === "verify") throw new Error("429");
+      return verifyMessage(args);
+    },
   };
 }
 
-async function scenario({ payer, signer = payer, submitted = fields, logs, status = "success", latest, missing, store = fakeStore(), notify }) {
-  const receipt = { status, blockNumber: 100n, logs: logs ?? [transferLog({ from: payer.address })] };
+async function scenario({ payer, signer = payer, submitted = fields, logs, status = "success", latest, missing, rpcDown, blockNumber = 100n, store = fakeStore(), notify }) {
+  const receipt = { status, blockNumber, logs: logs ?? [transferLog({ from: payer.address })] };
   const digest = await submissionDigest(cleanFields(submitted).fields);
   const signature = await signer.signMessage({ message: claimMessage({ project: submitted.project, chainId: 8453, digest }) });
   const sent = [];
@@ -98,7 +103,7 @@ async function scenario({ payer, signer = payer, submitted = fields, logs, statu
     { fields: submitted, chainId: 8453, txHash: TX, signature },
     {
       checkout,
-      clientFor: () => fakeClient({ receipt, latest, missing }),
+      clientFor: () => fakeClient({ receipt, latest, missing, rpcDown }),
       store,
       notify: notify ?? (async (record) => sent.push(record)),
       now: () => new Date("2026-11-25T00:00:00Z"),
@@ -171,6 +176,26 @@ test("unmined and under-confirmed transactions return pending", async () => {
   assert.equal((await scenario({ payer, latest: 104n })).result[0], 200);
 });
 
+test("RPC failures are retryable errors, never a signature refusal", async () => {
+  assert.equal((await scenario({ payer, rpcDown: "verify" })).result[0], 502);
+  assert.equal((await scenario({ payer, rpcDown: "block" })).result[0], 502);
+});
+
+test("transfers made before checkout opened cannot be claimed", async () => {
+  const { result, sent } = await scenario({ payer, blockNumber: 49n });
+  assert.equal(result[0], 402);
+  assert.equal(sent.length, 0);
+});
+
+test("readiness requires an open chain, the email environment and a working store", async () => {
+  const env = { MJ_APIKEY_PUBLIC: "a", MJ_APIKEY_PRIVATE: "b", LISTING_EMAIL_FROM: "c", LISTING_EMAIL_TO: "d" };
+  assert.equal((await checkReady({ checkout, store: fakeStore(), env }))[0], 200);
+  assert.equal((await checkReady({ checkout, store: fakeStore(), env: { ...env, LISTING_EMAIL_TO: "" } }))[0], 503);
+  assert.equal((await checkReady({ checkout: realCheckout, store: fakeStore(), env }))[0], 503);
+  const broken = { setJSON: async () => { throw new Error("blobs down"); }, get: async () => null };
+  assert.equal((await checkReady({ checkout, store: broken, env }))[0], 503);
+});
+
 test("chains without a receiver address are not accepted", async () => {
   const [status] = await handleSubmission(
     { fields, chainId: 1, txHash: TX, signature: "0x" + "00".repeat(65) },
@@ -217,6 +242,7 @@ test("the email carries the submission and an explorer link", () => {
 test("the shipped config lists only six-decimal stablecoins with well-formed addresses", () => {
   for (const chain of realCheckout.chains) {
     assert.ok(chain.receiver === "" || /^0x[0-9a-fA-F]{40}$/.test(chain.receiver));
+    assert.ok(Number.isInteger(chain.startBlock));
     for (const token of chain.tokens) {
       assert.match(token.address, /^0x[0-9a-fA-F]{40}$/);
       assert.equal(token.decimals, 6);
