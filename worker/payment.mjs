@@ -1,5 +1,5 @@
 import { decodeEventLog, erc20Abi, getAddress } from "viem";
-import { baseUnits } from "../../assets/js/listing-core.mjs";
+import { baseUnits } from "../assets/js/listing-core.mjs";
 
 export function findPayment(receipt, chain, price) {
   if (receipt.status !== "success") return { error: "The transaction reverted on-chain" };

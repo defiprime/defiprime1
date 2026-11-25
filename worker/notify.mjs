@@ -22,7 +22,7 @@ export function emailText(record, chain) {
   ].join("\n");
 }
 
-export async function sendEmail(record, chain, env = process.env) {
+export async function sendEmail(record, chain, env) {
   const { MJ_APIKEY_PUBLIC, MJ_APIKEY_PRIVATE, LISTING_EMAIL_FROM, LISTING_EMAIL_TO } = env;
   if (!MJ_APIKEY_PUBLIC || !MJ_APIKEY_PRIVATE || !LISTING_EMAIL_FROM || !LISTING_EMAIL_TO) {
     throw new Error("Mailjet environment is not configured");
@@ -31,7 +31,7 @@ export async function sendEmail(record, chain, env = process.env) {
     method: "POST",
     headers: {
       "content-type": "application/json",
-      authorization: "Basic " + Buffer.from(`${MJ_APIKEY_PUBLIC}:${MJ_APIKEY_PRIVATE}`).toString("base64"),
+      authorization: "Basic " + btoa(`${MJ_APIKEY_PUBLIC}:${MJ_APIKEY_PRIVATE}`),
     },
     body: JSON.stringify({
       Messages: [

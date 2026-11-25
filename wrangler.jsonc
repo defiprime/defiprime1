@@ -1,0 +1,28 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "defiprime",
+  "main": "worker/index.mjs",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/api/*", "/t/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "defiprime-listings",
+      "database_id": "a0724879-eaa7-43f4-bc17-b54326a2ccbf",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "vars": {
+    "LISTING_EMAIL_FROM": "listings@defiprime.com"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

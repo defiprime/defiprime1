@@ -1,5 +1,5 @@
 import { TransactionReceiptNotFoundError, formatUnits } from "viem";
-import { activeChains, claimMessage, cleanFields, submissionDigest } from "../../assets/js/listing-core.mjs";
+import { activeChains, claimMessage, cleanFields, submissionDigest } from "../assets/js/listing-core.mjs";
 import { findPayment, hasConfirmations } from "./payment.mjs";
 
 const TX_HASH = /^0x[0-9a-f]{64}$/;
@@ -15,7 +15,8 @@ export async function checkReady({ checkout, store, env, now = () => new Date() 
     await store.setJSON("readiness", { stamp });
     const read = await store.get("readiness", { type: "json" });
     if (read?.stamp !== stamp) throw new Error("readback mismatch");
-  } catch {
+  } catch (error) {
+    console.error("listing readiness store check failed", error?.message ?? error);
     return [503, { ready: false, error: "Checkout is temporarily unavailable" }];
   }
   return [200, { ready: true }];
@@ -44,6 +45,7 @@ export async function handleSubmission(body, { checkout, clientFor, store, notif
     if (error instanceof TransactionReceiptNotFoundError || error?.name === "TransactionReceiptNotFoundError") {
       return [202, { status: "pending", reason: "Waiting for the transaction to be mined" }];
     }
+    console.error("listing receipt lookup failed", chain.id, error?.details ?? error?.shortMessage ?? error?.message ?? error);
     return [502, { error: CHAIN_UNREACHABLE }];
   }
   if (!hasConfirmations(latest, receipt.blockNumber, chain.confirmations)) {

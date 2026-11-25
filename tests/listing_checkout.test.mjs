@@ -17,8 +17,8 @@ import {
   submissionDigest,
   transferCalldata,
 } from "../assets/js/listing-core.mjs";
-import { checkReady, handleSubmission } from "../netlify/lib/submit.mjs";
-import { emailText } from "../netlify/lib/notify.mjs";
+import { checkReady, handleSubmission } from "../worker/submit.mjs";
+import { emailText } from "../worker/notify.mjs";
 
 const RECEIVER = "0x1111111111111111111111111111111111111111";
 const USDC = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913";
