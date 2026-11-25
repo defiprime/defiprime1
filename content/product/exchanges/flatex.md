@@ -1,4 +1,6 @@
 ---
+url: /product/flatex.html
+git-date: '2026-11-25T09:00:00-05:00'
 product-title: FlatEx
 product-url: https://flatex.trade
 image: /images/output_md/flatex.trade.png
