@@ -74,7 +74,7 @@ Serves the site with live reload. Build to `public/` with:
 hugo --minify
 ```
 
-Netlify handles production deploys (see `netlify.toml`).
+Every push to `master` deploys to Cloudflare: `.github/workflows/deploy.yml` builds Hugo and runs `wrangler deploy` for the `defiprime` Worker configured in `wrangler.jsonc`.
 
 ### Stylesheet
 
