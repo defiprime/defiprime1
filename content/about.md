@@ -35,13 +35,13 @@ Criteria we actually apply:
 - Live on mainnet with real usage. Not a testnet, not a pitch deck.
 - Open to users regardless of jurisdiction, or at minimum honest about its geofencing. "Region is not supported" is not a feature.
 - Chain-agnostic. We don't play tribal.
-- No pay-to-list. This has always been the rule.
+- Paid review. A listing costs 1000 USDC or USDT, refunded in full if we decline.
 
-If you'd like to submit a project for consideration, use the [listing form](https://forms.fillout.com/t/by3Zq83Wnuus).
+To submit a project, use the [listing checkout](/list-your-project.html).
 
 ### Advertising
 
-The only ad format we run is native articles: interviews, use cases, technical explainers. No display ads, no sponsored listings. If you have something worth writing about, use the [advertising form](https://forms.fillout.com/t/ehASQ5qMzxus). Listing a project and advertising are separate processes, and listings are free.
+The only ad format we run is native articles: interviews, use cases, technical explainers. No display ads. If you have something worth writing about, use the [advertising form](https://forms.fillout.com/t/ehASQ5qMzxus). Listing a project and advertising are separate processes.
 
 ### Events
 
