@@ -1,0 +1,12 @@
+{
+  "name": "defiprime-functions",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^11.1.11",
+    "viem": "^2.58.6"
+  }
+}

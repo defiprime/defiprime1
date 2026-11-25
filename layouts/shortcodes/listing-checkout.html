@@ -1,0 +1,63 @@
+{{- $checkout := hugo.Data.listing_checkout -}}
+{{- $chains := slice -}}
+{{- range $checkout.chains -}}
+  {{- if findRE `^0x[0-9a-fA-F]{40}$` .receiver -}}
+    {{- $chains = $chains | append (dict "id" .id "name" .name "receiver" .receiver "tokens" .tokens) -}}
+  {{- end -}}
+{{- end -}}
+{{- $categories := slice -}}
+{{- range (site.GetPage "/product").Sections -}}
+  {{- with index .RegularPages 0 -}}{{- $categories = $categories | append (index .Params "coltitle") -}}{{- end -}}
+{{- end -}}
+<style>
+  #listing-checkout form { display: grid; gap: 1rem; margin-top: 1.5rem; }
+  #listing-checkout label { display: grid; gap: 0.35rem; font-weight: 600; }
+  #listing-checkout label span { font-weight: 400; font-size: 0.85em; opacity: 0.75; }
+  #listing-checkout input, #listing-checkout select, #listing-checkout textarea { width: 100%; font: inherit; padding: 0.55rem 0.7rem; border: 1px solid #c9ccd4; border-radius: 6px; background: #fff; }
+  #listing-checkout textarea { min-height: 7rem; resize: vertical; }
+  #listing-checkout button { justify-self: start; }
+  #listing-checkout [data-status] { min-height: 1.5em; margin: 1rem 0 0; }
+  #listing-checkout [data-status][data-tone="error"] { color: #b3261e; }
+  #listing-checkout [data-status][data-tone="success"] { color: #1b7f3b; font-weight: 600; }
+  #listing-checkout [data-resume] { padding: 1rem; border: 1px solid #c9ccd4; border-radius: 6px; }
+</style>
+<div id="listing-checkout" data-config="{{ dict "price" $checkout.price "chains" $chains | jsonify }}">
+  {{- if not $chains }}
+  <p><strong>Paid listings open soon.</strong> Checkout is not live yet.</p>
+  {{- else }}
+  <div data-resume hidden>
+    <p>You have a paid submission for <strong data-resume-project></strong> that has not been delivered yet.</p>
+    <button type="button" class="button">Finish submission</button>
+  </div>
+  <form novalidate>
+    <label>Project name<input name="project" maxlength="100" required></label>
+    <label>Website<input name="website" type="url" maxlength="200" placeholder="https://" required></label>
+    <label>Category
+      <select name="category" required>
+        <option value="">Choose a category</option>
+        {{- range $categories }}<option>{{ . }}</option>{{ end }}
+        <option>Other</option>
+      </select>
+    </label>
+    <label>Chains<span>Where the product is live, for example Ethereum, Base, Solana.</span><input name="chains" maxlength="200"></label>
+    <label>Description<span>What it does and who it is for, up to 600 characters.</span><textarea name="description" maxlength="600" required></textarea></label>
+    <label>X / Twitter<input name="twitter" maxlength="200" placeholder="https://x.com/"></label>
+    <label>Contact email<span>We send the review decision here.</span><input name="email" type="email" maxlength="200" required></label>
+    <label>Telegram<input name="telegram" maxlength="100" placeholder="@handle"></label>
+    <label>Anything else<textarea name="notes" maxlength="1000"></textarea></label>
+    <label>Pay with
+      <select name="payment" required>
+        {{- range $chains }}{{ $chain := . }}{{ range .tokens }}
+        <option value="{{ $chain.id }}:{{ .symbol }}">{{ .symbol }} on {{ $chain.name }}</option>
+        {{- end }}{{ end }}
+      </select>
+    </label>
+    <button type="submit" class="button" data-pay>Pay {{ $checkout.price }} and submit</button>
+  </form>
+  {{- end }}
+  <p data-status role="status" aria-live="polite"></p>
+</div>
+{{- if $chains }}
+{{- $js := resources.Get "js/listing-checkout.mjs" | js.Build (dict "minify" true "format" "iife" "target" "es2020") | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{- end }}

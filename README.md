@@ -45,14 +45,14 @@ Templates are in `layouts/`, static assets in `assets/` and `static/`. Chain lan
 
 ## Product listing
 
-We run a curated list. We aren't trying to catalogue every project — we surface the ones worth paying attention to. Criteria we actually apply:
+We run a curated list. We aren't trying to catalogue every project; we surface the ones worth paying attention to. Criteria we actually apply:
 
 - Live on mainnet with real usage. Not a testnet, not a pitch deck.
 - Open to users regardless of jurisdiction, or at minimum honest about its geofencing. "Region is not supported" is not a feature.
 - Chain-agnostic. We don't play tribal.
-- No pay-to-list. This has always been the rule.
+- Paid review. A listing costs 1000 USDC or USDT, refunded in full if we decline.
 
-Submit a project via the [listing form](https://forms.fillout.com/t/by3Zq83Wnuus).
+Submit a project through the [listing checkout](https://defiprime.com/list-your-project.html).
 
 ## Submitting events
 
@@ -60,7 +60,7 @@ Hosting a DeFi conference, research event, or hackathon? Use the [event listing 
 
 ## Advertising
 
-The only ad format we run is native articles — interviews, use cases, technical explainers. No display ads, no sponsored listings. Listing a project and advertising are separate processes, and listings are free. Use the [advertising form](https://forms.fillout.com/t/ehASQ5qMzxus).
+The only ad format we run is native articles: interviews, use cases, technical explainers. No display ads. Listing a project and advertising are separate processes. Use the [advertising form](https://forms.fillout.com/t/ehASQ5qMzxus).
 
 ## Local development
 

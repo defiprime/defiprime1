@@ -64,6 +64,20 @@ else
 fi
 
 echo ""
+echo "--- Test 2c: Listing checkout ---"
+if [ -d "$ROOT/node_modules/viem" ]; then
+  if node --test "$ROOT"/tests/*.test.mjs > /tmp/listing-tests.log 2>&1; then
+    pass "Listing checkout validation, payment and claim tests"
+  else
+    fail "Listing checkout tests failed (see /tmp/listing-tests.log)"
+    tail -20 /tmp/listing-tests.log
+  fi
+else
+  warn "Listing checkout tests skipped (run npm install first)"
+fi
+if [ -f "$PUBLIC/list-your-project.html" ]; then pass "Page: /list-your-project"; else fail "Page missing: /list-your-project"; fi
+
+echo ""
 echo "--- Test 3: Key Pages Exist ---"
 
 if [ -f "$PUBLIC/index.html" ]; then pass "Homepage exists"; else fail "Homepage missing"; fi
