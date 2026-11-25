@@ -4,8 +4,8 @@
     {
       "id": 1,
       "name": "Ethereum",
-      "receiver": "",
-      "startBlock": 0,
+      "receiver": "0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1",
+      "startBlock": 26492231,
       "confirmations": 3,
       "rpc": "https://ethereum-rpc.publicnode.com",
       "explorer": "https://etherscan.io/tx/",
@@ -25,8 +25,8 @@
     {
       "id": 8453,
       "name": "Base",
-      "receiver": "",
-      "startBlock": 0,
+      "receiver": "0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1",
+      "startBlock": 62098772,
       "confirmations": 5,
       "rpc": "https://mainnet.base.org",
       "explorer": "https://basescan.org/tx/",
@@ -41,8 +41,8 @@
     {
       "id": 42161,
       "name": "Arbitrum",
-      "receiver": "",
-      "startBlock": 0,
+      "receiver": "0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1",
+      "startBlock": 527422424,
       "confirmations": 5,
       "rpc": "https://arb1.arbitrum.io/rpc",
       "explorer": "https://arbiscan.io/tx/",

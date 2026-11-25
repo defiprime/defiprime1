@@ -191,7 +191,8 @@ test("readiness requires an open chain, the email environment and a working stor
   const env = { MJ_APIKEY_PUBLIC: "a", MJ_APIKEY_PRIVATE: "b", LISTING_EMAIL_FROM: "c", LISTING_EMAIL_TO: "d" };
   assert.equal((await checkReady({ checkout, store: fakeStore(), env }))[0], 200);
   assert.equal((await checkReady({ checkout, store: fakeStore(), env: { ...env, LISTING_EMAIL_TO: "" } }))[0], 503);
-  assert.equal((await checkReady({ checkout: realCheckout, store: fakeStore(), env }))[0], 503);
+  const closed = { ...checkout, chains: checkout.chains.filter((chain) => chain.receiver === "") };
+  assert.equal((await checkReady({ checkout: closed, store: fakeStore(), env }))[0], 503);
   const broken = { setJSON: async () => { throw new Error("blobs down"); }, get: async () => null };
   assert.equal((await checkReady({ checkout, store: broken, env }))[0], 503);
 });
